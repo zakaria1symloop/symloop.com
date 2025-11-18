@@ -2,12 +2,11 @@
   "navigation": {
     "home": "الرئيسية",
     "services": "الخدمات",
-    "products": "المنتجات",
+    "clientsPartners": "عملائنا وشركائنا",
     "blog": "المدونة",
     "learning": "التعلم",
     "investors": "المستثمرون",
-    "recruitment": "التوظيف",
-    "ourProducts": "منتجاتنا"
+    "recruitment": "التوظيف"
   },
   "contact": {
     "location": "سطيف، منطقة مينا",
@@ -203,18 +202,39 @@
     "placeholder3": "أبحث عن حلول الاستضافة...",
     "placeholder4": "أريد تطوير برمجيات مخصصة..."
   },
-  "products": {
-    "title": "منتجاتنا",
-    "subtitle": "حلول مبتكرة مطورة بشغف",
-    "asa": {
-      "title": "ASA",
-      "description": "الإدارة الذكية MENA - الذكاء الاصطناعي للإدارة.",
-      "badge": "جديد"
+  "clientsPartners": {
+    "badge": "شركاء موثوقون • منطقة مينا",
+    "title": "عملائنا",
+    "titleAccent": "وشركائنا",
+    "subtitle": "موثوقون من قبل الشركات الرائدة والشركاء التقنيين في منطقة الشرق الأوسط وشمال أفريقيا",
+    "tagline": "بناء شراكات طويلة الأمد للتميز الرقمي في منطقة مينا",
+    "categories": {
+      "client": "عميل",
+      "partner": "شريك تقني"
     },
-    "edusmart": {
-      "title": "EduSmart",
-      "description": "منصة تعليمية ذكية للتعلم.",
-      "badge": "قريباً"
+    "techcorp": {
+      "description": "شركة تقنية رائدة في منطقة مينا، شريك موثوق منذ 2015"
+    },
+    "ecomdz": {
+      "description": "منصة تجارة إلكترونية رائدة تربط آلاف البائعين والمشترين"
+    },
+    "deliverydz": {
+      "description": "خدمة توصيل الأسرع نمواً مع أكثر من 500 عامل توصيل نشط"
+    },
+    "aws": {
+      "description": "شريك رسمي لـ AWS لحلول السحابة والبنية التحتية"
+    },
+    "microsoft": {
+      "description": "شريك معتمد من Microsoft لحلول المؤسسات"
+    },
+    "google": {
+      "description": "شريك Google Cloud لخدمات السحابة القابلة للتطوير"
+    },
+    "stats": {
+      "clients": "عملاء راضون",
+      "projects": "مشاريع منجزة",
+      "satisfaction": "معدل الرضا",
+      "years": "سنوات التميز"
     }
   },
   "services": {

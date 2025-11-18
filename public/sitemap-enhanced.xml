@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Homepage with all language versions -->
+  <url>
+    <loc>https://symloop.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/"/>
+  </url>
+
+  <!-- Location Pages - Top Priority for Local SEO -->
+  <!-- Alger -->
+  <url>
+    <loc>https://symloop.com/locations/alger</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/alger"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/alger"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/alger"/>
+  </url>
+
+  <!-- Oran -->
+  <url>
+    <loc>https://symloop.com/locations/oran</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/oran"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/oran"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/oran"/>
+  </url>
+
+  <!-- Constantine -->
+  <url>
+    <loc>https://symloop.com/locations/constantine</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/constantine"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/constantine"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/constantine"/>
+  </url>
+
+  <!-- Sétif (Headquarters) -->
+  <url>
+    <loc>https://symloop.com/locations/setif</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/setif"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/setif"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/setif"/>
+  </url>
+
+  <!-- Annaba -->
+  <url>
+    <loc>https://symloop.com/locations/annaba</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.93</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/annaba"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/annaba"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/annaba"/>
+  </url>
+
+  <!-- Blida -->
+  <url>
+    <loc>https://symloop.com/locations/blida</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.93</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/blida"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/blida"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/blida"/>
+  </url>
+
+  <!-- Batna -->
+  <url>
+    <loc>https://symloop.com/locations/batna</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/batna"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/batna"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/batna"/>
+  </url>
+
+  <!-- Djelfa -->
+  <url>
+    <loc>https://symloop.com/locations/djelfa</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/djelfa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/djelfa"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/djelfa"/>
+  </url>
+
+  <!-- Tlemcen -->
+  <url>
+    <loc>https://symloop.com/locations/tlemcen</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/tlemcen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/tlemcen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/tlemcen"/>
+  </url>
+
+  <!-- Béjaïa -->
+  <url>
+    <loc>https://symloop.com/locations/bejaia</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/bejaia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/locations/bejaia"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/bejaia"/>
+  </url>
+
+  <!-- Solution Pages - High Priority -->
+  <!-- Web Development -->
+  <url>
+    <loc>https://symloop.com/solutions/creation-site-web-professionnel-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/creation-site-web-professionnel-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/creation-site-web-professionnel-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/creation-site-web-professionnel-algerie"/>
+  </url>
+
+  <!-- Mobile Apps -->
+  <url>
+    <loc>https://symloop.com/solutions/applications-mobiles-flutter-react-native-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/applications-mobiles-flutter-react-native-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/applications-mobiles-flutter-react-native-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/applications-mobiles-flutter-react-native-algerie"/>
+  </url>
+
+  <!-- E-commerce -->
+  <url>
+    <loc>https://symloop.com/solutions/site-ecommerce-paiement-cib-edahabia-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/site-ecommerce-paiement-cib-edahabia-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/site-ecommerce-paiement-cib-edahabia-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/site-ecommerce-paiement-cib-edahabia-algerie"/>
+  </url>
+
+  <!-- Digital Transformation -->
+  <url>
+    <loc>https://symloop.com/solutions/transformation-digitale-entreprise-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/transformation-digitale-entreprise-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/transformation-digitale-entreprise-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/transformation-digitale-entreprise-algerie"/>
+  </url>
+
+  <!-- Digital Marketing & SEO -->
+  <url>
+    <loc>https://symloop.com/solutions/marketing-digital-seo-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/marketing-digital-seo-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/marketing-digital-seo-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/marketing-digital-seo-algerie"/>
+  </url>
+
+  <!-- Network Infrastructure -->
+  <url>
+    <loc>https://symloop.com/solutions/solutions-reseau-infrastructure-it-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/solutions-reseau-infrastructure-it-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/solutions-reseau-infrastructure-it-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/solutions-reseau-infrastructure-it-algerie"/>
+  </url>
+
+  <!-- Technology Consulting -->
+  <url>
+    <loc>https://symloop.com/solutions/consulting-technologique-strategie-digitale-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/consulting-technologique-strategie-digitale-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/consulting-technologique-strategie-digitale-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/consulting-technologique-strategie-digitale-algerie"/>
+  </url>
+
+  <!-- Cybersecurity -->
+  <url>
+    <loc>https://symloop.com/solutions/cybersecurite-pme-protection-donnees-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/cybersecurite-pme-protection-donnees-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/cybersecurite-pme-protection-donnees-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/cybersecurite-pme-protection-donnees-algerie"/>
+  </url>
+
+  <!-- AI Solutions -->
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-assistant-vocal-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/intelligence-artificielle-assistant-vocal-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/intelligence-artificielle-assistant-vocal-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/intelligence-artificielle-assistant-vocal-algerie"/>
+  </url>
+
+  <!-- Cloud Solutions -->
+  <url>
+    <loc>https://symloop.com/solutions/solutions-cloud-infrastructure-serveurs-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/solutions-cloud-infrastructure-serveurs-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/solutions-cloud-infrastructure-serveurs-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/solutions-cloud-infrastructure-serveurs-algerie"/>
+  </url>
+
+  <!-- IoT Solutions -->
+  <url>
+    <loc>https://symloop.com/solutions/solutions-iot-esp32-objets-connectes-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/solutions-iot-esp32-objets-connectes-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/solutions-iot-esp32-objets-connectes-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/solutions-iot-esp32-objets-connectes-algerie"/>
+  </url>
+
+  <!-- ERP/CRM -->
+  <url>
+    <loc>https://symloop.com/solutions/logiciel-erp-crm-personnalise-algerie</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/logiciel-erp-crm-personnalise-algerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/logiciel-erp-crm-personnalise-algerie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/logiciel-erp-crm-personnalise-algerie"/>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://symloop.com/about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/about"/>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/contact"/>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/portfolio</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/portfolio"/>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/blog</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog"/>
+  </url>
+</urlset>

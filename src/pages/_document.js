@@ -50,6 +50,15 @@ export default function Document(props) {
         <meta name="geo.country" content="MENA Region" />
         <meta name="geo.placename" content="Sétif, région MENA" />
         <meta name="ICBM" content="36.1919, 5.4138" />
+
+        {/*
+          TODO: Replace with your actual Google Search Console verification code
+          To get this code:
+          1. Go to https://search.google.com/search-console
+          2. Add your property (https://symloop.com)
+          3. Choose "HTML tag" verification method
+          4. Copy the content value from the meta tag provided
+        */}
         <meta name="google-site-verification" content="your-google-verification-code" />
         
         {/* MENA-specific Business Schema */}

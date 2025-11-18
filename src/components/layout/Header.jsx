@@ -255,9 +255,7 @@ const MobileMenu = ({ isOpen, onClose, scrolled }) => {
           <nav className="flex-1 overflow-y-auto py-4">
             <NavItem label={t('navigation.home')} link="/" isMobile scrolled={true} />
             <NavItem label={t('navigation.services')} link="/services" isMobile scrolled={true} />
-            <NavItem label={t('navigation.products')} isMobile scrolled={true}>
-              <ProductBox isMobile scrolled={true} />
-            </NavItem>
+            <NavItem label={t('navigation.clientsPartners')} link="/#clients-partners" isMobile scrolled={true} />
             <NavItem label={t('navigation.blog')} link="/blog" isMobile scrolled={true} />
             <NavItem label={t('navigation.learning')} link="/learning" isMobile scrolled={true} />
             <NavItem label={t('navigation.investors')} link="/investisseurs" isMobile scrolled={true} />
@@ -347,9 +345,7 @@ export default function Header() {
           <nav className="hidden lg:flex items-center space-x-2">
             <NavItem label={t('navigation.home')} link="/" scrolled={scrolled} />
             <NavItem label={t('navigation.services')} link="/services" scrolled={scrolled} />
-            <NavItem label={t('navigation.products')} scrolled={scrolled}>
-              <ProductBox scrolled={scrolled} />
-            </NavItem>
+            <NavItem label={t('navigation.clientsPartners')} link="/#clients-partners" scrolled={scrolled} />
             <NavItem label={t('navigation.blog')} link="/blog" scrolled={scrolled} />
             <NavItem label={t('navigation.learning')} link="/learning" scrolled={scrolled} />
             <NavItem label={t('navigation.investors')} link="/investisseurs" scrolled={scrolled} />

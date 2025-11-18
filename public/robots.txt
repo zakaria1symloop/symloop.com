@@ -28,22 +28,31 @@ Allow: /fr/
 Allow: /en/
 Allow: /ar/
 
-# Priority crawling for service pages
-Allow: /services/developpement-logiciel-sur-mesure-algerie-mena
-Allow: /services/developpement-application-mobile-flutter-algerie-mena
-Allow: /services/creation-site-web-ecommerce-algerie-mena
-Allow: /services/solutions-iot-esp32-objets-connectes-algerie-mena
-Allow: /services/intelligence-artificielle-chatgpt-machine-learning-algerie-mena
-Allow: /services/cybersecurite-entreprise-protection-donnees-algerie-mena
+# Priority crawling for solution pages
+Allow: /solutions/
+Allow: /solutions/*
+Allow: /solutions/transformation-digitale-entreprise-algerie
+Allow: /solutions/marketing-digital-seo-algerie
+Allow: /solutions/solutions-reseau-infrastructure-it-algerie
+Allow: /solutions/consulting-technologique-strategie-digitale-algerie
+Allow: /solutions/cybersecurite-pme-protection-donnees-algerie
+Allow: /solutions/applications-mobiles-flutter-react-native-algerie
+Allow: /solutions/site-ecommerce-paiement-cib-edahabia-algerie
+Allow: /solutions/creation-site-web-professionnel-algerie
 
-# Location-based service pages for MENA cities
-Allow: /services/developeur-flutter-alger-algerie
-Allow: /services/entreprise-informatique-setif-algerie
-Allow: /services/developpement-mobile-oran-algerie
-Allow: /services/creation-site-web-constantine-algerie
-Allow: /services/developpeur-flutter-casablanca-maroc
-Allow: /services/flutter-developer-dubai-uae
-Allow: /services/software-development-riyadh-saudi-arabia
+# Priority crawling for location pages (NEW - High Priority for Local SEO)
+Allow: /locations/
+Allow: /locations/*
+Allow: /locations/alger
+Allow: /locations/oran
+Allow: /locations/constantine
+Allow: /locations/setif
+Allow: /locations/annaba
+Allow: /locations/blida
+Allow: /locations/batna
+Allow: /locations/djelfa
+Allow: /locations/tlemcen
+Allow: /locations/bejaia
 
 # Special rules for Google (preferred for MENA region)
 User-agent: Googlebot
@@ -114,12 +123,13 @@ User-agent: WhatsApp
 Allow: /
 
 # Sitemap locations (multiple for better indexing)
+# Enhanced for Algeria and MENA Region SEO
+Sitemap: https://symloop.com/sitemap-enhanced.xml
 Sitemap: https://symloop.com/sitemap.xml
-Sitemap: https://symloop.com/sitemap-fr.xml
-Sitemap: https://symloop.com/sitemap-en.xml
-Sitemap: https://symloop.com/sitemap-ar.xml
-Sitemap: https://symloop.com/sitemap-services.xml
 Sitemap: https://symloop.com/sitemap-locations.xml
+Sitemap: https://symloop.com/sitemap-solutions.xml
+Sitemap: https://symloop.com/sitemap-blog.xml
+Sitemap: https://symloop.com/sitemap-index.xml
 
 # Host directive (canonical domain)
 Host: https://symloop.com

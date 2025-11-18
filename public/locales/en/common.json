@@ -2,12 +2,11 @@
   "navigation": {
     "home": "Home",
     "services": "Services",
-    "products": "Products",
+    "clientsPartners": "Clients & Partners",
     "blog": "Blog",
     "learning": "Learning",
     "investors": "Investors",
-    "recruitment": "Recruitment",
-    "ourProducts": "Our Products"
+    "recruitment": "Recruitment"
   },
   "contact": {
     "location": "Setif, MENA region",
@@ -113,29 +112,39 @@
     "placeholder3": "I'm looking for hosting solutions...",
     "placeholder4": "I want to develop custom software..."
   },
-  "products": {
-    "title": "Our Products",
-    "subtitle": "Innovative solutions developed with passion",
-    "asa": {
-      "title": "ASA",
-      "name": "ASA - MENA Smart Administration",
-      "description": "Digital platform for administrative procedures in the MENA region.",
-      "badge": "New"
+  "clientsPartners": {
+    "badge": "Trusted Partners • MENA Region",
+    "title": "Our Clients",
+    "titleAccent": "& Partners",
+    "subtitle": "Trusted by leading companies and technology partners across the MENA region",
+    "tagline": "Building long-term partnerships for digital excellence in the MENA region",
+    "categories": {
+      "client": "Client",
+      "partner": "Technology Partner"
     },
-    "symtv": {
-      "title": "SymTV Light",
-      "name": "SymTV Light",
-      "description": "Smart ambient lighting solution for TV and Home Cinema."
+    "techcorp": {
+      "description": "Leading IT company in the MENA region, trusted partner since 2015"
     },
-    "ibtissama": {
-      "title": "El-Ibtissama Soft",
-      "name": "El-Ibtissama Soft",
-      "description": "Interactive AR projection game where children learn by moving and touching the ground."
+    "ecomdz": {
+      "description": "Premier e-commerce marketplace connecting thousands of sellers and buyers"
     },
-    "edusmart": {
-      "title": "EduSmart",
-      "description": "Intelligent educational platform for learning.",
-      "badge": "Coming Soon"
+    "deliverydz": {
+      "description": "Fastest growing delivery service with 500+ active drivers"
+    },
+    "aws": {
+      "description": "Official AWS Partner for cloud solutions and infrastructure"
+    },
+    "microsoft": {
+      "description": "Microsoft Certified Partner for enterprise solutions"
+    },
+    "google": {
+      "description": "Google Cloud Partner for scalable cloud services"
+    },
+    "stats": {
+      "clients": "Happy Clients",
+      "projects": "Completed Projects",
+      "satisfaction": "Satisfaction Rate",
+      "years": "Years of Excellence"
     }
   },
   "expertise": {

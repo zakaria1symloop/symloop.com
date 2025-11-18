@@ -2,12 +2,11 @@
   "navigation": {
     "home": "Accueil",
     "services": "Services",
-    "products": "Produits",
+    "clientsPartners": "Clients & Partenaires",
     "blog": "Blog",
     "learning": "Learning",
     "investors": "Investisseurs",
-    "recruitment": "Recrutement",
-    "ourProducts": "Nos Produits"
+    "recruitment": "Recrutement"
   },
   "contact": {
     "location": "Sétif, région MENA",
@@ -113,29 +112,39 @@
     "placeholder3": "Je cherche une solution d'hébergement...",
     "placeholder4": "Je veux développer un logiciel sur mesure..."
   },
-  "products": {
-    "title": "Nos Produits",
-    "subtitle": "Des solutions innovantes développées avec passion",
-    "asa": {
-      "title": "ASA",
-      "name": "ASA - MENA Smart Administration",
-      "description": "Plateforme de digitalisation des démarches administratives dans la région MENA.",
-      "badge": "Nouveau"
+  "clientsPartners": {
+    "badge": "Partenaires de Confiance • Région MENA",
+    "title": "Nos Clients",
+    "titleAccent": "& Partenaires",
+    "subtitle": "La confiance des entreprises leaders et partenaires technologiques de la région MENA",
+    "tagline": "Construire des partenariats durables pour l'excellence digitale dans la région MENA",
+    "categories": {
+      "client": "Client",
+      "partner": "Partenaire Technologique"
     },
-    "symtv": {
-      "title": "SymTV Light",
-      "name": "SymTV Light",
-      "description": "Solution d'éclairage ambiant intelligent pour TV et Home Cinema."
+    "techcorp": {
+      "description": "Entreprise IT leader dans la région MENA, partenaire de confiance depuis 2015"
     },
-    "ibtissama": {
-      "title": "El-Ibtissama Soft",
-      "name": "El-Ibtissama Soft",
-      "description": "Jeu interactif de projection AR où les enfants apprennent en bougeant et en touchant le sol."
+    "ecomdz": {
+      "description": "Place de marché e-commerce de premier plan connectant des milliers de vendeurs et acheteurs"
     },
-    "edusmart": {
-      "title": "EduSmart",
-      "description": "Plateforme éducative intelligente pour l'apprentissage.",
-      "badge": "Bientôt"
+    "deliverydz": {
+      "description": "Service de livraison à la croissance la plus rapide avec plus de 500 livreurs actifs"
+    },
+    "aws": {
+      "description": "Partenaire officiel AWS pour les solutions cloud et l'infrastructure"
+    },
+    "microsoft": {
+      "description": "Partenaire certifié Microsoft pour les solutions d'entreprise"
+    },
+    "google": {
+      "description": "Partenaire Google Cloud pour les services cloud évolutifs"
+    },
+    "stats": {
+      "clients": "Clients Satisfaits",
+      "projects": "Projets Réalisés",
+      "satisfaction": "Taux de Satisfaction",
+      "years": "Années d'Excellence"
     }
   },
   "expertise": {

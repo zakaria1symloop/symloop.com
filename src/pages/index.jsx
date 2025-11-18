@@ -6,7 +6,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ExpertiseSection from "../../src/components/home/ExpertiseSection";
 import SolutionsSection from "../../src/components/home/SolutionsSection";
 import TechnologySection from "../../src/components/home/TechnologySection";
-import ProductsSection from "../../src/components/home/ProductsSection";
+import ClientsPartnersSection from "../../src/components/home/ClientsPartnersSection";
 import HeroSection from "../../src/components/home/HeroSection";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
 import Seo from "../../src/utils/seo";
@@ -111,10 +111,10 @@ export default function Home() {
       
   <HeroSection />
 <Divider />
- 
+
 <CompanyContactSection />
 <Divider />
-<ProductsSection />
+<ClientsPartnersSection />
 <Divider />
       <ExpertiseSection />
       <Divider />
