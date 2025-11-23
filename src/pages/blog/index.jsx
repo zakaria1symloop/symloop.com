@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Calendar, Clock, User, Search, ChevronRight, BookOpen, TrendingUp, Code, Smartphone, Globe, Server, Star, Eye, Users, ArrowRight } from "lucide-react";
+import { Calendar, Clock, User, Search, ChevronRight, BookOpen, TrendingUp, Code, Smartphone, Globe, Server, Star, Eye, Users, ArrowRight, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
@@ -10,6 +10,20 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const blogPosts = [
   {
     id: 1,
+    title: "E-commerce Algérie : Guide Complet Paiement CIB & Edahabia 2025",
+    link: "/blog/ecommerce-cib-edahabia-algerie",
+    excerpt: "Guide complet pour créer votre boutique en ligne en Algérie avec paiement CIB et Edahabia. Intégration SATIM, contrat VAD, livraison 58 wilayas. Coûts et étapes détaillées.",
+    author: "Youssef Hamdi",
+    date: "2025-01-18",
+    readTime: "15 min",
+    category: "E-commerce",
+    tags: ["E-commerce", "CIB", "Edahabia", "SATIM", "Paiement"],
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    featured: true,
+    views: 3456
+  },
+  {
+    id: 2,
     title: "Combien Coûte Vraiment une App Mobile en Algérie ?",
     link: "/blog/app-cost-in-algeria",
     excerpt: "Prix réels, transparents et détaillés pour créer votre application mobile en Algérie. Grille tarifaire complète 2025, facteurs de coût, et conseils pour optimiser votre budget.",
@@ -23,9 +37,23 @@ const blogPosts = [
     views: 3421
   },
   {
-    id: 2,
+    id: 3,
+    title: "Guide SEO Algérie 2025 : Dominez Google.dz",
+    link: "/blog/seo-algerie",
+    excerpt: "Stratégies SEO exclusives pour tripler votre trafic et dominer la recherche locale algérienne. Mots-clés, Google My Business, backlinks locaux - tout pour la 1ère page.",
+    author: "Fatima Zenati",
+    date: "2025-01-15",
+    readTime: "12 min",
+    category: "SEO",
+    tags: ["SEO", "Google", "Référencement", "Marketing", "Algérie"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
+    featured: true,
+    views: 2892
+  },
+  {
+    id: 4,
     title: "Pourquoi Créer Votre App Mobile ? Les 5 Bénéfices Majeurs",
-    link: "/blog/pourquoi-creer-app-mobile",
+    link: "/blog/comment-creer-application-mobile",
     excerpt: "Découvrez les avantages transformateurs d'une application mobile pour votre business. Visibilité 24/7, engagement client, nouveaux revenus - Symloop vous explique tout.",
     author: "Ahmed Benaissa",
     date: "2025-01-15",
@@ -33,34 +61,19 @@ const blogPosts = [
     category: "Business",
     tags: ["Bénéfices", "Business", "Mobile", "ROI"],
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-    featured: true,
-    views: 2156
-  },
-  {
-    id: 3,
-    title: "Comment Créer une Application Mobile en Algérie : Guide Complet 2025",
-    link: "/blog/comment-creer-application-mobile",
-    excerpt: "Découvrez les étapes essentielles pour développer votre application mobile en Algérie. De l'idée au déploiement, notre guide complet vous accompagne dans votre projet digital.",
-    author: "Ahmed Benaissa",
-    date: "2025-01-10",
-    readTime: "8 min",
-    category: "Guide",
-    tags: ["Flutter", "React Native", "Algérie", "Mobile"],
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     featured: false,
-    views: 1245
+    views: 2156
   }
 ];
 
 // Blog categories function
 const getCategories = (t) => [
   { name: "Tous", translatedName: t('blog.categories.all'), count: blogPosts.length, icon: BookOpen },
-  { name: "Mobile", translatedName: t('blog.categories.mobile'), count: blogPosts.filter(p => p.category === "Mobile").length, icon: Smartphone },
-  { name: "Développement", translatedName: t('blog.categories.development'), count: blogPosts.filter(p => p.category === "Développement").length, icon: Code },
+  { name: "E-commerce", translatedName: t('blog.categories.ecommerce') || "E-commerce", count: blogPosts.filter(p => p.category === "E-commerce").length, icon: ShoppingCart },
   { name: "SEO", translatedName: t('blog.categories.seo'), count: blogPosts.filter(p => p.category === "SEO").length, icon: TrendingUp },
-  { name: "Intelligence Artificielle", translatedName: t('blog.categories.ai'), count: blogPosts.filter(p => p.category === "Intelligence Artificielle").length, icon: Server },
-  { name: "Sécurité", translatedName: t('blog.categories.security'), count: blogPosts.filter(p => p.category === "Sécurité").length, icon: Globe },
-  { name: "Cloud", translatedName: t('blog.categories.cloud'), count: blogPosts.filter(p => p.category === "Cloud").length, icon: Server }
+  { name: "Pricing", translatedName: t('blog.categories.pricing') || "Pricing", count: blogPosts.filter(p => p.category === "Pricing").length, icon: Code },
+  { name: "Business", translatedName: t('blog.categories.business') || "Business", count: blogPosts.filter(p => p.category === "Business").length, icon: Globe },
+  { name: "Mobile", translatedName: t('blog.categories.mobile'), count: blogPosts.filter(p => p.category === "Mobile").length, icon: Smartphone }
 ];
 
 export default function BlogIndexPage() {

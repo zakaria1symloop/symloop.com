@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ArrowRight, ArrowLeft, Building2, Briefcase, MessageSquare, Phone, Mail, Loader2 } from "lucide-react";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import apiService from "../../services/apiService";
+import { db } from "../../lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 export default function CompanyContactSection() {
   const { t } = useTranslation('common');
@@ -90,33 +91,32 @@ export default function CompanyContactSection() {
     setSubmitError("");
 
     try {
-      const contactData = {
-        company_name: formData.company.trim(),
+      // Save to Firebase Firestore
+      await addDoc(collection(db, "company_inquiries"), {
+        company: formData.company.trim(),
         sector: formData.sector.trim(),
-        need_description: formData.need.trim(),
+        need: formData.need.trim(),
         phone: formData.phone.trim(),
         email: formData.email.trim(),
-        contact_type: 'company_inquiry'
-      };
+        type: "company_inquiry",
+        source: "homepage",
+        locale: router.locale,
+        createdAt: serverTimestamp(),
+        status: "new"
+      });
 
-      const response = await apiService.submitCompanyContact(contactData);
-      
-      if (response.success) {
-        setSuccess(true);
-        setTimeout(() => {
-          setSuccess(false);
-          setStep(0);
-          setFormData({
-            company: "",
-            sector: "",
-            need: "",
-            phone: "",
-            email: "",
-          });
-        }, 3000);
-      } else {
-        setSubmitError(response.message || t('companyContact.errors.submitError'));
-      }
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+        setStep(0);
+        setFormData({
+          company: "",
+          sector: "",
+          need: "",
+          phone: "",
+          email: "",
+        });
+      }, 3000);
 
     } catch (error) {
       console.error('Contact submission error:', error);

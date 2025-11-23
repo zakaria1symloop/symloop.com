@@ -1,115 +1,34 @@
-# Symloop Technology MENA - Robots.txt
-# https://www.robotstxt.org/robotstxt.html
-# Leading IT Company in Algeria, Morocco, Tunisia, UAE, Saudi Arabia
-# Services: Flutter Development, IoT Solutions, AI/ML, Cybersecurity
+# Symloop Technology - Robots.txt
+# https://symloop.com
 
 User-agent: *
 Allow: /
-Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /cache/
-Disallow: /*.json$
-Disallow: /*_buildManifest.js$
-Disallow: /*_ssgManifest.js$
-Disallow: /404/
-Disallow: /500/
+Disallow: /404
+Disallow: /500
 
-# Allow search engines to crawl important MENA pages
+# Allow important pages
 Allow: /services/
-Allow: /products/
-Allow: /blog/
-Allow: /contact/
-Allow: /recrutement/
-Allow: /learning/
-Allow: /fr/
-Allow: /en/
-Allow: /ar/
-
-# Priority crawling for solution pages
 Allow: /solutions/
-Allow: /solutions/*
-Allow: /solutions/transformation-digitale-entreprise-algerie
-Allow: /solutions/marketing-digital-seo-algerie
-Allow: /solutions/solutions-reseau-infrastructure-it-algerie
-Allow: /solutions/consulting-technologique-strategie-digitale-algerie
-Allow: /solutions/cybersecurite-pme-protection-donnees-algerie
-Allow: /solutions/applications-mobiles-flutter-react-native-algerie
-Allow: /solutions/site-ecommerce-paiement-cib-edahabia-algerie
-Allow: /solutions/creation-site-web-professionnel-algerie
-
-# Priority crawling for location pages (NEW - High Priority for Local SEO)
+Allow: /blog/
 Allow: /locations/
-Allow: /locations/*
-Allow: /locations/alger
-Allow: /locations/oran
-Allow: /locations/constantine
-Allow: /locations/setif
-Allow: /locations/annaba
-Allow: /locations/blida
-Allow: /locations/batna
-Allow: /locations/djelfa
-Allow: /locations/tlemcen
-Allow: /locations/bejaia
+Allow: /products/
+Allow: /learning/
+Allow: /recrutement/
+Allow: /mena/
 
-# Special rules for Google (preferred for MENA region)
+# Google
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0.5
-Request-rate: 1/2s
 
-# Special rules for Bing (good coverage in MENA)
+# Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
-Request-rate: 1/3s
 
-# Yandex (some presence in MENA)
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 2
-
-# Special rules for regional search engines
-User-agent: BaiduSpider
-Disallow: /
-
-User-agent: Sogou
-Disallow: /
-
-# Block aggressive crawlers and bad bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: MegaIndex
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: spbot
-Disallow: /
-
-User-agent: LinkpadBot
-Disallow: /
-
-User-agent: ZoomBot
-Disallow: /
-
-User-agent: SiteAuditBot
-Disallow: /
-
-# Social media crawlers (allow for better social sharing)
+# Social media crawlers
 User-agent: facebookexternalhit
 Allow: /
 
@@ -119,22 +38,8 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-User-agent: WhatsApp
-Allow: /
-
-# Sitemap locations (multiple for better indexing)
-# Enhanced for Algeria and MENA Region SEO
-Sitemap: https://symloop.com/sitemap-enhanced.xml
+# Sitemap
 Sitemap: https://symloop.com/sitemap.xml
-Sitemap: https://symloop.com/sitemap-locations.xml
-Sitemap: https://symloop.com/sitemap-solutions.xml
-Sitemap: https://symloop.com/sitemap-blog.xml
-Sitemap: https://symloop.com/sitemap-index.xml
 
-# Host directive (canonical domain)
+# Host
 Host: https://symloop.com
-
-# Cache directive for better performance
-# Recommended crawl times for optimal server performance
-# Peak hours: Avoid 9-11 AM GMT+1 (Algerian business hours)
-# Preferred crawl times: 2-6 AM GMT+1 (low server load)

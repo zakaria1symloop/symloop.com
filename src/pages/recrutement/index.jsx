@@ -6,7 +6,8 @@ import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import apiService from "../../services/apiService";
+import { db } from "../../lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 const jobs = [
   {
@@ -68,28 +69,30 @@ export default function RecrutementPage() {
     }
 
     setIsSubmitting(true);
-    
+
     try {
-      const applicationData = {
+      // Save application info to Firebase
+      await addDoc(collection(db, "job_applications"), {
         name: formData.name.trim(),
         email: formData.email.trim(),
         jobTitle: selectedJob.title,
-        cv: formData.cv
-      };
+        jobSalary: selectedJob.salary,
+        cvFileName: formData.cv?.name || null,
+        cvFileSize: formData.cv?.size || null,
+        type: "job_application",
+        source: "recrutement_page",
+        locale: router.locale,
+        createdAt: serverTimestamp(),
+        status: "new"
+      });
 
-      const response = await apiService.submitApplication(applicationData);
-      
-      if (response.success) {
-        setSubmitSuccess(true);
-        // Reset form after 2 seconds
-        setTimeout(() => {
-          setSelectedJob(null);
-          setFormData({ name: "", email: "", cv: null });
-          setSubmitSuccess(false);
-        }, 2000);
-      } else {
-        setSubmitError(response.message || t('recruitment.application.errors.genericError'));
-      }
+      setSubmitSuccess(true);
+      // Reset form after 2 seconds
+      setTimeout(() => {
+        setSelectedJob(null);
+        setFormData({ name: "", email: "", cv: null });
+        setSubmitSuccess(false);
+      }, 2000);
       
     } catch (error) {
       console.error('Submission error:', error);

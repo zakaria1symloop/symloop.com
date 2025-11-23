@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import apiService from "../../services/apiService";
+import { db } from "../../lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 export default function LearningPage() {
   const { t } = useTranslation('common');
@@ -189,30 +190,30 @@ export default function LearningPage() {
     setIsSubmitting(true);
 
     try {
-      const enrollmentData = {
-        full_name: formData.fullName.trim(),
+      // Save to Firebase Firestore
+      await addDoc(collection(db, "enrollments"), {
+        fullName: formData.fullName.trim(),
         email: formData.email.trim(),
         phone: formData.phone.trim(),
         city: formData.city,
-        course_id: formData.courseId,
-        course_title: selectedCourse.title,
+        courseId: formData.courseId,
+        courseTitle: selectedCourse.title,
         experience: formData.experience || null,
         motivation: formData.motivation.trim() || null,
-        is_paid_course: selectedCourse.isPaid,
-        course_price: selectedCourse.price
-      };
+        isPaidCourse: selectedCourse.isPaid,
+        coursePrice: selectedCourse.price,
+        type: "course_enrollment",
+        source: "learning_page",
+        locale: router.locale,
+        createdAt: serverTimestamp(),
+        status: "new"
+      });
 
-      const response = await apiService.submitEnrollment(enrollmentData);
-
-      if (response.success) {
-        setSubmitSuccess(true);
-        // Reset form after 3 seconds
-        setTimeout(() => {
-          resetForm();
-        }, 3000);
-      } else {
-        setSubmitError(response.message || t('learning.enrollment.errors.genericError'));
-      }
+      setSubmitSuccess(true);
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        resetForm();
+      }, 3000);
 
     } catch (error) {
       console.error('Enrollment error:', error);

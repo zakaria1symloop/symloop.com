@@ -212,12 +212,12 @@
     "ecommerce": {
       "title": "E-commerce Sites CIB Edahabia",
       "subtitle": "Integrated Local Payment",
-      "punchline": "Optimized online stores with local payment solutions for the MENA market."
+      "punchline": "Online stores with CIB/Edahabia integration, 58 wilayas delivery, real-time inventory and order management."
     },
     "erp": {
       "title": "Custom ERP/CRM Software",
       "subtitle": "Business Management",
-      "punchline": "Personalized ERP and CRM solutions to optimize your MENA business management."
+      "punchline": "Complete ERP with inventory management, Algerian accounting, HR payroll and sales/purchase automation for your business."
     },
     "ai": {
       "title": "Artificial Intelligence & Voice AI",
@@ -263,16 +263,6 @@
       "title": "Tech Consulting & Strategy",
       "subtitle": "Technical Expertise",
       "punchline": "Technological consulting and digital strategy for innovative MENA businesses."
-    },
-    "erp": {
-      "title": "Custom ERP",
-      "description": "Integrated business management system adapted to MENA needs",
-      "features": ["Inventory Management", "DZ Accounting", "Payroll & HR", "Sales & Purchases"]
-    },
-    "ecommerce": {
-      "title": "E-commerce MENA",
-      "description": "Online stores with integrated CIB/Edahabia payment",
-      "features": ["Local Payment", "58 Wilayas Delivery", "Multi-Currency", "Mobile-First"]
     },
     "healthcare": {
       "title": "Digital Healthcare",

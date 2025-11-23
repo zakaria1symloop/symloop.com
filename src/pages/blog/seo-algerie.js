@@ -1,9 +1,47 @@
 "use client";
 import { Calendar, Clock, User, Tag, Share2, ChevronLeft, Eye, Heart, Bookmark, ArrowRight, TrendingUp, Award, Target, BarChart, Zap, Globe, Search, CheckCircle, Star } from "lucide-react";
 import Link from "next/link";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Seo from "../../utils/seo";
+import FAQSchema from "../../components/seo/FAQSchema";
+
+// FAQ data for SEO rich snippets
+const seoFAQs = [
+  {
+    question: "Comment améliorer le référencement de mon site en Algérie ?",
+    answer: "Pour améliorer votre SEO en Algérie, optimisez vos mots-clés locaux (ville + service), créez du contenu en français et arabe, inscrivez-vous sur Google My Business, obtenez des backlinks de sites algériens, et assurez-vous que votre site est mobile-friendly."
+  },
+  {
+    question: "Combien coûte le référencement SEO en Algérie ?",
+    answer: "Le SEO en Algérie coûte entre 30,000 DA et 150,000 DA par mois selon la concurrence et les objectifs. Un audit SEO initial coûte 50,000-100,000 DA. Symloop propose des packages adaptés aux PME algériennes avec suivi mensuel des résultats."
+  },
+  {
+    question: "Quels sont les meilleurs mots-clés pour le SEO en Algérie ?",
+    answer: "Les meilleurs mots-clés combinent votre service + localité (ex: 'développeur web alger', 'agence marketing oran'). Utilisez des outils comme Google Keyword Planner pour identifier les termes recherchés par votre audience algérienne."
+  },
+  {
+    question: "Combien de temps pour voir les résultats SEO ?",
+    answer: "Les premiers résultats SEO apparaissent en 3-6 mois pour les mots-clés peu concurrentiels. Pour des termes compétitifs en Algérie, comptez 6-12 mois. Un travail régulier sur le contenu et les backlinks accélère les résultats."
+  },
+  {
+    question: "Le SEO local est-il important en Algérie ?",
+    answer: "Le SEO local est crucial en Algérie car 46% des recherches Google ont une intention locale. Optimiser pour 'votre service + ville' (Alger, Oran, Constantine) vous permet d'atteindre des clients prêts à acheter dans votre zone."
+  }
+];
 
 export default function EnhancedSEOBlogPost() {
   return (
+    <>
+      <Seo
+        title="Guide SEO Algérie 2025 | Référencement Google pour Entreprises Algériennes"
+        description="Guide complet pour améliorer votre référencement en Algérie. Stratégies SEO locales, mots-clés algériens, Google My Business, backlinks locaux. Atteignez la 1ère page Google avec Symloop."
+        keywords="SEO Algérie, référencement Algérie, Google Algérie, marketing digital Algérie, agence SEO Alger, référencement naturel Algérie, optimisation Google Algérie, consultant SEO Algérie, mots-clés Algérie, backlinks Algérie"
+        type="article"
+        publishedTime="2025-01-15"
+        articleTags={["SEO", "référencement", "Algérie", "marketing digital", "Google"]}
+      />
+      <FAQSchema faqs={seoFAQs} />
+
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Back Navigation */}
       <div className="bg-gradient-to-b from-gray-900 to-black border-b border-gray-800">
@@ -694,5 +732,14 @@ export default function EnhancedSEOBlogPost() {
         </button>
       </div>
     </div>
+    </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || 'fr', ['common'])),
+    },
+  };
 }

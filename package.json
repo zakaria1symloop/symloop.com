@@ -9,7 +9,7 @@
     "@react-three/fiber": "^8.17.14",
     "@tsparticles/react": "^3.0.0",
     "cra-template": "1.2.0",
-    "firebase": "^11.9.1",
+    "firebase": "^11.10.0",
     "framer-motion": "^12.9.2",
     "i18next": "^25.3.4",
     "lucide-react": "^0.503.0",

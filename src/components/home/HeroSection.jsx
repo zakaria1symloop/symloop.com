@@ -37,7 +37,6 @@ import {
   Palette,
   Box
 } from "lucide-react";
-import apiService from '../../services/apiService';
 
 // --- Placeholder Typing Hook with SEO-focused placeholders ---
 function useTypingPlaceholder() {
@@ -507,26 +506,8 @@ Ou continuez la discussion ici ! 💬`;
   };
 
   const sendToChatGPT = async (userMessage) => {
-    try {
-      const apiMessages = messages
-        .filter(m => m.type !== 'quick-replies')
-        .map(m => ({
-          role: m.type === 'user' ? 'user' : 'assistant',
-          content: m.content
-        }));
-
-      apiMessages.push({ role: 'user', content: userMessage });
-      const response = await apiService.sendChatMessage(apiMessages, sessionId);
-
-      if (response.success) {
-        return response.message;
-      } else {
-        return getFallbackResponse(userMessage);
-      }
-    } catch (error) {
-      console.error('ChatGPT Error:', error);
-      return getFallbackResponse(userMessage);
-    }
+    // Use fallback responses for chat
+    return getFallbackResponse(userMessage);
   };
 
   const handleSendMessage = useCallback(async (messageText = inputMessage) => {
@@ -555,8 +536,6 @@ Ou continuez la discussion ici ! 💬`;
 
     setMessages(prev => [...prev, botMessage]);
     setIsTyping(false);
-
-    apiService.logChatInteraction(sessionId, messageText, botResponse);
 
     // Enhanced quick replies based on context
     setTimeout(() => {
@@ -687,8 +666,6 @@ Ou continuez la discussion ici ! 💬`;
 
             setMessages(prev => [...prev, botMessage]);
             setIsTyping(false);
-
-            apiService.logChatInteraction(sessionId, initialMessage, botResponse);
           };
           
           sendInitialMessage();
@@ -1054,7 +1031,6 @@ export default function HeroSection() {
   const { t } = useTranslation('common');
   const router = useRouter();
   const [input, setInput] = useState("");
-  const [chatModalOpen, setChatModalOpen] = useState(false);
   const [contactModalOpen, setContactModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -1442,115 +1418,13 @@ export default function HeroSection() {
         </motion.div>
       </section>
 
-      {/* Background Blur Overlay */}
-      {chatModalOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/20 backdrop-blur-md z-40"
-          onClick={() => {
-            setChatModalOpen(false);
-            setInput("");
-          }}
-        />
-      )}
-
-      {/* Enhanced ChatBot Modal */}
-      <ChatBotModal 
-        isOpen={chatModalOpen}
-        onClose={() => {
-          setChatModalOpen(false);
-          setInput("");
-        }}
-        initialMessage={input}
-        isRTL={isRTL}
-        router={router}
-      />
-
       {/* Contact Modal for Free Consultation */}
-      <ContactModal 
+      <ContactModal
         isOpen={contactModalOpen}
         onClose={() => setContactModalOpen(false)}
         isRTL={isRTL}
         router={router}
       />
-
-      {/* Enhanced Floating Chat Button */}
-      {!chatModalOpen && (
-        <motion.div className="fixed bottom-6 right-6 z-50 group">
-          <motion.button
-            initial={{ scale: 0, rotate: -180 }}
-            animate={{ scale: 1, rotate: 0 }}
-            transition={{ delay: 2, type: "spring", stiffness: 260, damping: 20 }}
-            onClick={() => setChatModalOpen(true)}
-            className="relative w-16 h-16 bg-black text-white rounded-full shadow-2xl hover:shadow-gray-500/30 transform hover:scale-110 transition-all duration-300 flex items-center justify-center overflow-hidden"
-            aria-label="Ouvrir l'assistant virtuel Symloop - Expert IT Algérie"
-          >
-            {/* Animated background layers */}
-            <div className="absolute inset-0 bg-gray-800 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="absolute inset-0 rounded-full bg-gray-600 animate-ping opacity-20" />
-            <div className="absolute inset-0 rounded-full bg-gray-400/20 animate-pulse" />
-            
-            {/* Icon with hover effect */}
-            <Bot className="w-7 h-7 relative z-10 group-hover:scale-110 transition-transform" />
-            
-            {/* Status indicators */}
-            <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white animate-pulse" />
-            <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-yellow-400 rounded-full border-2 border-white animate-bounce" />
-            
-            {/* Enhanced tooltip */}
-            <div className="absolute bottom-full right-0 mb-3 px-4 py-3 bg-black/90 backdrop-blur-sm text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap shadow-2xl min-w-[200px]">
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 font-medium">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span>Assistant IA Symloop 🇩🇿</span>
-                </div>
-                <div className="text-xs text-gray-300">
-                  Expert IT • Réponse &lt; 30sec
-                </div>
-                <div className="text-xs text-blue-300">
-                  💬 500+ projets • 12+ ans expérience
-                </div>
-              </div>
-              <div className="absolute top-full right-4 w-2 h-2 bg-black/90 rotate-45 transform -translate-y-1" />
-            </div>
-          </motion.button>
-          
-          {/* Welcome message popup - shows on hover */}
-          <motion.div
-            initial={{ opacity: 0, x: 20, scale: 0.8 }}
-            animate={{ opacity: 0, x: 20, scale: 0.8 }}
-            whileHover={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.3 }}
-            className="absolute bottom-20 right-0 max-w-56 z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            <motion.div 
-              className="bg-white text-gray-800 p-3 rounded-xl rounded-br-none shadow-xl border border-gray-200"
-              whileHover={{ scale: 1.02 }}
-            >
-              <div className="flex items-start gap-2">
-                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-                  <Bot className="w-3 h-3 text-white" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-xs font-medium mb-1">
-                    {router.locale === 'en' ? '👋 Need IT help?' : isRTL ? '👋 تحتاج مساعدة تقنية؟' : '👋 Besoin d\'aide IT ?'}
-                  </p>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    {router.locale === 'en' ? 'Free quote within 24h' : isRTL ? 'عرض أسعار مجاني خلال 24 ساعة' : 'Devis gratuit sous 24h'}
-                  </p>
-                  <div className="flex items-center gap-1 mt-1 text-xs text-green-600">
-                    <div className="w-1 h-1 bg-green-500 rounded-full animate-pulse" />
-                    <span>{router.locale === 'en' ? 'Online' : isRTL ? 'متصل' : 'En ligne'}</span>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-full right-0 w-3 h-3 bg-white border-r border-b border-gray-200 transform rotate-45 translate-y-[-50%]" />
-            </motion.div>
-          </motion.div>
-        </motion.div>
-      )}
     </>
   );
 }

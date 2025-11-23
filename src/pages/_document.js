@@ -51,15 +51,7 @@ export default function Document(props) {
         <meta name="geo.placename" content="Sétif, région MENA" />
         <meta name="ICBM" content="36.1919, 5.4138" />
 
-        {/*
-          TODO: Replace with your actual Google Search Console verification code
-          To get this code:
-          1. Go to https://search.google.com/search-console
-          2. Add your property (https://symloop.com)
-          3. Choose "HTML tag" verification method
-          4. Copy the content value from the meta tag provided
-        */}
-        <meta name="google-site-verification" content="your-google-verification-code" />
+        {/* Google Search Console - Verified via DNS/other method */}
         
         {/* MENA-specific Business Schema */}
         <script
@@ -139,6 +131,150 @@ export default function Document(props) {
                 "maxValue": 200000000,
                 "unitCode": "DZD"
               }
+            })
+          }}
+        />
+
+        {/* WebSite Schema for Search Box */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Symloop Technology",
+              "alternateName": "Symloop MENA",
+              "url": "https://symloop.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://symloop.com/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              },
+              "inLanguage": ["fr", "en", "ar"]
+            })
+          }}
+        />
+
+        {/* LocalBusiness Schema for Local SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://symloop.com/#localbusiness",
+              "name": "Symloop Technology",
+              "image": "https://symloop.com/sym-logo.png",
+              "telephone": "+213549575512",
+              "email": "contact@symloop.com",
+              "url": "https://symloop.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Sétif",
+                "addressLocality": "Sétif",
+                "addressRegion": "Sétif",
+                "postalCode": "19000",
+                "addressCountry": "DZ"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 36.1919,
+                "longitude": 5.4138
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ],
+              "priceRange": "$$",
+              "currenciesAccepted": "DZD, EUR, USD",
+              "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "IT Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Développement Applications Mobiles",
+                      "description": "Applications iOS et Android avec Flutter et React Native"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Création Sites Web",
+                      "description": "Sites web professionnels et e-commerce avec paiement CIB/Edahabia"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Solutions ERP/CRM",
+                      "description": "Logiciels de gestion personnalisés pour entreprises"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Intelligence Artificielle",
+                      "description": "Chatbots, assistants vocaux et solutions IA"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cybersécurité",
+                      "description": "Protection des données et sécurité informatique"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cloud & Infrastructure",
+                      "description": "Solutions cloud et infrastructure serveurs"
+                    }
+                  }
+                ]
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Alger"
+                },
+                {
+                  "@type": "City",
+                  "name": "Oran"
+                },
+                {
+                  "@type": "City",
+                  "name": "Constantine"
+                },
+                {
+                  "@type": "City",
+                  "name": "Sétif"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Algeria"
+                },
+                {
+                  "@type": "Place",
+                  "name": "MENA Region"
+                }
+              ]
             })
           }}
         />

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import solutionsData from "../../utils/solutionsData";
@@ -6,11 +7,21 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { ArrowLeft, CheckCircle2, Phone, Mail, Star, Clock, Zap, Shield, Users, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import ContactModal from "../../components/ContactModal";
 
 export default function SolutionPage() {
   const router = useRouter();
   const { slug } = router.query;
   const { t } = useTranslation('common');
+
+  // Modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalType, setModalType] = useState("devis");
+
+  const openModal = (type) => {
+    setModalType(type);
+    setIsModalOpen(true);
+  };
 
   if (!slug) {
     return (
@@ -322,20 +333,20 @@ export default function SolutionPage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-              <a
-                href={`tel:${t('contact.phone')}`}
+              <button
+                onClick={() => openModal("consultation")}
                 className="inline-flex items-center gap-2 bg-white text-black font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:scale-105"
               >
                 <Phone className="w-5 h-5" />
                 {locale === 'en' ? 'Free Consultation' : locale === 'ar' ? 'استشارة مجانية' : 'Consultation Gratuite'}
-              </a>
-              <a
-                href={`mailto:${t('contact.email')}`}
+              </button>
+              <button
+                onClick={() => openModal("devis")}
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-medium px-8 py-4 rounded-lg border border-white/20 transition-all duration-300 hover:bg-white/20"
               >
                 <Mail className="w-5 h-5" />
                 {locale === 'en' ? 'Request a quote' : locale === 'ar' ? 'طلب عرض أسعار' : 'Demander un devis'}
-              </a>
+              </button>
             </div>
           </motion.div>
         </div>
@@ -449,14 +460,14 @@ export default function SolutionPage() {
         )}
 
         {/* Pricing */}
-        {content?.pricing && (
+        {content?.pricing && content.pricing.packages && (
           <div className="max-w-7xl mx-auto px-6 py-20">
             <h2 className="text-3xl font-bold text-center mb-4">{content.sectionTitles?.pricing || "Tarifs Transparents"}</h2>
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               {content.sectionTitles?.pricingSubtitle || "Choisissez le package qui correspond à vos besoins et votre budget"}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              {content.pricing.packages.map((pkg, i) => (
+              {(content.pricing.packages || []).map((pkg, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -608,20 +619,20 @@ export default function SolutionPage() {
               {content?.cta?.subtitle || "Contactez-nous pour une consultation gratuite et un devis personnalisé"}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href={`tel:${t('contact.phone')}`}
+              <button
+                onClick={() => openModal("consultation")}
                 className="inline-flex items-center gap-2 bg-white text-black font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-100"
               >
                 <Phone className="w-5 h-5" />
-                +213 549 57 55 12
-              </a>
-              <a
-                href={`mailto:${t('contact.email')}`}
+                {locale === 'en' ? 'Free Consultation' : locale === 'ar' ? 'استشارة مجانية' : 'Consultation Gratuite'}
+              </button>
+              <button
+                onClick={() => openModal("devis")}
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-medium px-8 py-4 rounded-lg border border-white/20 transition-all duration-300 hover:bg-white/20"
               >
                 <Mail className="w-5 h-5" />
-                contact@symloop.com
-              </a>
+                {locale === 'en' ? 'Request a quote' : locale === 'ar' ? 'طلب عرض أسعار' : 'Demander un devis'}
+              </button>
             </div>
           </motion.div>
         </div>
@@ -633,6 +644,14 @@ export default function SolutionPage() {
           </div>
         </div>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        service={title}
+        type={modalType}
+      />
     </>
   );
 }

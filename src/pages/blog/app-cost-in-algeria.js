@@ -1,9 +1,47 @@
 "use client";
 import { Calendar, Clock, User, Tag, Share2, ChevronLeft, Eye, Heart, Bookmark, ArrowRight, Smartphone, Code, Zap, Target, DollarSign, Award, CheckCircle, Star, TrendingUp, Rocket, Shield, Users, Calculator, AlertTriangle, FileText, BarChart3 } from "lucide-react";
 import Link from "next/link";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Seo from "../../utils/seo";
+import FAQSchema from "../../components/seo/FAQSchema";
+
+// FAQ data for rich snippets
+const blogFAQs = [
+  {
+    question: "Combien coûte une application mobile simple en Algérie ?",
+    answer: "Une application mobile simple en Algérie coûte entre 180,000 DA et 700,000 DA. Cela inclut les fonctionnalités de base comme l'authentification, les notifications, et une interface utilisateur simple. Le délai de développement est de 4-8 semaines."
+  },
+  {
+    question: "Quel est le prix d'une application e-commerce en Algérie ?",
+    answer: "Une application e-commerce complète en Algérie coûte entre 700,000 DA et 2,000,000 DA. Ce prix inclut l'intégration des paiements CIB/Edahabia, la gestion des stocks, les notifications de commandes, et la livraison dans les 58 wilayas."
+  },
+  {
+    question: "Flutter ou React Native : lequel choisir pour mon app ?",
+    answer: "Flutter est recommandé pour les apps avec des animations complexes et un design personnalisé (180k-2M DA). React Native est idéal si vous avez déjà une équipe JavaScript (200k-2.2M DA). Les deux permettent de développer pour iOS et Android avec un seul code."
+  },
+  {
+    question: "Combien de temps faut-il pour développer une application mobile ?",
+    answer: "Le délai varie selon la complexité : App simple 4-8 semaines, App business 8-16 semaines, App enterprise 16-24 semaines. Symloop utilise une méthodologie agile avec livraisons hebdomadaires pour une visibilité totale sur l'avancement."
+  },
+  {
+    question: "Quels sont les coûts cachés du développement d'application ?",
+    answer: "Les coûts souvent oubliés incluent : compte développeur Apple (99$/an) et Google (25$ one-time), hébergement serveur (5,000-50,000 DA/mois), maintenance (10-20% du coût initial/an), et mises à jour pour nouvelles versions iOS/Android."
+  }
+];
 
 export default function AppCostAlgeriaBlog() {
   return (
+    <>
+      <Seo
+        title="Combien Coûte une Application Mobile en Algérie 2025 | Guide Prix Complet"
+        description="Prix réels et transparents pour créer une application mobile en Algérie. App simple 180K-700K DA, App business 700K-2M DA, App enterprise 2M-8M DA. Guide complet avec calculateur de prix et comparatif Flutter vs React Native."
+        keywords="prix application mobile algérie, cout développement app algérie, combien coute une app algérie, développeur flutter algérie prix, react native algérie tarif, création application mobile algérie 2025, devis application mobile algérie, agence développement mobile alger oran constantine"
+        type="article"
+        publishedTime="2025-01-20"
+        articleTags={["développement mobile", "prix application", "Algérie", "Flutter", "React Native"]}
+      />
+      <FAQSchema faqs={blogFAQs} />
+
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Back Navigation */}
       <div className="bg-gradient-to-b from-gray-900 to-black border-b border-gray-800">
@@ -585,7 +623,16 @@ export default function AppCostAlgeriaBlog() {
         </div>
       </section>
 
-     
+
     </div>
+    </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || 'fr', ['common'])),
+    },
+  };
 }
