@@ -9,7 +9,7 @@ import ExpertiseSection from "../../src/components/home/ExpertiseSection";
 import SolutionsSection from "../../src/components/home/SolutionsSection";
 import TechnologySection from "../../src/components/home/TechnologySection";
 import ClientsPartnersSection from "../../src/components/home/ClientsPartnersSection";
-import HeroSection from "../../src/components/home/HeroSection";
+import AIHeroSection from "../../src/components/home/AIHeroSection";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
 import AIOnboarding from "../../src/components/onboarding/AIOnboarding";
 import Seo from "../../src/utils/seo";
@@ -172,19 +172,19 @@ export default function Home() {
 
   const seoContent = {
     'fr': {
-      title: 'Symloop Technology MENA - Leader IT MENA | Développeur Flutter, IoT, IA | Solutions Digitales MENA',
-      description: 'Entreprise IT leader MENA depuis 2012. Développeur Flutter expert, solutions IoT ESP32, intelligence artificielle ChatGPT, cybersécurité PME. Service région MENA incluant Maroc, Tunisie, EAU, Arabie Saoudite. Développement logiciel sur mesure, applications mobiles React Native, sites e-commerce, ERP CRM personnalisés. Support 24/7 région MENA.',
-      keywords: 'développement logiciel MENA, entreprise informatique MENA, création site web MENA, application mobile Flutter MENA, solutions IoT MENA, intelligence artificielle entreprise MENA, cybersécurité PME MENA, développeur Flutter Dubai Riyadh, ERP sur mesure MENA, transformation digitale Moyen-Orient Afrique du Nord'
+      title: 'Symloop Technology | #1 Intelligence Artificielle Algérie | IA, Chatbot, Machine Learning',
+      description: 'Leader de l\'intelligence artificielle en Algérie. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur. Développement applications mobiles Flutter, sites e-commerce CIB/Edahabia. Expert IA Alger, Oran, Constantine, Sétif. +12 ans d\'expérience, +50 projets IA.',
+      keywords: 'intelligence artificielle algérie, IA algérie, AI algeria, machine learning algérie, deep learning algérie, chatbot algérie, assistant virtuel algérie, GPT algérie, ChatGPT algérie, NLP algérie, vision par ordinateur algérie, reconnaissance vocale algérie, analyse prédictive algérie, big data algérie, data science algérie, automatisation IA algérie, entreprise IA algérie, développeur IA algérie, expert IA algérie, consultant IA algérie, développement application mobile algérie, site e-commerce algérie, paiement CIB Edahabia'
     },
     'en': {
-      title: 'Symloop Technology MENA - Leading IT Company MENA | Flutter Developer, IoT, AI | MENA Digital Solutions',
-      description: 'Leading MENA IT company since 2012. Expert Flutter developer, ESP32 IoT solutions, ChatGPT artificial intelligence, SME cybersecurity. Serving MENA region including Morocco, Tunisia, UAE, Saudi Arabia. Custom software development, React Native mobile apps, e-commerce websites, custom ERP CRM systems. 24/7 MENA region support.',
-      keywords: 'software development MENA, IT company MENA Morocco Tunisia UAE Saudi Arabia, mobile app development MENA region, IoT solutions Middle East, artificial intelligence enterprise MENA, cybersecurity SME MENA Morocco UAE, Flutter developer MENA UAE Dubai Saudi, custom ERP systems MENA, digital transformation Middle East North Africa'
+      title: 'Symloop Technology | #1 Artificial Intelligence Algeria | AI, Chatbot, Machine Learning',
+      description: 'Leading artificial intelligence company in Algeria. Custom AI solutions: chatbots, Arabic voice assistants, machine learning, deep learning, computer vision. Flutter mobile app development, e-commerce with CIB/Edahabia payment. AI expert in Algiers, Oran, Constantine, Setif. +12 years experience, +50 AI projects.',
+      keywords: 'artificial intelligence algeria, AI algeria, machine learning algeria, deep learning algeria, chatbot algeria, virtual assistant algeria, GPT algeria, ChatGPT algeria, NLP algeria, computer vision algeria, speech recognition algeria, predictive analytics algeria, big data algeria, data science algeria, AI automation algeria, AI company algeria, AI developer algeria, AI expert algeria, mobile app development algeria, e-commerce algeria, CIB Edahabia payment'
     },
     'ar': {
-      title: 'شركة سيملوب للتكنولوجيا منطقة مينا - شركة تقنية رائدة في منطقة مينا | مطور فلاتر، إنترنت الأشياء، الذكاء الاصطناعي',
-      description: 'شركة تكنولوجيا المعلومات الرائدة في منطقة الشرق الأوسط وشمال أفريقيا منذ 2012. مطور فلاتر خبير، حلول إنترنت الأشياء ESP32، الذكاء الاصطناعي ChatGPT، الأمن السيبراني للشركات الصغيرة والمتوسطة. نخدم منطقة مينا: المغرب، تونس، الإمارات، السعودية. تطوير البرمجيات المخصصة، تطبيقات الهاتف المحمول React Native، مواقع التجارة الإلكترونية، أنظمة ERP CRM مخصصة. دعم 24/7 في منطقة مينا.',
-      keywords: 'تطوير البرمجيات منطقة الشرق الأوسط وشمال أفريقيا, شركة تكنولوجيا المعلومات مينا المغرب تونس الإمارات, تطوير تطبيقات الهاتف المحمول منطقة مينا, حلول إنترنت الأشياء الشرق الأوسط, الذكاء الاصطناعي للشركات مينا, مطور فلاتر مينا دبي الرياض, أنظمة إدارة الموارد المخصصة مينا'
+      title: 'سيملوب تكنولوجي | #1 الذكاء الاصطناعي الجزائر | شات بوت، تعلم الآلة',
+      description: 'الشركة الرائدة في الذكاء الاصطناعي في الجزائر. حلول ذكاء اصطناعي مخصصة: روبوتات الدردشة، المساعدين الصوتيين بالعربية، تعلم الآلة، التعلم العميق، الرؤية الحاسوبية. تطوير تطبيقات الجوال Flutter، مواقع التجارة الإلكترونية مع الدفع CIB/Edahabia. خبراء الذكاء الاصطناعي في الجزائر العاصمة، وهران، قسنطينة، سطيف. +12 سنة خبرة، +50 مشروع ذكاء اصطناعي.',
+      keywords: 'الذكاء الاصطناعي الجزائر, ذكاء اصطناعي الجزائر, تعلم الآلة الجزائر, التعلم العميق الجزائر, شات بوت الجزائر, روبوت دردشة الجزائر, مساعد افتراضي الجزائر, GPT الجزائر, ChatGPT الجزائر, معالجة اللغة الطبيعية الجزائر, الرؤية الحاسوبية الجزائر, التعرف على الصوت الجزائر, تحليل تنبؤي الجزائر, علم البيانات الجزائر, شركة ذكاء اصطناعي الجزائر, خبير ذكاء اصطناعي الجزائر, تطوير تطبيقات الجوال الجزائر'
     }
   };
 
@@ -216,9 +216,9 @@ export default function Home() {
       />
       <FAQSchema faqs={getHomepageFAQs(router.locale || 'fr')} />
       <div className="min-h-screen flex flex-col">
-        {/* Hero Section */}
-      
-  <HeroSection />
+        {/* AI Hero Section - Showcasing AI Leadership in Algeria */}
+
+  <AIHeroSection />
 <Divider />
 
 <CompanyContactSection />

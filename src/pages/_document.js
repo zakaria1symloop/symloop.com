@@ -61,12 +61,12 @@ export default function Document(props) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "@id": "https://symloop.com",
-              "name": "Symloop Technology MENA",
-              "alternateName": ["Symloop", "Symloop MENA", "Symloop Tech MENA"],
+              "name": "Symloop Technology - Intelligence Artificielle Algérie",
+              "alternateName": ["Symloop", "Symloop IA Algérie", "Symloop AI Algeria", "IA Algérie", "Intelligence Artificielle Algérie"],
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
-              "description": "Entreprise IT leader dans la région MENA depuis 2012. Solutions complètes: développement logiciel, applications mobiles, infrastructure réseau, cloud computing. Service régional MENA avec support 24/7.",
+              "description": "Leader de l'intelligence artificielle en Algérie depuis 2012. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur, NLP. Développement applications mobiles, sites e-commerce avec paiement CIB/Edahabia. Expert IA Alger, Oran, Constantine, Sétif.",
               "foundingDate": "2012",
               "telephone": "+213549575512",
               "email": "contact@symloop.com",
@@ -197,8 +197,40 @@ export default function Document(props) {
               "paymentAccepted": "Cash, Credit Card, Bank Transfer",
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "IT Services",
+                "name": "Services Intelligence Artificielle & IT",
                 "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Intelligence Artificielle Algérie",
+                      "description": "Solutions IA sur mesure: chatbots, machine learning, deep learning, NLP, vision par ordinateur"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Chatbot & Assistant Virtuel",
+                      "description": "Chatbots intelligents en arabe algérien et français. Intégration WhatsApp, Facebook, site web"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Machine Learning & Deep Learning",
+                      "description": "Analyse prédictive, reconnaissance d'images, traitement du langage naturel arabe"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Assistant Vocal Arabe",
+                      "description": "Reconnaissance vocale en arabe dialectal algérien et français. Commandes vocales pour applications"
+                    }
+                  },
                   {
                     "@type": "Offer",
                     "itemOffered": {
@@ -211,7 +243,7 @@ export default function Document(props) {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Création Sites Web",
+                      "name": "Création Sites Web & E-commerce",
                       "description": "Sites web professionnels et e-commerce avec paiement CIB/Edahabia"
                     }
                   },
@@ -219,32 +251,16 @@ export default function Document(props) {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Solutions ERP/CRM",
-                      "description": "Logiciels de gestion personnalisés pour entreprises"
+                      "name": "Solutions ERP/CRM avec IA",
+                      "description": "Logiciels de gestion personnalisés avec intelligence artificielle intégrée"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Intelligence Artificielle",
-                      "description": "Chatbots, assistants vocaux et solutions IA"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Cybersécurité",
-                      "description": "Protection des données et sécurité informatique"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Cloud & Infrastructure",
-                      "description": "Solutions cloud et infrastructure serveurs"
+                      "name": "Cybersécurité IA",
+                      "description": "Détection de fraude, analyse comportementale, protection des données avec IA"
                     }
                   }
                 ]

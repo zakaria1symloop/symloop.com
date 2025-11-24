@@ -8,6 +8,51 @@ Disallow: /_next/
 Disallow: /404
 Disallow: /500
 
+# Priority pages - AI Solutions for MENA
+Allow: /solutions/intelligence-artificielle-algerie/
+Allow: /solutions/intelligence-artificielle-tunisie/
+Allow: /solutions/intelligence-artificielle-maroc/
+Allow: /solutions/intelligence-artificielle-mena/
+Allow: /solutions/intelligence-artificielle-egypte/
+Allow: /solutions/intelligence-artificielle-arabie-saoudite/
+Allow: /solutions/intelligence-artificielle-emirats/
+Allow: /solutions/intelligence-artificielle-qatar/
+Allow: /solutions/intelligence-artificielle-koweit/
+Allow: /solutions/intelligence-artificielle-bahrein/
+Allow: /solutions/intelligence-artificielle-oman/
+Allow: /solutions/intelligence-artificielle-jordanie/
+Allow: /solutions/intelligence-artificielle-liban/
+Allow: /solutions/chatbot-algerie/
+Allow: /solutions/chatbot-tunisie/
+Allow: /solutions/chatbot-maroc/
+Allow: /solutions/chatbot-mena/
+Allow: /solutions/chatbot-arabe/
+Allow: /solutions/machine-learning-algerie/
+Allow: /solutions/machine-learning-tunisie/
+Allow: /solutions/machine-learning-maroc/
+Allow: /solutions/machine-learning-mena/
+Allow: /solutions/deep-learning-algerie/
+Allow: /solutions/deep-learning-tunisie/
+Allow: /solutions/deep-learning-maroc/
+Allow: /solutions/deep-learning-mena/
+Allow: /solutions/nlp-arabe-algerie/
+Allow: /solutions/nlp-arabe-tunisie/
+Allow: /solutions/nlp-arabe-maroc/
+Allow: /solutions/nlp-arabe-mena/
+Allow: /solutions/vision-artificielle-algerie/
+Allow: /solutions/vision-artificielle-tunisie/
+Allow: /solutions/vision-artificielle-maroc/
+Allow: /solutions/vision-artificielle-mena/
+Allow: /solutions/assistant-vocal-algerie/
+Allow: /solutions/assistant-vocal-tunisie/
+Allow: /solutions/assistant-vocal-maroc/
+Allow: /solutions/assistant-vocal-mena/
+Allow: /solutions/finance-islamique-ia/
+Allow: /solutions/banque-ia-mena/
+Allow: /solutions/petrole-gaz-ia/
+Allow: /solutions/smart-city-mena/
+Allow: /solutions/e-gouvernement-ia/
+
 # Allow important pages
 Allow: /services/
 Allow: /solutions/

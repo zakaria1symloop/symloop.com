@@ -106,6 +106,54 @@
       "cloud": "Cloud Infrastructure"
     }
   },
+  "aiHero": {
+    "badge": "AI Leader in Algeria",
+    "title": "Artificial Intelligence",
+    "titleLine2": "For Every Sector",
+    "cta": "Start My AI Project",
+    "industries": {
+      "health": {
+        "title": "Healthcare AI",
+        "description": "Intelligent diagnosis, medical imaging analysis, disease prediction and patient monitoring",
+        "useCases": ["Imaging analysis", "Disease prediction", "Medical assistant"]
+      },
+      "marketing": {
+        "title": "Marketing AI",
+        "description": "Personalized campaigns, customer behavior analysis, sales prediction and ROI optimization",
+        "useCases": ["Personalization", "Sales prediction", "Market analysis"]
+      },
+      "logistics": {
+        "title": "Logistics AI",
+        "description": "Route optimization, intelligent inventory management, demand and delivery prediction",
+        "useCases": ["Route optimization", "Demand prediction", "Stock management"]
+      },
+      "industry": {
+        "title": "Industrial AI",
+        "description": "Predictive maintenance, automated quality control, production automation and efficiency improvement",
+        "useCases": ["Predictive maintenance", "Quality control", "Automation"]
+      },
+      "finance": {
+        "title": "Finance AI",
+        "description": "Fraud detection, real-time risk assessment, automated trading and credit analysis",
+        "useCases": ["Fraud detection", "Risk assessment", "Auto trading"]
+      },
+      "education": {
+        "title": "Education AI",
+        "description": "Personalized learning, intelligent assessment, adaptive AI tutor and student progress tracking",
+        "useCases": ["Adaptive learning", "Auto assessment", "AI tutor"]
+      },
+      "commerce": {
+        "title": "Commerce AI",
+        "description": "Smart recommendations, dynamic pricing, automated customer service and intelligent inventory",
+        "useCases": ["Recommendations", "Dynamic pricing", "Customer service"]
+      },
+      "realestate": {
+        "title": "Real Estate AI",
+        "description": "Accurate property valuation, price trend prediction, client matching and market analysis",
+        "useCases": ["Property valuation", "Price prediction", "Matching"]
+      }
+    }
+  },
   "search": {
     "placeholder1": "I want to create a website...",
     "placeholder2": "I need a mobile app...",
@@ -1075,5 +1123,87 @@
       }
     }
   },
-  "menu": "Menu"
+  "menu": "Menu",
+  "ai": {
+    "pageTitle": "Artificial Intelligence",
+    "heroTitle": "Artificial Intelligence Solutions",
+    "heroSubtitle": "Transform your business with AI",
+    "services": {
+      "chatbot": {
+        "title": "AI Chatbots",
+        "description": "Multilingual intelligent chatbots for your business"
+      },
+      "voiceAssistant": {
+        "title": "Voice Assistant",
+        "description": "Advanced voice recognition in local dialects"
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "AI vision solutions for industry"
+      },
+      "predictiveAnalytics": {
+        "title": "Predictive Analytics",
+        "description": "Predict trends with machine learning"
+      },
+      "cybersecurity": {
+        "title": "AI Cybersecurity",
+        "description": "Advanced protection against cyber threats"
+      },
+      "bigData": {
+        "title": "Big Data & Analytics",
+        "description": "Massive data analysis and business intelligence"
+      }
+    },
+    "industries": {
+      "banking": "Banking & Finance",
+      "telecom": "Telecommunications",
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "manufacturing": "Manufacturing",
+      "retail": "Retail",
+      "tourism": "Tourism",
+      "services": "Services"
+    },
+    "cta": {
+      "startProject": "Start an AI Project",
+      "freeConsultation": "Free Consultation",
+      "contactUs": "Contact Us",
+      "bookDemo": "Book a Demo"
+    },
+    "stats": {
+      "aiProjects": "AI projects completed",
+      "companies": "Client companies",
+      "satisfaction": "Client satisfaction",
+      "support": "Available support"
+    },
+    "features": {
+      "multilingual": "Multilingual Support",
+      "localDialects": "Local Dialects",
+      "24/7": "Available 24/7",
+      "customSolutions": "Custom Solutions",
+      "apiIntegration": "API Integration",
+      "cloudBased": "Cloud Based"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "cost": {
+        "question": "How much does an AI solution cost?",
+        "answer": "Cost varies by complexity. Contact us for a free quote."
+      },
+      "duration": {
+        "question": "How long to develop an AI solution?",
+        "answer": "A typical AI project takes 4 to 12 weeks depending on complexity."
+      },
+      "support": {
+        "question": "What support do you offer?",
+        "answer": "We offer 24/7 support with ongoing maintenance."
+      }
+    },
+    "mena": {
+      "title": "AI for the MENA Region",
+      "description": "AI solutions adapted for Middle East & North Africa",
+      "countries": "22 countries covered",
+      "languages": "Arabic, French, English"
+    }
+  }
 }

@@ -106,6 +106,54 @@
       "cloud": "Infrastructure Cloud"
     }
   },
+  "aiHero": {
+    "badge": "Leader IA en Algérie",
+    "title": "L'Intelligence Artificielle",
+    "titleLine2": "Pour Chaque Secteur",
+    "cta": "Démarrer Mon Projet IA",
+    "industries": {
+      "health": {
+        "title": "IA Santé",
+        "description": "Diagnostic intelligent, analyse imagerie médicale, prédiction maladies et suivi patients",
+        "useCases": ["Analyse imagerie", "Prédiction maladies", "Assistant médical"]
+      },
+      "marketing": {
+        "title": "IA Marketing",
+        "description": "Campagnes personnalisées, analyse comportement clients, prédiction ventes et optimisation ROI",
+        "useCases": ["Personnalisation", "Prédiction ventes", "Analyse marché"]
+      },
+      "logistics": {
+        "title": "IA Logistique",
+        "description": "Optimisation routes, gestion stock intelligente, prédiction demande et livraison",
+        "useCases": ["Optimisation routes", "Prédiction demande", "Gestion stock"]
+      },
+      "industry": {
+        "title": "IA Industrie",
+        "description": "Maintenance prédictive, contrôle qualité automatisé, automatisation production",
+        "useCases": ["Maintenance prédictive", "Contrôle qualité", "Automatisation"]
+      },
+      "finance": {
+        "title": "IA Finance",
+        "description": "Détection fraude, évaluation risques temps réel, trading automatisé",
+        "useCases": ["Détection fraude", "Évaluation risques", "Trading auto"]
+      },
+      "education": {
+        "title": "IA Éducation",
+        "description": "Apprentissage personnalisé, évaluation intelligente, tuteur IA adaptatif",
+        "useCases": ["Apprentissage adapté", "Évaluation auto", "Tuteur IA"]
+      },
+      "commerce": {
+        "title": "IA Commerce",
+        "description": "Recommandations intelligentes, pricing dynamique, service client automatisé",
+        "useCases": ["Recommandations", "Pricing dynamique", "Service client"]
+      },
+      "realestate": {
+        "title": "IA Immobilier",
+        "description": "Estimation précise biens, prédiction tendances prix, matching clients",
+        "useCases": ["Estimation biens", "Prédiction prix", "Matching"]
+      }
+    }
+  },
   "search": {
     "placeholder1": "Je veux créer un site web...",
     "placeholder2": "J'ai besoin d'une application mobile...",
@@ -1075,5 +1123,87 @@
       }
     }
   },
-  "menu": "Menu"
+  "menu": "Menu",
+  "ai": {
+    "pageTitle": "Intelligence Artificielle",
+    "heroTitle": "Solutions d'Intelligence Artificielle",
+    "heroSubtitle": "Transformez votre entreprise avec l'IA",
+    "services": {
+      "chatbot": {
+        "title": "Chatbots IA",
+        "description": "Chatbots intelligents multilingues pour votre entreprise"
+      },
+      "voiceAssistant": {
+        "title": "Assistant Vocal",
+        "description": "Reconnaissance vocale avancée en dialectes locaux"
+      },
+      "computerVision": {
+        "title": "Vision par Ordinateur",
+        "description": "Solutions de vision IA pour l'industrie"
+      },
+      "predictiveAnalytics": {
+        "title": "Analyse Prédictive",
+        "description": "Prédisez les tendances avec le machine learning"
+      },
+      "cybersecurity": {
+        "title": "Cybersécurité IA",
+        "description": "Protection avancée contre les cybermenaces"
+      },
+      "bigData": {
+        "title": "Big Data & Analytics",
+        "description": "Analyse de données massives et intelligence business"
+      }
+    },
+    "industries": {
+      "banking": "Banques & Finance",
+      "telecom": "Télécommunications",
+      "healthcare": "Santé",
+      "education": "Éducation",
+      "manufacturing": "Industrie",
+      "retail": "Commerce",
+      "tourism": "Tourisme",
+      "services": "Services"
+    },
+    "cta": {
+      "startProject": "Démarrer un Projet IA",
+      "freeConsultation": "Consultation Gratuite",
+      "contactUs": "Contactez-nous",
+      "bookDemo": "Réserver une Démo"
+    },
+    "stats": {
+      "aiProjects": "Projets IA réalisés",
+      "companies": "Entreprises clientes",
+      "satisfaction": "Satisfaction client",
+      "support": "Support disponible"
+    },
+    "features": {
+      "multilingual": "Support Multilingue",
+      "localDialects": "Dialectes Locaux",
+      "24/7": "Disponible 24/7",
+      "customSolutions": "Solutions Sur Mesure",
+      "apiIntegration": "Intégration API",
+      "cloudBased": "Basé sur le Cloud"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "cost": {
+        "question": "Combien coûte une solution IA?",
+        "answer": "Le coût varie selon la complexité. Contactez-nous pour un devis gratuit."
+      },
+      "duration": {
+        "question": "Combien de temps pour développer une solution IA?",
+        "answer": "Un projet IA typique prend 4 à 12 semaines selon la complexité."
+      },
+      "support": {
+        "question": "Quel support offrez-vous?",
+        "answer": "Nous offrons un support 24/7 avec maintenance continue."
+      }
+    },
+    "mena": {
+      "title": "IA pour la Région MENA",
+      "description": "Solutions IA adaptées au Moyen-Orient et Afrique du Nord",
+      "countries": "22 pays couverts",
+      "languages": "Arabe, Français, Anglais"
+    }
+  }
 }
