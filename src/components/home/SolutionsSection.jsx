@@ -3,23 +3,51 @@ import { motion } from "framer-motion";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { 
-  Code2, 
-  Smartphone, 
-  Globe, 
-  ShoppingCart, 
-  Server, 
-  Wifi, 
-  Network, 
-  Database, 
-  Cloud, 
-  Wrench, 
-  Megaphone, 
-  Users, 
-  Shield 
+import {
+  Code2,
+  Smartphone,
+  Globe,
+  ShoppingCart,
+  Server,
+  Wifi,
+  Network,
+  Database,
+  Cloud,
+  Wrench,
+  Megaphone,
+  Users,
+  Shield,
+  Building2,
+  Landmark
 } from "lucide-react";
 
 const getSolutions = (t) => [
+  {
+    title: t('solutions.digitalization.title', { defaultValue: 'رقمنة الخدمات الحكومية' }),
+    slug: "digitalisation-algerie",
+    subtitle: t('solutions.digitalization.subtitle', { defaultValue: 'E-Gouvernement & Transformation Digitale' }),
+    punchline: t('solutions.digitalization.punchline', { defaultValue: 'التحول الرقمي للقطاعات الحكومية في الجزائر - رقمنة أي قطاع باستخدام الذكاء الاصطناعي والتكنولوجيا الحديثة' }),
+    icon: Landmark,
+    color: "from-emerald-600 to-cyan-500",
+    keywords: "رقمنة, الرقمنة, رقمنة أي قطاع, التحول الرقمي الجزائر, digitalisation Algérie, e-gouvernement, رقمنة الخدمات الحكومية, government digitization Algeria, numérisation services publics",
+    featured: true,
+    schema: {
+      "@type": "GovernmentService",
+      "name": "رقمنة الخدمات الحكومية في الجزائر - Digitalisation Services Gouvernementaux",
+      "description": "حلول رقمنة شاملة للقطاعات الحكومية والمؤسسات العامة في الجزائر - التحول الرقمي باستخدام الذكاء الاصطناعي",
+      "provider": {
+        "@type": "Organization",
+        "name": "Symloop",
+        "founder": "Zakaria"
+      },
+      "serviceType": "Government Digitization",
+      "areaServed": ["الجزائر", "Alger", "Algérie", "MENA"],
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  },
   {
     title: t('solutions.mobile.title'),
     slug: "applications-mobiles-flutter-react-native-algerie",

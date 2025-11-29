@@ -8,6 +8,27 @@ Disallow: /_next/
 Disallow: /404
 Disallow: /500
 
+# Priority pages - Government Digitization رقمنة الخدمات الحكومية
+# رقمنة - الرقمنة - رقمنة أي قطاع - التحول الرقمي - e-gouvernement
+Allow: /solutions/digitalisation-algerie/
+Allow: /ar/solutions/digitalisation-algerie/
+Allow: /fr/solutions/digitalisation-algerie/
+Allow: /en/solutions/digitalisation-algerie/
+
+# Sector-Specific Digitization Pages - رقمنة القطاعات
+# رقمنة التعليم - Education Digitization
+Allow: /solutions/digitalisation-education-algerie/
+Allow: /ar/solutions/digitalisation-education-algerie/
+Allow: /fr/solutions/digitalisation-education-algerie/
+# رقمنة الصحة - Healthcare Digitization
+Allow: /solutions/digitalisation-sante-algerie/
+Allow: /ar/solutions/digitalisation-sante-algerie/
+Allow: /fr/solutions/digitalisation-sante-algerie/
+# رقمنة العدالة - Justice Digitization
+Allow: /solutions/digitalisation-justice-algerie/
+Allow: /ar/solutions/digitalisation-justice-algerie/
+Allow: /fr/solutions/digitalisation-justice-algerie/
+
 # Priority pages - AI Solutions for MENA
 Allow: /solutions/intelligence-artificielle-algerie/
 Allow: /solutions/intelligence-artificielle-tunisie/

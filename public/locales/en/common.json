@@ -272,6 +272,11 @@
       "subtitle": "ChatGPT, Whisper, LLM",
       "punchline": "Advanced AI solutions with ChatGPT, Whisper and voice assistants for MENA businesses."
     },
+    "digitalization": {
+      "title": "Government Digitization Services",
+      "subtitle": "E-Government & Digital Transformation",
+      "punchline": "Digital transformation for government sectors in Algeria - Digitize any sector using AI and modern technology"
+    },
     "iot": {
       "title": "IoT Solutions & Connected Objects",
       "subtitle": "ESP32 & Sensors",
@@ -1204,6 +1209,121 @@
       "description": "AI solutions adapted for Middle East & North Africa",
       "countries": "22 countries covered",
       "languages": "Arabic, French, English"
+    }
+  },
+  "digitalization": {
+    "pageTitle": "Government Services Digitization in Algeria",
+    "heroTitle": "Digitize Any Sector",
+    "heroSubtitle": "Digital Transformation of Government Services in Algeria",
+    "heroDescription": "Symloop helps government agencies and public administrations digitize their services using the latest programming technologies and AI.",
+    "badge": "Digital Partner for Algerian Government",
+    "sectorsTitle": "Government Sectors",
+    "sectorsSubtitle": "We digitize all government services to serve Algerian citizens with efficiency and transparency",
+    "servicesTitle": "Our Digitization Services",
+    "servicesSubtitle": "We provide integrated technical solutions for digital transformation using coding and AI",
+    "coverageTitle": "Coverage Across All Wilayas",
+    "coverageSubtitle": "Our services are available across all 58 Algerian wilayas",
+    "whySymloop": "Why Symloop?",
+    "whySymloopDesc": "Deep technical expertise serving digital transformation for the government sector",
+    "ctaTitle": "Start Your Digitization Journey Now",
+    "ctaSubtitle": "Free consultation + detailed study for your project",
+    "sectors": {
+      "civilRegistry": {
+        "name": "Civil Registry",
+        "description": "Digitization of birth, marriage, death certificates. Electronic document extraction."
+      },
+      "municipalities": {
+        "name": "Municipalities",
+        "description": "Municipal services digitization. Online permit and certificate applications."
+      },
+      "justice": {
+        "name": "Justice System",
+        "description": "Courts digitization. Electronic case management. Remote litigation."
+      },
+      "education": {
+        "name": "Education",
+        "description": "Schools and universities digitization. E-learning platforms. Student management."
+      },
+      "health": {
+        "name": "Healthcare",
+        "description": "Hospital and clinic digitization. Electronic medical records. Online appointments."
+      },
+      "finance": {
+        "name": "Finance & Taxes",
+        "description": "Tax declaration digitization. Electronic payment. Budget management."
+      },
+      "publicService": {
+        "name": "Public Service",
+        "description": "HR digitization. E-recruitment. Payroll management."
+      },
+      "transport": {
+        "name": "Transport",
+        "description": "Digital driving license. Electronic vehicle registration. Traffic violations."
+      },
+      "housing": {
+        "name": "Housing & Urban Planning",
+        "description": "Online housing applications. Electronic building permits. Smart urban planning."
+      },
+      "commerce": {
+        "name": "Commerce",
+        "description": "Digital commercial registry. Online business creation. Commercial licenses."
+      },
+      "elections": {
+        "name": "Elections",
+        "description": "Electoral process digitization. Electronic voting. Voter list management."
+      },
+      "security": {
+        "name": "Security & Police",
+        "description": "Digital security services. Biometric passport. Electronic ID card."
+      }
+    },
+    "services": {
+      "customSoftware": {
+        "title": "Custom Software Development",
+        "description": "Custom software for each government sector. Integrated web and mobile applications."
+      },
+      "ai": {
+        "title": "Artificial Intelligence",
+        "description": "AI automation of procedures. Citizen chatbots. Arabic OCR."
+      },
+      "dataManagement": {
+        "title": "Data Management",
+        "description": "Secure and integrated databases. Big Data analytics. Dashboards."
+      },
+      "cloud": {
+        "title": "Cloud Computing",
+        "description": "Sovereign cloud. Scalable infrastructure. Secure backup."
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "Sensitive data protection. Advanced encryption. 24/7 monitoring."
+      },
+      "citizenApps": {
+        "title": "Citizen Apps",
+        "description": "Mobile apps for public services. Intuitive interface. Push notifications."
+      }
+    },
+    "stats": {
+      "timeReduction": "Time reduction",
+      "efficiencyGain": "Efficiency gain",
+      "citizenAccess": "Citizen access",
+      "dataSecurity": "Data security"
+    },
+    "features": {
+      "codingExperts": "Coding Experts",
+      "advancedAI": "Advanced AI",
+      "highSecurity": "High Security",
+      "experience": "10+ Years Experience"
+    },
+    "cta": {
+      "freeConsultation": "Free Consultation",
+      "emailUs": "Email Us",
+      "startNow": "Start Your Digitization Journey Now"
+    },
+    "seo": {
+      "title": "Government Digitization Algeria | Digitize Any Sector - Symloop",
+      "description": "Digitization of all government sectors in Algeria with Symloop. Civil registry, justice, education, health, finance. Advanced software solutions and AI.",
+      "keywords": "digitization algeria, e-government algeria, digital transformation algeria, public services digitization, electronic administration"
     }
   }
 }

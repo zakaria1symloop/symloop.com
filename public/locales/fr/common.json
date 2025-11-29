@@ -272,6 +272,11 @@
       "subtitle": "ChatGPT, Whisper, LLM",
       "punchline": "Solutions IA avancées avec ChatGPT, Whisper et assistants vocaux pour entreprises MENA."
     },
+    "digitalization": {
+      "title": "Digitalisation Services Gouvernementaux",
+      "subtitle": "E-Gouvernement & Transformation Digitale",
+      "punchline": "Transformation digitale des secteurs gouvernementaux en Algérie - Digitalisation de tout secteur avec IA et technologies modernes"
+    },
     "iot": {
       "title": "Solutions IoT & Objets Connectés",
       "subtitle": "ESP32 & Capteurs",
@@ -1204,6 +1209,121 @@
       "description": "Solutions IA adaptées au Moyen-Orient et Afrique du Nord",
       "countries": "22 pays couverts",
       "languages": "Arabe, Français, Anglais"
+    }
+  },
+  "digitalization": {
+    "pageTitle": "Digitalisation des Services Gouvernementaux en Algérie",
+    "heroTitle": "Digitaliser Tout Secteur",
+    "heroSubtitle": "Transformation Digitale des Services Gouvernementaux en Algérie",
+    "heroDescription": "Symloop aide les organismes gouvernementaux et administrations publiques à digitaliser leurs services avec les dernières technologies de programmation et l'IA.",
+    "badge": "Partenaire Digital du Gouvernement Algérien",
+    "sectorsTitle": "Secteurs Gouvernementaux",
+    "sectorsSubtitle": "Nous digitalisons tous les services gouvernementaux pour servir le citoyen algérien avec efficacité et transparence",
+    "servicesTitle": "Nos Services de Digitalisation",
+    "servicesSubtitle": "Nous fournissons des solutions techniques intégrées pour la transformation digitale avec le code et l'IA",
+    "coverageTitle": "Couverture Toutes les Wilayas",
+    "coverageSubtitle": "Nos services sont disponibles dans les 58 wilayas algériennes",
+    "whySymloop": "Pourquoi Symloop ?",
+    "whySymloopDesc": "Expertise technique approfondie au service de la transformation digitale du secteur gouvernemental",
+    "ctaTitle": "Commencez Votre Digitalisation Maintenant",
+    "ctaSubtitle": "Consultation gratuite + étude détaillée de votre projet",
+    "sectors": {
+      "civilRegistry": {
+        "name": "État Civil",
+        "description": "Digitalisation des actes de naissance, mariage, décès. Extraction électronique des documents."
+      },
+      "municipalities": {
+        "name": "Communes & Daïras",
+        "description": "Digitalisation des services communaux. Demandes de permis et certificats en ligne."
+      },
+      "justice": {
+        "name": "Justice",
+        "description": "Digitalisation des tribunaux. Gestion électronique des dossiers judiciaires. Procès à distance."
+      },
+      "education": {
+        "name": "Éducation",
+        "description": "Digitalisation des écoles et universités. Plateformes e-learning. Gestion des étudiants."
+      },
+      "health": {
+        "name": "Santé",
+        "description": "Digitalisation des hôpitaux et cliniques. Dossier médical électronique. Rendez-vous en ligne."
+      },
+      "finance": {
+        "name": "Finances & Impôts",
+        "description": "Digitalisation des déclarations fiscales. Paiement électronique. Gestion budgétaire."
+      },
+      "publicService": {
+        "name": "Fonction Publique",
+        "description": "Digitalisation GRH. Recrutement électronique. Gestion des salaires."
+      },
+      "transport": {
+        "name": "Transport",
+        "description": "Permis de conduire numérique. Carte grise électronique. Contraventions."
+      },
+      "housing": {
+        "name": "Habitat & Urbanisme",
+        "description": "Demandes de logement en ligne. Permis de construire électroniques. Urbanisme intelligent."
+      },
+      "commerce": {
+        "name": "Commerce",
+        "description": "Registre de commerce numérique. Création d'entreprises en ligne. Licences commerciales."
+      },
+      "elections": {
+        "name": "Élections",
+        "description": "Digitalisation du processus électoral. Vote électronique. Gestion des listes électorales."
+      },
+      "security": {
+        "name": "Sécurité & Police",
+        "description": "Services de sécurité numériques. Passeport biométrique. Carte d'identité électronique."
+      }
+    },
+    "services": {
+      "customSoftware": {
+        "title": "Développement sur mesure",
+        "description": "Logiciels sur mesure pour chaque secteur gouvernemental. Applications web et mobile intégrées."
+      },
+      "ai": {
+        "title": "Intelligence Artificielle",
+        "description": "Automatisation IA des procédures. Chatbots citoyens. OCR arabe."
+      },
+      "dataManagement": {
+        "title": "Gestion des données",
+        "description": "Bases de données sécurisées et intégrées. Big Data analytics. Tableaux de bord."
+      },
+      "cloud": {
+        "title": "Cloud Computing",
+        "description": "Cloud souverain. Infrastructure scalable. Sauvegarde sécurisée."
+      },
+      "cybersecurity": {
+        "title": "Cybersécurité",
+        "description": "Protection des données sensibles. Chiffrement avancé. Monitoring 24/7."
+      },
+      "citizenApps": {
+        "title": "Applications Citoyen",
+        "description": "Apps mobiles services publics. Interface intuitive. Notifications push."
+      }
+    },
+    "stats": {
+      "timeReduction": "Réduction des délais",
+      "efficiencyGain": "Gain d'efficacité",
+      "citizenAccess": "Accès citoyens",
+      "dataSecurity": "Sécurité des données"
+    },
+    "features": {
+      "codingExperts": "Experts en Code",
+      "advancedAI": "IA Avancée",
+      "highSecurity": "Haute Sécurité",
+      "experience": "+10 Ans d'Expérience"
+    },
+    "cta": {
+      "freeConsultation": "Consultation Gratuite",
+      "emailUs": "Nous Contacter",
+      "startNow": "Commencez Votre Digitalisation Maintenant"
+    },
+    "seo": {
+      "title": "Digitalisation Services Gouvernementaux Algérie | Symloop",
+      "description": "Digitalisation de tous les secteurs gouvernementaux en Algérie avec Symloop. État civil, justice, éducation, santé, finances. Solutions logicielles avancées et IA.",
+      "keywords": "digitalisation algérie, e-gouvernement algérie, transformation digitale algérie, services publics numériques, administration électronique"
     }
   }
 }
