@@ -1,0 +1,46 @@
+# Symloop - Algeria's Leading Technology Company
+
+## About
+Symloop is an Algerian technology company specializing in digital transformation, AI solutions, and government digitization services for the MENA region.
+
+## Services
+- Government Digitization (رقمنة الخدمات الحكومية)
+- AI & Machine Learning Solutions
+- Mobile App Development (Flutter, React Native)
+- Web Development (Next.js, React)
+- E-commerce with CIB/Edahabia Payment
+- ERP/CRM Custom Software
+- IoT Solutions
+- Cybersecurity
+
+## Key Offerings
+### Government Digitization - رقمنة
+We help government agencies and public institutions digitize their services:
+- Education sector digitization (رقمنة التعليم)
+- Healthcare digitization (رقمنة الصحة)
+- Justice system digitization (رقمنة العدالة)
+- Civil registry digitization
+- Municipal services digitization
+
+### AI Solutions
+- ChatGPT integration for businesses
+- Arabic NLP and voice assistants
+- Machine learning models
+- Computer vision solutions
+
+## Location
+- Headquarters: Algiers, Algeria
+- Service Area: Algeria, Tunisia, Morocco, MENA Region
+
+## Contact
+- Website: https://symloop.com
+- Email: contact@symloop.com
+- Phone: +213 549 575 512
+
+## Languages
+- Arabic (العربية)
+- French (Français)
+- English
+
+## Keywords
+رقمنة, الرقمنة, رقمنة أي قطاع, التحول الرقمي, digitalisation Algérie, développement application mobile Algérie, intelligence artificielle Algérie, e-gouvernement, government digitization Algeria

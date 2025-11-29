@@ -104,6 +104,25 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+# AI Crawlers - Allow for ChatGPT/AI visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# LLMs.txt for AI understanding
+# https://symloop.com/llms.txt
+
 # Sitemap
 Sitemap: https://symloop.com/sitemap.xml
 
