@@ -252,7 +252,7 @@ export default function SolutionPage() {
         <link rel="alternate" hrefLang="x-default" href={`https://symloop.com/fr/solutions/${key}`} />
 
         {/* Canonical URL */}
-        <link rel="canonical" href={`https://symloop.com/${locale}/solutions/${key}`} />
+        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
 
         {/* Open Graph Tags */}
         <meta property="og:title" content={title} />

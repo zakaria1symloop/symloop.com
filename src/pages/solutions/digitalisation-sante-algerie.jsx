@@ -44,7 +44,7 @@ export default function DigitalisationSanteAlgerie() {
   const content = {
     ar: {
       pageTitle: "رقمنة قطاع الصحة في الجزائر | Symloop",
-      metaDescription: "رقمنة الصحة في الجزائر - حلول رقمية شاملة للمستشفيات والعيادات والصيدليات. السجل الصحي الإلكتروني، حجز المواعيد، الطب عن بعد.",
+      metaDescription: "رقمنة الصحة في الجزائر - السجل الصحي الإلكتروني للمستشفيات والعيادات. حجز المواعيد والطب عن بعد. اتصل الآن!",
       heroTitle: "رقمنة قطاع الصحة",
       heroSubtitle: "التحول الرقمي للمؤسسات الصحية في الجزائر",
       heroDescription: "نساعد المستشفيات والعيادات والصيدليات على تحقيق التحول الرقمي الكامل لتحسين رعاية المرضى",
@@ -73,7 +73,7 @@ export default function DigitalisationSanteAlgerie() {
     },
     fr: {
       pageTitle: "Digitalisation du Secteur Santé en Algérie | Symloop",
-      metaDescription: "Digitalisation de la santé en Algérie - Solutions numériques complètes pour hôpitaux, cliniques et pharmacies. Dossier médical électronique, rendez-vous en ligne, télémédecine.",
+      metaDescription: "Digitalisation santé Algérie - Dossier médical électronique, rendez-vous en ligne, télémédecine pour hôpitaux et cliniques. Devis gratuit!",
       heroTitle: "Digitalisation du Secteur Santé",
       heroSubtitle: "Transformation numérique des établissements de santé en Algérie",
       heroDescription: "Nous accompagnons les hôpitaux, cliniques et pharmacies dans leur transformation numérique pour améliorer les soins aux patients",
@@ -102,7 +102,7 @@ export default function DigitalisationSanteAlgerie() {
     },
     en: {
       pageTitle: "Healthcare Sector Digitization in Algeria | Symloop",
-      metaDescription: "Healthcare digitization in Algeria - Complete digital solutions for hospitals, clinics and pharmacies. Electronic health records, online appointments, telemedicine.",
+      metaDescription: "Healthcare digitization Algeria - Electronic health records, online appointments, telemedicine for hospitals. Free consultation!",
       heroTitle: "Healthcare Sector Digitization",
       heroSubtitle: "Digital transformation for healthcare facilities in Algeria",
       heroDescription: "We help hospitals, clinics and pharmacies achieve complete digital transformation to improve patient care",
@@ -184,12 +184,13 @@ export default function DigitalisationSanteAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة الصحة, رقمنة المستشفيات الجزائر, digitalisation santé Algérie, e-santé, السجل الصحي الإلكتروني, healthcare digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com/${currentLang}/solutions/digitalisation-sante-algerie`} />
+        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-sante-algerie" />
         <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-sante-algerie" />
         <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-sante-algerie" />
+        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-sante-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>

@@ -51,7 +51,7 @@ export default function DigitalisationEducationAlgerie() {
   const content = {
     ar: {
       pageTitle: "رقمنة قطاع التعليم في الجزائر | Symloop",
-      metaDescription: "رقمنة التعليم في الجزائر - حلول رقمية شاملة للمدارس والجامعات والمؤسسات التعليمية. منصات التعلم الإلكتروني، إدارة الطلاب، الشهادات الرقمية.",
+      metaDescription: "رقمنة التعليم في الجزائر - منصات e-learning للمدارس والجامعات. إدارة الطلاب والشهادات الرقمية. اتصل الآن!",
       heroTitle: "رقمنة قطاع التعليم",
       heroSubtitle: "التحول الرقمي للمؤسسات التعليمية في الجزائر",
       heroDescription: "نساعد المدارس والجامعات والمعاهد على تحقيق التحول الرقمي الكامل باستخدام أحدث التقنيات والذكاء الاصطناعي",
@@ -80,7 +80,7 @@ export default function DigitalisationEducationAlgerie() {
     },
     fr: {
       pageTitle: "Digitalisation du Secteur Éducatif en Algérie | Symloop",
-      metaDescription: "Digitalisation de l'éducation en Algérie - Solutions numériques complètes pour écoles, universités et établissements éducatifs. E-learning, gestion des étudiants, certificats numériques.",
+      metaDescription: "Digitalisation éducation Algérie - E-learning, gestion étudiants, certificats numériques pour écoles et universités. Devis gratuit!",
       heroTitle: "Digitalisation du Secteur Éducatif",
       heroSubtitle: "Transformation numérique des établissements éducatifs en Algérie",
       heroDescription: "Nous accompagnons les écoles, universités et instituts dans leur transformation numérique complète avec les dernières technologies et l'IA",
@@ -109,7 +109,7 @@ export default function DigitalisationEducationAlgerie() {
     },
     en: {
       pageTitle: "Education Sector Digitization in Algeria | Symloop",
-      metaDescription: "Education digitization in Algeria - Complete digital solutions for schools, universities and educational institutions. E-learning platforms, student management, digital certificates.",
+      metaDescription: "Education digitization Algeria - E-learning platforms, student management, digital certificates for schools. Free consultation!",
       heroTitle: "Education Sector Digitization",
       heroSubtitle: "Digital transformation for educational institutions in Algeria",
       heroDescription: "We help schools, universities and institutes achieve complete digital transformation using the latest technologies and AI",
@@ -214,7 +214,7 @@ export default function DigitalisationEducationAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة التعليم, رقمنة المدارس الجزائر, e-learning Algérie, digitalisation éducation, منصات التعلم الإلكتروني, education digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com/${currentLang}/solutions/digitalisation-education-algerie`} />
+        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="website" />
@@ -222,6 +222,7 @@ export default function DigitalisationEducationAlgerie() {
         <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-education-algerie" />
         <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-education-algerie" />
         <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-education-algerie" />
+        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-education-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>

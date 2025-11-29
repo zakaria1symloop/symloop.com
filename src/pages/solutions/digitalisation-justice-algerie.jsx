@@ -43,7 +43,7 @@ export default function DigitalisationJusticeAlgerie() {
   const content = {
     ar: {
       pageTitle: "رقمنة قطاع العدالة في الجزائر | Symloop",
-      metaDescription: "رقمنة العدالة في الجزائر - حلول رقمية شاملة للمحاكم والعدالة. إدارة القضايا إلكترونياً، السجل العدلي الرقمي، المحاكمات عن بعد.",
+      metaDescription: "رقمنة العدالة في الجزائر - إدارة القضايا للمحاكم، السجل العدلي الرقمي، المحاكمات عن بعد. اتصل الآن!",
       heroTitle: "رقمنة قطاع العدالة",
       heroSubtitle: "التحول الرقمي للمنظومة القضائية في الجزائر",
       heroDescription: "نساعد المحاكم ومؤسسات العدالة على تحقيق التحول الرقمي الكامل لتسريع إجراءات التقاضي وتحسين الخدمات",
@@ -72,7 +72,7 @@ export default function DigitalisationJusticeAlgerie() {
     },
     fr: {
       pageTitle: "Digitalisation du Secteur Justice en Algérie | Symloop",
-      metaDescription: "Digitalisation de la justice en Algérie - Solutions numériques complètes pour tribunaux et justice. Gestion électronique des affaires, casier judiciaire numérique, audiences à distance.",
+      metaDescription: "Digitalisation justice Algérie - Gestion des affaires, casier judiciaire numérique, audiences à distance pour tribunaux. Devis gratuit!",
       heroTitle: "Digitalisation du Secteur Justice",
       heroSubtitle: "Transformation numérique du système judiciaire en Algérie",
       heroDescription: "Nous accompagnons les tribunaux et institutions judiciaires dans leur transformation numérique pour accélérer les procédures",
@@ -101,7 +101,7 @@ export default function DigitalisationJusticeAlgerie() {
     },
     en: {
       pageTitle: "Justice Sector Digitization in Algeria | Symloop",
-      metaDescription: "Justice digitization in Algeria - Complete digital solutions for courts and justice system. Electronic case management, digital criminal records, remote hearings.",
+      metaDescription: "Justice digitization Algeria - Case management, digital criminal records, remote hearings for courts. Free consultation!",
       heroTitle: "Justice Sector Digitization",
       heroSubtitle: "Digital transformation for the judicial system in Algeria",
       heroDescription: "We help courts and justice institutions achieve complete digital transformation to accelerate legal procedures",
@@ -183,12 +183,13 @@ export default function DigitalisationJusticeAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة العدالة, رقمنة المحاكم الجزائر, digitalisation justice Algérie, e-justice, السجل العدلي الرقمي, justice digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com/${currentLang}/solutions/digitalisation-justice-algerie`} />
+        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-justice-algerie" />
         <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-justice-algerie" />
         <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-justice-algerie" />
+        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-justice-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
