@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage - All Languages -->
+  <url>
+    <loc>https://symloop.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/"/>
+    <image:image>
+      <image:loc>https://symloop.com/sym-logo.png</image:loc>
+      <image:title>Symloop Technology - AI Company Algeria</image:title>
+    </image:image>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Blog Index - All Languages -->
+  <url>
+    <loc>https://symloop.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/blog/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/fr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/blog/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/ar/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/blog/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Services Page - All Languages -->
+  <url>
+    <loc>https://symloop.com/services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/services/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/services/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Government Digitization - High Priority رقمنة -->
+  <url>
+    <loc>https://symloop.com/solutions/digitalisation-algerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/digitalisation-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/digitalisation-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/digitalisation-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/solutions/digitalisation-algerie/"/>
+    <image:image>
+      <image:loc>https://symloop.com/assets/digitization-algeria.png</image:loc>
+      <image:title>Government Digitization Algeria - رقمنة الخدمات الحكومية</image:title>
+    </image:image>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Education Digitization - رقمنة التعليم -->
+  <url>
+    <loc>https://symloop.com/solutions/digitalisation-education-algerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/digitalisation-education-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/digitalisation-education-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/digitalisation-education-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/solutions/digitalisation-education-algerie/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Healthcare Digitization - رقمنة الصحة -->
+  <url>
+    <loc>https://symloop.com/solutions/digitalisation-sante-algerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/digitalisation-sante-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/digitalisation-sante-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/digitalisation-sante-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/solutions/digitalisation-sante-algerie/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Justice Digitization - رقمنة العدالة -->
+  <url>
+    <loc>https://symloop.com/solutions/digitalisation-justice-algerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/digitalisation-justice-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/digitalisation-justice-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/digitalisation-justice-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/solutions/digitalisation-justice-algerie/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- AI Solutions - High Priority -->
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-algerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/solutions/intelligence-artificielle-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/solutions/intelligence-artificielle-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/solutions/intelligence-artificielle-algerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://symloop.com/solutions/intelligence-artificielle-algerie/"/>
+    <image:image>
+      <image:loc>https://symloop.com/assets/ai-algeria.png</image:loc>
+      <image:title>Artificial Intelligence Algeria - الذكاء الاصطناعي الجزائر</image:title>
+    </image:image>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- MENA AI Pages -->
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-mena/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-tunisie/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-maroc/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-egypte/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-arabie-saoudite/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/solutions/intelligence-artificielle-emirats/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chatbot Pages -->
+  <url>
+    <loc>https://symloop.com/solutions/chatbot-algerie/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/solutions/chatbot-arabe-mena/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Location Pages - Algeria Cities -->
+  <url>
+    <loc>https://symloop.com/locations/alger/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/locations/alger/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/locations/alger/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/locations/alger/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/locations/oran/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/locations/constantine/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/locations/setif/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/locations/annaba/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- MENA Region Page -->
+  <url>
+    <loc>https://symloop.com/mena/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/mena/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/mena/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/mena/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- High-Value Blog Posts with hreflang -->
+  <url>
+    <loc>https://symloop.com/blog/developpement-application-mobile-algerie-2024/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/blog/developpement-application-mobile-algerie-2024/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/developpement-application-mobile-algerie-2024/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/developpement-application-mobile-algerie-2024/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/creation-site-web-algerie-2024/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/blog/creation-site-web-algerie-2024/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/creation-site-web-algerie-2024/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/creation-site-web-algerie-2024/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/ecommerce-algerie-paiement-cib-edahabia-2024/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/blog/ecommerce-algerie-paiement-cib-edahabia-2024/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/ecommerce-algerie-paiement-cib-edahabia-2024/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/ecommerce-algerie-paiement-cib-edahabia-2024/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/intelligence-artificielle-algerie-mena-2024/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://symloop.com/en/blog/intelligence-artificielle-algerie-mena-2024/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://symloop.com/fr/blog/intelligence-artificielle-algerie-mena-2024/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://symloop.com/ar/blog/intelligence-artificielle-algerie-mena-2024/"/>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/cout-developpement-application-algerie/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/mvp-startup-algerie-2024/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://symloop.com/products/asa/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/products/symtv-light/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Learning & Recruitment -->
+  <url>
+    <loc>https://symloop.com/learning/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/recrutement/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

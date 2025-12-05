@@ -273,8 +273,21 @@ Allow: /
 # SITEMAPS
 # ============================================
 
+# Primary sitemap index (contains all sitemaps)
+Sitemap: https://symloop.com/sitemapindex.xml
+
+# Individual sitemaps
 Sitemap: https://symloop.com/sitemap.xml
-Sitemap: https://symloop.com/sitemap-0.xml
+Sitemap: https://symloop.com/sitemap-multilingual.xml
+Sitemap: https://symloop.com/sitemap-enhanced.xml
+
+# ============================================
+# INDEXNOW - Instant Indexing
+# ============================================
+
+# IndexNow key for Bing/Yandex instant indexing
+# Key: e9f4a1b2c3d5e6f7a8b9c0d1e2f3a4b5
+# Verification: https://symloop.com/e9f4a1b2c3d5e6f7a8b9c0d1e2f3a4b5.txt
 
 # ============================================
 # HOST

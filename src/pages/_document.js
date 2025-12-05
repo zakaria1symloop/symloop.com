@@ -51,7 +51,25 @@ export default function Document(props) {
         <meta name="geo.placename" content="Sétif, région MENA" />
         <meta name="ICBM" content="36.1919, 5.4138" />
 
-        {/* Google Search Console - Verified via DNS/other method */}
+        {/* Google Search Console Verification
+            To verify ownership:
+            1. Go to https://search.google.com/search-console
+            2. Add property: symloop.com
+            3. Choose "HTML tag" verification method
+            4. Copy the content value from the meta tag Google provides
+            5. Uncomment and update the meta tag below with your verification code
+        */}
+        {/* <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" /> */}
+
+        {/* Bing Webmaster Tools Verification
+            To verify ownership:
+            1. Go to https://www.bing.com/webmasters
+            2. Add site: symloop.com
+            3. Choose "Meta tag" verification method
+            4. Copy the content value
+            5. Uncomment and update the meta tag below
+        */}
+        {/* <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" /> */}
         
         {/* MENA-specific Business Schema */}
         <script
