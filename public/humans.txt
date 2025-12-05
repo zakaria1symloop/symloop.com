@@ -1,0 +1,38 @@
+/* TEAM */
+
+Company: Symloop (سيملوب)
+Site: https://symloop.com
+Location: Algiers, Algeria
+Contact: contact@symloop.com
+Phone: +213 549 57 55 12
+
+/* THANKS */
+
+Built with: Next.js, React, Tailwind CSS
+Hosted on: Vercel
+Icons: Lucide React
+
+/* SITE */
+
+Last update: 2024/12
+Language: Arabic, French, English
+Doctype: HTML5
+Standards: HTML5, CSS3, ES6+
+Components: React, Next.js 15
+Styling: Tailwind CSS
+IDE: VS Code, Claude Code
+
+/* SERVICES */
+
+- Government Digitization (رقمنة)
+- AI & Machine Learning
+- Mobile App Development
+- Web Development
+- E-commerce Solutions
+- ERP & CRM Systems
+
+/* KEYWORDS */
+
+رقمنة, digitalisation, développement application mobile Algérie,
+création site web Algérie, intelligence artificielle Algérie,
+e-commerce Algérie, paiement CIB, Edahabia, SATIM

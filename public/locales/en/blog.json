@@ -12,7 +12,40 @@
     "freeConsultation": "Free Consultation",
     "callUs": "Call Us",
     "recommended": "RECOMMENDED",
-    "popular": "POPULAR"
+    "popular": "POPULAR",
+    "readMore": "Read more"
+  },
+  "index": {
+    "metaTitle": "Tech & Digital Blog Algeria | Symloop",
+    "metaDescription": "Articles and guides on web development, mobile, SEO, e-commerce and digitalization in Algeria. Expert advice for your digital transformation.",
+    "badge": "Tech & Digital Expertise",
+    "title": "Tech Blog",
+    "titleAccent": "Symloop",
+    "subtitle": "Practical guides, expert advice and news on web, mobile, AI development and digital transformation in Algeria.",
+    "stats": {
+      "articles": "Articles",
+      "categories": "Categories",
+      "expert": "Expert",
+      "content": "Content"
+    },
+    "search": {
+      "placeholder": "Search for an article...",
+      "noResults": "No articles found",
+      "noResultsDesc": "Try another search or category"
+    },
+    "categories": {
+      "all": "All"
+    },
+    "featured": "Featured Articles",
+    "allArticles": "All Articles",
+    "article": "article",
+    "articles": "articles",
+    "newsletter": {
+      "title": "Stay Informed",
+      "subtitle": "Receive our latest articles and tech guides directly in your inbox.",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    }
   },
   "agenceWebAlgerie2024": {
     "title": "Web Agency in Algeria 2024",

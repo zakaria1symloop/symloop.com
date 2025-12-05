@@ -18,8 +18,16 @@ export const blogs = [
     metaTitle: "Développement Application Mobile Algérie 2024 | Guide Complet | Symloop",
     metaDescription: "Créez votre application mobile en Algérie. Guide complet : Flutter, React Native, coûts, délais. Agence mobile à Alger. Devis gratuit.",
     translations: {
-      en: { title: "Mobile App Development in Algeria - Complete Guide 2024" },
-      ar: { title: "تطوير تطبيقات الهاتف المحمول في الجزائر 2024" }
+      en: {
+        title: "Mobile App Development in Algeria - Complete Guide 2024",
+        subtitle: "Complete Guide 2024: Flutter, React Native, Costs and Best Practices",
+        excerpt: "Complete guide to creating your mobile app in Algeria. Discover the best technologies, real costs and key steps to succeed in your mobile project."
+      },
+      ar: {
+        title: "تطوير تطبيقات الهاتف المحمول في الجزائر 2024",
+        subtitle: "دليل شامل 2024: Flutter، React Native، التكاليف وأفضل الممارسات",
+        excerpt: "دليل شامل لإنشاء تطبيقك المحمول في الجزائر. اكتشف أفضل التقنيات والتكاليف الحقيقية والخطوات الرئيسية لنجاح مشروعك."
+      }
     }
   },
   {
@@ -38,8 +46,16 @@ export const blogs = [
     metaTitle: "Création Site Web Algérie 2024 | Agence Web Pro | Symloop",
     metaDescription: "Création de sites web professionnels en Algérie. Sites vitrines, e-commerce, applications web. Prix compétitifs. Devis gratuit 24h.",
     translations: {
-      en: { title: "Website Creation in Algeria - Complete Business Guide 2024" },
-      ar: { title: "إنشاء موقع إلكتروني في الجزائر 2024" }
+      en: {
+        title: "Website Creation in Algeria - Complete Business Guide 2024",
+        subtitle: "Complete Guide for Businesses: Technologies, Prices and SEO",
+        excerpt: "Everything you need to know to create a professional website in Algeria. Prices, modern technologies, SEO and best practices for your digital presence."
+      },
+      ar: {
+        title: "إنشاء موقع إلكتروني في الجزائر 2024",
+        subtitle: "دليل شامل للشركات: التقنيات والأسعار وتحسين محركات البحث",
+        excerpt: "كل ما تحتاج معرفته لإنشاء موقع ويب احترافي في الجزائر. الأسعار والتقنيات الحديثة وأفضل الممارسات لحضورك الرقمي."
+      }
     }
   },
   {
@@ -58,8 +74,16 @@ export const blogs = [
     metaTitle: "E-commerce Algérie 2024 | Paiement CIB Edahabia SATIM | Symloop",
     metaDescription: "Créez votre boutique e-commerce en Algérie avec paiement CIB et Edahabia. Intégration SATIM, solutions clé en main. Devis gratuit.",
     translations: {
-      en: { title: "E-commerce in Algeria: CIB & Edahabia Payment Guide 2024" },
-      ar: { title: "التجارة الإلكترونية في الجزائر: دليل الدفع 2024" }
+      en: {
+        title: "E-commerce in Algeria: CIB & Edahabia Payment Guide 2024",
+        subtitle: "Complete Guide: SATIM Integration, Platforms and Delivery",
+        excerpt: "Launch your online store in Algeria with CIB and Edahabia payments. Complete guide: SATIM integration, e-commerce platforms and delivery solutions."
+      },
+      ar: {
+        title: "التجارة الإلكترونية في الجزائر: دليل الدفع 2024",
+        subtitle: "دليل شامل: تكامل SATIM والمنصات والتوصيل",
+        excerpt: "أطلق متجرك الإلكتروني في الجزائر مع مدفوعات CIB و Edahabia. دليل شامل: تكامل SATIM ومنصات التجارة الإلكترونية وحلول التوصيل."
+      }
     }
   },
   {
@@ -78,8 +102,16 @@ export const blogs = [
     metaTitle: "Transformation Digitale Algérie 2024 | Stratégie & Accompagnement | Symloop",
     metaDescription: "Accompagnement transformation digitale en Algérie. Stratégie, solutions et formation pour digitaliser votre entreprise. Diagnostic gratuit.",
     translations: {
-      en: { title: "Digital Transformation in Algeria - Strategic Guide 2024" },
-      ar: { title: "التحول الرقمي في الجزائر 2024" }
+      en: {
+        title: "Digital Transformation in Algeria - Strategic Guide 2024",
+        subtitle: "Strategic Guide for Businesses: Tools, Budget and ROI",
+        excerpt: "Succeed in your digital transformation in Algeria. Proven strategies, recommended tools, realistic budgets and support to digitalize your business."
+      },
+      ar: {
+        title: "التحول الرقمي في الجزائر 2024",
+        subtitle: "دليل استراتيجي للشركات: الأدوات والميزانية والعائد على الاستثمار",
+        excerpt: "نجح في تحولك الرقمي في الجزائر. استراتيجيات مجربة وأدوات موصى بها وميزانيات واقعية ومرافقة لرقمنة شركتك."
+      }
     }
   },
   {
@@ -98,8 +130,16 @@ export const blogs = [
     metaTitle: "ERP Algérie 2024 | Sage, Odoo, SAP | Comparatif & Prix | Symloop",
     metaDescription: "Solutions ERP en Algérie. Comparatif Sage, Odoo, SAP. Prix, implémentation, conformité fiscale. Audit gratuit.",
     translations: {
-      en: { title: "ERP Software in Algeria - Complete Comparison Guide 2024" },
-      ar: { title: "برنامج ERP في الجزائر 2024" }
+      en: {
+        title: "ERP Software in Algeria - Complete Comparison Guide 2024",
+        subtitle: "Complete Guide: Sage, Odoo, SAP - Comparison and Prices",
+        excerpt: "Choose the best ERP for your Algerian business. Sage, Odoo, SAP comparison: features, prices, implementation and Algerian tax compliance."
+      },
+      ar: {
+        title: "برنامج ERP في الجزائر 2024",
+        subtitle: "دليل شامل: Sage، Odoo، SAP - مقارنة وأسعار",
+        excerpt: "اختر أفضل نظام ERP لشركتك الجزائرية. مقارنة Sage و Odoo و SAP: الميزات والأسعار والتنفيذ والامتثال الضريبي الجزائري."
+      }
     }
   },
   {
@@ -118,8 +158,16 @@ export const blogs = [
     metaTitle: "Intelligence Artificielle Algérie MENA 2024 | Solutions IA | Symloop",
     metaDescription: "Solutions IA pour entreprises en Algérie et MENA. Chatbots multilingues, analyse prédictive, automatisation. Consultation gratuite.",
     translations: {
-      en: { title: "Artificial Intelligence in Algeria & MENA - Business Solutions 2024" },
-      ar: { title: "الذكاء الاصطناعي في الجزائر ومنطقة MENA 2024" }
+      en: {
+        title: "Artificial Intelligence in Algeria & MENA - Business Solutions 2024",
+        subtitle: "AI Solutions for Businesses: Chatbots, Predictive Analytics, Automation",
+        excerpt: "Integrate AI into your business. Solutions adapted to the Algerian and MENA market: multilingual chatbots, predictive analysis, intelligent automation."
+      },
+      ar: {
+        title: "الذكاء الاصطناعي في الجزائر ومنطقة MENA 2024",
+        subtitle: "حلول الذكاء الاصطناعي للشركات: روبوتات المحادثة والتحليل التنبؤي والأتمتة",
+        excerpt: "ادمج الذكاء الاصطناعي في شركتك. حلول مناسبة للسوق الجزائري ومنطقة MENA: روبوتات محادثة متعددة اللغات وتحليل تنبؤي وأتمتة ذكية."
+      }
     }
   },
   {
@@ -138,8 +186,16 @@ export const blogs = [
     metaTitle: "Agence Web Algérie 2024 | Top Agences Digitales | Symloop",
     metaDescription: "Guide pour choisir votre agence web en Algérie. Comparatif, prix, critères de sélection. Agences à Alger, Oran, Constantine.",
     translations: {
-      en: { title: "Web Agency in Algeria - Complete Guide 2024" },
-      ar: { title: "وكالة ويب في الجزائر - دليل شامل 2024" }
+      en: {
+        title: "Web Agency in Algeria - Complete Guide 2024",
+        subtitle: "How to Choose the Best Digital Agency for Your Project",
+        excerpt: "Everything you need to know to choose the right web agency in Algeria. Selection criteria, questions to ask, market prices and expert advice."
+      },
+      ar: {
+        title: "وكالة ويب في الجزائر - دليل شامل 2024",
+        subtitle: "كيفية اختيار أفضل وكالة رقمية لمشروعك",
+        excerpt: "كل ما تحتاج معرفته لاختيار وكالة الويب المناسبة في الجزائر. معايير الاختيار والأسئلة التي يجب طرحها وأسعار السوق ونصائح الخبراء."
+      }
     }
   },
   {
@@ -158,8 +214,16 @@ export const blogs = [
     metaTitle: "SEO Algérie 2024 | Référencement Google | Guide Complet | Symloop",
     metaDescription: "Dominez Google en Algérie. Guide SEO complet : mots-clés, backlinks, contenu. Agence SEO à Alger. Audit gratuit.",
     translations: {
-      en: { title: "SEO & Google Ranking in Algeria - Complete Guide 2024" },
-      ar: { title: "تحسين محركات البحث في الجزائر 2024" }
+      en: {
+        title: "SEO & Google Ranking in Algeria - Complete Guide 2024",
+        subtitle: "Strategies to Dominate Google in Algeria and Maghreb",
+        excerpt: "Complete SEO guide for the Algerian market. Natural referencing strategies, local keywords, backlinks and techniques to reach Google's first page."
+      },
+      ar: {
+        title: "تحسين محركات البحث في الجزائر 2024",
+        subtitle: "استراتيجيات للسيطرة على Google في الجزائر والمغرب العربي",
+        excerpt: "دليل شامل لتحسين محركات البحث للسوق الجزائري. استراتيجيات التصنيف والكلمات المفتاحية المحلية والروابط الخلفية والتقنيات للوصول للصفحة الأولى."
+      }
     }
   },
   {
@@ -178,8 +242,16 @@ export const blogs = [
     metaTitle: "Marketing Digital Algérie 2024 | Publicité Facebook & Google | Symloop",
     metaDescription: "Stratégies marketing digital en Algérie. Facebook Ads, Google Ads, influence marketing. Agence marketing à Alger.",
     translations: {
-      en: { title: "Digital Marketing in Algeria - Complete Strategy Guide 2024" },
-      ar: { title: "التسويق الرقمي في الجزائر 2024" }
+      en: {
+        title: "Digital Marketing in Algeria - Complete Strategy Guide 2024",
+        subtitle: "Strategies, Social Media and Online Advertising",
+        excerpt: "Master digital marketing in Algeria. Facebook Ads, Google Ads, Instagram, TikTok: strategies adapted to the Algerian market and realistic budgets."
+      },
+      ar: {
+        title: "التسويق الرقمي في الجزائر 2024",
+        subtitle: "الاستراتيجيات ووسائل التواصل الاجتماعي والإعلان عبر الإنترنت",
+        excerpt: "أتقن التسويق الرقمي في الجزائر. إعلانات Facebook و Google و Instagram و TikTok: استراتيجيات مناسبة للسوق الجزائري وميزانيات واقعية."
+      }
     }
   },
   {
@@ -198,8 +270,16 @@ export const blogs = [
     metaTitle: "Créer Startup Algérie 2024 | Financement & Guide | Symloop",
     metaDescription: "Guide complet pour créer votre startup en Algérie. Financement ANADE, ANSEJ, incubateurs. Accompagnement digital.",
     translations: {
-      en: { title: "Starting a Startup in Algeria - Complete Guide 2024" },
-      ar: { title: "إنشاء شركة ناشئة في الجزائر 2024" }
+      en: {
+        title: "Starting a Startup in Algeria - Complete Guide 2024",
+        subtitle: "Complete Guide: Funding, Legal Structure and Ecosystem",
+        excerpt: "Everything to launch your startup in Algeria. Legal framework, funding (ANADE, ANSEJ), incubators, accelerators and Algerian success stories."
+      },
+      ar: {
+        title: "إنشاء شركة ناشئة في الجزائر 2024",
+        subtitle: "دليل شامل: التمويل والهيكل القانوني والنظام البيئي",
+        excerpt: "كل شيء لإطلاق شركتك الناشئة في الجزائر. الإطار القانوني والتمويل (ANADE، ANSEJ) والحاضنات والمسرعات وقصص النجاح الجزائرية."
+      }
     }
   },
   {
@@ -218,8 +298,16 @@ export const blogs = [
     metaTitle: "Cybersécurité Algérie 2024 | Protection Entreprises | Symloop",
     metaDescription: "Protégez votre entreprise en Algérie. Solutions cybersécurité, audit sécurité, protection données. Experts à Alger.",
     translations: {
-      en: { title: "Cybersecurity in Algeria - Business Protection Guide 2024" },
-      ar: { title: "الأمن السيبراني في الجزائر 2024" }
+      en: {
+        title: "Cybersecurity in Algeria - Business Protection Guide 2024",
+        subtitle: "Protect Your Business: Threats, Solutions and Compliance",
+        excerpt: "Cybersecurity guide for Algerian businesses. Current threats, protection solutions, legal compliance and security best practices."
+      },
+      ar: {
+        title: "الأمن السيبراني في الجزائر 2024",
+        subtitle: "احمِ شركتك: التهديدات والحلول والامتثال",
+        excerpt: "دليل الأمن السيبراني للشركات الجزائرية. التهديدات الحالية وحلول الحماية والامتثال القانوني وأفضل ممارسات الأمان."
+      }
     }
   },
   {
@@ -238,8 +326,16 @@ export const blogs = [
     metaTitle: "Cloud Computing Algérie 2024 | AWS, Azure, Google | Symloop",
     metaDescription: "Solutions cloud en Algérie. Migration AWS, Azure, Google Cloud. Data centers MENA. Consultation gratuite.",
     translations: {
-      en: { title: "Cloud Computing in Algeria - Complete Guide 2024" },
-      ar: { title: "الحوسبة السحابية في الجزائر 2024" }
+      en: {
+        title: "Cloud Computing in Algeria - Complete Guide 2024",
+        subtitle: "Cloud Migration, Solutions and Local Providers",
+        excerpt: "Cloud computing guide for Algerian businesses. AWS, Azure, Google Cloud: comparison, prices, MENA data centers and migration strategies."
+      },
+      ar: {
+        title: "الحوسبة السحابية في الجزائر 2024",
+        subtitle: "الهجرة إلى السحابة والحلول ومقدمو الخدمات المحليون",
+        excerpt: "دليل الحوسبة السحابية للشركات الجزائرية. مقارنة AWS و Azure و Google Cloud: الأسعار ومراكز البيانات في منطقة MENA واستراتيجيات الهجرة."
+      }
     }
   },
   // === MVP & STARTUP PARTNER BLOGS ===
@@ -259,8 +355,16 @@ export const blogs = [
     metaTitle: "MVP Startup Algérie | Partenaire Tech | Développement Rapide | Symloop",
     metaDescription: "Développez votre MVP en Algérie avec Symloop. Partenaire tech pour startups. De l'idée au lancement en 8 semaines. Consultation gratuite.",
     translations: {
-      en: { title: "MVP Development for Startups in Algeria - Your Tech Partner" },
-      ar: { title: "تطوير MVP للشركات الناشئة في الجزائر" }
+      en: {
+        title: "MVP Development for Startups in Algeria - Your Tech Partner",
+        subtitle: "Your Tech Partner to Launch Your Project Quickly",
+        excerpt: "Symloop supports Algerian startups in developing their MVP. From idea to launched product in 8 weeks. Trusted tech partner for your success."
+      },
+      ar: {
+        title: "تطوير MVP للشركات الناشئة في الجزائر",
+        subtitle: "شريكك التقني لإطلاق مشروعك بسرعة",
+        excerpt: "Symloop يرافق الشركات الناشئة الجزائرية في تطوير MVP الخاص بها. من الفكرة إلى المنتج المُطلق في 8 أسابيع. شريك تقني موثوق لنجاحك."
+      }
     }
   },
   {
@@ -279,8 +383,16 @@ export const blogs = [
     metaTitle: "Partenaire Tech Startup Algérie | CTO as a Service | Symloop",
     metaDescription: "Trouvez votre partenaire tech en Algérie. CTO as a Service, équipe développement dédiée. Lancez votre startup avec Symloop.",
     translations: {
-      en: { title: "Finding a Tech Partner for Your Startup in Algeria" },
-      ar: { title: "العثور على شريك تقني لشركتك الناشئة في الجزائر" }
+      en: {
+        title: "Finding a Tech Partner for Your Startup in Algeria",
+        subtitle: "How to Choose the Right CTO or Development Team",
+        excerpt: "You have the idea, we have the tech. Complete guide to finding the ideal technical partner for your startup. Symloop: your A-to-Z tech provider."
+      },
+      ar: {
+        title: "العثور على شريك تقني لشركتك الناشئة في الجزائر",
+        subtitle: "كيفية اختيار CTO أو فريق التطوير المناسب",
+        excerpt: "لديك الفكرة، لدينا التقنية. دليل شامل للعثور على الشريك التقني المثالي لشركتك الناشئة. Symloop: مزود التقنية الشامل."
+      }
     }
   },
   {
@@ -299,8 +411,16 @@ export const blogs = [
     metaTitle: "Accompagnement Startup Tech Algérie | Services Complets | Symloop",
     metaDescription: "Accompagnement tech complet pour startups en Algérie. Développement, design, déploiement, maintenance. Un seul partenaire.",
     translations: {
-      en: { title: "Complete Tech Support for Algerian Startups" },
-      ar: { title: "مرافقة تقنية شاملة للشركات الناشئة الجزائرية" }
+      en: {
+        title: "Complete Tech Support for Algerian Startups",
+        subtitle: "From Idea to Deployment: Everything You Need",
+        excerpt: "Symloop provides everything your startup needs: development, design, cloud, maintenance. One provider for all your tech needs."
+      },
+      ar: {
+        title: "مرافقة تقنية شاملة للشركات الناشئة الجزائرية",
+        subtitle: "من الفكرة إلى النشر: كل ما تحتاجه",
+        excerpt: "Symloop يوفر كل ما تحتاجه شركتك الناشئة: التطوير والتصميم والسحابة والصيانة. مزود واحد لجميع احتياجاتك التقنية."
+      }
     }
   },
   // === TECHNOLOGY STACK BLOGS ===
@@ -320,8 +440,16 @@ export const blogs = [
     metaTitle: "Développement React Next.js Algérie | Applications Web | Symloop",
     metaDescription: "Experts React et Next.js en Algérie. Applications web performantes, SSR, SEO optimisé. Agence développement React Alger.",
     translations: {
-      en: { title: "React & Next.js Development in Algeria" },
-      ar: { title: "تطوير React و Next.js في الجزائر" }
+      en: {
+        title: "React & Next.js Development in Algeria",
+        subtitle: "Modern and High-Performance Web Applications",
+        excerpt: "Create ultra-fast web applications with React and Next.js. Symloop: React experts in Algeria for performant and SEO-friendly sites."
+      },
+      ar: {
+        title: "تطوير React و Next.js في الجزائر",
+        subtitle: "تطبيقات ويب حديثة وعالية الأداء",
+        excerpt: "أنشئ تطبيقات ويب فائقة السرعة مع React و Next.js. Symloop: خبراء React في الجزائر لمواقع عالية الأداء ومُحسّنة لمحركات البحث."
+      }
     }
   },
   {
@@ -340,8 +468,16 @@ export const blogs = [
     metaTitle: "Développement Flutter Algérie 2024 | Apps iOS Android | Symloop",
     metaDescription: "Développement Flutter en Algérie. Applications mobiles iOS et Android. Réduisez vos coûts. Agence Flutter Alger.",
     translations: {
-      en: { title: "Flutter Development in Algeria 2024" },
-      ar: { title: "تطوير Flutter في الجزائر 2024" }
+      en: {
+        title: "Flutter Development in Algeria 2024",
+        subtitle: "iOS and Android Mobile Apps with a Single Codebase",
+        excerpt: "Flutter: the ideal solution to create native iOS and Android apps. Reduce your costs by 40% with a single code base."
+      },
+      ar: {
+        title: "تطوير Flutter في الجزائر 2024",
+        subtitle: "تطبيقات iOS و Android بقاعدة كود واحدة",
+        excerpt: "Flutter: الحل المثالي لإنشاء تطبيقات iOS و Android الأصلية. قلل تكاليفك بنسبة 40% بقاعدة كود واحدة."
+      }
     }
   },
   {
@@ -360,8 +496,16 @@ export const blogs = [
     metaTitle: "Développement React Native Algérie | Apps Cross-Platform | Symloop",
     metaDescription: "React Native en Algérie. Applications mobiles cross-platform. Experts JavaScript mobile. Devis gratuit.",
     translations: {
-      en: { title: "React Native Development in Algeria" },
-      ar: { title: "تطوير React Native في الجزائر" }
+      en: {
+        title: "React Native Development in Algeria",
+        subtitle: "Professional Cross-Platform Mobile Applications",
+        excerpt: "React Native for high-performance mobile apps. Ideal for Algerian startups looking to quickly launch on iOS and Android."
+      },
+      ar: {
+        title: "تطوير React Native في الجزائر",
+        subtitle: "تطبيقات موبايل احترافية متعددة المنصات",
+        excerpt: "React Native لتطبيقات موبايل عالية الأداء. مثالي للشركات الناشئة الجزائرية التي تريد الإطلاق بسرعة على iOS و Android."
+      }
     }
   },
   {
@@ -380,8 +524,16 @@ export const blogs = [
     metaTitle: "Développement Node.js Backend Algérie | APIs | Symloop",
     metaDescription: "Développement backend Node.js en Algérie. APIs REST, GraphQL, microservices. Experts backend Alger.",
     translations: {
-      en: { title: "Node.js Backend Development in Algeria" },
-      ar: { title: "تطوير Node.js Backend في الجزائر" }
+      en: {
+        title: "Node.js Backend Development in Algeria",
+        subtitle: "Robust APIs and Scalable Backend Services",
+        excerpt: "Node.js for high-performance backends. REST APIs, GraphQL, microservices. Symloop: backend experts in Algeria."
+      },
+      ar: {
+        title: "تطوير Node.js Backend في الجزائر",
+        subtitle: "واجهات برمجة تطبيقات قوية وخدمات خلفية قابلة للتوسع",
+        excerpt: "Node.js للواجهات الخلفية عالية الأداء. REST APIs و GraphQL والخدمات المصغرة. Symloop: خبراء الواجهات الخلفية في الجزائر."
+      }
     }
   },
   {
@@ -400,8 +552,16 @@ export const blogs = [
     metaTitle: "Développement Python Django Algérie | Data Science | Symloop",
     metaDescription: "Experts Python et Django en Algérie. Applications web, data science, IA. Agence Python Alger.",
     translations: {
-      en: { title: "Python & Django Development in Algeria" },
-      ar: { title: "تطوير Python و Django في الجزائر" }
+      en: {
+        title: "Python & Django Development in Algeria",
+        subtitle: "Robust Web Applications and Data Science",
+        excerpt: "Python and Django for powerful web applications, data science and AI. Symloop: Python experts in Algeria."
+      },
+      ar: {
+        title: "تطوير Python و Django في الجزائر",
+        subtitle: "تطبيقات ويب قوية وعلم البيانات",
+        excerpt: "Python و Django لتطبيقات ويب قوية وعلم البيانات والذكاء الاصطناعي. Symloop: خبراء Python في الجزائر."
+      }
     }
   },
   // === INDUSTRY-SPECIFIC BLOGS ===
@@ -421,8 +581,16 @@ export const blogs = [
     metaTitle: "Fintech Algérie 2024 | Solutions Paiement Digital | Symloop",
     metaDescription: "Solutions fintech en Algérie. Applications paiement, banque mobile, intégration CIB Edahabia. Experts fintech Alger.",
     translations: {
-      en: { title: "Fintech Solutions in Algeria 2024" },
-      ar: { title: "حلول التكنولوجيا المالية في الجزائر 2024" }
+      en: {
+        title: "Fintech Solutions in Algeria 2024",
+        subtitle: "Banking Apps, Mobile Payment and Digital Finance",
+        excerpt: "Develop your fintech solution in Algeria. Banking apps, e-wallets, CIB/Edahabia integration."
+      },
+      ar: {
+        title: "حلول التكنولوجيا المالية في الجزائر 2024",
+        subtitle: "تطبيقات بنكية والدفع عبر الهاتف والتمويل الرقمي",
+        excerpt: "طور حلك المالي التقني في الجزائر. تطبيقات بنكية ومحافظ إلكترونية وتكامل CIB/Edahabia."
+      }
     }
   },
   {
@@ -441,8 +609,16 @@ export const blogs = [
     metaTitle: "E-Health Algérie 2024 | Applications Santé | Symloop",
     metaDescription: "Solutions e-health en Algérie. Télémédecine, gestion clinique, dossiers médicaux. Développement santé digitale.",
     translations: {
-      en: { title: "Healthcare Apps & E-Health in Algeria" },
-      ar: { title: "تطبيقات الصحة والرعاية الصحية الإلكترونية في الجزائر" }
+      en: {
+        title: "Healthcare Apps & E-Health in Algeria",
+        subtitle: "Telemedicine, Clinic Management and Medical Records",
+        excerpt: "E-health solutions for the Algerian medical sector. Teleconsultation, clinic management, electronic patient records."
+      },
+      ar: {
+        title: "تطبيقات الصحة والرعاية الصحية الإلكترونية في الجزائر",
+        subtitle: "الطب عن بُعد وإدارة العيادات والسجلات الطبية",
+        excerpt: "حلول الصحة الإلكترونية للقطاع الطبي الجزائري. الاستشارة عن بُعد وإدارة العيادات والسجلات الطبية الإلكترونية."
+      }
     }
   },
   {
@@ -461,8 +637,16 @@ export const blogs = [
     metaTitle: "EdTech E-Learning Algérie 2024 | Plateformes Éducatives | Symloop",
     metaDescription: "Solutions EdTech en Algérie. Plateformes e-learning, LMS, applications éducatives. Développement EdTech Alger.",
     translations: {
-      en: { title: "EdTech & E-Learning in Algeria 2024" },
-      ar: { title: "تكنولوجيا التعليم والتعلم الإلكتروني في الجزائر 2024" }
+      en: {
+        title: "EdTech & E-Learning in Algeria 2024",
+        subtitle: "Educational Platforms and Learning Applications",
+        excerpt: "Create your e-learning platform in Algeria. LMS, educational apps, online courses for schools and universities."
+      },
+      ar: {
+        title: "تكنولوجيا التعليم والتعلم الإلكتروني في الجزائر 2024",
+        subtitle: "منصات تعليمية وتطبيقات التعلم",
+        excerpt: "أنشئ منصة التعلم الإلكتروني الخاصة بك في الجزائر. LMS وتطبيقات تعليمية ودورات عبر الإنترنت للمدارس والجامعات."
+      }
     }
   },
   {
@@ -481,8 +665,16 @@ export const blogs = [
     metaTitle: "Application Restaurant Livraison Algérie | FoodTech | Symloop",
     metaDescription: "Applications restaurant et livraison en Algérie. Commande en ligne, food delivery, gestion cuisine. Solutions restauration.",
     translations: {
-      en: { title: "Restaurant & Food Delivery Apps in Algeria" },
-      ar: { title: "تطبيقات المطاعم والتوصيل في الجزائر" }
+      en: {
+        title: "Restaurant & Food Delivery Apps in Algeria",
+        subtitle: "Digital Solutions for Restaurants and Food Delivery",
+        excerpt: "Digitalize your restaurant with online ordering, delivery and kitchen management. Turnkey solutions for Algerian restaurateurs."
+      },
+      ar: {
+        title: "تطبيقات المطاعم والتوصيل في الجزائر",
+        subtitle: "حلول رقمية للمطاعم وتوصيل الطعام",
+        excerpt: "رقمن مطعمك مع الطلب عبر الإنترنت والتوصيل وإدارة المطبخ. حلول جاهزة لأصحاب المطاعم الجزائريين."
+      }
     }
   },
   {
@@ -501,8 +693,16 @@ export const blogs = [
     metaTitle: "Application Immobilier Algérie 2024 | PropTech | Symloop",
     metaDescription: "Applications immobilier en Algérie. Plateformes vente/location, gestion locative, PropTech. Solutions immobilières digitales.",
     translations: {
-      en: { title: "Real Estate Apps in Algeria 2024" },
-      ar: { title: "تطبيقات العقارات في الجزائر 2024" }
+      en: {
+        title: "Real Estate Apps in Algeria 2024",
+        subtitle: "Sale, Rental and Property Management Platforms",
+        excerpt: "Digital solutions for Algerian real estate. Listing platforms, rental management, 3D virtual tours."
+      },
+      ar: {
+        title: "تطبيقات العقارات في الجزائر 2024",
+        subtitle: "منصات البيع والإيجار وإدارة العقارات",
+        excerpt: "حلول رقمية للعقارات الجزائرية. منصات الإعلانات وإدارة الإيجارات وجولات افتراضية ثلاثية الأبعاد."
+      }
     }
   },
   {
@@ -521,8 +721,16 @@ export const blogs = [
     metaTitle: "Solutions Logistique Transport Algérie | Tracking | Symloop",
     metaDescription: "Solutions logistique digitale en Algérie. Tracking GPS, gestion flotte, optimisation livraison. Experts logistique tech.",
     translations: {
-      en: { title: "Logistics & Transport Solutions in Algeria" },
-      ar: { title: "حلول اللوجستيات والنقل في الجزائر" }
+      en: {
+        title: "Logistics & Transport Solutions in Algeria",
+        subtitle: "Fleet Management, Tracking and Delivery Optimization",
+        excerpt: "Digitalize your logistics in Algeria. GPS tracking, route optimization, warehouse management, e-commerce integration."
+      },
+      ar: {
+        title: "حلول اللوجستيات والنقل في الجزائر",
+        subtitle: "إدارة الأسطول والتتبع وتحسين التوصيل",
+        excerpt: "رقمن لوجستياتك في الجزائر. تتبع GPS وتحسين المسارات وإدارة المستودعات وتكامل التجارة الإلكترونية."
+      }
     }
   },
   // === SERVICE-SPECIFIC BLOGS ===
@@ -542,8 +750,16 @@ export const blogs = [
     metaTitle: "Design UI/UX Algérie 2024 | Interfaces | Symloop",
     metaDescription: "Design UI/UX en Algérie. Interfaces utilisateur, maquettes Figma, expérience utilisateur. Agence design Alger.",
     translations: {
-      en: { title: "UI/UX Design in Algeria 2024" },
-      ar: { title: "تصميم UI/UX في الجزائر 2024" }
+      en: {
+        title: "UI/UX Design in Algeria 2024",
+        subtitle: "Create Exceptional User Interfaces",
+        excerpt: "UI/UX design services in Algeria. Intuitive interfaces, optimal user experience, professional Figma mockups."
+      },
+      ar: {
+        title: "تصميم UI/UX في الجزائر 2024",
+        subtitle: "أنشئ واجهات مستخدم استثنائية",
+        excerpt: "خدمات تصميم UI/UX في الجزائر. واجهات بديهية وتجربة مستخدم مثالية ونماذج Figma احترافية."
+      }
     }
   },
   {
@@ -562,8 +778,16 @@ export const blogs = [
     metaTitle: "Développement API Intégration Algérie | REST GraphQL | Symloop",
     metaDescription: "Développement APIs en Algérie. REST, GraphQL, intégrations tierces, webhooks. Experts API Alger.",
     translations: {
-      en: { title: "API Development & Integration in Algeria" },
-      ar: { title: "تطوير API والتكامل في الجزائر" }
+      en: {
+        title: "API Development & Integration in Algeria",
+        subtitle: "RESTful APIs, GraphQL and Third-Party Integrations",
+        excerpt: "API development and integration experts in Algeria. REST, GraphQL, webhooks, existing systems connection."
+      },
+      ar: {
+        title: "تطوير API والتكامل في الجزائر",
+        subtitle: "واجهات برمجة RESTful و GraphQL والتكاملات الخارجية",
+        excerpt: "خبراء تطوير API والتكامل في الجزائر. REST و GraphQL و webhooks وربط الأنظمة القائمة."
+      }
     }
   },
   {
@@ -582,8 +806,16 @@ export const blogs = [
     metaTitle: "DevOps Déploiement Algérie 2024 | CI/CD Docker | Symloop",
     metaDescription: "Services DevOps en Algérie. CI/CD, Docker, Kubernetes, déploiement cloud. Experts DevOps Alger.",
     translations: {
-      en: { title: "DevOps & Deployment in Algeria 2024" },
-      ar: { title: "DevOps والنشر في الجزائر 2024" }
+      en: {
+        title: "DevOps & Deployment in Algeria 2024",
+        subtitle: "CI/CD, Docker, Kubernetes and Cloud Infrastructure",
+        excerpt: "DevOps services in Algeria. Deployment automation, CI/CD pipelines, Docker containerization, Kubernetes orchestration."
+      },
+      ar: {
+        title: "DevOps والنشر في الجزائر 2024",
+        subtitle: "CI/CD و Docker و Kubernetes والبنية التحتية السحابية",
+        excerpt: "خدمات DevOps في الجزائر. أتمتة النشر وخطوط CI/CD وحاويات Docker وتنسيق Kubernetes."
+      }
     }
   },
   {
@@ -602,8 +834,16 @@ export const blogs = [
     metaTitle: "Maintenance Support Applications Algérie | TMA | Symloop",
     metaDescription: "Maintenance applicative en Algérie. TMA, support 24/7, monitoring, corrections. Services maintenance Alger.",
     translations: {
-      en: { title: "Application Maintenance & Support in Algeria" },
-      ar: { title: "صيانة ودعم التطبيقات في الجزائر" }
+      en: {
+        title: "Application Maintenance & Support in Algeria",
+        subtitle: "TMA, Monitoring and 24/7 Support for Your Projects",
+        excerpt: "Application maintenance services in Algeria. TMA, monitoring, bug fixes, security updates, technical support."
+      },
+      ar: {
+        title: "صيانة ودعم التطبيقات في الجزائر",
+        subtitle: "TMA والمراقبة والدعم على مدار الساعة لمشاريعك",
+        excerpt: "خدمات صيانة التطبيقات في الجزائر. TMA والمراقبة وإصلاح الأخطاء وتحديثات الأمان والدعم الفني."
+      }
     }
   },
   // === B2B & ENTERPRISE BLOGS ===
@@ -623,8 +863,16 @@ export const blogs = [
     metaTitle: "Logiciel CRM Algérie 2024 | Gestion Client | Symloop",
     metaDescription: "Solutions CRM en Algérie. Gestion relation client, pipeline ventes, automatisation. CRM sur mesure Alger.",
     translations: {
-      en: { title: "CRM Software in Algeria 2024" },
-      ar: { title: "برنامج CRM في الجزائر 2024" }
+      en: {
+        title: "CRM Software in Algeria 2024",
+        subtitle: "Custom Customer Relationship Management Solutions",
+        excerpt: "CRM adapted to Algerian businesses. Customer management, sales pipeline, marketing automation, local integration."
+      },
+      ar: {
+        title: "برنامج CRM في الجزائر 2024",
+        subtitle: "حلول إدارة علاقات العملاء المخصصة",
+        excerpt: "CRM مناسب للشركات الجزائرية. إدارة العملاء وخط أنابيب المبيعات وأتمتة التسويق والتكامل المحلي."
+      }
     }
   },
   {
@@ -643,8 +891,16 @@ export const blogs = [
     metaTitle: "Logiciel RH Paie Algérie 2024 | SIRH CNAS | Symloop",
     metaDescription: "Logiciel RH en Algérie. Gestion paie CNAS/CASNOS, SIRH, recrutement. Solutions RH conformes.",
     translations: {
-      en: { title: "HR & Payroll Software in Algeria 2024" },
-      ar: { title: "برنامج الموارد البشرية والرواتب في الجزائر 2024" }
+      en: {
+        title: "HR & Payroll Software in Algeria 2024",
+        subtitle: "Human Resources Management Compliant with CNAS/CASNOS",
+        excerpt: "HRIS for Algerian businesses. CNAS/CASNOS compliant payroll management, leave, recruitment, evaluations."
+      },
+      ar: {
+        title: "برنامج الموارد البشرية والرواتب في الجزائر 2024",
+        subtitle: "إدارة الموارد البشرية المتوافقة مع CNAS/CASNOS",
+        excerpt: "نظام معلومات الموارد البشرية للشركات الجزائرية. إدارة الرواتب المتوافقة مع CNAS/CASNOS والإجازات والتوظيف والتقييمات."
+      }
     }
   },
   {
@@ -663,8 +919,16 @@ export const blogs = [
     metaTitle: "Logiciel Comptabilité Algérie 2024 | PCN G50 | Symloop",
     metaDescription: "Logiciel comptabilité en Algérie. Conforme PCN, déclarations G50, facturation. Solutions comptables Alger.",
     translations: {
-      en: { title: "Accounting Software in Algeria 2024" },
-      ar: { title: "برنامج المحاسبة في الجزائر 2024" }
+      en: {
+        title: "Accounting Software in Algeria 2024",
+        subtitle: "Accounting Solutions Compliant with PCN and Algerian Taxation",
+        excerpt: "Accounting software for Algerian businesses. PCN compliant, G50 tax returns, electronic invoicing."
+      },
+      ar: {
+        title: "برنامج المحاسبة في الجزائر 2024",
+        subtitle: "حلول محاسبية متوافقة مع PCN والنظام الضريبي الجزائري",
+        excerpt: "برنامج محاسبة للشركات الجزائرية. متوافق مع PCN والإقرارات الضريبية G50 والفوترة الإلكترونية."
+      }
     }
   },
   {
@@ -683,8 +947,16 @@ export const blogs = [
     metaTitle: "Marketplace B2B Algérie | Plateforme Multi-Vendeurs | Symloop",
     metaDescription: "Développement marketplace B2B en Algérie. Multi-vendeurs, e-commerce professionnel. Plateforme B2B Alger.",
     translations: {
-      en: { title: "B2B Platform & Marketplace in Algeria" },
-      ar: { title: "منصة B2B والسوق في الجزائر" }
+      en: {
+        title: "B2B Platform & Marketplace in Algeria",
+        subtitle: "Create Your Professional Marketplace",
+        excerpt: "B2B marketplace development in Algeria. Multi-vendor, order management, secure CIB payments."
+      },
+      ar: {
+        title: "منصة B2B والسوق في الجزائر",
+        subtitle: "أنشئ سوقك المهني",
+        excerpt: "تطوير أسواق B2B في الجزائر. متعدد البائعين وإدارة الطلبات ومدفوعات CIB الآمنة."
+      }
     }
   },
   {
@@ -703,8 +975,16 @@ export const blogs = [
     metaTitle: "Développement SaaS Algérie 2024 | Logiciel Cloud | Symloop",
     metaDescription: "Développement SaaS en Algérie. Applications cloud multi-tenant, abonnements, scalable. Experts SaaS Alger.",
     translations: {
-      en: { title: "SaaS Development in Algeria 2024" },
-      ar: { title: "تطوير SaaS في الجزائر 2024" }
+      en: {
+        title: "SaaS Development in Algeria 2024",
+        subtitle: "Create Your Cloud Software",
+        excerpt: "SaaS application development in Algeria. Multi-tenant architecture, subscriptions, API, cloud scalability."
+      },
+      ar: {
+        title: "تطوير SaaS في الجزائر 2024",
+        subtitle: "أنشئ برنامجك السحابي",
+        excerpt: "تطوير تطبيقات SaaS في الجزائر. بنية متعددة المستأجرين والاشتراكات وAPI وقابلية التوسع السحابية."
+      }
     }
   },
   // === REGIONAL & LOCALIZATION BLOGS ===
@@ -724,8 +1004,16 @@ export const blogs = [
     metaTitle: "Développement Web Oran 2024 | Agence Digitale | Symloop",
     metaDescription: "Développement web à Oran. Sites internet, applications, e-commerce. Agence digitale Oran ouest algérien.",
     translations: {
-      en: { title: "Web Development in Oran 2024" },
-      ar: { title: "تطوير الويب في وهران 2024" }
+      en: {
+        title: "Web Development in Oran 2024",
+        subtitle: "Digital Agency for Oranese Businesses",
+        excerpt: "Web development services in Oran. Websites, applications, e-commerce for Western Algerian businesses."
+      },
+      ar: {
+        title: "تطوير الويب في وهران 2024",
+        subtitle: "وكالة رقمية للشركات الوهرانية",
+        excerpt: "خدمات تطوير الويب في وهران. مواقع إلكترونية وتطبيقات وتجارة إلكترونية لشركات غرب الجزائر."
+      }
     }
   },
   {
@@ -744,8 +1032,16 @@ export const blogs = [
     metaTitle: "Développement Web Constantine 2024 | Agence | Symloop",
     metaDescription: "Développement web à Constantine. Sites internet, applications, e-commerce. Agence digitale Est algérien.",
     translations: {
-      en: { title: "Web Development in Constantine 2024" },
-      ar: { title: "تطوير الويب في قسنطينة 2024" }
+      en: {
+        title: "Web Development in Constantine 2024",
+        subtitle: "Digital Solutions for Eastern Algeria",
+        excerpt: "Web development agency in Constantine. Sites, mobile apps, digital solutions for Eastern businesses."
+      },
+      ar: {
+        title: "تطوير الويب في قسنطينة 2024",
+        subtitle: "حلول رقمية لشرق الجزائر",
+        excerpt: "وكالة تطوير الويب في قسنطينة. مواقع وتطبيقات موبايل وحلول رقمية لشركات الشرق."
+      }
     }
   },
   {
@@ -764,8 +1060,16 @@ export const blogs = [
     metaTitle: "Développement Application Tunisie 2024 | Web Mobile | Symloop",
     metaDescription: "Développement web et mobile en Tunisie. Applications, e-commerce, solutions digitales. Partenaire tech Tunis.",
     translations: {
-      en: { title: "App Development in Tunisia 2024" },
-      ar: { title: "تطوير التطبيقات في تونس 2024" }
+      en: {
+        title: "App Development in Tunisia 2024",
+        subtitle: "Your Tech Partner for the Tunisian Market",
+        excerpt: "Web and mobile development services in Tunisia. Applications, e-commerce, digital solutions for Tunisian businesses."
+      },
+      ar: {
+        title: "تطوير التطبيقات في تونس 2024",
+        subtitle: "شريكك التقني للسوق التونسي",
+        excerpt: "خدمات تطوير الويب والموبايل في تونس. تطبيقات وتجارة إلكترونية وحلول رقمية للشركات التونسية."
+      }
     }
   },
   {
@@ -784,8 +1088,16 @@ export const blogs = [
     metaTitle: "Développement Application Maroc 2024 | Web Mobile | Symloop",
     metaDescription: "Développement web et mobile au Maroc. Applications, e-commerce, solutions digitales. Partenaire tech Casablanca.",
     translations: {
-      en: { title: "App Development in Morocco 2024" },
-      ar: { title: "تطوير التطبيقات في المغرب 2024" }
+      en: {
+        title: "App Development in Morocco 2024",
+        subtitle: "Tech Solutions for the Moroccan Market",
+        excerpt: "Digital development services in Morocco. Web apps, mobile, e-commerce. Tech expertise for Moroccan businesses."
+      },
+      ar: {
+        title: "تطوير التطبيقات في المغرب 2024",
+        subtitle: "حلول تقنية للسوق المغربي",
+        excerpt: "خدمات التطوير الرقمي في المغرب. تطبيقات ويب وموبايل وتجارة إلكترونية. خبرة تقنية للشركات المغربية."
+      }
     }
   },
   {
@@ -804,8 +1116,16 @@ export const blogs = [
     metaTitle: "Agence Digitale MENA 2024 | Multilingue Arabe | Symloop",
     metaDescription: "Agence digitale région MENA. Applications multilingues arabe/français/anglais, RTL support. Experts MENA.",
     translations: {
-      en: { title: "Digital Agency for MENA Region 2024" },
-      ar: { title: "وكالة رقمية لمنطقة الشرق الأوسط وشمال أفريقيا 2024" }
+      en: {
+        title: "Digital Agency for MENA Region 2024",
+        subtitle: "Multilingual Tech Services: Arabic, French, English",
+        excerpt: "Digital agency specialized in MENA region. Arabic/French/English multilingual applications, localization, RTL support."
+      },
+      ar: {
+        title: "وكالة رقمية لمنطقة الشرق الأوسط وشمال أفريقيا 2024",
+        subtitle: "خدمات تقنية متعددة اللغات: عربي وفرنسي وإنجليزي",
+        excerpt: "وكالة رقمية متخصصة في منطقة MENA. تطبيقات متعددة اللغات عربي/فرنسي/إنجليزي والتوطين ودعم RTL."
+      }
     }
   },
   // === ADDITIONAL SEO BLOGS ===
@@ -825,8 +1145,16 @@ export const blogs = [
     metaTitle: "Coût Développement Application Algérie 2024 | Prix | Symloop",
     metaDescription: "Prix développement en Algérie. Coût site web, application mobile, e-commerce. Tarifs réalistes et devis gratuit.",
     translations: {
-      en: { title: "App Development Cost in Algeria 2024" },
-      ar: { title: "تكلفة تطوير التطبيقات في الجزائر 2024" }
+      en: {
+        title: "App Development Cost in Algeria 2024",
+        subtitle: "Real Prices: Website, Mobile App, E-commerce",
+        excerpt: "How much does an app cost in Algeria? Detailed prices for websites, mobile apps, e-commerce. Realistic budget for your project."
+      },
+      ar: {
+        title: "تكلفة تطوير التطبيقات في الجزائر 2024",
+        subtitle: "الأسعار الحقيقية: موقع ويب وتطبيق موبايل وتجارة إلكترونية",
+        excerpt: "كم يكلف التطبيق في الجزائر؟ أسعار مفصلة للمواقع وتطبيقات الموبايل والتجارة الإلكترونية. ميزانية واقعية لمشروعك."
+      }
     }
   },
   {
@@ -845,8 +1173,16 @@ export const blogs = [
     metaTitle: "Choisir Développeur Algérie | Guide Complet | Symloop",
     metaDescription: "Comment choisir votre développeur en Algérie. Critères, questions, red flags. Guide pour trouver le bon partenaire tech.",
     translations: {
-      en: { title: "How to Choose a Developer in Algeria" },
-      ar: { title: "كيفية اختيار مطور في الجزائر" }
+      en: {
+        title: "How to Choose a Developer in Algeria",
+        subtitle: "Criteria, Questions and Red Flags to Avoid",
+        excerpt: "Guide to choosing your developer or agency in Algeria. Essential criteria, questions to ask, mistakes to avoid."
+      },
+      ar: {
+        title: "كيفية اختيار مطور في الجزائر",
+        subtitle: "المعايير والأسئلة والعلامات التحذيرية",
+        excerpt: "دليل لاختيار مطورك أو وكالتك في الجزائر. المعايير الأساسية والأسئلة التي يجب طرحها والأخطاء التي يجب تجنبها."
+      }
     }
   },
   {
@@ -865,8 +1201,16 @@ export const blogs = [
     metaTitle: "Tendances Tech Algérie 2025 | Innovation | Symloop",
     metaDescription: "Tendances technologiques Algérie 2025. IA, blockchain, IoT, innovations. Préparez votre entreprise au futur digital.",
     translations: {
-      en: { title: "Tech Trends in Algeria 2025" },
-      ar: { title: "اتجاهات التكنولوجيا في الجزائر 2025" }
+      en: {
+        title: "Tech Trends in Algeria 2025",
+        subtitle: "Emerging Technologies and Opportunities",
+        excerpt: "Tech trends that will transform Algeria in 2025. AI, blockchain, IoT, 5G and business opportunities."
+      },
+      ar: {
+        title: "اتجاهات التكنولوجيا في الجزائر 2025",
+        subtitle: "التقنيات الناشئة والفرص",
+        excerpt: "الاتجاهات التقنية التي ستحول الجزائر في 2025. الذكاء الاصطناعي وبلوكشين وإنترنت الأشياء و5G وفرص الأعمال."
+      }
     }
   },
   {
@@ -885,8 +1229,16 @@ export const blogs = [
     metaTitle: "Freelance vs Agence Algérie | Comparatif | Symloop",
     metaDescription: "Freelance ou agence en Algérie ? Comparatif détaillé prix, qualité, délais. Guide pour choisir.",
     translations: {
-      en: { title: "Freelance vs Agency in Algeria: What to Choose?" },
-      ar: { title: "العمل الحر مقابل الوكالة في الجزائر" }
+      en: {
+        title: "Freelance vs Agency in Algeria: What to Choose?",
+        subtitle: "Advantages, Disadvantages and Use Cases",
+        excerpt: "Freelance or agency for your digital project? Detailed comparison: price, quality, deadlines, support. Make the right choice."
+      },
+      ar: {
+        title: "العمل الحر مقابل الوكالة في الجزائر",
+        subtitle: "المميزات والعيوب وحالات الاستخدام",
+        excerpt: "عمل حر أم وكالة لمشروعك الرقمي؟ مقارنة مفصلة: السعر والجودة والمواعيد والدعم. اتخذ القرار الصحيح."
+      }
     }
   },
   {
@@ -905,30 +1257,57 @@ export const blogs = [
     metaTitle: "Réussir Projet Digital Algérie | Guide Complet | Symloop",
     metaDescription: "Réussissez votre projet digital en Algérie. Méthodologie, étapes, bonnes pratiques. Guide succès projet web/mobile.",
     translations: {
-      en: { title: "How to Succeed Your Digital Project in Algeria" },
-      ar: { title: "كيف تنجح مشروعك الرقمي في الجزائر" }
+      en: {
+        title: "How to Succeed Your Digital Project in Algeria",
+        subtitle: "Methodology, Steps and Best Practices",
+        excerpt: "Keys to succeed your web or mobile project in Algeria. Agile methodology, communication, budget and deadline management."
+      },
+      ar: {
+        title: "كيف تنجح مشروعك الرقمي في الجزائر",
+        subtitle: "المنهجية والخطوات وأفضل الممارسات",
+        excerpt: "مفاتيح نجاح مشروعك الويب أو الموبايل في الجزائر. منهجية Agile والتواصل وإدارة الميزانية والمواعيد."
+      }
     }
   }
 ];
 
+// Helper function to localize a single blog
+const localizeBlog = (blog, locale = 'fr') => {
+  if (locale === 'fr' || !blog.translations || !blog.translations[locale]) {
+    return blog;
+  }
+
+  const translation = blog.translations[locale];
+  return {
+    ...blog,
+    title: translation.title || blog.title,
+    subtitle: translation.subtitle || blog.subtitle,
+    excerpt: translation.excerpt || blog.excerpt,
+    metaTitle: translation.metaTitle || blog.metaTitle,
+    metaDescription: translation.metaDescription || blog.metaDescription,
+    tags: translation.tags || blog.tags
+  };
+};
+
 // Get blog by slug
-export const getBlogBySlug = (slug) => {
-  return blogs.find(blog => blog.slug === slug);
+export const getBlogBySlug = (slug, locale = 'fr') => {
+  const blog = blogs.find(blog => blog.slug === slug);
+  return blog ? localizeBlog(blog, locale) : null;
 };
 
 // Get all blogs
-export const getAllBlogs = () => {
-  return blogs;
+export const getAllBlogs = (locale = 'fr') => {
+  return blogs.map(blog => localizeBlog(blog, locale));
 };
 
 // Get featured blogs
-export const getFeaturedBlogs = () => {
-  return blogs.filter(blog => blog.featured);
+export const getFeaturedBlogs = (locale = 'fr') => {
+  return blogs.filter(blog => blog.featured).map(blog => localizeBlog(blog, locale));
 };
 
 // Get blogs by category
-export const getBlogsByCategory = (category) => {
-  return blogs.filter(blog => blog.category === category);
+export const getBlogsByCategory = (category, locale = 'fr') => {
+  return blogs.filter(blog => blog.category === category).map(blog => localizeBlog(blog, locale));
 };
 
 // Get all categories with counts
@@ -941,11 +1320,12 @@ export const getCategories = () => {
 };
 
 // Get related blogs (same category, excluding current)
-export const getRelatedBlogs = (currentSlug, limit = 3) => {
-  const currentBlog = getBlogBySlug(currentSlug);
+export const getRelatedBlogs = (currentSlug, limit = 3, locale = 'fr') => {
+  const currentBlog = blogs.find(blog => blog.slug === currentSlug);
   if (!currentBlog) return [];
 
   return blogs
     .filter(blog => blog.category === currentBlog.category && blog.slug !== currentSlug)
-    .slice(0, limit);
+    .slice(0, limit)
+    .map(blog => localizeBlog(blog, locale));
 };

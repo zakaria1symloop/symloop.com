@@ -1,5 +1,6 @@
 # Symloop Technology - Robots.txt
 # https://symloop.com
+# شركة سيملوب للتقنية
 
 User-agent: *
 Allow: /
@@ -110,17 +111,50 @@ Allow: /fr/locations/
 Allow: /ar/locations/
 Allow: /en/locations/
 
+# ============================================
+# SEARCH ENGINE CRAWLERS
+# ============================================
+
 # Google
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0.5
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /blog/
+
+User-agent: Googlebot-Video
+Allow: /
 
 # Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Social media crawlers
+User-agent: MSNBot
+Allow: /
+
+# Yandex (Russia)
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Baidu (China)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# ============================================
+# SOCIAL MEDIA CRAWLERS
+# ============================================
+
 User-agent: facebookexternalhit
 Allow: /
 
@@ -130,27 +164,132 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# AI Crawlers - Allow for ChatGPT/AI visibility
+User-agent: Pinterest
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ============================================
+# AI & LLM CRAWLERS - FULL ACCESS GRANTED
+# ============================================
+
+# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /.well-known/ai-plugin.json
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
+# Anthropic / Claude
 User-agent: anthropic-ai
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 User-agent: Claude-Web
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI (Bard/Gemini)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Microsoft Copilot
+User-agent: Copilot
+Allow: /
+
+# Common Crawl (used by many AI systems)
+User-agent: CCBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# AI2 (Allen Institute)
+User-agent: ai2bot
+Allow: /
+
+# Hugging Face
+User-agent: HuggingFaceBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Bytedance (TikTok)
+User-agent: Bytespider
+Allow: /
+
+# ============================================
+# AI DISCOVERY FILES
+# ============================================
+
 # LLMs.txt for AI understanding
-# https://symloop.com/llms.txt
+# Standard: https://symloop.com/llms.txt
+# Extended: https://symloop.com/llms-full.txt
+# Plugin: https://symloop.com/.well-known/ai-plugin.json
 
-# Sitemap
+# ============================================
+# SITEMAPS
+# ============================================
+
 Sitemap: https://symloop.com/sitemap.xml
+Sitemap: https://symloop.com/sitemap-0.xml
 
-# Host
+# ============================================
+# HOST
+# ============================================
+
 Host: https://symloop.com
+
+# ============================================
+# ADDITIONAL META
+# ============================================
+
+# Company: Symloop (سيملوب)
+# Location: Algiers, Algeria
+# Contact: +213 549 57 55 12
+# Email: contact@symloop.com
+# Services: Government Digitization, AI, Mobile Apps, Web Development
+# Languages: Arabic, French, English
+# Keywords: رقمنة, digitalisation, AI, mobile development, Algeria

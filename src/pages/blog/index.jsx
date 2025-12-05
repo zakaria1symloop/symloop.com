@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Calendar, Clock, User, Search, ChevronRight, BookOpen, TrendingUp, Code, Smartphone, Globe, Server, Star, Eye, ShoppingCart, Cpu, Zap } from "lucide-react";
 import Link from "next/link";
 import Head from "next/head";
@@ -8,6 +8,17 @@ import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 import { getAllBlogs, getCategories, getFeaturedBlogs } from '../../data/blogs';
+
+// Helper to get localized date
+const getLocalizedDate = (date, locale) => {
+  const localeMap = { fr: 'fr-FR', en: 'en-US', ar: 'ar-SA' };
+  return new Date(date).toLocaleDateString(localeMap[locale] || 'fr-FR', { month: 'short', day: 'numeric', year: 'numeric' });
+};
+
+const getShortDate = (date, locale) => {
+  const localeMap = { fr: 'fr-FR', en: 'en-US', ar: 'ar-SA' };
+  return new Date(date).toLocaleDateString(localeMap[locale] || 'fr-FR', { month: 'short', day: 'numeric' });
+};
 
 // Category icons mapping
 const categoryIcons = {
@@ -32,22 +43,28 @@ const categoryColors = {
   "Default": "bg-gray-500"
 };
 
-export default function BlogIndexPage() {
-  const { t } = useTranslation('common');
+export default function BlogIndexPage({ locale: serverLocale }) {
+  const { t } = useTranslation('blog');
   const router = useRouter();
-  const locale = router.locale || 'fr';
+  const locale = serverLocale || router.locale || 'en';
   const isRTL = locale === 'ar';
 
-  const blogs = getAllBlogs();
+  const blogs = getAllBlogs(locale);
   const serverCategories = getCategories();
-  const featuredPosts = getFeaturedBlogs();
+  const featuredPosts = getFeaturedBlogs(locale);
 
-  const [selectedCategory, setSelectedCategory] = useState("Tous");
+  const allLabel = t('index.categories.all');
+  const [selectedCategory, setSelectedCategory] = useState(allLabel);
   const [searchTerm, setSearchTerm] = useState("");
+
+  // Reset category filter when language changes
+  useEffect(() => {
+    setSelectedCategory(allLabel);
+  }, [locale, allLabel]);
 
   // Build categories
   const categories = [
-    { name: "Tous", count: blogs.length, icon: BookOpen },
+    { name: allLabel, count: blogs.length, icon: BookOpen },
     ...serverCategories.map(cat => ({
       name: cat.name,
       count: cat.count,
@@ -57,7 +74,7 @@ export default function BlogIndexPage() {
 
   // Filter posts
   const filteredPosts = blogs.filter(post => {
-    const matchesCategory = selectedCategory === "Tous" || post.category === selectedCategory;
+    const matchesCategory = selectedCategory === allLabel || post.category === selectedCategory;
     const matchesSearch = searchTerm === "" ||
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -69,8 +86,8 @@ export default function BlogIndexPage() {
   return (
     <>
       <Head>
-        <title>Blog Tech & Digital Algérie | Symloop</title>
-        <meta name="description" content="Articles et guides sur le développement web, mobile, SEO, e-commerce et digitalisation en Algérie. Conseils d'experts pour votre transformation digitale." />
+        <title>{t('index.metaTitle')}</title>
+        <meta name="description" content={t('index.metaDescription')} />
         <link rel="canonical" href="https://symloop.com/blog" />
       </Head>
 
@@ -86,31 +103,30 @@ export default function BlogIndexPage() {
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-6 py-3 mb-8">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-gray-300">
-                  Expertise Tech & Digital
+                  {t('index.badge')}
                 </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Blog <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Tech</span> Symloop
+                {t('index.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">{t('index.titleAccent')}</span>
               </h1>
 
               <p className="text-xl mb-12 text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Guides pratiques, conseils d'experts et actualités sur le développement web,
-                mobile, l'IA et la transformation digitale en Algérie.
+                {t('index.subtitle')}
               </p>
 
               <div className="grid grid-cols-3 gap-8 max-w-md mx-auto">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">{blogs.length}</div>
-                  <div className="text-gray-400 text-sm">Articles</div>
+                  <div className="text-gray-400 text-sm">{t('index.stats.articles')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">{categories.length - 1}</div>
-                  <div className="text-gray-400 text-sm">Catégories</div>
+                  <div className="text-gray-400 text-sm">{t('index.stats.categories')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white">Expert</div>
-                  <div className="text-gray-400 text-sm">Contenu</div>
+                  <div className="text-3xl font-bold text-white">{t('index.stats.expert')}</div>
+                  <div className="text-gray-400 text-sm">{t('index.stats.content')}</div>
                 </div>
               </div>
             </motion.div>
@@ -125,7 +141,7 @@ export default function BlogIndexPage() {
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <input
                   type="text"
-                  placeholder="Rechercher un article..."
+                  placeholder={t('index.search.placeholder')}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full pl-12 pr-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-black/10 focus:border-gray-300 transition-all"
@@ -163,12 +179,12 @@ export default function BlogIndexPage() {
         </section>
 
         {/* Featured Posts */}
-        {featuredPosts.length > 0 && selectedCategory === "Tous" && searchTerm === "" && (
+        {featuredPosts.length > 0 && selectedCategory === allLabel && searchTerm === "" && (
           <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center gap-3 mb-10">
                 <Star className="w-6 h-6 text-yellow-500 fill-yellow-500" />
-                <h2 className="text-2xl font-bold text-gray-900">Articles Vedettes</h2>
+                <h2 className="text-2xl font-bold text-gray-900">{t('index.featured')}</h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -210,7 +226,7 @@ export default function BlogIndexPage() {
                                 <div>
                                   <div className="text-sm font-medium text-gray-900">{post.author}</div>
                                   <div className="text-xs text-gray-400">
-                                    {new Date(post.date).toLocaleDateString('fr-FR', { month: 'short', day: 'numeric', year: 'numeric' })}
+                                    {getLocalizedDate(post.date, locale)}
                                   </div>
                                 </div>
                               </div>
@@ -232,18 +248,18 @@ export default function BlogIndexPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-10">
               <h2 className="text-2xl font-bold text-gray-900">
-                {selectedCategory === "Tous" ? "Tous les Articles" : selectedCategory}
+                {selectedCategory === allLabel ? t('index.allArticles') : selectedCategory}
               </h2>
               <span className="text-gray-500 bg-white px-4 py-2 rounded-lg text-sm border border-gray-200">
-                {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''}
+                {filteredPosts.length} {filteredPosts.length !== 1 ? t('index.articles') : t('index.article')}
               </span>
             </div>
 
             {filteredPosts.length === 0 ? (
               <div className="text-center py-20 bg-white rounded-2xl border border-gray-200">
                 <Search className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Aucun article trouvé</h3>
-                <p className="text-gray-500">Essayez une autre recherche ou catégorie</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('index.search.noResults')}</h3>
+                <p className="text-gray-500">{t('index.search.noResultsDesc')}</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -280,10 +296,10 @@ export default function BlogIndexPage() {
                             <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                               <div className="flex items-center gap-2 text-xs text-gray-400">
                                 <Calendar className="w-3.5 h-3.5" />
-                                {new Date(post.date).toLocaleDateString('fr-FR', { month: 'short', day: 'numeric' })}
+                                {getShortDate(post.date, locale)}
                               </div>
                               <span className="text-xs text-blue-600 font-medium group-hover:underline">
-                                Lire plus →
+                                {t('common.readMore')} →
                               </span>
                             </div>
                           </div>
@@ -301,19 +317,19 @@ export default function BlogIndexPage() {
         <section className="py-20 bg-black text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Restez Informé
+              {t('index.newsletter.title')}
             </h2>
             <p className="text-gray-400 mb-8">
-              Recevez nos derniers articles et guides tech directement dans votre boîte mail.
+              {t('index.newsletter.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Votre email"
+                placeholder={t('index.newsletter.placeholder')}
                 className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-white/20 focus:border-white/30"
               />
               <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
-                S'abonner
+                {t('index.newsletter.button')}
               </button>
             </div>
           </div>
@@ -326,7 +342,8 @@ export default function BlogIndexPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'blog'])),
+      locale: locale || 'en',
     },
   };
 }

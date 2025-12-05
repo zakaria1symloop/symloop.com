@@ -12,7 +12,40 @@
     "freeConsultation": "Consultation Gratuite",
     "callUs": "Appelez-nous",
     "recommended": "RECOMMANDÉ",
-    "popular": "POPULAIRE"
+    "popular": "POPULAIRE",
+    "readMore": "Lire plus"
+  },
+  "index": {
+    "metaTitle": "Blog Tech & Digital Algérie | Symloop",
+    "metaDescription": "Articles et guides sur le développement web, mobile, SEO, e-commerce et digitalisation en Algérie. Conseils d'experts pour votre transformation digitale.",
+    "badge": "Expertise Tech & Digital",
+    "title": "Blog Tech",
+    "titleAccent": "Symloop",
+    "subtitle": "Guides pratiques, conseils d'experts et actualités sur le développement web, mobile, l'IA et la transformation digitale en Algérie.",
+    "stats": {
+      "articles": "Articles",
+      "categories": "Catégories",
+      "expert": "Expert",
+      "content": "Contenu"
+    },
+    "search": {
+      "placeholder": "Rechercher un article...",
+      "noResults": "Aucun article trouvé",
+      "noResultsDesc": "Essayez une autre recherche ou catégorie"
+    },
+    "categories": {
+      "all": "Tous"
+    },
+    "featured": "Articles Vedettes",
+    "allArticles": "Tous les Articles",
+    "article": "article",
+    "articles": "articles",
+    "newsletter": {
+      "title": "Restez Informé",
+      "subtitle": "Recevez nos derniers articles et guides tech directement dans votre boîte mail.",
+      "placeholder": "Votre email",
+      "button": "S'abonner"
+    }
   },
   "agenceWebAlgerie2024": {
     "title": "Agence Web en Algérie 2024",
