@@ -209,21 +209,46 @@ export default function ClientsPartnersSection() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           <div className="text-center p-6 rounded-xl bg-white/5 border border-white/10">
-            <p className="text-3xl md:text-4xl font-bold text-white mb-2">12+</p>
+            <p className="text-3xl md:text-4xl font-bold text-white mb-2">50+</p>
             <p className="text-sm text-gray-400">{router.locale === 'ar' ? 'عملاء سعداء' : router.locale === 'en' ? 'Happy Clients' : 'Clients Satisfaits'}</p>
           </div>
           <div className="text-center p-6 rounded-xl bg-white/5 border border-white/10">
-            <p className="text-3xl md:text-4xl font-bold text-white mb-2">50+</p>
+            <p className="text-3xl md:text-4xl font-bold text-white mb-2">70+</p>
             <p className="text-sm text-gray-400">{router.locale === 'ar' ? 'مشاريع منجزة' : router.locale === 'en' ? 'Projects Done' : 'Projets Réalisés'}</p>
           </div>
           <div className="text-center p-6 rounded-xl bg-white/5 border border-white/10">
-            <p className="text-3xl md:text-4xl font-bold text-white mb-2">10+</p>
+            <p className="text-3xl md:text-4xl font-bold text-white mb-2">5+</p>
             <p className="text-sm text-gray-400">{router.locale === 'ar' ? 'سنوات خبرة' : router.locale === 'en' ? 'Years Experience' : 'Ans d\'Expérience'}</p>
           </div>
           <div className="text-center p-6 rounded-xl bg-white/5 border border-white/10">
             <p className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</p>
             <p className="text-sm text-gray-400">{router.locale === 'ar' ? 'دعم فني' : router.locale === 'en' ? 'Support' : 'Support'}</p>
           </div>
+        </motion.div>
+
+        {/* Clutch Badge - Trust Signal */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <a
+            href="https://clutch.co/profile/symloop-technology"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block hover:opacity-80 transition-opacity"
+          >
+            <img
+              src="/Clutch-mobile-app-developers.png"
+              alt="Clutch Top Mobile App Developers"
+              className="h-24 md:h-32 mx-auto"
+            />
+          </a>
+          <p className="text-xs text-gray-500 mt-2">
+            {router.locale === 'ar' ? 'معترف بنا من Clutch' : router.locale === 'en' ? 'Recognized by Clutch' : 'Reconnu par Clutch'}
+          </p>
         </motion.div>
 
         {/* Call to Action */}

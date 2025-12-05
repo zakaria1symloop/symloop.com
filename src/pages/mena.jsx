@@ -11,16 +11,16 @@ export default function MenaPage() {
   const locale = router.locale || 'fr';
 
   const menaCountries = [
-    { name: { fr: "Algérie", en: "Algeria", ar: "الجزائر" }, flag: "🇩🇿", clients: "500+", projects: "1200+" },
-    { name: { fr: "Maroc", en: "Morocco", ar: "المغرب" }, flag: "🇲🇦", clients: "200+", projects: "450+" },
-    { name: { fr: "Tunisie", en: "Tunisia", ar: "تونس" }, flag: "🇹🇳", clients: "150+", projects: "380+" },
-    { name: { fr: "Égypte", en: "Egypt", ar: "مصر" }, flag: "🇪🇬", clients: "300+", projects: "650+" },
-    { name: { fr: "Émirats Arabes Unis", en: "UAE", ar: "الإمارات" }, flag: "🇦🇪", clients: "180+", projects: "420+" },
-    { name: { fr: "Arabie Saoudite", en: "Saudi Arabia", ar: "السعودية" }, flag: "🇸🇦", clients: "220+", projects: "510+" },
-    { name: { fr: "Qatar", en: "Qatar", ar: "قطر" }, flag: "🇶🇦", clients: "80+", projects: "180+" },
-    { name: { fr: "Koweït", en: "Kuwait", ar: "الكويت" }, flag: "🇰🇼", clients: "60+", projects: "140+" },
-    { name: { fr: "Bahreïn", en: "Bahrain", ar: "البحرين" }, flag: "🇧🇭", clients: "40+", projects: "95+" },
-    { name: { fr: "Libye", en: "Libya", ar: "ليبيا" }, flag: "🇱🇾", clients: "30+", projects: "75+" }
+    { name: { fr: "Algérie", en: "Algeria", ar: "الجزائر" }, flag: "🇩🇿", clients: "40+", projects: "70+" },
+    { name: { fr: "Maroc", en: "Morocco", ar: "المغرب" }, flag: "🇲🇦", clients: "8+", projects: "15+" },
+    { name: { fr: "Tunisie", en: "Tunisia", ar: "تونس" }, flag: "🇹🇳", clients: "5+", projects: "12+" },
+    { name: { fr: "Égypte", en: "Egypt", ar: "مصر" }, flag: "🇪🇬", clients: "3+", projects: "8+" },
+    { name: { fr: "Émirats Arabes Unis", en: "UAE", ar: "الإمارات" }, flag: "🇦🇪", clients: "2+", projects: "5+" },
+    { name: { fr: "Arabie Saoudite", en: "Saudi Arabia", ar: "السعودية" }, flag: "🇸🇦", clients: "2+", projects: "4+" },
+    { name: { fr: "Qatar", en: "Qatar", ar: "قطر" }, flag: "🇶🇦", clients: "1+", projects: "2+" },
+    { name: { fr: "Koweït", en: "Kuwait", ar: "الكويت" }, flag: "🇰🇼", clients: "1+", projects: "2+" },
+    { name: { fr: "Bahreïn", en: "Bahrain", ar: "البحرين" }, flag: "🇧🇭", clients: "1+", projects: "1+" },
+    { name: { fr: "Libye", en: "Libya", ar: "ليبيا" }, flag: "🇱🇾", clients: "1+", projects: "2+" }
   ];
 
   const services = [
@@ -84,7 +84,7 @@ export default function MenaPage() {
     fr: {
       title: "Leader Technologique dans la Région MENA",
       subtitle: "Solutions IT d'Excellence pour le Moyen-Orient et l'Afrique du Nord",
-      description: "Symloop Technology est le partenaire technologique de confiance pour plus de 2000 entreprises à travers la région MENA. De l'Algérie aux Émirats, nous déployons des solutions digitales qui transforment les entreprises et stimulent la croissance économique.",
+      description: "Symloop Technology est votre partenaire technologique de confiance dans la région MENA. De l'Algérie aux Émirats, nous déployons des solutions digitales qui transforment les entreprises et stimulent la croissance économique.",
       whyMena: "Pourquoi Symloop pour la Région MENA ?",
       ourPresence: "Notre Présence MENA",
       services: "Services Régionaux",
@@ -96,7 +96,7 @@ export default function MenaPage() {
     en: {
       title: "Technology Leader in MENA Region",
       subtitle: "Excellence in IT Solutions for Middle East and North Africa",
-      description: "Symloop Technology is the trusted technology partner for over 2000 businesses across the MENA region. From Algeria to the UAE, we deploy digital solutions that transform businesses and drive economic growth.",
+      description: "Symloop Technology is your trusted technology partner in the MENA region. From Algeria to the UAE, we deploy digital solutions that transform businesses and drive economic growth.",
       whyMena: "Why Symloop for MENA Region?",
       ourPresence: "Our MENA Presence",
       services: "Regional Services",
@@ -108,7 +108,7 @@ export default function MenaPage() {
     ar: {
       title: "الرائد التقني في منطقة MENA",
       subtitle: "حلول تقنية متميزة للشرق الأوسط وشمال أفريقيا",
-      description: "سيملوب تكنولوجي هي الشريك التقني الموثوق لأكثر من 2000 شركة عبر منطقة MENA. من الجزائر إلى الإمارات، نقوم بنشر حلول رقمية تحول الأعمال وتدفع النمو الاقتصادي.",
+      description: "سيملوب تكنولوجي هي شريكك التقني الموثوق في منطقة MENA. من الجزائر إلى الإمارات، نقوم بنشر حلول رقمية تحول الأعمال وتدفع النمو الاقتصادي.",
       whyMena: "لماذا سيملوب لمنطقة MENA؟",
       ourPresence: "تواجدنا في MENA",
       services: "الخدمات الإقليمية",
@@ -194,7 +194,7 @@ export default function MenaPage() {
               </div>
               <div className="text-center">
                 <div className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-                  2000+
+                  60+
                 </div>
                 <div className="text-gray-400 mt-2">
                   {locale === 'ar' ? 'عملاء' : locale === 'en' ? 'Clients' : 'Clients'}
@@ -202,7 +202,7 @@ export default function MenaPage() {
               </div>
               <div className="text-center">
                 <div className="text-5xl font-bold bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
-                  5000+
+                  120+
                 </div>
                 <div className="text-gray-400 mt-2">
                   {locale === 'ar' ? 'مشاريع' : locale === 'en' ? 'Projects' : 'Projets'}
@@ -353,10 +353,10 @@ export default function MenaPage() {
 
             <p className="text-2xl mb-12 text-white/90">
               {locale === 'ar'
-                ? 'انضم إلى 2000+ شركة تثق بسيملوب'
+                ? 'انضم إلى الشركات التي تثق بسيملوب'
                 : locale === 'en'
-                ? 'Join 2000+ companies that trust Symloop'
-                : 'Rejoignez 2000+ entreprises qui font confiance à Symloop'}
+                ? 'Join companies that trust Symloop'
+                : 'Rejoignez les entreprises qui font confiance à Symloop'}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

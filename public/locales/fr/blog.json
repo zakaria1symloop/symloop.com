@@ -1,0 +1,1566 @@
+{
+  "common": {
+    "backToBlog": "Retour au blog",
+    "readArticle": "Lire l'article",
+    "relatedArticles": "Articles Connexes",
+    "faq": "Questions Fréquentes",
+    "technologies": "Technologies que Nous Utilisons",
+    "pricing": "Tarifs",
+    "pricingNote": "Prix indicatifs. Le tarif exact dépend de la complexité, des fonctionnalités requises et du délai souhaité. Contactez-nous pour un devis gratuit et personnalisé.",
+    "contactUs": "Contactez-nous",
+    "freeQuote": "Obtenir un Devis Gratuit",
+    "freeConsultation": "Consultation Gratuite",
+    "callUs": "Appelez-nous",
+    "recommended": "RECOMMANDÉ",
+    "popular": "POPULAIRE"
+  },
+  "agenceWebAlgerie2024": {
+    "title": "Agence Web en Algérie 2024",
+    "titleAccent": "Algérie",
+    "subtitle": "Guide complet pour choisir la meilleure agence web en Algérie pour vos projets digitaux",
+    "intro": "Choisir la bonne <accent>agence web en Algérie</accent> est crucial pour la réussite de votre projet digital. Que vous soyez à <accent>Alger, Oran ou Constantine</accent>, ce guide vous aide à faire le bon choix.",
+    "selectionCriteria": "Critères de Sélection",
+    "criteria": {
+      "portfolio": "Portfolio et références clients",
+      "expertise": "Expertise technique (React, Next.js, etc.)",
+      "market": "Connaissance du marché algérien",
+      "support": "Support en français et arabe",
+      "pricing": "Prix transparents",
+      "deadlines": "Délais respectés"
+    },
+    "agencyTypes": "Types d'Agences Web en Algérie",
+    "types": {
+      "fullService": {
+        "title": "Agences Full-Service",
+        "desc": "Web, mobile, marketing, SEO - solution complète",
+        "price": "Budget moyen-élevé"
+      },
+      "specialized": {
+        "title": "Agences Spécialisées",
+        "desc": "Expertise pointue dans un domaine",
+        "price": "Variable selon spécialité"
+      },
+      "freelance": {
+        "title": "Freelances",
+        "desc": "Flexibilité et coûts réduits",
+        "price": "Budget économique"
+      },
+      "international": {
+        "title": "Agences Internationales",
+        "desc": "Standards internationaux, présence locale",
+        "price": "Budget élevé"
+      }
+    },
+    "whySymloop": "Pourquoi Choisir Symloop ?",
+    "advantages": {
+      "local": "Présence locale en Algérie",
+      "modern": "Technologies modernes (React, Next.js)",
+      "bilingual": "Équipe bilingue français/arabe",
+      "competitive": "Tarifs compétitifs",
+      "support": "Support 24/7"
+    }
+  },
+  "creationSiteWebAlgerie2024": {
+    "title": "Création Site Web en Algérie 2024",
+    "titleAccent": "Algérie",
+    "subtitle": "Guide complet pour créer un site web professionnel en Algérie - Tarifs, délais, bonnes pratiques",
+    "intro": "Créez un <accent>site web professionnel en Algérie</accent> avec les dernières technologies. Du site vitrine à l'e-commerce, nous vous accompagnons à chaque étape.",
+    "websiteTypes": "Types de Sites Web",
+    "types": {
+      "showcase": {
+        "title": "Site Vitrine",
+        "desc": "Présentez votre activité en ligne",
+        "price": "35 000 - 50 000 DA"
+      },
+      "ecommerce": {
+        "title": "Site E-commerce",
+        "desc": "Vendez en ligne avec paiement CIB/EDAHABIA",
+        "price": "80 000 - 150 000 DA"
+      },
+      "webapp": {
+        "title": "Application Web",
+        "desc": "Fonctionnalités personnalisées et gestion utilisateurs",
+        "price": "100 000 - 200 000 DA"
+      },
+      "portal": {
+        "title": "Portail Entreprise",
+        "desc": "Solution complète pour entreprises",
+        "price": "Sur devis"
+      }
+    },
+    "process": "Notre Processus",
+    "steps": {
+      "discovery": {
+        "title": "Découverte",
+        "desc": "Analyse de vos besoins et objectifs"
+      },
+      "design": {
+        "title": "Design",
+        "desc": "Maquettes et validation UI/UX"
+      },
+      "development": {
+        "title": "Développement",
+        "desc": "Codage moderne et responsive"
+      },
+      "launch": {
+        "title": "Lancement",
+        "desc": "Déploiement et formation"
+      }
+    },
+    "faqs": [
+      {
+        "question": "Combien de temps pour créer un site web en Algérie ?",
+        "answer": "Un site vitrine prend 2-4 semaines. Un site e-commerce prend 4-8 semaines. Une application web personnalisée prend 2-4 mois selon la complexité."
+      },
+      {
+        "question": "Quels moyens de paiement acceptez-vous ?",
+        "answer": "Nous acceptons la carte CIB, EDAHABIA, virement bancaire et espèces. Le paiement se fait généralement en 3 fois : 30% au démarrage, 40% à mi-parcours, 30% à la livraison."
+      },
+      {
+        "question": "L'hébergement est-il inclus ?",
+        "answer": "Oui, nous offrons 1 an d'hébergement inclus avec chaque site web. Nous utilisons des serveurs fiables avec une garantie de disponibilité de 99,9%."
+      },
+      {
+        "question": "Puis-je mettre à jour mon site moi-même ?",
+        "answer": "Oui, nous fournissons une interface d'administration intuitive et une formation. Vous pouvez mettre à jour le contenu, ajouter des produits et gérer votre site de manière autonome."
+      },
+      {
+        "question": "Proposez-vous la maintenance ?",
+        "answer": "Oui, nous proposons des forfaits de maintenance mensuels incluant mises à jour, sauvegardes, sécurité et support technique."
+      },
+      {
+        "question": "Le site est-il optimisé pour Google ?",
+        "answer": "Absolument ! Tous nos sites sont optimisés SEO avec une structure appropriée, des balises meta, un sitemap et un chargement rapide pour un meilleur référencement Google."
+      }
+    ]
+  },
+  "developpementApplicationMobileAlgerie2024": {
+    "title": "Développement Application Mobile en Algérie 2024",
+    "titleAccent": "Algérie",
+    "subtitle": "Créez votre application mobile iOS & Android avec la meilleure agence de développement algérienne",
+    "intro": "Développez votre <accent>application mobile en Algérie</accent> avec des technologies cross-platform. iOS et Android depuis une seule base de code pour des coûts optimisés.",
+    "appTypes": "Types d'Applications Mobiles",
+    "types": {
+      "mvp": {
+        "title": "App MVP",
+        "desc": "Lancez votre idée rapidement",
+        "price": "60 000 - 90 000 DA"
+      },
+      "professional": {
+        "title": "App Professionnelle",
+        "desc": "Application complète avec fonctionnalités avancées",
+        "price": "120 000 - 200 000 DA"
+      },
+      "enterprise": {
+        "title": "App Entreprise",
+        "desc": "Solution évolutive pour grandes organisations",
+        "price": "Sur devis"
+      }
+    },
+    "technologies": {
+      "reactNative": "React Native pour cross-platform",
+      "flutter": "Flutter pour de belles interfaces",
+      "firebase": "Firebase pour le backend",
+      "api": "APIs REST & GraphQL"
+    },
+    "features": "Fonctionnalités que Nous Développons",
+    "featuresList": {
+      "auth": "Authentification utilisateur",
+      "payments": "Intégration paiement",
+      "notifications": "Notifications push",
+      "geolocation": "Géolocalisation",
+      "offline": "Mode hors-ligne",
+      "analytics": "Analytics & tracking"
+    }
+  },
+  "ecommerceAlgeriePaiementCibEdahabia2024": {
+    "title": "E-commerce Algérie avec Paiement CIB & EDAHABIA 2024",
+    "titleAccent": "CIB & EDAHABIA",
+    "subtitle": "Créez votre boutique en ligne avec intégration de paiement algérien - Carte CIB, EDAHABIA et solutions locales",
+    "intro": "Lancez votre <accent>e-commerce en Algérie</accent> avec le paiement local intégré. Acceptez <accent>CIB, EDAHABIA</accent> et préparez votre boutique pour le succès.",
+    "paymentMethods": "Moyens de Paiement Algériens",
+    "payments": {
+      "cib": {
+        "title": "Carte CIB",
+        "desc": "La carte bancaire la plus utilisée en Algérie",
+        "integration": "Intégration complète"
+      },
+      "edahabia": {
+        "title": "EDAHABIA",
+        "desc": "Paiement électronique d'Algérie Poste",
+        "integration": "Intégration complète"
+      },
+      "cash": {
+        "title": "Paiement à la Livraison",
+        "desc": "Payer à la réception",
+        "integration": "Intégration complète"
+      }
+    },
+    "ecommerceFeatures": "Fonctionnalités E-commerce",
+    "features": {
+      "catalog": "Gestion catalogue produits",
+      "inventory": "Gestion des stocks",
+      "orders": "Gestion des commandes",
+      "shipping": "Intégration livraison (Yalidine, ZR Express)",
+      "seo": "Optimisation SEO",
+      "analytics": "Analytiques des ventes"
+    },
+    "packages": {
+      "starter": {
+        "name": "E-commerce Starter",
+        "price": "80 000",
+        "features": ["Jusqu'à 100 produits", "Paiement CIB/EDAHABIA", "Design basique", "Hébergement 1 an", "Formation incluse"]
+      },
+      "professional": {
+        "name": "E-commerce Pro",
+        "price": "150 000",
+        "features": ["Produits illimités", "Tous moyens de paiement", "Design personnalisé", "App mobile", "Intégration livraison", "Support 3 mois"]
+      },
+      "enterprise": {
+        "name": "E-commerce Entreprise",
+        "price": "Sur devis",
+        "features": ["Marketplace multi-vendeurs", "Gestion stock avancée", "Intégration ERP", "Équipe dédiée", "Développement sur mesure", "Support prioritaire"]
+      }
+    }
+  },
+  "transformationDigitaleAlgerie2024": {
+    "title": "Transformation Digitale en Algérie 2024",
+    "titleAccent": "Transformation Digitale",
+    "subtitle": "Modernisez votre entreprise avec des solutions digitales adaptées au marché algérien",
+    "intro": "La <accent>transformation digitale</accent> est essentielle pour les entreprises algériennes voulant rester compétitives. Nous vous accompagnons à chaque étape de votre digitalisation.",
+    "pillars": "Piliers de la Transformation Digitale",
+    "pillarsList": {
+      "processes": {
+        "title": "Digitalisation des Processus",
+        "desc": "Automatisez et optimisez vos processus internes"
+      },
+      "customer": {
+        "title": "Expérience Client",
+        "desc": "Améliorez les interactions avec vos clients"
+      },
+      "data": {
+        "title": "Gestion des Données",
+        "desc": "Collectez, analysez et exploitez vos données"
+      },
+      "culture": {
+        "title": "Culture Digitale",
+        "desc": "Formez et accompagnez vos équipes"
+      }
+    },
+    "solutions": "Nos Solutions",
+    "solutionsList": {
+      "erp": "ERP pour gestion intégrée",
+      "crm": "CRM pour relations clients",
+      "ecommerce": "Plateforme e-commerce",
+      "mobile": "Applications mobiles",
+      "cloud": "Migration cloud",
+      "automation": "Automatisation des processus"
+    }
+  },
+  "intelligenceArtificielleAlgerieMena2024": {
+    "title": "Intelligence Artificielle en Algérie & MENA 2024",
+    "titleAccent": "Intelligence Artificielle",
+    "subtitle": "Intégrez l'IA dans votre entreprise avec des solutions adaptées au marché algérien et MENA",
+    "intro": "L'<accent>Intelligence Artificielle</accent> ouvre de nouvelles opportunités pour les entreprises en Algérie et dans la région MENA. Des chatbots à l'analyse prédictive, découvrez nos solutions IA.",
+    "aiServices": "Nos Services IA",
+    "services": {
+      "chatbot": {
+        "title": "Chatbots Intelligents",
+        "desc": "Service client 24/7 en français et arabe"
+      },
+      "analytics": {
+        "title": "Analytique Prédictive",
+        "desc": "Anticipez les tendances et optimisez les décisions"
+      },
+      "automation": {
+        "title": "Automatisation Intelligente",
+        "desc": "Automatisez les tâches répétitives avec l'IA"
+      },
+      "vision": {
+        "title": "Vision par Ordinateur",
+        "desc": "Analyse d'images et vidéos"
+      }
+    },
+    "useCases": "Cas d'Usage en Algérie",
+    "cases": {
+      "retail": "Commerce : prévision de la demande, optimisation des stocks",
+      "finance": "Finance : détection de fraude, scoring crédit",
+      "health": "Santé : assistance au diagnostic, gestion des rendez-vous",
+      "industry": "Industrie : maintenance prédictive, contrôle qualité"
+    }
+  },
+  "fintechAlgerieSolutions2024": {
+    "title": "Solutions Fintech en Algérie 2024",
+    "titleAccent": "Fintech",
+    "subtitle": "Développez des solutions fintech adaptées au marché algérien - Paiement mobile, banque, finance digitale",
+    "intro": "Le secteur <accent>fintech en Algérie</accent> est en pleine expansion. Nous développons des solutions innovantes pour les paiements digitaux, la banque mobile et les services financiers.",
+    "solutions": "Nos Solutions Fintech",
+    "solutionsList": {
+      "payment": {
+        "title": "Solutions de Paiement",
+        "desc": "Intégration CIB, EDAHABIA, wallet mobile"
+      },
+      "banking": {
+        "title": "Banque Mobile",
+        "desc": "Applications bancaires complètes"
+      },
+      "lending": {
+        "title": "Crédit Digital",
+        "desc": "Plateformes de gestion de prêts en ligne"
+      },
+      "insurance": {
+        "title": "Insurtech",
+        "desc": "Solutions d'assurance digitale"
+      }
+    },
+    "compliance": "Conformité Réglementaire",
+    "complianceList": {
+      "banque": "Conformité Banque d'Algérie",
+      "security": "Standards sécurité bancaire",
+      "data": "Protection données personnelles",
+      "audit": "Traçabilité et audit"
+    }
+  },
+  "startupAlgerieGuide2024": {
+    "title": "Startup en Algérie - Guide Complet 2024",
+    "titleAccent": "Startup",
+    "subtitle": "Tout ce que vous devez savoir pour lancer et développer votre startup tech en Algérie",
+    "intro": "L'écosystème <accent>startup en Algérie</accent> se développe rapidement. Ce guide couvre tout, de l'idéation à la levée de fonds.",
+    "steps": "Étapes pour Lancer Votre Startup",
+    "stepsList": {
+      "idea": {
+        "title": "Validation de l'Idée",
+        "desc": "Testez votre concept avec le marché"
+      },
+      "mvp": {
+        "title": "Développement MVP",
+        "desc": "Créez un produit minimum viable"
+      },
+      "legal": {
+        "title": "Structure Juridique",
+        "desc": "Immatriculation et cadre légal"
+      },
+      "funding": {
+        "title": "Financement",
+        "desc": "Investisseurs, incubateurs, subventions"
+      },
+      "growth": {
+        "title": "Croissance",
+        "desc": "Développez votre activité"
+      }
+    },
+    "ecosystem": "Écosystème Startup Algérien",
+    "ecosystemList": {
+      "incubators": "Incubateurs et accélérateurs",
+      "investors": "Investisseurs locaux et internationaux",
+      "programs": "Programmes de soutien gouvernemental",
+      "events": "Événements de networking"
+    }
+  },
+  "mvpStartupAlgerie2024": {
+    "title": "Développement MVP pour Startups en Algérie 2024",
+    "titleAccent": "MVP",
+    "subtitle": "Lancez votre startup rapidement avec un produit minimum viable - Développement rapide et abordable",
+    "intro": "Un <accent>MVP (Produit Minimum Viable)</accent> vous permet de tester votre idée avec un investissement minimum. Nous développons votre MVP en 4-6 semaines.",
+    "packages": {
+      "basic": {
+        "name": "MVP Basique",
+        "price": "60 000",
+        "features": ["Landing page", "1 feature core", "Design basique", "Hébergement 1 an", "1 mois support"]
+      },
+      "complete": {
+        "name": "MVP Complet",
+        "price": "120 000",
+        "features": ["Application web", "3-5 features", "Design professionnel", "Authentification utilisateur", "Tableau de bord admin", "3 mois support"]
+      },
+      "advanced": {
+        "name": "MVP Avancé",
+        "price": "Sur devis",
+        "features": ["Web + Mobile", "Toutes les features", "Design personnalisé", "Intégration paiement", "Analytics", "6 mois support"]
+      }
+    },
+    "process": "Notre Processus MVP",
+    "processList": {
+      "week1": {
+        "title": "Semaine 1 : Discovery",
+        "desc": "Comprendre votre vision, définir les features"
+      },
+      "week2": {
+        "title": "Semaine 2 : Design",
+        "desc": "Wireframes, maquettes, validation"
+      },
+      "week34": {
+        "title": "Semaines 3-4 : Développement",
+        "desc": "Codage agile avec démos régulières"
+      },
+      "week56": {
+        "title": "Semaines 5-6 : Tests & Lancement",
+        "desc": "Tests qualité et déploiement production"
+      }
+    }
+  },
+  "seoReferencementAlgerie2024": {
+    "title": "SEO & Référencement en Algérie 2024",
+    "titleAccent": "Algérie",
+    "subtitle": "Guide complet pour dominer la première page Google. Stratégies locales, mots-clés algériens, et techniques d'optimisation adaptées au marché MENA.",
+    "intro": "Le <accent>SEO en Algérie</accent> est devenu essentiel pour toute entreprise souhaitant développer sa visibilité en ligne. Avec plus de <accent>28 millions d'internautes algériens</accent> dont 90% utilisent Google, être positionné en <accent>première page</accent> peut transformer radicalement votre business.",
+    "stats": {
+      "title": "SEO Algérie en Chiffres",
+      "users": "Internautes algériens",
+      "useGoogle": "Utilisent Google",
+      "clickPage1": "Cliquent page 1",
+      "avgRoi": "ROI moyen SEO"
+    },
+    "strategies": "5 Stratégies SEO Clés pour l'Algérie",
+    "strategiesList": {
+      "keywords": {
+        "title": "Recherche de Mots-Clés Locaux",
+        "desc": "Identifier les termes recherchés par les Algériens : 'prix algérie', 'alger', 'livraison algérie', 'paiement CIB'"
+      },
+      "multilingual": {
+        "title": "Contenu Multilingue",
+        "desc": "Contenu en français, arabe (darija/standard) et anglais pour maximiser la portée et toucher tous les segments"
+      },
+      "technical": {
+        "title": "SEO Technique",
+        "desc": "Vitesse de chargement optimale, design mobile-first, structure des URLs claire et données structurées"
+      },
+      "backlinks": {
+        "title": "Backlinks Locaux",
+        "desc": "Liens depuis sites algériens de qualité : annuaires, partenaires, presse locale, blogs influents"
+      },
+      "gmb": {
+        "title": "Google My Business",
+        "desc": "Fiche optimisée avec photos, avis clients, posts réguliers pour le référencement local"
+      }
+    },
+    "services": {
+      "audit": {
+        "title": "Audit SEO Complet",
+        "desc": "Analyse technique, contenu et backlinks de votre site",
+        "features": ["Analyse de 100+ critères", "Rapport détaillé PDF", "Plan d'action priorité", "Audit concurrents"]
+      },
+      "keywords": {
+        "title": "Recherche Mots-Clés",
+        "desc": "Identification des opportunités de positionnement",
+        "features": ["Mots-clés locaux", "Volume de recherche", "Intention utilisateur", "Opportunités niches"]
+      },
+      "content": {
+        "title": "Contenu Optimisé",
+        "desc": "Rédaction SEO pour blogs et pages",
+        "features": ["Articles optimisés", "Pages de vente", "Contenu multilingue", "Optimisation existant"]
+      },
+      "netlinking": {
+        "title": "Netlinking Algérie",
+        "desc": "Acquisition de backlinks locaux de qualité",
+        "features": ["Annuaires algériens", "Partenariats locaux", "Guest posting", "Presse en ligne"]
+      },
+      "technical": {
+        "title": "SEO Technique",
+        "desc": "Optimisation technique de votre site",
+        "features": ["Vitesse chargement", "Mobile-first", "Structure URLs", "Données structurées"]
+      },
+      "local": {
+        "title": "SEO Local",
+        "desc": "Dominez les recherches locales",
+        "features": ["Google My Business", "Citations locales", "Avis clients", "Géolocalisation"]
+      }
+    },
+    "pricing": {
+      "audit": {
+        "name": "Audit SEO",
+        "price": "15 000",
+        "period": "unique",
+        "desc": "Diagnostic complet de votre site",
+        "features": ["Audit technique complet", "Analyse des mots-clés", "Audit de la concurrence", "Rapport PDF détaillé", "Plan d'action prioritaire", "1h de consultation"]
+      },
+      "monthly": {
+        "name": "SEO Mensuel Pro",
+        "price": "35 000",
+        "period": "/mois",
+        "desc": "Accompagnement SEO continu",
+        "features": ["Optimisation continue", "2 articles SEO/mois", "Suivi positions", "Netlinking local", "Rapport mensuel", "Support prioritaire"]
+      },
+      "complete": {
+        "name": "SEO Complet",
+        "price": "Sur devis",
+        "period": "",
+        "desc": "Stratégie SEO 360°",
+        "features": ["Audit + optimisation complète", "Contenu illimité", "Netlinking premium", "SEO local multi-villes", "Formation équipe", "Account manager dédié"]
+      }
+    },
+    "faqs": [
+      {
+        "question": "Combien de temps pour voir des résultats SEO en Algérie ?",
+        "answer": "Les premiers résultats SEO apparaissent généralement entre 3 et 6 mois. Pour les mots-clés très concurrentiels, comptez 6 à 12 mois. Le SEO local en Algérie peut donner des résultats plus rapides car la concurrence est moins forte qu'en Europe."
+      },
+      {
+        "question": "Quel budget prévoir pour le SEO en Algérie ?",
+        "answer": "Un audit SEO complet coûte entre 15 000 et 30 000 DA. Pour un accompagnement mensuel, comptez 25 000 à 60 000 DA/mois selon l'ampleur du projet. C'est un investissement rentable car le SEO génère du trafic gratuit sur le long terme."
+      },
+      {
+        "question": "SEO ou publicité Google Ads : que choisir ?",
+        "answer": "Le SEO est idéal pour le long terme avec un ROI élevé une fois positionné. Google Ads donne des résultats immédiats mais coûte cher à maintenir. La stratégie idéale combine les deux : Ads pour démarrer, SEO pour la pérennité."
+      },
+      {
+        "question": "Comment optimiser mon site pour le SEO local en Algérie ?",
+        "answer": "Créez une fiche Google My Business optimisée, ajoutez vos coordonnées sur chaque page, utilisez des mots-clés géolocalisés (Alger, Oran, Constantine...), obtenez des backlinks locaux, et collectez des avis clients."
+      },
+      {
+        "question": "Le contenu en arabe est-il important pour le SEO ?",
+        "answer": "Oui ! Plus de 40% des recherches en Algérie sont en arabe (darija ou arabe standard). Un site bilingue français/arabe touche un public plus large et améliore votre référencement pour ces requêtes."
+      },
+      {
+        "question": "Comment Symloop peut améliorer mon référencement ?",
+        "answer": "Nous proposons un audit SEO complet, l'optimisation technique de votre site, la création de contenu optimisé, la stratégie de backlinks locaux, et un suivi mensuel avec rapports détaillés. Nos experts connaissent le marché algérien."
+      }
+    ],
+    "popularKeywords": "Mots-Clés Populaires en Algérie",
+    "keywords": ["création site web algérie", "agence web alger", "e-commerce algérie", "application mobile algérie", "développeur algérie", "prix site web", "paiement cib", "livraison algérie", "startup algérie", "marketing digital algérie", "référencement google", "seo oran", "site internet constantine"],
+    "tools": "Outils SEO que Nous Utilisons",
+    "cta": {
+      "title": "Prêt à Dominer Google en Algérie ?",
+      "subtitle": "Nos experts SEO analysent votre site et vous proposent une stratégie personnalisée pour atteindre la première page.",
+      "button": "Demander Mon Audit Gratuit"
+    }
+  },
+  "accompagnementStartupTechAlgerie": {
+    "title": "Accompagnement Tech Complet pour Startups",
+    "titleAccent": "Accompagnement Tech",
+    "subtitle": "Un seul fournisseur pour tous vos besoins tech. De l'idée au produit lancé, nous vous accompagnons à chaque étape avec des solutions adaptées aux budgets des startups algériennes.",
+    "intro": "<accent>Un seul fournisseur pour tous vos besoins tech.</accent> De l'idée initiale au déploiement en production, Symloop fournit <accent>tout ce dont votre startup a besoin</accent> pour réussir dans l'écosystème tech algérien et au-delà.",
+    "stats": {
+      "startups": "Startups accompagnées",
+      "mvpWeeks": "Semaines pour un MVP",
+      "projectsDelivered": "Projets livrés",
+      "supportAvailable": "Support disponible"
+    },
+    "services": {
+      "development": {
+        "title": "Développement",
+        "desc": "Applications web et mobile sur mesure",
+        "items": ["Web App React/Next.js", "Mobile iOS/Android", "Backend & APIs", "Base de données"]
+      },
+      "infrastructure": {
+        "title": "Infrastructure",
+        "desc": "Hébergement et DevOps clé en main",
+        "items": ["Hébergement Cloud", "CI/CD Pipeline", "Monitoring 24/7", "Backup & Sécurité"]
+      },
+      "design": {
+        "title": "Design",
+        "desc": "UI/UX et identité visuelle",
+        "items": ["UI/UX Design", "Branding complet", "Prototypes Figma", "Design System"]
+      },
+      "support": {
+        "title": "Support",
+        "desc": "Accompagnement continu",
+        "items": ["Maintenance mensuelle", "Support réactif", "Mises à jour", "Évolutions produit"]
+      }
+    },
+    "process": "Notre Processus en 5 Étapes",
+    "processList": {
+      "discovery": {
+        "title": "Discovery",
+        "desc": "Analyse de vos besoins, définition du scope et planification"
+      },
+      "design": {
+        "title": "Design",
+        "desc": "Wireframes, maquettes UI/UX et validation avec vous"
+      },
+      "development": {
+        "title": "Développement",
+        "desc": "Sprints agiles avec démos régulières et feedback continu"
+      },
+      "testing": {
+        "title": "Tests & QA",
+        "desc": "Tests complets, corrections et optimisation performance"
+      },
+      "launch": {
+        "title": "Lancement",
+        "desc": "Déploiement production, formation et support post-launch"
+      }
+    },
+    "pricing": {
+      "mvp": {
+        "name": "MVP Starter",
+        "price": "60 000",
+        "desc": "Lancez votre idée rapidement",
+        "features": ["Landing page moderne", "1 feature core développée", "Design UI responsive", "Hébergement 1 an inclus", "1 mois de support", "Livraison 4-6 semaines"]
+      },
+      "growth": {
+        "name": "Startup Growth",
+        "price": "150 000",
+        "desc": "Web + Mobile pour croître",
+        "features": ["Web App complète", "App Mobile cross-platform", "5 features développées", "UI/UX professionnel", "Backend robuste", "3 mois de support"]
+      },
+      "scale": {
+        "name": "Scale Enterprise",
+        "price": "Sur devis",
+        "desc": "Solution complète sur mesure",
+        "features": ["Architecture scalable", "Features illimitées", "Équipe dédiée", "Infrastructure premium", "Support continu", "Accompagnement stratégique"]
+      }
+    },
+    "advantages": "Pourquoi un Fournisseur Unique ?",
+    "advantagesList": {
+      "communication": "Communication simplifiée - un seul interlocuteur",
+      "technical": "Cohérence technique - stack unifié et optimisé",
+      "reactivity": "Réactivité maximale - pas de ping-pong entre prestataires",
+      "costs": "Coûts maîtrisés - packages tout inclus sans surprise",
+      "vision": "Vision globale - compréhension complète de votre projet",
+      "responsibility": "Responsabilité claire - un seul responsable du succès"
+    },
+    "faqs": [
+      {
+        "question": "Quel est le budget minimum pour lancer une startup tech en Algérie ?",
+        "answer": "Avec Symloop, vous pouvez démarrer avec un MVP fonctionnel à partir de 60 000 DA. Ce budget inclut le développement d'une feature core, un design basique et 1 mois de support. Pour une application plus complète avec web et mobile, comptez entre 120 000 et 200 000 DA."
+      },
+      {
+        "question": "Combien de temps pour développer un MVP ?",
+        "answer": "Un MVP simple peut être développé en 4 à 6 semaines. Pour une application plus complexe avec plusieurs features, comptez 2 à 3 mois. Nous travaillons en méthodologie agile avec des livraisons régulières pour que vous puissiez tester rapidement."
+      },
+      {
+        "question": "Pourquoi choisir un fournisseur unique pour ma startup ?",
+        "answer": "Un fournisseur unique simplifie la communication, garantit une cohérence technique, élimine les problèmes de coordination entre prestataires, et vous permet d'avoir un seul responsable du succès de votre projet. C'est plus efficace et souvent moins cher."
+      },
+      {
+        "question": "Quelles technologies utilisez-vous pour les startups ?",
+        "answer": "Nous utilisons des technologies modernes et éprouvées : React/Next.js pour le web, React Native pour le mobile cross-platform, Node.js ou Python pour le backend, PostgreSQL ou MongoDB pour les bases de données, et AWS/Vercel pour l'hébergement cloud."
+      },
+      {
+        "question": "Proposez-vous un accompagnement après le lancement ?",
+        "answer": "Oui, tous nos packages incluent une période de support. Nous proposons également des contrats de maintenance mensuelle pour assurer la stabilité, les mises à jour de sécurité, et les évolutions de votre produit."
+      },
+      {
+        "question": "Comment fonctionne le paiement pour les startups ?",
+        "answer": "Nous comprenons les contraintes des startups. Le paiement se fait généralement en 3 fois : 30% au démarrage, 40% à mi-parcours, et 30% à la livraison. Nous acceptons les paiements CIB, EDAHABIA, virement bancaire et espèces."
+      }
+    ],
+    "cta": {
+      "title": "Prêt à Démarrer Votre Aventure Startup ?",
+      "subtitle": "Obtenez un devis personnalisé pour votre projet. Notre équipe vous accompagne de A à Z.",
+      "button": "Obtenir un Devis Gratuit"
+    }
+  },
+  "partenaireTechStartupAlgerie": {
+    "title": "Trouver un Partenaire Tech en Algérie",
+    "titleAccent": "Partenaire Tech",
+    "subtitle": "Vous avez l'idée, nous avons la tech. Un partenaire technique complet pour transformer votre vision en produit, sans les contraintes d'une équipe interne.",
+    "intro": "<accent>Vous avez l'idée, nous avons la tech.</accent> Trouver le bon partenaire technique est crucial pour le succès de votre startup. Symloop offre un <accent>accompagnement complet</accent> de A à Z : développement, infrastructure, design, et conseil stratégique.",
+    "stats": {
+      "startups": "Startups accompagnées",
+      "satisfaction": "Taux de satisfaction",
+      "ipTransferred": "IP transférée",
+      "support": "Support disponible"
+    },
+    "services": {
+      "cto": {
+        "title": "CTO as a Service",
+        "desc": "Direction technique sans coût temps plein",
+        "features": ["Choix technologiques", "Architecture système", "Recrutement tech", "Revue de code"]
+      },
+      "team": {
+        "title": "Équipe Dédiée",
+        "desc": "Développeurs seniors pour votre projet",
+        "features": ["Frontend React/Next.js", "Backend Node/Python", "Mobile cross-platform", "DevOps & Cloud"]
+      },
+      "ip": {
+        "title": "Code & IP Protection",
+        "desc": "Propriété intellectuelle garantie",
+        "features": ["Code source à vous", "Documentation complète", "Transfert de connaissances", "Liberté totale"]
+      },
+      "roadmap": {
+        "title": "Roadmap Produit",
+        "desc": "Planification stratégique",
+        "features": ["Priorisation features", "Gestion backlog", "Sprints agiles", "Metrics & KPIs"]
+      }
+    },
+    "process": "Comment Nous Travaillons avec les Startups",
+    "processList": {
+      "discovery": {
+        "title": "Discovery Call",
+        "desc": "Compréhension de votre vision, marché cible, modèle business et objectifs de croissance"
+      },
+      "proposal": {
+        "title": "Proposition Technique",
+        "desc": "Stack technologique recommandé, architecture système, estimation de coûts et planning"
+      },
+      "development": {
+        "title": "Développement Agile",
+        "desc": "Sprints de 2 semaines avec démos, feedback continu et adaptation aux besoins"
+      },
+      "launch": {
+        "title": "Lancement & Growth",
+        "desc": "Déploiement production, monitoring, analytics et optimisation continue"
+      }
+    },
+    "pricing": {
+      "advisory": {
+        "name": "CTO Advisory",
+        "price": "50 000",
+        "period": "/mois",
+        "desc": "Conseil technique stratégique",
+        "features": ["4 heures conseil/mois", "Choix architecture", "Revue de code", "Aide recrutement tech", "Support par chat", "Recommandations mensuelles"]
+      },
+      "partner": {
+        "name": "Tech Partner",
+        "price": "120 000",
+        "period": "/mois",
+        "desc": "Partenariat développement actif",
+        "features": ["Équipe dédiée 2-3 devs", "Sprints de 2 semaines", "Démos hebdomadaires", "Design UI/UX inclus", "DevOps & déploiement", "Support prioritaire"]
+      },
+      "fullstack": {
+        "name": "Full Stack Partner",
+        "price": "Sur devis",
+        "period": "",
+        "desc": "Équipe complète sur mesure",
+        "features": ["Équipe 5+ personnes", "CTO dédié", "Product management", "Design system complet", "Infrastructure scaling", "Préparation levée fonds"]
+      }
+    },
+    "advantages": "Avantages d'un Partenaire Tech",
+    "advantagesList": {
+      "savings": "Économies significatives vs embauche interne",
+      "time": "Time-to-market accéléré avec équipe prête",
+      "expertise": "Expertise technique multi-domaines",
+      "scalability": "Scalabilité : équipe ajustable selon besoins",
+      "practices": "Best practices et méthodologies éprouvées",
+      "market": "Expérience marché algérien et MENA"
+    },
+    "faqs": [
+      {
+        "question": "Qu'est-ce qu'un partenaire tech pour startup ?",
+        "answer": "Un partenaire tech est une agence ou équipe qui prend en charge tout le développement technique de votre startup : développement web/mobile, infrastructure cloud, design, et support. C'est comme avoir un CTO et une équipe technique sans les coûts d'embauche permanente."
+      },
+      {
+        "question": "Combien coûte un partenariat tech pour ma startup ?",
+        "answer": "Nos partenariats commencent à partir de 50 000 DA/mois pour un accompagnement CTO as a Service. Pour un développement complet (MVP), comptez entre 60 000 et 150 000 DA. Les tarifs dépendent de la complexité et de l'étendue des services souhaités."
+      },
+      {
+        "question": "Qui détient la propriété intellectuelle du code ?",
+        "answer": "Vous êtes 100% propriétaire du code source et de toute la propriété intellectuelle développée. Nous vous transférons tous les droits à la livraison. Vous pouvez récupérer le code et le faire évoluer par une autre équipe si vous le souhaitez."
+      },
+      {
+        "question": "Comment fonctionne la collaboration au quotidien ?",
+        "answer": "Nous travaillons en méthodologie agile avec des sprints de 2 semaines. Vous avez accès à un channel Slack/WhatsApp dédié, des démos régulières, et des calls hebdomadaires. Votre product owner est impliqué à chaque étape pour valider les développements."
+      },
+      {
+        "question": "Pouvez-vous aider pour une levée de fonds ?",
+        "answer": "Oui, nous aidons nos startups partenaires à préparer le volet technique de leur pitch : démo produit, documentation technique, roadmap, architecture, et réponses aux questions techniques des investisseurs."
+      },
+      {
+        "question": "Que se passe-t-il après le lancement ?",
+        "answer": "Nous proposons des contrats de maintenance et support continu. Votre produit évolue avec vos utilisateurs : nouvelles features, optimisations, corrections de bugs, mises à jour de sécurité. Nous pouvons également vous aider à recruter votre propre équipe tech quand vous êtes prêts."
+      }
+    ],
+    "cta": {
+      "title": "Devenez Notre Prochain Success Story",
+      "subtitle": "Consultation gratuite pour discuter de votre projet startup et découvrir comment nous pouvons vous aider à réussir.",
+      "button": "Parlons de Votre Startup"
+    }
+  },
+  "marketingDigitalAlgerie2024": {
+    "title": "Marketing Digital en Algérie 2024",
+    "titleAccent": "Algérie",
+    "subtitle": "Stratégies de marketing digital efficaces pour le marché algérien - Publicité Facebook, Google Ads, réseaux sociaux",
+    "intro": "Le <accent>marketing digital en Algérie</accent> évolue rapidement. Avec plus de 25 millions d'utilisateurs Facebook algériens, la publicité digitale est devenue essentielle pour atteindre votre audience.",
+    "services": {
+      "facebook": {
+        "title": "Publicité Facebook & Instagram",
+        "desc": "Campagnes ciblées pour l'audience algérienne"
+      },
+      "google": {
+        "title": "Google Ads",
+        "desc": "Annonces de recherche et display"
+      },
+      "social": {
+        "title": "Gestion Réseaux Sociaux",
+        "desc": "Création de contenu et community management"
+      },
+      "content": {
+        "title": "Marketing de Contenu",
+        "desc": "Stratégie de contenu pour attirer et convertir"
+      }
+    },
+    "pricing": {
+      "starter": {
+        "name": "Marketing Starter",
+        "price": "30 000",
+        "features": ["Publicité Facebook", "Rapport mensuel", "Gestion 1 page", "4 posts/semaine"]
+      },
+      "professional": {
+        "name": "Marketing Pro",
+        "price": "60 000",
+        "features": ["Facebook + Google Ads", "Gestion 3 pages", "Contenu quotidien", "Rapport hebdo", "Conseil stratégique"]
+      }
+    }
+  },
+  "designUiUxAlgerie2024": {
+    "title": "Design UI/UX en Algérie 2024",
+    "titleAccent": "UI/UX",
+    "subtitle": "Conception d'interfaces utilisateur belles et d'expériences utilisateur fluides pour vos sites et applications",
+    "intro": "Le <accent>design UI/UX</accent> détermine le succès de votre produit digital. Nous concevons des interfaces intuitives qui convertissent les visiteurs en clients.",
+    "services": {
+      "research": {
+        "title": "Recherche Utilisateur",
+        "desc": "Comprendre les besoins et comportements des utilisateurs"
+      },
+      "wireframes": {
+        "title": "Wireframes",
+        "desc": "Structuration des interfaces et flux"
+      },
+      "design": {
+        "title": "Design Visuel",
+        "desc": "Maquettes haute-fidélité prêtes pour le développement"
+      },
+      "prototype": {
+        "title": "Prototypes Interactifs",
+        "desc": "Tester l'expérience avant le développement"
+      }
+    },
+    "pricing": {
+      "basic": {
+        "name": "Design Basique",
+        "price": "25 000",
+        "features": ["5 écrans", "Prototype Figma", "2 révisions"]
+      },
+      "complete": {
+        "name": "Design Complet",
+        "price": "60 000",
+        "features": ["15 écrans", "Prototype interactif", "Design System", "4 révisions", "Fichiers sources"]
+      }
+    }
+  },
+  "logicielErpAlgerie2024": {
+    "title": "Logiciel ERP en Algérie 2024",
+    "titleAccent": "ERP",
+    "subtitle": "Solutions de planification des ressources d'entreprise personnalisées pour les entreprises algériennes - Gestion intégrée, comptabilité, stock",
+    "intro": "Un <accent>système ERP</accent> unifie toutes les opérations de votre entreprise dans une seule plateforme. De la comptabilité à la gestion des stocks, optimisez votre productivité.",
+    "modules": {
+      "accounting": {
+        "title": "Comptabilité & Finance",
+        "desc": "Conforme au PCN algérien"
+      },
+      "inventory": {
+        "title": "Gestion des Stocks",
+        "desc": "Suivi en temps réel des inventaires"
+      },
+      "sales": {
+        "title": "Ventes & Facturation",
+        "desc": "Factures conformes à la législation"
+      },
+      "hr": {
+        "title": "Ressources Humaines",
+        "desc": "Paie, présence, congés"
+      }
+    },
+    "pricing": {
+      "pme": {
+        "name": "ERP PME",
+        "price": "150 000",
+        "features": ["3 modules", "5 utilisateurs", "Formation incluse", "Support 1 an"]
+      },
+      "enterprise": {
+        "name": "ERP Entreprise",
+        "price": "Sur devis",
+        "features": ["Tous les modules", "Utilisateurs illimités", "Personnalisation complète", "Support prioritaire"]
+      }
+    }
+  },
+  "logicielCrmAlgerie2024": {
+    "title": "Logiciel CRM en Algérie 2024",
+    "titleAccent": "CRM",
+    "subtitle": "Gestion de la relation client pour les entreprises algériennes - Suivi des prospects, ventes et support",
+    "intro": "Un <accent>système CRM</accent> vous aide à gérer efficacement vos relations clients. Suivez chaque interaction et augmentez vos ventes.",
+    "features": {
+      "contacts": "Gestion des contacts et entreprises",
+      "pipeline": "Pipeline des ventes",
+      "automation": "Automatisation marketing",
+      "reports": "Rapports et analyses",
+      "mobile": "Application mobile",
+      "integration": "Intégration avec outils existants"
+    },
+    "pricing": {
+      "startup": {
+        "name": "CRM Starter",
+        "price": "40 000",
+        "features": ["1000 contacts", "3 utilisateurs", "Pipeline basique", "Rapports"]
+      },
+      "business": {
+        "name": "CRM Business",
+        "price": "80 000",
+        "features": ["Contacts illimités", "10 utilisateurs", "Automatisation", "Intégrations", "Support prioritaire"]
+      }
+    }
+  },
+  "logicielRhAlgerie2024": {
+    "title": "Logiciel RH en Algérie 2024",
+    "titleAccent": "Ressources Humaines",
+    "subtitle": "Solutions de gestion des ressources humaines pour les entreprises algériennes - Paie, présence, recrutement",
+    "intro": "Un <accent>logiciel RH</accent> simplifie la gestion de vos employés. De la paie à la présence, tout en un seul endroit.",
+    "modules": {
+      "payroll": {
+        "title": "Paie",
+        "desc": "Calcul de paie conforme CNAS/CASNOS"
+      },
+      "attendance": {
+        "title": "Présence",
+        "desc": "Suivi du temps et des présences"
+      },
+      "leave": {
+        "title": "Congés",
+        "desc": "Gestion des demandes de congés"
+      },
+      "recruitment": {
+        "title": "Recrutement",
+        "desc": "Suivi des candidats"
+      }
+    },
+    "pricing": {
+      "basic": {
+        "name": "HR Basique",
+        "price": "60 000",
+        "features": ["Jusqu'à 50 employés", "Paie et présence", "Portail employé", "Rapports"]
+      },
+      "complete": {
+        "name": "HR Complet",
+        "price": "120 000",
+        "features": ["Employés illimités", "Tous les modules", "App mobile", "Personnalisation", "Support prioritaire"]
+      }
+    }
+  },
+  "logicielComptabiliteAlgerie2024": {
+    "title": "Logiciel Comptabilité en Algérie 2024",
+    "titleAccent": "Comptabilité",
+    "subtitle": "Solutions comptables conformes au PCN algérien - Facturation, comptabilité, déclarations fiscales",
+    "intro": "Un <accent>logiciel de comptabilité</accent> conforme aux normes algériennes. Simplifiez votre comptabilité et respectez vos obligations fiscales.",
+    "features": {
+      "invoicing": "Facturation électronique",
+      "accounting": "Comptabilité générale et analytique",
+      "tax": "Déclarations fiscales (G50, TAP)",
+      "reports": "Bilan et compte de résultat",
+      "bank": "Rapprochement bancaire",
+      "multi": "Gestion multi-sociétés"
+    },
+    "compliance": "Conformité Algérie",
+    "complianceList": {
+      "pcn": "Plan Comptable National",
+      "tax": "Conformité fiscale",
+      "cnrc": "Compatible CNRC",
+      "audit": "Prêt pour audit"
+    }
+  },
+  "cybersecuriteAlgerie2024": {
+    "title": "Cybersécurité en Algérie 2024",
+    "titleAccent": "Cybersécurité",
+    "subtitle": "Protégez vos données et votre entreprise des cybermenaces - Audit sécurité, protection, monitoring",
+    "intro": "La <accent>cybersécurité</accent> est devenue essentielle pour les entreprises algériennes. Nous protégeons vos systèmes et données des menaces croissantes.",
+    "services": {
+      "audit": {
+        "title": "Audit Sécurité",
+        "desc": "Identification des vulnérabilités dans vos systèmes"
+      },
+      "protection": {
+        "title": "Protection",
+        "desc": "Mise en place de solutions de sécurité"
+      },
+      "monitoring": {
+        "title": "Monitoring",
+        "desc": "Surveillance 24/7 des menaces"
+      },
+      "training": {
+        "title": "Formation",
+        "desc": "Sensibilisation des employés"
+      }
+    },
+    "pricing": {
+      "audit": {
+        "name": "Audit Sécurité",
+        "price": "50 000",
+        "features": ["Analyse des vulnérabilités", "Rapport détaillé", "Recommandations", "Plan d'action"]
+      },
+      "managed": {
+        "name": "Sécurité Managée",
+        "price": "80 000/mois",
+        "features": ["Monitoring 24/7", "Réponse aux incidents", "Mises à jour sécurité", "Rapports mensuels"]
+      }
+    }
+  },
+  "cloudComputingAlgerie2024": {
+    "title": "Cloud Computing en Algérie 2024",
+    "titleAccent": "Cloud",
+    "subtitle": "Migrez vers le cloud avec des solutions adaptées aux entreprises algériennes - AWS, Azure, Google Cloud",
+    "intro": "Le <accent>cloud computing</accent> transforme la façon dont les entreprises fonctionnent. Réduisez les coûts, augmentez la flexibilité et améliorez les performances.",
+    "services": {
+      "migration": {
+        "title": "Migration Cloud",
+        "desc": "Déplacez vos systèmes vers le cloud"
+      },
+      "infrastructure": {
+        "title": "Infrastructure",
+        "desc": "IaaS managée"
+      },
+      "backup": {
+        "title": "Sauvegarde",
+        "desc": "Protection de vos données dans le cloud"
+      },
+      "optimization": {
+        "title": "Optimisation",
+        "desc": "Optimisation des coûts et performances"
+      }
+    },
+    "providers": "Fournisseurs Cloud",
+    "providersList": ["AWS", "Microsoft Azure", "Google Cloud", "OVH"]
+  },
+  "saasDeveloppementAlgerie2024": {
+    "title": "Développement SaaS en Algérie 2024",
+    "titleAccent": "SaaS",
+    "subtitle": "Créez votre produit SaaS - De l'idée au lancement avec une équipe experte",
+    "intro": "Le développement d'un <accent>produit SaaS</accent> nécessite une expertise technique et une connaissance du marché. Nous construisons avec vous un produit scalable et rentable.",
+    "features": {
+      "multiTenant": "Architecture multi-tenant",
+      "subscription": "Gestion des abonnements et facturation",
+      "scalable": "Architecture scalable",
+      "api": "APIs ouvertes",
+      "analytics": "Analytiques d'utilisation",
+      "security": "Sécurité enterprise-grade"
+    },
+    "pricing": {
+      "mvp": {
+        "name": "MVP SaaS",
+        "price": "150 000",
+        "features": ["1 feature core", "Auth et abonnements", "Dashboard admin", "Hébergement 1 an"]
+      },
+      "complete": {
+        "name": "SaaS Complet",
+        "price": "Sur devis",
+        "features": ["Toutes les features", "Architecture scale", "Intégration paiement", "Équipe dédiée"]
+      }
+    }
+  },
+  "developpementFlutterAlgerie2024": {
+    "title": "Développement Flutter en Algérie 2024",
+    "titleAccent": "Flutter",
+    "subtitle": "Créez de belles applications mobiles avec Flutter - iOS et Android depuis un seul code",
+    "intro": "<accent>Flutter</accent> permet de créer des applications mobiles haute performance avec de belles interfaces. Un seul code pour deux plateformes.",
+    "advantages": {
+      "crossPlatform": "iOS et Android depuis un seul code",
+      "performance": "Performance native",
+      "ui": "Interfaces belles et personnalisées",
+      "hotReload": "Développement rapide avec Hot Reload"
+    },
+    "pricing": {
+      "basic": {
+        "name": "App Flutter Basique",
+        "price": "80 000",
+        "features": ["5 écrans", "Design UI", "iOS + Android", "Publication stores"]
+      },
+      "advanced": {
+        "name": "App Flutter Avancée",
+        "price": "150 000",
+        "features": ["15+ écrans", "Backend personnalisé", "Push notifications", "3 mois support"]
+      }
+    }
+  },
+  "developpementReactNativeAlgerie": {
+    "title": "Développement React Native en Algérie",
+    "titleAccent": "React Native",
+    "subtitle": "Applications mobiles cross-platform avec React Native - Solution économique et efficace",
+    "intro": "<accent>React Native</accent> est le choix préféré des startups et entreprises. Un seul code JavaScript pour iOS et Android.",
+    "advantages": {
+      "javascript": "Utilisez vos compétences JavaScript existantes",
+      "crossPlatform": "Un seul code pour deux plateformes",
+      "community": "Grande communauté active",
+      "costEffective": "Économies sur les coûts de développement"
+    },
+    "pricing": {
+      "basic": {
+        "name": "App Basique",
+        "price": "70 000",
+        "features": ["5 écrans", "iOS + Android", "Design UI", "Publication stores"]
+      },
+      "professional": {
+        "name": "App Professionnelle",
+        "price": "140 000",
+        "features": ["15+ écrans", "Backend complet", "Push + Analytics", "3 mois support"]
+      }
+    }
+  },
+  "developpementReactNextjsAlgerie": {
+    "title": "Développement React & Next.js en Algérie",
+    "titleAccent": "React & Next.js",
+    "subtitle": "Applications web modernes et performantes avec React et Next.js",
+    "intro": "<accent>React et Next.js</accent> sont le standard du développement web moderne. Nous construisons des applications web rapides et optimisées SEO.",
+    "advantages": {
+      "seo": "Optimisé SEO avec SSR/SSG",
+      "performance": "Performances exceptionnelles",
+      "scalable": "Architecture scalable",
+      "modern": "Technologies modernes et demandées"
+    },
+    "services": {
+      "webapp": "Applications web complètes",
+      "ecommerce": "Sites e-commerce",
+      "portal": "Portails d'entreprise",
+      "migration": "Modernisation de sites existants"
+    }
+  },
+  "developpementNodejsBackendAlgerie": {
+    "title": "Développement Backend Node.js en Algérie",
+    "titleAccent": "Node.js",
+    "subtitle": "Services backend robustes et scalables avec Node.js",
+    "intro": "<accent>Node.js</accent> est idéal pour les applications haute performance et temps réel. Nous construisons des APIs et services robustes.",
+    "services": {
+      "api": "Développement RESTful APIs",
+      "realtime": "Applications temps réel",
+      "microservices": "Architecture microservices",
+      "integration": "Intégration avec services externes"
+    },
+    "technologies": ["Express.js", "NestJS", "Socket.io", "GraphQL", "MongoDB", "PostgreSQL"]
+  },
+  "developpementPythonDjangoAlgerie": {
+    "title": "Développement Python & Django en Algérie",
+    "titleAccent": "Python & Django",
+    "subtitle": "Applications web robustes avec Python et Django - IA, Data Analytics, Web",
+    "intro": "<accent>Python et Django</accent> pour des applications web sécurisées et scalables. Idéal pour l'IA et l'analyse de données.",
+    "services": {
+      "webapp": "Applications Django",
+      "api": "Django REST Framework",
+      "ai": "Applications IA",
+      "data": "Analyse de données"
+    },
+    "technologies": ["Django", "Flask", "FastAPI", "TensorFlow", "Pandas", "PostgreSQL"]
+  },
+  "developpementApiIntegrationAlgerie": {
+    "title": "Développement & Intégration APIs en Algérie",
+    "titleAccent": "APIs",
+    "subtitle": "Développement d'APIs personnalisées et intégration avec services externes",
+    "intro": "Les <accent>APIs</accent> sont l'épine dorsale des applications modernes. Nous développons et intégrons des APIs pour connecter vos systèmes.",
+    "services": {
+      "development": "Développement APIs personnalisées",
+      "integration": "Intégration APIs externes",
+      "payment": "Intégration paiement (CIB, EDAHABIA)",
+      "shipping": "Intégration livraison"
+    },
+    "technologies": ["REST", "GraphQL", "WebSocket", "OAuth", "JWT"]
+  },
+  "devopsDeploymentAlgerie2024": {
+    "title": "DevOps & Déploiement en Algérie 2024",
+    "titleAccent": "DevOps",
+    "subtitle": "Automatisation du déploiement et gestion de l'infrastructure - CI/CD, Docker, Kubernetes",
+    "intro": "<accent>DevOps</accent> accélère le développement et le déploiement de vos applications. Nous automatisons votre pipeline de livraison.",
+    "services": {
+      "cicd": "Pipelines CI/CD",
+      "docker": "Conteneurisation Docker",
+      "kubernetes": "Orchestration Kubernetes",
+      "monitoring": "Monitoring et alerting"
+    },
+    "tools": ["GitHub Actions", "GitLab CI", "Docker", "Kubernetes", "Terraform", "AWS/GCP/Azure"]
+  },
+  "tendancesTechAlgerie2025": {
+    "title": "Tendances Tech en Algérie 2025",
+    "titleAccent": "2025",
+    "subtitle": "Les tendances technologiques clés qui façonneront le marché algérien en 2025",
+    "intro": "Découvrez les <accent>tendances tech clés</accent> qui transformeront le marché algérien en 2025 : IA, Fintech, Cloud Computing.",
+    "trends": {
+      "ai": {
+        "title": "Intelligence Artificielle",
+        "desc": "Chatbots, automatisation, analyse prédictive"
+      },
+      "fintech": {
+        "title": "Fintech",
+        "desc": "Paiement mobile, banque digitale"
+      },
+      "cloud": {
+        "title": "Cloud Computing",
+        "desc": "Migration vers le cloud des entreprises algériennes"
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "desc": "Croissance accélérée du shopping en ligne"
+      }
+    }
+  },
+  "developpementApplicationTunisie2024": {
+    "title": "Développement Applications en Tunisie 2024",
+    "titleAccent": "Tunisie",
+    "subtitle": "Services de développement d'applications web et mobiles pour le marché tunisien",
+    "intro": "Symloop offre des services de <accent>développement d'applications en Tunisie</accent>. Applications mobiles, sites web et solutions digitales pour les entreprises tunisiennes.",
+    "services": {
+      "mobile": "Applications mobiles iOS & Android",
+      "web": "Applications web et sites",
+      "ecommerce": "Solutions e-commerce",
+      "custom": "Développement sur mesure"
+    },
+    "whySymloop": "Pourquoi Symloop pour votre projet tunisien ?",
+    "advantages": ["Expérience marché maghrébin", "Équipe bilingue", "Tarifs compétitifs", "Support de proximité"]
+  },
+  "developpementApplicationMaroc2024": {
+    "title": "Développement Applications au Maroc 2024",
+    "titleAccent": "Maroc",
+    "subtitle": "Services de développement d'applications web et mobiles pour le marché marocain",
+    "intro": "Symloop offre des services de <accent>développement d'applications au Maroc</accent>. Solutions digitales personnalisées pour les entreprises marocaines.",
+    "services": {
+      "mobile": "Applications mobiles",
+      "web": "Applications web",
+      "ecommerce": "E-commerce",
+      "enterprise": "Solutions entreprise"
+    },
+    "advantages": ["Connaissance du marché maghrébin", "Équipe multilingue", "Qualité internationale", "Tarifs locaux"]
+  },
+  "agenceDigitaleMena2024": {
+    "title": "Agence Digitale MENA 2024",
+    "titleAccent": "MENA",
+    "subtitle": "Services digitaux pour le Moyen-Orient et l'Afrique du Nord - Développement, design, marketing",
+    "intro": "Symloop est une <accent>agence digitale</accent> servant le Moyen-Orient et l'Afrique du Nord. Nous comprenons les spécificités du marché régional et proposons des solutions adaptées.",
+    "coverage": "Notre Couverture",
+    "countries": ["Algérie", "Tunisie", "Maroc", "Égypte", "Émirats", "Arabie Saoudite"],
+    "services": ["Développement web & mobile", "Design UI/UX", "Marketing digital", "Solutions cloud"]
+  },
+  "developpementWebOran2024": {
+    "title": "Développement Web à Oran 2024",
+    "titleAccent": "Oran",
+    "subtitle": "Services de développement web et applications pour la ville d'Oran et l'ouest algérien",
+    "intro": "<accent>Développement web à Oran</accent> avec Symloop. Nous servons les entreprises d'Oran et des régions environnantes avec des solutions digitales de haute qualité.",
+    "localServices": "Nos Services à Oran",
+    "services": {
+      "website": "Création de sites web",
+      "ecommerce": "Boutiques en ligne",
+      "mobile": "Applications mobiles",
+      "seo": "Référencement local"
+    }
+  },
+  "developpementWebConstantine2024": {
+    "title": "Développement Web à Constantine 2024",
+    "titleAccent": "Constantine",
+    "subtitle": "Services de développement web et applications pour la ville de Constantine et l'est algérien",
+    "intro": "<accent>Développement web à Constantine</accent> avec Symloop. Nous accompagnons les entreprises de Constantine, Sétif et Annaba dans leur transformation digitale.",
+    "localServices": "Nos Services à Constantine",
+    "services": {
+      "website": "Création de sites web",
+      "ecommerce": "Boutiques en ligne",
+      "mobile": "Applications mobiles",
+      "digital": "Transformation digitale"
+    }
+  },
+  "applicationSanteAlgerie2024": {
+    "title": "Applications Santé en Algérie 2024",
+    "titleAccent": "Santé",
+    "subtitle": "Développement d'applications de santé - Télémédecine, gestion de rendez-vous, dossiers médicaux",
+    "intro": "Les <accent>applications de santé</accent> transforment le secteur de la santé en Algérie. Nous développons des solutions pour les hôpitaux, cliniques et médecins.",
+    "solutions": {
+      "telemedicine": {
+        "title": "Télémédecine",
+        "desc": "Consultations vidéo sécurisées"
+      },
+      "appointments": {
+        "title": "Gestion des RDV",
+        "desc": "Réservation en ligne et rappels"
+      },
+      "records": {
+        "title": "Dossiers Médicaux",
+        "desc": "Digitalisation des dossiers patients"
+      },
+      "pharmacy": {
+        "title": "Gestion Pharmacies",
+        "desc": "Stock et ventes"
+      }
+    }
+  },
+  "applicationRestaurantLivraisonAlgerie": {
+    "title": "Applications Restaurant & Livraison en Algérie",
+    "titleAccent": "Restaurant",
+    "subtitle": "Développement d'applications pour restaurants - Commande en ligne, livraison, gestion du restaurant",
+    "intro": "Les <accent>applications restaurant</accent> sont essentielles à l'ère de la livraison. Nous développons des solutions complètes de la commande à la livraison.",
+    "solutions": {
+      "ordering": {
+        "title": "Commande en Ligne",
+        "desc": "Site et app de commande"
+      },
+      "delivery": {
+        "title": "Gestion Livraison",
+        "desc": "Suivi et optimisation des livraisons"
+      },
+      "pos": {
+        "title": "Point de Vente",
+        "desc": "Système POS intégré"
+      },
+      "kitchen": {
+        "title": "Gestion Cuisine",
+        "desc": "Écrans cuisine"
+      }
+    },
+    "pricing": {
+      "basic": {
+        "name": "Restaurant Basique",
+        "price": "50 000",
+        "features": ["Site de commande", "Menu digital", "Paiement en ligne", "Dashboard"]
+      },
+      "complete": {
+        "name": "Restaurant Complet",
+        "price": "120 000",
+        "features": ["Site + App", "Gestion livraison", "Système POS", "Analytics"]
+      }
+    }
+  },
+  "applicationImmobilierAlgerie2024": {
+    "title": "Applications Immobilier en Algérie 2024",
+    "titleAccent": "Immobilier",
+    "subtitle": "Développement de plateformes immobilières - Annonces, CRM immobilier, gestion de biens",
+    "intro": "La <accent>PropTech</accent> transforme le marché immobilier en Algérie. Nous développons des plateformes immobilières modernes.",
+    "solutions": {
+      "listing": {
+        "title": "Plateforme d'Annonces",
+        "desc": "Site d'annonces immobilières"
+      },
+      "crm": {
+        "title": "CRM Immobilier",
+        "desc": "Gestion des clients et biens"
+      },
+      "management": {
+        "title": "Gestion de Biens",
+        "desc": "Pour agences et gestionnaires"
+      },
+      "virtual": {
+        "title": "Visites Virtuelles",
+        "desc": "360° et visites virtuelles"
+      }
+    }
+  },
+  "edtechEducationAlgerie2024": {
+    "title": "EdTech & Éducation en Algérie 2024",
+    "titleAccent": "Éducation",
+    "subtitle": "Développement de plateformes éducatives - E-learning, gestion d'écoles, cours en ligne",
+    "intro": "L'<accent>EdTech</accent> transforme l'éducation en Algérie. Nous développons des plateformes éducatives modernes et engageantes.",
+    "solutions": {
+      "lms": {
+        "title": "LMS",
+        "desc": "Plateforme de cours en ligne"
+      },
+      "school": {
+        "title": "Gestion d'École",
+        "desc": "ERP pour établissements scolaires"
+      },
+      "virtual": {
+        "title": "Classes Virtuelles",
+        "desc": "Apprentissage en direct en ligne"
+      },
+      "assessment": {
+        "title": "Tests & Évaluation",
+        "desc": "Quiz et suivi des progrès"
+      }
+    }
+  },
+  "logistiqueTransportAlgerie2024": {
+    "title": "Logistique & Transport en Algérie 2024",
+    "titleAccent": "Logistique",
+    "subtitle": "Solutions digitales pour le transport et la logistique - Suivi flotte, gestion livraison, TMS",
+    "intro": "La <accent>logistique digitale</accent> optimise les opérations de transport et de livraison. Nous développons des solutions pour les entreprises de transport en Algérie.",
+    "solutions": {
+      "fleet": {
+        "title": "Gestion de Flotte",
+        "desc": "GPS et suivi en temps réel"
+      },
+      "delivery": {
+        "title": "Gestion des Livraisons",
+        "desc": "Optimisation des itinéraires et tracking"
+      },
+      "warehouse": {
+        "title": "Gestion d'Entrepôt",
+        "desc": "WMS complet"
+      },
+      "tms": {
+        "title": "TMS",
+        "desc": "Système de gestion du transport"
+      }
+    }
+  },
+  "plateformeB2bMarketplaceAlgerie": {
+    "title": "Plateformes B2B & Marketplace en Algérie",
+    "titleAccent": "B2B",
+    "subtitle": "Développement de marketplaces B2B - Connecter fournisseurs et acheteurs en Algérie",
+    "intro": "Les <accent>plateformes B2B</accent> facilitent le commerce entre entreprises. Nous développons des marketplaces connectant fournisseurs et acheteurs.",
+    "features": {
+      "supplier": "Catalogue fournisseurs",
+      "rfq": "Demandes de devis",
+      "orders": "Gestion des commandes",
+      "payments": "Paiement B2B",
+      "logistics": "Intégration logistique"
+    },
+    "pricing": {
+      "mvp": {
+        "name": "Marketplace MVP",
+        "price": "200 000",
+        "features": ["Catalogue produits", "Vendeurs et acheteurs", "Système de commandes", "Dashboard admin"]
+      }
+    }
+  },
+  "maintenanceSupportApplicationAlgerie": {
+    "title": "Maintenance & Support Applications en Algérie",
+    "titleAccent": "Maintenance",
+    "subtitle": "Services de maintenance et support pour vos applications - Mises à jour, correction de bugs, sécurité",
+    "intro": "La <accent>maintenance des applications</accent> est essentielle pour assurer le bon fonctionnement de vos systèmes. Nous fournissons un support continu pour vos applications.",
+    "services": {
+      "corrective": {
+        "title": "Maintenance Corrective",
+        "desc": "Correction de bugs et problèmes"
+      },
+      "preventive": {
+        "title": "Maintenance Préventive",
+        "desc": "Mises à jour et améliorations"
+      },
+      "evolutive": {
+        "title": "Maintenance Évolutive",
+        "desc": "Ajout de nouvelles fonctionnalités"
+      },
+      "support": {
+        "title": "Support Technique",
+        "desc": "Assistance et support utilisateurs"
+      }
+    },
+    "pricing": {
+      "basic": {
+        "name": "Maintenance Basique",
+        "price": "15 000/mois",
+        "features": ["Correction bugs", "Mises à jour sécurité", "Backup", "Support email"]
+      },
+      "premium": {
+        "name": "Maintenance Premium",
+        "price": "35 000/mois",
+        "features": ["Tout Basique", "Améliorations", "Support prioritaire", "Monitoring 24/7"]
+      }
+    }
+  },
+  "coutDeveloppementApplicationAlgerie": {
+    "title": "Coût de Développement d'Applications en Algérie",
+    "titleAccent": "Coût",
+    "subtitle": "Guide complet des coûts de développement d'applications et de sites web en Algérie",
+    "intro": "Comprendre les <accent>coûts de développement</accent> est essentiel pour planifier votre budget. Ce guide vous donne une idée claire des prix.",
+    "categories": {
+      "website": {
+        "title": "Sites Web",
+        "basic": "Site vitrine : 35 000 - 50 000 DA",
+        "ecommerce": "E-commerce : 80 000 - 150 000 DA",
+        "webapp": "Application web : 100 000 - 200 000 DA"
+      },
+      "mobile": {
+        "title": "Applications Mobiles",
+        "mvp": "MVP : 60 000 - 90 000 DA",
+        "professional": "Professionnelle : 120 000 - 200 000 DA",
+        "enterprise": "Entreprise : Sur devis"
+      },
+      "software": {
+        "title": "Logiciels",
+        "crm": "CRM : 40 000 - 80 000 DA",
+        "erp": "ERP : 150 000 DA+",
+        "custom": "Sur mesure : Sur devis"
+      }
+    },
+    "factors": "Facteurs Influençant le Prix",
+    "factorsList": {
+      "complexity": "Complexité des fonctionnalités",
+      "design": "Niveau de design",
+      "platform": "Plateformes (web, iOS, Android)",
+      "timeline": "Délai de livraison",
+      "integrations": "Intégrations requises"
+    }
+  },
+  "reussirProjetDigitalAlgerie": {
+    "title": "Réussir Votre Projet Digital en Algérie",
+    "titleAccent": "Réussir",
+    "subtitle": "Guide complet pour réussir vos projets web et mobile en Algérie",
+    "intro": "La <accent>réussite d'un projet digital</accent> nécessite une bonne planification et le bon partenaire. Ce guide vous aide à éviter les erreurs courantes.",
+    "steps": {
+      "planning": {
+        "title": "Planification",
+        "desc": "Définissez clairement vos objectifs et besoins"
+      },
+      "partner": {
+        "title": "Choix du Partenaire",
+        "desc": "Choisissez la bonne agence ou équipe"
+      },
+      "methodology": {
+        "title": "Méthodologie",
+        "desc": "Travail agile avec suivi"
+      },
+      "testing": {
+        "title": "Tests",
+        "desc": "Testez avant le lancement"
+      },
+      "launch": {
+        "title": "Lancement",
+        "desc": "Lancez et suivez les performances"
+      }
+    },
+    "mistakes": "Erreurs à Éviter",
+    "mistakesList": {
+      "scope": "Ne pas définir clairement le périmètre",
+      "budget": "Budget irréaliste",
+      "communication": "Mauvaise communication",
+      "testing": "Négliger les tests",
+      "maintenance": "Oublier la maintenance"
+    }
+  },
+  "freelanceVsAgenceAlgerie": {
+    "title": "Freelance vs Agence en Algérie",
+    "titleAccent": "Comparaison",
+    "subtitle": "Comment choisir entre freelance et agence pour votre projet digital en Algérie",
+    "intro": "Le choix entre <accent>freelance et agence</accent> dépend du type de projet, de votre budget et de vos besoins. Ce guide vous aide à choisir.",
+    "comparison": {
+      "freelance": {
+        "title": "Freelance",
+        "pros": ["Coût réduit", "Communication directe", "Flexibilité"],
+        "cons": ["Capacité limitée", "Risque d'interruption", "Compétences limitées"]
+      },
+      "agency": {
+        "title": "Agence",
+        "pros": ["Équipe complète", "Continuité", "Expertise variée"],
+        "cons": ["Coût plus élevé", "Bureaucratie potentielle"]
+      }
+    },
+    "recommendation": "Recommandation",
+    "recommendationText": "Pour les petits projets et budgets limités : Freelance. Pour les projets importants et besoin de support : Agence."
+  },
+  "commentChoisirDeveloppeurAlgerie": {
+    "title": "Comment Choisir un Développeur en Algérie",
+    "titleAccent": "Choisir",
+    "subtitle": "Critères pour choisir le bon développeur ou équipe de développement pour votre projet",
+    "intro": "<accent>Choisir le bon développeur</accent> est crucial pour le succès de votre projet. Découvrez les critères essentiels pour faire le bon choix.",
+    "criteria": {
+      "portfolio": {
+        "title": "Portfolio",
+        "desc": "Examinez les projets passés similaires"
+      },
+      "technical": {
+        "title": "Compétences Techniques",
+        "desc": "Assurez-vous de la maîtrise des technologies requises"
+      },
+      "communication": {
+        "title": "Communication",
+        "desc": "Facilité de communication et réactivité"
+      },
+      "methodology": {
+        "title": "Méthodologie",
+        "desc": "Travail avec méthode claire et suivi"
+      },
+      "support": {
+        "title": "Support",
+        "desc": "Support après livraison et maintenance"
+      },
+      "price": {
+        "title": "Prix",
+        "desc": "Rapport qualité-prix"
+      }
+    },
+    "questions": "Questions à Poser",
+    "questionsList": [
+      "Avez-vous des projets similaires ?",
+      "Quelles technologies utilisez-vous ?",
+      "Comment gérez-vous les projets ?",
+      "Quelles sont vos conditions de paiement ?",
+      "Proposez-vous un support après livraison ?"
+    ],
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "subtitle": "Contactez notre équipe pour une consultation gratuite et un devis personnalisé.",
+      "button": "Contactez-nous"
+    }
+  }
+}

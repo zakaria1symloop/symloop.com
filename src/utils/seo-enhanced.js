@@ -170,8 +170,8 @@ const SeoEnhanced = ({
       },
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
-        "minValue": 50,
-        "maxValue": 200
+        "minValue": 10,
+        "maxValue": 25
       },
       "slogan": "Digital Innovation for MENA Region",
       "description": "Leading technology company specializing in digital transformation, web development, mobile apps, and IT solutions for businesses across Algeria and the MENA region.",
@@ -187,11 +187,7 @@ const SeoEnhanced = ({
         "IoT Solutions",
         "Digital Marketing"
       ],
-      "award": [
-        "Best Tech Company Algeria 2024",
-        "MENA Digital Innovation Award 2023",
-        "Top Software Developer North Africa 2024"
-      ],
+      "award": [],
       "memberOf": [
         {
           "@type": "Organization",
@@ -242,8 +238,8 @@ const SeoEnhanced = ({
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "287",
+        "ratingValue": "4.8",
+        "reviewCount": "15",
         "bestRating": "5",
         "worstRating": "1"
       },

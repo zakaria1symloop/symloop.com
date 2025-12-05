@@ -1,0 +1,1175 @@
+{
+  "common": {
+    "backToBlog": "Back to blog",
+    "readArticle": "Read article",
+    "relatedArticles": "Related Articles",
+    "faq": "Frequently Asked Questions",
+    "technologies": "Technologies We Use",
+    "pricing": "Pricing",
+    "pricingNote": "Indicative prices. The exact price depends on the complexity, features required, and desired timeline. Contact us for a free personalized quote.",
+    "contactUs": "Contact Us",
+    "freeQuote": "Get a Free Quote",
+    "freeConsultation": "Free Consultation",
+    "callUs": "Call Us",
+    "recommended": "RECOMMENDED",
+    "popular": "POPULAR"
+  },
+  "agenceWebAlgerie2024": {
+    "title": "Web Agency in Algeria 2024",
+    "titleAccent": "Algeria",
+    "subtitle": "Complete guide to choosing the best web agency in Algeria for your digital projects",
+    "intro": "Choosing the right <accent>web agency in Algeria</accent> is crucial for the success of your digital project. Whether you're in <accent>Algiers, Oran or Constantine</accent>, this guide helps you make the right choice.",
+    "selectionCriteria": "Selection Criteria",
+    "criteria": {
+      "portfolio": "Portfolio and client references",
+      "expertise": "Technical expertise (React, Next.js, etc.)",
+      "market": "Knowledge of Algerian market",
+      "support": "Support in French and Arabic",
+      "pricing": "Transparent pricing",
+      "deadlines": "Deadlines respected"
+    },
+    "agencyTypes": "Types of Web Agencies in Algeria",
+    "types": {
+      "fullService": {
+        "title": "Full-Service Agencies",
+        "desc": "Web, mobile, marketing, SEO - complete solution",
+        "price": "Medium-high budget"
+      },
+      "specialized": {
+        "title": "Specialized Agencies",
+        "desc": "Deep expertise in one domain",
+        "price": "Variable by specialty"
+      },
+      "freelance": {
+        "title": "Freelancers",
+        "desc": "Flexibility and reduced costs",
+        "price": "Economic budget"
+      },
+      "international": {
+        "title": "International Agencies",
+        "desc": "International standards, local presence",
+        "price": "High budget"
+      }
+    },
+    "whySymloop": "Why Choose Symloop?",
+    "advantages": {
+      "local": "Local presence in Algeria",
+      "modern": "Modern technologies (React, Next.js)",
+      "bilingual": "French/Arabic bilingual team",
+      "competitive": "Competitive rates",
+      "support": "24/7 support"
+    }
+  },
+  "creationSiteWebAlgerie2024": {
+    "title": "Website Creation in Algeria 2024",
+    "titleAccent": "Algeria",
+    "subtitle": "Complete guide to creating a professional website in Algeria - Pricing, deadlines, best practices",
+    "intro": "Create a <accent>professional website in Algeria</accent> with the latest technologies. From showcase site to e-commerce, we support you at every step.",
+    "websiteTypes": "Types of Websites",
+    "types": {
+      "showcase": {
+        "title": "Showcase Website",
+        "desc": "Present your business online",
+        "price": "35,000 - 50,000 DA"
+      },
+      "ecommerce": {
+        "title": "E-commerce Website",
+        "desc": "Sell online with CIB/EDAHABIA payment",
+        "price": "80,000 - 150,000 DA"
+      },
+      "webapp": {
+        "title": "Web Application",
+        "desc": "Custom features and user management",
+        "price": "100,000 - 200,000 DA"
+      },
+      "portal": {
+        "title": "Corporate Portal",
+        "desc": "Complete solution for businesses",
+        "price": "On quote"
+      }
+    },
+    "process": "Our Process",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "desc": "Analysis of your needs and objectives"
+      },
+      "design": {
+        "title": "Design",
+        "desc": "Mockups and UI/UX validation"
+      },
+      "development": {
+        "title": "Development",
+        "desc": "Modern and responsive coding"
+      },
+      "launch": {
+        "title": "Launch",
+        "desc": "Deployment and training"
+      }
+    },
+    "faqs": [
+      {
+        "question": "How long does it take to create a website in Algeria?",
+        "answer": "A showcase website takes 2-4 weeks. An e-commerce site takes 4-8 weeks. A custom web application takes 2-4 months depending on complexity."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept CIB card, EDAHABIA, bank transfer, and cash. Payment is typically in 3 installments: 30% upfront, 40% mid-project, 30% on delivery."
+      },
+      {
+        "question": "Is hosting included?",
+        "answer": "Yes, we offer 1 year of hosting included with every website. We use reliable servers with 99.9% uptime guarantee."
+      },
+      {
+        "question": "Can I update my site myself?",
+        "answer": "Yes, we provide an intuitive admin interface and training. You can update content, add products, and manage your site independently."
+      },
+      {
+        "question": "Do you provide maintenance?",
+        "answer": "Yes, we offer monthly maintenance packages including updates, backups, security, and technical support."
+      },
+      {
+        "question": "Is the site optimized for Google?",
+        "answer": "Absolutely! All our sites are SEO optimized with proper structure, meta tags, sitemap, and fast loading for best Google ranking."
+      }
+    ]
+  },
+  "developpementApplicationMobileAlgerie2024": {
+    "title": "Mobile App Development in Algeria 2024",
+    "titleAccent": "Algeria",
+    "subtitle": "Create your iOS & Android mobile app with the best Algerian development agency",
+    "intro": "Develop your <accent>mobile application in Algeria</accent> with cross-platform technologies. iOS and Android from a single codebase for optimized costs.",
+    "appTypes": "Types of Mobile Applications",
+    "types": {
+      "mvp": {
+        "title": "MVP App",
+        "desc": "Launch your idea quickly",
+        "price": "60,000 - 90,000 DA"
+      },
+      "professional": {
+        "title": "Professional App",
+        "desc": "Complete app with advanced features",
+        "price": "120,000 - 200,000 DA"
+      },
+      "enterprise": {
+        "title": "Enterprise App",
+        "desc": "Scalable solution for large organizations",
+        "price": "On quote"
+      }
+    },
+    "technologies": {
+      "reactNative": "React Native for cross-platform",
+      "flutter": "Flutter for beautiful UIs",
+      "firebase": "Firebase for backend",
+      "api": "REST & GraphQL APIs"
+    },
+    "features": "Features We Build",
+    "featuresList": {
+      "auth": "User authentication",
+      "payments": "Payment integration",
+      "notifications": "Push notifications",
+      "geolocation": "Geolocation",
+      "offline": "Offline mode",
+      "analytics": "Analytics & tracking"
+    }
+  },
+  "ecommerceAlgeriePaiementCibEdahabia2024": {
+    "title": "E-commerce Algeria with CIB & EDAHABIA Payment 2024",
+    "titleAccent": "CIB & EDAHABIA",
+    "subtitle": "Create your online store with Algerian payment integration - CIB card, EDAHABIA, and local solutions",
+    "intro": "Launch your <accent>e-commerce in Algeria</accent> with integrated local payment. Accept <accent>CIB, EDAHABIA</accent>, and prepare your store for success.",
+    "paymentMethods": "Algerian Payment Methods",
+    "payments": {
+      "cib": {
+        "title": "CIB Card",
+        "desc": "Most used bank card in Algeria",
+        "integration": "Full integration"
+      },
+      "edahabia": {
+        "title": "EDAHABIA",
+        "desc": "Algeria Post electronic payment",
+        "integration": "Full integration"
+      },
+      "cash": {
+        "title": "Cash on Delivery",
+        "desc": "Pay on delivery",
+        "integration": "Full integration"
+      }
+    },
+    "ecommerceFeatures": "E-commerce Features",
+    "features": {
+      "catalog": "Product catalog management",
+      "inventory": "Inventory management",
+      "orders": "Order management",
+      "shipping": "Delivery integration (Yalidine, ZR Express)",
+      "seo": "SEO optimization",
+      "analytics": "Sales analytics"
+    },
+    "packages": {
+      "starter": {
+        "name": "E-commerce Starter",
+        "price": "80,000",
+        "features": ["Up to 100 products", "CIB/EDAHABIA payment", "Basic design", "1 year hosting", "Training included"]
+      },
+      "professional": {
+        "name": "E-commerce Pro",
+        "price": "150,000",
+        "features": ["Unlimited products", "All payment methods", "Custom design", "Mobile app", "Delivery integration", "3 months support"]
+      },
+      "enterprise": {
+        "name": "E-commerce Enterprise",
+        "price": "On quote",
+        "features": ["Multi-vendor marketplace", "Advanced inventory", "ERP integration", "Dedicated team", "Custom development", "Priority support"]
+      }
+    }
+  },
+  "transformationDigitaleAlgerie2024": {
+    "title": "Digital Transformation in Algeria 2024",
+    "titleAccent": "Digital Transformation",
+    "subtitle": "Modernize your business with digital solutions adapted to the Algerian market",
+    "intro": "<accent>Digital transformation</accent> is essential for Algerian businesses wanting to stay competitive. We support you at every step of your digitalization.",
+    "pillars": "Pillars of Digital Transformation",
+    "pillarsList": {
+      "processes": {
+        "title": "Process Digitalization",
+        "desc": "Automate and optimize your internal processes"
+      },
+      "customer": {
+        "title": "Customer Experience",
+        "desc": "Improve interactions with your customers"
+      },
+      "data": {
+        "title": "Data Management",
+        "desc": "Collect, analyze and leverage your data"
+      },
+      "culture": {
+        "title": "Digital Culture",
+        "desc": "Train and support your teams"
+      }
+    },
+    "solutions": "Our Solutions",
+    "solutionsList": {
+      "erp": "ERP for integrated management",
+      "crm": "CRM for customer relationships",
+      "ecommerce": "E-commerce platform",
+      "mobile": "Mobile applications",
+      "cloud": "Cloud migration",
+      "automation": "Process automation"
+    }
+  },
+  "intelligenceArtificielleAlgerieMena2024": {
+    "title": "Artificial Intelligence in Algeria & MENA 2024",
+    "titleAccent": "Artificial Intelligence",
+    "subtitle": "Integrate AI into your business with solutions adapted to the Algerian and MENA market",
+    "intro": "<accent>Artificial Intelligence</accent> opens new opportunities for businesses in Algeria and the MENA region. From chatbots to predictive analysis, discover our AI solutions.",
+    "aiServices": "Our AI Services",
+    "services": {
+      "chatbot": {
+        "title": "Intelligent Chatbots",
+        "desc": "24/7 customer service in French and Arabic"
+      },
+      "analytics": {
+        "title": "Predictive Analytics",
+        "desc": "Anticipate trends and optimize decisions"
+      },
+      "automation": {
+        "title": "Intelligent Automation",
+        "desc": "Automate repetitive tasks with AI"
+      },
+      "vision": {
+        "title": "Computer Vision",
+        "desc": "Image and video analysis"
+      }
+    },
+    "useCases": "Use Cases in Algeria",
+    "cases": {
+      "retail": "Retail: demand prediction, inventory optimization",
+      "finance": "Finance: fraud detection, credit scoring",
+      "health": "Healthcare: diagnostic assistance, appointment management",
+      "industry": "Industry: predictive maintenance, quality control"
+    }
+  },
+  "fintechAlgerieSolutions2024": {
+    "title": "Fintech Solutions in Algeria 2024",
+    "titleAccent": "Fintech",
+    "subtitle": "Develop fintech solutions adapted to the Algerian market - Mobile payment, banking, digital finance",
+    "intro": "The <accent>fintech sector in Algeria</accent> is booming. We develop innovative solutions for digital payments, mobile banking, and financial services.",
+    "solutions": "Our Fintech Solutions",
+    "solutionsList": {
+      "payment": {
+        "title": "Payment Solutions",
+        "desc": "CIB, EDAHABIA integration, mobile wallet"
+      },
+      "banking": {
+        "title": "Mobile Banking",
+        "desc": "Complete banking applications"
+      },
+      "lending": {
+        "title": "Digital Lending",
+        "desc": "Online loan management platforms"
+      },
+      "insurance": {
+        "title": "Insurtech",
+        "desc": "Digital insurance solutions"
+      }
+    },
+    "compliance": "Regulatory Compliance",
+    "complianceList": {
+      "banque": "Bank of Algeria compliance",
+      "security": "Banking security standards",
+      "data": "Personal data protection",
+      "audit": "Traceability and audit"
+    }
+  },
+  "startupAlgerieGuide2024": {
+    "title": "Startup in Algeria - Complete Guide 2024",
+    "titleAccent": "Startup",
+    "subtitle": "Everything you need to know to launch and grow your tech startup in Algeria",
+    "intro": "The <accent>startup ecosystem in Algeria</accent> is developing rapidly. This guide covers everything from ideation to fundraising.",
+    "steps": "Steps to Launch Your Startup",
+    "stepsList": {
+      "idea": {
+        "title": "Idea Validation",
+        "desc": "Test your concept with the market"
+      },
+      "mvp": {
+        "title": "MVP Development",
+        "desc": "Create a minimum viable product"
+      },
+      "legal": {
+        "title": "Legal Structure",
+        "desc": "Company registration and legal framework"
+      },
+      "funding": {
+        "title": "Funding",
+        "desc": "Investors, incubators, grants"
+      },
+      "growth": {
+        "title": "Growth",
+        "desc": "Scale your business"
+      }
+    },
+    "ecosystem": "Algerian Startup Ecosystem",
+    "ecosystemList": {
+      "incubators": "Incubators and accelerators",
+      "investors": "Local and international investors",
+      "programs": "Government support programs",
+      "events": "Networking events"
+    }
+  },
+  "mvpStartupAlgerie2024": {
+    "title": "MVP Development for Startups in Algeria 2024",
+    "titleAccent": "MVP",
+    "subtitle": "Launch your startup quickly with a minimum viable product - Fast and affordable development",
+    "intro": "A <accent>MVP (Minimum Viable Product)</accent> allows you to test your idea with minimum investment. We develop your MVP in 4-6 weeks.",
+    "packages": {
+      "basic": {
+        "name": "MVP Basic",
+        "price": "60,000",
+        "features": ["Landing page", "1 core feature", "Basic design", "1 year hosting", "1 month support"]
+      },
+      "complete": {
+        "name": "MVP Complete",
+        "price": "120,000",
+        "features": ["Web application", "3-5 features", "Professional design", "User authentication", "Admin dashboard", "3 months support"]
+      },
+      "advanced": {
+        "name": "MVP Advanced",
+        "price": "On quote",
+        "features": ["Web + Mobile", "All features", "Custom design", "Payment integration", "Analytics", "6 months support"]
+      }
+    },
+    "process": "Our MVP Process",
+    "processList": {
+      "week1": {
+        "title": "Week 1: Discovery",
+        "desc": "Understanding your vision, defining features"
+      },
+      "week2": {
+        "title": "Week 2: Design",
+        "desc": "Wireframes, mockups, validation"
+      },
+      "week34": {
+        "title": "Weeks 3-4: Development",
+        "desc": "Agile coding with regular demos"
+      },
+      "week56": {
+        "title": "Weeks 5-6: Testing & Launch",
+        "desc": "Quality testing and production deployment"
+      }
+    }
+  },
+  "seoReferencementAlgerie2024": {
+    "title": "SEO & Referencing in Algeria 2024",
+    "titleAccent": "Algeria",
+    "subtitle": "Complete guide to dominating Google's first page. Local strategies, Algerian keywords, and optimization techniques adapted to the MENA market.",
+    "intro": "<accent>SEO in Algeria</accent> has become essential for any business wanting to develop online visibility. With over <accent>28 million Algerian internet users</accent> of which 90% use Google, being positioned on the <accent>first page</accent> can radically transform your business.",
+    "stats": {
+      "title": "SEO Algeria in Numbers",
+      "users": "Algerian internet users",
+      "useGoogle": "Use Google",
+      "clickPage1": "Click on page 1",
+      "avgRoi": "Average SEO ROI"
+    },
+    "strategies": "5 Key SEO Strategies for Algeria",
+    "strategiesList": {
+      "keywords": {
+        "title": "Local Keyword Research",
+        "desc": "Identify terms searched by Algerians: 'price algeria', 'algiers', 'algeria delivery', 'CIB payment'"
+      },
+      "multilingual": {
+        "title": "Multilingual Content",
+        "desc": "Content in French, Arabic (darija/standard) and English to maximize reach and touch all segments"
+      },
+      "technical": {
+        "title": "Technical SEO",
+        "desc": "Optimal loading speed, mobile-first design, clear URL structure and structured data"
+      },
+      "backlinks": {
+        "title": "Local Backlinks",
+        "desc": "Quality links from Algerian sites: directories, partners, local press, influential blogs"
+      },
+      "gmb": {
+        "title": "Google My Business",
+        "desc": "Optimized listing with photos, customer reviews, regular posts for local referencing"
+      }
+    },
+    "services": {
+      "audit": {
+        "title": "Complete SEO Audit",
+        "desc": "Technical, content and backlinks analysis of your site",
+        "features": ["100+ criteria analysis", "Detailed PDF report", "Priority action plan", "Competitor audit"]
+      },
+      "keywords": {
+        "title": "Keyword Research",
+        "desc": "Identifying positioning opportunities",
+        "features": ["Local keywords", "Search volume", "User intent", "Niche opportunities"]
+      },
+      "content": {
+        "title": "Optimized Content",
+        "desc": "SEO writing for blogs and pages",
+        "features": ["Optimized articles", "Sales pages", "Multilingual content", "Existing optimization"]
+      },
+      "netlinking": {
+        "title": "Algeria Netlinking",
+        "desc": "Acquiring quality local backlinks",
+        "features": ["Algerian directories", "Local partnerships", "Guest posting", "Online press"]
+      },
+      "technical": {
+        "title": "Technical SEO",
+        "desc": "Technical optimization of your site",
+        "features": ["Loading speed", "Mobile-first", "URL structure", "Structured data"]
+      },
+      "local": {
+        "title": "Local SEO",
+        "desc": "Dominate local searches",
+        "features": ["Google My Business", "Local citations", "Customer reviews", "Geolocation"]
+      }
+    },
+    "pricing": {
+      "audit": {
+        "name": "SEO Audit",
+        "price": "15,000",
+        "period": "one-time",
+        "desc": "Complete diagnosis of your site",
+        "features": ["Complete technical audit", "Keyword analysis", "Competition audit", "Detailed PDF report", "Priority action plan", "1h consultation"]
+      },
+      "monthly": {
+        "name": "Monthly SEO Pro",
+        "price": "35,000",
+        "period": "/month",
+        "desc": "Continuous SEO support",
+        "features": ["Continuous optimization", "2 SEO articles/month", "Position tracking", "Local netlinking", "Monthly report", "Priority support"]
+      },
+      "complete": {
+        "name": "Complete SEO",
+        "price": "On quote",
+        "period": "",
+        "desc": "360deg SEO Strategy",
+        "features": ["Audit + complete optimization", "Unlimited content", "Premium netlinking", "Multi-city local SEO", "Team training", "Dedicated account manager"]
+      }
+    },
+    "faqs": [
+      {
+        "question": "How long to see SEO results in Algeria?",
+        "answer": "First SEO results typically appear between 3 and 6 months. For very competitive keywords, expect 6 to 12 months. Local SEO in Algeria can give faster results as competition is less intense than in Europe."
+      },
+      {
+        "question": "What budget for SEO in Algeria?",
+        "answer": "A complete SEO audit costs between 15,000 and 30,000 DA. For monthly support, expect 25,000 to 60,000 DA/month depending on project scope. It's a worthwhile investment as SEO generates free traffic long-term."
+      },
+      {
+        "question": "SEO or Google Ads: which to choose?",
+        "answer": "SEO is ideal for long-term with high ROI once positioned. Google Ads gives immediate results but is expensive to maintain. The ideal strategy combines both: Ads to start, SEO for sustainability."
+      },
+      {
+        "question": "How to optimize my site for local SEO in Algeria?",
+        "answer": "Create an optimized Google My Business listing, add your contact details on every page, use geolocated keywords (Algiers, Oran, Constantine...), get local backlinks, and collect customer reviews."
+      },
+      {
+        "question": "Is Arabic content important for SEO?",
+        "answer": "Yes! Over 40% of searches in Algeria are in Arabic (darija or standard Arabic). A bilingual French/Arabic site reaches a wider audience and improves your ranking for these queries."
+      },
+      {
+        "question": "How can Symloop improve my ranking?",
+        "answer": "We offer a complete SEO audit, technical optimization of your site, optimized content creation, local backlink strategy, and monthly follow-up with detailed reports. Our experts know the Algerian market."
+      }
+    ],
+    "popularKeywords": "Popular Keywords in Algeria",
+    "keywords": ["website creation algeria", "web agency algiers", "e-commerce algeria", "mobile application algeria", "developer algeria", "website price", "cib payment", "algeria delivery", "startup algeria", "digital marketing algeria", "google referencing", "seo oran", "website constantine"],
+    "tools": "SEO Tools We Use",
+    "cta": {
+      "title": "Ready to Dominate Google in Algeria?",
+      "subtitle": "Our SEO experts analyze your site and propose a personalized strategy to reach the first page.",
+      "button": "Request My Free Audit"
+    }
+  },
+  "accompagnementStartupTechAlgerie": {
+    "title": "Complete Tech Support for Startups",
+    "titleAccent": "Tech Support",
+    "subtitle": "One provider for all your tech needs. From idea to launched product, we support you at every step with solutions adapted to Algerian startup budgets.",
+    "intro": "<accent>One provider for all your tech needs.</accent> From initial idea to production deployment, Symloop provides <accent>everything your startup needs</accent> to succeed in the Algerian tech ecosystem and beyond.",
+    "stats": {
+      "startups": "Startups supported",
+      "mvpWeeks": "Weeks for an MVP",
+      "projectsDelivered": "Projects delivered",
+      "supportAvailable": "Support available"
+    },
+    "services": {
+      "development": {
+        "title": "Development",
+        "desc": "Custom web and mobile applications",
+        "items": ["Web App React/Next.js", "Mobile iOS/Android", "Backend & APIs", "Database"]
+      },
+      "infrastructure": {
+        "title": "Infrastructure",
+        "desc": "Turnkey hosting and DevOps",
+        "items": ["Cloud Hosting", "CI/CD Pipeline", "24/7 Monitoring", "Backup & Security"]
+      },
+      "design": {
+        "title": "Design",
+        "desc": "UI/UX and visual identity",
+        "items": ["UI/UX Design", "Complete Branding", "Figma Prototypes", "Design System"]
+      },
+      "support": {
+        "title": "Support",
+        "desc": "Continuous accompaniment",
+        "items": ["Monthly Maintenance", "Responsive Support", "Updates", "Product Evolutions"]
+      }
+    },
+    "process": "Our 5-Step Process",
+    "processList": {
+      "discovery": {
+        "title": "Discovery",
+        "desc": "Analysis of your needs, scope definition and planning"
+      },
+      "design": {
+        "title": "Design",
+        "desc": "Wireframes, UI/UX mockups and validation with you"
+      },
+      "development": {
+        "title": "Development",
+        "desc": "Agile sprints with regular demos and continuous feedback"
+      },
+      "testing": {
+        "title": "Testing & QA",
+        "desc": "Complete tests, fixes and performance optimization"
+      },
+      "launch": {
+        "title": "Launch",
+        "desc": "Production deployment, training and post-launch support"
+      }
+    },
+    "pricing": {
+      "mvp": {
+        "name": "MVP Starter",
+        "price": "60,000",
+        "desc": "Launch your idea quickly",
+        "features": ["Modern landing page", "1 core feature developed", "Responsive UI design", "1 year hosting included", "1 month support", "4-6 weeks delivery"]
+      },
+      "growth": {
+        "name": "Startup Growth",
+        "price": "150,000",
+        "desc": "Web + Mobile to grow",
+        "features": ["Complete Web App", "Cross-platform Mobile App", "5 features developed", "Professional UI/UX", "Robust backend", "3 months support"]
+      },
+      "scale": {
+        "name": "Scale Enterprise",
+        "price": "On quote",
+        "desc": "Custom complete solution",
+        "features": ["Scalable architecture", "Unlimited features", "Dedicated team", "Premium infrastructure", "Continuous support", "Strategic accompaniment"]
+      }
+    },
+    "advantages": "Why a Single Provider?",
+    "advantagesList": {
+      "communication": "Simplified communication - one contact",
+      "technical": "Technical consistency - unified and optimized stack",
+      "reactivity": "Maximum reactivity - no ping-pong between providers",
+      "costs": "Controlled costs - all-inclusive packages without surprises",
+      "vision": "Global vision - complete understanding of your project",
+      "responsibility": "Clear responsibility - one person responsible for success"
+    },
+    "faqs": [
+      {
+        "question": "What's the minimum budget to launch a tech startup in Algeria?",
+        "answer": "With Symloop, you can start with a functional MVP from 60,000 DA. This budget includes development of a core feature, basic design and 1 month support. For a more complete application with web and mobile, expect between 120,000 and 200,000 DA."
+      },
+      {
+        "question": "How long to develop an MVP?",
+        "answer": "A simple MVP can be developed in 4 to 6 weeks. For a more complex application with multiple features, expect 2 to 3 months. We work in agile methodology with regular deliveries so you can test quickly."
+      },
+      {
+        "question": "Why choose a single provider for my startup?",
+        "answer": "A single provider simplifies communication, guarantees technical consistency, eliminates coordination problems between providers, and gives you one person responsible for your project's success. It's more efficient and often cheaper."
+      },
+      {
+        "question": "What technologies do you use for startups?",
+        "answer": "We use modern and proven technologies: React/Next.js for web, React Native for cross-platform mobile, Node.js or Python for backend, PostgreSQL or MongoDB for databases, and AWS/Vercel for cloud hosting."
+      },
+      {
+        "question": "Do you offer support after launch?",
+        "answer": "Yes, all our packages include a support period. We also offer monthly maintenance contracts to ensure stability, security updates, and product evolutions."
+      },
+      {
+        "question": "How does payment work for startups?",
+        "answer": "We understand startup constraints. Payment is typically in 3 installments: 30% at start, 40% mid-project, and 30% on delivery. We accept CIB, EDAHABIA, bank transfer and cash payments."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Start Your Startup Adventure?",
+      "subtitle": "Get a personalized quote for your project. Our team supports you from A to Z.",
+      "button": "Get a Free Quote"
+    }
+  },
+  "partenaireTechStartupAlgerie": {
+    "title": "Finding a Tech Partner in Algeria",
+    "titleAccent": "Tech Partner",
+    "subtitle": "You have the idea, we have the tech. A complete technical partner to transform your vision into a product, without the constraints of an internal team.",
+    "intro": "<accent>You have the idea, we have the tech.</accent> Finding the right technical partner is crucial for your startup's success. Symloop offers <accent>complete support</accent> from A to Z: development, infrastructure, design, and strategic consulting.",
+    "stats": {
+      "startups": "Startups supported",
+      "satisfaction": "Satisfaction rate",
+      "ipTransferred": "IP transferred",
+      "support": "Support available"
+    },
+    "services": {
+      "cto": {
+        "title": "CTO as a Service",
+        "desc": "Technical direction without full-time cost",
+        "features": ["Technology choices", "System architecture", "Tech recruitment", "Code review"]
+      },
+      "team": {
+        "title": "Dedicated Team",
+        "desc": "Senior developers for your project",
+        "features": ["Frontend React/Next.js", "Backend Node/Python", "Cross-platform Mobile", "DevOps & Cloud"]
+      },
+      "ip": {
+        "title": "Code & IP Protection",
+        "desc": "Guaranteed intellectual property",
+        "features": ["Code source is yours", "Complete documentation", "Knowledge transfer", "Total freedom"]
+      },
+      "roadmap": {
+        "title": "Product Roadmap",
+        "desc": "Strategic planning",
+        "features": ["Feature prioritization", "Backlog management", "Agile sprints", "Metrics & KPIs"]
+      }
+    },
+    "process": "How We Work with Startups",
+    "processList": {
+      "discovery": {
+        "title": "Discovery Call",
+        "desc": "Understanding your vision, target market, business model and growth objectives"
+      },
+      "proposal": {
+        "title": "Technical Proposal",
+        "desc": "Recommended technology stack, system architecture, cost estimation and timeline"
+      },
+      "development": {
+        "title": "Agile Development",
+        "desc": "2-week sprints with demos, continuous feedback and adaptation to needs"
+      },
+      "launch": {
+        "title": "Launch & Growth",
+        "desc": "Production deployment, monitoring, analytics and continuous optimization"
+      }
+    },
+    "pricing": {
+      "advisory": {
+        "name": "CTO Advisory",
+        "price": "50,000",
+        "period": "/month",
+        "desc": "Strategic technical advice",
+        "features": ["4 hours advice/month", "Architecture choices", "Code review", "Tech recruitment help", "Chat support", "Monthly recommendations"]
+      },
+      "partner": {
+        "name": "Tech Partner",
+        "price": "120,000",
+        "period": "/month",
+        "desc": "Active development partnership",
+        "features": ["Dedicated team 2-3 devs", "2-week sprints", "Weekly demos", "UI/UX design included", "DevOps & deployment", "Priority support"]
+      },
+      "fullstack": {
+        "name": "Full Stack Partner",
+        "price": "On quote",
+        "period": "",
+        "desc": "Complete custom team",
+        "features": ["Team 5+ people", "Dedicated CTO", "Product management", "Complete design system", "Scaling infrastructure", "Fundraising preparation"]
+      }
+    },
+    "advantages": "Advantages of a Tech Partner",
+    "advantagesList": {
+      "savings": "Significant savings vs internal hiring",
+      "time": "Accelerated time-to-market with ready team",
+      "expertise": "Multi-domain technical expertise",
+      "scalability": "Scalability: team adjustable to needs",
+      "practices": "Best practices and proven methodologies",
+      "market": "Algerian and MENA market experience"
+    },
+    "faqs": [
+      {
+        "question": "What is a tech partner for a startup?",
+        "answer": "A tech partner is an agency or team that handles all technical development for your startup: web/mobile development, cloud infrastructure, design, and support. It's like having a CTO and technical team without permanent hiring costs."
+      },
+      {
+        "question": "How much does a tech partnership cost for my startup?",
+        "answer": "Our partnerships start from 50,000 DA/month for CTO as a Service support. For complete development (MVP), expect between 60,000 and 150,000 DA. Rates depend on complexity and scope of services desired."
+      },
+      {
+        "question": "Who owns the intellectual property of the code?",
+        "answer": "You are 100% owner of the source code and all intellectual property developed. We transfer all rights to you on delivery. You can take the code and have it evolved by another team if you wish."
+      },
+      {
+        "question": "How does day-to-day collaboration work?",
+        "answer": "We work in agile methodology with 2-week sprints. You have access to a dedicated Slack/WhatsApp channel, regular demos, and weekly calls. Your product owner is involved at every step to validate developments."
+      },
+      {
+        "question": "Can you help with fundraising?",
+        "answer": "Yes, we help our partner startups prepare the technical part of their pitch: product demo, technical documentation, roadmap, architecture, and answers to investors' technical questions."
+      },
+      {
+        "question": "What happens after launch?",
+        "answer": "We offer ongoing maintenance and support contracts. Your product evolves with your users: new features, optimizations, bug fixes, security updates. We can also help you recruit your own tech team when you're ready."
+      }
+    ],
+    "cta": {
+      "title": "Become Our Next Success Story",
+      "subtitle": "Free consultation to discuss your startup project and discover how we can help you succeed.",
+      "button": "Let's Talk About Your Startup"
+    }
+  },
+  "marketingDigitalAlgerie2024": {
+    "title": "Digital Marketing in Algeria 2024",
+    "titleAccent": "Digital Marketing",
+    "subtitle": "Complete strategies for digital marketing in Algeria - Social media, SEO, advertising, and content marketing",
+    "intro": "<accent>Digital marketing in Algeria</accent> has become essential to reach your target audience. With over 25 million social media users, the opportunities are immense.",
+    "services": {
+      "social": { "title": "Social Media", "desc": "Facebook, Instagram, TikTok, LinkedIn management" },
+      "seo": { "title": "SEO", "desc": "Google ranking optimization" },
+      "ads": { "title": "Online Advertising", "desc": "Google Ads, Facebook Ads, targeted campaigns" },
+      "content": { "title": "Content Marketing", "desc": "Blogs, videos, infographics" }
+    },
+    "pricing": {
+      "starter": { "name": "Marketing Starter", "price": "25,000", "period": "/month" },
+      "pro": { "name": "Marketing Pro", "price": "50,000", "period": "/month" },
+      "premium": { "name": "Marketing Premium", "price": "On quote", "period": "" }
+    }
+  },
+  "designUiUxAlgerie2024": {
+    "title": "UI/UX Design in Algeria 2024",
+    "titleAccent": "UI/UX Design",
+    "subtitle": "Professional user interface and user experience design for web and mobile applications",
+    "intro": "Good <accent>UI/UX design</accent> is crucial for user engagement. We create intuitive interfaces that convert visitors into customers.",
+    "services": {
+      "research": { "title": "User Research", "desc": "User interviews, surveys, persona creation" },
+      "wireframes": { "title": "Wireframes", "desc": "Structure and navigation planning" },
+      "design": { "title": "Visual Design", "desc": "Modern and attractive interfaces" },
+      "prototype": { "title": "Prototyping", "desc": "Interactive clickable prototypes" }
+    },
+    "pricing": {
+      "basic": { "name": "Design Basic", "price": "30,000", "features": ["5 pages", "Mobile responsive", "1 revision"] },
+      "pro": { "name": "Design Pro", "price": "60,000", "features": ["15 pages", "Design system", "3 revisions"] },
+      "enterprise": { "name": "Design Enterprise", "price": "On quote", "features": ["Unlimited pages", "Complete branding", "Unlimited revisions"] }
+    }
+  },
+  "logicielErpAlgerie2024": {
+    "title": "ERP Software in Algeria 2024",
+    "titleAccent": "ERP",
+    "subtitle": "Custom ERP solutions for Algerian businesses - Integrated management, inventory, accounting, HR",
+    "intro": "An <accent>ERP system</accent> integrates all your business processes into one platform. Optimize operations, reduce costs, and improve decision-making.",
+    "modules": {
+      "inventory": { "title": "Inventory Management", "desc": "Stock tracking, orders, suppliers" },
+      "accounting": { "title": "Accounting", "desc": "Invoicing, payments, financial reports" },
+      "hr": { "title": "Human Resources", "desc": "Payroll, leave, attendance" },
+      "sales": { "title": "Sales", "desc": "CRM, quotes, orders" }
+    },
+    "pricing": {
+      "starter": { "name": "ERP Starter", "price": "150,000", "features": ["3 modules", "5 users", "1 year support"] },
+      "business": { "name": "ERP Business", "price": "300,000", "features": ["All modules", "15 users", "2 years support"] },
+      "enterprise": { "name": "ERP Enterprise", "price": "On quote", "features": ["Custom modules", "Unlimited users", "Dedicated support"] }
+    }
+  },
+  "logicielCrmAlgerie2024": {
+    "title": "CRM Software in Algeria 2024",
+    "titleAccent": "CRM",
+    "subtitle": "Customer relationship management solutions for Algerian businesses",
+    "intro": "A <accent>CRM system</accent> helps you manage customer relationships, track sales, and improve customer satisfaction.",
+    "features": {
+      "contacts": "Contact management",
+      "pipeline": "Sales pipeline",
+      "automation": "Marketing automation",
+      "reports": "Sales reports and analytics"
+    },
+    "pricing": {
+      "starter": { "name": "CRM Starter", "price": "80,000", "period": "" },
+      "pro": { "name": "CRM Pro", "price": "150,000", "period": "" },
+      "enterprise": { "name": "CRM Enterprise", "price": "On quote", "period": "" }
+    }
+  },
+  "logicielRhAlgerie2024": {
+    "title": "HR Software in Algeria 2024",
+    "titleAccent": "HR Software",
+    "subtitle": "Human resource management solutions - Payroll, leave management, recruitment",
+    "intro": "Modernize your <accent>HR management</accent> with digital solutions. Automate payroll, track attendance, and streamline recruitment.",
+    "modules": {
+      "payroll": { "title": "Payroll", "desc": "Automatic salary calculation, CNAS/CASNOS" },
+      "leave": { "title": "Leave Management", "desc": "Leave requests, approvals, calendar" },
+      "attendance": { "title": "Attendance", "desc": "Time tracking, schedules" },
+      "recruitment": { "title": "Recruitment", "desc": "Job postings, applications, interviews" }
+    }
+  },
+  "logicielComptabiliteAlgerie2024": {
+    "title": "Accounting Software in Algeria 2024",
+    "titleAccent": "Accounting",
+    "subtitle": "Accounting solutions compliant with Algerian standards - SCF, tax declarations",
+    "intro": "Manage your <accent>accounting</accent> with software adapted to Algerian regulations. SCF compliant, automatic tax declarations.",
+    "features": {
+      "invoicing": "Invoicing and quotes",
+      "scf": "SCF compliant accounting",
+      "tax": "Tax declarations (G50, G11)",
+      "reports": "Financial reports"
+    }
+  },
+  "cybersecuriteAlgerie2024": {
+    "title": "Cybersecurity in Algeria 2024",
+    "titleAccent": "Cybersecurity",
+    "subtitle": "Protect your business from cyber threats with professional security solutions",
+    "intro": "Cyber threats are increasing in Algeria. Protect your <accent>data and systems</accent> with comprehensive security solutions.",
+    "services": {
+      "audit": { "title": "Security Audit", "desc": "Vulnerability assessment and penetration testing" },
+      "protection": { "title": "Protection", "desc": "Firewalls, antivirus, intrusion detection" },
+      "training": { "title": "Training", "desc": "Employee cybersecurity awareness" },
+      "response": { "title": "Incident Response", "desc": "24/7 monitoring and rapid response" }
+    }
+  },
+  "cloudComputingAlgerie2024": {
+    "title": "Cloud Computing in Algeria 2024",
+    "titleAccent": "Cloud",
+    "subtitle": "Cloud migration and hosting solutions for Algerian businesses",
+    "intro": "Move to the <accent>cloud</accent> for better performance, security, and cost optimization. We support your digital transformation.",
+    "services": {
+      "migration": { "title": "Cloud Migration", "desc": "Migrate your infrastructure to the cloud" },
+      "hosting": { "title": "Cloud Hosting", "desc": "Reliable and scalable hosting" },
+      "backup": { "title": "Backup & Recovery", "desc": "Automatic backups and disaster recovery" },
+      "devops": { "title": "DevOps", "desc": "CI/CD, automation, monitoring" }
+    }
+  },
+  "saasDeveloppementAlgerie2024": {
+    "title": "SaaS Development in Algeria 2024",
+    "titleAccent": "SaaS",
+    "subtitle": "Build your Software-as-a-Service platform with scalable architecture",
+    "intro": "Develop your <accent>SaaS platform</accent> with modern technologies. Multi-tenant architecture, subscription management, and scalability.",
+    "features": {
+      "multiTenant": "Multi-tenant architecture",
+      "subscriptions": "Subscription management",
+      "analytics": "Usage analytics",
+      "api": "API for integrations"
+    }
+  },
+  "developpementFlutterAlgerie2024": {
+    "title": "Flutter Development in Algeria 2024",
+    "titleAccent": "Flutter",
+    "subtitle": "Cross-platform mobile app development with Flutter - iOS and Android from one codebase",
+    "intro": "Build beautiful <accent>mobile apps with Flutter</accent>. One codebase for iOS and Android with native performance.",
+    "advantages": {
+      "crossPlatform": "iOS and Android from one codebase",
+      "performance": "Native performance",
+      "ui": "Beautiful customizable UI",
+      "fast": "Fast development cycle"
+    }
+  },
+  "developpementReactNativeAlgerie": {
+    "title": "React Native Development in Algeria",
+    "titleAccent": "React Native",
+    "subtitle": "Cross-platform mobile app development with React Native",
+    "intro": "Develop your <accent>mobile app with React Native</accent>. Leverage JavaScript skills for iOS and Android development.",
+    "advantages": {
+      "javascript": "Use JavaScript/TypeScript",
+      "reuse": "Code reuse with web React",
+      "community": "Large community and ecosystem",
+      "performance": "Near-native performance"
+    }
+  },
+  "developpementReactNextjsAlgerie": {
+    "title": "React & Next.js Development in Algeria",
+    "titleAccent": "React & Next.js",
+    "subtitle": "Modern web development with React and Next.js framework",
+    "intro": "Build fast, SEO-optimized websites with <accent>React and Next.js</accent>. Server-side rendering, static generation, and modern architecture.",
+    "features": {
+      "ssr": "Server-side rendering",
+      "ssg": "Static site generation",
+      "seo": "Built-in SEO optimization",
+      "performance": "Excellent performance"
+    }
+  },
+  "developpementNodejsBackendAlgerie": {
+    "title": "Node.js Backend Development in Algeria",
+    "titleAccent": "Node.js",
+    "subtitle": "Scalable backend development with Node.js and Express",
+    "intro": "Build powerful <accent>APIs and backends with Node.js</accent>. Fast, scalable, and perfect for real-time applications.",
+    "services": {
+      "api": { "title": "REST APIs", "desc": "RESTful API development" },
+      "graphql": { "title": "GraphQL", "desc": "GraphQL API development" },
+      "realtime": { "title": "Real-time", "desc": "WebSocket and Socket.io" },
+      "microservices": { "title": "Microservices", "desc": "Microservices architecture" }
+    }
+  },
+  "developpementPythonDjangoAlgerie": {
+    "title": "Python & Django Development in Algeria",
+    "titleAccent": "Python & Django",
+    "subtitle": "Backend development with Python and Django framework",
+    "intro": "Build robust applications with <accent>Python and Django</accent>. Perfect for complex backends, data processing, and AI integration.",
+    "useCases": {
+      "web": "Web applications",
+      "api": "REST APIs",
+      "data": "Data processing",
+      "ai": "AI/ML integration"
+    }
+  },
+  "developpementApiIntegrationAlgerie": {
+    "title": "API Development & Integration in Algeria",
+    "titleAccent": "API",
+    "subtitle": "Custom API development and third-party integrations",
+    "intro": "Connect your systems with custom <accent>APIs and integrations</accent>. Payment gateways, delivery services, and business tools.",
+    "integrations": {
+      "payment": "Payment gateways (CIB, EDAHABIA)",
+      "delivery": "Delivery services (Yalidine, ZR Express)",
+      "erp": "ERP systems",
+      "crm": "CRM platforms"
+    }
+  },
+  "devopsDeploymentAlgerie2024": {
+    "title": "DevOps & Deployment in Algeria 2024",
+    "titleAccent": "DevOps",
+    "subtitle": "CI/CD pipelines, cloud deployment, and infrastructure automation",
+    "intro": "Automate your <accent>deployment pipeline</accent> with modern DevOps practices. Faster releases, fewer errors, better monitoring.",
+    "services": {
+      "cicd": { "title": "CI/CD", "desc": "Automated testing and deployment" },
+      "containers": { "title": "Containers", "desc": "Docker and Kubernetes" },
+      "monitoring": { "title": "Monitoring", "desc": "Performance and error tracking" },
+      "infrastructure": { "title": "Infrastructure as Code", "desc": "Terraform, Ansible automation" }
+    }
+  },
+  "tendancesTechAlgerie2025": {
+    "title": "Tech Trends Algeria 2025",
+    "titleAccent": "2025",
+    "subtitle": "Emerging technologies and trends shaping the Algerian tech landscape",
+    "intro": "Stay ahead with the latest <accent>tech trends in Algeria</accent>. AI, blockchain, IoT, and more are transforming businesses.",
+    "trends": {
+      "ai": { "title": "Artificial Intelligence", "desc": "AI adoption across industries" },
+      "fintech": { "title": "Fintech", "desc": "Digital payments and banking" },
+      "ecommerce": { "title": "E-commerce", "desc": "Online shopping growth" },
+      "cloud": { "title": "Cloud Adoption", "desc": "Business cloud migration" }
+    }
+  },
+  "developpementApplicationTunisie2024": {
+    "title": "App Development in Tunisia 2024",
+    "titleAccent": "Tunisia",
+    "subtitle": "Web and mobile app development for the Tunisian market",
+    "intro": "Expand to <accent>Tunisia</accent> with localized digital solutions. We understand the Tunisian market and regulatory requirements.",
+    "services": {
+      "web": "Web development",
+      "mobile": "Mobile apps",
+      "ecommerce": "E-commerce with Flouci, D17",
+      "fintech": "Fintech solutions"
+    }
+  },
+  "developpementApplicationMaroc2024": {
+    "title": "App Development in Morocco 2024",
+    "titleAccent": "Morocco",
+    "subtitle": "Web and mobile app development for the Moroccan market",
+    "intro": "Enter the <accent>Moroccan market</accent> with tailored digital solutions. CMI payment integration and local compliance.",
+    "services": {
+      "web": "Web development",
+      "mobile": "Mobile apps",
+      "ecommerce": "E-commerce with CMI, PayPal",
+      "multilingual": "Arabic/French solutions"
+    }
+  },
+  "agenceDigitaleMena2024": {
+    "title": "Digital Agency for MENA Region 2024",
+    "titleAccent": "MENA",
+    "subtitle": "Digital solutions for the Middle East and North Africa region",
+    "intro": "Reach the entire <accent>MENA region</accent> with multilingual, multi-currency digital solutions. RTL support and local payment integration.",
+    "coverage": {
+      "algeria": "Algeria",
+      "tunisia": "Tunisia",
+      "morocco": "Morocco",
+      "gulf": "Gulf countries"
+    }
+  },
+  "developpementWebOran2024": {
+    "title": "Web Development in Oran 2024",
+    "titleAccent": "Oran",
+    "subtitle": "Professional web development services in Oran, Algeria",
+    "intro": "Local <accent>web development in Oran</accent>. We understand the local business landscape and provide personalized service."
+  },
+  "developpementWebConstantine2024": {
+    "title": "Web Development in Constantine 2024",
+    "titleAccent": "Constantine",
+    "subtitle": "Professional web development services in Constantine, Algeria",
+    "intro": "Local <accent>web development in Constantine</accent>. Supporting Eastern Algeria's digital transformation."
+  },
+  "applicationSanteAlgerie2024": {
+    "title": "Healthcare Apps in Algeria 2024",
+    "titleAccent": "Healthcare",
+    "subtitle": "Digital health solutions - Telemedicine, appointment booking, medical records",
+    "intro": "Transform <accent>healthcare delivery</accent> with digital solutions. Telemedicine, patient management, and medical records.",
+    "solutions": {
+      "telemedicine": "Telemedicine platforms",
+      "appointments": "Appointment booking",
+      "records": "Electronic medical records",
+      "pharmacy": "Pharmacy management"
+    }
+  },
+  "applicationRestaurantLivraisonAlgerie": {
+    "title": "Restaurant & Delivery Apps in Algeria",
+    "titleAccent": "Delivery",
+    "subtitle": "Food delivery and restaurant management applications",
+    "intro": "Launch your <accent>food delivery app</accent> or restaurant management system. Order management, delivery tracking, and payment integration.",
+    "features": {
+      "ordering": "Online ordering",
+      "delivery": "Delivery tracking",
+      "pos": "Point of sale",
+      "inventory": "Inventory management"
+    }
+  },
+  "applicationImmobilierAlgerie2024": {
+    "title": "Real Estate Apps in Algeria 2024",
+    "titleAccent": "Real Estate",
+    "subtitle": "Property listing and real estate management applications",
+    "intro": "Digitize your <accent>real estate business</accent>. Property listings, virtual tours, and agent management.",
+    "features": {
+      "listings": "Property listings",
+      "search": "Advanced search",
+      "tours": "Virtual tours",
+      "crm": "Agent CRM"
+    }
+  },
+  "edtechEducationAlgerie2024": {
+    "title": "EdTech & Education Apps in Algeria 2024",
+    "titleAccent": "EdTech",
+    "subtitle": "E-learning platforms and educational technology solutions",
+    "intro": "Transform <accent>education</accent> with digital platforms. Online courses, virtual classrooms, and learning management.",
+    "solutions": {
+      "lms": "Learning Management System",
+      "courses": "Online courses",
+      "virtual": "Virtual classrooms",
+      "assessment": "Online assessments"
+    }
+  },
+  "logistiqueTransportAlgerie2024": {
+    "title": "Logistics & Transport Apps in Algeria 2024",
+    "titleAccent": "Logistics",
+    "subtitle": "Fleet management and logistics solutions",
+    "intro": "Optimize your <accent>logistics operations</accent>. Fleet tracking, route optimization, and warehouse management.",
+    "solutions": {
+      "fleet": "Fleet management",
+      "routing": "Route optimization",
+      "warehouse": "Warehouse management",
+      "tracking": "Real-time tracking"
+    }
+  },
+  "plateformeB2bMarketplaceAlgerie": {
+    "title": "B2B Marketplace Platform in Algeria",
+    "titleAccent": "B2B Marketplace",
+    "subtitle": "Multi-vendor B2B e-commerce platforms",
+    "intro": "Build your <accent>B2B marketplace</accent>. Connect suppliers with buyers, manage orders, and process payments.",
+    "features": {
+      "vendors": "Multi-vendor management",
+      "catalog": "Product catalogs",
+      "orders": "Order management",
+      "payments": "B2B payments"
+    }
+  },
+  "maintenanceSupportApplicationAlgerie": {
+    "title": "App Maintenance & Support in Algeria",
+    "titleAccent": "Maintenance",
+    "subtitle": "Ongoing maintenance and technical support for your applications",
+    "intro": "Keep your applications running smoothly with our <accent>maintenance services</accent>. Bug fixes, updates, and 24/7 support.",
+    "services": {
+      "updates": "Regular updates",
+      "security": "Security patches",
+      "monitoring": "24/7 monitoring",
+      "support": "Technical support"
+    },
+    "packages": {
+      "basic": { "name": "Basic Support", "price": "15,000", "period": "/month" },
+      "pro": { "name": "Pro Support", "price": "30,000", "period": "/month" },
+      "enterprise": { "name": "Enterprise Support", "price": "On quote", "period": "" }
+    }
+  },
+  "coutDeveloppementApplicationAlgerie": {
+    "title": "App Development Costs in Algeria",
+    "titleAccent": "Costs",
+    "subtitle": "Complete pricing guide for web and mobile app development in Algeria",
+    "intro": "Understand <accent>development costs</accent> in Algeria. Transparent pricing for websites, mobile apps, and custom software.",
+    "pricing": {
+      "showcase": { "name": "Showcase Website", "price": "35,000 - 50,000 DA" },
+      "ecommerce": { "name": "E-commerce", "price": "80,000 - 150,000 DA" },
+      "mobileApp": { "name": "Mobile App", "price": "60,000 - 200,000 DA" },
+      "webapp": { "name": "Web Application", "price": "100,000 - 300,000 DA" },
+      "enterprise": { "name": "Enterprise Solution", "price": "On quote" }
+    }
+  },
+  "reussirProjetDigitalAlgerie": {
+    "title": "Succeeding in Your Digital Project in Algeria",
+    "titleAccent": "Success",
+    "subtitle": "Complete guide to successfully managing your digital project",
+    "intro": "Learn how to <accent>succeed in your digital project</accent>. Best practices, common pitfalls to avoid, and expert tips.",
+    "steps": {
+      "planning": { "title": "Planning", "desc": "Define clear objectives and scope" },
+      "team": { "title": "Team Selection", "desc": "Choose the right development partner" },
+      "execution": { "title": "Execution", "desc": "Agile development with regular checkpoints" },
+      "launch": { "title": "Launch", "desc": "Testing, deployment, and training" }
+    }
+  },
+  "freelanceVsAgenceAlgerie": {
+    "title": "Freelancer vs Agency in Algeria",
+    "titleAccent": "Comparison",
+    "subtitle": "How to choose between a freelancer and an agency for your project",
+    "intro": "Compare <accent>freelancers and agencies</accent> to make the right choice for your project. Pros, cons, and recommendations.",
+    "comparison": {
+      "freelancer": {
+        "pros": ["Lower cost", "Direct communication", "Flexibility"],
+        "cons": ["Limited capacity", "Risk of unavailability", "Single point of failure"]
+      },
+      "agency": {
+        "pros": ["Full team", "Reliability", "Diverse expertise"],
+        "cons": ["Higher cost", "Longer processes", "Less flexibility"]
+      }
+    }
+  },
+  "commentChoisirDeveloppeurAlgerie": {
+    "title": "How to Choose a Developer in Algeria",
+    "titleAccent": "Choose",
+    "subtitle": "Complete guide to selecting the right developer for your project",
+    "intro": "Learn how to <accent>choose the right developer</accent> in Algeria. Criteria, questions to ask, and red flags to avoid.",
+    "criteria": {
+      "portfolio": "Review their portfolio",
+      "references": "Check references",
+      "communication": "Assess communication skills",
+      "technical": "Verify technical expertise",
+      "pricing": "Understand pricing structure"
+    }
+  }
+}

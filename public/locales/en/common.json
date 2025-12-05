@@ -961,6 +961,8 @@
   },
   "blog": {
     "title": "Symloop Tech Blog",
+    "pageTitle": "Tech & Digital Blog",
+    "metaDescription": "Articles and guides on web development, mobile, SEO and digitalization in Algeria and MENA",
     "subtitle": "Exclusive insights, IT trends and practical guides for the MENA tech ecosystem",
     "expertiseBadge": "Premium Tech Expertise",
     "searchPlaceholder": "Search articles...",
@@ -977,9 +979,10 @@
       "guide": "Guide"
     },
     "stats": {
-      "articles": "Expert Articles",
+      "articles": "Articles",
+      "categories": "Categories",
       "experts": "Tech Experts",
-      "readers": "Monthly Readers"
+      "readers": "Views"
     },
     "cta": {
       "explore": "Explore Articles",
@@ -1008,7 +1011,19 @@
       "placeholder": "Your professional email...",
       "subscribe": "Subscribe",
       "disclaimer": "100% free • No spam • Easy unsubscribe"
-    }
+    },
+    "loading": "Loading...",
+    "notFound": "Blog post not found",
+    "backToBlog": "Back to Blog",
+    "back": "Back",
+    "share": "Share:",
+    "copyLink": "Copy link",
+    "views": "views",
+    "relatedArticles": "Related Articles",
+    "authorDescription": "Symloop Tech Team - Digital Transformation Experts",
+    "ctaTitle": "Have a digital project?",
+    "ctaSubtitle": "Contact us for a free consultation",
+    "ctaButton": "Contact via WhatsApp"
   },
   "learning": {
     "title": "Symloop Learning Academy",

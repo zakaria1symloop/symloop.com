@@ -158,15 +158,15 @@ export default function Seo({
             "image": `https://symloop.com${image}`,
             "telephone": "+213549575512",
             "email": "contact@symloop.com",
-            "foundingDate": "2012",
+            "foundingDate": "2020",
             "founder": {
               "@type": "Person",
               "name": "Symloop Team"
             },
             "numberOfEmployees": {
               "@type": "QuantitativeValue",
-              "minValue": 20,
-              "maxValue": 50
+              "minValue": 10,
+              "maxValue": 25
             },
             "priceRange": "€150-€7500",
             "paymentAccepted": ["Cash", "Bank Transfer", "Credit Card", "Check"],
@@ -208,11 +208,7 @@ export default function Seo({
             ],
             "knowsLanguage": ["French", "Arabic", "English"],
             "slogan": "Excellence Digitale • Symloop MENA",
-            "awards": [
-              "Top IT Company MENA 2023",
-              "Best Flutter Development Company MENA 2023",
-              "Excellence in Digital Transformation 2021"
-            ],
+            "awards": [],
             "sameAs": [
               "https://www.facebook.com/symloop",
               "https://www.linkedin.com/company/symloop-technology/",

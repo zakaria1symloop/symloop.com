@@ -960,7 +960,9 @@
     "timelineLabel": "Délai"
   },
   "blog": {
-    "title": "Symloop Tech Blog",
+    "title": "Blog Tech Symloop",
+    "pageTitle": "Blog Tech & Digital",
+    "metaDescription": "Articles et guides sur le développement web, mobile, SEO et digitalisation en Algérie et MENA",
     "subtitle": "Insights exclusifs, tendances IT et guides pratiques pour l'écosystème technologique MENA",
     "expertiseBadge": "Expertise Tech Premium",
     "searchPlaceholder": "Rechercher des articles...",
@@ -977,9 +979,10 @@
       "guide": "Guide"
     },
     "stats": {
-      "articles": "Articles Experts",
+      "articles": "Articles",
+      "categories": "Catégories",
       "experts": "Experts Tech",
-      "readers": "Lecteurs Mensuels"
+      "readers": "Lectures"
     },
     "cta": {
       "explore": "Explorer les Articles",
@@ -1008,7 +1011,19 @@
       "placeholder": "Votre email professionnel...",
       "subscribe": "S'abonner",
       "disclaimer": "100% gratuit • Pas de spam • Désinscription facile"
-    }
+    },
+    "loading": "Chargement...",
+    "notFound": "Article non trouvé",
+    "backToBlog": "Retour au Blog",
+    "back": "Retour",
+    "share": "Partager:",
+    "copyLink": "Copier le lien",
+    "views": "vues",
+    "relatedArticles": "Articles Similaires",
+    "authorDescription": "Équipe Tech Symloop - Experts en Transformation Digitale",
+    "ctaTitle": "Vous avez un projet digital ?",
+    "ctaSubtitle": "Contactez-nous pour une consultation gratuite",
+    "ctaButton": "Contactez via WhatsApp"
   },
   "learning": {
     "title": "Symloop Learning Academy",

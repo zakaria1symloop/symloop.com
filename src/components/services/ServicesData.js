@@ -183,9 +183,9 @@ export const getServicesData = (t, router) => {
 };
 
 export const getStatsData = (t) => [
-  { number: "1200+", label: t('hero.stats.projects') },
+  { number: "70+", label: t('hero.stats.projects') },
   { number: "98%", label: t('hero.stats.satisfaction') },
-  { number: "12+", label: t('hero.stats.experience') },
+  { number: "5+", label: t('hero.stats.experience') },
   { number: "24/7", label: t('hero.stats.support') }
 ];
 

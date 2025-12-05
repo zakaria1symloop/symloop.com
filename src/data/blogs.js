@@ -1,0 +1,951 @@
+// Hardcoded SEO-optimized blog posts for Algeria and MENA
+// Target Keywords: développement web, application mobile, e-commerce, ERP, IA, transformation digitale
+// Regions: Algeria, Tunisia, Morocco, MENA
+export const blogs = [
+  {
+    id: "1",
+    slug: "developpement-application-mobile-algerie-2024",
+    title: "Développement Application Mobile en Algérie",
+    subtitle: "Guide Complet 2024 : Flutter, React Native, Coûts et Bonnes Pratiques",
+    excerpt: "Guide complet pour créer votre application mobile en Algérie. Découvrez les meilleures technologies, les coûts réels et les étapes clés pour réussir votre projet mobile.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2024-11-28",
+    readTime: "12 min",
+    image: "/images/blog/mobile-app-algeria.jpg",
+    featured: true,
+    tags: ["développement mobile algérie", "flutter algérie", "react native", "application mobile alger"],
+    metaTitle: "Développement Application Mobile Algérie 2024 | Guide Complet | Symloop",
+    metaDescription: "Créez votre application mobile en Algérie. Guide complet : Flutter, React Native, coûts, délais. Agence mobile à Alger. Devis gratuit.",
+    translations: {
+      en: { title: "Mobile App Development in Algeria - Complete Guide 2024" },
+      ar: { title: "تطوير تطبيقات الهاتف المحمول في الجزائر 2024" }
+    }
+  },
+  {
+    id: "2",
+    slug: "creation-site-web-algerie-2024",
+    title: "Création Site Web en Algérie",
+    subtitle: "Guide Complet pour Entreprises : Technologies, Prix et SEO",
+    excerpt: "Tout ce que vous devez savoir pour créer un site web professionnel en Algérie. Prix, technologies modernes, SEO et meilleures pratiques pour votre présence digitale.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-11-27",
+    readTime: "10 min",
+    image: "/images/blog/website-creation-algeria.jpg",
+    featured: true,
+    tags: ["création site web algérie", "agence web algérie", "développement web alger", "site internet algérie"],
+    metaTitle: "Création Site Web Algérie 2024 | Agence Web Pro | Symloop",
+    metaDescription: "Création de sites web professionnels en Algérie. Sites vitrines, e-commerce, applications web. Prix compétitifs. Devis gratuit 24h.",
+    translations: {
+      en: { title: "Website Creation in Algeria - Complete Business Guide 2024" },
+      ar: { title: "إنشاء موقع إلكتروني في الجزائر 2024" }
+    }
+  },
+  {
+    id: "3",
+    slug: "ecommerce-algerie-paiement-cib-edahabia-2024",
+    title: "E-commerce en Algérie : Paiement CIB et Edahabia",
+    subtitle: "Guide Complet : Intégration SATIM, Plateformes et Livraison",
+    excerpt: "Lancez votre boutique en ligne en Algérie avec les paiements CIB et Edahabia. Guide complet : intégration SATIM, plateformes e-commerce et solutions de livraison.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2024-11-26",
+    readTime: "14 min",
+    image: "/images/blog/ecommerce-algeria.jpg",
+    featured: true,
+    tags: ["e-commerce algérie", "paiement cib", "edahabia", "satim", "boutique en ligne algérie"],
+    metaTitle: "E-commerce Algérie 2024 | Paiement CIB Edahabia SATIM | Symloop",
+    metaDescription: "Créez votre boutique e-commerce en Algérie avec paiement CIB et Edahabia. Intégration SATIM, solutions clé en main. Devis gratuit.",
+    translations: {
+      en: { title: "E-commerce in Algeria: CIB & Edahabia Payment Guide 2024" },
+      ar: { title: "التجارة الإلكترونية في الجزائر: دليل الدفع 2024" }
+    }
+  },
+  {
+    id: "4",
+    slug: "transformation-digitale-algerie-2024",
+    title: "Transformation Digitale en Algérie",
+    subtitle: "Guide Stratégique pour Entreprises : Outils, Budget et ROI",
+    excerpt: "Réussissez votre transformation digitale en Algérie. Stratégies éprouvées, outils recommandés, budgets réalistes et accompagnement pour digitaliser votre entreprise.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-11-25",
+    readTime: "11 min",
+    image: "/images/blog/digital-transformation-algeria.jpg",
+    featured: false,
+    tags: ["transformation digitale algérie", "digitalisation entreprise", "stratégie digitale", "consulting digital algérie"],
+    metaTitle: "Transformation Digitale Algérie 2024 | Stratégie & Accompagnement | Symloop",
+    metaDescription: "Accompagnement transformation digitale en Algérie. Stratégie, solutions et formation pour digitaliser votre entreprise. Diagnostic gratuit.",
+    translations: {
+      en: { title: "Digital Transformation in Algeria - Strategic Guide 2024" },
+      ar: { title: "التحول الرقمي في الجزائر 2024" }
+    }
+  },
+  {
+    id: "5",
+    slug: "logiciel-erp-algerie-2024",
+    title: "Logiciel ERP en Algérie",
+    subtitle: "Guide Complet : Sage, Odoo, SAP - Comparatif et Prix",
+    excerpt: "Choisissez le meilleur ERP pour votre entreprise algérienne. Comparatif Sage, Odoo, SAP : fonctionnalités, prix, implémentation et conformité fiscale algérienne.",
+    category: "ERP",
+    author: "Symloop Team",
+    date: "2024-11-24",
+    readTime: "13 min",
+    image: "/images/blog/erp-algeria.jpg",
+    featured: false,
+    tags: ["erp algérie", "sage algérie", "odoo algérie", "logiciel gestion", "logiciel comptabilité algérie"],
+    metaTitle: "ERP Algérie 2024 | Sage, Odoo, SAP | Comparatif & Prix | Symloop",
+    metaDescription: "Solutions ERP en Algérie. Comparatif Sage, Odoo, SAP. Prix, implémentation, conformité fiscale. Audit gratuit.",
+    translations: {
+      en: { title: "ERP Software in Algeria - Complete Comparison Guide 2024" },
+      ar: { title: "برنامج ERP في الجزائر 2024" }
+    }
+  },
+  {
+    id: "6",
+    slug: "intelligence-artificielle-algerie-mena-2024",
+    title: "Intelligence Artificielle en Algérie et MENA",
+    subtitle: "Solutions IA pour Entreprises : Chatbots, Analyse Prédictive, Automatisation",
+    excerpt: "Intégrez l'IA dans votre entreprise. Solutions adaptées au marché algérien et MENA : chatbots multilingues, analyse prédictive, automatisation intelligente.",
+    category: "IA",
+    author: "Symloop Team",
+    date: "2024-11-23",
+    readTime: "15 min",
+    image: "/images/blog/ai-algeria-mena.jpg",
+    featured: true,
+    tags: ["intelligence artificielle algérie", "ia mena", "chatbot arabe", "machine learning algérie", "automatisation ia"],
+    metaTitle: "Intelligence Artificielle Algérie MENA 2024 | Solutions IA | Symloop",
+    metaDescription: "Solutions IA pour entreprises en Algérie et MENA. Chatbots multilingues, analyse prédictive, automatisation. Consultation gratuite.",
+    translations: {
+      en: { title: "Artificial Intelligence in Algeria & MENA - Business Solutions 2024" },
+      ar: { title: "الذكاء الاصطناعي في الجزائر ومنطقة MENA 2024" }
+    }
+  },
+  {
+    id: "7",
+    slug: "agence-web-algerie-2024",
+    title: "Agence Web en Algérie : Guide Complet 2024",
+    subtitle: "Comment Choisir la Meilleure Agence Digitale pour Votre Projet",
+    excerpt: "Tout ce que vous devez savoir pour choisir la bonne agence web en Algérie. Critères de sélection, questions à poser, prix du marché et conseils d'experts.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-11-22",
+    readTime: "9 min",
+    image: "/images/blog/agence-web-algeria.jpg",
+    featured: false,
+    tags: ["agence web algérie", "agence digitale alger", "agence web oran", "création site web"],
+    metaTitle: "Agence Web Algérie 2024 | Top Agences Digitales | Symloop",
+    metaDescription: "Guide pour choisir votre agence web en Algérie. Comparatif, prix, critères de sélection. Agences à Alger, Oran, Constantine.",
+    translations: {
+      en: { title: "Web Agency in Algeria - Complete Guide 2024" },
+      ar: { title: "وكالة ويب في الجزائر - دليل شامل 2024" }
+    }
+  },
+  {
+    id: "8",
+    slug: "seo-referencement-algerie-2024",
+    title: "SEO et Référencement en Algérie 2024",
+    subtitle: "Stratégies pour Dominer Google en Algérie et au Maghreb",
+    excerpt: "Guide complet SEO pour le marché algérien. Stratégies de référencement naturel, mots-clés locaux, backlinks et techniques pour atteindre la première page Google.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-11-21",
+    readTime: "16 min",
+    image: "/images/blog/seo-algeria.jpg",
+    featured: true,
+    tags: ["seo algérie", "référencement algérie", "google algérie", "marketing digital algérie"],
+    metaTitle: "SEO Algérie 2024 | Référencement Google | Guide Complet | Symloop",
+    metaDescription: "Dominez Google en Algérie. Guide SEO complet : mots-clés, backlinks, contenu. Agence SEO à Alger. Audit gratuit.",
+    translations: {
+      en: { title: "SEO & Google Ranking in Algeria - Complete Guide 2024" },
+      ar: { title: "تحسين محركات البحث في الجزائر 2024" }
+    }
+  },
+  {
+    id: "9",
+    slug: "marketing-digital-algerie-2024",
+    title: "Marketing Digital en Algérie 2024",
+    subtitle: "Stratégies, Réseaux Sociaux et Publicité en Ligne",
+    excerpt: "Maîtrisez le marketing digital en Algérie. Facebook Ads, Google Ads, Instagram, TikTok : stratégies adaptées au marché algérien et budgets réalistes.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-11-20",
+    readTime: "13 min",
+    image: "/images/blog/marketing-digital-algeria.jpg",
+    featured: false,
+    tags: ["marketing digital algérie", "publicité facebook algérie", "google ads algérie", "réseaux sociaux algérie"],
+    metaTitle: "Marketing Digital Algérie 2024 | Publicité Facebook & Google | Symloop",
+    metaDescription: "Stratégies marketing digital en Algérie. Facebook Ads, Google Ads, influence marketing. Agence marketing à Alger.",
+    translations: {
+      en: { title: "Digital Marketing in Algeria - Complete Strategy Guide 2024" },
+      ar: { title: "التسويق الرقمي في الجزائر 2024" }
+    }
+  },
+  {
+    id: "10",
+    slug: "startup-algerie-guide-2024",
+    title: "Créer une Startup en Algérie 2024",
+    subtitle: "Guide Complet : Financement, Structure Juridique et Écosystème",
+    excerpt: "Tout pour lancer votre startup en Algérie. Cadre juridique, financement (ANADE, ANSEJ), incubateurs, accélérateurs et success stories algériennes.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-11-19",
+    readTime: "18 min",
+    image: "/images/blog/startup-algeria.jpg",
+    featured: false,
+    tags: ["startup algérie", "entrepreneuriat algérie", "financement startup", "anade", "ansej"],
+    metaTitle: "Créer Startup Algérie 2024 | Financement & Guide | Symloop",
+    metaDescription: "Guide complet pour créer votre startup en Algérie. Financement ANADE, ANSEJ, incubateurs. Accompagnement digital.",
+    translations: {
+      en: { title: "Starting a Startup in Algeria - Complete Guide 2024" },
+      ar: { title: "إنشاء شركة ناشئة في الجزائر 2024" }
+    }
+  },
+  {
+    id: "11",
+    slug: "cybersecurite-algerie-2024",
+    title: "Cybersécurité en Algérie 2024",
+    subtitle: "Protégez Votre Entreprise : Menaces, Solutions et Conformité",
+    excerpt: "Guide cybersécurité pour entreprises algériennes. Menaces actuelles, solutions de protection, conformité légale et bonnes pratiques sécuritaires.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-11-18",
+    readTime: "14 min",
+    image: "/images/blog/cybersecurity-algeria.jpg",
+    featured: false,
+    tags: ["cybersécurité algérie", "sécurité informatique", "protection données", "antivirus entreprise"],
+    metaTitle: "Cybersécurité Algérie 2024 | Protection Entreprises | Symloop",
+    metaDescription: "Protégez votre entreprise en Algérie. Solutions cybersécurité, audit sécurité, protection données. Experts à Alger.",
+    translations: {
+      en: { title: "Cybersecurity in Algeria - Business Protection Guide 2024" },
+      ar: { title: "الأمن السيبراني في الجزائر 2024" }
+    }
+  },
+  {
+    id: "12",
+    slug: "cloud-computing-algerie-2024",
+    title: "Cloud Computing en Algérie 2024",
+    subtitle: "Migration Cloud, Solutions et Prestataires Locaux",
+    excerpt: "Guide cloud computing pour entreprises algériennes. AWS, Azure, Google Cloud : comparatif, prix, data centers MENA et stratégies de migration.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-11-17",
+    readTime: "12 min",
+    image: "/images/blog/cloud-algeria.jpg",
+    featured: false,
+    tags: ["cloud computing algérie", "aws algérie", "azure algérie", "hébergement cloud"],
+    metaTitle: "Cloud Computing Algérie 2024 | AWS, Azure, Google | Symloop",
+    metaDescription: "Solutions cloud en Algérie. Migration AWS, Azure, Google Cloud. Data centers MENA. Consultation gratuite.",
+    translations: {
+      en: { title: "Cloud Computing in Algeria - Complete Guide 2024" },
+      ar: { title: "الحوسبة السحابية في الجزائر 2024" }
+    }
+  },
+  // === MVP & STARTUP PARTNER BLOGS ===
+  {
+    id: "13",
+    slug: "mvp-startup-algerie-2024",
+    title: "Développement MVP pour Startups en Algérie",
+    subtitle: "Votre Partenaire Tech pour Lancer Votre Projet Rapidement",
+    excerpt: "Symloop accompagne les startups algériennes dans le développement de leur MVP. De l'idée au produit lancé en 8 semaines. Partenaire tech de confiance pour votre succès.",
+    category: "Startup",
+    author: "Symloop Team",
+    date: "2024-11-16",
+    readTime: "14 min",
+    image: "/images/blog/mvp-startup.jpg",
+    featured: true,
+    tags: ["mvp algérie", "startup tech", "partenaire développement", "lancer startup", "co-fondateur tech"],
+    metaTitle: "MVP Startup Algérie | Partenaire Tech | Développement Rapide | Symloop",
+    metaDescription: "Développez votre MVP en Algérie avec Symloop. Partenaire tech pour startups. De l'idée au lancement en 8 semaines. Consultation gratuite.",
+    translations: {
+      en: { title: "MVP Development for Startups in Algeria - Your Tech Partner" },
+      ar: { title: "تطوير MVP للشركات الناشئة في الجزائر" }
+    }
+  },
+  {
+    id: "14",
+    slug: "partenaire-tech-startup-algerie",
+    title: "Trouver un Partenaire Tech pour Votre Startup en Algérie",
+    subtitle: "Comment Choisir le Bon CTO ou Équipe de Développement",
+    excerpt: "Vous avez l'idée, nous avons la tech. Guide complet pour trouver le partenaire technique idéal pour votre startup. Symloop : votre fournisseur tech de A à Z.",
+    category: "Startup",
+    author: "Symloop Team",
+    date: "2024-11-15",
+    readTime: "11 min",
+    image: "/images/blog/tech-partner.jpg",
+    featured: true,
+    tags: ["partenaire tech algérie", "cto startup", "équipe développement", "fournisseur tech"],
+    metaTitle: "Partenaire Tech Startup Algérie | CTO as a Service | Symloop",
+    metaDescription: "Trouvez votre partenaire tech en Algérie. CTO as a Service, équipe développement dédiée. Lancez votre startup avec Symloop.",
+    translations: {
+      en: { title: "Finding a Tech Partner for Your Startup in Algeria" },
+      ar: { title: "العثور على شريك تقني لشركتك الناشئة في الجزائر" }
+    }
+  },
+  {
+    id: "15",
+    slug: "accompagnement-startup-tech-algerie",
+    title: "Accompagnement Tech Complet pour Startups Algériennes",
+    subtitle: "De l'Idée au Déploiement : Tout ce dont Vous Avez Besoin",
+    excerpt: "Symloop fournit tout ce dont votre startup a besoin : développement, design, cloud, maintenance. Un seul fournisseur pour tous vos besoins tech.",
+    category: "Startup",
+    author: "Symloop Team",
+    date: "2024-11-14",
+    readTime: "13 min",
+    image: "/images/blog/startup-accompagnement.jpg",
+    featured: false,
+    tags: ["accompagnement startup", "services tech complet", "développement startup", "déploiement projet"],
+    metaTitle: "Accompagnement Startup Tech Algérie | Services Complets | Symloop",
+    metaDescription: "Accompagnement tech complet pour startups en Algérie. Développement, design, déploiement, maintenance. Un seul partenaire.",
+    translations: {
+      en: { title: "Complete Tech Support for Algerian Startups" },
+      ar: { title: "مرافقة تقنية شاملة للشركات الناشئة الجزائرية" }
+    }
+  },
+  // === TECHNOLOGY STACK BLOGS ===
+  {
+    id: "16",
+    slug: "developpement-react-nextjs-algerie",
+    title: "Développement React et Next.js en Algérie",
+    subtitle: "Applications Web Modernes et Performantes",
+    excerpt: "Créez des applications web ultra-rapides avec React et Next.js. Symloop : experts React en Algérie pour sites performants et SEO-friendly.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-11-13",
+    readTime: "10 min",
+    image: "/images/blog/react-nextjs.jpg",
+    featured: false,
+    tags: ["react algérie", "nextjs algérie", "développement frontend", "application web moderne"],
+    metaTitle: "Développement React Next.js Algérie | Applications Web | Symloop",
+    metaDescription: "Experts React et Next.js en Algérie. Applications web performantes, SSR, SEO optimisé. Agence développement React Alger.",
+    translations: {
+      en: { title: "React & Next.js Development in Algeria" },
+      ar: { title: "تطوير React و Next.js في الجزائر" }
+    }
+  },
+  {
+    id: "17",
+    slug: "developpement-flutter-algerie-2024",
+    title: "Développement Flutter en Algérie 2024",
+    subtitle: "Applications Mobiles iOS et Android avec un Seul Code",
+    excerpt: "Flutter : la solution idéale pour créer des apps mobiles natives iOS et Android. Réduisez vos coûts de 40% avec une seule base de code.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2024-11-12",
+    readTime: "12 min",
+    image: "/images/blog/flutter-dev.jpg",
+    featured: false,
+    tags: ["flutter algérie", "développement mobile", "application ios android", "dart flutter"],
+    metaTitle: "Développement Flutter Algérie 2024 | Apps iOS Android | Symloop",
+    metaDescription: "Développement Flutter en Algérie. Applications mobiles iOS et Android. Réduisez vos coûts. Agence Flutter Alger.",
+    translations: {
+      en: { title: "Flutter Development in Algeria 2024" },
+      ar: { title: "تطوير Flutter في الجزائر 2024" }
+    }
+  },
+  {
+    id: "18",
+    slug: "developpement-react-native-algerie",
+    title: "Développement React Native en Algérie",
+    subtitle: "Applications Mobiles Cross-Platform Professionnelles",
+    excerpt: "React Native pour des applications mobiles performantes. Idéal pour les startups algériennes cherchant à lancer rapidement sur iOS et Android.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2024-11-11",
+    readTime: "11 min",
+    image: "/images/blog/react-native.jpg",
+    featured: false,
+    tags: ["react native algérie", "app mobile cross platform", "développement javascript mobile"],
+    metaTitle: "Développement React Native Algérie | Apps Cross-Platform | Symloop",
+    metaDescription: "React Native en Algérie. Applications mobiles cross-platform. Experts JavaScript mobile. Devis gratuit.",
+    translations: {
+      en: { title: "React Native Development in Algeria" },
+      ar: { title: "تطوير React Native في الجزائر" }
+    }
+  },
+  {
+    id: "19",
+    slug: "developpement-nodejs-backend-algerie",
+    title: "Développement Node.js et Backend en Algérie",
+    subtitle: "APIs Robustes et Services Backend Scalables",
+    excerpt: "Node.js pour des backends performants. APIs REST, GraphQL, microservices. Symloop : experts backend en Algérie.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-11-10",
+    readTime: "10 min",
+    image: "/images/blog/nodejs-backend.jpg",
+    featured: false,
+    tags: ["nodejs algérie", "backend développement", "api rest", "microservices"],
+    metaTitle: "Développement Node.js Backend Algérie | APIs | Symloop",
+    metaDescription: "Développement backend Node.js en Algérie. APIs REST, GraphQL, microservices. Experts backend Alger.",
+    translations: {
+      en: { title: "Node.js Backend Development in Algeria" },
+      ar: { title: "تطوير Node.js Backend في الجزائر" }
+    }
+  },
+  {
+    id: "20",
+    slug: "developpement-python-django-algerie",
+    title: "Développement Python et Django en Algérie",
+    subtitle: "Applications Web Robustes et Data Science",
+    excerpt: "Python et Django pour applications web puissantes, data science et IA. Symloop : experts Python en Algérie.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-11-09",
+    readTime: "11 min",
+    image: "/images/blog/python-django.jpg",
+    featured: false,
+    tags: ["python algérie", "django algérie", "data science", "développement web python"],
+    metaTitle: "Développement Python Django Algérie | Data Science | Symloop",
+    metaDescription: "Experts Python et Django en Algérie. Applications web, data science, IA. Agence Python Alger.",
+    translations: {
+      en: { title: "Python & Django Development in Algeria" },
+      ar: { title: "تطوير Python و Django في الجزائر" }
+    }
+  },
+  // === INDUSTRY-SPECIFIC BLOGS ===
+  {
+    id: "21",
+    slug: "fintech-algerie-solutions-2024",
+    title: "Solutions Fintech en Algérie 2024",
+    subtitle: "Applications Bancaires, Paiement Mobile et Finance Digitale",
+    excerpt: "Développez votre solution fintech en Algérie. Applications bancaires, portefeuilles électroniques, intégration CIB/Edahabia.",
+    category: "Fintech",
+    author: "Symloop Team",
+    date: "2024-11-08",
+    readTime: "15 min",
+    image: "/images/blog/fintech-algeria.jpg",
+    featured: true,
+    tags: ["fintech algérie", "paiement mobile", "application bancaire", "finance digitale"],
+    metaTitle: "Fintech Algérie 2024 | Solutions Paiement Digital | Symloop",
+    metaDescription: "Solutions fintech en Algérie. Applications paiement, banque mobile, intégration CIB Edahabia. Experts fintech Alger.",
+    translations: {
+      en: { title: "Fintech Solutions in Algeria 2024" },
+      ar: { title: "حلول التكنولوجيا المالية في الجزائر 2024" }
+    }
+  },
+  {
+    id: "22",
+    slug: "application-sante-algerie-2024",
+    title: "Applications Santé et E-Health en Algérie",
+    subtitle: "Télémédecine, Gestion Clinique et Dossiers Médicaux",
+    excerpt: "Solutions e-health pour le secteur médical algérien. Téléconsultation, gestion de cabinet, dossiers patients électroniques.",
+    category: "Healthcare",
+    author: "Symloop Team",
+    date: "2024-11-07",
+    readTime: "13 min",
+    image: "/images/blog/ehealth-algeria.jpg",
+    featured: false,
+    tags: ["e-health algérie", "télémédecine", "application santé", "gestion clinique"],
+    metaTitle: "E-Health Algérie 2024 | Applications Santé | Symloop",
+    metaDescription: "Solutions e-health en Algérie. Télémédecine, gestion clinique, dossiers médicaux. Développement santé digitale.",
+    translations: {
+      en: { title: "Healthcare Apps & E-Health in Algeria" },
+      ar: { title: "تطبيقات الصحة والرعاية الصحية الإلكترونية في الجزائر" }
+    }
+  },
+  {
+    id: "23",
+    slug: "edtech-education-algerie-2024",
+    title: "EdTech et E-Learning en Algérie 2024",
+    subtitle: "Plateformes Éducatives et Applications d'Apprentissage",
+    excerpt: "Créez votre plateforme e-learning en Algérie. LMS, applications éducatives, cours en ligne pour écoles et universités.",
+    category: "EdTech",
+    author: "Symloop Team",
+    date: "2024-11-06",
+    readTime: "12 min",
+    image: "/images/blog/edtech-algeria.jpg",
+    featured: false,
+    tags: ["edtech algérie", "e-learning", "plateforme éducative", "application apprentissage"],
+    metaTitle: "EdTech E-Learning Algérie 2024 | Plateformes Éducatives | Symloop",
+    metaDescription: "Solutions EdTech en Algérie. Plateformes e-learning, LMS, applications éducatives. Développement EdTech Alger.",
+    translations: {
+      en: { title: "EdTech & E-Learning in Algeria 2024" },
+      ar: { title: "تكنولوجيا التعليم والتعلم الإلكتروني في الجزائر 2024" }
+    }
+  },
+  {
+    id: "24",
+    slug: "application-restaurant-livraison-algerie",
+    title: "Applications Restaurant et Livraison en Algérie",
+    subtitle: "Solutions Digitales pour Restauration et Food Delivery",
+    excerpt: "Digitalisez votre restaurant avec commande en ligne, livraison et gestion cuisine. Solutions clé en main pour restaurateurs algériens.",
+    category: "FoodTech",
+    author: "Symloop Team",
+    date: "2024-11-05",
+    readTime: "10 min",
+    image: "/images/blog/restaurant-app.jpg",
+    featured: false,
+    tags: ["application restaurant", "livraison food algérie", "commande en ligne", "gestion restaurant"],
+    metaTitle: "Application Restaurant Livraison Algérie | FoodTech | Symloop",
+    metaDescription: "Applications restaurant et livraison en Algérie. Commande en ligne, food delivery, gestion cuisine. Solutions restauration.",
+    translations: {
+      en: { title: "Restaurant & Food Delivery Apps in Algeria" },
+      ar: { title: "تطبيقات المطاعم والتوصيل في الجزائر" }
+    }
+  },
+  {
+    id: "25",
+    slug: "application-immobilier-algerie-2024",
+    title: "Applications Immobilier en Algérie 2024",
+    subtitle: "Plateformes de Vente, Location et Gestion Immobilière",
+    excerpt: "Solutions digitales pour l'immobilier algérien. Plateformes annonces, gestion locative, visite virtuelle 3D.",
+    category: "RealEstate",
+    author: "Symloop Team",
+    date: "2024-11-04",
+    readTime: "11 min",
+    image: "/images/blog/realestate-app.jpg",
+    featured: false,
+    tags: ["application immobilier algérie", "plateforme immobilière", "gestion locative", "proptech algérie"],
+    metaTitle: "Application Immobilier Algérie 2024 | PropTech | Symloop",
+    metaDescription: "Applications immobilier en Algérie. Plateformes vente/location, gestion locative, PropTech. Solutions immobilières digitales.",
+    translations: {
+      en: { title: "Real Estate Apps in Algeria 2024" },
+      ar: { title: "تطبيقات العقارات في الجزائر 2024" }
+    }
+  },
+  {
+    id: "26",
+    slug: "logistique-transport-algerie-2024",
+    title: "Solutions Logistique et Transport en Algérie",
+    subtitle: "Gestion de Flotte, Tracking et Optimisation Livraison",
+    excerpt: "Digitalisez votre logistique en Algérie. Tracking GPS, optimisation tournées, gestion entrepôts, intégration e-commerce.",
+    category: "Logistics",
+    author: "Symloop Team",
+    date: "2024-11-03",
+    readTime: "12 min",
+    image: "/images/blog/logistics-algeria.jpg",
+    featured: false,
+    tags: ["logistique algérie", "gestion flotte", "tracking livraison", "transport digital"],
+    metaTitle: "Solutions Logistique Transport Algérie | Tracking | Symloop",
+    metaDescription: "Solutions logistique digitale en Algérie. Tracking GPS, gestion flotte, optimisation livraison. Experts logistique tech.",
+    translations: {
+      en: { title: "Logistics & Transport Solutions in Algeria" },
+      ar: { title: "حلول اللوجستيات والنقل في الجزائر" }
+    }
+  },
+  // === SERVICE-SPECIFIC BLOGS ===
+  {
+    id: "27",
+    slug: "design-ui-ux-algerie-2024",
+    title: "Design UI/UX en Algérie 2024",
+    subtitle: "Créez des Interfaces Utilisateur Exceptionnelles",
+    excerpt: "Services design UI/UX en Algérie. Interfaces intuitives, expérience utilisateur optimale, maquettes Figma professionnelles.",
+    category: "Design",
+    author: "Symloop Team",
+    date: "2024-11-02",
+    readTime: "9 min",
+    image: "/images/blog/uiux-design.jpg",
+    featured: false,
+    tags: ["design ui ux algérie", "interface utilisateur", "maquette figma", "expérience utilisateur"],
+    metaTitle: "Design UI/UX Algérie 2024 | Interfaces | Symloop",
+    metaDescription: "Design UI/UX en Algérie. Interfaces utilisateur, maquettes Figma, expérience utilisateur. Agence design Alger.",
+    translations: {
+      en: { title: "UI/UX Design in Algeria 2024" },
+      ar: { title: "تصميم UI/UX في الجزائر 2024" }
+    }
+  },
+  {
+    id: "28",
+    slug: "developpement-api-integration-algerie",
+    title: "Développement API et Intégrations en Algérie",
+    subtitle: "APIs RESTful, GraphQL et Intégrations Tierces",
+    excerpt: "Experts en développement d'APIs et intégrations en Algérie. REST, GraphQL, webhooks, connexion systèmes existants.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-11-01",
+    readTime: "10 min",
+    image: "/images/blog/api-development.jpg",
+    featured: false,
+    tags: ["développement api", "intégration systèmes", "api rest graphql", "webhooks"],
+    metaTitle: "Développement API Intégration Algérie | REST GraphQL | Symloop",
+    metaDescription: "Développement APIs en Algérie. REST, GraphQL, intégrations tierces, webhooks. Experts API Alger.",
+    translations: {
+      en: { title: "API Development & Integration in Algeria" },
+      ar: { title: "تطوير API والتكامل في الجزائر" }
+    }
+  },
+  {
+    id: "29",
+    slug: "devops-deployment-algerie-2024",
+    title: "DevOps et Déploiement en Algérie 2024",
+    subtitle: "CI/CD, Docker, Kubernetes et Infrastructure Cloud",
+    excerpt: "Services DevOps en Algérie. Automatisation déploiement, CI/CD pipelines, conteneurisation Docker, orchestration Kubernetes.",
+    category: "DevOps",
+    author: "Symloop Team",
+    date: "2024-10-30",
+    readTime: "13 min",
+    image: "/images/blog/devops-algeria.jpg",
+    featured: false,
+    tags: ["devops algérie", "ci cd", "docker kubernetes", "déploiement automatisé"],
+    metaTitle: "DevOps Déploiement Algérie 2024 | CI/CD Docker | Symloop",
+    metaDescription: "Services DevOps en Algérie. CI/CD, Docker, Kubernetes, déploiement cloud. Experts DevOps Alger.",
+    translations: {
+      en: { title: "DevOps & Deployment in Algeria 2024" },
+      ar: { title: "DevOps والنشر في الجزائر 2024" }
+    }
+  },
+  {
+    id: "30",
+    slug: "maintenance-support-application-algerie",
+    title: "Maintenance et Support Applications en Algérie",
+    subtitle: "TMA, Monitoring et Support 24/7 pour Vos Projets",
+    excerpt: "Services maintenance applicative en Algérie. TMA, monitoring, corrections bugs, mises à jour sécurité, support technique.",
+    category: "Service",
+    author: "Symloop Team",
+    date: "2024-10-29",
+    readTime: "8 min",
+    image: "/images/blog/maintenance-support.jpg",
+    featured: false,
+    tags: ["maintenance application", "support technique", "tma algérie", "monitoring"],
+    metaTitle: "Maintenance Support Applications Algérie | TMA | Symloop",
+    metaDescription: "Maintenance applicative en Algérie. TMA, support 24/7, monitoring, corrections. Services maintenance Alger.",
+    translations: {
+      en: { title: "Application Maintenance & Support in Algeria" },
+      ar: { title: "صيانة ودعم التطبيقات في الجزائر" }
+    }
+  },
+  // === B2B & ENTERPRISE BLOGS ===
+  {
+    id: "31",
+    slug: "logiciel-crm-algerie-2024",
+    title: "Logiciel CRM en Algérie 2024",
+    subtitle: "Solutions Gestion Relation Client sur Mesure",
+    excerpt: "CRM adapté aux entreprises algériennes. Gestion clients, pipeline ventes, automatisation marketing, intégration locale.",
+    category: "Enterprise",
+    author: "Symloop Team",
+    date: "2024-10-28",
+    readTime: "11 min",
+    image: "/images/blog/crm-algeria.jpg",
+    featured: false,
+    tags: ["crm algérie", "gestion client", "logiciel commercial", "automatisation ventes"],
+    metaTitle: "Logiciel CRM Algérie 2024 | Gestion Client | Symloop",
+    metaDescription: "Solutions CRM en Algérie. Gestion relation client, pipeline ventes, automatisation. CRM sur mesure Alger.",
+    translations: {
+      en: { title: "CRM Software in Algeria 2024" },
+      ar: { title: "برنامج CRM في الجزائر 2024" }
+    }
+  },
+  {
+    id: "32",
+    slug: "logiciel-rh-algerie-2024",
+    title: "Logiciel RH et Paie en Algérie 2024",
+    subtitle: "Gestion des Ressources Humaines Conforme CNAS/CASNOS",
+    excerpt: "SIRH pour entreprises algériennes. Gestion paie conforme CNAS/CASNOS, congés, recrutement, évaluations.",
+    category: "Enterprise",
+    author: "Symloop Team",
+    date: "2024-10-27",
+    readTime: "12 min",
+    image: "/images/blog/hr-software.jpg",
+    featured: false,
+    tags: ["logiciel rh algérie", "gestion paie", "sirh", "cnas casnos"],
+    metaTitle: "Logiciel RH Paie Algérie 2024 | SIRH CNAS | Symloop",
+    metaDescription: "Logiciel RH en Algérie. Gestion paie CNAS/CASNOS, SIRH, recrutement. Solutions RH conformes.",
+    translations: {
+      en: { title: "HR & Payroll Software in Algeria 2024" },
+      ar: { title: "برنامج الموارد البشرية والرواتب في الجزائر 2024" }
+    }
+  },
+  {
+    id: "33",
+    slug: "logiciel-comptabilite-algerie-2024",
+    title: "Logiciel Comptabilité en Algérie 2024",
+    subtitle: "Solutions Comptables Conformes PCN et Fiscalité Algérienne",
+    excerpt: "Logiciels comptabilité pour entreprises algériennes. Conforme PCN, déclarations fiscales G50, facturation électronique.",
+    category: "Enterprise",
+    author: "Symloop Team",
+    date: "2024-10-26",
+    readTime: "10 min",
+    image: "/images/blog/accounting-algeria.jpg",
+    featured: false,
+    tags: ["logiciel comptabilité algérie", "pcn algérie", "g50", "facturation électronique"],
+    metaTitle: "Logiciel Comptabilité Algérie 2024 | PCN G50 | Symloop",
+    metaDescription: "Logiciel comptabilité en Algérie. Conforme PCN, déclarations G50, facturation. Solutions comptables Alger.",
+    translations: {
+      en: { title: "Accounting Software in Algeria 2024" },
+      ar: { title: "برنامج المحاسبة في الجزائر 2024" }
+    }
+  },
+  {
+    id: "34",
+    slug: "plateforme-b2b-marketplace-algerie",
+    title: "Plateforme B2B et Marketplace en Algérie",
+    subtitle: "Créez Votre Place de Marché Professionnelle",
+    excerpt: "Développement marketplaces B2B en Algérie. Multi-vendeurs, gestion commandes, paiements sécurisés CIB.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2024-10-25",
+    readTime: "13 min",
+    image: "/images/blog/b2b-marketplace.jpg",
+    featured: false,
+    tags: ["marketplace b2b algérie", "plateforme multi-vendeurs", "e-commerce b2b"],
+    metaTitle: "Marketplace B2B Algérie | Plateforme Multi-Vendeurs | Symloop",
+    metaDescription: "Développement marketplace B2B en Algérie. Multi-vendeurs, e-commerce professionnel. Plateforme B2B Alger.",
+    translations: {
+      en: { title: "B2B Platform & Marketplace in Algeria" },
+      ar: { title: "منصة B2B والسوق في الجزائر" }
+    }
+  },
+  {
+    id: "35",
+    slug: "saas-developpement-algerie-2024",
+    title: "Développement SaaS en Algérie 2024",
+    subtitle: "Créez Votre Logiciel en Mode Cloud",
+    excerpt: "Développement applications SaaS en Algérie. Architecture multi-tenant, abonnements, API, scalabilité cloud.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-10-24",
+    readTime: "14 min",
+    image: "/images/blog/saas-development.jpg",
+    featured: true,
+    tags: ["développement saas", "logiciel cloud", "multi-tenant", "saas algérie"],
+    metaTitle: "Développement SaaS Algérie 2024 | Logiciel Cloud | Symloop",
+    metaDescription: "Développement SaaS en Algérie. Applications cloud multi-tenant, abonnements, scalable. Experts SaaS Alger.",
+    translations: {
+      en: { title: "SaaS Development in Algeria 2024" },
+      ar: { title: "تطوير SaaS في الجزائر 2024" }
+    }
+  },
+  // === REGIONAL & LOCALIZATION BLOGS ===
+  {
+    id: "36",
+    slug: "developpement-web-oran-2024",
+    title: "Développement Web à Oran 2024",
+    subtitle: "Agence Digitale pour Entreprises Oranaises",
+    excerpt: "Services développement web à Oran. Sites internet, applications, e-commerce pour entreprises de l'Ouest algérien.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-10-23",
+    readTime: "8 min",
+    image: "/images/blog/web-oran.jpg",
+    featured: false,
+    tags: ["développement web oran", "agence web oran", "site internet oran"],
+    metaTitle: "Développement Web Oran 2024 | Agence Digitale | Symloop",
+    metaDescription: "Développement web à Oran. Sites internet, applications, e-commerce. Agence digitale Oran ouest algérien.",
+    translations: {
+      en: { title: "Web Development in Oran 2024" },
+      ar: { title: "تطوير الويب في وهران 2024" }
+    }
+  },
+  {
+    id: "37",
+    slug: "developpement-web-constantine-2024",
+    title: "Développement Web à Constantine 2024",
+    subtitle: "Solutions Digitales pour l'Est Algérien",
+    excerpt: "Agence développement web à Constantine. Sites, applications mobiles, solutions digitales pour entreprises de l'Est.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2024-10-22",
+    readTime: "8 min",
+    image: "/images/blog/web-constantine.jpg",
+    featured: false,
+    tags: ["développement web constantine", "agence digitale constantine", "site web est algérie"],
+    metaTitle: "Développement Web Constantine 2024 | Agence | Symloop",
+    metaDescription: "Développement web à Constantine. Sites internet, applications, e-commerce. Agence digitale Est algérien.",
+    translations: {
+      en: { title: "Web Development in Constantine 2024" },
+      ar: { title: "تطوير الويب في قسنطينة 2024" }
+    }
+  },
+  {
+    id: "38",
+    slug: "developpement-application-tunisie-2024",
+    title: "Développement Application en Tunisie 2024",
+    subtitle: "Votre Partenaire Tech pour le Marché Tunisien",
+    excerpt: "Services développement web et mobile en Tunisie. Applications, e-commerce, solutions digitales pour entreprises tunisiennes.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2024-10-21",
+    readTime: "11 min",
+    image: "/images/blog/dev-tunisia.jpg",
+    featured: false,
+    tags: ["développement tunisie", "application mobile tunisie", "agence web tunis"],
+    metaTitle: "Développement Application Tunisie 2024 | Web Mobile | Symloop",
+    metaDescription: "Développement web et mobile en Tunisie. Applications, e-commerce, solutions digitales. Partenaire tech Tunis.",
+    translations: {
+      en: { title: "App Development in Tunisia 2024" },
+      ar: { title: "تطوير التطبيقات في تونس 2024" }
+    }
+  },
+  {
+    id: "39",
+    slug: "developpement-application-maroc-2024",
+    title: "Développement Application au Maroc 2024",
+    subtitle: "Solutions Tech pour le Marché Marocain",
+    excerpt: "Services développement digital au Maroc. Applications web, mobile, e-commerce. Expertise tech pour entreprises marocaines.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2024-10-20",
+    readTime: "11 min",
+    image: "/images/blog/dev-morocco.jpg",
+    featured: false,
+    tags: ["développement maroc", "application mobile maroc", "agence web casablanca"],
+    metaTitle: "Développement Application Maroc 2024 | Web Mobile | Symloop",
+    metaDescription: "Développement web et mobile au Maroc. Applications, e-commerce, solutions digitales. Partenaire tech Casablanca.",
+    translations: {
+      en: { title: "App Development in Morocco 2024" },
+      ar: { title: "تطوير التطبيقات في المغرب 2024" }
+    }
+  },
+  {
+    id: "40",
+    slug: "agence-digitale-mena-2024",
+    title: "Agence Digitale pour la Région MENA 2024",
+    subtitle: "Services Tech Multilingues Arabe, Français, Anglais",
+    excerpt: "Agence digitale spécialisée région MENA. Applications multilingues arabe/français/anglais, localisation, RTL support.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-10-19",
+    readTime: "10 min",
+    image: "/images/blog/mena-agency.jpg",
+    featured: true,
+    tags: ["agence digitale mena", "développement arabe", "rtl support", "multilingue mena"],
+    metaTitle: "Agence Digitale MENA 2024 | Multilingue Arabe | Symloop",
+    metaDescription: "Agence digitale région MENA. Applications multilingues arabe/français/anglais, RTL support. Experts MENA.",
+    translations: {
+      en: { title: "Digital Agency for MENA Region 2024" },
+      ar: { title: "وكالة رقمية لمنطقة الشرق الأوسط وشمال أفريقيا 2024" }
+    }
+  },
+  // === ADDITIONAL SEO BLOGS ===
+  {
+    id: "41",
+    slug: "cout-developpement-application-algerie",
+    title: "Coût Développement Application en Algérie 2024",
+    subtitle: "Prix Réels : Site Web, App Mobile, E-commerce",
+    excerpt: "Combien coûte une application en Algérie ? Prix détaillés sites web, apps mobiles, e-commerce. Budget réaliste pour votre projet.",
+    category: "Guide",
+    author: "Symloop Team",
+    date: "2024-10-18",
+    readTime: "15 min",
+    image: "/images/blog/cost-development.jpg",
+    featured: true,
+    tags: ["prix site web algérie", "coût application mobile", "tarif développement", "budget digital"],
+    metaTitle: "Coût Développement Application Algérie 2024 | Prix | Symloop",
+    metaDescription: "Prix développement en Algérie. Coût site web, application mobile, e-commerce. Tarifs réalistes et devis gratuit.",
+    translations: {
+      en: { title: "App Development Cost in Algeria 2024" },
+      ar: { title: "تكلفة تطوير التطبيقات في الجزائر 2024" }
+    }
+  },
+  {
+    id: "42",
+    slug: "comment-choisir-developpeur-algerie",
+    title: "Comment Choisir un Développeur en Algérie",
+    subtitle: "Critères, Questions et Red Flags à Éviter",
+    excerpt: "Guide pour choisir votre développeur ou agence en Algérie. Critères essentiels, questions à poser, erreurs à éviter.",
+    category: "Guide",
+    author: "Symloop Team",
+    date: "2024-10-17",
+    readTime: "12 min",
+    image: "/images/blog/choose-developer.jpg",
+    featured: false,
+    tags: ["choisir développeur algérie", "critères agence web", "recruter dev"],
+    metaTitle: "Choisir Développeur Algérie | Guide Complet | Symloop",
+    metaDescription: "Comment choisir votre développeur en Algérie. Critères, questions, red flags. Guide pour trouver le bon partenaire tech.",
+    translations: {
+      en: { title: "How to Choose a Developer in Algeria" },
+      ar: { title: "كيفية اختيار مطور في الجزائر" }
+    }
+  },
+  {
+    id: "43",
+    slug: "tendances-tech-algerie-2025",
+    title: "Tendances Tech en Algérie 2025",
+    subtitle: "Technologies Émergentes et Opportunités",
+    excerpt: "Les tendances technologiques qui vont transformer l'Algérie en 2025. IA, blockchain, IoT, 5G et opportunités business.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2024-10-16",
+    readTime: "14 min",
+    image: "/images/blog/tech-trends-2025.jpg",
+    featured: true,
+    tags: ["tendances tech algérie", "technologie 2025", "innovation digitale", "futur tech mena"],
+    metaTitle: "Tendances Tech Algérie 2025 | Innovation | Symloop",
+    metaDescription: "Tendances technologiques Algérie 2025. IA, blockchain, IoT, innovations. Préparez votre entreprise au futur digital.",
+    translations: {
+      en: { title: "Tech Trends in Algeria 2025" },
+      ar: { title: "اتجاهات التكنولوجيا في الجزائر 2025" }
+    }
+  },
+  {
+    id: "44",
+    slug: "freelance-vs-agence-algerie",
+    title: "Freelance vs Agence en Algérie : Que Choisir ?",
+    subtitle: "Avantages, Inconvénients et Cas d'Usage",
+    excerpt: "Freelance ou agence pour votre projet digital ? Comparatif détaillé : prix, qualité, délais, support. Faites le bon choix.",
+    category: "Guide",
+    author: "Symloop Team",
+    date: "2024-10-15",
+    readTime: "10 min",
+    image: "/images/blog/freelance-vs-agency.jpg",
+    featured: false,
+    tags: ["freelance algérie", "agence vs freelance", "développeur indépendant"],
+    metaTitle: "Freelance vs Agence Algérie | Comparatif | Symloop",
+    metaDescription: "Freelance ou agence en Algérie ? Comparatif détaillé prix, qualité, délais. Guide pour choisir.",
+    translations: {
+      en: { title: "Freelance vs Agency in Algeria: What to Choose?" },
+      ar: { title: "العمل الحر مقابل الوكالة في الجزائر" }
+    }
+  },
+  {
+    id: "45",
+    slug: "reussir-projet-digital-algerie",
+    title: "Comment Réussir Votre Projet Digital en Algérie",
+    subtitle: "Méthodologie, Étapes et Bonnes Pratiques",
+    excerpt: "Les clés pour réussir votre projet web ou mobile en Algérie. Méthodologie agile, communication, gestion budget et délais.",
+    category: "Guide",
+    author: "Symloop Team",
+    date: "2024-10-14",
+    readTime: "13 min",
+    image: "/images/blog/succeed-project.jpg",
+    featured: false,
+    tags: ["réussir projet digital", "gestion projet web", "méthodologie agile algérie"],
+    metaTitle: "Réussir Projet Digital Algérie | Guide Complet | Symloop",
+    metaDescription: "Réussissez votre projet digital en Algérie. Méthodologie, étapes, bonnes pratiques. Guide succès projet web/mobile.",
+    translations: {
+      en: { title: "How to Succeed Your Digital Project in Algeria" },
+      ar: { title: "كيف تنجح مشروعك الرقمي في الجزائر" }
+    }
+  }
+];
+
+// Get blog by slug
+export const getBlogBySlug = (slug) => {
+  return blogs.find(blog => blog.slug === slug);
+};
+
+// Get all blogs
+export const getAllBlogs = () => {
+  return blogs;
+};
+
+// Get featured blogs
+export const getFeaturedBlogs = () => {
+  return blogs.filter(blog => blog.featured);
+};
+
+// Get blogs by category
+export const getBlogsByCategory = (category) => {
+  return blogs.filter(blog => blog.category === category);
+};
+
+// Get all categories with counts
+export const getCategories = () => {
+  const counts = {};
+  blogs.forEach(blog => {
+    counts[blog.category] = (counts[blog.category] || 0) + 1;
+  });
+  return Object.entries(counts).map(([name, count]) => ({ name, count }));
+};
+
+// Get related blogs (same category, excluding current)
+export const getRelatedBlogs = (currentSlug, limit = 3) => {
+  const currentBlog = getBlogBySlug(currentSlug);
+  if (!currentBlog) return [];
+
+  return blogs
+    .filter(blog => blog.category === currentBlog.category && blog.slug !== currentSlug)
+    .slice(0, limit);
+};

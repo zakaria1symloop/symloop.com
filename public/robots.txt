@@ -74,7 +74,7 @@ Allow: /solutions/petrole-gaz-ia/
 Allow: /solutions/smart-city-mena/
 Allow: /solutions/e-gouvernement-ia/
 
-# Allow important pages
+# Allow important pages - High Priority SEO Pages
 Allow: /services/
 Allow: /solutions/
 Allow: /blog/
@@ -83,6 +83,32 @@ Allow: /products/
 Allow: /learning/
 Allow: /recrutement/
 Allow: /mena/
+
+# High Priority Blog Posts for SEO Ranking
+Allow: /blog/developpement-application-mobile-algerie-2024/
+Allow: /blog/creation-site-web-algerie-2024/
+Allow: /blog/ecommerce-algerie-paiement-cib-edahabia-2024/
+Allow: /blog/transformation-digitale-algerie-2024/
+Allow: /blog/logiciel-erp-algerie-2024/
+Allow: /blog/intelligence-artificielle-algerie-mena-2024/
+Allow: /fr/blog/
+Allow: /ar/blog/
+Allow: /en/blog/
+
+# Location Pages - City SEO
+Allow: /locations/alger/
+Allow: /locations/oran/
+Allow: /locations/constantine/
+Allow: /locations/setif/
+Allow: /locations/annaba/
+Allow: /locations/blida/
+Allow: /locations/batna/
+Allow: /locations/djelfa/
+Allow: /locations/tlemcen/
+Allow: /locations/bejaia/
+Allow: /fr/locations/
+Allow: /ar/locations/
+Allow: /en/locations/
 
 # Google
 User-agent: Googlebot

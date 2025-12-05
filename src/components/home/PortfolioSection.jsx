@@ -307,18 +307,18 @@ export default function PortfolioSection() {
             </h2>
             
             <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-              Plus de 500 projets réalisés pour des entreprises algériennes leaders. 
+              Des projets réalisés pour des entreprises algériennes et régionales.
               Découvrez comment nous transformons les idées en solutions digitales performantes.
             </p>
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 text-sm">
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">500+</div>
+                <div className="text-3xl font-bold text-black">70+</div>
                 <div className="text-gray-500">Projets Livrés</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">200+</div>
+                <div className="text-3xl font-bold text-black">50+</div>
                 <div className="text-gray-500">Clients Satisfaits</div>
               </div>
               <div className="text-center">
@@ -326,7 +326,7 @@ export default function PortfolioSection() {
                 <div className="text-gray-500">Taux de Réussite</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">12+</div>
+                <div className="text-3xl font-bold text-black">5+</div>
                 <div className="text-gray-500">Années d'Expertise</div>
               </div>
             </div>
@@ -494,7 +494,7 @@ export default function PortfolioSection() {
               Prêt à Créer Votre Prochain Succès ?
             </h3>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Rejoignez les 200+ entreprises algériennes qui nous font confiance. 
+              Rejoignez les entreprises algériennes qui nous font confiance.
               Discutons de votre projet dès aujourd'hui.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

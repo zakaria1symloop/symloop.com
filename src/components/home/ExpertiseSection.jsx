@@ -270,15 +270,15 @@ export default function ExpertiseSection() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
           >
             <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">12+</div>
+              <div className="text-4xl font-bold text-white mb-2">5+</div>
               <div className="text-sm text-gray-500">{t('expertise.stats.experience')}</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">50+</div>
+              <div className="text-4xl font-bold text-white mb-2">70+</div>
               <div className="text-sm text-gray-500">{t('expertise.stats.projects')}</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">30+</div>
+              <div className="text-4xl font-bold text-white mb-2">50+</div>
               <div className="text-sm text-gray-500">{t('expertise.stats.clients')}</div>
             </div>
             <div className="text-center">

@@ -478,11 +478,11 @@ const ChatBotModal = ({ isOpen, onClose, initialMessage = "", isRTL = false, rou
 Merci pour votre message concernant "${message}".
 
 🏆 **Symloop en chiffres** :
-• 12+ années d'expérience  
-• 500+ projets réalisés
-• 200+ clients satisfaits
+• 5+ années d'expérience
+• 70+ projets réalisés
+• 50+ clients satisfaits
 • 98% taux de satisfaction
-• Équipe de 25+ experts
+• Équipe de 15+ experts
 
 🎯 **Nos Expertises** :
 💻 Développement web & e-commerce
@@ -578,11 +578,11 @@ Ou continuez la discussion ici ! 💬`;
 
 🔥 Perfect timing! You're in the right place!
 
-🏆 Symloop = #1 IT in MENA:
-✅ 1200+ successful projects
-✅ Clients like Renault, Epson MENA
-✅ Average ROI +350% in 8 months
-✅ Results guaranteed or money back
+🏆 Symloop - IT Excellence in MENA:
+✅ 70+ successful projects
+✅ Trusted clients across MENA region
+✅ Proven ROI and results
+✅ Client satisfaction guaranteed
 
 💡 Let's talk about YOUR success:
 🌐 E-commerce site that converts?
@@ -598,11 +598,11 @@ Ou continuez la discussion ici ! 💬`;
 
 🔥 تهانينا ! وصلت في الوقت المناسب !
 
-🏆 سيمبلوب = رقم 1 في تكنولوجيا المعلومات في الشرق الأوسط وشمال أفريقيا :
-✅ 1200+ مشروع ناجح
-✅ عملاء مثل رينو، إبسون في المنطقة
-✅ عائد استثمار متوسط +350% في 8 أشهر
-✅ ضمان النتائج أو استرداد الأموال
+🏆 سيمبلوب - التميز في تقنية المعلومات في منطقة MENA:
+✅ 70+ مشروع ناجح
+✅ عملاء موثوقون في منطقة MENA
+✅ عائد استثمار مثبت ونتائج ملموسة
+✅ ضمان رضا العملاء
 
 💡 دعنا نتحدث عن نجاحك :
 🌐 موقع تجارة إلكترونية يحقق المبيعات ؟
@@ -618,11 +618,11 @@ Ou continuez la discussion ici ! 💬`;
 
 🔥 Félicitations ! Vous tombez au BON moment !
 
-🏆 Symloop = N°1 IT dans la région MENA :
-✅ 1200+ projets qui cartonnent
-✅ Clients comme Renault, Epson dans la région  
-✅ ROI moyen +350% en 8 mois
-✅ Garantie résultats ou remboursé
+🏆 Symloop - Excellence IT dans la région MENA :
+✅ 70+ projets réussis
+✅ Clients de confiance dans la région MENA
+✅ ROI prouvé et résultats concrets
+✅ Satisfaction client garantie
 
 💡 Parlons de VOTRE succès :
 🌐 Site e-commerce qui convertit ?
@@ -1299,9 +1299,9 @@ export default function HeroSection() {
                   className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8"
                 >
                   {[
-                    { number: "500+", label: t('hero.stats.partners'), icon: Award },
+                    { number: "70+", label: t('hero.stats.partners'), icon: Award },
                     { number: "98%", label: t('hero.stats.satisfaction'), icon: Star },
-                    { number: "12+", label: t('hero.stats.experience'), icon: TrendingUp },
+                    { number: "5+", label: t('hero.stats.experience'), icon: TrendingUp },
                     { number: "24/7", label: t('hero.stats.support'), icon: Shield }
                   ].map((item, index) => (
                     <motion.div
