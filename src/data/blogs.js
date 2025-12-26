@@ -1325,6 +1325,37 @@ export const blogs = [
         excerpt: "كيفية استخدام ChatGPT و Claude و Gemini في شركتك الجزائرية. حالات استخدام عملية وتكامل API وحساب العائد على الاستثمار وأفضل الممارسات."
       }
     }
+  },
+  // === SYMLOOP PRODUCTS ===
+  {
+    id: "48",
+    slug: "logistics-management-software-2026",
+    title: "Symloop Logistics Management : Système de Gestion Livraison et Flotte",
+    subtitle: "Solution Complète 2026 : App Vendeur, App Livreur, Dashboard Admin",
+    excerpt: "Découvrez notre solution logistique tout-en-un. Application vendeur pour collecter les commandes, app livreur avec GPS, dashboard admin avec suivi temps réel. Mode offline inclus.",
+    category: "Logistics",
+    author: "Symloop Team",
+    date: "2026-01-01",
+    readTime: "8 min",
+    image: "/images/products/logistics-management.jpg",
+    featured: true,
+    tags: ["logistics management software", "delivery tracking app", "fleet management", "driver app", "delivery management system", "GPS tracking", "offline delivery app", "MENA logistics"],
+    metaTitle: "Logistics Management Software 2026 | Delivery & Fleet Tracking | Symloop",
+    metaDescription: "Complete logistics management system. Seller app, driver app with GPS, admin dashboard with real-time tracking. Works offline. Multi-language AR/FR/EN.",
+    isProduct: true,
+    productUrl: "https://logistics.symloop.com",
+    translations: {
+      en: {
+        title: "Symloop Logistics Management: Delivery & Fleet System",
+        subtitle: "Complete Solution 2026: Seller App, Driver App, Admin Dashboard",
+        excerpt: "Discover our all-in-one logistics solution. Seller app for order collection, driver app with GPS, admin dashboard with real-time tracking. Offline mode included."
+      },
+      ar: {
+        title: "نظام إدارة اللوجستيات من Symloop: نظام التوصيل والأسطول",
+        subtitle: "حل متكامل 2026: تطبيق البائع، تطبيق السائق، لوحة تحكم المدير",
+        excerpt: "اكتشف حلنا اللوجستي الشامل. تطبيق بائع لجمع الطلبات، تطبيق سائق مع GPS، لوحة تحكم مع تتبع مباشر. وضع بدون إنترنت متاح."
+      }
+    }
   }
 ];
 

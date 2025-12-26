@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { 
-  ExternalLink, 
-  Github, 
-  Award, 
-  Users, 
-  TrendingUp, 
+import {
+  ExternalLink,
+  Github,
+  Award,
+  Users,
+  TrendingUp,
   Smartphone,
   Globe,
   Database,
@@ -15,12 +15,13 @@ import {
   ArrowRight,
   CheckCircle,
   Calendar,
-  MapPin
+  MapPin,
+  Truck
 } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from 'next-i18next';
 
-const categories = ["all", "web", "mobile", "erp", "ecommerce"];
+const categories = ["all", "web", "mobile", "erp", "ecommerce", "logistics"];
 
 const projects = [
   {
@@ -208,6 +209,43 @@ const projects = [
       author: "M. Hocine Cherhabil",
       position: "Secrétaire Général Ministère"
     }
+  },
+  {
+    id: 7,
+    title: "Symloop Logistics Management",
+    subtitle: "Système de Gestion Livraison & Flotte",
+    category: "logistics",
+    client: "Produit Symloop",
+    location: "MENA Region",
+    year: "2026",
+    duration: "Produit SaaS",
+    team: "Équipe Symloop",
+    technologies: ["React Native", "Node.js", "PostgreSQL", "Google Maps", "Firebase", "Socket.io"],
+    description: "Système complet de gestion des livraisons et flottes. Application vendeur pour collecter les commandes, app livreur avec navigation GPS, dashboard admin avec suivi temps réel sur carte. Fonctionne en mode online et offline.",
+    features: [
+      "App Vendeur : Collecte commandes & gestion clients",
+      "App Livreur : Navigation GPS, notifications, POD",
+      "Dashboard Admin : Suivi temps réel sur carte",
+      "Mode Offline : Fonctionne sans connexion",
+      "Calcul automatique vitesse, distance, temps",
+      "Notifications push temps réel",
+      "Rapports et analytics détaillés",
+      "Multi-langues AR/FR/EN"
+    ],
+    results: {
+      efficiency: "+40%",
+      delivery: "99% à temps",
+      tracking: "Temps réel"
+    },
+    image: "/assets/portfolio/symloop-logistics.jpg",
+    testimonial: {
+      text: "Notre propre solution logistique développée pour répondre aux besoins des entreprises de livraison dans la région MENA.",
+      author: "Symloop Team",
+      position: "Équipe Produit"
+    },
+    isProduct: true,
+    productUrl: "https://logistics.symloop.com",
+    productPage: "/products/logistics-management"
   }
 ];
 
@@ -224,9 +262,10 @@ export default function PortfolioSection() {
     const labels = {
       all: "Tous les Projets",
       web: "Sites Web",
-      mobile: "Applications Mobiles", 
+      mobile: "Applications Mobiles",
       erp: "ERP & Logiciels Métiers",
-      ecommerce: "E-commerce"
+      ecommerce: "E-commerce",
+      logistics: "Logistique & Livraison"
     };
     return labels[category];
   };
@@ -235,8 +274,9 @@ export default function PortfolioSection() {
     const icons = {
       web: Globe,
       mobile: Smartphone,
-      erp: Building, 
-      ecommerce: ShoppingCart
+      erp: Building,
+      ecommerce: ShoppingCart,
+      logistics: Truck
     };
     return icons[category];
   };
