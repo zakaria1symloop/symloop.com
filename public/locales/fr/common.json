@@ -160,6 +160,10 @@
     "placeholder3": "Je cherche une solution d'hébergement...",
     "placeholder4": "Je veux développer un logiciel sur mesure..."
   },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Solutions prêtes à l'emploi développées par Symloop pour accélérer votre transformation digitale"
+  },
   "clientsPartners": {
     "badge": "Partenaires de Confiance • Région MENA",
     "title": "Nos Clients",

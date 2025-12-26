@@ -9,6 +9,7 @@ import ExpertiseSection from "../../src/components/home/ExpertiseSection";
 import SolutionsSection from "../../src/components/home/SolutionsSection";
 import TechnologySection from "../../src/components/home/TechnologySection";
 import ClientsPartnersSection from "../../src/components/home/ClientsPartnersSection";
+import ProductsSection from "../../src/components/home/ProductsSection";
 import AIHeroSection from "../../src/components/home/AIHeroSection";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
 import AIOnboarding from "../../src/components/onboarding/AIOnboarding";
@@ -222,6 +223,8 @@ export default function Home() {
 <Divider />
 
 <CompanyContactSection />
+<Divider />
+<ProductsSection />
 <Divider />
 <ClientsPartnersSection />
 <Divider />

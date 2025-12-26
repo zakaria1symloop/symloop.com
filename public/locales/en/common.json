@@ -160,6 +160,10 @@
     "placeholder3": "I'm looking for hosting solutions...",
     "placeholder4": "I want to develop custom software..."
   },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Ready-to-use solutions developed by Symloop to accelerate your digital transformation"
+  },
   "clientsPartners": {
     "badge": "Trusted Partners • MENA Region",
     "title": "Our Clients",

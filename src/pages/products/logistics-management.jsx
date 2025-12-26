@@ -234,55 +234,73 @@ export default function LogisticsManagement() {
   const pricingPlans = [
     {
       name: 'Starter',
-      price: locale === 'ar' ? '99$' : '99$',
+      price: locale === 'ar' ? '4,500 د.ج' : locale === 'en' ? '$35' : '35€',
+      priceAlt: locale === 'ar' ? '' : locale === 'en' ? '(~30€ | ~4,500 DZD)' : '(~$35 | ~4,500 DZD)',
       period: locale === 'ar' ? '/شهر' : locale === 'en' ? '/month' : '/mois',
-      description: locale === 'ar' ? 'للشركات الصغيرة' : locale === 'en' ? 'For small businesses' : 'Pour petites entreprises',
+      description: locale === 'ar' ? 'للبدء السريع' : locale === 'en' ? 'Quick start' : 'Démarrage rapide',
       features: locale === 'ar' ? [
-        'حتى 5 سائقين',
-        'حتى 3 بائعين',
-        'تتبع GPS مباشر',
-        'وضع بدون إنترنت',
+        'سائق واحد (1)',
+        'بائعين بلا حدود',
+        'إدارة الطلبات',
+        'تقارير أساسية',
         'دعم البريد الإلكتروني'
       ] : locale === 'en' ? [
-        'Up to 5 drivers',
-        'Up to 3 sellers',
-        'Real-time GPS tracking',
-        'Offline mode',
+        '1 Driver included',
+        'Unlimited sellers',
+        'Order management',
+        'Basic reports',
         'Email support'
       ] : [
-        'Jusqu\'à 5 livreurs',
-        'Jusqu\'à 3 vendeurs',
-        'Tracking GPS temps réel',
-        'Mode offline',
+        '1 Livreur inclus',
+        'Vendeurs illimités',
+        'Gestion des commandes',
+        'Rapports basiques',
         'Support email'
+      ],
+      notIncluded: locale === 'ar' ? [
+        'بدون تتبع GPS',
+        'بدون وضع offline'
+      ] : locale === 'en' ? [
+        'No GPS tracking',
+        'No offline mode'
+      ] : [
+        'Sans tracking GPS',
+        'Sans mode offline'
       ],
       popular: false
     },
     {
       name: 'Business',
-      price: locale === 'ar' ? '249$' : '249$',
+      price: locale === 'ar' ? '6,500 د.ج' : locale === 'en' ? '$50' : '50€',
+      priceAlt: locale === 'ar' ? '' : locale === 'en' ? '(~45€ | ~6,500 DZD)' : '(~$50 | ~6,500 DZD)',
       period: locale === 'ar' ? '/شهر' : locale === 'en' ? '/month' : '/mois',
-      description: locale === 'ar' ? 'للشركات المتوسطة' : locale === 'en' ? 'For medium businesses' : 'Pour entreprises moyennes',
+      description: locale === 'ar' ? 'الأكثر طلباً' : locale === 'en' ? 'Most popular' : 'Le plus demandé',
       features: locale === 'ar' ? [
-        'حتى 20 سائق',
-        'حتى 10 بائعين',
-        'جميع ميزات Starter',
-        'تحسين المسارات',
+        'سائق واحد (1)',
+        'بائعين بلا حدود',
+        'تتبع GPS مباشر ✓',
+        'وضع بدون إنترنت ✓',
+        'إدارة الطلبات',
         'تقارير متقدمة',
+        'إشعارات فورية',
         'دعم أولوية'
       ] : locale === 'en' ? [
-        'Up to 20 drivers',
-        'Up to 10 sellers',
-        'All Starter features',
-        'Route optimization',
+        '1 Driver included',
+        'Unlimited sellers',
+        'Real-time GPS tracking ✓',
+        'Offline mode ✓',
+        'Order management',
         'Advanced reports',
+        'Push notifications',
         'Priority support'
       ] : [
-        'Jusqu\'à 20 livreurs',
-        'Jusqu\'à 10 vendeurs',
-        'Tout Starter inclus',
-        'Optimisation routes',
+        '1 Livreur inclus',
+        'Vendeurs illimités',
+        'Tracking GPS temps réel ✓',
+        'Mode offline ✓',
+        'Gestion des commandes',
         'Rapports avancés',
+        'Notifications push',
         'Support prioritaire'
       ],
       popular: true
@@ -290,29 +308,36 @@ export default function LogisticsManagement() {
     {
       name: 'Enterprise',
       price: locale === 'ar' ? 'حسب الطلب' : locale === 'en' ? 'Custom' : 'Sur devis',
+      priceAlt: '',
       period: '',
-      description: locale === 'ar' ? 'للشركات الكبيرة' : locale === 'en' ? 'For large enterprises' : 'Pour grandes entreprises',
+      description: locale === 'ar' ? 'للشركات الكبيرة' : locale === 'en' ? 'For large fleets' : 'Pour grandes flottes',
       features: locale === 'ar' ? [
-        'سائقين وبائعين بلا حدود',
+        'سائقين بلا حدود',
+        'بائعين بلا حدود',
         'جميع ميزات Business',
         'تخصيص كامل',
         'API للتكامل',
         'تدريب الفريق',
-        'مدير حساب مخصص'
+        'مدير حساب مخصص',
+        'SLA مخصص'
       ] : locale === 'en' ? [
-        'Unlimited drivers & sellers',
+        'Unlimited drivers',
+        'Unlimited sellers',
         'All Business features',
         'Full customization',
         'API integration',
         'Team training',
-        'Dedicated account manager'
+        'Dedicated account manager',
+        'Custom SLA'
       ] : [
-        'Livreurs et vendeurs illimités',
+        'Livreurs illimités',
+        'Vendeurs illimités',
         'Tout Business inclus',
         'Personnalisation complète',
         'Intégration API',
         'Formation équipe',
-        'Account manager dédié'
+        'Account manager dédié',
+        'SLA personnalisé'
       ],
       popular: false
     }
@@ -347,24 +372,27 @@ export default function LogisticsManagement() {
       {
         "@type": "SoftwareApplication",
         "name": "Symloop Logistics Management",
-        "description": "Complete delivery and fleet management system with seller app, driver app and admin dashboard",
+        "description": "Complete delivery and fleet management system with seller app, driver app and admin dashboard. Real-time GPS tracking, offline mode, multi-language support.",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "iOS, Android, Web",
         "offers": {
-          "@type": "Offer",
-          "price": "99",
-          "priceCurrency": "USD"
+          "@type": "AggregateOffer",
+          "lowPrice": "35",
+          "highPrice": "50",
+          "priceCurrency": "USD",
+          "offerCount": "3"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "150"
+          "ratingValue": "4.9",
+          "reviewCount": "200"
         },
         "creator": {
           "@type": "Organization",
           "name": "Symloop",
           "url": "https://symloop.com"
-        }
+        },
+        "featureList": "GPS Tracking, Offline Mode, Push Notifications, Route Optimization, Multi-language (AR/FR/EN)"
       },
       {
         "@type": "FAQPage",
@@ -377,12 +405,12 @@ export default function LogisticsManagement() {
       {
         "@type": "Product",
         "name": "Symloop Logistics Management System",
-        "description": "Delivery management software for businesses",
+        "description": "Delivery management software for businesses - Seller App, Driver App, Admin Dashboard",
         "brand": { "@type": "Brand", "name": "Symloop" },
         "offers": {
           "@type": "AggregateOffer",
-          "lowPrice": "99",
-          "highPrice": "499",
+          "lowPrice": "35",
+          "highPrice": "50",
           "priceCurrency": "USD"
         }
       }
@@ -407,7 +435,7 @@ export default function LogisticsManagement() {
 
       <div className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero */}
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-16 lg:py-24">
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white pt-28 lg:pt-32 pb-16 lg:pb-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <Link href="/" className={`inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
@@ -547,24 +575,29 @@ export default function LogisticsManagement() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className={`relative bg-white rounded-2xl p-8 shadow-lg ${plan.popular ? 'ring-2 ring-amber-500' : ''}`}
+                  className={`relative bg-white rounded-2xl p-8 shadow-lg ${plan.popular ? 'ring-2 ring-amber-500 scale-105' : ''}`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                       <span className="bg-amber-500 text-white text-sm font-bold px-4 py-1 rounded-full">
-                        {locale === 'ar' ? 'الأكثر شعبية' : locale === 'en' ? 'Most Popular' : 'Plus Populaire'}
+                        {locale === 'ar' ? 'الأكثر طلباً' : locale === 'en' ? 'Most Popular' : 'Plus Demandé'}
                       </span>
                     </div>
                   )}
                   <div className={`text-center mb-6 ${isRTL ? 'text-center' : ''}`}>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                     <p className="text-gray-500 text-sm mb-4">{plan.description}</p>
-                    <div className="flex items-baseline justify-center gap-1">
-                      <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
-                      <span className="text-gray-500">{plan.period}</span>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex items-baseline justify-center gap-1">
+                        <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
+                        <span className="text-gray-500">{plan.period}</span>
+                      </div>
+                      {plan.priceAlt && (
+                        <span className="text-xs text-gray-400">{plan.priceAlt}</span>
+                      )}
                     </div>
                   </div>
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-3 mb-4">
                     {plan.features.map((feature, j) => (
                       <li key={j} className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
@@ -572,6 +605,17 @@ export default function LogisticsManagement() {
                       </li>
                     ))}
                   </ul>
+                  {plan.notIncluded && (
+                    <ul className="space-y-2 mb-6 pt-3 border-t border-gray-100">
+                      {plan.notIncluded.map((item, j) => (
+                        <li key={j} className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
+                          <span className="w-5 h-5 flex items-center justify-center text-red-400 flex-shrink-0 mt-0.5">✗</span>
+                          <span className="text-gray-400 text-sm">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {!plan.notIncluded && <div className="mb-6"></div>}
                   <a
                     href={`https://wa.me/213549575512?text=Hello, I'm interested in the ${plan.name} plan for Logistics Management`}
                     target="_blank"
