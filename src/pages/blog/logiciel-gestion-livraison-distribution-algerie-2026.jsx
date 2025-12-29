@@ -11,7 +11,7 @@ import {
   Building, ShoppingCart, Warehouse, Route, AlertTriangle,
   Target, Award, Globe, Phone, Mail, MessageCircle,
   Layers, Database, Cloud, Lock, RefreshCw, FileText,
-  PieChart, Activity, Timer, Fuel, CreditCard, Headphones
+  PieChart, Activity, Timer, Fuel, CreditCard, Headphones, Settings
 } from "lucide-react";
 
 export default function LogicielGestionLivraisonDistribution2026() {
