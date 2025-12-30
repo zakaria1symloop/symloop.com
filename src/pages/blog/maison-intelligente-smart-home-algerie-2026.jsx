@@ -1,8 +1,8 @@
 "use client";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Tag, Share2,
   Home, Wifi, Smartphone, Shield, Zap, Thermometer,
@@ -1112,42 +1112,39 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
     return Icon ? <Icon className="w-6 h-6" /> : null;
   };
 
+  // Prepare FAQ data for SEO schema
+  const faqsForSEO = t.section10.questions.map(q => ({
+    question: q.q,
+    answer: q.a
+  }));
+
+  // Product data for schema
+  const productsForSEO = [
+    { name: locale === 'ar' ? 'محور Symloop المركزي' : 'Hub Symloop Central', description: locale === 'ar' ? 'عقل منزلك الذكي مع بطارية احتياطية' : 'Le cerveau de votre maison intelligente avec batterie de secours' },
+    { name: locale === 'ar' ? 'مصابيح Symloop الذكية' : 'Ampoules Symloop Intelligentes', description: locale === 'ar' ? 'إضاءة ذكية موفرة للطاقة' : 'Éclairage intelligent économe en énergie' },
+    { name: locale === 'ar' ? 'ثرموستات Symloop' : 'Thermostat Symloop', description: locale === 'ar' ? 'تحكم ذكي في التكييف' : 'Contrôle intelligent de la climatisation' },
+    { name: locale === 'ar' ? 'كاميرات Symloop' : 'Caméras Symloop', description: locale === 'ar' ? 'مراقبة عالية الدقة مع تخزين محلي' : 'Surveillance HD avec stockage local' }
+  ];
+
   return (
     <>
-      <Head>
-        <title>{t.metaTitle}</title>
-        <meta name="description" content={t.metaDesc} />
-        <meta name="keywords" content="maison intelligente algérie, smart home symloop, domotique algérienne, produits locaux, éclairage connecté algérie, sécurité maison algérie" />
-        <link rel="canonical" href={`https://www.symloop.com/blog/maison-intelligente-smart-home-algerie-2026`} />
-        <meta property="og:title" content={t.metaTitle} />
-        <meta property="og:description" content={t.metaDesc} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.symloop.com/blog/maison-intelligente-smart-home-algerie-2026" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": t.title,
-            "description": t.metaDesc,
-            "author": { "@type": "Organization", "name": "Symloop" },
-            "publisher": { "@type": "Organization", "name": "Symloop", "logo": { "@type": "ImageObject", "url": "https://www.symloop.com/logo.png" } },
-            "datePublished": "2025-12-29",
-            "dateModified": "2025-12-29"
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": t.section10.questions.map(q => ({
-              "@type": "Question",
-              "name": q.q,
-              "acceptedAnswer": { "@type": "Answer", "text": q.a }
-            }))
-          })}
-        </script>
-      </Head>
+      <BlogSEO
+        title={t.metaTitle}
+        description={t.metaDesc}
+        keywords={locale === 'ar'
+          ? 'المنزل الذكي الجزائر, سمارت هوم, أتمتة المنزل, كاميرات مراقبة, إضاءة ذكية, تكييف ذكي, أمان المنزل, symloop'
+          : 'maison intelligente algérie, smart home algérie, domotique algérie, symloop, éclairage connecté, thermostat intelligent, caméras surveillance, sécurité maison, produits algériens'}
+        image="https://symloop.com/images/blog/smart-home-algerie.jpg"
+        slug="maison-intelligente-smart-home-algerie-2026"
+        datePublished="2025-12-29"
+        dateModified="2025-12-30"
+        author="Symloop Team"
+        category={t.category}
+        readTime={t.readTime}
+        faqs={faqsForSEO}
+        products={productsForSEO}
+        locale={locale}
+      />
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
@@ -1575,8 +1572,11 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
                 </div>
               </div>
 
+              {/* Related Blogs - Internal Linking for SEO */}
+              <RelatedBlogs currentSlug="maison-intelligente-smart-home-algerie-2026" locale={locale} />
+
               {/* CTA */}
-              <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-2xl p-8 md:p-12 text-white text-center">
+              <div className="mt-12 bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-2xl p-8 md:p-12 text-white text-center">
                 <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Home className="w-10 h-10" />
                 </div>

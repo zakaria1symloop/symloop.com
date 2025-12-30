@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import Link from "next/link";
+import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Camera, Shield,
   CheckCircle, Home, Star, Package, Smartphone, Wifi,
@@ -524,27 +524,37 @@ export default function CameraInstallationBlog() {
     return icons[iconName] || <Camera className="w-6 h-6" />;
   };
 
+  // Prepare FAQ data for SEO
+  const faqsForSEO = t.faq.questions.map(q => ({
+    question: q.q,
+    answer: q.a
+  }));
+
+  // HowTo steps for installation guide schema
+  const howToSteps = t.processSteps.steps.map(step => ({
+    title: step.title,
+    description: step.description
+  }));
+
   return (
     <>
-      <Head>
-        <title>{t.meta.title}</title>
-        <meta name="description" content={t.meta.description} />
-        <meta name="keywords" content={t.meta.keywords} />
-        <link rel="canonical" href={`https://www.symloop.com/blog/installation-cameras-surveillance-professionnelle-algerie-2026`} />
-        <meta property="og:title" content={t.meta.title} />
-        <meta property="og:description" content={t.meta.description} />
-        <meta property="og:type" content="article" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": t.hero.title,
-            "description": t.meta.description,
-            "author": { "@type": "Organization", "name": "Symloop" },
-            "publisher": { "@type": "Organization", "name": "Symloop" }
-          })}
-        </script>
-      </Head>
+      <BlogSEO
+        title={t.meta.title}
+        description={t.meta.description}
+        keywords={locale === 'ar'
+          ? 'تركيب كاميرات مراقبة الجزائر, تركيب كاميرات احترافي, فني كاميرات الجزائر, تركيب فيديو مراقبة, symloop تركيب'
+          : 'installation caméras surveillance algérie, installer caméras maison, installation vidéosurveillance professionnelle, technicien caméras algérie, symloop installation, service installation caméras'}
+        image="https://symloop.com/images/blog/installation-cameras-algerie.jpg"
+        slug="installation-cameras-surveillance-professionnelle-algerie-2026"
+        datePublished="2025-12-30"
+        dateModified="2025-12-30"
+        author="Symloop Team"
+        category={locale === 'ar' ? 'خدمات التركيب' : 'Services Installation'}
+        readTime={t.hero.readTime}
+        faqs={faqsForSEO}
+        howToSteps={howToSteps}
+        locale={locale}
+      />
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
@@ -743,8 +753,11 @@ export default function CameraInstallationBlog() {
             </div>
           </div>
 
+          {/* Related Blogs - Internal Linking for SEO */}
+          <RelatedBlogs currentSlug="installation-cameras-surveillance-professionnelle-algerie-2026" locale={locale} />
+
           {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+          <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-2">{t.cta.title}</h2>
             <p className="opacity-90 mb-6">{t.cta.subtitle}</p>
 

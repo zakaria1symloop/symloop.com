@@ -726,4 +726,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- Smart Home & Security Blogs 2026 - High Priority -->
+  <url>
+    <loc>https://symloop.com/blog/maison-intelligente-smart-home-algerie-2026/</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/securite-maison-intelligente-cameras-alarmes-algerie-2026/</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/economie-energie-maison-intelligente-climatisation-algerie-2026/</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/installation-cameras-surveillance-professionnelle-algerie-2026/</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/securite-maison-installation-complete-alarme-algerie-2026/</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

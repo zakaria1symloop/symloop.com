@@ -1,8 +1,8 @@
 "use client";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Shield, Camera,
   Lock, Bell, Eye, AlertTriangle, Smartphone, Wifi,
@@ -1246,39 +1246,38 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
     return Icon ? <Icon className="w-6 h-6" /> : null;
   };
 
+  // Prepare FAQ data for SEO
+  const faqsForSEO = t.section10.questions.map(q => ({
+    question: q.q,
+    answer: q.a
+  }));
+
+  // Products for schema
+  const productsForSEO = [
+    { name: locale === 'ar' ? 'كاميرات Symloop' : 'Caméras Symloop', description: locale === 'ar' ? 'كاميرات مراقبة عالية الدقة' : 'Caméras de surveillance Full HD' },
+    { name: locale === 'ar' ? 'أجهزة إنذار Symloop' : 'Alarmes Symloop', description: locale === 'ar' ? 'نظام إنذار ذكي متصل' : 'Système d\'alarme intelligent connecté' },
+    { name: locale === 'ar' ? 'أقفال ذكية Symloop' : 'Serrures Symloop', description: locale === 'ar' ? 'أقفال ذكية ببصمة ورمز' : 'Serrures intelligentes à empreinte et code' }
+  ];
+
   return (
     <>
-      <Head>
-        <title>{t.metaTitle}</title>
-        <meta name="description" content={t.metaDesc} />
-        <meta name="keywords" content="sécurité maison algérie, caméras surveillance algérie, alarme connectée algérie, serrure intelligente algérie, symloop security" />
-        <link rel="canonical" href={`https://www.symloop.com/blog/securite-maison-intelligente-cameras-alarmes-algerie-2026`} />
-        <meta property="og:title" content={t.metaTitle} />
-        <meta property="og:description" content={t.metaDesc} />
-        <meta property="og:type" content="article" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": t.title,
-            "description": t.metaDesc,
-            "author": { "@type": "Organization", "name": "Symloop" },
-            "publisher": { "@type": "Organization", "name": "Symloop" },
-            "datePublished": "2025-12-29"
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": t.section10.questions.map(q => ({
-              "@type": "Question",
-              "name": q.q,
-              "acceptedAnswer": { "@type": "Answer", "text": q.a }
-            }))
-          })}
-        </script>
-      </Head>
+      <BlogSEO
+        title={t.metaTitle}
+        description={t.metaDesc}
+        keywords={locale === 'ar'
+          ? 'أمان المنزل الجزائر, كاميرات مراقبة, إنذار متصل, قفل ذكي, أمن المنزل الذكي, symloop'
+          : 'sécurité maison algérie, caméras surveillance, alarme connectée, serrure intelligente, vidéosurveillance algérie, symloop sécurité, protection maison'}
+        image="https://symloop.com/images/blog/securite-maison-algerie.jpg"
+        slug="securite-maison-intelligente-cameras-alarmes-algerie-2026"
+        datePublished="2025-12-29"
+        dateModified="2025-12-30"
+        author="Symloop Team"
+        category={t.category}
+        readTime={t.readTime}
+        faqs={faqsForSEO}
+        products={productsForSEO}
+        locale={locale}
+      />
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-red-50 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero */}
@@ -1526,8 +1525,11 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
                 </div>
               </div>
 
+              {/* Related Blogs - Internal Linking for SEO */}
+              <RelatedBlogs currentSlug="securite-maison-intelligente-cameras-alarmes-algerie-2026" locale={locale} />
+
               {/* CTA */}
-              <div className="bg-gradient-to-r from-red-600 via-red-700 to-slate-800 rounded-2xl p-8 md:p-12 text-white text-center">
+              <div className="mt-12 bg-gradient-to-r from-red-600 via-red-700 to-slate-800 rounded-2xl p-8 md:p-12 text-white text-center">
                 <Shield className="w-16 h-16 mx-auto mb-6 opacity-80" />
                 <h2 className="text-3xl font-bold mb-4">{t.cta.title}</h2>
                 <p className="text-xl opacity-90 mb-8">{t.cta.subtitle}</p>

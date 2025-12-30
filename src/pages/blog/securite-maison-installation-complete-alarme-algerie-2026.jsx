@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import Link from "next/link";
+import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Camera, Shield,
   CheckCircle, Home, Star, Smartphone, Wifi, AlertTriangle,
@@ -580,27 +580,37 @@ export default function SecurityInstallationBlog() {
     return icons[iconName] || <Shield className="w-6 h-6" />;
   };
 
+  // Prepare FAQ data for SEO
+  const faqsForSEO = t.faq.questions.map(q => ({
+    question: q.q,
+    answer: q.a
+  }));
+
+  // Products for schema
+  const productsForSEO = t.packs.map(pack => ({
+    name: pack.name,
+    description: pack.ideal
+  }));
+
   return (
     <>
-      <Head>
-        <title>{t.meta.title}</title>
-        <meta name="description" content={t.meta.description} />
-        <meta name="keywords" content={t.meta.keywords} />
-        <link rel="canonical" href={`https://www.symloop.com/blog/securite-maison-installation-complete-alarme-algerie-2026`} />
-        <meta property="og:title" content={t.meta.title} />
-        <meta property="og:description" content={t.meta.description} />
-        <meta property="og:type" content="article" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": t.hero.title,
-            "description": t.meta.description,
-            "author": { "@type": "Organization", "name": "Symloop" },
-            "publisher": { "@type": "Organization", "name": "Symloop" }
-          })}
-        </script>
-      </Head>
+      <BlogSEO
+        title={t.meta.title}
+        description={t.meta.description}
+        keywords={locale === 'ar'
+          ? 'تركيب إنذار منزل الجزائر, نظام أمان كامل, تركيب حساسات إنذار, قفل ذكي تركيب, symloop أمان, حماية منزل الجزائر'
+          : 'installation alarme maison algérie, système sécurité complet, installation capteurs alarme, serrure connectée installation, symloop sécurité, protection maison algérie'}
+        image="https://symloop.com/images/blog/securite-installation-algerie.jpg"
+        slug="securite-maison-installation-complete-alarme-algerie-2026"
+        datePublished="2025-12-30"
+        dateModified="2025-12-30"
+        author="Symloop Team"
+        category={locale === 'ar' ? 'أمان المنزل' : 'Sécurité Maison'}
+        readTime={t.hero.readTime}
+        faqs={faqsForSEO}
+        products={productsForSEO}
+        locale={locale}
+      />
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
@@ -777,8 +787,11 @@ export default function SecurityInstallationBlog() {
             </div>
           </div>
 
+          {/* Related Blogs - Internal Linking for SEO */}
+          <RelatedBlogs currentSlug="securite-maison-installation-complete-alarme-algerie-2026" locale={locale} />
+
           {/* CTA */}
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white text-center">
+          <div className="mt-12 bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white text-center">
             <Shield className="w-16 h-16 mx-auto mb-4 opacity-80" />
             <h2 className="text-2xl font-bold mb-2">{t.cta.title}</h2>
             <p className="opacity-90 mb-6">{t.cta.subtitle}</p>
