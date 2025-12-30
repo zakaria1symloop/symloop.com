@@ -624,6 +624,612 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
         contact: "Besoin de conseils ? WhatsApp : +213 XX XX XX XX"
       }
     },
+    en: {
+      title: "Smart Home Security in Algeria 2026: Cameras, Alarms & Access Control by Symloop",
+      subtitle: "Security Systems Made in Algeria - 24/7 Surveillance, Local Data Storage, Unbeatable Prices",
+      metaTitle: "Home Security Algeria 2026 | Symloop Cameras & Alarms | Local Manufacturing",
+      metaDesc: "100% Algerian home security system by Symloop. Full HD cameras, connected alarms, smart locks. Data stored in Algeria, local 24/7 support. Protect your home with national products.",
+      date: "December 29, 2025",
+      readTime: "15 min",
+      author: "Symloop Team",
+      category: "Smart Home Security",
+
+      intro: "Your home security should not depend on expensive imported products whose data passes through foreign servers. Symloop has developed a complete range of smart security solutions, manufactured in Algeria, with data storage on our local servers. Full HD cameras, connected alarms, smart locks - protect your family and belongings with quality national equipment.",
+
+      whySymloopSecurity: {
+        title: "Why Symloop Security?",
+        subtitle: "The Advantage of a 100% Algerian Security Solution",
+        advantages: [
+          {
+            icon: "Shield",
+            title: "Data in Algeria",
+            description: "Your video recordings stay on our Algerian servers. No transfer to China or the USA. Your privacy is protected."
+          },
+          {
+            icon: "Package",
+            title: "Local Manufacturing",
+            description: "Cameras and sensors assembled in Algeria. Fast after-sales service, parts available, no waiting for imports."
+          },
+          {
+            icon: "DollarSign",
+            title: "60% Cheaper",
+            description: "Without import fees or customs, our products are 60% cheaper than imported Ring, Arlo or Eufy."
+          },
+          {
+            icon: "Wifi",
+            title: "Works Without Internet",
+            description: "Local storage on SD card + hub with battery. Your security continues even during outages."
+          },
+          {
+            icon: "Phone",
+            title: "24/7 Local Support",
+            description: "Assistance in French and Arabic. Our technicians know your needs and can respond quickly."
+          },
+          {
+            icon: "BatteryCharging",
+            title: "Power Outage Autonomy",
+            description: "Hub with 8-hour battery, cameras with backup batteries. Surveillance continues 24/7."
+          }
+        ]
+      },
+
+      tableOfContents: {
+        title: "In This Article",
+        items: [
+          "Security threats in Algeria",
+          "Our security product range",
+          "Symloop cameras: features",
+          "Connected alarm system",
+          "Locks and access control",
+          "The Symloop Security app",
+          "Security packs and pricing",
+          "No-drill installation",
+          "Customer testimonials",
+          "Security FAQ"
+        ]
+      },
+
+      section1: {
+        title: "Security Threats in Algeria",
+        intro: "Why invest in a smart security system?",
+        threats: [
+          {
+            title: "Rising Burglaries",
+            description: "Statistics show an increase in burglaries, particularly during summer holidays and festive periods. An unmonitored home is an easy target.",
+            solution: "AI detection cameras + instant alerts"
+          },
+          {
+            title: "Extended Absences",
+            description: "Many Algerian families travel abroad or to other wilayas for vacations. Who watches the house?",
+            solution: "24/7 surveillance from your smartphone"
+          },
+          {
+            title: "Household Staff",
+            description: "Cleaning lady, security guard, workers... How to ensure everything goes well in your absence?",
+            solution: "Indoor cameras + access history"
+          },
+          {
+            title: "Children Home Alone",
+            description: "Children come home from school before parents. Did they arrive safely? Who came to the house?",
+            solution: "Arrival alerts + video intercom"
+          },
+          {
+            title: "Power Outages",
+            description: "Frequent power cuts disable traditional security systems. Thieves know this.",
+            solution: "Backup batteries + 4G backup"
+          },
+          {
+            title: "Neighborhood",
+            description: "In some neighborhoods, peace is not guaranteed. Intrusions, vandalism, suspicious vehicles.",
+            solution: "Outdoor cameras + night vision"
+          }
+        ],
+        stats: [
+          { value: "67%", label: "Of burglaries occur during the day" },
+          { value: "3 min", label: "Average burglary duration" },
+          { value: "85%", label: "Of thieves avoid monitored homes" },
+          { value: "24/7", label: "Symloop surveillance" }
+        ]
+      },
+
+      section2: {
+        title: "Our Security Product Range",
+        intro: "Security equipment designed and manufactured in Algeria:",
+        products: [
+          {
+            name: "Symloop CAM-360 Indoor Camera",
+            icon: "Camera",
+            description: "Full HD rotating indoor camera with night vision and two-way audio.",
+            features: [
+              "1080p Full HD resolution",
+              "360° motorized rotation",
+              "10m night vision",
+              "Two-way audio",
+              "AI motion detection",
+              "Algeria cloud + SD storage"
+            ],
+          },
+          {
+            name: "Symloop CAM-EXT Outdoor Camera",
+            icon: "Eye",
+            description: "IP66 waterproof outdoor camera with LED spotlight and built-in siren.",
+            features: [
+              "2K resolution (2560x1440)",
+              "IP66 waterproof",
+              "800 lumens spotlight",
+              "Built-in 110dB siren",
+              "Color night vision",
+              "Person/vehicle detection"
+            ],
+          },
+          {
+            name: "Symloop DOOR-V1 Video Doorbell",
+            icon: "Video",
+            description: "See and talk to your visitors from your smartphone, wherever you are.",
+            features: [
+              "160° wide angle HD camera",
+              "Two-way audio",
+              "Presence detection",
+              "Night vision",
+              "Battery or wired power",
+              "5s pre-recording"
+            ],
+          },
+          {
+            name: "Door/Window Sensor",
+            icon: "Lock",
+            description: "Get instant alerts when a door or window opens.",
+            features: [
+              "2-year battery",
+              "Adhesive installation",
+              "Complete history",
+              "Ultra compact",
+              "Alarm integration"
+            ],
+          },
+          {
+            name: "PIR Motion Detector",
+            icon: "Eye",
+            description: "Infrared detection with human/animal distinction.",
+            features: [
+              "120° angle, 12m range",
+              "Anti-false alarm (animals)",
+              "18-month battery",
+              "Day/night mode",
+              "Adjustable sensitivity"
+            ],
+          },
+          {
+            name: "110dB Indoor Siren",
+            icon: "Volume2",
+            description: "Powerful siren to deter intruders and alert the neighborhood.",
+            features: [
+              "110 decibels",
+              "Strobe flash",
+              "Backup battery",
+              "Multiple sounds",
+              "Remote activation"
+            ],
+          },
+          {
+            name: "Symloop LOCK-S1 Smart Lock",
+            icon: "Key",
+            description: "Open your door with code, fingerprint, badge or smartphone.",
+            features: [
+              "4 modes: code/fingerprint/badge/app",
+              "100 fingerprints, 50 codes",
+              "Access history",
+              "Intrusion alerts",
+              "1-year battery",
+              "Backup key included"
+            ],
+          },
+          {
+            name: "Symloop PRO Security Hub",
+            icon: "Radio",
+            description: "The brain of your security system with battery and 4G backup.",
+            features: [
+              "Connects up to 64 devices",
+              "8-hour backup battery",
+              "4G backup (SIM card)",
+              "Built-in 85dB siren",
+              "Symloop Mesh protocol",
+              "Encrypted local storage"
+            ],
+          }
+        ]
+      },
+
+      section3: {
+        title: "Symloop Cameras: Advanced Features",
+        intro: "Our cameras do more than just record. They analyze, alert and protect.",
+        features: [
+          {
+            name: "Intelligent AI Detection",
+            description: "Our cameras distinguish between people, vehicles and animals. No more useless alerts for a passing cat or falling leaf.",
+            icon: "Eye"
+          },
+          {
+            name: "Color Night Vision",
+            description: "Thanks to the built-in spotlight (outdoor camera), see in color even at night. Identify faces and clothing.",
+            icon: "Moon"
+          },
+          {
+            name: "Two-Way Audio",
+            description: "Talk through the camera. Greet a delivery person, warn an intruder, or reassure your children from your office.",
+            icon: "Mic"
+          },
+          {
+            name: "Custom Detection Zones",
+            description: "Define exactly where to detect movement. Ignore the public street, focus on your entrance.",
+            icon: "MapPin"
+          },
+          {
+            name: "Hybrid Storage",
+            description: "Secure cloud in Algeria + local SD card. Even if internet cuts out, recording continues on the card.",
+            icon: "Cloud"
+          },
+          {
+            name: "Family Sharing",
+            description: "Give access to family members. Everyone can monitor from their phone with their own credentials.",
+            icon: "Users"
+          }
+        ],
+        comparison: {
+          title: "Symloop vs Imported Cameras",
+          headers: ["Feature", "Symloop", "Imported (Ring/Arlo)"],
+          rows: [
+            ["Manufacturing", "100% Algeria", "China / Taiwan"],
+            ["Cloud storage", "Algeria servers", "USA / China"],
+            ["Cloud subscription", "Included with pack", "Paid annually"],
+            ["Technical support", "Local 24/7", "English email"],
+            ["After-sales delay", "24-48h", "2-4 weeks (import)"],
+            ["Works offline", "Yes (SD + hub)", "Limited"],
+            ["Application", "Local FR/AR", "English only"]
+          ]
+        }
+      },
+
+      section4: {
+        title: "Symloop Connected Alarm System",
+        intro: "A complete alarm system that protects you 24/7:",
+        components: [
+          {
+            name: "Arming/Disarming",
+            description: "Activate or deactivate the alarm via the app, a code, a badge, or automatically based on your GPS location.",
+            modes: ["Away mode (all active)", "Night mode (perimeter only)", "Home mode (deactivated)"]
+          },
+          {
+            name: "Multi-Level Detection",
+            description: "Door/window sensors as first line, indoor motion detectors, cameras for visual confirmation.",
+            modes: ["Perimeter detection", "Volumetric detection", "Video verification"]
+          },
+          {
+            name: "Instant Alerts",
+            description: "Push notification in less than 3 seconds. Photo or video of the event attached. Optional automatic call.",
+            modes: ["Push notification", "SMS backup", "Voice call"]
+          },
+          {
+            name: "Automatic Response",
+            description: "The alarm triggers the siren, turns on lights, records video, and alerts you simultaneously.",
+            modes: ["110dB siren", "Strobe lights", "Video recording"]
+          }
+        ],
+        scenarios: [
+          {
+            title: "Scenario: Intrusion Attempt",
+            steps: [
+              "10:15 PM - Someone tries to open a window",
+              "Window sensor detects the opening",
+              "Hub verifies: alarm activated (Away mode)",
+              "Siren triggers immediately",
+              "Nearest camera starts recording",
+              "You receive notification + video in 3 seconds",
+              "The intruder flees, video is saved as evidence"
+            ]
+          }
+        ]
+      },
+
+      section5: {
+        title: "Locks and Access Control",
+        intro: "Who enters your home, and when? Keep total control.",
+        features: [
+          {
+            name: "Multiple Opening Methods",
+            description: "Numeric code, fingerprint, NFC badge, or smartphone. Choose what suits you.",
+            icon: "Fingerprint"
+          },
+          {
+            name: "Temporary Codes",
+            description: "Give a code to the cleaning lady valid only on Tuesday from 9am to 12pm. The code expires automatically.",
+            icon: "Clock"
+          },
+          {
+            name: "Complete History",
+            description: "Who opened the door, at what time, with what method. History available for 6 months.",
+            icon: "UserCheck"
+          },
+          {
+            name: "Custom Alerts",
+            description: "Receive an alert when children come home from school, or if someone tries a wrong code.",
+            icon: "Bell"
+          },
+          {
+            name: "Auto Lock",
+            description: "The door locks automatically after 30 seconds if you forget. No more 'did I lock it?'",
+            icon: "Lock"
+          },
+          {
+            name: "Vacation Mode",
+            description: "Disable all codes except yours during your vacation. Maximum security.",
+            icon: "Sun"
+          }
+        ],
+        useCases: [
+          {
+            title: "Family with Children",
+            scenario: "Each child has their own code. You receive a notification when they come home. No need for keys (which they always lose)."
+          },
+          {
+            title: "Airbnb Rental",
+            scenario: "Create a code for each tenant, valid only during their stay. The code expires automatically at check-out."
+          },
+          {
+            title: "Household Staff",
+            scenario: "The cleaning lady has a code valid on Tuesday 9am-1pm. You see exactly when she arrives and leaves."
+          }
+        ]
+      },
+
+      section6: {
+        title: "The Symloop Security App",
+        intro: "Your entire security system in your pocket:",
+        features: [
+          {
+            name: "Dashboard",
+            description: "Overview of all your devices. Real-time status. Recent alerts.",
+            icon: "Home"
+          },
+          {
+            name: "Live View",
+            description: "Watch your cameras live. Zoom, rotate, screenshot with one tap.",
+            icon: "Video"
+          },
+          {
+            name: "Video Timeline",
+            description: "Go back in time. Find exactly what happened with the timeline.",
+            icon: "Clock"
+          },
+          {
+            name: "Smart Alerts",
+            description: "Filter by type: person, vehicle, motion. Only receive what interests you.",
+            icon: "Bell"
+          },
+          {
+            name: "Alarm Control",
+            description: "Arm/disarm with a swipe. Change mode. Check history.",
+            icon: "Shield"
+          },
+          {
+            name: "Access Management",
+            description: "Create codes, manage fingerprints, see who entered.",
+            icon: "Key"
+          },
+          {
+            name: "Family Sharing",
+            description: "Invite family members. Define their permissions.",
+            icon: "Users"
+          },
+          {
+            name: "Widget Mode",
+            description: "Widgets for your home screen. Arm with one tap without opening the app.",
+            icon: "Smartphone"
+          }
+        ],
+        platforms: ["Android 8+", "iOS 13+", "Web app"]
+      },
+
+      section7: {
+        title: "Symloop Security Packs 2026",
+        intro: "Complete solutions tailored to your needs. 100% local manufacturing!",
+        packs: [
+          {
+            name: "Essential Pack",
+            includes: [
+              "1 Symloop Security Hub",
+              "2 CAM-360 Indoor Cameras",
+              "3 Door/window sensors",
+              "1 Motion detector",
+              "Symloop Security App",
+              "1 year cloud storage"
+            ],
+            ideal: "F2-F3 Apartment"
+          },
+          {
+            name: "Family Pack",
+            includes: [
+              "1 Symloop PRO Security Hub",
+              "2 CAM-360 Indoor Cameras",
+              "1 CAM-EXT Outdoor Camera",
+              "1 DOOR-V1 Video Doorbell",
+              "6 Door/window sensors",
+              "2 Motion detectors",
+              "1 Indoor siren",
+              "2 years cloud storage"
+            ],
+            ideal: "F4+ Apartment or small house"
+          },
+          {
+            name: "Villa Pack",
+            includes: [
+              "1 Symloop PRO Security Hub",
+              "2 CAM-360 Indoor Cameras",
+              "3 CAM-EXT Outdoor Cameras",
+              "1 DOOR-V1 Video Doorbell",
+              "10 Door/window sensors",
+              "4 Motion detectors",
+              "2 Sirens (indoor + outdoor)",
+              "1 LOCK-S1 Smart Lock",
+              "3 years cloud storage + 4G backup"
+            ],
+            ideal: "Villa or large house"
+          },
+          {
+            name: "Business Pack",
+            includes: [
+              "1 PRO Security Hub + 4G",
+              "4 CAM-EXT Outdoor Cameras",
+              "1 CAM-360 Indoor Camera",
+              "Door sensors (up to 5)",
+              "2 Motion detectors",
+              "Outdoor siren",
+              "1 year unlimited cloud storage"
+            ],
+            ideal: "Store, warehouse, office"
+          }
+        ],
+        note: "Easy DIY installation or professional installation available. All packs include 2-year warranty and 24/7 support. Contact us for a quote."
+      },
+
+      section8: {
+        title: "No-Drill Installation",
+        intro: "Most of our equipment installs without any tools:",
+        steps: [
+          {
+            step: "1",
+            title: "Download the App",
+            description: "Install Symloop Security, create your account.",
+            duration: "2 min"
+          },
+          {
+            step: "2",
+            title: "Configure the Hub",
+            description: "Plug in the hub, connect it to Wi-Fi via the app.",
+            duration: "5 min"
+          },
+          {
+            step: "3",
+            title: "Add Devices",
+            description: "Scan the QR code of each device. It adds automatically.",
+            duration: "1 min/device"
+          },
+          {
+            step: "4",
+            title: "Position",
+            description: "Magnetic cameras, adhesive sensors. Reposition as needed.",
+            duration: "Variable"
+          },
+          {
+            step: "5",
+            title: "Test",
+            description: "The app guides you to test each sensor and camera.",
+            duration: "10 min"
+          }
+        ],
+        noTools: [
+          "Cameras with magnetic or adhesive mount",
+          "100% adhesive sensors (high quality 3M)",
+          "Doorbell compatible with existing door frame",
+          "Hub placed or mounted without drilling"
+        ],
+        professionalNote: "Only the smart lock generally requires professional installation (adaptation to your door). We can recommend a certified installer in your wilaya."
+      },
+
+      section9: {
+        title: "Security Customer Testimonials",
+        testimonials: [
+          {
+            name: "Mohamed A.",
+            location: "Algiers, El Biar",
+            text: "We almost got burgled during vacation. The siren went off, I received the video on my phone in 3 seconds. By the time I called the neighbor, the thief had already fled. Symloop cameras saved our home.",
+            rating: 5,
+            products: "Villa Pack"
+          },
+          {
+            name: "Fatima Z.",
+            location: "Oran",
+            text: "With 3 children coming home at different times, the smart lock is a blessing. I get a notification when each one comes home. No more lost keys, no more worry. And the temporary codes for the cleaning lady are great.",
+            rating: 5,
+            products: "LOCK-S1 Lock + Cameras"
+          },
+          {
+            name: "Karim B.",
+            location: "Constantine",
+            text: "I run a shop. Before I had cheap Chinese cameras that crashed all the time. With Symloop, the quality is excellent, and most importantly the support is local. When I had a problem, a technician called me back in 10 minutes.",
+            rating: 5,
+            products: "Business Pack"
+          },
+          {
+            name: "Amina L.",
+            location: "Blida",
+            text: "What I appreciate most is that my videos stay in Algeria. With imported cameras, my data was going to China, it made me uncomfortable. Symloop is security AND privacy together.",
+            rating: 5,
+            products: "Family Pack"
+          }
+        ]
+      },
+
+      section10: {
+        title: "Security FAQ",
+        questions: [
+          {
+            q: "Are my videos really stored in Algeria?",
+            a: "Yes, 100% of your recordings are stored on our servers physically located in Algeria. We never transfer your data abroad. This is a fundamental commitment from Symloop. You can also opt for 100% local storage on an SD card in each camera."
+          },
+          {
+            q: "What happens during a power outage?",
+            a: "The PRO Security Hub has an 8-hour battery. It continues to receive sensor alerts and can trigger the siren. Cameras stop without power, but if you have an external battery or UPS, they continue. The hub can also use a 4G SIM card if internet cuts out."
+          },
+          {
+            q: "Do the cameras work without internet?",
+            a: "Yes, partially. Cameras record to SD card even without internet. You lose remote access and push alerts, but local recording continues. As soon as the network returns, everything synchronizes."
+          },
+          {
+            q: "How does cloud storage work?",
+            a: "Cloud storage is included with packs (1 to 3 years depending on the pack). Videos are kept for 30 days by default. You can download or permanently save important clips. Contact us for renewal options."
+          },
+          {
+            q: "Can I view my cameras from abroad?",
+            a: "Absolutely. The app works anywhere in the world. Many of our customers monitor their home in Algeria from France, Canada or the Gulf countries. The connection is secure and encrypted."
+          },
+          {
+            q: "Is the lock compatible with my door?",
+            a: "Our LOCK-S1 lock is compatible with 90% of standard doors in Algeria. Before purchase, send us a photo of your current lock, we will confirm compatibility. An adaptation may be necessary (included in professional installation)."
+          },
+          {
+            q: "How long does the sensor battery last?",
+            a: "Door/window sensors last about 2 years. Motion detectors 18 months. The app alerts you when the battery is low. The batteries are standard CR2032, easy to find."
+          },
+          {
+            q: "Are there monthly fees?",
+            a: "No for basic use. The app and local control are free for life. Cloud storage is included 1-3 years depending on the pack, then optional renewal. No hidden fees."
+          },
+          {
+            q: "Can I add cameras later?",
+            a: "Yes, the system is fully modular. You can add cameras, sensors or other devices at any time. The hub supports up to 64 devices."
+          },
+          {
+            q: "How does after-sales service work?",
+            a: "2-year warranty on all products. In case of problem: 1) Immediate WhatsApp/phone support 2) Remote diagnosis via the app 3) If necessary, replacement or repair at our center in Algiers, Oran or Constantine. Average time: 48h."
+          }
+        ]
+      },
+
+      cta: {
+        title: "Protect Your Home with Symloop",
+        subtitle: "100% Algerian Security - Local Data - 24/7 Support",
+        benefits: [
+          "Equipment manufactured in Algeria",
+          "Video storage on Algerian servers",
+          "60% cheaper than imports",
+          "2-year warranty + Local support"
+        ],
+        button: "Order a Security Pack",
+        buttonSecondary: "Request a Free Consultation",
+        contact: "Need advice? WhatsApp: +213 XX XX XX XX"
+      }
+    },
     ar: {
       title: "أمان المنزل الذكي في الجزائر 2026: كاميرات، أجهزة إنذار ومراقبة الدخول Symloop",
       subtitle: "أنظمة أمان مصنوعة في الجزائر - مراقبة 24/7، بيانات محلية، أسعار لا تُقارن",

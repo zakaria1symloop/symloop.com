@@ -290,6 +290,278 @@ export default function SecurityInstallationBlog() {
         ]
       }
     },
+    en: {
+      meta: {
+        title: "Complete Security System Installation in Algeria | Alarm + Cameras | Symloop 2026",
+        description: "Professional installation of complete security system: alarm, cameras, sensors, smart lock. Turnkey service by Symloop across 48 wilayas.",
+        keywords: "home alarm installation algeria, complete security system algeria, alarm sensor installation, smart lock installation, Symloop security, home protection algeria"
+      },
+      hero: {
+        badge: "Complete Security",
+        title: "Your Home Protected from A to Z",
+        subtitle: "Complete Security System Installation",
+        description: "Cameras, alarm, sensors, smart lock... We install and configure your entire security system. Peace of mind guaranteed.",
+        author: "Symloop Security Team",
+        date: "December 2026",
+        readTime: "10 min"
+      },
+      section1: {
+        title: "What is a Complete Security System?",
+        intro: "A true security system is not limited to a few cameras. It's an integrated ecosystem where each element communicates with others for maximum protection.",
+        components: [
+          {
+            name: "Surveillance Cameras",
+            description: "Eyes of your system. Record 24/7, detect movements, send alerts with photos/videos.",
+            icon: "Camera"
+          },
+          {
+            name: "Alarm Hub",
+            description: "The brain. Receives information from all sensors, decides actions, alerts you, activates the siren.",
+            icon: "Radio"
+          },
+          {
+            name: "Door/Window Sensors",
+            description: "Detect any opening. First line of defense against intrusions.",
+            icon: "Lock"
+          },
+          {
+            name: "Motion Detectors",
+            description: "Detect presence inside. Distinguish between humans and animals.",
+            icon: "Eye"
+          },
+          {
+            name: "Indoor/Outdoor Siren",
+            description: "Deters intruders and alerts the neighborhood. Up to 110 decibels.",
+            icon: "Volume2"
+          },
+          {
+            name: "Video Doorbell",
+            description: "See and talk to your visitors remotely. Automatic recording.",
+            icon: "Video"
+          },
+          {
+            name: "Smart Lock",
+            description: "Control who enters your home. Code, fingerprint, badge, or smartphone.",
+            icon: "Key"
+          },
+          {
+            name: "Mobile App",
+            description: "Control everything from your phone. Real-time alerts. Global access.",
+            icon: "Smartphone"
+          }
+        ]
+      },
+      section2: {
+        title: "How All These Elements Work Together",
+        scenario: {
+          title: "Scenario: Intrusion Attempt at 10 PM",
+          steps: [
+            {
+              time: "22:00:00",
+              event: "Someone approaches your window",
+              action: "The outdoor camera detects movement"
+            },
+            {
+              time: "22:00:03",
+              event: "You receive a notification",
+              action: "Photo of the individual on your phone"
+            },
+            {
+              time: "22:00:15",
+              event: "The individual tries to open the window",
+              action: "The window sensor detects the opening"
+            },
+            {
+              time: "22:00:16",
+              event: "Alarm activated (you are away)",
+              action: "The hub checks the status → Away Mode active"
+            },
+            {
+              time: "22:00:17",
+              event: "Siren triggers at 110dB",
+              action: "The intruder flees immediately"
+            },
+            {
+              time: "22:00:18",
+              event: "All cameras recording",
+              action: "Video saved as evidence"
+            },
+            {
+              time: "22:00:20",
+              event: "You receive the alert call",
+              action: "You can watch live, call the police if necessary"
+            }
+          ],
+          conclusion: "All of this in less than 20 seconds, automatically."
+        }
+      },
+      section3: {
+        title: "Our Security Installation Packages",
+        intro: "Complete solutions installed and configured by our experts:",
+        packs: [
+          {
+            name: "Apartment Package",
+            ideal: "Studio, 2-room, 3-room",
+            includes: [
+              "Symloop Security Hub",
+              "2 Indoor cameras CAM-360",
+              "1 Video doorbell DOOR-V1",
+              "3 Door/window sensors",
+              "1 Motion detector",
+              "1 Indoor siren",
+              "Complete installation",
+              "App + alerts configuration",
+              "30-minute training"
+            ]
+          },
+          {
+            name: "House Package",
+            ideal: "House, 4+ rooms, Medium villa",
+            includes: [
+              "Symloop Security PRO Hub",
+              "2 Indoor cameras CAM-360",
+              "2 Outdoor cameras CAM-EXT",
+              "1 Video doorbell DOOR-V1",
+              "6 Door/window sensors",
+              "2 Motion detectors",
+              "1 Indoor siren + 1 outdoor",
+              "1 Smart lock LOCK-S1",
+              "Professional installation",
+              "Complete configuration",
+              "1-hour training"
+            ],
+            popular: true
+          },
+          {
+            name: "Premium Villa Package",
+            ideal: "Large villa, multiple floors",
+            includes: [
+              "Symloop Security PRO Hub + 4G",
+              "3 Indoor cameras CAM-360",
+              "4 Outdoor cameras CAM-EXT",
+              "1 Video doorbell DOOR-V1",
+              "10 Door/window sensors",
+              "4 Motion detectors",
+              "2 Sirens (indoor + outdoor)",
+              "2 Smart locks LOCK-S1",
+              "Installation by 2 technicians",
+              "Multi-zone configuration",
+              "In-depth training"
+            ]
+          },
+          {
+            name: "Business Package",
+            ideal: "Store, office, warehouse",
+            includes: [
+              "Symloop PRO Hub + 4G backup",
+              "4-8 Cameras depending on area",
+              "Sensors on all openings",
+              "Zone motion detectors",
+              "Powerful outdoor siren",
+              "Optional access control",
+              "Custom installation",
+              "Business hours configuration",
+              "Team training"
+            ]
+          }
+        ],
+        note: "Each installation is customized according to your specific needs. Contact us for a free quote."
+      },
+      section4: {
+        title: "Your Installation Process",
+        steps: [
+          {
+            title: "Free Visit",
+            description: "A security expert visits your home or premises. They analyze entry points, risk areas, and your habits. Personalized advice."
+          },
+          {
+            title: "Security Plan",
+            description: "We establish a detailed plan: location of each device, zone coverage, alert scenarios. You approve before installation."
+          },
+          {
+            title: "Installation Day",
+            description: "Our technicians arrive with all the equipment. Careful installation, clean wiring, solid mounting. You don't need to prepare anything."
+          },
+          {
+            title: "Configuration & Testing",
+            description: "Each device is configured and tested. Cameras calibrated, sensors verified, alerts configured. We simulate an intrusion to validate."
+          },
+          {
+            title: "Training & Handover",
+            description: "We show you everything: arm/disarm, view cameras, manage alerts, add users. You leave 100% autonomous."
+          }
+        ]
+      },
+      section5: {
+        title: "Why Choose Symloop for Your Security?",
+        reasons: [
+          {
+            title: "Algerian Products",
+            description: "Designed and assembled in Algeria. Local support in French and Arabic. Fast after-sales service."
+          },
+          {
+            title: "Data in Algeria",
+            description: "Your videos stay on servers in Algeria. No data sent abroad."
+          },
+          {
+            title: "Unified System",
+            description: "All equipment communicates with each other. One app to manage everything."
+          },
+          {
+            title: "Works Offline",
+            description: "Internet outage? The system continues locally. 8-hour backup battery."
+          },
+          {
+            title: "Scalable",
+            description: "Start small, add equipment over time. Everything remains compatible."
+          },
+          {
+            title: "Guaranteed Installation",
+            description: "1-year warranty on our work. 2 years on products. 7-day support."
+          }
+        ]
+      },
+      section6: {
+        title: "Frequently Asked Questions",
+        questions: [
+          {
+            q: "How long does it take to install a complete system?",
+            a: "For an apartment (basic package): 3-4 hours. For an average house: half a day. For a villa or business: 1-2 days. We give you a precise estimate after the visit."
+          },
+          {
+            q: "Can I monitor from abroad?",
+            a: "Yes! The Symloop app works anywhere in the world. Many of our customers monitor their homes in Algeria from France, Canada, or Gulf countries."
+          },
+          {
+            q: "What happens if the internet goes down?",
+            a: "The system continues to operate locally. Cameras record to SD card, alarm stays active, sensors work. As soon as internet returns, everything syncs."
+          },
+          {
+            q: "Can I add equipment later?",
+            a: "Absolutely. The Symloop system is modular. You can add cameras, sensors, or a smart lock at any time. We can come back for installation or guide you remotely."
+          },
+          {
+            q: "Is the police automatically alerted?",
+            a: "Not automatically (Algerian regulations). But you receive alerts instantly with video, and you can decide to call the police. We are working on partnerships with remote monitoring companies."
+          },
+          {
+            q: "What is the backup battery life?",
+            a: "The PRO Hub has an 8-hour battery. In case of power outage, it continues to work, keeps the alarm active, and sends you an alert."
+          }
+        ]
+      },
+      cta: {
+        title: "Secure Your Home Today",
+        subtitle: "Free visit and personalized quote with no obligation",
+        button: "Request My Free Visit",
+        phone: "Or call us: 0XXX XX XX XX",
+        features: [
+          "Visit within 48 hours",
+          "Free quote",
+          "Expert installation"
+        ]
+      }
+    },
     ar: {
       meta: {
         title: "تركيب نظام أمان كامل في الجزائر | إنذار + كاميرات | Symloop 2026",
@@ -564,7 +836,7 @@ export default function SecurityInstallationBlog() {
     }
   };
 
-  const t = locale === "ar" ? blogData.ar : blogData.fr;
+  const t = locale === "ar" ? blogData.ar : locale === "en" ? blogData.en : blogData.fr;
 
   const getIcon = (iconName) => {
     const icons = {
@@ -597,15 +869,13 @@ export default function SecurityInstallationBlog() {
       <BlogSEO
         title={t.meta?.title || 'Symloop Security Installation'}
         description={t.meta?.description || 'Professional security system installation in Algeria'}
-        keywords={locale === 'ar'
-          ? 'تركيب إنذار منزل الجزائر, نظام أمان كامل, تركيب حساسات إنذار, قفل ذكي تركيب, symloop أمان, حماية منزل الجزائر'
-          : 'installation alarme maison algérie, système sécurité complet, installation capteurs alarme, serrure connectée installation, symloop sécurité, protection maison algérie'}
+        keywords={t.meta?.keywords || 'home alarm installation algeria, complete security system algeria, alarm sensor installation, smart lock installation, Symloop security, home protection algeria'}
         image="https://symloop.com/images/blog/securite-installation-algerie.jpg"
         slug="securite-maison-installation-complete-alarme-algerie-2026"
         datePublished="2025-12-30"
         dateModified="2025-12-30"
         author="Symloop Team"
-        category={locale === 'ar' ? 'أمان المنزل' : 'Sécurité Maison'}
+        category={locale === 'ar' ? 'أمان المنزل' : locale === 'en' ? 'Home Security' : 'Sécurité Maison'}
         readTime={t.hero?.readTime || '12 min'}
         faqs={faqsForSEO}
         products={productsForSEO}
@@ -618,7 +888,7 @@ export default function SecurityInstallationBlog() {
           <div className="container mx-auto px-4 max-w-4xl">
             <Link href="/blog" className="inline-flex items-center gap-2 text-red-200 hover:text-white mb-8 transition-colors">
               <ArrowLeft className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-              {isRTL ? 'العودة للمدونة' : 'Retour au blog'}
+              {isRTL ? 'العودة للمدونة' : locale === 'en' ? 'Back to blog' : 'Retour au blog'}
             </Link>
 
             <span className="inline-block bg-yellow-500 text-yellow-900 text-sm font-bold px-4 py-1 rounded-full mb-6">
@@ -708,11 +978,11 @@ export default function SecurityInstallationBlog() {
                 <div key={idx} className={`rounded-xl p-6 border-2 ${pack.popular ? 'border-red-500 bg-red-50' : 'border-slate-200 bg-slate-50'}`}>
                   {pack.popular && (
                     <div className="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-3">
-                      {isRTL ? 'الأكثر شعبية' : 'Le plus populaire'}
+                      {isRTL ? 'الأكثر شعبية' : locale === 'en' ? 'Most popular' : 'Le plus populaire'}
                     </div>
                   )}
                   <h4 className="font-bold text-xl text-slate-800 mb-2">{pack.name}</h4>
-                  <p className="text-sm text-slate-500 mb-4">{isRTL ? 'مثالي لـ:' : 'Idéal pour :'} {pack.ideal}</p>
+                  <p className="text-sm text-slate-500 mb-4">{isRTL ? 'مثالي لـ:' : locale === 'en' ? 'Ideal for:' : 'Idéal pour :'} {pack.ideal}</p>
                   <ul className="space-y-2">
                     {pack.includes.map((item, iIdx) => (
                       <li key={iIdx} className="text-sm text-slate-600 flex items-center gap-2">

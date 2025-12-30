@@ -261,6 +261,249 @@ export default function CameraInstallationBlog() {
         ]
       }
     },
+    en: {
+      meta: {
+        title: "Professional Surveillance Camera Installation in Algeria | Symloop 2026",
+        description: "Complete surveillance camera installation by Symloop. Turnkey service from A to Z: assessment, installation, configuration, training. Coverage across all 48 wilayas.",
+        keywords: "surveillance camera installation algeria, install home cameras algeria, professional video surveillance installation, security camera installation, Symloop installation, camera technician algeria"
+      },
+      hero: {
+        badge: "Pro Installation Service",
+        title: "Surveillance Camera Installation",
+        subtitle: "From A to Z by Symloop Experts",
+        description: "You don't have to do anything. Our technicians handle everything: needs assessment, professional installation, complete configuration, and usage training.",
+        author: "Symloop Installation Team",
+        date: "December 2026",
+        readTime: "8 min"
+      },
+      section1: {
+        title: "Why Choose Symloop Professional Installation?",
+        intro: "Surveillance camera installation should not be improvised. Poor positioning, faulty wiring, or incorrect configuration can render your system ineffective.",
+        reasons: [
+          {
+            title: "Technical Expertise",
+            description: "Our technicians are trained on all Symloop products. They know the best practices for each type of installation.",
+            icon: "HardHat"
+          },
+          {
+            title: "Personalized Assessment",
+            description: "Before any installation, we visit your site to identify areas to cover, blind spots, and specific needs.",
+            icon: "ClipboardCheck"
+          },
+          {
+            title: "Clean Installation",
+            description: "Concealed wiring, neat finishes, no visible cables. Your home remains aesthetically pleasing.",
+            icon: "Wrench"
+          },
+          {
+            title: "Complete Configuration",
+            description: "Cameras, app, alerts, cloud recording - everything is configured and tested before we leave.",
+            icon: "Settings"
+          },
+          {
+            title: "Training Included",
+            description: "We train you on using the application and system. You leave fully autonomous.",
+            icon: "Users"
+          },
+          {
+            title: "Workmanship Warranty",
+            description: "In addition to product warranty, our installation work is guaranteed for 1 year.",
+            icon: "Shield"
+          }
+        ]
+      },
+      section2: {
+        title: "Our 5-Step Installation Process",
+        steps: [
+          {
+            step: "1",
+            title: "Initial Contact",
+            description: "You contact us by phone, WhatsApp, or form. We discuss your needs and schedule a visit.",
+            duration: "Same day"
+          },
+          {
+            step: "2",
+            title: "Visit & Assessment",
+            description: "A technician comes to you free of charge. They analyze the premises, identify strategic points, and advise you on the number of cameras needed.",
+            duration: "30-60 min"
+          },
+          {
+            step: "3",
+            title: "Custom Quote",
+            description: "You receive a detailed quote with recommended equipment and installation cost. No surprises, everything is included.",
+            duration: "24-48h"
+          },
+          {
+            step: "4",
+            title: "Installation",
+            description: "Our technicians arrive with all equipment. Installation, wiring, configuration, testing. You don't have to do anything.",
+            duration: "2-6h depending on project"
+          },
+          {
+            step: "5",
+            title: "Training & Handover",
+            description: "We show you how to use the application, view cameras, and receive alerts. You sign the acceptance report.",
+            duration: "30 min"
+          }
+        ]
+      },
+      section3: {
+        title: "Types of Installations We Perform",
+        types: [
+          {
+            name: "Individual House",
+            description: "Complete perimeter protection: entrances, garden, garage, terrace. Optional indoor cameras.",
+            cameras: "3 to 8 cameras",
+            duration: "Half day",
+            icon: "Home"
+          },
+          {
+            name: "Apartment",
+            description: "Entrance camera, video doorbell, indoor cameras. Drill-free installation possible.",
+            cameras: "2 to 4 cameras",
+            duration: "2-3 hours",
+            icon: "Building"
+          },
+          {
+            name: "Shop / Store",
+            description: "Sales area surveillance, cash register, stockroom, entry/exit. Integrated anti-theft system.",
+            cameras: "4 to 12 cameras",
+            duration: "Full day",
+            icon: "Store"
+          },
+          {
+            name: "Warehouse / Factory",
+            description: "Large areas, storage zones, loading docks. Long-range and PTZ cameras.",
+            cameras: "8 to 32 cameras",
+            duration: "1-3 days",
+            icon: "Factory"
+          },
+          {
+            name: "Office / Business",
+            description: "Reception, hallways, meeting rooms, parking. Optional integrated access control.",
+            cameras: "4 to 16 cameras",
+            duration: "1-2 days",
+            icon: "Building"
+          }
+        ]
+      },
+      section4: {
+        title: "What's Included in Our Service",
+        included: [
+          "Free technical visit with no obligation",
+          "Transparent detailed quote",
+          "Supply of all Symloop equipment",
+          "Professional installation and mounting",
+          "Clean and concealed wiring",
+          "Complete system configuration",
+          "Creation of your Symloop account",
+          "Custom alert configuration",
+          "Testing of all cameras",
+          "Training on application use",
+          "Documentation and user guide",
+          "Priority support for 3 months",
+          "1-year installation warranty"
+        ],
+        notIncluded: [
+          "Heavy masonry work (separate quote)",
+          "Running conduits through load-bearing walls",
+          "New electrical supply (electrician required)"
+        ]
+      },
+      section5: {
+        title: "Our Guarantees",
+        guarantees: [
+          {
+            title: "Satisfaction Guaranteed",
+            description: "If the installation doesn't suit you, we return free of charge to adjust camera positioning."
+          },
+          {
+            title: "Clean Worksite",
+            description: "We clean everything after installation. Your home is as clean as before we arrived."
+          },
+          {
+            title: "100% Functionality",
+            description: "We don't leave until everything works perfectly. Live testing with you."
+          },
+          {
+            title: "Responsive Support",
+            description: "A problem after installation? We intervene within 24-48 hours."
+          }
+        ]
+      },
+      section6: {
+        title: "Geographic Coverage",
+        intro: "Our installation teams cover the entire national territory:",
+        regions: [
+          {
+            name: "Greater Algiers",
+            wilayas: "Algiers, Blida, Tipaza, Boumerdes",
+            delay: "Intervention within 48h"
+          },
+          {
+            name: "East",
+            wilayas: "Constantine, Annaba, Setif, Batna, Skikda",
+            delay: "Intervention within 72h"
+          },
+          {
+            name: "West",
+            wilayas: "Oran, Tlemcen, Mostaganem, Sidi Bel Abbes",
+            delay: "Intervention within 72h"
+          },
+          {
+            name: "Center",
+            wilayas: "Bejaia, Tizi Ouzou, Bouira, M'Sila",
+            delay: "Intervention within 72h"
+          },
+          {
+            name: "South",
+            wilayas: "Ghardaia, Biskra, Ouargla, Laghouat",
+            delay: "Intervention within 5 days"
+          }
+        ],
+        note: "For wilayas not listed, contact us to check availability."
+      },
+      section7: {
+        title: "Frequently Asked Questions",
+        questions: [
+          {
+            q: "Is the technical visit really free?",
+            a: "Yes, 100% free with no obligation. The technician assesses your needs, advises you, and you receive a quote. You're free to accept or decline."
+          },
+          {
+            q: "How long does installation take?",
+            a: "For a standard home (4-6 cameras), expect half a day. For a shop or large villa, plan for a full day. We give you a precise estimate in the quote."
+          },
+          {
+            q: "Do I need to be present during installation?",
+            a: "Ideally yes, at least at the beginning and end. We need to validate locations with you and train you on using the system."
+          },
+          {
+            q: "What happens if I have a problem after installation?",
+            a: "You benefit from 3 months of priority support. For any installation-related issue, we intervene free of charge within 48 hours. After 3 months, standard Symloop support takes over."
+          },
+          {
+            q: "Do you offer maintenance contracts?",
+            a: "Yes, we offer annual contracts including: system check, camera cleaning, firmware update, and priority intervention. Contact us for details."
+          },
+          {
+            q: "Do you install cameras from other brands?",
+            a: "We specialize in Symloop products to ensure the best quality of service. However, we can integrate your existing system if compatible."
+          }
+        ]
+      },
+      cta: {
+        title: "Ready for Professional Installation?",
+        subtitle: "Request your free technical visit",
+        button: "Request a Visit",
+        phone: "Or call us: 0XXX XX XX XX",
+        features: [
+          "Free visit within 48h",
+          "No-obligation quote",
+          "Installation by certified experts"
+        ]
+      }
+    },
     ar: {
       meta: {
         title: "تركيب كاميرات مراقبة احترافية في الجزائر | Symloop 2026",
@@ -506,7 +749,7 @@ export default function CameraInstallationBlog() {
     }
   };
 
-  const t = locale === "ar" ? blogData.ar : blogData.fr;
+  const t = locale === "ar" ? blogData.ar : locale === "en" ? blogData.en : blogData.fr;
 
   const getIcon = (iconName) => {
     const icons = {
@@ -562,7 +805,7 @@ export default function CameraInstallationBlog() {
           <div className="container mx-auto px-4 max-w-4xl">
             <Link href="/blog" className="inline-flex items-center gap-2 text-blue-200 hover:text-white mb-8 transition-colors">
               <ArrowLeft className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-              {isRTL ? 'العودة للمدونة' : 'Retour au blog'}
+              {isRTL ? 'العودة للمدونة' : locale === 'en' ? 'Back to blog' : 'Retour au blog'}
             </Link>
 
             <span className="inline-block bg-yellow-500 text-yellow-900 text-sm font-bold px-4 py-1 rounded-full mb-6">
@@ -680,7 +923,7 @@ export default function CameraInstallationBlog() {
             </div>
 
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
-              <p className="font-semibold text-amber-800 mb-2">{isRTL ? 'غير مشمول:' : 'Non inclus :'}</p>
+              <p className="font-semibold text-amber-800 mb-2">{isRTL ? 'غير مشمول:' : locale === 'en' ? 'Not included:' : 'Non inclus :'}</p>
               <ul className="space-y-1">
                 {t.section4.notIncluded.map((item, idx) => (
                   <li key={idx} className="text-amber-700 text-sm flex items-center gap-2">

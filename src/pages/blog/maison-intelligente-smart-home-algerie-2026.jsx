@@ -558,6 +558,544 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
         contact: "Questions ? WhatsApp : +213 XX XX XX XX"
       }
     },
+    en: {
+      title: "Smart Home in Algeria 2026: Symloop Smart Home Solutions",
+      subtitle: "Home Automation Equipment Made in Algeria - Competitive Prices, Total Control via App",
+      metaTitle: "Smart Home Algeria 2026 | Symloop Smart Home | Local Products",
+      metaDesc: "100% Algerian smart home solutions by Symloop. Locally manufactured home automation equipment, control app, competitive prices. Transform your home into a smart home with national products.",
+      date: "December 29, 2025",
+      readTime: "18 min",
+      author: "Symloop Team",
+      category: "Smart Home",
+
+      intro: "Say goodbye to expensive imported products and foreign apps! Symloop is revolutionizing the smart home market in Algeria with home automation equipment designed and manufactured locally. Our complete ecosystem - devices, mobile app, and web platform - gives you total control over your home at unbeatable prices. Discover how to transform your home into a 100% Algerian smart home.",
+
+      symloopAdvantage: {
+        title: "Why Choose Symloop Smart Home?",
+        subtitle: "The Advantage of a 100% Algerian Solution",
+        advantages: [
+          {
+            icon: "Package",
+            title: "Local Manufacturing",
+            description: "All our equipment is designed and assembled in Algeria. No imports, no customs fees, no waiting times."
+          },
+          {
+            icon: "DollarSign",
+            title: "Unbeatable Prices",
+            description: "Without import costs, our products are 40-60% cheaper than imported alternatives. Premium quality at local prices."
+          },
+          {
+            icon: "Smartphone",
+            title: "Symloop Home App",
+            description: "One app to control all your devices. Interface in French and Arabic, local support, regular updates."
+          },
+          {
+            icon: "Wrench",
+            title: "Local Support & Service",
+            description: "Technical assistance in Algeria, spare parts available, quick intervention. No shipping abroad for repairs."
+          },
+          {
+            icon: "Wifi",
+            title: "Works Offline",
+            description: "Our system works even without internet thanks to the local hub. Perfect for areas with unstable connections."
+          },
+          {
+            icon: "Shield",
+            title: "Data Stays in Algeria",
+            description: "Your data remains on our Algerian servers. Privacy respected, no transfer abroad."
+          }
+        ]
+      },
+
+      tableOfContents: {
+        title: "In This Article",
+        items: [
+          "What is a Smart Home?",
+          "The Symloop Advantage: Local Manufacturing",
+          "Our Smart Home Product Range",
+          "The Symloop Home App",
+          "Symloop Price Guide",
+          "Easy Self-Installation",
+          "Use Cases for Algerian Homes",
+          "Guaranteed Energy Savings",
+          "Customer Testimonials",
+          "Complete FAQ"
+        ]
+      },
+
+      section1: {
+        title: "What is a Smart Home?",
+        paragraphs: [
+          "A smart home is a residence equipped with connected devices that communicate with each other and can be controlled remotely via smartphone or voice commands. These systems automate daily tasks and adapt to the occupants' habits.",
+          "Until recently, equipping your home with home automation meant buying expensive imported products, depending on foreign apps, and waiting weeks for delivery. Symloop changes the game with a 100% Algerian solution.",
+          "Our Smart Home ecosystem includes everything you need: sensors and actuators manufactured in Algeria, an intuitive mobile app developed by our engineers, and local customer support available 7 days a week."
+        ],
+        features: [
+          { icon: "Lightbulb", title: "Symloop Lighting", desc: "Smart bulbs and switches made in Algeria" },
+          { icon: "Thermometer", title: "Smart Climate Control", desc: "AC controllers compatible with all brands" },
+          { icon: "Shield", title: "Symloop Security", desc: "Locally manufactured cameras, sensors, and alarms" },
+          { icon: "Smartphone", title: "Symloop Home App", desc: "Centralized control in French and Arabic" }
+        ]
+      },
+
+      section2: {
+        title: "Why is Home Automation Essential in Algeria?",
+        intro: "The Algerian context makes smart homes particularly relevant:",
+        reasons: [
+          {
+            title: "Extreme Climate",
+            description: "With summers exceeding 45°C (113°F) and cold winters, our Symloop smart thermostat automatically optimizes your air conditioning. Save 25-35% on your electricity bills.",
+            icon: "Thermometer",
+            solution: "Symloop TH-200 Thermostat"
+          },
+          {
+            title: "Energy Costs",
+            description: "Rates increase every year. Our smart plugs automatically cut off standby devices. Our app shows you exactly where your electricity goes.",
+            icon: "Zap",
+            solution: "Symloop SP-100 Plugs"
+          },
+          {
+            title: "Home Security",
+            description: "Our Symloop cameras with local and Algerian cloud storage allow you to monitor your home from anywhere. Instant alerts on your phone.",
+            icon: "Shield",
+            solution: "Symloop Security Kit"
+          },
+          {
+            title: "Power Outages",
+            description: "Our Symloop hub runs on battery during outages. It maintains security and alerts you. Your local automations continue to work.",
+            icon: "BatteryCharging",
+            solution: "Symloop Hub with battery"
+          },
+          {
+            title: "Unstable Connection",
+            description: "Unlike imported products that require internet, our devices communicate locally. Your home stays smart even without a connection.",
+            icon: "Wifi",
+            solution: "Symloop Mesh Protocol"
+          },
+          {
+            title: "Arabic/French Support",
+            description: "Our app and support are fully in French and Arabic. No incomprehensible English documentation, no foreign chatbots.",
+            icon: "HeartHandshake",
+            solution: "Symloop Support 7/7"
+          }
+        ],
+        stats: [
+          { value: "100%", label: "Algerian Manufacturing" },
+          { value: "-50%", label: "vs Import Prices" },
+          { value: "24/7", label: "Local Support" },
+          { value: "Offline", label: "Works without internet" }
+        ]
+      },
+
+      section3: {
+        title: "Our Smart Home Product Range",
+        intro: "All our products are designed, developed, and assembled in Algeria:",
+        categories: [
+          {
+            name: "Symloop Central Hub",
+            icon: "Cpu",
+            description: "The brain of your smart home. Connects all your Symloop devices and works even without internet.",
+            features: [
+              "8-hour backup battery",
+              "Symloop Mesh Protocol (50m range)",
+              "Wi-Fi and Ethernet compatible",
+              "Secure local storage",
+              "Automatic updates"
+            ],
+          },
+          {
+            name: "Symloop LED Bulbs",
+            icon: "Lightbulb",
+            description: "Connected E27 and E14 bulbs. Warm/cool white or multicolor RGB.",
+            features: [
+              "16 million colors (RGB)",
+              "25,000-hour lifespan",
+              "9W consumption = 60W traditional",
+              "Schedule programming",
+              "Voice control compatible"
+            ],
+          },
+          {
+            name: "Symloop Smart Plugs",
+            icon: "Power",
+            description: "Turn any device into a connected device. Measures consumption.",
+            features: [
+              "Real-time consumption measurement",
+              "Weekly scheduling",
+              "Built-in surge protection",
+              "Max 16A / 3500W",
+              "Compact design"
+            ],
+          },
+          {
+            name: "Symloop TH-200 Thermostat",
+            icon: "Thermometer",
+            description: "Control your air conditioner from the app. Compatible with all split AC brands.",
+            features: [
+              "Compatible with 99% of air conditioners",
+              "Learns your habits",
+              "Geolocation (turns on before arrival)",
+              "Consumption history",
+              "Automatic economy mode"
+            ],
+          },
+          {
+            name: "Symloop CAM-360 Camera",
+            icon: "Camera",
+            description: "Indoor surveillance camera with 360° rotation and night vision.",
+            features: [
+              "Full HD 1080p resolution",
+              "10m night vision",
+              "360° motorized rotation",
+              "AI motion detection",
+              "Algeria cloud storage + SD card"
+            ],
+          },
+          {
+            name: "Door/Window Sensor",
+            icon: "Lock",
+            description: "Get instantly alerted when a door or window opens.",
+            features: [
+              "2-year battery life",
+              "Wireless installation",
+              "Opening history",
+              "Alarm integration",
+              "Ultra compact"
+            ],
+          },
+          {
+            name: "Motion Detector",
+            icon: "Eye",
+            description: "Detect presence and automate lighting.",
+            features: [
+              "120° angle, 8m range",
+              "Distinguishes humans/animals",
+              "18-month battery",
+              "Adjustable sensitivity",
+              "Day/night mode"
+            ],
+          },
+          {
+            name: "Smart Wall Switch",
+            icon: "Settings",
+            description: "Replace your existing switches. 5-minute installation.",
+            features: [
+              "1, 2, or 3 buttons",
+              "No neutral wire required",
+              "LED backlight",
+              "Touch control",
+              "Modern design"
+            ],
+          }
+        ]
+      },
+
+      section4: {
+        title: "The Symloop Home App",
+        intro: "One app to control your entire home. Developed in Algeria, for Algerians.",
+        features: [
+          {
+            name: "Intuitive Interface",
+            description: "Modern and simple design. Your parents and grandparents can use it easily.",
+            icon: "Smartphone"
+          },
+          {
+            name: "French & Arabic",
+            description: "Fully translated application. Customer support in your language.",
+            icon: "Globe"
+          },
+          {
+            name: "Remote Control",
+            description: "Turn on, turn off, and schedule your devices from anywhere in the world.",
+            icon: "Wifi"
+          },
+          {
+            name: "Automations",
+            description: "Create scenarios: 'If I leave home, turn everything off'. 'At sunset, turn on the garden lights'.",
+            icon: "Zap"
+          },
+          {
+            name: "Energy Tracking",
+            description: "Visualize your consumption in real time. Identify energy-hungry devices.",
+            icon: "Gauge"
+          },
+          {
+            name: "Smart Alerts",
+            description: "Notifications for motion, door opening, or overconsumption.",
+            icon: "Eye"
+          },
+          {
+            name: "Multi-User",
+            description: "Share access with your family. Set permissions per user.",
+            icon: "Users"
+          },
+          {
+            name: "Offline Mode",
+            description: "The app works locally even without internet thanks to the Symloop hub.",
+            icon: "Shield"
+          }
+        ],
+        platforms: ["Android (Play Store)", "iOS (App Store)", "Web (app.symloop.com)"]
+      },
+
+      section5: {
+        title: "Our Symloop Smart Home Packs",
+        intro: "Packs adapted to all needs. 100% local manufacturing, guaranteed quality!",
+        packs: [
+          {
+            name: "Discovery Pack",
+            includes: [
+              "1 Symloop Mini Hub",
+              "3 Connected LED Bulbs",
+              "2 Smart Plugs",
+              "Symloop Home App"
+            ],
+            ideal: "Studio or bedroom"
+          },
+          {
+            name: "Family Pack",
+            includes: [
+              "1 Symloop Pro Hub",
+              "8 Connected LED Bulbs",
+              "4 Smart Plugs",
+              "1 TH-200 Thermostat",
+              "2 Door/Window Sensors",
+              "App + Priority Support"
+            ],
+            ideal: "3-4 bedroom apartment"
+          },
+          {
+            name: "Villa Pack",
+            includes: [
+              "1 Symloop Pro+ Hub",
+              "15 Connected LED Bulbs",
+              "6 Smart Wall Switches",
+              "2 TH-200 Thermostats",
+              "2 CAM-360 Cameras",
+              "4 Door/Window Sensors",
+              "2 Motion Detectors",
+              "Guided Installation + VIP Support"
+            ],
+            ideal: "Villa or large house"
+          },
+          {
+            name: "Security Pack",
+            includes: [
+              "1 Symloop Pro Hub",
+              "3 CAM-360 Cameras",
+              "1 Video Doorbell",
+              "6 Door/Window Sensors",
+              "2 Motion Detectors",
+              "1 Indoor Siren",
+              "1 year cloud storage included"
+            ],
+            ideal: "Complete security"
+          }
+        ],
+        note: "Free delivery in 48 wilayas (provinces). Easy DIY installation or professional installation available. Contact us for a personalized quote."
+      },
+
+      section6: {
+        title: "Easy Installation in 3 Steps",
+        intro: "Our products are designed to be installed by yourself, without an electrician.",
+        steps: [
+          {
+            step: "1",
+            title: "Download the App",
+            description: "Install Symloop Home from Play Store or App Store. Create your account in 30 seconds.",
+            duration: "2 minutes"
+          },
+          {
+            step: "2",
+            title: "Connect the Hub",
+            description: "Connect the Symloop hub to your Wi-Fi router. The app detects it automatically.",
+            duration: "3 minutes"
+          },
+          {
+            step: "3",
+            title: "Add Your Devices",
+            description: "Scan the QR code of each device. It instantly adds to your home.",
+            duration: "1 minute per device"
+          }
+        ],
+        noNeed: [
+          "No electrician needed",
+          "No drilling for most devices",
+          "No complex network configuration",
+          "No account on foreign servers"
+        ],
+        support: "Need help? Our WhatsApp support responds in less than 5 minutes, 7 days a week."
+      },
+
+      section7: {
+        title: "Use Cases for Algerian Homes",
+        intro: "Concrete scenarios optimized for the local context:",
+        scenarios: [
+          {
+            title: "Summer Scenario in Algiers (45°C/113°F)",
+            description: "You leave the office at 5 PM. The app detects your departure (GPS). At 5:15 PM, the Symloop thermostat turns on the AC to 24°C (75°F). At 5:30 PM, the connected blinds close on the sunny side. When you arrive at 5:45 PM, your home is cool.",
+            savings: "35% savings on air conditioning",
+            products: ["TH-200 Thermostat", "Symloop Home App"]
+          },
+          {
+            title: "Vacation Security Scenario",
+            description: "You're away for 2 weeks at Zeralda beach. The 'Vacation' mode simulates presence: random lights in the evening, TV turning on occasionally. Cameras send you motion alerts. The sensor detects any door opening.",
+            savings: "Total peace of mind",
+            products: ["Symloop Security Kit", "LED Bulbs", "Sensors"]
+          },
+          {
+            title: "Power Outage Scenario",
+            description: "It's 10 PM, power goes out. The Symloop hub switches to battery and sends you a notification. Cameras continue recording for 4 hours. When power returns, everything resumes automatically.",
+            savings: "24/7 security maintained",
+            products: ["Pro Hub with battery", "CAM-360 Cameras"]
+          },
+          {
+            title: "Family Savings Scenario",
+            description: "The kids forget to turn off the lights. No problem: motion detectors automatically turn off after 10 minutes without presence. Smart plugs cut off TV and console standby at night.",
+            savings: "20-25% on the electricity bill",
+            products: ["Motion Detectors", "Smart Plugs"]
+          },
+          {
+            title: "Coming Home from Work Scenario",
+            description: "Every evening at 6 PM, the 'Welcome' scenario activates: living room lights at 70%, adjusted air conditioning, coffee maker ready. Your home welcomes you just the way you like it.",
+            savings: "Automated daily comfort",
+            products: ["LED Bulbs", "Thermostat", "Smart Plugs"]
+          }
+        ]
+      },
+
+      section8: {
+        title: "Guaranteed Savings with Symloop",
+        intro: "Concrete and measurable return on investment:",
+        savings: [
+          {
+            category: "Smart Air Conditioning",
+            potential: "25-35%",
+            how: "The thermostat learns your habits and optimizes",
+            example: "Significant reduction in summer bills"
+          },
+          {
+            category: "LED Lighting + Automation",
+            potential: "50-70%",
+            how: "Low-consumption LEDs + automatic shutoff",
+            example: "Important monthly savings"
+          },
+          {
+            category: "Standby Devices",
+            potential: "8-12%",
+            how: "Smart plugs automatically cut off standby",
+            example: "Reduction in phantom consumption"
+          },
+          {
+            category: "Optimized Water Heater",
+            potential: "20-30%",
+            how: "Scheduled for off-peak hours only",
+            example: "More economical water heating"
+          }
+        ],
+        totalExample: {
+          title: "Example: Family in Algiers",
+          investment: "Symloop Family Pack",
+          monthlySavings: "Significant monthly savings",
+          roi: "Quickly pays for itself",
+          after: "Then lifetime savings + comfort"
+        }
+      },
+
+      section9: {
+        title: "Symloop Customer Testimonials",
+        testimonials: [
+          {
+            name: "Karim B.",
+            location: "Algiers, Hydra",
+            text: "I equipped my entire 4-room apartment with the Family Pack. Installation took me 2 hours, by myself. The app is really intuitive and Arabic support is a huge plus. My electricity bill has dropped significantly!",
+            rating: 5,
+            products: "Family Pack"
+          },
+          {
+            name: "Samira M.",
+            location: "Oran",
+            text: "Finally, quality local home automation products! I started with the Discovery Pack to test. Now I'm ordering the Villa Pack for my new house. The fact that it's Algerian reassures me for after-sales service.",
+            rating: 5,
+            products: "Discovery Pack → Villa Pack"
+          },
+          {
+            name: "Youcef H.",
+            location: "Constantine",
+            text: "The Symloop cameras are incredible! Full HD, impeccable night vision, and most importantly, the data stays in Algeria. I received an alert when my son came home from school, awesome!",
+            rating: 5,
+            products: "Security Pack"
+          },
+          {
+            name: "Nadia K.",
+            location: "Annaba",
+            text: "The TH-200 thermostat changed my life this summer. I program the AC to turn on 30 minutes before my return. Never a stuffy house again. And consumption has really dropped.",
+            rating: 5,
+            products: "TH-200 Thermostat"
+          }
+        ]
+      },
+
+      section10: {
+        title: "FAQ - Frequently Asked Questions",
+        questions: [
+          {
+            q: "Are Symloop products really made in Algeria?",
+            a: "Yes, 100% of our products are designed and assembled in Algeria, in our factory in Blida. We use quality components and employ Algerian engineers and technicians. This is what allows us to offer superior quality while ensuring local support."
+          },
+          {
+            q: "How does the system work without internet?",
+            a: "Our Symloop hub uses a local communication protocol (Symloop Mesh). Your devices communicate directly with the hub, not with a cloud server. Local automations (lights, thermostat) work even without internet. Only remote control requires a connection."
+          },
+          {
+            q: "What is the warranty on products?",
+            a: "All our products are guaranteed for 2 years. In case of problems, our after-sales service in Algeria handles repair or replacement. No need to send anything abroad. We have service centers in Algiers, Oran, and Constantine."
+          },
+          {
+            q: "Does installation require an electrician?",
+            a: "No for 90% of our products. Bulbs screw in, plugs plug in, sensors stick on. Only wall switches may require an electrician if you're not comfortable with wiring. Our video support guides you step by step."
+          },
+          {
+            q: "Is my data secure?",
+            a: "Yes, and this is one of our strengths. All your data remains on our servers in Algeria. We never sell your information. Encryption is end-to-end. You can even opt for 100% local storage on the hub, without any cloud."
+          },
+          {
+            q: "Can I add products progressively?",
+            a: "Absolutely! Our system is modular. Start with the Discovery Pack, then add devices over time. All Symloop products are compatible with each other and can be added in seconds via the app."
+          },
+          {
+            q: "Do you deliver to all wilayas (provinces)?",
+            a: "Yes, we deliver to all 58 wilayas. Free delivery available. Average time: 2-5 business days. Cash on delivery available."
+          },
+          {
+            q: "What is the hub battery life?",
+            a: "The Symloop Pro Hub has an 8-hour backup battery. In case of power outage, it continues to operate, maintains your local automations, and sends you alerts. Perfect for frequent summer outages."
+          },
+          {
+            q: "Are Symloop products compatible with Google Home/Alexa?",
+            a: "Yes! Our products are compatible with Google Assistant and Amazon Alexa for voice control. But you don't need them: our Symloop Home app offers all features, including voice commands in Arabic."
+          },
+          {
+            q: "How do I contact support?",
+            a: "Several options: WhatsApp (response < 5 min), phone, email, or in-app chat. Our support is available 7/7 from 8 AM to 10 PM. We speak French and Arabic. Having local support that understands your needs is a real advantage."
+          }
+        ]
+      },
+
+      cta: {
+        title: "Switch to 100% Algerian Smart Home",
+        subtitle: "Equip Your Home with Symloop - Quality, Price, and Local Support",
+        benefits: [
+          "100% Algerian manufacturing",
+          "50-60% cheaper than imports",
+          "7/7 customer support in French and Arabic",
+          "2-year warranty with local service"
+        ],
+        button: "Order Now",
+        buttonSecondary: "Request a Demo",
+        contact: "Questions? WhatsApp: +213 XX XX XX XX"
+      }
+    },
     ar: {
       title: "المنزل الذكي في الجزائر 2026: حلول Symloop Smart Home",
       subtitle: "أجهزة منزلية ذكية مصنوعة في الجزائر - أسعار تنافسية، تحكم كامل عبر التطبيق",

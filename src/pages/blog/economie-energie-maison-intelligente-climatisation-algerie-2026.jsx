@@ -544,6 +544,532 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
         contact: "Questions ? WhatsApp : +213 XX XX XX XX"
       }
     },
+    en: {
+      title: "Smart Home Energy Savings Algeria 2026: Air Conditioning, Lighting & Automation",
+      subtitle: "Reduce Your Bills by 30-50% with Symloop Solutions - Smart Thermostat, Connected LED, Automatic Management",
+      metaTitle: "Home Energy Savings Algeria 2026 | Symloop Smart Air Conditioning",
+      metaDesc: "Reduce your electricity bills by 30-50% with Symloop. Smart thermostat, connected LED lighting, smart plugs. Algerian solutions to save on air conditioning and electricity.",
+      date: "December 29, 2025",
+      readTime: "16 min",
+      author: "Symloop Team",
+      category: "Energy Savings",
+
+      intro: "In Algeria, the electricity bill can become a nightmare, especially in summer with air conditioning. Prices are rising, outages are frequent, and consumption is exploding. Symloop has developed a complete range of smart energy-saving products, made in Algeria, that allow you to reduce your consumption by 30 to 50% while improving your comfort. Smart thermostat, connected LED lighting, plugs with consumption measurement - take back control of your bills.",
+
+      energyChallenge: {
+        title: "The Energy Challenge in Algeria",
+        subtitle: "Why Your Bills Are Exploding and How to Fix It",
+        challenges: [
+          {
+            icon: "Thermometer",
+            title: "Energy-Hungry Air Conditioning",
+            description: "AC represents 50-70% of your summer bill. Without smart management, it runs unnecessarily, even when you're not there.",
+            cost: "5,000 - 15,000 DZD/month in summer"
+          },
+          {
+            icon: "Lightbulb",
+            title: "Wasted Lighting",
+            description: "Lights stay on in empty rooms. Traditional bulbs consume 5x more than LEDs.",
+            cost: "1,000 - 2,500 DZD/month"
+          },
+          {
+            icon: "Power",
+            title: "Standby Devices",
+            description: "TV, decoder, chargers, internet box... Standby power represents 10-15% of your annual bill.",
+            cost: "800 - 1,500 DZD/month"
+          },
+          {
+            icon: "Flame",
+            title: "Unoptimized Water Heater",
+            description: "The electric water heater runs 24/7 when you only need hot water a few hours per day.",
+            cost: "1,500 - 3,000 DZD/month"
+          },
+          {
+            icon: "TrendingDown",
+            title: "Rising Rates",
+            description: "Electricity prices are regularly increasing. Without action, your bills will only go up.",
+            cost: "+10-15%/year expected"
+          },
+          {
+            icon: "BatteryCharging",
+            title: "Costly Power Outages",
+            description: "When power returns after an outage, the AC restarts at full blast. Consumption spike = bill spike.",
+            cost: "Variable but significant"
+          }
+        ],
+        totalWaste: {
+          title: "What You Lose Every Year",
+          amount: "25,000 - 60,000 DZD",
+          description: "in wasted energy that Symloop can help you save"
+        }
+      },
+
+      tableOfContents: {
+        title: "In This Article",
+        items: [
+          "The energy challenge in Algeria",
+          "How Symloop reduces your bills",
+          "TH-200 Smart Thermostat",
+          "Connected LED lighting",
+          "Smart plugs with measurement",
+          "Automations to save",
+          "Savings calculator",
+          "Energy Savings Packs",
+          "Customer testimonials",
+          "FAQ"
+        ]
+      },
+
+      section1: {
+        title: "How Symloop Reduces Your Bills",
+        intro: "Our 4-pillar approach for real and measurable savings:",
+        pillars: [
+          {
+            name: "1. Measure",
+            description: "You can't improve what you don't measure. Our smart plugs show you exactly how much each device consumes.",
+            icon: "Gauge",
+            result: "Identify energy-hungry devices"
+          },
+          {
+            name: "2. Optimize",
+            description: "The smart thermostat learns your habits and automatically optimizes air conditioning. No more waste when you're away.",
+            icon: "Settings",
+            result: "25-35% savings on AC"
+          },
+          {
+            name: "3. Automate",
+            description: "Lights turn off automatically in empty rooms. Standby devices shut off at night. Everything is programmable.",
+            icon: "Timer",
+            result: "Zero waste, zero effort"
+          },
+          {
+            name: "4. Visualize",
+            description: "The app shows you your consumption in real time, by day, week, month. Compare and track your progress.",
+            icon: "BarChart3",
+            result: "Awareness = lasting savings"
+          }
+        ],
+        guarantee: {
+          title: "Our Guarantee",
+          description: "If you don't save at least 20% on your electricity bill within 6 months of installation, we'll refund the difference."
+        }
+      },
+
+      section2: {
+        title: "Symloop TH-200 Smart Thermostat",
+        subtitle: "The Device That Saves The Most",
+        intro: "Air conditioning represents up to 70% of your summer bill. The TH-200 thermostat can reduce this consumption by 25-35%.",
+        features: [
+          {
+            name: "Universal Compatibility",
+            description: "Works with 99% of split air conditioners sold in Algeria. Condor, Samsung, LG, Midea, TCL... All compatible.",
+            icon: "CheckCircle"
+          },
+          {
+            name: "Automatic Learning",
+            description: "The TH-200 learns your habits. It knows when you come home from work and pre-heats or cools just before your arrival.",
+            icon: "Target"
+          },
+          {
+            name: "Geolocation",
+            description: "Enable Geo mode: the AC turns on when you approach home and turns off when you leave. Automatic.",
+            icon: "Globe"
+          },
+          {
+            name: "Weekly Programming",
+            description: "Create different programs for each day. Weekend at home? Comfort program. Work week? Eco program.",
+            icon: "Calendar"
+          },
+          {
+            name: "Smart Economy Mode",
+            description: "Eco mode maintains a comfortable temperature while minimizing consumption. AI adjusts based on weather.",
+            icon: "Leaf"
+          },
+          {
+            name: "Consumption Tracking",
+            description: "See how much your air conditioner consumes in real time, by day, by month. Compare with the previous month.",
+            icon: "BarChart3"
+          }
+        ],
+        savings: {
+          title: "Concrete Savings with the TH-200",
+          before: {
+            label: "Without TH-200",
+            summer: "Average summer bill: 12,000 DZD/month",
+            behavior: "AC running at full blast all day"
+          },
+          after: {
+            label: "With TH-200",
+            summer: "Optimized summer bill: 7,500 DZD/month",
+            behavior: "Smart AC only when needed"
+          },
+          result: "Significant savings over the entire summer season",
+          roi: "The TH-200 pays for itself in less than 2 summer months!"
+        }
+      },
+
+      section3: {
+        title: "Symloop Connected LED Lighting",
+        subtitle: "Smart Light, Light Bill",
+        intro: "Lighting represents 15-20% of your bill. LED bulbs consume 80% less than traditional bulbs, and our connected LEDs add automation.",
+        products: [
+          {
+            name: "Symloop LED E27 Bulb",
+            description: "Replace your traditional bulbs with our smart LEDs. App control + automation.",
+            specs: ["9W = 60W traditional", "16 million colors", "25,000h lifespan", "Scheduled programming"],
+          },
+          {
+            name: "Symloop LED E14 Bulb",
+            description: "For your chandeliers and small base fixtures. Same intelligence, compact format.",
+            specs: ["5W = 40W traditional", "Warm/cool white", "25,000h lifespan", "Dimmable 1-100%"],
+          },
+          {
+            name: "Symloop GU10 Spot",
+            description: "For false ceilings and recessed spots. Connected LED in spot format.",
+            specs: ["6W = 50W halogen", "120° angle", "No flickering", "Optional RGB"],
+          },
+          {
+            name: "Symloop LED Strip",
+            description: "Smart ambient lighting. Perfect for TV, kitchen, bedroom.",
+            specs: ["5m extendable", "Cuttable every 5cm", "3M adhesive", "16M colors + effects"],
+          }
+        ],
+        automations: [
+          {
+            title: "Automatic Shutdown",
+            description: "Combined with our motion detectors, lights turn off after 10 minutes without presence.",
+            saving: "30-50% on lighting"
+          },
+          {
+            title: "Presence Simulation",
+            description: "On vacation, lights turn on/off randomly to simulate presence.",
+            saving: "Security + no waste"
+          },
+          {
+            title: "Bedtime/Wake Schedules",
+            description: "Lights dim gradually in the evening, turn on gently in the morning.",
+            saving: "Comfort + savings"
+          }
+        ],
+        comparison: {
+          title: "Consumption Comparison",
+          data: [
+            { type: "Incandescent bulb", watts: "60W", cost: "~800 DZD/year", lifespan: "1,000h" },
+            { type: "Halogen bulb", watts: "42W", cost: "~560 DZD/year", lifespan: "2,000h" },
+            { type: "Standard LED", watts: "9W", cost: "~120 DZD/year", lifespan: "15,000h" },
+            { type: "Symloop connected LED", watts: "9W + auto", cost: "~60 DZD/year", lifespan: "25,000h" }
+          ]
+        }
+      },
+
+      section4: {
+        title: "Smart Plugs with Consumption Measurement",
+        subtitle: "See Where Your Electricity Goes",
+        intro: "Our smart plugs don't just turn on/off. They precisely measure the consumption of each plugged device.",
+        products: [
+          {
+            name: "Symloop SP-100 Plug",
+            description: "Standard smart plug with real-time consumption measurement.",
+            features: ["Real-time Watts measurement", "Consumption history", "Scheduled programming", "Surge protection", "Max 16A/3500W"],
+          },
+          {
+            name: "Symloop MP-400 Power Strip",
+            description: "4-outlet power strip, each individually controllable with measurement.",
+            features: ["4 independent outlets", "Per-outlet measurement", "Physical switch", "Surge protection", "USB-A and USB-C"],
+          }
+        ],
+        useCases: [
+          {
+            title: "Discover Energy Vampires",
+            description: "Plug the Symloop plug into your TV. Surprise: it consumes 15W even when off! The internet box: 12W 24/7. Identify and eliminate this waste.",
+            icon: "Eye"
+          },
+          {
+            title: "Automatic Standby Shutdown",
+            description: "Program the plug to cut power at 11pm on the TV cabinet. No more standby at night. Automatic savings.",
+            icon: "Timer"
+          },
+          {
+            title: "Smart Water Heater",
+            description: "Plug your water heater into the SP-100 plug. Program it to heat only from 5am-7am and 6pm-8pm. 40% savings.",
+            icon: "Flame"
+          },
+          {
+            title: "Home Office",
+            description: "Your PC setup (monitor, computer, printer) on the power strip. One tap in the app and everything turns off when you finish working.",
+            icon: "Smartphone"
+          }
+        ],
+        realExample: {
+          title: "Real Example: What I Discovered",
+          discoveries: [
+            { device: "TV Decoder", standby: "18W", monthly: "13 kWh = 180 DZD/month" },
+            { device: "Internet Box", always: "15W", monthly: "11 kWh = 150 DZD/month" },
+            { device: "Laptop charger (plugged in)", standby: "5W", monthly: "3.6 kWh = 50 DZD/month" },
+            { device: "Printer standby", standby: "8W", monthly: "5.8 kWh = 80 DZD/month" },
+            { device: "PS5 console standby", standby: "10W", monthly: "7.2 kWh = 100 DZD/month" }
+          ],
+          total: "560 DZD/month = 6,720 DZD/year lost to standby!",
+          solution: "With Symloop plugs, automatic programming: savings recovered"
+        }
+      },
+
+      section5: {
+        title: "Automations to Save",
+        subtitle: "Program Once, Save Forever",
+        intro: "The Symloop Home app lets you create smart automations that save without you having to think about it.",
+        automations: [
+          {
+            name: "'Good Night' Scenario",
+            trigger: "At 11:00pm or when you say 'Good night'",
+            actions: [
+              "Turn off all lights except bedroom",
+              "Cut TV/console/office plugs",
+              "Set AC to night mode (27°C)",
+              "Enable water heater economy mode"
+            ],
+            saving: "~50 DZD/night = 1,500 DZD/month"
+          },
+          {
+            name: "'Leave for Work' Scenario",
+            trigger: "When everyone leaves home (GPS)",
+            actions: [
+              "Turn off all lights",
+              "Set AC to eco mode (30°C)",
+              "Cut non-essential plugs",
+              "Activate cameras"
+            ],
+            saving: "~80 DZD/day = 2,400 DZD/month"
+          },
+          {
+            name: "'Return Home' Scenario",
+            trigger: "15 minutes before your arrival (GPS)",
+            actions: [
+              "Turn on AC to 24°C",
+              "Turn on entrance light",
+              "Prepare the house to your liking"
+            ],
+            saving: "Comfort without prior waste"
+          },
+          {
+            name: "'Vacation' Scenario",
+            trigger: "Vacation mode manually activated",
+            actions: [
+              "Cut everything except fridge and alarm",
+              "Presence simulation (random lights)",
+              "Alerts if abnormal consumption"
+            ],
+            saving: "Maximum savings + security"
+          }
+        ],
+        conditionExamples: [
+          "If outdoor temperature > 35°C AND no one home → Pre-cool 30 min before arrival",
+          "If 10pm < time < 6am AND living room light on → Turn off after 30 min without motion",
+          "If day = Friday AND time > 1pm → Activate weekend mode"
+        ]
+      },
+
+      section6: {
+        title: "Savings Calculator",
+        subtitle: "Estimate Your Potential Savings",
+        intro: "Based on a typical family in Algeria with an F3-F4 apartment:",
+        scenarios: [
+          {
+            profile: "Family with summer air conditioning",
+            current: "Summer bill: 12,000 DZD/month",
+            withSymloop: "With Symloop: 7,500 DZD/month",
+            savings: "4,500 DZD/month = 18,000 DZD/summer",
+            products: "TH-200 + Smart plugs"
+          },
+          {
+            profile: "Apartment with traditional lighting",
+            current: "Lighting: 2,000 DZD/month",
+            withSymloop: "With Symloop LED: 800 DZD/month",
+            savings: "1,200 DZD/month = 14,400 DZD/year",
+            products: "10 LED bulbs + detectors"
+          },
+          {
+            profile: "Electronic equipment",
+            current: "Standby: 600 DZD/month",
+            withSymloop: "With programmed plugs: 100 DZD/month",
+            savings: "500 DZD/month = 6,000 DZD/year",
+            products: "4 SP-100 plugs"
+          },
+          {
+            profile: "Electric water heater",
+            current: "Water heater: 2,500 DZD/month",
+            withSymloop: "Optimized: 1,500 DZD/month",
+            savings: "1,000 DZD/month = 12,000 DZD/year",
+            products: "1 programmed SP-100 plug"
+          }
+        ],
+        totalExample: {
+          title: "Total Possible Annual Savings",
+          total: "Significant guaranteed savings",
+          investment: "Symloop Economy Pack",
+          roi: "Quick payback, then net savings"
+        }
+      },
+
+      section7: {
+        title: "Symloop Energy Savings Packs 2026",
+        intro: "Complete solutions to reduce your bills. 100% local manufacturing!",
+        packs: [
+          {
+            name: "Eco Starter Pack",
+            includes: [
+              "1 Symloop Mini Hub",
+              "4 Connected LED E27 Bulbs",
+              "2 SP-100 Smart Plugs",
+              "Symloop Home App"
+            ],
+            annualSaving: "Notable savings on lighting",
+            ideal: "Studio or bedroom"
+          },
+          {
+            name: "Eco Family Pack",
+            includes: [
+              "1 Symloop Pro Hub",
+              "1 TH-200 Thermostat",
+              "8 Connected LED Bulbs",
+              "4 SP-100 Smart Plugs",
+              "2 Motion Detectors",
+              "App + Priority Support"
+            ],
+            annualSaving: "Significant savings on AC and lighting",
+            ideal: "F3-F4 Apartment"
+          },
+          {
+            name: "Eco Villa Pack",
+            includes: [
+              "1 Symloop Pro+ Hub",
+              "2 TH-200 Thermostats (2 zones)",
+              "15 Connected LED Bulbs",
+              "6 SP-100 Smart Plugs",
+              "1 MP-400 Power Strip",
+              "4 Motion Detectors",
+              "2 Smart Wall Switches",
+              "Energy consultation included"
+            ],
+            annualSaving: "Maximum savings year-round",
+            ideal: "Villa or large house"
+          },
+          {
+            name: "Eco Business Pack",
+            includes: [
+              "1 Symloop Pro + 4G Hub",
+              "2 TH-200 Thermostats",
+              "20 LED Bulbs/Spots",
+              "8 Smart Plugs",
+              "Business hours programming",
+              "Monthly consumption reports",
+              "Professional installation"
+            ],
+            annualSaving: "Significant reduction in operating costs",
+            ideal: "Store, office, restaurant"
+          }
+        ],
+        note: "All packs include free delivery, guided DIY installation, 2-year warranty, and 7-day support. Contact us for a personalized quote."
+      },
+
+      section8: {
+        title: "Energy Savings Customer Testimonials",
+        testimonials: [
+          {
+            name: "Rachid M.",
+            location: "Algiers, Bab Ezzouar",
+            text: "My summer bill dropped significantly. The TH-200 thermostat changed everything. It really learns our habits. The AC turns on 20 minutes before I get home from work. Magic!",
+            rating: 5,
+            products: "Eco Family Pack",
+            saving: "Significant savings"
+          },
+          {
+            name: "Yasmine B.",
+            location: "Oran",
+            text: "I started by buying 2 smart plugs to see. When I discovered that my TV box was consuming 18W on standby 24/7, I ordered the complete pack. Now everything shuts off automatically at night.",
+            rating: 5,
+            products: "SP-100 Plugs",
+            saving: "Standby reduced by 90%"
+          },
+          {
+            name: "Kamel H.",
+            location: "Constantine",
+            text: "As a shopkeeper, my electricity bill was my second biggest expense after rent. With Symloop, I reduced it by 40%. Lights turn off when the store is empty, AC adjusts to the number of customers.",
+            rating: 5,
+            products: "Eco Business Pack",
+            saving: "40% savings on operating costs"
+          },
+          {
+            name: "Leila K.",
+            location: "Setif",
+            text: "The kids always left the lights on. Now with the motion detectors, they turn off by themselves. And the app shows me exactly how much we consume. It's become a family game to reduce!",
+            rating: 5,
+            products: "LED + Detectors",
+            saving: "Lighting divided by 3"
+          }
+        ]
+      },
+
+      section9: {
+        title: "Energy Savings FAQ",
+        questions: [
+          {
+            q: "How much can I really save?",
+            a: "On average, our customers save 25-40% on their electricity bill. The thermostat alone generates significant savings from the first summer. Return on investment in less than a year guaranteed."
+          },
+          {
+            q: "Is the TH-200 thermostat compatible with my air conditioner?",
+            a: "Yes, the TH-200 is compatible with 99% of split air conditioners sold in Algeria. It works via infrared, like your remote control. Tested brands: Condor, Samsung, LG, Midea, TCL, Hisense, Gree, Haier, Carrier, and many more."
+          },
+          {
+            q: "Are LED bulbs as bright as traditional ones?",
+            a: "Yes, and often better! Our 9W LED lights as much as a 60W traditional bulb. The difference: it consumes 85% less and lasts 25x longer. Plus, you can adjust the intensity (dimmer) according to your needs."
+          },
+          {
+            q: "How does the plug consumption measurement work?",
+            a: "The SP-100 plug measures in real time the Watts consumed by the plugged device. The app shows you: instant consumption, history by hour/day/month, estimated cost in DZD. You can even receive alerts if a device consumes too much."
+          },
+          {
+            q: "Can I control the system if I'm abroad?",
+            a: "Yes, the app works anywhere in the world. You can see your consumption, control your devices, modify automations from France, Canada, or anywhere. Secure and encrypted connection."
+          },
+          {
+            q: "What happens during a power outage?",
+            a: "When power returns, all your Symloop devices resume their programmed state. The thermostat doesn't restart the AC at full blast, it resumes the current program. The hub keeps your automations even without power (internal memory)."
+          },
+          {
+            q: "Is it complicated to install?",
+            a: "No! Bulbs screw in, plugs plug in, the thermostat sits on a table or mounts on the wall (adhesive included). The app guides you step by step. Most customers install their pack in less than 2 hours."
+          },
+          {
+            q: "Are there monthly fees?",
+            a: "No, zero monthly fees. The app is free for life. Energy saving features are included. You pay once for the equipment, and the savings start immediately."
+          },
+          {
+            q: "How can I be sure it really works?",
+            a: "Our ROI guarantee: if you don't save at least 20% on your bill in 6 months, we'll refund the difference. Plus, the app shows you your savings in real time. You can compare your bills before/after."
+          },
+          {
+            q: "Which pack do you recommend?",
+            a: "For an apartment with AC: the Eco Family Pack includes the thermostat which will make the biggest difference. To start small: the Starter Pack lets you test with plugs and LEDs. Contact us for free personalized advice."
+          }
+        ]
+      },
+
+      cta: {
+        title: "Start Saving Today",
+        subtitle: "Symloop Solutions - Algerian Manufacturing, Guaranteed Savings",
+        benefits: [
+          "Save 30-50% on your bills",
+          "Products made in Algeria",
+          "ROI guaranteed in less than 12 months",
+          "Local support 7 days a week"
+        ],
+        button: "Order an Economy Pack",
+        buttonSecondary: "Calculate My Savings",
+        contact: "Questions? WhatsApp: +213 XX XX XX XX"
+      }
+    },
     ar: {
       title: "توفير الطاقة المنزل الذكي الجزائر 2026: تكييف، إضاءة وأتمتة",
       subtitle: "خفّض فواتيرك 30-50% مع حلول Symloop - ثرموستات ذكي، LED متصلة، إدارة تلقائية",
