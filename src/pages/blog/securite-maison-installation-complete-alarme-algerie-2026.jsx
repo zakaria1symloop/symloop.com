@@ -587,7 +587,7 @@ export default function SecurityInstallationBlog() {
   }));
 
   // Products for schema
-  const productsForSEO = t.packs.map(pack => ({
+  const productsForSEO = (t.packs || []).map(pack => ({
     name: pack.name,
     description: pack.ideal
   }));
@@ -595,8 +595,8 @@ export default function SecurityInstallationBlog() {
   return (
     <>
       <BlogSEO
-        title={t.meta.title}
-        description={t.meta.description}
+        title={t.meta?.title || 'Symloop Security Installation'}
+        description={t.meta?.description || 'Professional security system installation in Algeria'}
         keywords={locale === 'ar'
           ? 'تركيب إنذار منزل الجزائر, نظام أمان كامل, تركيب حساسات إنذار, قفل ذكي تركيب, symloop أمان, حماية منزل الجزائر'
           : 'installation alarme maison algérie, système sécurité complet, installation capteurs alarme, serrure connectée installation, symloop sécurité, protection maison algérie'}
@@ -606,7 +606,7 @@ export default function SecurityInstallationBlog() {
         dateModified="2025-12-30"
         author="Symloop Team"
         category={locale === 'ar' ? 'أمان المنزل' : 'Sécurité Maison'}
-        readTime={t.hero.readTime}
+        readTime={t.hero?.readTime || '12 min'}
         faqs={faqsForSEO}
         products={productsForSEO}
         locale={locale}

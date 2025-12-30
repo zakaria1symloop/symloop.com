@@ -539,8 +539,8 @@ export default function CameraInstallationBlog() {
   return (
     <>
       <BlogSEO
-        title={t.meta.title}
-        description={t.meta.description}
+        title={t.meta?.title || 'Symloop Camera Installation'}
+        description={t.meta?.description || 'Professional camera installation in Algeria'}
         keywords={locale === 'ar'
           ? 'تركيب كاميرات مراقبة الجزائر, تركيب كاميرات احترافي, فني كاميرات الجزائر, تركيب فيديو مراقبة, symloop تركيب'
           : 'installation caméras surveillance algérie, installer caméras maison, installation vidéosurveillance professionnelle, technicien caméras algérie, symloop installation, service installation caméras'}
@@ -550,7 +550,7 @@ export default function CameraInstallationBlog() {
         dateModified="2025-12-30"
         author="Symloop Team"
         category={locale === 'ar' ? 'خدمات التركيب' : 'Services Installation'}
-        readTime={t.hero.readTime}
+        readTime={t.hero?.readTime || '15 min'}
         faqs={faqsForSEO}
         howToSteps={howToSteps}
         locale={locale}
