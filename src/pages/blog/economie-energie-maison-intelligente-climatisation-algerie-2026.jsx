@@ -177,11 +177,9 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
             summer: "Facture été optimisée : 7,500 DA/mois",
             behavior: "Clim intelligente uniquement quand nécessaire"
           },
-          result: "Économie : 4,500 DA/mois × 4 mois = 18,000 DA/an",
-          roi: "Le TH-200 coûte 8,500 DA. Rentabilisé en moins de 2 mois d'été !"
-        },
-        price: "8,500 DA",
-        originalPrice: "22,000 DA (thermostat Nest importé)"
+          result: "Économies significatives sur toute la saison estivale",
+          roi: "Le TH-200 est rentabilisé en moins de 2 mois d'été !"
+        }
       },
 
       section3: {
@@ -193,29 +191,21 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
             name: "Ampoule Symloop LED E27",
             description: "Remplacez vos ampoules classiques par nos LED intelligentes. Contrôle app + automatisation.",
             specs: ["9W = 60W classique", "16 millions de couleurs", "Durée de vie 25,000h", "Programmation horaire"],
-            price: "1,800 DA",
-            originalPrice: "4,500 DA (Philips Hue)"
           },
           {
             name: "Ampoule Symloop LED E14",
             description: "Pour vos lustres et luminaires à petit culot. Même intelligence, format compact.",
             specs: ["5W = 40W classique", "Blanc chaud/froid", "Durée de vie 25,000h", "Dimmable 1-100%"],
-            price: "1,600 DA",
-            originalPrice: "4,000 DA (importé)"
           },
           {
             name: "Spot Symloop GU10",
             description: "Pour faux plafonds et spots encastrés. LED connecté au format spot.",
             specs: ["6W = 50W halogène", "Angle 120°", "Pas de scintillement", "RGB optionnel"],
-            price: "2,200 DA",
-            originalPrice: "5,000 DA (importé)"
           },
           {
             name: "Ruban LED Symloop",
             description: "Éclairage d'ambiance intelligent. Parfait pour TV, cuisine, chambre.",
             specs: ["5m extensible", "Coupable tous les 5cm", "Adhésif 3M", "16M couleurs + effets"],
-            price: "3,500 DA",
-            originalPrice: "8,000 DA (importé)"
           }
         ],
         automations: [
@@ -255,15 +245,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
             name: "Prise Symloop SP-100",
             description: "Prise intelligente standard avec mesure de consommation en temps réel.",
             features: ["Mesure Watts en temps réel", "Historique consommation", "Programmation horaire", "Protection surtension", "Max 16A/3500W"],
-            price: "2,500 DA",
-            originalPrice: "5,500 DA (importé)"
           },
           {
             name: "Multiprise Symloop MP-400",
             description: "Multiprise 4 prises, chacune contrôlable individuellement avec mesure.",
             features: ["4 prises indépendantes", "Mesure par prise", "Interrupteur physique", "Protection parafoudre", "USB-A et USB-C"],
-            price: "6,500 DA",
-            originalPrice: "15,000 DA (importé)"
           }
         ],
         useCases: [
@@ -393,35 +379,29 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
         ],
         totalExample: {
           title: "Économies Totales Annuelles Possibles",
-          total: "50,400 DA/an",
-          investment: "Investissement Pack Économie : 35,000 DA",
-          roi: "Rentabilisé en 8 mois, puis économies nettes"
+          total: "Économies significatives garanties",
+          investment: "Pack Économie Symloop",
+          roi: "Rentabilisé rapidement, puis économies nettes"
         }
       },
 
       section7: {
         title: "Packs Économie d'Énergie Symloop 2026",
-        intro: "Solutions complètes pour réduire vos factures. Jusqu'à 60% moins cher que l'import !",
+        intro: "Solutions complètes pour réduire vos factures. Fabrication 100% locale !",
         packs: [
           {
             name: "Pack Éco Starter",
-            price: "15,000 DA",
-            originalPrice: "38,000 DA importé",
-            savings: "60%",
             includes: [
               "1 Hub Symloop Mini",
               "4 Ampoules LED E27 connectées",
               "2 Prises intelligentes SP-100",
               "Application Symloop Home"
             ],
-            annualSaving: "~12,000 DA/an",
+            annualSaving: "Économies notables sur l'éclairage",
             ideal: "Studio ou chambre"
           },
           {
             name: "Pack Éco Famille",
-            price: "35,000 DA",
-            originalPrice: "85,000 DA importé",
-            savings: "59%",
             includes: [
               "1 Hub Symloop Pro",
               "1 Thermostat TH-200",
@@ -430,14 +410,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
               "2 Détecteurs de mouvement",
               "Application + Support prioritaire"
             ],
-            annualSaving: "~35,000 DA/an",
+            annualSaving: "Économies importantes sur climatisation et éclairage",
             ideal: "Appartement F3-F4"
           },
           {
             name: "Pack Éco Villa",
-            price: "65,000 DA",
-            originalPrice: "160,000 DA importé",
-            savings: "59%",
             includes: [
               "1 Hub Symloop Pro+",
               "2 Thermostats TH-200 (2 zones)",
@@ -448,14 +425,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
               "2 Interrupteurs muraux smart",
               "Consultation énergétique incluse"
             ],
-            annualSaving: "~60,000 DA/an",
+            annualSaving: "Économies maximales toute l'année",
             ideal: "Villa ou grande maison"
           },
           {
             name: "Pack Éco Commerce",
-            price: "85,000 DA",
-            originalPrice: "200,000 DA importé",
-            savings: "57%",
             includes: [
               "1 Hub Symloop Pro + 4G",
               "2 Thermostats TH-200",
@@ -465,11 +439,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
               "Rapports consommation mensuels",
               "Installation professionnelle"
             ],
-            annualSaving: "~100,000 DA/an",
+            annualSaving: "Réduction significative des charges",
             ideal: "Magasin, bureau, restaurant"
           }
         ],
-        note: "Tous les packs incluent la livraison gratuite, l'installation DIY guidée, la garantie 2 ans, et le support 7j/7. ROI garanti sous 12 mois."
+        note: "Tous les packs incluent la livraison gratuite, l'installation DIY guidée, la garantie 2 ans, et le support 7j/7. Contactez-nous pour un devis personnalisé."
       },
 
       section8: {
@@ -478,10 +452,10 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
           {
             name: "Rachid M.",
             location: "Alger, Bab Ezzouar",
-            text: "Ma facture d'été est passée de 14,000 DA à 8,500 DA. Le thermostat TH-200 a tout changé. Il apprend vraiment nos habitudes. La clim s'allume 20 min avant mon retour du travail. Magie !",
+            text: "Ma facture d'été a considérablement baissé. Le thermostat TH-200 a tout changé. Il apprend vraiment nos habitudes. La clim s'allume 20 min avant mon retour du travail. Magie !",
             rating: 5,
             products: "Pack Éco Famille",
-            saving: "5,500 DA/mois économisés"
+            saving: "Économies significatives"
           },
           {
             name: "Yasmine B.",
@@ -497,7 +471,7 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
             text: "En tant que commerçant, ma facture d'électricité était mon deuxième plus gros poste de dépense après le loyer. Avec Symloop, j'ai réduit de 40%. Les lumières s'éteignent quand le magasin est vide, la clim s'adapte au nombre de clients.",
             rating: 5,
             products: "Pack Éco Commerce",
-            saving: "40,000 DA/an économisés"
+            saving: "40% d'économies sur les charges"
           },
           {
             name: "Leila K.",
@@ -515,7 +489,7 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
         questions: [
           {
             q: "Combien puis-je vraiment économiser ?",
-            a: "En moyenne, nos clients économisent 25-40% sur leur facture d'électricité. Pour une famille avec climatisation, cela représente souvent 30,000 à 50,000 DA par an. Le thermostat seul peut faire économiser 18,000 DA sur un été. ROI en moins d'un an garanti."
+            a: "En moyenne, nos clients économisent 25-40% sur leur facture d'électricité. Le thermostat seul génère des économies importantes dès le premier été. Retour sur investissement en moins d'un an garanti."
           },
           {
             q: "Le thermostat TH-200 est-il compatible avec mon climatiseur ?",
@@ -551,7 +525,7 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
           },
           {
             q: "Quel pack me recommandez-vous ?",
-            a: "Pour un appartement avec clim : le Pack Éco Famille (35,000 DA) inclut le thermostat qui fera la plus grosse différence. Pour commencer petit : le Pack Starter (15,000 DA) permet de tester avec les prises et LED. Contactez-nous pour un conseil personnalisé gratuit."
+            a: "Pour un appartement avec clim : le Pack Éco Famille inclut le thermostat qui fera la plus grosse différence. Pour commencer petit : le Pack Starter permet de tester avec les prises et LED. Contactez-nous pour un conseil personnalisé gratuit."
           }
         ]
       },
@@ -732,33 +706,25 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
           result: "توفير: 4,500 دج/شهر × 4 أشهر = 18,000 دج/سنة",
           roi: "TH-200 يكلف 8,500 دج. يُسترد في أقل من شهرين صيف!"
         },
-        price: "8,500 دج",
-        originalPrice: "22,000 دج (ثرموستات Nest مستورد)"
       },
 
       section7: {
         title: "باقات توفير الطاقة Symloop 2026",
-        intro: "حلول كاملة لتخفيض فواتيرك. حتى 60% أرخص من الاستيراد!",
+        intro: "حلول كاملة لتخفيض فواتيرك. صناعة محلية 100%!",
         packs: [
           {
             name: "باقة Eco Starter",
-            price: "15,000 دج",
-            originalPrice: "38,000 دج مستورد",
-            savings: "60%",
             includes: [
               "1 محور Symloop Mini",
               "4 مصابيح LED E27 متصلة",
               "2 مقابس ذكية SP-100",
               "تطبيق Symloop Home"
             ],
-            annualSaving: "~12,000 دج/سنة",
+            annualSaving: "توفير ملحوظ على الإضاءة",
             ideal: "استوديو أو غرفة"
           },
           {
             name: "باقة Eco العائلة",
-            price: "35,000 دج",
-            originalPrice: "85,000 دج مستورد",
-            savings: "59%",
             includes: [
               "1 محور Symloop Pro",
               "1 ثرموستات TH-200",
@@ -767,14 +733,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
               "2 كاشف حركة",
               "تطبيق + دعم أولوية"
             ],
-            annualSaving: "~35,000 دج/سنة",
+            annualSaving: "توفيرات كبيرة على التكييف والإضاءة",
             ideal: "شقة F3-F4"
           },
           {
             name: "باقة Eco الفيلا",
-            price: "65,000 دج",
-            originalPrice: "160,000 دج مستورد",
-            savings: "59%",
             includes: [
               "1 محور Symloop Pro+",
               "2 ثرموستات TH-200 (منطقتين)",
@@ -785,14 +748,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
               "2 مفتاح حائط ذكي",
               "استشارة طاقة مشمولة"
             ],
-            annualSaving: "~60,000 دج/سنة",
+            annualSaving: "توفيرات قصوى طوال السنة",
             ideal: "فيلا أو منزل كبير"
           },
           {
             name: "باقة Eco التجارة",
-            price: "85,000 دج",
-            originalPrice: "200,000 دج مستورد",
-            savings: "57%",
             includes: [
               "1 محور Symloop Pro + 4G",
               "2 ثرموستات TH-200",
@@ -802,11 +762,11 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
               "تقارير استهلاك شهرية",
               "تركيب احترافي"
             ],
-            annualSaving: "~100,000 دج/سنة",
+            annualSaving: "تخفيض كبير في المصاريف",
             ideal: "محل، مكتب، مطعم"
           }
         ],
-        note: "جميع الباقات تشمل التوصيل المجاني، تركيب DIY موجه، ضمان سنتين، ودعم 7/7. عائد الاستثمار مضمون خلال 12 شهراً."
+        note: "جميع الباقات تشمل التوصيل المجاني، تركيب DIY موجه، ضمان سنتين، ودعم 7/7. اتصل بنا للحصول على عرض مخصص."
       },
 
       section8: {
@@ -1102,7 +1062,6 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
 
                 <div className="mt-6 text-center">
                   <span className="text-3xl font-bold">{t.section2.price}</span>
-                  <span className="ml-3 text-lg line-through opacity-60">{t.section2.originalPrice}</span>
                 </div>
               </div>
 
@@ -1120,9 +1079,6 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
                       {idx === 1 && <div className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-3">{isRTL ? 'الأكثر شعبية' : 'Le plus populaire'}</div>}
                       <h4 className="font-bold text-xl text-slate-800 mb-2">{pack.name}</h4>
                       <div className="flex items-baseline gap-2 mb-2">
-                        <span className="text-3xl font-bold text-green-600">{pack.price}</span>
-                        <span className="text-sm text-slate-400 line-through">{pack.originalPrice}</span>
-                        <span className="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">-{pack.savings}</span>
                       </div>
                       <div className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-lg text-sm font-medium mb-4 inline-block">
                         💰 {isRTL ? 'توفير سنوي:' : 'Économie annuelle :'} {pack.annualSaving}

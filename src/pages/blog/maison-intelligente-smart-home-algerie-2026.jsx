@@ -164,8 +164,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Stockage local sécurisé",
               "Mises à jour automatiques"
             ],
-            price: "12,000 DA",
-            originalPrice: "25,000 DA (importé)"
           },
           {
             name: "Ampoules Symloop LED",
@@ -178,8 +176,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Programmation horaire",
               "Contrôle vocal compatible"
             ],
-            price: "1,800 DA",
-            originalPrice: "4,500 DA (importé)"
           },
           {
             name: "Prises Intelligentes Symloop",
@@ -192,8 +188,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Max 16A / 3500W",
               "Design compact"
             ],
-            price: "2,500 DA",
-            originalPrice: "5,500 DA (importé)"
           },
           {
             name: "Thermostat Symloop TH-200",
@@ -206,8 +200,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Historique consommation",
               "Mode économie automatique"
             ],
-            price: "8,500 DA",
-            originalPrice: "22,000 DA (importé)"
           },
           {
             name: "Caméra Symloop CAM-360",
@@ -220,8 +212,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Détection de mouvement IA",
               "Stockage cloud Algérie + carte SD"
             ],
-            price: "7,500 DA",
-            originalPrice: "18,000 DA (importé)"
           },
           {
             name: "Capteur Porte/Fenêtre",
@@ -234,8 +224,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Intégration alarme",
               "Ultra compact"
             ],
-            price: "1,200 DA",
-            originalPrice: "3,000 DA (importé)"
           },
           {
             name: "Détecteur de Mouvement",
@@ -248,8 +236,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Sensibilité réglable",
               "Mode jour/nuit"
             ],
-            price: "1,500 DA",
-            originalPrice: "3,500 DA (importé)"
           },
           {
             name: "Interrupteur Mural Smart",
@@ -262,8 +248,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "Commande tactile",
               "Design moderne"
             ],
-            price: "3,200 DA",
-            originalPrice: "7,500 DA (importé)"
           }
         ]
       },
@@ -317,14 +301,11 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
       },
 
       section5: {
-        title: "Guide des Prix Symloop 2026",
-        intro: "Des packs adaptés à tous les budgets. Jusqu'à 60% moins cher que l'importation !",
+        title: "Nos Packs Smart Home Symloop",
+        intro: "Des packs adaptés à tous les besoins. Fabrication 100% locale, qualité garantie !",
         packs: [
           {
             name: "Pack Découverte",
-            price: "18,000 DA",
-            originalPrice: "45,000 DA importé",
-            savings: "60%",
             includes: [
               "1 Hub Symloop Mini",
               "3 Ampoules LED connectées",
@@ -335,9 +316,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             name: "Pack Famille",
-            price: "45,000 DA",
-            originalPrice: "110,000 DA importé",
-            savings: "59%",
             includes: [
               "1 Hub Symloop Pro",
               "8 Ampoules LED connectées",
@@ -350,9 +328,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             name: "Pack Villa",
-            price: "95,000 DA",
-            originalPrice: "250,000 DA importé",
-            savings: "62%",
             includes: [
               "1 Hub Symloop Pro+",
               "15 Ampoules LED connectées",
@@ -367,9 +342,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             name: "Pack Sécurité",
-            price: "55,000 DA",
-            originalPrice: "140,000 DA importé",
-            savings: "61%",
             includes: [
               "1 Hub Symloop Pro",
               "3 Caméras CAM-360",
@@ -382,7 +354,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
             ideal: "Sécurité complète"
           }
         ],
-        note: "Tous les prix incluent la TVA. Livraison gratuite dans 48 wilayas. Installation DIY facile ou installation professionnelle disponible (+5,000 DA)."
+        note: "Livraison gratuite dans 48 wilayas. Installation DIY facile ou installation professionnelle disponible. Contactez-nous pour un devis personnalisé."
       },
 
       section6: {
@@ -462,32 +434,32 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
             category: "Climatisation Intelligente",
             potential: "25-35%",
             how: "Le thermostat apprend vos habitudes et optimise",
-            example: "Facture été : 8,000 DA → 5,500 DA"
+            example: "Réduction significative de la facture d'été"
           },
           {
             category: "Éclairage LED + Automatisation",
             potential: "50-70%",
             how: "LED basse conso + extinction automatique",
-            example: "Économie : 1,500 DA/mois"
+            example: "Économies importantes chaque mois"
           },
           {
             category: "Appareils en Veille",
             potential: "8-12%",
             how: "Les prises coupent automatiquement les veilles",
-            example: "Économie : 500-800 DA/mois"
+            example: "Réduction de la consommation fantôme"
           },
           {
             category: "Chauffe-eau Optimisé",
             potential: "20-30%",
             how: "Programmation heures creuses uniquement",
-            example: "Économie : 600 DA/mois"
+            example: "Chauffage eau plus économique"
           }
         ],
         totalExample: {
           title: "Exemple Famille à Alger",
-          investment: "Pack Famille : 45,000 DA",
-          monthlySavings: "Économie mensuelle : ~3,000 DA",
-          roi: "Rentabilisé en 15 mois",
+          investment: "Pack Famille Symloop",
+          monthlySavings: "Économies mensuelles significatives",
+          roi: "Rentabilisé rapidement",
           after: "Puis économies à vie + confort"
         }
       },
@@ -498,21 +470,21 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           {
             name: "Karim B.",
             location: "Alger, Hydra",
-            text: "J'ai équipé tout mon appartement F4 avec le Pack Famille. L'installation m'a pris 2 heures, seul. L'app est vraiment intuitive et le support en arabe est un énorme plus. Ma facture d'électricité a baissé de 2,500 DA/mois.",
+            text: "J'ai équipé tout mon appartement F4 avec le Pack Famille. L'installation m'a pris 2 heures, seul. L'app est vraiment intuitive et le support en arabe est un énorme plus. Ma facture d'électricité a considérablement baissé !",
             rating: 5,
             products: "Pack Famille"
           },
           {
             name: "Samira M.",
             location: "Oran",
-            text: "Enfin des produits domotiques à prix abordable ! J'ai commencé avec le Pack Découverte pour tester. Maintenant je commande le Pack Villa pour ma nouvelle maison. Le fait que ce soit algérien me rassure pour le SAV.",
+            text: "Enfin des produits domotiques de qualité locale ! J'ai commencé avec le Pack Découverte pour tester. Maintenant je commande le Pack Villa pour ma nouvelle maison. Le fait que ce soit algérien me rassure pour le SAV.",
             rating: 5,
             products: "Pack Découverte → Pack Villa"
           },
           {
             name: "Youcef H.",
             location: "Constantine",
-            text: "Les caméras Symloop sont incroyables pour le prix. Full HD, vision nocturne impeccable, et surtout les données restent en Algérie. J'ai reçu une alerte quand mon fils est rentré de l'école, génial !",
+            text: "Les caméras Symloop sont incroyables ! Full HD, vision nocturne impeccable, et surtout les données restent en Algérie. J'ai reçu une alerte quand mon fils est rentré de l'école, génial !",
             rating: 5,
             products: "Pack Sécurité"
           },
@@ -531,7 +503,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
         questions: [
           {
             q: "Les produits Symloop sont-ils vraiment fabriqués en Algérie ?",
-            a: "Oui, 100% de nos produits sont conçus et assemblés en Algérie, dans notre usine à Blida. Nous utilisons des composants de qualité et employons des ingénieurs et techniciens algériens. C'est ce qui nous permet d'offrir des prix imbattables tout en assurant un support local."
+            a: "Oui, 100% de nos produits sont conçus et assemblés en Algérie, dans notre usine à Blida. Nous utilisons des composants de qualité et employons des ingénieurs et techniciens algériens. C'est ce qui nous permet d'offrir une qualité supérieure tout en assurant un support local."
           },
           {
             q: "Comment fonctionne le système sans internet ?",
@@ -555,7 +527,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             q: "Livrez-vous dans toutes les wilayas ?",
-            a: "Oui, nous livrons dans les 58 wilayas. Livraison gratuite pour les commandes de plus de 10,000 DA. Délai moyen : 2-5 jours ouvrés. Paiement à la livraison disponible."
+            a: "Oui, nous livrons dans les 58 wilayas. Livraison gratuite disponible. Délai moyen : 2-5 jours ouvrés. Paiement à la livraison disponible."
           },
           {
             q: "Quelle est l'autonomie de la batterie du hub ?",
@@ -730,8 +702,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "تخزين محلي آمن",
               "تحديثات تلقائية"
             ],
-            price: "12,000 دج",
-            originalPrice: "25,000 دج (مستورد)"
           },
           {
             name: "مصابيح Symloop LED",
@@ -744,8 +714,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "برمجة زمنية",
               "تحكم صوتي متوافق"
             ],
-            price: "1,800 دج",
-            originalPrice: "4,500 دج (مستورد)"
           },
           {
             name: "مقابس Symloop الذكية",
@@ -758,8 +726,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "حتى 16A / 3500W",
               "تصميم مدمج"
             ],
-            price: "2,500 دج",
-            originalPrice: "5,500 دج (مستورد)"
           },
           {
             name: "ثرموستات Symloop TH-200",
@@ -772,8 +738,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "سجل الاستهلاك",
               "وضع توفير تلقائي"
             ],
-            price: "8,500 دج",
-            originalPrice: "22,000 دج (مستورد)"
           },
           {
             name: "كاميرا Symloop CAM-360",
@@ -786,8 +750,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "كشف حركة بالذكاء الاصطناعي",
               "تخزين سحابي جزائر + بطاقة SD"
             ],
-            price: "7,500 دج",
-            originalPrice: "18,000 دج (مستورد)"
           },
           {
             name: "مستشعر باب/نافذة",
@@ -800,8 +762,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "تكامل مع الإنذار",
               "مدمج للغاية"
             ],
-            price: "1,200 دج",
-            originalPrice: "3,000 دج (مستورد)"
           },
           {
             name: "كاشف حركة",
@@ -814,8 +774,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "حساسية قابلة للتعديل",
               "وضع نهار/ليل"
             ],
-            price: "1,500 دج",
-            originalPrice: "3,500 دج (مستورد)"
           },
           {
             name: "مفتاح حائط ذكي",
@@ -828,8 +786,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
               "تحكم لمسي",
               "تصميم عصري"
             ],
-            price: "3,200 دج",
-            originalPrice: "7,500 دج (مستورد)"
           }
         ]
       },
@@ -883,14 +839,11 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
       },
 
       section5: {
-        title: "دليل أسعار Symloop 2026",
-        intro: "باقات تناسب جميع الميزانيات. حتى 60% أرخص من الاستيراد!",
+        title: "باقات Symloop للمنزل الذكي",
+        intro: "باقات تناسب جميع الاحتياجات. صناعة محلية 100%، جودة مضمونة!",
         packs: [
           {
             name: "باقة الاكتشاف",
-            price: "18,000 دج",
-            originalPrice: "45,000 دج مستورد",
-            savings: "60%",
             includes: [
               "1 محور Symloop Mini",
               "3 مصابيح LED متصلة",
@@ -901,9 +854,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             name: "باقة العائلة",
-            price: "45,000 دج",
-            originalPrice: "110,000 دج مستورد",
-            savings: "59%",
             includes: [
               "1 محور Symloop Pro",
               "8 مصابيح LED متصلة",
@@ -916,9 +866,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             name: "باقة الفيلا",
-            price: "95,000 دج",
-            originalPrice: "250,000 دج مستورد",
-            savings: "62%",
             includes: [
               "1 محور Symloop Pro+",
               "15 مصباح LED متصل",
@@ -933,9 +880,6 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             name: "باقة الأمان",
-            price: "55,000 دج",
-            originalPrice: "140,000 دج مستورد",
-            savings: "61%",
             includes: [
               "1 محور Symloop Pro",
               "3 كاميرا CAM-360",
@@ -948,7 +892,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
             ideal: "أمان كامل"
           }
         ],
-        note: "جميع الأسعار تشمل TVA. توصيل مجاني في 48 ولاية. تركيب DIY سهل أو تركيب احترافي متوفر (+5,000 دج)."
+        note: "توصيل مجاني في 48 ولاية. تركيب DIY سهل أو تركيب احترافي متوفر. اتصل بنا للحصول على عرض مخصص."
       },
 
       section6: {
@@ -1028,32 +972,32 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
             category: "تكييف ذكي",
             potential: "25-35%",
             how: "الثرموستات يتعلم عاداتك ويُحسّن",
-            example: "فاتورة الصيف: 8,000 دج → 5,500 دج"
+            example: "انخفاض ملحوظ في فاتورة الصيف"
           },
           {
             category: "إضاءة LED + أتمتة",
             potential: "50-70%",
             how: "LED منخفض الاستهلاك + إطفاء تلقائي",
-            example: "توفير: 1,500 دج/شهر"
+            example: "توفيرات كبيرة شهرياً"
           },
           {
             category: "أجهزة في وضع الاستعداد",
             potential: "8-12%",
             how: "المقابس تقطع أجهزة الاستعداد تلقائياً",
-            example: "توفير: 500-800 دج/شهر"
+            example: "تقليل الاستهلاك الخفي"
           },
           {
             category: "سخان مياه محسّن",
             potential: "20-30%",
             how: "برمجة ساعات الذروة المنخفضة فقط",
-            example: "توفير: 600 دج/شهر"
+            example: "تسخين مياه أكثر اقتصاداً"
           }
         ],
         totalExample: {
           title: "مثال عائلة في الجزائر",
-          investment: "باقة العائلة: 45,000 دج",
-          monthlySavings: "توفير شهري: ~3,000 دج",
-          roi: "يُسترد في 15 شهراً",
+          investment: "باقة العائلة Symloop",
+          monthlySavings: "توفيرات شهرية ملموسة",
+          roi: "يُسترد بسرعة",
           after: "ثم توفير مدى الحياة + راحة"
         }
       },
@@ -1064,21 +1008,21 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           {
             name: "كريم ب.",
             location: "الجزائر، حيدرة",
-            text: "جهّزت كل شقتي F4 بباقة العائلة. التركيب أخذ مني ساعتين، وحدي. التطبيق بديهي فعلاً والدعم بالعربية ميزة ضخمة. فاتورتي الكهربائية نزلت 2,500 دج/شهر.",
+            text: "جهّزت كل شقتي F4 بباقة العائلة. التركيب أخذ مني ساعتين، وحدي. التطبيق بديهي فعلاً والدعم بالعربية ميزة ضخمة. فاتورتي الكهربائية انخفضت بشكل ملحوظ!",
             rating: 5,
             products: "باقة العائلة"
           },
           {
             name: "سميرة م.",
             location: "وهران",
-            text: "أخيراً منتجات أتمتة بأسعار معقولة! بدأت بباقة الاكتشاف للتجربة. الآن أطلب باقة الفيلا لمنزلي الجديد. كونها جزائرية يطمئنني لخدمة ما بعد البيع.",
+            text: "أخيراً منتجات أتمتة بجودة محلية! بدأت بباقة الاكتشاف للتجربة. الآن أطلب باقة الفيلا لمنزلي الجديد. كونها جزائرية يطمئنني لخدمة ما بعد البيع.",
             rating: 5,
             products: "باقة الاكتشاف → باقة الفيلا"
           },
           {
             name: "يوسف ح.",
             location: "قسنطينة",
-            text: "كاميرات Symloop مذهلة للسعر. Full HD، رؤية ليلية ممتازة، والأهم البيانات تبقى في الجزائر. استلمت تنبيهاً عند عودة ابني من المدرسة، رائع!",
+            text: "كاميرات Symloop مذهلة! Full HD، رؤية ليلية ممتازة، والأهم البيانات تبقى في الجزائر. استلمت تنبيهاً عند عودة ابني من المدرسة، رائع!",
             rating: 5,
             products: "باقة الأمان"
           },
@@ -1097,7 +1041,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
         questions: [
           {
             q: "هل منتجات Symloop مصنوعة فعلاً في الجزائر؟",
-            a: "نعم، 100% من منتجاتنا مصممة ومُجمّعة في الجزائر، في مصنعنا بالبليدة. نستخدم مكونات عالية الجودة ونوظف مهندسين وتقنيين جزائريين. هذا ما يتيح لنا تقديم أسعار لا تُقارن مع ضمان دعم محلي."
+            a: "نعم، 100% من منتجاتنا مصممة ومُجمّعة في الجزائر، في مصنعنا بالبليدة. نستخدم مكونات عالية الجودة ونوظف مهندسين وتقنيين جزائريين. هذا ما يتيح لنا تقديم جودة عالية مع ضمان دعم محلي."
           },
           {
             q: "كيف يعمل النظام بدون إنترنت؟",
@@ -1121,7 +1065,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
           },
           {
             q: "هل تُوصّلون لجميع الولايات؟",
-            a: "نعم، نوصّل لـ 58 ولاية. توصيل مجاني للطلبات فوق 10,000 دج. المدة المتوسطة: 2-5 أيام عمل. الدفع عند التوصيل متوفر."
+            a: "نعم، نوصّل لـ 58 ولاية. توصيل مجاني متوفر. المدة المتوسطة: 2-5 أيام عمل. الدفع عند التوصيل متوفر."
           },
           {
             q: "ما هو عمر بطارية المحور؟",
@@ -1378,19 +1322,13 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
                 <div className="space-y-6">
                   {t.section3.categories.map((cat, idx) => (
                     <div key={idx} className="bg-gradient-to-r from-slate-50 to-green-50 rounded-xl p-6 border border-green-200">
-                      <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
-                        <div className="flex items-start gap-4">
-                          <div className="w-14 h-14 bg-green-600 text-white rounded-xl flex items-center justify-center flex-shrink-0">
-                            {getIcon(cat.icon)}
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-slate-800 text-lg">{cat.name}</h4>
-                            <p className="text-slate-600 text-sm">{cat.description}</p>
-                          </div>
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-14 h-14 bg-green-600 text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                          {getIcon(cat.icon)}
                         </div>
-                        <div className="text-right">
-                          <div className="text-2xl font-bold text-green-600">{cat.price}</div>
-                          <div className="text-sm text-slate-400 line-through">{cat.originalPrice}</div>
+                        <div>
+                          <h4 className="font-bold text-slate-800 text-lg">{cat.name}</h4>
+                          <p className="text-slate-600 text-sm">{cat.description}</p>
                         </div>
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -1456,12 +1394,7 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
                           {isRTL ? 'الأكثر شعبية' : 'Le plus populaire'}
                         </div>
                       )}
-                      <h4 className="font-bold text-xl text-slate-800 mb-2">{pack.name}</h4>
-                      <div className="flex items-baseline gap-2 mb-4">
-                        <span className="text-3xl font-bold text-green-600">{pack.price}</span>
-                        <span className="text-sm text-slate-400 line-through">{pack.originalPrice}</span>
-                        <span className="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">-{pack.savings}</span>
-                      </div>
+                      <h4 className="font-bold text-xl text-slate-800 mb-4">{pack.name}</h4>
                       <ul className="space-y-2 mb-4">
                         {pack.includes.map((item, iIdx) => (
                           <li key={iIdx} className="text-sm text-slate-600 flex items-center gap-2">

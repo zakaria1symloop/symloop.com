@@ -142,8 +142,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Détection mouvement IA",
               "Stockage cloud Algérie + SD"
             ],
-            price: "7,500 DA",
-            originalPrice: "18,000 DA (importé)"
           },
           {
             name: "Caméra Symloop CAM-EXT Outdoor",
@@ -157,8 +155,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Vision nocturne couleur",
               "Détection personne/véhicule"
             ],
-            price: "12,000 DA",
-            originalPrice: "28,000 DA (importé)"
           },
           {
             name: "Sonnette Vidéo Symloop DOOR-V1",
@@ -172,8 +168,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Alimentation batterie ou filaire",
               "Pré-enregistrement 5s"
             ],
-            price: "9,500 DA",
-            originalPrice: "22,000 DA (importé)"
           },
           {
             name: "Capteur Porte/Fenêtre",
@@ -186,8 +180,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Ultra compact",
               "Intégration alarme"
             ],
-            price: "1,200 DA",
-            originalPrice: "3,000 DA (importé)"
           },
           {
             name: "Détecteur de Mouvement PIR",
@@ -200,8 +192,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Mode jour/nuit",
               "Sensibilité réglable"
             ],
-            price: "1,800 DA",
-            originalPrice: "4,000 DA (importé)"
           },
           {
             name: "Sirène Intérieure 110dB",
@@ -214,8 +204,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Plusieurs sons",
               "Activation à distance"
             ],
-            price: "3,500 DA",
-            originalPrice: "8,000 DA (importé)"
           },
           {
             name: "Serrure Connectée Symloop LOCK-S1",
@@ -229,8 +217,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Batterie 1 an",
               "Clé de secours incluse"
             ],
-            price: "28,000 DA",
-            originalPrice: "65,000 DA (importé)"
           },
           {
             name: "Hub Sécurité Symloop PRO",
@@ -244,8 +230,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "Protocole Symloop Mesh",
               "Stockage local crypté"
             ],
-            price: "18,000 DA",
-            originalPrice: "40,000 DA (importé)"
           }
         ]
       },
@@ -289,9 +273,9 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           title: "Symloop vs Caméras Importées",
           headers: ["Caractéristique", "Symloop", "Importé (Ring/Arlo)"],
           rows: [
-            ["Prix caméra intérieure", "7,500 DA", "18,000 - 25,000 DA"],
+            ["Fabrication", "100% Algérie", "Chine / Taïwan"],
             ["Stockage cloud", "Serveurs Algérie", "USA / Chine"],
-            ["Abonnement cloud", "Inclus 1 an", "5,000 - 12,000 DA/an"],
+            ["Abonnement cloud", "Inclus avec pack", "Payant annuellement"],
             ["Support technique", "Local 7j/7", "Email anglais"],
             ["Délai SAV", "24-48h", "2-4 semaines (import)"],
             ["Fonctionne hors ligne", "Oui (SD + hub)", "Limité"],
@@ -442,13 +426,10 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
 
       section7: {
         title: "Packs Sécurité Symloop 2026",
-        intro: "Solutions complètes adaptées à vos besoins. Jusqu'à 60% d'économies !",
+        intro: "Solutions complètes adaptées à vos besoins. Fabrication 100% locale !",
         packs: [
           {
             name: "Pack Essentiel",
-            price: "35,000 DA",
-            originalPrice: "85,000 DA importé",
-            savings: "59%",
             includes: [
               "1 Hub Sécurité Symloop",
               "2 Caméras CAM-360 Indoor",
@@ -461,9 +442,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             name: "Pack Famille",
-            price: "65,000 DA",
-            originalPrice: "150,000 DA importé",
-            savings: "57%",
             includes: [
               "1 Hub Sécurité Symloop PRO",
               "2 Caméras CAM-360 Indoor",
@@ -478,9 +456,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             name: "Pack Villa",
-            price: "120,000 DA",
-            originalPrice: "280,000 DA importé",
-            savings: "57%",
             includes: [
               "1 Hub Sécurité Symloop PRO",
               "2 Caméras CAM-360 Indoor",
@@ -496,9 +471,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             name: "Pack Commerce",
-            price: "95,000 DA",
-            originalPrice: "220,000 DA importé",
-            savings: "57%",
             includes: [
               "1 Hub Sécurité PRO + 4G",
               "4 Caméras CAM-EXT Outdoor",
@@ -511,7 +483,7 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
             ideal: "Magasin, entrepôt, bureau"
           }
         ],
-        note: "Installation DIY facile ou installation professionnelle disponible (+8,000 DA). Tous les packs incluent la garantie 2 ans et le support 7j/7."
+        note: "Installation DIY facile ou installation professionnelle disponible. Tous les packs incluent la garantie 2 ans et le support 7j/7. Contactez-nous pour un devis."
       },
 
       section8: {
@@ -609,7 +581,7 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             q: "Comment fonctionne le stockage cloud ?",
-            a: "Le stockage cloud est inclus avec les packs (1 à 3 ans selon le pack). Les vidéos sont conservées 30 jours par défaut. Vous pouvez télécharger ou sauvegarder définitivement les clips importants. Après la période incluse, l'abonnement est de 3,000 DA/an."
+            a: "Le stockage cloud est inclus avec les packs (1 à 3 ans selon le pack). Les vidéos sont conservées 30 jours par défaut. Vous pouvez télécharger ou sauvegarder définitivement les clips importants. Contactez-nous pour les options de renouvellement."
           },
           {
             q: "Puis-je voir mes caméras depuis l'étranger ?",
@@ -625,7 +597,7 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             q: "Y a-t-il des frais mensuels ?",
-            a: "Non pour l'utilisation de base. L'application et le contrôle local sont gratuits à vie. Le stockage cloud est inclus 1-3 ans selon le pack, puis 3,000 DA/an optionnel. Pas de frais cachés."
+            a: "Non pour l'utilisation de base. L'application et le contrôle local sont gratuits à vie. Le stockage cloud est inclus 1-3 ans selon le pack, puis renouvellement optionnel. Pas de frais cachés."
           },
           {
             q: "Puis-je ajouter des caméras plus tard ?",
@@ -776,8 +748,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "كشف حركة بالذكاء الاصطناعي",
               "تخزين سحابي جزائر + SD"
             ],
-            price: "7,500 دج",
-            originalPrice: "18,000 دج (مستورد)"
           },
           {
             name: "كاميرا Symloop CAM-EXT Outdoor",
@@ -791,8 +761,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "رؤية ليلية ملونة",
               "كشف شخص/مركبة"
             ],
-            price: "12,000 دج",
-            originalPrice: "28,000 دج (مستورد)"
           },
           {
             name: "جرس فيديو Symloop DOOR-V1",
@@ -806,8 +774,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "تغذية بطارية أو سلكية",
               "تسجيل مسبق 5 ثوانٍ"
             ],
-            price: "9,500 دج",
-            originalPrice: "22,000 دج (مستورد)"
           },
           {
             name: "مستشعر باب/نافذة",
@@ -820,8 +786,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "مدمج للغاية",
               "تكامل مع الإنذار"
             ],
-            price: "1,200 دج",
-            originalPrice: "3,000 دج (مستورد)"
           },
           {
             name: "كاشف حركة PIR",
@@ -834,8 +798,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "وضع نهار/ليل",
               "حساسية قابلة للتعديل"
             ],
-            price: "1,800 دج",
-            originalPrice: "4,000 دج (مستورد)"
           },
           {
             name: "صفارة داخلية 110dB",
@@ -848,8 +810,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "عدة أصوات",
               "تفعيل عن بُعد"
             ],
-            price: "3,500 دج",
-            originalPrice: "8,000 دج (مستورد)"
           },
           {
             name: "قفل متصل Symloop LOCK-S1",
@@ -863,8 +823,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "بطارية سنة",
               "مفتاح احتياطي مشمول"
             ],
-            price: "28,000 دج",
-            originalPrice: "65,000 دج (مستورد)"
           },
           {
             name: "محور أمان Symloop PRO",
@@ -878,8 +836,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
               "بروتوكول Symloop Mesh",
               "تخزين محلي مشفر"
             ],
-            price: "18,000 دج",
-            originalPrice: "40,000 دج (مستورد)"
           }
         ]
       },
@@ -923,9 +879,9 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           title: "Symloop مقابل الكاميرات المستوردة",
           headers: ["الخاصية", "Symloop", "مستورد (Ring/Arlo)"],
           rows: [
-            ["سعر كاميرا داخلية", "7,500 دج", "18,000 - 25,000 دج"],
+            ["التصنيع", "100% جزائر", "الصين / تايوان"],
             ["تخزين سحابي", "خوادم الجزائر", "أمريكا / الصين"],
-            ["اشتراك سحابي", "مشمول سنة", "5,000 - 12,000 دج/سنة"],
+            ["اشتراك سحابي", "مشمول مع الباقة", "مدفوع سنوياً"],
             ["دعم تقني", "محلي 7/7", "بريد إنجليزي"],
             ["مدة خدمة ما بعد البيع", "24-48 ساعة", "2-4 أسابيع (استيراد)"],
             ["يعمل بدون اتصال", "نعم (SD + محور)", "محدود"],
@@ -1076,13 +1032,10 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
 
       section7: {
         title: "باقات أمان Symloop 2026",
-        intro: "حلول كاملة تناسب احتياجاتك. حتى 60% توفير!",
+        intro: "حلول كاملة تناسب احتياجاتك. صناعة محلية 100%!",
         packs: [
           {
             name: "باقة أساسية",
-            price: "35,000 دج",
-            originalPrice: "85,000 دج مستورد",
-            savings: "59%",
             includes: [
               "1 محور أمان Symloop",
               "2 كاميرا CAM-360 Indoor",
@@ -1095,9 +1048,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             name: "باقة العائلة",
-            price: "65,000 دج",
-            originalPrice: "150,000 دج مستورد",
-            savings: "57%",
             includes: [
               "1 محور أمان Symloop PRO",
               "2 كاميرا CAM-360 Indoor",
@@ -1112,9 +1062,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             name: "باقة الفيلا",
-            price: "120,000 دج",
-            originalPrice: "280,000 دج مستورد",
-            savings: "57%",
             includes: [
               "1 محور أمان Symloop PRO",
               "2 كاميرا CAM-360 Indoor",
@@ -1130,9 +1077,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             name: "باقة التجارة",
-            price: "95,000 دج",
-            originalPrice: "220,000 دج مستورد",
-            savings: "57%",
             includes: [
               "1 محور أمان PRO + 4G",
               "4 كاميرا CAM-EXT Outdoor",
@@ -1145,7 +1089,7 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
             ideal: "محل، مستودع، مكتب"
           }
         ],
-        note: "تركيب DIY سهل أو تركيب احترافي متوفر (+8,000 دج). جميع الباقات تشمل ضمان سنتين ودعم 7/7."
+        note: "تركيب DIY سهل أو تركيب احترافي متوفر. جميع الباقات تشمل ضمان سنتين ودعم 7/7. اتصل بنا لعرض سعر."
       },
 
       section8: {
@@ -1243,7 +1187,7 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             q: "كيف يعمل التخزين السحابي؟",
-            a: "التخزين السحابي مشمول مع الباقات (1 إلى 3 سنوات حسب الباقة). الفيديوهات محفوظة 30 يوماً بشكل افتراضي. يمكنك تحميل أو حفظ المقاطع المهمة نهائياً. بعد الفترة المشمولة، الاشتراك 3,000 دج/سنة."
+            a: "التخزين السحابي مشمول مع الباقات (1 إلى 3 سنوات حسب الباقة). الفيديوهات محفوظة 30 يوماً بشكل افتراضي. يمكنك تحميل أو حفظ المقاطع المهمة نهائياً. اتصل بنا لخيارات التجديد."
           },
           {
             q: "هل يمكنني مشاهدة كاميراتي من الخارج؟",
@@ -1259,7 +1203,7 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
           },
           {
             q: "هل هناك رسوم شهرية؟",
-            a: "لا للاستخدام الأساسي. التطبيق والتحكم المحلي مجاني مدى الحياة. التخزين السحابي مشمول 1-3 سنوات حسب الباقة، ثم 3,000 دج/سنة اختياري. لا رسوم خفية."
+            a: "لا للاستخدام الأساسي. التطبيق والتحكم المحلي مجاني مدى الحياة. التخزين السحابي مشمول 1-3 سنوات حسب الباقة، ثم تجديد اختياري. لا رسوم خفية."
           },
           {
             q: "هل يمكنني إضافة كاميرات لاحقاً؟",
@@ -1483,8 +1427,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
                           </div>
                         </div>
                         <div className="text-right">
-                          <div className="text-2xl font-bold text-red-600">{product.price}</div>
-                          <div className="text-sm text-slate-400 line-through">{product.originalPrice}</div>
                         </div>
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -1514,9 +1456,6 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
                       {idx === 1 && <div className="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-3">{isRTL ? 'الأكثر شعبية' : 'Le plus populaire'}</div>}
                       <h4 className="font-bold text-xl mb-2">{pack.name}</h4>
                       <div className="flex items-baseline gap-2 mb-4">
-                        <span className={`text-3xl font-bold ${idx === 1 ? 'text-red-600' : ''}`}>{pack.price}</span>
-                        <span className={`text-sm line-through ${idx === 1 ? 'text-slate-400' : 'opacity-60'}`}>{pack.originalPrice}</span>
-                        <span className="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">-{pack.savings}</span>
                       </div>
                       <ul className="space-y-2 mb-4">
                         {pack.includes.map((item, iIdx) => (
