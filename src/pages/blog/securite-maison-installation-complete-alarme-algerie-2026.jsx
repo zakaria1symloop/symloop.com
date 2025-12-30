@@ -581,7 +581,7 @@ export default function SecurityInstallationBlog() {
   };
 
   // Prepare FAQ data for SEO
-  const faqsForSEO = t.faq.questions.map(q => ({
+  const faqsForSEO = (t.section6?.questions || []).map(q => ({
     question: q.q,
     answer: q.a
   }));

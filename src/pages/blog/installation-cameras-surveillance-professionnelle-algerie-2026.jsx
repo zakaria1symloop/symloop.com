@@ -525,13 +525,13 @@ export default function CameraInstallationBlog() {
   };
 
   // Prepare FAQ data for SEO
-  const faqsForSEO = t.faq.questions.map(q => ({
+  const faqsForSEO = (t.section7?.questions || []).map(q => ({
     question: q.q,
     answer: q.a
   }));
 
   // HowTo steps for installation guide schema
-  const howToSteps = t.processSteps.steps.map(step => ({
+  const howToSteps = (t.section2?.steps || []).map(step => ({
     title: step.title,
     description: step.description
   }));
