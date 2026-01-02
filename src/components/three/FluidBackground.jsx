@@ -95,26 +95,29 @@ const FluidShaderMaterial = () => {
       // Combine noise layers
       float combined = (noise1 + noise2 * 0.5 + noise3 * 0.25) / 1.75;
 
-      // Color palette - more visible with stronger highlights
-      vec3 color1 = vec3(0.02, 0.02, 0.04);        // Near black with blue tint
-      vec3 color2 = vec3(0.06, 0.06, 0.12);        // Dark blue
-      vec3 color3 = vec3(0.12, 0.10, 0.20);        // Purple tint
-      vec3 color4 = vec3(0.20, 0.18, 0.30);        // Lighter purple accent
-      vec3 color5 = vec3(0.25, 0.22, 0.38);        // Brightest accent
+      // Vibrant color palette - clearly visible
+      vec3 deepBlue = vec3(0.05, 0.08, 0.18);      // Deep blue base
+      vec3 purple = vec3(0.18, 0.08, 0.28);        // Rich purple
+      vec3 violet = vec3(0.25, 0.12, 0.35);        // Violet accent
+      vec3 magenta = vec3(0.30, 0.10, 0.30);       // Magenta glow
+      vec3 cyan = vec3(0.08, 0.18, 0.28);          // Cyan accent
 
-      // Mix colors based on noise - more visible transitions
-      vec3 color = mix(color1, color2, smoothstep(-0.6, -0.1, combined));
-      color = mix(color, color3, smoothstep(-0.1, 0.2, combined));
-      color = mix(color, color4, smoothstep(0.2, 0.5, combined));
-      color = mix(color, color5, smoothstep(0.5, 0.9, combined) * 0.7);
+      // Dynamic color mixing based on noise
+      vec3 color = mix(deepBlue, purple, smoothstep(-0.5, 0.0, combined));
+      color = mix(color, violet, smoothstep(0.0, 0.3, combined));
+      color = mix(color, magenta, smoothstep(0.3, 0.6, combined) * 0.8);
 
-      // Add stronger glow spots
-      float glow = smoothstep(0.3, 0.7, combined) * 0.35;
-      color += vec3(glow * 0.4, glow * 0.35, glow * 0.8);
+      // Add cyan highlights in different areas
+      float cyanMix = snoise(uv * 2.0 - uTime * 0.2);
+      color = mix(color, cyan, smoothstep(0.2, 0.6, cyanMix) * 0.4);
 
-      // Subtle vignette - less aggressive
+      // Bright glow spots
+      float glow = smoothstep(0.25, 0.65, combined) * 0.5;
+      color += vec3(glow * 0.3, glow * 0.2, glow * 0.6);
+
+      // Subtle vignette
       vec2 center = vUv - 0.5;
-      float vignette = 1.0 - dot(center, center) * 0.3;
+      float vignette = 1.0 - dot(center, center) * 0.25;
       color *= vignette;
 
       gl_FragColor = vec4(color, 1.0);

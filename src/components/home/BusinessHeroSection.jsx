@@ -1,17 +1,23 @@
 "use client";
 import { useState, useEffect, useMemo } from "react";
+import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
 import {
   ArrowRight,
   ArrowLeft,
-  Play,
   ChevronDown,
   TrendingUp,
   Users,
   Target,
   Zap
 } from "lucide-react";
+
+// Dynamic import for Three.js fluid background (no SSR)
+const FluidBackground = dynamic(() => import('../three/FluidBackground'), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-black" />
+});
 
 // Aurora Waves - Flowing gradient ribbons (Static)
 function AuroraWaves() {
@@ -277,18 +283,11 @@ export default function BusinessHeroSection() {
   return (
     <section className={`relative min-h-[85vh] bg-black overflow-hidden flex items-center ${isRTL ? 'rtl' : 'ltr'}`}>
 
-      {/* Layered Static Animated Backgrounds */}
-      <div className="absolute inset-0">
-        <NoiseTexture />
-        <LightOrbs />
-        <AuroraWaves />
-        <GlowRing />
-        <AnimatedLines />
-      </div>
+      {/* Three.js Fluid Background */}
+      <FluidBackground />
 
       {/* Gradient overlays for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50 z-[1]" />
 
       {/* Content */}
       <div className="relative z-10 w-full">
@@ -351,16 +350,6 @@ export default function BusinessHeroSection() {
                 ) : (
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 )}
-              </motion.button>
-
-              <motion.button
-                onClick={() => router.push('/portfolio')}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="group px-8 py-4 border border-white/20 text-white font-medium rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-md"
-              >
-                <Play className="w-4 h-4" />
-                <span>{c.ctaSecondary}</span>
               </motion.button>
             </motion.div>
 
