@@ -15,20 +15,20 @@ import {
 // Aurora Waves - Flowing gradient ribbons (Static)
 function AuroraWaves() {
   return (
-    <div className="absolute inset-0 overflow-hidden opacity-60">
+    <div className="absolute inset-0 overflow-hidden">
       {/* Wave 1 */}
       <motion.div
         className="absolute w-[200%] h-[300px]"
         style={{
           top: '20%',
           left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.03) 20%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 80%, transparent 100%)',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 20%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.08) 80%, transparent 100%)',
           filter: 'blur(30px)',
           transform: 'rotate(-5deg)',
         }}
         animate={{
           x: ['-10%', '10%', '-10%'],
-          opacity: [0.3, 0.6, 0.3],
+          opacity: [0.5, 0.9, 0.5],
         }}
         transition={{
           duration: 12,
@@ -43,13 +43,13 @@ function AuroraWaves() {
         style={{
           top: '50%',
           left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.02) 30%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.02) 70%, transparent 100%)',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 30%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.06) 70%, transparent 100%)',
           filter: 'blur(40px)',
           transform: 'rotate(3deg)',
         }}
         animate={{
           x: ['10%', '-10%', '10%'],
-          opacity: [0.4, 0.7, 0.4],
+          opacity: [0.6, 0.95, 0.6],
         }}
         transition={{
           duration: 15,
@@ -64,13 +64,13 @@ function AuroraWaves() {
         style={{
           top: '70%',
           left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 75%, transparent 100%)',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 75%, transparent 100%)',
           filter: 'blur(35px)',
           transform: 'rotate(-2deg)',
         }}
         animate={{
           x: ['-5%', '15%', '-5%'],
-          opacity: [0.5, 0.8, 0.5],
+          opacity: [0.7, 1, 0.7],
         }}
         transition={{
           duration: 18,
@@ -85,10 +85,10 @@ function AuroraWaves() {
 // Floating Light Orbs - Static glowing spheres
 function LightOrbs() {
   const orbs = useMemo(() => [
-    { size: 300, x: '10%', y: '20%', duration: 20, delay: 0 },
-    { size: 200, x: '80%', y: '60%', duration: 25, delay: 5 },
-    { size: 150, x: '60%', y: '10%', duration: 18, delay: 2 },
-    { size: 250, x: '30%', y: '80%', duration: 22, delay: 8 },
+    { size: 350, x: '10%', y: '20%', duration: 20, delay: 0 },
+    { size: 250, x: '80%', y: '60%', duration: 25, delay: 5 },
+    { size: 200, x: '60%', y: '10%', duration: 18, delay: 2 },
+    { size: 300, x: '30%', y: '80%', duration: 22, delay: 8 },
   ], []);
 
   return (
@@ -102,14 +102,14 @@ function LightOrbs() {
             height: orb.size,
             left: orb.x,
             top: orb.y,
-            background: 'radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255,255,255,0.18) 0%, transparent 70%)',
             filter: 'blur(40px)',
           }}
           animate={{
             x: [0, 50, -30, 0],
             y: [0, -40, 30, 0],
             scale: [1, 1.2, 0.9, 1],
-            opacity: [0.3, 0.6, 0.4, 0.3],
+            opacity: [0.5, 0.9, 0.7, 0.5],
           }}
           transition={{
             duration: orb.duration,
@@ -131,11 +131,11 @@ function GlowRing() {
         className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
         style={{
           background: 'transparent',
-          border: '1px solid rgba(255,255,255,0.1)',
+          border: '2px solid rgba(255,255,255,0.2)',
         }}
         animate={{
           scale: [1, 1.05, 1],
-          opacity: [0.3, 0.5, 0.3],
+          opacity: [0.5, 0.8, 0.5],
           rotate: [0, 180, 360],
         }}
         transition={{
@@ -148,11 +148,11 @@ function GlowRing() {
         className="absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] rounded-full"
         style={{
           background: 'transparent',
-          border: '1px solid rgba(255,255,255,0.05)',
+          border: '1px solid rgba(255,255,255,0.15)',
         }}
         animate={{
           scale: [1.05, 1, 1.05],
-          opacity: [0.2, 0.4, 0.2],
+          opacity: [0.4, 0.7, 0.4],
           rotate: [360, 180, 0],
         }}
         transition={{
@@ -180,7 +180,7 @@ function NoiseTexture() {
 // Animated Lines - Premium tech feel (Static)
 function AnimatedLines() {
   return (
-    <div className="absolute inset-0 overflow-hidden opacity-20">
+    <div className="absolute inset-0 overflow-hidden opacity-50">
       {[...Array(5)].map((_, i) => (
         <motion.div
           key={i}
@@ -286,8 +286,8 @@ export default function BusinessHeroSection() {
       </div>
 
       {/* Gradient overlays for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
 
       {/* Content */}
       <div className="relative z-10 w-full">
