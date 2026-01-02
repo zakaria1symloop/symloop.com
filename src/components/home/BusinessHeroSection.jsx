@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
 import {
@@ -13,57 +13,7 @@ import {
   Zap
 } from "lucide-react";
 
-// Premium Morphing Blob - Organic shape that breathes and reacts to mouse
-function MorphingBlob() {
-  const blobRef = useRef(null);
-  const [mousePos, setMousePos] = useState({ x: 0.5, y: 0.5 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePos({
-        x: e.clientX / window.innerWidth,
-        y: e.clientY / window.innerHeight
-      });
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-  const offsetX = (mousePos.x - 0.5) * 100;
-  const offsetY = (mousePos.y - 0.5) * 100;
-
-  return (
-    <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-      <motion.div
-        ref={blobRef}
-        className="absolute w-[600px] h-[600px] md:w-[800px] md:h-[800px]"
-        style={{
-          background: `
-            radial-gradient(ellipse at ${30 + mousePos.x * 40}% ${30 + mousePos.y * 40}%,
-              rgba(255,255,255,0.15) 0%,
-              rgba(255,255,255,0.05) 30%,
-              transparent 70%)
-          `,
-          filter: 'blur(60px)',
-        }}
-        animate={{
-          x: offsetX,
-          y: offsetY,
-          scale: [1, 1.1, 1.05, 1.15, 1],
-          rotate: [0, 5, -5, 3, 0],
-        }}
-        transition={{
-          x: { type: "spring", stiffness: 50, damping: 30 },
-          y: { type: "spring", stiffness: 50, damping: 30 },
-          scale: { duration: 8, repeat: Infinity, ease: "easeInOut" },
-          rotate: { duration: 10, repeat: Infinity, ease: "easeInOut" },
-        }}
-      />
-    </div>
-  );
-}
-
-// Aurora Waves - Flowing gradient ribbons
+// Aurora Waves - Flowing gradient ribbons (Static)
 function AuroraWaves() {
   return (
     <div className="absolute inset-0 overflow-hidden opacity-60">
@@ -133,48 +83,7 @@ function AuroraWaves() {
   );
 }
 
-// Interactive Ripple Effect on Click
-function RippleEffect() {
-  const [ripples, setRipples] = useState([]);
-
-  useEffect(() => {
-    const handleClick = (e) => {
-      const newRipple = {
-        id: Date.now(),
-        x: e.clientX,
-        y: e.clientY,
-      };
-      setRipples(prev => [...prev, newRipple]);
-      setTimeout(() => {
-        setRipples(prev => prev.filter(r => r.id !== newRipple.id));
-      }, 2000);
-    };
-
-    window.addEventListener('click', handleClick);
-    return () => window.removeEventListener('click', handleClick);
-  }, []);
-
-  return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden">
-      {ripples.map(ripple => (
-        <motion.div
-          key={ripple.id}
-          className="absolute rounded-full border border-white/20"
-          style={{
-            left: ripple.x,
-            top: ripple.y,
-            transform: 'translate(-50%, -50%)',
-          }}
-          initial={{ width: 0, height: 0, opacity: 0.8 }}
-          animate={{ width: 400, height: 400, opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-        />
-      ))}
-    </div>
-  );
-}
-
-// Floating Light Orbs - Premium glowing spheres
+// Floating Light Orbs - Static glowing spheres
 function LightOrbs() {
   const orbs = useMemo(() => [
     { size: 300, x: '10%', y: '20%', duration: 20, delay: 0 },
@@ -215,7 +124,7 @@ function LightOrbs() {
   );
 }
 
-// Animated Gradient Border Ring
+// Animated Gradient Border Ring (Static)
 function GlowRing() {
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -257,7 +166,7 @@ function GlowRing() {
   );
 }
 
-// Noise Texture Overlay
+// Noise Texture Overlay (Static)
 function NoiseTexture() {
   return (
     <div
@@ -269,7 +178,7 @@ function NoiseTexture() {
   );
 }
 
-// Animated Lines - Premium tech feel
+// Animated Lines - Premium tech feel (Static)
 function AnimatedLines() {
   return (
     <div className="absolute inset-0 overflow-hidden opacity-20">
@@ -368,15 +277,13 @@ export default function BusinessHeroSection() {
   return (
     <section className={`relative min-h-[85vh] bg-black overflow-hidden flex items-center ${isRTL ? 'rtl' : 'ltr'}`}>
 
-      {/* Layered Animated Backgrounds */}
+      {/* Layered Static Animated Backgrounds */}
       <div className="absolute inset-0">
         <NoiseTexture />
         <LightOrbs />
-        <MorphingBlob />
         <AuroraWaves />
         <GlowRing />
         <AnimatedLines />
-        <RippleEffect />
       </div>
 
       {/* Gradient overlays for depth */}
@@ -434,27 +341,21 @@ export default function BusinessHeroSection() {
             >
               <motion.button
                 onClick={handleStartProject}
-                whileHover={{ scale: 1.02, boxShadow: '0 0 60px rgba(255,255,255,0.3)' }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="group px-8 py-4 bg-white text-black font-semibold rounded-xl transition-all duration-500 flex items-center justify-center gap-3 relative overflow-hidden"
+                className="group px-8 py-4 bg-white text-black font-semibold rounded-xl transition-all duration-500 flex items-center justify-center gap-3"
               >
-                {/* Shimmer effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-transparent"
-                  animate={{ x: ['-200%', '200%'] }}
-                  transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-                />
-                <span className="relative">{c.cta}</span>
+                <span>{c.cta}</span>
                 {isRTL ? (
-                  <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform relative" />
+                  <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
                 ) : (
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 )}
               </motion.button>
 
               <motion.button
                 onClick={() => router.push('/portfolio')}
-                whileHover={{ scale: 1.02, borderColor: 'rgba(255,255,255,0.5)' }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="group px-8 py-4 border border-white/20 text-white font-medium rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-md"
               >
@@ -476,11 +377,7 @@ export default function BusinessHeroSection() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6 + index * 0.1 }}
-                  whileHover={{
-                    scale: 1.05,
-                    borderColor: 'rgba(255,255,255,0.4)',
-                  }}
-                  className="p-4 bg-white/5 rounded-xl border border-white/10 transition-all duration-300 group backdrop-blur-md cursor-default hover:bg-white/10"
+                  className="p-4 bg-white/5 rounded-xl border border-white/10 transition-all duration-300 group backdrop-blur-md cursor-default hover:bg-white/10 hover:border-white/30"
                 >
                   <div className="flex items-center justify-center gap-2 mb-1">
                     <stat.icon className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
