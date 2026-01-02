@@ -1,16 +1,17 @@
 "use client";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion, AnimatePresence, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import { 
-  X, 
-  Send, 
-  Bot, 
-  Loader2, 
-  Phone, 
-  Mail, 
+import {
+  X,
+  Send,
+  Bot,
+  Loader2,
+  Phone,
+  Mail,
   MessageCircle,
   Sparkles,
   ChevronDown,
@@ -37,6 +38,12 @@ import {
   Palette,
   Box
 } from "lucide-react";
+
+// Dynamic import for Three.js fluid background (no SSR)
+const FluidBackground = dynamic(() => import('../three/FluidBackground'), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-black" />
+});
 
 // --- Placeholder Typing Hook with SEO-focused placeholders ---
 function useTypingPlaceholder() {
@@ -1154,6 +1161,9 @@ export default function HeroSection() {
   return (
     <>
       <section className="relative min-h-screen bg-black overflow-hidden">
+
+        {/* Three.js Fluid Background */}
+        <FluidBackground />
 
         <div className="relative z-10 min-h-screen flex flex-col justify-center px-6">
           {/* Main Hero Content */}
