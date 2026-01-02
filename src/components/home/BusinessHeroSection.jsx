@@ -22,13 +22,13 @@ function AuroraWaves() {
         style={{
           top: '20%',
           left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 20%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.08) 80%, transparent 100%)',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.05) 80%, transparent 100%)',
           filter: 'blur(30px)',
           transform: 'rotate(-5deg)',
         }}
         animate={{
           x: ['-10%', '10%', '-10%'],
-          opacity: [0.5, 0.9, 0.5],
+          opacity: [0.4, 0.7, 0.4],
         }}
         transition={{
           duration: 12,
@@ -43,13 +43,13 @@ function AuroraWaves() {
         style={{
           top: '50%',
           left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 30%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.06) 70%, transparent 100%)',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 70%, transparent 100%)',
           filter: 'blur(40px)',
           transform: 'rotate(3deg)',
         }}
         animate={{
           x: ['10%', '-10%', '10%'],
-          opacity: [0.6, 0.95, 0.6],
+          opacity: [0.5, 0.8, 0.5],
         }}
         transition={{
           duration: 15,
@@ -58,19 +58,19 @@ function AuroraWaves() {
         }}
       />
 
-      {/* Wave 3 */}
+      {/* Wave 3 - fades before bottom */}
       <motion.div
-        className="absolute w-[200%] h-[250px]"
+        className="absolute w-[200%] h-[200px]"
         style={{
-          top: '70%',
+          top: '55%',
           left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 75%, transparent 100%)',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 75%, transparent 100%)',
           filter: 'blur(35px)',
           transform: 'rotate(-2deg)',
         }}
         animate={{
           x: ['-5%', '15%', '-5%'],
-          opacity: [0.7, 1, 0.7],
+          opacity: [0.5, 0.8, 0.5],
         }}
         transition={{
           duration: 18,
@@ -85,10 +85,10 @@ function AuroraWaves() {
 // Floating Light Orbs - Static glowing spheres
 function LightOrbs() {
   const orbs = useMemo(() => [
-    { size: 350, x: '10%', y: '20%', duration: 20, delay: 0 },
-    { size: 250, x: '80%', y: '60%', duration: 25, delay: 5 },
-    { size: 200, x: '60%', y: '10%', duration: 18, delay: 2 },
-    { size: 300, x: '30%', y: '80%', duration: 22, delay: 8 },
+    { size: 300, x: '10%', y: '15%', duration: 20, delay: 0 },
+    { size: 220, x: '80%', y: '40%', duration: 25, delay: 5 },
+    { size: 180, x: '60%', y: '10%', duration: 18, delay: 2 },
+    { size: 250, x: '25%', y: '50%', duration: 22, delay: 8 },
   ], []);
 
   return (
@@ -102,14 +102,14 @@ function LightOrbs() {
             height: orb.size,
             left: orb.x,
             top: orb.y,
-            background: 'radial-gradient(circle, rgba(255,255,255,0.18) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)',
             filter: 'blur(40px)',
           }}
           animate={{
             x: [0, 50, -30, 0],
             y: [0, -40, 30, 0],
             scale: [1, 1.2, 0.9, 1],
-            opacity: [0.5, 0.9, 0.7, 0.5],
+            opacity: [0.4, 0.7, 0.5, 0.4],
           }}
           transition={{
             duration: orb.duration,
@@ -126,16 +126,16 @@ function LightOrbs() {
 // Animated Gradient Border Ring (Static)
 function GlowRing() {
   return (
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '-10%' }}>
       <motion.div
         className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
         style={{
           background: 'transparent',
-          border: '2px solid rgba(255,255,255,0.2)',
+          border: '1px solid rgba(255,255,255,0.15)',
         }}
         animate={{
           scale: [1, 1.05, 1],
-          opacity: [0.5, 0.8, 0.5],
+          opacity: [0.4, 0.6, 0.4],
           rotate: [0, 180, 360],
         }}
         transition={{
@@ -148,11 +148,11 @@ function GlowRing() {
         className="absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] rounded-full"
         style={{
           background: 'transparent',
-          border: '1px solid rgba(255,255,255,0.15)',
+          border: '1px solid rgba(255,255,255,0.1)',
         }}
         animate={{
           scale: [1.05, 1, 1.05],
-          opacity: [0.4, 0.7, 0.4],
+          opacity: [0.3, 0.5, 0.3],
           rotate: [360, 180, 0],
         }}
         transition={{
@@ -180,7 +180,7 @@ function NoiseTexture() {
 // Animated Lines - Premium tech feel (Static)
 function AnimatedLines() {
   return (
-    <div className="absolute inset-0 overflow-hidden opacity-50">
+    <div className="absolute inset-0 overflow-hidden opacity-35">
       {[...Array(5)].map((_, i) => (
         <motion.div
           key={i}
@@ -285,8 +285,8 @@ export default function BusinessHeroSection() {
         <AnimatedLines />
       </div>
 
-      {/* Gradient overlays for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40" />
+      {/* Gradient overlays for depth - strong fade to black at bottom */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
 
       {/* Content */}
@@ -321,15 +321,51 @@ export default function BusinessHeroSection() {
               </h1>
             </motion.div>
 
-            {/* Subtitle */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-lg text-gray-400 font-light"
+            {/* Subtitle with animation */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="relative space-y-4"
             >
-              {c.subtitle}
-            </motion.p>
+              <motion.p
+                className="text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-white to-gray-300 font-light"
+                animate={{
+                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                style={{
+                  backgroundSize: '200% 100%',
+                }}
+              >
+                {c.subtitle}
+              </motion.p>
+
+              {/* Serving Regions */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.4 }}
+                className="flex flex-wrap items-center justify-center gap-2 text-sm text-white/40"
+              >
+                {[
+                  locale === 'ar' ? 'الجزائر' : locale === 'en' ? 'Algeria' : 'Algérie',
+                  locale === 'ar' ? 'المغرب' : locale === 'en' ? 'Morocco' : 'Maroc',
+                  locale === 'ar' ? 'تونس' : locale === 'en' ? 'Tunisia' : 'Tunisie',
+                  locale === 'ar' ? 'الخليج' : locale === 'en' ? 'Gulf' : 'Golfe',
+                  locale === 'ar' ? 'أوروبا' : locale === 'en' ? 'Europe' : 'Europe',
+                ].map((region, i) => (
+                  <span key={i} className="flex items-center">
+                    {i > 0 && <span className="mx-2 text-white/20">•</span>}
+                    <span className="hover:text-white/70 transition-colors">{region}</span>
+                  </span>
+                ))}
+              </motion.div>
+            </motion.div>
 
             {/* CTA Buttons */}
             <motion.div
