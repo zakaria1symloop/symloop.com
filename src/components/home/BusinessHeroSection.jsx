@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect, useMemo } from "react";
-import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
 import {
@@ -12,12 +11,6 @@ import {
   Target,
   Zap
 } from "lucide-react";
-
-// Dynamic import for Three.js fluid background (no SSR)
-const FluidBackground = dynamic(() => import('../three/FluidBackground'), {
-  ssr: false,
-  loading: () => <div className="absolute inset-0 bg-black" />
-});
 
 // Aurora Waves - Flowing gradient ribbons (Static)
 function AuroraWaves() {
@@ -283,11 +276,18 @@ export default function BusinessHeroSection() {
   return (
     <section className={`relative min-h-[85vh] bg-black overflow-hidden flex items-center ${isRTL ? 'rtl' : 'ltr'}`}>
 
-      {/* Three.js Fluid Background */}
-      <FluidBackground />
+      {/* Layered Premium Animated Backgrounds */}
+      <div className="absolute inset-0">
+        <NoiseTexture />
+        <LightOrbs />
+        <AuroraWaves />
+        <GlowRing />
+        <AnimatedLines />
+      </div>
 
       {/* Gradient overlays for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50 z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
 
       {/* Content */}
       <div className="relative z-10 w-full">
