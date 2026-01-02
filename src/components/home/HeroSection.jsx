@@ -1289,16 +1289,6 @@ export default function HeroSection() {
                       )}
                     </div>
                   </motion.button>
-                  
-                  <motion.button
-                    onClick={() => setContactModalOpen(true)}
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="group px-8 py-4 border border-white/20 bg-white/5 backdrop-blur-sm text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-3"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                    <span>{t('hero.ctaSecondary')}</span>
-                  </motion.button>
                 </motion.div>
 
                 {/* Premium Trust Indicators */}

@@ -95,24 +95,26 @@ const FluidShaderMaterial = () => {
       // Combine noise layers
       float combined = (noise1 + noise2 * 0.5 + noise3 * 0.25) / 1.75;
 
-      // Color palette - dark with subtle highlights
-      vec3 color1 = vec3(0.0, 0.0, 0.0);           // Pure black
-      vec3 color2 = vec3(0.03, 0.03, 0.05);        // Very dark blue
-      vec3 color3 = vec3(0.08, 0.08, 0.12);        // Dark purple hint
-      vec3 color4 = vec3(0.15, 0.15, 0.2);         // Lighter accent
+      // Color palette - more visible with stronger highlights
+      vec3 color1 = vec3(0.02, 0.02, 0.04);        // Near black with blue tint
+      vec3 color2 = vec3(0.06, 0.06, 0.12);        // Dark blue
+      vec3 color3 = vec3(0.12, 0.10, 0.20);        // Purple tint
+      vec3 color4 = vec3(0.20, 0.18, 0.30);        // Lighter purple accent
+      vec3 color5 = vec3(0.25, 0.22, 0.38);        // Brightest accent
 
-      // Mix colors based on noise
-      vec3 color = mix(color1, color2, smoothstep(-0.5, 0.0, combined));
-      color = mix(color, color3, smoothstep(0.0, 0.3, combined));
-      color = mix(color, color4, smoothstep(0.3, 0.8, combined) * 0.5);
+      // Mix colors based on noise - more visible transitions
+      vec3 color = mix(color1, color2, smoothstep(-0.6, -0.1, combined));
+      color = mix(color, color3, smoothstep(-0.1, 0.2, combined));
+      color = mix(color, color4, smoothstep(0.2, 0.5, combined));
+      color = mix(color, color5, smoothstep(0.5, 0.9, combined) * 0.7);
 
-      // Add subtle glow spots
-      float glow = smoothstep(0.4, 0.8, combined) * 0.15;
-      color += vec3(glow * 0.5, glow * 0.5, glow * 0.8);
+      // Add stronger glow spots
+      float glow = smoothstep(0.3, 0.7, combined) * 0.35;
+      color += vec3(glow * 0.4, glow * 0.35, glow * 0.8);
 
-      // Vignette for depth
+      // Subtle vignette - less aggressive
       vec2 center = vUv - 0.5;
-      float vignette = 1.0 - dot(center, center) * 0.5;
+      float vignette = 1.0 - dot(center, center) * 0.3;
       color *= vignette;
 
       gl_FragColor = vec4(color, 1.0);
