@@ -3,6 +3,7 @@ import Script from 'next/script';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import FloatingButton from '../components/layout/FloatingButton';
+import SmoothScroll from '../components/effects/SmoothScroll';
 import { appWithTranslation } from 'next-i18next';
 
 function MyApp({ Component, pageProps }) {
@@ -22,14 +23,16 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
 
-      <div className="flex flex-col min-h-screen bg-white text-black">
-        <Header />
-        <main className="flex-1">
-          <Component {...pageProps} />
-        </main>
-        <Footer />
-        <FloatingButton />
-      </div>
+      <SmoothScroll>
+        <div className="flex flex-col min-h-screen bg-white text-black">
+          <Header />
+          <main className="flex-1">
+            <Component {...pageProps} />
+          </main>
+          <Footer />
+          <FloatingButton />
+        </div>
+      </SmoothScroll>
     </>
   );
 }

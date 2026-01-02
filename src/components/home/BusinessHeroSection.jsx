@@ -1,197 +1,362 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import {
   ArrowRight,
   ArrowLeft,
-  TrendingUp,
-  DollarSign,
-  BarChart3,
-  Target,
-  Rocket,
-  CheckCircle2,
   Play,
   ChevronDown,
-  Zap,
-  Clock,
-  Shield,
+  TrendingUp,
   Users,
-  Star,
-  Phone,
-  MessageCircle
+  Target,
+  Zap
 } from "lucide-react";
 
-// Animated counter for stats
-function AnimatedNumber({ value, suffix = "", duration = 2000 }) {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
+// Premium Morphing Blob - Organic shape that breathes and reacts to mouse
+function MorphingBlob() {
+  const blobRef = useRef(null);
+  const [mousePos, setMousePos] = useState({ x: 0.5, y: 0.5 });
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
+    const handleMouseMove = (e) => {
+      setMousePos({
+        x: e.clientX / window.innerWidth,
+        y: e.clientY / window.innerHeight
+      });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  useEffect(() => {
-    if (!isVisible) return;
-    let startTime = null;
-    const animate = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const progress = Math.min((currentTime - startTime) / duration, 1);
-      const easeOut = 1 - Math.pow(1 - progress, 4);
-      setCount(Math.floor(easeOut * value));
-      if (progress < 1) requestAnimationFrame(animate);
-    };
-    requestAnimationFrame(animate);
-  }, [isVisible, value, duration]);
+  const offsetX = (mousePos.x - 0.5) * 100;
+  const offsetY = (mousePos.y - 0.5) * 100;
 
   return (
-    <span ref={ref}>
-      {count.toLocaleString()}{suffix}
-    </span>
+    <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+      <motion.div
+        ref={blobRef}
+        className="absolute w-[600px] h-[600px] md:w-[800px] md:h-[800px]"
+        style={{
+          background: `
+            radial-gradient(ellipse at ${30 + mousePos.x * 40}% ${30 + mousePos.y * 40}%,
+              rgba(255,255,255,0.15) 0%,
+              rgba(255,255,255,0.05) 30%,
+              transparent 70%)
+          `,
+          filter: 'blur(60px)',
+        }}
+        animate={{
+          x: offsetX,
+          y: offsetY,
+          scale: [1, 1.1, 1.05, 1.15, 1],
+          rotate: [0, 5, -5, 3, 0],
+        }}
+        transition={{
+          x: { type: "spring", stiffness: 50, damping: 30 },
+          y: { type: "spring", stiffness: 50, damping: 30 },
+          scale: { duration: 8, repeat: Infinity, ease: "easeInOut" },
+          rotate: { duration: 10, repeat: Infinity, ease: "easeInOut" },
+        }}
+      />
+    </div>
   );
 }
 
-// Rotating words animation
-function RotatingWords({ words, className }) {
-  const [index, setIndex] = useState(0);
+// Aurora Waves - Flowing gradient ribbons
+function AuroraWaves() {
+  return (
+    <div className="absolute inset-0 overflow-hidden opacity-60">
+      {/* Wave 1 */}
+      <motion.div
+        className="absolute w-[200%] h-[300px]"
+        style={{
+          top: '20%',
+          left: '-50%',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.03) 20%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 80%, transparent 100%)',
+          filter: 'blur(30px)',
+          transform: 'rotate(-5deg)',
+        }}
+        animate={{
+          x: ['-10%', '10%', '-10%'],
+          opacity: [0.3, 0.6, 0.3],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+
+      {/* Wave 2 */}
+      <motion.div
+        className="absolute w-[200%] h-[200px]"
+        style={{
+          top: '50%',
+          left: '-50%',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.02) 30%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.02) 70%, transparent 100%)',
+          filter: 'blur(40px)',
+          transform: 'rotate(3deg)',
+        }}
+        animate={{
+          x: ['10%', '-10%', '10%'],
+          opacity: [0.4, 0.7, 0.4],
+        }}
+        transition={{
+          duration: 15,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+
+      {/* Wave 3 */}
+      <motion.div
+        className="absolute w-[200%] h-[250px]"
+        style={{
+          top: '70%',
+          left: '-50%',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 75%, transparent 100%)',
+          filter: 'blur(35px)',
+          transform: 'rotate(-2deg)',
+        }}
+        animate={{
+          x: ['-5%', '15%', '-5%'],
+          opacity: [0.5, 0.8, 0.5],
+        }}
+        transition={{
+          duration: 18,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+    </div>
+  );
+}
+
+// Interactive Ripple Effect on Click
+function RippleEffect() {
+  const [ripples, setRipples] = useState([]);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % words.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [words.length]);
+    const handleClick = (e) => {
+      const newRipple = {
+        id: Date.now(),
+        x: e.clientX,
+        y: e.clientY,
+      };
+      setRipples(prev => [...prev, newRipple]);
+      setTimeout(() => {
+        setRipples(prev => prev.filter(r => r.id !== newRipple.id));
+      }, 2000);
+    };
+
+    window.addEventListener('click', handleClick);
+    return () => window.removeEventListener('click', handleClick);
+  }, []);
 
   return (
-    <span className={`inline-block relative ${className}`}>
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={index}
-          initial={{ y: 40, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -40, opacity: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="inline-block"
-        >
-          {words[index]}
-        </motion.span>
-      </AnimatePresence>
-    </span>
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {ripples.map(ripple => (
+        <motion.div
+          key={ripple.id}
+          className="absolute rounded-full border border-white/20"
+          style={{
+            left: ripple.x,
+            top: ripple.y,
+            transform: 'translate(-50%, -50%)',
+          }}
+          initial={{ width: 0, height: 0, opacity: 0.8 }}
+          animate={{ width: 400, height: 400, opacity: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        />
+      ))}
+    </div>
+  );
+}
+
+// Floating Light Orbs - Premium glowing spheres
+function LightOrbs() {
+  const orbs = useMemo(() => [
+    { size: 300, x: '10%', y: '20%', duration: 20, delay: 0 },
+    { size: 200, x: '80%', y: '60%', duration: 25, delay: 5 },
+    { size: 150, x: '60%', y: '10%', duration: 18, delay: 2 },
+    { size: 250, x: '30%', y: '80%', duration: 22, delay: 8 },
+  ], []);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      {orbs.map((orb, i) => (
+        <motion.div
+          key={i}
+          className="absolute rounded-full"
+          style={{
+            width: orb.size,
+            height: orb.size,
+            left: orb.x,
+            top: orb.y,
+            background: 'radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)',
+            filter: 'blur(40px)',
+          }}
+          animate={{
+            x: [0, 50, -30, 0],
+            y: [0, -40, 30, 0],
+            scale: [1, 1.2, 0.9, 1],
+            opacity: [0.3, 0.6, 0.4, 0.3],
+          }}
+          transition={{
+            duration: orb.duration,
+            delay: orb.delay,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
+// Animated Gradient Border Ring
+function GlowRing() {
+  return (
+    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <motion.div
+        className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
+        style={{
+          background: 'transparent',
+          border: '1px solid rgba(255,255,255,0.1)',
+        }}
+        animate={{
+          scale: [1, 1.05, 1],
+          opacity: [0.3, 0.5, 0.3],
+          rotate: [0, 180, 360],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+      <motion.div
+        className="absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] rounded-full"
+        style={{
+          background: 'transparent',
+          border: '1px solid rgba(255,255,255,0.05)',
+        }}
+        animate={{
+          scale: [1.05, 1, 1.05],
+          opacity: [0.2, 0.4, 0.2],
+          rotate: [360, 180, 0],
+        }}
+        transition={{
+          duration: 25,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+    </div>
+  );
+}
+
+// Noise Texture Overlay
+function NoiseTexture() {
+  return (
+    <div
+      className="absolute inset-0 opacity-[0.03] pointer-events-none"
+      style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+      }}
+    />
+  );
+}
+
+// Animated Lines - Premium tech feel
+function AnimatedLines() {
+  return (
+    <div className="absolute inset-0 overflow-hidden opacity-20">
+      {[...Array(5)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute h-px bg-gradient-to-r from-transparent via-white to-transparent"
+          style={{
+            width: '100%',
+            top: `${20 + i * 15}%`,
+          }}
+          initial={{ x: '-100%', opacity: 0 }}
+          animate={{
+            x: ['100%', '-100%'],
+            opacity: [0, 0.5, 0],
+          }}
+          transition={{
+            duration: 8 + i * 2,
+            delay: i * 1.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+      ))}
+    </div>
   );
 }
 
 export default function BusinessHeroSection() {
-  const { t } = useTranslation('common');
   const router = useRouter();
-  const isRTL = router.locale === 'ar';
   const locale = router.locale || 'fr';
+  const isRTL = locale === 'ar';
+  const [activeWord, setActiveWord] = useState(0);
 
   const content = {
     fr: {
-      badge: "Partenaire Digital #1 en Algerie",
-      headline1: "Augmentez Votre",
-      headline2: "Chiffre d'Affaires",
-      headline3: "Avec la Technologie",
-      rotatingWords: ["Revenus", "Ventes", "Clients", "Profits"],
-      subtitle: "Nous transformons votre vision en solutions digitales qui generent des resultats mesurables. Plus de 200 entreprises nous font confiance.",
-      cta: "Booster Mon Business",
-      ctaSecondary: "Voir Nos Reussites",
+      headline: "Augmentez vos",
+      rotatingWords: ["Revenus", "Ventes", "Clients"],
+      headlineEnd: "avec la technologie",
+      subtitle: "Solutions digitales sur mesure pour entreprises ambitieuses",
+      cta: "Demarrer mon projet",
+      ctaSecondary: "Voir nos realisations",
       stats: [
-        { value: 340, suffix: "%", label: "ROI Moyen", icon: TrendingUp },
-        { value: 200, suffix: "+", label: "Entreprises Accompagnees", icon: Users },
-        { value: 50, suffix: "M", label: "DA Generes pour nos Clients", icon: DollarSign },
-        { value: 98, suffix: "%", label: "Clients Satisfaits", icon: Star }
-      ],
-      benefits: [
-        { icon: TrendingUp, text: "Augmentation moyenne de 40% du CA" },
-        { icon: Clock, text: "Mise en ligne en 4-8 semaines" },
-        { icon: Shield, text: "Garantie satisfaction ou rembourse" },
-        { icon: Zap, text: "Support technique 24/7" }
-      ],
-      trustText: "Ils nous font confiance",
-      proofTitle: "Resultats Prouves",
-      proofItems: [
-        { company: "E-commerce Mode", result: "+180% ventes en 6 mois" },
-        { company: "Restaurant Alger", result: "+95% commandes en ligne" },
-        { company: "Agence Immobiliere", result: "+250% leads qualifies" }
-      ],
-      scrollText: "Decouvrir nos solutions"
+        { value: "340%", label: "ROI moyen", icon: TrendingUp },
+        { value: "200+", label: "Clients", icon: Users },
+        { value: "90j", label: "Time to market", icon: Zap },
+        { value: "98%", label: "Satisfaction", icon: Target }
+      ]
     },
     en: {
-      badge: "Algeria's #1 Digital Partner",
-      headline1: "Increase Your",
-      headline2: "Revenue",
-      headline3: "With Technology",
-      rotatingWords: ["Revenue", "Sales", "Clients", "Profits"],
-      subtitle: "We transform your vision into digital solutions that generate measurable results. Over 200 businesses trust us.",
-      cta: "Boost My Business",
-      ctaSecondary: "See Our Success Stories",
+      headline: "Grow your",
+      rotatingWords: ["Revenue", "Sales", "Clients"],
+      headlineEnd: "with technology",
+      subtitle: "Custom digital solutions for ambitious businesses",
+      cta: "Start my project",
+      ctaSecondary: "See our work",
       stats: [
-        { value: 340, suffix: "%", label: "Average ROI", icon: TrendingUp },
-        { value: 200, suffix: "+", label: "Businesses Helped", icon: Users },
-        { value: 50, suffix: "M", label: "DA Generated for Clients", icon: DollarSign },
-        { value: 98, suffix: "%", label: "Satisfied Clients", icon: Star }
-      ],
-      benefits: [
-        { icon: TrendingUp, text: "Average 40% revenue increase" },
-        { icon: Clock, text: "Launch in 4-8 weeks" },
-        { icon: Shield, text: "Satisfaction guaranteed or refund" },
-        { icon: Zap, text: "24/7 technical support" }
-      ],
-      trustText: "They trust us",
-      proofTitle: "Proven Results",
-      proofItems: [
-        { company: "Fashion E-commerce", result: "+180% sales in 6 months" },
-        { company: "Algiers Restaurant", result: "+95% online orders" },
-        { company: "Real Estate Agency", result: "+250% qualified leads" }
-      ],
-      scrollText: "Discover our solutions"
+        { value: "340%", label: "Avg ROI", icon: TrendingUp },
+        { value: "200+", label: "Clients", icon: Users },
+        { value: "90d", label: "Time to market", icon: Zap },
+        { value: "98%", label: "Satisfaction", icon: Target }
+      ]
     },
     ar: {
-      badge: "الشريك الرقمي رقم 1 في الجزائر",
-      headline1: "زد",
-      headline2: "إيراداتك",
-      headline3: "بالتكنولوجيا",
-      rotatingWords: ["الإيرادات", "المبيعات", "العملاء", "الأرباح"],
-      subtitle: "نحول رؤيتك إلى حلول رقمية تحقق نتائج قابلة للقياس. أكثر من 200 شركة تثق بنا.",
-      cta: "عزز أعمالي",
-      ctaSecondary: "شاهد قصص نجاحنا",
+      headline: "زد",
+      rotatingWords: ["إيراداتك", "مبيعاتك", "عملاءك"],
+      headlineEnd: "بالتكنولوجيا",
+      subtitle: "حلول رقمية مخصصة للشركات الطموحة",
+      cta: "ابدأ مشروعي",
+      ctaSecondary: "شاهد أعمالنا",
       stats: [
-        { value: 340, suffix: "%", label: "متوسط العائد", icon: TrendingUp },
-        { value: 200, suffix: "+", label: "شركة تمت مساعدتها", icon: Users },
-        { value: 50, suffix: "M", label: "دج تم توليدها للعملاء", icon: DollarSign },
-        { value: 98, suffix: "%", label: "عملاء راضون", icon: Star }
-      ],
-      benefits: [
-        { icon: TrendingUp, text: "زيادة متوسطة 40% في الإيرادات" },
-        { icon: Clock, text: "إطلاق في 4-8 أسابيع" },
-        { icon: Shield, text: "ضمان الرضا أو استرداد المال" },
-        { icon: Zap, text: "دعم تقني 24/7" }
-      ],
-      trustText: "يثقون بنا",
-      proofTitle: "نتائج مثبتة",
-      proofItems: [
-        { company: "متجر أزياء إلكتروني", result: "+180% مبيعات في 6 أشهر" },
-        { company: "مطعم الجزائر", result: "+95% طلبات عبر الإنترنت" },
-        { company: "وكالة عقارية", result: "+250% عملاء محتملين" }
-      ],
-      scrollText: "اكتشف حلولنا"
+        { value: "340%", label: "متوسط العائد", icon: TrendingUp },
+        { value: "+200", label: "عميل", icon: Users },
+        { value: "90ي", label: "وقت الإطلاق", icon: Zap },
+        { value: "98%", label: "رضا", icon: Target }
+      ]
     }
   };
 
   const c = content[locale] || content.fr;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveWord((prev) => (prev + 1) % c.rotatingWords.length);
+    }, 2500);
+    return () => clearInterval(timer);
+  }, [c.rotatingWords.length]);
 
   const handleStartProject = () => {
     const contactSection = document.getElementById('company-contact-section');
@@ -200,211 +365,130 @@ export default function BusinessHeroSection() {
     }
   };
 
-  const handleViewPortfolio = () => {
-    router.push('/portfolio');
-  };
-
   return (
-    <section className={`relative min-h-screen bg-black overflow-hidden ${isRTL ? 'rtl' : 'ltr'}`}>
-      {/* Subtle gradient background */}
+    <section className={`relative min-h-[85vh] bg-black overflow-hidden flex items-center ${isRTL ? 'rtl' : 'ltr'}`}>
+
+      {/* Layered Animated Backgrounds */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white/3 rounded-full blur-3xl" />
+        <NoiseTexture />
+        <LightOrbs />
+        <MorphingBlob />
+        <AuroraWaves />
+        <GlowRing />
+        <AnimatedLines />
+        <RippleEffect />
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 py-20">
-        <div className="max-w-7xl mx-auto w-full">
+      {/* Gradient overlays for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
 
-          {/* Two Column Layout */}
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+      {/* Content */}
+      <div className="relative z-10 w-full">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="text-center max-w-4xl mx-auto space-y-8">
 
-            {/* Left Column - Main Message */}
+            {/* Main Headline */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="space-y-10"
+              transition={{ duration: 0.6 }}
             >
-              {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-                className="inline-flex items-center gap-3 px-5 py-2.5 bg-gradient-to-r from-white/10 to-white/5 rounded-full border border-white/20"
-              >
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="text-white/90 text-sm font-medium">{c.badge}</span>
-              </motion.div>
-
-              {/* Main Headline */}
-              <div className="space-y-4">
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight"
-                >
-                  <span className="block">{c.headline1}</span>
-                  <span className="block mt-2">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 font-normal">
-                      <RotatingWords words={c.rotatingWords} />
-                    </span>
-                  </span>
-                  <span className="block text-gray-400 text-3xl sm:text-4xl md:text-5xl font-extralight mt-4">
-                    {c.headline3}
-                  </span>
-                </motion.h1>
-              </div>
-
-              {/* Subtitle */}
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl font-light"
-              >
-                {c.subtitle}
-              </motion.p>
-
-              {/* Benefits List */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-              >
-                {c.benefits.map((benefit, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.7 + index * 0.1 }}
-                    className="flex items-center gap-3 text-white/80"
-                  >
-                    <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                      <benefit.icon className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="text-sm font-light">{benefit.text}</span>
-                  </motion.div>
-                ))}
-              </motion.div>
-
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.9 }}
-                className="flex flex-col sm:flex-row gap-4 pt-4"
-              >
-                <motion.button
-                  onClick={handleStartProject}
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group relative px-8 py-4 bg-white text-black font-semibold rounded-xl overflow-hidden transition-all duration-300 shadow-lg shadow-white/10"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative flex items-center justify-center gap-3">
-                    <Rocket className="w-5 h-5" />
-                    <span className="text-lg">{c.cta}</span>
-                    {isRTL ? (
-                      <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-                    ) : (
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    )}
-                  </div>
-                </motion.button>
-
-                <motion.button
-                  onClick={handleViewPortfolio}
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group px-8 py-4 border border-white/20 bg-white/5 backdrop-blur-sm text-white font-medium rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3"
-                >
-                  <Play className="w-5 h-5" />
-                  <span>{c.ctaSecondary}</span>
-                </motion.button>
-              </motion.div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight">
+                <span className="text-gray-400">{c.headline}</span>{" "}
+                <span className="relative inline-block min-w-[200px] sm:min-w-[280px]">
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={activeWord}
+                      initial={{ y: 30, opacity: 0, filter: 'blur(10px)' }}
+                      animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
+                      exit={{ y: -30, opacity: 0, filter: 'blur(10px)' }}
+                      transition={{ duration: 0.4 }}
+                      className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-medium"
+                    >
+                      {c.rotatingWords[activeWord]}
+                    </motion.span>
+                  </AnimatePresence>
+                </span>
+                <br />
+                <span className="text-gray-500 text-2xl sm:text-3xl md:text-4xl font-extralight">{c.headlineEnd}</span>
+              </h1>
             </motion.div>
 
-            {/* Right Column - Stats & Proof */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="space-y-8"
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              className="text-lg text-gray-400 font-light"
             >
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                {c.stats.map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5 + index * 0.1 }}
-                    whileHover={{ scale: 1.03, y: -4 }}
-                    className="group relative p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity" />
-                    <div className="relative">
-                      <div className="w-12 h-12 mb-4 rounded-xl bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <stat.icon className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="text-3xl sm:text-4xl font-light text-white mb-1">
-                        <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-                      </div>
-                      <div className="text-sm text-white/50 font-light">{stat.label}</div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+              {c.subtitle}
+            </motion.p>
 
-              {/* Success Stories Preview */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1 }}
-                className="p-6 bg-gradient-to-br from-white/8 to-white/3 rounded-2xl border border-white/10"
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-2"
+            >
+              <motion.button
+                onClick={handleStartProject}
+                whileHover={{ scale: 1.02, boxShadow: '0 0 60px rgba(255,255,255,0.3)' }}
+                whileTap={{ scale: 0.98 }}
+                className="group px-8 py-4 bg-white text-black font-semibold rounded-xl transition-all duration-500 flex items-center justify-center gap-3 relative overflow-hidden"
               >
-                <h4 className="text-white font-medium mb-4 flex items-center gap-2">
-                  <BarChart3 className="w-5 h-5" />
-                  {c.proofTitle}
-                </h4>
-                <div className="space-y-3">
-                  {c.proofItems.map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 1.1 + index * 0.1 }}
-                      className="flex items-center justify-between p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"
-                    >
-                      <span className="text-white/70 text-sm">{item.company}</span>
-                      <span className="text-green-400 font-medium text-sm">{item.result}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
+                {/* Shimmer effect */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-transparent"
+                  animate={{ x: ['-200%', '200%'] }}
+                  transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+                />
+                <span className="relative">{c.cta}</span>
+                {isRTL ? (
+                  <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform relative" />
+                ) : (
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative" />
+                )}
+              </motion.button>
 
-              {/* Trust Logos Placeholder */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.3 }}
-                className="text-center"
+              <motion.button
+                onClick={() => router.push('/portfolio')}
+                whileHover={{ scale: 1.02, borderColor: 'rgba(255,255,255,0.5)' }}
+                whileTap={{ scale: 0.98 }}
+                className="group px-8 py-4 border border-white/20 text-white font-medium rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-md"
               >
-                <p className="text-white/40 text-sm mb-4">{c.trustText}</p>
-                <div className="flex items-center justify-center gap-6 flex-wrap">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <div
-                      key={i}
-                      className="w-16 h-8 bg-white/10 rounded-lg flex items-center justify-center"
-                    >
-                      <div className="w-10 h-4 bg-white/20 rounded" />
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
+                <Play className="w-4 h-4" />
+                <span>{c.ctaSecondary}</span>
+              </motion.button>
+            </motion.div>
+
+            {/* Stats Row */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8"
+            >
+              {c.stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.6 + index * 0.1 }}
+                  whileHover={{
+                    scale: 1.05,
+                    borderColor: 'rgba(255,255,255,0.4)',
+                  }}
+                  className="p-4 bg-white/5 rounded-xl border border-white/10 transition-all duration-300 group backdrop-blur-md cursor-default hover:bg-white/10"
+                >
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <stat.icon className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
+                    <span className="text-2xl font-light text-white">{stat.value}</span>
+                  </div>
+                  <p className="text-xs text-white/40 group-hover:text-white/70 transition-colors">{stat.label}</p>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </div>
@@ -414,19 +498,16 @@ export default function BusinessHeroSection() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/40 flex flex-col items-center gap-3 cursor-pointer group z-20"
-        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+        transition={{ delay: 1 }}
+        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer group"
+        onClick={() => window.scrollTo({ top: window.innerHeight * 0.85, behavior: 'smooth' })}
       >
-        <span className="text-sm group-hover:text-white/60 transition-colors font-light bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
-          {c.scrollText}
-        </span>
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="p-2 border border-white/20 rounded-full group-hover:border-white/40 transition-colors bg-black/50 backdrop-blur-sm"
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="p-1.5 border border-white/20 rounded-full group-hover:border-white/50 transition-colors backdrop-blur-sm"
         >
-          <ChevronDown className="w-5 h-5" />
+          <ChevronDown className="w-4 h-4 text-white/40 group-hover:text-white/70" />
         </motion.div>
       </motion.div>
     </section>

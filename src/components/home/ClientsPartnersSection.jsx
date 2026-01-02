@@ -4,13 +4,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 
 // Actual clients from public/clients folder
 const clients = [
   {
     name: "Avé",
-    logo: "/clients/avé.png",
+    logo: "/clients/ave.png",
     alt: "Avé - Client Symloop"
   },
   {
@@ -40,12 +39,12 @@ const clients = [
   },
   {
     name: "SPN Events",
-    logo: "/clients/spn enents.jpg",
+    logo: "/clients/spn-events.jpg",
     alt: "SPN Events - Client Symloop"
   },
   {
     name: "Commune de Sétif",
-    logo: "/clients/بلدية سطيف.jpeg",
+    logo: "/clients/commune-setif.jpeg",
     alt: "بلدية سطيف - Commune de Sétif - Client Symloop"
   },
   {
@@ -142,27 +141,25 @@ export default function ClientsPartnersSection() {
               }}
               viewport={{ once: true }}
               whileHover={{
-                y: -4,
-                scale: 1.02,
+                y: -8,
+                scale: 1.05,
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="group"
+              className="group cursor-pointer"
             >
-              <div className="relative h-32 md:h-40 rounded-xl p-6 bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden transition-all duration-300 group-hover:border-white/30 group-hover:bg-white/10 flex items-center justify-center">
+              <div className="relative h-32 md:h-40 rounded-xl p-6 bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden transition-all duration-300 group-hover:border-white/40 group-hover:bg-white/15 group-hover:shadow-lg group-hover:shadow-white/10 flex items-center justify-center">
                 {/* Logo */}
                 <div className="relative w-full h-full flex items-center justify-center">
-                  <Image
+                  <img
                     src={client.logo}
                     alt={client.alt}
-                    width={120}
-                    height={80}
-                    className="object-contain max-h-20 md:max-h-24 w-auto transition-all duration-300"
-                    style={{ maxWidth: '100%', height: 'auto' }}
+                    className="object-contain max-h-20 md:max-h-24 w-auto transition-all duration-300 group-hover:scale-110"
+                    loading="lazy"
                   />
                 </div>
 
                 {/* Client Name Tooltip on Hover */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-xs text-white text-center font-medium truncate">
                     {client.name}
                   </p>
@@ -181,11 +178,11 @@ export default function ClientsPartnersSection() {
           className="mt-16 flex flex-col items-center justify-center text-center"
         >
           <div className="relative w-32 h-32 md:w-40 md:h-40 mb-4">
-            <Image
+            <img
               src="/clients/label-startup-algerie.png"
               alt="Label Startup Algérie - Symloop"
-              fill
-              className="object-contain"
+              className="object-contain w-full h-full"
+              loading="lazy"
             />
           </div>
           <p className="text-lg md:text-xl font-medium text-white mb-2">

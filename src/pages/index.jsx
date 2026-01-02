@@ -13,7 +13,6 @@ import ProductsSection from "../../src/components/home/ProductsSection";
 import AIHeroSection from "../../src/components/home/AIHeroSection";
 import BusinessHeroSection from "../../src/components/home/BusinessHeroSection";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
-import AIOnboarding from "../../src/components/onboarding/AIOnboarding";
 import Seo from "../../src/utils/seo";
 import FAQSchema from "../../src/components/seo/FAQSchema";
 
@@ -97,32 +96,9 @@ export default function Home() {
   const { t } = useTranslation('common');
   const [input, setInput] = useState("");
   const [placeholder, setPlaceholder] = useState("");
-  const [showOnboarding, setShowOnboarding] = useState(false);
-  const [isClient, setIsClient] = useState(false);
 
   const typingSpeed = 100;
   const changeDelay = 3000;
-
-  // Check if user has seen onboarding
-  useEffect(() => {
-    setIsClient(true);
-    const hasSeenOnboarding = localStorage.getItem('symloop_onboarding_seen');
-    if (!hasSeenOnboarding) {
-      setShowOnboarding(true);
-    }
-  }, []);
-
-  // Handle onboarding complete
-  const handleOnboardingComplete = (answers) => {
-    localStorage.setItem('symloop_onboarding_seen', 'true');
-    setShowOnboarding(false);
-  };
-
-  // Handle onboarding skip
-  const handleOnboardingSkip = () => {
-    localStorage.setItem('symloop_onboarding_seen', 'true');
-    setShowOnboarding(false);
-  };
 
   useEffect(() => {
     const placeholders = [
@@ -194,14 +170,6 @@ export default function Home() {
 
   return (
     <>
-      {/* AI Onboarding Screen */}
-      {isClient && showOnboarding && (
-        <AIOnboarding
-          onComplete={handleOnboardingComplete}
-          onSkip={handleOnboardingSkip}
-        />
-      )}
-
       <Seo
         title={currentSeo.title}
         description={currentSeo.description}
@@ -217,40 +185,37 @@ export default function Home() {
         ]}
       />
       <FAQSchema faqs={getHomepageFAQs(router.locale || 'fr')} />
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-black">
         {/* Business Hero Section - Revenue & Growth Focus */}
         <BusinessHeroSection />
-<Divider />
-
-<CompanyContactSection />
-<Divider />
-<ProductsSection />
-<Divider />
-<ClientsPartnersSection />
-<Divider />
-      <ExpertiseSection />
-      <Divider />
-      <SolutionsSection />
-      <Divider />
-    
-
-<TechnologySection />
-      <Divider />
+        <Divider />
+        <CompanyContactSection />
+        <Divider />
+        <ProductsSection />
+        <Divider />
+        <ClientsPartnersSection />
+        <Divider />
+        <ExpertiseSection />
+        <Divider />
+        <SolutionsSection />
+        <Divider />
+        <TechnologySection />
+        <Divider />
 
       {/* Blog Highlights Section - Internal Links for SEO */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-black">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2 mb-4">
-              <BookOpen className="w-4 h-4 text-gray-600" />
-              <span className="text-sm font-medium text-gray-600">
+            <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-4 border border-white/20">
+              <BookOpen className="w-4 h-4 text-white/70" />
+              <span className="text-sm font-medium text-white/70">
                 {router.locale === 'ar' ? 'موارد مجانية' : router.locale === 'en' ? 'Free Resources' : 'Ressources Gratuites'}
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {router.locale === 'ar' ? 'أدلة وموارد الخبراء' : router.locale === 'en' ? 'Expert Guides & Resources' : 'Guides & Ressources Expert'}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
               {router.locale === 'ar'
                 ? 'اكتشف أدلتنا الشاملة لنجاح أعمالك الرقمية في الجزائر'
                 : router.locale === 'en'
@@ -263,11 +228,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* E-commerce Guide */}
             <Link href="/blog/ecommerce-cib-edahabia-algerie" className="group">
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-6 border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <ShoppingCart className="w-6 h-6 text-green-600" />
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <ShoppingCart className="w-6 h-6 text-green-400" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
                   {router.locale === 'ar'
                     ? 'التجارة الإلكترونية مع CIB'
                     : router.locale === 'en'
@@ -275,7 +240,7 @@ export default function Home() {
                     : 'E-commerce avec Paiement CIB'
                   }
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-400 mb-4">
                   {router.locale === 'ar'
                     ? 'دليل كامل للدفع عبر الإنترنت في الجزائر'
                     : router.locale === 'en'
@@ -283,7 +248,7 @@ export default function Home() {
                     : 'Guide complet du paiement en ligne en Algérie avec CIB & Edahabia'
                   }
                 </p>
-                <div className="flex items-center gap-1 text-green-600 text-sm font-medium">
+                <div className="flex items-center gap-1 text-green-400 text-sm font-medium">
                   {router.locale === 'ar' ? 'اقرأ المزيد' : router.locale === 'en' ? 'Read more' : 'Lire le guide'}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -292,11 +257,11 @@ export default function Home() {
 
             {/* SEO Guide */}
             <Link href="/blog/seo-algerie" className="group">
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <TrendingUp className="w-6 h-6 text-blue-600" />
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <TrendingUp className="w-6 h-6 text-blue-400" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                   {router.locale === 'ar'
                     ? 'دليل تحسين محركات البحث'
                     : router.locale === 'en'
@@ -304,7 +269,7 @@ export default function Home() {
                     : 'Guide SEO Algérie 2025'
                   }
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-400 mb-4">
                   {router.locale === 'ar'
                     ? 'استراتيجيات لتصدر نتائج Google.dz'
                     : router.locale === 'en'
@@ -312,7 +277,7 @@ export default function Home() {
                     : 'Stratégies pour dominer Google.dz et tripler votre trafic'
                   }
                 </p>
-                <div className="flex items-center gap-1 text-blue-600 text-sm font-medium">
+                <div className="flex items-center gap-1 text-blue-400 text-sm font-medium">
                   {router.locale === 'ar' ? 'اقرأ المزيد' : router.locale === 'en' ? 'Read more' : 'Lire le guide'}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -321,11 +286,11 @@ export default function Home() {
 
             {/* App Cost Guide */}
             <Link href="/blog/app-cost-in-algeria" className="group">
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <DollarSign className="w-6 h-6 text-purple-600" />
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <DollarSign className="w-6 h-6 text-purple-400" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
                   {router.locale === 'ar'
                     ? 'أسعار التطبيقات في الجزائر'
                     : router.locale === 'en'
@@ -333,7 +298,7 @@ export default function Home() {
                     : 'Prix Applications Mobiles Algérie'
                   }
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-400 mb-4">
                   {router.locale === 'ar'
                     ? 'أسعار حقيقية وشفافة لتطوير التطبيقات'
                     : router.locale === 'en'
@@ -341,7 +306,7 @@ export default function Home() {
                     : 'Prix réels et transparents pour le développement mobile'
                   }
                 </p>
-                <div className="flex items-center gap-1 text-purple-600 text-sm font-medium">
+                <div className="flex items-center gap-1 text-purple-400 text-sm font-medium">
                   {router.locale === 'ar' ? 'اقرأ المزيد' : router.locale === 'en' ? 'Read more' : 'Lire le guide'}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -352,7 +317,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 hover:border-white/30 transition-all"
             >
               {router.locale === 'ar' ? 'عرض جميع المقالات' : router.locale === 'en' ? 'View All Articles' : 'Voir Tous les Articles'}
               <ArrowRight className="w-4 h-4" />
@@ -362,9 +327,9 @@ export default function Home() {
       </section>
 
       {/* Social Media Links */}
-      <section className="py-8 bg-gray-100">
+      <section className="py-8 bg-black border-t border-white/10">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
-          <h3 className="text-xl font-semibold text-gray-700 mb-6">
+          <h3 className="text-xl font-semibold text-white mb-6">
             {t('contact.followUs')}
           </h3>
           <div className="flex space-x-6">
@@ -372,7 +337,7 @@ export default function Home() {
               href="https://www.facebook.com/symloop"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-black transition"
+              className="text-gray-400 hover:text-white transition"
             >
               <FaFacebookF className="w-6 h-6" />
             </a>
@@ -380,7 +345,7 @@ export default function Home() {
               href="https://www.linkedin.com/company/symloop-technology"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-black transition"
+              className="text-gray-400 hover:text-white transition"
             >
               <FaLinkedinIn className="w-6 h-6" />
             </a>
@@ -388,13 +353,12 @@ export default function Home() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-black transition"
+              className="text-gray-400 hover:text-white transition"
             >
               <FaGithub className="w-6 h-6" />
             </a>
           </div>
         </div>
-      
       </section>
 
       </div>
