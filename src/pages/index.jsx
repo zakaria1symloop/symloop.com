@@ -11,6 +11,7 @@ import TechnologySection from "../../src/components/home/TechnologySection";
 import ClientsPartnersSection from "../../src/components/home/ClientsPartnersSection";
 import ProductsSection from "../../src/components/home/ProductsSection";
 import AIHeroSection from "../../src/components/home/AIHeroSection";
+import BusinessHeroSection from "../../src/components/home/BusinessHeroSection";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
 import AIOnboarding from "../../src/components/onboarding/AIOnboarding";
 import Seo from "../../src/utils/seo";
@@ -217,9 +218,8 @@ export default function Home() {
       />
       <FAQSchema faqs={getHomepageFAQs(router.locale || 'fr')} />
       <div className="min-h-screen flex flex-col">
-        {/* AI Hero Section - Showcasing AI Leadership in Algeria */}
-
-  <AIHeroSection />
+        {/* Business Hero Section - Revenue & Growth Focus */}
+        <BusinessHeroSection />
 <Divider />
 
 <CompanyContactSection />
