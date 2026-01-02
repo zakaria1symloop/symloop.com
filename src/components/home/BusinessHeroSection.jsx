@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
 import {
@@ -12,155 +12,78 @@ import {
   Zap
 } from "lucide-react";
 
-// Aurora Waves - Flowing gradient ribbons (Static)
+// Aurora Waves - Using CSS animations for smoother scroll performance
 function AuroraWaves() {
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Wave 1 */}
-      <motion.div
-        className="absolute w-[200%] h-[300px]"
-        style={{
-          top: '20%',
-          left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.05) 80%, transparent 100%)',
-          filter: 'blur(30px)',
-          transform: 'rotate(-5deg)',
-        }}
-        animate={{
-          x: ['-10%', '10%', '-10%'],
-          opacity: [0.4, 0.7, 0.4],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-
-      {/* Wave 2 */}
-      <motion.div
-        className="absolute w-[200%] h-[200px]"
-        style={{
-          top: '50%',
-          left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 70%, transparent 100%)',
-          filter: 'blur(40px)',
-          transform: 'rotate(3deg)',
-        }}
-        animate={{
-          x: ['10%', '-10%', '10%'],
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-
-      {/* Wave 3 - fades before bottom */}
-      <motion.div
-        className="absolute w-[200%] h-[200px]"
-        style={{
-          top: '55%',
-          left: '-50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 75%, transparent 100%)',
-          filter: 'blur(35px)',
-          transform: 'rotate(-2deg)',
-        }}
-        animate={{
-          x: ['-5%', '15%', '-5%'],
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{
-          duration: 18,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+      <style jsx>{`
+        @keyframes wave1 {
+          0%, 100% { transform: translateX(-10%) rotate(-5deg); opacity: 0.4; }
+          50% { transform: translateX(10%) rotate(-5deg); opacity: 0.7; }
+        }
+        @keyframes wave2 {
+          0%, 100% { transform: translateX(10%) rotate(3deg); opacity: 0.5; }
+          50% { transform: translateX(-10%) rotate(3deg); opacity: 0.8; }
+        }
+        @keyframes wave3 {
+          0%, 100% { transform: translateX(-5%) rotate(-2deg); opacity: 0.5; }
+          50% { transform: translateX(15%) rotate(-2deg); opacity: 0.8; }
+        }
+        .aurora-wave-1 { animation: wave1 12s ease-in-out infinite; }
+        .aurora-wave-2 { animation: wave2 15s ease-in-out infinite; }
+        .aurora-wave-3 { animation: wave3 18s ease-in-out infinite; }
+      `}</style>
+      <div className="aurora-wave-1 absolute w-[200%] h-[300px]" style={{ top: '20%', left: '-50%', background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.05) 80%, transparent 100%)', filter: 'blur(30px)', willChange: 'transform, opacity' }} />
+      <div className="aurora-wave-2 absolute w-[200%] h-[200px]" style={{ top: '50%', left: '-50%', background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 70%, transparent 100%)', filter: 'blur(40px)', willChange: 'transform, opacity' }} />
+      <div className="aurora-wave-3 absolute w-[200%] h-[200px]" style={{ top: '55%', left: '-50%', background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 75%, transparent 100%)', filter: 'blur(35px)', willChange: 'transform, opacity' }} />
     </div>
   );
 }
 
-// Floating Light Orbs - Static glowing spheres
+// Floating Light Orbs - Using CSS animations for smoother scroll performance
 function LightOrbs() {
-  const orbs = useMemo(() => [
-    { size: 300, x: '10%', y: '15%', duration: 20, delay: 0 },
-    { size: 220, x: '80%', y: '40%', duration: 25, delay: 5 },
-    { size: 180, x: '60%', y: '10%', duration: 18, delay: 2 },
-    { size: 250, x: '25%', y: '50%', duration: 22, delay: 8 },
-  ], []);
-
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {orbs.map((orb, i) => (
-        <motion.div
-          key={i}
-          className="absolute rounded-full"
-          style={{
-            width: orb.size,
-            height: orb.size,
-            left: orb.x,
-            top: orb.y,
-            background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)',
-            filter: 'blur(40px)',
-          }}
-          animate={{
-            x: [0, 50, -30, 0],
-            y: [0, -40, 30, 0],
-            scale: [1, 1.2, 0.9, 1],
-            opacity: [0.4, 0.7, 0.5, 0.4],
-          }}
-          transition={{
-            duration: orb.duration,
-            delay: orb.delay,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      ))}
+      <style jsx>{`
+        @keyframes float1 {
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+          50% { transform: translate(50px, -40px) scale(1.2); opacity: 0.7; }
+        }
+        @keyframes float2 {
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+          50% { transform: translate(-30px, 30px) scale(0.9); opacity: 0.5; }
+        }
+        .orb-1 { animation: float1 20s ease-in-out infinite; }
+        .orb-2 { animation: float2 25s ease-in-out infinite 5s; }
+        .orb-3 { animation: float1 18s ease-in-out infinite 2s; }
+        .orb-4 { animation: float2 22s ease-in-out infinite 8s; }
+      `}</style>
+      <div className="orb-1 absolute rounded-full" style={{ width: 300, height: 300, left: '10%', top: '15%', background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)', filter: 'blur(40px)', willChange: 'transform, opacity' }} />
+      <div className="orb-2 absolute rounded-full" style={{ width: 220, height: 220, left: '80%', top: '40%', background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)', filter: 'blur(40px)', willChange: 'transform, opacity' }} />
+      <div className="orb-3 absolute rounded-full" style={{ width: 180, height: 180, left: '60%', top: '10%', background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)', filter: 'blur(40px)', willChange: 'transform, opacity' }} />
+      <div className="orb-4 absolute rounded-full" style={{ width: 250, height: 250, left: '25%', top: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)', filter: 'blur(40px)', willChange: 'transform, opacity' }} />
     </div>
   );
 }
 
-// Animated Gradient Border Ring (Static)
+// Animated Gradient Border Ring - Using CSS for smoother performance
 function GlowRing() {
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '-10%' }}>
-      <motion.div
-        className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
-        style={{
-          background: 'transparent',
-          border: '1px solid rgba(255,255,255,0.15)',
-        }}
-        animate={{
-          scale: [1, 1.05, 1],
-          opacity: [0.4, 0.6, 0.4],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
-      <motion.div
-        className="absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] rounded-full"
-        style={{
-          background: 'transparent',
-          border: '1px solid rgba(255,255,255,0.1)',
-        }}
-        animate={{
-          scale: [1.05, 1, 1.05],
-          opacity: [0.3, 0.5, 0.3],
-          rotate: [360, 180, 0],
-        }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
+      <style jsx>{`
+        @keyframes ring1 {
+          0%, 100% { transform: rotate(0deg) scale(1); opacity: 0.4; }
+          50% { transform: rotate(180deg) scale(1.05); opacity: 0.6; }
+        }
+        @keyframes ring2 {
+          0%, 100% { transform: rotate(360deg) scale(1.05); opacity: 0.3; }
+          50% { transform: rotate(180deg) scale(1); opacity: 0.5; }
+        }
+        .glow-ring-1 { animation: ring1 20s linear infinite; }
+        .glow-ring-2 { animation: ring2 25s linear infinite; }
+      `}</style>
+      <div className="glow-ring-1 absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.15)', willChange: 'transform, opacity' }} />
+      <div className="glow-ring-2 absolute w-[400px] h-[400px] md:w-[550px] md:h-[550px] rounded-full" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', willChange: 'transform, opacity' }} />
     </div>
   );
 }
@@ -177,31 +100,27 @@ function NoiseTexture() {
   );
 }
 
-// Animated Lines - Premium tech feel (Static)
+// Animated Lines - Using CSS for smoother performance
 function AnimatedLines() {
   return (
     <div className="absolute inset-0 overflow-hidden opacity-35">
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute h-px bg-gradient-to-r from-transparent via-white to-transparent"
-          style={{
-            width: '100%',
-            top: `${20 + i * 15}%`,
-          }}
-          initial={{ x: '-100%', opacity: 0 }}
-          animate={{
-            x: ['100%', '-100%'],
-            opacity: [0, 0.5, 0],
-          }}
-          transition={{
-            duration: 8 + i * 2,
-            delay: i * 1.5,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      ))}
+      <style jsx>{`
+        @keyframes line-sweep {
+          0% { transform: translateX(-100%); opacity: 0; }
+          50% { opacity: 0.5; }
+          100% { transform: translateX(100%); opacity: 0; }
+        }
+        .anim-line-1 { animation: line-sweep 8s ease-in-out infinite; }
+        .anim-line-2 { animation: line-sweep 10s ease-in-out infinite 1.5s; }
+        .anim-line-3 { animation: line-sweep 12s ease-in-out infinite 3s; }
+        .anim-line-4 { animation: line-sweep 14s ease-in-out infinite 4.5s; }
+        .anim-line-5 { animation: line-sweep 16s ease-in-out infinite 6s; }
+      `}</style>
+      <div className="anim-line-1 absolute h-px w-full bg-gradient-to-r from-transparent via-white to-transparent" style={{ top: '20%', willChange: 'transform, opacity' }} />
+      <div className="anim-line-2 absolute h-px w-full bg-gradient-to-r from-transparent via-white to-transparent" style={{ top: '35%', willChange: 'transform, opacity' }} />
+      <div className="anim-line-3 absolute h-px w-full bg-gradient-to-r from-transparent via-white to-transparent" style={{ top: '50%', willChange: 'transform, opacity' }} />
+      <div className="anim-line-4 absolute h-px w-full bg-gradient-to-r from-transparent via-white to-transparent" style={{ top: '65%', willChange: 'transform, opacity' }} />
+      <div className="anim-line-5 absolute h-px w-full bg-gradient-to-r from-transparent via-white to-transparent" style={{ top: '80%', willChange: 'transform, opacity' }} />
     </div>
   );
 }
@@ -299,6 +218,7 @@ export default function BusinessHeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
+              style={{ willChange: 'opacity, transform' }}
             >
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight">
                 <span className="text-gray-400">{c.headline}</span>{" "}
