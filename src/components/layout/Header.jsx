@@ -229,46 +229,182 @@ const NavItem = ({ label, link, children, isMobile = false, scrolled }) => {
 // --- MOBILE MENU ---
 const MobileMenu = ({ isOpen, onClose, scrolled }) => {
   const { t } = useTranslation('common');
-  
-  if (!isOpen) return null;
+  const router = useRouter();
+
+  const navItems = [
+    { label: t('navigation.home'), link: '/' },
+    { label: t('navigation.services'), link: '/services' },
+    { label: t('navigation.clientsPartners'), link: '/#clients-partners' },
+    { label: t('navigation.blog'), link: '/blog' },
+    { label: t('navigation.learning'), link: '/learning' },
+    { label: t('navigation.investors'), link: '/investisseurs' },
+    { label: t('navigation.recruitment'), link: '/recrutement' },
+  ];
+
+  const handleNavClick = (link) => {
+    onClose();
+    router.push(link);
+  };
 
   return (
-    <div className="fixed inset-0 z-50 lg:hidden">
-      {/* Backdrop */}
-      <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" onClick={onClose}></div>
-      
-      {/* Menu Panel */}
-      <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out">
-        <div className="flex flex-col h-full">
-          {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-100">
-            <h3 className="text-xl font-bold text-gray-800">{t('menu')}</h3>
-            <button
-              onClick={onClose}
-              className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
+    <>
+      <style jsx>{`
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes orbFloat1 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(20px, -30px) scale(1.1); }
+        }
+        @keyframes orbFloat2 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(-15px, 20px) scale(0.9); }
+        }
+        @keyframes orbFloat3 {
+          0%, 100% { transform: translate(0, 0) scale(1.1); }
+          50% { transform: translate(10px, 15px) scale(1); }
+        }
+        @keyframes shimmer {
+          0% { background-position: -200% 0; }
+          100% { background-position: 200% 0; }
+        }
+        .menu-panel {
+          animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .menu-backdrop {
+          animation: fadeIn 0.3s ease-out forwards;
+        }
+        .orb-1 { animation: orbFloat1 8s ease-in-out infinite; }
+        .orb-2 { animation: orbFloat2 10s ease-in-out infinite 1s; }
+        .orb-3 { animation: orbFloat3 12s ease-in-out infinite 2s; }
+        .nav-item-shimmer {
+          background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+          background-size: 200% 100%;
+        }
+        .nav-item-shimmer:hover {
+          animation: shimmer 1.5s ease-in-out infinite;
+        }
+      `}</style>
 
-          {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto py-4">
-            <NavItem label={t('navigation.home')} link="/" isMobile scrolled={true} />
-            <NavItem label={t('navigation.services')} link="/services" isMobile scrolled={true} />
-            <NavItem label={t('navigation.clientsPartners')} link="/#clients-partners" isMobile scrolled={true} />
-            <NavItem label={t('navigation.blog')} link="/blog" isMobile scrolled={true} />
-            <NavItem label={t('navigation.learning')} link="/learning" isMobile scrolled={true} />
-            <NavItem label={t('navigation.investors')} link="/investisseurs" isMobile scrolled={true} />
-            <NavItem label={t('navigation.recruitment')} link="/recrutement" isMobile scrolled={true} />
-          </nav>
+      <div className={`fixed inset-0 z-50 lg:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+        {/* Backdrop with blur */}
+        {isOpen && (
+          <div
+            className="menu-backdrop fixed inset-0 bg-black/60 backdrop-blur-md"
+            onClick={onClose}
+          />
+        )}
 
-          {/* CTA Button */}
-          <div className="p-6 border-t border-gray-100">
-            <FreeConsultationButton />
+        {/* Menu Panel */}
+        {isOpen && (
+          <div className="menu-panel fixed top-0 right-0 h-full w-[85%] max-w-[320px] bg-black/90 backdrop-blur-xl border-l border-white/10 shadow-2xl overflow-hidden">
+
+            {/* Animated Orbs Background */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <div className="orb-1 absolute w-[200px] h-[200px] rounded-full"
+                style={{
+                  top: '10%',
+                  right: '-20%',
+                  background: 'radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%)',
+                  filter: 'blur(40px)'
+                }}
+              />
+              <div className="orb-2 absolute w-[150px] h-[150px] rounded-full"
+                style={{
+                  top: '40%',
+                  left: '-10%',
+                  background: 'radial-gradient(circle, rgba(59,130,246,0.25) 0%, transparent 70%)',
+                  filter: 'blur(35px)'
+                }}
+              />
+              <div className="orb-3 absolute w-[180px] h-[180px] rounded-full"
+                style={{
+                  bottom: '15%',
+                  right: '-15%',
+                  background: 'radial-gradient(circle, rgba(236,72,153,0.2) 0%, transparent 70%)',
+                  filter: 'blur(45px)'
+                }}
+              />
+              {/* Subtle grid pattern */}
+              <div className="absolute inset-0 opacity-[0.03]"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+                  backgroundSize: '40px 40px'
+                }}
+              />
+            </div>
+
+            <div className="relative flex flex-col h-full z-10">
+              {/* Header */}
+              <div className="flex items-center justify-between p-5 border-b border-white/10">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                  <span className="text-sm font-medium text-white/60">{t('menu')}</span>
+                </div>
+                <button
+                  onClick={onClose}
+                  className="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group"
+                >
+                  <X className="w-5 h-5 text-white/70 group-hover:text-white transition-colors" />
+                </button>
+              </div>
+
+              {/* Navigation */}
+              <nav className="flex-1 overflow-y-auto py-6 px-4">
+                <div className="space-y-2">
+                  {navItems.map((item, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleNavClick(item.link)}
+                      className="nav-item-shimmer w-full text-left px-4 py-3.5 rounded-xl text-white/80 hover:text-white font-medium transition-all duration-300 hover:bg-white/10 border border-transparent hover:border-white/10 flex items-center justify-between group"
+                      style={{ animationDelay: `${index * 50}ms` }}
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown className="w-4 h-4 -rotate-90 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" />
+                    </button>
+                  ))}
+                </div>
+              </nav>
+
+              {/* Bottom Section */}
+              <div className="p-5 border-t border-white/10 space-y-4">
+                {/* Language indicator */}
+                <div className="flex items-center justify-center gap-3 text-xs text-white/40">
+                  <span className="px-2 py-1 rounded bg-white/5 border border-white/10">FR</span>
+                  <span className="px-2 py-1 rounded hover:bg-white/5 cursor-pointer transition-colors">EN</span>
+                  <span className="px-2 py-1 rounded hover:bg-white/5 cursor-pointer transition-colors">AR</span>
+                </div>
+
+                {/* CTA Button */}
+                <button
+                  onClick={() => {
+                    onClose();
+                    window.open('https://calendly.com/symloop', '_blank');
+                  }}
+                  className="w-full py-4 px-6 bg-gradient-to-r from-white via-gray-100 to-white text-black font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-white/20 hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  {t('header.freeConsultation') || 'Consultation Gratuite'}
+                </button>
+
+                {/* Social hint */}
+                <p className="text-center text-xs text-white/30">
+                  contact@symloop.com
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 
