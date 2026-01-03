@@ -286,10 +286,15 @@ const MobileMenu = ({ isOpen, onClose, onContactClick }) => {
                   {t('contact.freeConsultation')}
                 </button>
 
-                {/* Contact */}
-                <p className="text-center text-xs text-white/30">
-                  contact@symloop.com
-                </p>
+                {/* Contact Info */}
+                <div className="flex flex-col items-center gap-1.5">
+                  <a href="tel:+213549575512" className="text-xs text-white/50 hover:text-white transition-colors">
+                    +213 549 575 512
+                  </a>
+                  <a href="mailto:contact@symloop.com" className="text-xs text-white/50 hover:text-white transition-colors">
+                    contact@symloop.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
