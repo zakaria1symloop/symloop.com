@@ -180,7 +180,7 @@ const MobileContactBar = ({ onAIClick }) => {
             href="tel:+213549575512"
             className="flex items-center gap-2 bg-white text-black font-semibold text-xs px-4 py-2.5 rounded-full hover:bg-white/90 transition-all duration-300"
           >
-            <span>{t('contact.freeConsultation')}</span>
+            <span>{t('contact.telephone')}</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
