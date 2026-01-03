@@ -1,10 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowRight, Phone, MessageCircle, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import LanguageSwitcher from './LanguageSwitcher';
+import AIOnboarding from '../onboarding/AIOnboarding';
 
 // --- CONTACT POPUP ---
 const ContactPopup = ({ isOpen, onClose }) => {
@@ -106,7 +107,7 @@ const ContactPopup = ({ isOpen, onClose }) => {
 };
 
 // --- MOBILE CONTACT BAR ---
-const MobileContactBar = () => {
+const MobileContactBar = ({ onAIClick }) => {
   return (
     <>
       <style jsx>{`
@@ -121,6 +122,16 @@ const MobileContactBar = () => {
 
       <div className="lg:hidden fixed bottom-5 left-1/2 -translate-x-1/2 z-40">
         <div className="contact-bar-glow bg-black/80 backdrop-blur-2xl border border-white/15 rounded-full px-2 py-1.5 flex items-center gap-1">
+          {/* AI Button */}
+          <button
+            onClick={onAIClick}
+            className="group flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20 hover:from-purple-500/30 hover:via-pink-500/30 hover:to-cyan-500/30 border border-white/10 transition-all duration-300"
+          >
+            <Sparkles className="w-5 h-5 text-purple-400 group-hover:text-purple-300 transition-colors" />
+          </button>
+
+          {/* Divider */}
+          <div className="w-px h-6 bg-white/10" />
           {/* WhatsApp */}
           <a
             href="https://wa.me/213549575512"
@@ -380,6 +391,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [contactPopupOpen, setContactPopupOpen] = useState(false);
+  const [showAIOnboarding, setShowAIOnboarding] = useState(false);
   const { t } = useTranslation('common');
 
   useEffect(() => {
@@ -459,6 +471,18 @@ export default function Header() {
                 <LanguageSwitcher scrolled={scrolled} />
               </div>
 
+              {/* AI Button - Desktop */}
+              <button
+                onClick={() => setShowAIOnboarding(true)}
+                className={`hidden lg:flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 p-[2px] transition-all duration-300 hover:scale-105 ${
+                  scrolled ? 'w-9 h-9' : 'w-10 h-10'
+                }`}
+              >
+                <span className="flex items-center justify-center w-full h-full rounded-full bg-black">
+                  <Sparkles className="w-4 h-4 text-white" />
+                </span>
+              </button>
+
               {/* CTA Button - Desktop */}
               <button
                 onClick={() => setContactPopupOpen(true)}
@@ -501,7 +525,15 @@ export default function Header() {
       />
 
       {/* Mobile Contact Bar */}
-      <MobileContactBar />
+      <MobileContactBar onAIClick={() => setShowAIOnboarding(true)} />
+
+      {/* AI Onboarding */}
+      {showAIOnboarding && (
+        <AIOnboarding
+          onComplete={() => setShowAIOnboarding(false)}
+          onSkip={() => setShowAIOnboarding(false)}
+        />
+      )}
     </>
   );
 }

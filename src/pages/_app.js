@@ -2,7 +2,6 @@ import '../../styles/globals.css';
 import Script from 'next/script';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
-import FloatingButton from '../components/layout/FloatingButton';
 import SmoothScroll from '../components/effects/SmoothScroll';
 import { appWithTranslation } from 'next-i18next';
 
@@ -30,7 +29,6 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
           </main>
           <Footer />
-          <FloatingButton />
         </div>
       </SmoothScroll>
     </>
