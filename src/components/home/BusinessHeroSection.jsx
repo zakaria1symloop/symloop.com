@@ -193,7 +193,7 @@ export default function BusinessHeroSection() {
   };
 
   return (
-    <section className={`relative min-h-[85vh] bg-black overflow-hidden flex items-center ${isRTL ? 'rtl' : 'ltr'}`}>
+    <section className={`relative min-h-screen bg-black overflow-hidden flex items-center pt-24 md:pt-28 ${isRTL ? 'rtl' : 'ltr'}`}>
 
       {/* Layered Premium Animated Backgrounds */}
       <div className="absolute inset-0">

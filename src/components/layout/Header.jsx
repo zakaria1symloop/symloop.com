@@ -1,233 +1,27 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import { Code2, Server, Smartphone, Globe, Package2, Menu, X, ChevronDown, MapPin, Phone, Mail, BookOpen } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import LanguageSwitcher from './LanguageSwitcher';
 
-// --- FreeConsultationButton Component ---
-import FreeConsultationButton from "../layout/components/FreeConsultationButton";
-
-// Wrapper component for the consultation button with impressive styling
-const ConsultationButtonWrapper = ({ scrolled }) => {
-  return (
-    <div className={scrolled ? 'scrolled-btn' : 'initial-btn'}>
-      <style jsx>{`
-        /* Initial state - Black header with white button */
-        .initial-btn :global(button) {
-          background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
-          color: #000000;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-          font-weight: 600;
-          font-size: 0.875rem;
-          padding: 0.75rem 1.5rem;
-          letter-spacing: 0.025em;
-          position: relative;
-          overflow: hidden;
-          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .initial-btn :global(button:hover) {
-          background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
-          box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
-          transform: translateY(-2px);
-          border-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        .initial-btn :global(button::before) {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-          transition: left 0.6s ease;
-        }
-        
-        .initial-btn :global(button:hover::before) {
-          left: 100%;
-        }
-        
-        /* Scrolled state - Smaller white button */
-        .scrolled-btn :global(button) {
-          background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
-          color: #000000;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
-          font-weight: 600;
-          font-size: 0.75rem;
-          padding: 0.5rem 1rem;
-          letter-spacing: 0.025em;
-          position: relative;
-          overflow: hidden;
-          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .scrolled-btn :global(button:hover) {
-          background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
-          box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-          transform: translateY(-1px);
-          border-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        .scrolled-btn :global(button::before) {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-          transition: left 0.6s ease;
-        }
-        
-        .scrolled-btn :global(button:hover::before) {
-          left: 100%;
-        }
-        
-        /* Active state animation */
-        .initial-btn :global(button:active),
-        .scrolled-btn :global(button:active) {
-          transform: scale(0.98);
-          transition-duration: 0.1s;
-        }
-        
-        /* Add professional pulse animation on load */
-        @keyframes subtlePulse {
-          0% {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-          }
-          50% {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-          }
-          100% {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-          }
-        }
-        
-        .scrolled-btn :global(button) {
-          animation: subtlePulse 3s ease-in-out infinite;
-        }
-        
-        .initial-btn :global(button) {
-          animation: subtlePulse 3s ease-in-out infinite;
-        }
-      `}</style>
-      <FreeConsultationButton />
-    </div>
-  );
-};
-
-// --- PRODUCT BOX ---
-const ProductBox = ({ isMobile = false, scrolled }) => {
-  const { t } = useTranslation('common');
-  
-  const products = [
-    { 
-      title: t('products.asa.title'), 
-      desc: t('products.asa.description'), 
-      icon: <Package2 className="w-5 h-5" />,
-      href: "/products/asa",
-      badge: t('products.asa.badge')
-    },
-    { 
-      title: t('products.edusmart.title'), 
-      desc: t('products.edusmart.description'), 
-      icon: <Package2 className="w-5 h-5" />,
-      href: "/products/edusmart",
-      badge: t('products.edusmart.badge')
-    },
-  ];
-
-  return (
-  <div className={`${isMobile ? 'relative w-full mt-4 border-t pt-4' : 'absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[450px] shadow-2xl z-50'} bg-gray-900 border border-gray-700 rounded-2xl p-6 backdrop-blur-md transition-all duration-300`}>
-    <div className="flex items-center gap-2 mb-6">
-      <div className="w-2 h-2 bg-white rounded-full"></div>
-      <h3 className="text-sm font-bold text-white">{t('navigation.ourProducts')}</h3>
-    </div>
-    <div className="grid grid-cols-1 gap-4">
-      {products.map((item, i) => (
-        <Link 
-          key={i} 
-          href={item.href}
-          className="group block border border-gray-800 hover:border-gray-700 hover:bg-gray-800/50 rounded-xl p-5 transition-all duration-300 hover:shadow-lg"
-        >
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center gap-4">
-              <div className="p-2.5 bg-gray-800 rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-300 border border-gray-700">
-                <div className="text-white">
-                  {item.icon}
-                </div>
-              </div>
-              <h4 className="text-base font-semibold text-white group-hover:text-gray-300 transition-colors">
-                {item.title}
-              </h4>
-            </div>
-            {item.badge && (
-              <span className={`px-2 py-1 text-xs font-semibold rounded-full ${
-                item.badge === t('products.asa.badge') 
-                  ? 'bg-green-900/50 text-green-400 border border-green-800' 
-                  : 'bg-orange-900/50 text-orange-400 border border-orange-800'
-              }`}>
-                {item.badge}
-              </span>
-            )}
-          </div>
-          <p className="text-sm text-gray-400 leading-relaxed">
-            {item.desc}
-          </p>
-        </Link>
-      ))}
-    </div>
-  </div>
-  );
-};
-
 // --- NAV ITEM ---
-const NavItem = ({ label, link, children, isMobile = false, scrolled }) => {
-  const [open, setOpen] = useState(false);
-  const ref = useRef();
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (ref.current && !ref.current.contains(event.target)) {
-        setOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  if (link) {
-    return (
-      <Link 
-        href={link} 
-        className={`${isMobile ? 'block py-3 px-4 border-b border-gray-100 text-base' : `text-sm transition-all duration-500 ${scrolled ? 'text-xs' : 'text-sm'}`} font-medium text-gray-300 hover:text-white transition-colors duration-300 px-4 py-2 rounded-lg hover:bg-white/10`}
-      >
-        {label}
-      </Link>
-    );
-  }
-
+const NavItem = ({ label, link, scrolled }) => {
   return (
-    <div ref={ref} className={`relative ${isMobile ? 'w-full' : ''}`}>
-      <button
-        onClick={() => setOpen(!open)}
-        className={`${isMobile ? 'flex items-center justify-between w-full py-3 px-4 text-base border-b border-gray-100' : `flex items-center gap-1 transition-all duration-500 ${scrolled ? 'text-xs' : 'text-sm'}`} font-medium text-gray-300 hover:text-white transition-colors duration-300 px-4 py-2 rounded-lg hover:bg-white/10`}
-      >
-        {label}
-        <ChevronDown className={`transition-all duration-500 ${scrolled ? 'w-3 h-3' : 'w-4 h-4'} ${open ? 'rotate-180' : ''}`} />
-      </button>
-      {open && children}
-    </div>
+    <Link
+      href={link}
+      className="group relative px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-all duration-300"
+    >
+      <span className="relative z-10">{label}</span>
+      {/* Hover underline effect */}
+      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-3/4 transition-all duration-300" />
+    </Link>
   );
 };
 
 // --- MOBILE MENU ---
-const MobileMenu = ({ isOpen, onClose, scrolled }) => {
+const MobileMenu = ({ isOpen, onClose }) => {
   const { t } = useTranslation('common');
   const router = useRouter();
 
@@ -250,12 +44,8 @@ const MobileMenu = ({ isOpen, onClose, scrolled }) => {
     <>
       <style jsx>{`
         @keyframes slideIn {
-          from { transform: translateX(100%); opacity: 0; }
-          to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideOut {
-          from { transform: translateX(0); opacity: 1; }
-          to { transform: translateX(100%); opacity: 0; }
+          from { transform: translateX(100%); }
+          to { transform: translateX(0); }
         }
         @keyframes fadeIn {
           from { opacity: 0; }
@@ -273,9 +63,9 @@ const MobileMenu = ({ isOpen, onClose, scrolled }) => {
           0%, 100% { transform: translate(0, 0) scale(1.1); }
           50% { transform: translate(10px, 15px) scale(1); }
         }
-        @keyframes shimmer {
-          0% { background-position: -200% 0; }
-          100% { background-position: 200% 0; }
+        @keyframes staggerIn {
+          from { opacity: 0; transform: translateX(20px); }
+          to { opacity: 1; transform: translateX(0); }
         }
         .menu-panel {
           animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -286,102 +76,110 @@ const MobileMenu = ({ isOpen, onClose, scrolled }) => {
         .orb-1 { animation: orbFloat1 8s ease-in-out infinite; }
         .orb-2 { animation: orbFloat2 10s ease-in-out infinite 1s; }
         .orb-3 { animation: orbFloat3 12s ease-in-out infinite 2s; }
-        .nav-item-shimmer {
-          background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
-          background-size: 200% 100%;
-        }
-        .nav-item-shimmer:hover {
-          animation: shimmer 1.5s ease-in-out infinite;
+        .nav-stagger {
+          animation: staggerIn 0.4s ease-out forwards;
+          opacity: 0;
         }
       `}</style>
 
       <div className={`fixed inset-0 z-50 lg:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}>
-        {/* Backdrop with blur */}
+        {/* Backdrop */}
         {isOpen && (
           <div
-            className="menu-backdrop fixed inset-0 bg-black/60 backdrop-blur-md"
+            className="menu-backdrop fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={onClose}
           />
         )}
 
         {/* Menu Panel */}
         {isOpen && (
-          <div className="menu-panel fixed top-0 right-0 h-full w-[85%] max-w-[320px] bg-black/90 backdrop-blur-xl border-l border-white/10 shadow-2xl overflow-hidden">
+          <div className="menu-panel fixed top-0 right-0 h-full w-[85%] max-w-[360px] bg-black border-l border-white/10 overflow-hidden">
 
-            {/* Animated Orbs Background */}
+            {/* Animated Orbs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div className="orb-1 absolute w-[200px] h-[200px] rounded-full"
+              <div className="orb-1 absolute w-[250px] h-[250px] rounded-full"
                 style={{
-                  top: '10%',
-                  right: '-20%',
-                  background: 'radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%)',
-                  filter: 'blur(40px)'
+                  top: '5%',
+                  right: '-30%',
+                  background: 'radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)',
+                  filter: 'blur(50px)'
                 }}
               />
-              <div className="orb-2 absolute w-[150px] h-[150px] rounded-full"
+              <div className="orb-2 absolute w-[200px] h-[200px] rounded-full"
                 style={{
-                  top: '40%',
-                  left: '-10%',
-                  background: 'radial-gradient(circle, rgba(59,130,246,0.25) 0%, transparent 70%)',
-                  filter: 'blur(35px)'
+                  top: '45%',
+                  left: '-20%',
+                  background: 'radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%)',
+                  filter: 'blur(40px)'
                 }}
               />
               <div className="orb-3 absolute w-[180px] h-[180px] rounded-full"
                 style={{
-                  bottom: '15%',
-                  right: '-15%',
-                  background: 'radial-gradient(circle, rgba(236,72,153,0.2) 0%, transparent 70%)',
+                  bottom: '10%',
+                  right: '-20%',
+                  background: 'radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%)',
                   filter: 'blur(45px)'
-                }}
-              />
-              {/* Subtle grid pattern */}
-              <div className="absolute inset-0 opacity-[0.03]"
-                style={{
-                  backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-                  backgroundSize: '40px 40px'
                 }}
               />
             </div>
 
             <div className="relative flex flex-col h-full z-10">
               {/* Header */}
-              <div className="flex items-center justify-between p-5 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span className="text-sm font-medium text-white/60">{t('menu')}</span>
-                </div>
+              <div className="flex items-center justify-between p-4">
+                <img
+                  src="/sym-logo.png"
+                  alt="Symloop"
+                  className="h-6 object-contain brightness-0 invert"
+                />
                 <button
                   onClick={onClose}
-                  className="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300"
                 >
-                  <X className="w-5 h-5 text-white/70 group-hover:text-white transition-colors" />
+                  <X className="w-4 h-4 text-white/80" />
                 </button>
               </div>
 
               {/* Navigation */}
-              <nav className="flex-1 overflow-y-auto py-6 px-4">
-                <div className="space-y-2">
+              <nav className="flex-1 px-3 py-2">
+                <div className="space-y-0.5">
                   {navItems.map((item, index) => (
                     <button
                       key={index}
                       onClick={() => handleNavClick(item.link)}
-                      className="nav-item-shimmer w-full text-left px-4 py-3.5 rounded-xl text-white/80 hover:text-white font-medium transition-all duration-300 hover:bg-white/10 border border-transparent hover:border-white/10 flex items-center justify-between group"
-                      style={{ animationDelay: `${index * 50}ms` }}
+                      className="nav-stagger w-full text-left px-4 py-2.5 text-[15px] font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 flex items-center justify-between group"
+                      style={{ animationDelay: `${index * 40}ms` }}
                     >
                       <span>{item.label}</span>
-                      <ChevronDown className="w-4 h-4 -rotate-90 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1" />
+                      <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
                     </button>
                   ))}
                 </div>
               </nav>
 
               {/* Bottom Section */}
-              <div className="p-5 border-t border-white/10 space-y-4">
-                {/* Language indicator */}
-                <div className="flex items-center justify-center gap-3 text-xs text-white/40">
-                  <span className="px-2 py-1 rounded bg-white/5 border border-white/10">FR</span>
-                  <span className="px-2 py-1 rounded hover:bg-white/5 cursor-pointer transition-colors">EN</span>
-                  <span className="px-2 py-1 rounded hover:bg-white/5 cursor-pointer transition-colors">AR</span>
+              <div className="p-4 space-y-3 border-t border-white/10">
+                {/* Language Switcher */}
+                <div className="flex items-center justify-center gap-1.5">
+                  {[
+                    { code: 'fr', label: 'FR' },
+                    { code: 'en', label: 'EN' },
+                    { code: 'ar', label: 'AR' }
+                  ].map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        router.push(router.pathname, router.asPath, { locale: lang.code });
+                        onClose();
+                      }}
+                      className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 ${
+                        router.locale === lang.code
+                          ? 'bg-white text-black'
+                          : 'text-white/50 hover:text-white hover:bg-white/10'
+                      }`}
+                    >
+                      {lang.label}
+                    </button>
+                  ))}
                 </div>
 
                 {/* CTA Button */}
@@ -390,12 +188,12 @@ const MobileMenu = ({ isOpen, onClose, scrolled }) => {
                     onClose();
                     window.open('https://calendly.com/symloop', '_blank');
                   }}
-                  className="w-full py-4 px-6 bg-gradient-to-r from-white via-gray-100 to-white text-black font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-white/20 hover:scale-[1.02] active:scale-[0.98]"
+                  className="w-full py-3 text-sm bg-white text-black font-semibold rounded-full transition-all duration-300 hover:bg-white/90 active:scale-[0.98]"
                 >
-                  {t('header.freeConsultation') || 'Consultation Gratuite'}
+                  {t('contact.freeConsultation')}
                 </button>
 
-                {/* Social hint */}
+                {/* Contact */}
                 <p className="text-center text-xs text-white/30">
                   contact@symloop.com
                 </p>
@@ -413,112 +211,107 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation('common');
-  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <header className="w-full sticky top-0 z-40">
-      {/* Top Info Bar - Always black */}
-      <div className="bg-gradient-to-r from-gray-900 to-black text-white text-xs">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between px-6 py-2.5">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <MapPin className="w-3 h-3" />
-              <span>{t('contact.location')}</span>
-            </div>
-            <div className="hidden sm:flex items-center gap-2">
-              <Phone className="w-3 h-3" />
-              <span>{t('contact.phone')}</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-4 mt-1 sm:mt-0">
-            <div className="flex items-center gap-2">
-              <Mail className="w-3 h-3" />
-              <span>{t('contact.email')}</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
-            <span className="hidden sm:inline text-gray-300">{t('hero.slogan')}</span>
-          </div>
-        </div>
-      </div>
+    <>
+      <style jsx>{`
+        @keyframes subtleGlow {
+          0%, 100% { box-shadow: 0 0 20px rgba(255,255,255,0.05); }
+          50% { box-shadow: 0 0 30px rgba(255,255,255,0.1); }
+        }
+        .header-glow {
+          animation: subtleGlow 4s ease-in-out infinite;
+        }
+      `}</style>
 
-      {/* Main Header - Always black, smaller when scrolled */}
-      <div className={`backdrop-blur-md border-b transition-all duration-500 ${
-        scrolled 
-          ? 'bg-black/90 shadow-xl border-gray-700' 
-          : 'bg-black/95 shadow-sm border-gray-800'
+      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+        scrolled ? 'py-2 px-4' : 'py-4 px-4'
       }`}>
-        <div className={`max-w-7xl mx-auto flex items-center justify-between px-6 transition-all duration-500 ${
-          scrolled ? 'py-2' : 'py-4'
+        {/* Header Container */}
+        <div className={`max-w-7xl mx-auto transition-all duration-500 ${
+          scrolled
+            ? 'bg-black/60 backdrop-blur-2xl border border-white/10 rounded-2xl header-glow shadow-2xl shadow-black/50'
+            : 'bg-black/30 backdrop-blur-md rounded-2xl'
         }`}>
-          
-          {/* Logo */}
-          <Link href="/" className="group">
-            <div className="flex items-center gap-3">
+          <div className={`flex items-center justify-between transition-all duration-500 ${
+            scrolled ? 'px-6 py-3' : 'px-2 py-2'
+          }`}>
+
+            {/* Logo */}
+            <Link href="/" className="group flex items-center gap-3">
               <div className="relative">
-                <img 
-                  src="/sym-logo.png" 
-                  alt="Symloop" 
-                  className={`transition-all duration-500 ${
-                    scrolled ? 'w-32 h-8' : 'w-40 h-10'
-                  } object-contain brightness-0 invert`}
+                <img
+                  src="/sym-logo.png"
+                  alt="Symloop"
+                  className={`transition-all duration-500 object-contain brightness-0 invert ${
+                    scrolled ? 'h-7' : 'h-9'
+                  }`}
                 />
-                <div className={`absolute -top-1 -right-1 bg-green-400 rounded-full border-2 border-white animate-pulse transition-all duration-500 ${
-                  scrolled ? 'w-2 h-2' : 'w-3 h-3'
-                }`}></div>
+                {/* Status indicator */}
+                <div className={`absolute -top-0.5 -right-0.5 bg-green-400 rounded-full animate-pulse transition-all duration-500 ${
+                  scrolled ? 'w-1.5 h-1.5' : 'w-2 h-2'
+                }`} />
               </div>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center">
+              <NavItem label={t('navigation.home')} link="/" scrolled={scrolled} />
+              <NavItem label={t('navigation.services')} link="/services" scrolled={scrolled} />
+              <NavItem label={t('navigation.clientsPartners')} link="/#clients-partners" scrolled={scrolled} />
+              <NavItem label={t('navigation.blog')} link="/blog" scrolled={scrolled} />
+              <NavItem label={t('navigation.learning')} link="/learning" scrolled={scrolled} />
+              <NavItem label={t('navigation.investors')} link="/investisseurs" scrolled={scrolled} />
+              <NavItem label={t('navigation.recruitment')} link="/recrutement" scrolled={scrolled} />
+            </nav>
+
+            {/* Right Section */}
+            <div className="flex items-center gap-3">
+              {/* Language Switcher - Desktop */}
+              <div className="hidden lg:block">
+                <LanguageSwitcher scrolled={scrolled} />
+              </div>
+
+              {/* CTA Button - Desktop */}
+              <a
+                href="https://calendly.com/symloop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`hidden lg:flex items-center gap-2 bg-white text-black font-semibold rounded-full transition-all duration-300 hover:bg-white/90 hover:scale-[1.02] active:scale-[0.98] ${
+                  scrolled ? 'px-5 py-2 text-sm' : 'px-6 py-2.5 text-sm'
+                }`}
+              >
+                <span>{t('contact.freeConsultation')}</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setMobileMenuOpen(true)}
+                className={`lg:hidden flex items-center justify-center rounded-full bg-white/10 border border-white/10 hover:bg-white/20 transition-all duration-300 ${
+                  scrolled ? 'w-10 h-10' : 'w-11 h-11'
+                }`}
+              >
+                <Menu className="w-5 h-5 text-white" />
+              </button>
             </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-2">
-            <NavItem label={t('navigation.home')} link="/" scrolled={scrolled} />
-            <NavItem label={t('navigation.services')} link="/services" scrolled={scrolled} />
-            <NavItem label={t('navigation.clientsPartners')} link="/#clients-partners" scrolled={scrolled} />
-            <NavItem label={t('navigation.blog')} link="/blog" scrolled={scrolled} />
-            <NavItem label={t('navigation.learning')} link="/learning" scrolled={scrolled} />
-            <NavItem label={t('navigation.investors')} link="/investisseurs" scrolled={scrolled} />
-            <NavItem label={t('navigation.recruitment')} link="/recrutement" scrolled={scrolled} />
-          </nav>
-
-          {/* Right Section */}
-          <div className="flex items-center gap-4">
-            {/* Language Switcher */}
-            <LanguageSwitcher scrolled={scrolled} />
-            
-            {/* Desktop CTA */}
-            <div className="hidden lg:block">
-              <ConsultationButtonWrapper scrolled={scrolled} />
-            </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`lg:hidden rounded-xl border border-gray-700 hover:border-gray-600 hover:bg-white/10 transition-all duration-500 group ${
-                scrolled ? 'p-2' : 'p-2.5'
-              }`}
-            >
-              <Menu className={`text-white group-hover:opacity-80 transition-all duration-500 ${
-                scrolled ? 'w-4 h-4' : 'w-5 h-5'
-              }`} />
-            </button>
           </div>
         </div>
-      </div>
+      </header>
 
       {/* Mobile Menu */}
-      <MobileMenu 
-        isOpen={mobileMenuOpen} 
+      <MobileMenu
+        isOpen={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
-        scrolled={scrolled}
       />
-    </header>
+    </>
   );
 }
