@@ -1501,6 +1501,118 @@ export const blogs = [
         excerpt: "دعم تكنولوجيا المعلومات الصناعية الكامل في الجزائر 2026. من الألف إلى الياء، نتولى جميع آلاتكم المرتبطة بالحواسيب: أجهزة التحكم، شاشات اللمس، أنظمة SCADA، الروبوتات."
       }
     }
+  },
+  {
+    id: "54",
+    slug: "logiciel-crm-setif-bordj-msila-gestion-clients-2026",
+    title: "Logiciel CRM a Setif, Bordj Bou Arreridj et M'sila",
+    subtitle: "Solution de Gestion de la Relation Client pour les Entreprises de l'Est Algerien",
+    excerpt: "Logiciel CRM adapte aux entreprises de Setif, Bordj Bou Arreridj et M'sila. Gerez vos clients, suivez vos ventes, automatisez votre marketing. Solution locale avec support en arabe et francais.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "12 min",
+    image: "/images/blog/crm-setif-2026.jpg",
+    featured: true,
+    tags: ["CRM Setif", "logiciel gestion client", "CRM Bordj Bou Arreridj", "CRM M'sila", "gestion commerciale est algerien", "logiciel vente"],
+    metaTitle: "Logiciel CRM Setif Bordj M'sila 2026 | Gestion Clients | Symloop",
+    metaDescription: "Logiciel CRM pour entreprises a Setif, Bordj Bou Arreridj, M'sila. Gestion clients, suivi ventes, automatisation marketing. Support local. Demo gratuite.",
+    translations: {
+      en: {
+        title: "CRM Software in Setif, Bordj Bou Arreridj and M'sila",
+        subtitle: "Customer Relationship Management Solution for Eastern Algerian Businesses",
+        excerpt: "CRM software adapted for businesses in Setif, Bordj Bou Arreridj and M'sila. Manage your customers, track sales, automate marketing. Local solution with Arabic and French support."
+      },
+      ar: {
+        title: "برنامج CRM في سطيف، برج بوعريريج والمسيلة",
+        subtitle: "حل إدارة علاقات العملاء للشركات في شرق الجزائر",
+        excerpt: "برنامج CRM مناسب للشركات في سطيف، برج بوعريريج والمسيلة. إدارة العملاء، تتبع المبيعات، أتمتة التسويق. حل محلي بدعم عربي وفرنسي."
+      }
+    }
+  },
+  {
+    id: "55",
+    slug: "logiciel-gestion-livraison-setif-hauts-plateaux-2026",
+    title: "Logiciel Gestion Livraison pour Setif et les Hauts Plateaux",
+    subtitle: "Optimisez vos Livraisons : Suivi GPS, Gestion Livreurs, Facturation Automatique",
+    excerpt: "Solution complete de gestion de livraison pour Setif, Bordj, Batna et les Hauts Plateaux. Suivi GPS temps reel, affectation automatique, preuve de livraison, facturation. Ideal pour e-commerce et distribution.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "14 min",
+    image: "/images/blog/delivery-setif-2026.jpg",
+    featured: true,
+    tags: ["logiciel livraison Setif", "gestion livreurs", "suivi GPS livraison", "delivery management", "e-commerce Setif", "distribution Hauts Plateaux"],
+    metaTitle: "Logiciel Gestion Livraison Setif Hauts Plateaux 2026 | Symloop",
+    metaDescription: "Logiciel gestion livraison pour Setif et Hauts Plateaux. Suivi GPS livreurs, affectation automatique, facturation. Ideal e-commerce et distribution. Essai gratuit.",
+    translations: {
+      en: {
+        title: "Delivery Management Software for Setif and High Plateaus",
+        subtitle: "Optimize Your Deliveries: GPS Tracking, Driver Management, Automatic Billing",
+        excerpt: "Complete delivery management solution for Setif, Bordj, Batna and the High Plateaus. Real-time GPS tracking, automatic assignment, proof of delivery, billing. Ideal for e-commerce and distribution."
+      },
+      ar: {
+        title: "برنامج إدارة التوصيل لسطيف والهضاب العليا",
+        subtitle: "حسّن توصيلاتك: تتبع GPS، إدارة السائقين، فوترة تلقائية",
+        excerpt: "حل كامل لإدارة التوصيل لسطيف، برج، باتنة والهضاب العليا. تتبع GPS مباشر، تعيين تلقائي، إثبات التسليم، الفوترة. مثالي للتجارة الإلكترونية والتوزيع."
+      }
+    }
+  },
+  {
+    id: "56",
+    slug: "logiciel-agence-voyage-gds-setif-est-algerien-2026",
+    title: "Logiciel Agence de Voyage et GDS pour Setif et l'Est Algerien",
+    subtitle: "Reservations Vols, Hotels, Omra et Hadj - Solution Complete pour Agences",
+    excerpt: "Logiciel GDS et gestion agence de voyage pour Setif, Constantine, Batna. Reservations vols, hotels, packages Omra/Hadj. Integration Amadeus, facturation, gestion groupes. Formation incluse.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "13 min",
+    image: "/images/blog/gds-travel-setif-2026.jpg",
+    featured: true,
+    tags: ["logiciel agence voyage Setif", "GDS Algerie", "reservation vol", "Omra Hadj", "agence voyage Constantine", "Amadeus Algerie"],
+    metaTitle: "Logiciel Agence Voyage GDS Setif Est Algerien 2026 | Symloop",
+    metaDescription: "Logiciel agence de voyage et GDS pour Setif et Est algerien. Reservations vols, hotels, Omra, Hadj. Integration Amadeus. Formation et support inclus.",
+    translations: {
+      en: {
+        title: "Travel Agency and GDS Software for Setif and Eastern Algeria",
+        subtitle: "Flight, Hotel, Omra and Hajj Bookings - Complete Solution for Agencies",
+        excerpt: "GDS and travel agency management software for Setif, Constantine, Batna. Flight, hotel, Omra/Hajj package bookings. Amadeus integration, billing, group management. Training included."
+      },
+      ar: {
+        title: "برنامج وكالة السفر و GDS لسطيف وشرق الجزائر",
+        subtitle: "حجوزات الطيران، الفنادق، العمرة والحج - حل كامل للوكالات",
+        excerpt: "برنامج GDS وإدارة وكالة السفر لسطيف، قسنطينة، باتنة. حجوزات الطيران والفنادق وباقات العمرة/الحج. تكامل Amadeus، الفوترة، إدارة المجموعات. التدريب مشمول."
+      }
+    }
+  },
+  {
+    id: "57",
+    slug: "logiciel-caisse-pos-restaurant-commerce-setif-2026",
+    title: "Logiciel Caisse POS pour Restaurants et Commerces a Setif",
+    subtitle: "Systeme de Point de Vente Moderne : Tactile, Cloud, Multi-Sites",
+    excerpt: "Logiciel caisse POS pour restaurants, cafes et commerces a Setif et environs. Ecran tactile, gestion stock, fidelite client, rapports temps reel. Compatible TPE et paiement mobile.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "11 min",
+    image: "/images/blog/pos-setif-2026.jpg",
+    featured: true,
+    tags: ["logiciel caisse Setif", "POS restaurant", "point de vente", "caisse tactile", "gestion stock", "logiciel commerce Setif"],
+    metaTitle: "Logiciel Caisse POS Restaurant Commerce Setif 2026 | Symloop",
+    metaDescription: "Logiciel caisse POS pour restaurants et commerces a Setif. Ecran tactile, gestion stock, fidelite, rapports. Installation et formation incluses. Demo gratuite.",
+    translations: {
+      en: {
+        title: "POS Software for Restaurants and Retail in Setif",
+        subtitle: "Modern Point of Sale System: Touch, Cloud, Multi-Site",
+        excerpt: "POS software for restaurants, cafes and retail in Setif and surroundings. Touch screen, inventory management, customer loyalty, real-time reports. Compatible with card terminals and mobile payment."
+      },
+      ar: {
+        title: "برنامج نقطة البيع POS للمطاعم والتجارة في سطيف",
+        subtitle: "نظام نقطة بيع حديث: شاشة لمس، سحابي، متعدد الفروع",
+        excerpt: "برنامج نقطة البيع للمطاعم والمقاهي والتجارة في سطيف والمناطق المجاورة. شاشة لمس، إدارة المخزون، ولاء العملاء، تقارير فورية. متوافق مع الدفع الإلكتروني."
+      }
+    }
   }
 ];
 
