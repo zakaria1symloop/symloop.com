@@ -1055,4 +1055,107 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- ============================================== -->
+  <!-- INDUSTRIAL IT BLOGS - 2026 -->
+  <!-- Informatique Industrielle / IT Usine -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://symloop.com/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/depannage-logiciel-materiel-machines-industrielles-algerie-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/support-informatique-complet-usine-machines-pc-algerie-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- SETIF REGION SOFTWARE BLOGS - 2026 -->
+  <!-- Logiciels pour Setif, BBA, M'sila, Est Algerien -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://symloop.com/blog/logiciel-crm-setif-bordj-msila-gestion-clients-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-gestion-livraison-setif-hauts-plateaux-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-agence-voyage-gds-setif-est-algerien-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-caisse-pos-restaurant-commerce-setif-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- INTERNATIONAL MOBILE DEV BLOGS - 2026 -->
+  <!-- Europe Mobile App Development -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://symloop.com/blog/developpement-application-mobile-france-europe-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/desarrollo-aplicaciones-moviles-espana-portugal-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/entwicklung-mobile-apps-deutschland-dach-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- AI & DELIVERY BLOGS - 2026 -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://symloop.com/blog/intelligence-artificielle-algerie-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/ia-generative-chatgpt-claude-algerie-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/gestion-flotte-livraison-suivi-gps-algerie-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-gestion-livraison-distribution-algerie-2026</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

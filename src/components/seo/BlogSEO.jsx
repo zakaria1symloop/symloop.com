@@ -404,7 +404,7 @@ export default function BlogSEO({
   );
 }
 
-// Related blogs data for internal linking
+// Related blogs data for internal linking - Comprehensive SEO
 export const relatedBlogsData = {
   smartHome: {
     fr: [
@@ -428,13 +428,86 @@ export const relatedBlogsData = {
       { slug: 'installation-cameras-surveillance-professionnelle-algerie-2026', title: 'Professional Security Camera Installation' },
       { slug: 'securite-maison-installation-complete-alarme-algerie-2026', title: 'Complete Security System Installation' }
     ]
+  },
+  industrialIT: {
+    fr: [
+      { slug: 'informatique-industrielle-algerie-maintenance-pc-usine-2026', title: 'Informatique Industrielle : Maintenance PC Usine' },
+      { slug: 'depannage-logiciel-materiel-machines-industrielles-algerie-2026', title: 'Dépannage Logiciel & Matériel Machines Industrielles' },
+      { slug: 'support-informatique-complet-usine-machines-pc-algerie-2026', title: 'Support Informatique Complet Usine A-Z' }
+    ],
+    ar: [
+      { slug: 'informatique-industrielle-algerie-maintenance-pc-usine-2026', title: 'المعلوماتية الصناعية: صيانة حواسيب المصانع' },
+      { slug: 'depannage-logiciel-materiel-machines-industrielles-algerie-2026', title: 'إصلاح البرامج والمعدات للآلات الصناعية' },
+      { slug: 'support-informatique-complet-usine-machines-pc-algerie-2026', title: 'دعم معلوماتي شامل للمصانع' }
+    ],
+    en: [
+      { slug: 'informatique-industrielle-algerie-maintenance-pc-usine-2026', title: 'Industrial IT: Factory PC Maintenance' },
+      { slug: 'depannage-logiciel-materiel-machines-industrielles-algerie-2026', title: 'Industrial Machine Software & Hardware Repair' },
+      { slug: 'support-informatique-complet-usine-machines-pc-algerie-2026', title: 'Complete Factory IT Support A-Z' }
+    ]
+  },
+  setifSoftware: {
+    fr: [
+      { slug: 'logiciel-crm-setif-bordj-msila-gestion-clients-2026', title: 'Logiciel CRM Sétif, Bordj, M\'sila - Gestion Clients' },
+      { slug: 'logiciel-gestion-livraison-setif-hauts-plateaux-2026', title: 'Logiciel Gestion Livraison Sétif & Hauts Plateaux' },
+      { slug: 'logiciel-agence-voyage-gds-setif-est-algerien-2026', title: 'Logiciel GDS Agence de Voyage Sétif' },
+      { slug: 'logiciel-caisse-pos-restaurant-commerce-setif-2026', title: 'Logiciel Caisse POS Restaurant & Commerce Sétif' }
+    ],
+    ar: [
+      { slug: 'logiciel-crm-setif-bordj-msila-gestion-clients-2026', title: 'برنامج CRM سطيف، برج، مسيلة - إدارة العملاء' },
+      { slug: 'logiciel-gestion-livraison-setif-hauts-plateaux-2026', title: 'برنامج إدارة التوصيل سطيف والهضاب العليا' },
+      { slug: 'logiciel-agence-voyage-gds-setif-est-algerien-2026', title: 'برنامج GDS وكالات السفر سطيف' },
+      { slug: 'logiciel-caisse-pos-restaurant-commerce-setif-2026', title: 'برنامج نقاط البيع للمطاعم والتجارة سطيف' }
+    ],
+    en: [
+      { slug: 'logiciel-crm-setif-bordj-msila-gestion-clients-2026', title: 'CRM Software Setif, Bordj, M\'sila - Client Management' },
+      { slug: 'logiciel-gestion-livraison-setif-hauts-plateaux-2026', title: 'Delivery Management Software Setif & High Plateaus' },
+      { slug: 'logiciel-agence-voyage-gds-setif-est-algerien-2026', title: 'GDS Travel Agency Software Setif' },
+      { slug: 'logiciel-caisse-pos-restaurant-commerce-setif-2026', title: 'POS Software for Restaurants & Retail Setif' }
+    ]
+  },
+  aiSolutions: {
+    fr: [
+      { slug: 'intelligence-artificielle-algerie-2026', title: 'Intelligence Artificielle en Algérie 2026' },
+      { slug: 'ia-generative-chatgpt-claude-algerie-2026', title: 'IA Générative : ChatGPT & Claude en Algérie' },
+      { slug: 'intelligence-artificielle-algerie-mena-2024', title: 'IA pour les Entreprises MENA' }
+    ],
+    ar: [
+      { slug: 'intelligence-artificielle-algerie-2026', title: 'الذكاء الاصطناعي في الجزائر 2026' },
+      { slug: 'ia-generative-chatgpt-claude-algerie-2026', title: 'الذكاء الاصطناعي التوليدي: ChatGPT و Claude' },
+      { slug: 'intelligence-artificielle-algerie-mena-2024', title: 'الذكاء الاصطناعي للشركات في منطقة MENA' }
+    ],
+    en: [
+      { slug: 'intelligence-artificielle-algerie-2026', title: 'Artificial Intelligence in Algeria 2026' },
+      { slug: 'ia-generative-chatgpt-claude-algerie-2026', title: 'Generative AI: ChatGPT & Claude in Algeria' },
+      { slug: 'intelligence-artificielle-algerie-mena-2024', title: 'AI for MENA Businesses' }
+    ]
+  },
+  delivery: {
+    fr: [
+      { slug: 'logiciel-gestion-livraison-distribution-algerie-2026', title: 'Logiciel Gestion Livraison & Distribution Algérie' },
+      { slug: 'gestion-flotte-livraison-suivi-gps-algerie-2026', title: 'Gestion Flotte & Suivi GPS Livraison' },
+      { slug: 'logiciel-gestion-livraison-setif-hauts-plateaux-2026', title: 'Logiciel Livraison Sétif & Est Algérien' }
+    ],
+    ar: [
+      { slug: 'logiciel-gestion-livraison-distribution-algerie-2026', title: 'برنامج إدارة التوصيل والتوزيع الجزائر' },
+      { slug: 'gestion-flotte-livraison-suivi-gps-algerie-2026', title: 'إدارة الأسطول وتتبع GPS للتوصيل' },
+      { slug: 'logiciel-gestion-livraison-setif-hauts-plateaux-2026', title: 'برنامج التوصيل سطيف وشرق الجزائر' }
+    ],
+    en: [
+      { slug: 'logiciel-gestion-livraison-distribution-algerie-2026', title: 'Delivery & Distribution Management Software Algeria' },
+      { slug: 'gestion-flotte-livraison-suivi-gps-algerie-2026', title: 'Fleet Management & GPS Tracking for Delivery' },
+      { slug: 'logiciel-gestion-livraison-setif-hauts-plateaux-2026', title: 'Delivery Software Setif & Eastern Algeria' }
+    ]
   }
 };
 
-// Internal linking component
-export function RelatedBlogs({ currentSlug, locale = 'fr' }) {
-  const blogs = relatedBlogsData.smartHome[locale] || relatedBlogsData.smartHome.fr;
-  const filteredBlogs = blogs.filter(blog => blog.slug !== currentSlug);
+// Internal linking component - Enhanced for all categories
+export function RelatedBlogs({ currentSlug, locale = 'fr', category = 'smartHome' }) {
+  // Get blogs from the specified category or fall back to smartHome
+  const categoryData = relatedBlogsData[category] || relatedBlogsData.smartHome;
+  const blogs = categoryData[locale] || categoryData.fr;
+  const filteredBlogs = blogs.filter(blog => blog.slug !== currentSlug).slice(0, 4);
 
   const labels = {
     fr: 'Articles Connexes',
@@ -442,9 +515,11 @@ export function RelatedBlogs({ currentSlug, locale = 'fr' }) {
     en: 'Related Articles'
   };
 
+  if (filteredBlogs.length === 0) return null;
+
   return (
-    <div className="mt-12 p-6 bg-slate-50 rounded-2xl">
-      <h3 className="text-xl font-bold text-slate-800 mb-4">
+    <div className="mt-12 p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl">
+      <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-4">
         {labels[locale] || labels.fr}
       </h3>
       <div className="grid gap-3">
@@ -452,12 +527,12 @@ export function RelatedBlogs({ currentSlug, locale = 'fr' }) {
           <a
             key={index}
             href={`/blog/${blog.slug}`}
-            className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-green-50 transition-colors group"
+            className="flex items-center gap-3 p-3 bg-white dark:bg-slate-700/50 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/30 transition-colors group"
           >
-            <span className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold group-hover:bg-green-500 group-hover:text-white transition-colors">
+            <span className="w-8 h-8 bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-sm font-bold group-hover:bg-green-500 group-hover:text-white transition-colors">
               {index + 1}
             </span>
-            <span className="text-slate-700 group-hover:text-green-600 transition-colors">
+            <span className="text-slate-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
               {blog.title}
             </span>
           </a>
@@ -465,4 +540,24 @@ export function RelatedBlogs({ currentSlug, locale = 'fr' }) {
       </div>
     </div>
   );
+}
+
+// Category-specific related blogs component
+export function CategoryRelatedBlogs({ currentSlug, locale = 'fr' }) {
+  // Auto-detect category from slug
+  let category = 'smartHome';
+
+  if (currentSlug?.includes('industrielle') || currentSlug?.includes('usine') || currentSlug?.includes('machines')) {
+    category = 'industrialIT';
+  } else if (currentSlug?.includes('setif') || currentSlug?.includes('bordj') || currentSlug?.includes('msila')) {
+    category = 'setifSoftware';
+  } else if (currentSlug?.includes('intelligence-artificielle') || currentSlug?.includes('ia-') || currentSlug?.includes('chatgpt')) {
+    category = 'aiSolutions';
+  } else if (currentSlug?.includes('livraison') || currentSlug?.includes('flotte') || currentSlug?.includes('gps')) {
+    category = 'delivery';
+  } else if (currentSlug?.includes('maison') || currentSlug?.includes('smart-home') || currentSlug?.includes('cameras') || currentSlug?.includes('alarme')) {
+    category = 'smartHome';
+  }
+
+  return <RelatedBlogs currentSlug={currentSlug} locale={locale} category={category} />;
 }

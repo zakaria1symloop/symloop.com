@@ -92,6 +92,36 @@ Allow: /blog/ecommerce-algerie-paiement-cib-edahabia-2024/
 Allow: /blog/transformation-digitale-algerie-2024/
 Allow: /blog/logiciel-erp-algerie-2024/
 Allow: /blog/intelligence-artificielle-algerie-mena-2024/
+
+# Industrial IT Blogs 2026 - Informatique Industrielle
+Allow: /blog/informatique-industrielle-algerie-maintenance-pc-usine-2026/
+Allow: /blog/depannage-logiciel-materiel-machines-industrielles-algerie-2026/
+Allow: /blog/support-informatique-complet-usine-machines-pc-algerie-2026/
+
+# Setif Region Software Blogs 2026 - Logiciels Est Algerien
+Allow: /blog/logiciel-crm-setif-bordj-msila-gestion-clients-2026/
+Allow: /blog/logiciel-gestion-livraison-setif-hauts-plateaux-2026/
+Allow: /blog/logiciel-agence-voyage-gds-setif-est-algerien-2026/
+Allow: /blog/logiciel-caisse-pos-restaurant-commerce-setif-2026/
+
+# AI & Delivery Blogs 2026
+Allow: /blog/intelligence-artificielle-algerie-2026/
+Allow: /blog/ia-generative-chatgpt-claude-algerie-2026/
+Allow: /blog/gestion-flotte-livraison-suivi-gps-algerie-2026/
+Allow: /blog/logiciel-gestion-livraison-distribution-algerie-2026/
+
+# International Mobile Development 2026
+Allow: /blog/developpement-application-mobile-france-europe-2026/
+Allow: /blog/desarrollo-aplicaciones-moviles-espana-portugal-2026/
+Allow: /blog/entwicklung-mobile-apps-deutschland-dach-2026/
+
+# Smart Home Blogs 2026
+Allow: /blog/maison-intelligente-smart-home-algerie-2026/
+Allow: /blog/securite-maison-intelligente-cameras-alarmes-algerie-2026/
+Allow: /blog/economie-energie-maison-intelligente-climatisation-algerie-2026/
+Allow: /blog/installation-cameras-surveillance-professionnelle-algerie-2026/
+Allow: /blog/securite-maison-installation-complete-alarme-algerie-2026/
+
 Allow: /fr/blog/
 Allow: /ar/blog/
 Allow: /en/blog/
