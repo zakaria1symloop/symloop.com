@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
-import Navbar from '../../components/layout/Navbar';
-import Footer from '../../components/layout/Footer';
 
 export default function LogicielCaissePOSSetif() {
   const { t } = useTranslation('common');
@@ -947,8 +945,6 @@ export default function LogicielCaissePOSSetif() {
       </Head>
 
       <div className={`min-h-screen bg-gradient-to-br from-symloop-dark via-symloop-dark-lighter to-symloop-dark ${isRTL ? 'rtl' : 'ltr'}`}>
-        <Navbar />
-
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 via-teal-500/10 to-cyan-500/10" />
@@ -1308,8 +1304,6 @@ export default function LogicielCaissePOSSetif() {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     </>
   );
