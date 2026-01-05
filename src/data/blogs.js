@@ -1417,6 +1417,90 @@ export const blogs = [
         excerpt: "حل تتبع GPS لأسطول التوصيل في الجزائر 2026. تتبع السائقين في الوقت الحقيقي، تحسين الجولات، حساب السرعة والمسافة. تجربة مجانية."
       }
     }
+  },
+  {
+    id: "51",
+    slug: "informatique-industrielle-algerie-maintenance-pc-usine-2026",
+    title: "Informatique Industrielle en Algérie : Maintenance PC d'Usine",
+    subtitle: "Entretien et Réparation des Ordinateurs Industriels Spécialisés",
+    excerpt: "Maintenance informatique industrielle en Algérie 2026. Nos experts réparent et entretiennent vos PC industriels, ordinateurs spécialisés et systèmes embarqués d'usine. Support technique 24/7.",
+    category: "Industriel",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "12 min",
+    image: "/images/blog/industrial-pc-maintenance-algeria-2026.jpg",
+    featured: true,
+    tags: ["informatique industrielle algérie", "maintenance PC usine", "ordinateur industriel", "PC industriel algérie", "dépannage usine", "automate programmable", "SCADA algérie", "système embarqué"],
+    metaTitle: "Informatique Industrielle Algérie 2026 | Maintenance PC Usine | Symloop",
+    metaDescription: "Maintenance informatique industrielle en Algérie. Réparation PC usine, ordinateurs spécialisés, systèmes SCADA. Support technique 24/7. Devis gratuit.",
+    translations: {
+      en: {
+        title: "Industrial Computing in Algeria: Factory PC Maintenance",
+        subtitle: "Maintenance and Repair of Specialized Industrial Computers",
+        excerpt: "Industrial computer maintenance in Algeria 2026. Our experts repair and maintain your industrial PCs, specialized computers and factory embedded systems. 24/7 technical support."
+      },
+      ar: {
+        title: "الحوسبة الصناعية في الجزائر: صيانة حواسيب المصانع",
+        subtitle: "صيانة وإصلاح الحواسيب الصناعية المتخصصة",
+        excerpt: "صيانة الحواسيب الصناعية في الجزائر 2026. خبراؤنا يصلحون ويصونون حواسيبكم الصناعية والأنظمة المدمجة. دعم تقني 24/7."
+      }
+    }
+  },
+  {
+    id: "52",
+    slug: "depannage-logiciel-materiel-machines-industrielles-algerie-2026",
+    title: "Dépannage Logiciel et Matériel Machines Industrielles Algérie",
+    subtitle: "Résolution des Problèmes Software et Hardware sur Équipements d'Usine",
+    excerpt: "Dépannage informatique industriel en Algérie 2026. Résolution problèmes logiciels et matériels sur machines d'usine, automates, systèmes de production. Intervention rapide sur site.",
+    category: "Industriel",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "14 min",
+    image: "/images/blog/industrial-troubleshooting-algeria-2026.jpg",
+    featured: true,
+    tags: ["dépannage industriel algérie", "problème logiciel usine", "panne matériel machine", "réparation automate", "diagnostic industriel", "maintenance préventive", "arrêt production", "technicien industriel"],
+    metaTitle: "Dépannage Logiciel Matériel Industriel Algérie 2026 | Symloop",
+    metaDescription: "Dépannage logiciel et matériel machines industrielles Algérie. Résolution pannes usine, diagnostic rapide, intervention 24/7. Minimisez vos arrêts de production.",
+    translations: {
+      en: {
+        title: "Software & Hardware Troubleshooting for Industrial Machines Algeria",
+        subtitle: "Resolving Software and Hardware Issues on Factory Equipment",
+        excerpt: "Industrial computer troubleshooting in Algeria 2026. Solving software and hardware problems on factory machines, PLCs, production systems. Fast on-site intervention."
+      },
+      ar: {
+        title: "إصلاح أعطال البرمجيات والأجهزة للآلات الصناعية في الجزائر",
+        subtitle: "حل مشاكل البرمجيات والأجهزة في معدات المصانع",
+        excerpt: "إصلاح الحواسيب الصناعية في الجزائر 2026. حل مشاكل البرمجيات والأجهزة على آلات المصانع وأنظمة الإنتاج. تدخل سريع في الموقع."
+      }
+    }
+  },
+  {
+    id: "53",
+    slug: "support-informatique-complet-usine-machines-pc-algerie-2026",
+    title: "Support Informatique Complet pour Usines en Algérie : A à Z",
+    subtitle: "Accompagnement Total pour Toute Machine Liée aux PC Industriels",
+    excerpt: "Support informatique industriel complet en Algérie 2026. De A à Z, nous prenons en charge toutes vos machines liées aux PC : automates, écrans tactiles, systèmes SCADA, robots. Partenaire de confiance.",
+    category: "Industriel",
+    author: "Symloop Team",
+    date: "2026-01-05",
+    readTime: "15 min",
+    image: "/images/blog/complete-industrial-support-algeria-2026.jpg",
+    featured: true,
+    tags: ["support informatique usine", "partenaire industriel algérie", "infogérance usine", "maintenance complète", "automatisation usine", "intégration système", "modernisation usine", "industrie 4.0 algérie"],
+    metaTitle: "Support Informatique Usine Algérie A-Z 2026 | Partenaire Industriel | Symloop",
+    metaDescription: "Support informatique complet pour usines en Algérie. Prise en charge A à Z : automates, SCADA, écrans, robots. Partenaire de confiance pour votre industrie.",
+    translations: {
+      en: {
+        title: "Complete IT Support for Factories in Algeria: A to Z",
+        subtitle: "Total Support for All PC-Related Industrial Machines",
+        excerpt: "Complete industrial IT support in Algeria 2026. From A to Z, we handle all your PC-related machines: PLCs, touchscreens, SCADA systems, robots. Your trusted partner."
+      },
+      ar: {
+        title: "دعم تكنولوجيا المعلومات الكامل للمصانع في الجزائر: من الألف إلى الياء",
+        subtitle: "دعم شامل لجميع الآلات المرتبطة بالحواسيب الصناعية",
+        excerpt: "دعم تكنولوجيا المعلومات الصناعية الكامل في الجزائر 2026. من الألف إلى الياء، نتولى جميع آلاتكم المرتبطة بالحواسيب: أجهزة التحكم، شاشات اللمس، أنظمة SCADA، الروبوتات."
+      }
+    }
   }
 ];
 
