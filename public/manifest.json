@@ -1,8 +1,10 @@
 {
   "short_name": "Symloop Algeria",
-  "name": "Symloop Technology Algeria - Leading IT Company",
-  "description": "Entreprise IT leader en Algérie. Développement logiciel, applications mobiles, infrastructure réseau, cloud computing. Service dans les 58 wilayas.",
+  "name": "Symloop Technology Algeria - Leading IT & Digital Agency",
+  "description": "Agence digitale leader en Algérie et MENA. Développement web & mobile, solutions IA, e-commerce CIB/Edahabia, logiciels industriels, CRM, POS. Service dans les 58 wilayas.",
   "lang": "fr-DZ",
+  "dir": "auto",
+  "id": "symloop-algeria",
   "icons": [
     {
       "src": "favicon.ico",
@@ -44,36 +46,44 @@
       "short_name": "Services",
       "description": "Découvrez nos services IT complets",
       "url": "/services",
-      "icons": [
-        {
-          "src": "favicon-32x32.png",
-          "sizes": "32x32"
-        }
-      ]
+      "icons": [{ "src": "favicon-32x32.png", "sizes": "32x32" }]
     },
     {
       "name": "Contact",
       "short_name": "Contact",
       "description": "Contactez-nous pour vos projets",
       "url": "/contact",
-      "icons": [
-        {
-          "src": "favicon-32x32.png",
-          "sizes": "32x32"
-        }
-      ]
+      "icons": [{ "src": "favicon-32x32.png", "sizes": "32x32" }]
     },
     {
-      "name": "Nos Produits",
-      "short_name": "Produits",
-      "description": "Découvrez nos solutions innovantes",
-      "url": "/products",
-      "icons": [
-        {
-          "src": "favicon-32x32.png",
-          "sizes": "32x32"
-        }
-      ]
+      "name": "Blog Tech",
+      "short_name": "Blog",
+      "description": "Articles et guides tech Algérie",
+      "url": "/blog",
+      "icons": [{ "src": "favicon-32x32.png", "sizes": "32x32" }]
+    },
+    {
+      "name": "Logiciels Sétif",
+      "short_name": "Sétif",
+      "description": "CRM, POS, livraison pour l'Est algérien",
+      "url": "/blog/logiciel-crm-setif-bordj-msila-gestion-clients-2026",
+      "icons": [{ "src": "favicon-32x32.png", "sizes": "32x32" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Symloop Homepage"
+    },
+    {
+      "src": "/images/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Symloop Mobile"
     }
   ],
   "prefer_related_applications": false,

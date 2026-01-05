@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage Images -->
+  <url>
+    <loc>https://symloop.com/</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/og-default.jpg</image:loc>
+      <image:title>Symloop - Agence Digitale Algérie</image:title>
+      <image:caption>Symloop Technology - Leading Digital Agency in Algeria and MENA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://symloop.com/sym-logo.png</image:loc>
+      <image:title>Symloop Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Services Images -->
+  <url>
+    <loc>https://symloop.com/services/</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/services/web-development.jpg</image:loc>
+      <image:title>Web Development Services Algeria</image:title>
+      <image:caption>Professional web development services in Algeria</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://symloop.com/images/services/mobile-development.jpg</image:loc>
+      <image:title>Mobile App Development Algeria</image:title>
+      <image:caption>iOS and Android app development in Algeria</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://symloop.com/images/services/ai-solutions.jpg</image:loc>
+      <image:title>AI Solutions Algeria</image:title>
+      <image:caption>Artificial Intelligence solutions for businesses in Algeria</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Images - Industrial IT -->
+  <url>
+    <loc>https://symloop.com/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/blog/industrial-it.jpg</image:loc>
+      <image:title>Informatique Industrielle Algérie</image:title>
+      <image:caption>Industrial IT and factory PC maintenance in Algeria</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Images - Setif Software -->
+  <url>
+    <loc>https://symloop.com/blog/logiciel-crm-setif-bordj-msila-gestion-clients-2026</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/blog/crm-setif.jpg</image:loc>
+      <image:title>Logiciel CRM Sétif</image:title>
+      <image:caption>CRM software for businesses in Setif, Bordj Bou Arreridj, M'sila</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/blog/logiciel-gestion-livraison-setif-hauts-plateaux-2026</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/blog/delivery-setif.jpg</image:loc>
+      <image:title>Logiciel Livraison Sétif</image:title>
+      <image:caption>Delivery management software for Setif and High Plateaus region</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/blog/logiciel-caisse-pos-restaurant-commerce-setif-2026</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/blog/pos-restaurant.jpg</image:loc>
+      <image:title>Logiciel POS Restaurant Sétif</image:title>
+      <image:caption>POS software for restaurants and retail in Setif</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/blog/logiciel-agence-voyage-gds-setif-est-algerien-2026</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/blog/gds-travel.jpg</image:loc>
+      <image:title>Logiciel GDS Agence Voyage</image:title>
+      <image:caption>GDS and travel agency software for Eastern Algeria</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Images - Smart Home -->
+  <url>
+    <loc>https://symloop.com/blog/maison-intelligente-smart-home-algerie-2026</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/blog/smart-home.jpg</image:loc>
+      <image:title>Maison Intelligente Algérie</image:title>
+      <image:caption>Smart home automation solutions in Algeria</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Location Images -->
+  <url>
+    <loc>https://symloop.com/locations/alger/</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/locations/alger.jpg</image:loc>
+      <image:title>Symloop Alger</image:title>
+      <image:caption>Symloop Technology headquarters in Algiers</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://symloop.com/locations/setif/</loc>
+    <image:image>
+      <image:loc>https://symloop.com/images/locations/setif.jpg</image:loc>
+      <image:title>Symloop Sétif</image:title>
+      <image:caption>Symloop services in Setif, Eastern Algeria</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

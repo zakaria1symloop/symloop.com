@@ -22,6 +22,9 @@ Symloop is a full-service technology company specializing in:
 5. **Enterprise Software (ERP/CRM)** (برامج المؤسسات)
 6. **Cybersecurity** (الأمن السيبراني)
 7. **IoT Solutions** (إنترنت الأشياء)
+8. **Industrial IT & Factory Computing** (المعلوماتية الصناعية) - NEW 2026
+9. **Regional Business Software - Setif** (برامج الأعمال لسطيف) - NEW 2026
+10. **Smart Home & Security Systems** (المنزل الذكي والأمن)
 
 ## Services in Detail
 
@@ -84,6 +87,71 @@ Symloop is a full-service technology company specializing in:
 - HR management systems
 - Accounting software integration
 **URL**: https://symloop.com/services/erp-crm
+
+### 7. Industrial IT & Factory Computing - المعلوماتية الصناعية (NEW 2026)
+**Keywords**: informatique industrielle Algérie, maintenance PC usine, dépannage machines industrielles, المعلوماتية الصناعية
+- Factory PC customization & maintenance
+- Industrial machine software/hardware repair
+- SCADA system support and maintenance
+- PLC programming (Siemens, Allen Bradley)
+- HMI touchscreen repairs
+- Production line monitoring systems
+- Preventive maintenance contracts
+**Target**: Factories, manufacturing plants, industrial facilities
+**Coverage**: All of Algeria, especially industrial zones (Setif, Rouiba, Arzew)
+**URL**: https://symloop.com/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026
+
+### 8. Setif Region Business Software - برامج سطيف (NEW 2026)
+**Keywords**: logiciel Setif, CRM Setif, POS restaurant Setif, logiciel livraison Setif
+Specialized software solutions for Eastern Algeria:
+
+**a) CRM Software (إدارة العملاء)**
+- Customer relationship management
+- Sales pipeline tracking
+- Arabic/French bilingual interface
+- Coverage: Setif, Bordj Bou Arreridj, M'sila, Batna
+- Pricing: Starting 35,000 DZD/year
+- URL: https://symloop.com/blog/logiciel-crm-setif-bordj-msila-gestion-clients-2026
+
+**b) Delivery Management (إدارة التوصيل)**
+- Route optimization for High Plateaus terrain
+- GPS tracking and fleet management
+- Driver mobile application
+- Proof of delivery with photos
+- Coverage: Setif, BBA, Batna, Constantine, Bejaia
+- URL: https://symloop.com/blog/logiciel-gestion-livraison-setif-hauts-plateaux-2026
+
+**c) POS & Restaurant Software (نقاط البيع)**
+- Restaurant table management
+- Kitchen display system (KDS)
+- Inventory tracking
+- Multi-language receipts
+- Offline mode support
+- Coverage: Restaurants, cafes, retail in Setif region
+- Pricing: Starting 35,000 DZD/year
+- URL: https://symloop.com/blog/logiciel-caisse-pos-restaurant-commerce-setif-2026
+
+**d) Travel Agency GDS (وكالات السفر)**
+- Amadeus/Galileo GDS integration
+- Airline ticketing
+- Hotel booking management
+- Omra/Hajj package management
+- Partner hotels in Mecca/Medina
+- URL: https://symloop.com/blog/logiciel-agence-voyage-gds-setif-est-algerien-2026
+
+**Contact for Setif region**: +213 549 575 512
+
+### 9. Smart Home & Security - المنزل الذكي والأمن
+**Keywords**: maison intelligente Algérie, caméras surveillance Algérie, alarme maison, domotique Algérie
+- Home automation systems
+- Security camera installation (Hikvision, Dahua)
+- Alarm system integration
+- Access control systems
+- Smart lighting and climate control
+- Energy management
+**Brands**: Hikvision, Dahua, Tuya, Sonoff, Xiaomi
+**Pricing**: Starting from 50,000 DZD
+**URL**: https://symloop.com/blog/maison-intelligente-smart-home-algerie-2026
 
 ## Technology Stack
 - **Frontend**: React, Next.js, Vue.js, Flutter, React Native

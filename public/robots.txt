@@ -310,6 +310,11 @@ Sitemap: https://symloop.com/sitemapindex.xml
 Sitemap: https://symloop.com/sitemap.xml
 Sitemap: https://symloop.com/sitemap-multilingual.xml
 Sitemap: https://symloop.com/sitemap-enhanced.xml
+Sitemap: https://symloop.com/sitemap-images.xml
+
+# For AI crawlers
+# llms.txt: https://symloop.com/llms.txt
+# security.txt: https://symloop.com/.well-known/security.txt
 
 # ============================================
 # INDEXNOW - Instant Indexing

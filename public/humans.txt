@@ -30,9 +30,33 @@ IDE: VS Code, Claude Code
 - Web Development
 - E-commerce Solutions
 - ERP & CRM Systems
+- Industrial IT & Factory Computing (NEW 2026)
+- Regional Business Software - Setif (NEW 2026)
+- Smart Home & Security Systems
+- Delivery Management Software
+- POS & Restaurant Software
+- Travel Agency GDS Software
+
+/* REGIONS SERVED */
+
+Algeria (58 wilayas): Algiers, Oran, Constantine, Setif, Annaba, Batna, Blida, Bejaia, Tlemcen
+MENA: Tunisia, Morocco, Egypt, Saudi Arabia, UAE, Qatar, Kuwait
 
 /* KEYWORDS */
 
 رقمنة, digitalisation, développement application mobile Algérie,
 création site web Algérie, intelligence artificielle Algérie,
-e-commerce Algérie, paiement CIB, Edahabia, SATIM
+e-commerce Algérie, paiement CIB, Edahabia, SATIM,
+informatique industrielle, logiciel Setif, CRM Setif, POS restaurant,
+logiciel livraison, maison intelligente, domotique Algérie
+
+/* BLOG CATEGORIES */
+
+- Software Development
+- Mobile Applications
+- Industrial IT
+- Business Software (Setif)
+- AI Solutions
+- Smart Home
+- Delivery & Logistics
+- E-commerce

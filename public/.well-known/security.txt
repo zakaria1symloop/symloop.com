@@ -1,0 +1,20 @@
+# Security Policy for Symloop
+# https://symloop.com/.well-known/security.txt
+
+Contact: mailto:security@symloop.com
+Contact: mailto:contact@symloop.com
+Contact: tel:+213549575512
+
+Expires: 2027-01-01T00:00:00.000Z
+
+Preferred-Languages: fr, ar, en
+
+Canonical: https://symloop.com/.well-known/security.txt
+
+Policy: https://symloop.com/security-policy
+
+Hiring: https://symloop.com/careers
+
+# Symloop Technology - Algiers, Algeria
+# Leading IT Company in Algeria and MENA Region
+# Services: Software Development, AI Solutions, Mobile Apps, E-commerce
