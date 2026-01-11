@@ -1158,4 +1158,39 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <!-- ============================================== -->
+  <!-- INDUSTRY-SPECIFIC SOFTWARE BLOGS - 2026 -->
+  <!-- Healthcare, Pharmacy, Hotel, School, Real Estate -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://symloop.com/blog/logiciel-clinique-cabinet-medical-algerie-2026</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-pharmacie-gestion-stock-algerie-2026</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-hotel-reservation-hebergement-algerie-2026</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-ecole-gestion-scolaire-algerie-2026</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://symloop.com/blog/logiciel-immobilier-agence-algerie-2026</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

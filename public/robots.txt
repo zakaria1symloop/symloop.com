@@ -110,6 +110,13 @@ Allow: /blog/ia-generative-chatgpt-claude-algerie-2026/
 Allow: /blog/gestion-flotte-livraison-suivi-gps-algerie-2026/
 Allow: /blog/logiciel-gestion-livraison-distribution-algerie-2026/
 
+# Industry-Specific Software Blogs 2026 - Healthcare, Pharmacy, Hotel, School, Real Estate
+Allow: /blog/logiciel-clinique-cabinet-medical-algerie-2026/
+Allow: /blog/logiciel-pharmacie-gestion-stock-algerie-2026/
+Allow: /blog/logiciel-hotel-reservation-hebergement-algerie-2026/
+Allow: /blog/logiciel-ecole-gestion-scolaire-algerie-2026/
+Allow: /blog/logiciel-immobilier-agence-algerie-2026/
+
 # International Mobile Development 2026
 Allow: /blog/developpement-application-mobile-france-europe-2026/
 Allow: /blog/desarrollo-aplicaciones-moviles-espana-portugal-2026/
