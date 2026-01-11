@@ -148,7 +148,7 @@ export default function LogicielImmobilier2026() {
           {
             name: "Location Residentielle",
             description: "Appartements et maisons en location longue duree.",
-            items: ["Etat des lieux", "Gestion loyers", "Quittances"]
+            benefits: ["Etat des lieux", "Gestion loyers", "Quittances"]
           },
           {
             name: "Immobilier Commercial",
