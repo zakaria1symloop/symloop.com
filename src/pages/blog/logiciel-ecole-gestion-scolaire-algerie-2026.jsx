@@ -238,7 +238,7 @@ export default function LogicielEcole2026() {
         description: "Demandez une demonstration gratuite de notre logiciel de gestion scolaire. Nos consultants education vous accompagneront dans votre transformation digitale.",
         button: "Demander une Demo Gratuite",
         phone: "+213 549 575 512",
-        email: "education@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -463,7 +463,7 @@ export default function LogicielEcole2026() {
         description: "Request a free demo of our school management software. Our education consultants will support your digital transformation.",
         button: "Request a Free Demo",
         phone: "+213 549 575 512",
-        email: "education@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -688,7 +688,7 @@ export default function LogicielEcole2026() {
         description: "اطلب عرضًا مجانيًا لبرنامج الإدارة المدرسية. سيرافقك مستشارونا في التعليم في تحولك الرقمي.",
         button: "اطلب عرضًا مجانيًا",
         phone: "+213 549 575 512",
-        email: "education@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

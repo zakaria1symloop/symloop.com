@@ -197,7 +197,7 @@ export default function LogicielLivraisonSetif2026() {
         description: "Demandez une demonstration gratuite et decouvrez comment notre logiciel peut transformer vos operations de livraison.",
         button: "Demander une Demo",
         phone: "+213 549 575 512",
-        email: "livraison@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -381,7 +381,7 @@ export default function LogicielLivraisonSetif2026() {
         description: "Request a free demo and discover how our software can transform your delivery operations.",
         button: "Request a Demo",
         phone: "+213 549 575 512",
-        email: "livraison@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -565,7 +565,7 @@ export default function LogicielLivraisonSetif2026() {
         description: "اطلب عرضاً مجانياً واكتشف كيف يمكن لبرنامجنا تحويل عمليات التوصيل لديك.",
         button: "اطلب عرضاً",
         phone: "+213 549 575 512",
-        email: "livraison@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

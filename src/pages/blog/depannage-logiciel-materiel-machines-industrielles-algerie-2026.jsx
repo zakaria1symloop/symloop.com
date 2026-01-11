@@ -290,7 +290,7 @@ export default function DepannageLogicielMaterielIndustriel2026() {
         description: "Ne perdez plus de temps et d'argent. Appelez-nous maintenant pour un diagnostic rapide et une intervention efficace.",
         button: "Appeler Maintenant",
         phone: "+213 549 575 512",
-        email: "urgence@symloop.com"
+        email: "contact@symloop.com"
       },
 
       relatedArticles: "Articles Connexes",
@@ -567,7 +567,7 @@ export default function DepannageLogicielMaterielIndustriel2026() {
         description: "Don't waste more time and money. Call us now for a quick diagnosis and effective intervention.",
         button: "Call Now",
         phone: "+213 549 575 512",
-        email: "urgence@symloop.com"
+        email: "contact@symloop.com"
       },
 
       relatedArticles: "Related Articles",
@@ -844,7 +844,7 @@ export default function DepannageLogicielMaterielIndustriel2026() {
         description: "لا تضيع المزيد من الوقت والمال. اتصل بنا الآن للتشخيص السريع والتدخل الفعال.",
         button: "اتصل الآن",
         phone: "+213 549 575 512",
-        email: "urgence@symloop.com"
+        email: "contact@symloop.com"
       },
 
       relatedArticles: "مقالات ذات صلة",

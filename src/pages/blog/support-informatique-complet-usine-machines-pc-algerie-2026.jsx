@@ -345,7 +345,7 @@ export default function SupportInformatiqueCompletUsine2026() {
         description: "Un seul partenaire pour tous vos equipements. Un seul numero a appeler. Une seule equipe qui vous connait. Contactez-nous pour une evaluation gratuite.",
         button: "Demander une Evaluation Gratuite",
         phone: "+213 549 575 512",
-        email: "industrie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       relatedArticles: "Articles Connexes",
@@ -676,7 +676,7 @@ export default function SupportInformatiqueCompletUsine2026() {
         description: "One partner for all your equipment. One number to call. One team that knows you. Contact us for a free assessment.",
         button: "Request a Free Assessment",
         phone: "+213 549 575 512",
-        email: "industrie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       relatedArticles: "Related Articles",
@@ -1007,7 +1007,7 @@ export default function SupportInformatiqueCompletUsine2026() {
         description: "شريك واحد لكل معداتك. رقم واحد للاتصال. فريق واحد يعرفك. اتصل بنا للحصول على تقييم مجاني.",
         button: "اطلب تقييما مجانيا",
         phone: "+213 549 575 512",
-        email: "industrie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       relatedArticles: "مقالات ذات صلة",

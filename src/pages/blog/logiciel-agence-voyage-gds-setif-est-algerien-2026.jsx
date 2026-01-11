@@ -234,7 +234,7 @@ export default function LogicielAgenceVoyageGDS2026() {
         description: "Rejoignez les agences qui ont choisi notre solution pour developper leur activite. Demonstration gratuite et sans engagement.",
         button: "Demander une Demo",
         phone: "+213 549 575 512",
-        email: "voyage@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -393,7 +393,7 @@ export default function LogicielAgenceVoyageGDS2026() {
         description: "Join the agencies that have chosen our solution to grow their business. Free demo with no obligation.",
         button: "Request a Demo",
         phone: "+213 549 575 512",
-        email: "voyage@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -527,7 +527,7 @@ export default function LogicielAgenceVoyageGDS2026() {
         description: "انضم للوكالات التي اختارت حلنا لتطوير نشاطها. عرض مجاني بدون التزام.",
         button: "اطلب عرضاً",
         phone: "+213 549 575 512",
-        email: "voyage@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

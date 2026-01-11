@@ -238,7 +238,7 @@ export default function LogicielImmobilier2026() {
         description: "Demandez une demonstration gratuite de notre logiciel immobilier. Nos consultants vous montreront comment accelerer vos ventes et locations.",
         button: "Demander une Demo Gratuite",
         phone: "+213 549 575 512",
-        email: "immobilier@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -463,7 +463,7 @@ export default function LogicielImmobilier2026() {
         description: "Request a free demo of our real estate software. Our consultants will show you how to accelerate your sales and rentals.",
         button: "Request a Free Demo",
         phone: "+213 549 575 512",
-        email: "immobilier@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -688,7 +688,7 @@ export default function LogicielImmobilier2026() {
         description: "اطلب عرضًا مجانيًا لبرنامجنا العقاري. سيوضح لك مستشارونا كيفية تسريع مبيعاتك وإيجاراتك.",
         button: "اطلب عرضًا مجانيًا",
         phone: "+213 549 575 512",
-        email: "immobilier@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

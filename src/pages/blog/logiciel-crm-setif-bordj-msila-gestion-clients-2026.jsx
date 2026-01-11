@@ -238,7 +238,7 @@ export default function LogicielCRMSetif2026() {
         description: "Demandez une demonstration gratuite de notre CRM. Nos consultants vous montreront comment la solution peut s'adapter a votre activite.",
         button: "Demander une Demo Gratuite",
         phone: "+213 549 575 512",
-        email: "crm@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -463,7 +463,7 @@ export default function LogicielCRMSetif2026() {
         description: "Request a free demo of our CRM. Our consultants will show you how the solution can adapt to your business.",
         button: "Request a Free Demo",
         phone: "+213 549 575 512",
-        email: "crm@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -688,7 +688,7 @@ export default function LogicielCRMSetif2026() {
         description: "اطلب عرضًا مجانيًا لـ CRM لدينا. سيوضح لك مستشارونا كيف يمكن للحل أن يتكيف مع نشاطك.",
         button: "اطلب عرضًا مجانيًا",
         phone: "+213 549 575 512",
-        email: "crm@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

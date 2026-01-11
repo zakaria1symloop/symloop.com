@@ -289,7 +289,7 @@ export default function LogicielCaissePOSSetif() {
       ctaText: "Demandez une demonstration gratuite de notre solution POS. Nos commerciaux se deplacent a Setif et dans toute la region.",
       ctaButton: "Demander une Demo",
       ctaPhone: "+213 549 575 512",
-      ctaEmail: "pos@symloop.com",
+      ctaEmail: "contact@symloop.com",
 
       faqTitle: "Questions Frequentes",
       faqItems: [
@@ -592,7 +592,7 @@ export default function LogicielCaissePOSSetif() {
       ctaText: "Request a free demonstration of our POS solution. Our sales team travels to Setif and throughout the region.",
       ctaButton: "Request a Demo",
       ctaPhone: "+213 549 575 512",
-      ctaEmail: "pos@symloop.com",
+      ctaEmail: "contact@symloop.com",
 
       faqTitle: "Frequently Asked Questions",
       faqItems: [
@@ -895,7 +895,7 @@ export default function LogicielCaissePOSSetif() {
       ctaText: "اطلب عرضاً توضيحياً مجانياً لحل POS الخاص بنا. فريق المبيعات يتنقل إلى سطيف وفي جميع أنحاء المنطقة.",
       ctaButton: "اطلب عرضاً",
       ctaPhone: "+213 549 575 512",
-      ctaEmail: "pos@symloop.com",
+      ctaEmail: "contact@symloop.com",
 
       faqTitle: "الأسئلة الشائعة",
       faqItems: [

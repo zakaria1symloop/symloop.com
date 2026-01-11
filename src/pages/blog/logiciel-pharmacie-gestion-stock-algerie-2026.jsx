@@ -238,7 +238,7 @@ export default function LogicielPharmacie2026() {
         description: "Demandez une demonstration gratuite de notre logiciel de gestion pharmaceutique. Nos consultants vous montreront comment gagner du temps et reduire les pertes.",
         button: "Demander une Demo Gratuite",
         phone: "+213 549 575 512",
-        email: "pharmacie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -463,7 +463,7 @@ export default function LogicielPharmacie2026() {
         description: "Request a free demo of our pharmaceutical management software. Our consultants will show you how to save time and reduce losses.",
         button: "Request a Free Demo",
         phone: "+213 549 575 512",
-        email: "pharmacie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -688,7 +688,7 @@ export default function LogicielPharmacie2026() {
         description: "اطلب عرضًا مجانيًا لبرنامج الإدارة الصيدلانية. سيوضح لك مستشارونا كيفية توفير الوقت وتقليل الخسائر.",
         button: "اطلب عرضًا مجانيًا",
         phone: "+213 549 575 512",
-        email: "pharmacie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

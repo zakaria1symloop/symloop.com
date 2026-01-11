@@ -243,7 +243,7 @@ export default function LogicielCliniqueMedical2026() {
         description: "Demandez une demonstration gratuite de notre logiciel de gestion medicale. Nos consultants sante vous montreront comment optimiser votre pratique.",
         button: "Demander une Demo Gratuite",
         phone: "+213 549 575 512",
-        email: "sante@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -473,7 +473,7 @@ export default function LogicielCliniqueMedical2026() {
         description: "Request a free demo of our medical management software. Our healthcare consultants will show you how to optimize your practice.",
         button: "Request a Free Demo",
         phone: "+213 549 575 512",
-        email: "sante@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -703,7 +703,7 @@ export default function LogicielCliniqueMedical2026() {
         description: "اطلب عرضًا مجانيًا لبرنامج الإدارة الطبية. سيوضح لك مستشارونا الصحيون كيفية تحسين ممارستك.",
         button: "اطلب عرضًا مجانيًا",
         phone: "+213 549 575 512",
-        email: "sante@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"

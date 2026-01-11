@@ -238,7 +238,7 @@ export default function LogicielHotel2026() {
         description: "Demandez une demonstration gratuite de notre PMS. Nos consultants hotellerie vous montreront comment augmenter votre occupation et vos revenus.",
         button: "Demander une Demo Gratuite",
         phone: "+213 549 575 512",
-        email: "hotellerie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Retour au Blog"
@@ -463,7 +463,7 @@ export default function LogicielHotel2026() {
         description: "Request a free demo of our PMS. Our hospitality consultants will show you how to increase your occupancy and revenue.",
         button: "Request a Free Demo",
         phone: "+213 549 575 512",
-        email: "hotellerie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "Back to Blog"
@@ -688,7 +688,7 @@ export default function LogicielHotel2026() {
         description: "اطلب عرضًا مجانيًا لـ PMS لدينا. سيوضح لك مستشارو الضيافة كيفية زيادة الإشغال والإيرادات.",
         button: "اطلب عرضًا مجانيًا",
         phone: "+213 549 575 512",
-        email: "hotellerie@symloop.com"
+        email: "contact@symloop.com"
       },
 
       backToBlog: "العودة للمدونة"
