@@ -117,6 +117,38 @@ Allow: /blog/logiciel-hotel-reservation-hebergement-algerie-2026/
 Allow: /blog/logiciel-ecole-gestion-scolaire-algerie-2026/
 Allow: /blog/logiciel-immobilier-agence-algerie-2026/
 
+# SETIF & ALGER SEO BOOST 2026 - Priority Location Pages
+Allow: /blog/agence-developpement-web-setif-2026/
+Allow: /blog/agence-developpement-web-alger-2026/
+Allow: /fr/blog/agence-developpement-web-setif-2026/
+Allow: /fr/blog/agence-developpement-web-alger-2026/
+Allow: /ar/blog/agence-developpement-web-setif-2026/
+Allow: /ar/blog/agence-developpement-web-alger-2026/
+Allow: /en/blog/agence-developpement-web-setif-2026/
+Allow: /en/blog/agence-developpement-web-alger-2026/
+
+# SETIF SEO CLUSTER 2026 - Full Service Coverage
+Allow: /blog/creation-site-web-setif-2026/
+Allow: /blog/application-mobile-setif-2026/
+Allow: /blog/developpeur-web-setif-2026/
+Allow: /blog/e-commerce-setif-2026/
+Allow: /blog/logiciel-gestion-setif-2026/
+Allow: /fr/blog/creation-site-web-setif-2026/
+Allow: /fr/blog/application-mobile-setif-2026/
+Allow: /fr/blog/developpeur-web-setif-2026/
+Allow: /fr/blog/e-commerce-setif-2026/
+Allow: /fr/blog/logiciel-gestion-setif-2026/
+Allow: /ar/blog/creation-site-web-setif-2026/
+Allow: /ar/blog/application-mobile-setif-2026/
+Allow: /ar/blog/developpeur-web-setif-2026/
+Allow: /ar/blog/e-commerce-setif-2026/
+Allow: /ar/blog/logiciel-gestion-setif-2026/
+Allow: /en/blog/creation-site-web-setif-2026/
+Allow: /en/blog/application-mobile-setif-2026/
+Allow: /en/blog/developpeur-web-setif-2026/
+Allow: /en/blog/e-commerce-setif-2026/
+Allow: /en/blog/logiciel-gestion-setif-2026/
+
 # International Mobile Development 2026
 Allow: /blog/developpement-application-mobile-france-europe-2026/
 Allow: /blog/desarrollo-aplicaciones-moviles-espana-portugal-2026/
