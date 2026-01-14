@@ -689,7 +689,7 @@ export default function DeveloppeurWebSetif() {
               className="max-w-4xl mx-auto text-center"
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-500/20 text-violet-300 text-sm font-medium mb-6">
-                <CommandLineIcon className="w-4 h-4" />
+                <Terminal className="w-4 h-4" />
                 {c.hero.badge}
               </span>
 
@@ -842,7 +842,7 @@ export default function DeveloppeurWebSetif() {
                   className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50"
                 >
                   <div className="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center mb-4">
-                    <CheckBadgeIcon className="w-5 h-5 text-violet-400" />
+                    <CheckCircle className="w-5 h-5 text-violet-400" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{reason.title}</h3>
                   <p className="text-slate-400 text-sm">{reason.description}</p>
@@ -856,7 +856,7 @@ export default function DeveloppeurWebSetif() {
         <section className="py-20 bg-slate-900/50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <MapPinIcon className="w-12 h-12 text-violet-400 mx-auto mb-6" />
+              <MapPin className="w-12 h-12 text-violet-400 mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.coverage.title}</h2>
               <p className="text-slate-400 mb-8">{c.coverage.description}</p>
 
@@ -908,14 +908,14 @@ export default function DeveloppeurWebSetif() {
                   href={`tel:${c.cta.phone}`}
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 rounded-xl text-white hover:bg-white/20 transition-all"
                 >
-                  <PhoneIcon className="w-5 h-5" />
+                  <Phone className="w-5 h-5" />
                   {c.cta.phone}
                 </a>
                 <a
                   href={`mailto:${c.cta.email}`}
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 rounded-xl text-white hover:bg-white/20 transition-all"
                 >
-                  <EnvelopeIcon className="w-5 h-5" />
+                  <Mail className="w-5 h-5" />
                   {c.cta.email}
                 </a>
               </div>

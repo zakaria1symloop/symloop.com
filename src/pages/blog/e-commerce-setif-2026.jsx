@@ -764,7 +764,7 @@ export default function ECommerceSetif() {
               className="max-w-4xl mx-auto text-center"
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/20 text-emerald-300 text-sm font-medium mb-6">
-                <ShoppingCartIcon className="w-4 h-4" />
+                <ShoppingCart className="w-4 h-4" />
                 {c.hero.badge}
               </span>
 
@@ -875,7 +875,7 @@ export default function ECommerceSetif() {
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-3 text-slate-300">
-                        <CheckCircleIcon className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -994,7 +994,7 @@ export default function ECommerceSetif() {
         <section className="py-20 bg-slate-900/50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <TruckIcon className="w-12 h-12 text-emerald-400 mx-auto mb-6" />
+              <Truck className="w-12 h-12 text-emerald-400 mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.coverage.title}</h2>
               <p className="text-slate-400 mb-8">{c.coverage.description}</p>
 
@@ -1024,14 +1024,14 @@ export default function ECommerceSetif() {
                   href={`tel:${c.cta.phone}`}
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 rounded-xl text-white hover:bg-white/20 transition-all"
                 >
-                  <PhoneIcon className="w-5 h-5" />
+                  <Phone className="w-5 h-5" />
                   {c.cta.phone}
                 </a>
                 <a
                   href={`mailto:${c.cta.email}`}
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 rounded-xl text-white hover:bg-white/20 transition-all"
                 >
-                  <EnvelopeIcon className="w-5 h-5" />
+                  <Mail className="w-5 h-5" />
                   {c.cta.email}
                 </a>
               </div>
