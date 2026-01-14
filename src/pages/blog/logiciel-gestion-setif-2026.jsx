@@ -1092,8 +1092,6 @@ export default function LogicielGestionSetif() {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     </>
   );
