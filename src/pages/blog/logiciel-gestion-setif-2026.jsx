@@ -794,7 +794,7 @@ export default function LogicielGestionSetif() {
               className="max-w-4xl mx-auto text-center"
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/20 text-amber-300 text-sm font-medium mb-6">
-                <Cog6ToothIcon className="w-4 h-4" />
+                <Settings className="w-4 h-4" />
                 {c.hero.badge}
               </span>
 
