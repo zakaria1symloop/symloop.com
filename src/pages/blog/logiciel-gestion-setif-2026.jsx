@@ -5,25 +5,23 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-  Cog6ToothIcon,
-  ChartBarIcon,
-  DocumentTextIcon,
-  UserGroupIcon,
-  CurrencyDollarIcon,
-  ClipboardDocumentListIcon,
-  BuildingOffice2Icon,
-  TruckIcon,
-  ShoppingBagIcon,
-  WrenchScrewdriverIcon,
-  CalendarIcon,
-  CloudIcon,
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-  CheckCircleIcon
-} from '@heroicons/react/24/outline';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+  Settings,
+  BarChart3,
+  FileText,
+  Users,
+  DollarSign,
+  ClipboardList,
+  Building2,
+  Truck,
+  ShoppingBag,
+  Wrench,
+  Calendar,
+  Cloud,
+  MapPin,
+  Phone,
+  Mail,
+  CheckCircle
+} from 'lucide-react';
 
 const content = {
   fr: {
@@ -51,37 +49,37 @@ const content = {
       subtitle: "Des outils complets pour chaque aspect de votre entreprise",
       items: [
         {
-          icon: "DocumentTextIcon",
+          icon: "FileText",
           title: "Facturation & Devis",
           description: "Créez factures et devis conformes à la réglementation algérienne. Gestion des clients, relances automatiques, rapports de ventes.",
           features: ["Factures conformes DGI", "Devis en 1 clic", "Relances automatiques", "Multi-devises DA/EUR"]
         },
         {
-          icon: "ClipboardDocumentListIcon",
+          icon: "ClipboardList",
           title: "Gestion des Stocks",
           description: "Suivi en temps réel de vos stocks, alertes de seuil, gestion multi-dépôts, inventaire automatisé, traçabilité complète.",
           features: ["Stock temps réel", "Alertes rupture", "Multi-entrepôts", "Code-barres"]
         },
         {
-          icon: "CurrencyDollarIcon",
+          icon: "DollarSign",
           title: "Comptabilité",
           description: "Plan comptable algérien (PCN), journal des ventes/achats, déclarations fiscales, bilan, compte de résultat.",
           features: ["PCN intégré", "TVA automatique", "Déclarations G50", "Rapports fiscaux"]
         },
         {
-          icon: "UserGroupIcon",
+          icon: "Users",
           title: "Gestion RH & Paie",
           description: "Gestion des employés, calcul de paie conforme CNAS/CACOBATPH, congés, absences, fiches de paie.",
           features: ["Paie CNAS/CASNOS", "Gestion congés", "Fiches de paie", "Déclarations sociales"]
         },
         {
-          icon: "TruckIcon",
+          icon: "Truck",
           title: "Gestion des Achats",
           description: "Bons de commande, suivi fournisseurs, comparaison des prix, réceptions, contrôle qualité.",
           features: ["Bons de commande", "Suivi fournisseurs", "Comparaison prix", "Réceptions"]
         },
         {
-          icon: "ChartBarIcon",
+          icon: "BarChart3",
           title: "Tableaux de Bord",
           description: "Indicateurs clés en temps réel, analyses de performance, rapports personnalisables, export Excel/PDF.",
           features: ["KPIs temps réel", "Graphiques", "Export Excel", "Rapports automatiques"]
@@ -92,10 +90,10 @@ const content = {
       title: "Secteurs d'Activité",
       subtitle: "Solutions adaptées à chaque métier",
       items: [
-        { icon: "ShoppingBagIcon", name: "Commerce & Distribution", description: "Gestion des ventes, caisse, fidélité client" },
-        { icon: "WrenchScrewdriverIcon", name: "Industrie & Production", description: "Gestion de production, maintenance, qualité" },
-        { icon: "BuildingOffice2Icon", name: "BTP & Construction", description: "Chantiers, situations, métré, sous-traitance" },
-        { icon: "TruckIcon", name: "Transport & Logistique", description: "Flotte, livraisons, tournées, traçabilité" }
+        { icon: "ShoppingBag", name: "Commerce & Distribution", description: "Gestion des ventes, caisse, fidélité client" },
+        { icon: "Wrench", name: "Industrie & Production", description: "Gestion de production, maintenance, qualité" },
+        { icon: "Building2", name: "BTP & Construction", description: "Chantiers, situations, métré, sous-traitance" },
+        { icon: "Truck", name: "Transport & Logistique", description: "Flotte, livraisons, tournées, traçabilité" }
       ]
     },
     packages: {
@@ -268,37 +266,37 @@ const content = {
       subtitle: "أدوات كاملة لكل جانب من جوانب شركتك",
       items: [
         {
-          icon: "DocumentTextIcon",
+          icon: "FileText",
           title: "الفوترة والعروض",
           description: "إنشاء فواتير وعروض مطابقة للتنظيم الجزائري. إدارة العملاء، تذكيرات آلية، تقارير المبيعات.",
           features: ["فواتير مطابقة DGI", "عروض بنقرة واحدة", "تذكيرات آلية", "متعدد العملات دج/يورو"]
         },
         {
-          icon: "ClipboardDocumentListIcon",
+          icon: "ClipboardList",
           title: "إدارة المخزون",
           description: "تتبع فوري للمخزون، تنبيهات الحد الأدنى، إدارة متعددة المستودعات، جرد آلي، تتبع كامل.",
           features: ["مخزون فوري", "تنبيهات النفاد", "متعدد المستودعات", "باركود"]
         },
         {
-          icon: "CurrencyDollarIcon",
+          icon: "DollarSign",
           title: "المحاسبة",
           description: "المخطط المحاسبي الجزائري (PCN)، يومية المبيعات/المشتريات، التصريحات الضريبية، الميزانية.",
           features: ["PCN مدمج", "TVA آلية", "تصريحات G50", "تقارير ضريبية"]
         },
         {
-          icon: "UserGroupIcon",
+          icon: "Users",
           title: "إدارة الموارد البشرية والرواتب",
           description: "إدارة الموظفين، حساب الرواتب المطابق لـ CNAS/CACOBATPH، الإجازات، الغيابات، كشوف الرواتب.",
           features: ["رواتب CNAS/CASNOS", "إدارة الإجازات", "كشوف الرواتب", "التصريحات الاجتماعية"]
         },
         {
-          icon: "TruckIcon",
+          icon: "Truck",
           title: "إدارة المشتريات",
           description: "أوامر الشراء، متابعة الموردين، مقارنة الأسعار، الاستلام، مراقبة الجودة.",
           features: ["أوامر الشراء", "متابعة الموردين", "مقارنة الأسعار", "الاستلام"]
         },
         {
-          icon: "ChartBarIcon",
+          icon: "BarChart3",
           title: "لوحات التحكم",
           description: "مؤشرات رئيسية فورية، تحليلات الأداء، تقارير قابلة للتخصيص، تصدير Excel/PDF.",
           features: ["KPIs فورية", "رسوم بيانية", "تصدير Excel", "تقارير آلية"]
@@ -309,10 +307,10 @@ const content = {
       title: "قطاعات النشاط",
       subtitle: "حلول مكيفة لكل مهنة",
       items: [
-        { icon: "ShoppingBagIcon", name: "التجارة والتوزيع", description: "إدارة المبيعات، الصندوق، ولاء العملاء" },
-        { icon: "WrenchScrewdriverIcon", name: "الصناعة والإنتاج", description: "إدارة الإنتاج، الصيانة، الجودة" },
-        { icon: "BuildingOffice2Icon", name: "البناء والأشغال", description: "الورشات، الوضعيات، القياس، المقاولة الفرعية" },
-        { icon: "TruckIcon", name: "النقل واللوجستيك", description: "الأسطول، التوصيل، الجولات، التتبع" }
+        { icon: "ShoppingBag", name: "التجارة والتوزيع", description: "إدارة المبيعات، الصندوق، ولاء العملاء" },
+        { icon: "Wrench", name: "الصناعة والإنتاج", description: "إدارة الإنتاج، الصيانة، الجودة" },
+        { icon: "Building2", name: "البناء والأشغال", description: "الورشات، الوضعيات، القياس، المقاولة الفرعية" },
+        { icon: "Truck", name: "النقل واللوجستيك", description: "الأسطول، التوصيل، الجولات، التتبع" }
       ]
     },
     packages: {
@@ -485,37 +483,37 @@ const content = {
       subtitle: "Complete tools for every aspect of your business",
       items: [
         {
-          icon: "DocumentTextIcon",
+          icon: "FileText",
           title: "Invoicing & Quotes",
           description: "Create invoices and quotes compliant with Algerian regulations. Customer management, automatic reminders, sales reports.",
           features: ["DGI compliant invoices", "1-click quotes", "Automatic reminders", "Multi-currency DZD/EUR"]
         },
         {
-          icon: "ClipboardDocumentListIcon",
+          icon: "ClipboardList",
           title: "Inventory Management",
           description: "Real-time inventory tracking, threshold alerts, multi-warehouse management, automated inventory, complete traceability.",
           features: ["Real-time stock", "Stock-out alerts", "Multi-warehouse", "Barcode"]
         },
         {
-          icon: "CurrencyDollarIcon",
+          icon: "DollarSign",
           title: "Accounting",
           description: "Algerian chart of accounts (PCN), sales/purchase journals, tax declarations, balance sheet, income statement.",
           features: ["PCN integrated", "Automatic VAT", "G50 declarations", "Tax reports"]
         },
         {
-          icon: "UserGroupIcon",
+          icon: "Users",
           title: "HR & Payroll Management",
           description: "Employee management, CNAS/CACOBATPH compliant payroll calculation, leaves, absences, pay slips.",
           features: ["CNAS/CASNOS payroll", "Leave management", "Pay slips", "Social declarations"]
         },
         {
-          icon: "TruckIcon",
+          icon: "Truck",
           title: "Purchase Management",
           description: "Purchase orders, supplier tracking, price comparison, receipts, quality control.",
           features: ["Purchase orders", "Supplier tracking", "Price comparison", "Receipts"]
         },
         {
-          icon: "ChartBarIcon",
+          icon: "BarChart3",
           title: "Dashboards",
           description: "Real-time key indicators, performance analytics, customizable reports, Excel/PDF export.",
           features: ["Real-time KPIs", "Charts", "Excel export", "Automatic reports"]
@@ -526,10 +524,10 @@ const content = {
       title: "Business Sectors",
       subtitle: "Solutions adapted to each trade",
       items: [
-        { icon: "ShoppingBagIcon", name: "Retail & Distribution", description: "Sales management, POS, customer loyalty" },
-        { icon: "WrenchScrewdriverIcon", name: "Industry & Manufacturing", description: "Production management, maintenance, quality" },
-        { icon: "BuildingOffice2Icon", name: "Construction & Building", description: "Projects, progress billing, measurements, subcontracting" },
-        { icon: "TruckIcon", name: "Transport & Logistics", description: "Fleet, deliveries, routes, tracking" }
+        { icon: "ShoppingBag", name: "Retail & Distribution", description: "Sales management, POS, customer loyalty" },
+        { icon: "Wrench", name: "Industry & Manufacturing", description: "Production management, maintenance, quality" },
+        { icon: "Building2", name: "Construction & Building", description: "Projects, progress billing, measurements, subcontracting" },
+        { icon: "Truck", name: "Transport & Logistics", description: "Fleet, deliveries, routes, tracking" }
       ]
     },
     packages: {
@@ -680,15 +678,15 @@ const content = {
 };
 
 const iconComponents = {
-  DocumentTextIcon,
-  ClipboardDocumentListIcon,
-  CurrencyDollarIcon,
-  UserGroupIcon,
-  TruckIcon,
-  ChartBarIcon,
-  ShoppingBagIcon,
-  WrenchScrewdriverIcon,
-  BuildingOffice2Icon
+  FileText,
+  ClipboardList,
+  DollarSign,
+  Users,
+  Truck,
+  BarChart3,
+  ShoppingBag,
+  Wrench,
+  Building2
 };
 
 export default function LogicielGestionSetif() {
@@ -779,7 +777,7 @@ export default function LogicielGestionSetif() {
       </Head>
 
       <div className={`min-h-screen bg-slate-950 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
-        <Navbar />
+
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">

@@ -5,21 +5,19 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-  CodeBracketIcon,
-  CommandLineIcon,
-  CpuChipIcon,
-  ServerStackIcon,
-  CloudArrowUpIcon,
-  ShieldCheckIcon,
-  UserGroupIcon,
-  AcademicCapIcon,
-  CheckBadgeIcon,
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon
-} from '@heroicons/react/24/outline';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+  Code,
+  Terminal,
+  Cpu,
+  Server,
+  Cloud,
+  Shield,
+  Users,
+  GraduationCap,
+  CheckCircle,
+  MapPin,
+  Phone,
+  Mail
+} from 'lucide-react';
 
 const content = {
   fr: {
@@ -48,22 +46,22 @@ const content = {
       categories: [
         {
           title: "Frontend",
-          icon: "CodeBracketIcon",
+          icon: "Code",
           skills: ["React.js / Next.js", "Vue.js / Nuxt.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
         },
         {
           title: "Backend",
-          icon: "ServerStackIcon",
+          icon: "Server",
           skills: ["Node.js / Express", "PHP / Laravel", "Python / Django", "API REST / GraphQL", "WebSocket"]
         },
         {
           title: "Base de Données",
-          icon: "CpuChipIcon",
+          icon: "Cpu",
           skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase"]
         },
         {
           title: "DevOps & Cloud",
-          icon: "CloudArrowUpIcon",
+          icon: "Cloud",
           skills: ["AWS / GCP", "Docker / Kubernetes", "CI/CD Pipelines", "Linux Server", "Nginx / Apache"]
         }
       ]
@@ -228,22 +226,22 @@ const content = {
       categories: [
         {
           title: "الواجهة الأمامية",
-          icon: "CodeBracketIcon",
+          icon: "Code",
           skills: ["React.js / Next.js", "Vue.js / Nuxt.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
         },
         {
           title: "الواجهة الخلفية",
-          icon: "ServerStackIcon",
+          icon: "Server",
           skills: ["Node.js / Express", "PHP / Laravel", "Python / Django", "API REST / GraphQL", "WebSocket"]
         },
         {
           title: "قواعد البيانات",
-          icon: "CpuChipIcon",
+          icon: "Cpu",
           skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase"]
         },
         {
           title: "DevOps والسحابة",
-          icon: "CloudArrowUpIcon",
+          icon: "Cloud",
           skills: ["AWS / GCP", "Docker / Kubernetes", "CI/CD Pipelines", "Linux Server", "Nginx / Apache"]
         }
       ]
@@ -408,22 +406,22 @@ const content = {
       categories: [
         {
           title: "Frontend",
-          icon: "CodeBracketIcon",
+          icon: "Code",
           skills: ["React.js / Next.js", "Vue.js / Nuxt.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
         },
         {
           title: "Backend",
-          icon: "ServerStackIcon",
+          icon: "Server",
           skills: ["Node.js / Express", "PHP / Laravel", "Python / Django", "REST API / GraphQL", "WebSocket"]
         },
         {
           title: "Database",
-          icon: "CpuChipIcon",
+          icon: "Cpu",
           skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase"]
         },
         {
           title: "DevOps & Cloud",
-          icon: "CloudArrowUpIcon",
+          icon: "Cloud",
           skills: ["AWS / GCP", "Docker / Kubernetes", "CI/CD Pipelines", "Linux Server", "Nginx / Apache"]
         }
       ]
@@ -565,10 +563,10 @@ const content = {
 };
 
 const iconComponents = {
-  CodeBracketIcon,
-  ServerStackIcon,
-  CpuChipIcon,
-  CloudArrowUpIcon
+  Code,
+  Server,
+  Cpu,
+  Cloud
 };
 
 export default function DeveloppeurWebSetif() {
@@ -676,8 +674,6 @@ export default function DeveloppeurWebSetif() {
       </Head>
 
       <div className={`min-h-screen bg-slate-950 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
-        <Navbar />
-
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-violet-900/30 via-slate-950 to-indigo-900/20" />
@@ -933,8 +929,6 @@ export default function DeveloppeurWebSetif() {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     </>
   );

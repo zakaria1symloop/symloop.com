@@ -5,22 +5,20 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-  ShoppingCartIcon,
-  CreditCardIcon,
-  TruckIcon,
-  ChartBarIcon,
-  DevicePhoneMobileIcon,
-  ShieldCheckIcon,
-  CubeIcon,
-  BanknotesIcon,
-  UserGroupIcon,
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-  CheckCircleIcon
-} from '@heroicons/react/24/outline';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+  ShoppingCart,
+  CreditCard,
+  Truck,
+  BarChart3,
+  Smartphone,
+  Shield,
+  Package,
+  DollarSign,
+  Users,
+  MapPin,
+  Phone,
+  Mail,
+  CheckCircle
+} from 'lucide-react';
 
 const content = {
   fr: {
@@ -48,32 +46,32 @@ const content = {
       subtitle: "Tout ce dont vous avez besoin pour vendre en ligne",
       items: [
         {
-          icon: "CreditCardIcon",
+          icon: "CreditCard",
           title: "Paiement CIB & EDAHABIA",
           description: "Acceptez les cartes CIB et EDAHABIA directement sur votre site. Intégration SATIM officielle et sécurisée."
         },
         {
-          icon: "CubeIcon",
+          icon: "Package",
           title: "Gestion des Stocks",
           description: "Suivi en temps réel de vos stocks, alertes de rupture, gestion multi-entrepôts, inventaire automatisé."
         },
         {
-          icon: "TruckIcon",
+          icon: "Truck",
           title: "Livraison Intégrée",
           description: "Connexion avec Yalidine, ZR Express, EMS. Calcul automatique des frais, suivi des colis en temps réel."
         },
         {
-          icon: "DevicePhoneMobileIcon",
+          icon: "Smartphone",
           title: "Mobile First",
           description: "Design responsive optimisé pour mobile. 70% de vos clients achèteront depuis leur smartphone."
         },
         {
-          icon: "ChartBarIcon",
+          icon: "BarChart3",
           title: "Analytics & Rapports",
           description: "Tableau de bord complet : ventes, conversions, panier moyen, produits populaires, comportement clients."
         },
         {
-          icon: "ShieldCheckIcon",
+          icon: "Shield",
           title: "Sécurité SSL",
           description: "Certificat SSL gratuit, protection des données clients, conformité aux normes de sécurité."
         }
@@ -259,32 +257,32 @@ const content = {
       subtitle: "كل ما تحتاجه للبيع عبر الإنترنت",
       items: [
         {
-          icon: "CreditCardIcon",
+          icon: "CreditCard",
           title: "دفع CIB و EDAHABIA",
           description: "اقبل بطاقات CIB و EDAHABIA مباشرة على موقعك. تكامل SATIM الرسمي والآمن."
         },
         {
-          icon: "CubeIcon",
+          icon: "Package",
           title: "إدارة المخزون",
           description: "تتبع فوري للمخزون، تنبيهات النفاد، إدارة متعددة المستودعات، جرد آلي."
         },
         {
-          icon: "TruckIcon",
+          icon: "Truck",
           title: "التوصيل المدمج",
           description: "اتصال مع Yalidine، ZR Express، EMS. حساب آلي للتكاليف، تتبع الطرود في الوقت الحقيقي."
         },
         {
-          icon: "DevicePhoneMobileIcon",
+          icon: "Smartphone",
           title: "الجوال أولاً",
           description: "تصميم متجاوب محسن للجوال. 70% من عملائك سيشترون من هواتفهم الذكية."
         },
         {
-          icon: "ChartBarIcon",
+          icon: "BarChart3",
           title: "التحليلات والتقارير",
           description: "لوحة تحكم شاملة: المبيعات، التحويلات، متوسط السلة، المنتجات الشائعة، سلوك العملاء."
         },
         {
-          icon: "ShieldCheckIcon",
+          icon: "Shield",
           title: "أمان SSL",
           description: "شهادة SSL مجانية، حماية بيانات العملاء، امتثال لمعايير الأمان."
         }
@@ -470,32 +468,32 @@ const content = {
       subtitle: "Everything you need to sell online",
       items: [
         {
-          icon: "CreditCardIcon",
+          icon: "CreditCard",
           title: "CIB & EDAHABIA Payment",
           description: "Accept CIB and EDAHABIA cards directly on your site. Official and secure SATIM integration."
         },
         {
-          icon: "CubeIcon",
+          icon: "Package",
           title: "Inventory Management",
           description: "Real-time stock tracking, out-of-stock alerts, multi-warehouse management, automated inventory."
         },
         {
-          icon: "TruckIcon",
+          icon: "Truck",
           title: "Integrated Delivery",
           description: "Connection with Yalidine, ZR Express, EMS. Automatic cost calculation, real-time package tracking."
         },
         {
-          icon: "DevicePhoneMobileIcon",
+          icon: "Smartphone",
           title: "Mobile First",
           description: "Responsive design optimized for mobile. 70% of your customers will buy from their smartphone."
         },
         {
-          icon: "ChartBarIcon",
+          icon: "BarChart3",
           title: "Analytics & Reports",
           description: "Complete dashboard: sales, conversions, average cart, popular products, customer behavior."
         },
         {
-          icon: "ShieldCheckIcon",
+          icon: "Shield",
           title: "SSL Security",
           description: "Free SSL certificate, customer data protection, security standards compliance."
         }
@@ -659,12 +657,12 @@ const content = {
 };
 
 const iconComponents = {
-  CreditCardIcon,
-  CubeIcon,
-  TruckIcon,
-  DevicePhoneMobileIcon,
-  ChartBarIcon,
-  ShieldCheckIcon
+  CreditCard,
+  Package,
+  Truck,
+  Smartphone,
+  BarChart3,
+  Shield
 };
 
 export default function ECommerceSetif() {
@@ -751,8 +749,6 @@ export default function ECommerceSetif() {
       </Head>
 
       <div className={`min-h-screen bg-slate-950 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
-        <Navbar />
-
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/30 via-slate-950 to-teal-900/20" />
@@ -1049,8 +1045,6 @@ export default function ECommerceSetif() {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     </>
   );
