@@ -1613,6 +1613,1017 @@ export const blogs = [
         excerpt: "برنامج نقطة البيع للمطاعم والمقاهي والتجارة في سطيف والمناطق المجاورة. شاشة لمس، إدارة المخزون، ولاء العملاء، تقارير فورية. متوافق مع الدفع الإلكتروني."
       }
     }
+  },
+  // ===== GULF MARKETS - KSA (Saudi Arabia) =====
+  {
+    id: "58",
+    slug: "mobile-app-development-saudi-arabia-2026",
+    title: "Mobile App Development in Saudi Arabia",
+    subtitle: "Top Flutter & React Native App Development Company for KSA Market 2026",
+    excerpt: "Leading mobile app development company in Saudi Arabia. We build iOS & Android apps for Riyadh, Jeddah, Dammam businesses. Flutter, React Native, MADA & STC Pay integration.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/mobile-app-saudi-arabia.jpg",
+    featured: true,
+    tags: ["mobile app development Saudi Arabia", "app developer Riyadh", "Flutter Saudi Arabia", "React Native KSA", "iOS Android app Jeddah"],
+    metaTitle: "Mobile App Development Saudi Arabia 2026 | iOS & Android | Symloop",
+    metaDescription: "Top mobile app development company in Saudi Arabia. Build iOS & Android apps with Flutter & React Native. MADA, STC Pay integration. Riyadh, Jeddah, Dammam. Free consultation.",
+    translations: {
+      en: {
+        title: "Mobile App Development in Saudi Arabia",
+        subtitle: "Top Flutter & React Native App Development Company for KSA Market 2026",
+        excerpt: "Leading mobile app development company in Saudi Arabia. We build iOS & Android apps for Riyadh, Jeddah, Dammam businesses. Flutter, React Native, MADA & STC Pay integration."
+      },
+      ar: {
+        title: "تطوير تطبيقات الجوال في المملكة العربية السعودية 2026",
+        subtitle: "أفضل شركة تطوير تطبيقات Flutter و React Native في السعودية",
+        excerpt: "شركة رائدة في تطوير تطبيقات الجوال في السعودية. نبني تطبيقات iOS و Android للشركات في الرياض وجدة والدمام. تكامل مع مدى و STC Pay."
+      }
+    }
+  },
+  {
+    id: "59",
+    slug: "tatwir-tatbiqat-jawwal-saudi-arabia-2026",
+    title: "تطوير تطبيقات الجوال في المملكة العربية السعودية",
+    subtitle: "أفضل شركة تطوير تطبيقات Flutter و React Native في السعودية 2026",
+    excerpt: "شركة رائدة في تطوير تطبيقات الجوال في السعودية. نبني تطبيقات iOS و Android للشركات في الرياض وجدة والدمام. تكامل مع مدى و STC Pay.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/mobile-app-saudi-arabia.jpg",
+    featured: true,
+    tags: ["تطوير تطبيقات السعودية", "مطور تطبيقات الرياض", "تطبيقات جوال جدة", "Flutter السعودية", "برمجة تطبيقات الدمام"],
+    metaTitle: "تطوير تطبيقات الجوال السعودية 2026 | iOS و Android | Symloop",
+    metaDescription: "أفضل شركة تطوير تطبيقات جوال في السعودية. تطبيقات iOS و Android بـ Flutter و React Native. تكامل مدى و STC Pay. الرياض، جدة، الدمام. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "Mobile App Development in Saudi Arabia 2026",
+        subtitle: "Top Flutter & React Native App Development Company for KSA Market",
+        excerpt: "Leading mobile app development company in Saudi Arabia. iOS & Android apps for Riyadh, Jeddah, Dammam businesses."
+      },
+      ar: {
+        title: "تطوير تطبيقات الجوال في المملكة العربية السعودية",
+        subtitle: "أفضل شركة تطوير تطبيقات Flutter و React Native في السعودية 2026",
+        excerpt: "شركة رائدة في تطوير تطبيقات الجوال في السعودية. نبني تطبيقات iOS و Android للشركات في الرياض وجدة والدمام. تكامل مع مدى و STC Pay."
+      }
+    }
+  },
+  {
+    id: "60",
+    slug: "web-development-company-saudi-arabia-2026",
+    title: "Web Development Company in Saudi Arabia",
+    subtitle: "Professional Website Design & Development Services in KSA 2026",
+    excerpt: "Expert web development company in Saudi Arabia. Custom websites, web applications, and portals for businesses in Riyadh, Jeddah, Dammam. Next.js, React, responsive design.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/web-dev-saudi-arabia.jpg",
+    featured: true,
+    tags: ["web development Saudi Arabia", "website design Riyadh", "web developer KSA", "website company Jeddah", "Next.js Saudi Arabia"],
+    metaTitle: "Web Development Company Saudi Arabia 2026 | Website Design | Symloop",
+    metaDescription: "Professional web development company in Saudi Arabia. Custom websites, web apps, portals. Next.js, React. Riyadh, Jeddah, Dammam. Free quote.",
+    translations: {
+      en: {
+        title: "Web Development Company in Saudi Arabia",
+        subtitle: "Professional Website Design & Development Services in KSA 2026",
+        excerpt: "Expert web development company in Saudi Arabia. Custom websites, web applications, and portals for businesses in Riyadh, Jeddah, Dammam."
+      },
+      ar: {
+        title: "شركة تطوير مواقع ويب في المملكة العربية السعودية 2026",
+        subtitle: "خدمات تصميم وتطوير مواقع احترافية في السعودية",
+        excerpt: "شركة خبيرة في تطوير المواقع في السعودية. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في الرياض وجدة والدمام."
+      }
+    }
+  },
+  {
+    id: "61",
+    slug: "tatwir-mawaqie-web-saudi-arabia-2026",
+    title: "تطوير مواقع ويب في المملكة العربية السعودية",
+    subtitle: "خدمات تصميم وتطوير مواقع احترافية في السعودية 2026",
+    excerpt: "شركة خبيرة في تطوير المواقع في السعودية. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في الرياض وجدة والدمام. Next.js، React، تصميم متجاوب.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/web-dev-saudi-arabia.jpg",
+    featured: true,
+    tags: ["تطوير مواقع السعودية", "تصميم مواقع الرياض", "شركة ويب جدة", "مطور مواقع السعودية", "تصميم ويب الدمام"],
+    metaTitle: "تطوير مواقع ويب السعودية 2026 | تصميم مواقع احترافية | Symloop",
+    metaDescription: "شركة تطوير مواقع ويب احترافية في السعودية. مواقع مخصصة، تطبيقات ويب، بوابات. Next.js، React. الرياض، جدة، الدمام. عرض أسعار مجاني.",
+    translations: {
+      en: {
+        title: "Web Development Company in Saudi Arabia 2026",
+        subtitle: "Professional Website Design & Development Services in KSA",
+        excerpt: "Expert web development company in Saudi Arabia. Custom websites, web applications, and portals for businesses in Riyadh, Jeddah, Dammam."
+      },
+      ar: {
+        title: "تطوير مواقع ويب في المملكة العربية السعودية",
+        subtitle: "خدمات تصميم وتطوير مواقع احترافية في السعودية 2026",
+        excerpt: "شركة خبيرة في تطوير المواقع في السعودية. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في الرياض وجدة والدمام."
+      }
+    }
+  },
+  {
+    id: "62",
+    slug: "ecommerce-solutions-saudi-arabia-mada-2026",
+    title: "E-commerce Solutions in Saudi Arabia with MADA Integration",
+    subtitle: "Build Your Online Store in KSA with MADA, STC Pay & Tabby 2026",
+    excerpt: "Complete e-commerce development for Saudi Arabia. Online stores with MADA, STC Pay, Tabby, Tamara payment integration. Shopify, WooCommerce, custom solutions for Riyadh, Jeddah.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/ecommerce-saudi-arabia.jpg",
+    featured: true,
+    tags: ["ecommerce Saudi Arabia", "online store KSA", "MADA payment integration", "STC Pay ecommerce", "Shopify Saudi Arabia"],
+    metaTitle: "E-commerce Solutions Saudi Arabia 2026 | MADA & STC Pay | Symloop",
+    metaDescription: "E-commerce development in Saudi Arabia. Online stores with MADA, STC Pay, Tabby integration. Shopify, WooCommerce, custom. Riyadh, Jeddah. Free consultation.",
+    translations: {
+      en: {
+        title: "E-commerce Solutions in Saudi Arabia with MADA Integration",
+        subtitle: "Build Your Online Store in KSA with MADA, STC Pay & Tabby 2026",
+        excerpt: "Complete e-commerce development for Saudi Arabia. Online stores with MADA, STC Pay, Tabby, Tamara payment integration."
+      },
+      ar: {
+        title: "حلول التجارة الإلكترونية في السعودية مع تكامل مدى 2026",
+        subtitle: "أنشئ متجرك الإلكتروني في السعودية مع مدى و STC Pay و تابي",
+        excerpt: "تطوير تجارة إلكترونية متكاملة للسعودية. متاجر إلكترونية مع تكامل مدى و STC Pay و تابي و تمارا."
+      }
+    }
+  },
+  {
+    id: "63",
+    slug: "tijara-iliktruniya-saudi-arabia-mada-2026",
+    title: "التجارة الإلكترونية في السعودية مع تكامل مدى",
+    subtitle: "أنشئ متجرك الإلكتروني في السعودية مع مدى و STC Pay و تابي 2026",
+    excerpt: "تطوير تجارة إلكترونية متكاملة للسعودية. متاجر إلكترونية مع تكامل مدى و STC Pay و تابي و تمارا. Shopify، WooCommerce، حلول مخصصة للرياض وجدة.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/ecommerce-saudi-arabia.jpg",
+    featured: true,
+    tags: ["تجارة إلكترونية السعودية", "متجر إلكتروني مدى", "STC Pay متجر", "شوبيفاي السعودية", "تابي تمارا"],
+    metaTitle: "التجارة الإلكترونية السعودية 2026 | مدى و STC Pay | Symloop",
+    metaDescription: "تطوير تجارة إلكترونية في السعودية. متاجر مع مدى و STC Pay و تابي. Shopify، WooCommerce، حلول مخصصة. الرياض، جدة. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "E-commerce Solutions in Saudi Arabia with MADA Integration 2026",
+        subtitle: "Build Your Online Store in KSA with MADA, STC Pay & Tabby",
+        excerpt: "Complete e-commerce development for Saudi Arabia with MADA, STC Pay, Tabby, Tamara payment integration."
+      },
+      ar: {
+        title: "التجارة الإلكترونية في السعودية مع تكامل مدى",
+        subtitle: "أنشئ متجرك الإلكتروني في السعودية مع مدى و STC Pay و تابي 2026",
+        excerpt: "تطوير تجارة إلكترونية متكاملة للسعودية. متاجر إلكترونية مع تكامل مدى و STC Pay و تابي و تمارا."
+      }
+    }
+  },
+  {
+    id: "64",
+    slug: "erp-business-software-saudi-arabia-2026",
+    title: "ERP & Business Software Solutions in Saudi Arabia",
+    subtitle: "Custom ERP, CRM & Enterprise Software for Saudi Businesses 2026",
+    excerpt: "Enterprise software solutions for Saudi Arabia. Custom ERP, CRM, HR, and accounting systems for businesses in Riyadh, Jeddah, Dammam. ZATCA e-invoicing compliant.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/erp-saudi-arabia.jpg",
+    featured: true,
+    tags: ["ERP Saudi Arabia", "business software KSA", "CRM Riyadh", "enterprise software Jeddah", "ZATCA e-invoicing"],
+    metaTitle: "ERP & Business Software Saudi Arabia 2026 | Custom Solutions | Symloop",
+    metaDescription: "Custom ERP & business software for Saudi Arabia. CRM, HR, accounting, ZATCA e-invoicing. Riyadh, Jeddah, Dammam. Free consultation.",
+    translations: {
+      en: {
+        title: "ERP & Business Software Solutions in Saudi Arabia",
+        subtitle: "Custom ERP, CRM & Enterprise Software for Saudi Businesses 2026",
+        excerpt: "Enterprise software solutions for Saudi Arabia. Custom ERP, CRM, HR, and accounting systems. ZATCA e-invoicing compliant."
+      },
+      ar: {
+        title: "حلول ERP وبرامج الأعمال في المملكة العربية السعودية 2026",
+        subtitle: "أنظمة ERP و CRM مخصصة للشركات السعودية",
+        excerpt: "حلول برمجيات مؤسسية للسعودية. أنظمة ERP و CRM و HR ومحاسبة مخصصة. متوافقة مع الفوترة الإلكترونية لهيئة الزكاة والضريبة."
+      }
+    }
+  },
+  {
+    id: "65",
+    slug: "barnamij-erp-idarat-sharikaat-saudi-arabia-2026",
+    title: "برنامج ERP وإدارة الشركات في المملكة العربية السعودية",
+    subtitle: "أنظمة ERP و CRM مخصصة للشركات السعودية 2026",
+    excerpt: "حلول برمجيات مؤسسية للسعودية. أنظمة ERP و CRM و HR ومحاسبة مخصصة للشركات في الرياض وجدة والدمام. متوافقة مع الفوترة الإلكترونية لهيئة الزكاة والضريبة.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/erp-saudi-arabia.jpg",
+    featured: true,
+    tags: ["ERP السعودية", "برنامج إدارة شركات", "CRM الرياض", "فوترة إلكترونية ZATCA", "برمجيات مؤسسية جدة"],
+    metaTitle: "برنامج ERP وإدارة الشركات السعودية 2026 | حلول مخصصة | Symloop",
+    metaDescription: "برنامج ERP مخصص للشركات السعودية. CRM، HR، محاسبة، فوترة إلكترونية ZATCA. الرياض، جدة، الدمام. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "ERP & Business Software Solutions in Saudi Arabia 2026",
+        subtitle: "Custom ERP, CRM & Enterprise Software for Saudi Businesses",
+        excerpt: "Enterprise software solutions for Saudi Arabia. Custom ERP, CRM, HR, accounting. ZATCA e-invoicing compliant."
+      },
+      ar: {
+        title: "برنامج ERP وإدارة الشركات في المملكة العربية السعودية",
+        subtitle: "أنظمة ERP و CRM مخصصة للشركات السعودية 2026",
+        excerpt: "حلول برمجيات مؤسسية للسعودية. أنظمة ERP و CRM و HR ومحاسبة مخصصة. متوافقة مع الفوترة الإلكترونية لهيئة الزكاة والضريبة."
+      }
+    }
+  },
+  {
+    id: "66",
+    slug: "artificial-intelligence-solutions-saudi-arabia-2026",
+    title: "Artificial Intelligence Solutions in Saudi Arabia",
+    subtitle: "AI, Machine Learning & Automation for Saudi Vision 2030",
+    excerpt: "AI solutions for Saudi Arabia aligned with Vision 2030. Machine learning, chatbots, computer vision, and process automation for businesses in Riyadh, Jeddah, Dammam.",
+    category: "AI",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/ai-saudi-arabia.jpg",
+    featured: true,
+    tags: ["AI Saudi Arabia", "artificial intelligence KSA", "machine learning Riyadh", "chatbot Saudi Arabia", "Vision 2030 AI"],
+    metaTitle: "AI Solutions Saudi Arabia 2026 | Machine Learning & Automation | Symloop",
+    metaDescription: "AI & machine learning solutions for Saudi Arabia. Chatbots, automation, computer vision. Aligned with Vision 2030. Riyadh, Jeddah. Free consultation.",
+    translations: {
+      en: {
+        title: "Artificial Intelligence Solutions in Saudi Arabia",
+        subtitle: "AI, Machine Learning & Automation for Saudi Vision 2030",
+        excerpt: "AI solutions for Saudi Arabia aligned with Vision 2030. Machine learning, chatbots, computer vision, and process automation."
+      },
+      ar: {
+        title: "حلول الذكاء الاصطناعي في المملكة العربية السعودية 2026",
+        subtitle: "الذكاء الاصطناعي والتعلم الآلي والأتمتة لرؤية 2030",
+        excerpt: "حلول ذكاء اصطناعي للسعودية متوافقة مع رؤية 2030. تعلم آلي، روبوتات دردشة، رؤية حاسوبية، وأتمتة العمليات."
+      }
+    }
+  },
+  {
+    id: "67",
+    slug: "hulul-dhakaa-istinai-saudi-arabia-2026",
+    title: "حلول الذكاء الاصطناعي في المملكة العربية السعودية",
+    subtitle: "الذكاء الاصطناعي والتعلم الآلي والأتمتة لرؤية 2030",
+    excerpt: "حلول ذكاء اصطناعي للسعودية متوافقة مع رؤية 2030. تعلم آلي، روبوتات دردشة، رؤية حاسوبية، وأتمتة العمليات للشركات في الرياض وجدة والدمام.",
+    category: "AI",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/ai-saudi-arabia.jpg",
+    featured: true,
+    tags: ["ذكاء اصطناعي السعودية", "تعلم آلي الرياض", "روبوت دردشة السعودية", "أتمتة جدة", "رؤية 2030 ذكاء اصطناعي"],
+    metaTitle: "حلول الذكاء الاصطناعي السعودية 2026 | تعلم آلي وأتمتة | Symloop",
+    metaDescription: "حلول ذكاء اصطناعي وتعلم آلي للسعودية. روبوتات دردشة، أتمتة، رؤية حاسوبية. متوافقة مع رؤية 2030. الرياض، جدة. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "AI Solutions in Saudi Arabia 2026",
+        subtitle: "AI, Machine Learning & Automation for Saudi Vision 2030",
+        excerpt: "AI solutions for Saudi Arabia aligned with Vision 2030. Machine learning, chatbots, computer vision, and process automation."
+      },
+      ar: {
+        title: "حلول الذكاء الاصطناعي في المملكة العربية السعودية",
+        subtitle: "الذكاء الاصطناعي والتعلم الآلي والأتمتة لرؤية 2030",
+        excerpt: "حلول ذكاء اصطناعي للسعودية متوافقة مع رؤية 2030. تعلم آلي، روبوتات دردشة، رؤية حاسوبية، وأتمتة العمليات."
+      }
+    }
+  },
+  {
+    id: "68",
+    slug: "digital-transformation-saudi-arabia-vision-2030",
+    title: "Digital Transformation in Saudi Arabia - Vision 2030",
+    subtitle: "Complete Digital Transformation Solutions for Saudi Enterprises 2026",
+    excerpt: "Digital transformation consulting and implementation for Saudi Arabia. Cloud migration, process automation, digital strategy aligned with Vision 2030 for businesses in Riyadh, Jeddah.",
+    category: "Digital Transformation",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/digital-transformation-saudi.jpg",
+    featured: true,
+    tags: ["digital transformation Saudi Arabia", "Vision 2030 digital", "cloud migration KSA", "digital strategy Riyadh", "automation Saudi Arabia"],
+    metaTitle: "Digital Transformation Saudi Arabia 2026 | Vision 2030 | Symloop",
+    metaDescription: "Digital transformation for Saudi Arabia aligned with Vision 2030. Cloud migration, automation, digital strategy. Riyadh, Jeddah. Free consultation.",
+    translations: {
+      en: {
+        title: "Digital Transformation in Saudi Arabia - Vision 2030",
+        subtitle: "Complete Digital Transformation Solutions for Saudi Enterprises 2026",
+        excerpt: "Digital transformation consulting and implementation for Saudi Arabia aligned with Vision 2030."
+      },
+      ar: {
+        title: "التحول الرقمي في المملكة العربية السعودية - رؤية 2030",
+        subtitle: "حلول التحول الرقمي الشاملة للمؤسسات السعودية 2026",
+        excerpt: "استشارات وتنفيذ التحول الرقمي للسعودية. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية 2030."
+      }
+    }
+  },
+  {
+    id: "69",
+    slug: "tahawwul-raqami-saudi-arabia-ruiya-2030",
+    title: "التحول الرقمي في المملكة العربية السعودية - رؤية 2030",
+    subtitle: "حلول التحول الرقمي الشاملة للمؤسسات السعودية 2026",
+    excerpt: "استشارات وتنفيذ التحول الرقمي للسعودية. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية 2030 للشركات في الرياض وجدة والدمام.",
+    category: "Digital Transformation",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/digital-transformation-saudi.jpg",
+    featured: true,
+    tags: ["التحول الرقمي السعودية", "رؤية 2030 رقمي", "هجرة سحابية السعودية", "استراتيجية رقمية الرياض", "أتمتة السعودية"],
+    metaTitle: "التحول الرقمي السعودية 2026 | رؤية 2030 | Symloop",
+    metaDescription: "التحول الرقمي للسعودية متوافق مع رؤية 2030. هجرة سحابية، أتمتة، استراتيجية رقمية. الرياض، جدة. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "Digital Transformation in Saudi Arabia - Vision 2030",
+        subtitle: "Complete Digital Transformation Solutions for Saudi Enterprises 2026",
+        excerpt: "Digital transformation consulting and implementation for Saudi Arabia aligned with Vision 2030."
+      },
+      ar: {
+        title: "التحول الرقمي في المملكة العربية السعودية - رؤية 2030",
+        subtitle: "حلول التحول الرقمي الشاملة للمؤسسات السعودية 2026",
+        excerpt: "استشارات وتنفيذ التحول الرقمي للسعودية. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية 2030."
+      }
+    }
+  },
+  // ===== GULF MARKETS - UAE (United Arab Emirates) =====
+  {
+    id: "70",
+    slug: "mobile-app-development-uae-dubai-2026",
+    title: "Mobile App Development in UAE & Dubai",
+    subtitle: "Top iOS & Android App Development Company in Dubai, Abu Dhabi 2026",
+    excerpt: "Leading mobile app development company in UAE. We build iOS & Android apps for Dubai, Abu Dhabi, Sharjah businesses. Flutter, React Native, Apple Pay & Tabby integration.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/mobile-app-uae.jpg",
+    featured: true,
+    tags: ["mobile app development UAE", "app developer Dubai", "Flutter Dubai", "React Native Abu Dhabi", "iOS Android app UAE"],
+    metaTitle: "Mobile App Development UAE & Dubai 2026 | iOS & Android | Symloop",
+    metaDescription: "Top mobile app development company in UAE & Dubai. iOS & Android apps with Flutter & React Native. Apple Pay, Tabby integration. Dubai, Abu Dhabi. Free consultation.",
+    translations: {
+      en: {
+        title: "Mobile App Development in UAE & Dubai",
+        subtitle: "Top iOS & Android App Development Company in Dubai, Abu Dhabi 2026",
+        excerpt: "Leading mobile app development company in UAE. iOS & Android apps for Dubai, Abu Dhabi, Sharjah businesses."
+      },
+      ar: {
+        title: "تطوير تطبيقات الجوال في الإمارات ودبي 2026",
+        subtitle: "أفضل شركة تطوير تطبيقات iOS و Android في دبي وأبوظبي",
+        excerpt: "شركة رائدة في تطوير تطبيقات الجوال في الإمارات. تطبيقات iOS و Android للشركات في دبي وأبوظبي والشارقة."
+      }
+    }
+  },
+  {
+    id: "71",
+    slug: "tatwir-tatbiqat-jawwal-uae-dubai-2026",
+    title: "تطوير تطبيقات الجوال في الإمارات ودبي",
+    subtitle: "أفضل شركة تطوير تطبيقات iOS و Android في دبي وأبوظبي 2026",
+    excerpt: "شركة رائدة في تطوير تطبيقات الجوال في الإمارات. تطبيقات iOS و Android للشركات في دبي وأبوظبي والشارقة. Flutter، React Native، تكامل Apple Pay و تابي.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/mobile-app-uae.jpg",
+    featured: true,
+    tags: ["تطوير تطبيقات الإمارات", "مطور تطبيقات دبي", "تطبيقات جوال أبوظبي", "Flutter دبي", "برمجة تطبيقات الشارقة"],
+    metaTitle: "تطوير تطبيقات الجوال الإمارات ودبي 2026 | iOS و Android | Symloop",
+    metaDescription: "أفضل شركة تطوير تطبيقات جوال في الإمارات ودبي. iOS و Android بـ Flutter و React Native. Apple Pay، تابي. دبي، أبوظبي. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "Mobile App Development in UAE & Dubai 2026",
+        subtitle: "Top iOS & Android App Development Company in Dubai, Abu Dhabi",
+        excerpt: "Leading mobile app development company in UAE. iOS & Android apps for Dubai, Abu Dhabi, Sharjah businesses."
+      },
+      ar: {
+        title: "تطوير تطبيقات الجوال في الإمارات ودبي",
+        subtitle: "أفضل شركة تطوير تطبيقات iOS و Android في دبي وأبوظبي 2026",
+        excerpt: "شركة رائدة في تطوير تطبيقات الجوال في الإمارات. تطبيقات iOS و Android للشركات في دبي وأبوظبي والشارقة."
+      }
+    }
+  },
+  {
+    id: "72",
+    slug: "web-development-company-uae-dubai-2026",
+    title: "Web Development Company in UAE & Dubai",
+    subtitle: "Professional Website Design & Development in Dubai, Abu Dhabi 2026",
+    excerpt: "Expert web development company in UAE. Custom websites, web applications, and portals for businesses in Dubai, Abu Dhabi, Sharjah. Next.js, React, responsive design.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/web-dev-uae.jpg",
+    featured: true,
+    tags: ["web development UAE", "website design Dubai", "web developer Abu Dhabi", "website company Sharjah", "Next.js UAE"],
+    metaTitle: "Web Development Company UAE & Dubai 2026 | Website Design | Symloop",
+    metaDescription: "Professional web development in UAE & Dubai. Custom websites, web apps, portals. Next.js, React. Dubai, Abu Dhabi, Sharjah. Free quote.",
+    translations: {
+      en: {
+        title: "Web Development Company in UAE & Dubai",
+        subtitle: "Professional Website Design & Development in Dubai, Abu Dhabi 2026",
+        excerpt: "Expert web development company in UAE. Custom websites and web applications for businesses in Dubai, Abu Dhabi, Sharjah."
+      },
+      ar: {
+        title: "شركة تطوير مواقع ويب في الإمارات ودبي 2026",
+        subtitle: "خدمات تصميم وتطوير مواقع احترافية في دبي وأبوظبي",
+        excerpt: "شركة خبيرة في تطوير المواقع في الإمارات. مواقع مخصصة وتطبيقات ويب للشركات في دبي وأبوظبي والشارقة."
+      }
+    }
+  },
+  {
+    id: "73",
+    slug: "tatwir-mawaqie-web-uae-dubai-2026",
+    title: "تطوير مواقع ويب في الإمارات ودبي",
+    subtitle: "خدمات تصميم وتطوير مواقع احترافية في دبي وأبوظبي 2026",
+    excerpt: "شركة خبيرة في تطوير المواقع في الإمارات. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في دبي وأبوظبي والشارقة. Next.js، React، تصميم متجاوب.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/web-dev-uae.jpg",
+    featured: true,
+    tags: ["تطوير مواقع الإمارات", "تصميم مواقع دبي", "شركة ويب أبوظبي", "مطور مواقع الشارقة", "تصميم ويب دبي"],
+    metaTitle: "تطوير مواقع ويب الإمارات ودبي 2026 | تصميم مواقع احترافية | Symloop",
+    metaDescription: "شركة تطوير مواقع ويب احترافية في الإمارات ودبي. مواقع مخصصة، تطبيقات ويب. Next.js، React. دبي، أبوظبي، الشارقة. عرض أسعار مجاني.",
+    translations: {
+      en: {
+        title: "Web Development Company in UAE & Dubai 2026",
+        subtitle: "Professional Website Design & Development in Dubai, Abu Dhabi",
+        excerpt: "Expert web development company in UAE. Custom websites and web applications for businesses in Dubai, Abu Dhabi, Sharjah."
+      },
+      ar: {
+        title: "تطوير مواقع ويب في الإمارات ودبي",
+        subtitle: "خدمات تصميم وتطوير مواقع احترافية في دبي وأبوظبي 2026",
+        excerpt: "شركة خبيرة في تطوير المواقع في الإمارات. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في دبي وأبوظبي والشارقة."
+      }
+    }
+  },
+  {
+    id: "74",
+    slug: "ecommerce-solutions-uae-dubai-2026",
+    title: "E-commerce Solutions in UAE & Dubai",
+    subtitle: "Build Your Online Store in UAE with Apple Pay, Tabby & Telr 2026",
+    excerpt: "Complete e-commerce development for UAE. Online stores with Apple Pay, PayBy, Tabby, Telr payment integration. Shopify, WooCommerce, custom solutions for Dubai, Abu Dhabi.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/ecommerce-uae.jpg",
+    featured: true,
+    tags: ["ecommerce UAE", "online store Dubai", "Apple Pay ecommerce", "Tabby UAE", "Shopify Dubai"],
+    metaTitle: "E-commerce Solutions UAE & Dubai 2026 | Apple Pay & Tabby | Symloop",
+    metaDescription: "E-commerce development in UAE & Dubai. Online stores with Apple Pay, Tabby, Telr integration. Shopify, WooCommerce, custom. Dubai, Abu Dhabi. Free consultation.",
+    translations: {
+      en: {
+        title: "E-commerce Solutions in UAE & Dubai",
+        subtitle: "Build Your Online Store in UAE with Apple Pay, Tabby & Telr 2026",
+        excerpt: "Complete e-commerce development for UAE with Apple Pay, PayBy, Tabby, Telr payment integration."
+      },
+      ar: {
+        title: "حلول التجارة الإلكترونية في الإمارات ودبي 2026",
+        subtitle: "أنشئ متجرك الإلكتروني في الإمارات مع Apple Pay و تابي و Telr",
+        excerpt: "تطوير تجارة إلكترونية متكاملة للإمارات. متاجر مع Apple Pay و PayBy و تابي و Telr."
+      }
+    }
+  },
+  {
+    id: "75",
+    slug: "tijara-iliktruniya-uae-dubai-2026",
+    title: "التجارة الإلكترونية في الإمارات ودبي",
+    subtitle: "أنشئ متجرك الإلكتروني في الإمارات مع Apple Pay و تابي و Telr 2026",
+    excerpt: "تطوير تجارة إلكترونية متكاملة للإمارات. متاجر إلكترونية مع Apple Pay و PayBy و تابي و Telr. Shopify، WooCommerce، حلول مخصصة لدبي وأبوظبي.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/ecommerce-uae.jpg",
+    featured: true,
+    tags: ["تجارة إلكترونية الإمارات", "متجر إلكتروني دبي", "Apple Pay متجر", "تابي الإمارات", "شوبيفاي دبي"],
+    metaTitle: "التجارة الإلكترونية الإمارات ودبي 2026 | Apple Pay و تابي | Symloop",
+    metaDescription: "تطوير تجارة إلكترونية في الإمارات ودبي. متاجر مع Apple Pay و تابي و Telr. Shopify، WooCommerce، حلول مخصصة. دبي، أبوظبي. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "E-commerce Solutions in UAE & Dubai 2026",
+        subtitle: "Build Your Online Store in UAE with Apple Pay, Tabby & Telr",
+        excerpt: "Complete e-commerce development for UAE with Apple Pay, PayBy, Tabby, Telr payment integration."
+      },
+      ar: {
+        title: "التجارة الإلكترونية في الإمارات ودبي",
+        subtitle: "أنشئ متجرك الإلكتروني في الإمارات مع Apple Pay و تابي و Telr 2026",
+        excerpt: "تطوير تجارة إلكترونية متكاملة للإمارات. متاجر إلكترونية مع Apple Pay و PayBy و تابي و Telr."
+      }
+    }
+  },
+  {
+    id: "76",
+    slug: "erp-business-software-uae-2026",
+    title: "ERP & Business Software Solutions in UAE",
+    subtitle: "Custom ERP, CRM & Enterprise Software for UAE Businesses 2026",
+    excerpt: "Enterprise software solutions for UAE. Custom ERP, CRM, HR, and accounting systems for businesses in Dubai, Abu Dhabi, Sharjah. VAT compliant, FTA e-invoicing ready.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/erp-uae.jpg",
+    featured: true,
+    tags: ["ERP UAE", "business software Dubai", "CRM Abu Dhabi", "enterprise software UAE", "FTA e-invoicing"],
+    metaTitle: "ERP & Business Software UAE 2026 | Custom Solutions | Symloop",
+    metaDescription: "Custom ERP & business software for UAE. CRM, HR, accounting, FTA e-invoicing. Dubai, Abu Dhabi, Sharjah. Free consultation.",
+    translations: {
+      en: {
+        title: "ERP & Business Software Solutions in UAE",
+        subtitle: "Custom ERP, CRM & Enterprise Software for UAE Businesses 2026",
+        excerpt: "Enterprise software solutions for UAE. Custom ERP, CRM, HR, and accounting systems. VAT compliant."
+      },
+      ar: {
+        title: "حلول ERP وبرامج الأعمال في الإمارات 2026",
+        subtitle: "أنظمة ERP و CRM مخصصة للشركات الإماراتية",
+        excerpt: "حلول برمجيات مؤسسية للإمارات. أنظمة ERP و CRM و HR ومحاسبة مخصصة. متوافقة مع ضريبة القيمة المضافة."
+      }
+    }
+  },
+  {
+    id: "77",
+    slug: "barnamij-erp-idarat-sharikaat-uae-2026",
+    title: "برنامج ERP وإدارة الشركات في الإمارات",
+    subtitle: "أنظمة ERP و CRM مخصصة للشركات الإماراتية 2026",
+    excerpt: "حلول برمجيات مؤسسية للإمارات. أنظمة ERP و CRM و HR ومحاسبة مخصصة للشركات في دبي وأبوظبي والشارقة. متوافقة مع ضريبة القيمة المضافة والفوترة الإلكترونية.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/erp-uae.jpg",
+    featured: true,
+    tags: ["ERP الإمارات", "برنامج إدارة شركات دبي", "CRM أبوظبي", "فوترة إلكترونية الإمارات", "برمجيات مؤسسية دبي"],
+    metaTitle: "برنامج ERP وإدارة الشركات الإمارات 2026 | حلول مخصصة | Symloop",
+    metaDescription: "برنامج ERP مخصص للشركات الإماراتية. CRM، HR، محاسبة، فوترة إلكترونية. دبي، أبوظبي، الشارقة. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "ERP & Business Software Solutions in UAE 2026",
+        subtitle: "Custom ERP, CRM & Enterprise Software for UAE Businesses",
+        excerpt: "Enterprise software solutions for UAE. Custom ERP, CRM, HR, accounting. VAT compliant."
+      },
+      ar: {
+        title: "برنامج ERP وإدارة الشركات في الإمارات",
+        subtitle: "أنظمة ERP و CRM مخصصة للشركات الإماراتية 2026",
+        excerpt: "حلول برمجيات مؤسسية للإمارات. أنظمة ERP و CRM و HR ومحاسبة مخصصة. متوافقة مع ضريبة القيمة المضافة."
+      }
+    }
+  },
+  {
+    id: "78",
+    slug: "artificial-intelligence-solutions-uae-2026",
+    title: "Artificial Intelligence Solutions in UAE",
+    subtitle: "AI, Machine Learning & Smart Government Solutions for UAE 2026",
+    excerpt: "AI solutions for UAE aligned with AI Strategy 2031. Machine learning, chatbots, computer vision, and smart government solutions for businesses in Dubai, Abu Dhabi.",
+    category: "AI",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/ai-uae.jpg",
+    featured: true,
+    tags: ["AI UAE", "artificial intelligence Dubai", "machine learning Abu Dhabi", "smart government UAE", "AI Strategy 2031"],
+    metaTitle: "AI Solutions UAE 2026 | Machine Learning & Smart Government | Symloop",
+    metaDescription: "AI & machine learning solutions for UAE. Chatbots, smart government, computer vision. Aligned with AI Strategy 2031. Dubai, Abu Dhabi. Free consultation.",
+    translations: {
+      en: {
+        title: "Artificial Intelligence Solutions in UAE",
+        subtitle: "AI, Machine Learning & Smart Government Solutions for UAE 2026",
+        excerpt: "AI solutions for UAE aligned with AI Strategy 2031. Machine learning, chatbots, smart government solutions."
+      },
+      ar: {
+        title: "حلول الذكاء الاصطناعي في الإمارات 2026",
+        subtitle: "الذكاء الاصطناعي والتعلم الآلي وحلول الحكومة الذكية",
+        excerpt: "حلول ذكاء اصطناعي للإمارات متوافقة مع استراتيجية الذكاء الاصطناعي 2031. تعلم آلي، روبوتات دردشة، حكومة ذكية."
+      }
+    }
+  },
+  {
+    id: "79",
+    slug: "hulul-dhakaa-istinai-uae-2026",
+    title: "حلول الذكاء الاصطناعي في الإمارات",
+    subtitle: "الذكاء الاصطناعي والتعلم الآلي وحلول الحكومة الذكية 2026",
+    excerpt: "حلول ذكاء اصطناعي للإمارات متوافقة مع استراتيجية الذكاء الاصطناعي 2031. تعلم آلي، روبوتات دردشة، رؤية حاسوبية، وحلول حكومة ذكية لدبي وأبوظبي.",
+    category: "AI",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/ai-uae.jpg",
+    featured: true,
+    tags: ["ذكاء اصطناعي الإمارات", "تعلم آلي دبي", "روبوت دردشة أبوظبي", "حكومة ذكية الإمارات", "استراتيجية AI 2031"],
+    metaTitle: "حلول الذكاء الاصطناعي الإمارات 2026 | تعلم آلي وحكومة ذكية | Symloop",
+    metaDescription: "حلول ذكاء اصطناعي وتعلم آلي للإمارات. روبوتات دردشة، حكومة ذكية، رؤية حاسوبية. استراتيجية AI 2031. دبي، أبوظبي. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "AI Solutions in UAE 2026",
+        subtitle: "AI, Machine Learning & Smart Government Solutions for UAE",
+        excerpt: "AI solutions for UAE aligned with AI Strategy 2031. Machine learning, chatbots, smart government solutions."
+      },
+      ar: {
+        title: "حلول الذكاء الاصطناعي في الإمارات",
+        subtitle: "الذكاء الاصطناعي والتعلم الآلي وحلول الحكومة الذكية 2026",
+        excerpt: "حلول ذكاء اصطناعي للإمارات متوافقة مع استراتيجية الذكاء الاصطناعي 2031. تعلم آلي، روبوتات دردشة، حكومة ذكية."
+      }
+    }
+  },
+  {
+    id: "80",
+    slug: "digital-transformation-uae-smart-government-2026",
+    title: "Digital Transformation in UAE - Smart Government",
+    subtitle: "Complete Digital Transformation & Smart Government Solutions for UAE 2026",
+    excerpt: "Digital transformation consulting and implementation for UAE. Cloud migration, smart government solutions, digital strategy aligned with UAE AI Strategy 2031.",
+    category: "Digital Transformation",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/digital-transformation-uae.jpg",
+    featured: true,
+    tags: ["digital transformation UAE", "smart government Dubai", "cloud migration UAE", "digital strategy Abu Dhabi", "automation UAE"],
+    metaTitle: "Digital Transformation UAE 2026 | Smart Government | Symloop",
+    metaDescription: "Digital transformation for UAE with smart government solutions. Cloud migration, automation, digital strategy. Dubai, Abu Dhabi. Free consultation.",
+    translations: {
+      en: {
+        title: "Digital Transformation in UAE - Smart Government",
+        subtitle: "Complete Digital Transformation & Smart Government Solutions for UAE 2026",
+        excerpt: "Digital transformation consulting and implementation for UAE aligned with AI Strategy 2031."
+      },
+      ar: {
+        title: "التحول الرقمي في الإمارات - الحكومة الذكية 2026",
+        subtitle: "حلول التحول الرقمي الشاملة والحكومة الذكية للإمارات",
+        excerpt: "استشارات وتنفيذ التحول الرقمي للإمارات. هجرة سحابية، حكومة ذكية، استراتيجية رقمية."
+      }
+    }
+  },
+  {
+    id: "81",
+    slug: "tahawwul-raqami-uae-hukuma-dhakiya-2026",
+    title: "التحول الرقمي في الإمارات - الحكومة الذكية",
+    subtitle: "حلول التحول الرقمي الشاملة والحكومة الذكية للإمارات 2026",
+    excerpt: "استشارات وتنفيذ التحول الرقمي للإمارات. هجرة سحابية، حلول حكومة ذكية، استراتيجية رقمية متوافقة مع استراتيجية الذكاء الاصطناعي 2031.",
+    category: "Digital Transformation",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/digital-transformation-uae.jpg",
+    featured: true,
+    tags: ["التحول الرقمي الإمارات", "الحكومة الذكية دبي", "هجرة سحابية الإمارات", "استراتيجية رقمية أبوظبي", "أتمتة الإمارات"],
+    metaTitle: "التحول الرقمي الإمارات 2026 | الحكومة الذكية | Symloop",
+    metaDescription: "التحول الرقمي للإمارات مع حلول الحكومة الذكية. هجرة سحابية، أتمتة، استراتيجية رقمية. دبي، أبوظبي. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "Digital Transformation in UAE - Smart Government 2026",
+        subtitle: "Complete Digital Transformation & Smart Government Solutions for UAE",
+        excerpt: "Digital transformation consulting and implementation for UAE aligned with AI Strategy 2031."
+      },
+      ar: {
+        title: "التحول الرقمي في الإمارات - الحكومة الذكية",
+        subtitle: "حلول التحول الرقمي الشاملة والحكومة الذكية للإمارات 2026",
+        excerpt: "استشارات وتنفيذ التحول الرقمي للإمارات. هجرة سحابية، حلول حكومة ذكية، استراتيجية رقمية."
+      }
+    }
+  },
+  // ===== GULF MARKETS - KUWAIT =====
+  {
+    id: "82",
+    slug: "mobile-app-development-kuwait-2026",
+    title: "Mobile App Development in Kuwait",
+    subtitle: "Top iOS & Android App Development Company in Kuwait City 2026",
+    excerpt: "Leading mobile app development company in Kuwait. We build iOS & Android apps for Kuwait City, Hawalli, Salmiya businesses. Flutter, React Native, KNET & Apple Pay integration.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/mobile-app-kuwait.jpg",
+    featured: true,
+    tags: ["mobile app development Kuwait", "app developer Kuwait City", "Flutter Kuwait", "React Native Kuwait", "KNET app"],
+    metaTitle: "Mobile App Development Kuwait 2026 | iOS & Android | Symloop",
+    metaDescription: "Top mobile app development company in Kuwait. iOS & Android apps with Flutter & React Native. KNET, Apple Pay integration. Kuwait City. Free consultation.",
+    translations: {
+      en: {
+        title: "Mobile App Development in Kuwait",
+        subtitle: "Top iOS & Android App Development Company in Kuwait City 2026",
+        excerpt: "Leading mobile app development company in Kuwait. iOS & Android apps for Kuwait City, Hawalli, Salmiya businesses."
+      },
+      ar: {
+        title: "تطوير تطبيقات الجوال في الكويت 2026",
+        subtitle: "أفضل شركة تطوير تطبيقات iOS و Android في مدينة الكويت",
+        excerpt: "شركة رائدة في تطوير تطبيقات الجوال في الكويت. تطبيقات iOS و Android للشركات في مدينة الكويت وحولي والسالمية."
+      }
+    }
+  },
+  {
+    id: "83",
+    slug: "tatwir-tatbiqat-jawwal-kuwait-2026",
+    title: "تطوير تطبيقات الجوال في الكويت",
+    subtitle: "أفضل شركة تطوير تطبيقات iOS و Android في مدينة الكويت 2026",
+    excerpt: "شركة رائدة في تطوير تطبيقات الجوال في الكويت. تطبيقات iOS و Android للشركات في مدينة الكويت وحولي والسالمية. Flutter، React Native، تكامل KNET و Apple Pay.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/mobile-app-kuwait.jpg",
+    featured: true,
+    tags: ["تطوير تطبيقات الكويت", "مطور تطبيقات مدينة الكويت", "تطبيقات جوال حولي", "Flutter الكويت", "KNET تطبيق"],
+    metaTitle: "تطوير تطبيقات الجوال الكويت 2026 | iOS و Android | Symloop",
+    metaDescription: "أفضل شركة تطوير تطبيقات جوال في الكويت. iOS و Android بـ Flutter و React Native. KNET، Apple Pay. مدينة الكويت. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "Mobile App Development in Kuwait 2026",
+        subtitle: "Top iOS & Android App Development Company in Kuwait City",
+        excerpt: "Leading mobile app development company in Kuwait. iOS & Android apps for Kuwait City, Hawalli, Salmiya businesses."
+      },
+      ar: {
+        title: "تطوير تطبيقات الجوال في الكويت",
+        subtitle: "أفضل شركة تطوير تطبيقات iOS و Android في مدينة الكويت 2026",
+        excerpt: "شركة رائدة في تطوير تطبيقات الجوال في الكويت. تطبيقات iOS و Android للشركات في مدينة الكويت وحولي والسالمية."
+      }
+    }
+  },
+  {
+    id: "84",
+    slug: "web-development-company-kuwait-2026",
+    title: "Web Development Company in Kuwait",
+    subtitle: "Professional Website Design & Development in Kuwait City 2026",
+    excerpt: "Expert web development company in Kuwait. Custom websites, web applications, and portals for businesses in Kuwait City, Hawalli, Salmiya, Farwaniya. Next.js, React.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/web-dev-kuwait.jpg",
+    featured: true,
+    tags: ["web development Kuwait", "website design Kuwait City", "web developer Kuwait", "website company Hawalli", "Next.js Kuwait"],
+    metaTitle: "Web Development Company Kuwait 2026 | Website Design | Symloop",
+    metaDescription: "Professional web development in Kuwait. Custom websites, web apps, portals. Next.js, React. Kuwait City, Hawalli. Free quote.",
+    translations: {
+      en: {
+        title: "Web Development Company in Kuwait",
+        subtitle: "Professional Website Design & Development in Kuwait City 2026",
+        excerpt: "Expert web development company in Kuwait. Custom websites and web applications for businesses in Kuwait City, Hawalli."
+      },
+      ar: {
+        title: "شركة تطوير مواقع ويب في الكويت 2026",
+        subtitle: "خدمات تصميم وتطوير مواقع احترافية في مدينة الكويت",
+        excerpt: "شركة خبيرة في تطوير المواقع في الكويت. مواقع مخصصة وتطبيقات ويب للشركات في مدينة الكويت وحولي."
+      }
+    }
+  },
+  {
+    id: "85",
+    slug: "tatwir-mawaqie-web-kuwait-2026",
+    title: "تطوير مواقع ويب في الكويت",
+    subtitle: "خدمات تصميم وتطوير مواقع احترافية في مدينة الكويت 2026",
+    excerpt: "شركة خبيرة في تطوير المواقع في الكويت. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في مدينة الكويت وحولي والسالمية والفروانية. Next.js، React.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/web-dev-kuwait.jpg",
+    featured: true,
+    tags: ["تطوير مواقع الكويت", "تصميم مواقع مدينة الكويت", "شركة ويب حولي", "مطور مواقع السالمية", "تصميم ويب الكويت"],
+    metaTitle: "تطوير مواقع ويب الكويت 2026 | تصميم مواقع احترافية | Symloop",
+    metaDescription: "شركة تطوير مواقع ويب احترافية في الكويت. مواقع مخصصة، تطبيقات ويب. Next.js، React. مدينة الكويت، حولي. عرض أسعار مجاني.",
+    translations: {
+      en: {
+        title: "Web Development Company in Kuwait 2026",
+        subtitle: "Professional Website Design & Development in Kuwait City",
+        excerpt: "Expert web development company in Kuwait. Custom websites and web applications for businesses in Kuwait City, Hawalli."
+      },
+      ar: {
+        title: "تطوير مواقع ويب في الكويت",
+        subtitle: "خدمات تصميم وتطوير مواقع احترافية في مدينة الكويت 2026",
+        excerpt: "شركة خبيرة في تطوير المواقع في الكويت. مواقع مخصصة وتطبيقات ويب وبوابات للشركات في مدينة الكويت وحولي والسالمية."
+      }
+    }
+  },
+  {
+    id: "86",
+    slug: "ecommerce-solutions-kuwait-knet-2026",
+    title: "E-commerce Solutions in Kuwait with KNET Integration",
+    subtitle: "Build Your Online Store in Kuwait with KNET, Apple Pay & MyFatoorah 2026",
+    excerpt: "Complete e-commerce development for Kuwait. Online stores with KNET, Apple Pay, Tap, MyFatoorah payment integration. Shopify, WooCommerce, custom solutions for Kuwait City.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/ecommerce-kuwait.jpg",
+    featured: true,
+    tags: ["ecommerce Kuwait", "online store Kuwait", "KNET payment integration", "MyFatoorah Kuwait", "Shopify Kuwait"],
+    metaTitle: "E-commerce Solutions Kuwait 2026 | KNET & MyFatoorah | Symloop",
+    metaDescription: "E-commerce development in Kuwait. Online stores with KNET, Apple Pay, MyFatoorah integration. Shopify, WooCommerce, custom. Kuwait City. Free consultation.",
+    translations: {
+      en: {
+        title: "E-commerce Solutions in Kuwait with KNET Integration",
+        subtitle: "Build Your Online Store in Kuwait with KNET, Apple Pay & MyFatoorah 2026",
+        excerpt: "Complete e-commerce development for Kuwait with KNET, Apple Pay, Tap, MyFatoorah payment integration."
+      },
+      ar: {
+        title: "حلول التجارة الإلكترونية في الكويت مع تكامل KNET 2026",
+        subtitle: "أنشئ متجرك الإلكتروني في الكويت مع KNET و Apple Pay و ماي فاتورة",
+        excerpt: "تطوير تجارة إلكترونية متكاملة للكويت. متاجر مع KNET و Apple Pay و Tap و ماي فاتورة."
+      }
+    }
+  },
+  {
+    id: "87",
+    slug: "tijara-iliktruniya-kuwait-knet-2026",
+    title: "التجارة الإلكترونية في الكويت مع تكامل KNET",
+    subtitle: "أنشئ متجرك الإلكتروني في الكويت مع KNET و Apple Pay و ماي فاتورة 2026",
+    excerpt: "تطوير تجارة إلكترونية متكاملة للكويت. متاجر إلكترونية مع KNET و Apple Pay و Tap و ماي فاتورة. Shopify، WooCommerce، حلول مخصصة لمدينة الكويت.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/ecommerce-kuwait.jpg",
+    featured: true,
+    tags: ["تجارة إلكترونية الكويت", "متجر إلكتروني KNET", "Apple Pay الكويت", "ماي فاتورة", "شوبيفاي الكويت"],
+    metaTitle: "التجارة الإلكترونية الكويت 2026 | KNET و ماي فاتورة | Symloop",
+    metaDescription: "تطوير تجارة إلكترونية في الكويت. متاجر مع KNET و Apple Pay و ماي فاتورة. Shopify، WooCommerce، حلول مخصصة. مدينة الكويت. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "E-commerce Solutions in Kuwait with KNET Integration 2026",
+        subtitle: "Build Your Online Store in Kuwait with KNET, Apple Pay & MyFatoorah",
+        excerpt: "Complete e-commerce development for Kuwait with KNET, Apple Pay, Tap, MyFatoorah payment integration."
+      },
+      ar: {
+        title: "التجارة الإلكترونية في الكويت مع تكامل KNET",
+        subtitle: "أنشئ متجرك الإلكتروني في الكويت مع KNET و Apple Pay و ماي فاتورة 2026",
+        excerpt: "تطوير تجارة إلكترونية متكاملة للكويت. متاجر إلكترونية مع KNET و Apple Pay و Tap و ماي فاتورة."
+      }
+    }
+  },
+  {
+    id: "88",
+    slug: "erp-business-software-kuwait-2026",
+    title: "ERP & Business Software Solutions in Kuwait",
+    subtitle: "Custom ERP, CRM & Enterprise Software for Kuwaiti Businesses 2026",
+    excerpt: "Enterprise software solutions for Kuwait. Custom ERP, CRM, HR, and accounting systems for businesses in Kuwait City, Hawalli, Salmiya, Farwaniya.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/erp-kuwait.jpg",
+    featured: true,
+    tags: ["ERP Kuwait", "business software Kuwait", "CRM Kuwait City", "enterprise software Kuwait", "accounting software Kuwait"],
+    metaTitle: "ERP & Business Software Kuwait 2026 | Custom Solutions | Symloop",
+    metaDescription: "Custom ERP & business software for Kuwait. CRM, HR, accounting. Kuwait City, Hawalli, Salmiya. Free consultation.",
+    translations: {
+      en: {
+        title: "ERP & Business Software Solutions in Kuwait",
+        subtitle: "Custom ERP, CRM & Enterprise Software for Kuwaiti Businesses 2026",
+        excerpt: "Enterprise software solutions for Kuwait. Custom ERP, CRM, HR, and accounting systems."
+      },
+      ar: {
+        title: "حلول ERP وبرامج الأعمال في الكويت 2026",
+        subtitle: "أنظمة ERP و CRM مخصصة للشركات الكويتية",
+        excerpt: "حلول برمجيات مؤسسية للكويت. أنظمة ERP و CRM و HR ومحاسبة مخصصة للشركات في مدينة الكويت وحولي."
+      }
+    }
+  },
+  {
+    id: "89",
+    slug: "barnamij-erp-idarat-sharikaat-kuwait-2026",
+    title: "برنامج ERP وإدارة الشركات في الكويت",
+    subtitle: "أنظمة ERP و CRM مخصصة للشركات الكويتية 2026",
+    excerpt: "حلول برمجيات مؤسسية للكويت. أنظمة ERP و CRM و HR ومحاسبة مخصصة للشركات في مدينة الكويت وحولي والسالمية والفروانية.",
+    category: "Software",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "13 min",
+    image: "/images/blog/erp-kuwait.jpg",
+    featured: true,
+    tags: ["ERP الكويت", "برنامج إدارة شركات الكويت", "CRM مدينة الكويت", "برمجيات مؤسسية الكويت", "محاسبة الكويت"],
+    metaTitle: "برنامج ERP وإدارة الشركات الكويت 2026 | حلول مخصصة | Symloop",
+    metaDescription: "برنامج ERP مخصص للشركات الكويتية. CRM، HR، محاسبة. مدينة الكويت، حولي، السالمية. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "ERP & Business Software Solutions in Kuwait 2026",
+        subtitle: "Custom ERP, CRM & Enterprise Software for Kuwaiti Businesses",
+        excerpt: "Enterprise software solutions for Kuwait. Custom ERP, CRM, HR, and accounting systems."
+      },
+      ar: {
+        title: "برنامج ERP وإدارة الشركات في الكويت",
+        subtitle: "أنظمة ERP و CRM مخصصة للشركات الكويتية 2026",
+        excerpt: "حلول برمجيات مؤسسية للكويت. أنظمة ERP و CRM و HR ومحاسبة مخصصة للشركات في مدينة الكويت وحولي."
+      }
+    }
+  },
+  {
+    id: "90",
+    slug: "artificial-intelligence-solutions-kuwait-2026",
+    title: "Artificial Intelligence Solutions in Kuwait",
+    subtitle: "AI, Machine Learning & Automation for New Kuwait 2035",
+    excerpt: "AI solutions for Kuwait aligned with New Kuwait 2035 vision. Machine learning, chatbots, computer vision, and process automation for businesses in Kuwait City, Hawalli.",
+    category: "AI",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/ai-kuwait.jpg",
+    featured: true,
+    tags: ["AI Kuwait", "artificial intelligence Kuwait", "machine learning Kuwait City", "chatbot Kuwait", "New Kuwait 2035"],
+    metaTitle: "AI Solutions Kuwait 2026 | Machine Learning & Automation | Symloop",
+    metaDescription: "AI & machine learning solutions for Kuwait. Chatbots, automation, computer vision. Aligned with New Kuwait 2035. Kuwait City. Free consultation.",
+    translations: {
+      en: {
+        title: "Artificial Intelligence Solutions in Kuwait",
+        subtitle: "AI, Machine Learning & Automation for New Kuwait 2035",
+        excerpt: "AI solutions for Kuwait aligned with New Kuwait 2035. Machine learning, chatbots, computer vision, and automation."
+      },
+      ar: {
+        title: "حلول الذكاء الاصطناعي في الكويت 2026",
+        subtitle: "الذكاء الاصطناعي والتعلم الآلي والأتمتة لكويت جديدة 2035",
+        excerpt: "حلول ذكاء اصطناعي للكويت متوافقة مع رؤية كويت جديدة 2035. تعلم آلي، روبوتات دردشة، رؤية حاسوبية."
+      }
+    }
+  },
+  {
+    id: "91",
+    slug: "hulul-dhakaa-istinai-kuwait-2026",
+    title: "حلول الذكاء الاصطناعي في الكويت",
+    subtitle: "الذكاء الاصطناعي والتعلم الآلي والأتمتة لكويت جديدة 2035",
+    excerpt: "حلول ذكاء اصطناعي للكويت متوافقة مع رؤية كويت جديدة 2035. تعلم آلي، روبوتات دردشة، رؤية حاسوبية، وأتمتة العمليات للشركات في مدينة الكويت وحولي.",
+    category: "AI",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "14 min",
+    image: "/images/blog/ai-kuwait.jpg",
+    featured: true,
+    tags: ["ذكاء اصطناعي الكويت", "تعلم آلي مدينة الكويت", "روبوت دردشة الكويت", "أتمتة الكويت", "كويت جديدة 2035"],
+    metaTitle: "حلول الذكاء الاصطناعي الكويت 2026 | تعلم آلي وأتمتة | Symloop",
+    metaDescription: "حلول ذكاء اصطناعي وتعلم آلي للكويت. روبوتات دردشة، أتمتة، رؤية حاسوبية. كويت جديدة 2035. مدينة الكويت. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "AI Solutions in Kuwait 2026",
+        subtitle: "AI, Machine Learning & Automation for New Kuwait 2035",
+        excerpt: "AI solutions for Kuwait aligned with New Kuwait 2035. Machine learning, chatbots, computer vision, and automation."
+      },
+      ar: {
+        title: "حلول الذكاء الاصطناعي في الكويت",
+        subtitle: "الذكاء الاصطناعي والتعلم الآلي والأتمتة لكويت جديدة 2035",
+        excerpt: "حلول ذكاء اصطناعي للكويت متوافقة مع رؤية كويت جديدة 2035. تعلم آلي، روبوتات دردشة، رؤية حاسوبية."
+      }
+    }
+  },
+  {
+    id: "92",
+    slug: "digital-transformation-kuwait-new-kuwait-2030",
+    title: "Digital Transformation in Kuwait - New Kuwait 2035",
+    subtitle: "Complete Digital Transformation Solutions for Kuwaiti Enterprises 2026",
+    excerpt: "Digital transformation consulting and implementation for Kuwait. Cloud migration, process automation, digital strategy aligned with New Kuwait 2035 vision.",
+    category: "Digital Transformation",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/digital-transformation-kuwait.jpg",
+    featured: true,
+    tags: ["digital transformation Kuwait", "New Kuwait 2035 digital", "cloud migration Kuwait", "digital strategy Kuwait City", "automation Kuwait"],
+    metaTitle: "Digital Transformation Kuwait 2026 | New Kuwait 2035 | Symloop",
+    metaDescription: "Digital transformation for Kuwait aligned with New Kuwait 2035. Cloud migration, automation, digital strategy. Kuwait City. Free consultation.",
+    translations: {
+      en: {
+        title: "Digital Transformation in Kuwait - New Kuwait 2035",
+        subtitle: "Complete Digital Transformation Solutions for Kuwaiti Enterprises 2026",
+        excerpt: "Digital transformation consulting and implementation for Kuwait aligned with New Kuwait 2035 vision."
+      },
+      ar: {
+        title: "التحول الرقمي في الكويت - كويت جديدة 2035",
+        subtitle: "حلول التحول الرقمي الشاملة للمؤسسات الكويتية 2026",
+        excerpt: "استشارات وتنفيذ التحول الرقمي للكويت. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية كويت جديدة 2035."
+      }
+    }
+  },
+  {
+    id: "93",
+    slug: "tahawwul-raqami-kuwait-ruiya-2035",
+    title: "التحول الرقمي في الكويت - رؤية كويت جديدة 2035",
+    subtitle: "حلول التحول الرقمي الشاملة للمؤسسات الكويتية 2026",
+    excerpt: "استشارات وتنفيذ التحول الرقمي للكويت. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية كويت جديدة 2035 للشركات في مدينة الكويت وحولي.",
+    category: "Digital Transformation",
+    author: "Symloop Team",
+    date: "2026-02-01",
+    readTime: "15 min",
+    image: "/images/blog/digital-transformation-kuwait.jpg",
+    featured: true,
+    tags: ["التحول الرقمي الكويت", "كويت جديدة 2035 رقمي", "هجرة سحابية الكويت", "استراتيجية رقمية الكويت", "أتمتة الكويت"],
+    metaTitle: "التحول الرقمي الكويت 2026 | كويت جديدة 2035 | Symloop",
+    metaDescription: "التحول الرقمي للكويت متوافق مع رؤية كويت جديدة 2035. هجرة سحابية، أتمتة، استراتيجية رقمية. مدينة الكويت. استشارة مجانية.",
+    translations: {
+      en: {
+        title: "Digital Transformation in Kuwait - New Kuwait 2035",
+        subtitle: "Complete Digital Transformation Solutions for Kuwaiti Enterprises 2026",
+        excerpt: "Digital transformation consulting and implementation for Kuwait aligned with New Kuwait 2035 vision."
+      },
+      ar: {
+        title: "التحول الرقمي في الكويت - رؤية كويت جديدة 2035",
+        subtitle: "حلول التحول الرقمي الشاملة للمؤسسات الكويتية 2026",
+        excerpt: "استشارات وتنفيذ التحول الرقمي للكويت. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية كويت جديدة 2035."
+      }
+    }
   }
 ];
 

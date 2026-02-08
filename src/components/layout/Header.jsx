@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, ArrowRight, Phone, MessageCircle, Sparkles } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -306,10 +307,13 @@ const MobileMenu = ({ isOpen, onClose, onContactClick }) => {
             <div className="relative flex flex-col h-full z-10">
               {/* Header */}
               <div className="flex items-center justify-between p-4">
-                <img
+                <Image
                   src="/sym-logo.png"
                   alt="Symloop"
-                  className="h-6 object-contain brightness-0 invert"
+                  width={120}
+                  height={24}
+                  className="h-6 w-auto object-contain brightness-0 invert"
+                  priority
                 />
                 <button
                   onClick={onClose}
@@ -432,12 +436,15 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="group flex items-center gap-3">
               <div className="relative">
-                <img
+                <Image
                   src="/sym-logo.png"
                   alt="Symloop"
-                  className={`transition-all duration-500 object-contain brightness-0 invert ${
+                  width={150}
+                  height={36}
+                  className={`transition-all duration-500 object-contain brightness-0 invert w-auto ${
                     scrolled ? 'h-7' : 'h-9'
                   }`}
+                  priority
                 />
                 {/* Status indicator */}
                 <div className={`absolute -top-0.5 -right-0.5 bg-green-400 rounded-full animate-pulse transition-all duration-500 ${

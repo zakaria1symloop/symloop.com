@@ -117,6 +117,47 @@ Allow: /blog/logiciel-hotel-reservation-hebergement-algerie-2026/
 Allow: /blog/logiciel-ecole-gestion-scolaire-algerie-2026/
 Allow: /blog/logiciel-immobilier-agence-algerie-2026/
 
+# Gulf Markets Blog Posts 2026 - Saudi Arabia, UAE, Kuwait
+# Saudi Arabia (KSA)
+Allow: /blog/mobile-app-development-saudi-arabia-2026/
+Allow: /blog/tatwir-tatbiqat-jawwal-saudi-arabia-2026/
+Allow: /blog/web-development-company-saudi-arabia-2026/
+Allow: /blog/tatwir-mawaqie-web-saudi-arabia-2026/
+Allow: /blog/ecommerce-solutions-saudi-arabia-mada-2026/
+Allow: /blog/tijara-iliktruniya-saudi-arabia-mada-2026/
+Allow: /blog/erp-business-software-saudi-arabia-2026/
+Allow: /blog/barnamij-erp-idarat-sharikaat-saudi-arabia-2026/
+Allow: /blog/artificial-intelligence-solutions-saudi-arabia-2026/
+Allow: /blog/hulul-dhakaa-istinai-saudi-arabia-2026/
+Allow: /blog/digital-transformation-saudi-arabia-vision-2030/
+Allow: /blog/tahawwul-raqami-saudi-arabia-ruiya-2030/
+# UAE (United Arab Emirates)
+Allow: /blog/mobile-app-development-uae-dubai-2026/
+Allow: /blog/tatwir-tatbiqat-jawwal-uae-dubai-2026/
+Allow: /blog/web-development-company-uae-dubai-2026/
+Allow: /blog/tatwir-mawaqie-web-uae-dubai-2026/
+Allow: /blog/ecommerce-solutions-uae-dubai-2026/
+Allow: /blog/tijara-iliktruniya-uae-dubai-2026/
+Allow: /blog/erp-business-software-uae-2026/
+Allow: /blog/barnamij-erp-idarat-sharikaat-uae-2026/
+Allow: /blog/artificial-intelligence-solutions-uae-2026/
+Allow: /blog/hulul-dhakaa-istinai-uae-2026/
+Allow: /blog/digital-transformation-uae-smart-government-2026/
+Allow: /blog/tahawwul-raqami-uae-hukuma-dhakiya-2026/
+# Kuwait
+Allow: /blog/mobile-app-development-kuwait-2026/
+Allow: /blog/tatwir-tatbiqat-jawwal-kuwait-2026/
+Allow: /blog/web-development-company-kuwait-2026/
+Allow: /blog/tatwir-mawaqie-web-kuwait-2026/
+Allow: /blog/ecommerce-solutions-kuwait-knet-2026/
+Allow: /blog/tijara-iliktruniya-kuwait-knet-2026/
+Allow: /blog/erp-business-software-kuwait-2026/
+Allow: /blog/barnamij-erp-idarat-sharikaat-kuwait-2026/
+Allow: /blog/artificial-intelligence-solutions-kuwait-2026/
+Allow: /blog/hulul-dhakaa-istinai-kuwait-2026/
+Allow: /blog/digital-transformation-kuwait-new-kuwait-2030/
+Allow: /blog/tahawwul-raqami-kuwait-ruiya-2035/
+
 # SETIF & ALGER SEO BOOST 2026 - Priority Location Pages
 Allow: /blog/agence-developpement-web-setif-2026/
 Allow: /blog/agence-developpement-web-alger-2026/

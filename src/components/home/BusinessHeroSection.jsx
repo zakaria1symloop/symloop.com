@@ -130,7 +130,6 @@ export default function BusinessHeroSection() {
   const locale = router.locale || 'fr';
   const isRTL = locale === 'ar';
   const [activeWord, setActiveWord] = useState(0);
-
   const content = {
     fr: {
       headline: "Augmentez vos",
@@ -195,8 +194,8 @@ export default function BusinessHeroSection() {
   return (
     <section className={`relative min-h-screen bg-black overflow-hidden flex items-center pt-24 md:pt-28 ${isRTL ? 'rtl' : 'ltr'}`}>
 
-      {/* Layered Premium Animated Backgrounds */}
-      <div className="absolute inset-0">
+      {/* CSS animated background */}
+      <div className="absolute inset-0 opacity-100">
         <NoiseTexture />
         <LightOrbs />
         <AuroraWaves />
@@ -204,9 +203,9 @@ export default function BusinessHeroSection() {
         <AnimatedLines />
       </div>
 
-      {/* Gradient overlays for depth - strong fade to black at bottom */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
+      {/* Gradient overlays for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20 z-[1]" />
 
       {/* Content */}
       <div className="relative z-10 w-full">

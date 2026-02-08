@@ -20,16 +20,18 @@ export default function SmoothScroll({ children }) {
 
     lenisRef.current = lenis;
 
-    // Animation frame loop
+    // Animation frame loop with proper cleanup
+    let rafId;
     function raf(time) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
-    // Cleanup
+    // Cleanup - cancel rAF loop before destroying lenis
     return () => {
+      cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, []);

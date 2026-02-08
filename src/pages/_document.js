@@ -31,11 +31,16 @@ export default function Document(props) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         
-        {/* Google Fonts - Changa for Arabic */}
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" 
-          rel="stylesheet" 
+        {/* Google Fonts - Changa for Arabic (non-blocking load) */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+          media="print"
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&display=swap" rel="stylesheet" />
+        </noscript>
         
         {/* Web App Manifest */}
         <link rel="manifest" href="/manifest.json" />
@@ -84,7 +89,7 @@ export default function Document(props) {
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
-              "description": "Leader de l'intelligence artificielle en Algérie depuis 2012. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur, NLP. Développement applications mobiles, sites e-commerce avec paiement CIB/Edahabia. Expert IA Alger, Oran, Constantine, Sétif.",
+              "description": "Leader de l'intelligence artificielle en Algérie et au Moyen-Orient depuis 2012. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur, NLP. Développement applications mobiles, sites e-commerce. Expert IA Algérie, Arabie Saoudite (Riyadh, Jeddah), Émirats Arabes Unis (Dubai, Abu Dhabi), Koweït.",
               "foundingDate": "2012",
               "telephone": "+213549575512",
               "email": "contact@symloop.com",
@@ -101,10 +106,13 @@ export default function Document(props) {
                 "latitude": "36.1919",
                 "longitude": "5.4138"
               },
-              "areaServed": {
-                "@type": "Region",
-                "name": "MENA Region"
-              },
+              "areaServed": [
+                {"@type": "Country", "name": "Algeria"},
+                {"@type": "Country", "name": "Saudi Arabia"},
+                {"@type": "Country", "name": "United Arab Emirates"},
+                {"@type": "Country", "name": "Kuwait"},
+                {"@type": "Place", "name": "MENA Region"}
+              ],
               "serviceArea": {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
@@ -303,6 +311,38 @@ export default function Document(props) {
                 {
                   "@type": "Country",
                   "name": "Algeria"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Saudi Arabia"
+                },
+                {
+                  "@type": "City",
+                  "name": "Riyadh"
+                },
+                {
+                  "@type": "City",
+                  "name": "Jeddah"
+                },
+                {
+                  "@type": "Country",
+                  "name": "United Arab Emirates"
+                },
+                {
+                  "@type": "City",
+                  "name": "Dubai"
+                },
+                {
+                  "@type": "City",
+                  "name": "Abu Dhabi"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Kuwait"
+                },
+                {
+                  "@type": "City",
+                  "name": "Kuwait City"
                 },
                 {
                   "@type": "Place",

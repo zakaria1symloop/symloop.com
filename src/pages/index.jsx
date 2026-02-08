@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { ArrowRight, BookOpen, ShoppingCart, TrendingUp, DollarSign } from "lucide-react";
+import { ArrowRight, BookOpen, ShoppingCart, TrendingUp, DollarSign, Facebook, Linkedin, Github } from "lucide-react";
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ExpertiseSection from "../../src/components/home/ExpertiseSection";
@@ -339,7 +338,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition"
             >
-              <FaFacebookF className="w-6 h-6" />
+              <Facebook className="w-6 h-6" />
             </a>
             <a
               href="https://www.linkedin.com/company/symloop-technology"
@@ -347,7 +346,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition"
             >
-              <FaLinkedinIn className="w-6 h-6" />
+              <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="https://github.com"
@@ -355,7 +354,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition"
             >
-              <FaGithub className="w-6 h-6" />
+              <Github className="w-6 h-6" />
             </a>
           </div>
         </div>

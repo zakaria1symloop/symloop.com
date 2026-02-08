@@ -68,11 +68,6 @@ html.lenis {
   }
 }
 
-/* Scroll-based parallax effect for sections */
-section {
-  will-change: transform;
-}
-
 /* Premium hover transitions */
 * {
   -webkit-font-smoothing: antialiased;
@@ -144,10 +139,8 @@ html[dir="rtl"] body {
   text-align: right;
 }
 
-/* Smooth transitions for RTL switching */
-html, body {
-  transition: direction 0.3s ease;
-}
+/* RTL direction is set via html[dir] attribute - no transition needed
+   (CSS direction property is not animatable) */
 
 /* Enhanced RTL form styles */
 [dir="rtl"] input, 
@@ -382,6 +375,19 @@ html, body {
   animation: scroll-long 50s linear infinite;
 }
 
+@keyframes scroll-long-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-scroll-long-reverse {
+  animation: scroll-long-reverse 50s linear infinite;
+}
+
 /* Animated gradient for buttons */
 @keyframes gradient-x {
   0%, 100% {
@@ -395,4 +401,85 @@ html, body {
 .animate-gradient-x {
   background-size: 200% 200%;
   animation: gradient-x 3s ease infinite;
+}
+
+/* ═══ Services Page v2 Animations ═══ */
+
+/* Floating orbs for Why Choose Us */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-25px, 25px) scale(0.95); }
+  66% { transform: translate(35px, -15px) scale(1.05); }
+}
+.animate-float1 { animation: float1 8s ease-in-out infinite; }
+.animate-float2 { animation: float2 10s ease-in-out infinite; }
+
+/* Sweep lines for Trusted By */
+@keyframes sweep-line {
+  0% { transform: translateX(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(100vw); opacity: 0; }
+}
+
+/* Timeline traveling pulse */
+@keyframes travelDown {
+  0% { top: 0%; opacity: 0; }
+  5% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Timeline node pulsing ring */
+@keyframes pingSlow {
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* Aurora wave movement */
+@keyframes aurora-wave-1 {
+  0%, 100% { transform: translateX(0%) translateY(0%); }
+  50% { transform: translateX(5%) translateY(-3%); }
+}
+@keyframes aurora-wave-2 {
+  0%, 100% { transform: translateX(0%) translateY(0%); }
+  50% { transform: translateX(-4%) translateY(4%); }
+}
+@keyframes aurora-wave-3 {
+  0%, 100% { transform: translateX(0%) translateY(0%); }
+  50% { transform: translateX(3%) translateY(-5%); }
+}
+
+/* Orbit rings for Talk to Us */
+@keyframes orbit-spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Button shimmer sweep */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Rotating conic gradient border */
+@keyframes rotate-border {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Emoji wobble on hover */
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+.group:hover .group-hover\:animate-wobble {
+  animation: wobble 0.5s ease-in-out;
 }
