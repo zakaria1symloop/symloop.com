@@ -4,9 +4,7 @@ const { i18n } = require('./next-i18next.config');
 
 const nextConfig = {
   trailingSlash: true,
-  webpack: (config) => {
-    return config;
-  },
+  turbopack: {},
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
@@ -21,10 +19,6 @@ const nextConfig = {
   poweredByHeader: false,
   // Strict mode for React
   reactStrictMode: true,
-  // Ignore ESLint during builds (warnings only)
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 }
 
 module.exports = nextConfig
