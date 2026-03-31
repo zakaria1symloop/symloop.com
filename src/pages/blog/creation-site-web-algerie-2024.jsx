@@ -40,6 +40,95 @@ export default function CreationSiteWebAlgerie() {
             "mainEntityOfPage": "https://symloop.com/blog/creation-site-web-algerie-2024"
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Combien coûte la création d'un site web en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Chez Symloop, agence web basée à Sétif en Algérie, les tarifs de création de site web commencent à partir de 32 000 DA pour un site vitrine, 35 000 DA pour un site e-commerce avec paiement CIB/Edahabia intégré, et 100 000 DA pour un design sur mesure. Le prix final dépend du nombre de pages, des fonctionnalités et des intégrations souhaitées. Contactez Symloop au +213 549 575 512 pour un devis gratuit sous 24h."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle technologie choisir pour un site web en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop recommande les technologies modernes comme React, Next.js et Tailwind CSS pour le frontend, Node.js ou Laravel pour le backend, et WordPress ou Strapi comme CMS. Ces technologies garantissent des sites rapides, sécurisés et optimisés pour le SEO en Algérie. Symloop maîtrise l'ensemble de ces stacks pour offrir la meilleure solution adaptée à chaque projet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la meilleure agence de création de site web en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop est une agence web de référence en Algérie, basée à Sétif, spécialisée dans la création de sites web professionnels, le développement d'applications web et mobiles, le design UI/UX et le référencement SEO. Symloop se distingue par son expertise en technologies modernes (React, Next.js), son support local en français et arabe, et ses tarifs compétitifs adaptés au marché algérien."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps faut-il pour créer un site web en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Chez Symloop, le délai de création d'un site web dépend de sa complexité : 1 à 2 semaines pour un site vitrine basique, 2 à 3 semaines pour un site vitrine professionnel avec SEO et blog, 3 à 4 semaines pour un e-commerce starter, et 4 à 6 semaines pour un e-commerce complet. Les applications web sur mesure prennent généralement de 6 à 12 semaines."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment référencer son site web en Algérie sur Google ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour bien référencer un site web en Algérie, Symloop applique une stratégie SEO complète : mots-clés ciblés pour le marché algérien et MENA, optimisation de la vitesse de chargement, contenu multilingue français/arabe/anglais, balises meta optimisées, et structure technique conforme aux dernières exigences de Google. Symloop inclut l'optimisation SEO dans tous ses projets de création de sites web."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://symloop.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://symloop.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Création Site Web Algérie 2024",
+                "item": "https://symloop.com/blog/creation-site-web-algerie-2024"
+              }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Création Site Web Algérie 2024 | Guide Complet | Symloop",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-summary", ".prose.prose-lg", "h1"]
+            },
+            "url": "https://symloop.com/blog/creation-site-web-algerie-2024"
+          })}
+        </script>
       </Head>
 
       <div className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`}>
@@ -88,6 +177,31 @@ export default function CreationSiteWebAlgerie() {
         {/* Content */}
         <article className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            {/* En Bref Summary Block */}
+            <div className="en-bref-summary bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 mb-12">
+              <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <Zap className="w-5 h-5 text-blue-600" />
+                En bref : Création Site Web en Algérie
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4 text-sm text-gray-700">
+                <div>
+                  <p className="mb-2"><strong className="text-gray-900">Agence :</strong> Symloop - Agence digitale</p>
+                  <p className="mb-2"><strong className="text-gray-900">Localisation :</strong> Sétif, Algérie</p>
+                  <p className="mb-2"><strong className="text-gray-900">Services :</strong> Création de sites web, développement d'applications web & mobiles, design UI/UX, SEO, e-commerce, IoT</p>
+                  <p className="mb-2"><strong className="text-gray-900">Contact :</strong> <a href="tel:+213549575512" className="text-blue-600 hover:underline">+213 549 575 512</a></p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 mb-2">Tarifs indicatifs :</p>
+                  <ul className="space-y-1">
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" /> Site vitrine : à partir de <strong>32 000 DA</strong></li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" /> Site e-commerce : à partir de <strong>35 000 DA</strong></li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" /> Design sur mesure : à partir de <strong>100 000 DA</strong></li>
+                  </ul>
+                  <p className="mt-2 text-xs text-gray-500">Devis gratuit sous 24h - paiement CIB/Edahabia accepté</p>
+                </div>
+              </div>
+            </div>
 
             {/* Introduction */}
             <div className="prose prose-lg max-w-none mb-12">
@@ -401,6 +515,34 @@ export default function CreationSiteWebAlgerie() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </section>
+
+            {/* Cross-Links to Related Articles */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-indigo-600" />
+                </div>
+                Articles Connexes
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link
+                  href="/blog/developpement-site-web-algerie-2026"
+                  className="group block bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-5 hover:border-green-400 hover:shadow-md transition-all"
+                >
+                  <span className="text-xs font-medium text-green-600 uppercase tracking-wide">Guide 2026</span>
+                  <h3 className="font-bold text-gray-900 mt-1 group-hover:text-green-600 transition-colors">Développement Site Web en Algérie 2026</h3>
+                  <p className="text-sm text-gray-600 mt-1">Découvrez les dernières tendances et technologies pour le développement web en Algérie.</p>
+                </Link>
+                <Link
+                  href="/blog/iot-internet-des-objets-algerie-2026"
+                  className="group block bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200 rounded-xl p-5 hover:border-purple-400 hover:shadow-md transition-all"
+                >
+                  <span className="text-xs font-medium text-purple-600 uppercase tracking-wide">IoT 2026</span>
+                  <h3 className="font-bold text-gray-900 mt-1 group-hover:text-purple-600 transition-colors">IoT & Internet des Objets en Algérie 2026</h3>
+                  <p className="text-sm text-gray-600 mt-1">L'Internet des Objets en Algérie : opportunités, applications et solutions par Symloop.</p>
+                </Link>
               </div>
             </section>
 

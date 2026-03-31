@@ -3,6 +3,246 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "103",
+    slug: "developpement-application-mobile-algerie-2026",
+    title: "Développement d'Applications Mobiles en Algérie 2026",
+    subtitle: "Votre Projet, Notre Expertise — Flutter, React Native, Swift & Kotlin pour Particuliers, Entreprises et Gouvernement",
+    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Sétif, couvre toute l'Algérie.",
+    category: "Mobile",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "20 min",
+    image: "/images/blog/mobile-app-algeria-2026.jpg",
+    featured: true,
+    tags: ["développement application mobile algérie", "création app mobile algérie 2026", "agence application mobile alger", "développeur mobile algérie", "flutter algérie", "react native algérie", "application mobile entreprise algérie", "application mobile gouvernement algérie"],
+    metaTitle: "Développement Application Mobile Algérie 2026 | Agence Expert Flutter & React Native | Symloop",
+    metaDescription: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées. Symloop, Sétif. Devis gratuit.",
+    translations: {
+      en: {
+        title: "Mobile App Development in Algeria 2026 — Expert Agency",
+        subtitle: "Your Project, Our Expertise — Flutter, React Native, Swift & Kotlin for Individuals, Businesses and Government",
+        excerpt: "Expert mobile app development agency in Algeria. Flutter, React Native, Swift, Kotlin. 50+ apps delivered for individuals, businesses and government institutions."
+      },
+      ar: {
+        title: "تطوير تطبيقات الهاتف المحمول في الجزائر 2026",
+        subtitle: "مشروعك، خبرتنا — Flutter، React Native، Swift و Kotlin للأفراد والشركات والحكومة",
+        excerpt: "وكالة خبيرة في تطوير تطبيقات الهاتف المحمول في الجزائر. أكثر من 50 تطبيقاً تم تسليمه للأفراد والشركات والمؤسسات الحكومية."
+      }
+    }
+  },
+  {
+    id: "102",
+    slug: "application-gestion-agricole-algerie-2026",
+    title: "Application de Gestion Agricole en Algérie 2026",
+    subtitle: "Logiciel pour Agriculteurs : Planification, Suivi Financier, Récoltes et Marketplace",
+    excerpt: "Application mobile de gestion agricole pour les agriculteurs algériens. Planification des cultures, suivi des dépenses, gestion des récoltes, météo intégrée, marketplace. Disponible en français et arabe, fonctionne hors ligne.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "14 min",
+    image: "/images/blog/farm-app-algeria-2026.jpg",
+    featured: false,
+    tags: ["application gestion agricole algérie", "logiciel agriculteur algérie", "app ferme algérie", "gestion exploitation agricole", "agriculture numérique algérie"],
+    metaTitle: "Application Gestion Agricole Algérie 2026 | Logiciel Agriculteur | Symloop",
+    metaDescription: "Application de gestion agricole pour agriculteurs algériens. Planification cultures, suivi financier, marketplace. FR/AR, hors ligne. Dès 2000 DA/mois. Symloop.",
+    translations: {
+      en: { title: "Farm Management App Algeria 2026", subtitle: "Software for Farmers: Planning, Finance, Harvest & Marketplace", excerpt: "Mobile farm management app for Algerian farmers. Crop planning, expense tracking, harvest management, marketplace. Available in French and Arabic, works offline." },
+      ar: { title: "تطبيق إدارة المزارع في الجزائر 2026", subtitle: "برنامج للمزارعين: تخطيط، متابعة مالية، حصاد وسوق", excerpt: "تطبيق إدارة زراعية للمزارعين الجزائريين. تخطيط المحاصيل، تتبع النفقات، إدارة الحصاد. متاح بالعربية والفرنسية." }
+    }
+  },
+  {
+    id: "101",
+    slug: "agriculture-precision-drones-capteurs-algerie-2026",
+    title: "Agriculture de Précision en Algérie 2026 : Drones, Capteurs et IA",
+    subtitle: "Drones de Surveillance, Capteurs IoT au Sol et Intelligence Artificielle pour l'Agriculture",
+    excerpt: "Solutions d'agriculture de précision en Algérie. Drones multispectral, capteurs au sol IoT, intelligence artificielle pour la détection de maladies et l'optimisation des rendements. Productivité augmentée de 20-35%.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "16 min",
+    image: "/images/blog/precision-agriculture-algeria-2026.jpg",
+    featured: false,
+    tags: ["agriculture de précision algérie", "drone agriculture algérie", "capteur sol algérie", "IA agriculture algérie", "agriculture intelligente algérie"],
+    metaTitle: "Agriculture de Précision Algérie 2026 | Drones, Capteurs IoT, IA | Symloop",
+    metaDescription: "Agriculture de précision en Algérie. Drones, capteurs IoT, IA pour détection maladies et optimisation rendements. +20-35% productivité. Symloop.",
+    translations: {
+      en: { title: "Precision Agriculture Algeria 2026: Drones, Sensors & AI", subtitle: "Surveillance Drones, Ground IoT Sensors and AI for Agriculture", excerpt: "Precision agriculture solutions in Algeria. Multispectral drones, IoT ground sensors, AI for disease detection and yield optimization." },
+      ar: { title: "الزراعة الدقيقة في الجزائر 2026: طائرات بدون طيار وذكاء اصطناعي", subtitle: "طائرات مراقبة، أجهزة استشعار وذكاء اصطناعي للزراعة", excerpt: "حلول الزراعة الدقيقة في الجزائر. طائرات بدون طيار، أجهزة استشعار، ذكاء اصطناعي لكشف الأمراض وتحسين الإنتاج." }
+    }
+  },
+  {
+    id: "100",
+    slug: "elevage-connecte-suivi-betail-algerie-2026",
+    title: "Élevage Connecté en Algérie 2026 : Suivi Bétail GPS et IoT",
+    subtitle: "Colliers GPS, Capteurs de Santé Animale et Gestion Automatisée pour Éleveurs Algériens",
+    excerpt: "Solutions d'élevage connecté en Algérie. Colliers GPS pour troupeaux, capteurs santé animale, alimentation automatisée, monitoring des étables. Réduction mortalité de 25%. Technologie fabriquée en Algérie par Symloop.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "15 min",
+    image: "/images/blog/smart-livestock-algeria-2026.jpg",
+    featured: false,
+    tags: ["élevage connecté algérie", "suivi bétail GPS algérie", "capteur santé animale algérie", "élevage intelligent algérie", "IoT élevage algérie"],
+    metaTitle: "Élevage Connecté Algérie 2026 | Suivi Bétail GPS & IoT | Symloop",
+    metaDescription: "Élevage connecté en Algérie. Colliers GPS, capteurs santé, alimentation auto. Dès 2500 DA/tête. Fabriqué en Algérie. Symloop.",
+    translations: {
+      en: { title: "Connected Livestock Algeria 2026: GPS Tracking & IoT Sensors", subtitle: "GPS Collars, Health Sensors and Automated Feeding for Algerian Farmers", excerpt: "Connected livestock solutions in Algeria. GPS tracking collars, animal health sensors, automated feeding. 25% mortality reduction." },
+      ar: { title: "تربية الماشية المتصلة في الجزائر 2026", subtitle: "أطواق GPS، أجهزة استشعار صحية وتغذية آلية", excerpt: "حلول تربية الماشية المتصلة في الجزائر. تتبع GPS، أجهزة استشعار صحة الحيوان، تغذية آلية. تقليل الوفيات بنسبة 25%." }
+    }
+  },
+  {
+    id: "99",
+    slug: "serre-intelligente-agriculture-algerie-2026",
+    title: "Serres Intelligentes en Algérie 2026 : Agriculture Sous Serre IoT",
+    subtitle: "Contrôle Automatique Température, Humidité et Irrigation — Rendement +30-50%",
+    excerpt: "Systèmes de serres intelligentes IoT pour l'agriculture algérienne. Contrôle automatique température, humidité, ventilation et irrigation. Rendement augmenté de 30-50%. Solutions fabriquées en Algérie par Symloop à partir de 120 000 DA.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "15 min",
+    image: "/images/blog/smart-greenhouse-algeria-2026.jpg",
+    featured: false,
+    tags: ["serre intelligente algérie", "agriculture sous serre algérie", "serre connectée IoT", "serre automatique algérie", "culture sous serre algérie"],
+    metaTitle: "Serres Intelligentes Algérie 2026 | Agriculture IoT Sous Serre | Symloop",
+    metaDescription: "Serres intelligentes IoT en Algérie. Contrôle auto température, humidité, irrigation. +30-50% rendement. Dès 120 000 DA. Fabriqué en Algérie. Symloop.",
+    translations: {
+      en: { title: "Smart Greenhouses Algeria 2026: IoT-Connected Agriculture", subtitle: "Automated Temperature, Humidity and Irrigation Control — +30-50% Yield", excerpt: "Smart greenhouse IoT systems for Algerian agriculture. Automated climate and irrigation control. 30-50% yield increase. Made in Algeria by Symloop." },
+      ar: { title: "البيوت الزجاجية الذكية في الجزائر 2026", subtitle: "تحكم آلي في الحرارة والرطوبة والري — زيادة الإنتاج 30-50%", excerpt: "أنظمة بيوت زجاجية ذكية للزراعة الجزائرية. تحكم آلي في المناخ والري. زيادة الإنتاج 30-50%. صنع في الجزائر." }
+    }
+  },
+  {
+    id: "98",
+    slug: "agriculture-intelligente-irrigation-algerie-2026",
+    title: "Irrigation Intelligente en Algérie 2026 : Systèmes IoT pour Agriculture Durable",
+    subtitle: "Capteurs d'Humidité, Vannes Automatiques et Station Météo — Économie d'Eau 40-60%",
+    excerpt: "Solutions d'irrigation intelligente IoT pour l'agriculture algérienne. Capteurs d'humidité du sol, vannes automatiques, station météo connectée. Économie d'eau de 40-60%. Kits à partir de 35 000 DA. Fabriqué en Algérie par Symloop.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "16 min",
+    image: "/images/blog/smart-irrigation-algeria-2026.jpg",
+    featured: true,
+    tags: ["irrigation intelligente algérie", "irrigation IoT algérie", "agriculture connectée algérie", "économie eau agriculture algérie", "capteur humidité sol algérie"],
+    metaTitle: "Irrigation Intelligente Algérie 2026 | Capteurs IoT & Économie d'Eau | Symloop",
+    metaDescription: "Irrigation intelligente IoT en Algérie. Capteurs humidité, vannes auto, station météo. Économie eau 40-60%. Dès 35 000 DA. Fabriqué en Algérie. Symloop.",
+    translations: {
+      en: { title: "Smart Irrigation Algeria 2026: IoT Systems for Sustainable Agriculture", subtitle: "Soil Moisture Sensors, Automatic Valves and Weather Station — 40-60% Water Savings", excerpt: "Smart IoT irrigation for Algerian agriculture. Soil moisture sensors, automatic valves, connected weather station. 40-60% water savings. Made in Algeria by Symloop." },
+      ar: { title: "الري الذكي في الجزائر 2026: أنظمة إنترنت الأشياء للزراعة المستدامة", subtitle: "أجهزة استشعار رطوبة التربة، صمامات آلية ومحطة أرصاد — توفير مياه 40-60%", excerpt: "حلول الري الذكي للزراعة الجزائرية. أجهزة استشعار رطوبة التربة، صمامات آلية، محطة أرصاد متصلة. توفير مياه 40-60%." }
+    }
+  },
+  {
+    id: "97",
+    slug: "solutions-informatiques-algerie-2026",
+    title: "Solutions Informatiques en Algérie 2026",
+    subtitle: "Développement Web, IoT, IA & Transformation Digitale — Votre Partenaire IT en Algérie",
+    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Sétif, accompagne les entreprises algériennes dans leur transformation digitale.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "22 min",
+    image: "/images/blog/it-solutions-algeria-2026.jpg",
+    featured: true,
+    tags: ["solutions informatiques algérie", "entreprise informatique algérie", "développement informatique algérie", "SSII algérie", "ESN algérie", "prestataire IT algérie", "société informatique alger", "informatique sétif"],
+    metaTitle: "Solutions Informatiques en Algérie 2026 | Développement, IoT, IA | Symloop",
+    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Sétif. Devis gratuit.",
+    translations: {
+      en: {
+        title: "IT Solutions in Algeria 2026 — Web, IoT, AI & Digital Transformation",
+        subtitle: "Web Development, IoT, AI & Digital Transformation — Your IT Partner in Algeria",
+        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Setif, Algeria."
+      },
+      ar: {
+        title: "حلول تكنولوجيا المعلومات في الجزائر 2026",
+        subtitle: "تطوير الويب، إنترنت الأشياء، الذكاء الاصطناعي والتحول الرقمي — شريكك التقني في الجزائر",
+        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في سطيف."
+      }
+    }
+  },
+  {
+    id: "96",
+    slug: "smart-home-promoteur-immobilier-algerie-2026",
+    title: "Smart Home pour Promoteurs Immobiliers en Algérie 2026",
+    subtitle: "Solutions Domotiques Clé en Main pour Programmes Immobiliers — Fabriqué en Algérie par Symloop",
+    excerpt: "Solutions smart home clé en main pour promoteurs immobiliers en Algérie. Intégration domotique complète par appartement à partir de 45 000 DA/unité. Éclairage, climatisation, sécurité, application de contrôle. Plus de 500 logements équipés par Symloop.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "16 min",
+    image: "/images/blog/smart-home-promoteur-algeria-2026.jpg",
+    featured: true,
+    tags: ["smart home promoteur immobilier algérie", "domotique programme immobilier algérie", "maison intelligente résidence algérie", "solutions domotiques promoteur algérie", "intégration smart home logements"],
+    metaTitle: "Smart Home Promoteurs Immobiliers Algérie 2026 | Domotique Clé en Main | Symloop",
+    metaDescription: "Solutions smart home pour promoteurs immobiliers en Algérie. Domotique complète par appartement dès 45 000 DA. Fabrication locale, installation pro. Symloop Sétif.",
+    translations: {
+      en: {
+        title: "Smart Home for Real Estate Developers in Algeria 2026",
+        subtitle: "Turnkey Smart Home Solutions for Residential Projects — Made in Algeria by Symloop",
+        excerpt: "Turnkey smart home solutions for real estate developers in Algeria. Complete home automation per apartment from 45,000 DZD. Lighting, climate, security, control app."
+      },
+      ar: {
+        title: "المنزل الذكي للمطورين العقاريين في الجزائر 2026",
+        subtitle: "حلول أتمتة منزلية متكاملة للمشاريع السكنية — صنع في الجزائر",
+        excerpt: "حلول المنزل الذكي الجاهزة للمطورين العقاريين في الجزائر. أتمتة منزلية كاملة لكل شقة بدءاً من 45,000 دج. إضاءة، تكييف، أمان، تطبيق تحكم."
+      }
+    }
+  },
+  {
+    id: "95",
+    slug: "iot-internet-des-objets-algerie-2026",
+    title: "IoT en Algérie 2026 : Internet des Objets, Maison Intelligente & Industrie 4.0",
+    subtitle: "Guide Complet : Domotique, Capteurs Industriels, Agriculture Connectée — Fabriqué en Algérie par Symloop",
+    excerpt: "Le guide complet sur l'IoT (Internet des Objets) en Algérie en 2026. Solutions maison intelligente, industrie 4.0, agriculture connectée. Équipements fabriqués localement par Symloop à des prix imbattables.",
+    category: "IoT",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "20 min",
+    image: "/images/blog/iot-algeria-2026.jpg",
+    featured: true,
+    tags: ["IoT algérie", "internet des objets algérie", "maison intelligente algérie", "smart home algérie", "domotique algérie 2026", "industrie 4.0 algérie", "objets connectés algérie", "agriculture connectée algérie"],
+    metaTitle: "IoT en Algérie 2026 | Internet des Objets, Smart Home & Industrie 4.0 | Symloop",
+    metaDescription: "Guide complet IoT Algérie 2026. Maison intelligente, industrie 4.0, agriculture connectée. Équipements fabriqués en Algérie par Symloop. Consultation gratuite.",
+    translations: {
+      en: {
+        title: "IoT in Algeria 2026: Internet of Things, Smart Home & Industry 4.0",
+        subtitle: "Complete Guide: Home Automation, Industrial Sensors, Connected Agriculture — Made in Algeria by Symloop",
+        excerpt: "The complete guide to IoT in Algeria in 2026. Smart home solutions, industry 4.0, connected agriculture. Equipment locally manufactured by Symloop."
+      },
+      ar: {
+        title: "إنترنت الأشياء في الجزائر 2026: المنزل الذكي والصناعة 4.0",
+        subtitle: "دليل شامل: الأتمتة المنزلية، أجهزة الاستشعار الصناعية، الزراعة المتصلة — صنع في الجزائر",
+        excerpt: "الدليل الشامل لإنترنت الأشياء في الجزائر 2026. حلول المنزل الذكي، الصناعة 4.0، الزراعة المتصلة. معدات مصنوعة محلياً بأسعار منافسة."
+      }
+    }
+  },
+  {
+    id: "94",
+    slug: "developpement-site-web-algerie-2026",
+    title: "Développement de Site Web en Algérie 2026",
+    subtitle: "Guide Expert : Tendances, Coûts, Technologies et Comment Choisir la Meilleure Agence Web",
+    excerpt: "Le guide le plus complet sur le développement de site web en Algérie en 2026. Découvrez les nouvelles tendances, les prix actualisés, les meilleures technologies et comment choisir votre agence web pour un site performant.",
+    category: "Web",
+    author: "Symloop Team",
+    date: "2026-03-31",
+    readTime: "18 min",
+    image: "/images/blog/web-development-algeria-2026.jpg",
+    featured: true,
+    tags: ["développement site web algérie", "création site web algérie 2026", "agence web algérie", "développement web alger", "site internet algérie", "meilleure agence web algérie", "prix site web algérie 2026", "développeur web algérie"],
+    metaTitle: "Développement de Site Web en Algérie 2026 | Guide Expert Complet | Symloop",
+    metaDescription: "Guide expert sur le développement de site web en Algérie en 2026. Tendances, coûts actualisés, technologies modernes (Next.js, IA). Agence web #1 à Sétif. Devis gratuit.",
+    translations: {
+      en: {
+        title: "Website Development in Algeria 2026 - Expert Guide",
+        subtitle: "Expert Guide: Trends, Costs, Technologies and How to Choose the Best Web Agency",
+        excerpt: "The most comprehensive guide on website development in Algeria in 2026. Discover new trends, updated prices, best technologies and how to choose your web agency."
+      },
+      ar: {
+        title: "تطوير مواقع الويب في الجزائر 2026 - دليل الخبراء",
+        subtitle: "دليل الخبراء: الاتجاهات والتكاليف والتقنيات وكيفية اختيار أفضل وكالة ويب",
+        excerpt: "الدليل الأكثر شمولاً حول تطوير مواقع الويب في الجزائر في 2026. اكتشف الاتجاهات الجديدة والأسعار المحدثة وأفضل التقنيات."
+      }
+    }
+  },
+  {
     id: "1",
     slug: "developpement-application-mobile-algerie-2024",
     title: "Développement Application Mobile en Algérie",
