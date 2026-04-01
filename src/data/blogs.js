@@ -3,6 +3,66 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "107",
+    slug: "devops-developpement-logiciel-algerie-2026",
+    title: "DevOps & Développement Logiciel en Algérie 2026",
+    subtitle: "Livraison Rapide, Zéro Downtime — CI/CD, Cloud, Monitoring pour Entreprises Algériennes",
+    excerpt: "Symloop applique les pratiques DevOps modernes pour développer et déployer des logiciels fiables. CI/CD automatisé, infrastructure cloud, monitoring 24/7, déploiements sans interruption. Applications web, API, microservices.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2026-04-01",
+    readTime: "14 min",
+    image: "/images/blog/devops-algeria-2026.jpg",
+    featured: false,
+    tags: ["DevOps algérie", "développement logiciel algérie", "CI/CD algérie", "infrastructure cloud algérie", "déploiement automatisé algérie"],
+    metaTitle: "DevOps & Développement Logiciel Algérie 2026 | CI/CD, Cloud | Symloop",
+    metaDescription: "DevOps et développement logiciel en Algérie. CI/CD, cloud, monitoring 24/7, zéro downtime. Applications web, API, SaaS. Symloop, Sétif.",
+    translations: {
+      en: { title: "DevOps & Software Development Algeria 2026", subtitle: "Fast Delivery, Zero Downtime", excerpt: "Modern DevOps practices for Algerian businesses. CI/CD, cloud infrastructure, 24/7 monitoring, zero-downtime deployments." },
+      ar: { title: "DevOps وتطوير البرمجيات في الجزائر 2026", subtitle: "تسليم سريع، صفر توقف", excerpt: "ممارسات DevOps الحديثة للشركات الجزائرية. CI/CD، بنية تحتية سحابية، مراقبة على مدار الساعة." }
+    }
+  },
+  {
+    id: "106",
+    slug: "erp-sur-mesure-saas-startup-pme-algerie-2026",
+    title: "ERP Sur Mesure & Plateformes SaaS en Algérie 2026",
+    subtitle: "Logiciels Personnalisés pour Startups et PME — Pas d'Odoo, Pas de SAP, Votre Logiciel sur Mesure",
+    excerpt: "Symloop développe des ERP sur mesure et plateformes SaaS pour startups et PME algériennes. Contrairement à Odoo ou SAP, nos logiciels sont construits pour votre métier : gestion commerciale, facturation, stocks, RH, production, CRM.",
+    category: "Digital",
+    author: "Symloop Team",
+    date: "2026-04-01",
+    readTime: "16 min",
+    image: "/images/blog/custom-erp-algeria-2026.jpg",
+    featured: true,
+    tags: ["ERP sur mesure algérie", "logiciel gestion entreprise algérie", "SaaS algérie", "alternative Odoo algérie", "ERP PME algérie", "plateforme SaaS startup"],
+    metaTitle: "ERP Sur Mesure & SaaS Algérie 2026 | Alternative Odoo | Symloop",
+    metaDescription: "ERP sur mesure et plateformes SaaS pour startups et PME en Algérie. Alternative à Odoo/SAP. Logiciel adapté à votre métier. Symloop, Sétif.",
+    translations: {
+      en: { title: "Custom ERP & SaaS Platforms Algeria 2026", subtitle: "Custom Software for Startups and SMEs", excerpt: "Custom ERP and SaaS platforms for Algerian startups and SMEs. Unlike Odoo or SAP, our software is built for your specific business." },
+      ar: { title: "نظام ERP مخصص ومنصات SaaS في الجزائر 2026", subtitle: "برمجيات مخصصة للشركات الناشئة والمؤسسات الصغيرة", excerpt: "أنظمة ERP مخصصة ومنصات SaaS للشركات الناشئة والمؤسسات الصغيرة في الجزائر. بديل Odoo وSAP." }
+    }
+  },
+  {
+    id: "105",
+    slug: "intelligence-artificielle-automatisation-business-algerie-2026",
+    title: "Intelligence Artificielle en Algérie 2026 : Multipliez Votre CA par 10, 100 ou 1000",
+    subtitle: "Comment l'IA Transforme les Entreprises Algériennes — Chatbots, Automatisation, Analyse Prédictive",
+    excerpt: "L'intelligence artificielle n'est pas le futur, c'est maintenant. Découvrez comment l'IA peut multiplier le chiffre d'affaires de votre entreprise algérienne par 10, 100 ou même 1000. Chatbots, automatisation, analyse prédictive, IA marketing.",
+    category: "IA",
+    author: "Symloop Team",
+    date: "2026-04-01",
+    readTime: "18 min",
+    image: "/images/blog/ai-business-algeria-2026.jpg",
+    featured: true,
+    tags: ["intelligence artificielle algérie", "IA entreprise algérie", "automatisation IA algérie", "chatbot IA algérie", "IA PME algérie 2026", "machine learning algérie"],
+    metaTitle: "Intelligence Artificielle Algérie 2026 | Multipliez Votre CA x10 x100 x1000 | Symloop",
+    metaDescription: "L'IA peut multiplier votre chiffre d'affaires. Chatbots, automatisation, analyse prédictive. Solutions IA sur mesure pour entreprises algériennes. Symloop.",
+    translations: {
+      en: { title: "AI in Algeria 2026: Multiply Your Revenue by 10, 100 or 1000", subtitle: "How AI Transforms Algerian Businesses", excerpt: "AI is not the future, it's now. Discover how AI can multiply your Algerian business revenue by 10, 100 or even 1000x." },
+      ar: { title: "الذكاء الاصطناعي في الجزائر 2026: ضاعف إيراداتك 10 أو 100 أو 1000 مرة", subtitle: "كيف يحول الذكاء الاصطناعي الشركات الجزائرية", excerpt: "الذكاء الاصطناعي ليس المستقبل، إنه الآن. اكتشف كيف يمكن للذكاء الاصطناعي مضاعفة إيرادات شركتك." }
+    }
+  },
+  {
     id: "104",
     slug: "digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar",
     title: "Comment Digitaliser Votre Entreprise en Algérie et Ne Plus Perdre 1 Dinar",
