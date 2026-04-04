@@ -394,11 +394,11 @@ Allow: /
 # SITEMAPS
 # ============================================
 
-# Primary sitemap index (contains all sitemaps)
-Sitemap: https://symloop.com/sitemapindex.xml
-
-# Individual sitemaps
+# Dynamic sitemap (auto-generated, all pages + hreflang)
 Sitemap: https://symloop.com/sitemap.xml
+
+# Legacy sitemaps (kept for backward compatibility)
+Sitemap: https://symloop.com/sitemapindex.xml
 Sitemap: https://symloop.com/sitemap-multilingual.xml
 Sitemap: https://symloop.com/sitemap-enhanced.xml
 Sitemap: https://symloop.com/sitemap-images.xml
