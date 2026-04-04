@@ -31,6 +31,75 @@ export default function FintechAlgerie() {
             "datePublished": blog?.date
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelles sont les opportunit\u00e9s fintech en Alg\u00e9rie en 2024 ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L\u2019Alg\u00e9rie offre un march\u00e9 fintech \u00e0 fort potentiel : 45 millions d\u2019habitants, seulement 35% de bancarisation, plus de 15 millions de cartes CIB actives, 12 millions de comptes Edahabia et une croissance de +45% des transactions digitales. Les opportunit\u00e9s incluent les portefeuilles \u00e9lectroniques, le mobile banking, les plateformes de transfert et les solutions KYC."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment int\u00e9grer le paiement CIB dans une application fintech en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L\u2019int\u00e9gration du paiement CIB passe par la passerelle SATIM. L\u2019int\u00e9gration technique prend 2 \u00e0 4 semaines, mais l\u2019obtention du contrat TPE virtuel aupr\u00e8s de votre banque peut n\u00e9cessiter 4 \u00e0 8 semaines. Symloop ma\u00eetrise l\u2019API SATIM et assure une int\u00e9gration s\u00e9curis\u00e9e 3D Secure avec des commissions de 1,5% \u00e0 2%."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelles solutions de paiement mobile sont disponibles en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les principales solutions de paiement mobile en Alg\u00e9rie incluent BaridiMob (5M+ utilisateurs), les portefeuilles \u00e9lectroniques avec int\u00e9gration CIB/Edahabia, le paiement QR Code, et les TPE virtuels SATIM. Symloop d\u00e9veloppe des applications de paiement mobile sur mesure int\u00e9grant ces diff\u00e9rentes passerelles."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Pourquoi choisir Symloop pour un projet fintech en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop, bas\u00e9 \u00e0 S\u00e9tif, est sp\u00e9cialis\u00e9 dans le d\u00e9veloppement de solutions fintech conformes aux r\u00e9glementations alg\u00e9riennes. Nous ma\u00eetrisons l\u2019int\u00e9gration CIB/Edahabia/SATIM, les syst\u00e8mes KYC biom\u00e9triques, la d\u00e9tection de fraude par ML, et la conformit\u00e9 Banque d\u2019Alg\u00e9rie et PCI-DSS. Contact : +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la r\u00e9glementation fintech en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Toute solution fintech en Alg\u00e9rie doit obtenir un agr\u00e9ment de la Banque d\u2019Alg\u00e9rie (agr\u00e9ment \u00e9tablissement de paiement), une certification SATIM pour l\u2019int\u00e9gration CIB/Edahabia, \u00eatre conforme \u00e0 la loi 18-07 sur la protection des donn\u00e9es, respecter les proc\u00e9dures anti-blanchiment LCB-FT et le standard PCI-DSS pour les donn\u00e9es bancaires."
+                }
+              }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Solutions Fintech en Alg\u00e9rie 2024", "item": "https://symloop.com/blog/fintech-algerie-solutions-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose.prose-lg"]
+            }
+          })}
+        </script>
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -78,6 +147,18 @@ export default function FintechAlgerie() {
                 Que vous souhaitiez lancer une <strong>application de paiement mobile</strong>, un <strong>portefeuille électronique</strong>,
                 une <strong>plateforme de transfert d'argent</strong> ou une solution de <strong>mobile banking</strong>, notre expertise
                 technique et notre connaissance du cadre réglementaire algérien font de nous le partenaire idéal.
+              </p>
+            </div>
+
+            {/* En bref */}
+            <div className="en-bref-block bg-emerald-50 border border-emerald-200 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-emerald-800 mb-2">En bref</h2>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Symloop d&eacute;veloppe des solutions fintech pour le march&eacute; alg&eacute;rien.
+                Int&eacute;gration paiement CIB/Edahabia, applications de paiement mobile,
+                plateformes de transfert, outils de comptabilit&eacute;. Conforme aux r&eacute;glementations
+                financi&egrave;res alg&eacute;riennes. Bas&eacute; &agrave; S&eacute;tif.
+                Contact&nbsp;: <a href="tel:+213549575512" className="text-emerald-700 underline font-medium">+213 549 575 512</a>.
               </p>
             </div>
 
@@ -431,6 +512,25 @@ export default function FintechAlgerie() {
               </div>
             </section>
 
+            {/* Cross-links */}
+            <nav className="mb-12 bg-gray-50 rounded-2xl p-6" aria-label="Articles similaires">
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Lectures recommand&eacute;es</h2>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/blog/ecommerce-algerie-paiement-cib-edahabia-2024" className="flex items-center gap-3 text-emerald-700 hover:text-emerald-900 font-medium transition-colors">
+                    <CreditCard className="w-5 h-5 flex-shrink-0" />
+                    E-commerce Alg&eacute;rie &mdash; Int&eacute;gration Paiement CIB &amp; Edahabia 2024
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/developpement-application-mobile-algerie-2026" className="flex items-center gap-3 text-emerald-700 hover:text-emerald-900 font-medium transition-colors">
+                    <Smartphone className="w-5 h-5 flex-shrink-0" />
+                    D&eacute;veloppement Application Mobile en Alg&eacute;rie 2026
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+
             {/* Tags */}
             <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-100">
               {["Fintech Algérie", "Paiement Mobile", "CIB", "Edahabia", "SATIM", "Mobile Banking", "E-Wallet", "KYC", "Startup Fintech", "Finance Digitale"].map((tag, i) => (
@@ -466,7 +566,7 @@ export default function FintechAlgerie() {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { title: "E-commerce & Paiement CIB", slug: "ecommerce-algerie-paiement-cib-edahabia-2024", desc: "Guide intégration paiement en ligne" },
-                { title: "Développement Application Mobile", slug: "developpement-application-mobile-algerie-2024", desc: "Guide complet développement mobile" },
+                { title: "Développement Application Mobile", slug: "developpement-application-mobile-algerie-2026", desc: "Guide complet développement mobile" },
                 { title: "Cybersécurité en Algérie", slug: "cybersecurite-algerie-2024", desc: "Protégez votre entreprise" }
               ].map((article, i) => (
                 <Link key={i} href={`/blog/${article.slug}`} className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">

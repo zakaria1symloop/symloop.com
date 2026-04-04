@@ -27,20 +27,51 @@ export default function LogicielRHAlgerie() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Combien coûte un logiciel RH en Algérie ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Nos solutions SIRH démarrent à partir de 150 000 DA pour les TPE (1-10 employés). Contactez-nous pour un devis personnalisé adapté à votre effectif et vos besoins spécifiques." }
+        "name": "Quel est le meilleur SIRH pour les entreprises en Algérie ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le meilleur SIRH en Algérie est celui qui intègre nativement les règles CNAS (9% salarié, 26% employeur), CASNOS, IRG selon le barème fiscal algérien, et qui génère les déclarations sociales conformes. Symloop propose un SIRH 100% adapté au droit du travail algérien, avec interface français/arabe, déployé en 2 à 4 semaines." }
       },
       {
         "@type": "Question",
-        "name": "Le logiciel est-il conforme à la législation algérienne ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Oui, notre SIRH est 100% conforme : calcul CNAS (9%/26%), CASNOS, IRG selon barème fiscal, déclarations sociales automatiques, bulletins de paie légaux." }
+        "name": "Combien coûte un logiciel RH et paie en Algérie ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Un logiciel RH en Algérie coûte à partir de 150 000 DA pour les TPE (1-20 employés) et à partir de 450 000 DA pour les PME (21-100 employés). Les grandes entreprises (100+ employés) bénéficient de tarifs sur mesure. C'est en moyenne 40% moins cher que les solutions étrangères comme SAP ou Sage RH." }
       },
       {
         "@type": "Question",
-        "name": "Combien de temps pour déployer le logiciel RH ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Le déploiement prend 2-4 semaines pour une PME standard : installation, configuration, import données, formation équipe. Support inclus pendant 3 mois." }
+        "name": "Comment Symloop gère-t-il la paie et les déclarations sociales en Algérie ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Symloop automatise le calcul de la paie conforme à la législation algérienne : cotisations CNAS employeur (26%) et salarié (9%), CASNOS pour indépendants et gérants (15%), IRG selon le barème fiscal en vigueur. Le logiciel génère les bulletins de paie, les déclarations sociales trimestrielles et annuelles, et les virements bancaires. Basé à Sétif, Symloop assure un support local réactif." }
+      },
+      {
+        "@type": "Question",
+        "name": "Le logiciel RH Symloop est-il conforme au droit du travail algérien ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, le SIRH Symloop est 100% conforme au code du travail algérien et à la réglementation sociale. Il applique automatiquement : les taux CNAS/CASNOS en vigueur, le barème IRG, les règles de congés payés (2,5 jours/mois), les majorations d'heures supplémentaires (50% et 100%), et les indemnités légales. Les mises à jour réglementaires sont incluses." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelles fonctionnalités de paie sont incluses dans le logiciel RH algérien ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le logiciel RH Symloop inclut : calcul automatique des salaires brut/net, gestion des primes et indemnités, retenues CNAS et IRG, déclarations CASNOS, génération des bulletins de paie personnalisables, virements bancaires automatisés, gestion des heures supplémentaires, calcul des congés payés, et export comptable. Toutes les fonctionnalités sont conformes à la législation algérienne." }
       }
     ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Logiciel RH et Paie Algérie", "item": "https://symloop.com/blog/logiciel-rh-algerie-2024" }
+    ]
+  };
+
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Logiciel RH et Paie Algérie 2024 - SIRH Conforme CNAS/CASNOS",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".en-bref-block", "h1", ".prose"]
+    },
+    "url": "https://symloop.com/blog/logiciel-rh-algerie-2024"
   };
 
   return (
@@ -57,6 +88,8 @@ export default function LogicielRHAlgerie() {
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(speakableSchema)}</script>
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -115,6 +148,17 @@ export default function LogicielRHAlgerie() {
                 <strong> Contactez-nous pour un devis personnalisé gratuit.</strong>
               </p>
             </div>
+
+            {/* En bref */}
+            <section className="en-bref-block mb-12 bg-blue-50 border-l-4 border-blue-500 rounded-xl p-6">
+              <h2 className="text-lg font-bold text-blue-900 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop developpe des logiciels RH et paie sur mesure pour les entreprises algeriennes.
+                Gestion employes, pointage, conges, bulletins de paie, declarations CNAS/CASNOS.
+                Conforme au droit du travail algerien. Interface FR/AR. Base a Setif.
+                Contact&nbsp;: <a href="tel:+213549575512" className="text-blue-600 font-semibold hover:underline">+213 549 575 512</a>.
+              </p>
+            </section>
 
             {/* Offre spéciale */}
             <section className="mb-16 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-8">
@@ -450,7 +494,9 @@ export default function LogicielRHAlgerie() {
                 {[
                   { title: "Logiciel CRM Algérie", href: "/blog/logiciel-crm-algerie-2024", icon: Users },
                   { title: "Logiciel Comptabilité", href: "/blog/logiciel-comptabilite-algerie-2024", icon: DollarSign },
-                  { title: "ERP sur Mesure", href: "/blog/logiciel-erp-algerie-2024", icon: Database }
+                  { title: "ERP sur Mesure", href: "/blog/logiciel-erp-algerie-2024", icon: Database },
+                  { title: "ERP sur Mesure & SaaS pour PME/Startup", href: "/blog/erp-sur-mesure-saas-startup-pme-algerie-2026", icon: Settings },
+                  { title: "Solutions Informatiques en Algerie", href: "/blog/solutions-informatiques-algerie-2026", icon: Globe }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors">
                     <article.icon className="w-5 h-5 text-blue-600" />

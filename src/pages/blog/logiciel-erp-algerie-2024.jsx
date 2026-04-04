@@ -40,6 +40,80 @@ export default function LogicielERPAlgerie() {
             "mainEntityOfPage": "https://symloop.com/blog/logiciel-erp-algerie-2024"
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel est le meilleur ERP pour une entreprise en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le meilleur ERP dépend de votre taille et budget. Odoo est recommandé pour les PME (gratuit en Community), Sage 100 domine la comptabilité algérienne, et SAP convient aux grands groupes. Un ERP sur mesure développé par Symloop offre la meilleure adéquation métier sans coûts de licence récurrents."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien coûte un ERP en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les prix varient selon la solution : Odoo Community à partir de 400 000 DA (implémentation incluse), Sage 100 entre 900 000 et 2,5 millions DA, SAP Business One à partir de 5 millions DA. Un ERP sur mesure Symloop démarre à 800 000 DA avec zéro frais de licence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Odoo ou ERP sur mesure : lequel choisir en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Odoo est modulaire et rapide à déployer, mais les personnalisations complexes deviennent coûteuses. Un ERP sur mesure, comme ceux développés par Symloop, est conçu exactement pour vos processus métier, conforme à la fiscalité algérienne (SCF, G50, TVA), sans licence annuelle et avec un support local en français et arabe."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Pourquoi choisir Symloop pour un ERP en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop, basé à Sétif, développe des ERP sur mesure avec des technologies modernes (React, Node.js, cloud). Nos logiciels couvrent la gestion commerciale, stocks, facturation, RH et production, 100% conformes à la réglementation fiscale algérienne. Support local, pas de licence récurrente, et accompagnement complet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps faut-il pour implémenter un ERP en Algérie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L'implémentation prend généralement 2 à 4 mois pour une PME : audit des besoins (1-2 semaines), choix et paramétrage (3-5 semaines), migration des données (1-2 semaines), formation (1-2 semaines) et déploiement. Les projets complexes ou multi-sites peuvent nécessiter 6 à 12 mois."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Logiciel ERP Algérie 2024", "item": "https://symloop.com/blog/logiciel-erp-algerie-2024" }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Logiciel ERP Algérie 2024 - Comparatif & Prix",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "article h1", "article h2"]
+            },
+            "url": "https://symloop.com/blog/logiciel-erp-algerie-2024"
+          })}
+        </script>
       </Head>
 
       <div className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`}>
@@ -96,6 +170,24 @@ export default function LogicielERPAlgerie() {
                 système nerveux de votre entreprise. Il centralise la gestion comptable, commerciale, RH et
                 production. En Algérie, choisir le bon ERP adapté à la <span className="text-red-600 font-semibold">réglementation fiscale locale</span> est crucial.
               </p>
+            </div>
+
+            {/* En bref */}
+            <div className="en-bref-block bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-2xl p-8 mb-12 border-l-4 border-red-500">
+              <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
+                <span className="text-red-400">En bref</span>
+              </h2>
+              <p className="text-gray-200 leading-relaxed">
+                Symloop développe des ERP sur mesure pour les entreprises algériennes. Alternative à Odoo et SAP, nos logiciels sont construits pour votre métier. Gestion commerciale, stocks, facturation, RH, production. Technologie moderne. Basé à Sétif. Contact : <a href="tel:+213549575512" className="text-red-400 font-semibold hover:text-red-300">+213 549 575 512</a>.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-4">
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="text-sm bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors">
+                  ERP sur mesure vs SaaS pour PME
+                </Link>
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="text-sm bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors">
+                  Digitaliser votre entreprise en Algérie
+                </Link>
+              </div>
             </div>
 
             {/* Stats Box */}
@@ -468,6 +560,23 @@ export default function LogicielERPAlgerie() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="group block bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 hover:border-red-400 hover:shadow-md transition-all">
+                  <span className="text-xs font-medium text-red-600 mb-2 block">ERP & SaaS</span>
+                  <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-2">ERP Sur Mesure vs SaaS : Le Guide pour les PME et Startups en Algérie</h3>
+                  <p className="text-gray-500 text-sm">Découvrez quelle approche ERP convient le mieux à votre entreprise algérienne : solution sur mesure ou SaaS.</p>
+                </Link>
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="group block bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all">
+                  <span className="text-xs font-medium text-green-600 mb-2 block">Digitalisation</span>
+                  <h3 className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors mb-2">Ne Perdez Plus 1 Dinar : Digitalisez Votre Entreprise en Algérie</h3>
+                  <p className="text-gray-500 text-sm">Pourquoi la digitalisation est indispensable pour les entreprises algériennes et comment s'y prendre.</p>
+                </Link>
               </div>
             </section>
 

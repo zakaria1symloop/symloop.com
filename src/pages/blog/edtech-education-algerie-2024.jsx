@@ -65,6 +65,49 @@ export default function EdtechAlgerie() {
         "serviceType": "Développement Plateforme E-Learning",
         "provider": { "@type": "Organization", "name": "Symloop", "telephone": "+213549575512" },
         "areaServed": ["DZ", "TN", "MA", "MENA"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "EdTech et E-Learning en Algérie 2024", "item": "https://symloop.com/blog/edtech-education-algerie-2024" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".en-bref-block", ".faq-section"]
+      },
+      {
+        "@type": "FAQPage",
+        "name": "FAQ EdTech Algérie",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quelle est la meilleure plateforme e-learning en Algérie ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Symloop développe des plateformes e-learning sur mesure pour le marché algérien. Nos solutions LMS incluent classes virtuelles, quiz interactifs, certifications, application mobile et support multilingue (français, arabe, anglais). Nous adaptons chaque plateforme au programme éducatif algérien et aux besoins spécifiques de chaque institution." }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien coûte une solution edtech en Algérie ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Une plateforme e-learning basique démarre à 80 000 DA (LMS avec cours, quiz et certificats pour 500 utilisateurs). La solution Pro avec classes virtuelles et application mobile est à partir de 180 000 DA. Les projets universités et grandes écoles sont sur devis personnalisé. Hébergement et support inclus." }
+          },
+          {
+            "@type": "Question",
+            "name": "Existe-t-il un logiciel de gestion scolaire adapté aux écoles algériennes ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop propose des solutions de gestion scolaire complètes pour les écoles algériennes : gestion des notes et bulletins, emplois du temps, suivi des absences, communication avec les parents via portail dédié, inscriptions en ligne. Le tout compatible avec le système éducatif algérien et disponible en français et arabe." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels services edtech propose Symloop en Algérie ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Symloop propose une gamme complète de solutions edtech : plateformes LMS sur mesure, classes virtuelles en direct, applications mobiles éducatives iOS et Android, systèmes d'examens numériques sécurisés, portails parents, gestion scolaire, certifications en ligne, et intégration de paiements CIB/Dahabia. Basé à Sétif, Symloop accompagne écoles, universités et centres de formation à travers toute l'Algérie." }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment fonctionne l'enseignement à distance en Algérie ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "L'enseignement à distance en Algérie fonctionne via des plateformes e-learning qui permettent aux enseignants de diffuser des cours en vidéo, organiser des classes virtuelles en direct, créer des quiz et examens en ligne, et suivre la progression des élèves. Les plateformes développées par Symloop sont optimisées pour les connexions internet algériennes avec mode hors-ligne et économie de données sur mobile." }
+          }
+        ]
       }
     ]
   };
@@ -255,6 +298,17 @@ export default function EdtechAlgerie() {
               </p>
             </div>
 
+            {/* En bref */}
+            <div className="en-bref-block bg-indigo-50 border-l-4 border-indigo-500 rounded-xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-indigo-900 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop développe des solutions edtech et e-learning pour le secteur éducatif algérien.
+                Plateformes d'apprentissage en ligne, gestion scolaire, examens numériques, portail parents.
+                Compatible avec le programme éducatif algérien. Basé à Sétif.
+                Contact&nbsp;: <a href="tel:+213549575512" className="text-indigo-600 font-semibold hover:underline">+213 549 575 512</a>.
+              </p>
+            </div>
+
             {/* Audiences */}
             <section className="mb-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
@@ -390,7 +444,7 @@ export default function EdtechAlgerie() {
             </section>
 
             {/* FAQ */}
-            <section className="mb-16">
+            <section className="faq-section mb-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                 <MessageCircle className="w-6 h-6 text-indigo-600" />
                 Questions Fréquentes - EdTech
@@ -430,10 +484,10 @@ export default function EdtechAlgerie() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { title: "Logiciel de Gestion Scolaire en Algérie 2026", href: "/blog/logiciel-ecole-gestion-scolaire-algerie-2026" },
+                  { title: "Solutions Informatiques en Algérie 2026", href: "/blog/solutions-informatiques-algerie-2026" },
                   { title: "Développement Application Mobile", href: "/blog/developpement-mobile-algerie-2024" },
-                  { title: "SaaS et Abonnement", href: "/blog/saas-developpement-algerie-2024" },
-                  { title: "Développement Web Algérie", href: "/blog/developpement-web-algerie-2024" },
-                  { title: "Marketing Digital Algérie", href: "/blog/marketing-digital-algerie-2024" }
+                  { title: "SaaS et Abonnement", href: "/blog/saas-developpement-algerie-2024" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-indigo-50 transition-colors group">
                     <span className="font-medium text-gray-900 group-hover:text-indigo-600">{article.title}</span>
