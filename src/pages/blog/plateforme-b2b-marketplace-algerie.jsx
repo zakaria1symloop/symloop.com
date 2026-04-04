@@ -14,63 +14,66 @@ export default function MarketplaceB2BAlgerie() {
   const faqItems = [
     {
       question: "Qu'est-ce qu'une marketplace B2B exactement ?",
-      answer: "Une marketplace B2B est une plateforme en ligne où plusieurs vendeurs professionnels peuvent proposer leurs produits/services à d'autres entreprises. Vous gérez la plateforme, prenez une commission sur chaque vente, et les vendeurs s'occupent de leurs stocks et livraisons. C'est le modèle d'Amazon ou Alibaba appliqué au B2B."
+      answer: "Une marketplace B2B est une plateforme en ligne où plusieurs vendeurs professionnels proposent leurs produits/services à d'autres entreprises. Symloop développe ces plateformes sur mesure pour le marché algérien. Contactez-nous au +213 549 575 512 pour en discuter."
     },
     {
       question: "Combien coûte le développement d'une marketplace ?",
-      answer: "Une marketplace B2B sur mesure démarre à partir de 1 500 000 DA pour une version basique (10-20 vendeurs). Pour une plateforme complète avec toutes les fonctionnalités avancées, comptez 3-5 millions DA. Nous proposons aussi des solutions en marque blanche plus économiques. Contactez-nous pour un devis adapté à votre projet."
+      answer: "Chez Symloop, une marketplace B2B sur mesure démarre à partir de 250 000 DA pour un MVP. Pour une plateforme complète, les tarifs sont sur devis. Nous proposons aussi des solutions en marque blanche plus économiques. Contactez-nous au +213 549 575 512 pour un devis adapté."
     },
     {
       question: "Quels moyens de paiement intégrez-vous ?",
-      answer: "Nous intégrons tous les moyens de paiement algériens : CIB, Edahabia, virement bancaire, paiement à la livraison. Pour l'international, nous pouvons ajouter PayPal, Stripe, et paiements par lettre de crédit pour les gros montants B2B."
-    },
-    {
-      question: "Comment gérez-vous les commissions vendeurs ?",
-      answer: "Notre système calcule automatiquement les commissions (fixe, pourcentage, ou mixte) sur chaque vente. Le paiement des vendeurs peut être automatique (après période de rétractation) ou manuel. Vous avez un tableau de bord complet pour suivre toutes les transactions."
+      answer: "Symloop intègre tous les moyens de paiement algériens : CIB, Edahabia, virement bancaire, paiement à la livraison. Pour l'international, nous ajoutons PayPal, Stripe, et paiements par lettre de crédit. Appelez le +213 549 575 512 pour une démo."
     },
     {
       question: "Combien de temps pour lancer une marketplace ?",
-      answer: "Une marketplace en marque blanche peut être lancée en 4-6 semaines. Pour un développement sur mesure complet, comptez 3-5 mois selon la complexité. Nous procédons par phases : MVP d'abord, puis évolutions selon vos retours et ceux des vendeurs."
+      answer: "Avec Symloop, une marketplace en marque blanche peut être lancée en 4-6 semaines. Un développement sur mesure complet prend 3-5 mois. Nous procédons par phases : MVP d'abord, puis évolutions. Basé à Sétif, contactez-nous au +213 549 575 512."
     },
     {
       question: "Qui gère la logistique et les livraisons ?",
-      answer: "Dans un modèle marketplace, chaque vendeur gère sa propre logistique. Nous pouvons cependant intégrer des partenaires logistiques (Yalidine, Express Algérie, etc.) pour faciliter les livraisons et le suivi. Vous pouvez aussi proposer un service de fulfillment centralisé."
+      answer: "Dans un modèle marketplace, chaque vendeur gère sa propre logistique. Symloop intègre des partenaires logistiques (Yalidine, Express Algérie, etc.) pour faciliter les livraisons et le suivi. Contactez-nous au +213 549 575 512 pour discuter de votre projet."
     }
   ];
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Plateforme B2B Marketplace Algérie - Création Sur Mesure",
-    "description": "Créez votre marketplace B2B en Algérie. Plateforme multi-vendeurs avec gestion commandes, paiements CIB/Edahabia, et commissions automatiques.",
-    "author": {
-      "@type": "Organization",
-      "name": "Symloop",
-      "url": "https://symloop.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Symloop",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://symloop.com/logo.png"
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Plateforme B2B Marketplace Algérie - Création Sur Mesure",
+        "description": "Créez votre marketplace B2B en Algérie. Plateforme multi-vendeurs avec gestion commandes, paiements CIB/Edahabia, et commissions automatiques.",
+        "author": { "@type": "Organization", "name": "Symloop", "url": "https://symloop.com" },
+        "publisher": { "@type": "Organization", "name": "Symloop", "logo": { "@type": "ImageObject", "url": "https://symloop.com/logo.png" } },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-12-01",
+        "mainEntityOfPage": "https://symloop.com/blog/plateforme-b2b-marketplace-algerie"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": { "@type": "Answer", "text": item.answer }
+        }))
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Développement Marketplace B2B",
+        "provider": { "@type": "Organization", "name": "Symloop", "telephone": "+213549575512" },
+        "areaServed": ["DZ", "TN", "MA", "MENA"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Plateforme B2B Marketplace Algérie", "item": "https://symloop.com/blog/plateforme-b2b-marketplace-algerie" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".en-bref-block", "h1", "meta[name='description']"]
       }
-    },
-    "datePublished": "2024-01-15",
-    "dateModified": "2024-12-01"
-  };
-
-  const faqStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
+    ]
   };
 
   return (
@@ -87,7 +90,6 @@ export default function MarketplaceB2BAlgerie() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -135,6 +137,16 @@ export default function MarketplaceB2BAlgerie() {
               <span className="font-semibold">Offre Lancement : -20% sur le développement + 3 mois support OFFERTS</span>
               <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Jusqu'au 31 Janvier 2025</span>
             </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-gray-50 border-l-4 border-purple-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-purple-600 mb-2">En bref</p>
+            <p className="text-gray-700 leading-relaxed">
+              Symloop developpe des plateformes B2B et marketplaces pour le marche algerien. Multi-vendeurs, paiement securise, gestion commandes, logistique integree. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -450,8 +462,8 @@ export default function MarketplaceB2BAlgerie() {
               <h2 className="text-xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "E-commerce Algérie", href: "/blog/developpement-ecommerce-algerie-2024", desc: "Boutique en ligne classique" },
-                  { title: "Application Mobile", href: "/blog/developpement-application-mobile-algerie", desc: "Apps iOS & Android" }
+                  { title: "E-commerce Algérie : Paiement CIB & Edahabia", href: "/blog/ecommerce-algerie-paiement-cib-edahabia-2024", desc: "Boutique en ligne avec paiement local" },
+                  { title: "ERP Sur Mesure & SaaS pour PME Algérie 2026", href: "/blog/erp-sur-mesure-saas-startup-pme-algerie-2026", desc: "Solutions ERP et SaaS" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="group p-4 bg-gray-50 rounded-xl hover:bg-purple-50 transition-colors">
                     <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 mb-1">{article.title}</h3>

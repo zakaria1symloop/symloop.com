@@ -14,27 +14,23 @@ export default function LogistiqueAlgerie() {
   const faqs = [
     {
       question: "Combien coûte une solution de tracking GPS pour ma flotte ?",
-      answer: "Une solution de tracking basique pour 10 véhicules démarre à 60 000 DA. Une plateforme TMS complète avec optimisation de tournées à partir de 150 000 DA. Les solutions enterprise avec WMS et intégrations sont sur devis."
+      answer: "Chez Symloop, une solution de tracking basique pour 10 véhicules démarre à 60 000 DA. Une plateforme TMS complète avec optimisation de tournées à partir de 150 000 DA. Contactez-nous au +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "Le tracking fonctionne-t-il dans toute l'Algérie ?",
-      answer: "Oui, nos solutions utilisent le réseau GSM algérien (2G/3G/4G) et les satellites GPS. Couverture nationale complète, y compris les zones rurales et les wilayas du Sud."
+      answer: "Oui, les solutions Symloop utilisent le réseau GSM algérien (2G/3G/4G) et les satellites GPS. Couverture nationale complète, y compris les zones rurales et les wilayas du Sud. Appelez le +213 549 575 512 pour en savoir plus."
     },
     {
       question: "Peut-on intégrer la solution avec notre e-commerce ?",
-      answer: "Absolument. Nous intégrons avec toutes les plateformes e-commerce (WooCommerce, Shopify, PrestaShop, custom). Les commandes arrivent automatiquement dans le TMS pour expédition."
-    },
-    {
-      question: "Les clients peuvent-ils suivre leur livraison ?",
-      answer: "Oui, chaque client reçoit un lien de tracking par SMS/email. Ils voient la position en temps réel du livreur et l'heure estimée d'arrivée. Notifications à chaque étape."
+      answer: "Absolument. Symloop intègre avec toutes les plateformes e-commerce (WooCommerce, Shopify, PrestaShop, custom). Les commandes arrivent automatiquement dans le TMS pour expédition. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Comment fonctionne l'optimisation des tournées ?",
-      answer: "Notre algorithme analyse les adresses de livraison, la capacité des véhicules, les plages horaires, et le trafic pour calculer les routes optimales. Gain moyen de 25% sur les kilomètres parcourus."
+      answer: "L'algorithme de Symloop analyse les adresses de livraison, la capacité des véhicules, les plages horaires, et le trafic pour calculer les routes optimales. Gain moyen de 25% sur les kilomètres parcourus. Appelez le +213 549 575 512 pour une démo."
     },
     {
-      question: "Proposez-vous une app pour les chauffeurs ?",
-      answer: "Oui, l'application mobile chauffeur (Android/iOS) permet de voir les livraisons, naviguer vers les adresses, capturer les signatures et photos, signaler les problèmes, et communiquer avec le dispatch."
+      question: "Quel est le délai de mise en place d'un TMS ?",
+      answer: "Symloop déploie un système de tracking basique en 2 à 4 semaines. Un TMS complet avec optimisation de tournées prend 6 à 10 semaines. Basé à Sétif, contactez-nous au +213 549 575 512 pour planifier votre projet logistique."
     }
   ];
 
@@ -65,6 +61,18 @@ export default function LogistiqueAlgerie() {
         "serviceType": "Solutions Logistique et Transport",
         "provider": { "@type": "Organization", "name": "Symloop", "telephone": "+213549575512" },
         "areaServed": ["DZ", "TN", "MA", "MENA"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Logistique Transport Algérie 2024", "item": "https://symloop.com/blog/logistique-transport-algerie-2024" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".en-bref-block", "h1", "meta[name='description']"]
       }
     ]
   };
@@ -239,6 +247,16 @@ export default function LogistiqueAlgerie() {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-gray-50 border-l-4 border-amber-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-amber-600 mb-2">En bref</p>
+            <p className="text-gray-700 leading-relaxed">
+              Symloop developpe des solutions digitales pour la logistique et le transport en Algerie. Suivi GPS, optimisation itineraires, gestion flotte, preuve de livraison. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -429,10 +447,10 @@ export default function LogistiqueAlgerie() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { title: "Logiciel Gestion Livraison & Distribution Algérie 2026", href: "/blog/logiciel-gestion-livraison-distribution-algerie-2026" },
+                  { title: "IoT & Internet des Objets Algérie 2026", href: "/blog/iot-internet-des-objets-algerie-2026" },
                   { title: "Application Restaurant Livraison", href: "/blog/application-restaurant-livraison-algerie" },
-                  { title: "E-commerce en Algérie", href: "/blog/ecommerce-algerie-2024" },
-                  { title: "Développement Mobile Algérie", href: "/blog/developpement-mobile-algerie-2024" },
-                  { title: "DevOps et Cloud", href: "/blog/devops-deployment-algerie-2024" }
+                  { title: "E-commerce en Algérie", href: "/blog/ecommerce-algerie-2024" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-amber-50 transition-colors group">
                     <span className="font-medium text-gray-900 group-hover:text-amber-600">{article.title}</span>

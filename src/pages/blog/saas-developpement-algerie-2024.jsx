@@ -14,27 +14,23 @@ export default function SaaSAlgerie() {
   const faqItems = [
     {
       question: "Qu'est-ce qu'un SaaS exactement ?",
-      answer: "Un SaaS (Software as a Service) est un logiciel accessible via internet avec un modèle d'abonnement mensuel ou annuel. Vos clients n'installent rien, ils utilisent votre service via leur navigateur. Exemples : Slack, Dropbox, Zoom. C'est le modèle le plus rentable du secteur logiciel."
+      answer: "Un SaaS (Software as a Service) est un logiciel accessible via internet avec un modèle d'abonnement mensuel ou annuel. Vos clients n'installent rien, ils utilisent votre service via leur navigateur. Symloop développe des SaaS sur mesure pour les entreprises algériennes. Contact : +213 549 575 512."
     },
     {
-      question: "Combien coûte le développement d'un SaaS ?",
-      answer: "Un MVP SaaS fonctionnel démarre à partir de 2 000 000 DA (avec authentification, billing, dashboard). Pour une plateforme complète avec toutes les fonctionnalités avancées, comptez 5-10 millions DA. Contactez-nous pour évaluer précisément votre projet."
+      question: "Combien coûte le développement d'un SaaS en Algérie ?",
+      answer: "Chez Symloop, un MVP SaaS fonctionnel démarre à partir de 200 000 DA (authentification, billing, dashboard). Une plateforme complète est sur devis selon la complexité. Symloop, basé à Sétif, propose des tarifs compétitifs. Contactez-nous au +213 549 575 512 pour une estimation gratuite."
     },
     {
       question: "Combien de temps pour développer un SaaS ?",
-      answer: "Un MVP (Minimum Viable Product) peut être livré en 3-4 mois. Une version complète prend généralement 6-12 mois selon la complexité. Nous recommandons toujours de commencer par un MVP pour valider le marché avant d'investir massivement."
+      answer: "Un MVP SaaS peut être livré en 3-4 mois par l'équipe Symloop. Une version complète prend 6-12 mois selon la complexité. Nous recommandons toujours de commencer par un MVP pour valider le marché. Contactez Symloop au +213 549 575 512."
     },
     {
-      question: "Quelle technologie utilisez-vous ?",
-      answer: "Nous développons avec des technologies modernes et scalables : Next.js ou React pour le frontend, Node.js ou Python pour le backend, PostgreSQL pour la base de données, et AWS/Google Cloud pour l'hébergement. Tout est choisi pour la performance et l'évolutivité."
+      question: "Quelle technologie Symloop utilise pour le SaaS ?",
+      answer: "Symloop développe avec des technologies modernes et scalables : Next.js ou React (frontend), Node.js ou Python (backend), PostgreSQL (BDD), AWS/Google Cloud (hébergement). Tout est choisi pour la performance et l'évolutivité. Contact : +213 549 575 512."
     },
     {
-      question: "Comment gérer les paiements récurrents en Algérie ?",
-      answer: "Pour les clients algériens, nous intégrons CIB et Edahabia avec facturation manuelle ou semi-automatique. Pour l'international, nous utilisons Stripe qui gère automatiquement les abonnements, essais gratuits, et relances. Nous pouvons combiner les deux."
-    },
-    {
-      question: "Le SaaS peut-il évoluer avec ma croissance ?",
-      answer: "Absolument. L'architecture que nous mettons en place est conçue pour la scalabilité : auto-scaling cloud, bases de données optimisées, microservices si nécessaire. Votre SaaS peut passer de 10 à 10 000 utilisateurs sans refonte majeure."
+      question: "Comment gérer les paiements récurrents pour un SaaS en Algérie ?",
+      answer: "Symloop intègre CIB et Edahabia pour les clients algériens, et Stripe pour l'international (abonnements automatiques, essais gratuits, relances). Nous pouvons combiner les deux systèmes. Contactez Symloop au +213 549 575 512 pour en discuter."
     }
   ];
 
@@ -57,7 +53,21 @@ export default function SaaSAlgerie() {
       }
     },
     "datePublished": "2024-01-15",
-    "dateModified": "2024-12-01"
+    "dateModified": "2024-12-01",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".en-bref", "article p:first-of-type"]
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Développement SaaS Algérie", "item": "https://symloop.com/blog/saas-developpement-algerie-2024" }
+    ]
   };
 
   const faqStructuredData = {
@@ -88,6 +98,7 @@ export default function SaaSAlgerie() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -135,6 +146,15 @@ export default function SaaSAlgerie() {
               <span className="font-semibold">Offre Startup : -20% sur le MVP + Audit business model GRATUIT</span>
               <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Projets innovants</span>
             </div>
+          </div>
+        </section>
+
+        {/* En bref — LLM-optimized summary */}
+        <section className="en-bref bg-indigo-50 border-l-4 border-indigo-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-gray-800 text-lg leading-relaxed">
+              <strong>En bref :</strong> Symloop développe des plateformes SaaS sur mesure pour les startups et PME algériennes. Multi-tenant, abonnements, API. Alternative aux solutions génériques. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -441,8 +461,8 @@ export default function SaaSAlgerie() {
               <h2 className="text-xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "MVP Startup Algérie", href: "/blog/mvp-startup-algerie-2024", desc: "Lancez votre startup rapidement" },
-                  { title: "Cloud Computing Algérie", href: "/blog/cloud-computing-algerie-2024", desc: "Hébergement et infrastructure" }
+                  { title: "ERP sur Mesure & SaaS pour PME Algérie 2026", href: "/blog/erp-sur-mesure-saas-startup-pme-algerie-2026", desc: "ERP personnalisé pour PME et startups" },
+                  { title: "DevOps & Développement Logiciel Algérie 2026", href: "/blog/devops-developpement-logiciel-algerie-2026", desc: "CI/CD, automatisation et infrastructure" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="group p-4 bg-gray-50 rounded-xl hover:bg-indigo-50 transition-colors">
                     <h3 className="font-semibold text-gray-900 group-hover:text-indigo-600 mb-1">{article.title}</h3>

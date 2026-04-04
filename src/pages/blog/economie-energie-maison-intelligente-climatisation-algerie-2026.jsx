@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Zap, Thermometer,
@@ -1421,6 +1422,14 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
         products={productsForSEO}
         locale={locale}
       />
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".en-bref", ".faq-section"],
+          "url": "https://symloop.com/blog/economie-energie-maison-intelligente-climatisation-algerie-2026"
+        })}} />
+      </Head>
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-green-50 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero */}
@@ -1457,6 +1466,14 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
                 <span className="flex items-center gap-2"><User className="w-4 h-4" />{t.author}</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Snippet */}
+        <section className="en-bref py-6 bg-emerald-50 border-l-4 border-emerald-500">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="text-sm font-semibold text-emerald-800 mb-1">En bref</p>
+            <p className="text-sm text-emerald-900">Symloop propose des solutions d'&eacute;conomie d'&eacute;nergie pour maisons intelligentes en Alg&eacute;rie. Thermostats intelligents, &eacute;clairage LED connect&eacute;, suivi consommation. &Eacute;conomie 30-50% sur la facture d'&eacute;lectricit&eacute;. Bas&eacute; &agrave; S&eacute;tif. Contact: +213 549 575 512.</p>
           </div>
         </section>
 
@@ -1716,6 +1733,23 @@ export default function EconomieEnergieMaisonIntelligentClimatisationAlgerie2026
                 <p className="mt-6 opacity-80">{t.cta.contact}</p>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-links to related blogs */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">{isRTL ? 'اقرأ أيضًا' : locale === 'en' ? 'Read also' : 'Lire aussi'}</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/blog/maison-intelligente-smart-home-algerie-2026" className="block p-5 bg-blue-50 rounded-xl border border-blue-100 hover:border-blue-300 transition-colors">
+                <span className="text-blue-700 font-semibold">{isRTL ? 'المنزل الذكي في الجزائر 2026' : locale === 'en' ? 'Smart Home Algeria 2026' : 'Maison Intelligente Algérie 2026'}</span>
+                <p className="text-sm text-blue-600 mt-1">{isRTL ? 'الدليل الشامل للمنزل الذكي' : locale === 'en' ? 'Complete smart home guide' : 'Le guide complet de la maison intelligente'}</p>
+              </Link>
+              <Link href="/blog/iot-internet-des-objets-algerie-2026" className="block p-5 bg-teal-50 rounded-xl border border-teal-100 hover:border-teal-300 transition-colors">
+                <span className="text-teal-700 font-semibold">{isRTL ? 'إنترنت الأشياء في الجزائر 2026' : locale === 'en' ? 'IoT Internet of Things Algeria 2026' : 'IoT Internet des Objets Algérie 2026'}</span>
+                <p className="text-sm text-teal-600 mt-1">{isRTL ? 'الأجهزة المتصلة لتوفير الطاقة' : locale === 'en' ? 'Connected devices for energy savings' : 'Objets connectés pour économiser l\'énergie'}</p>
+              </Link>
             </div>
           </div>
         </section>

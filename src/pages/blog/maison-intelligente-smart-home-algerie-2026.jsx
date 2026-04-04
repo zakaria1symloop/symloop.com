@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Tag, Share2,
@@ -1683,6 +1684,14 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
         products={productsForSEO}
         locale={locale}
       />
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".en-bref", ".faq-section"],
+          "url": "https://symloop.com/blog/maison-intelligente-smart-home-algerie-2026"
+        })}} />
+      </Head>
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
@@ -1733,6 +1742,14 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
                 </span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Snippet */}
+        <section className="en-bref py-6 bg-green-50 border-l-4 border-green-500">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="text-sm font-semibold text-green-800 mb-1">En bref</p>
+            <p className="text-sm text-green-900">Symloop propose des solutions maison intelligente fabriqu&eacute;es en Alg&eacute;rie. &Eacute;clairage, climatisation, s&eacute;curit&eacute;, contr&ocirc;le via app. 40-60% moins cher que l'import. Bas&eacute; &agrave; S&eacute;tif. Contact: +213 549 575 512.</p>
           </div>
         </section>
 
@@ -2142,6 +2159,23 @@ export default function MaisonIntelligentSmartHomeAlgerie2026() {
                 <p className="mt-6 opacity-80">{t.cta.contact}</p>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-links to related blogs */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">{isRTL ? 'اقرأ أيضًا' : locale === 'en' ? 'Read also' : 'Lire aussi'}</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/blog/iot-internet-des-objets-algerie-2026" className="block p-5 bg-blue-50 rounded-xl border border-blue-100 hover:border-blue-300 transition-colors">
+                <span className="text-blue-700 font-semibold">{isRTL ? 'إنترنت الأشياء في الجزائر 2026' : locale === 'en' ? 'IoT Internet of Things Algeria 2026' : 'IoT Internet des Objets Algérie 2026'}</span>
+                <p className="text-sm text-blue-600 mt-1">{isRTL ? 'كل ما تحتاج معرفته عن الأجهزة المتصلة' : locale === 'en' ? 'Everything about connected devices' : 'Tout savoir sur les objets connectés'}</p>
+              </Link>
+              <Link href="/blog/smart-home-promoteur-immobilier-algerie-2026" className="block p-5 bg-green-50 rounded-xl border border-green-100 hover:border-green-300 transition-colors">
+                <span className="text-green-700 font-semibold">{isRTL ? 'المنزل الذكي للمروّجين العقاريين' : locale === 'en' ? 'Smart Home for Real Estate Developers' : 'Smart Home pour Promoteurs Immobiliers'}</span>
+                <p className="text-sm text-green-600 mt-1">{isRTL ? 'كيف تزيد قيمة مشاريعك العقارية' : locale === 'en' ? 'How to increase property value' : 'Comment augmenter la valeur de vos projets'}</p>
+              </Link>
             </div>
           </div>
         </section>

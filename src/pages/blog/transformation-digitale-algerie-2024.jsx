@@ -40,6 +40,41 @@ export default function TransformationDigitaleAlgerie() {
             "mainEntityOfPage": "https://symloop.com/blog/transformation-digitale-algerie-2024"
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Qu'est-ce que la transformation digitale pour une entreprise algerienne ?", "acceptedAnswer": { "@type": "Answer", "text": "La transformation digitale consiste a integrer les technologies numeriques (site web, application mobile, ERP, CRM, IA, IoT) dans tous les processus de l'entreprise. Symloop accompagne les entreprises algeriennes de l'audit a la mise en production. Contactez-nous au +213 549 575 512." } },
+              { "@type": "Question", "name": "Combien coute une transformation digitale en Algerie ?", "acceptedAnswer": { "@type": "Answer", "text": "Le budget depend de la taille de l'entreprise et des outils choisis. Un CRM demarre a 0 EUR, un ERP entre 50 et 500 EUR/mois. Symloop propose un diagnostic gratuit pour estimer votre budget. Appelez le +213 549 575 512." } },
+              { "@type": "Question", "name": "Quels sont les benefices mesurables de la digitalisation ?", "acceptedAnswer": { "@type": "Answer", "text": "Les entreprises digitalisees constatent en moyenne +35% de productivite, -40% de couts operationnels et +25% de chiffre d'affaires. Symloop vous aide a atteindre ces resultats. Contact : +213 549 575 512." } },
+              { "@type": "Question", "name": "Combien de temps dure un projet de transformation digitale ?", "acceptedAnswer": { "@type": "Answer", "text": "Un projet complet dure de 3 a 12 mois selon la complexite : audit (2-4 semaines), strategie (2-3 semaines), deploiement (2-6 mois), formation (continu). Symloop gere chaque phase. Contactez-nous au +213 549 575 512." } },
+              { "@type": "Question", "name": "Symloop peut-il accompagner une PME dans sa digitalisation ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop est specialise dans l'accompagnement des PME algeriennes : audit gratuit, strategie sur mesure, deploiement cle en main et formation des equipes. Basee a Setif. Appelez le +213 549 575 512 pour un diagnostic gratuit." } }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Transformation Digitale Algerie 2024", "item": "https://symloop.com/blog/transformation-digitale-algerie-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "url": "https://symloop.com/blog/transformation-digitale-algerie-2024"
+          })}
+        </script>
       </Head>
 
       <div className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`}>
@@ -82,6 +117,16 @@ export default function TransformationDigitaleAlgerie() {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-cyan-50 border-l-4 border-cyan-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-cyan-800 mb-1">En bref</p>
+            <p className="text-gray-800 leading-relaxed">
+              Symloop accompagne les entreprises algeriennes dans leur transformation digitale. Site web, application mobile, ERP, CRM, IoT, IA. De l'audit a la mise en production. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -431,6 +476,21 @@ export default function TransformationDigitaleAlgerie() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Articles recommandes</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="group block bg-cyan-50 rounded-xl p-5 hover:bg-cyan-100 transition-colors">
+                  <span className="text-xs font-medium text-cyan-600">Digitalisation</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-cyan-600 transition-colors">Ne Perdez Plus 1 Dinar : Digitalisez Votre Entreprise</h3>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="group block bg-cyan-50 rounded-xl p-5 hover:bg-cyan-100 transition-colors">
+                  <span className="text-xs font-medium text-cyan-600">Solutions IT</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-cyan-600 transition-colors">Solutions Informatiques en Algerie 2026</h3>
+                </Link>
               </div>
             </section>
 

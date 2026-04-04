@@ -174,6 +174,28 @@ export default function ReactNativeAlgerie() {
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Developpement React Native Algerie", "item": "https://symloop.com/blog/developpement-react-native-algerie" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "url": "https://symloop.com/blog/developpement-react-native-algerie"
+          })}
+        </script>
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -208,6 +230,16 @@ export default function ReactNativeAlgerie() {
                 </a>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-purple-50 border-l-4 border-purple-500 py-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-purple-800 mb-1">En bref</p>
+            <p className="text-gray-800 leading-relaxed">
+              Symloop developpe des applications React Native pour les entreprises algeriennes. iOS et Android avec une seule base de code. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -403,6 +435,21 @@ export default function ReactNativeAlgerie() {
                     </span>
                   </Link>
                 ))}
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Articles recommandes</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-application-mobile-algerie-2026" className="group block bg-purple-50 rounded-xl p-5 hover:bg-purple-100 transition-colors">
+                  <span className="text-xs font-medium text-purple-600">Mobile 2026</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-purple-600 transition-colors">Developpement Application Mobile Algerie 2026</h3>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="group block bg-purple-50 rounded-xl p-5 hover:bg-purple-100 transition-colors">
+                  <span className="text-xs font-medium text-purple-600">Solutions IT</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-purple-600 transition-colors">Solutions Informatiques en Algerie 2026</h3>
+                </Link>
               </div>
             </section>
 

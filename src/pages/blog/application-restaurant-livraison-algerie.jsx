@@ -14,27 +14,23 @@ export default function RestaurantAlgerie() {
   const faqs = [
     {
       question: "Combien coûte une application de commande pour mon restaurant ?",
-      answer: "Une application de commande basique démarre à 60 000 DA. Avec gestion livraison et tracking, à partir de 120 000 DA. Les solutions marketplace multi-restaurants sont sur devis selon le nombre de restaurants et les fonctionnalités."
+      answer: "Chez Symloop, une application de commande basique démarre à 60 000 DA. Avec gestion livraison et tracking, à partir de 120 000 DA. Les solutions marketplace multi-restaurants sont sur devis selon le nombre de restaurants et les fonctionnalités. Contactez-nous au +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "L'application fonctionne-t-elle avec le paiement CIB/Dahabia ?",
-      answer: "Oui, nous intégrons tous les moyens de paiement locaux : CIB, Dahabia, ainsi que le paiement à la livraison (COD) qui reste très populaire en Algérie. Les clients peuvent choisir leur mode de paiement préféré."
+      answer: "Oui, Symloop intègre tous les moyens de paiement locaux : CIB, Dahabia, ainsi que le paiement à la livraison (COD) qui reste très populaire en Algérie. Les clients peuvent choisir leur mode de paiement préféré. Appelez le +213 549 575 512 pour une démo."
     },
     {
       question: "Puis-je gérer les livraisons avec mes propres livreurs ?",
-      answer: "Absolument. L'application inclut un module de gestion des livreurs : affectation des commandes, tracking GPS en temps réel, calcul des zones de livraison, et rapports de performance par livreur."
+      answer: "Absolument. L'application développée par Symloop inclut un module de gestion des livreurs : affectation des commandes, tracking GPS en temps réel, calcul des zones de livraison, et rapports de performance par livreur. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Comment mes clients passent-ils commande ?",
-      answer: "Les clients peuvent commander via l'application mobile (iOS/Android), le site web, ou même WhatsApp (intégration chatbot). Ils reçoivent des notifications à chaque étape : commande reçue, en préparation, en livraison."
+      answer: "Les clients peuvent commander via l'application mobile (iOS/Android), le site web, ou même WhatsApp (intégration chatbot). Ils reçoivent des notifications à chaque étape : commande reçue, en préparation, en livraison. Symloop vous accompagne de A à Z. Appelez le +213 549 575 512."
     },
     {
-      question: "Puis-je modifier mon menu facilement ?",
-      answer: "Oui, le panel d'administration permet de modifier les plats, prix, photos, disponibilités en quelques clics. Vous pouvez aussi créer des promotions, menus du jour, et formules spéciales."
-    },
-    {
-      question: "L'application s'intègre-t-elle avec ma caisse ?",
-      answer: "Nous pouvons intégrer l'application avec votre système de caisse (POS) existant. Les commandes arrivent automatiquement en cuisine via une imprimante thermique ou écran."
+      question: "Quel est le délai de développement d'une application restaurant ?",
+      answer: "Symloop livre une application restaurant basique en 4 à 6 semaines. Une solution complète avec livraison, tracking et fidélité prend 8 à 12 semaines. Contactez-nous au +213 549 575 512 pour planifier votre projet."
     }
   ];
 
@@ -65,6 +61,18 @@ export default function RestaurantAlgerie() {
         "serviceType": "Développement Application Restaurant",
         "provider": { "@type": "Organization", "name": "Symloop", "telephone": "+213549575512" },
         "areaServed": ["DZ", "TN", "MA", "MENA"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Application Restaurant Livraison Algérie", "item": "https://symloop.com/blog/application-restaurant-livraison-algerie" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".en-bref-block", "h1", "meta[name='description']"]
       }
     ]
   };
@@ -229,6 +237,16 @@ export default function RestaurantAlgerie() {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-gray-50 border-l-4 border-orange-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-orange-600 mb-2">En bref</p>
+            <p className="text-gray-700 leading-relaxed">
+              Symloop developpe des applications de commande et livraison pour restaurants en Algerie. Menu digital, panier, paiement, suivi livreur. Application client + app livreur + dashboard restaurant. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -400,8 +418,8 @@ export default function RestaurantAlgerie() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "Développement Application Mobile", href: "/blog/developpement-mobile-algerie-2024" },
-                  { title: "E-commerce en Algérie", href: "/blog/ecommerce-algerie-2024" },
+                  { title: "Développement Application Mobile Algérie 2026", href: "/blog/developpement-application-mobile-algerie-2026" },
+                  { title: "E-commerce Algérie : Paiement CIB & Edahabia", href: "/blog/ecommerce-algerie-paiement-cib-edahabia-2024" },
                   { title: "Logistique et Transport", href: "/blog/logistique-transport-algerie-2024" },
                   { title: "Marketing Digital Algérie", href: "/blog/marketing-digital-algerie-2024" }
                 ].map((article, i) => (

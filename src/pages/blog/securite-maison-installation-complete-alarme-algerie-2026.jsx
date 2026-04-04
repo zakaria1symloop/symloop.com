@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from 'next/head';
 import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Camera, Shield,
@@ -881,6 +882,14 @@ export default function SecurityInstallationBlog() {
         products={productsForSEO}
         locale={locale}
       />
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".en-bref", ".faq-section"],
+          "url": "https://symloop.com/blog/securite-maison-installation-complete-alarme-algerie-2026"
+        })}} />
+      </Head>
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
@@ -904,6 +913,14 @@ export default function SecurityInstallationBlog() {
               <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> {t.hero.date}</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {t.hero.readTime}</span>
             </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Snippet */}
+        <section className="en-bref py-6 bg-orange-50 border-l-4 border-orange-500">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="text-sm font-semibold text-orange-800 mb-1">En bref</p>
+            <p className="text-sm text-orange-900">Symloop propose l'installation compl&egrave;te de syst&egrave;mes d'alarme pour maisons et entreprises en Alg&eacute;rie. D&eacute;tecteurs mouvement, capteurs portes/fen&ecirc;tres, sir&egrave;nes, vid&eacute;o doorbell. Bas&eacute; &agrave; S&eacute;tif. Contact: +213 549 575 512.</p>
           </div>
         </section>
 
@@ -1080,6 +1097,23 @@ export default function SecurityInstallationBlog() {
             <p className="mt-4 text-sm opacity-80">{t.cta.phone}</p>
           </div>
         </article>
+
+        {/* Cross-links to related blogs */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">{isRTL ? 'اقرأ أيضًا' : locale === 'en' ? 'Read also' : 'Lire aussi'}</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/blog/securite-maison-intelligente-cameras-alarmes-algerie-2026" className="block p-5 bg-red-50 rounded-xl border border-red-100 hover:border-red-300 transition-colors">
+                <span className="text-red-700 font-semibold">{isRTL ? 'أمن المنزل الذكي: كاميرات وإنذارات' : locale === 'en' ? 'Smart Security: Cameras & Alarms' : 'Sécurité Intelligente : Caméras & Alarmes'}</span>
+                <p className="text-sm text-red-600 mt-1">{isRTL ? 'حلول متكاملة للحماية الذكية' : locale === 'en' ? 'Integrated smart protection solutions' : 'Solutions intégrées de protection intelligente'}</p>
+              </Link>
+              <Link href="/blog/iot-internet-des-objets-algerie-2026" className="block p-5 bg-blue-50 rounded-xl border border-blue-100 hover:border-blue-300 transition-colors">
+                <span className="text-blue-700 font-semibold">{isRTL ? 'إنترنت الأشياء في الجزائر 2026' : locale === 'en' ? 'IoT Internet of Things Algeria 2026' : 'IoT Internet des Objets Algérie 2026'}</span>
+                <p className="text-sm text-blue-600 mt-1">{isRTL ? 'الأجهزة المتصلة وتطبيقاتها' : locale === 'en' ? 'Connected devices and their applications' : 'Les objets connectés et leurs applications'}</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

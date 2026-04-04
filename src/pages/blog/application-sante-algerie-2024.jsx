@@ -14,27 +14,23 @@ export default function SanteAlgerie() {
   const faqs = [
     {
       question: "Combien coûte une application de télémédecine ?",
-      answer: "Une application de prise de RDV basique démarre à 70 000 DA. Une plateforme complète avec téléconsultation vidéo à partir de 150 000 DA. Les systèmes de gestion de clinique complets sont sur devis selon le nombre de modules."
+      answer: "Chez Symloop, une application de prise de RDV basique démarre à 70 000 DA. Une plateforme complète avec téléconsultation vidéo à partir de 150 000 DA. Les systèmes de gestion de clinique complets sont sur devis. Contactez-nous au +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "Les données médicales sont-elles sécurisées ?",
-      answer: "Absolument. Nous appliquons les normes les plus strictes : chiffrement AES-256, hébergement sécurisé, authentification forte, audit trail complet. Conformité aux réglementations sur les données de santé."
+      answer: "Absolument. Symloop applique les normes les plus strictes : chiffrement AES-256, hébergement sécurisé, authentification forte, audit trail complet. Conformité aux réglementations sur les données de santé. Appelez le +213 549 575 512 pour en savoir plus."
     },
     {
       question: "Peut-on intégrer la CNAS/CASNOS ?",
-      answer: "Oui, nous pouvons développer des modules d'intégration avec les organismes de sécurité sociale algériens pour la télétransmission des feuilles de soins et le tiers payant."
+      answer: "Oui, Symloop développe des modules d'intégration avec les organismes de sécurité sociale algériens pour la télétransmission des feuilles de soins et le tiers payant. Contactez-nous au +213 549 575 512."
     },
     {
       question: "La téléconsultation fonctionne-t-elle bien en Algérie ?",
-      answer: "Oui, nous utilisons des technologies de visioconférence optimisées pour les connexions à bande passante variable. Mode audio disponible si la connexion vidéo est instable. Fonctionne sur 3G/4G."
+      answer: "Oui, Symloop utilise des technologies de visioconférence optimisées pour les connexions à bande passante variable. Mode audio disponible si la connexion vidéo est instable. Fonctionne sur 3G/4G. Appelez le +213 549 575 512 pour une démo."
     },
     {
-      question: "Les patients peuvent-ils prendre RDV en ligne ?",
-      answer: "Oui, l'agenda en ligne permet aux patients de voir les disponibilités et réserver 24/7. Confirmations et rappels automatiques par SMS/email. Réduction des no-shows de 40%."
-    },
-    {
-      question: "Proposez-vous des solutions pour les cliniques multi-spécialités ?",
-      answer: "Oui, nos systèmes de gestion de clinique supportent plusieurs médecins, spécialités, salles, et équipements. Gestion du parcours patient complet de l'accueil à la facturation."
+      question: "Quel est le délai de développement d'une application santé ?",
+      answer: "Symloop livre une application de prise de RDV en 4 à 6 semaines. Une plateforme de téléconsultation complète nécessite 8 à 14 semaines. Basé à Sétif, contactez-nous au +213 549 575 512 pour planifier votre projet e-health."
     }
   ];
 
@@ -65,6 +61,18 @@ export default function SanteAlgerie() {
         "serviceType": "Développement Application Santé",
         "provider": { "@type": "Organization", "name": "Symloop", "telephone": "+213549575512" },
         "areaServed": ["DZ", "TN", "MA", "MENA"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Application Santé Algérie 2024", "item": "https://symloop.com/blog/application-sante-algerie-2024" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".en-bref-block", "h1", "meta[name='description']"]
       }
     ]
   };
@@ -239,6 +247,16 @@ export default function SanteAlgerie() {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-gray-50 border-l-4 border-red-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-red-600 mb-2">En bref</p>
+            <p className="text-gray-700 leading-relaxed">
+              Symloop developpe des applications de sante et telemedecine pour le secteur medical algerien. Prise de rendez-vous, dossier patient, teleconsultation, ordonnances numeriques. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -441,8 +459,8 @@ export default function SanteAlgerie() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "Développement Application Mobile", href: "/blog/developpement-mobile-algerie-2024" },
-                  { title: "Cybersécurité en Algérie", href: "/blog/cybersecurite-algerie-2024" },
+                  { title: "Logiciel Clinique & Cabinet Médical Algérie 2026", href: "/blog/logiciel-clinique-cabinet-medical-algerie-2026" },
+                  { title: "Développement Application Mobile Algérie 2026", href: "/blog/developpement-application-mobile-algerie-2026" },
                   { title: "SaaS et Abonnement", href: "/blog/saas-developpement-algerie-2024" },
                   { title: "Cloud Computing Algérie", href: "/blog/cloud-computing-algerie-2024" }
                 ].map((article, i) => (

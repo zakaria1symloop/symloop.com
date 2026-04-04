@@ -71,6 +71,28 @@ export default function DesignUIUXAlgerie() {
             }))
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Design UI/UX Algerie 2024", "item": "https://symloop.com/blog/design-ui-ux-algerie-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "url": "https://symloop.com/blog/design-ui-ux-algerie-2024"
+          })}
+        </script>
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -99,6 +121,16 @@ export default function DesignUIUXAlgerie() {
                 <span>Mis à jour : Novembre 2024</span>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-pink-50 border-l-4 border-pink-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-pink-800 mb-1">En bref</p>
+            <p className="text-gray-800 leading-relaxed">
+              Symloop propose des services de design UI/UX pour sites web et applications mobiles en Algerie. Maquettes Figma, prototypage, tests utilisateurs. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -408,6 +440,21 @@ export default function DesignUIUXAlgerie() {
                     )}
                   </div>
                 ))}
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Articles recommandes</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-site-web-algerie-2026" className="group block bg-pink-50 rounded-xl p-5 hover:bg-pink-100 transition-colors">
+                  <span className="text-xs font-medium text-pink-600">Web 2026</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-pink-600 transition-colors">Developpement Site Web en Algerie 2026</h3>
+                </Link>
+                <Link href="/blog/developpement-application-mobile-algerie-2026" className="group block bg-pink-50 rounded-xl p-5 hover:bg-pink-100 transition-colors">
+                  <span className="text-xs font-medium text-pink-600">Mobile 2026</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-pink-600 transition-colors">Developpement Application Mobile Algerie 2026</h3>
+                </Link>
               </div>
             </section>
 

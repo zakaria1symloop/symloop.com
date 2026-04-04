@@ -18,6 +18,41 @@ export default function FlutterAlgerie() {
         <link rel="canonical" href="https://symloop.com/blog/developpement-flutter-algerie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pourquoi choisir Flutter pour le developpement mobile en Algerie ?", "acceptedAnswer": { "@type": "Answer", "text": "Flutter permet de creer des applications iOS et Android avec un seul code, reduisant les couts de 40%. Performance native, UI moderne et Hot Reload pour un developpement rapide. Symloop est expert Flutter en Algerie. Contactez-nous au +213 549 575 512." } },
+              { "@type": "Question", "name": "Combien coute une application Flutter en Algerie ?", "acceptedAnswer": { "@type": "Answer", "text": "Une app Flutter (iOS + Android) coute environ 1 200 000 DA contre 2 000 000 DA pour deux apps natives separees. Symloop propose un devis gratuit et personnalise. Appelez le +213 549 575 512." } },
+              { "@type": "Question", "name": "Flutter est-il adapte pour le e-commerce en Algerie ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, Flutter est ideal pour les apps e-commerce avec integration des paiements CIB/Edahabia. Symloop a livre des apps e-commerce performantes pour le marche algerien. Contact : +213 549 575 512." } },
+              { "@type": "Question", "name": "Quelle est la difference entre Flutter et React Native ?", "acceptedAnswer": { "@type": "Answer", "text": "Flutter utilise Dart et offre une performance superieure avec un rendu personnalise. React Native utilise JavaScript et des composants natifs. Symloop maitrise les deux technologies et vous conseille selon votre projet. Appelez le +213 549 575 512." } },
+              { "@type": "Question", "name": "Symloop peut-il developper une application Flutter pour mon entreprise ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop developpe des applications Flutter cross-platform pour les entreprises algeriennes : e-commerce, livraison, fintech, CRM mobile et plus. Basee a Setif, notre equipe livre des apps performantes. Contactez-nous au +213 549 575 512." } }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Developpement Flutter Algerie 2024", "item": "https://symloop.com/blog/developpement-flutter-algerie-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "url": "https://symloop.com/blog/developpement-flutter-algerie-2024"
+          })}
+        </script>
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -37,6 +72,16 @@ export default function FlutterAlgerie() {
               </h1>
               <p className="text-xl text-gray-300 mb-8">{blog?.subtitle}</p>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-blue-50 border-l-4 border-blue-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-blue-800 mb-1">En bref</p>
+            <p className="text-gray-800 leading-relaxed">
+              Symloop developpe des applications Flutter pour iOS et Android en Algerie. Cross-platform, performance native, UI moderne. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -130,6 +175,21 @@ export default function FlutterAlgerie() {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Articles recommandes</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-application-mobile-algerie-2026" className="group block bg-blue-50 rounded-xl p-5 hover:bg-blue-100 transition-colors">
+                  <span className="text-xs font-medium text-blue-600">Mobile 2026</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-blue-600 transition-colors">Developpement Application Mobile Algerie 2026</h3>
+                </Link>
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="group block bg-blue-50 rounded-xl p-5 hover:bg-blue-100 transition-colors">
+                  <span className="text-xs font-medium text-blue-600">ERP / SaaS</span>
+                  <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-blue-600 transition-colors">ERP Sur Mesure & SaaS pour Startups et PME en Algerie 2026</h3>
+                </Link>
               </div>
             </section>
 

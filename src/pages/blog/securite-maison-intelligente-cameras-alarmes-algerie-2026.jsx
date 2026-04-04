@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Shield, Camera,
@@ -1884,6 +1885,14 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
         products={productsForSEO}
         locale={locale}
       />
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".en-bref", ".faq-section"],
+          "url": "https://symloop.com/blog/securite-maison-intelligente-cameras-alarmes-algerie-2026"
+        })}} />
+      </Head>
 
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-red-50 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero */}
@@ -1925,6 +1934,14 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
                 <span className="flex items-center gap-2"><User className="w-4 h-4" />{t.author}</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Snippet */}
+        <section className="en-bref py-6 bg-red-50 border-l-4 border-red-500">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="text-sm font-semibold text-red-800 mb-1">En bref</p>
+            <p className="text-sm text-red-900">Symloop installe des syst&egrave;mes de s&eacute;curit&eacute; intelligents en Alg&eacute;rie. Cam&eacute;ras HD, alarmes connect&eacute;es, serrures intelligentes, d&eacute;tection mouvement IA. Stockage local des donn&eacute;es. Bas&eacute; &agrave; S&eacute;tif. Contact: +213 549 575 512.</p>
           </div>
         </section>
 
@@ -2161,6 +2178,23 @@ export default function SecuriteMaisonIntelligenteCamerasAlarmesAlgerie2026() {
                 <p className="mt-6 opacity-80">{t.cta.contact}</p>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-links to related blogs */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">{isRTL ? 'اقرأ أيضًا' : locale === 'en' ? 'Read also' : 'Lire aussi'}</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/blog/maison-intelligente-smart-home-algerie-2026" className="block p-5 bg-blue-50 rounded-xl border border-blue-100 hover:border-blue-300 transition-colors">
+                <span className="text-blue-700 font-semibold">{isRTL ? 'المنزل الذكي في الجزائر 2026' : locale === 'en' ? 'Smart Home Algeria 2026' : 'Maison Intelligente Algérie 2026'}</span>
+                <p className="text-sm text-blue-600 mt-1">{isRTL ? 'الدليل الشامل للمنزل الذكي' : locale === 'en' ? 'Complete smart home guide' : 'Le guide complet de la maison intelligente'}</p>
+              </Link>
+              <Link href="/blog/installation-cameras-surveillance-professionnelle-algerie-2026" className="block p-5 bg-green-50 rounded-xl border border-green-100 hover:border-green-300 transition-colors">
+                <span className="text-green-700 font-semibold">{isRTL ? 'تركيب كاميرات المراقبة المهنية' : locale === 'en' ? 'Professional Camera Installation' : 'Installation Caméras Professionnelle'}</span>
+                <p className="text-sm text-green-600 mt-1">{isRTL ? 'تركيب احترافي في 48 ولاية' : locale === 'en' ? 'Professional installation in 48 wilayas' : 'Installation professionnelle dans 48 wilayas'}</p>
+              </Link>
             </div>
           </div>
         </section>

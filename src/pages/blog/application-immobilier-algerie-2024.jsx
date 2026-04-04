@@ -14,27 +14,23 @@ export default function ImmobilierAlgerie() {
   const faqs = [
     {
       question: "Combien coûte le développement d'une application immobilière en Algérie ?",
-      answer: "Le coût varie selon les fonctionnalités. Un portail d'annonces basique démarre à 80 000 DA, une plateforme avec gestion locative à partir de 180 000 DA. Les plateformes complètes type marketplace sont sur devis selon vos besoins spécifiques."
+      answer: "Chez Symloop, un portail d'annonces basique démarre à 80 000 DA, une plateforme avec gestion locative à partir de 180 000 DA. Les plateformes complètes type marketplace sont sur devis. Contactez-nous au +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "Quelles fonctionnalités sont essentielles pour une plateforme immobilière ?",
-      answer: "Les fonctionnalités clés incluent : recherche multicritères avancée, carte interactive, système de favoris, messagerie intégrée, alertes email/push, galerie photos HD, visite virtuelle 360°, estimation automatique des prix, et gestion des contacts propriétaires/locataires."
+      answer: "Symloop intègre toutes les fonctionnalités clés : recherche multicritères avancée, carte interactive, système de favoris, messagerie intégrée, alertes email/push, galerie photos HD, visite virtuelle 360°, estimation automatique des prix. Appelez le +213 549 575 512 pour en discuter."
     },
     {
       question: "Quel délai pour développer une application PropTech ?",
-      answer: "Un portail d'annonces basique prend 4-6 semaines. Une plateforme avec gestion locative complète nécessite 8-12 semaines. Une marketplace immobilière full-stack peut prendre 3-6 mois selon la complexité des fonctionnalités."
+      answer: "Symloop livre un portail d'annonces basique en 4-6 semaines. Une plateforme avec gestion locative complète nécessite 8-12 semaines. Une marketplace immobilière full-stack peut prendre 3-6 mois. Contactez-nous au +213 549 575 512 pour planifier."
     },
     {
       question: "Peut-on intégrer le paiement en ligne des loyers ?",
-      answer: "Oui, nous intégrons CIB/Dahabia pour les paiements locaux et Stripe/PayPal pour les clients internationaux. Le système génère automatiquement les quittances de loyer et envoie des rappels de paiement."
+      answer: "Oui, Symloop intègre CIB/Dahabia pour les paiements locaux et Stripe/PayPal pour les clients internationaux. Le système génère automatiquement les quittances de loyer et envoie des rappels de paiement. Appelez le +213 549 575 512."
     },
     {
-      question: "L'application sera-t-elle disponible sur mobile ?",
-      answer: "Absolument. Nous développons des applications mobiles natives iOS et Android, ou des solutions React Native cross-platform. Les apps incluent notifications push, géolocalisation, et fonctionnent hors-ligne pour consulter les favoris."
-    },
-    {
-      question: "Comment gérer les visites virtuelles 360° ?",
-      answer: "Nous intégrons des solutions de visite virtuelle avec support des photos 360°, tours virtuels interactifs, et même la réalité augmentée pour visualiser les meubles. Compatible avec tous les smartphones modernes."
+      question: "Proposez-vous des visites virtuelles 360° pour l'immobilier ?",
+      answer: "Oui, Symloop intègre des solutions de visite virtuelle avec support des photos 360°, tours virtuels interactifs, et réalité augmentée. Compatible avec tous les smartphones modernes. Basé à Sétif, contactez-nous au +213 549 575 512."
     }
   ];
 
@@ -89,6 +85,18 @@ export default function ImmobilierAlgerie() {
         },
         "areaServed": ["DZ", "TN", "MA", "MENA"],
         "description": "Développement de plateformes immobilières PropTech sur mesure en Algérie"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Application Immobilier Algérie 2024", "item": "https://symloop.com/blog/application-immobilier-algerie-2024" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".en-bref-block", "h1", "meta[name='description']"]
       }
     ]
   };
@@ -267,6 +275,16 @@ export default function ImmobilierAlgerie() {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-gray-50 border-l-4 border-blue-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-blue-600 mb-2">En bref</p>
+            <p className="text-gray-700 leading-relaxed">
+              Symloop developpe des applications immobilieres pour agences et promoteurs en Algerie. Annonces, recherche, visites virtuelles, gestion locative. Base a Setif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -522,8 +540,8 @@ export default function ImmobilierAlgerie() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "Développement Application Mobile Algérie", href: "/blog/developpement-mobile-algerie-2024" },
-                  { title: "SaaS et Abonnement en Algérie", href: "/blog/saas-developpement-algerie-2024" },
+                  { title: "Logiciel Immobilier & Agence Algérie 2026", href: "/blog/logiciel-immobilier-agence-algerie-2026" },
+                  { title: "Smart Home & Promoteur Immobilier Algérie 2026", href: "/blog/smart-home-promoteur-immobilier-algerie-2026" },
                   { title: "Marketplace B2B en Algérie", href: "/blog/plateforme-b2b-marketplace-algerie" },
                   { title: "Coût Développement Application", href: "/blog/cout-developpement-application-algerie" }
                 ].map((article, i) => (

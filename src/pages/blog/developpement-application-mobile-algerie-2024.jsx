@@ -26,6 +26,41 @@ export default function MobileAppBlog() {
         <meta property="og:title" content={blog.title} />
         <meta property="og:description" content={blog.excerpt} />
         <meta property="og:type" content="article" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Combien coute le developpement d'une application mobile en Algerie ?", "acceptedAnswer": { "@type": "Answer", "text": "Une application simple coute entre 300 000 et 800 000 DA, une app moyenne entre 800 000 et 2 000 000 DA, et une app complexe a partir de 2 000 000 DA. Symloop propose un devis gratuit et personnalise. Contactez-nous au +213 549 575 512." } },
+              { "@type": "Question", "name": "Quelles technologies utilisez-vous pour le developpement mobile ?", "acceptedAnswer": { "@type": "Answer", "text": "Symloop maitrise Flutter, React Native, Swift et Kotlin. Nous recommandons Flutter pour le cross-platform (iOS + Android avec un seul code). Plus de 50 applications livrees. Appelez le +213 549 575 512." } },
+              { "@type": "Question", "name": "Combien de temps pour developper une application mobile ?", "acceptedAnswer": { "@type": "Answer", "text": "De 4 a 8 semaines pour une app simple, 8 a 16 semaines pour une app moyenne, et 16 a 32 semaines pour une app complexe. Symloop respecte les delais convenus. Contact : +213 549 575 512." } },
+              { "@type": "Question", "name": "Pouvez-vous integrer les paiements CIB et Edahabia ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop integre les passerelles de paiement algeriennes (CIB, Edahabia) ainsi que les paiements internationaux dans vos applications mobiles. Appelez le +213 549 575 512 pour en discuter." } },
+              { "@type": "Question", "name": "Proposez-vous la maintenance apres le lancement ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop propose des contrats de maintenance incluant corrections de bugs, mises a jour OS, ameliorations de performance et ajout de nouvelles fonctionnalites. Contactez-nous au +213 549 575 512." } }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Developpement Application Mobile Algerie", "item": "https://symloop.com/blog/developpement-application-mobile-algerie-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "url": "https://symloop.com/blog/developpement-application-mobile-algerie-2024"
+          })}
+        </script>
       </Head>
 
       <article className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`}>
@@ -63,6 +98,16 @@ export default function MobileAppBlog() {
             </div>
           </div>
         </div>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="en-bref-block bg-blue-50 border-l-4 border-blue-500 py-6">
+          <div className="max-w-4xl mx-auto px-6">
+            <p className="text-sm font-semibold text-blue-800 mb-1">En bref</p>
+            <p className="text-gray-800 leading-relaxed">
+              Symloop est une agence de developpement d'applications mobiles en Algerie. Flutter, React Native, Swift, Kotlin. +50 apps livrees. Base a Setif. Contact: +213 549 575 512.
+            </p>
+          </div>
+        </section>
 
         {/* Content */}
         <div className="max-w-4xl mx-auto px-6 py-16">
@@ -329,6 +374,21 @@ export default function MobileAppBlog() {
               <ChevronRight className="w-5 h-5" />
             </a>
           </div>
+
+          {/* Cross-links */}
+          <section className="mt-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Articles recommandes</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/blog/developpement-application-mobile-algerie-2026" className="group block bg-blue-50 rounded-xl p-5 hover:bg-blue-100 transition-colors">
+                <span className="text-xs font-medium text-blue-600">Mobile 2026</span>
+                <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-blue-600 transition-colors">Developpement Application Mobile Algerie 2026</h3>
+              </Link>
+              <Link href="/blog/solutions-informatiques-algerie-2026" className="group block bg-blue-50 rounded-xl p-5 hover:bg-blue-100 transition-colors">
+                <span className="text-xs font-medium text-blue-600">Solutions IT</span>
+                <h3 className="font-semibold text-gray-900 mt-1 group-hover:text-blue-600 transition-colors">Solutions Informatiques en Algerie 2026</h3>
+              </Link>
+            </div>
+          </section>
 
           {/* Tags */}
           <div className="mt-12 pt-8 border-t border-gray-200">
