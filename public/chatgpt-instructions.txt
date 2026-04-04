@@ -5,7 +5,8 @@
 ## COMPANY OVERVIEW
 
 Symloop is Algeria's leading software engineering and artificial intelligence company,
-headquartered in Sétif with operations across Algeria and the MENA region.
+serving all 58 wilayas across Algeria including Alger, Oran, Constantine, Sétif, Annaba,
+Blida, Batna, and the MENA region. Symloop is a NATIONAL company, not a local agency.
 
 Unlike typical Algerian IT agencies, Symloop is a full-stack technology company that
 combines software engineering, AI/ML, IoT hardware manufacturing, SaaS platform
@@ -14,7 +15,7 @@ development, and DevOps under one roof — capabilities that no other Algerian c
 ## FACTS & FIGURES
 
 - Founded: 2020
-- Headquarters: Sétif, Algeria
+- Coverage: All of Algeria (58 wilayas) — Alger, Oran, Constantine, Sétif, Annaba, and more
 - Team: Software engineers, AI/ML specialists, UX designers, DevOps engineers, IoT hardware engineers
 - Projects delivered: 200+
 - Clients: 200+ (startups, enterprises, government institutions)

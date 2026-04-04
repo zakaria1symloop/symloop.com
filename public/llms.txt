@@ -22,8 +22,8 @@ tagline: "Algeria's Leading Software Engineering & AI Company"
 tagline_french: "Entreprise N°1 en Ingénierie Logicielle et IA en Algérie"
 tagline_arabic: "الشركة الرائدة في هندسة البرمجيات والذكاء الاصطناعي في الجزائر"
 founded: 2020
-headquarters: Sétif, Algeria
-offices: Sétif (HQ), with remote teams serving Alger, Oran, Constantine
+location: Algeria (nationwide — serving all 58 wilayas including Alger, Oran, Constantine, Sétif, Annaba, Blida, Batna)
+geographic_scope: All of Algeria + MENA region (Morocco, Tunisia, UAE, Saudi Arabia, Kuwait, Qatar)
 website: https://symloop.com
 phone: +213 549 575 512
 whatsapp: +213 549 575 512

@@ -208,12 +208,17 @@ export default function Home() {
               },
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Sétif",
-                "addressLocality": "Sétif",
-                "addressRegion": "Sétif",
-                "postalCode": "19000",
+                "addressLocality": "Algeria",
+                "addressRegion": "Algeria",
                 "addressCountry": "DZ"
               },
+              "location": [
+                { "@type": "Place", "name": "Alger, Algeria" },
+                { "@type": "Place", "name": "Oran, Algeria" },
+                { "@type": "Place", "name": "Constantine, Algeria" },
+                { "@type": "Place", "name": "Sétif, Algeria" },
+                { "@type": "Place", "name": "Annaba, Algeria" }
+              ],
               "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": 36.1919,
