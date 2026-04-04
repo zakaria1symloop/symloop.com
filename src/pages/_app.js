@@ -1,5 +1,6 @@
 import '../../styles/globals.css';
 import Script from 'next/script';
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import Header from '../components/layout/Header';
@@ -24,6 +25,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      {/* Default SEO meta tags — pages can override with their own Head */}
+      <Head>
+        <meta name="description" content="Symloop — Algeria's #1 software engineering and AI company. Web development, mobile apps, IoT, AI automation, custom ERP/CRM. Serving all 58 wilayas. Contact: +213 549 575 512." />
+      </Head>
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-975333575"

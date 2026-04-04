@@ -186,8 +186,12 @@ export default function Home() {
       />
       <FAQSchema faqs={getHomepageFAQs(router.locale || 'fr')} />
 
-      {/* Organization Schema for homepage */}
+      {/* SEO Meta + Organization Schema for homepage */}
       <Head>
+        <title>Symloop — Algeria&apos;s #1 Software Engineering &amp; AI Company | Web, Mobile, IoT</title>
+        <meta name="description" content="Symloop is Algeria's leading software engineering and AI company. Mobile apps, websites, custom ERP/CRM, IoT smart home, AI automation. Serving all 58 wilayas. 200+ projects delivered. Contact: +213 549 575 512." />
+        <meta name="keywords" content="Symloop, software company Algeria, app development Algeria, web development Algeria, AI Algeria, IoT Algeria, ERP Algeria, agence web Algérie, développement application mobile Algérie" />
+        <link rel="canonical" href="https://symloop.com/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
