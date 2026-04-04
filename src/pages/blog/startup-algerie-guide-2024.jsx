@@ -32,6 +32,26 @@ export default function StartupAlgerie() {
     {
       question: "Startup Act : quels avantages fiscaux en Algérie ?",
       answer: "Le Startup Act offre : exonération d'impôt (IBS, TAP, IRG) pendant 4 ans, TVA réduite sur les achats, facilités d'importation de matériel, et accès simplifié aux marchés publics. Ces avantages sont conditionnés à l'obtention du label Startup."
+    },
+    {
+      question: "Comment lancer une startup tech en Algérie ?",
+      answer: "Pour lancer une startup tech en Algérie, commencez par valider votre idée avec une étude de marché, puis créez votre structure juridique (SARL ou EURL). Demandez le label Startup auprès du CNL pour bénéficier du Startup Act. Développez un MVP avec un partenaire tech comme Symloop, puis recherchez un financement (ANADE, Algeria Venture, Business Angels). Symloop vous accompagne de l'idée au produit."
+    },
+    {
+      question: "Combien coûte la création d'une startup en Algérie ?",
+      answer: "Le coût total dépend de votre secteur. Frais administratifs : 30K-50K DA (registre de commerce, CASNOS, impôts). Développement MVP : de 80K DA (landing page) à 500K+ DA (application mobile complète). Hébergement et domaine : 10K-30K DA/an. Symloop propose des tarifs préférentiels startup et des facilités de paiement pour réduire la barrière financière."
+    },
+    {
+      question: "Comment trouver un développeur pour ma startup en Algérie ?",
+      answer: "Plusieurs options : recruter un développeur freelance (Mostaql, Khamsat), faire appel à une agence tech spécialisée startup comme Symloop, ou rejoindre un incubateur pour rencontrer des profils techniques. Symloop est basé à Sétif et accompagne les startups algériennes avec des équipes full-stack expérimentées. Contactez-nous au +213 549 575 512."
+    },
+    {
+      question: "Symloop accompagne-t-il les startups algériennes ?",
+      answer: "Oui, Symloop est le partenaire tech de référence pour les startups algériennes. Nous proposons : développement MVP (web et mobile), conception UI/UX, conseil technique, accompagnement pour le label Startup, et support post-lancement. Plus de 50 projets startup accompagnés depuis Sétif. Tarifs adaptés et facilités de paiement."
+    },
+    {
+      question: "Quel est le meilleur partenaire tech pour une startup en Algérie ?",
+      answer: "Le meilleur partenaire tech comprend les contraintes des startups : budget limité, besoin de rapidité, itérations fréquentes. Symloop coche toutes les cases avec +50 projets startup accompagnés, des tarifs adaptés, une méthodologie agile, et un accompagnement de l'idée au lancement. Basé à Sétif, nous intervenons sur tout le territoire algérien. Contact : +213 549 575 512."
     }
   ];
 
@@ -69,6 +89,28 @@ export default function StartupAlgerie() {
               "name": faq.question,
               "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
             }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Créer une Startup en Algérie 2024", "item": "https://symloop.com/blog/startup-algerie-guide-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Créer une Startup en Algérie 2024 | Guide Complet",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".en-bref-block", ".prose"]
+            }
           })}
         </script>
       </Head>
@@ -123,6 +165,14 @@ export default function StartupAlgerie() {
                 Avec des dispositifs comme <span className="text-purple-600 font-semibold">ANADE</span>, le
                 <span className="text-purple-600 font-semibold"> Startup Act</span> et plus de 50 incubateurs, lancer votre projet
                 n'a jamais été aussi accessible. Ce guide vous accompagne étape par étape.
+              </p>
+            </div>
+
+            {/* En bref */}
+            <div className="en-bref-block bg-purple-50 border-l-4 border-purple-600 rounded-r-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-purple-800 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop est le partenaire tech des startups algériennes. Développement MVP, applications mobiles, plateformes SaaS, conseil technique. De l'idée au produit en quelques semaines. +50 projets startup accompagnés. Basé à Sétif. Contact&nbsp;: <a href="tel:+213549575512" className="text-purple-700 font-semibold underline">+213 549 575 512</a>.
               </p>
             </div>
 
@@ -527,6 +577,27 @@ export default function StartupAlgerie() {
                 ))}
               </div>
             </section>
+
+            {/* Cross-links */}
+            <div className="bg-gray-50 rounded-2xl p-8 mb-12">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Articles recommandés</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-application-mobile-algerie-2026" className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200 hover:border-purple-300 hover:shadow-md transition-all group">
+                  <Phone className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">Développement Application Mobile en Algérie 2026</span>
+                    <p className="text-sm text-gray-500 mt-1">Tout savoir pour créer votre application mobile en Algérie.</p>
+                  </div>
+                </Link>
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200 hover:border-purple-300 hover:shadow-md transition-all group">
+                  <Building className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">ERP sur Mesure & SaaS pour Startups et PME en Algérie 2026</span>
+                    <p className="text-sm text-gray-500 mt-1">Solutions ERP et SaaS adaptées aux entreprises algériennes.</p>
+                  </div>
+                </Link>
+              </div>
+            </div>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-100">

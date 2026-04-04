@@ -2,13 +2,15 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 import BlogSEO, { RelatedBlogs } from '../../components/seo/BlogSEO';
 import {
   ArrowLeft, Calendar, Clock, User, Camera, Shield,
   CheckCircle, Home, Star, Package, Smartphone, Wifi,
   Settings, Eye, Video, Lock, Users, Globe, Phone,
   Rocket, Award, MapPin, Wrench, Zap, ThumbsUp,
-  Building, Store, Factory, HardHat, ClipboardCheck
+  Building, Store, Factory, HardHat, ClipboardCheck,
+  FileText, ExternalLink
 } from "lucide-react";
 
 export default function CameraInstallationBlog() {
@@ -799,6 +801,68 @@ export default function CameraInstallationBlog() {
         locale={locale}
       />
 
+      {/* SEO-only FAQPage schema — 5 high-intent questions for rich results */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Combien co\u00fbte l\u2019installation de cam\u00e9ras de surveillance en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le co\u00fbt varie selon le nombre de cam\u00e9ras et la complexit\u00e9 du site. Pour une maison standard (4\u20136 cam\u00e9ras HD), comptez entre 80 000 et 180 000 DA mat\u00e9riel + installation inclus. Symloop propose une visite technique gratuite et un devis personnalis\u00e9 sans engagement."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la meilleure marque de cam\u00e9ras en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Parmi les marques reconnues en Alg\u00e9rie : Hikvision, Dahua, et Symloop. Symloop se distingue par un service cl\u00e9 en main incluant installation professionnelle, configuration compl\u00e8te, acc\u00e8s smartphone et support local bas\u00e9 \u00e0 S\u00e9tif."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Symloop installe-t-il des cam\u00e9ras de surveillance ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui. Symloop assure l\u2019installation compl\u00e8te de syst\u00e8mes de vid\u00e9osurveillance pour maisons, appartements, commerces, entrep\u00f4ts et entreprises dans les 48 wilayas d\u2019Alg\u00e9rie. Le service inclut \u00e9tude, pose, configuration, formation et garantie 1 an."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Peut-on surveiller ses cam\u00e9ras depuis son t\u00e9l\u00e9phone en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument. Toutes les cam\u00e9ras install\u00e9es par Symloop sont accessibles \u00e0 distance via une application smartphone (iOS et Android). Vous pouvez visionner en direct, recevoir des alertes de d\u00e9tection de mouvement et consulter les enregistrements o\u00f9 que vous soyez."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Faut-il une autorisation pour installer des cam\u00e9ras en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour un usage priv\u00e9 (domicile, commerce), aucune autorisation pr\u00e9alable n\u2019est g\u00e9n\u00e9ralement requise tant que les cam\u00e9ras ne filment pas la voie publique. Pour les espaces recevant du public ou les entreprises, il est recommand\u00e9 de se conformer \u00e0 la r\u00e9glementation locale et d\u2019afficher une signalisation visible."
+                }
+              }
+            ]
+          })}}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".en-bref-block", "article h2"],
+            "url": "https://symloop.com/blog/installation-cameras-surveillance-professionnelle-algerie-2026"
+          })}}
+        />
+      </Head>
+
       <main className={`min-h-screen bg-gradient-to-b from-slate-50 to-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700 text-white py-16">
@@ -821,6 +885,23 @@ export default function CameraInstallationBlog() {
               <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> {t.hero.date}</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {t.hero.readTime}</span>
             </div>
+          </div>
+        </section>
+
+        {/* En bref — summary block for LLM / featured snippet / speakable */}
+        <section className="container mx-auto px-4 max-w-4xl -mt-6 mb-8 relative z-10">
+          <div className="en-bref-block bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl p-6 shadow-md">
+            <div className="flex items-center gap-2 mb-3">
+              <FileText className="w-5 h-5 text-cyan-700" />
+              <h2 className="text-lg font-bold text-cyan-900">{isRTL ? 'باختصار' : locale === 'en' ? 'In brief' : 'En bref'}</h2>
+            </div>
+            <p className="text-slate-700 leading-relaxed">
+              {isRTL
+                ? 'تقوم Symloop بتركيب أنظمة مراقبة فيديو احترافية للشركات والأفراد في الجزائر. كاميرات HD/4K، تسجيل NVR، وصول عن بعد عبر الهاتف الذكي، كشف حركة بالذكاء الاصطناعي. تركيب احترافي في جميع أنحاء الجزائر. مقرنا في سطيف. اتصل: 512 575 549 213+.'
+                : locale === 'en'
+                ? 'Symloop installs professional video surveillance systems for businesses and individuals in Algeria. HD/4K cameras, NVR recording, remote smartphone access, AI motion detection. Professional installation across Algeria. Based in Setif. Contact: +213 549 575 512.'
+                : 'Symloop installe des syst\u00e8mes de vid\u00e9osurveillance professionnels pour entreprises et particuliers en Alg\u00e9rie. Cam\u00e9ras HD/4K, enregistrement NVR, acc\u00e8s \u00e0 distance via smartphone, d\u00e9tection de mouvement IA. Installation professionnelle dans toute l\u2019Alg\u00e9rie. Bas\u00e9 \u00e0 S\u00e9tif. Contact\u00a0: +213 549 575 512.'}
+            </p>
           </div>
         </section>
 

@@ -73,6 +73,89 @@ export default function LogicielCRMAlgerie() {
     }))
   };
 
+  const seoFaqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quel est le meilleur logiciel CRM en Algérie ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Symloop propose le meilleur CRM sur mesure en Algérie, avec une interface bilingue français/arabe, une intégration téléphonie locale, un hébergement en Algérie, et des prix 40-50% moins chers que Salesforce ou HubSpot. Solution 100% adaptée au marché algérien."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien coûte un CRM pour PME en Algérie ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un CRM pour PME en Algérie coûte à partir de 120 000 DA en licence perpétuelle chez Symloop (jusqu'à 25 utilisateurs), soit environ 3 000 DA/utilisateur/mois. C'est 40-50% moins cher que les solutions internationales comme Salesforce (~10 000 DA) ou HubSpot (~8 000 DA)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "CRM sur mesure ou Salesforce : que choisir en Algérie ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En Algérie, un CRM sur mesure comme celui de Symloop offre plusieurs avantages par rapport à Salesforce : prix 40-50% inférieur, interface français/arabe, support local, intégration téléphonie algérienne (Mobilis, Djezzy, Ooredoo), devise en Dinar, et personnalisation totale selon vos processus métier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Symloop développe-t-il des CRM personnalisés ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, Symloop développe des CRM 100% personnalisés pour les entreprises algériennes. Chaque CRM est adapté aux processus de vente du client : gestion contacts, pipeline commercial, suivi relances, marketing automation, reporting, application mobile, et intégrations sur mesure (WhatsApp, ERP, téléphonie)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment un CRM augmente les ventes d'une entreprise algérienne ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un CRM augmente les ventes de 25 à 40% en moyenne grâce à : zéro prospect oublié (suivi automatisé), relances programmées, pipeline de ventes visible, reporting en temps réel, et prévisions précises. Les entreprises algériennes utilisant un CRM Symloop constatent un ROI positif en 4-6 mois."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://symloop.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://symloop.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Logiciel CRM Algérie 2024",
+        "item": "https://symloop.com/blog/logiciel-crm-algerie-2024"
+      }
+    ]
+  };
+
+  const speakableStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Logiciel CRM Algérie 2024 - Gestion Relation Client | Symloop",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".enBref", "h1", ".prose"]
+    },
+    "url": "https://symloop.com/blog/logiciel-crm-algerie-2024"
+  };
+
   return (
     <>
       <Head>
@@ -88,6 +171,9 @@ export default function LogicielCRMAlgerie() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(seoFaqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableStructuredData) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -155,6 +241,14 @@ export default function LogicielCRMAlgerie() {
                 complète selon vos processus de vente.
               </p>
             </div>
+
+            {/* En bref — LLM & AI summary block */}
+            <section className="enBref mb-12 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-gray-900 mb-2">En bref</h2>
+              <p className="text-gray-700">
+                Symloop développe des logiciels CRM sur mesure pour les entreprises algériennes. Gestion contacts, pipeline commercial, suivi relances, reporting. Alternative locale à Salesforce et HubSpot, adaptée au marché algérien. Interface FR/AR. Basé à Sétif. Contact&nbsp;: <a href="tel:+213549575512" className="text-green-600 font-semibold">+213 549 575 512</a>.
+              </p>
+            </section>
 
             {/* Why CRM Section */}
             <section className="mb-16">
@@ -527,7 +621,9 @@ export default function LogicielCRMAlgerie() {
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   { title: "Logiciel RH Algérie", href: "/blog/logiciel-rh-algerie-2024", desc: "Gestion des ressources humaines" },
-                  { title: "ERP sur mesure Algérie", href: "/blog/erp-sur-mesure-algerie-2024", desc: "Planification des ressources" }
+                  { title: "ERP sur mesure Algérie", href: "/blog/erp-sur-mesure-algerie-2024", desc: "Planification des ressources" },
+                  { title: "ERP sur mesure, SaaS & Startup PME Algérie 2026", href: "/blog/erp-sur-mesure-saas-startup-pme-algerie-2026", desc: "Développement ERP & SaaS pour startups et PME algériennes" },
+                  { title: "Digitalisez votre entreprise — Ne perdez plus 1 Dinar", href: "/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar", desc: "Guide complet pour la digitalisation des entreprises en Algérie" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="group p-4 bg-gray-50 rounded-xl hover:bg-green-50 transition-colors">
                     <h3 className="font-semibold text-gray-900 group-hover:text-green-600 mb-1">{article.title}</h3>

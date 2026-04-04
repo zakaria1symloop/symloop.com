@@ -32,6 +32,26 @@ export default function MarketingDigitalAlgerie() {
     {
       question: "Quels résultats puis-je espérer avec le marketing digital ?",
       answer: "Les résultats varient selon le secteur, mais en moyenne nos clients voient : +50% de trafic web en 3 mois, coût par lead divisé par 2, et ROI positif dès le premier mois sur les campagnes bien optimisées. Nous garantissons la transparence des résultats."
+    },
+    {
+      question: "Comment faire du marketing digital en Algérie ?",
+      answer: "Pour faire du marketing digital en Algérie, commencez par définir vos objectifs (visibilité, leads, ventes), identifiez votre audience cible, puis choisissez les bons canaux : Facebook Ads pour le B2C, Google Ads pour capter les intentions de recherche, SEO pour le trafic organique durable, et Instagram/TikTok pour toucher les jeunes. Symloop vous accompagne à chaque étape avec une stratégie adaptée au marché algérien."
+    },
+    {
+      question: "Combien coûte le marketing digital en Algérie ?",
+      answer: "Les tarifs varient selon les services : community management à partir de 15 000 DA/mois, gestion de campagnes publicitaires (Facebook/Google Ads) de 20 000 à 80 000 DA/mois hors budget pub, et SEO de 50 000 à 200 000 DA/mois. Le budget publicitaire est facturé directement par les plateformes (minimum 500 DA/jour recommandé). Contactez Symloop pour un devis personnalisé."
+    },
+    {
+      question: "Quelle agence de marketing digital choisir en Algérie ?",
+      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Sétif, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
+    },
+    {
+      question: "Le marketing digital est-il efficace pour les PME algériennes ?",
+      answer: "Oui, le marketing digital est particulièrement efficace pour les PME algériennes. Avec 23 millions d'utilisateurs Facebook et des coûts publicitaires très compétitifs (CPM de 50-150 DA), même un petit budget peut générer des résultats significatifs. Nos clients PME voient en moyenne +50% de trafic en 3 mois et un ROAS de 3 à 5x sur leurs campagnes."
+    },
+    {
+      question: "Symloop fait-il du marketing digital ?",
+      answer: "Oui, Symloop est une agence digitale basée à Sétif qui propose des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
     }
   ];
 
@@ -69,6 +89,29 @@ export default function MarketingDigitalAlgerie() {
               "name": faq.question,
               "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
             }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Marketing Digital Algérie 2024", "item": "https://symloop.com/blog/marketing-digital-algerie-2024" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Marketing Digital Algérie 2024",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".en-bref-summary"]
+            },
+            "url": "https://symloop.com/blog/marketing-digital-algerie-2024"
           })}
         </script>
       </Head>
@@ -123,6 +166,14 @@ export default function MarketingDigitalAlgerie() {
                 23 millions d'utilisateurs Facebook, 8 millions sur Instagram et une croissance de 40% du e-commerce.
                 Les entreprises algériennes qui maîtrisent le <span className="text-cyan-600 font-semibold">marketing en ligne</span>
                 gagnent un avantage compétitif majeur. Ce guide vous montre comment.
+              </p>
+            </div>
+
+            {/* En Bref */}
+            <div className="en-bref-summary bg-cyan-50 border border-cyan-200 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-cyan-800 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop accompagne les entreprises algériennes dans leur stratégie de marketing digital. SEO, publicité Google/Facebook, community management, création de contenu, email marketing. Augmentez votre visibilité en ligne et générez plus de clients. Basé à Sétif. Contact&nbsp;: <a href="tel:+213549575512" className="text-cyan-600 font-semibold hover:underline">+213 549 575 512</a>.
               </p>
             </div>
 
@@ -431,6 +482,25 @@ export default function MarketingDigitalAlgerie() {
                 ))}
               </div>
             </section>
+
+            {/* Cross-links */}
+            <div className="bg-gray-50 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Articles complémentaires</h2>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/blog/seo-referencement-algerie-2024" className="text-cyan-600 hover:text-cyan-800 font-medium hover:underline flex items-center gap-2">
+                    <ArrowLeft className="w-4 h-4 rotate-180" />
+                    SEO et Référencement en Algérie 2024 : Guide complet pour améliorer votre visibilité sur Google
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/developpement-site-web-algerie-2026" className="text-cyan-600 hover:text-cyan-800 font-medium hover:underline flex items-center gap-2">
+                    <ArrowLeft className="w-4 h-4 rotate-180" />
+                    Développement de Site Web en Algérie 2026 : Tarifs, technologies et bonnes pratiques
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-100">

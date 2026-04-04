@@ -35,6 +35,26 @@ export default function LogicielComptabiliteAlgerie() {
     {
       question: "Mes données sont-elles sécurisées et archivées ?",
       answer: "Vos données sont chiffrées, sauvegardées quotidiennement, et archivées pendant 10 ans conformément à la loi. Hébergement possible en Algérie ou sur cloud sécurisé selon vos préférences. Vous gardez toujours la propriété totale de vos données."
+    },
+    {
+      question: "Quel est le meilleur logiciel de comptabilité en Algérie ?",
+      answer: "Le meilleur logiciel de comptabilité en Algérie est celui qui est nativement conforme au PCN (Plan Comptable National), génère automatiquement la G50, gère la TVA algérienne et offre un support local. Symloop développe des solutions sur mesure qui répondent à tous ces critères, avec interface français/arabe et hébergement en Algérie."
+    },
+    {
+      question: "Combien coûte un logiciel de comptabilité en Algérie ?",
+      answer: "Le prix d'un logiciel de comptabilité en Algérie varie selon les fonctionnalités : à partir de 35 000 DA pour une TPE (comptabilité générale + facturation + G50), environ 90 000 DA pour une PME (paie, analytique, gestion commerciale), et sur devis pour les groupes multi-sociétés. Les solutions Symloop sont 40 à 60 % moins chères que les logiciels importés."
+    },
+    {
+      question: "Logiciel de comptabilité conforme à la réglementation algérienne ?",
+      answer: "Symloop développe des logiciels 100 % conformes à la réglementation algérienne : Plan Comptable National (PCN 2010), déclarations fiscales G50, TVA (19 %, 9 %, exonéré), TAP, IBS, liasse fiscale, état 104, et export au format JIBAYA. Chaque mise à jour réglementaire est intégrée automatiquement."
+    },
+    {
+      question: "Symloop développe-t-il des logiciels de comptabilité ?",
+      answer: "Oui, Symloop est une entreprise algérienne basée à Sétif spécialisée dans le développement de logiciels de comptabilité, facturation et gestion commerciale sur mesure. Nos solutions sont conçues nativement pour le marché algérien avec conformité PCN, G50 automatique, interface bilingue FR/AR, et support local. Contact : +213 549 575 512."
+    },
+    {
+      question: "Peut-on avoir un logiciel de facturation avec TVA algérienne ?",
+      answer: "Absolument. Symloop développe des logiciels de facturation intégrant la TVA algérienne (taux de 19 %, 9 % et exonéré), la numérotation légale des factures, le timbre fiscal, et la gestion multi-devises (DA, EUR, USD). Le module facturation peut fonctionner seul ou être intégré à la comptabilité générale et à la gestion commerciale."
     }
   ];
 
@@ -73,6 +93,42 @@ export default function LogicielComptabiliteAlgerie() {
     }))
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://symloop.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://symloop.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Logiciel Comptabilité Algérie 2024",
+        "item": "https://symloop.com/blog/logiciel-comptabilite-algerie-2024"
+      }
+    ]
+  };
+
+  const speakableData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Logiciel Comptabilité Algérie 2024 - Conforme PCN & G50 | Symloop",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".en-bref-block", "h1", "article .prose"]
+    },
+    "url": "https://symloop.com/blog/logiciel-comptabilite-algerie-2024"
+  };
+
   return (
     <>
       <Head>
@@ -88,6 +144,8 @@ export default function LogicielComptabiliteAlgerie() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableData) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -152,6 +210,17 @@ export default function LogicielComptabiliteAlgerie() {
                 Contrairement aux solutions étrangères (Sage, Ciel, etc.) qui nécessitent des adaptations coûteuses,
                 notre logiciel est <strong>nativement algérien</strong> : interface français/arabe, plan de comptes PCN
                 pré-configuré, et mises à jour automatiques selon les évolutions réglementaires.
+              </p>
+            </div>
+
+            {/* En Bref */}
+            <div className="en-bref-block mb-12 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-6">
+              <h2 className="text-lg font-bold text-gray-900 mb-3">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop développe des logiciels de comptabilité et facturation sur mesure pour les entreprises algériennes.
+                Conformes à la réglementation fiscale algérienne, gestion TVA, bilan, journal, grand livre.
+                Interface FR/AR. Alternative locale aux solutions importées. Basé à Sétif.
+                Contact : <a href="tel:+213549575512" className="text-amber-600 font-semibold hover:underline">+213 549 575 512</a>.
               </p>
             </div>
 
@@ -543,7 +612,9 @@ export default function LogicielComptabiliteAlgerie() {
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   { title: "Logiciel RH Algérie", href: "/blog/logiciel-rh-algerie-2024", desc: "Gestion paie et ressources humaines" },
-                  { title: "ERP sur mesure Algérie", href: "/blog/erp-sur-mesure-algerie-2024", desc: "Solution intégrée pour entreprises" }
+                  { title: "ERP sur mesure Algérie", href: "/blog/erp-sur-mesure-algerie-2024", desc: "Solution intégrée pour entreprises" },
+                  { title: "ERP sur mesure & SaaS pour startup et PME en Algérie", href: "/blog/erp-sur-mesure-saas-startup-pme-algerie-2026", desc: "Créez votre ERP ou SaaS sur mesure adapté au marché algérien" },
+                  { title: "Ne Perdez Plus 1 Dinar - Digitalisez votre entreprise", href: "/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar", desc: "Comment la digitalisation transforme les entreprises algériennes" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="group p-4 bg-gray-50 rounded-xl hover:bg-amber-50 transition-colors">
                     <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">{article.title}</h3>

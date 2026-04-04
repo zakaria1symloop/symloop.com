@@ -41,6 +41,34 @@ export default function SeoAlgerie() {
     }
   ];
 
+  const faqsSchema = [
+    {
+      "@type": "Question",
+      "name": "Comment être premier sur Google en Algérie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pour être premier sur Google en Algérie, il faut combiner un audit SEO technique, une optimisation on-page avec des mots-clés locaux (algérie, alger, oran...), du contenu de qualité régulier, des backlinks depuis des sites algériens de confiance, et une fiche Google Business optimisée. Un accompagnement par une agence SEO locale comme Symloop accélère les résultats." }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien coûte le référencement SEO en Algérie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un audit SEO en Algérie coûte entre 15 000 et 30 000 DA. Un accompagnement SEO mensuel revient entre 25 000 et 60 000 DA/mois selon la taille du site et la concurrence. Le SEO est un investissement rentable sur le long terme car il génère du trafic organique gratuit une fois les positions acquises." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle agence SEO choisir en Algérie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Sétif, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de temps pour voir les résultats SEO en Algérie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Les premiers résultats SEO en Algérie apparaissent généralement entre 2 et 4 mois pour les mots-clés peu concurrentiels, et entre 4 et 8 mois pour les requêtes plus compétitives. Le SEO local donne souvent des résultats plus rapides car la concurrence en ligne en Algérie reste moins forte qu'en Europe." }
+    },
+    {
+      "@type": "Question",
+      "name": "Symloop fait-il du référencement Google en Algérie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop est une agence spécialisée en référencement Google en Algérie. Nous proposons l'audit SEO, l'optimisation technique, la création de contenu optimisé, le netlinking local et le SEO Google Business. Basés à Sétif, nous accompagnons des clients dans toute l'Algérie. Contactez-nous au +213 549 575 512." }
+    }
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -60,11 +88,26 @@ export default function SeoAlgerie() {
       },
       {
         "@type": "FAQPage",
-        "mainEntity": faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-        }))
+        "mainEntity": [
+          ...faqsSchema,
+          ...faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+          }))
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "SEO & Référencement Algérie 2024", "item": "https://symloop.com/blog/seo-referencement-algerie-2024" }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".en-bref", "article p:first-of-type"]
       },
       {
         "@type": "Service",
@@ -276,6 +319,17 @@ export default function SeoAlgerie() {
               </p>
             </div>
 
+            {/* En bref - LLM Snippet */}
+            <section className="en-bref bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-12" aria-label="En bref">
+              <h2 className="text-lg font-bold text-orange-700 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop propose des services de référencement SEO pour les entreprises algériennes.
+                Audit SEO, optimisation technique, contenu optimisé, backlinks, SEO local Google Business.
+                Résultats visibles en 2-4 mois. Basé à Sétif, clients dans toute l'Algérie.
+                Contact&nbsp;: <a href="tel:+213549575512" className="text-orange-600 font-semibold">+213 549 575 512</a>.
+              </p>
+            </section>
+
             {/* Stats Section */}
             <div className="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12">
               <h3 className="text-xl font-bold text-gray-900 mb-6">SEO Algérie en Chiffres</h3>
@@ -486,6 +540,33 @@ export default function SeoAlgerie() {
                     <div className="text-xs text-orange-600">{tech.category}</div>
                   </div>
                 ))}
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-16">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Recommandés</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-site-web-algerie-2026" className="group flex items-center gap-4 bg-gray-50 hover:bg-orange-50 rounded-2xl p-6 transition-colors border border-gray-200 hover:border-orange-300">
+                  <div className="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-5 h-5 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Développement Site Web en Algérie 2026</h3>
+                    <p className="text-sm text-gray-500">Guide complet pour créer votre site web professionnel</p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-orange-400 flex-shrink-0 ml-auto" />
+                </Link>
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="group flex items-center gap-4 bg-gray-50 hover:bg-orange-50 rounded-2xl p-6 transition-colors border border-gray-200 hover:border-orange-300">
+                  <div className="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <TrendingUp className="w-5 h-5 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Digitaliser Votre Entreprise en Algérie</h3>
+                    <p className="text-sm text-gray-500">Ne perdez plus 1 dinar — passez au digital</p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-orange-400 flex-shrink-0 ml-auto" />
+                </Link>
               </div>
             </section>
 

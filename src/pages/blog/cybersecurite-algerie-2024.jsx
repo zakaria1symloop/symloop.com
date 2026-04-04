@@ -13,12 +13,28 @@ export default function CybersecuriteAlgerie() {
 
   const faqItems = [
     {
-      question: "Pourquoi les entreprises algériennes sont-elles ciblées ?",
-      answer: "Les entreprises algériennes sont ciblées car elles manquent souvent de protection adéquate (60% n'ont pas de pare-feu avancé). Les hackers cherchent les cibles faciles. De plus, la croissance du digital en Algérie attire les cybercriminels qui voient un marché vulnérable."
+      question: "Quels sont les risques de cybersécurité pour les entreprises algériennes ?",
+      answer: "Les entreprises algériennes font face à des risques majeurs : ransomware (35% des attaques), phishing (28%), malware (20%) et DDoS (17%). Les attaques ont augmenté de +300% en 2024. Le coût moyen d'une violation de données dépasse 50 millions de DA. 60% des entreprises n'ont pas de pare-feu avancé, ce qui en fait des cibles faciles pour les cybercriminels."
     },
     {
-      question: "Combien coûte un audit de sécurité ?",
-      answer: "Un audit de sécurité basique (scan de vulnérabilités, rapport) coûte à partir de 100 000 DA. Un audit complet avec test d'intrusion (pentest) coûte entre 300 000 et 800 000 DA selon la taille de l'infrastructure. Contactez-nous pour un devis personnalisé."
+      question: "Comment protéger mon entreprise contre les cyberattaques en Algérie ?",
+      answer: "Pour protéger votre entreprise : 1) Réalisez un audit de sécurité pour identifier les failles, 2) Installez un pare-feu nouvelle génération et un antivirus endpoint, 3) Activez l'authentification 2FA, 4) Mettez en place des sauvegardes quotidiennes chiffrées, 5) Formez vos employés au phishing, 6) Activez un monitoring continu (SOC). Symloop propose tous ces services avec un accompagnement personnalisé."
+    },
+    {
+      question: "Combien coûte un audit de cybersécurité en Algérie ?",
+      answer: "Un audit de sécurité basique (scan de vulnérabilités, rapport) coûte à partir de 25 000 DA. Un audit complet avec test d'intrusion (pentest) coûte entre 300 000 et 800 000 DA selon la taille de l'infrastructure. Symloop propose un audit de vulnérabilités gratuit pour évaluer vos risques sans engagement. Contactez-nous pour un devis personnalisé."
+    },
+    {
+      question: "Symloop propose-t-il des services de cybersécurité ?",
+      answer: "Oui, Symloop propose une gamme complète de services de cybersécurité : audit de sécurité, test d'intrusion (pentest), pare-feu et protection réseau, SOC et monitoring 24/7, backup et recovery, formation et sensibilisation des employés. Nous accompagnons les PME et grandes entreprises algériennes avec des solutions adaptées. Basé à Sétif, nous intervenons sur tout le territoire national. Contact : +213 549 575 512."
+    },
+    {
+      question: "La cybersécurité est-elle obligatoire pour les entreprises en Algérie ?",
+      answer: "Bien que la réglementation algérienne évolue, la protection des données et la cybersécurité deviennent de plus en plus encadrées. Les entreprises manipulant des données personnelles ou financières ont l'obligation de les protéger. Un audit de sécurité annuel est fortement recommandé. Ne pas investir dans la cybersécurité expose votre entreprise à des pertes financières (50M+ DA en moyenne), des sanctions réglementaires et une atteinte à la réputation."
+    },
+    {
+      question: "Pourquoi les entreprises algériennes sont-elles ciblées ?",
+      answer: "Les entreprises algériennes sont ciblées car elles manquent souvent de protection adéquate (60% n'ont pas de pare-feu avancé). Les hackers cherchent les cibles faciles. De plus, la croissance du digital en Algérie attire les cybercriminels qui voient un marché vulnérable."
     },
     {
       question: "Qu'est-ce qu'un pentest et pourquoi en ai-je besoin ?",
@@ -73,6 +89,42 @@ export default function CybersecuriteAlgerie() {
     }))
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://symloop.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://symloop.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cybersécurité Algérie 2024",
+        "item": "https://symloop.com/blog/cybersecurite-algerie-2024"
+      }
+    ]
+  };
+
+  const speakableData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cybersécurité Algérie 2024 - Audit & Protection | Symloop",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".prose", "h1", "h2"]
+    },
+    "url": "https://symloop.com/blog/cybersecurite-algerie-2024"
+  };
+
   return (
     <>
       <Head>
@@ -88,6 +140,8 @@ export default function CybersecuriteAlgerie() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableData) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -154,6 +208,17 @@ export default function CybersecuriteAlgerie() {
                 pour <strong>sécuriser votre entreprise</strong> contre toutes les menaces.
               </p>
             </div>
+
+            {/* En bref - LLM Discovery Block */}
+            <section className="mb-12 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-gray-900 mb-3">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop propose des services de cybersécurité pour les entreprises algériennes.
+                Audit de sécurité, protection des données, SSL, pare-feu, monitoring 24/7,
+                conformité réglementaire. Protection contre ransomware, phishing et fuites de données.
+                Basé à Sétif. Contact&nbsp;: +213 549 575 512.
+              </p>
+            </section>
 
             {/* Threat Stats */}
             <section className="mb-16">
@@ -426,7 +491,9 @@ export default function CybersecuriteAlgerie() {
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   { title: "Cloud Computing Algérie", href: "/blog/cloud-computing-algerie-2024", desc: "Hébergement sécurisé" },
-                  { title: "Maintenance Applications", href: "/blog/maintenance-support-application-algerie", desc: "Support et monitoring" }
+                  { title: "Maintenance Applications", href: "/blog/maintenance-support-application-algerie", desc: "Support et monitoring" },
+                  { title: "DevOps & Développement Logiciel en Algérie", href: "/blog/devops-developpement-logiciel-algerie-2026", desc: "CI/CD, automatisation et déploiement sécurisé" },
+                  { title: "Solutions Informatiques en Algérie", href: "/blog/solutions-informatiques-algerie-2026", desc: "Digitalisation et transformation numérique" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="group p-4 bg-gray-50 rounded-xl hover:bg-red-50 transition-colors">
                     <h3 className="font-semibold text-gray-900 group-hover:text-red-600 mb-1">{article.title}</h3>
