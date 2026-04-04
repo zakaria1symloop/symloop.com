@@ -1,14 +1,4 @@
 <?xml version="1.0"?>
 <users>
-  <!--
-    Bing Webmaster Tools Verification
-    To verify ownership of symloop.com:
-    1. Go to https://www.bing.com/webmasters
-    2. Add your site: symloop.com
-    3. Choose XML file verification method
-    4. Copy your verification code (e.g., A1B2C3D4E5F6...)
-    5. Replace BING_VERIFICATION_CODE below with your actual code
-    6. Upload this file to your root domain
-  -->
-  <user>BING_VERIFICATION_CODE</user>
+	<user>375A8C11C5109341E6E85DAA565B6F47</user>
 </users>
