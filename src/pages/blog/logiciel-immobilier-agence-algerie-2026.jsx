@@ -707,6 +707,77 @@ export default function LogicielImmobilier2026() {
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
+
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Logiciel Immobilier Agence Algerie 2026", "item": "https://symloop.com/blog/logiciel-immobilier-agence-algerie-2026" }
+          ]
+        })}} />
+
+        {/* FAQPage Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quel est le meilleur CRM immobilier pour une agence en Algerie ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Symloop propose un CRM immobilier complet adapte au marche algerien : gestion des biens (F3, F4, duplex, haouche), suivi clients acheteurs et locataires, mandats, visites, et diffusion automatique sur Ouedkniss et Jumia House. Interface disponible en francais et arabe."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Combien coute un logiciel de gestion immobiliere en Algerie ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les tarifs varient selon les besoins : a partir de 9 900 DA/mois pour un agent independant (100 biens, CRM clients, diffusion 2 portails), 24 900 DA/mois pour une agence (jusqu'a 5 agents, biens illimites, site web inclus), et sur devis pour les promoteurs immobiliers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment gerer les biens immobiliers et les visites avec un logiciel ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le logiciel centralise toutes les fiches biens (surface, pieces, photos, geolocalisation), organise les visites avec un agenda partage et des confirmations SMS, genere des comptes-rendus automatiques, et envoie des alertes pour les mandats expirant ou les biens sans visite."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quelles solutions Symloop propose pour les agences et promoteurs immobiliers en Algerie ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Symloop developpe des logiciels de gestion immobiliere sur mesure : CRM clients, gestion des biens et mandats, planning de visites, diffusion multi-portails (Ouedkniss, Jumia House, site web, reseaux sociaux), rapports de performance, gestion de programmes neufs pour promoteurs, et integration portail web. Base a Setif, support dans toute l'Algerie."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Peut-on integrer un site web vitrine avec le logiciel immobilier ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, la formule Agence inclut un site web immobilier personnalise synchronise avec le logiciel. Les annonces publiees dans le CRM apparaissent automatiquement sur votre site, optimise SEO pour capter des leads. L'integration avec les reseaux sociaux (Facebook, Instagram, WhatsApp) est aussi disponible."
+              }
+            }
+          ]
+        })}} />
+
+        {/* SpeakableSpecification Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Logiciel Immobilier Agence CRM Algerie 2026",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".en-bref-block", "h1", ".blog-intro"]
+          },
+          "url": "https://symloop.com/blog/logiciel-immobilier-agence-algerie-2026"
+        })}} />
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -742,7 +813,20 @@ export default function LogicielImmobilier2026() {
         {/* Content */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="text-xl text-gray-300 leading-relaxed mb-16">{t.intro}</p>
+            <p className="text-xl text-gray-300 leading-relaxed mb-16 blog-intro">{t.intro}</p>
+
+            {/* En bref */}
+            <div className="en-bref-block bg-violet-500/10 border border-violet-500/30 rounded-2xl p-8 mb-16">
+              <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
+                <Zap className="w-5 h-5 text-violet-400" />
+                {locale === 'ar' ? 'باختصار' : 'En bref'}
+              </h2>
+              <p className="text-gray-300 leading-relaxed">
+                {locale === 'ar'
+                  ? 'تطور Symloop برامج إدارة عقارية للوكالات والمطورين في الجزائر. إدارة العقارات، العملاء، الزيارات، العقود، بوابة ويب. تكامل المنزل الذكي متاح. واجهة فرنسية/عربية. مقرها سطيف. اتصل: +213 549 575 512.'
+                  : 'Symloop developpe des logiciels de gestion immobiliere pour agences et promoteurs en Algerie. Gestion biens, clients, visites, contrats, portail web. Integration smart home disponible. Interface FR/AR. Base a Setif. Contact: +213 549 575 512.'}
+              </p>
+            </div>
 
             {/* TOC */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-16">
@@ -898,6 +982,36 @@ export default function LogicielImmobilier2026() {
                 {t.wilayas.list.map((w, i) => (
                   <span key={i} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">{w}</span>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links */}
+            <div className="mb-16 bg-white/5 border border-white/10 rounded-2xl p-8">
+              <h2 className="text-xl font-bold mb-6 flex items-center gap-3">
+                <TrendingUp className="w-5 h-5 text-violet-400" />
+                {locale === 'ar' ? 'مقالات ذات صلة' : 'Articles complementaires'}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/smart-home-promoteur-immobilier-algerie-2026" className="block bg-white/5 border border-white/10 hover:border-violet-500/40 rounded-xl p-5 transition-colors group">
+                  <h3 className="font-bold mb-2 group-hover:text-violet-400 transition-colors">
+                    {locale === 'ar' ? 'المنزل الذكي للمطورين العقاريين في الجزائر' : 'Smart Home pour Promoteurs Immobiliers en Algerie'}
+                  </h3>
+                  <p className="text-sm text-gray-400">
+                    {locale === 'ar'
+                      ? 'اكتشف كيف يمكن لتقنيات المنزل الذكي أن تعزز مشاريعك العقارية وتضيف قيمة لعملائك.'
+                      : 'Decouvrez comment les technologies smart home peuvent valoriser vos programmes immobiliers et fideliser vos acquereurs.'}
+                  </p>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="block bg-white/5 border border-white/10 hover:border-violet-500/40 rounded-xl p-5 transition-colors group">
+                  <h3 className="font-bold mb-2 group-hover:text-violet-400 transition-colors">
+                    {locale === 'ar' ? 'الحلول المعلوماتية في الجزائر' : 'Solutions Informatiques en Algerie'}
+                  </h3>
+                  <p className="text-sm text-gray-400">
+                    {locale === 'ar'
+                      ? 'نظرة شاملة على الحلول التقنية المتاحة للشركات الجزائرية: ERP، تطبيقات ويب، أتمتة العمليات.'
+                      : 'Panorama des solutions technologiques pour les entreprises algeriennes : ERP, applications web, automatisation des processus.'}
+                  </p>
+                </Link>
               </div>
             </div>
 

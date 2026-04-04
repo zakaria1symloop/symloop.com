@@ -4,12 +4,12 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import {
-  ArrowLeft, Calendar, Clock, User,
+  ArrowLeft, ArrowRight, Calendar, Clock, User,
   BedDouble, TrendingUp, Star, BarChart3,
   CheckCircle, Phone, Mail, Building2,
   Layers, CreditCard, Shield, Zap,
   CalendarCheck, Users, Key, Wifi,
-  Coffee, Globe, Bell, DollarSign
+  Coffee, Globe, Bell, DollarSign, HelpCircle
 } from "lucide-react";
 
 export default function LogicielHotel2026() {
@@ -697,6 +697,29 @@ export default function LogicielHotel2026() {
 
   const t = content[locale] || content.fr;
 
+  const faqItems = [
+    {
+      question: "Quel est le meilleur logiciel PMS pour un hotel en Algerie ?",
+      answer: "Le meilleur PMS pour un hotel en Algerie doit offrir une interface bilingue arabe/francais, la facturation en dinars conforme a la reglementation algerienne, et l'integration avec les moyens de paiement locaux (CIB, Edahabia). Symloop propose un PMS complet adapte au contexte algerien avec gestion des reservations, check-in/out, housekeeping et channel manager."
+    },
+    {
+      question: "Combien coute un logiciel de gestion hoteliere en Algerie ?",
+      answer: "Les tarifs varient selon la taille de l'etablissement. Chez Symloop : a partir de 24 900 DA/mois pour un petit hotel (jusqu'a 20 chambres), 49 900 DA/mois pour un hotel moyen (jusqu'a 50 chambres), et sur devis pour les grands hotels (50+ chambres). Tous les plans incluent le PMS complet, les reservations et la facturation."
+    },
+    {
+      question: "Comment mettre en place la reservation en ligne pour mon hotel en Algerie ?",
+      answer: "Symloop integre un moteur de reservation directe sur votre site web (sans commission) et connecte votre hotel aux OTA (Booking.com, Expedia, Airbnb) via un channel manager. Les disponibilites et tarifs sont synchronises en temps reel sur tous les canaux pour eviter le surbooking."
+    },
+    {
+      question: "Que propose Symloop comme solution pour les hotels et maisons d'hotes ?",
+      answer: "Symloop developpe des logiciels de gestion hoteliere sur mesure : PMS complet (planning, reservations, check-in/out, facturation), channel manager OTA, moteur de reservation en ligne, tarification dynamique, rapports RevPAR/ADR, et integration paiement CIB/Edahabia. Interface FR/AR, support et formation inclus. Base a Setif, Algerie."
+    },
+    {
+      question: "Qu'est-ce qu'un channel manager et pourquoi en ai-je besoin pour mon hotel ?",
+      answer: "Un channel manager synchronise automatiquement les disponibilites, tarifs et reservations de votre hotel sur toutes les plateformes (Booking.com, Expedia, Airbnb, votre site). Il elimine le surbooking, fait gagner du temps et augmente la visibilite. Le channel manager Symloop gere la synchronisation bidirectionnelle en temps reel avec toutes les OTA majeures."
+    }
+  ];
+
   return (
     <>
       <Head>
@@ -707,6 +730,49 @@ export default function LogicielHotel2026() {
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
+
+        {/* FAQPage structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqItems.map(item => ({
+              "@type": "Question",
+              "name": item.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+              }
+            }))
+          })}
+        </script>
+
+        {/* BreadcrumbList structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog/" },
+              { "@type": "ListItem", "position": 3, "name": "Logiciel Hotel PMS Algerie 2026", "item": "https://symloop.com/blog/logiciel-hotel-reservation-hebergement-algerie-2026/" }
+            ]
+          })}
+        </script>
+
+        {/* SpeakableSpecification for AI/voice search */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Logiciel de Gestion Hoteliere en Algerie 2026",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".prose p", "#faq", "#en-bref"]
+            },
+            "url": "https://symloop.com/blog/logiciel-hotel-reservation-hebergement-algerie-2026/"
+          })}
+        </script>
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -743,6 +809,19 @@ export default function LogicielHotel2026() {
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-xl text-gray-300 leading-relaxed mb-16">{t.intro}</p>
+
+            {/* AI/LLM-optimized "En bref" block */}
+            <div id="en-bref" className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                <Zap className="w-5 h-5 text-amber-400" />
+                En bref : Logiciel de Gestion Hoteliere en Algerie — Symloop
+              </h2>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                <strong className="text-white">Symloop</strong> developpe des logiciels de gestion hoteliere pour hotels et maisons d&apos;hotes en Algerie.
+                Reservation en ligne, check-in/out, gestion chambres, facturation, channel manager. Interface FR/AR.
+                Base a <strong className="text-white">Setif</strong>. Contact : <strong className="text-amber-400">+213 549 575 512</strong>.
+              </p>
+            </div>
 
             {/* TOC */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-16">
@@ -898,6 +977,42 @@ export default function LogicielHotel2026() {
                 {t.wilayas.list.map((w, i) => (
                   <span key={i} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">{w}</span>
                 ))}
+              </div>
+            </div>
+
+            {/* FAQ Section */}
+            <div id="faq" className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                <HelpCircle className="w-7 h-7 text-amber-400" />
+                Questions Frequentes — Logiciel Hotel Algerie
+              </h2>
+              <div className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <details key={index} className="group bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+                    <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-white/10 transition-colors">
+                      <span className="font-medium text-white pr-4">{item.question}</span>
+                      <span className="text-amber-400 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+                    </summary>
+                    <div className="px-6 pb-6 text-gray-300 text-sm leading-relaxed">
+                      {item.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+
+            {/* Cross-links / Articles connexes */}
+            <div className="mb-16">
+              <h3 className="font-bold text-white mb-4">Articles connexes</h3>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <Link href="/blog/developpement-site-web-algerie-2026" className="flex items-center gap-2 p-3 bg-white/5 border border-white/10 rounded-lg hover:bg-amber-500/10 hover:border-amber-500/30 transition-colors text-sm text-gray-300 hover:text-amber-400">
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                  Developpement Site Web en Algerie 2026
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="flex items-center gap-2 p-3 bg-white/5 border border-white/10 rounded-lg hover:bg-amber-500/10 hover:border-amber-500/30 transition-colors text-sm text-gray-300 hover:text-amber-400">
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                  Solutions Informatiques en Algerie 2026
+                </Link>
               </div>
             </div>
 

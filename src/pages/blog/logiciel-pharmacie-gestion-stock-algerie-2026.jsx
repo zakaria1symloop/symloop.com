@@ -707,6 +707,80 @@ export default function LogicielPharmacie2026() {
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel est le meilleur logiciel de gestion pour pharmacie en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le meilleur logiciel de gestion pour pharmacie en Alg\u00e9rie doit int\u00e9grer la nomenclature nationale des m\u00e9dicaments, le tiers payant CNAS/CASNOS, et les alertes de p\u00e9remption. Symloop propose une solution compl\u00e8te con\u00e7ue sp\u00e9cifiquement pour les officines alg\u00e9riennes, avec interface fran\u00e7ais/arabe et support local bas\u00e9 \u00e0 S\u00e9tif."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien co\u00fbte un logiciel de gestion de pharmacie en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les tarifs varient selon la formule choisie. Chez Symloop, la formule Officine d\u00e9marre \u00e0 19 900 DA/mois pour 2 postes (stock illimit\u00e9, POS, ordonnances, tiers payant CNAS). La formule Officine Plus \u00e0 34 900 DA/mois inclut 5 postes et toutes les mutuelles. Un devis sur mesure est disponible pour les groupes multi-pharmacies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment g\u00e9rer le stock et les p\u00e9remptions dans une pharmacie en Alg\u00e9rie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un logiciel de gestion pharmaceutique comme celui de Symloop automatise le suivi des stocks avec des alertes de p\u00e9remption \u00e0 6, 3 et 1 mois avant expiration. Il g\u00e8re \u00e9galement les seuils de r\u00e9approvisionnement, l\u2019analyse de rotation des produits, la tra\u00e7abilit\u00e9 par lot et l\u2019inventaire par scanner. R\u00e9sultat : -80% de pertes li\u00e9es aux p\u00e9remptions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que propose Symloop comme solution pour les pharmacies alg\u00e9riennes ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop d\u00e9veloppe un logiciel de gestion complet pour pharmacies en Alg\u00e9rie : gestion des stocks avec alertes p\u00e9remption, point de vente avec code-barres, dispensation d\u2019ordonnances, tiers payant CNAS/CASNOS/mutuelles, commandes fournisseurs et statistiques. L\u2019\u00e9quipe assure l\u2019installation, la formation et le support continu. Contact : +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le logiciel Symloop est-il conforme \u00e0 la r\u00e9glementation pharmaceutique alg\u00e9rienne ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui. Le logiciel Symloop est con\u00e7u sp\u00e9cifiquement pour le march\u00e9 alg\u00e9rien. Il int\u00e8gre la nomenclature nationale des m\u00e9dicaments, les tarifs conventionn\u00e9s, les proc\u00e9dures de remboursement CNAS/CASNOS, le tableau des stup\u00e9fiants, et assure une tra\u00e7abilit\u00e9 compl\u00e8te conforme aux exigences du minist\u00e8re de la Sant\u00e9."
+                }
+              }
+            ]
+          })}}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Logiciel Pharmacie Gestion Stock Alg\u00e9rie 2026", "item": "https://symloop.com/blog/logiciel-pharmacie-gestion-stock-algerie-2026" }
+            ]
+          })}}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Logiciel Pharmacie Gestion Stock Alg\u00e9rie 2026 | Symloop",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".en-bref-block", "article h2"]
+            },
+            "url": "https://symloop.com/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+          })}}
+        />
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -736,6 +810,23 @@ export default function LogicielPharmacie2026() {
               <div className="flex items-center gap-2"><Clock className="w-4 h-4" />{t.readTime}</div>
               <div className="flex items-center gap-2"><User className="w-4 h-4" />{t.author}</div>
             </div>
+          </div>
+        </section>
+
+        {/* En bref — summary block for LLM / featured snippet / speakable */}
+        <section className="max-w-4xl mx-auto px-6 -mt-6 mb-8 relative z-10">
+          <div className="en-bref-block bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-6">
+            <div className="flex items-center gap-2 mb-3">
+              <FileText className="w-5 h-5 text-emerald-400" />
+              <h2 className="text-lg font-bold text-emerald-400">{isRTL ? '\u0628\u0627\u062E\u062A\u0635\u0627\u0631' : locale === 'en' ? 'In brief' : 'En bref'}</h2>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              {isRTL
+                ? 'Symloop \u062A\u0637\u0648\u0631 \u0628\u0631\u0627\u0645\u062C \u0625\u062F\u0627\u0631\u0629 \u0644\u0644\u0635\u064A\u062F\u0644\u064A\u0627\u062A \u0641\u064A \u0627\u0644\u062C\u0632\u0627\u0626\u0631. \u0625\u062F\u0627\u0631\u0629 \u0627\u0644\u0645\u062E\u0632\u0648\u0646\u060C \u062A\u0646\u0628\u064A\u0647 \u0627\u0646\u062A\u0647\u0627\u0621 \u0627\u0644\u0635\u0644\u0627\u062D\u064A\u0629\u060C \u0627\u0644\u0645\u0628\u064A\u0639\u0627\u062A\u060C \u0627\u0644\u0645\u0648\u0631\u062F\u0648\u0646\u060C \u0627\u0644\u0648\u0635\u0641\u0627\u062A. \u0645\u062A\u0648\u0627\u0641\u0642 \u0645\u0639 \u0627\u0644\u062A\u0646\u0638\u064A\u0645 \u0627\u0644\u0635\u064A\u062F\u0644\u0627\u0646\u064A \u0627\u0644\u062C\u0632\u0627\u0626\u0631\u064A. \u0648\u0627\u062C\u0647\u0629 FR/AR. \u0645\u0642\u0631\u0646\u0627 \u0641\u064A \u0633\u0637\u064A\u0641. \u0627\u062A\u0635\u0644: +213 549 575 512.'
+                : locale === 'en'
+                ? 'Symloop develops management software for pharmacies in Algeria. Stock management, expiry alerts, sales, suppliers, prescriptions. Compliant with Algerian pharmaceutical regulations. FR/AR interface. Based in Setif. Contact: +213 549 575 512.'
+                : 'Symloop d\u00e9veloppe des logiciels de gestion pour pharmacies en Alg\u00e9rie. Gestion des stocks, alerte p\u00e9remption, ventes, fournisseurs, ordonnances. Conforme \u00e0 la r\u00e9glementation pharmaceutique alg\u00e9rienne. Interface FR/AR. Bas\u00e9 \u00e0 S\u00e9tif. Contact\u00a0: +213 549 575 512.'}
+            </p>
           </div>
         </section>
 
@@ -898,6 +989,37 @@ export default function LogicielPharmacie2026() {
                 {t.wilayas.list.map((w, i) => (
                   <span key={i} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">{w}</span>
                 ))}
+              </div>
+            </div>
+
+            {/* Articles associes - Cross-links */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold mb-6">{isRTL ? '\u0645\u0642\u0627\u0644\u0627\u062A \u0630\u0627\u062A \u0635\u0644\u0629' : locale === 'en' ? 'Related Articles' : 'Articles associes'}</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="group bg-white/5 border border-white/10 hover:border-emerald-500/40 rounded-xl p-5 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Layers className="w-5 h-5 text-emerald-400" />
+                    <span className="text-sm text-emerald-400 font-medium">{isRTL ? 'ERP / SaaS' : 'ERP / SaaS'}</span>
+                  </div>
+                  <h3 className="font-bold group-hover:text-emerald-400 transition-colors">
+                    {isRTL ? 'ERP مخصص و SaaS للشركات الناشئة والمؤسسات الصغيرة في الجزائر' : locale === 'en' ? 'Custom ERP & SaaS for Startups and SMEs in Algeria 2026' : 'ERP Sur Mesure & SaaS pour Startups et PME en Algerie 2026'}
+                  </h3>
+                  <p className="text-gray-400 text-sm mt-1">
+                    {isRTL ? 'حلول برمجية مخصصة لتحسين إدارة أعمالك' : locale === 'en' ? 'Custom software solutions to optimize your business management' : 'Solutions logicielles sur mesure pour optimiser la gestion de votre entreprise'}
+                  </p>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="group bg-white/5 border border-white/10 hover:border-emerald-500/40 rounded-xl p-5 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Zap className="w-5 h-5 text-emerald-400" />
+                    <span className="text-sm text-emerald-400 font-medium">{isRTL ? 'حلول تقنية' : locale === 'en' ? 'IT Solutions' : 'Solutions IT'}</span>
+                  </div>
+                  <h3 className="font-bold group-hover:text-emerald-400 transition-colors">
+                    {isRTL ? 'حلول تكنولوجيا المعلومات في الجزائر 2026' : locale === 'en' ? 'IT Solutions in Algeria 2026' : 'Solutions Informatiques en Algerie 2026'}
+                  </h3>
+                  <p className="text-gray-400 text-sm mt-1">
+                    {isRTL ? 'دليل شامل للحلول التقنية للشركات الجزائرية' : locale === 'en' ? 'Comprehensive guide to IT solutions for Algerian businesses' : 'Guide complet des solutions informatiques pour les entreprises algeriennes'}
+                  </p>
+                </Link>
               </div>
             </div>
 

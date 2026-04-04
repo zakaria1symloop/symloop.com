@@ -1080,6 +1080,42 @@ export default function CameraInstallationBlog() {
           {/* Related Blogs - Internal Linking for SEO */}
           <RelatedBlogs currentSlug="installation-cameras-surveillance-professionnelle-algerie-2026" locale={locale} />
 
+          {/* Cross-links — targeted internal links for SEO */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg mb-12 border border-slate-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+              <ExternalLink className="w-5 h-5 text-blue-600" />
+              {isRTL ? 'اقرأ أيضًا' : locale === 'en' ? 'You may also like' : 'Articles connexes'}
+            </h2>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/blog/securite-maison-intelligente-cameras-alarmes-algerie-2026"
+                  className="flex items-center gap-2 text-blue-700 hover:text-blue-900 hover:underline font-medium transition-colors"
+                >
+                  <Shield className="w-4 h-4 flex-shrink-0" />
+                  {isRTL
+                    ? 'أمن المنزل الذكي: كاميرات وأجهزة إنذار في الجزائر 2026'
+                    : locale === 'en'
+                    ? 'Smart Home Security: Cameras & Alarms in Algeria 2026'
+                    : 'S\u00e9curit\u00e9 maison intelligente\u00a0: cam\u00e9ras et alarmes en Alg\u00e9rie 2026'}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/iot-internet-des-objets-algerie-2026"
+                  className="flex items-center gap-2 text-blue-700 hover:text-blue-900 hover:underline font-medium transition-colors"
+                >
+                  <Wifi className="w-4 h-4 flex-shrink-0" />
+                  {isRTL
+                    ? 'إنترنت الأشياء (IoT) في الجزائر 2026'
+                    : locale === 'en'
+                    ? 'IoT — Internet of Things in Algeria 2026'
+                    : 'IoT \u2014 Internet des objets en Alg\u00e9rie 2026'}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* CTA */}
           <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-2">{t.cta.title}</h2>

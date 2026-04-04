@@ -707,6 +707,67 @@ export default function LogicielEcole2026() {
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://symloop.com/blog/logiciel-ecole-gestion-scolaire-algerie-2026/" />
+        <meta property="og:site_name" content="Symloop" />
+
+        {/* FAQPage */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel est le meilleur logiciel de gestion scolaire en Alg\u00e9rie ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Symloop propose un logiciel de gestion scolaire complet, con\u00e7u pour le syst\u00e8me \u00e9ducatif alg\u00e9rien. Il couvre les inscriptions, notes, bulletins, emplois du temps, absences et communication parents, avec une interface en fran\u00e7ais et en arabe." }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien co\u00fbte un logiciel de gestion scolaire en Alg\u00e9rie ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les tarifs commencent \u00e0 14 900 DA/mois pour une \u00e9cole primaire (jusqu'\u00e0 300 \u00e9l\u00e8ves) et 29 900 DA/mois pour un CEM ou lyc\u00e9e (jusqu'\u00e0 800 \u00e9l\u00e8ves). Les \u00e9tablissements priv\u00e9s b\u00e9n\u00e9ficient d'un devis personnalis\u00e9." }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelles fonctionnalit\u00e9s propose un logiciel de gestion scolaire ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les fonctionnalit\u00e9s principales incluent : gestion des \u00e9l\u00e8ves et inscriptions, saisie des notes et g\u00e9n\u00e9ration de bulletins, emplois du temps, suivi des absences avec alertes SMS aux parents, cahier de textes num\u00e9rique, facturation de la scolarit\u00e9 et messagerie int\u00e9gr\u00e9e." }
+              },
+              {
+                "@type": "Question",
+                "name": "Symloop d\u00e9veloppe-t-il des logiciels pour \u00e9coles et universit\u00e9s en Alg\u00e9rie ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop d\u00e9veloppe des logiciels de gestion scolaire sur mesure pour les \u00e9coles primaires, CEM, lyc\u00e9es, \u00e9tablissements priv\u00e9s et centres de formation en Alg\u00e9rie. L'\u00e9quipe est bas\u00e9e \u00e0 S\u00e9tif avec une couverture nationale." }
+              },
+              {
+                "@type": "Question",
+                "name": "Le logiciel inclut-il un portail parents ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, le logiciel inclut une application mobile pour les parents permettant de consulter les notes, absences, emploi du temps, messages et paiements. Un syst\u00e8me de notifications SMS automatiques est \u00e9galement int\u00e9gr\u00e9 pour les alertes d'absences et de notes." }
+              }
+            ]
+          })}
+        </script>
+
+        {/* BreadcrumbList */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog/" },
+              { "@type": "ListItem", "position": 3, "name": "Logiciel Gestion Scolaire Alg\u00e9rie 2026", "item": "https://symloop.com/blog/logiciel-ecole-gestion-scolaire-algerie-2026/" }
+            ]
+          })}
+        </script>
+
+        {/* SpeakableSpecification */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Logiciel de Gestion Scolaire en Alg\u00e9rie 2026",
+            "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", "[data-speakable]", "#faq"] },
+            "url": "https://symloop.com/blog/logiciel-ecole-gestion-scolaire-algerie-2026/"
+          })}
+        </script>
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -743,6 +804,19 @@ export default function LogicielEcole2026() {
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-xl text-gray-300 leading-relaxed mb-16">{t.intro}</p>
+
+            {/* En bref — LLM Extraction Block */}
+            <div data-speakable="summary" className="bg-white/5 border border-blue-500/20 rounded-2xl p-8 mb-16">
+              <h2 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">En bref</h2>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                <strong className="text-white">Symloop</strong> d&eacute;veloppe des logiciels de gestion scolaire pour &eacute;coles et universit&eacute;s en Alg&eacute;rie.
+                Notes, emploi du temps, absences, bulletins, portail parents, e-learning.
+                Interface FR/AR. Bas&eacute; &agrave; S&eacute;tif.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                <strong className="text-white">Contact :</strong> +213 549 575 512
+              </p>
+            </div>
 
             {/* TOC */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-16">
@@ -898,6 +972,21 @@ export default function LogicielEcole2026() {
                 {t.wilayas.list.map((w, i) => (
                   <span key={i} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">{w}</span>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links */}
+            <div className="mb-16">
+              <h3 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Articles connexes</h3>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-blue-500/10 hover:border-blue-500/20 transition-all text-sm text-gray-400 hover:text-blue-400">
+                  <ArrowLeft className="w-4 h-4 flex-shrink-0 rotate-180" />
+                  Solutions Informatiques Alg&eacute;rie 2026
+                </Link>
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-blue-500/10 hover:border-blue-500/20 transition-all text-sm text-gray-400 hover:text-blue-400">
+                  <ArrowLeft className="w-4 h-4 flex-shrink-0 rotate-180" />
+                  Digitaliser Votre Entreprise &mdash; Ne Perdez Plus 1 Dinar
+                </Link>
               </div>
             </div>
 
