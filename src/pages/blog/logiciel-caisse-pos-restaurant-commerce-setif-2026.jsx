@@ -942,6 +942,79 @@ export default function LogicielCaissePOSSetif() {
         <meta name="geo.region" content="DZ-19" />
         <meta name="geo.placename" content="Setif" />
         <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qui installe des logiciels de caisse POS a Setif ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop developpe et installe des logiciels de caisse POS pour restaurants, cafes, fast-foods et commerces a Setif et dans l'Est algerien. Installation sur site, formation de l'equipe et support technique inclus. Contact : +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le logiciel POS de Symloop fonctionne-t-il hors connexion ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, le logiciel POS de Symloop fonctionne en mode hors ligne. Les donnees se synchronisent automatiquement des que la connexion internet revient. Ideal pour les zones a connexion instable. Appelez le +213 549 575 512 pour une demo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien coute un logiciel de caisse POS a Setif ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop propose des formules POS a partir de 35,000 DA/an (Starter, 1 point de caisse), 65,000 DA/an (Business, jusqu'a 3 caisses avec gestion des stocks) et 120,000 DA/an (Premium, multi-sites illimites). Installation et formation incluses. Contactez le +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le POS Symloop est-il adapte aux restaurants et fast-foods ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, le POS Symloop inclut des fonctionnalites specifiques pour la restauration : plan de salle interactif, prise de commande sur tablette, ecran cuisine (KDS), gestion de menu et envoi direct en cuisine. Support en arabe et francais. Contact : +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Dans quelles villes Symloop installe-t-il des systemes POS ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop installe des systemes POS a Setif (centre-ville, El Eulma, Ain Oulmene), Bordj Bou Arreridj, M'sila, Batna, Bejaia et Constantine. Intervention sur site pour l'installation, la formation et le support. Appelez le +213 549 575 512."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Logiciel Caisse POS Setif", "item": "https://symloop.com/blog/logiciel-caisse-pos-restaurant-commerce-setif-2026" }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "name": "Logiciel Caisse POS Restaurant Commerce Setif"
+          })}
+        </script>
       </Head>
 
       <div className={`min-h-screen bg-gradient-to-br from-symloop-dark via-symloop-dark-lighter to-symloop-dark ${isRTL ? 'rtl' : 'ltr'}`}>
@@ -969,6 +1042,20 @@ export default function LogicielCaissePOSSetif() {
                 <a href={`mailto:${c.ctaEmail}`} className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20">
                   {c.ctaEmail}
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="py-8">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="en-bref-block bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-2xl p-6">
+                <h2 className="text-lg font-bold text-green-400 mb-2">En bref</h2>
+                <p className="text-gray-300 leading-relaxed">
+                  Symloop developpe des logiciels de caisse (POS) pour restaurants et commerces a Setif. Encaissement, gestion stocks, tickets, reporting. Base a Setif. Contact: +213 549 575 512.
+                </p>
               </div>
             </div>
           </div>
@@ -1286,6 +1373,25 @@ export default function LogicielCaissePOSSetif() {
                     {c.ctaEmail}
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-links */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold text-white mb-6">Articles Connexes</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-green-500/50 transition-colors group">
+                  <h3 className="font-bold text-green-400 group-hover:text-green-300 mb-2">ERP sur Mesure et SaaS pour PME en Algerie</h3>
+                  <p className="text-gray-400 text-sm">Decouvrez les solutions ERP et SaaS adaptees aux startups et PME algeriennes.</p>
+                </Link>
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-green-500/50 transition-colors group">
+                  <h3 className="font-bold text-green-400 group-hover:text-green-300 mb-2">Digitaliser Votre Entreprise en Algerie</h3>
+                  <p className="text-gray-400 text-sm">Ne perdez plus 1 dinar : guide complet de la digitalisation pour les entreprises algeriennes.</p>
+                </Link>
               </div>
             </div>
           </div>

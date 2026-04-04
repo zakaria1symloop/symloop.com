@@ -523,35 +523,35 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
         questions: [
           {
             q: "Est-ce que mes livreurs peuvent désactiver le GPS ?",
-            a: "L'application nécessite l'autorisation GPS pour fonctionner. Si un livreur désactive son GPS, il ne pourra plus recevoir de missions. De plus, le dashboard admin affiche un avertissement immédiat si un GPS est désactivé pendant les heures de travail."
+            a: "L'application Symloop nécessite l'autorisation GPS pour fonctionner. Si un livreur désactive son GPS, il ne pourra plus recevoir de missions. De plus, le dashboard admin affiche un avertissement immédiat si un GPS est désactivé pendant les heures de travail. Contactez Symloop au +213 549 575 512 pour une démo."
           },
           {
             q: "Quel est l'impact sur la batterie du smartphone ?",
-            a: "Notre application est optimisée pour consommer un minimum de batterie. En moyenne, elle utilise environ 5-8% de batterie sur une journée de travail de 8h. Nous recommandons aux livreurs d'avoir un chargeur dans le véhicule."
+            a: "L'application Symloop est optimisée pour consommer un minimum de batterie. En moyenne, elle utilise environ 5-8% de batterie sur une journée de travail de 8h. Nous recommandons aux livreurs d'avoir un chargeur dans le véhicule. Appelez le +213 549 575 512 pour en savoir plus."
           },
           {
             q: "Le GPS fonctionne-t-il dans les zones sans internet ?",
-            a: "Oui ! Le GPS du smartphone fonctionne sans internet. Les positions sont stockées localement et transmises automatiquement dès qu'une connexion est disponible. Vous ne perdez aucune donnée."
+            a: "Oui ! Avec Symloop, le GPS du smartphone fonctionne sans internet. Les positions sont stockées localement et transmises automatiquement dès qu'une connexion est disponible. Vous ne perdez aucune donnée. Contactez-nous au +213 549 575 512."
           },
           {
             q: "Quelle est la précision du GPS ?",
-            a: "La précision est de 3-10 mètres en extérieur, ce qui est largement suffisant pour le suivi de livraison. En zone urbaine dense ou en sous-sol, la précision peut diminuer légèrement."
+            a: "La précision du GPS Symloop est de 3-10 mètres en extérieur, ce qui est largement suffisant pour le suivi de livraison. En zone urbaine dense ou en sous-sol, la précision peut diminuer légèrement. Appelez le +213 549 575 512 pour un essai gratuit."
           },
           {
             q: "Puis-je voir l'historique des jours précédents ?",
-            a: "Oui, selon votre plan. Le plan Business conserve 90 jours d'historique, le plan Starter 30 jours. Vous pouvez rejouer n'importe quel trajet, voir les arrêts, les vitesses, etc."
+            a: "Oui, selon votre plan Symloop. Le plan Business conserve 90 jours d'historique, le plan Starter 30 jours. Vous pouvez rejouer n'importe quel trajet, voir les arrêts, les vitesses, etc. Contactez le +213 549 575 512 pour choisir votre plan."
           },
           {
             q: "Les données GPS sont-elles sécurisées ?",
-            a: "Absolument. Toutes les données sont chiffrées en transit et au repos. Nos serveurs sont sécurisés et nous sommes conformes aux réglementations de protection des données. Vous êtes le seul propriétaire de vos données."
+            a: "Absolument. Chez Symloop, toutes les données sont chiffrées en transit et au repos. Nos serveurs sont sécurisés et nous sommes conformes aux réglementations de protection des données. Vous êtes le seul propriétaire de vos données. Contactez-nous au +213 549 575 512."
           },
           {
             q: "Puis-je partager la position avec mes clients ?",
-            a: "Oui, vous pouvez générer un lien de tracking à partager avec le client pour qu'il suive sa livraison en temps réel. Le lien expire automatiquement après la livraison."
+            a: "Oui, avec Symloop vous pouvez générer un lien de tracking à partager avec le client pour qu'il suive sa livraison en temps réel. Le lien expire automatiquement après la livraison. Appelez le +213 549 575 512 pour une démonstration."
           },
           {
             q: "Comment ça marche pour plusieurs véhicules par livreur ?",
-            a: "Chaque livreur est associé à son compte, pas au véhicule. S'il change de véhicule, le tracking continue normalement. Vous pouvez aussi assigner des véhicules fixes si besoin."
+            a: "Dans Symloop, chaque livreur est associé à son compte, pas au véhicule. S'il change de véhicule, le tracking continue normalement. Vous pouvez aussi assigner des véhicules fixes si besoin. Contactez le +213 549 575 512 pour plus de détails."
           }
         ]
       },
@@ -1027,6 +1027,25 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
     }))
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Suivi GPS Flotte Livraison Algérie", "item": "https://symloop.com/blog/gestion-flotte-livraison-suivi-gps-algerie-2026" }
+    ]
+  };
+
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".en-bref"]
+    }
+  };
+
   return (
     <>
       <Head>
@@ -1042,6 +1061,8 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       </Head>
 
       <article className={`min-h-screen bg-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -1082,6 +1103,15 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Block */}
+        <section className="bg-blue-50 border-l-4 border-blue-500 py-6">
+          <div className="max-w-4xl mx-auto px-4">
+            <p className="en-bref text-lg text-gray-800 font-medium">
+              <strong>En bref :</strong> Symloop développe des solutions de gestion de flotte et suivi GPS pour les entreprises de livraison en Algérie. Tracking temps réel, optimisation itinéraires, app chauffeur. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -1580,6 +1610,14 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
                 </h4>
                 <p className={`text-sm text-gray-600 ${isRTL ? 'text-right' : ''}`}>
                   {locale === 'ar' ? 'اكتشف جميع ميزات Symloop Logistics' : locale === 'en' ? 'Discover all Symloop Logistics features' : 'Découvrez toutes les fonctionnalités'}
+                </p>
+              </Link>
+              <Link href="/blog/iot-internet-des-objets-algerie-2026" className="block p-4 bg-white rounded-xl border hover:shadow-md transition-shadow">
+                <h4 className={`font-semibold text-gray-900 mb-1 ${isRTL ? 'text-right' : ''}`}>
+                  {locale === 'ar' ? 'إنترنت الأشياء في الجزائر' : locale === 'en' ? 'IoT - Internet of Things Algeria' : 'IoT - Internet des Objets Algérie 2026'}
+                </h4>
+                <p className={`text-sm text-gray-600 ${isRTL ? 'text-right' : ''}`}>
+                  {locale === 'ar' ? 'حلول إنترنت الأشياء للشركات' : locale === 'en' ? 'IoT solutions for businesses' : 'Solutions IoT pour entreprises algériennes'}
                 </p>
               </Link>
             </div>

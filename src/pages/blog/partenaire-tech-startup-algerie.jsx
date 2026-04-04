@@ -215,6 +215,24 @@ export default function PartenaireTechStartup() {
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Partenaire Tech Startup Algérie", "item": "https://symloop.com/blog/partenaire-tech-startup-algerie" }
+          ]
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".speakable-summary", "h1"]
+          },
+          "name": "Partenaire Tech Startup Algérie | CTO as a Service - Symloop"
+        }) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -249,6 +267,18 @@ export default function PartenaireTechStartup() {
                 </a>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Summary Block */}
+        <section className="py-6 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="speakable-summary bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-indigo-600 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop est le partenaire technique des startups algériennes. CTO as a service, développement MVP, conseil technique, scaling. +50 startups accompagnées. Basé à Sétif. Contact: +213 549 575 512.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -484,26 +514,30 @@ export default function PartenaireTechStartup() {
               </div>
             </section>
 
-            {/* Related Articles */}
-            {relatedBlogs && relatedBlogs.length > 0 && (
-              <section className="mb-16">
-                <h2 className="text-2xl font-bold text-gray-900 mb-8">Articles Connexes</h2>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {relatedBlogs.map((article, i) => (
-                    <Link key={i} href={`/blog/${article.slug}`}
-                          className="group bg-gray-50 rounded-2xl p-6 hover:bg-indigo-50 transition-colors">
-                      <h3 className="font-bold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
-                        {article.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 line-clamp-2">{article.subtitle}</p>
-                      <div className="flex items-center gap-2 mt-4 text-indigo-600 text-sm font-medium">
-                        Lire l'article <ArrowRight className="w-4 h-4" />
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </section>
-            )}
+            {/* Related Articles - Cross-links */}
+            <section className="mb-16">
+              <h2 className="text-2xl font-bold text-gray-900 mb-8">Articles Connexes</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link href="/blog/startup-algerie-guide-2024" className="group bg-gray-50 rounded-2xl p-6 hover:bg-indigo-50 transition-colors">
+                  <h3 className="font-bold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
+                    Guide Startup Algérie 2024
+                  </h3>
+                  <p className="text-sm text-gray-600">Le guide complet pour lancer et développer votre startup en Algérie.</p>
+                  <div className="flex items-center gap-2 mt-4 text-indigo-600 text-sm font-medium">
+                    Lire l'article <ArrowRight className="w-4 h-4" />
+                  </div>
+                </Link>
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="group bg-gray-50 rounded-2xl p-6 hover:bg-indigo-50 transition-colors">
+                  <h3 className="font-bold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
+                    ERP sur Mesure, SaaS pour Startups et PME en Algérie
+                  </h3>
+                  <p className="text-sm text-gray-600">Découvrez les solutions ERP et SaaS adaptées aux startups et PME algériennes.</p>
+                  <div className="flex items-center gap-2 mt-4 text-indigo-600 text-sm font-medium">
+                    Lire l'article <ArrowRight className="w-4 h-4" />
+                  </div>
+                </Link>
+              </div>
+            </section>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 pt-8 border-t border-gray-100">

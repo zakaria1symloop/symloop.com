@@ -172,23 +172,23 @@ const content = {
       items: [
         {
           question: "Quels langages de programmation maîtrisez-vous ?",
-          answer: "Notre équipe maîtrise JavaScript (React, Node.js, Vue.js), PHP (Laravel, Symfony), Python (Django, Flask), ainsi que les technologies mobiles (React Native, Flutter, Swift, Kotlin)."
+          answer: "L'équipe Symloop maîtrise JavaScript (React, Node.js, Vue.js), PHP (Laravel, Symfony), Python (Django, Flask), ainsi que les technologies mobiles (React Native, Flutter, Swift, Kotlin). Contactez-nous au +213 549 575 512 pour discuter de votre projet."
         },
         {
           question: "Combien de temps pour développer un site web ?",
-          answer: "Un site vitrine prend 2-4 semaines, un site e-commerce 4-8 semaines, et une application complexe 2-4 mois selon les fonctionnalités."
+          answer: "Chez Symloop, un site vitrine prend 2-4 semaines, un site e-commerce 4-8 semaines, et une application complexe 2-4 mois selon les fonctionnalités. Appelez le +213 549 575 512 pour un devis précis."
         },
         {
           question: "Proposez-vous des contrats de maintenance ?",
-          answer: "Oui, nous proposons des contrats de maintenance mensuelle incluant : mises à jour, sécurité, sauvegardes, support technique, et optimisations."
+          answer: "Oui, Symloop propose des contrats de maintenance mensuelle incluant : mises à jour, sécurité, sauvegardes, support technique, et optimisations. Contactez-nous au +213 549 575 512 pour les tarifs."
         },
         {
           question: "Travaillez-vous en freelance ou en équipe ?",
-          answer: "Nous sommes une agence avec une équipe complète : développeurs frontend, backend, designers, et chefs de projet pour garantir la qualité."
+          answer: "Symloop est une agence avec une équipe complète : développeurs frontend, backend, designers, et chefs de projet pour garantir la qualité. Appelez le +213 549 575 512 pour en savoir plus."
         },
         {
           question: "Comment se passe le paiement ?",
-          answer: "Paiement en 3 fois : 30% à la signature, 40% à mi-parcours, 30% à la livraison. Paiement par virement, CCP, ou espèces."
+          answer: "Chez Symloop, le paiement se fait en 3 fois : 30% à la signature, 40% à mi-parcours, 30% à la livraison. Paiement par virement, CCP, ou espèces. Contactez le +213 549 575 512 pour démarrer."
         }
       ]
     },
@@ -641,6 +641,25 @@ export default function DeveloppeurWebSetif() {
     }))
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Développeur Web Sétif", "item": "https://symloop.com/blog/developpeur-web-setif-2026" }
+    ]
+  };
+
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".en-bref"]
+    }
+  };
+
   return (
     <>
       <Head>
@@ -671,6 +690,8 @@ export default function DeveloppeurWebSetif() {
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       </Head>
 
       <div className={`min-h-screen bg-slate-950 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -728,6 +749,15 @@ export default function DeveloppeurWebSetif() {
                 </div>
               ))}
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Block */}
+        <section className="py-6 bg-violet-900/40 border-l-4 border-violet-400">
+          <div className="container mx-auto px-4">
+            <p className="en-bref text-lg text-slate-200 font-medium max-w-4xl mx-auto">
+              <strong className="text-violet-300">En bref :</strong> Symloop est la référence en développement web à Sétif. Sites web, applications, logiciels sur mesure. Équipe locale, technologies modernes. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -892,6 +922,23 @@ export default function DeveloppeurWebSetif() {
                   <p className="text-slate-400">{item.answer}</p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Articles Connexes */}
+        <section className="py-16 bg-slate-900/50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">Articles Connexes</h2>
+            <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              <Link href="/blog/agence-developpement-web-setif-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-violet-500/50 transition-all group">
+                <span className="font-semibold text-white group-hover:text-violet-400 transition-colors">Agence Développement Web Sétif 2026</span>
+                <p className="text-slate-400 text-sm mt-1">Découvrez notre agence web basée à Sétif</p>
+              </Link>
+              <Link href="/blog/developpement-site-web-algerie-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-violet-500/50 transition-all group">
+                <span className="font-semibold text-white group-hover:text-violet-400 transition-colors">Développement Site Web Algérie 2026</span>
+                <p className="text-slate-400 text-sm mt-1">Guide complet du développement web en Algérie</p>
+              </Link>
             </div>
           </div>
         </section>

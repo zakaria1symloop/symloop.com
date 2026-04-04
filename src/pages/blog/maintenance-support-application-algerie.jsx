@@ -88,6 +88,24 @@ export default function MaintenanceSupportAlgerie() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Maintenance et Support Applications Algérie", "item": "https://symloop.com/blog/maintenance-support-application-algerie" }
+          ]
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".speakable-summary", "h1"]
+          },
+          "name": "Maintenance Application Algérie - Support Technique TMA | Symloop"
+        }) }} />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -124,6 +142,18 @@ export default function MaintenanceSupportAlgerie() {
                 </a>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Summary Block */}
+        <section className="py-6 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="speakable-summary bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-red-600 mb-2">En bref</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Symloop propose la maintenance et le support d'applications web et mobiles en Algérie. Corrections bugs, mises à jour, monitoring, évolutions. SLA garanti. Basé à Sétif. Contact: +213 549 575 512.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -488,8 +518,8 @@ export default function MaintenanceSupportAlgerie() {
               <h2 className="text-xl font-bold text-gray-900 mb-6">Articles Connexes</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "Développement Web Algérie", href: "/blog/developpement-web-algerie-2024", desc: "Création de nouvelles applications" },
-                  { title: "Hébergement Cloud Algérie", href: "/blog/hebergement-cloud-algerie", desc: "Solutions d'hébergement sécurisées" }
+                  { title: "DevOps et Développement Logiciel en Algérie", href: "/blog/devops-developpement-logiciel-algerie-2026", desc: "Automatisez vos déploiements et accélérez votre développement logiciel." },
+                  { title: "Solutions Informatiques en Algérie", href: "/blog/solutions-informatiques-algerie-2026", desc: "Découvrez les solutions informatiques complètes pour les entreprises algériennes." }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="group p-4 bg-gray-50 rounded-xl hover:bg-red-50 transition-colors">
                     <h3 className="font-semibold text-gray-900 group-hover:text-red-600 mb-1">{article.title}</h3>

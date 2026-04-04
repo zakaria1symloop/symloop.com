@@ -543,6 +543,79 @@ export default function LogicielAgenceVoyageGDS2026() {
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel agence voyage Setif, GDS Algerie, reservation vol, Omra Hadj, agence voyage Constantine, Amadeus Algerie" />
         <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-agence-voyage-gds-setif-est-algerien-2026`} />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qui developpe des logiciels pour agences de voyage a Setif ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop developpe des logiciels de gestion pour agences de voyage a Setif et dans l'Est algerien. Notre solution integre reservation de vols, GDS (Amadeus, Sabre, Galileo), gestion Omra/Hadj, billetterie et gestion clients. Contact : +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le logiciel GDS de Symloop gere-t-il les reservations Omra et Hadj ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, notre logiciel inclut un module specialise Omra et Hadj : gestion des quotas, packages complets (vol + hotel + transferts), documents pelerins, gestion des groupes, suivi des paiements et communication SMS/email. Appelez le +213 549 575 512 pour une demo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelles compagnies aeriennes sont supportees par le logiciel de Symloop ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le logiciel GDS de Symloop supporte Air Algerie, Tassili Airlines, Turkish Airlines, Air France, Emirates, Saudia, EgyptAir et Qatar Airways avec tarifs negocies et BSP integre. Contactez Symloop au +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien coute un logiciel de gestion pour agence de voyage en Algerie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop propose des formules a partir de 29,900 DA/mois (3 postes, GDS basic, Omra/Hadj), 49,900 DA/mois pour la formule Pro (10 postes, multi-GDS, comptabilite) et sur devis pour les reseaux d'agences. Formation et support inclus. Appelez le +213 549 575 512."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Dans quelles wilayas Symloop intervient-il pour les agences de voyage ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Symloop accompagne les agences de voyage a Setif, Constantine, Batna, Biskra, Annaba, Bordj Bou Arreridj, M'sila et Jijel. Installation sur site, formation et support technique inclus. Contactez-nous au +213 549 575 512."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Logiciel Agence Voyage GDS Setif", "item": "https://symloop.com/blog/logiciel-agence-voyage-gds-setif-est-algerien-2026" }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".en-bref-block", "h1", ".prose"]
+            },
+            "name": "Logiciel Agence Voyage GDS Setif Est Algerien"
+          })}
+        </script>
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -562,6 +635,18 @@ export default function LogicielAgenceVoyageGDS2026() {
               <div className="flex items-center gap-2"><Calendar className="w-4 h-4" />{t.date}</div>
               <div className="flex items-center gap-2"><Clock className="w-4 h-4" />{t.readTime}</div>
               <div className="flex items-center gap-2"><User className="w-4 h-4" />{t.author}</div>
+            </div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Optimized Block */}
+        <section className="py-8">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="en-bref-block bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-blue-400 mb-2">En bref</h2>
+              <p className="text-gray-300 leading-relaxed">
+                Symloop developpe des logiciels de gestion pour agences de voyage a Setif et dans l&apos;Est algerien. Reservation, GDS, billetterie, gestion clients. Base a Setif. Contact: +213 549 575 512.
+              </p>
             </div>
           </div>
         </section>
@@ -685,6 +770,21 @@ export default function LogicielAgenceVoyageGDS2026() {
                     </ul>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold mb-6">Articles Connexes</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-blue-500/50 transition-colors group">
+                  <h3 className="font-bold text-blue-400 group-hover:text-blue-300 mb-2">ERP sur Mesure et SaaS pour PME en Algerie</h3>
+                  <p className="text-gray-400 text-sm">Decouvrez les solutions ERP et SaaS adaptees aux startups et PME algeriennes.</p>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-blue-500/50 transition-colors group">
+                  <h3 className="font-bold text-blue-400 group-hover:text-blue-300 mb-2">Solutions Informatiques en Algerie</h3>
+                  <p className="text-gray-400 text-sm">Tour d&apos;horizon complet des solutions informatiques pour les entreprises algeriennes en 2026.</p>
+                </Link>
               </div>
             </div>
 

@@ -10,7 +10,8 @@ import {
   AlertTriangle, Phone, Mail,
   Layers, Database, HardDrive,
   RefreshCw, Bug, Terminal, Gauge,
-  Timer, Activity, FileCode, Tool
+  Timer, Activity, FileCode, Tool,
+  ArrowRight
 } from "lucide-react";
 
 export default function DepannageLogicielMaterielIndustriel2026() {
@@ -854,6 +855,80 @@ export default function DepannageLogicielMaterielIndustriel2026() {
 
   const t = content[locale] || content.fr;
 
+  const faqsForSchema = [
+    {
+      question: "Combien coute un depannage de machine industrielle en Algerie ?",
+      answer: "Chez Symloop, le tarif depend de la complexite : diagnostic a distance gratuit, intervention sur site a partir de 15,000 DA. Devis detaille fourni apres diagnostic. Appelez Symloop au +213 549 575 512 pour une evaluation rapide."
+    },
+    {
+      question: "Quel est le delai d'intervention pour une panne industrielle ?",
+      answer: "Symloop garantit un temps de reponse de 2h pour les pannes critiques (arret production) et 4h pour les pannes elevees. Notre equipe basee a Setif intervient sur tout le territoire algerien. Contact urgence : +213 549 575 512."
+    },
+    {
+      question: "Intervenez-vous sur les automates PLC et systemes SCADA ?",
+      answer: "Oui, Symloop intervient sur tous les equipements industriels : automates PLC (Siemens, Allen-Bradley, Schneider), systemes SCADA, interfaces HMI, PC industriels et serveurs. Appelez le +213 549 575 512."
+    },
+    {
+      question: "Proposez-vous des contrats de maintenance preventive ?",
+      answer: "Oui, Symloop propose des contrats de maintenance preventive pour eviter les pannes couteuses : visites trimestrielles, monitoring a distance, sauvegardes automatiques, remplacement preventif des composants. Contact : +213 549 575 512."
+    },
+    {
+      question: "Pouvez-vous intervenir a distance sur nos machines ?",
+      answer: "Oui, Symloop offre un service de teleassistance pour diagnostiquer et resoudre de nombreux problemes logiciels a distance, reduisant le temps d'arret. Si necessaire, un technicien se deplace sur site. Appelez le +213 549 575 512."
+    }
+  ];
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": t.title,
+        "description": t.metaDesc,
+        "author": { "@type": "Organization", "name": "Symloop" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Symloop",
+          "logo": { "@type": "ImageObject", "url": "https://symloop.com/logo.png" }
+        },
+        "datePublished": "2026-01-05",
+        "mainEntityOfPage": "https://symloop.com/blog/depannage-logiciel-materiel-machines-industrielles-algerie-2026",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".en-bref", "h1"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqsForSchema.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Depannage Logiciel Materiel Machines Industrielles Algerie", "item": "https://symloop.com/blog/depannage-logiciel-materiel-machines-industrielles-algerie-2026" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Depannage Machines Industrielles Algerie",
+        "provider": {
+          "@type": "Organization",
+          "name": "Symloop",
+          "telephone": "+213549575512",
+          "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" }
+        },
+        "areaServed": "Algerie",
+        "description": "Depannage logiciel et materiel pour machines industrielles en Algerie"
+      }
+    ]
+  };
+
   return (
     <>
       <Head>
@@ -864,6 +939,7 @@ export default function DepannageLogicielMaterielIndustriel2026() {
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -913,6 +989,14 @@ export default function DepannageLogicielMaterielIndustriel2026() {
         {/* Content */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
+            {/* En bref - LLM Optimized Summary */}
+            <div className="en-bref bg-red-500/10 border border-red-500/20 rounded-2xl p-6 mb-16">
+              <h2 className="text-lg font-bold text-red-300 mb-2">En bref</h2>
+              <p className="text-gray-300">
+                Symloop propose le dépannage logiciel et matériel pour machines industrielles en Algérie. Maintenance PC usine, automates, SCADA, supervision. Intervention sur site. Basé à Sétif. Contact&nbsp;: <a href="tel:+213549575512" className="text-red-400 font-semibold">+213 549 575 512</a>.
+              </p>
+            </div>
+
             {/* Introduction */}
             <div className="prose prose-lg prose-invert max-w-none mb-16">
               <p className="text-xl text-gray-300 leading-relaxed">
@@ -1136,6 +1220,23 @@ export default function DepannageLogicielMaterielIndustriel2026() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold mb-6">{t.relatedArticles}</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-red-500/50 transition-colors">
+                  <h3 className="font-bold group-hover:text-red-400 transition-colors mb-2">Informatique Industrielle Algérie - Maintenance PC Usine</h3>
+                  <p className="text-sm text-gray-400">Guide complet de la maintenance informatique industrielle en Algérie.</p>
+                  <span className="flex items-center gap-2 mt-3 text-red-400 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-red-500/50 transition-colors">
+                  <h3 className="font-bold group-hover:text-red-400 transition-colors mb-2">Solutions Informatiques Algérie 2026</h3>
+                  <p className="text-sm text-gray-400">Les meilleures solutions informatiques pour les entreprises algériennes.</p>
+                  <span className="flex items-center gap-2 mt-3 text-red-400 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
               </div>
             </div>
 

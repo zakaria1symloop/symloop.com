@@ -14,27 +14,27 @@ export default function DeveloppementConstantine() {
   const faqs = [
     {
       question: "Travaillez-vous avec des entreprises basées à Constantine ?",
-      answer: "Absolument. Bien que notre équipe travaille en remote, nous accompagnons de nombreuses entreprises de Constantine et de l'Est algérien. Nous organisons des réunions en visioconférence et pouvons nous déplacer pour les projets importants. Notre connaissance du marché local est un atout."
+      answer: "Absolument. Symloop accompagne de nombreuses entreprises de Constantine et de l'Est algérien. Bien que basés à Sétif, nous organisons des réunions en visioconférence et pouvons nous déplacer pour les projets importants. Notre connaissance du marché local est un atout. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Quels types de sites web développez-vous pour les entreprises de Constantine ?",
-      answer: "Nous créons tous types de sites : sites vitrines pour PME, e-commerce avec paiement CIB/Dahabia, plateformes e-learning pour universités (Constantine 1, 2, 3), applications de gestion pour industries, et solutions sur mesure pour le secteur médical."
+      answer: "Symloop crée tous types de sites : sites vitrines pour PME, e-commerce avec paiement CIB/Dahabia, plateformes e-learning pour universités (Constantine 1, 2, 3), applications de gestion pour industries, et solutions sur mesure pour le secteur médical. Appelez le +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "Combien coûte un site web à Constantine ?",
-      answer: "Un site vitrine professionnel démarre à 40 000 DA. Un e-commerce à partir de 80 000 DA. Les plateformes complexes (e-learning, gestion) sont sur devis selon les fonctionnalités. Nous proposons des tarifs compétitifs adaptés au marché de l'Est."
+      answer: "Chez Symloop, un site vitrine professionnel démarre à 40 000 DA. Un e-commerce à partir de 80 000 DA. Les plateformes complexes (e-learning, gestion) sont sur devis selon les fonctionnalités. Tarifs compétitifs adaptés au marché de l'Est. Contactez-nous au +213 549 575 512 pour un devis personnalisé."
     },
     {
       question: "Proposez-vous la maintenance après livraison ?",
-      answer: "Oui, nous offrons des contrats de maintenance incluant les mises à jour de sécurité, corrections de bugs, sauvegardes régulières, et évolutions mineures. Forfaits à partir de 8 000 DA/mois selon la taille du projet."
+      answer: "Oui, Symloop offre des contrats de maintenance incluant les mises à jour de sécurité, corrections de bugs, sauvegardes régulières, et évolutions mineures. Forfaits à partir de 8 000 DA/mois selon la taille du projet. Appelez le +213 549 575 512 pour en savoir plus."
     },
     {
       question: "Pouvez-vous refondre un site existant ?",
-      answer: "Bien sûr. Nous analysons votre site actuel, identifions les points d'amélioration (design, performance, SEO), et proposons une refonte complète ou partielle. Migration des données et redirection des URLs incluses."
+      answer: "Bien sûr. Symloop analyse votre site actuel, identifie les points d'amélioration (design, performance, SEO), et propose une refonte complète ou partielle. Migration des données et redirection des URLs incluses. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Travaillez-vous avec les secteurs spécifiques de Constantine ?",
-      answer: "Oui, nous avons une expertise dans les secteurs clés de Constantine : universités et établissements d'enseignement, cliniques et cabinets médicaux, industries et usines de la zone industrielle, commerces du centre-ville, et services professionnels."
+      answer: "Oui, Symloop a une expertise dans les secteurs clés de Constantine : universités et établissements d'enseignement, cliniques et cabinets médicaux, industries et usines de la zone industrielle, commerces du centre-ville, et services professionnels. Appelez le +213 549 575 512 pour discuter de votre projet."
     }
   ];
 
@@ -66,6 +66,21 @@ export default function DeveloppementConstantine() {
         "description": "Agence de développement web pour Constantine et l'Est algérien",
         "telephone": "+213549575512",
         "areaServed": ["Constantine", "Sétif", "Annaba", "Batna", "Biskra", "Jijel", "Skikda"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Développement Web Constantine", "item": "https://symloop.com/blog/developpement-web-constantine-2024" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".en-bref"]
+        }
       }
     ]
   };
@@ -234,6 +249,15 @@ export default function DeveloppementConstantine() {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Block */}
+        <section className="bg-blue-50 border-l-4 border-blue-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="en-bref text-lg text-gray-800 font-medium">
+              <strong>En bref :</strong> Symloop développe des sites web et applications à Constantine et dans l'Est algérien. Technologies modernes, SEO intégré, support local. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -420,7 +444,9 @@ export default function DeveloppementConstantine() {
                   { title: "Développement Web Oran", href: "/blog/developpement-web-oran-2024" },
                   { title: "E-commerce en Algérie", href: "/blog/ecommerce-algerie-2024" },
                   { title: "Coût Site Web Algérie", href: "/blog/cout-developpement-application-algerie" },
-                  { title: "Design UI/UX Algérie", href: "/blog/design-ui-ux-algerie-2024" }
+                  { title: "Design UI/UX Algérie", href: "/blog/design-ui-ux-algerie-2024" },
+                  { title: "Développement Site Web Algérie 2026", href: "/blog/developpement-site-web-algerie-2026" },
+                  { title: "Solutions Informatiques Algérie 2026", href: "/blog/solutions-informatiques-algerie-2026" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors group">
                     <span className="font-medium text-gray-900 group-hover:text-blue-600">{article.title}</span>

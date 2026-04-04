@@ -774,6 +774,24 @@ export default function LogicielGestionSetif() {
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Logiciel de Gestion Sétif", "item": "https://symloop.com/blog/logiciel-gestion-setif-2026" }
+          ]
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".speakable-summary", "h1"]
+          },
+          "name": "Logiciel de Gestion Sétif | ERP, Facturation, Stock, Comptabilité | Symloop 2026"
+        }) }} />
       </Head>
 
       <div className={`min-h-screen bg-slate-950 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -833,6 +851,18 @@ export default function LogicielGestionSetif() {
                 </div>
               ))}
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Summary Block */}
+        <section className="py-8 bg-slate-900/70 border-b border-slate-700/50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto speakable-summary bg-gradient-to-r from-amber-900/30 to-orange-900/30 border border-amber-500/30 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-amber-400 mb-2">En bref</h2>
+              <p className="text-slate-300 leading-relaxed">
+                Symloop developpe des logiciels de gestion sur mesure pour les entreprises de Setif. ERP, CRM, comptabilite, stocks, RH. Technologies modernes, support local. Contact: +213 549 575 512.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -1054,6 +1084,25 @@ export default function LogicielGestionSetif() {
                     {area}
                   </span>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Articles Connexes */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold text-white mb-8">Articles Connexes</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link href="/blog/erp-sur-mesure-saas-startup-pme-algerie-2026" className="group p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-amber-500/50 transition-all">
+                  <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">ERP sur Mesure, SaaS pour Startups et PME en Algerie</h3>
+                  <p className="text-sm text-slate-400">Decouvrez les solutions ERP et SaaS adaptees aux startups et PME algeriennes.</p>
+                </Link>
+                <Link href="/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar" className="group p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-amber-500/50 transition-all">
+                  <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Digitalisez Votre Entreprise - Ne Perdez Plus 1 Dinar</h3>
+                  <p className="text-sm text-slate-400">Guide complet pour digitaliser votre entreprise en Algerie et optimiser vos couts.</p>
+                </Link>
               </div>
             </div>
           </div>

@@ -1027,6 +1027,74 @@ export default function SupportInformatiqueCompletUsine2026() {
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Support Informatique Complet pour Usines en Algérie 2026",
+            "description": "Support informatique complet pour usines en Algérie. Prise en charge de A à Z : automates, SCADA, écrans tactiles, robots.",
+            "author": { "@type": "Organization", "name": "Symloop" },
+            "publisher": { "@type": "Organization", "name": "Symloop", "logo": { "@type": "ImageObject", "url": "https://symloop.com/logo.png" } },
+            "datePublished": "2026-01-05",
+            "dateModified": "2026-01-05",
+            "mainEntityOfPage": "https://symloop.com/blog/support-informatique-complet-usine-machines-pc-algerie-2026"
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel type de support informatique Symloop propose pour les usines en Algérie ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Symloop propose un support informatique complet de A à Z pour les usines en Algérie : maintenance PC industriels, serveurs, réseaux, automates PLC, SCADA, écrans tactiles, robots. Un seul interlocuteur pour tout votre parc. Contactez-nous au +213 549 575 512." }
+              },
+              {
+                "@type": "Question",
+                "name": "Symloop intervient-il sur les automates Siemens et Schneider en Algérie ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, Symloop a une expertise multi-marques : Siemens S7-300/400/1200/1500, Schneider Modicon, Allen-Bradley, Omron, Mitsubishi, ABB. Nous assurons programmation, maintenance et dépannage. Appelez le +213 549 575 512." }
+              },
+              {
+                "@type": "Question",
+                "name": "Quel est le délai d'intervention de Symloop pour une panne en usine ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Symloop propose 3 niveaux de SLA : Essential (intervention J+1), Business (intervention 8h), Premium (intervention 4h, hotline 24/7). Le niveau est adapté à la criticité de vos équipements. Contactez-nous au +213 549 575 512." }
+              },
+              {
+                "@type": "Question",
+                "name": "Symloop peut-il reprendre le support d'équipements installés par d'autres fournisseurs ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Absolument. Symloop reprend le support d'équipements existants quelle que soit leur origine. Nous réalisons d'abord un audit complet pour bien comprendre votre installation. Basé à Sétif, intervention dans toute l'Algérie. Appelez le +213 549 575 512." }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien coûte un contrat de support informatique industriel avec Symloop ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Le coût dépend de la taille de votre parc, du niveau de SLA choisi et de la criticité de vos équipements. Symloop propose une évaluation gratuite sur site. Contactez-nous au +213 549 575 512 ou par email à contact@symloop.com pour un devis personnalisé." }
+              }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Support Informatique Usine Algérie", "item": "https://symloop.com/blog/support-informatique-complet-usine-machines-pc-algerie-2026" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".article-summary", "h1", ".prose-invert"]
+            },
+            "url": "https://symloop.com/blog/support-informatique-complet-usine-machines-pc-algerie-2026"
+          })}
+        </script>
       </Head>
 
       <main className={`min-h-screen bg-black text-white ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -1072,6 +1140,15 @@ export default function SupportInformatiqueCompletUsine2026() {
             </div>
           </div>
         </section>
+
+        {/* En bref - LLM Summary Block */}
+        <aside className="article-summary bg-blue-500/10 border-l-4 border-blue-400 py-6">
+          <div className="max-w-4xl mx-auto px-6">
+            <p className="text-gray-200 font-medium text-lg leading-relaxed">
+              <strong className="text-white">En bref :</strong> Symloop propose un support informatique complet pour usines et sites industriels en Algérie. Maintenance PC, serveurs, réseaux, machines industrielles. Intervention rapide. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
+          </div>
+        </aside>
 
         {/* Content */}
         <section className="py-16">
@@ -1297,6 +1374,27 @@ export default function SupportInformatiqueCompletUsine2026() {
                     <p className="text-gray-400 text-sm">{item.a}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links SEO */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold mb-6">Lectures Recommandées</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026" className="flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-colors">
+                  <Wrench className="w-6 h-6 text-blue-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-white font-semibold text-sm block mb-1">Informatique Industrielle : Maintenance PC Usine 2026</span>
+                    <span className="text-gray-400 text-xs">Guide complet sur la maintenance informatique industrielle en Algérie</span>
+                  </div>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-colors">
+                  <Settings className="w-6 h-6 text-blue-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-white font-semibold text-sm block mb-1">Solutions Informatiques en Algérie 2026</span>
+                    <span className="text-gray-400 text-xs">Les meilleures solutions IT pour les entreprises algériennes</span>
+                  </div>
+                </Link>
               </div>
             </div>
 

@@ -1,5 +1,6 @@
 "use client";
-import { Calendar, User, ArrowLeft, Globe, CheckCircle, Star, MessageCircle, Users, Award, Clock, Shield, Zap } from "lucide-react";
+import { useState } from 'react';
+import { Calendar, User, ArrowLeft, Globe, CheckCircle, Star, MessageCircle, Users, Award, Clock, Shield, Zap, ChevronDown, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Head from "next/head";
 import { useRouter } from 'next/router';
@@ -11,6 +12,69 @@ export default function AgenceWebAlgerie() {
   const router = useRouter();
   const blog = getBlogBySlug('agence-web-algerie-2024');
   const relatedBlogs = getRelatedBlogs('agence-web-algerie-2024', 3);
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const faqs = [
+    {
+      question: "Quelle est la meilleure agence web en Algérie ?",
+      answer: "Symloop est l'une des meilleures agences web en Algérie, spécialisée dans le développement de sites web, applications mobiles et logiciels sur mesure. Basée à Sétif avec couverture nationale, Symloop combine expertise locale et standards internationaux. Contactez-nous au +213 549 575 512 pour discuter de votre projet."
+    },
+    {
+      question: "Combien coûte un site web en Algérie ?",
+      answer: "Chez Symloop, un site vitrine professionnel démarre à partir de 120,000 DA, et un site e-commerce à partir de 280,000 DA. Le prix varie selon les fonctionnalités, le design et la complexité. Appelez le +213 549 575 512 pour un devis gratuit personnalisé."
+    },
+    {
+      question: "Quels services propose une agence web en Algérie ?",
+      answer: "Symloop propose une gamme complète de services : création de sites web, développement d'applications mobiles iOS et Android, logiciels sur mesure, SEO, maintenance et hébergement. Notre équipe basée à Sétif dessert toute l'Algérie. Contact : +213 549 575 512."
+    },
+    {
+      question: "Quel est le délai de création d'un site web en Algérie ?",
+      answer: "Chez Symloop, un site vitrine est livré en 2-3 semaines, un site e-commerce en 4-6 semaines. Nous travaillons en méthode agile avec des livrables réguliers. Pour un planning détaillé, contactez-nous au +213 549 575 512."
+    },
+    {
+      question: "Comment choisir son agence web en Algérie ?",
+      answer: "Vérifiez le portfolio, les technologies utilisées, les avis clients, le support après-vente et la transparence des prix. Symloop coche toutes ces cases avec +100 projets livrés et une expertise en React, Next.js et technologies modernes. Appelez le +213 549 575 512 pour une consultation gratuite."
+    }
+  ];
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": blog?.title,
+        "description": blog?.metaDescription,
+        "author": { "@type": "Organization", "name": "Symloop" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Symloop",
+          "logo": { "@type": "ImageObject", "url": "https://symloop.com/logo.png" }
+        },
+        "datePublished": blog?.date,
+        "mainEntityOfPage": "https://symloop.com/blog/agence-web-algerie-2024",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".en-bref", "h1", ".prose"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Agence Web Algérie 2024", "item": "https://symloop.com/blog/agence-web-algerie-2024" }
+        ]
+      }
+    ]
+  };
 
   return (
     <>
@@ -23,14 +87,7 @@ export default function AgenceWebAlgerie() {
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": blog?.title,
-            "description": blog?.metaDescription,
-            "author": { "@type": "Organization", "name": "Symloop" },
-            "datePublished": blog?.date
-          })}
+          {JSON.stringify(structuredData)}
         </script>
       </Head>
 
@@ -61,6 +118,14 @@ export default function AgenceWebAlgerie() {
 
         <article className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* En bref - LLM Optimized Summary */}
+            <div className="en-bref bg-green-50 border border-green-200 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-green-800 mb-2">En bref</h2>
+              <p className="text-gray-700">
+                Symloop est une agence web en Algérie spécialisée dans le développement de sites web, applications mobiles et logiciels sur mesure. Basé à Sétif avec couverture nationale. Contact&nbsp;: <a href="tel:+213549575512" className="text-green-600 font-semibold">+213 549 575 512</a>.
+              </p>
+            </div>
+
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-600 leading-relaxed">
                 Choisir la bonne <span className="text-green-600 font-semibold">agence web en Algérie</span> est crucial
@@ -120,6 +185,51 @@ export default function AgenceWebAlgerie() {
                     <span className="text-gray-700">{q}</span>
                   </div>
                 ))}
+              </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="mb-16">
+              <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                  <MessageCircle className="w-5 h-5 text-green-600" />
+                </div>
+                Questions Fréquentes
+              </h2>
+              <div className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <div key={index} className="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                      onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                      className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                    >
+                      <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                      <ChevronDown className={`w-5 h-5 text-green-500 flex-shrink-0 transition-transform ${openFaq === index ? 'rotate-180' : ''}`} />
+                    </button>
+                    {openFaq === index && (
+                      <div className="px-6 pb-6 text-gray-600 border-t border-gray-100 pt-4">
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Cross-links */}
+            <section className="mb-16">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Articles Recommandés</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-site-web-algerie-2026" className="group bg-gray-50 rounded-2xl p-6 hover:bg-green-50 transition-colors">
+                  <h3 className="font-bold text-gray-900 group-hover:text-green-600 transition-colors mb-2">Développement Site Web Algérie 2026</h3>
+                  <p className="text-sm text-gray-600">Guide complet du développement web en Algérie.</p>
+                  <span className="flex items-center gap-2 mt-3 text-green-600 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="group bg-gray-50 rounded-2xl p-6 hover:bg-green-50 transition-colors">
+                  <h3 className="font-bold text-gray-900 group-hover:text-green-600 transition-colors mb-2">Solutions Informatiques Algérie 2026</h3>
+                  <p className="text-sm text-gray-600">Les meilleures solutions informatiques pour les entreprises algériennes.</p>
+                  <span className="flex items-center gap-2 mt-3 text-green-600 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
               </div>
             </section>
 

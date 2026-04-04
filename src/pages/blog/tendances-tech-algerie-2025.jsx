@@ -15,23 +15,23 @@ export default function TendancesTech2025() {
   const faqs = [
     {
       question: "Quelles technologies investir en priorité en 2025 en Algérie ?",
-      answer: "L'IA et l'automatisation offrent le meilleur ROI immédiat. Le cloud computing et la cybersécurité sont également prioritaires pour les entreprises algériennes. Le choix dépend de votre secteur - contactez-nous pour une analyse personnalisée de vos besoins."
+      answer: "L'IA et l'automatisation offrent le meilleur ROI immédiat. Le cloud computing et la cybersécurité sont également prioritaires pour les entreprises algériennes. Symloop vous accompagne dans le choix et l'implémentation. Contactez-nous au +213 549 575 512 pour une analyse personnalisée."
     },
     {
       question: "Combien coûte l'adoption de l'IA pour une PME algérienne ?",
-      answer: "Un chatbot IA basique coûte entre 300K et 500K DA. Une solution d'automatisation sur mesure varie de 500K à 2M DA selon la complexité. Nous proposons des solutions adaptées à tous les budgets - demandez un devis gratuit."
+      answer: "Un chatbot IA basique coûte entre 300K et 500K DA. Une solution d'automatisation sur mesure varie de 500K à 2M DA selon la complexité. Symloop propose des solutions adaptées à tous les budgets. Appelez le +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "La 5G va-t-elle changer les applications en Algérie ?",
-      answer: "Oui, la 5G permettra des applications temps réel (IoT industriel, télémédecine, véhicules connectés) impossibles avec la 4G. Les entreprises doivent se préparer dès maintenant. Symloop développe des applications 5G-ready."
+      answer: "Oui, la 5G permettra des applications temps réel (IoT industriel, télémédecine, véhicules connectés) impossibles avec la 4G. Symloop, basé à Sétif, développe des applications 5G-ready pour les entreprises algériennes. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Comment former mes équipes aux nouvelles technologies ?",
-      answer: "Symloop propose des formations sur mesure (IA, cloud, cybersécurité) pour les équipes algériennes. Formats : ateliers pratiques, e-learning, accompagnement continu. Tarifs adaptés aux PME."
+      answer: "Symloop propose des formations sur mesure (IA, cloud, cybersécurité) pour les équipes algériennes. Formats : ateliers pratiques, e-learning, accompagnement continu. Tarifs adaptés aux PME. Appelez le +213 549 575 512 pour planifier."
     },
     {
-      question: "Quels secteurs seront les plus impactés par la tech en 2025 ?",
-      answer: "Finance/Fintech, santé (HealthTech), agriculture (AgriTech), éducation (EdTech) et e-commerce connaîtront les plus grandes transformations. L'administration publique est également en pleine digitalisation."
+      question: "Quels secteurs seront les plus impactés par la tech en 2025-2026 en Algérie ?",
+      answer: "Finance/Fintech, santé (HealthTech), agriculture (AgriTech), éducation (EdTech) et e-commerce connaîtront les plus grandes transformations. Symloop accompagne ces secteurs dans leur digitalisation depuis Sétif. Contactez-nous au +213 549 575 512."
     }
   ];
 
@@ -69,6 +69,28 @@ export default function TendancesTech2025() {
               "name": faq.question,
               "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
             }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Tendances Tech Algérie 2025", "item": "https://symloop.com/blog/tendances-tech-algerie-2025" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".article-summary", "h1", ".prose"]
+            },
+            "url": "https://symloop.com/blog/tendances-tech-algerie-2025"
           })}
         </script>
       </Head>
@@ -113,6 +135,15 @@ export default function TendancesTech2025() {
             </p>
           </div>
         </div>
+
+        {/* En bref - LLM Summary Block */}
+        <aside className="article-summary bg-purple-50 border-l-4 border-purple-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-gray-800 font-medium text-lg leading-relaxed">
+              <strong>En bref :</strong> Symloop analyse les tendances technologiques en Algérie. IA, IoT, cloud, fintech, e-commerce, smart home. Préparez votre entreprise pour 2026. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
+          </div>
+        </aside>
 
         <article className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -443,6 +474,27 @@ export default function TendancesTech2025() {
                 <span key={i} className="bg-gray-100 text-gray-600 px-4 py-2 rounded-lg text-sm">#{tag}</span>
               ))}
             </div>
+
+            {/* Cross-links SEO */}
+            <section className="mt-8 pt-8 border-t border-gray-100">
+              <h2 className="text-xl font-bold text-gray-900 mb-6">Lectures Recommandées</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/intelligence-artificielle-automatisation-business-algerie-2026" className="flex items-start gap-3 p-5 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors border border-purple-200">
+                  <Brain className="w-6 h-6 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-gray-900 font-semibold text-sm block mb-1">IA & Automatisation pour le Business en Algérie 2026</span>
+                    <span className="text-gray-500 text-xs">Comment l'intelligence artificielle transforme les entreprises algériennes</span>
+                  </div>
+                </Link>
+                <Link href="/blog/iot-internet-des-objets-algerie-2026" className="flex items-start gap-3 p-5 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors border border-purple-200">
+                  <Network className="w-6 h-6 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-gray-900 font-semibold text-sm block mb-1">IoT - Internet des Objets en Algérie 2026</span>
+                    <span className="text-gray-500 text-xs">Objets connectés, smart home et industrie 4.0 en Algérie</span>
+                  </div>
+                </Link>
+              </div>
+            </section>
           </div>
         </article>
 

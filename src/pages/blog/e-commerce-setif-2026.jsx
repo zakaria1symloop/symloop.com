@@ -199,23 +199,23 @@ const content = {
       items: [
         {
           question: "Comment fonctionne le paiement CIB/EDAHABIA ?",
-          answer: "Nous intégrons la passerelle SATIM officielle. Vos clients paient directement sur votre site avec leur carte CIB ou EDAHABIA. Les fonds sont virés sur votre compte bancaire sous 24-48h."
+          answer: "Symloop intègre la passerelle SATIM officielle. Vos clients paient directement sur votre site avec leur carte CIB ou EDAHABIA. Les fonds sont virés sur votre compte bancaire sous 24-48h. Contactez-nous au +213 549 575 512 pour en savoir plus."
         },
         {
           question: "Quels transporteurs sont intégrés ?",
-          answer: "Nous intégrons Yalidine, ZR Express, EMS, et autres transporteurs sur demande. Le calcul des frais et le suivi des colis sont automatiques."
+          answer: "Symloop intègre Yalidine, ZR Express, EMS, et autres transporteurs sur demande. Le calcul des frais et le suivi des colis sont automatiques. Appelez le +213 549 575 512 pour discuter de vos besoins."
         },
         {
           question: "Puis-je gérer ma boutique moi-même ?",
-          answer: "Oui ! Notre interface d'administration est simple et intuitive. Nous vous formons sur l'ajout de produits, la gestion des commandes, et les rapports."
+          answer: "Oui ! L'interface d'administration Symloop est simple et intuitive. Nous vous formons sur l'ajout de produits, la gestion des commandes, et les rapports. Contactez le +213 549 575 512 pour une démo."
         },
         {
           question: "Combien de temps pour créer ma boutique ?",
-          answer: "Une boutique Starter est prête en 2-3 semaines. Un projet Business prend 4-6 semaines selon la complexité et le nombre de produits."
+          answer: "Chez Symloop, une boutique Starter est prête en 2-3 semaines. Un projet Business prend 4-6 semaines selon la complexité et le nombre de produits. Appelez le +213 549 575 512 pour démarrer."
         },
         {
           question: "Y a-t-il des frais mensuels ?",
-          answer: "L'hébergement et le SSL sont inclus la première année. Ensuite, comptez environ 5,000 DA/mois pour l'hébergement professionnel."
+          answer: "L'hébergement et le SSL sont inclus la première année chez Symloop. Ensuite, comptez environ 5,000 DA/mois pour l'hébergement professionnel. Contactez-nous au +213 549 575 512 pour les détails."
         }
       ]
     },
@@ -716,6 +716,25 @@ export default function ECommerceSetif() {
     }))
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": "E-Commerce Sétif", "item": "https://symloop.com/blog/e-commerce-setif-2026" }
+    ]
+  };
+
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".en-bref"]
+    }
+  };
+
   return (
     <>
       <Head>
@@ -746,6 +765,8 @@ export default function ECommerceSetif() {
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       </Head>
 
       <div className={`min-h-screen bg-slate-950 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -803,6 +824,15 @@ export default function ECommerceSetif() {
                 </div>
               ))}
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Block */}
+        <section className="py-6 bg-emerald-900/40 border-l-4 border-emerald-400">
+          <div className="container mx-auto px-4">
+            <p className="en-bref text-lg text-slate-200 font-medium max-w-4xl mx-auto">
+              <strong className="text-emerald-300">En bref :</strong> Symloop crée des boutiques e-commerce à Sétif avec paiement CIB/Edahabia. Gestion produits, commandes, livraison. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -1008,6 +1038,23 @@ export default function ECommerceSetif() {
                   </span>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Articles Connexes */}
+        <section className="py-16 bg-slate-900/50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">Articles Connexes</h2>
+            <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              <Link href="/blog/ecommerce-algerie-paiement-cib-edahabia-2024" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-emerald-500/50 transition-all group">
+                <span className="font-semibold text-white group-hover:text-emerald-400 transition-colors">E-commerce Algérie - Paiement CIB/Edahabia</span>
+                <p className="text-slate-400 text-sm mt-1">Guide complet du paiement en ligne en Algérie</p>
+              </Link>
+              <Link href="/blog/developpement-site-web-algerie-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-emerald-500/50 transition-all group">
+                <span className="font-semibold text-white group-hover:text-emerald-400 transition-colors">Développement Site Web Algérie 2026</span>
+                <p className="text-slate-400 text-sm mt-1">Guide complet du développement web en Algérie</p>
+              </Link>
             </div>
           </div>
         </section>

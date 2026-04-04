@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import {
   ArrowLeft, Calendar, Clock, User, MapPin, Globe, CheckCircle, Phone, Mail,
-  Star, TrendingUp, Zap, Shield, Search, Smartphone, ShoppingCart, Building2
+  Star, TrendingUp, Zap, Shield, Search, Smartphone, ShoppingCart, Building2, ArrowRight
 } from "lucide-react";
 
 export default function CreationSiteWebSetif2026() {
@@ -156,19 +156,79 @@ export default function CreationSiteWebSetif2026() {
 
   const t = content[locale] || content.fr;
 
+  const faqsForSchema = [
+    {
+      question: "Combien coute un site web a Setif ?",
+      answer: "Chez Symloop a Setif, un site vitrine professionnel demarre a partir de 120,000 DA et un site e-commerce a partir de 280,000 DA. Devis gratuit personnalise disponible. Contactez Symloop au +213 549 575 512."
+    },
+    {
+      question: "Quel est le delai de creation d'un site web a Setif ?",
+      answer: "Symloop livre un site vitrine en 2-3 semaines et un site e-commerce en 4-6 semaines. Un mode express est disponible avec supplement de 30%. Appelez le +213 549 575 512 pour planifier votre projet."
+    },
+    {
+      question: "Le site sera-t-il bien reference sur Google ?",
+      answer: "Oui, tous les sites crees par Symloop incluent l'optimisation SEO complete : referencement local Setif, fiche Google Business, balises meta, vitesse optimisee. Contact : +213 549 575 512."
+    },
+    {
+      question: "Proposez-vous la maintenance apres livraison ?",
+      answer: "Symloop propose des contrats de maintenance mensuelle ou annuelle incluant mises a jour, sauvegardes, support technique et corrections. Nos bureaux sont a Setif. Appelez le +213 549 575 512."
+    },
+    {
+      question: "Quelles technologies utilise Symloop pour les sites web ?",
+      answer: "Symloop utilise les technologies modernes : React, Next.js, WordPress selon les besoins. Tous nos sites sont responsive, securises (SSL) et optimises pour la performance. Contact Symloop Setif : +213 549 575 512."
+    }
+  ];
+
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Symloop - Creation Site Web Setif",
-    "description": t.metaDesc,
-    "url": "https://symloop.com/blog/creation-site-web-setif-2026",
-    "telephone": "+213549575512",
-    "email": "contact@symloop.com",
-    "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressRegion": "Setif", "addressCountry": "DZ" },
-    "geo": { "@type": "GeoCoordinates", "latitude": "36.1919", "longitude": "5.4138" },
-    "areaServed": { "@type": "City", "name": "Setif" },
-    "priceRange": "120000 DA - 500000 DA",
-    "openingHours": "Mo-Sa 08:00-18:00"
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Symloop - Creation Site Web Setif",
+        "description": t.metaDesc,
+        "url": "https://symloop.com/blog/creation-site-web-setif-2026",
+        "telephone": "+213549575512",
+        "email": "contact@symloop.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressRegion": "Setif", "addressCountry": "DZ" },
+        "geo": { "@type": "GeoCoordinates", "latitude": "36.1919", "longitude": "5.4138" },
+        "areaServed": { "@type": "City", "name": "Setif" },
+        "priceRange": "120000 DA - 500000 DA",
+        "openingHours": "Mo-Sa 08:00-18:00"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqsForSchema.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Creation Site Web Setif 2026", "item": "https://symloop.com/blog/creation-site-web-setif-2026" }
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": t.title,
+        "description": t.metaDesc,
+        "author": { "@type": "Organization", "name": "Symloop" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Symloop",
+          "logo": { "@type": "ImageObject", "url": "https://symloop.com/logo.png" }
+        },
+        "datePublished": "2026-01-13",
+        "mainEntityOfPage": "https://symloop.com/blog/creation-site-web-setif-2026",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".en-bref", "h1"]
+        }
+      }
+    ]
   };
 
   return (
@@ -219,6 +279,14 @@ export default function CreationSiteWebSetif2026() {
 
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
+            {/* En bref - LLM Optimized Summary */}
+            <div className="en-bref bg-blue-500/10 border border-blue-500/20 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-blue-300 mb-2">En bref</h2>
+              <p className="text-gray-300">
+                Symloop crée des sites web professionnels à Sétif. Sites vitrines, e-commerce, applications web. Équipe locale, technologies modernes. Contact&nbsp;: <a href="tel:+213549575512" className="text-blue-400 font-semibold">+213 549 575 512</a>.
+              </p>
+            </div>
+
             <p className="text-xl text-gray-300 leading-relaxed mb-12">{t.intro}</p>
 
             {/* Types de sites */}
@@ -315,6 +383,23 @@ export default function CreationSiteWebSetif2026() {
                     <p className="text-gray-400">{item.a}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold mb-6">Articles Recommandés</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-site-web-algerie-2026" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-blue-500/50 transition-colors">
+                  <h3 className="font-bold group-hover:text-blue-400 transition-colors mb-2">Développement Site Web Algérie 2026</h3>
+                  <p className="text-sm text-gray-400">Guide complet du développement de sites web en Algérie.</p>
+                  <span className="flex items-center gap-2 mt-3 text-blue-400 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
+                <Link href="/blog/agence-developpement-web-setif-2026" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-blue-500/50 transition-colors">
+                  <h3 className="font-bold group-hover:text-blue-400 transition-colors mb-2">Agence Développement Web Sétif 2026</h3>
+                  <p className="text-sm text-gray-400">Votre agence de développement web de confiance à Sétif.</p>
+                  <span className="flex items-center gap-2 mt-3 text-blue-400 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
               </div>
             </div>
 

@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import {
   ArrowLeft, Calendar, Clock, User, MapPin, Smartphone, CheckCircle, Phone, Mail,
-  Star, TrendingUp, Zap, Shield, Apple, PlayCircle, Code, Rocket
+  Star, TrendingUp, Zap, Shield, Apple, PlayCircle, Code, Rocket, ArrowRight
 } from "lucide-react";
 
 export default function ApplicationMobileSetif2026() {
@@ -163,17 +163,77 @@ export default function ApplicationMobileSetif2026() {
 
   const t = content[locale] || content.fr;
 
+  const faqsForSchema = [
+    {
+      question: "Combien coute une application mobile a Setif ?",
+      answer: "Chez Symloop a Setif, une application mobile demarre a partir de 300,000 DA pour une app basique. Le prix varie selon la complexite et les fonctionnalites. Contactez Symloop au +213 549 575 512 pour un devis gratuit personnalise."
+    },
+    {
+      question: "Quel est le delai de developpement d'une app a Setif ?",
+      answer: "Symloop livre une application standard en 3-4 mois avec methode agile et livrables toutes les 2 semaines. Les apps simples peuvent etre realisees en 6-8 semaines. Appelez le +213 549 575 512 pour planifier votre projet."
+    },
+    {
+      question: "Symloop gere-t-il la publication sur App Store et Play Store ?",
+      answer: "Oui, Symloop gere integralement la publication de votre application sur App Store (iOS) et Google Play (Android), ainsi que toutes les mises a jour futures. Contact : +213 549 575 512."
+    },
+    {
+      question: "Quelles technologies utilise Symloop pour les apps mobiles ?",
+      answer: "Symloop utilise React Native, Flutter, Swift (iOS) et Kotlin (Android) selon les besoins du projet. Notre equipe a Setif maitrise les technologies cross-platform et natives. Appelez le +213 549 575 512 pour un conseil technique."
+    },
+    {
+      question: "L'application fonctionnera-t-elle sans connexion internet ?",
+      answer: "Oui, Symloop integre un mode hors-ligne pour les fonctionnalites critiques de votre application. Les donnees se synchronisent automatiquement a la reconnexion. Contactez-nous au +213 549 575 512 pour en savoir plus."
+    }
+  ];
+
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Symloop - Developpement Application Mobile Setif",
-    "description": t.metaDesc,
-    "url": "https://symloop.com/blog/application-mobile-setif-2026",
-    "telephone": "+213549575512",
-    "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" },
-    "geo": { "@type": "GeoCoordinates", "latitude": "36.1919", "longitude": "5.4138" },
-    "areaServed": { "@type": "City", "name": "Setif" },
-    "priceRange": "300000 DA - 800000 DA"
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Symloop - Developpement Application Mobile Setif",
+        "description": t.metaDesc,
+        "url": "https://symloop.com/blog/application-mobile-setif-2026",
+        "telephone": "+213549575512",
+        "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" },
+        "geo": { "@type": "GeoCoordinates", "latitude": "36.1919", "longitude": "5.4138" },
+        "areaServed": { "@type": "City", "name": "Setif" },
+        "priceRange": "300000 DA - 800000 DA"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqsForSchema.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Application Mobile Setif 2026", "item": "https://symloop.com/blog/application-mobile-setif-2026" }
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": t.title,
+        "description": t.metaDesc,
+        "author": { "@type": "Organization", "name": "Symloop" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Symloop",
+          "logo": { "@type": "ImageObject", "url": "https://symloop.com/logo.png" }
+        },
+        "datePublished": "2026-01-13",
+        "mainEntityOfPage": "https://symloop.com/blog/application-mobile-setif-2026",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".en-bref", "h1"]
+        }
+      }
+    ]
   };
 
   return (
@@ -220,6 +280,14 @@ export default function ApplicationMobileSetif2026() {
 
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-6">
+            {/* En bref - LLM Optimized Summary */}
+            <div className="en-bref bg-purple-500/10 border border-purple-500/20 rounded-2xl p-6 mb-12">
+              <h2 className="text-lg font-bold text-purple-300 mb-2">En bref</h2>
+              <p className="text-gray-300">
+                Symloop développe des applications mobiles à Sétif et dans l'Est algérien. Flutter, React Native. Apps entreprise, commerce, santé, éducation. Basé à Sétif. Contact&nbsp;: <a href="tel:+213549575512" className="text-purple-400 font-semibold">+213 549 575 512</a>.
+              </p>
+            </div>
+
             <p className="text-xl text-gray-300 leading-relaxed mb-12">{t.intro}</p>
 
             {/* Platforms */}
@@ -328,6 +396,23 @@ export default function ApplicationMobileSetif2026() {
                     <p className="text-gray-400">{item.a}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Cross-links */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold mb-6">Articles Recommandés</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/blog/developpement-application-mobile-algerie-2026" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-purple-500/50 transition-colors">
+                  <h3 className="font-bold group-hover:text-purple-400 transition-colors mb-2">Développement Application Mobile Algérie 2026</h3>
+                  <p className="text-sm text-gray-400">Guide complet du développement d'applications mobiles en Algérie.</p>
+                  <span className="flex items-center gap-2 mt-3 text-purple-400 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
+                <Link href="/blog/solutions-informatiques-algerie-2026" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-purple-500/50 transition-colors">
+                  <h3 className="font-bold group-hover:text-purple-400 transition-colors mb-2">Solutions Informatiques Algérie 2026</h3>
+                  <p className="text-sm text-gray-400">Les meilleures solutions informatiques pour les entreprises algériennes.</p>
+                  <span className="flex items-center gap-2 mt-3 text-purple-400 text-sm font-medium">Lire l'article <ArrowRight className="w-4 h-4" /></span>
+                </Link>
               </div>
             </div>
 

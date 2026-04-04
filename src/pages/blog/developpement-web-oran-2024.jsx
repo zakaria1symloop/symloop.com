@@ -14,27 +14,27 @@ export default function DeveloppementOran() {
   const faqs = [
     {
       question: "Travaillez-vous avec des entreprises basées à Oran ?",
-      answer: "Absolument. Nous accompagnons de nombreuses entreprises oranaises et de l'Ouest algérien. Nos équipes travaillent en remote avec des réunions en visioconférence régulières. Pour les projets importants, nous pouvons nous déplacer à Oran."
+      answer: "Absolument. Symloop accompagne de nombreuses entreprises oranaises et de l'Ouest algérien. Basés à Sétif, nos équipes travaillent en remote avec des réunions en visioconférence régulières. Pour les projets importants, nous pouvons nous déplacer à Oran. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Quels sont les délais pour créer un site web à Oran ?",
-      answer: "Un site vitrine prend 2-4 semaines, un e-commerce 4-8 semaines, une application métier 2-4 mois selon la complexité. Nous respectons les délais convenus et vous tenons informés à chaque étape."
+      answer: "Chez Symloop, un site vitrine prend 2-4 semaines, un e-commerce 4-8 semaines, une application métier 2-4 mois selon la complexité. Nous respectons les délais convenus et vous tenons informés à chaque étape. Appelez le +213 549 575 512 pour en discuter."
     },
     {
       question: "Combien coûte un site web pour une entreprise à Oran ?",
-      answer: "Un site vitrine professionnel démarre à 40 000 DA. Un e-commerce à partir de 80 000 DA. Les applications sur mesure sont établies sur devis. Nos tarifs sont compétitifs pour le marché de l'Ouest."
+      answer: "Chez Symloop, un site vitrine professionnel démarre à 40 000 DA. Un e-commerce à partir de 80 000 DA. Les applications sur mesure sont établies sur devis. Nos tarifs sont compétitifs pour le marché de l'Ouest. Contactez le +213 549 575 512 pour un devis gratuit."
     },
     {
       question: "Proposez-vous des solutions pour l'import-export ?",
-      answer: "Oui, nous avons une expertise dans le secteur import-export, très présent à Oran. Plateformes de sourcing, gestion de commandes internationales, intégration avec les transitaires et douanes."
+      answer: "Oui, Symloop a une expertise dans le secteur import-export, très présent à Oran. Plateformes de sourcing, gestion de commandes internationales, intégration avec les transitaires et douanes. Appelez le +213 549 575 512 pour un devis."
     },
     {
       question: "Pouvez-vous créer un site multilingue pour le tourisme ?",
-      answer: "Bien sûr. Nous créons des sites multilingues (Français, Arabe, Anglais, Espagnol) pour hôtels, agences de voyage et restaurants. Optimisés pour le SEO international et les réservations en ligne."
+      answer: "Bien sûr. Symloop crée des sites multilingues (Français, Arabe, Anglais, Espagnol) pour hôtels, agences de voyage et restaurants. Optimisés pour le SEO international et les réservations en ligne. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Offrez-vous la maintenance et le support technique ?",
-      answer: "Oui, nous proposons des contrats de maintenance incluant mises à jour, sécurité, sauvegardes et support technique. Forfaits à partir de 8 000 DA/mois selon la taille du projet."
+      answer: "Oui, Symloop propose des contrats de maintenance incluant mises à jour, sécurité, sauvegardes et support technique. Forfaits à partir de 8 000 DA/mois selon la taille du projet. Appelez le +213 549 575 512 pour plus d'informations."
     }
   ];
 
@@ -66,6 +66,21 @@ export default function DeveloppementOran() {
         "description": "Agence de développement web pour Oran et l'Ouest algérien",
         "telephone": "+213549575512",
         "areaServed": ["Oran", "Tlemcen", "Mostaganem", "Sidi Bel Abbès", "Mascara", "Aïn Témouchent"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://symloop.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Développement Web Oran", "item": "https://symloop.com/blog/developpement-web-oran-2024" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".en-bref"]
+        }
       }
     ]
   };
@@ -232,6 +247,15 @@ export default function DeveloppementOran() {
                 ))}
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* En bref - LLM Block */}
+        <section className="bg-orange-50 border-l-4 border-orange-500 py-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="en-bref text-lg text-gray-800 font-medium">
+              <strong>En bref :</strong> Symloop développe des sites web et applications pour les entreprises d'Oran et de l'Ouest algérien. Sites vitrines, e-commerce, apps mobiles. Basé à Sétif. Contact: +213 549 575 512.
+            </p>
           </div>
         </section>
 
@@ -418,7 +442,9 @@ export default function DeveloppementOran() {
                   { title: "Développement Web Constantine", href: "/blog/developpement-web-constantine-2024" },
                   { title: "E-commerce en Algérie", href: "/blog/ecommerce-algerie-2024" },
                   { title: "Coût Site Web Algérie", href: "/blog/cout-developpement-application-algerie" },
-                  { title: "Marketing Digital Algérie", href: "/blog/marketing-digital-algerie-2024" }
+                  { title: "Marketing Digital Algérie", href: "/blog/marketing-digital-algerie-2024" },
+                  { title: "Développement Site Web Algérie 2026", href: "/blog/developpement-site-web-algerie-2026" },
+                  { title: "Solutions Informatiques Algérie 2026", href: "/blog/solutions-informatiques-algerie-2026" }
                 ].map((article, i) => (
                   <Link key={i} href={article.href} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-orange-50 transition-colors group">
                     <span className="font-medium text-gray-900 group-hover:text-orange-600">{article.title}</span>
