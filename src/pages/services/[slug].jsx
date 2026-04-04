@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ServiceDetail from "../../components/services/ServiceDetail";
@@ -78,17 +79,136 @@ export default function ServicePage() {
   const features = Array.isArray(service.features) ? service.features :
     (typeof service.features === 'object' && service.features !== null) ? Object.values(service.features) : [];
 
+  const locale = router.locale || 'fr';
+  const tx = (ar, en, fr) => locale === 'ar' ? ar : locale === 'en' ? en : fr;
+
+  // Build "En bref" summary from service data
+  const enBrefText = tx(
+    `${service.title} — ${service.description || ''} مقدمة من Symloop في سطيف، الجزائر. تغطية وطنية عبر 58 ولاية ومنطقة مينا. تواصلوا معنا: +213 549 575 512.`,
+    `${service.title} — ${service.description || ''} Delivered by Symloop from Setif, Algeria. National coverage across 58 wilayas and MENA region. Contact: +213 549 575 512.`,
+    `${service.title} — ${service.description || ''} Proposé par Symloop depuis Sétif, Algérie. Couverture nationale sur 58 wilayas et région MENA. Contact : +213 549 575 512.`
+  );
+
   return (
-    <ServiceDetail
-      title={service.title}
-      subtitle={service.subtitle}
-      description={service.description}
-      price={service.estimatedPrice}
-      duration={service.deliveryTime}
-      features={features.map(f => typeof f === 'string' ? f : f?.toString() || '')}
-      technologies={service.keywords || []}
-      applications={[]}
-    />
+    <>
+      <Head>
+        {/* BreadcrumbList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": tx('الرئيسية', 'Home', 'Accueil'),
+                  "item": "https://symloop.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": tx('الخدمات', 'Services', 'Services'),
+                  "item": `https://symloop.com/${locale}/services`
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": service.title,
+                  "item": `https://symloop.com/${locale}/services/${slug}`
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* SpeakableSpecification Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": service.title,
+              "url": `https://symloop.com/${locale}/services/${slug}`,
+              "description": service.description,
+              "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [".en-bref-service", "h1", ".service-description"]
+              },
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Symloop Technology",
+                "url": "https://symloop.com"
+              }
+            })
+          }}
+        />
+
+        {/* Service Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": service.title,
+              "description": service.description,
+              "provider": {
+                "@type": "Organization",
+                "name": "Symloop Technology",
+                "url": "https://symloop.com",
+                "telephone": "+213549575512",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Sétif",
+                  "addressCountry": "DZ"
+                }
+              },
+              "areaServed": [
+                { "@type": "Country", "name": "Algeria" },
+                { "@type": "Country", "name": "Morocco" },
+                { "@type": "Country", "name": "Tunisia" },
+                { "@type": "Country", "name": "United Arab Emirates" },
+                { "@type": "Country", "name": "Saudi Arabia" }
+              ],
+              "offers": service.estimatedPrice ? {
+                "@type": "Offer",
+                "price": service.estimatedPrice,
+                "priceCurrency": locale === 'ar' ? 'SAR' : locale === 'en' ? 'USD' : 'EUR'
+              } : undefined
+            })
+          }}
+        />
+      </Head>
+
+      {/* En Bref Summary Block */}
+      <div className="en-bref-service bg-gradient-to-r from-blue-50 via-white to-blue-50 border-b border-blue-100">
+        <div className="container mx-auto px-6 py-6">
+          <div className="max-w-4xl mx-auto bg-white border border-blue-100 rounded-2xl p-5 sm:p-6 shadow-sm">
+            <h2 className="text-base sm:text-lg font-bold text-gray-700 mb-2 flex items-center gap-2">
+              <span className="inline-block w-1.5 h-5 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full" />
+              {tx('باختصار', 'In Brief', 'En bref')}
+            </h2>
+            <p className="text-sm text-gray-500 leading-relaxed">
+              {enBrefText}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <ServiceDetail
+        title={service.title}
+        subtitle={service.subtitle}
+        description={service.description}
+        price={service.estimatedPrice}
+        duration={service.deliveryTime}
+        features={features.map(f => typeof f === 'string' ? f : f?.toString() || '')}
+        technologies={service.keywords || []}
+        applications={[]}
+      />
+    </>
   );
 }
 

@@ -492,6 +492,143 @@ export default function SymloopITServicesPage() {
             })
           }}
         />
+
+        {/* BreadcrumbList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Accueil',
+                  "item": "https://symloop.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": locale === 'ar' ? 'الخدمات' : locale === 'en' ? 'Services' : 'Services',
+                  "item": `https://symloop.com/${locale}/services`
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* SpeakableSpecification Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": t('servicesPage.title'),
+              "url": `https://symloop.com${router.asPath}`,
+              "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [".en-bref-block", "h1", "h2"]
+              },
+              "mainEntity": {
+                "@type": "ItemList",
+                "name": locale === 'ar' ? 'خدمات سيملوب' : locale === 'en' ? 'Symloop Services' : 'Services Symloop',
+                "numberOfItems": services.length
+              }
+            })
+          }}
+        />
+
+        {/* FAQPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": (locale === 'ar' ? [
+                {
+                  "@type": "Question",
+                  "name": "ما هي الخدمات التي تقدمها Symloop؟",
+                  "acceptedAnswer": { "@type": "Answer", "text": "تقدم Symloop خدمات تطوير البرمجيات المخصصة، تطبيقات الهاتف المحمول Flutter، مواقع الويب والتجارة الإلكترونية، حلول إنترنت الأشياء IoT، الذكاء الاصطناعي وتعلم الآلة، والأمن السيبراني للشركات في الجزائر ومنطقة مينا." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "أين مقر Symloop وما هي التغطية الجغرافية؟",
+                  "acceptedAnswer": { "@type": "Answer", "text": "مقر Symloop في سطيف، الجزائر، مع تغطية وطنية عبر جميع الولايات الـ58 وخدمات دولية تشمل المغرب، تونس، الإمارات، السعودية، قطر والكويت." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "كم عدد المشاريع التي أنجزتها Symloop؟",
+                  "acceptedAnswer": { "@type": "Answer", "text": "أنجزت Symloop أكثر من 50 مشروعاً لعملاء في مختلف القطاعات بما في ذلك الصناعة والبنوك والتجارة والصحة والتعليم والزراعة." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "هل تقدمون استشارة مجانية قبل بدء المشروع؟",
+                  "acceptedAnswer": { "@type": "Answer", "text": "نعم، نقدم استشارة مجانية لتحليل احتياجاتكم وتقديم عرض سعر مخصص. اتصلوا بنا على +213 549 575 512 أو عبر WhatsApp." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "ما هي التقنيات التي تستخدمها Symloop؟",
+                  "acceptedAnswer": { "@type": "Answer", "text": "نستخدم أحدث التقنيات: Flutter وReact Native للتطبيقات، Next.js وLaravel للويب، ESP32 لإنترنت الأشياء، Python وTensorFlow للذكاء الاصطناعي، مع بنية تحتية سحابية AWS وDocker." }
+                }
+              ] : locale === 'en' ? [
+                {
+                  "@type": "Question",
+                  "name": "What services does Symloop offer?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop offers custom software development, Flutter mobile applications, websites and e-commerce, IoT solutions, artificial intelligence and machine learning, and cybersecurity for businesses in Algeria and the MENA region." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Where is Symloop based and what is the geographic coverage?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop is headquartered in Setif, Algeria, with national coverage across all 58 wilayas and international services covering Morocco, Tunisia, UAE, Saudi Arabia, Qatar and Kuwait." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How many projects has Symloop completed?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop has delivered over 50 projects for clients across various sectors including manufacturing, banking, commerce, healthcare, education and agriculture." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you offer a free consultation before starting a project?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer a free consultation to analyze your needs and provide a custom quote. Contact us at +213 549 575 512 or via WhatsApp." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What technologies does Symloop use?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "We use the latest technologies: Flutter and React Native for apps, Next.js and Laravel for web, ESP32 for IoT, Python and TensorFlow for AI, with AWS and Docker cloud infrastructure." }
+                }
+              ] : [
+                {
+                  "@type": "Question",
+                  "name": "Quels services propose Symloop ?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop propose le developpement logiciel sur mesure, les applications mobiles Flutter, les sites web et e-commerce, les solutions IoT, l'intelligence artificielle et le machine learning, ainsi que la cybersecurite pour les entreprises en Algerie et dans la region MENA." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Ou est basee Symloop et quelle est la couverture geographique ?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop est basee a Setif, Algerie, avec une couverture nationale sur les 58 wilayas et des services internationaux couvrant le Maroc, la Tunisie, les EAU, l'Arabie Saoudite, le Qatar et le Koweit." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Combien de projets Symloop a-t-elle livres ?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop a livre plus de 50 projets pour des clients dans divers secteurs : industrie, banque, commerce, sante, education et agriculture." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Proposez-vous une consultation gratuite avant de demarrer un projet ?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous proposons une consultation gratuite pour analyser vos besoins et fournir un devis personnalise. Contactez-nous au +213 549 575 512 ou via WhatsApp." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Quelles technologies utilise Symloop ?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Nous utilisons les dernieres technologies : Flutter et React Native pour les apps, Next.js et Laravel pour le web, ESP32 pour l'IoT, Python et TensorFlow pour l'IA, avec une infrastructure cloud AWS et Docker." }
+                }
+              ])
+            })
+          }}
+        />
       </Head>
 
       <div className={`min-h-screen bg-black ${isRTL ? 'font-arabic' : ''}`}>
@@ -503,6 +640,27 @@ export default function SymloopITServicesPage() {
           onConsultationClick={() => setConsultationModalOpen(true)}
           onQuoteClick={() => setQuoteModalOpen(true)}
         />
+
+        {/* ══════════════════════════════════════════════════════════
+            EN BREF — SEO Summary Block
+        ══════════════════════════════════════════════════════════ */}
+        <section className="en-bref-block relative bg-black border-b border-white/[0.06] py-10 sm:py-12">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto bg-white/[0.03] border border-white/[0.08] rounded-2xl p-6 sm:p-8">
+              <h2 className="text-lg sm:text-xl font-bold text-white/80 mb-3 flex items-center gap-2">
+                <span className="inline-block w-1.5 h-6 bg-gradient-to-b from-indigo-500 to-purple-500 rounded-full" />
+                {tx('باختصار', 'In Brief', 'En bref')}
+              </h2>
+              <p className="text-sm sm:text-base text-white/50 leading-relaxed">
+                {tx(
+                  'تقدم Symloop خدمات تطوير البرمجيات، تطبيقات الهاتف المحمول، مواقع الويب، إنترنت الأشياء، الذكاء الاصطناعي والأمن السيبراني للشركات في الجزائر ومنطقة مينا. مقرنا في سطيف مع تغطية وطنية. +50 مشروع منجز. تواصلوا معنا: +213 549 575 512.',
+                  'Symloop provides software development, mobile applications, websites, IoT, artificial intelligence and cybersecurity services for businesses in Algeria and the MENA region. Based in Setif with national coverage. +50 projects delivered. Contact: +213 549 575 512.',
+                  'Symloop propose des services de développement logiciel, applications mobiles, sites web, IoT, intelligence artificielle et cybersécurité pour les entreprises en Algérie et dans la région MENA. Basé à Sétif avec couverture nationale. +50 projets livrés. Contact: +213 549 575 512.'
+                )}
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* ══════════════════════════════════════════════════════════
             2. SERVICES GRID (kept)
