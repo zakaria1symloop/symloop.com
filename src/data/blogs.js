@@ -3,6 +3,138 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "118",
+    slug: "creer-application-mobile-algerie-2026",
+    title: "Comment Créer une Application Mobile en Algérie en 2026 ?",
+    subtitle: "Guide Complet : Types d'Apps, Flutter vs React Native, Étapes, Coûts, Monétisation",
+    excerpt: "Guide complet pour créer une application mobile en Algérie en 2026. Types d'apps (native, cross-platform, PWA), Flutter vs React Native, 7 étapes de création, coûts détaillés (60 000 DA+), secteurs porteurs et monétisation.",
+    category: "Mobile", author: "Symloop Team", date: "2026-04-05", readTime: "18 min", featured: true,
+    tags: ["créer application mobile algérie", "développement app mobile algérie 2026", "application Android iOS algérie", "prix application mobile algérie", "flutter algérie"],
+    metaTitle: "Comment Créer une Application Mobile en Algérie en 2026 ? | Guide Complet | Symloop",
+    metaDescription: "Guide complet pour créer une application mobile en Algérie en 2026. Types d'apps, Flutter vs React Native, étapes, coûts (60 000 DA+). Symloop, agence nationale.",
+    translations: { en: { title: "How to Create a Mobile App in Algeria in 2026?", subtitle: "", excerpt: "" }, ar: { title: "كيف تنشئ تطبيق جوال في الجزائر 2026؟", subtitle: "", excerpt: "" } }
+  },
+  {
+    id: "127",
+    slug: "application-reservation-algerie-2026",
+    title: "Comment Créer une Application de Réservation en Algérie en 2026 ?",
+    subtitle: "Hôtels, Restaurants, Cliniques, Salons — Système de Booking Complet",
+    excerpt: "Guide complet pour créer une application de réservation en Algérie. Hôtels, restaurants, cliniques, salons de coiffure. Calendrier, paiement CIB, notifications.",
+    category: "Applications", author: "Symloop Team", date: "2026-04-05", readTime: "16 min", featured: false,
+    tags: ["application réservation algérie", "booking algérie", "réservation en ligne algérie", "système réservation hôtel"],
+    metaTitle: "Application Réservation Algérie 2026 | Hôtels, Restaurants, Cliniques | Symloop",
+    metaDescription: "Créer une application de réservation en Algérie. Hôtels, restaurants, cliniques, salons. Paiement CIB/Edahabia. Symloop — devis gratuit.",
+    translations: { en: { title: "How to Create a Booking App in Algeria in 2026?", subtitle: "Hotels, Restaurants, Clinics — Complete Reservation System", excerpt: "Complete guide to building a booking and reservation app in Algeria. Hotels, restaurants, clinics, salons. CIB payment, real-time calendar." }, ar: { title: "كيف تنشئ تطبيق حجز في الجزائر 2026؟", subtitle: "فنادق، مطاعم، عيادات — نظام حجز متكامل", excerpt: "دليل شامل لإنشاء تطبيق حجز في الجزائر. فنادق، مطاعم، عيادات، صالونات. دفع CIB/Edahabia." } }
+  },
+  {
+    id: "126",
+    slug: "site-web-restaurant-algerie-2026",
+    title: "Comment Créer un Site Web pour Restaurant en Algérie en 2026 ?",
+    subtitle: "Menu Digital, Commande en Ligne, Livraison & Réservation",
+    excerpt: "Guide complet pour créer un site web de restaurant en Algérie. Menu digital, commande en ligne, livraison, réservation, paiement CIB/Edahabia.",
+    category: "Web", author: "Symloop Team", date: "2026-04-05", readTime: "15 min", featured: false,
+    tags: ["site web restaurant algérie", "menu en ligne algérie", "commande restaurant algérie", "site internet restaurant"],
+    metaTitle: "Site Web Restaurant Algérie 2026 | Menu Digital & Commande en Ligne | Symloop",
+    metaDescription: "Créer un site web pour restaurant en Algérie. Menu digital, commande en ligne, livraison, réservation. Symloop — devis gratuit.",
+    translations: { en: { title: "How to Create a Restaurant Website in Algeria in 2026?", subtitle: "Digital Menu, Online Ordering, Delivery & Booking", excerpt: "Complete guide to creating a restaurant website in Algeria. Digital menu, online ordering, delivery, reservation." }, ar: { title: "كيف تنشئ موقع ويب لمطعم في الجزائر 2026؟", subtitle: "قائمة رقمية، طلب عبر الإنترنت، توصيل وحجز", excerpt: "دليل شامل لإنشاء موقع ويب لمطعمك في الجزائر. قائمة رقمية، طلب أونلاين، توصيل، حجز." } }
+  },
+  {
+    id: "125",
+    slug: "application-gestion-stock-algerie-2026",
+    title: "Application de Gestion de Stock en Algérie : Quelle Solution Choisir en 2026 ?",
+    subtitle: "Inventaire, Code-barres, Multi-dépôts, Alertes Automatiques",
+    excerpt: "Guide complet pour choisir ou développer une application de gestion de stock en Algérie. Inventaire, code-barres, multi-dépôts, alertes, reporting.",
+    category: "Logiciel", author: "Symloop Team", date: "2026-04-05", readTime: "16 min", featured: false,
+    tags: ["gestion stock algérie", "application inventaire algérie", "logiciel stock algérie", "gestion magasin algérie"],
+    metaTitle: "Application Gestion Stock Algérie 2026 | Inventaire & Multi-Dépôts | Symloop",
+    metaDescription: "Application gestion stock en Algérie. Inventaire, code-barres, multi-dépôts, alertes automatiques. Symloop — développement sur mesure.",
+    translations: { en: { title: "Inventory Management App in Algeria: Which Solution in 2026?", subtitle: "Inventory, Barcode, Multi-Warehouse, Auto Alerts", excerpt: "Complete guide to inventory and stock management apps in Algeria. Barcode scanning, multi-warehouse, automatic alerts." }, ar: { title: "تطبيق إدارة المخزون في الجزائر 2026: أي حل تختار؟", subtitle: "جرد، باركود، متعدد المستودعات، تنبيهات تلقائية", excerpt: "دليل شامل لتطبيقات إدارة المخزون في الجزائر. باركود، متعدد المستودعات، تنبيهات تلقائية." } }
+  },
+  {
+    id: "124",
+    slug: "creer-marketplace-algerie-2026",
+    title: "Comment Créer une Marketplace en Algérie en 2026 ?",
+    subtitle: "Plateforme Multi-Vendeurs, Commission, B2B & B2C",
+    excerpt: "Guide complet pour créer une marketplace en Algérie. Multi-vendeurs, système de commission, paiement CIB, B2B et B2C. Architecture et coûts.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-04-05", readTime: "17 min", featured: true,
+    tags: ["marketplace algérie", "créer marketplace", "plateforme multi-vendeurs algérie", "marketplace B2B algérie"],
+    metaTitle: "Créer Marketplace Algérie 2026 | Multi-Vendeurs B2B B2C | Symloop",
+    metaDescription: "Créer une marketplace en Algérie. Multi-vendeurs, commission, paiement CIB/Edahabia, B2B et B2C. Symloop — devis gratuit.",
+    translations: { en: { title: "How to Create a Marketplace in Algeria in 2026?", subtitle: "Multi-Vendor Platform, Commission System, B2B & B2C", excerpt: "Complete guide to building a marketplace in Algeria. Multi-vendor, commission system, CIB payment, B2B and B2C." }, ar: { title: "كيف تنشئ سوق إلكتروني في الجزائر 2026؟", subtitle: "منصة متعددة البائعين، نظام عمولات، B2B و B2C", excerpt: "دليل شامل لإنشاء سوق إلكتروني في الجزائر. متعدد البائعين، نظام عمولات، دفع CIB." } }
+  },
+  {
+    id: "123",
+    slug: "application-livraison-algerie-2026",
+    title: "Comment Créer une Application de Livraison en Algérie en 2026 ?",
+    subtitle: "GPS Temps Réel, Notifications Push, Paiement CIB",
+    excerpt: "Guide complet pour créer une application de livraison en Algérie. GPS tracking, 3 panels (client, livreur, admin), paiement CIB/Edahabia.",
+    category: "Applications", author: "Symloop Team", date: "2026-04-05", readTime: "16 min", featured: true,
+    tags: ["application livraison algérie", "app livraison algérie", "créer application livraison", "application commande livraison"],
+    metaTitle: "Application Livraison Algérie 2026 | GPS, Commande, Paiement CIB | Symloop",
+    metaDescription: "Créer application de livraison en Algérie. GPS temps réel, 3 panels, paiement CIB/Edahabia. Symloop — 50+ apps développées.",
+    translations: { en: { title: "How to Create a Delivery App in Algeria in 2026?", subtitle: "Real-Time GPS, Push Notifications, CIB Payment", excerpt: "Complete guide to building a delivery app in Algeria. Real-time GPS tracking, 3 panels, CIB/Edahabia payment integration." }, ar: { title: "كيف تنشئ تطبيق توصيل في الجزائر 2026؟", subtitle: "GPS مباشر، إشعارات فورية، دفع CIB", excerpt: "دليل شامل لإنشاء تطبيق توصيل في الجزائر. تتبع GPS مباشر، 3 لوحات تحكم، دفع CIB/Edahabia." } }
+  },
+  {
+    id: "122",
+    slug: "meilleure-agence-web-algerie-2026",
+    title: "Quelle est la Meilleure Agence Web en Algérie en 2026 ?",
+    subtitle: "Critères, Comparaison & Guide de Choix",
+    excerpt: "Comment choisir la meilleure agence web en Algérie en 2026. Critères de sélection, questions à poser, pièges à éviter. Guide complet.",
+    category: "Web", author: "Symloop Team", date: "2026-04-05", readTime: "15 min", featured: true,
+    tags: ["meilleure agence web algérie", "agence web algérie 2026", "agence digitale algérie", "agence web alger oran constantine"],
+    metaTitle: "Meilleure Agence Web Algérie 2026 | Top Agence Digitale | Symloop",
+    metaDescription: "Quelle est la meilleure agence web en Algérie en 2026 ? Critères de choix, comparaison, questions à poser. Guide complet par Symloop.",
+    translations: { en: { title: "What is the Best Web Agency in Algeria in 2026?", subtitle: "Criteria, Comparison & Selection Guide", excerpt: "How to choose the best web agency in Algeria in 2026. Selection criteria, questions to ask, red flags to avoid." }, ar: { title: "ما هي أفضل وكالة ويب في الجزائر 2026؟", subtitle: "معايير الاختيار، مقارنة ودليل شامل", excerpt: "كيف تختار أفضل وكالة ويب في الجزائر 2026؟ معايير الاختيار، الأسئلة التي يجب طرحها، العلامات التحذيرية." } }
+  },
+  {
+    id: "121",
+    slug: "prix-site-web-algerie-2026",
+    title: "Combien Coûte un Site Web en Algérie en 2026 ? Prix & Tarifs Réels",
+    subtitle: "Tarifs Site Vitrine, E-commerce, Application Web — Guide Prix Complet",
+    excerpt: "Prix réels de création de site web en Algérie en 2026. Site vitrine, e-commerce, application web. Tarifs freelance vs agence. Guide transparent.",
+    category: "Web", author: "Symloop Team", date: "2026-04-05", readTime: "14 min", featured: true,
+    tags: ["prix site web algérie", "combien coûte site web algérie", "tarif création site algérie", "devis site web algérie"],
+    metaTitle: "Prix Site Web Algérie 2026 | Tarifs Réels Vitrine & E-commerce | Symloop",
+    metaDescription: "Combien coûte un site web en Algérie en 2026 ? Prix site vitrine, e-commerce, app web. Tarifs transparents. Symloop — devis gratuit.",
+    translations: { en: { title: "How Much Does a Website Cost in Algeria in 2026? Real Prices", subtitle: "Showcase, E-commerce & Web App Pricing — Complete Guide", excerpt: "Real website pricing in Algeria 2026. Showcase site, e-commerce, web app costs. Freelance vs agency rates. Transparent guide." }, ar: { title: "كم يكلف إنشاء موقع ويب في الجزائر 2026؟ الأسعار الحقيقية", subtitle: "أسعار المواقع التعريفية، التجارة الإلكترونية وتطبيقات الويب", excerpt: "أسعار حقيقية لإنشاء مواقع الويب في الجزائر 2026. موقع تعريفي، تجارة إلكترونية، تطبيق ويب." } }
+  },
+  {
+    id: "120",
+    slug: "plateforme-saas-algerie-2026",
+    title: "Développer une Plateforme SaaS en Algérie : Guide Complet 2026",
+    subtitle: "Architecture Multi-Tenant, Stack Technique, Monétisation & Coûts",
+    excerpt: "Guide complet pour développer une plateforme SaaS en Algérie. Architecture multi-tenant, technologies, modèle économique, coûts de développement.",
+    category: "SaaS", author: "Symloop Team", date: "2026-04-05", readTime: "18 min", featured: true,
+    tags: ["plateforme SaaS algérie", "développement SaaS algérie", "SaaS multi-tenant", "logiciel SaaS algérie"],
+    metaTitle: "Plateforme SaaS Algérie 2026 | Développement Multi-Tenant | Symloop",
+    metaDescription: "Développer une plateforme SaaS en Algérie. Architecture multi-tenant, stack technique, monétisation. Symloop — expert SaaS.",
+    translations: { en: { title: "Building a SaaS Platform in Algeria: Complete Guide 2026", subtitle: "Multi-Tenant Architecture, Tech Stack, Monetization & Costs", excerpt: "Complete guide to building a SaaS platform in Algeria. Multi-tenant architecture, tech stack, business model, development costs." }, ar: { title: "تطوير منصة SaaS في الجزائر: دليل شامل 2026", subtitle: "بنية متعددة المستأجرين، التقنيات، نموذج الأعمال والتكاليف", excerpt: "دليل شامل لتطوير منصة SaaS في الجزائر. بنية متعددة المستأجرين، التقنيات، نموذج الربح." } }
+  },
+  {
+    id: "119",
+    slug: "creer-application-mobile-algerie-2026",
+    title: "Comment Créer une Application Mobile en Algérie en 2026 ?",
+    subtitle: "Flutter, React Native, Native — Guide Complet de A à Z",
+    excerpt: "Guide complet pour créer une application mobile en Algérie. Flutter vs React Native, étapes de développement, prix, publication App Store & Google Play.",
+    category: "Mobile", author: "Symloop Team", date: "2026-04-05", readTime: "16 min", featured: true,
+    tags: ["créer application mobile algérie", "développement app mobile algérie", "application Android iOS algérie", "prix application mobile algérie"],
+    metaTitle: "Créer Application Mobile Algérie 2026 | Flutter, React Native | Symloop",
+    metaDescription: "Comment créer une application mobile en Algérie en 2026 ? Flutter vs React Native, prix, étapes. Symloop — 50+ apps publiées.",
+    translations: { en: { title: "How to Create a Mobile App in Algeria in 2026?", subtitle: "Flutter, React Native, Native — Complete A-to-Z Guide", excerpt: "Complete guide to creating a mobile app in Algeria. Flutter vs React Native, development steps, pricing, App Store & Google Play publishing." }, ar: { title: "كيف تنشئ تطبيق موبايل في الجزائر 2026؟", subtitle: "Flutter، React Native، Native — دليل شامل من الألف إلى الياء", excerpt: "دليل شامل لإنشاء تطبيق موبايل في الجزائر. Flutter مقابل React Native، الخطوات، الأسعار، النشر." } }
+  },
+  {
+    id: "118",
+    slug: "creer-boutique-en-ligne-algerie-2026",
+    title: "Comment Créer une Boutique en Ligne en Algérie en 2026 ?",
+    subtitle: "Plateforme, Paiement CIB/Edahabia, Livraison & SEO",
+    excerpt: "Guide complet pour créer une boutique en ligne en Algérie. Choix plateforme, intégration paiement CIB/Edahabia, logistique, SEO. Étape par étape.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-04-05", readTime: "17 min", featured: true,
+    tags: ["créer boutique en ligne algérie", "vendre en ligne algérie", "site e-commerce algérie 2026", "boutique en ligne CIB Edahabia"],
+    metaTitle: "Créer Boutique en Ligne Algérie 2026 | Paiement CIB Edahabia | Symloop",
+    metaDescription: "Comment créer une boutique en ligne en Algérie en 2026 ? Plateforme, paiement CIB/Edahabia, livraison, SEO. Symloop — devis gratuit.",
+    translations: { en: { title: "How to Create an Online Store in Algeria in 2026?", subtitle: "Platform, CIB/Edahabia Payment, Delivery & SEO", excerpt: "Complete guide to creating an online store in Algeria. Platform choice, CIB/Edahabia payment, logistics, SEO. Step by step." }, ar: { title: "كيف تنشئ متجر إلكتروني في الجزائر 2026؟", subtitle: "المنصة، الدفع CIB/Edahabia، التوصيل و SEO", excerpt: "دليل شامل لإنشاء متجر إلكتروني في الجزائر. اختيار المنصة، الدفع بـ CIB/Edahabia، اللوجستيك." } }
+  },
+  {
     id: "117",
     slug: "ia-logistique-supply-chain-algerie-2026",
     title: "IA pour la Logistique & Supply Chain en Algérie 2026",
@@ -3070,6 +3202,33 @@ export const blogs = [
         title: "التحول الرقمي في الكويت - رؤية كويت جديدة 2035",
         subtitle: "حلول التحول الرقمي الشاملة للمؤسسات الكويتية 2026",
         excerpt: "استشارات وتنفيذ التحول الرقمي للكويت. هجرة سحابية، أتمتة العمليات، استراتيجية رقمية متوافقة مع رؤية كويت جديدة 2035."
+      }
+    }
+  },
+  {
+    id: "118",
+    slug: "creer-boutique-en-ligne-algerie-2026",
+    title: "Comment Créer une Boutique en Ligne en Algérie en 2026 ?",
+    subtitle: "Guide Complet : Plateforme, Paiement CIB/Edahabia, Logistique, SEO",
+    excerpt: "Guide complet pour créer une boutique en ligne en Algérie en 2026. Choix de plateforme, intégration paiement CIB et Edahabia, logistique, SEO et marketing digital. Symloop vous accompagne.",
+    category: "E-commerce",
+    author: "Symloop Team",
+    date: "2026-04-05",
+    readTime: "18 min",
+    featured: true,
+    tags: ["créer boutique en ligne algérie", "vendre en ligne algérie", "site e-commerce algérie 2026", "boutique en ligne CIB Edahabia", "créer site vente algérie"],
+    metaTitle: "Créer Boutique en Ligne Algérie 2026 | Guide Complet | Symloop",
+    metaDescription: "Comment créer une boutique en ligne en Algérie en 2026 ? Guide complet : plateforme, paiement CIB/Edahabia, logistique, SEO. Symloop accompagne les entreprises algériennes.",
+    translations: {
+      en: {
+        title: "How to Create an Online Store in Algeria in 2026?",
+        subtitle: "Complete Guide: Platform, CIB/Edahabia Payment, Logistics, SEO",
+        excerpt: "Complete guide to creating an online store in Algeria in 2026. Platform choice, CIB/Edahabia payment, logistics, SEO and digital marketing."
+      },
+      ar: {
+        title: "كيف تنشئ متجرا إلكترونيا في الجزائر 2026؟",
+        subtitle: "دليل شامل: المنصة، الدفع CIB/Edahabia، اللوجستيات، SEO",
+        excerpt: "دليل شامل لإنشاء متجر إلكتروني في الجزائر 2026. اختيار المنصة، الدفع الإلكتروني، اللوجستيات، التسويق الرقمي."
       }
     }
   }
