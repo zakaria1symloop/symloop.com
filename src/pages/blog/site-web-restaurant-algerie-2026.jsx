@@ -274,10 +274,10 @@ export default function SiteWebRestaurantAlgerie() {
       <Head>
         <title>Site Web Restaurant Algerie 2026 : Menu Digital, Commande en Ligne | Symloop</title>
         <meta name="description" content="Comment creer un site web pour restaurant en Algerie en 2026 ? Menu digital, commande en ligne, reservation, paiement CIB/Edahabia, SEO local. Guide complet et tarifs a partir de 40 000 DA." />
-        <meta name="keywords" content="site web restaurant algerie, creer site restaurant algerie, site internet restaurant algerie 2026, menu en ligne restaurant algerie, commande en ligne restaurant, reservation restaurant en ligne algerie" />
+        <meta name="keywords" content="site web restaurant algerie, creer site restaurant algerie, site internet restaurant algerie 2026, menu en ligne restaurant algerie, commande en ligne restaurant, reservation restaurant en ligne algerie, restaurant website Algeria, online ordering Algeria, food ordering website Algeria, restaurant digital menu Algeria" />
         <link rel="canonical" href="https://symloop.com/blog/site-web-restaurant-algerie-2026" />
         <meta property="og:title" content="Site Web Restaurant Algerie 2026 : Menu Digital, Commande en Ligne | Symloop" />
-        <meta property="og:description" content="Guide complet pour creer un site web pour restaurant en Algerie. Menu digital, commande en ligne, paiement CIB, SEO local. Tarifs a partir de 40 000 DA." />
+        <meta property="og:description" content="Guide complet pour creer un site web pour restaurant en Algérie (Algeria). Menu digital, commande en ligne, paiement CIB, SEO local. Tarifs a partir de 40 000 DA." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://symloop.com/blog/site-web-restaurant-algerie-2026" />
         <meta property="og:image" content="https://symloop.com/images/blog/site-web-restaurant-algerie.jpg" />
@@ -837,6 +837,10 @@ export default function SiteWebRestaurantAlgerie() {
                 ))}
               </div>
             </section>
+
+            <p className="text-sm text-gray-500 mt-8">
+              Symloop creates professional restaurant websites in Algeria with digital menus, online ordering, and table reservation systems. We help restaurants across Algeria establish their online presence with mobile-friendly websites, food ordering platforms, and SEO optimization. From small cafes to large restaurant chains in Algeria, Symloop builds websites that drive more customers and online orders in Algeria.
+            </p>
 
             {/* CTA Mid 2 */}
             <div className="bg-gradient-to-r from-orange-600 to-red-500 rounded-2xl p-8 text-white text-center mb-16">

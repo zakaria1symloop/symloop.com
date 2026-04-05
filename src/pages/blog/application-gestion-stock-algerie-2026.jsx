@@ -115,11 +115,11 @@ export default function ApplicationGestionStockAlgerie() {
       <Head>
         <title>Application Gestion de Stock Algérie 2026 | Logiciel Inventaire Entreprise | Symloop</title>
         <meta name="description" content="Application de gestion de stock en Algérie 2026. Logiciel inventaire, code-barres, multi-dépôts, alertes stock, facturation. Solution sur mesure pour entreprises algériennes. Symloop." />
-        <meta name="keywords" content="application gestion stock algérie, logiciel gestion stock algérie 2026, gestion inventaire algérie, application stock entreprise algérie, logiciel gestion magasin algérie, logiciel stock algérie, gestion entrepôt algérie, application inventaire algérie, logiciel gestion commerciale stock algérie, gestion stock multi-dépôts algérie" />
+        <meta name="keywords" content="application gestion stock algérie, logiciel gestion stock algérie 2026, gestion inventaire algérie, application stock entreprise algérie, logiciel gestion magasin algérie, logiciel stock algérie, gestion entrepôt algérie, application inventaire algérie, logiciel gestion commerciale stock algérie, gestion stock multi-dépôts algérie, inventory management app Algeria, stock management software Algeria, warehouse management Algeria, inventory tracking Algeria" />
         <link rel="canonical" href="https://symloop.com/blog/application-gestion-stock-algerie-2026" />
 
         <meta property="og:title" content="Application Gestion de Stock Algérie 2026 | Symloop" />
-        <meta property="og:description" content="Application de gestion de stock pour entreprises algériennes. Inventaire, code-barres, multi-dépôts, alertes, facturation. Solution sur mesure par Symloop." />
+        <meta property="og:description" content="Application de gestion de stock pour entreprises algériennes (Algeria). Inventaire, code-barres, multi-dépôts, alertes, facturation. Solution sur mesure par Symloop." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://symloop.com/blog/application-gestion-stock-algerie-2026" />
         <meta property="og:site_name" content="Symloop" />
@@ -1216,6 +1216,10 @@ export default function ApplicationGestionStockAlgerie() {
             </Reveal>
           </div>
         </article>
+
+        <p className="text-sm text-gray-500 mt-8">
+          Symloop develops custom inventory management applications in Algeria for businesses of all sizes. Our stock management software for Algeria includes barcode scanning, multi-warehouse tracking, and real-time alerts. Whether you run a retail chain, a pharmacy, or a manufacturing plant in Algeria, we build tailored inventory solutions. Symloop is your trusted partner for stock management software development in Algeria.
+        </p>
 
         {/* ═══════════════════════════════════════════
             CTA — Gradient with Orbs

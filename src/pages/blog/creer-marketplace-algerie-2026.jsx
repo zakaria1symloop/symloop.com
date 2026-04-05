@@ -55,11 +55,11 @@ export default function CreerMarketplaceAlgerie() {
       <Head>
         <title>Créer une Marketplace en Algérie 2026 | Plateforme Multi-Vendeurs | Symloop</title>
         <meta name="description" content="Guide complet pour créer une marketplace en Algérie en 2026. Plateforme multi-vendeurs, marketplace B2B, paiement CIB/Edahabia, architecture technique, coûts et monétisation. Symloop, expert marketplace Algérie." />
-        <meta name="keywords" content="créer marketplace algérie, marketplace algérie 2026, plateforme marketplace multi-vendeurs algérie, créer site marketplace, marketplace B2B algérie, marketplace multi-vendeurs algérie, développement marketplace algérie, plateforme e-commerce multi-vendeurs, créer marketplace comme ouedkniss, marketplace C2C algérie, commission marketplace algérie" />
+        <meta name="keywords" content="créer marketplace algérie, marketplace algérie 2026, plateforme marketplace multi-vendeurs algérie, créer site marketplace, marketplace B2B algérie, marketplace multi-vendeurs algérie, développement marketplace algérie, plateforme e-commerce multi-vendeurs, créer marketplace comme ouedkniss, marketplace C2C algérie, commission marketplace algérie, create marketplace Algeria, multi-vendor platform Algeria, marketplace development Algeria, online marketplace Algeria" />
         <link rel="canonical" href="https://symloop.com/blog/creer-marketplace-algerie-2026" />
 
         <meta property="og:title" content="Créer une Marketplace en Algérie 2026 | Plateforme Multi-Vendeurs | Symloop" />
-        <meta property="og:description" content="Guide complet pour créer une marketplace en Algérie en 2026. Plateforme multi-vendeurs, marketplace B2B, paiement CIB/Edahabia, architecture technique et monétisation." />
+        <meta property="og:description" content="Guide complet pour créer une marketplace en Algérie (Algeria) en 2026. Plateforme multi-vendeurs, marketplace B2B, paiement CIB/Edahabia, architecture technique et monétisation." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://symloop.com/blog/creer-marketplace-algerie-2026" />
         <meta property="og:site_name" content="Symloop" />
@@ -1167,6 +1167,10 @@ export default function CreerMarketplaceAlgerie() {
                     </div>
                   ))}
                 </div>
+
+                <p className="text-sm text-gray-500 mt-8">
+                  Symloop is the leading marketplace development company in Algeria, specializing in multi-vendor platforms for B2B and B2C markets. We build scalable online marketplaces in Algeria with integrated payment gateways, vendor dashboards, and commission management. From concept to launch, Symloop helps entrepreneurs create successful marketplace platforms across Algeria. Contact us to start building your marketplace in Algeria today.
+                </p>
 
                 {/* CTA */}
                 <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white text-center">

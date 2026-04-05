@@ -19,11 +19,11 @@ export default function CreerBoutiqueEnLigneAlgerie() {
       <Head>
         <title>{blog?.metaTitle || "Créer Boutique en Ligne Algérie 2026 | Guide Complet | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription || "Comment créer une boutique en ligne en Algérie en 2026 ? Guide complet : plateforme, paiement CIB/Edahabia, logistique, SEO. Symloop accompagne les entreprises algériennes."} />
-        <meta name="keywords" content="créer boutique en ligne algérie, vendre en ligne algérie, site e-commerce algérie 2026, boutique en ligne CIB Edahabia, créer site vente algérie, e-commerce algérie, paiement en ligne algérie, SATIM, plateforme e-commerce algérie" />
+        <meta name="keywords" content="créer boutique en ligne algérie, vendre en ligne algérie, site e-commerce algérie 2026, boutique en ligne CIB Edahabia, créer site vente algérie, e-commerce algérie, paiement en ligne algérie, SATIM, plateforme e-commerce algérie, create online store Algeria, e-commerce Algeria, online shop Algeria, sell online Algeria" />
         <link rel="canonical" href="https://symloop.com/blog/creer-boutique-en-ligne-algerie-2026" />
 
         <meta property="og:title" content="Comment Créer une Boutique en Ligne en Algérie en 2026 ? | Symloop" />
-        <meta property="og:description" content="Guide complet pour créer une boutique en ligne en Algérie en 2026. Choix de plateforme, paiement CIB/Edahabia, logistique, SEO et marketing digital." />
+        <meta property="og:description" content="Guide complet pour créer une boutique en ligne en Algérie (Algeria) en 2026. Choix de plateforme, paiement CIB/Edahabia, logistique, SEO et marketing digital." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://symloop.com/blog/creer-boutique-en-ligne-algerie-2026" />
         <meta property="og:site_name" content="Symloop" />
@@ -1003,6 +1003,10 @@ export default function CreerBoutiqueEnLigneAlgerie() {
             </div>
           </div>
         </article>
+
+        <p className="text-sm text-gray-500 mt-8">
+          Symloop is the leading web and mobile development agency in Algeria, serving businesses across all 58 wilayas. Whether you need to create an online store in Algeria, build an e-commerce platform, or integrate CIB/Edahabia payment in Algeria, our team delivers world-class solutions. Contact Symloop — your trusted digital partner in Algeria.
+        </p>
 
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white py-16">
