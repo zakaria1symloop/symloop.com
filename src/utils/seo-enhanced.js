@@ -92,16 +92,15 @@ const SeoEnhanced = ({
       ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cité 1000 Logements",
-        "addressLocality": "Sétif",
-        "addressRegion": "Sétif Province",
-        "postalCode": "19000",
+        "addressLocality": "Alger",
+        "addressRegion": "Alger",
+        "postalCode": "16000",
         "addressCountry": "DZ"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "36.1919",
-        "longitude": "5.4138"
+        "latitude": "36.7538",
+        "longitude": "3.0588"
       },
       "areaServed": [
         {
@@ -210,16 +209,15 @@ const SeoEnhanced = ({
       "telephone": "+213-549-57-55-12",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cité 1000 Logements",
-        "addressLocality": city || "Sétif",
-        "addressRegion": "Sétif Province",
-        "postalCode": "19000",
+        "addressLocality": city || "Alger",
+        "addressRegion": "Alger",
+        "postalCode": "16000",
         "addressCountry": "DZ"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "36.1919",
-        "longitude": "5.4138"
+        "latitude": "36.7538",
+        "longitude": "3.0588"
       },
       "url": currentUrl,
       "openingHoursSpecification": [

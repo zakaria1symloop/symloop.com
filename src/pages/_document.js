@@ -95,16 +95,15 @@ export default function Document(props) {
               "email": "contact@symloop.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Sétif",
-                "addressLocality": "Sétif",
-                "addressRegion": "Sétif Province",
-                "postalCode": "19000",
+                "addressLocality": "Alger",
+                "addressRegion": "Alger",
+                "postalCode": "16000",
                 "addressCountry": "DZ"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "36.1919",
-                "longitude": "5.4138"
+                "latitude": "36.7538",
+                "longitude": "3.0588"
               },
               "areaServed": [
                 {"@type": "Country", "name": "Algeria"},
@@ -199,16 +198,15 @@ export default function Document(props) {
               "url": "https://symloop.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Sétif",
-                "addressLocality": "Sétif",
-                "addressRegion": "Sétif",
-                "postalCode": "19000",
+                "addressLocality": "Alger",
+                "addressRegion": "Alger",
+                "postalCode": "16000",
                 "addressCountry": "DZ"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 36.1919,
-                "longitude": 5.4138
+                "latitude": 36.7538,
+                "longitude": 3.0588
               },
               "openingHoursSpecification": [
                 {

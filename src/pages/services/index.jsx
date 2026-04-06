@@ -1,1333 +1,753 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+// ============================================================================
+// SYMLOOP — /services (editorial, SEO-first, zero boxes)
+// Data loaded at build time from src/data/services.js via getStaticProps.
+// Rich JSON-LD: Organization, OfferCatalog, ItemList, FAQPage, BreadcrumbList,
+// SpeakableSpecification. Structured for maximum crawlability and LLM SEO.
+// ============================================================================
+
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
-import { ArrowRight, ArrowLeft, Search, Palette, Code2, Rocket, Smartphone, Globe, Database, ShoppingCart, Building, TrendingUp, Zap, Shield, Users, Mail, MessageCircle, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
+import {
+  Code2,
+  Smartphone,
+  Globe,
+  Brain,
+  Cpu,
+  Shield,
+  ArrowUpRight,
+  ArrowRight,
+} from 'lucide-react';
 
-import ServicesHero from '../../components/services/ServicesHero';
-import ServicesGrid from '../../components/services/ServicesGrid';
-import QuoteModal from '../../components/services/QuoteModal';
-import ConsultationModal from '../../components/services/ConsultationModal';
+import {
+  getAllServicesForLocale,
+  formatPriceRange,
+} from '../../data/services';
 
-import { getServicesData, getStatsData, getIndustriesData } from '../../components/services/ServicesData';
+// ---------------------------------------------------------------------------
+// Icon resolution (data stores icon as string key so it stays SSG-safe)
+// ---------------------------------------------------------------------------
+const ICONS = { Code2, Smartphone, Globe, Brain, Cpu, Shield };
 
-/* ═══════════════════════════════════════════════════════════════
-   INLINE SUB-COMPONENTS
-═══════════════════════════════════════════════════════════════ */
-
-/* 1. AnimatedCounter — counts 0→target when scrolled into view */
-function AnimatedCounter({ target, suffix = '' }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!isInView) return;
-    const numTarget = parseInt(target, 10);
-    if (isNaN(numTarget)) { setCount(target); return; }
-    const duration = 2000;
-    const startTime = performance.now();
-    function tick(now) {
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.round(eased * numTarget));
-      if (progress < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }, [isInView, target]);
-
-  return <span ref={ref}>{count}{suffix}</span>;
-}
-
-/* 2. SweepLines — 3 horizontal gradient lines sweeping across Trusted By */
-function SweepLines() {
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {[10, 14, 18].map((dur, i) => (
-        <div
-          key={i}
-          className="absolute h-px w-1/2"
-          style={{
-            top: `${25 + i * 25}%`,
-            background: `linear-gradient(90deg, transparent, rgba(99,102,241,${0.15 - i * 0.03}), transparent)`,
-            animation: `sweep-line ${dur}s linear infinite`,
-            animationDelay: `${i * 2}s`,
-          }}
-        />
-      ))}
-    </div>
-  );
-}
-
-/* 3. AuroraWavesPurple — 3 purple/magenta wave layers for Portfolio */
-function AuroraWavesPurple() {
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      <div className="absolute -top-1/4 -left-1/4 w-[150%] h-[150%] opacity-40"
-        style={{
-          background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(147,51,234,0.08), transparent)',
-          animation: 'aurora-wave-1 12s ease-in-out infinite',
-        }} />
-      <div className="absolute -top-1/3 -right-1/4 w-[130%] h-[130%] opacity-30"
-        style={{
-          background: 'radial-gradient(ellipse 70% 60% at 60% 40%, rgba(236,72,153,0.06), transparent)',
-          animation: 'aurora-wave-2 15s ease-in-out infinite',
-        }} />
-      <div className="absolute -bottom-1/4 left-1/4 w-[120%] h-[120%] opacity-25"
-        style={{
-          background: 'radial-gradient(ellipse 60% 70% at 40% 60%, rgba(147,51,234,0.07), transparent)',
-          animation: 'aurora-wave-3 18s ease-in-out infinite',
-        }} />
-    </div>
-  );
-}
-
-/* 4. OrbitRingsCompact — 2 rotating ring borders for Talk to Us */
-function OrbitRingsCompact() {
-  return (
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-      <div className="absolute w-[500px] h-[500px] rounded-full border border-white/[0.04]"
-        style={{ top: '50%', left: '50%', animation: 'orbit-spin 20s linear infinite' }} />
-      <div className="absolute w-[700px] h-[700px] rounded-full border border-dashed border-white/[0.03]"
-        style={{ top: '50%', left: '50%', animation: 'orbit-spin 30s linear infinite reverse' }} />
-    </div>
-  );
-}
-
-/* 5. GlowRingCTA — 2 rotating ring borders for Footer CTA */
-function GlowRingCTA() {
-  return (
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-      <div className="absolute w-[600px] h-[600px] rounded-full"
-        style={{
-          top: '50%', left: '50%',
-          border: '1px solid rgba(99,102,241,0.08)',
-          animation: 'orbit-spin 20s linear infinite',
-        }} />
-      <div className="absolute w-[800px] h-[800px] rounded-full"
-        style={{
-          top: '50%', left: '50%',
-          border: '1px solid rgba(147,51,234,0.06)',
-          animation: 'orbit-spin 25s linear infinite reverse',
-        }} />
-    </div>
-  );
-}
-
-/* 6. TimelineGlowLine — Vertical line with traveling pulse dot */
-function TimelineGlowLine() {
-  return (
-    <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-0.5">
-      <div className="w-full h-full bg-gradient-to-b from-transparent via-blue-500/40 to-transparent" />
-      <div
-        className="absolute w-3 h-3 -left-[5px] rounded-full bg-blue-400 shadow-[0_0_12px_rgba(59,130,246,0.6)]"
-        style={{ animation: 'travelDown 4s ease-in-out infinite' }}
-      />
-    </div>
-  );
-}
-
-/* ═══════════════════════════════════════════════════════════════
-   STATIC DATA
-═══════════════════════════════════════════════════════════════ */
-
-const clientLogos = [
-  { name: 'Renault', src: '/clients/Renault.png' },
-  { name: 'Del Monte', src: '/clients/Logo_Del_Monte.svg.png' },
-  { name: 'Sadia', src: '/clients/Logo-sadia.svg.png' },
-  { name: 'Epson', src: '/clients/Epson.png' },
-  { name: 'Offto', src: '/clients/Offto.png' },
-  { name: 'Sunny', src: '/clients/Sunny.png' },
-  { name: 'Barugzai', src: '/clients/barugzai.png' },
-  { name: 'El Ibtissama', src: '/clients/el-ibtissama.png' },
-  { name: 'SPN Events', src: '/clients/spn-events.jpg' },
-  { name: 'Commune de Sétif', src: '/clients/commune-setif.jpeg' },
-  { name: 'Synronose', src: '/clients/synronose.png' },
-  { name: 'Avé', src: '/clients/ave.png' },
-  { name: 'Clutch', src: '/Clutch-mobile-app-developers.png' },
-];
-
-const portfolioProjects = [
-  {
-    id: 1,
-    category: 'erp',
-    client: 'SAIDAL',
-    technologies: ['Java Spring', 'Oracle', 'Angular', 'Docker'],
-    results: { efficiency: '+45%', cost: '-30%', compliance: '100%' },
-    color: 'from-blue-500 to-purple-600',
-    shadowColor: 'rgba(99,102,241,0.3)',
-    icon: Database,
+// ---------------------------------------------------------------------------
+// Copy (only chrome strings — content comes from data/services.js)
+// ---------------------------------------------------------------------------
+const CHROME = {
+  fr: {
+    eyebrow: 'Nos services',
+    heroLine1: 'Ingénierie logicielle',
+    heroLine2: 'bâtie en Algérie,',
+    heroLine3: 'livrée au monde.',
+    heroSub:
+      "Symloop est une entreprise d'ingénierie logicielle basée à Alger. Nous concevons, développons et exploitons des logiciels sur mesure pour les entreprises algériennes et MENA — ERP, SaaS, applications mobiles, systèmes IoT, IA et plateformes cloud. 58 wilayas couvertes, sept ans d'expérience, plus de 120 clients.",
+    metaEngineers: 'Ingénieurs seniors',
+    metaYears: "Années d'expérience",
+    metaWilayas: 'Wilayas couvertes',
+    metaProjects: 'Projets livrés',
+    sectionIndex: 'Index',
+    sectionServices: 'Six disciplines',
+    sectionServicesSub:
+      "Chaque service est conçu comme une discipline d'ingénierie à part entière. Nous ne faisons pas de sites web génériques : nous livrons des systèmes qui fonctionnent encore dans dix ans.",
+    colDiscipline: 'Discipline',
+    colStarting: 'À partir de',
+    colDelivery: 'Délai',
+    readFull: 'Lire la fiche complète',
+    stackLabel: 'Stack de référence',
+    featuresLabel: 'Ce que nous livrons',
+    priceLabel: 'Tarification',
+    deliveryLabel: 'Délai de livraison',
+    prose1Heading: 'Une entreprise, pas un freelance',
+    prose1Body:
+      "Symloop n'est pas un regroupement de freelances. Nous sommes une société d'ingénierie algérienne avec un siège à Alger, des contrats signés, une facturation conforme et une équipe salariée d'ingénieurs seniors. Nos clients incluent des PME industrielles, des marques e-commerce, des administrations et des startups financées. Chaque mission est encadrée par un chef de projet et revue par deux ingénieurs.",
+    prose2Heading: 'Pourquoi choisir une société locale',
+    prose2Body:
+      "Parce qu'un projet logiciel ne se termine pas à la livraison. Il commence. Nous parlons arabe, français et anglais. Nous comprenons la facturation algérienne, les exigences de la CNRC, les modes de paiement CIB et Edahabia, les contraintes de Yalidine et ZR Express, les spécificités du droit du travail et de la loi 18-07 sur les données personnelles. Nous sommes joignables à l'heure d'Alger, pas à l'heure de San Francisco.",
+    prose3Heading: 'La méthode Symloop',
+    prose3Body:
+      "Chaque projet commence par une semaine de discovery technique gratuite. Nous cartographions votre domaine métier, identifions les goulots d'étranglement et proposons une architecture cible. Ensuite nous livrons en sprints de deux semaines avec démo, code review à deux ingénieurs, tests automatisés, CI/CD et observabilité de bout en bout. Aucune surprise à la facture. Aucune dette technique cachée.",
+    faqTitle: 'Questions fréquentes',
+    ctaTitle: 'Parlez à un ingénieur.',
+    ctaSub:
+      "Expliquez-nous votre problème en cinq minutes. Si c'est hors-scope, nous vous dirons vers qui aller. Si c'est pour nous, vous aurez un devis sous 48 heures.",
+    ctaQuote: 'Demander un devis',
+    ctaContact: 'Nous contacter',
   },
-  {
-    id: 2,
-    category: 'mobile',
-    client: 'CIB Bank',
-    technologies: ['Flutter', 'Node.js', 'PostgreSQL', 'Redis'],
-    results: { users: '500k+', transactions: '2M+/mo', rating: '4.8/5' },
-    color: 'from-green-500 to-teal-600',
-    shadowColor: 'rgba(34,197,94,0.3)',
-    icon: Smartphone,
+  en: {
+    eyebrow: 'Our services',
+    heroLine1: 'Software engineering',
+    heroLine2: 'built in Algeria,',
+    heroLine3: 'shipped worldwide.',
+    heroSub:
+      'Symloop is a software engineering company headquartered in Algiers. We design, build and operate custom software for Algerian and MENA enterprises — ERPs, SaaS, mobile apps, IoT systems, AI and cloud platforms. 58 wilayas covered, seven years of experience, 120+ clients.',
+    metaEngineers: 'Senior engineers',
+    metaYears: 'Years of experience',
+    metaWilayas: 'Wilayas covered',
+    metaProjects: 'Projects delivered',
+    sectionIndex: 'Index',
+    sectionServices: 'Six disciplines',
+    sectionServicesSub:
+      'Each service is a distinct engineering discipline. We do not build generic websites — we ship systems that still run well ten years later.',
+    colDiscipline: 'Discipline',
+    colStarting: 'Starting at',
+    colDelivery: 'Delivery',
+    readFull: 'Read full brief',
+    stackLabel: 'Reference stack',
+    featuresLabel: 'What we deliver',
+    priceLabel: 'Pricing',
+    deliveryLabel: 'Delivery time',
+    prose1Heading: 'A company, not a freelancer pool',
+    prose1Body:
+      'Symloop is not a freelancer collective. We are an Algerian engineering firm with a headquarters in Algiers, signed contracts, compliant billing and a salaried team of senior engineers. Clients range from industrial SMBs and e-commerce brands to government bodies and funded startups. Every engagement is led by a project manager and reviewed by two engineers.',
+    prose2Heading: 'Why choose a local firm',
+    prose2Body:
+      'Because a software project does not end at delivery — it begins there. We speak Arabic, French and English. We understand Algerian invoicing, CNRC requirements, CIB and Edahabia payments, Yalidine and ZR Express constraints, labor law and the 18-07 data protection law. We are reachable on Algiers time, not San Francisco time.',
+    prose3Heading: 'The Symloop method',
+    prose3Body:
+      'Every project starts with a free one-week technical discovery. We map your business domain, identify bottlenecks and propose a target architecture. Then we ship in two-week sprints with live demo, dual-engineer code review, automated tests, CI/CD and end-to-end observability. No billing surprises. No hidden technical debt.',
+    faqTitle: 'Frequently asked questions',
+    ctaTitle: 'Talk to an engineer.',
+    ctaSub:
+      'Explain your problem in five minutes. If it is out of scope we will tell you who to talk to. If it is for us, you get a quote within 48 hours.',
+    ctaQuote: 'Request a quote',
+    ctaContact: 'Contact us',
   },
-  {
-    id: 3,
-    category: 'ecommerce',
-    client: 'Jumia DZ',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'AWS'],
-    results: { gmv: '$2.5M', vendors: '1000+', orders: '50k/mo' },
-    color: 'from-orange-500 to-red-600',
-    shadowColor: 'rgba(249,115,22,0.3)',
-    icon: ShoppingCart,
+  ar: {
+    eyebrow: 'خدماتنا',
+    heroLine1: 'هندسة برمجيات',
+    heroLine2: 'صُنعت في الجزائر،',
+    heroLine3: 'تُسلَّم للعالم.',
+    heroSub:
+      'سيملوب شركة هندسة برمجيات مقرها الجزائر العاصمة. نصمم ونطور ونشغّل برمجيات مخصصة للشركات الجزائرية ومنطقة مينا — ERP و SaaS وتطبيقات الجوال وأنظمة IoT والذكاء الاصطناعي ومنصات السحابة. 58 ولاية مغطاة، سبع سنوات من الخبرة، أكثر من 120 عميلاً.',
+    metaEngineers: 'مهندسون كبار',
+    metaYears: 'سنوات الخبرة',
+    metaWilayas: 'ولايات مغطاة',
+    metaProjects: 'مشروع مُسلَّم',
+    sectionIndex: 'الفهرس',
+    sectionServices: 'ست تخصصات',
+    sectionServicesSub:
+      'كل خدمة هي تخصص هندسي مستقل. لا نبني مواقع عامة — بل أنظمة تعمل بشكل جيد بعد عشر سنوات.',
+    colDiscipline: 'التخصص',
+    colStarting: 'ابتداءً من',
+    colDelivery: 'المدة',
+    readFull: 'اقرأ الملف الكامل',
+    stackLabel: 'المكدّس المرجعي',
+    featuresLabel: 'ما نسلّمه',
+    priceLabel: 'التسعير',
+    deliveryLabel: 'مدة التسليم',
+    prose1Heading: 'شركة، لا تجمّع مستقلين',
+    prose1Body:
+      'سيملوب ليست تجمع مستقلين. نحن شركة هندسية جزائرية لها مقر في الجزائر العاصمة، وعقود موقعة، وفوترة مطابقة، وفريق موظف من المهندسين الكبار. يتراوح عملاؤنا بين الشركات الصناعية الصغيرة والمتوسطة وعلامات التجارة الإلكترونية والهيئات الحكومية والشركات الناشئة الممولة.',
+    prose2Heading: 'لماذا تختار شركة محلية',
+    prose2Body:
+      'لأن المشروع البرمجي لا ينتهي عند التسليم بل يبدأ عنده. نتحدث العربية والفرنسية والإنجليزية. نفهم الفوترة الجزائرية ومتطلبات CNRC وطرق الدفع CIB و Edahabia وقيود Yalidine و ZR Express وقانون العمل والقانون 18-07 لحماية البيانات.',
+    prose3Heading: 'منهجية سيملوب',
+    prose3Body:
+      'يبدأ كل مشروع بأسبوع مجاني من الاستكشاف التقني. نرسم خريطة مجالك التجاري ونحدد نقاط الاختناق ونقترح الهندسة المستهدفة. ثم نسلم في دورات أسبوعين مع عرض حي ومراجعة من مهندسين واختبارات آلية و CI/CD ومراقبة شاملة.',
+    faqTitle: 'الأسئلة الشائعة',
+    ctaTitle: 'تحدث إلى مهندس.',
+    ctaSub:
+      'اشرح مشكلتك في خمس دقائق. إذا كانت خارج النطاق سنخبرك بمن تتحدث إليه. إذا كانت لنا، ستحصل على عرض أسعار خلال 48 ساعة.',
+    ctaQuote: 'طلب عرض سعر',
+    ctaContact: 'اتصل بنا',
   },
-  {
-    id: 5,
-    category: 'mobile',
-    client: 'Yassir',
-    technologies: ['React Native', 'Node.js', 'Redis', 'PostgreSQL'],
-    results: { users: '300k+', rides: '100k/mo', cities: '12' },
-    color: 'from-indigo-500 to-purple-600',
-    shadowColor: 'rgba(129,140,248,0.3)',
-    icon: Globe,
-  },
+};
+
+// ---------------------------------------------------------------------------
+// Stats (hard facts)
+// ---------------------------------------------------------------------------
+const STATS = [
+  { value: '25+', key: 'metaEngineers' },
+  { value: '7', key: 'metaYears' },
+  { value: '58', key: 'metaWilayas' },
+  { value: '120+', key: 'metaProjects' },
 ];
 
-const industryColors = ['amber', 'red', 'blue', 'green', 'purple', 'lime'];
-const industryGradients = [
-  'from-amber-500/20 to-amber-600/5',
-  'from-red-500/20 to-red-600/5',
-  'from-blue-500/20 to-blue-600/5',
-  'from-green-500/20 to-green-600/5',
-  'from-purple-500/20 to-purple-600/5',
-  'from-lime-500/20 to-lime-600/5',
-];
-const industryHoverShadows = [
-  '0 0 40px rgba(245,158,11,0.15)',
-  '0 0 40px rgba(239,68,68,0.15)',
-  '0 0 40px rgba(59,130,246,0.15)',
-  '0 0 40px rgba(34,197,94,0.15)',
-  '0 0 40px rgba(147,51,234,0.15)',
-  '0 0 40px rgba(132,204,22,0.15)',
-];
-const industryBorderColors = [
-  'rgba(245,158,11,0.3)',
-  'rgba(239,68,68,0.3)',
-  'rgba(59,130,246,0.3)',
-  'rgba(34,197,94,0.3)',
-  'rgba(147,51,234,0.3)',
-  'rgba(132,204,22,0.3)',
-];
-
-/* ═══════════════════════════════════════════════════════════════
-   PAGE COMPONENT
-═══════════════════════════════════════════════════════════════ */
-
-export default function SymloopITServicesPage() {
-  const { t } = useTranslation('common');
+// ---------------------------------------------------------------------------
+// Page
+// ---------------------------------------------------------------------------
+export default function ServicesPage({ services, locale: pageLocale }) {
   const router = useRouter();
-  const isRTL = router.locale === 'ar';
-  const locale = router.locale;
+  const { t } = useTranslation('common');
+  const locale = pageLocale || router.locale || 'fr';
+  const isRTL = locale === 'ar';
+  const c = CHROME[locale] || CHROME.fr;
 
-  const [consultationModalOpen, setConsultationModalOpen] = useState(false);
-  const [quoteModalOpen, setQuoteModalOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("tous");
+  const baseUrl = 'https://symloop.com';
+  const pageUrl = `${baseUrl}/${locale}/services/`;
 
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-      document.documentElement.setAttribute('lang', locale || 'fr');
-    }
-  }, [isRTL, locale]);
+  // Meta
+  const pageMetaTitle =
+    locale === 'fr'
+      ? "Services d'ingénierie logicielle en Algérie — Symloop"
+      : locale === 'ar'
+      ? 'خدمات هندسة البرمجيات في الجزائر — سيملوب'
+      : 'Software Engineering Services in Algeria — Symloop';
 
-  const services = getServicesData(t, router);
-  const stats = getStatsData(t);
-  const industries = getIndustriesData(t);
+  const pageMetaDescription =
+    locale === 'fr'
+      ? "Symloop — entreprise d'ingénierie logicielle à Alger. Développement sur mesure, applications mobiles, IA, IoT, cloud et cybersécurité. 58 wilayas, 120+ clients, devis sous 48h."
+      : locale === 'ar'
+      ? 'سيملوب — شركة هندسة البرمجيات في الجزائر العاصمة. تطوير مخصص، تطبيقات جوال، ذكاء اصطناعي، IoT، سحابة وأمن سيبراني. 58 ولاية، أكثر من 120 عميلاً.'
+      : 'Symloop — software engineering company in Algiers. Custom development, mobile apps, AI, IoT, cloud and cybersecurity. 58 wilayas, 120+ clients, quote within 48h.';
 
-  /* i18n helper */
-  const tx = (ar, en, fr) => locale === 'ar' ? ar : locale === 'en' ? en : fr;
+  // FAQ aggregation (top 2 FAQs per service → FAQPage)
+  const aggregatedFaqs = services.flatMap((s) => s.faqs.slice(0, 2));
 
-  /* Portfolio i18n */
-  const portfolioI18n = {
-    1: {
-      title: tx('نظام ERP للأدوية SAIDAL', 'SAIDAL Pharma ERP', 'ERP SAIDAL Pharmaceutiques'),
-      desc: tx(
-        'نظام تخطيط موارد متكامل لإدارة الإنتاج الصيدلاني وتتبع الأدوية عبر 58 ولاية.',
-        'Complete ERP for pharmaceutical production management and drug traceability across 58 provinces.',
-        'ERP complet pour la gestion de production pharmaceutique et traçabilité sur 58 wilayas.'
-      ),
+  // ---- JSON-LD ----
+  const orgSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${baseUrl}/#organization`,
+    name: 'Symloop',
+    url: baseUrl,
+    logo: `${baseUrl}/logo.png`,
+    description: pageMetaDescription,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Algiers',
+      addressRegion: 'Alger',
+      postalCode: '16000',
+      addressCountry: 'DZ',
     },
-    2: {
-      title: tx('تطبيق CIB Bank للخدمات المصرفية', 'CIB Bank Mobile App', 'Application Mobile CIB Bank'),
-      desc: tx(
-        'تطبيق مصرفي مع المصادقة البيومترية والتحويلات الفورية ومدفوعات QR Code.',
-        'Banking app with biometric auth, instant transfers, and QR Code merchant payments.',
-        'App bancaire avec authentification biométrique, virements instantanés et paiement QR Code.'
-      ),
-    },
-    3: {
-      title: tx('منصة جوميا الجزائر للتجارة', 'Jumia DZ Marketplace', 'Plateforme E-commerce Jumia DZ'),
-      desc: tx(
-        'منصة تجارة إلكترونية متكاملة مع الدفع الإلكتروني والتوصيل في الوقت الحقيقي والتوصيات الذكية.',
-        'Full e-commerce platform with integrated payments, real-time delivery tracking, and AI recommendations.',
-        'Plateforme e-commerce complète avec paiement intégré, suivi livraison temps réel et recommandations IA.'
-      ),
-    },
-    5: {
-      title: tx('تطبيق Yassir الجزائر', 'Yassir Algeria App', 'App Mobile Yassir Algeria'),
-      desc: tx(
-        'تطبيق فائق للنقل والتوصيل مع تحديد المواقع في الوقت الحقيقي والدفع عبر الهاتف.',
-        'Super app for transport & delivery with real-time GPS tracking and mobile payments.',
-        'Super application transport & livraison avec GPS temps réel et paiement mobile intégré.'
-      ),
-    },
+    areaServed: { '@type': 'Country', name: 'Algeria' },
+    sameAs: [
+      'https://www.linkedin.com/company/symloop',
+      'https://twitter.com/symloop',
+    ],
   };
 
-  /* Process steps */
-  const processSteps = [
-    {
-      icon: Search,
-      title: tx('الاكتشاف', 'Discovery', 'Découverte'),
-      desc: tx(
-        'نحلل احتياجاتك وأهدافك ونحدد النطاق والمتطلبات التقنية.',
-        'We analyze your needs, goals, and define the scope and technical requirements.',
-        'Nous analysons vos besoins, objectifs, et définissons le périmètre et les exigences techniques.'
-      ),
-    },
-    {
-      icon: Palette,
-      title: tx('التصميم', 'Design', 'Design'),
-      desc: tx(
-        'نصمم واجهات مستخدم أنيقة وتجربة سلسة مع نماذج أولية تفاعلية.',
-        'We craft elegant UI/UX with interactive prototypes and seamless user journeys.',
-        'Nous concevons des interfaces élégantes avec prototypes interactifs et parcours utilisateur fluides.'
-      ),
-    },
-    {
-      icon: Code2,
-      title: tx('التطوير', 'Development', 'Développement'),
-      desc: tx(
-        'تطوير سريع مع أحدث التقنيات ومراجعة الشفرة المستمرة والاختبار الآلي.',
-        'Agile development with cutting-edge tech, continuous code review, and automated testing.',
-        'Développement agile avec technologies de pointe, revue de code continue et tests automatisés.'
-      ),
-    },
-    {
-      icon: Rocket,
-      title: tx('التسليم', 'Delivery', 'Livraison'),
-      desc: tx(
-        'نشر وإطلاق مع مراقبة الأداء ودعم ما بعد الإطلاق على مدار الساعة.',
-        'Deployment & launch with performance monitoring and 24/7 post-launch support.',
-        'Déploiement & lancement avec monitoring de performance et support post-lancement 24/7.'
-      ),
-    },
-  ];
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${baseUrl}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: pageUrl },
+    ],
+  };
 
-  /* Industries names + descriptions (inline translations) */
-  const industryNames = [
-    tx('الصناعة', 'Manufacturing', 'Industrie'),
-    tx('الصحة', 'Healthcare', 'Santé'),
-    tx('التعليم', 'Education', 'Éducation'),
-    tx('التجارة', 'Commerce', 'Commerce'),
-    tx('البنوك', 'Banking', 'Banque'),
-    tx('الزراعة', 'Agriculture', 'Agriculture'),
-  ];
-  const industryDescriptions = [
-    tx('أنظمة إنتاج ومراقبة ذكية', 'Smart production & monitoring systems', 'Systèmes de production & monitoring intelligents'),
-    tx('حلول رقمية صحية متوافقة', 'Compliant digital health solutions', 'Solutions e-santé conformes & sécurisées'),
-    tx('منصات تعليم إلكتروني حديثة', 'Modern e-learning platforms', 'Plateformes e-learning modernes'),
-    tx('متاجر إلكترونية متكاملة', 'Full-featured e-commerce stores', 'Boutiques e-commerce performantes'),
-    tx('تطبيقات مصرفية آمنة', 'Secure banking applications', 'Applications bancaires sécurisées'),
-    tx('أنظمة زراعة ذكية ومتصلة', 'Smart & connected agriculture systems', 'Agriculture intelligente & connectée'),
-  ];
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: pageMetaTitle,
+    numberOfItems: services.length,
+    itemListElement: services.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${baseUrl}/${locale}/services/${s.slug}/`,
+      name: s.title,
+    })),
+  };
 
-  /* Trusted By stats */
-  const trustedStats = [
-    { value: '50+', label: tx('عميل', 'Clients', 'Clients'), dotColor: 'bg-blue-400' },
-    { value: '70+', label: tx('مشروع', 'Projects', 'Projets'), dotColor: 'bg-purple-400' },
-    { value: '98%', label: tx('رضا العملاء', 'Satisfaction', 'Satisfaction'), dotColor: 'bg-green-400' },
-    { value: 'MENA', label: tx('تغطية إقليمية', 'Coverage', 'Couverture'), dotColor: 'bg-amber-400' },
-  ];
+  const offerCatalogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'OfferCatalog',
+    name: pageMetaTitle,
+    itemListElement: services.map((s) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: s.title,
+        description: s.intro,
+        url: `${baseUrl}/${locale}/services/${s.slug}/`,
+        provider: { '@id': `${baseUrl}/#organization` },
+        areaServed: { '@type': 'Country', name: 'Algeria' },
+      },
+      priceCurrency: 'DZD',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'DZD',
+        minPrice: s.priceMin,
+        ...(s.priceMax ? { maxPrice: s.priceMax } : {}),
+      },
+    })),
+  };
 
-  /* Differentiators for "Why Choose Us" */
-  const differentiators = [
-    {
-      icon: Zap,
-      title: tx('تسليم سريع', 'Rapid Delivery', 'Livraison Rapide'),
-      desc: tx(
-        'دورات تطوير سريعة مع نتائج ملموسة في أسابيع.',
-        'Fast development cycles with tangible results in weeks, not months.',
-        'Cycles de développement rapides avec des résultats tangibles en semaines.'
-      ),
-      accentColor: 'from-amber-400 to-orange-500',
-    },
-    {
-      icon: Shield,
-      title: tx('أمان المؤسسات', 'Enterprise Security', 'Sécurité Enterprise'),
-      desc: tx(
-        'حماية على مستوى المؤسسات مع تشفير وتدقيق مستمر.',
-        'Enterprise-grade protection with encryption, auditing, and compliance built-in.',
-        'Protection de niveau entreprise avec chiffrement, audit et conformité intégrés.'
-      ),
-      accentColor: 'from-blue-400 to-cyan-500',
-    },
-    {
-      icon: Users,
-      title: tx('دعم مخصص', 'Dedicated Support', 'Support Dédié'),
-      desc: tx(
-        'فريق مخصص متاح على مدار الساعة لضمان نجاح مشروعك.',
-        'A dedicated team available 24/7 to ensure your project succeeds.',
-        'Une équipe dédiée disponible 24/7 pour garantir le succès de votre projet.'
-      ),
-      accentColor: 'from-purple-400 to-pink-500',
-    },
-  ];
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: aggregatedFaqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
 
-  /* Contact methods for "Talk to Us" */
-  const contactMethods = [
-    {
-      icon: MessageCircle,
-      title: 'WhatsApp',
-      desc: tx('راسلنا مباشرة عبر واتساب', 'Message us directly on WhatsApp', 'Écrivez-nous directement sur WhatsApp'),
-      cta: tx('ابدأ المحادثة', 'Start Chat', 'Démarrer le Chat'),
-      href: 'https://wa.me/213549575512',
-      color: 'from-green-400 to-emerald-500',
-      borderColor: 'rgba(34,197,94,0.3)',
-      shadowColor: '0 0 30px rgba(34,197,94,0.15)',
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    url: pageUrl,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '[data-speakable]'],
     },
-    {
-      icon: Phone,
-      title: tx('اتصل بنا', 'Call Us', 'Appelez-nous'),
-      desc: tx('تحدث مع فريقنا مباشرة', 'Speak with our team directly', 'Parlez directement avec notre équipe'),
-      cta: tx('اتصل الآن', 'Call Now', 'Appeler Maintenant'),
-      href: 'tel:+213549575512',
-      color: 'from-blue-400 to-indigo-500',
-      borderColor: 'rgba(59,130,246,0.3)',
-      shadowColor: '0 0 30px rgba(59,130,246,0.15)',
-    },
-    {
-      icon: Mail,
-      title: tx('البريد الإلكتروني', 'Email', 'Email'),
-      desc: tx('أرسل لنا تفاصيل مشروعك', 'Send us your project details', 'Envoyez-nous les détails de votre projet'),
-      cta: tx('أرسل بريد', 'Send Email', 'Envoyer un Email'),
-      href: 'mailto:contact@symloop.com',
-      color: 'from-purple-400 to-violet-500',
-      borderColor: 'rgba(147,51,234,0.3)',
-      shadowColor: '0 0 30px rgba(147,51,234,0.15)',
-    },
-  ];
-
-  /* Why Choose Us stats */
-  const whyStats = [
-    { target: '70', suffix: '+', label: tx('مشروع', 'Projects', 'Projets'), borderColor: 'border-t-blue-500' },
-    { target: '98', suffix: '%', label: tx('رضا العملاء', 'Satisfaction', 'Satisfaction'), borderColor: 'border-t-green-500' },
-    { target: '5', suffix: '+', label: tx('سنوات خبرة', 'Years', 'Années'), borderColor: 'border-t-purple-500' },
-    { target: '24/7', suffix: '', label: tx('دعم فني', 'Support', 'Support'), borderColor: 'border-t-amber-500' },
-  ];
-
-  /* 3D tilt handler for Portfolio */
-  const handleTilt = useCallback((e, cardRef) => {
-    if (!cardRef.current) return;
-    const rect = cardRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const rotateX = ((y - centerY) / centerY) * -6;
-    const rotateY = ((x - centerX) / centerX) * 6;
-    cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-  }, []);
-
-  const resetTilt = useCallback((cardRef) => {
-    if (!cardRef.current) return;
-    cardRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
-  }, []);
+  };
 
   return (
     <>
       <Head>
-        <title>{t('servicesPage.title')}</title>
-        <meta name="description" content={t('servicesPage.description')} />
-        <meta name="keywords" content={t('servicesPage.keywords')} />
-        <meta property="og:title" content={t('servicesPage.title')} />
-        <meta property="og:description" content={t('servicesPage.description')} />
+        <title>{pageMetaTitle}</title>
+        <meta name="description" content={pageMetaDescription} />
+        <link rel="canonical" href={pageUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://symloop.com${router.asPath}`} />
-        <meta property="og:image" content="https://symloop.com/assets/symloop-mena-services.png" />
+        <meta property="og:title" content={pageMetaTitle} />
+        <meta property="og:description" content={pageMetaDescription} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:locale" content={locale === 'ar' ? 'ar_DZ' : locale === 'en' ? 'en_US' : 'fr_DZ'} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('servicesPage.title')} />
-        <meta name="twitter:description" content={t('servicesPage.description')} />
-        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
-
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/services" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Symloop",
-              "url": "https://symloop.com",
-              "description": t('servicesPage.description'),
-              "serviceArea": {
-                "@type": "Place",
-                "name": "MENA"
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": t('services.catalog.name'),
-                "itemListElement": services.slice(0, 5).map(service => ({
-                  "@type": "Offer",
-                  "name": service.title,
-                  "description": service.description,
-                  "price": service.estimatedPrice,
-                  "priceCurrency": locale === 'ar' ? 'SAR' : locale === 'en' ? 'USD' : 'EUR'
-                }))
-              }
-            })
-          }}
+        <meta name="twitter:title" content={pageMetaTitle} />
+        <meta name="twitter:description" content={pageMetaDescription} />
+        <link rel="alternate" hrefLang="fr" href={`${baseUrl}/fr/services/`} />
+        <link rel="alternate" hrefLang="en" href={`${baseUrl}/en/services/`} />
+        <link rel="alternate" hrefLang="ar" href={`${baseUrl}/ar/services/`} />
+        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/fr/services/`} />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
         />
-
-        {/* BreadcrumbList Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Accueil',
-                  "item": "https://symloop.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": locale === 'ar' ? 'الخدمات' : locale === 'en' ? 'Services' : 'Services',
-                  "item": `https://symloop.com/${locale}/services`
-                }
-              ]
-            })
-          }}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
         />
-
-        {/* SpeakableSpecification Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": t('servicesPage.title'),
-              "url": `https://symloop.com${router.asPath}`,
-              "speakable": {
-                "@type": "SpeakableSpecification",
-                "cssSelector": [".en-bref-block", "h1", "h2"]
-              },
-              "mainEntity": {
-                "@type": "ItemList",
-                "name": locale === 'ar' ? 'خدمات سيملوب' : locale === 'en' ? 'Symloop Services' : 'Services Symloop',
-                "numberOfItems": services.length
-              }
-            })
-          }}
-        />
-
-        {/* FAQPage Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": (locale === 'ar' ? [
-                {
-                  "@type": "Question",
-                  "name": "ما هي الخدمات التي تقدمها Symloop؟",
-                  "acceptedAnswer": { "@type": "Answer", "text": "تقدم Symloop خدمات تطوير البرمجيات المخصصة، تطبيقات الهاتف المحمول Flutter، مواقع الويب والتجارة الإلكترونية، حلول إنترنت الأشياء IoT، الذكاء الاصطناعي وتعلم الآلة، والأمن السيبراني للشركات في الجزائر ومنطقة مينا." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "أين مقر Symloop وما هي التغطية الجغرافية؟",
-                  "acceptedAnswer": { "@type": "Answer", "text": "مقر Symloop في سطيف، الجزائر، مع تغطية وطنية عبر جميع الولايات الـ58 وخدمات دولية تشمل المغرب، تونس، الإمارات، السعودية، قطر والكويت." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "كم عدد المشاريع التي أنجزتها Symloop؟",
-                  "acceptedAnswer": { "@type": "Answer", "text": "أنجزت Symloop أكثر من 50 مشروعاً لعملاء في مختلف القطاعات بما في ذلك الصناعة والبنوك والتجارة والصحة والتعليم والزراعة." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "هل تقدمون استشارة مجانية قبل بدء المشروع؟",
-                  "acceptedAnswer": { "@type": "Answer", "text": "نعم، نقدم استشارة مجانية لتحليل احتياجاتكم وتقديم عرض سعر مخصص. اتصلوا بنا على +213 549 575 512 أو عبر WhatsApp." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "ما هي التقنيات التي تستخدمها Symloop؟",
-                  "acceptedAnswer": { "@type": "Answer", "text": "نستخدم أحدث التقنيات: Flutter وReact Native للتطبيقات، Next.js وLaravel للويب، ESP32 لإنترنت الأشياء، Python وTensorFlow للذكاء الاصطناعي، مع بنية تحتية سحابية AWS وDocker." }
-                }
-              ] : locale === 'en' ? [
-                {
-                  "@type": "Question",
-                  "name": "What services does Symloop offer?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop offers custom software development, Flutter mobile applications, websites and e-commerce, IoT solutions, artificial intelligence and machine learning, and cybersecurity for businesses in Algeria and the MENA region." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Where is Symloop based and what is the geographic coverage?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop is headquartered in Setif, Algeria, with national coverage across all 58 wilayas and international services covering Morocco, Tunisia, UAE, Saudi Arabia, Qatar and Kuwait." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How many projects has Symloop completed?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop has delivered over 50 projects for clients across various sectors including manufacturing, banking, commerce, healthcare, education and agriculture." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you offer a free consultation before starting a project?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer a free consultation to analyze your needs and provide a custom quote. Contact us at +213 549 575 512 or via WhatsApp." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What technologies does Symloop use?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "We use the latest technologies: Flutter and React Native for apps, Next.js and Laravel for web, ESP32 for IoT, Python and TensorFlow for AI, with AWS and Docker cloud infrastructure." }
-                }
-              ] : [
-                {
-                  "@type": "Question",
-                  "name": "Quels services propose Symloop ?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop propose le developpement logiciel sur mesure, les applications mobiles Flutter, les sites web et e-commerce, les solutions IoT, l'intelligence artificielle et le machine learning, ainsi que la cybersecurite pour les entreprises en Algerie et dans la region MENA." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Ou est basee Symloop et quelle est la couverture geographique ?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop est basee a Setif, Algerie, avec une couverture nationale sur les 58 wilayas et des services internationaux couvrant le Maroc, la Tunisie, les EAU, l'Arabie Saoudite, le Qatar et le Koweit." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Combien de projets Symloop a-t-elle livres ?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Symloop a livre plus de 50 projets pour des clients dans divers secteurs : industrie, banque, commerce, sante, education et agriculture." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Proposez-vous une consultation gratuite avant de demarrer un projet ?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous proposons une consultation gratuite pour analyser vos besoins et fournir un devis personnalise. Contactez-nous au +213 549 575 512 ou via WhatsApp." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Quelles technologies utilise Symloop ?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Nous utilisons les dernieres technologies : Flutter et React Native pour les apps, Next.js et Laravel pour le web, ESP32 pour l'IoT, Python et TensorFlow pour l'IA, avec une infrastructure cloud AWS et Docker." }
-                }
-              ])
-            })
-          }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerCatalogSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       </Head>
 
-      <div className={`min-h-screen bg-black ${isRTL ? 'font-arabic' : ''}`}>
-        {/* ══════════════════════════════════════════════════════════
-            1. HERO (kept)
-        ══════════════════════════════════════════════════════════ */}
-        <ServicesHero
-          stats={stats}
-          onConsultationClick={() => setConsultationModalOpen(true)}
-          onQuoteClick={() => setQuoteModalOpen(true)}
-        />
+      <main
+        dir={isRTL ? 'rtl' : 'ltr'}
+        className="min-h-screen bg-black text-white antialiased selection:bg-white selection:text-black"
+        style={{
+          fontFamily: "'Inter', -apple-system, system-ui, sans-serif",
+        }}
+      >
+        {/* Local styles for editorial typography */}
+        <style jsx global>{`
+          .serif {
+            font-family: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+          }
+          .mono {
+            font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+            font-feature-settings: 'tnum';
+          }
+          .hairline {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22) 50%, transparent);
+          }
+          .hairline-solid {
+            height: 1px;
+            background: rgba(255,255,255,0.12);
+          }
+          .link-u {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-repeat: no-repeat;
+            background-size: 100% 1px;
+            background-position: 0 100%;
+            transition: background-size .35s ease;
+          }
+          .link-u:hover {
+            background-size: 0% 1px;
+            background-position: 100% 100%;
+          }
+          @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
+        `}</style>
 
-        {/* ══════════════════════════════════════════════════════════
-            EN BREF — SEO Summary Block
-        ══════════════════════════════════════════════════════════ */}
-        <section className="en-bref-block relative bg-black border-b border-white/[0.06] py-10 sm:py-12">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto bg-white/[0.03] border border-white/[0.08] rounded-2xl p-6 sm:p-8">
-              <h2 className="text-lg sm:text-xl font-bold text-white/80 mb-3 flex items-center gap-2">
-                <span className="inline-block w-1.5 h-6 bg-gradient-to-b from-indigo-500 to-purple-500 rounded-full" />
-                {tx('باختصار', 'In Brief', 'En bref')}
-              </h2>
-              <p className="text-sm sm:text-base text-white/50 leading-relaxed">
-                {tx(
-                  'تقدم Symloop خدمات تطوير البرمجيات، تطبيقات الهاتف المحمول، مواقع الويب، إنترنت الأشياء، الذكاء الاصطناعي والأمن السيبراني للشركات في الجزائر ومنطقة مينا. مقرنا في سطيف مع تغطية وطنية. +50 مشروع منجز. تواصلوا معنا: +213 549 575 512.',
-                  'Symloop provides software development, mobile applications, websites, IoT, artificial intelligence and cybersecurity services for businesses in Algeria and the MENA region. Based in Setif with national coverage. +50 projects delivered. Contact: +213 549 575 512.',
-                  'Symloop propose des services de développement logiciel, applications mobiles, sites web, IoT, intelligence artificielle et cybersécurité pour les entreprises en Algérie et dans la région MENA. Basé à Sétif avec couverture nationale. +50 projets livrés. Contact: +213 549 575 512.'
-                )}
+        {/* ========================================================== */}
+        {/* HERO                                                       */}
+        {/* ========================================================== */}
+        <section className="relative border-b border-white/10">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 pt-28 pb-20">
+            {/* Eyebrow row */}
+            <div className="flex items-center justify-between mb-16">
+              <span className="mono text-[11px] uppercase tracking-[0.25em] text-white/50">
+                / {c.eyebrow}
+              </span>
+              <span className="mono text-[11px] uppercase tracking-[0.25em] text-white/30">
+                Algiers · 36.7538° N
+              </span>
+            </div>
+
+            {/* Display headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              className="serif text-[44px] sm:text-[68px] lg:text-[112px] leading-[0.92] tracking-[-0.02em] max-w-[18ch]"
+            >
+              <span className="italic text-white/90">{c.heroLine1}</span>
+              <br />
+              <span className="text-white">{c.heroLine2}</span>
+              <br />
+              <span className="text-white/60">{c.heroLine3}</span>
+            </motion.h1>
+
+            {/* Subheadline */}
+            <div className="mt-14 grid grid-cols-12 gap-6">
+              <div className="hidden lg:block lg:col-span-1" />
+              <p
+                data-speakable
+                className="col-span-12 lg:col-span-7 text-[17px] sm:text-[19px] leading-[1.55] text-white/70 max-w-[62ch]"
+              >
+                {c.heroSub}
               </p>
             </div>
+
+            {/* Metadata strip */}
+            <div className="mt-20 hairline" />
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-6 py-8">
+              {STATS.map((s) => (
+                <div key={s.key}>
+                  <div className="serif text-5xl sm:text-6xl text-white leading-none">
+                    {s.value}
+                  </div>
+                  <div className="mono mt-3 text-[10px] uppercase tracking-[0.2em] text-white/45">
+                    {c[s.key]}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="hairline" />
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════════════════════
-            2. SERVICES GRID (kept)
-        ══════════════════════════════════════════════════════════ */}
-        <ServicesGrid
-          services={services}
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-          onConsultationClick={() => setConsultationModalOpen(true)}
-        />
-
-        {/* ══════════════════════════════════════════════════════════
-            3. WHY CHOOSE US — Navy bg + dot matrix + floating orbs
-               Animated counters left, differentiator cards right
-        ══════════════════════════════════════════════════════════ */}
-        <section className="relative overflow-hidden py-24 sm:py-32" style={{ backgroundColor: '#050510' }}>
-          {/* Dot matrix background */}
-          <div className="absolute inset-0 opacity-100" style={{
-            backgroundImage: 'radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px)',
-            backgroundSize: '48px 48px',
-          }} />
-
-          {/* Floating orbs */}
-          <div className="absolute top-20 left-[10%] w-64 h-64 rounded-full animate-float1 opacity-100"
-            style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%)', filter: 'blur(60px)' }} />
-          <div className="absolute bottom-20 right-[15%] w-80 h-80 rounded-full animate-float2 opacity-100"
-            style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.07) 0%, transparent 70%)', filter: 'blur(80px)' }} />
-
-          <div className="relative z-10 container mx-auto px-6">
-            {/* Section header */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <p className="text-sm uppercase tracking-[0.2em] text-indigo-400/60 mb-4">
-                {tx('لماذا نحن', 'Why Choose Us', 'Pourquoi Nous Choisir')}
-              </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                {tx(
-                  'أرقام تتحدث عن خبرتنا',
-                  'Numbers That Speak for Our Expertise',
-                  'Des Chiffres qui Parlent de Notre Expertise'
-                )}
-              </h2>
-            </motion.div>
-
-            {/* 2-column layout */}
-            <div className={`flex flex-col lg:flex-row gap-12 lg:gap-16 items-start ${isRTL ? 'lg:flex-row-reverse' : ''}`}>
-              {/* Left: 2x2 stats grid with animated counters */}
-              <div className="w-full lg:w-[40%]">
-                <div className="grid grid-cols-2 gap-4">
-                  {whyStats.map((stat, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: i * 0.1 }}
-                      viewport={{ once: true }}
-                      className={`relative rounded-2xl bg-white/[0.04] border border-white/[0.08] p-6 text-center border-t-2 ${stat.borderColor} hover:bg-white/[0.07] transition-all duration-500`}
-                    >
-                      <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
-                        {stat.target === '24/7' ? (
-                          <span>24/7</span>
-                        ) : (
-                          <AnimatedCounter target={stat.target} suffix={stat.suffix} />
-                        )}
-                      </div>
-                      <div className="text-sm text-white/40">{stat.label}</div>
-                    </motion.div>
-                  ))}
+        {/* ========================================================== */}
+        {/* INDEX (quick jump table — no boxes, editorial table)       */}
+        {/* ========================================================== */}
+        <section className="border-b border-white/10">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 py-20">
+            <div className="grid grid-cols-12 gap-6 mb-10">
+              <div className="col-span-12 lg:col-span-4">
+                <div className="mono text-[11px] uppercase tracking-[0.25em] text-white/45">
+                  / {c.sectionIndex}
                 </div>
+                <h2 className="serif mt-4 text-4xl sm:text-5xl lg:text-6xl leading-[1] tracking-tight">
+                  <span className="italic">{c.sectionServices}</span>
+                </h2>
               </div>
+              <p className="col-span-12 lg:col-span-7 lg:col-start-6 text-[16px] leading-relaxed text-white/60 self-end">
+                {c.sectionServicesSub}
+              </p>
+            </div>
 
-              {/* Right: 3 differentiator cards */}
-              <div className="w-full lg:w-[60%] space-y-4">
-                {differentiators.map((diff, i) => {
-                  const DiffIcon = diff.icon;
-                  return (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, x: isRTL ? -40 : 40 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: i * 0.15 }}
-                      viewport={{ once: true }}
-                      className="group"
-                    >
-                      <div className={`relative flex items-start gap-5 rounded-2xl bg-white/[0.03] border border-white/[0.07] p-6 hover:bg-white/[0.06] hover:border-white/[0.14] transition-all duration-500 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
-                        {/* Gradient accent bar */}
-                        <div className={`absolute top-0 bottom-0 ${isRTL ? 'right-0' : 'left-0'} w-1 rounded-full bg-gradient-to-b ${diff.accentColor}`} />
+            {/* Index table (pure grid, zero boxes) */}
+            <div className="hairline-solid" />
+            <div className="mono text-[10px] uppercase tracking-[0.22em] text-white/35 grid grid-cols-12 py-4 gap-4">
+              <div className="col-span-1">№</div>
+              <div className="col-span-6 sm:col-span-5">{c.colDiscipline}</div>
+              <div className="hidden sm:block sm:col-span-3">{c.colStarting}</div>
+              <div className="col-span-5 sm:col-span-3 text-right">{c.colDelivery}</div>
+            </div>
+            <div className="hairline-solid" />
 
-                        <div className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br ${diff.accentColor} flex items-center justify-center shadow-lg`}>
-                          <DiffIcon className="w-6 h-6 text-white" />
+            {services.map((s, i) => (
+              <Link
+                key={s.id}
+                href={`/services/${s.slug}/`}
+                locale={locale}
+                className="group block"
+              >
+                <div className="grid grid-cols-12 gap-4 py-6 items-baseline transition-colors hover:bg-white/[0.015]">
+                  <div className="col-span-1 mono text-[12px] text-white/40">{s.number}</div>
+                  <div className="col-span-6 sm:col-span-5">
+                    <div className="serif text-2xl sm:text-3xl tracking-tight text-white group-hover:italic transition-all">
+                      {s.title}
+                    </div>
+                    <div className="mono text-[10px] uppercase tracking-[0.2em] text-white/35 mt-2">
+                      {s.category}
+                    </div>
+                  </div>
+                  <div className="hidden sm:block sm:col-span-3 mono text-[13px] text-white/55">
+                    {formatPriceRange(s.priceMin, null, locale)}
+                  </div>
+                  <div className="col-span-5 sm:col-span-3 text-right mono text-[13px] text-white/55 flex items-center justify-end gap-3">
+                    <span>{s.deliveryTime}</span>
+                    <ArrowUpRight
+                      className="w-4 h-4 text-white/30 group-hover:text-white group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all"
+                      style={{ color: s.accent }}
+                    />
+                  </div>
+                </div>
+                <div className="hairline-solid" />
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* ========================================================== */}
+        {/* FULL EDITORIAL SERVICE ENTRIES                              */}
+        {/* ========================================================== */}
+        <section>
+          {services.map((s, idx) => {
+            const Icon = ICONS[s.icon] || Code2;
+            return (
+              <article
+                key={s.id}
+                id={s.id}
+                className="border-b border-white/10"
+                style={{ scrollMarginTop: '100px' }}
+              >
+                <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 py-24 lg:py-32">
+                  <div className="grid grid-cols-12 gap-6 lg:gap-10">
+                    {/* LEFT RAIL: number + icon (sticky-feeling) */}
+                    <div className="col-span-12 lg:col-span-3">
+                      <div className="lg:sticky lg:top-24">
+                        <div
+                          className="mono text-[120px] sm:text-[160px] leading-none tracking-tighter"
+                          style={{ color: s.accent, opacity: 0.85 }}
+                        >
+                          {s.number}
+                        </div>
+                        <div className="mt-6 flex items-center gap-3">
+                          <Icon className="w-5 h-5" style={{ color: s.accent }} />
+                          <span className="mono text-[10px] uppercase tracking-[0.22em] text-white/50">
+                            {s.category}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* RIGHT: content */}
+                    <div className="col-span-12 lg:col-span-9 lg:pl-8">
+                      <h2 className="serif text-4xl sm:text-5xl lg:text-[68px] leading-[0.98] tracking-tight max-w-[18ch]">
+                        {s.title}
+                      </h2>
+                      <p className="mt-6 serif italic text-xl sm:text-2xl text-white/60 max-w-[46ch]">
+                        {s.tagline || ''}
+                      </p>
+
+                      <p
+                        data-speakable
+                        className="mt-10 text-[17px] leading-[1.65] text-white/75 max-w-[66ch]"
+                      >
+                        {s.intro}
+                      </p>
+
+                      {/* Long description — flowing paragraphs */}
+                      <div className="mt-8 space-y-6 max-w-[66ch]">
+                        {(s.longDescription || []).map((p, i) => (
+                          <p
+                            key={i}
+                            className="text-[15.5px] leading-[1.75] text-white/60"
+                          >
+                            {p}
+                          </p>
+                        ))}
+                      </div>
+
+                      {/* Meta row: price + delivery (inline, no boxes) */}
+                      <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-y-5 gap-x-8 max-w-[680px]">
+                        <div>
+                          <div className="mono text-[10px] uppercase tracking-[0.22em] text-white/35">
+                            {c.priceLabel}
+                          </div>
+                          <div className="mt-2 serif text-2xl text-white">
+                            {formatPriceRange(s.priceMin, s.priceMax, locale)}
+                          </div>
                         </div>
                         <div>
-                          <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-white/90 transition-colors">{diff.title}</h3>
-                          <p className="text-sm text-white/40 leading-relaxed">{diff.desc}</p>
-                        </div>
-                      </div>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════════════════════════
-            4. TRUSTED BY — Sweep lines + Marquee + Glass pill stats
-        ══════════════════════════════════════════════════════════ */}
-        <section className="relative bg-black overflow-hidden py-20 sm:py-28">
-          {/* Animated sweep lines */}
-          <SweepLines />
-
-          <div className="relative z-10 container mx-auto px-6">
-            {/* Section header */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="text-center mb-14"
-            >
-              <p className="text-sm uppercase tracking-[0.2em] text-white/30 mb-4">
-                {tx('يثقون بنا', 'Trusted By', 'Ils nous font confiance')}
-              </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                {tx(
-                  'شركاؤنا حول العالم',
-                  'Our Partners Worldwide',
-                  'Nos Partenaires dans le Monde'
-                )}
-              </h2>
-            </motion.div>
-
-            {/* Marquee Row 1 — scrolls left */}
-            <div className="relative mb-6 overflow-hidden" style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
-              <div className="flex animate-scroll-long" style={{ width: 'max-content' }}>
-                {[...clientLogos, ...clientLogos].map((logo, i) => (
-                  <div key={`row1-${i}`} className="flex-shrink-0 mx-6 sm:mx-10 flex items-center justify-center h-16 w-28 sm:w-36 grayscale hover:grayscale-0 opacity-50 hover:opacity-100 transition-all duration-500">
-                    <Image src={logo.src} alt={logo.name} width={120} height={48} className="object-contain max-h-12" />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Marquee Row 2 — scrolls right */}
-            <div className="relative mb-16 overflow-hidden" style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
-              <div className="flex animate-scroll-long-reverse" style={{ width: 'max-content' }}>
-                {[...clientLogos.slice().reverse(), ...clientLogos.slice().reverse()].map((logo, i) => (
-                  <div key={`row2-${i}`} className="flex-shrink-0 mx-6 sm:mx-10 flex items-center justify-center h-16 w-28 sm:w-36 grayscale hover:grayscale-0 opacity-50 hover:opacity-100 transition-all duration-500">
-                    <Image src={logo.src} alt={logo.name} width={120} height={48} className="object-contain max-h-12" />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Glass pill stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="flex flex-wrap justify-center gap-4 sm:gap-6"
-            >
-              {trustedStats.map((stat, i) => (
-                <div key={i} className="flex items-center gap-3 rounded-full px-6 py-3 bg-white/[0.05] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.08] hover:border-white/[0.14] transition-all duration-400">
-                  <div className={`w-2 h-2 rounded-full ${stat.dotColor}`} />
-                  <span className="text-lg font-bold bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">{stat.value}</span>
-                  <span className="text-sm text-white/40">{stat.label}</span>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Portfolio section removed for now */}
-
-        {/* ══════════════════════════════════════════════════════════
-            6. HOW WE WORK — Vertical Timeline
-        ══════════════════════════════════════════════════════════ */}
-        <section className="relative overflow-hidden py-24 sm:py-32" style={{ backgroundColor: '#030308' }}>
-          <div className="relative z-10 container mx-auto px-6">
-            {/* Section header */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="text-center mb-20"
-            >
-              <p className="text-sm uppercase tracking-[0.2em] text-blue-400/60 mb-4">
-                {tx('منهجيتنا', 'Our Process', 'Notre Méthode')}
-              </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-                {tx(
-                  'كيف نعمل',
-                  'How We Work',
-                  'Comment Nous Travaillons'
-                )}
-              </h2>
-              <p className="text-lg text-white/40 max-w-2xl mx-auto">
-                {tx(
-                  'منهجية مثبتة تضمن نتائج استثنائية في كل مرة.',
-                  'A proven methodology that delivers exceptional results every time.',
-                  'Une méthodologie éprouvée qui garantit des résultats exceptionnels à chaque fois.'
-                )}
-              </p>
-            </motion.div>
-
-            {/* Timeline */}
-            <div className="relative max-w-4xl mx-auto">
-              {/* Center line — desktop only */}
-              <div className="hidden lg:block">
-                <TimelineGlowLine />
-              </div>
-
-              {/* Mobile line — left side */}
-              <div className="lg:hidden absolute top-0 bottom-0 left-6 w-0.5 bg-gradient-to-b from-transparent via-blue-500/30 to-transparent" />
-
-              <div className="space-y-12 lg:space-y-16">
-                {processSteps.map((step, index) => {
-                  const StepIcon = step.icon;
-                  const isEven = index % 2 === 0;
-                  const sideClass = isRTL
-                    ? (isEven ? 'lg:flex-row-reverse lg:text-left' : 'lg:flex-row lg:text-right')
-                    : (isEven ? 'lg:flex-row lg:text-right' : 'lg:flex-row-reverse lg:text-left');
-
-                  return (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: isEven ? (isRTL ? 50 : -50) : (isRTL ? -50 : 50) }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.7, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                      className={`relative flex items-center gap-8 ${sideClass}`}
-                    >
-                      {/* Content card — desktop half */}
-                      <div className="hidden lg:block w-[calc(50%-40px)]">
-                        <div className="rounded-2xl bg-white/[0.03] border border-white/[0.07] p-6 hover:bg-white/[0.06] hover:border-white/[0.14] transition-all duration-500">
-                          <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
-                          <p className="text-sm text-white/40 leading-relaxed">{step.desc}</p>
-                        </div>
-                      </div>
-
-                      {/* Glowing node on center line — desktop */}
-                      <div className="hidden lg:flex items-center justify-center relative z-10 flex-shrink-0">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.3)]">
-                          <StepIcon className="w-5 h-5 text-white" />
-                        </div>
-                        {/* Pulsing ring */}
-                        <div className="absolute w-12 h-12 rounded-full border border-blue-400/40" style={{ animation: 'pingSlow 3s ease-in-out infinite' }} />
-                      </div>
-
-                      {/* Empty spacer — desktop */}
-                      <div className="hidden lg:block w-[calc(50%-40px)]" />
-
-                      {/* Mobile layout: icon on left line + card */}
-                      <div className="lg:hidden flex items-start gap-5 w-full">
-                        <div className="relative z-10 flex-shrink-0">
-                          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.3)]">
-                            <StepIcon className="w-5 h-5 text-white" />
+                          <div className="mono text-[10px] uppercase tracking-[0.22em] text-white/35">
+                            {c.deliveryLabel}
                           </div>
-                          <div className="absolute w-12 h-12 top-0 left-0 rounded-full border border-blue-400/40" style={{ animation: 'pingSlow 3s ease-in-out infinite' }} />
-                        </div>
-                        <div className="flex-1 rounded-2xl bg-white/[0.03] border border-white/[0.07] p-5">
-                          <div className="text-xs text-blue-400/60 font-medium mb-1">
-                            {tx('الخطوة', 'Step', 'Étape')} {index + 1}
+                          <div className="mt-2 serif text-2xl text-white">
+                            {s.deliveryTime}
                           </div>
-                          <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
-                          <p className="text-sm text-white/40 leading-relaxed">{step.desc}</p>
                         </div>
                       </div>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* ══════════════════════════════════════════════════════════
-            7. INDUSTRIES — Crosshatch bg + Colored gradients + Scale-in
-        ══════════════════════════════════════════════════════════ */}
-        <section className="relative overflow-hidden py-24 sm:py-32" style={{ backgroundColor: '#050505' }}>
-          {/* Crosshatch pattern */}
-          <div className="absolute inset-0 opacity-[0.03]" style={{
-            backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(255,255,255,0.5) 49px, rgba(255,255,255,0.5) 50px),
-              repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(255,255,255,0.5) 49px, rgba(255,255,255,0.5) 50px)`,
-          }} />
-
-          <div className="relative z-10 container mx-auto px-6">
-            {/* Section header */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <p className="text-sm uppercase tracking-[0.2em] text-white/30 mb-4">
-                {tx('القطاعات', 'Industries', 'Secteurs')}
-              </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-                {tx(
-                  'القطاعات التي نخدمها',
-                  'Industries We Serve',
-                  'Les Secteurs que Nous Servons'
-                )}
-              </h2>
-              <p className="text-lg text-white/40 max-w-2xl mx-auto">
-                {tx(
-                  'نكيّف حلولنا لتتناسب مع متطلبات قطاعكم الخاص.',
-                  'We adapt our solutions to match the specific needs of your industry.',
-                  'Nous adaptons nos solutions aux exigences spécifiques de votre secteur.'
-                )}
-              </p>
-            </motion.div>
-
-            {/* Industries grid — 3x2 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-              {industries.map((industry, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.08 }}
-                  viewport={{ once: true }}
-                  className="group"
-                >
-                  <div
-                    className="relative rounded-2xl bg-white/[0.03] border border-white/[0.07] p-7 overflow-hidden transition-all duration-500 hover:bg-white/[0.05]"
-                    style={{
-                      '--hover-shadow': industryHoverShadows[index],
-                      '--hover-border': industryBorderColors[index],
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.boxShadow = industryHoverShadows[index];
-                      e.currentTarget.style.borderColor = industryBorderColors[index];
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.boxShadow = 'none';
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)';
-                    }}
-                  >
-                    {/* Colored gradient overlay on hover */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${industryGradients[index]} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`} />
-
-                    <div className="relative z-10">
-                      {/* Emoji with glow ring behind */}
-                      <div className="relative inline-block mb-5">
-                        <div className="text-5xl group-hover:animate-wobble transition-transform">{industry.icon}</div>
-                        <div
-                          className="absolute inset-0 -m-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
-                          style={{ background: `radial-gradient(circle, ${industryBorderColors[index]}, transparent)` }}
-                        />
-                      </div>
-                      <h3 className="text-lg font-semibold text-white mb-2">{industryNames[index]}</h3>
-                      <p className="text-sm text-white/40 leading-relaxed">{industryDescriptions[index]}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════════════════════════
-            8. TALK TO US — Orbit rings + Contact cards
-        ══════════════════════════════════════════════════════════ */}
-        <section className="relative overflow-hidden py-24 sm:py-32" style={{ backgroundColor: '#020208' }}>
-          <OrbitRingsCompact />
-
-          <div className="relative z-10 container mx-auto px-6">
-            {/* Section header */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <p className="text-sm uppercase tracking-[0.2em] text-white/30 mb-4">
-                {tx('تواصل معنا', 'Get in Touch', 'Contactez-nous')}
-              </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-                {tx(
-                  'دعنا نتحدث عن مشروعك',
-                  'Let\'s Talk About Your Project',
-                  'Parlons de Votre Projet'
-                )}
-              </h2>
-              <p className="text-lg text-white/40 max-w-2xl mx-auto">
-                {tx(
-                  'اختر طريقة التواصل المفضلة لديك وسنرد في أسرع وقت.',
-                  'Choose your preferred way to reach us — we\'ll respond quickly.',
-                  'Choisissez votre mode de contact préféré — nous répondons rapidement.'
-                )}
-              </p>
-            </motion.div>
-
-            {/* 3 contact cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-14">
-              {contactMethods.map((method, i) => {
-                const MethodIcon = method.icon;
-                return (
-                  <motion.a
-                    key={i}
-                    href={method.href}
-                    target={method.href.startsWith('http') ? '_blank' : undefined}
-                    rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.15, type: 'spring', bounce: 0.3 }}
-                    viewport={{ once: true }}
-                    whileHover={{ y: -4 }}
-                    className="group block"
-                  >
-                    <div
-                      className="relative rounded-2xl bg-white/[0.03] border border-white/[0.07] p-8 text-center transition-all duration-500 hover:bg-white/[0.06]"
-                      style={{ '--card-border': method.borderColor }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.borderColor = method.borderColor;
-                        e.currentTarget.style.boxShadow = method.shadowColor;
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)';
-                        e.currentTarget.style.boxShadow = 'none';
-                      }}
-                    >
-                      {/* Icon circle */}
-                      <div className={`w-16 h-16 mx-auto mb-5 rounded-2xl bg-gradient-to-br ${method.color} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-                        <MethodIcon className="w-7 h-7 text-white" />
+                      {/* Features — hairline list, no boxes */}
+                      <div className="mt-14">
+                        <div className="mono text-[10px] uppercase tracking-[0.22em] text-white/35 mb-5">
+                          — {c.featuresLabel}
+                        </div>
+                        <ul className="divide-y divide-white/10 border-y border-white/10">
+                          {s.features.map((f, i) => (
+                            <li
+                              key={i}
+                              className="flex items-baseline gap-5 py-4 text-[15px] text-white/75 leading-relaxed"
+                            >
+                              <span className="mono text-[10px] text-white/30 w-6 shrink-0">
+                                {String(i + 1).padStart(2, '0')}
+                              </span>
+                              <span>{f}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
 
-                      <h3 className="text-lg font-semibold text-white mb-2">{method.title}</h3>
-                      <p className="text-sm text-white/40 mb-5 leading-relaxed">{method.desc}</p>
-
-                      <span className="inline-flex items-center gap-2 text-sm font-medium text-white/60 group-hover:text-white transition-colors">
-                        {method.cta}
-                        {isRTL ? (
-                          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                        ) : (
-                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        )}
-                      </span>
-                    </div>
-                  </motion.a>
-                );
-              })}
-            </div>
-
-            {/* Bottom tagline + CTA */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <p className="text-white/30 mb-6 text-sm">
-                {tx(
-                  'أو احجز استشارة مجانية مع فريقنا',
-                  'Or book a free consultation with our team',
-                  'Ou réservez une consultation gratuite avec notre équipe'
-                )}
-              </p>
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                onClick={() => setConsultationModalOpen(true)}
-                className="inline-flex items-center gap-3 bg-white/[0.08] border border-white/[0.12] text-white font-medium px-8 py-3.5 rounded-xl hover:bg-white/[0.14] hover:border-white/[0.2] transition-all duration-500 backdrop-blur-sm"
-              >
-                {tx('احجز استشارة مجانية', 'Book Free Consultation', 'Réserver une Consultation Gratuite')}
-              </motion.button>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════════════════════════
-            9. FOOTER CTA — Glow rings + Rotating gradient border + Shimmer
-        ══════════════════════════════════════════════════════════ */}
-        <section className="relative bg-black overflow-hidden">
-          <GlowRingCTA />
-
-          {/* Glow blobs */}
-          <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-30" style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)', filter: 'blur(80px)' }} />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full opacity-30" style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.12) 0%, transparent 70%)', filter: 'blur(80px)' }} />
-
-          <div className="relative z-10 container mx-auto px-6 py-24 sm:py-32">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              {/* Card with animated gradient border */}
-              <div className="relative p-[1px] rounded-3xl overflow-hidden">
-                {/* Rotating conic gradient border */}
-                <div
-                  className="absolute inset-[-50%] z-0"
-                  style={{
-                    background: 'conic-gradient(from 0deg, transparent, rgba(99,102,241,0.4), transparent, rgba(147,51,234,0.4), transparent)',
-                    animation: 'rotate-border 6s linear infinite',
-                  }}
-                />
-
-                <div className="relative z-10 p-12 sm:p-16 rounded-3xl bg-black/95 backdrop-blur-sm">
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
-                    {t('services.finalCta.title')}
-                  </h2>
-                  <p className="text-lg text-white/40 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    {t('services.finalCta.subtitle')}
-                  </p>
-
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-                    {/* Primary CTA with shimmer */}
-                    <motion.button
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.97 }}
-                      onClick={() => setConsultationModalOpen(true)}
-                      className="group relative inline-flex items-center justify-center gap-3 bg-white text-black font-semibold px-8 py-4 rounded-xl transition-all duration-500 hover:shadow-[0_0_50px_rgba(255,255,255,0.12)] overflow-hidden"
-                    >
-                      {/* Shimmer sweep */}
-                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div
-                          className="absolute inset-0 w-full h-full"
-                          style={{
-                            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
-                            animation: 'shimmer 1.5s ease-in-out infinite',
-                          }}
-                        />
-                      </div>
-                      <span className="relative z-10">{t('servicesPage.consultation')}</span>
-                      {isRTL ? (
-                        <ArrowLeft className="w-4 h-4 relative z-10 group-hover:-translate-x-1 transition-transform" />
-                      ) : (
-                        <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
+                      {/* Tech stack — inline plain text */}
+                      {s.techStack && s.techStack.length > 0 && (
+                        <div className="mt-12">
+                          <div className="mono text-[10px] uppercase tracking-[0.22em] text-white/35 mb-4">
+                            — {c.stackLabel}
+                          </div>
+                          <div className="flex flex-wrap gap-x-5 gap-y-2 mono text-[12px] text-white/55">
+                            {s.techStack.map((t, i) => (
+                              <span key={t}>
+                                {t}
+                                {i < s.techStack.length - 1 && (
+                                  <span className="text-white/20 ml-5">·</span>
+                                )}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                       )}
-                    </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.97 }}
-                      onClick={() => setQuoteModalOpen(true)}
-                      className="inline-flex items-center justify-center gap-3 border border-white/15 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/[0.07] hover:border-white/30 transition-all duration-500 backdrop-blur-sm"
-                    >
-                      {t('servicesPage.quote')}
-                    </motion.button>
-                  </div>
 
-                  <div className="pt-8 border-t border-white/[0.06]">
-                    <p className="text-sm text-white/25">
-                      {t('services.finalCta.footer')}
-                    </p>
+                      {/* Read full link */}
+                      <div className="mt-14">
+                        <Link
+                          href={`/services/${s.slug}/`}
+                          locale={locale}
+                          className="group inline-flex items-baseline gap-3 serif italic text-2xl text-white"
+                        >
+                          <span className="link-u">{c.readFull}</span>
+                          <ArrowRight
+                            className="w-5 h-5 translate-y-0.5 group-hover:translate-x-1 transition-transform"
+                            style={{ color: s.accent }}
+                          />
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
+              </article>
+            );
+          })}
+        </section>
+
+        {/* ========================================================== */}
+        {/* LONG-FORM PROSE — "why a local firm" / method              */}
+        {/* ========================================================== */}
+        <section className="border-b border-white/10">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 py-28">
+            <div className="grid grid-cols-12 gap-6">
+              {[
+                { h: c.prose1Heading, p: c.prose1Body, n: 'I' },
+                { h: c.prose2Heading, p: c.prose2Body, n: 'II' },
+                { h: c.prose3Heading, p: c.prose3Body, n: 'III' },
+              ].map((block, i) => (
+                <div
+                  key={i}
+                  className="col-span-12 lg:col-span-4 lg:border-l lg:border-white/10 lg:pl-8 first:lg:border-l-0 first:lg:pl-0"
+                >
+                  <div className="mono text-[10px] tracking-[0.25em] text-white/35">— {block.n}</div>
+                  <h3 className="serif italic text-3xl text-white mt-5 leading-tight">
+                    {block.h}
+                  </h3>
+                  <p className="mt-6 text-[15px] leading-[1.75] text-white/60">
+                    {block.p}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        <ConsultationModal
-          isOpen={consultationModalOpen}
-          onClose={() => setConsultationModalOpen(false)}
-        />
+        {/* ========================================================== */}
+        {/* FAQ — editorial Q/A list                                    */}
+        {/* ========================================================== */}
+        <section className="border-b border-white/10">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 py-28">
+            <div className="grid grid-cols-12 gap-6 mb-12">
+              <div className="col-span-12 lg:col-span-5">
+                <div className="mono text-[11px] uppercase tracking-[0.25em] text-white/45">
+                  / FAQ
+                </div>
+                <h2 className="serif mt-4 text-4xl sm:text-5xl lg:text-6xl leading-[1] tracking-tight">
+                  <span className="italic">{c.faqTitle}</span>
+                </h2>
+              </div>
+            </div>
 
-        <QuoteModal
-          isOpen={quoteModalOpen}
-          onClose={() => setQuoteModalOpen(false)}
-          services={services}
-        />
-      </div>
+            <div className="hairline-solid" />
+            {aggregatedFaqs.map((f, i) => (
+              <details
+                key={i}
+                className="group border-b border-white/10 py-6 transition-colors"
+              >
+                <summary className="flex items-baseline gap-6 cursor-pointer list-none">
+                  <span className="mono text-[11px] text-white/35 mt-1 shrink-0">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <span className="serif text-xl sm:text-2xl text-white group-open:italic flex-1">
+                    {f.q}
+                  </span>
+                  <span className="mono text-white/40 group-open:rotate-45 transition-transform text-xl leading-none">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-5 ml-[2.6rem] text-[15px] leading-[1.75] text-white/65 max-w-[72ch]">
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* ========================================================== */}
+        {/* CLOSING CTA — editorial                                    */}
+        {/* ========================================================== */}
+        <section>
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 py-32">
+            <div className="grid grid-cols-12 gap-6 items-end">
+              <div className="col-span-12 lg:col-span-8">
+                <div className="mono text-[11px] uppercase tracking-[0.25em] text-white/45 mb-6">
+                  — /next
+                </div>
+                <h2 className="serif text-5xl sm:text-7xl lg:text-[128px] leading-[0.92] tracking-tight">
+                  <span className="italic">{c.ctaTitle}</span>
+                </h2>
+                <p className="mt-10 text-[17px] leading-[1.65] text-white/60 max-w-[58ch]">
+                  {c.ctaSub}
+                </p>
+              </div>
+              <div className="col-span-12 lg:col-span-4 flex flex-col gap-5 lg:items-end">
+                <Link
+                  href="/contact"
+                  locale={locale}
+                  className="group inline-flex items-baseline gap-3 serif italic text-3xl text-white"
+                >
+                  <span className="link-u">{c.ctaQuote}</span>
+                  <ArrowRight className="w-6 h-6 translate-y-1 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/contact"
+                  locale={locale}
+                  className="group inline-flex items-baseline gap-3 serif text-2xl text-white/70 hover:text-white"
+                >
+                  <span className="link-u">{c.ctaContact}</span>
+                  <ArrowRight className="w-5 h-5 translate-y-1 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   BENTO CARD SUB-COMPONENT (for Portfolio section)
-   Extracted to use its own ref for 3D tilt
-═══════════════════════════════════════════════════════════════ */
-function BentoCard({ project, info, IconComp, isHero, isFullWidth, index, isRTL, handleTilt, resetTilt }) {
-  const cardRef = useRef(null);
-
-  const gridClass = isHero
-    ? 'md:col-span-2 md:row-span-2'
-    : isFullWidth
-      ? 'md:col-span-3'
-      : 'md:col-span-1';
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      className={`group ${gridClass}`}
-    >
-      <div
-        ref={cardRef}
-        onMouseMove={(e) => handleTilt(e, cardRef)}
-        onMouseLeave={() => resetTilt(cardRef)}
-        className="relative h-full rounded-2xl bg-white/[0.03] border border-white/[0.07] p-6 sm:p-8 hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300"
-        style={{
-          transition: 'transform 0.15s ease-out, background-color 0.5s, border-color 0.5s, box-shadow 0.5s',
-          willChange: 'transform',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = `0 0 40px ${project.shadowColor}`;
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.boxShadow = 'none';
-        }}
-      >
-        {/* Gradient accent bar */}
-        <div className={`absolute top-0 ${isRTL ? 'right-0' : 'left-0'} w-1 h-16 rounded-full bg-gradient-to-b ${project.color} opacity-60`} />
-
-        {/* Header */}
-        <div className="flex items-start justify-between mb-5">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center`}>
-                <IconComp className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xs uppercase tracking-wider text-white/30">{project.category}</span>
-            </div>
-            <h3 className={`${isHero ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'} font-bold text-white group-hover:text-white/90 transition-colors`}>
-              {info.title}
-            </h3>
-            <p className="text-sm text-white/40 mt-1">{project.client}</p>
-          </div>
-        </div>
-
-        {/* Description */}
-        <p className={`text-white/50 text-sm leading-relaxed mb-6 ${isHero ? 'max-w-lg' : ''}`}>
-          {info.desc}
-        </p>
-
-        {/* Tech badges */}
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.technologies.map((tech) => (
-            <span key={tech} className="px-3 py-1 rounded-lg bg-white/[0.05] border border-white/[0.08] text-xs text-white/60">
-              {tech}
-            </span>
-          ))}
-        </div>
-
-        {/* Results metrics */}
-        <div className={`grid ${isHero ? 'grid-cols-3' : 'grid-cols-3'} gap-3`}>
-          {Object.entries(project.results).map(([key, value]) => (
-            <div key={key} className="text-center rounded-xl bg-white/[0.04] border border-white/[0.06] py-3 px-2">
-              <div className={`${isHero ? 'text-xl' : 'text-lg'} font-bold text-white`}>{value}</div>
-              <div className="text-[10px] uppercase tracking-wider text-white/30 mt-0.5">{key}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
+// ---------------------------------------------------------------------------
+// SSG — build-time data injection
+// ---------------------------------------------------------------------------
 export async function getStaticProps({ locale }) {
+  const services = getAllServicesForLocale(locale || 'fr');
   return {
     props: {
       ...(await serverSideTranslations(locale, ['common'])),
+      services,
+      locale: locale || 'fr',
     },
   };
 }

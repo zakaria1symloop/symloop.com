@@ -173,16 +173,15 @@ export default function Seo({
             "currenciesAccepted": ["DZD", "EUR", "USD", "SAR", "AED"],
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Sétif Technology Park",
-              "addressLocality": "Sétif",
-              "addressRegion": "Sétif Province",
-              "postalCode": "19000",
+              "addressLocality": "Alger",
+              "addressRegion": "Alger",
+              "postalCode": "16000",
               "addressCountry": "DZ"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "36.1919",
-              "longitude": "5.4138"
+              "latitude": "36.7538",
+              "longitude": "3.0588"
             },
             "areaServed": [
               {"@type": "Country", "name": "Algeria (MENA)"},
