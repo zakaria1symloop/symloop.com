@@ -9,7 +9,7 @@
     "recruitment": "Recrutement"
   },
   "contact": {
-    "location": "Sétif, région MENA",
+    "location": "Alger, région MENA",
     "phone": "+213 549 57 55 12",
     "email": "contact@symloop.com",
     "freeConsultation": "Consultation Gratuite",
@@ -75,21 +75,21 @@
     "testimonials": {
       "client1": {
         "text": "Symloop a révolutionné notre processus commercial avec un ERP sur mesure. Notre productivité a augmenté de 60% et nos coûts ont diminué de 35%. Une équipe d'experts qui comprend parfaitement les défis des entreprises MENA.",
-        "author": "Ahmed Belkacem",
-        "role": "Directeur Général • EURL TechCorp MENA",
-        "location": "région MENA"
+        "author": "Directeur Général",
+        "role": "Groupe industriel • Algérie",
+        "location": "Algérie"
       },
       "client2": {
         "text": "Notre plateforme e-commerce développée par Symloop génère maintenant plus de 1500 commandes par mois. L'intégration du paiement CIB et Edahabia a été parfaite. ROI exceptionnel en moins de 8 mois !",
-        "author": "Fatima Benali",
-        "role": "CEO • EcomDZ Marketplace",
-        "location": "Oran"
+        "author": "CEO",
+        "role": "Plateforme e-commerce • Algérie",
+        "location": "Algérie"
       },
       "client3": {
-        "text": "Application mobile de géolocalisation pour nos 500+ livreurs. Interface intuitive, performance excellente, support technique réactif. Symloop maîtrise parfaitement les technologies modernes.",
-        "author": "Karim Boumediene",
-        "role": "CTO • DeliveryDZ",
-        "location": "Constantine"
+        "text": "Application mobile de géolocalisation pour nos livreurs. Interface intuitive, performance excellente, support technique réactif. Symloop maîtrise parfaitement les technologies modernes.",
+        "author": "CTO",
+        "role": "Société de logistique • Algérie",
+        "location": "Algérie"
       }
     },
     "statsSection": {
@@ -591,7 +591,7 @@
   "company": {
     "title": "Symloop Technology",
     "tagline": "Votre Partenaire IT de Confiance dans la région MENA",
-    "description": "Depuis 2012, nous accompagnons les entreprises MENA dans leur transformation digitale avec des solutions IT sur mesure.",
+    "description": "Depuis 2020, nous accompagnons les entreprises algériennes et MENA dans leur transformation digitale avec des solutions IT sur mesure, et avons livré des projets internationaux à travers l'Europe et la région du Golfe.",
     "mission": "Démocratiser l'accès aux technologies avancées pour toutes les entreprises MENA, des startups aux grandes corporations.",
     "vision": "Devenir le leader incontournable des solutions IT dans la région MENA et contribuer à l'écosystème technologique régional.",
     "values": {
@@ -613,10 +613,10 @@
       }
     },
     "stats": {
-      "experience": "12+ Années",
-      "projects": "500+ Projets",
+      "experience": "5+ Années",
+      "projects": "200+ Projets",
       "clients": "200+ Clients",
-      "team": "30+ Experts",
+      "team": "25+ Experts",
       "wilayas": "58 Wilayas",
       "satisfaction": "98% Satisfaction"
     }
@@ -636,21 +636,21 @@
     "title": "Ce que Disent nos Clients",
     "subtitle": "La satisfaction client au cœur de notre mission",
     "client1": {
-      "name": "Ahmed Benali",
-      "position": "Directeur IT",
-      "company": "Groupe CEVITAL",
+      "name": "Directeur IT",
+      "position": "Industrie",
+      "company": "Groupe industriel, Algérie",
       "testimonial": "Symloop a développé notre ERP sur mesure en 6 mois. Une équipe professionnelle qui comprend les enjeux business."
     },
     "client2": {
-      "name": "Fatima Zahra",
-      "position": "CEO",
-      "company": "StartupDZ",
+      "name": "CEO",
+      "position": "Fondateur",
+      "company": "Startup algérienne",
       "testimonial": "Notre application mobile a été livrée dans les délais avec une qualité exceptionnelle. Je recommande fortement!"
     },
     "client3": {
-      "name": "Karim Mansouri",
-      "position": "CTO",
-      "company": "MENA Telecom",
+      "name": "CTO",
+      "position": "Infrastructure",
+      "company": "Opérateur télécom",
       "testimonial": "L'infrastructure réseau mise en place par Symloop fonctionne parfaitement depuis 3 ans. Support réactif 24/7."
     }
   },

@@ -37,15 +37,13 @@ const nextConfig = {
       { source: '/solutions/chatbot-algerie/', destination: '/blog/ia-generative-chatgpt-claude-algerie-2026/', permanent: true },
       { source: '/solutions/chatbot-maroc/', destination: '/blog/ia-generative-chatgpt-claude-algerie-2026/', permanent: true },
 
-      // ── Dynamic route literal leak ──
+      // ── Dynamic route literal leak (URL-encoded form only — raw brackets are not valid path-to-regexp sources) ──
       { source: '/services/cameras-surveillance/%5Bcity%5D/', destination: '/services/', permanent: true },
-      { source: '/services/cameras-surveillance/\\[city\\]/', destination: '/services/', permanent: true },
       { source: '/services/smart-home/%5Bcity%5D/', destination: '/services/', permanent: true },
-      { source: '/services/smart-home/\\[city\\]/', destination: '/services/', permanent: true },
 
-      // ── Arabic path that doesn't exist ──
-      { source: '/خبر/', destination: '/', permanent: true },
-      { source: '/خبر', destination: '/', permanent: true },
+      // ── Arabic path that doesn't exist (URL-encoded — Next.js redirect sources require ASCII) ──
+      { source: '/%D8%AE%D8%A8%D8%B1/', destination: '/', permanent: true },
+      { source: '/%D8%AE%D8%A8%D8%B1', destination: '/', permanent: true },
 
       // ── Old www.symloop.com blog paths (without /blog/ prefix) ──
       { source: '/developpement-application-mobile-algerie/', destination: '/blog/developpement-application-mobile-algerie-2026/', permanent: true },

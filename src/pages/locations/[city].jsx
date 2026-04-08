@@ -12,8 +12,8 @@ const cityData = {
     region: { fr: "Centre", en: "Center", ar: "الوسط" },
     population: "3.5M",
     coordinates: { lat: 36.7538, lng: 3.0588 },
-    localPartners: ["Sonatrach", "Djezzy", "Air Algérie", "BNA", "CPA"],
     techHub: true,
+    headquarters: true,
     specializations: ["Fintech", "E-government", "Enterprise Solutions"]
   },
   "oran": {
@@ -21,7 +21,6 @@ const cityData = {
     region: { fr: "Ouest", en: "West", ar: "الغرب" },
     population: "1.5M",
     coordinates: { lat: 35.6987, lng: -0.6349 },
-    localPartners: ["Ooredoo", "Condor", "Henkel"],
     techHub: true,
     specializations: ["Industry 4.0", "Logistics", "Port Solutions"]
   },
@@ -30,7 +29,6 @@ const cityData = {
     region: { fr: "Est", en: "East", ar: "الشرق" },
     population: "950K",
     coordinates: { lat: 36.3650, lng: 6.6147 },
-    localPartners: ["Mobilis", "Biopharm", "NCA Rouiba"],
     specializations: ["Healthcare Tech", "Education Tech", "Smart City"]
   },
   "setif": {
@@ -38,8 +36,6 @@ const cityData = {
     region: { fr: "Hauts-Plateaux", en: "High Plains", ar: "الهضاب العليا" },
     population: "450K",
     coordinates: { lat: 36.1919, lng: 5.4138 },
-    localPartners: ["Iris", "Eniem", "Local SMEs"],
-    headquarters: true,
     specializations: ["Agritech", "Manufacturing", "Retail Tech"]
   },
   "annaba": {
@@ -47,7 +43,6 @@ const cityData = {
     region: { fr: "Nord-Est", en: "Northeast", ar: "الشمال الشرقي" },
     population: "640K",
     coordinates: { lat: 36.9000, lng: 7.7667 },
-    localPartners: ["ArcelorMittal", "Port Authority"],
     specializations: ["Industrial IoT", "Supply Chain", "Maritime Tech"]
   },
   "blida": {
@@ -55,7 +50,6 @@ const cityData = {
     region: { fr: "Centre", en: "Center", ar: "الوسط" },
     population: "420K",
     coordinates: { lat: 36.4703, lng: 2.8278 },
-    localPartners: ["Saidal", "Local Industries"],
     specializations: ["Pharmaceutical Tech", "Agriculture", "Commerce"]
   },
   "batna": {
@@ -84,7 +78,6 @@ const cityData = {
     region: { fr: "Kabylie", en: "Kabylie", ar: "القبائل" },
     population: "360K",
     coordinates: { lat: 36.7509, lng: 5.0843 },
-    localPartners: ["Cevital", "Port Béjaïa"],
     specializations: ["Food Tech", "Maritime", "Oil & Gas Tech"]
   }
 };
@@ -332,22 +325,6 @@ export default function CityPage() {
           </div>
         )}
 
-        {/* Local Partners */}
-        {city.localPartners && (
-          <div className="py-20">
-            <div className="max-w-7xl mx-auto px-6">
-              <h2 className="text-3xl font-bold text-center mb-12">{currentContent.clientsTitle}</h2>
-              <div className="flex flex-wrap gap-8 justify-center">
-                {city.localPartners.map((partner, i) => (
-                  <div key={i} className="px-8 py-4 bg-white/10 rounded-lg text-lg font-semibold">
-                    {partner}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* Why Choose Us */}
         <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 py-20">
           <div className="max-w-7xl mx-auto px-6">
@@ -413,10 +390,12 @@ export default function CityPage() {
                   ? `"Symloop Technology completely transformed our business. Their local expertise in ${cityName} combined with global standards made them the perfect partner for our digital transformation."`
                   : `"Symloop Technology a complètement transformé notre entreprise. Leur expertise locale à ${cityName} combinée aux standards mondiaux en fait le partenaire idéal pour notre transformation digitale."`}
               </p>
-              <div className="font-bold">
-                {city.localPartners && city.localPartners[0]
-                  ? `- Directeur IT, ${city.localPartners[0]}`
-                  : `- Directeur IT, Entreprise Leader à ${cityName}`}
+              <div className="font-bold text-gray-400">
+                {locale === 'ar'
+                  ? `— مدير تقني، شركة في ${cityName}`
+                  : locale === 'en'
+                  ? `— IT Director, company in ${cityName}`
+                  : `— Directeur IT, entreprise à ${cityName}`}
               </div>
             </div>
           </div>
@@ -464,7 +443,7 @@ export default function CityPage() {
                 </div>
                 <div className="text-gray-400">
                   {city.headquarters
-                    ? "Cité 1000 Logements, Sétif 19000"
+                    ? "Alger Centre, Alger 16000"
                     : `Service disponible à ${cityName}`}
                 </div>
               </div>
@@ -474,8 +453,7 @@ export default function CityPage() {
                   {locale === 'ar' ? 'الهاتف' : locale === 'en' ? 'Phone' : 'Téléphone'}
                 </div>
                 <div className="text-gray-400">
-                  +213 549-57-55-12<br/>
-                  +213 555-12-34-56
+                  +213 549 575 512
                 </div>
               </div>
               <div>

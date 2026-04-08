@@ -9,7 +9,7 @@
     "recruitment": "Recruitment"
   },
   "contact": {
-    "location": "Setif, MENA region",
+    "location": "Algiers, MENA region",
     "phone": "+213 549 57 55 12",
     "email": "contact@symloop.com",
     "freeConsultation": "Free Consultation",
@@ -75,21 +75,21 @@
     "testimonials": {
       "client1": {
         "text": "Symloop revolutionized our business process with a custom ERP. Our productivity increased by 60% and costs decreased by 35%. A team of experts who perfectly understand the challenges of MENA companies.",
-        "author": "Ahmed Belkacem",
-        "role": "General Manager • EURL TechCorp MENA",
-        "location": "MENA region"
+        "author": "General Manager",
+        "role": "Industrial group • Algeria",
+        "location": "Algeria"
       },
       "client2": {
         "text": "Our e-commerce platform developed by Symloop now generates over 1500 orders per month. The integration of CIB and Edahabia payment was perfect. Exceptional ROI in less than 8 months!",
-        "author": "Fatima Benali",
-        "role": "CEO • EcomDZ Marketplace",
-        "location": "Oran"
+        "author": "CEO",
+        "role": "E-commerce platform • Algeria",
+        "location": "Algeria"
       },
       "client3": {
-        "text": "Geolocation mobile app for our 500+ delivery drivers. Intuitive interface, excellent performance, responsive technical support. Symloop perfectly masters modern technologies.",
-        "author": "Karim Boumediene",
-        "role": "CTO • DeliveryDZ",
-        "location": "Constantine"
+        "text": "Geolocation mobile app for our delivery drivers. Intuitive interface, excellent performance, responsive technical support. Symloop perfectly masters modern technologies.",
+        "author": "CTO",
+        "role": "Logistics company • Algeria",
+        "location": "Algeria"
       }
     },
     "statsSection": {
@@ -591,7 +591,7 @@
   "company": {
     "title": "Symloop Technology",
     "tagline": "Your Trusted IT Partner in the MENA Region",
-    "description": "Since 2012, we have been supporting MENA companies in their digital transformation with custom IT solutions.",
+    "description": "Since 2020, we have been supporting Algerian and MENA companies in their digital transformation with custom IT solutions, and have delivered international projects across Europe and the Gulf region.",
     "mission": "Democratize access to advanced technologies for all MENA companies, from startups to large corporations.",
     "vision": "Become the undisputed leader in IT solutions in the MENA region and contribute to the regional technological ecosystem.",
     "values": {
@@ -613,10 +613,10 @@
       }
     },
     "stats": {
-      "experience": "12+ Years",
-      "projects": "500+ Projects",
+      "experience": "5+ Years",
+      "projects": "200+ Projects",
       "clients": "200+ Clients",
-      "team": "30+ Experts",
+      "team": "25+ Experts",
       "wilayas": "58 Wilayas",
       "satisfaction": "98% Satisfaction"
     }
@@ -636,21 +636,21 @@
     "title": "What Our Clients Say",
     "subtitle": "Client satisfaction at the heart of our mission",
     "client1": {
-      "name": "Ahmed Benali",
-      "position": "IT Director",
-      "company": "CEVITAL Group",
+      "name": "IT Director",
+      "position": "Manufacturing",
+      "company": "Industrial group, Algeria",
       "testimonial": "Symloop developed our custom ERP in 6 months. A professional team that understands business challenges."
     },
     "client2": {
-      "name": "Fatima Zahra",
-      "position": "CEO",
-      "company": "StartupDZ",
+      "name": "CEO",
+      "position": "Founder",
+      "company": "Algerian startup",
       "testimonial": "Our mobile application was delivered on time with exceptional quality. I highly recommend!"
     },
     "client3": {
-      "name": "Karim Mansouri",
-      "position": "CTO",
-      "company": "MENA Telecom",
+      "name": "CTO",
+      "position": "Infrastructure",
+      "company": "Telecom operator",
       "testimonial": "The network infrastructure set up by Symloop has been working perfectly for 3 years. Responsive 24/7 support."
     }
   },
