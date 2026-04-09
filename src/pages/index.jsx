@@ -1,22 +1,15 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
-import { ArrowRight, BookOpen, ShoppingCart, TrendingUp, DollarSign, Facebook, Linkedin, Github, Smartphone, Globe, Cpu, Home as HomeIcon, Server, Bot } from "lucide-react";
+import { Facebook, Linkedin, Github } from "lucide-react";
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import ExpertiseSection from "../../src/components/home/ExpertiseSection";
-import SolutionsSection from "../../src/components/home/SolutionsSection";
-import TechnologySection from "../../src/components/home/TechnologySection";
-import ClientsPartnersSection from "../../src/components/home/ClientsPartnersSection";
-import ProductsSection from "../../src/components/home/ProductsSection";
-import AIHeroSection from "../../src/components/home/AIHeroSection";
 import BusinessHeroSection from "../../src/components/home/BusinessHeroSection";
+import ServicesGrid from "../../src/components/home/ServicesGrid";
+import IndustriesGrid from "../../src/components/home/IndustriesGrid";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
 import Seo from "../../src/utils/seo";
 import FAQSchema from "../../src/components/seo/FAQSchema";
-
-import Divider from "../../src/components/home/Devider";
 
 // Homepage FAQs for rich snippets
 const getHomepageFAQs = (locale) => {
@@ -176,10 +169,6 @@ export default function Home() {
         keywords={currentSeo.keywords}
         type="website"
         image="/assets/symloop-mena-it-company.png"
-        aggregateRating={{
-          ratingValue: "4.8",
-          reviewCount: "127"
-        }}
         breadcrumbs={[
           { name: "Accueil", path: "/" }
         ]}
@@ -190,7 +179,7 @@ export default function Home() {
       <Head>
         <title>Symloop — Algeria&apos;s #1 Software Engineering &amp; AI Company | Web, Mobile, IoT</title>
         <meta name="description" content="Symloop is Algeria's leading software engineering and AI company. Mobile apps, websites, custom ERP/CRM, IoT smart home, AI automation. Serving all 58 wilayas. 200+ projects delivered. Contact: +213 549 575 512." />
-        <meta name="keywords" content="Symloop, software company Algeria, app development Algeria, web development Algeria, AI Algeria, IoT Algeria, ERP Algeria, agence web Algérie, développement application mobile Algérie" />
+        <meta name="keywords" content="Symloop, software engineering company Algeria, entreprise ingénierie logicielle Algérie, custom software development Algeria, développement logiciel sur mesure Algérie, SaaS Algeria, AI ML engineering Algeria, IoT hardware Algeria, DevOps cloud Algeria, mobile app engineering Algeria, Alger" />
         <link rel="canonical" href="https://symloop.com/" />
         <script
           type="application/ld+json"
@@ -203,12 +192,12 @@ export default function Home() {
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-mena-it-company.png",
-              "description": "Leader de l'intelligence artificielle et du développement logiciel en Algérie. Solutions IA, applications mobiles Flutter, sites e-commerce, IoT, cybersécurité. +50 projets livrés dans la région MENA.",
-              "foundingDate": "2014",
+              "description": "Symloop est une entreprise d'ingénierie logicielle et d'IA en Algérie. Solutions IA sur mesure (vision par ordinateur, NLP arabe et Darija, LLM, analyse prédictive), systèmes industriels, IoT, cloud et cybersécurité. Livraison en Algérie, MENA et Europe. Profil Clutch vérifié 5.0/5.0.",
+              "foundingDate": "2020",
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
                 "minValue": 10,
-                "maxValue": 50
+                "maxValue": 25
               },
               "address": {
                 "@type": "PostalAddress",
@@ -225,8 +214,8 @@ export default function Home() {
               ],
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 36.1919,
-                "longitude": 5.4138
+                "latitude": 36.7538,
+                "longitude": 3.0588
               },
               "telephone": "+213549575512",
               "email": "contact@symloop.com",
@@ -281,354 +270,15 @@ export default function Home() {
       <div className="min-h-screen flex flex-col bg-black">
         {/* Business Hero Section - Revenue & Growth Focus */}
         <BusinessHeroSection />
-        <Divider />
+
+        {/* Services capabilities — solution-first, AI-led */}
+        <ServicesGrid />
+
+        {/* Industry verticals where Symloop has delivered real projects */}
+        <IndustriesGrid />
+
+        {/* Contact / discovery call */}
         <CompanyContactSection />
-        <Divider />
-        <ProductsSection />
-        <Divider />
-        <ClientsPartnersSection />
-        <Divider />
-        <ExpertiseSection />
-        <Divider />
-        <SolutionsSection />
-        <Divider />
-        <TechnologySection />
-        <Divider />
-
-      {/* Blog Highlights Section - Internal Links for SEO */}
-      <section className="py-16 bg-black">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-4 border border-white/20">
-              <BookOpen className="w-4 h-4 text-white/70" />
-              <span className="text-sm font-medium text-white/70">
-                {router.locale === 'ar' ? 'موارد مجانية' : router.locale === 'en' ? 'Free Resources' : 'Ressources Gratuites'}
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {router.locale === 'ar' ? 'أدلة وموارد الخبراء' : router.locale === 'en' ? 'Expert Guides & Resources' : 'Guides & Ressources Expert'}
-            </h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              {router.locale === 'ar'
-                ? 'اكتشف أدلتنا الشاملة لنجاح أعمالك الرقمية في الجزائر'
-                : router.locale === 'en'
-                ? 'Discover our comprehensive guides for your digital success in Algeria'
-                : 'Découvrez nos guides complets pour réussir votre transformation digitale en Algérie'
-              }
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* E-commerce Guide */}
-            <Link href="/blog/ecommerce-cib-edahabia-algerie" className="group">
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <ShoppingCart className="w-6 h-6 text-green-400" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
-                  {router.locale === 'ar'
-                    ? 'التجارة الإلكترونية مع CIB'
-                    : router.locale === 'en'
-                    ? 'E-commerce with CIB Payment'
-                    : 'E-commerce avec Paiement CIB'
-                  }
-                </h3>
-                <p className="text-sm text-gray-400 mb-4">
-                  {router.locale === 'ar'
-                    ? 'دليل كامل للدفع عبر الإنترنت في الجزائر'
-                    : router.locale === 'en'
-                    ? 'Complete guide to online payment in Algeria with CIB & Edahabia'
-                    : 'Guide complet du paiement en ligne en Algérie avec CIB & Edahabia'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-green-400 text-sm font-medium">
-                  {router.locale === 'ar' ? 'اقرأ المزيد' : router.locale === 'en' ? 'Read more' : 'Lire le guide'}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* SEO Guide */}
-            <Link href="/blog/seo-algerie" className="group">
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <TrendingUp className="w-6 h-6 text-blue-400" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                  {router.locale === 'ar'
-                    ? 'دليل تحسين محركات البحث'
-                    : router.locale === 'en'
-                    ? 'SEO Guide Algeria 2025'
-                    : 'Guide SEO Algérie 2025'
-                  }
-                </h3>
-                <p className="text-sm text-gray-400 mb-4">
-                  {router.locale === 'ar'
-                    ? 'استراتيجيات لتصدر نتائج Google.dz'
-                    : router.locale === 'en'
-                    ? 'Strategies to dominate Google.dz and triple your traffic'
-                    : 'Stratégies pour dominer Google.dz et tripler votre trafic'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-blue-400 text-sm font-medium">
-                  {router.locale === 'ar' ? 'اقرأ المزيد' : router.locale === 'en' ? 'Read more' : 'Lire le guide'}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* App Cost Guide */}
-            <Link href="/blog/app-cost-in-algeria" className="group">
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
-                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <DollarSign className="w-6 h-6 text-purple-400" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                  {router.locale === 'ar'
-                    ? 'أسعار التطبيقات في الجزائر'
-                    : router.locale === 'en'
-                    ? 'App Development Costs Algeria'
-                    : 'Prix Applications Mobiles Algérie'
-                  }
-                </h3>
-                <p className="text-sm text-gray-400 mb-4">
-                  {router.locale === 'ar'
-                    ? 'أسعار حقيقية وشفافة لتطوير التطبيقات'
-                    : router.locale === 'en'
-                    ? 'Real and transparent pricing for mobile app development'
-                    : 'Prix réels et transparents pour le développement mobile'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-purple-400 text-sm font-medium">
-                  {router.locale === 'ar' ? 'اقرأ المزيد' : router.locale === 'en' ? 'Read more' : 'Lire le guide'}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 hover:border-white/30 transition-all"
-            >
-              {router.locale === 'ar' ? 'عرض جميع المقالات' : router.locale === 'en' ? 'View All Articles' : 'Voir Tous les Articles'}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Derniers Articles Section - Top SEO Blog Internal Links */}
-      <section className="py-16 bg-black border-t border-white/[0.06]">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-indigo-500/10 rounded-full px-4 py-2 mb-4 border border-indigo-500/20">
-              <BookOpen className="w-4 h-4 text-indigo-400" />
-              <span className="text-sm font-medium text-indigo-400">
-                {router.locale === 'ar' ? 'آخر المقالات' : router.locale === 'en' ? 'Latest Articles' : 'Derniers Articles'}
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {router.locale === 'ar' ? 'مقالات وأدلة متخصصة 2026' : router.locale === 'en' ? 'Specialized Guides & Articles 2026' : 'Guides & Articles Spécialisés 2026'}
-            </h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              {router.locale === 'ar'
-                ? 'أحدث الأدلة المتخصصة في تطوير البرمجيات وحلول التكنولوجيا في الجزائر'
-                : router.locale === 'en'
-                ? 'Our latest specialized guides on software development and technology solutions in Algeria'
-                : 'Nos derniers guides spécialisés sur le développement logiciel et les solutions technologiques en Algérie'
-              }
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* Mobile App Development */}
-            <Link href="/blog/developpement-application-mobile-algerie-2026" className="group">
-              <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.08] hover:border-cyan-500/30 hover:bg-white/[0.06] transition-all duration-300 h-full flex flex-col">
-                <div className="w-11 h-11 bg-cyan-500/15 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Smartphone className="w-5 h-5 text-cyan-400" />
-                </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors leading-snug">
-                  {router.locale === 'ar'
-                    ? 'دليل تطوير تطبيقات الهاتف 2026'
-                    : router.locale === 'en'
-                    ? 'Mobile App Development Algeria 2026'
-                    : 'Développement Application Mobile Algérie 2026'
-                  }
-                </h3>
-                <p className="text-sm text-gray-500 mb-4 flex-1">
-                  {router.locale === 'ar'
-                    ? 'كل ما تحتاج معرفته عن تطوير التطبيقات في الجزائر: التكاليف، المدة، التقنيات.'
-                    : router.locale === 'en'
-                    ? 'Everything you need to know about app development in Algeria: costs, timelines, technologies.'
-                    : 'Tout savoir sur le développement d\'applications mobiles en Algérie : coûts, délais, technologies.'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-cyan-400 text-sm font-medium mt-auto">
-                  {router.locale === 'ar' ? 'اقرأ المقال' : router.locale === 'en' ? 'Read article' : 'Lire l\'article'}
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* Website Development */}
-            <Link href="/blog/developpement-site-web-algerie-2026" className="group">
-              <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.08] hover:border-blue-500/30 hover:bg-white/[0.06] transition-all duration-300 h-full flex flex-col">
-                <div className="w-11 h-11 bg-blue-500/15 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Globe className="w-5 h-5 text-blue-400" />
-                </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-blue-400 transition-colors leading-snug">
-                  {router.locale === 'ar'
-                    ? 'دليل تطوير مواقع الويب 2026'
-                    : router.locale === 'en'
-                    ? 'Website Development Algeria 2026'
-                    : 'Développement Site Web Algérie 2026'
-                  }
-                </h3>
-                <p className="text-sm text-gray-500 mb-4 flex-1">
-                  {router.locale === 'ar'
-                    ? 'إنشاء موقع ويب احترافي في الجزائر: Next.js، WordPress، التجارة الإلكترونية.'
-                    : router.locale === 'en'
-                    ? 'Create a professional website in Algeria: Next.js, WordPress, e-commerce solutions.'
-                    : 'Créer un site web professionnel en Algérie : Next.js, WordPress, solutions e-commerce.'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-blue-400 text-sm font-medium mt-auto">
-                  {router.locale === 'ar' ? 'اقرأ المقال' : router.locale === 'en' ? 'Read article' : 'Lire l\'article'}
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* IoT Solutions */}
-            <Link href="/blog/iot-internet-des-objets-algerie-2026" className="group">
-              <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.08] hover:border-emerald-500/30 hover:bg-white/[0.06] transition-all duration-300 h-full flex flex-col">
-                <div className="w-11 h-11 bg-emerald-500/15 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Cpu className="w-5 h-5 text-emerald-400" />
-                </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors leading-snug">
-                  {router.locale === 'ar'
-                    ? 'إنترنت الأشياء في الجزائر 2026'
-                    : router.locale === 'en'
-                    ? 'IoT Internet of Things Algeria 2026'
-                    : 'IoT Internet des Objets Algérie 2026'
-                  }
-                </h3>
-                <p className="text-sm text-gray-500 mb-4 flex-1">
-                  {router.locale === 'ar'
-                    ? 'حلول IoT وESP32 للشركات الجزائرية: الزراعة الذكية، المباني المتصلة.'
-                    : router.locale === 'en'
-                    ? 'IoT and ESP32 solutions for Algerian businesses: smart agriculture, connected buildings.'
-                    : 'Solutions IoT et ESP32 pour entreprises algériennes : agriculture intelligente, bâtiments connectés.'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-emerald-400 text-sm font-medium mt-auto">
-                  {router.locale === 'ar' ? 'اقرأ المقال' : router.locale === 'en' ? 'Read article' : 'Lire l\'article'}
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* Smart Home */}
-            <Link href="/blog/smart-home-promoteur-immobilier-algerie-2026" className="group">
-              <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.08] hover:border-amber-500/30 hover:bg-white/[0.06] transition-all duration-300 h-full flex flex-col">
-                <div className="w-11 h-11 bg-amber-500/15 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <HomeIcon className="w-5 h-5 text-amber-400" />
-                </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-amber-400 transition-colors leading-snug">
-                  {router.locale === 'ar'
-                    ? 'المنزل الذكي للمطورين العقاريين'
-                    : router.locale === 'en'
-                    ? 'Smart Home for Real Estate Developers'
-                    : 'Smart Home Promoteur Immobilier Algérie'
-                  }
-                </h3>
-                <p className="text-sm text-gray-500 mb-4 flex-1">
-                  {router.locale === 'ar'
-                    ? 'حلول المنزل الذكي للمطورين العقاريين في الجزائر: أتمتة، أمان، توفير الطاقة.'
-                    : router.locale === 'en'
-                    ? 'Smart home solutions for Algerian real estate developers: automation, security, energy savings.'
-                    : 'Solutions domotiques pour promoteurs immobiliers algériens : automatisation, sécurité, économies d\'énergie.'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-amber-400 text-sm font-medium mt-auto">
-                  {router.locale === 'ar' ? 'اقرأ المقال' : router.locale === 'en' ? 'Read article' : 'Lire l\'article'}
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* IT Solutions */}
-            <Link href="/blog/solutions-informatiques-algerie-2026" className="group">
-              <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.08] hover:border-violet-500/30 hover:bg-white/[0.06] transition-all duration-300 h-full flex flex-col">
-                <div className="w-11 h-11 bg-violet-500/15 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Server className="w-5 h-5 text-violet-400" />
-                </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-violet-400 transition-colors leading-snug">
-                  {router.locale === 'ar'
-                    ? 'حلول تكنولوجيا المعلومات الجزائر 2026'
-                    : router.locale === 'en'
-                    ? 'IT Solutions Algeria 2026'
-                    : 'Solutions Informatiques Algérie 2026'
-                  }
-                </h3>
-                <p className="text-sm text-gray-500 mb-4 flex-1">
-                  {router.locale === 'ar'
-                    ? 'دليل شامل لحلول تكنولوجيا المعلومات للشركات الجزائرية: ERP، CRM، السحابة.'
-                    : router.locale === 'en'
-                    ? 'Complete guide to IT solutions for Algerian businesses: ERP, CRM, cloud infrastructure.'
-                    : 'Guide complet des solutions informatiques pour entreprises algériennes : ERP, CRM, cloud.'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-violet-400 text-sm font-medium mt-auto">
-                  {router.locale === 'ar' ? 'اقرأ المقال' : router.locale === 'en' ? 'Read article' : 'Lire l\'article'}
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-
-            {/* AI Automation */}
-            <Link href="/blog/intelligence-artificielle-automatisation-business-algerie-2026" className="group">
-              <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.08] hover:border-rose-500/30 hover:bg-white/[0.06] transition-all duration-300 h-full flex flex-col">
-                <div className="w-11 h-11 bg-rose-500/15 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Bot className="w-5 h-5 text-rose-400" />
-                </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-rose-400 transition-colors leading-snug">
-                  {router.locale === 'ar'
-                    ? 'الذكاء الاصطناعي وأتمتة الأعمال'
-                    : router.locale === 'en'
-                    ? 'AI & Business Automation Algeria'
-                    : 'IA & Automatisation Business Algérie'
-                  }
-                </h3>
-                <p className="text-sm text-gray-500 mb-4 flex-1">
-                  {router.locale === 'ar'
-                    ? 'كيف يمكن للذكاء الاصطناعي تحويل شركتك: أتمتة، تحليل بيانات، ChatGPT.'
-                    : router.locale === 'en'
-                    ? 'How AI can transform your business: automation, data analysis, ChatGPT integration.'
-                    : 'Comment l\'IA peut transformer votre entreprise : automatisation, analyse de données, ChatGPT.'
-                  }
-                </p>
-                <div className="flex items-center gap-1 text-rose-400 text-sm font-medium mt-auto">
-                  {router.locale === 'ar' ? 'اقرأ المقال' : router.locale === 'en' ? 'Read article' : 'Lire l\'article'}
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/[0.12] text-white px-6 py-3 rounded-xl font-medium hover:bg-white/[0.12] hover:border-white/[0.2] transition-all"
-            >
-              {router.locale === 'ar' ? 'عرض جميع المقالات' : router.locale === 'en' ? 'View All Articles' : 'Voir Tous les Articles'}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Social Media Links */}
       <section className="py-8 bg-black border-t border-white/10">

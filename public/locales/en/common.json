@@ -154,6 +154,84 @@
       }
     }
   },
+  "home": {
+    "services": {
+      "eyebrow": "01 — Services",
+      "title": "Engineering services for organizations that build for outcomes.",
+      "subtitle": "Eight capabilities, delivered end-to-end by a senior engineering team. Software, AI, mobile, cloud, IoT, security — under one roof.",
+      "cta": "Explore",
+      "items": {
+        "ai": {
+          "title": "Artificial Intelligence",
+          "description": "Custom ML models, computer vision, Arabic & Darija NLP, LLM integration, predictive analytics."
+        },
+        "engineering": {
+          "title": "Software Engineering",
+          "description": "Multi-tenant SaaS platforms, custom ERP/CRM systems, microservices, government e-services."
+        },
+        "mobile": {
+          "title": "Mobile Engineering",
+          "description": "Native iOS and Android, Flutter and React Native — fintech, logistics, healthcare, retail."
+        },
+        "cloud": {
+          "title": "Cloud & DevOps",
+          "description": "Cloud architecture, Kubernetes, CI/CD pipelines, observability, zero-downtime deployments."
+        },
+        "iot": {
+          "title": "IoT & Industrial Systems",
+          "description": "ESP32 hardware, firmware, sensor networks, SCADA integration — manufactured locally in Algeria."
+        },
+        "security": {
+          "title": "Cybersecurity",
+          "description": "Security audits, infrastructure hardening, penetration testing, compliance for regulated industries."
+        },
+        "consulting": {
+          "title": "Technology Consulting",
+          "description": "AI strategy, architecture review, digital transformation roadmap for enterprise leadership."
+        },
+        "product": {
+          "title": "Product Engineering",
+          "description": "End-to-end product builds — discovery, design, engineering, launch — for ambitious teams."
+        }
+      }
+    },
+    "industries": {
+      "eyebrow": "02 — Industries",
+      "title": "Built for industries, not for buzzwords.",
+      "subtitle": "Real projects shipped across seven verticals — locally in Algeria and internationally. Each engagement starts with how the industry actually operates, not with a tech stack.",
+      "cta": "View work",
+      "items": {
+        "healthcare": {
+          "title": "Healthcare & Life Sciences",
+          "description": "Clinical systems, patient management, medical imaging AI, telemedicine platforms."
+        },
+        "logistics": {
+          "title": "Logistics & Supply Chain",
+          "description": "Fleet tracking, delivery management, route optimization AI, last-mile platforms."
+        },
+        "retail": {
+          "title": "Retail & E-commerce",
+          "description": "Multi-channel commerce, CIB/Edahabia integration, inventory intelligence, recommendation systems."
+        },
+        "industrial": {
+          "title": "Industrial & Manufacturing",
+          "description": "SCADA software, predictive maintenance, computer vision QA, production-line automation."
+        },
+        "realestate": {
+          "title": "Real Estate & Smart Buildings",
+          "description": "500+ apartments equipped with Symloop smart-home systems. Building automation, energy management."
+        },
+        "agriculture": {
+          "title": "Smart Agriculture",
+          "description": "Connected irrigation, livestock monitoring, precision farming, crop intelligence."
+        },
+        "education": {
+          "title": "Education Technology",
+          "description": "Learning platforms, AR/VR educational systems, school management, adaptive learning AI."
+        }
+      }
+    }
+  },
   "search": {
     "placeholder1": "I want to create a website...",
     "placeholder2": "I need a mobile app...",

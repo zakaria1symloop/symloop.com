@@ -154,6 +154,84 @@
       }
     }
   },
+  "home": {
+    "services": {
+      "eyebrow": "01 — Services",
+      "title": "Une ingénierie logicielle pour les organisations qui livrent des résultats.",
+      "subtitle": "Huit capacités, livrées de bout en bout par une équipe d'ingénieurs seniors. Logiciel, IA, mobile, cloud, IoT, sécurité — sous un même toit.",
+      "cta": "Découvrir",
+      "items": {
+        "ai": {
+          "title": "Intelligence Artificielle",
+          "description": "Modèles ML sur mesure, vision par ordinateur, NLP arabe et Darija, intégration LLM, analyse prédictive."
+        },
+        "engineering": {
+          "title": "Ingénierie Logicielle",
+          "description": "Plateformes SaaS multi-tenant, ERP/CRM sur mesure, microservices, services e-gouvernement."
+        },
+        "mobile": {
+          "title": "Ingénierie Mobile",
+          "description": "iOS et Android natifs, Flutter et React Native — fintech, logistique, santé, retail."
+        },
+        "cloud": {
+          "title": "Cloud & DevOps",
+          "description": "Architecture cloud, Kubernetes, pipelines CI/CD, observabilité, déploiements sans interruption."
+        },
+        "iot": {
+          "title": "IoT & Systèmes Industriels",
+          "description": "Hardware ESP32, firmware, réseaux de capteurs, intégration SCADA — fabriqué localement en Algérie."
+        },
+        "security": {
+          "title": "Cybersécurité",
+          "description": "Audits de sécurité, durcissement d'infrastructure, tests d'intrusion, conformité réglementaire."
+        },
+        "consulting": {
+          "title": "Conseil Technologique",
+          "description": "Stratégie IA, revue d'architecture, feuille de route de transformation digitale pour les directions."
+        },
+        "product": {
+          "title": "Ingénierie Produit",
+          "description": "Création produit de bout en bout — découverte, design, ingénierie, lancement — pour des équipes ambitieuses."
+        }
+      }
+    },
+    "industries": {
+      "eyebrow": "02 — Industries",
+      "title": "Conçu pour les industries, pas pour les mots à la mode.",
+      "subtitle": "De vrais projets livrés dans sept secteurs verticaux — en Algérie et à l'international. Chaque engagement commence par comprendre comment l'industrie fonctionne réellement, pas par une stack technique.",
+      "cta": "Voir nos projets",
+      "items": {
+        "healthcare": {
+          "title": "Santé & Sciences de la Vie",
+          "description": "Systèmes cliniques, gestion patients, IA pour l'imagerie médicale, plateformes de télémédecine."
+        },
+        "logistics": {
+          "title": "Logistique & Supply Chain",
+          "description": "Suivi de flotte, gestion de livraison, IA d'optimisation de tournées, plateformes last-mile."
+        },
+        "retail": {
+          "title": "Retail & E-commerce",
+          "description": "Commerce multi-canal, intégration CIB/Edahabia, intelligence des stocks, systèmes de recommandation."
+        },
+        "industrial": {
+          "title": "Industrie & Manufacturing",
+          "description": "Logiciels SCADA, maintenance prédictive, vision par ordinateur pour le contrôle qualité, automatisation."
+        },
+        "realestate": {
+          "title": "Immobilier & Bâtiments Intelligents",
+          "description": "500+ appartements équipés de systèmes domotiques Symloop. Automatisation, gestion énergétique."
+        },
+        "agriculture": {
+          "title": "Agriculture Intelligente",
+          "description": "Irrigation connectée, suivi du bétail, agriculture de précision, intelligence des cultures."
+        },
+        "education": {
+          "title": "Technologies Éducatives",
+          "description": "Plateformes d'apprentissage, systèmes éducatifs AR/VR, gestion scolaire, IA d'apprentissage adaptatif."
+        }
+      }
+    }
+  },
   "search": {
     "placeholder1": "Je veux créer un site web...",
     "placeholder2": "J'ai besoin d'une application mobile...",
