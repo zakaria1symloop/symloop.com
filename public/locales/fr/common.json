@@ -1653,6 +1653,12 @@
           "title": "L'IA ne remplace pas les médecins. Elle remplace la paperasse.",
           "description": "Ce que l'IA clinique fait réellement en production aujourd'hui, pourquoi le récit du « remplacement du médecin » est faux, et où se trouve le vrai levier pour les hôpitaux algériens et MENA.",
           "meta": "26 pages · 16 min de lecture"
+        },
+        "ai-cto": {
+          "kind": "Brief stratégique",
+          "title": "Vous n'avez pas besoin d'un CTO. Vous avez besoin d'une colonne vertébrale IA.",
+          "description": "Pourquoi la plupart des PME algériennes ne trouvent pas de CTO, ce qu'une couche d'opérations IA remplace réellement, et comment en construire une qui pilote la couche de décision de votre entreprise pour une fraction du coût.",
+          "meta": "22 pages · 14 min de lecture"
         }
       }
     },

@@ -42,6 +42,7 @@ export async function getServerSideProps({ res }) {
     { path: '/insights/erp/', changefreq: 'monthly', priority: '0.85' },
     { path: '/insights/cost/', changefreq: 'monthly', priority: '0.85' },
     { path: '/insights/healthcare/', changefreq: 'monthly', priority: '0.85' },
+    { path: '/insights/ai-cto/', changefreq: 'monthly', priority: '0.85' },
     { path: '/locations/setif/', changefreq: 'monthly', priority: '0.8' },
     { path: '/locations/alger/ai/',                   changefreq: 'monthly', priority: '0.85' },
     { path: '/locations/alger/software-engineering/', changefreq: 'monthly', priority: '0.85' },

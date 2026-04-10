@@ -38,8 +38,15 @@ export const INSIGHTS = [
     key:     'healthcare',
     path:    '/insights/healthcare/',
     cover:   '/insights/cover-healthcare.jpg',
-    featured: false,   // shown only on /insights/ hub for now, not the homepage
+    featured: false,
     publishedAt: '2026-04-09',
+  },
+  {
+    key:     'ai-cto',
+    path:    '/insights/ai-cto/',
+    cover:   '/insights/cover-ai-cto.jpg',
+    featured: false,
+    publishedAt: '2026-04-10',
   },
   // ── Future insights to add when ready ────────────────────────────────────
   // To add more insights:
