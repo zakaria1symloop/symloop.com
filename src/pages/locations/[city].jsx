@@ -478,7 +478,12 @@ export default function CityPage() {
 }
 
 export async function getStaticPaths() {
-  const cities = Object.keys(cityData);
+  // Cities that have dedicated static pages or directories are excluded here
+  // so they don't conflict with the dynamic route at build time:
+  //   - "setif" → src/pages/locations/setif.jsx (editorial city page)
+  //   - "alger" → src/pages/locations/alger/ (directory with 8 service pages)
+  const staticOverrides = new Set(['setif', 'alger']);
+  const cities = Object.keys(cityData).filter(c => !staticOverrides.has(c));
   const locales = ['fr', 'en', 'ar'];
 
   const paths = [];
