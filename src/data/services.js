@@ -839,34 +839,407 @@ export const SERVICES = [
     },
     relatedServices: ['software-engineering', 'web-engineering', 'iot-hardware'],
   },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // 07 — CYBERSECURITY (new — split out from devops-cloud)
+  // Routes to editorial page /services/cybersecurity/
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    id: 'cybersecurity',
+    number: '07',
+    icon: 'Shield',
+    accent: '#f43f5e',
+    category: { fr: 'Cybersécurité', en: 'Cybersecurity', ar: 'الأمن السيبراني' },
+    priceMin: 250000,
+    priceMax: 4000000,
+    deliveryTime: { fr: '2 à 8 semaines', en: '2 to 8 weeks', ar: 'أسبوعان إلى 8 أسابيع' },
+    slugs: {
+      fr: 'audit-cybersecurite-pentest-algerie',
+      en: 'cybersecurity-audit-pentest-algeria',
+      ar: 'تدقيق-الأمن-السيبراني-الجزائر',
+    },
+    title: {
+      fr: 'Cybersécurité',
+      en: 'Cybersecurity',
+      ar: 'الأمن السيبراني',
+    },
+    metaTitle: {
+      fr: 'Audit Cybersécurité, Pentest & Conformité en Algérie — Symloop',
+      en: 'Cybersecurity Audits, Pentesting & Compliance in Algeria — Symloop',
+      ar: 'تدقيقات الأمن السيبراني والاختبار في الجزائر — سيملوب',
+    },
+    metaDescription: {
+      fr: "Symloop réalise des audits de sécurité, tests d'intrusion, durcissement d'infrastructure et frameworks de conformité (SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA). Équipe sécurité senior basée à Alger, livrant en MENA, Europe et Golfe.",
+      en: 'Symloop runs security audits, penetration tests, infrastructure hardening and compliance frameworks (SOC 2, ISO 27001, GDPR, PCI DSS, HIPAA). Senior security team headquartered in Algiers, delivering across MENA, Europe and the Gulf.',
+      ar: 'تجري سيملوب تدقيقات أمنية واختبارات اختراق وتقوية البنية التحتية وأطر الامتثال. فريق أمني كبير مقره الجزائر العاصمة، يسلّم عبر منطقة الشرق الأوسط وشمال أفريقيا وأوروبا والخليج.',
+    },
+    tagline: {
+      fr: 'Nous supposons que vous êtes déjà compromis. Puis nous concevons pour le jour d\'après.',
+      en: 'We assume you are already compromised. Then we engineer for the day after.',
+      ar: 'نفترض أنك مُخترَق بالفعل. ثم نصمم لليوم التالي.',
+    },
+    intro: {
+      fr: "Audits de sécurité, tests d'intrusion, durcissement d'infrastructure, frameworks de conformité. Équipe d'ingénierie sécurité basée à Alger, livrant en Algérie, MENA, Europe et Golfe. Nous ne vendons pas la paranoïa — nous concevons les systèmes et processus qui survivent à une vraie attaque.",
+      en: 'Security audits, penetration tests, infrastructure hardening, compliance frameworks. Senior security engineering team headquartered in Algiers, delivering across Algeria, MENA, Europe and the Gulf. We do not sell paranoia — we engineer the systems and processes that survive a real attack.',
+      ar: 'تدقيقات أمنية واختبارات اختراق وتقوية البنية التحتية وأطر الامتثال. فريق هندسة أمنية مقره الجزائر العاصمة، يسلّم في الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا والخليج. نحن لا نبيع الذعر — نصمم الأنظمة التي تنجو من هجوم حقيقي.',
+    },
+    longDescription: {
+      fr: [
+        "La cybersécurité chez Symloop n'est pas une checklist. C'est un engagement d'ingénierie : nous lisons votre code, modélisons les menaces réelles qui pèsent sur votre métier, simulons des attaques, et concevons les défenses qui tiennent quand quelque chose va mal.",
+        "Nous intervenons sur six modèles d'attaque : injection (SQL, NoSQL, commande), authentification cassée, exposition de données sensibles, contrôles d'accès défaillants, mauvaise configuration de sécurité, et chaîne d'approvisionnement compromise. Pour chacun, nous concevons un contrôle défensif spécifique et le testons en conditions réelles.",
+        "Conformité : nous accompagnons les implémentations SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA et NIS2. Pas de slides de cabinet de conseil — du code, des pipelines et des contrôles audités.",
+      ],
+      en: [
+        "Cybersecurity at Symloop is not a checklist. It is an engineering engagement: we read your code, model the real threats your business faces, simulate attacks, and engineer the defenses that hold when something goes wrong.",
+        "We work across six attack patterns: injection (SQL, NoSQL, command), broken authentication, sensitive data exposure, broken access control, security misconfiguration, and compromised supply chain. For each one we engineer a specific defensive control and test it under real conditions.",
+        "Compliance: we lead SOC 2, ISO 27001, GDPR, PCI DSS, HIPAA and NIS2 implementations. No consulting slides — code, pipelines and audited controls.",
+      ],
+      ar: [
+        "الأمن السيبراني في سيملوب ليس قائمة فحص. إنه التزام هندسي: نقرأ الكود الخاص بك، ونحاكي التهديدات الحقيقية التي تواجه أعمالك، ونحاكي الهجمات، ونصمم الدفاعات التي تصمد عندما يسوء شيء ما.",
+        "نعمل عبر ستة أنماط هجوم: الحقن، المصادقة المكسورة، تعرّض البيانات الحساسة، التحكم في الوصول المكسور، سوء التهيئة الأمنية، وسلسلة التوريد المخترقة.",
+        "الامتثال: نقود تطبيقات SOC 2 و ISO 27001 و GDPR و PCI DSS و HIPAA و NIS2. لا شرائح استشارية — كود وأنابيب وضوابط مُدقَّقة.",
+      ],
+    },
+    features: {
+      fr: [
+        "Tests d'intrusion (pentest) externes, internes et applicatifs",
+        "Audits de code source avec identification des vulnérabilités OWASP Top 10",
+        'Modélisation de menaces (STRIDE) et threat hunting',
+        "Durcissement d'infrastructure cloud (AWS, Azure, GCP)",
+        'Implémentation SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA, NIS2',
+        'Réponse à incident et investigation forensique',
+        "Architecture zero-trust et gestion d'identités (IAM)",
+        'Tests de phishing et formation de sensibilisation',
+      ],
+      en: [
+        'External, internal and application penetration testing',
+        'Source code audits identifying OWASP Top 10 vulnerabilities',
+        'Threat modeling (STRIDE) and threat hunting',
+        'Cloud infrastructure hardening (AWS, Azure, GCP)',
+        'SOC 2, ISO 27001, GDPR, PCI DSS, HIPAA, NIS2 implementation',
+        'Incident response and forensic investigation',
+        'Zero-trust architecture and identity management (IAM)',
+        'Phishing tests and security awareness training',
+      ],
+      ar: [
+        'اختبارات الاختراق الخارجية والداخلية والتطبيقية',
+        'تدقيقات الشيفرة المصدرية مع تحديد ثغرات OWASP Top 10',
+        'نمذجة التهديدات (STRIDE) وصيد التهديدات',
+        'تقوية البنية التحتية السحابية (AWS, Azure, GCP)',
+        'تطبيق SOC 2 و ISO 27001 و GDPR و PCI DSS و HIPAA',
+        'الاستجابة للحوادث والتحقيق الجنائي',
+        'هندسة Zero-Trust وإدارة الهويات (IAM)',
+        'اختبارات التصيد والتدريب على الوعي الأمني',
+      ],
+    },
+    techStack: ['Burp Suite', 'OWASP ZAP', 'Metasploit', 'Nmap', 'Wireshark', 'Snyk', 'SonarQube', 'HashiCorp Vault', 'CrowdStrike', 'Wazuh', 'Falco', 'Trivy'],
+    faqs: {
+      fr: [
+        { q: "Combien coûte un test d'intrusion ?", a: "Un pentest standard (web ou API) commence à 250 000 DA. Les engagements plus larges (infrastructure, mobile, API + cloud) vont de 800 000 DA à 4 000 000 DA selon le périmètre et la complexité." },
+        { q: "Faites-vous de la conformité SOC 2 ou ISO 27001 ?", a: "Oui. Nous accompagnons l'implémentation complète : gap analysis, conception des contrôles, documentation, automatisation et préparation à l'audit. Comptez 6 à 12 mois selon la maturité initiale." },
+        { q: "Que se passe-t-il si vous trouvez une faille critique ?", a: "Notification immédiate, plan de remédiation détaillé, et accompagnement à la correction. Nous ne livrons jamais un rapport sans aussi proposer le chemin pour fermer chaque trouvaille." },
+      ],
+      en: [
+        { q: 'How much does a pentest cost?', a: 'A standard pentest (web or API) starts at 250,000 DZD. Larger engagements (infrastructure, mobile, API + cloud) range from 800,000 DZD to 4,000,000 DZD depending on scope and complexity.' },
+        { q: 'Do you handle SOC 2 or ISO 27001 compliance?', a: 'Yes. We lead full implementation: gap analysis, control design, documentation, automation, and audit preparation. Plan 6 to 12 months depending on initial maturity.' },
+        { q: 'What happens if you find a critical vulnerability?', a: 'Immediate notification, detailed remediation plan, and hands-on fix support. We never deliver a report without also proposing the path to close each finding.' },
+      ],
+      ar: [
+        { q: 'كم يكلف اختبار الاختراق؟', a: 'يبدأ اختبار الاختراق القياسي (ويب أو API) من 250,000 دج. المهام الأكبر تتراوح من 800,000 إلى 4,000,000 دج حسب النطاق.' },
+        { q: 'هل تتعاملون مع امتثال SOC 2 أو ISO 27001؟', a: 'نعم. نقود التطبيق الكامل: تحليل الفجوة، تصميم الضوابط، التوثيق، الأتمتة، والتحضير للتدقيق. خطط لـ 6 إلى 12 شهراً حسب النضج الأولي.' },
+        { q: 'ماذا يحدث إذا وجدتم ثغرة حرجة؟', a: 'إشعار فوري، خطة معالجة مفصلة، ودعم عملي للإصلاح. لا نسلم تقريراً أبداً دون اقتراح طريق لإغلاق كل اكتشاف.' },
+      ],
+    },
+    relatedServices: ['devops-cloud', 'software-engineering', 'consulting'],
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // 08 — TECHNOLOGY CONSULTING (new)
+  // Routes to editorial page /services/consulting/
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    id: 'consulting',
+    number: '08',
+    icon: 'Brain',
+    accent: '#a78bfa',
+    category: { fr: 'Conseil Technologique', en: 'Technology Consulting', ar: 'الاستشارات التقنية' },
+    priceMin: 150000,
+    priceMax: 800000,
+    deliveryTime: { fr: '2 à 4 semaines', en: '2 to 4 weeks', ar: 'أسبوعان إلى 4 أسابيع' },
+    slugs: {
+      fr: 'conseil-architecture-strategie-tech-algerie',
+      en: 'technology-architecture-consulting-algeria',
+      ar: 'استشارات-هندسة-التقنية-الجزائر',
+    },
+    title: {
+      fr: 'Conseil technologique',
+      en: 'Technology Consulting',
+      ar: 'الاستشارات التقنية',
+    },
+    metaTitle: {
+      fr: "Conseil Technologique — Revue d'Architecture, Stratégie IA, Build-vs-Buy en Algérie",
+      en: 'Technology Consulting — Architecture Review, AI Strategy, Build-vs-Buy in Algeria',
+      ar: 'الاستشارات التقنية — مراجعة الهندسة، استراتيجية الذكاء الاصطناعي في الجزائر',
+    },
+    metaDescription: {
+      fr: "Revue d'architecture, stratégie IA, analyse build-vs-buy, feuille de route de modernisation. Ingénieurs seniors basés à Alger, conseillant des clients en Algérie, MENA et Europe — pas des consultants à PowerPoint.",
+      en: 'Architecture review, AI strategy, build-vs-buy analysis, modernization roadmap. Senior engineers headquartered in Algiers, advising clients across Algeria, MENA and Europe — not PowerPoint consultants.',
+      ar: 'مراجعة الهندسة، استراتيجية الذكاء الاصطناعي، تحليل البناء-أم-الشراء، خارطة طريق التحديث. مهندسون كبار مقرهم الجزائر العاصمة يقدمون الاستشارات لعملاء في الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا.',
+    },
+    tagline: {
+      fr: 'Nous vous disons ce que nous pensons. Que vous nous ayez engagés pour ça ou non.',
+      en: 'We tell you what we think. Whether you hired us for it or not.',
+      ar: 'نخبرك بما نعتقد. سواء استأجرتنا لذلك أم لا.',
+    },
+    intro: {
+      fr: "Revue d'architecture, stratégie IA, analyse build-vs-buy, feuille de route de modernisation. Équipe d'ingénieurs seniors basée à Alger, conseillant des entreprises en Algérie, MENA et Europe. Nous livrons en production — pas en PowerPoint. Le conseil que vous recevez est celui que nous prendrions nous-mêmes.",
+      en: 'Architecture review, AI strategy, build-vs-buy analysis, modernization roadmap. Senior engineering team headquartered in Algiers, advising companies across Algeria, MENA and Europe. We ship into production — not PowerPoint. The advice you get is the advice we would take ourselves.',
+      ar: 'مراجعة الهندسة، استراتيجية الذكاء الاصطناعي، تحليل البناء-أم-الشراء، خارطة طريق التحديث. فريق هندسة كبار مقره الجزائر العاصمة، يقدم الاستشارات لشركات في الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا. نسلّم في الإنتاج — لا في PowerPoint.',
+    },
+    longDescription: {
+      fr: [
+        "Le conseil technologique chez Symloop n'est pas un slide deck. C'est une mission d'ingénierie courte avec un livrable écrit. Nous lisons votre code, parlons à votre équipe, et écrivons un rapport spécifique à votre situation — généralement 30 à 50 pages.",
+        "Nous conseillons sur cinq domaines : revue d'architecture indépendante, analyse build-vs-buy, stratégie et feuille de route IA, modernisation de systèmes legacy, et topologie d'équipe d'ingénierie. Toutes des décisions difficiles à inverser où le mauvais choix vous coûte des années.",
+        "Trois étapes : une semaine de lecture du code et d'instrumentation des flux de données, une semaine d'interviews structurés avec votre équipe, puis une semaine d'écriture du rapport. Aucun framework générique. Du jugement spécifique à votre contexte.",
+      ],
+      en: [
+        "Technology consulting at Symloop is not a slide deck. It is a short engineering engagement with a written deliverable. We read your code, talk to your team, and write a report specific to your situation — usually 30 to 50 pages.",
+        'We advise across five areas: independent architecture review, build-vs-buy analysis, AI strategy and roadmap, legacy system modernization, and engineering team topology. All hard-to-reverse decisions where the wrong choice costs you years.',
+        'Three steps: one week reading code and instrumenting data flows, one week of structured interviews with your team, then one week writing the report. No generic frameworks. Judgment specific to your context.',
+      ],
+      ar: [
+        'الاستشارات التقنية في سيملوب ليست عرض شرائح. إنها مهمة هندسية قصيرة مع تسليم مكتوب. نقرأ شيفرتك، ونتحدث إلى فريقك، ونكتب تقريراً خاصاً بحالتك — عادة 30 إلى 50 صفحة.',
+        'نقدم النصائح عبر خمسة مجالات: مراجعة هندسية مستقلة، وتحليل البناء-أم-الشراء، واستراتيجية وخارطة طريق الذكاء الاصطناعي، وتحديث الأنظمة القديمة، وطوبولوجيا فريق الهندسة.',
+        'ثلاث خطوات: أسبوع لقراءة الشيفرة، أسبوع من المقابلات المنظمة، ثم أسبوع لكتابة التقرير. لا أطر عامة. حكم خاص بسياقك.',
+      ],
+    },
+    features: {
+      fr: [
+        "Revue d'architecture indépendante (rapport 30-50 pages)",
+        'Analyse build vs buy avec calculs spécifiques à votre contexte',
+        "Stratégie et feuille de route IA avec cas d'usage priorisés",
+        'Plan de modernisation de système legacy (strangler-fig)',
+        "Topologie d'équipe d'ingénierie et priorités d'embauche",
+        'Diagrammes d\'architecture canoniques (état actuel + cible)',
+        "Walkthrough en direct du rapport (90 minutes, enregistré)",
+        'Rapport écrit en PDF + source Markdown éditable',
+      ],
+      en: [
+        'Independent architecture review (30-50 page report)',
+        'Build vs buy analysis with calculations specific to your context',
+        'AI strategy and roadmap with prioritized use cases',
+        'Legacy system modernization plan (strangler-fig)',
+        'Engineering team topology and hiring priorities',
+        'Canonical architecture diagrams (current and target state)',
+        'Live walkthrough of the report (90 minutes, recorded)',
+        'Written report in PDF + editable Markdown source',
+      ],
+      ar: [
+        'مراجعة هندسية مستقلة (تقرير 30-50 صفحة)',
+        'تحليل البناء-أم-الشراء مع حسابات خاصة بسياقك',
+        'استراتيجية وخارطة طريق الذكاء الاصطناعي مع حالات استخدام ذات أولوية',
+        'خطة تحديث النظام القديم (strangler-fig)',
+        'طوبولوجيا فريق الهندسة وأولويات التوظيف',
+        'مخططات هندسية قانونية (الحالة الحالية والمستهدفة)',
+        'جولة مباشرة في التقرير (90 دقيقة، مسجلة)',
+        'تقرير مكتوب بصيغة PDF + مصدر Markdown قابل للتحرير',
+      ],
+    },
+    techStack: ['Architecture', 'System Design', 'AI Strategy', 'Build vs Buy', 'Modernization', 'Team Topology', 'Code Review', 'Threat Modeling'],
+    faqs: {
+      fr: [
+        { q: 'Combien coûte un engagement de conseil ?', a: "Un engagement standard (revue d'architecture, build-vs-buy, stratégie IA) est à prix fixe entre 150 000 DA et 400 000 DA selon le périmètre. Les feuilles de route de modernisation pour systèmes complexes vont de 400 000 DA à 800 000 DA. Nous ne facturons jamais à l'heure." },
+        { q: 'Combien de temps prend un engagement ?', a: 'Engagements standards : 2 semaines du kickoff au rapport écrit. Feuilles de route plus larges : 3 à 4 semaines. Nous ne traînons pas les engagements — la valeur est dans le jugement rapide.' },
+        { q: "Implémentez-vous ce que vous recommandez ?", a: "Parfois. Nous sommes une équipe d'ingénierie complète, donc si vous voulez que nous implémentions après le conseil nous le pouvons. Mais aucune obligation — beaucoup de clients prennent notre rapport et l'exécutent en interne." },
+      ],
+      en: [
+        { q: 'How much does a consulting engagement cost?', a: 'A standard engagement (architecture review, build-vs-buy, AI strategy) is fixed-priced between 150,000 DZD and 400,000 DZD depending on scope. Modernization roadmaps for complex systems range from 400,000 DZD to 800,000 DZD. We never bill hourly.' },
+        { q: 'How long does an engagement take?', a: 'Standard engagements: 2 weeks from kickoff to written report. Larger roadmaps: 3 to 4 weeks. We do not drag engagements — the value is in fast judgment.' },
+        { q: 'Do you implement what you recommend?', a: 'Sometimes. We are a full engineering team, so if you want us to implement after the consulting we can. But no obligation — many clients take our report and execute it internally.' },
+      ],
+      ar: [
+        { q: 'كم تكلف مهمة استشارية؟', a: 'مهمة قياسية (مراجعة هندسية، البناء-أم-الشراء، استراتيجية الذكاء الاصطناعي) بسعر ثابت بين 150,000 و 400,000 دج حسب النطاق. خرائط طريق التحديث للأنظمة المعقدة من 400,000 إلى 800,000 دج.' },
+        { q: 'كم يستغرق الانخراط؟', a: 'المهام القياسية: أسبوعان من بدء العمل إلى التقرير المكتوب. الخرائط الأكبر: 3 إلى 4 أسابيع.' },
+        { q: 'هل تطبقون ما توصون به؟', a: 'أحياناً. نحن فريق هندسي كامل، لذا إذا أردتنا التطبيق بعد الاستشارة يمكننا ذلك. لكن دون التزام — كثير من العملاء يأخذون تقريرنا ويُنفذونه داخلياً.' },
+      ],
+    },
+    relatedServices: ['software-engineering', 'ai-ml', 'cybersecurity'],
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // 09 — PRODUCT ENGINEERING (new)
+  // Routes to editorial page /services/product/
+  // ════════════════════════════════════════════════════════════════════════
+  {
+    id: 'product-engineering',
+    number: '09',
+    icon: 'Brain',
+    accent: '#22d3ee',
+    category: { fr: 'Ingénierie Produit', en: 'Product Engineering', ar: 'هندسة المنتج' },
+    priceMin: 600000,
+    priceMax: 25000000,
+    deliveryTime: { fr: '8 à 16 semaines', en: '8 to 16 weeks', ar: '8 إلى 16 أسبوعاً' },
+    slugs: {
+      fr: 'ingenierie-produit-mvp-saas-algerie',
+      en: 'product-engineering-mvp-saas-algeria',
+      ar: 'هندسة-المنتج-mvp-saas-الجزائر',
+    },
+    title: {
+      fr: 'Ingénierie produit',
+      en: 'Product Engineering',
+      ar: 'هندسة المنتج',
+    },
+    metaTitle: {
+      fr: 'Ingénierie Produit — MVP, SaaS, Mobile et Marketplace en Algérie — Symloop',
+      en: 'Product Engineering — MVP, SaaS, Mobile and Marketplace in Algeria — Symloop',
+      ar: 'هندسة المنتج — MVP و SaaS والجوال والسوق في الجزائر — سيملوب',
+    },
+    metaDescription: {
+      fr: 'Ingénierie produit complète : Discover → Design → Build → Ship. SaaS, mobile, marketplace, outils internes. Atelier d\'ingénierie algérien livrant des produits pour des clients en Algérie, MENA, Europe et Golfe — équipe pluridisciplinaire (PM, designer, ingénieur, DevOps, QA).',
+      en: 'Full product engineering: Discover → Design → Build → Ship. SaaS, mobile, marketplace, internal tools. Algerian engineering workshop delivering products for clients across Algeria, MENA, Europe and the Gulf — multidisciplinary team (PM, designer, engineer, DevOps, QA).',
+      ar: 'هندسة منتج كاملة: استكشف ← صمم ← ابنِ ← أطلق. SaaS، الجوال، السوق، الأدوات الداخلية. ورشة هندسية جزائرية تسلّم منتجات لعملاء في الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا والخليج — فريق متعدد التخصصات.',
+    },
+    tagline: {
+      fr: 'De la première interview utilisateur au premier client payant — un seul atelier.',
+      en: 'From the first user interview to the first paying customer — one workshop.',
+      ar: 'من أول مقابلة مستخدم إلى أول عميل يدفع — ورشة عمل واحدة.',
+    },
+    intro: {
+      fr: "Ingénierie produit pour la production. Atelier algérien basé à Alger, livrant pour des clients en Algérie, MENA, Europe et Golfe. Nous prenons en charge le cycle complet : découverte, design, build, lancement. Une équipe pluridisciplinaire — product manager, designer, ingénieurs, DevOps, QA — qui livre comme un seul atelier au lieu de cinq prestataires différents.",
+      en: 'Product engineering for production. Algerian workshop headquartered in Algiers, delivering for clients across Algeria, MENA, Europe and the Gulf. We own the full cycle: discover, design, build, ship. A multidisciplinary team — product manager, designer, engineers, DevOps, QA — that delivers as one workshop instead of five different vendors.',
+      ar: 'هندسة المنتج للإنتاج. ورشة جزائرية مقرها الجزائر العاصمة، تسلّم لعملاء في الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا والخليج. نحن نتولى الدورة الكاملة: استكشاف، تصميم، بناء، إطلاق. فريق متعدد التخصصات يسلّم كورشة واحدة.',
+    },
+    longDescription: {
+      fr: [
+        "L'ingénierie produit chez Symloop est un atelier complet, pas une équipe d'externalisation. Nous avons des product managers qui interviewent les utilisateurs, des designers qui dessinent les flux, des ingénieurs qui écrivent le code, des DevOps qui le déploient, et des QA qui le testent. Tous dans la même équipe, sur la même mission, avec la même responsabilité de livraison.",
+        "Nous livrons cinq types de produits : SaaS multi-tenant, applications mobiles natives ou cross-platform, marketplaces multi-faces, outils internes pour grandes organisations, et plateformes web grand public. Chaque type a son propre profil de risque et nous adaptons la composition d'équipe en conséquence.",
+        "Cinq phases : discovery (semaines 1-2), design (semaines 3-4), build initial (semaines 5-10), beta privée (semaines 11-13), lancement public (semaines 14-16). Chaque phase a un livrable concret. Pas de phase de discovery qui dure six mois — vous voyez du code en production avant la fin du premier mois.",
+      ],
+      en: [
+        'Product engineering at Symloop is a full workshop, not an outsourcing team. We have product managers who interview users, designers who draw the flows, engineers who write the code, DevOps who deploy it, and QA who test it. All in the same team, on the same engagement, with the same delivery accountability.',
+        'We ship five product types: multi-tenant SaaS, native or cross-platform mobile apps, multi-sided marketplaces, internal tools for large organizations, and consumer web platforms. Each type has its own risk profile and we adapt the team composition accordingly.',
+        'Five phases: discovery (weeks 1-2), design (weeks 3-4), initial build (weeks 5-10), private beta (weeks 11-13), public launch (weeks 14-16). Every phase has a concrete deliverable. No six-month discovery phase — you see code in production before the end of month one.',
+      ],
+      ar: [
+        'هندسة المنتج في سيملوب هي ورشة كاملة، لا فريق إسناد. لدينا مديرو منتج يقابلون المستخدمين، ومصممون يرسمون التدفقات، ومهندسون يكتبون الشيفرة، و DevOps ينشرونها، و QA يختبرونها. كلهم في نفس الفريق، على نفس المهمة.',
+        'نسلّم خمسة أنواع من المنتجات: SaaS متعدد المستأجرين، تطبيقات الجوال الأصلية أو متعددة المنصات، الأسواق متعددة الأوجه، الأدوات الداخلية للمؤسسات الكبيرة، والمنصات الويب للمستهلكين.',
+        'خمس مراحل: استكشاف (الأسبوعان 1-2)، تصميم (الأسبوعان 3-4)، بناء أولي (الأسابيع 5-10)، بيتا خاصة (الأسابيع 11-13)، إطلاق عام (الأسابيع 14-16). كل مرحلة لها تسليم ملموس.',
+      ],
+    },
+    features: {
+      fr: [
+        "Discovery utilisateur : interviews, cartographie de parcours, validation d'hypothèses",
+        'Design produit complet : wireframes, prototypes interactifs, design system',
+        'Architecture technique : choix de stack, schéma de données, API design',
+        'Développement multi-plateforme (web, iOS, Android, backend)',
+        "DevOps et infrastructure : CI/CD, observabilité, scalabilité",
+        'QA : tests automatisés, tests utilisateurs, monitoring de production',
+        "Lancement : beta privée, soft launch, lancement public",
+        'Itération post-lancement : analytics produit, A/B testing, roadmap',
+      ],
+      en: [
+        'User discovery: interviews, journey mapping, hypothesis validation',
+        'Full product design: wireframes, interactive prototypes, design system',
+        'Technical architecture: stack selection, data schema, API design',
+        'Multi-platform development (web, iOS, Android, backend)',
+        'DevOps and infrastructure: CI/CD, observability, scalability',
+        'QA: automated testing, user testing, production monitoring',
+        'Launch: private beta, soft launch, public launch',
+        'Post-launch iteration: product analytics, A/B testing, roadmap',
+      ],
+      ar: [
+        'اكتشاف المستخدم: مقابلات، رسم خرائط الرحلة، التحقق من الفرضيات',
+        'تصميم منتج كامل: نماذج هيكلية، نماذج أولية تفاعلية، نظام تصميم',
+        'الهندسة التقنية: اختيار المكدس، مخطط البيانات، تصميم API',
+        'التطوير متعدد المنصات (ويب، iOS، Android، خلفية)',
+        'DevOps والبنية التحتية: CI/CD، المراقبة، قابلية التوسع',
+        'QA: اختبارات آلية، اختبارات المستخدم، مراقبة الإنتاج',
+        'الإطلاق: بيتا خاصة، إطلاق ناعم، إطلاق عام',
+        'التكرار بعد الإطلاق: تحليلات المنتج، اختبار A/B، خارطة طريق',
+      ],
+    },
+    techStack: ['Next.js', 'React Native', 'Node.js', 'TypeScript', 'Postgres', 'Redis', 'Tailwind', 'Framer', 'Vercel', 'Supabase', 'Stripe', 'PostHog'],
+    faqs: {
+      fr: [
+        { q: 'Combien coûte un engagement produit ?', a: "Les engagements produit sont structurés en discovery à prix fixe (1-2 semaines) puis builds phasés à prix fixe. Le coût total varie selon le périmètre : MVP entre 600 000 DA et 3 000 000 DA, produits de taille moyenne entre 3 et 15 000 000 DA, plateformes entreprise jusqu'à 25 000 000 DA." },
+        { q: 'Combien de temps avant le lancement ?', a: "La plupart des produits atteignent un v1 livrable en 12 à 16 semaines. Les MVPs plus petits peuvent se lancer en 8 à 10 semaines. Les produits enterprise avec intégrations complexes peuvent prendre 6 mois." },
+        { q: 'Qui possède le code après le lancement ?', a: "Vous. Code source, fichiers de design, infrastructure-as-code, documentation, suites de tests — tout transféré sous votre PI. Pas de verrouillage éditeur." },
+      ],
+      en: [
+        { q: 'How much does a product engagement cost?', a: 'Product engagements are structured as fixed-price discovery (1-2 weeks) then fixed-price phased builds. Total cost varies by scope: MVPs between 600,000 DZD and 3,000,000 DZD, mid-size products between 3M and 15M DZD, enterprise platforms up to 25M DZD.' },
+        { q: 'How long until launch?', a: 'Most products hit a deliverable v1 in 12 to 16 weeks. Smaller MVPs can ship in 8 to 10. Enterprise products with complex integrations can take 6 months.' },
+        { q: 'Who owns the code after launch?', a: 'You. Source code, design files, infrastructure-as-code, documentation, test suites — all transferred under your IP. No vendor lock-in.' },
+      ],
+      ar: [
+        { q: 'كم تكلف مهمة منتج؟', a: 'مهام المنتج مُهيكَلة كاستكشاف بسعر ثابت (1-2 أسبوع) ثم بناء مُمرحَل بسعر ثابت. التكلفة الإجمالية تختلف حسب النطاق: MVP بين 600,000 و 3,000,000 دج، منتجات متوسطة بين 3 و 15 مليون دج.' },
+        { q: 'كم من الوقت حتى الإطلاق؟', a: 'معظم المنتجات تحقق v1 قابلاً للتسليم في 12 إلى 16 أسبوعاً. MVPs الأصغر يمكن إطلاقها في 8 إلى 10. المنتجات للمؤسسات يمكن أن تستغرق 6 أشهر.' },
+        { q: 'من يملك الشيفرة بعد الإطلاق؟', a: 'أنت. شيفرة المصدر، ملفات التصميم، البنية التحتية كشيفرة، التوثيق، مجموعات الاختبارات — كل شيء يُنقل تحت ملكيتك الفكرية. لا قفل من البائع.' },
+      ],
+    },
+    relatedServices: ['software-engineering', 'mobile-engineering', 'consulting'],
+  },
 ];
+
+// ---------------------------------------------------------------------------
+// EDITORIAL ROUTE MAP
+//
+// Each service id is mapped to its editorial /services/{name}/ route, OR to
+// `null` to keep the entry alive in data (still crawlable via [slug].jsx) but
+// hidden from the /services/ index grid. This is how we preserve old crawled
+// URLs while showing only the 8 redesigned editorial pages on the index.
+// ---------------------------------------------------------------------------
+const EDITORIAL_ROUTES = {
+  'software-engineering': 'software-engineering',
+  'mobile-engineering':   'mobile',
+  'web-engineering':      null,           // legacy data only — no editorial page
+  'ai-ml':                'ai',
+  'iot-hardware':         'iot',
+  'devops-cloud':         'cloud',
+  'cybersecurity':        'cybersecurity',
+  'consulting':           'consulting',
+  'product-engineering':  'product',
+};
 
 // ---------------------------------------------------------------------------
 // HELPERS
 // ---------------------------------------------------------------------------
 
 export function getAllServicesForLocale(locale) {
-  return SERVICES.map((s) => ({
-    id: s.id,
-    number: s.number,
-    icon: s.icon,
-    accent: s.accent,
-    slug: s.slugs[locale] || s.slugs.fr,
-    category: s.category[locale] || s.category.fr,
-    title: s.title[locale] || s.title.fr,
-    metaTitle: s.metaTitle[locale] || s.metaTitle.fr,
-    metaDescription: s.metaDescription[locale] || s.metaDescription.fr,
-    tagline: s.tagline[locale] || s.tagline.fr,
-    intro: s.intro[locale] || s.intro.fr,
-    longDescription: s.longDescription[locale] || s.longDescription.fr,
-    features: s.features[locale] || s.features.fr,
-    techStack: s.techStack,
-    faqs: s.faqs[locale] || s.faqs.fr,
-    priceMin: s.priceMin,
-    priceMax: s.priceMax,
-    deliveryTime: s.deliveryTime[locale] || s.deliveryTime.fr,
-    relatedServices: s.relatedServices,
-  }));
+  return SERVICES
+    // Hide entries flagged null in EDITORIAL_ROUTES from the /services/ index.
+    // They remain alive in the data file so [slug].jsx can still serve their
+    // legacy localized URLs (and Google still indexes them).
+    .filter((s) => EDITORIAL_ROUTES[s.id] !== null)
+    .map((s) => {
+      const editorialRoute = EDITORIAL_ROUTES[s.id];
+      const localizedSlug  = s.slugs[locale] || s.slugs.fr;
+      return {
+        id: s.id,
+        number: s.number,
+        icon: s.icon,
+        accent: s.accent,
+        slug: localizedSlug,
+        // routePath is what the /services/ index uses for `<Link href>`. When
+        // an editorial /services/{name}/ page exists, that wins; otherwise we
+        // fall back to the legacy localized slug routed via [slug].jsx.
+        routePath: editorialRoute || localizedSlug,
+        editorialRoute: editorialRoute || null,
+        category: s.category[locale] || s.category.fr,
+        title: s.title[locale] || s.title.fr,
+        metaTitle: s.metaTitle[locale] || s.metaTitle.fr,
+        metaDescription: s.metaDescription[locale] || s.metaDescription.fr,
+        tagline: s.tagline[locale] || s.tagline.fr,
+        intro: s.intro[locale] || s.intro.fr,
+        longDescription: s.longDescription[locale] || s.longDescription.fr,
+        features: s.features[locale] || s.features.fr,
+        techStack: s.techStack,
+        faqs: s.faqs[locale] || s.faqs.fr,
+        priceMin: s.priceMin,
+        priceMax: s.priceMax,
+        deliveryTime: s.deliveryTime[locale] || s.deliveryTime.fr,
+        relatedServices: s.relatedServices,
+      };
+    });
 }
 
 export function getServiceBySlug(slug) {
@@ -879,8 +1252,15 @@ export function getServiceBySlug(slug) {
 }
 
 export function getAllSlugPaths() {
+  // Editorial-routed services (cybersecurity, consulting, product) are served
+  // by their static /services/{name}.jsx files. We do NOT generate dynamic
+  // [slug].jsx paths for them — that would conflict at build time and
+  // duplicate content. Only the original 6 services keep their dynamic
+  // localized slugs alive for legacy SEO.
+  const editorialOnlyIds = new Set(['cybersecurity', 'consulting', 'product-engineering']);
   const paths = [];
   for (const s of SERVICES) {
+    if (editorialOnlyIds.has(s.id)) continue;
     for (const locale of ['fr', 'en', 'ar']) {
       paths.push({ params: { slug: s.slugs[locale] }, locale });
     }

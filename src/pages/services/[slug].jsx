@@ -629,12 +629,16 @@ export async function getStaticProps({ params, locale }) {
   const slug = params.slug;
 
   // Legacy slug → permanent redirect to canonical
+  // IMPORTANT: encodeURIComponent() the slug — locale-specific slugs may contain
+  // non-ASCII characters (e.g. Arabic). HTTP Location headers require ASCII-only
+  // content, so we must URL-encode before putting the slug into the destination.
   if (LEGACY_SLUGS[slug]) {
     const canonical = SERVICES.find((s) => s.id === LEGACY_SLUGS[slug]);
     if (canonical) {
+      const targetSlug = canonical.slugs[locale] || canonical.slugs.fr;
       return {
         redirect: {
-          destination: `/${locale}/services/${canonical.slugs[locale] || canonical.slugs.fr}/`,
+          destination: `/${locale}/services/${encodeURIComponent(targetSlug)}/`,
           permanent: true,
         },
       };

@@ -3,6 +3,7 @@
 // Data loaded at build time from src/data/services.js via getStaticProps.
 // Rich JSON-LD: Organization, OfferCatalog, ItemList, FAQPage, BreadcrumbList,
 // SpeakableSpecification. Structured for maximum crawlability and LLM SEO.
+// Updated 2026-04-09: 8 disciplines, insights cross-link, editorial routePath.
 // ============================================================================
 
 import React from 'react';
@@ -28,6 +29,17 @@ import {
   formatPriceRange,
 } from '../../data/services';
 
+// Insight cards are inlined here instead of imported from src/data/insights.js
+// because Turbopack throws "CJS module can't be async" when this page imports
+// a second ESM data module. Keep this list in sync with src/data/insights.js
+// — same shape, same keys. If you add a new insight there, mirror it here.
+const INSIGHT_CARDS = [
+  { key: 'ai',         path: '/insights/ai/' },
+  { key: 'erp',        path: '/insights/erp/' },
+  { key: 'cost',       path: '/insights/cost/' },
+  { key: 'healthcare', path: '/insights/healthcare/' },
+];
+
 // ---------------------------------------------------------------------------
 // Icon resolution (data stores icon as string key so it stays SSG-safe)
 // ---------------------------------------------------------------------------
@@ -49,9 +61,14 @@ const CHROME = {
     metaWilayas: 'Wilayas couvertes',
     metaProjects: 'Projets livrés',
     sectionIndex: 'Index',
-    sectionServices: 'Six disciplines',
+    sectionServices: 'Huit disciplines',
     sectionServicesSub:
       "Chaque service est conçu comme une discipline d'ingénierie à part entière. Nous ne faisons pas de sites web génériques : nous livrons des systèmes qui fonctionnent encore dans dix ans.",
+    insightsEyebrow: '— Recherche',
+    insightsTitle: 'Études publiées par cette pratique',
+    insightsSub:
+      "Nos ingénieurs publient des études longues sur les sujets qu'ils livrent en production. Pas de marketing, pas de slides de cabinet de conseil — du jugement d'ingénierie écrit.",
+    insightsAll: 'Voir toutes les études',
     colDiscipline: 'Discipline',
     colStarting: 'À partir de',
     colDelivery: 'Délai',
@@ -88,9 +105,14 @@ const CHROME = {
     metaWilayas: 'Wilayas covered',
     metaProjects: 'Projects delivered',
     sectionIndex: 'Index',
-    sectionServices: 'Six disciplines',
+    sectionServices: 'Eight disciplines',
     sectionServicesSub:
       'Each service is a distinct engineering discipline. We do not build generic websites — we ship systems that still run well ten years later.',
+    insightsEyebrow: '— Research',
+    insightsTitle: 'Insights from this practice',
+    insightsSub:
+      'Our engineers publish long-form briefs on the topics they ship into production. No marketing, no consulting slides — written engineering judgment.',
+    insightsAll: 'See all insights',
     colDiscipline: 'Discipline',
     colStarting: 'Starting at',
     colDelivery: 'Delivery',
@@ -127,9 +149,14 @@ const CHROME = {
     metaWilayas: 'ولايات مغطاة',
     metaProjects: 'مشروع مُسلَّم',
     sectionIndex: 'الفهرس',
-    sectionServices: 'ست تخصصات',
+    sectionServices: 'ثمانية تخصصات',
     sectionServicesSub:
       'كل خدمة هي تخصص هندسي مستقل. لا نبني مواقع عامة — بل أنظمة تعمل بشكل جيد بعد عشر سنوات.',
+    insightsEyebrow: '— أبحاث',
+    insightsTitle: 'دراسات منشورة من هذه الممارسة',
+    insightsSub:
+      'مهندسونا ينشرون دراسات مطوّلة حول المواضيع التي يسلّمونها في الإنتاج. لا تسويق، ولا شرائح استشارية — حكم هندسي مكتوب.',
+    insightsAll: 'عرض كل الدراسات',
     colDiscipline: 'التخصص',
     colStarting: 'ابتداءً من',
     colDelivery: 'المدة',
@@ -453,7 +480,7 @@ export default function ServicesPage({ services, locale: pageLocale }) {
             {services.map((s, i) => (
               <Link
                 key={s.id}
-                href={`/services/${s.slug}/`}
+                href={`/services/${s.routePath}/`}
                 locale={locale}
                 className="group block"
               >
@@ -607,7 +634,7 @@ export default function ServicesPage({ services, locale: pageLocale }) {
                       {/* Read full link */}
                       <div className="mt-14">
                         <Link
-                          href={`/services/${s.slug}/`}
+                          href={`/services/${s.routePath}/`}
                           locale={locale}
                           className="group inline-flex items-baseline gap-3 serif italic text-2xl text-white"
                         >
@@ -692,6 +719,73 @@ export default function ServicesPage({ services, locale: pageLocale }) {
                 </p>
               </details>
             ))}
+          </div>
+        </section>
+
+        {/* ========================================================== */}
+        {/* INSIGHTS — research published from this practice            */}
+        {/* Cross-links every service page to /insights/* for SEO and  */}
+        {/* LLM classification. This is the "Accenture power slot".    */}
+        {/* ========================================================== */}
+        <section className="border-b border-white/10">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 py-28">
+            <div className="grid grid-cols-12 gap-6 mb-14">
+              <div className="col-span-12 lg:col-span-7">
+                <div className="mono text-[11px] uppercase tracking-[0.25em] text-white/45">
+                  {c.insightsEyebrow}
+                </div>
+                <h2 className="serif mt-4 text-4xl sm:text-5xl lg:text-6xl leading-[1] tracking-tight">
+                  <span className="italic">{c.insightsTitle}</span>
+                </h2>
+                <p className="mt-6 text-[15px] leading-[1.75] text-white/55 max-w-[58ch]">
+                  {c.insightsSub}
+                </p>
+              </div>
+              <div className="col-span-12 lg:col-span-5 lg:flex lg:items-end lg:justify-end">
+                <Link
+                  href="/insights/"
+                  locale={locale}
+                  className="group inline-flex items-baseline gap-3 serif italic text-2xl text-white"
+                >
+                  <span className="link-u">{c.insightsAll}</span>
+                  <ArrowRight className="w-5 h-5 translate-y-0.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10">
+              {INSIGHT_CARDS.map((it, i) => {
+                const num = String(i + 1).padStart(2, '0');
+                return (
+                  <li key={it.key} className="bg-black">
+                    <Link
+                      href={it.path}
+                      locale={locale}
+                      className="group block h-full p-7 lg:p-8 transition-colors hover:bg-white/[0.025]"
+                    >
+                      <div className="flex items-start justify-between mb-8">
+                        <span className="mono text-[10px] tracking-[0.2em] uppercase text-white/40 group-hover:text-white/70 transition-colors">
+                          {t(`home.insights.items.${it.key}.kind`)}
+                        </span>
+                        <span className="mono text-[10px] tracking-[0.15em] text-white/30">
+                          {num}
+                        </span>
+                      </div>
+                      <h3 className="serif text-xl lg:text-[22px] leading-snug tracking-tight text-white mb-3">
+                        {t(`home.insights.items.${it.key}.title`)}
+                      </h3>
+                      <p className="text-[13px] leading-[1.7] text-white/50 mb-6 line-clamp-3">
+                        {t(`home.insights.items.${it.key}.description`)}
+                      </p>
+                      <div className="pt-5 border-t border-white/10 flex items-center justify-between mono text-[10px] uppercase tracking-[0.15em] text-white/35">
+                        <span>{t(`home.insights.items.${it.key}.meta`)}</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      </div>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </section>
 

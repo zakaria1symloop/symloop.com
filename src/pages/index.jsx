@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import BusinessHeroSection from "../../src/components/home/BusinessHeroSection";
+import InsightsSection from "../../src/components/home/InsightsSection";
 import ServicesGrid from "../../src/components/home/ServicesGrid";
 import IndustriesGrid from "../../src/components/home/IndustriesGrid";
 import CompanyContactSection from "../../src/components/home/CompanyContactSection";
@@ -270,6 +271,9 @@ export default function Home() {
       <div className="min-h-screen flex flex-col bg-black">
         {/* Business Hero Section - Revenue & Growth Focus */}
         <BusinessHeroSection />
+
+        {/* Section 2 — Insights / thought leadership (Accenture power slot) */}
+        <InsightsSection />
 
         {/* Services capabilities — solution-first, AI-led */}
         <ServicesGrid />

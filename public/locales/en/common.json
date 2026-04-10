@@ -4,6 +4,7 @@
     "services": "Services",
     "clientsPartners": "Clients & Partners",
     "blog": "Blog",
+    "insights": "Insights",
     "learning": "Learning",
     "investors": "Investors",
     "recruitment": "Recruitment"
@@ -154,9 +155,1509 @@
       }
     }
   },
+  "product_engineering_page": {
+    "seo": {
+      "title": "Symloop Product Engineering — Discovery to Launch, One Team",
+      "description": "End-to-end product engineering: discovery, design, frontend and backend engineering, mobile, DevOps, launch, iteration. The same team owns the full product lifecycle. SaaS, marketplace, mobile, internal tools, web apps. Algeria, MENA, Europe. Verified Clutch 5.0/5.0.",
+      "keywords": "product engineering, end-to-end product development, MVP development, SaaS development, marketplace development, mobile app development, internal tools, product team, product engineering Algeria, product engineering MENA, product engineering France, Symloop product"
+    },
+    "hero": {
+      "eyebrow": "01 — Product Engineering",
+      "titleLine1": "From idea to production.",
+      "titleLine2": "One team. End to end.",
+      "subtitle": "Most product agencies hand off between phases — discovery to design, design to engineering, engineering to ops. We don't. The same senior team owns your product from the first sketch to the production release notes.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See what we ship",
+      "pills": {
+        "pill1": "Discover",
+        "pill2": "Design",
+        "pill3": "Build",
+        "pill4": "Ship"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we ship products.",
+      "label": "How we ship"
+    },
+    "products": {
+      "eyebrow": "03 — What we ship",
+      "title": "Five product types. Same engineering team.",
+      "subtitle": "We don't specialize by product type — we specialize by quality bar. Every product we ship runs in production with paying users.",
+      "items": {
+        "saas": {
+          "name": "SaaS platforms",
+          "tag": "Multi-tenant",
+          "description": "B2B SaaS products from MVP to scale. Tenant isolation, billing, admin, analytics, customer onboarding flows. Engineered for sales — clean enough that procurement and security teams will approve."
+        },
+        "mobile": {
+          "name": "Mobile products",
+          "tag": "iOS · Android · Cross-platform",
+          "description": "Native iOS, native Android, Flutter, React Native. Offline-first, multilingual, accessibility built in. The same team that builds the app also builds the backend that powers it."
+        },
+        "marketplace": {
+          "name": "Marketplaces",
+          "tag": "Two-sided",
+          "description": "Two-sided platforms with the operational complexity that comes with them — KYC, dispute resolution, escrow, ratings, search, payouts. We've shipped marketplaces in fintech, real estate, and B2B services."
+        },
+        "internal": {
+          "name": "Internal tools",
+          "tag": "Back-office",
+          "description": "Admin consoles, operational dashboards, ETL pipelines, customer service tools. Less glamorous than public products, but they decide whether your team scales or drowns. We treat them with the same engineering rigor."
+        },
+        "webapp": {
+          "name": "Web applications",
+          "tag": "Customer-facing",
+          "description": "Customer portals, content platforms, e-commerce, real-time collaboration tools. Performance-budgeted, SEO-aware, accessibility-tested. Built to convert and built to scale."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "04 — The team you get",
+      "title": "Five roles. One squad.",
+      "subtitle": "When you hire Symloop for a product, you get a complete cross-functional squad — not a single role you have to coordinate around.",
+      "roles": {
+        "pm": {
+          "title": "Product manager",
+          "description": "Owns the user research, the backlog, the sprint cadence, the stakeholder communication. Senior — has shipped products before, not learning on your dollar."
+        },
+        "designer": {
+          "title": "Product designer",
+          "description": "Research, wireframes, design system, UI, prototypes, accessibility review. Owns the look AND the interaction model. Doesn't ship a Figma file and disappear."
+        },
+        "engineer": {
+          "title": "Product engineer",
+          "description": "Full-stack — frontend, backend, database, integrations. Senior enough to make architectural decisions without escalating. Multiple per squad on larger products."
+        },
+        "devops": {
+          "title": "DevOps / SRE",
+          "description": "Sets up CI/CD, infrastructure, observability, on-call. Same person stays on the project after launch — no handoff to a 'ops team'."
+        },
+        "qa": {
+          "title": "QA engineer",
+          "description": "Automated test infrastructure, end-to-end Playwright tests, accessibility audits, performance budgets. Catches regressions before they reach production."
+        }
+      }
+    },
+    "phases": {
+      "eyebrow": "05 — Five phases",
+      "title": "Five phases. From kickoff to ongoing operations.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "duration": "1–2 weeks",
+          "description": "User research, scope definition, technical feasibility, success metrics. Fixed price."
+        },
+        "design": {
+          "title": "Design",
+          "duration": "2–4 weeks",
+          "description": "Design system, key screens, prototypes, accessibility patterns. Tested with real users before code starts."
+        },
+        "build": {
+          "title": "Build",
+          "duration": "8–16 weeks",
+          "description": "Production engineering with CI/CD, tests, monitoring. Weekly demos, shipped behind feature flags."
+        },
+        "launch": {
+          "title": "Launch",
+          "duration": "1–2 weeks",
+          "description": "Staged rollout, monitoring, hotfix readiness, marketing site, onboarding flows."
+        },
+        "iterate": {
+          "title": "Iterate",
+          "duration": "Ongoing",
+          "description": "Post-launch iteration based on real usage data. Feature work, performance, growth experiments."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Proof",
+      "title": "Numbers we can defend.",
+      "timeToLaunch": "Avg time to launch",
+      "products": "Products shipped",
+      "ratio": "Designer to engineer ratio",
+      "clutch": "Clutch verified rating"
+    },
+    "stack": {
+      "eyebrow": "07 — Stack by discipline",
+      "title": "Per-discipline stack. All production-grade.",
+      "disciplines": {
+        "design": {
+          "title": "Design",
+          "tools": "Figma · FigJam · Storybook · Design tokens · Accessibility checker · Plausible Analytics"
+        },
+        "frontend": {
+          "title": "Frontend",
+          "tools": "React · Next.js · TypeScript · Tailwind CSS · TanStack Query · Zustand · Framer Motion"
+        },
+        "backend": {
+          "title": "Backend",
+          "tools": "Node.js · Python (FastAPI) · PostgreSQL · Prisma · Drizzle · Redis · BullMQ · S3"
+        },
+        "infra": {
+          "title": "Infrastructure & QA",
+          "tools": "Vercel · Railway · Kubernetes · Terraform · GitHub Actions · Playwright · Sentry · PostHog"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does a product engagement cost?",
+          "answer": "Product engagements are typically structured as fixed-price discovery (1–2 weeks) followed by phased fixed-price builds. Total project cost varies enormously by scope, but typical mid-sized products land between €60K and €250K from kickoff to launch. Long-term iteration is a monthly retainer."
+        },
+        "timeline": {
+          "question": "How long until we launch?",
+          "answer": "Most products reach a shippable v1 in 12–16 weeks. Smaller MVPs can launch in 8–10. Enterprise products with complex integrations and compliance can take 6 months. We don't promise dates we can't hit."
+        },
+        "team": {
+          "question": "Who owns the product after launch?",
+          "answer": "You do. We can stay on as a long-term operations partner if you want, or we can transfer cleanly to your internal team with documentation, knowledge transfer sessions, and 30 days of post-handoff support."
+        },
+        "pricing": {
+          "question": "Do you do equity deals?",
+          "answer": "Rarely. We've done equity-only or cash + equity blends with a small number of early-stage clients where we believed strongly in the team. Default is cash. We're an engineering firm, not a venture studio."
+        },
+        "maintenance": {
+          "question": "Do you maintain products after launch?",
+          "answer": "Yes. Most clients keep us on a monthly retainer for ongoing iteration, performance work, security patches, and feature development. Some clients hand off to their internal team — both work."
+        },
+        "ownership": {
+          "question": "Who owns the code, design, and IP?",
+          "answer": "You do. Source code, design files, infrastructure-as-code, documentation, test suites — all transferred to you under your IP. We retain the right to use generic, anonymized techniques in future engagements."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Talk to us",
+      "title": "Have a product to ship? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "consulting_page": {
+    "seo": {
+      "title": "Symloop Technology Consulting — Architecture Review, AI Strategy, Build-vs-Buy",
+      "description": "Symloop technology consulting: architecture review, AI strategy, build-vs-buy analysis, modernization roadmap, technology selection. Senior engineering team that builds in production — not slide-deck consultants. Algeria, MENA, Europe. Verified Clutch 5.0/5.0.",
+      "keywords": "technology consulting, architecture review, AI strategy, build vs buy, modernization roadmap, technology selection, due diligence, CTO advisory, engineering consulting, technology consulting Algeria, tech advisory MENA, architecture review France, AI strategy consulting, Symloop consulting"
+    },
+    "hero": {
+      "eyebrow": "01 — Technology Consulting",
+      "titleLine1": "We tell you what we think.",
+      "titleLine2": "Whether you hired us for it or not.",
+      "subtitle": "Architecture review, AI strategy, build-vs-buy analysis, modernization roadmap. We are senior engineers who ship in production — not slide-deck consultants. The advice you get is the advice we'd take ourselves.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See what we advise on",
+      "report": {
+        "label": "Sample deliverable",
+        "title": "Architecture review · saas-platform.acme",
+        "tagline": "Q2 2026 · 42 pages",
+        "toc": "Table of contents",
+        "s1": "Executive summary",
+        "s2": "Current architecture",
+        "s3": "Critical findings",
+        "s4": "Recommendations",
+        "s5": "Implementation roadmap",
+        "length": "Total length"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we advise.",
+      "label": "How we advise"
+    },
+    "areas": {
+      "eyebrow": "03 — What we advise on",
+      "title": "Five areas where engineering judgment matters most.",
+      "subtitle": "We advise on the decisions that are hard to reverse — architecture, build-vs-buy, AI adoption, modernization. The ones where the wrong choice costs you years.",
+      "outcomeLabel": "Outcome",
+      "items": {
+        "architecture": {
+          "title": "Architecture review",
+          "description": "Independent review of an existing system or a planned design. We read the code, walk the data flow, identify the highest-risk decisions, and write a report you can act on without us.",
+          "outcome": "A 30-50 page written report with prioritized findings."
+        },
+        "buildvsbuy": {
+          "title": "Build vs buy analysis",
+          "description": "Should you build that auth system, or use Auth0? Should you build that data pipeline, or use Fivetran? We do the math against your specific context — team size, growth projection, vendor lock-in cost.",
+          "outcome": "A clear written recommendation with the math shown."
+        },
+        "aistrategy": {
+          "title": "AI strategy & roadmap",
+          "description": "Most companies are wasting AI budget on the wrong things. We help you identify the 2-3 places where AI actually moves the needle — and the 10 places where it doesn't.",
+          "outcome": "An AI roadmap with prioritized use cases and ROI estimates."
+        },
+        "modernization": {
+          "title": "Modernization roadmap",
+          "description": "You have a legacy system that nobody wants to touch. We map the safest incremental path forward — strangler-fig migration, dependency extraction, team-by-team rollout.",
+          "outcome": "A phased modernization plan with risk estimates per phase."
+        },
+        "team": {
+          "title": "Engineering team topology",
+          "description": "Your team is growing and the org chart is starting to show its weak points. We help you design team structures, ownership boundaries, and hiring sequences that scale.",
+          "outcome": "A team topology document with hiring priorities."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "04 — How a consult works",
+      "title": "Three steps. No slide decks.",
+      "subtitle": "We don't show up with a generic framework. We read your code, talk to your team, and write a report that's specific to your situation.",
+      "steps": {
+        "read": {
+          "title": "Read your code",
+          "duration": "Week 1",
+          "description": "We get repository access (or NDA-protected snapshots), walk the codebase, run the tests, instrument the data flows. No assumptions. No 'best practices'. Just understanding what's actually there."
+        },
+        "interview": {
+          "title": "Interview your team",
+          "duration": "Week 1–2",
+          "description": "30-minute structured conversations with the engineers who built it, the leaders who own it, and the operators who run it. We surface what people actually think but rarely get to say."
+        },
+        "write": {
+          "title": "Write the report",
+          "duration": "Week 2",
+          "description": "A written deliverable — usually 30-50 pages. Specific findings, prioritized recommendations, decision criteria. No fluff. We send the draft, you challenge it, we revise once."
+        }
+      }
+    },
+    "outputs": {
+      "eyebrow": "05 — What you get",
+      "title": "Four deliverables. Always.",
+      "items": {
+        "report": {
+          "title": "Written report",
+          "description": "30-50 pages of structured analysis. PDF + Markdown source so your team can reference it forever."
+        },
+        "diagram": {
+          "title": "Architecture diagram",
+          "description": "One canonical diagram of your current system, plus 1-2 future-state diagrams. Source files included."
+        },
+        "roadmap": {
+          "title": "Implementation roadmap",
+          "description": "Phased plan with effort estimates, dependencies, and risk assessment per phase. Editable so your team can adjust."
+        },
+        "walkthrough": {
+          "title": "Live walkthrough",
+          "description": "90-minute session where we walk you through the report and answer questions. Recorded so people who couldn't attend can watch later."
+        }
+      }
+    },
+    "anti": {
+      "eyebrow": "06 — What we won't recommend",
+      "title": "Five things we steer clients AWAY from.",
+      "subtitle": "We get hired to tell the truth. These are the recommendations we refuse to make, even when the client wants them.",
+      "items": {
+        "a1": "GraphQL for systems with 3 or fewer client types.",
+        "a2": "Microservices for engineering teams under 10 people.",
+        "a3": "Custom auth instead of Auth0 / Clerk / Stytch — except in very specific compliance cases.",
+        "a4": "Multi-cloud unless there's a specific regulatory or vendor-risk reason.",
+        "a5": "Custom AI training when an off-the-shelf API will do the job at 10× the price."
+      }
+    },
+    "proof": {
+      "pages": "Avg report length",
+      "delivery": "Avg time to deliver",
+      "clutch": "Clutch verified rating"
+    },
+    "faq": {
+      "eyebrow": "07 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does a consulting engagement cost?",
+          "answer": "A standard consulting engagement (architecture review, build-vs-buy analysis, AI strategy) is fixed-price between €15K and €40K depending on scope. Larger modernization roadmaps for complex enterprise systems run €40K–€80K. We never bill by the hour for consulting — the price is the price."
+        },
+        "timeline": {
+          "question": "How long does an engagement take?",
+          "answer": "Standard engagements: 2 weeks from kickoff to written report. Larger modernization roadmaps: 3–4 weeks. We don't drag engagements out — the value is in fast, decisive judgment, not in how long we hang around."
+        },
+        "remote": {
+          "question": "Can you do this remotely?",
+          "answer": "Yes. Most engagements run fully remote — we do code review remotely, interviews via video, the report is a written deliverable. We can come on-site for the kickoff and walkthrough sessions if useful."
+        },
+        "implementation": {
+          "question": "Do you implement what you recommend?",
+          "answer": "Sometimes. We're a full engineering team, so if you want us to implement after the consulting engagement we can. But there's no obligation — many clients take our report and execute it with their internal team. We're paid for the judgment, not for keeping you dependent."
+        },
+        "industries": {
+          "question": "Which industries do you advise on?",
+          "answer": "Healthcare, fintech, logistics, manufacturing, retail, real estate, education, government, agriculture. We're industry-agnostic on the engineering judgment side, but we always pair the advice with our delivery experience in your sector when relevant."
+        },
+        "confidentiality": {
+          "question": "How do you handle confidentiality?",
+          "answer": "Every engagement starts with a mutual NDA. Code reviews happen on read-only repository access or NDA-protected snapshots. We don't share findings between clients, ever. The report is yours — we keep no copies after delivery if you ask us to."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "08 — Talk to us",
+      "title": "Have a hard technology decision in front of you? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "insights_page": {
+    "seo": {
+      "title": "Symloop Insights — Briefs, research & engineering POVs from Algeria",
+      "description": "Long-form research, technical guides, and engineering perspectives from the Symloop team — written by the people who actually ship the systems. AI, ERP, software economics, and the Algerian tech ecosystem.",
+      "breadcrumb": "Insights"
+    },
+    "hero": {
+      "eyebrow": "Insights · Symloop research",
+      "title": "Briefs from the engineering room.",
+      "subtitle": "Long-form research, technical guides, and engineering POVs — written by the people who actually ship the systems. No marketing whitepapers, no recycled vendor talking points.",
+      "published": "Published",
+      "cadence": "New brief every quarter",
+      "format": "Free · No email gate"
+    },
+    "catalogue": {
+      "title": "The catalogue"
+    },
+    "cta": {
+      "eyebrow": "Talk to the authors",
+      "title": "Have a problem one of these briefs touches? Talk to the team that wrote it.",
+      "button": "Book a 30-minute call"
+    }
+  },
+  "cybersecurity_page": {
+    "seo": {
+      "title": "Symloop Cybersecurity — Audits, Penetration Testing, Compliance",
+      "description": "Symloop runs cybersecurity audits, penetration tests, infrastructure hardening, and compliance frameworks (SOC 2, ISO 27001, GDPR, PCI DSS, HIPAA). We assume you are already compromised and engineer for the day after. Senior security team in Algeria, international delivery across MENA and Europe. Verified Clutch 5.0/5.0.",
+      "keywords": "cybersecurity firm, penetration testing, security audit, vulnerability assessment, OWASP, SOC 2 compliance, ISO 27001 compliance, GDPR compliance, PCI DSS, HIPAA, incident response, security hardening, zero trust, identity management, cybersecurity Algeria, pentest Algeria, security audit MENA, cybersecurity Saudi Arabia, cybersecurity France, Symloop security"
+    },
+    "hero": {
+      "eyebrow": "01 — Cybersecurity",
+      "titleLine1": "We assume you are already compromised.",
+      "titleLine2": "Then we engineer for the day after.",
+      "subtitle": "Security audits, penetration testing, infrastructure hardening, compliance frameworks. We don't sell paranoia. We engineer the systems and processes that survive a real attack.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See the threats we stop",
+      "meter": {
+        "label": "Risk audit · sample report",
+        "target": "audit-2026-Q2",
+        "summary": "External · web · cloud · identity",
+        "critical": "Critical findings",
+        "high": "High findings",
+        "medium": "Medium findings",
+        "low": "Low / informational",
+        "posture": "Final security posture"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we secure systems.",
+      "label": "How we secure"
+    },
+    "threats": {
+      "eyebrow": "03 — Threats we stop",
+      "title": "Six attack patterns. Six defensive postures.",
+      "subtitle": "Most enterprise breaches fall into one of six patterns. We engineer specific defensive controls against each one.",
+      "howWeStop": "Defense",
+      "items": {
+        "ransomware": {
+          "severity": "CRITICAL",
+          "title": "Ransomware & data encryption",
+          "description": "Attackers encrypt your data and demand payment for the key. Most ransomware enters through phishing, RDP, or unpatched VPNs.",
+          "defense": "Immutable backups · network segmentation · EDR · phishing simulation"
+        },
+        "supply": {
+          "severity": "CRITICAL",
+          "title": "Supply chain attacks",
+          "description": "A trusted dependency (npm package, Docker image, vendor) gets compromised. The attacker rides the trust into your production.",
+          "defense": "SBOM · image signing (Cosign) · supply-chain attestation · dependency pinning"
+        },
+        "identity": {
+          "severity": "HIGH",
+          "title": "Credential theft & identity attacks",
+          "description": "Stolen credentials, MFA bypass, session hijacking, OAuth abuse. The most common entry point in modern breaches.",
+          "defense": "Zero trust · phishing-resistant MFA · short-lived tokens · IAM hardening"
+        },
+        "web": {
+          "severity": "HIGH",
+          "title": "Web & API exploitation",
+          "description": "OWASP Top 10 — injection, broken auth, IDOR, SSRF, deserialization. Most public-facing apps have at least one of these.",
+          "defense": "Code review · ASVS testing · WAF · runtime application self-protection"
+        },
+        "insider": {
+          "severity": "MEDIUM",
+          "title": "Insider threats & privilege abuse",
+          "description": "An employee, contractor, or compromised account exfiltrates data or plants backdoors. Hard to detect because the access is legitimate.",
+          "defense": "Least-privilege · audit logging · UEBA · separation of duties"
+        },
+        "cloud": {
+          "severity": "HIGH",
+          "title": "Cloud misconfiguration",
+          "description": "Public S3 buckets, over-permissive IAM, exposed Kubernetes APIs, leaked secrets in code. The #1 cause of cloud-era breaches.",
+          "defense": "CSPM · IAM review · secrets scanning · network policies · automated drift detection"
+        }
+      }
+    },
+    "compliance": {
+      "eyebrow": "04 — Compliance frameworks",
+      "title": "Six frameworks. We help you reach all of them.",
+      "subtitle": "Compliance is engineering, not paperwork. We build the controls before the auditors show up.",
+      "items": {
+        "iso27001": {
+          "acronym": "ISO 27001",
+          "fullName": "Information Security Management",
+          "description": "International standard for managing information security. Process-driven, audited annually. We help build the ISMS, document controls, and prepare for certification."
+        },
+        "soc2": {
+          "acronym": "SOC 2",
+          "fullName": "Service Organization Control",
+          "description": "Required for B2B SaaS sales in the US. Type 1 = controls in place; Type 2 = controls effective over time. We engineer the controls and prepare evidence."
+        },
+        "gdpr": {
+          "acronym": "GDPR",
+          "fullName": "EU General Data Protection",
+          "description": "EU privacy regulation with global reach. Data subject rights, breach notification, lawful basis for processing. We help you map data flows and implement controls."
+        },
+        "pcidss": {
+          "acronym": "PCI DSS",
+          "fullName": "Payment Card Industry",
+          "description": "Required for any system handling card data. Network segmentation, encryption, access controls, quarterly scans. We engineer the cardholder data environment."
+        },
+        "hipaa": {
+          "acronym": "HIPAA",
+          "fullName": "Health Insurance Portability",
+          "description": "US healthcare data regulation. Required for systems handling PHI. We help with technical safeguards, audit trails, encryption at rest and in transit."
+        },
+        "nis2": {
+          "acronym": "NIS2",
+          "fullName": "EU Network & Information Security",
+          "description": "Newest EU directive — applies to essential and important entities across critical sectors. Risk management, incident reporting, supply chain security."
+        }
+      }
+    },
+    "engagement": {
+      "eyebrow": "05 — How we engage",
+      "title": "Four phases. Audit. Pentest. Harden. Monitor.",
+      "steps": {
+        "audit": {
+          "title": "Security audit",
+          "duration": "1–2 weeks · fixed price",
+          "description": "Scope your environment, threat-model, review code and infrastructure, identify the highest-leverage risks. Output: written audit report with prioritized findings and remediation roadmap."
+        },
+        "pentest": {
+          "title": "Penetration test",
+          "duration": "2–4 weeks · fixed scope",
+          "description": "Authorized adversarial testing of web, mobile, API, cloud, or network targets. Real exploitation, real evidence. Output: detailed report with proof-of-concept and CVSS scores per finding."
+        },
+        "harden": {
+          "title": "Hardening & remediation",
+          "duration": "4–12 weeks",
+          "description": "Implement the controls identified in audit and pentest. Code fixes, infrastructure changes, IAM cleanup, network segmentation, secrets rotation, CI/CD hardening."
+        },
+        "monitor": {
+          "title": "Continuous monitoring",
+          "duration": "Ongoing",
+          "description": "SIEM, alerting, on-call, monthly reports, quarterly re-tests. Security is not a project — it's an operational capability that needs ongoing engineering."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Proof",
+      "mainLabel": "Confirmed breaches across the Symloop client base, since 2020",
+      "context": "Across every client we operate or have hardened, the count of confirmed breaches is zero. This is not a marketing number — it is the only number that matters in cybersecurity."
+    },
+    "faq": {
+      "eyebrow": "07 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does a security audit or pentest cost?",
+          "answer": "A scoped security audit starts at €8K and runs up to €30K depending on environment size. A penetration test is priced by target — a single web app pentest typically lands around €12K–€20K. We start with a fixed-price scoping call (free) before any commitment."
+        },
+        "pentest": {
+          "question": "What's the difference between an audit and a pentest?",
+          "answer": "An audit is a structured review of your security posture against a framework (OWASP ASVS, ISO 27001, etc.). A pentest is authorized adversarial testing — we actively try to exploit the system. Most clients need both: audit to find systemic gaps, pentest to validate the fixes."
+        },
+        "compliance": {
+          "question": "Can you get us SOC 2 or ISO 27001 certified?",
+          "answer": "We don't issue certificates — only accredited auditors can do that. But we engineer the controls, document the policies, and prepare you for the audit. Most clients reach SOC 2 Type 1 in 4–6 months and Type 2 in 12–18 months with us as the engineering partner."
+        },
+        "incident": {
+          "question": "Do you handle incident response?",
+          "answer": "Yes. We offer incident response retainers — committed response times for confirmed security incidents. Triage, containment, forensics, post-incident review, and (if needed) coordination with law enforcement and regulators."
+        },
+        "remediation": {
+          "question": "Do you also fix the issues you find?",
+          "answer": "Yes. We don't believe in audit reports that just say 'fix this'. We do the audit, write the remediation plan, and (if you want) implement the fixes ourselves. Same engineering team — no handoff to a third party."
+        },
+        "training": {
+          "question": "Do you train internal teams?",
+          "answer": "Yes. Secure-coding training, phishing simulations, tabletop incident exercises, security champions programs. Best done alongside an audit so the training is grounded in your real findings, not generic content."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "08 — Talk to us",
+      "title": "Have a security worry that won't go away? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "iot_industrial_page": {
+    "seo": {
+      "title": "Symloop IoT & Industrial — Hardware Engineering, Firmware, Connected Devices",
+      "description": "Symloop designs and manufactures IoT hardware in Algeria. PCB design, firmware in C and Rust, ESP32/STM32, connectivity (LoRa/MQTT/4G), cloud platforms, mobile apps. The same engineering team owns the full vertical stack — silicon to screen. 500+ apartments deployed. Verified Clutch 5.0/5.0. Hardware engineering for production.",
+      "keywords": "IoT hardware development, embedded systems engineering, PCB design Algeria, firmware development, ESP32 development, STM32, Arduino, connected devices, smart home hardware, industrial IoT, SCADA integration, POS hardware, kiosk hardware, smart agriculture, livestock monitoring, irrigation IoT, MQTT LoRa, AWS IoT, hardware manufacturing Algeria, IoT Algeria MENA, embedded Algeria, Symloop hardware"
+    },
+    "hero": {
+      "eyebrow": "01 — IoT & Industrial Systems",
+      "titleLine1": "We make hardware. In Algeria.",
+      "titleLine2": "Then we run the software that runs on it.",
+      "subtitle": "PCB design, firmware in C and Rust, connectivity, cloud platforms, mobile apps. The same engineering team owns the full vertical stack — from silicon to screen. Most teams can do software OR hardware. We do both.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See what we make",
+      "spec": {
+        "label": "Device · spec sheet",
+        "modelName": "SY-HW-1247",
+        "modelTagline": "Smart-home gateway · gen-2",
+        "model": "Model",
+        "mobile_model": "SY-HW-1247-G2",
+        "mcu": "MCU",
+        "mobile_mcu": "ESP32-S3 · 8MB",
+        "temp": "Temperature",
+        "mobile_temp": "−10 °C → +60 °C",
+        "power": "Power",
+        "mobile_power": "2.4W idle · 8W peak",
+        "connect": "Connectivity",
+        "mobile_connect": "WiFi · BLE · LoRa",
+        "uptime": "In production",
+        "mobile_uptime": "1,247 days",
+        "status": "Shipping"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we make hardware.",
+      "label": "How we make"
+    },
+    "specs": {
+      "eyebrow": "03 — Engineering specs",
+      "title": "What we engineer toward.",
+      "subtitle": "Every Symloop hardware product is built against these four engineering specifications. They're the bar — not the ceiling.",
+      "items": {
+        "environment": {
+          "refId": "ENV.OPS",
+          "title": "Operating environment",
+          "value": "−10 °C → +60 °C  ·  IP54 dust + splash rated",
+          "description": "Tested in real-world Algerian conditions — desert summer heat, coastal humidity, dusty industrial sites. Devices ship with sealed enclosures and conformal-coated PCBs."
+        },
+        "power": {
+          "refId": "PWR.BUDGET",
+          "title": "Power consumption",
+          "value": "2.4W idle  ·  8W peak  ·  battery-optional",
+          "description": "Engineered for grid-tied and battery-powered installations. Sleep modes drop sub-mA. PoE and 12-24V DC variants available for industrial deployments."
+        },
+        "uptime": {
+          "refId": "UPT.GUARANTEED",
+          "title": "Field uptime",
+          "value": "99.5% guaranteed  ·  multi-year deployments",
+          "description": "Watchdog timers, OTA recovery, dual firmware partitions, automatic factory reset on persistent failure. Devices recover themselves before anyone notices."
+        },
+        "recovery": {
+          "refId": "MTTR.FIELD",
+          "title": "Field recovery",
+          "value": "<4 hours  ·  remote diagnosis  ·  swap-out paths",
+          "description": "Every device reports its health back to the cloud. Failures are diagnosed remotely; if the device must be swapped, we ship a replacement and walk an on-site technician through it."
+        }
+      }
+    },
+    "products": {
+      "eyebrow": "04 — Product catalog",
+      "title": "Five product categories. All in production.",
+      "subtitle": "We don't ship demos. Every product line below is deployed in real environments with paying customers and live telemetry.",
+      "deployedLabel": "Deployed in",
+      "items": {
+        "smarthome": {
+          "tag": "Residential",
+          "name": "Smart home & smart buildings",
+          "description": "Apartment automation gateways, energy management, secure access control, climate sensors. Fully designed and manufactured in Algeria for the Algerian climate.",
+          "deployed": "500+ apartments across Sétif, Algiers, Oran, Constantine. Deployed by major Algerian real estate developers."
+        },
+        "industrial": {
+          "tag": "Industrial",
+          "name": "Industrial monitoring & SCADA",
+          "description": "Production-floor sensors, equipment health monitors, OEE dashboards, integration with existing PLCs and SCADA systems. Built for 24/7 operation in dusty manufacturing environments.",
+          "deployed": "Manufacturing sites across Algeria — steel, glass, food processing, plastics."
+        },
+        "pos": {
+          "tag": "Retail",
+          "name": "POS & kiosk hardware",
+          "description": "Custom point-of-sale terminals, self-service kiosks, queue management. Offline-first software, hardware-bound, multi-day uptime.",
+          "deployed": "Retail chains, restaurants, government service points across MENA."
+        },
+        "agriculture": {
+          "tag": "Agriculture",
+          "name": "Connected agriculture",
+          "description": "Smart irrigation controllers, soil moisture sensors, livestock GPS trackers, greenhouse climate automation. LoRa-based for remote field deployments.",
+          "deployed": "Farms across Sétif highlands and the Algerian agricultural belt."
+        },
+        "custom": {
+          "tag": "Bespoke",
+          "name": "Custom embedded products",
+          "description": "When existing hardware doesn't fit your problem, we design from scratch — schematic, PCB, firmware, enclosure, certification. End-to-end product development.",
+          "deployed": "Custom engagements with industrial, healthcare, and fintech clients."
+        }
+      }
+    },
+    "pipeline": {
+      "eyebrow": "05 — Production line",
+      "title": "From idea to deployed device. Five steps.",
+      "subtitle": "Every Symloop hardware product moves through the same five-step pipeline — Design → Prototype → Manufacture → Deploy → Operate.",
+      "steps": {
+        "design": {
+          "title": "Design",
+          "description": "Schematic capture, component selection, PCB layout, mechanical CAD, certification planning."
+        },
+        "prototype": {
+          "title": "Prototype",
+          "description": "Small-batch PCB fabrication, hand-assembly, firmware bring-up, environmental testing on real devices."
+        },
+        "manufacture": {
+          "title": "Manufacture",
+          "description": "Production runs locally in Algeria. Quality control at the line. Firmware flashed and verified before shipment."
+        },
+        "deploy": {
+          "title": "Deploy",
+          "description": "On-site installation, network configuration, device provisioning, telemetry validation against the cloud platform."
+        },
+        "operate": {
+          "title": "Operate",
+          "description": "OTA firmware updates, remote diagnostics, field-level dashboards, swap-out paths for end-of-life devices."
+        }
+      }
+    },
+    "stack": {
+      "eyebrow": "06 — Full vertical stack",
+      "title": "Same team, four layers, one product.",
+      "subtitle": "Most IoT projects fail because the hardware team and the cloud team have never met. We're one team across all four layers.",
+      "layers": {
+        "hardware": {
+          "label": "Layer 01",
+          "title": "Hardware",
+          "tools": "Altium Designer · KiCad · STM32 · ESP32-S3 · Nordic nRF · LoRa · BLE · 4G/LTE-M"
+        },
+        "firmware": {
+          "label": "Layer 02",
+          "title": "Firmware",
+          "tools": "C · C++ · Rust · FreeRTOS · Zephyr · Embedded Linux · Yocto · OTA bootloader"
+        },
+        "cloud": {
+          "label": "Layer 03",
+          "title": "Cloud",
+          "tools": "AWS IoT Core · GCP IoT · MQTT · CoAP · TimescaleDB · InfluxDB · Grafana · Kubernetes"
+        },
+        "apps": {
+          "label": "Layer 04",
+          "title": "Apps & dashboards",
+          "tools": "React · Next.js · Flutter · React Native · Grafana · Custom mobile dashboards"
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "07 — Proof",
+      "title": "Numbers we can defend.",
+      "stats": {
+        "apartments": "Apartments equipped",
+        "uptime":     "Longest device uptime",
+        "clutch":     "Clutch verified rating"
+      },
+      "deployedLabel": "Devices deployed in",
+      "deployedList": "Sétif · Algiers · Oran · Constantine · Annaba · Béjaïa · Blida  ·  Casablanca · Tunis · Cairo · Dubai · Riyadh · Kuwait City  ·  Paris · Madrid · Frankfurt"
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does a custom hardware project cost?",
+          "answer": "Hardware engineering is more capital-intensive than pure software. A typical custom embedded product (PCB design + firmware + small production batch) starts at €40K and ranges up to €250K depending on certification requirements, production volume, and integration complexity. We start with a fixed-price discovery (1–2 weeks) followed by a fixed-price prototype (4–8 weeks)."
+        },
+        "manufacturing": {
+          "question": "Where do you actually manufacture?",
+          "answer": "We design and manufacture in Algeria. PCB fabrication for prototype runs is done locally. Higher-volume production can be split between local assembly (for the Algerian and MENA markets) and certified contract manufacturers in China or Eastern Europe (for European delivery). We handle the manufacturing logistics — you don't have to."
+        },
+        "protocols": {
+          "question": "Which connectivity protocols do you support?",
+          "answer": "Whatever fits the deployment: WiFi, Bluetooth Low Energy, LoRa/LoRaWAN, Sigfox, 4G/LTE-M, NB-IoT, Zigbee, Z-Wave, MQTT, CoAP. We pick the protocol based on range, power budget, and data volume — not based on what we know best."
+        },
+        "fleet": {
+          "question": "How do you manage devices in the field?",
+          "answer": "Every Symloop device reports its health back to a central cloud platform. We provide a web dashboard for real-time monitoring, OTA firmware updates, remote diagnostics, and alerting. Failures are caught before they become outages. Most issues are resolved remotely without an on-site visit."
+        },
+        "compliance": {
+          "question": "Do you handle certifications (CE, FCC)?",
+          "answer": "Yes. We design with certification in mind from day one — EMC compliance, safety, RF compliance. We work with accredited testing labs in Europe and the Gulf for CE/FCC marking. We've shipped CE-marked devices to European clients."
+        },
+        "lifetime": {
+          "question": "How long do your devices stay in production?",
+          "answer": "We design for 5–10 year deployments. Firmware updates remain supported for the lifetime of the product. Hardware components are selected for long-term availability — no obsolete parts in our BOMs. Our oldest deployed devices have been running continuously for over 1,200 days."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Talk to us",
+      "title": "Have a hardware product that needs to ship? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "cloud_devops_page": {
+    "seo": {
+      "title": "Symloop Cloud & DevOps — Production Infrastructure, Kubernetes, SRE",
+      "description": "Symloop runs production cloud infrastructure: Kubernetes orchestration, CI/CD pipelines, observability, infrastructure as code, FinOps. The same engineering team that builds your software keeps it running. Senior team in Algeria, international delivery across MENA and Europe. Verified Clutch 5.0/5.0. We deploy on Friday afternoons. Then we go home.",
+      "keywords": "cloud engineering, DevOps, SRE, site reliability engineering, Kubernetes consulting, Terraform consulting, infrastructure as code, CI/CD pipelines, observability stack, Prometheus Grafana, cloud cost optimization, FinOps, AWS consulting, GCP consulting, Azure consulting, cloud migration, multi-cloud architecture, Kubernetes Algeria, DevOps Algeria, cloud consulting MENA, AWS consulting Saudi Arabia, GCP France, Symloop cloud, Symloop devops"
+    },
+    "hero": {
+      "eyebrow": "01 — Cloud & DevOps",
+      "titleLine1": "We deploy on Friday afternoons.",
+      "titleLine2": "Then we go home.",
+      "subtitle": "We engineer production infrastructure that doesn't page anyone at 3am. Kubernetes, Terraform, observability, CI/CD, cost optimization. The same team that built your software keeps it running.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See what we run",
+      "statusLive": "live",
+      "operational": "Operational",
+      "uptime": "Uptime · 90d"
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we run infrastructure.",
+      "label": "How we run"
+    },
+    "principles": {
+      "eyebrow": "03 — Principles",
+      "title": "Four principles. We don't compromise on them.",
+      "items": {
+        "p1": "Infrastructure as code. Not by hand.",
+        "p2": "Observability before features.",
+        "p3": "Rollbacks faster than incidents.",
+        "p4": "Automate the toil. Keep the judgment."
+      }
+    },
+    "run": {
+      "eyebrow": "04 — What we run",
+      "title": "Five layers of production infrastructure.",
+      "subtitle": "From the edge to the database, every layer engineered to be observable, reproducible, and recoverable.",
+      "toolsLabel": "Tools",
+      "layers": {
+        "edge": {
+          "name": "Edge & Networking",
+          "shortLabel": "Layer 1 — User-facing",
+          "description": "CDN, edge functions, DNS, load balancing, WAF, DDoS protection. The first line of defense and the first millisecond of latency.",
+          "tools": "Cloudflare · NGINX · AWS CloudFront · Vercel Edge"
+        },
+        "orchestration": {
+          "name": "Container Orchestration",
+          "shortLabel": "Layer 2 — Compute",
+          "description": "Kubernetes clusters, service meshes, autoscaling, blue-green and canary deployments, GitOps workflows, zero-downtime releases.",
+          "tools": "Kubernetes · Helm · ArgoCD · Istio · Linkerd"
+        },
+        "data": {
+          "name": "Data & Storage",
+          "shortLabel": "Layer 3 — State",
+          "description": "Managed databases, replication, backups, point-in-time recovery, schema migrations, query optimization, caching layers.",
+          "tools": "PostgreSQL · Redis · MongoDB · S3 · Backblaze B2"
+        },
+        "observability": {
+          "name": "Observability & SRE",
+          "shortLabel": "Layer 4 — Eyes",
+          "description": "Metrics, logs, traces, alerts, dashboards, on-call rotations, error budgets, incident response runbooks. We see everything before users do.",
+          "tools": "Prometheus · Grafana · Loki · OpenTelemetry · Sentry"
+        },
+        "security": {
+          "name": "Security & Compliance",
+          "shortLabel": "Layer 5 — Trust",
+          "description": "Secrets management, network policies, RBAC, image scanning, supply-chain security, audit logging, compliance frameworks.",
+          "tools": "Vault · Trivy · Falco · OPA · Cosign"
+        }
+      }
+    },
+    "ceremonies": {
+      "eyebrow": "05 — Ceremonies",
+      "title": "Operational cadence. Boring on purpose.",
+      "subtitle": "Predictable rhythm beats heroics. Every Symloop production engagement runs on the same four ceremonies.",
+      "items": {
+        "daily": {
+          "frequency": "Every day",
+          "title": "Daily ops review",
+          "description": "15-minute sync on incidents, alerts, deployment health, cost anomalies. Triage anything that needs to move today."
+        },
+        "weekly": {
+          "frequency": "Every week",
+          "title": "Weekly deploy window",
+          "description": "Friday afternoon deploys (yes, Friday). Confidence comes from rollback infrastructure, not from cluster timing."
+        },
+        "monthly": {
+          "frequency": "Every month",
+          "title": "Monthly retrospective",
+          "description": "Incident review, error-budget burndown, capacity planning, cost report. Adjust priorities for the next month."
+        },
+        "quarterly": {
+          "frequency": "Every quarter",
+          "title": "Quarterly audit",
+          "description": "Security audit, dependency review, disaster-recovery drill, RTO/RPO validation. The boring stuff that prevents 3am pages."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Proof",
+      "mainLabel": "Production uptime · rolling 90 days",
+      "context": "Across all production systems Symloop operates, the rolling 90-day average uptime sits above the four-nines target. This is the floor, not the ceiling. We engineer for higher.",
+      "support": {
+        "deploys": { "value": "200+/mo", "label": "Production deploys per month" },
+        "pages":   { "value": "0",       "label": "3am pages last quarter" },
+        "mttr":    { "value": "<8min",   "label": "Mean time to recovery" }
+      },
+      "quote": "They migrated our entire stack to Kubernetes over six weeks with zero downtime. We didn't get a single 3am page during the migration. Two years later, we still don't.",
+      "quoteAttribution": "— CTO, SaaS platform, Algeria"
+    },
+    "stack": {
+      "eyebrow": "07 — Tech we use",
+      "title": "Mature, boring, production-grade.",
+      "groups": {
+        "compute": {
+          "category": "Compute & Orchestration",
+          "tools": "Kubernetes · Docker · Helm · ArgoCD · Karpenter · KEDA · Knative"
+        },
+        "networking": {
+          "category": "Networking & Edge",
+          "tools": "Cloudflare · NGINX · Istio · Linkerd · AWS ALB · Vercel Edge · Envoy"
+        },
+        "data": {
+          "category": "Data & Storage",
+          "tools": "PostgreSQL · Redis · MongoDB · Elasticsearch · Kafka · S3 · Backblaze B2"
+        },
+        "observability": {
+          "category": "Observability & SRE",
+          "tools": "Prometheus · Grafana · Loki · OpenTelemetry · Sentry · Datadog · PagerDuty"
+        },
+        "security": {
+          "category": "Security & Compliance",
+          "tools": "Vault · Trivy · Falco · OPA · Cosign · Snyk · GitHub Advanced Security"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does cloud + DevOps work cost?",
+          "answer": "Engagements are typically structured as fixed-price discovery (1–2 weeks) followed by either a fixed-price migration project (4–12 weeks) or a monthly SRE retainer (€8K–€25K/month depending on scope). Cost optimization engagements often pay for themselves within 60 days through cloud bill reduction."
+        },
+        "sla": {
+          "question": "What SLA can you commit to?",
+          "answer": "Default production SLA is 99.9% uptime measured rolling 30 days. Higher tiers (99.95%, 99.99%) are available for engagements with multi-region architecture and dedicated on-call rotations. We never sell uptime numbers we can't engineer."
+        },
+        "migration": {
+          "question": "Can you migrate us to Kubernetes / cloud / multi-cloud?",
+          "answer": "Yes. We do incremental migrations (strangler-fig), not big-bang rewrites. Typical migration to Kubernetes takes 6–12 weeks for a mid-sized application with zero production downtime. Multi-cloud takes longer because the tradeoffs need careful design — we'll tell you in discovery if you actually need multi-cloud or if it's complexity you can avoid."
+        },
+        "oncall": {
+          "question": "Do you handle on-call?",
+          "answer": "Yes. We offer 24/7 on-call rotations as part of long-term retainers, with documented runbooks, escalation paths, and incident review. Our on-call engineers are the same engineers who built the system — not a separate ops team handed a wiki."
+        },
+        "multicloud": {
+          "question": "AWS, GCP, Azure, or multi-cloud?",
+          "answer": "Whichever fits the workload. We've shipped production systems on all three. We default to single-cloud unless there's a real reason for multi-cloud (regulatory, latency, vendor risk). Most teams who think they need multi-cloud actually need better architecture on one cloud."
+        },
+        "security": {
+          "question": "Do you handle security and compliance?",
+          "answer": "Yes. Secrets management, network policies, RBAC, image scanning, supply-chain security, audit logs, compliance frameworks (SOC 2, ISO 27001, HIPAA where applicable). Security is engineered in, not bolted on at audit time."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Talk to us",
+      "title": "Have infrastructure that wakes you up? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "mobile_engineering_page": {
+    "seo": {
+      "title": "Symloop Mobile Engineering — Native iOS, Android, Flutter, React Native",
+      "description": "Symloop builds production mobile applications. Native iOS (Swift), native Android (Kotlin), Flutter, React Native, and embedded mobile. Offline-first, multilingual, accessibility-built-in. Senior engineering team in Algeria, international delivery across MENA and Europe. Verified Clutch 5.0/5.0. We ship apps that survive past 24 hours.",
+      "keywords": "mobile app development, native iOS development, native Android development, Swift development, Kotlin development, Flutter development, React Native development, mobile engineering firm, mobile app Algeria, mobile app MENA, mobile app France, mobile app UAE, mobile app Saudi Arabia, app store submission, Google Play submission, offline-first mobile, multilingual mobile, Arabic RTL mobile, mobile performance optimization, embedded mobile, kiosk app development, POS app development, Symloop mobile"
+    },
+    "hero": {
+      "eyebrow": "01 — Mobile Engineering",
+      "titleLine1": "76% of apps are deleted within 24 hours.",
+      "titleLine2": "We don't build those.",
+      "subtitle": "We engineer mobile applications for production. Native performance, offline-first, multilingual by default. iOS, Android, Flutter, React Native — under one team, end-to-end.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See what survives",
+      "stats": {
+        "deletion": { "label": "Apps deleted within 24h",   "value": "76%" },
+        "fps":      { "label": "Production frame budget",    "value": "60fps" },
+        "clutch":   { "label": "Clutch verified rating",     "value": "5.0 / 5.0" },
+        "stores":   { "label": "Regional store deployments", "value": "9" }
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we ship mobile.",
+      "label": "How we ship"
+    },
+    "platforms": {
+      "eyebrow": "03 — Platforms",
+      "title": "Five platforms. One engineering team.",
+      "subtitle": "We pick the platform that fits your problem — not the one we know best. Native when the OS matters, cross-platform when budget and speed do.",
+      "bestForLabel": "Best for",
+      "items": {
+        "ios": {
+          "name": "Native iOS",
+          "stack": "Swift · SwiftUI · Combine",
+          "description": "Native iOS development for products where iOS-first quality matters. SwiftUI interfaces, Combine reactivity, deep platform integration (Live Activities, Widgets, App Intents).",
+          "bestFor": "iOS-first products, premium consumer apps, enterprise iPad rollouts."
+        },
+        "android": {
+          "name": "Native Android",
+          "stack": "Kotlin · Jetpack Compose · Coroutines",
+          "description": "Native Android with Kotlin and Jetpack Compose. Material 3 design, deep OS integration, optimized for low-end devices common in MENA and Africa.",
+          "bestFor": "Android-first markets, low-end device targets, deep OS features."
+        },
+        "flutter": {
+          "name": "Flutter",
+          "stack": "Dart · Flutter · Riverpod",
+          "description": "Single Dart codebase shipping iOS and Android with native performance. Fast iteration, consistent UI across platforms, mature for production.",
+          "bestFor": "Cross-platform from day one, budget-conscious teams, design-heavy apps."
+        },
+        "reactnative": {
+          "name": "React Native",
+          "stack": "TypeScript · React Native · Hermes",
+          "description": "React Native with TypeScript for teams already shipping React on the web. Native modules where needed, JS bridges everywhere else.",
+          "bestFor": "Web-first teams adding mobile, content-driven apps, internal tools."
+        },
+        "embedded": {
+          "name": "Embedded mobile",
+          "stack": "Custom builds · Hardware-aware",
+          "description": "Mobile applications bound to specific hardware or operating environments — kiosks, POS terminals, industrial tablets, vehicle systems. Offline-first, hardware-aware, multi-day uptime.",
+          "bestFor": "Kiosks, POS, industrial tablets, fleet vehicles, hardware-bound apps."
+        }
+      }
+    },
+    "survival": {
+      "eyebrow": "04 — Survival principles",
+      "title": "What makes a mobile app survive.",
+      "subtitle": "Six non-negotiables. Every Symloop mobile app ships with all six. None of them are optional.",
+      "items": {
+        "s1": "Tested on real devices, not just simulators.",
+        "s2": "Offline-first — works where signal doesn't.",
+        "s3": "Multilingual from day one (Arabic RTL, French, English).",
+        "s4": "Crash-free target above 99.5%, monitored from day one.",
+        "s5": "Performance budget enforced in CI (no >2.5s first-paint).",
+        "s6": "Accessibility built in (VoiceOver, TalkBack, large text)."
+      }
+    },
+    "how": {
+      "eyebrow": "05 — How we ship",
+      "title": "Four phases. Discovery to store.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "duration": "1–2 weeks",
+          "description": "Sit with your team, understand the user, audit the data, identify the right platform (or honestly tell you cross-platform is wrong here), scope a paid pilot."
+        },
+        "design": {
+          "title": "Design system",
+          "duration": "2–3 weeks",
+          "description": "Build the interface design system: components, tokens, accessibility patterns, RTL support. Tested on real devices before a line of production code."
+        },
+        "engineering": {
+          "title": "Engineering",
+          "duration": "8–16 weeks",
+          "description": "Production code with CI, unit + UI + integration tests, crash monitoring, performance budgets, real-device test farm, beta releases via TestFlight and Play Console."
+        },
+        "ship": {
+          "title": "Ship & operate",
+          "duration": "Ongoing",
+          "description": "App Store + Play Store submission, staged rollouts, crash triage, performance monitoring, OS update reviews, store optimization. Long-term mobile partner."
+        }
+      }
+    },
+    "metrics": {
+      "eyebrow": "06 — Metrics that matter",
+      "title": "Numbers we engineer toward.",
+      "subtitle": "Every Symloop mobile app is measured against these. Not vanity metrics — operational ones.",
+      "items": {
+        "fps":      { "value": "60fps",  "label": "Production target",      "description": "Every render under the 16ms frame budget. Tested on cheap Android devices, not flagship iPhones." },
+        "paint":    { "value": "<2.5s",  "label": "First paint",            "description": "Time-to-interactive under 2.5 seconds on a mid-range Android with a 4G connection." },
+        "crash":    { "value": "99.5%+", "label": "Crash-free sessions",    "description": "Sentry-monitored from day one. Every regression triaged before the next release." },
+        "coverage": { "value": "94%",    "label": "Test coverage",          "description": "Unit + UI + integration tests. Every critical path covered before merge." },
+        "codebase": { "value": "1",      "label": "Codebase (cross-plat)",  "description": "When using Flutter or React Native, one codebase for iOS and Android with shared logic and platform-specific UI where needed." },
+        "stores":   { "value": "9",      "label": "Regional deployments",   "description": "App Store + Play Store + regional variants (App Store Connect supports 175 countries; we ship to the relevant 9 by default)." }
+      }
+    },
+    "stack": {
+      "eyebrow": "07 — Tech we use",
+      "title": "Per-platform stacks. All production-grade.",
+      "items": {
+        "ios": {
+          "platform": "iOS",
+          "label": "Native, Apple-first",
+          "tech": "Swift · SwiftUI · Combine · Core Data · Xcode Cloud · TestFlight · Sentry"
+        },
+        "android": {
+          "platform": "Android",
+          "label": "Native, Material 3",
+          "tech": "Kotlin · Jetpack Compose · Coroutines · Room · GitHub Actions · Play Console · Sentry"
+        },
+        "flutter": {
+          "platform": "Flutter",
+          "label": "Cross-platform, native feel",
+          "tech": "Dart · Flutter · Riverpod · Drift · Codemagic · Fastlane · Firebase Crashlytics"
+        },
+        "reactnative": {
+          "platform": "React Native",
+          "label": "Web teams, mobile output",
+          "tech": "TypeScript · React Native · Hermes · MMKV · EAS · Sentry · Reanimated"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does a mobile app cost?",
+          "answer": "Mobile app pricing depends on platform count, complexity, and integration depth. A focused single-platform pilot starts at €25K. A full cross-platform app (iOS + Android) typically lands between €60K and €200K. We start with a fixed-price discovery (1–2 weeks) followed by a fixed-price pilot before committing to a full build. The discovery delivers a transparent quote — no estimate-by-vibes."
+        },
+        "timeline": {
+          "question": "How long does a mobile app take?",
+          "answer": "A pilot delivers a working app in 6–10 weeks. A full production app reaches the App Store / Play Store in 16–24 weeks for cross-platform, or 20–28 weeks for native iOS + native Android in parallel. Embedded and hardware-bound apps vary depending on hardware integration scope."
+        },
+        "platforms": {
+          "question": "Should we go native or cross-platform?",
+          "answer": "It depends. Go native (iOS + Android separately) when platform-specific OS features matter, when your audience is heavily skewed to one platform, or when the app must feel premium. Go cross-platform (Flutter, React Native) when speed, budget, and consistency matter more than platform-specific polish. We help you decide in discovery — and we'll tell you honestly if cross-platform is the wrong call for your case."
+        },
+        "offline": {
+          "question": "Do you build offline-first apps?",
+          "answer": "Yes — it's a default, not a feature. Every Symloop mobile app is designed to work without an internet connection: local-first storage, queued mutations, sync on reconnect, conflict resolution. This is non-negotiable in markets where signal is unreliable."
+        },
+        "store": {
+          "question": "Do you handle App Store and Play Store submission?",
+          "answer": "Yes. We handle the full submission process: store listings, metadata, screenshots, app review responses, staged rollouts, hotfix deployment. We've shipped apps to both stores in 9+ regional markets. If you don't have store accounts yet, we help you set them up."
+        },
+        "maintenance": {
+          "question": "Do you maintain apps after launch?",
+          "answer": "Yes. We offer ongoing operations contracts: crash triage, performance monitoring, OS-update compatibility (iOS major releases, Android API targets), feature work, security patches. Or we can hand off cleanly to your internal team with documentation and a knowledge transfer."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Talk to us",
+      "title": "Have a mobile app worth building? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "software_engineering_page": {
+    "seo": {
+      "title": "Symloop Software Engineering — Custom Systems, SaaS & Enterprise Backends",
+      "description": "Symloop builds custom software, SaaS platforms, enterprise backends (ERP/CRM/HRMS), APIs and microservices, real-time systems, and modernizes legacy systems. Senior engineering team in Algeria, international delivery across MENA and Europe. Verified Clutch 5.0/5.0. We engineer software like infrastructure — built to outlast the team that built it.",
+      "keywords": "custom software development, software engineering firm, SaaS platform engineering, enterprise backend systems, ERP development, CRM development, HRMS, API development, microservices architecture, GraphQL, real-time systems, event-driven architecture, system modernization, legacy migration, software engineering Algeria, custom software Algeria, SaaS development MENA, enterprise software UAE, software engineering France, custom software firm, Symloop software engineering"
+    },
+    "hero": {
+      "eyebrow": "01 — Software Engineering",
+      "titleLine1": "Software is infrastructure.",
+      "titleLine2": "Built to outlast the team that built it.",
+      "subtitle": "We don't ship MVPs and disappear. We engineer custom systems — SaaS platforms, enterprise backends, APIs, real-time systems — that run reliably for years. Senior engineering team, international delivery, no subcontracting.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See what we build"
+    },
+    "video": {
+      "eyebrow": "02 — Watch",
+      "title": "How we engineer.",
+      "label": "How we engineer"
+    },
+    "manifesto": {
+      "eyebrow": "03 — Principles",
+      "title": "Three principles. We don't compromise on them.",
+      "items": {
+        "m1": "We don't ship MVPs and disappear.",
+        "m2": "We don't customize Odoo and call it ERP.",
+        "m3": "We engineer systems that run for a decade."
+      }
+    },
+    "build": {
+      "eyebrow": "04 — What we build",
+      "title": "Five system types, engineered end-to-end.",
+      "subtitle": "Custom software covers a wide range. Here's what we actually deliver, with real examples of each.",
+      "navLabel": "Categories",
+      "items": {
+        "saas": {
+          "title": "SaaS & Platform Engineering",
+          "description": "Multi-tenant SaaS platforms designed for scale from day one. Tenant isolation, billing, auth, admin, analytics — engineered as a coherent system, not bolted together from templates.",
+          "examples": {
+            "0": "Multi-tenant SaaS platforms with strict tenant isolation",
+            "1": "Subscription billing systems with Stripe, Lemon Squeezy, or local payment integrations",
+            "2": "Admin consoles, customer portals, and tenant onboarding flows",
+            "3": "Usage metering, quota enforcement, and per-tenant analytics",
+            "4": "Single sign-on (SSO), SAML, OAuth, and enterprise auth integrations"
+          }
+        },
+        "enterprise": {
+          "title": "Enterprise Backend Systems (ERP · CRM · HRMS)",
+          "description": "Custom enterprise systems built from scratch — not Odoo customization, not SAP add-ons. We design the data model around your operations, not the other way around.",
+          "examples": {
+            "0": "Custom ERP systems — inventory, finance, procurement, HR, manufacturing modules",
+            "1": "Custom CRM systems — pipeline, contacts, lead scoring, integrations with email and telephony",
+            "2": "Custom HRMS — payroll, attendance, performance reviews, leave management",
+            "3": "Industrial / SCADA software — production-floor integration, MES, OEE dashboards",
+            "4": "Government / public-sector e-services with strict compliance and audit trails"
+          }
+        },
+        "apis": {
+          "title": "APIs & Microservices",
+          "description": "REST, GraphQL, gRPC. Internal service meshes, external developer APIs, B2B integrations. We design APIs that your future engineering team will thank you for.",
+          "examples": {
+            "0": "REST and GraphQL APIs for mobile and web clients",
+            "1": "Microservice architectures with clear service boundaries and contracts",
+            "2": "B2B integration APIs with rate limiting, authentication, and developer documentation",
+            "3": "Internal service-to-service communication with gRPC and event buses",
+            "4": "API gateways, edge functions, and multi-region routing"
+          }
+        },
+        "realtime": {
+          "title": "Real-time & Event-Driven Systems",
+          "description": "Systems where latency matters and events arrive faster than you can poll. Kafka, NATS, WebSockets. Built for throughput and ordered delivery.",
+          "examples": {
+            "0": "Real-time dashboards and live monitoring systems",
+            "1": "Event-driven architectures with Apache Kafka or NATS",
+            "2": "WebSocket-based collaboration features and live notifications",
+            "3": "High-throughput data ingestion pipelines with backpressure handling",
+            "4": "CQRS and event sourcing for audit-heavy domains (finance, healthcare, government)"
+          }
+        },
+        "modernization": {
+          "title": "System Modernization & Migration",
+          "description": "Legacy systems on PHP 5.6, .NET Framework, or 15-year-old Oracle databases. We migrate them incrementally — strangler-fig style — without big-bang rewrites that fail.",
+          "examples": {
+            "0": "Strangler-fig migrations from monoliths to microservices",
+            "1": "Database migrations (Oracle → PostgreSQL, MySQL → PostgreSQL, etc.)",
+            "2": "Lift-and-shift to Kubernetes with zero downtime",
+            "3": "Frontend modernization (jQuery → React/Next.js, AngularJS → Vue/React)",
+            "4": "API extraction from monoliths and gradual decomposition"
+          }
+        }
+      }
+    },
+    "how": {
+      "eyebrow": "05 — How we engage",
+      "title": "Three steps. We refuse what we can't ship.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "duration": "1–2 weeks · fixed price",
+          "description": "We sit with your team, understand the operational problem, audit existing systems and data, identify the right architecture, and scope a paid pilot with measurable success criteria. Output: written engagement brief and a fixed-price pilot SOW."
+        },
+        "pilot": {
+          "title": "Pilot",
+          "duration": "4–8 weeks · fixed scope, fixed price",
+          "description": "Proof of value on real data. The first system module is built, deployed behind a feature flag, and validated against business metrics. You get working software, source code, documentation, and a clear go/no-go decision."
+        },
+        "production": {
+          "title": "Production & Operations",
+          "duration": "Ongoing",
+          "description": "Once the pilot proves value, we engineer for production: monitoring, on-call, incident response, deployments, scaling, security. We stay as a long-term engineering partner — not a hand-off."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Proof",
+      "title": "Numbers we can defend.",
+      "stats": {
+        "uptime": "Production uptime",
+        "runtime": "Longest-running system",
+        "clutch": "Clutch verified rating"
+      },
+      "quote": "They built our ERP from scratch in six months. Two years later it's still running without a single Symloop engineer on-call. That's the bar.",
+      "quoteAttribution": "— IT Director, Industrial group, Algeria"
+    },
+    "stack": {
+      "eyebrow": "07 — Tech we use",
+      "title": "Mature, boring, production-grade.",
+      "subtitle": "We use the same tools the best engineering teams in the world use. No experimental libraries, no half-maintained packages — only mature, production-tested infrastructure."
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Common questions.",
+      "label": "Answer",
+      "items": {
+        "cost": {
+          "question": "How much does a custom system cost?",
+          "answer": "Custom software pricing depends on scope, integration count, and production SLAs. Typical engagements start at €30K for a focused pilot and scale up to multi-year retainers for enterprise systems. We start with a fixed-price discovery (1–2 weeks) followed by a fixed-price pilot (4–8 weeks). The discovery delivers a transparent quote — no estimate-by-vibes."
+        },
+        "timeline": {
+          "question": "How long does a custom system take to build?",
+          "answer": "A pilot delivers working software in 4–8 weeks. A full enterprise system (ERP, CRM, complete platform) typically reaches production in 4–6 months. Modernization projects vary widely depending on legacy system complexity. We never promise a date we can't hit."
+        },
+        "modernization": {
+          "question": "Can you modernize our legacy system?",
+          "answer": "Yes — that's a core capability. We do strangler-fig migrations, not big-bang rewrites. The legacy system stays running while we incrementally extract functionality into a modern stack. Most clients see the first migrated module in 6–8 weeks, with full migration over 6–18 months depending on scope."
+        },
+        "ip": {
+          "question": "Who owns the code?",
+          "answer": "You do. All deliverables — source code, infrastructure-as-code, documentation, test suites, deployment pipelines — are transferred to your team under your IP. We retain the right to use generic, anonymized techniques in future engagements."
+        },
+        "support": {
+          "question": "Do you maintain the system after launch?",
+          "answer": "Yes. We offer ongoing operations contracts: monitoring, on-call SLAs, incident response, security patching, feature work. Or we can hand off cleanly to your internal team with documentation and a knowledge transfer. Your call — both options are valid."
+        },
+        "team": {
+          "question": "Will you replace our internal team?",
+          "answer": "No. We work alongside internal teams as a senior engineering augmentation. The best outcomes happen when your team owns the product knowledge and we own the engineering execution. We embed, document everything, and transfer skills as we go — the goal is for your team to operate the system confidently."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Talk to us",
+      "title": "Have a system worth building? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
+  "ai_page": {
+    "seo": {
+      "title": "Symloop Technology — Applied AI, NLP & Machine Learning Engineering Worldwide",
+      "description": "Symloop Technology is a global applied AI and machine learning engineering firm. We build production AI systems for enterprises worldwide — computer vision, natural language processing (NLP), predictive analytics, LLM integration, and MLOps. Custom-trained models, not API wrappers. Senior engineering hub in Algeria with international delivery across MENA, the Gulf, and Europe. Verified Clutch profile 5.0/5.0. We engineer AI the way an enterprise systems integrator does — not as a chatbot agency or dev shop.",
+      "keywords": "applied AI, AI engineering firm, AI consulting firm, NLP company, natural language processing, computer vision, LLM integration, MLOps, AI systems integrator, enterprise AI consulting, applied artificial intelligence, deep learning company, predictive analytics company, AI consulting Algeria, applied AI Algeria, machine learning Algeria, computer vision Algeria, NLP Algeria, AI engineering Algeria, intelligence artificielle entreprise Algérie, شركة ذكاء اصطناعي الجزائر, AI consulting MENA, AI consulting Saudi Arabia, AI consulting UAE, AI consulting Dubai, machine learning France, AI engineering Europe, NLP services worldwide, generative AI consulting, RAG systems, vector databases, fine-tuning LLM, custom AI models, AI strategy consulting"
+    },
+    "hero": {
+      "eyebrow": "01 — Artificial Intelligence",
+      "titleStart": "AI engineering for",
+      "cycle": {
+        "0": "computer vision.",
+        "1": "predictive analytics.",
+        "2": "LLM-powered systems.",
+        "3": "recommendation engines.",
+        "4": "production MLOps."
+      },
+      "subtitle": "We don't wrap APIs. We train custom models, ship them to production, and operate them. Engineered end-to-end by an in-house team — for enterprises that need real outcomes, not demos.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "View capabilities",
+      "stats": {
+        "years":     { "label": "Years in production",  "value": "5+" },
+        "team":      { "label": "ML engineers in-house", "value": "10+" },
+        "delivery":  { "label": "Markets served",        "value": "EU · MENA · DZ" },
+        "clutch":    { "label": "Clutch verified rating","value": "5.0 / 5.0" }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "02 — Capabilities",
+      "title": "Five capabilities, delivered end-to-end.",
+      "subtitle": "Click any capability to see real use cases, technical depth, and the kind of problems we solve in production.",
+      "cta": "Read more",
+      "activeLabel": "Selected",
+      "useCasesLabel": "Common use cases",
+      "items": {
+        "cv": {
+          "title": "Computer Vision",
+          "tagline": "Real-time visual intelligence for industrial, retail, and security operations.",
+          "description": "We design, train, and deploy computer vision systems that run reliably in real-world conditions — factory floors, retail stores, surveillance feeds, drones, medical equipment. From classical image processing to modern deep-learning detection, segmentation, and tracking.",
+          "tech": "PyTorch · OpenCV · YOLO · ONNX · NVIDIA Triton",
+          "useCases": {
+            "0": "Defect detection on production lines (steel, glass, food, plastics)",
+            "1": "Inventory counting and shelf compliance for retail chains",
+            "2": "Medical image analysis: triage, segmentation, anomaly flagging",
+            "3": "Real-time surveillance intelligence with privacy-preserving inference",
+            "4": "Document and ID intelligence: OCR, tampering detection, KYC pipelines",
+            "5": "Drone and satellite imagery for agriculture, mining, and infrastructure"
+          }
+        },
+        "nlp": {
+          "title": "Natural Language Processing",
+          "tagline": "Document understanding, entity extraction, classification, sentiment, summarization, and voice.",
+          "description": "We build natural language systems that read, classify, summarize, extract, and route content at scale. Multilingual by default. We handle noisy real-world text — emails, scanned PDFs, voice transcripts, social posts — not clean academic datasets.",
+          "tech": "Transformers · spaCy · Hugging Face · Whisper · LangChain",
+          "useCases": {
+            "0": "Contract intelligence: clause extraction, risk flagging, comparison",
+            "1": "Inbound email triage and routing for support and operations teams",
+            "2": "Scanned document understanding (invoices, IDs, forms, reports)",
+            "3": "Voice transcription and meeting summarization at enterprise scale",
+            "4": "Multilingual sentiment and topic analysis on customer feedback",
+            "5": "Knowledge base construction from unstructured internal content"
+          }
+        },
+        "predictive": {
+          "title": "Predictive Analytics",
+          "tagline": "Forecasting, anomaly detection, and decision intelligence calibrated on your real operational data.",
+          "description": "We build predictive models against the noisy, incomplete, real data that operations actually have — not synthetic benchmarks. Models are evaluated against business outcomes (cost saved, churn prevented, fraud caught), not just F1 scores.",
+          "tech": "XGBoost · LightGBM · Prophet · scikit-learn · TimescaleDB",
+          "useCases": {
+            "0": "Demand forecasting and inventory optimization for retail and logistics",
+            "1": "Predictive maintenance for industrial equipment and fleets",
+            "2": "Customer churn and lifetime value modeling",
+            "3": "Fraud and anomaly detection in transactional systems",
+            "4": "Route and delivery optimization for last-mile and field operations",
+            "5": "Energy consumption forecasting for buildings and grids"
+          }
+        },
+        "llm": {
+          "title": "LLM Integration",
+          "tagline": "Production-grade integrations of GPT, Claude, and open-weight models into business systems.",
+          "description": "We integrate large language models into actual business workflows — with retrieval, evaluation harnesses, prompt regression tests, observability, and guardrails. Not chat toys: systems that an enterprise can audit, version, and trust.",
+          "tech": "OpenAI · Anthropic · Llama · LangChain · LangGraph · pgvector",
+          "useCases": {
+            "0": "Retrieval-augmented assistants over private knowledge bases",
+            "1": "Agentic workflows: multi-step planning, tool use, human handoff",
+            "2": "Structured extraction from documents, contracts, and emails",
+            "3": "Code understanding and codebase Q&A for engineering teams",
+            "4": "Customer support automation with audit trails and escalation",
+            "5": "Internal research copilots integrated with company systems"
+          }
+        },
+        "mlops": {
+          "title": "MLOps & AI Infrastructure",
+          "tagline": "Pipelines, monitoring, retraining loops, and the boring infrastructure that keeps AI alive.",
+          "description": "Model accuracy in a notebook means nothing in production. We engineer the boring parts: training pipelines, model registries, drift monitoring, retraining triggers, A/B testing, rollback safety, observability. The plumbing that makes AI systems reliable months after launch.",
+          "tech": "Docker · Kubernetes · MLflow · Weights & Biases · DVC · Airflow",
+          "useCases": {
+            "0": "Reproducible training pipelines with versioned data and code",
+            "1": "Model registry, deployment, and rollback infrastructure",
+            "2": "Real-time drift and performance monitoring with alerts",
+            "3": "Automated retraining loops triggered by data shifts",
+            "4": "A/B testing infrastructure for shadow and canary deployments",
+            "5": "Cost optimization for GPU inference at production scale"
+          }
+        }
+      }
+    },
+    "why": {
+      "eyebrow": "03 — Why Symloop",
+      "title": "An engineering firm, not a buzzword shop.",
+      "items": {
+        "0": {
+          "title": "We train, not wrap",
+          "description": "We build custom models against your data. API-only solutions are recommended only when the math actually says so — never as a default."
+        },
+        "1": {
+          "title": "Verified Clutch 5.0 / 5.0",
+          "description": "Independently verified client reviews on Clutch.co — Clutch interviews each client directly before publishing. Profile linked in our footer."
+        },
+        "2": {
+          "title": "Local + International",
+          "description": "Senior engineering team based in Algeria, with delivered projects across France, Spain, Germany, Italy, UAE, Saudi Arabia, and Kuwait."
+        },
+        "3": {
+          "title": "We refuse what we can't ship",
+          "description": "If discovery shows the data doesn't support an ML solution, we say so and recommend an alternative. We don't sell projects we can't deliver."
+        }
+      }
+    },
+    "engagement": {
+      "eyebrow": "04 — How we engage",
+      "title": "Three steps. No surprises.",
+      "subtitle": "Every AI engagement starts small, proves value fast, and scales only when the data and the math justify it.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "duration": "1–2 weeks",
+          "description": "We sit with your team, understand the operational problem, audit available data, identify the right ML approach (or honestly tell you AI isn't the right tool), and scope a paid pilot with a measurable success criterion. Output: a written engagement brief and a fixed-price pilot SOW."
+        },
+        "pilot": {
+          "title": "Pilot",
+          "duration": "4–8 weeks",
+          "description": "Fixed-scope, fixed-price proof of value on real data. Models are trained, evaluated against business metrics, and shipped behind a feature flag. You get a working prototype, an evaluation report, and a clear go/no-go decision — with no obligation to continue."
+        },
+        "production": {
+          "title": "Production & Operations",
+          "duration": "Ongoing",
+          "description": "Once the pilot proves value, we engineer for production: monitoring, retraining, MLOps pipelines, SLAs, on-call. We stay on the system as a long-term engineering partner — not a hand-off to your internal team."
+        }
+      }
+    },
+    "stack": {
+      "eyebrow": "05 — Tech we use",
+      "title": "Mature, boring, production-grade.",
+      "subtitle": "We use the same tools the best AI engineering teams in the world use. No experimental libraries, no half-maintained packages — only mature, production-tested infrastructure.",
+      "groups": {
+        "0": { "label": "Modeling", "items": "PyTorch · TensorFlow · scikit-learn · XGBoost · LightGBM · Hugging Face Transformers" },
+        "1": { "label": "LLM & RAG", "items": "OpenAI · Anthropic · Llama · LangChain · LangGraph · pgvector · Chroma" },
+        "2": { "label": "Computer Vision", "items": "OpenCV · YOLO · Detectron2 · MMDetection · ONNX · NVIDIA Triton" },
+        "3": { "label": "NLP & Speech", "items": "spaCy · Transformers · Whisper · Wav2Vec · Sentence-Transformers" },
+        "4": { "label": "MLOps", "items": "MLflow · Weights & Biases · DVC · Airflow · Prefect · BentoML" },
+        "5": { "label": "Infrastructure", "items": "Docker · Kubernetes · AWS · GCP · Vercel · PostgreSQL · Redis · Kafka" }
+      }
+    },
+    "video": {
+      "eyebrow": "06 — Watch",
+      "title": "See how we build.",
+      "label": "How we build",
+      "placeholder": "Video coming soon"
+    },
+    "faq": {
+      "eyebrow": "07 — FAQ",
+      "title": "Common questions.",
+      "items": {
+        "cost": {
+          "question": "How much does an AI project cost?",
+          "answer": "It depends entirely on data quality, scope, and the production target. We typically run a fixed-price discovery (1–2 weeks) followed by a fixed-price pilot (4–8 weeks) before committing to a long-term engagement. The discovery gives you a transparent quote — no estimate-by-vibes."
+        },
+        "data": {
+          "question": "What if we don't have clean data?",
+          "answer": "Most enterprises don't. A real-world ML project spends 60–80% of the time on data: cleaning, labeling, integrating, validating. We handle that as part of the engagement. If the data simply doesn't exist or can't be collected within the project window, we'll tell you in discovery — before either of us commits."
+        },
+        "timeline": {
+          "question": "How long until we see results?",
+          "answer": "A pilot delivers a working prototype in 4–8 weeks with measurable evaluation against your business metrics. Production deployment follows the pilot once you approve. Most clients have a working AI system in production within 3 months of starting discovery."
+        },
+        "ip": {
+          "question": "Who owns the models and the code?",
+          "answer": "You do. All deliverables — models, training pipelines, evaluation harnesses, source code, documentation — are transferred to your team under your IP. We retain the right to use generic, anonymized techniques in future engagements."
+        },
+        "support": {
+          "question": "Do you operate the system after launch?",
+          "answer": "Yes. We offer ongoing operations contracts: monitoring, retraining, on-call SLAs, performance reviews. Or we can hand off cleanly to your internal team with documentation and a knowledge transfer. Your call."
+        },
+        "languages": {
+          "question": "What languages do you work in?",
+          "answer": "Our engineering and client communication runs in English, French, and Arabic. Models can be trained for any language with sufficient data — we have particular strength in multilingual and dialectal natural language systems."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "08 — Talk to us",
+      "title": "Have an AI problem worth solving? Let's start with a 30-minute call.",
+      "button": "Book a discovery call"
+    }
+  },
   "home": {
+    "insights": {
+      "eyebrow": "02 — Insights",
+      "title": "What we're publishing.",
+      "subtitle": "Industry briefs, technical guides, and engineering POVs from the people who actually ship the systems. Not whitepapers from a marketing team.",
+      "read": "Read",
+      "allLink": "All insights",
+      "items": {
+        "ai": {
+          "kind": "Industry brief",
+          "title": "AI automation in Algerian business — 2026",
+          "description": "Where AI is actually moving the needle for Algerian enterprises right now, and where it's still vapor. Five use cases that ship, five that don't.",
+          "meta": "24 pages · 18 min read"
+        },
+        "erp": {
+          "kind": "Tech vision",
+          "title": "Custom ERP for Algerian SMEs — beyond Odoo",
+          "description": "Why most Algerian ERP projects fail, and what we learned shipping ours. A field guide for CTOs evaluating build-vs-buy on enterprise systems.",
+          "meta": "32 pages · 22 min read"
+        },
+        "cost": {
+          "kind": "Engineering POV",
+          "title": "The real cost of building software in Algeria",
+          "description": "Honest pricing, honest timelines, and the hidden costs nobody mentions in the discovery call. Mobile, web, ERP, and AI projects compared side-by-side.",
+          "meta": "18 pages · 12 min read"
+        },
+        "healthcare": {
+          "kind": "Field report",
+          "title": "AI is not replacing doctors. It is replacing the paperwork.",
+          "description": "What clinical AI actually does in production today, why the doctor-replacement narrative is wrong, and where the real leverage is for Algerian and MENA hospitals.",
+          "meta": "26 pages · 16 min read"
+        }
+      }
+    },
     "services": {
-      "eyebrow": "01 — Services",
+      "eyebrow": "03 — Services",
       "title": "Engineering services for organizations that build for outcomes.",
       "subtitle": "Eight capabilities, delivered end-to-end by a senior engineering team. Software, AI, mobile, cloud, IoT, security — under one roof.",
       "cta": "Explore",
@@ -196,7 +1697,7 @@
       }
     },
     "industries": {
-      "eyebrow": "02 — Industries",
+      "eyebrow": "04 — Industries",
       "title": "Built for industries, not for buzzwords.",
       "subtitle": "Real projects shipped across seven verticals — locally in Algeria and internationally. Each engagement starts with how the industry actually operates, not with a tech stack.",
       "cta": "View work",

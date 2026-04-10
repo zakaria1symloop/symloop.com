@@ -53,8 +53,8 @@ export default function Document(props) {
         {/* Geographic and Business Meta */}
         <meta name="geo.region" content="MENA" />
         <meta name="geo.country" content="MENA Region" />
-        <meta name="geo.placename" content="Sétif, région MENA" />
-        <meta name="ICBM" content="36.1919, 5.4138" />
+        <meta name="geo.placename" content="Alger, région MENA" />
+        <meta name="ICBM" content="36.7538, 3.0588" />
 
         {/* Google Search Console Verification
             To verify ownership:

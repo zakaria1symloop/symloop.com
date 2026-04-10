@@ -4,6 +4,7 @@
     "services": "Services",
     "clientsPartners": "Clients & Partenaires",
     "blog": "Blog",
+    "insights": "Insights",
     "learning": "Learning",
     "investors": "Investisseurs",
     "recruitment": "Recrutement"
@@ -154,9 +155,1509 @@
       }
     }
   },
+  "product_engineering_page": {
+    "seo": {
+      "title": "Symloop Ingénierie Produit — De la Découverte au Lancement, Une Seule Équipe",
+      "description": "Ingénierie produit de bout en bout : découverte, design, ingénierie frontend et backend, mobile, DevOps, lancement, itération. La même équipe possède le cycle complet du produit. SaaS, marketplace, mobile, outils internes, web apps. Algérie, MENA, Europe. Profil Clutch vérifié 5.0/5.0.",
+      "keywords": "ingénierie produit, développement produit de bout en bout, MVP, développement SaaS, marketplace, application mobile, outils internes, équipe produit, ingénierie produit Algérie, ingénierie produit MENA, ingénierie produit France, Symloop produit"
+    },
+    "hero": {
+      "eyebrow": "01 — Ingénierie Produit",
+      "titleLine1": "De l'idée à la production.",
+      "titleLine2": "Une seule équipe. De bout en bout.",
+      "subtitle": "La plupart des agences produit font des transferts entre phases — découverte vers design, design vers ingénierie, ingénierie vers ops. Pas nous. La même équipe senior possède votre produit du premier sketch jusqu'aux release notes de production.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir ce que nous livrons",
+      "pills": {
+        "pill1": "Découverte",
+        "pill2": "Design",
+        "pill3": "Build",
+        "pill4": "Livraison"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Comment nous livrons les produits.",
+      "label": "Notre méthode"
+    },
+    "products": {
+      "eyebrow": "03 — Ce que nous livrons",
+      "title": "Cinq types de produits. Même équipe d'ingénierie.",
+      "subtitle": "Nous ne nous spécialisons pas par type de produit — nous nous spécialisons par barre de qualité. Chaque produit que nous livrons fonctionne en production avec des utilisateurs payants.",
+      "items": {
+        "saas": {
+          "name": "Plateformes SaaS",
+          "tag": "Multi-tenant",
+          "description": "Produits SaaS B2B du MVP à l'échelle. Isolation de tenants, facturation, admin, analytics, parcours d'onboarding clients. Conçus pour la vente — assez propres pour que les équipes procurement et sécurité les approuvent."
+        },
+        "mobile": {
+          "name": "Produits mobiles",
+          "tag": "iOS · Android · Cross-platform",
+          "description": "iOS natif, Android natif, Flutter, React Native. Offline-first, multilingue, accessibilité intégrée. La même équipe qui construit l'app construit aussi le backend qui l'alimente."
+        },
+        "marketplace": {
+          "name": "Marketplaces",
+          "tag": "Bilatéral",
+          "description": "Plateformes bilatérales avec la complexité opérationnelle qui va avec — KYC, résolution de litiges, escrow, notations, recherche, payouts. Nous avons livré des marketplaces en fintech, immobilier et services B2B."
+        },
+        "internal": {
+          "name": "Outils internes",
+          "tag": "Back-office",
+          "description": "Consoles d'admin, dashboards opérationnels, pipelines ETL, outils de service client. Moins glamour que les produits publics, mais ils décident si votre équipe scale ou se noie."
+        },
+        "webapp": {
+          "name": "Applications web",
+          "tag": "Customer-facing",
+          "description": "Portails clients, plateformes de contenu, e-commerce, outils de collaboration en temps réel. Budget-perf, SEO, accessibilité testée. Conçus pour convertir et pour scaler."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "04 — L'équipe que vous obtenez",
+      "title": "Cinq rôles. Une squad.",
+      "subtitle": "Quand vous engagez Symloop pour un produit, vous obtenez une squad cross-fonctionnelle complète — pas un seul rôle que vous devez coordonner.",
+      "roles": {
+        "pm": {
+          "title": "Product manager",
+          "description": "Possède la recherche utilisateur, le backlog, la cadence des sprints, la communication stakeholder. Senior — a déjà livré des produits, n'apprend pas sur votre dollar."
+        },
+        "designer": {
+          "title": "Product designer",
+          "description": "Recherche, wireframes, design system, UI, prototypes, revue d'accessibilité. Possède le look ET le modèle d'interaction."
+        },
+        "engineer": {
+          "title": "Product engineer",
+          "description": "Full-stack — frontend, backend, base de données, intégrations. Assez senior pour prendre des décisions architecturales sans escalader."
+        },
+        "devops": {
+          "title": "DevOps / SRE",
+          "description": "Configure CI/CD, infrastructure, observabilité, on-call. La même personne reste sur le projet après le lancement."
+        },
+        "qa": {
+          "title": "Ingénieur QA",
+          "description": "Infrastructure de tests automatisés, tests Playwright end-to-end, audits d'accessibilité, budgets de performance."
+        }
+      }
+    },
+    "phases": {
+      "eyebrow": "05 — Cinq phases",
+      "title": "Cinq phases. Du kickoff aux opérations continues.",
+      "steps": {
+        "discovery": {
+          "title": "Découverte",
+          "duration": "1–2 semaines",
+          "description": "Recherche utilisateur, définition du périmètre, faisabilité technique, métriques de succès. Prix fixe."
+        },
+        "design": {
+          "title": "Design",
+          "duration": "2–4 semaines",
+          "description": "Design system, écrans clés, prototypes, patterns d'accessibilité. Testé avec de vrais utilisateurs avant que le code commence."
+        },
+        "build": {
+          "title": "Build",
+          "duration": "8–16 semaines",
+          "description": "Ingénierie production avec CI/CD, tests, monitoring. Démos hebdomadaires, livré derrière feature flags."
+        },
+        "launch": {
+          "title": "Lancement",
+          "duration": "1–2 semaines",
+          "description": "Rollout progressif, monitoring, hotfix readiness, site marketing, parcours d'onboarding."
+        },
+        "iterate": {
+          "title": "Itération",
+          "duration": "En continu",
+          "description": "Itération post-lancement basée sur les vraies données d'usage. Travail de fonctionnalités, performance, expériences de croissance."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Preuves",
+      "title": "Des chiffres que nous pouvons défendre.",
+      "timeToLaunch": "Délai moyen au lancement",
+      "products": "Produits livrés",
+      "ratio": "Ratio designer:engineer",
+      "clutch": "Note Clutch vérifiée"
+    },
+    "stack": {
+      "eyebrow": "07 — Stack par discipline",
+      "title": "Stack par discipline. Tous niveau production.",
+      "disciplines": {
+        "design": {
+          "title": "Design",
+          "tools": "Figma · FigJam · Storybook · Design tokens · Vérificateur d'accessibilité · Plausible Analytics"
+        },
+        "frontend": {
+          "title": "Frontend",
+          "tools": "React · Next.js · TypeScript · Tailwind CSS · TanStack Query · Zustand · Framer Motion"
+        },
+        "backend": {
+          "title": "Backend",
+          "tools": "Node.js · Python (FastAPI) · PostgreSQL · Prisma · Drizzle · Redis · BullMQ · S3"
+        },
+        "infra": {
+          "title": "Infrastructure & QA",
+          "tools": "Vercel · Railway · Kubernetes · Terraform · GitHub Actions · Playwright · Sentry · PostHog"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte un engagement produit ?",
+          "answer": "Les engagements produit sont typiquement structurés en découverte à prix fixe (1–2 semaines) puis builds phasés à prix fixe. Le coût total varie selon le périmètre, mais les produits de taille moyenne typiques se situent entre 60K€ et 250K€ du kickoff au lancement."
+        },
+        "timeline": {
+          "question": "Combien de temps avant le lancement ?",
+          "answer": "La plupart des produits atteignent un v1 livrable en 12-16 semaines. Les MVPs plus petits peuvent se lancer en 8-10. Les produits enterprise avec intégrations complexes peuvent prendre 6 mois."
+        },
+        "team": {
+          "question": "Qui possède le produit après le lancement ?",
+          "answer": "Vous. Nous pouvons rester comme partenaire opérationnel à long terme si vous voulez, ou transférer proprement à votre équipe interne avec documentation et 30 jours de support post-handoff."
+        },
+        "pricing": {
+          "question": "Faites-vous des deals en equity ?",
+          "answer": "Rarement. Nous avons fait des mélanges equity-only ou cash + equity avec un petit nombre de clients early-stage où nous croyions fortement à l'équipe. Par défaut c'est cash."
+        },
+        "maintenance": {
+          "question": "Maintenez-vous les produits après le lancement ?",
+          "answer": "Oui. La plupart des clients nous gardent sur un retainer mensuel pour itération continue, travail de performance, patches de sécurité et développement de fonctionnalités."
+        },
+        "ownership": {
+          "question": "Qui possède le code, le design et la PI ?",
+          "answer": "Vous. Code source, fichiers de design, infrastructure-as-code, documentation, suites de tests — tout transféré sous votre PI."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Parlons-en",
+      "title": "Un produit à livrer ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "consulting_page": {
+    "seo": {
+      "title": "Symloop Conseil Technologique — Revue d'Architecture, Stratégie IA, Build-vs-Buy",
+      "description": "Conseil technologique Symloop : revue d'architecture, stratégie IA, analyse build-vs-buy, feuille de route de modernisation, sélection technologique. Équipe d'ingénieurs seniors qui livrent en production — pas des consultants à PowerPoint. Algérie, MENA, Europe. Profil Clutch vérifié 5.0/5.0.",
+      "keywords": "conseil technologique, revue d'architecture, stratégie IA, build vs buy, feuille de route modernisation, sélection technologique, due diligence, conseil CTO, conseil ingénierie, conseil technologique Algérie, conseil tech MENA, revue architecture France, Symloop conseil"
+    },
+    "hero": {
+      "eyebrow": "01 — Conseil Technologique",
+      "titleLine1": "Nous vous disons ce que nous pensons.",
+      "titleLine2": "Que vous nous ayez engagés pour ça ou non.",
+      "subtitle": "Revue d'architecture, stratégie IA, analyse build-vs-buy, feuille de route de modernisation. Nous sommes des ingénieurs seniors qui livrent en production — pas des consultants à PowerPoint. Le conseil que vous recevez est celui que nous prendrions nous-mêmes.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir nos domaines de conseil",
+      "report": {
+        "label": "Livrable échantillon",
+        "title": "Revue d'architecture · saas-platform.acme",
+        "tagline": "T2 2026 · 42 pages",
+        "toc": "Table des matières",
+        "s1": "Résumé exécutif",
+        "s2": "Architecture actuelle",
+        "s3": "Findings critiques",
+        "s4": "Recommandations",
+        "s5": "Feuille de route d'implémentation",
+        "length": "Longueur totale"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Comment nous conseillons.",
+      "label": "Notre méthode"
+    },
+    "areas": {
+      "eyebrow": "03 — Sur quoi nous conseillons",
+      "title": "Cinq domaines où le jugement d'ingénierie compte le plus.",
+      "subtitle": "Nous conseillons sur les décisions difficiles à inverser — architecture, build-vs-buy, adoption IA, modernisation. Celles où le mauvais choix vous coûte des années.",
+      "outcomeLabel": "Résultat",
+      "items": {
+        "architecture": {
+          "title": "Revue d'architecture",
+          "description": "Revue indépendante d'un système existant ou d'un design planifié. Nous lisons le code, suivons les flux de données, identifions les décisions à plus haut risque, et écrivons un rapport actionnable.",
+          "outcome": "Un rapport écrit de 30-50 pages avec findings priorisés."
+        },
+        "buildvsbuy": {
+          "title": "Analyse build vs buy",
+          "description": "Devez-vous construire ce système d'auth, ou utiliser Auth0 ? Construire ce pipeline de données, ou utiliser Fivetran ? Nous faisons les calculs selon votre contexte spécifique.",
+          "outcome": "Une recommandation écrite claire avec les calculs montrés."
+        },
+        "aistrategy": {
+          "title": "Stratégie & feuille de route IA",
+          "description": "La plupart des entreprises gaspillent leur budget IA sur les mauvaises choses. Nous identifions les 2-3 endroits où l'IA fait vraiment la différence — et les 10 où elle ne la fait pas.",
+          "outcome": "Une roadmap IA avec cas d'usage priorisés et estimations de ROI."
+        },
+        "modernization": {
+          "title": "Feuille de route de modernisation",
+          "description": "Vous avez un système legacy auquel personne ne veut toucher. Nous traçons le chemin incrémental le plus sûr — migration strangler-fig, extraction de dépendances.",
+          "outcome": "Un plan de modernisation phasé avec estimations de risques."
+        },
+        "team": {
+          "title": "Topologie d'équipe d'ingénierie",
+          "description": "Votre équipe grandit et l'organigramme commence à montrer ses points faibles. Nous concevons des structures d'équipe qui passent à l'échelle.",
+          "outcome": "Un document de topologie d'équipe avec priorités d'embauche."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "04 — Comment fonctionne un conseil",
+      "title": "Trois étapes. Pas de PowerPoint.",
+      "subtitle": "Nous ne débarquons pas avec un framework générique. Nous lisons votre code, parlons à votre équipe, et écrivons un rapport spécifique à votre situation.",
+      "steps": {
+        "read": {
+          "title": "Lire votre code",
+          "duration": "Semaine 1",
+          "description": "Nous obtenons un accès au repo, parcourons la codebase, lançons les tests, instrumentons les flux de données. Aucune supposition. Pas de 'best practices'. Juste comprendre ce qui est réellement là."
+        },
+        "interview": {
+          "title": "Interviewer votre équipe",
+          "duration": "Semaine 1–2",
+          "description": "Conversations structurées de 30 minutes avec les ingénieurs qui l'ont construit, les leaders qui en sont propriétaires, et les opérateurs qui l'exploitent."
+        },
+        "write": {
+          "title": "Écrire le rapport",
+          "duration": "Semaine 2",
+          "description": "Un livrable écrit — généralement 30-50 pages. Findings spécifiques, recommandations priorisées, critères de décision. Pas de remplissage."
+        }
+      }
+    },
+    "outputs": {
+      "eyebrow": "05 — Ce que vous obtenez",
+      "title": "Quatre livrables. Toujours.",
+      "items": {
+        "report": {
+          "title": "Rapport écrit",
+          "description": "30-50 pages d'analyse structurée. PDF + source Markdown pour que votre équipe puisse s'y référer pour toujours."
+        },
+        "diagram": {
+          "title": "Diagramme d'architecture",
+          "description": "Un diagramme canonique de votre système actuel, plus 1-2 diagrammes d'état futur. Fichiers source inclus."
+        },
+        "roadmap": {
+          "title": "Feuille de route d'implémentation",
+          "description": "Plan phasé avec estimations d'effort, dépendances et évaluation de risques par phase. Éditable."
+        },
+        "walkthrough": {
+          "title": "Walkthrough en direct",
+          "description": "Session de 90 minutes où nous vous guidons à travers le rapport et répondons aux questions. Enregistrée."
+        }
+      }
+    },
+    "anti": {
+      "eyebrow": "06 — Ce que nous ne recommanderons pas",
+      "title": "Cinq choses dont nous éloignons les clients.",
+      "subtitle": "Nous sommes engagés pour dire la vérité. Voici les recommandations que nous refusons de faire, même quand le client les veut.",
+      "items": {
+        "a1": "GraphQL pour des systèmes avec 3 types de clients ou moins.",
+        "a2": "Microservices pour des équipes d'ingénierie de moins de 10 personnes.",
+        "a3": "Auth custom au lieu d'Auth0 / Clerk / Stytch — sauf cas de conformité très spécifiques.",
+        "a4": "Multi-cloud sauf raison réglementaire ou de risque vendeur spécifique.",
+        "a5": "Entraînement IA custom quand une API off-the-shelf fait le travail à 10× le prix."
+      }
+    },
+    "proof": {
+      "pages": "Longueur moyenne du rapport",
+      "delivery": "Délai moyen de livraison",
+      "clutch": "Note Clutch vérifiée"
+    },
+    "faq": {
+      "eyebrow": "07 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte un engagement de conseil ?",
+          "answer": "Un engagement de conseil standard (revue d'architecture, analyse build-vs-buy, stratégie IA) est à prix fixe entre 15K€ et 40K€ selon le périmètre. Les feuilles de route de modernisation plus larges pour les systèmes d'entreprise complexes vont de 40K€ à 80K€. Nous ne facturons jamais à l'heure."
+        },
+        "timeline": {
+          "question": "Combien de temps prend un engagement ?",
+          "answer": "Engagements standards : 2 semaines du kickoff au rapport écrit. Feuilles de route plus larges : 3-4 semaines. Nous ne traînons pas les engagements — la valeur est dans le jugement rapide et décisif."
+        },
+        "remote": {
+          "question": "Pouvez-vous le faire à distance ?",
+          "answer": "Oui. La plupart des engagements se font en remote — revue de code à distance, interviews vidéo, rapport écrit. Nous pouvons venir sur site pour le kickoff et le walkthrough si utile."
+        },
+        "implementation": {
+          "question": "Implémentez-vous ce que vous recommandez ?",
+          "answer": "Parfois. Nous sommes une équipe d'ingénierie complète, donc si vous voulez que nous implémentions après le conseil nous le pouvons. Mais aucune obligation — beaucoup de clients prennent notre rapport et l'exécutent avec leur équipe interne."
+        },
+        "industries": {
+          "question": "Dans quelles industries conseillez-vous ?",
+          "answer": "Santé, fintech, logistique, manufacturing, retail, immobilier, éducation, gouvernement, agriculture. Nous sommes agnostiques côté jugement d'ingénierie, mais nous combinons toujours le conseil avec notre expérience de livraison dans votre secteur."
+        },
+        "confidentiality": {
+          "question": "Comment gérez-vous la confidentialité ?",
+          "answer": "Chaque engagement commence par un NDA mutuel. Les revues de code se font sur accès en lecture seule ou snapshots protégés par NDA. Nous ne partageons jamais les findings entre clients."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "08 — Parlons-en",
+      "title": "Une décision technologique difficile devant vous ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "insights_page": {
+    "seo": {
+      "title": "Insights Symloop — Études, recherches et POV d'ingénierie depuis l'Algérie",
+      "description": "Études longues, guides techniques et points de vue d'ingénierie écrits par l'équipe Symloop — par les gens qui livrent réellement les systèmes. IA, ERP, économie du logiciel, écosystème tech algérien.",
+      "breadcrumb": "Insights"
+    },
+    "hero": {
+      "eyebrow": "Insights · Recherche Symloop",
+      "title": "Notes depuis la salle d'ingénierie.",
+      "subtitle": "Études longues, guides techniques et points de vue d'ingénierie — écrits par les gens qui livrent réellement les systèmes. Pas de livre blanc marketing, pas d'arguments recyclés de vendeurs.",
+      "published": "Publiés",
+      "cadence": "Une nouvelle étude chaque trimestre",
+      "format": "Gratuit · Sans email"
+    },
+    "catalogue": {
+      "title": "Le catalogue"
+    },
+    "cta": {
+      "eyebrow": "Parlez aux auteurs",
+      "title": "Un problème abordé par l'une de ces études ? Parlez à l'équipe qui l'a écrite.",
+      "button": "Réserver un appel de 30 minutes"
+    }
+  },
+  "cybersecurity_page": {
+    "seo": {
+      "title": "Symloop Cybersécurité — Audits, Tests d'Intrusion, Conformité",
+      "description": "Symloop réalise des audits de cybersécurité, des tests d'intrusion, du durcissement d'infrastructure, et l'implémentation de frameworks de conformité (SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA). Nous supposons que vous êtes déjà compromis et concevons pour le jour d'après. Équipe sécurité senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0.",
+      "keywords": "cybersécurité, test d'intrusion, audit sécurité, OWASP, SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA, réponse incident, durcissement, zero trust, IAM, cybersécurité Algérie, pentest Algérie, audit sécurité MENA, cybersécurité France, Symloop sécurité"
+    },
+    "hero": {
+      "eyebrow": "01 — Cybersécurité",
+      "titleLine1": "Nous supposons que vous êtes déjà compromis.",
+      "titleLine2": "Puis nous concevons pour le jour d'après.",
+      "subtitle": "Audits de sécurité, tests d'intrusion, durcissement d'infrastructure, frameworks de conformité. Nous ne vendons pas la paranoïa. Nous concevons les systèmes et processus qui survivent à une vraie attaque.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir les menaces que nous arrêtons",
+      "meter": {
+        "label": "Audit de risque · rapport échantillon",
+        "target": "audit-2026-Q2",
+        "summary": "Externe · web · cloud · identité",
+        "critical": "Critiques",
+        "high": "Élevées",
+        "medium": "Moyennes",
+        "low": "Faibles / informatives",
+        "posture": "Posture de sécurité finale"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Comment nous sécurisons les systèmes.",
+      "label": "Notre méthode"
+    },
+    "threats": {
+      "eyebrow": "03 — Menaces que nous arrêtons",
+      "title": "Six modèles d'attaque. Six postures défensives.",
+      "subtitle": "La plupart des brèches d'entreprise tombent dans l'un de six modèles. Nous concevons des contrôles défensifs spécifiques contre chacun.",
+      "howWeStop": "Défense",
+      "items": {
+        "ransomware": {
+          "severity": "CRITICAL",
+          "title": "Ransomware & chiffrement de données",
+          "description": "Les attaquants chiffrent vos données et demandent un paiement pour la clé. La plupart des ransomwares entrent par phishing, RDP ou VPN non patchés.",
+          "defense": "Sauvegardes immuables · segmentation réseau · EDR · simulation de phishing"
+        },
+        "supply": {
+          "severity": "CRITICAL",
+          "title": "Attaques sur la chaîne d'approvisionnement",
+          "description": "Une dépendance de confiance (package npm, image Docker, fournisseur) est compromise. L'attaquant exploite la confiance jusqu'à votre production.",
+          "defense": "SBOM · signature d'images (Cosign) · attestation supply-chain · épinglage de versions"
+        },
+        "identity": {
+          "severity": "HIGH",
+          "title": "Vol d'identifiants & attaques d'identité",
+          "description": "Identifiants volés, contournement MFA, hijacking de session, abus OAuth. Le point d'entrée le plus courant des brèches modernes.",
+          "defense": "Zero trust · MFA résistant au phishing · tokens à courte durée · durcissement IAM"
+        },
+        "web": {
+          "severity": "HIGH",
+          "title": "Exploitation web & API",
+          "description": "OWASP Top 10 — injection, auth cassée, IDOR, SSRF, désérialisation. La plupart des apps publiques en ont au moins une.",
+          "defense": "Revue de code · tests ASVS · WAF · RASP"
+        },
+        "insider": {
+          "severity": "MEDIUM",
+          "title": "Menaces internes & abus de privilèges",
+          "description": "Un employé, sous-traitant ou compte compromis exfiltre des données ou plante des backdoors. Difficile à détecter car l'accès est légitime.",
+          "defense": "Moindre privilège · logs d'audit · UEBA · séparation des fonctions"
+        },
+        "cloud": {
+          "severity": "HIGH",
+          "title": "Mauvaise configuration cloud",
+          "description": "Buckets S3 publics, IAM trop permissif, APIs Kubernetes exposées, secrets dans le code. La cause #1 des brèches à l'ère cloud.",
+          "defense": "CSPM · revue IAM · scan de secrets · network policies · détection automatique de drift"
+        }
+      }
+    },
+    "compliance": {
+      "eyebrow": "04 — Frameworks de conformité",
+      "title": "Six frameworks. Nous vous aidons à tous les atteindre.",
+      "subtitle": "La conformité, c'est de l'ingénierie, pas de la paperasse. Nous construisons les contrôles avant l'arrivée des auditeurs.",
+      "items": {
+        "iso27001": {
+          "acronym": "ISO 27001",
+          "fullName": "Gestion de la sécurité de l'information",
+          "description": "Standard international de gestion de la sécurité de l'information. Orienté processus, audité annuellement. Nous construisons l'ISMS et préparons à la certification."
+        },
+        "soc2": {
+          "acronym": "SOC 2",
+          "fullName": "Service Organization Control",
+          "description": "Requis pour les ventes B2B SaaS aux US. Type 1 = contrôles en place ; Type 2 = contrôles efficaces dans le temps. Nous concevons les contrôles et préparons les preuves."
+        },
+        "gdpr": {
+          "acronym": "RGPD",
+          "fullName": "Règlement Général Protection Données",
+          "description": "Régulation européenne avec portée mondiale. Droits des personnes, notification de brèche, base légale du traitement. Nous cartographions les flux de données."
+        },
+        "pcidss": {
+          "acronym": "PCI DSS",
+          "fullName": "Payment Card Industry",
+          "description": "Requis pour tout système traitant des données de carte. Segmentation réseau, chiffrement, contrôles d'accès, scans trimestriels."
+        },
+        "hipaa": {
+          "acronym": "HIPAA",
+          "fullName": "Health Insurance Portability",
+          "description": "Régulation US des données de santé. Requis pour systèmes traitant du PHI. Nous aidons avec les protections techniques, audit trails, chiffrement."
+        },
+        "nis2": {
+          "acronym": "NIS2",
+          "fullName": "EU Network & Information Security",
+          "description": "Nouvelle directive EU — applicable aux entités essentielles et importantes des secteurs critiques. Gestion des risques, reporting d'incidents."
+        }
+      }
+    },
+    "engagement": {
+      "eyebrow": "05 — Notre approche",
+      "title": "Quatre phases. Audit. Pentest. Durcissement. Monitoring.",
+      "steps": {
+        "audit": {
+          "title": "Audit de sécurité",
+          "duration": "1–2 semaines · prix fixe",
+          "description": "Cadrer l'environnement, threat-model, revue de code et infrastructure, identifier les risques à plus fort effet de levier. Sortie : rapport d'audit avec findings priorisés."
+        },
+        "pentest": {
+          "title": "Test d'intrusion",
+          "duration": "2–4 semaines · périmètre fixe",
+          "description": "Tests adversariaux autorisés sur web, mobile, API, cloud ou cibles réseau. Exploitation réelle, preuves réelles. Sortie : rapport détaillé avec PoC et scores CVSS."
+        },
+        "harden": {
+          "title": "Durcissement & remédiation",
+          "duration": "4–12 semaines",
+          "description": "Implémenter les contrôles identifiés. Corrections de code, changements infra, nettoyage IAM, segmentation réseau, rotation de secrets, durcissement CI/CD."
+        },
+        "monitor": {
+          "title": "Monitoring continu",
+          "duration": "En continu",
+          "description": "SIEM, alertes, on-call, rapports mensuels, re-tests trimestriels. La sécurité n'est pas un projet — c'est une capacité opérationnelle qui nécessite de l'ingénierie continue."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Preuves",
+      "mainLabel": "Brèches confirmées chez les clients Symloop, depuis 2020",
+      "context": "Sur tous les clients que nous opérons ou avons durcis, le nombre de brèches confirmées est zéro. Ce n'est pas un chiffre marketing — c'est le seul chiffre qui compte en cybersécurité."
+    },
+    "faq": {
+      "eyebrow": "07 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte un audit de sécurité ou un pentest ?",
+          "answer": "Un audit cadré commence à 8K€ et va jusqu'à 30K€ selon la taille de l'environnement. Un test d'intrusion est tarifé par cible — un pentest d'app web typique se situe entre 12K€ et 20K€. Cadrage gratuit avant tout engagement."
+        },
+        "pentest": {
+          "question": "Quelle est la différence entre un audit et un pentest ?",
+          "answer": "Un audit est une revue structurée de votre posture sécurité contre un framework (OWASP ASVS, ISO 27001…). Un pentest est un test adversarial autorisé — nous essayons activement d'exploiter le système. La plupart des clients ont besoin des deux."
+        },
+        "compliance": {
+          "question": "Pouvez-vous nous certifier SOC 2 ou ISO 27001 ?",
+          "answer": "Nous n'émettons pas de certificats — seuls les auditeurs accrédités le peuvent. Mais nous concevons les contrôles, documentons les politiques, et vous préparons à l'audit. La plupart des clients atteignent SOC 2 Type 1 en 4-6 mois."
+        },
+        "incident": {
+          "question": "Gérez-vous la réponse aux incidents ?",
+          "answer": "Oui. Nous proposons des retainers de réponse aux incidents — temps de réponse engagés pour les incidents confirmés. Triage, confinement, forensics, post-mortem, et (si nécessaire) coordination avec les autorités."
+        },
+        "remediation": {
+          "question": "Réparez-vous aussi les problèmes que vous trouvez ?",
+          "answer": "Oui. Nous ne croyons pas aux rapports d'audit qui disent juste 'corrigez ça'. Nous faisons l'audit, écrivons le plan de remédiation, et (si vous le voulez) implémentons les corrections. Même équipe — pas de transfert à un tiers."
+        },
+        "training": {
+          "question": "Formez-vous les équipes internes ?",
+          "answer": "Oui. Formation au code sécurisé, simulations de phishing, exercices d'incident, programmes de security champions. Mieux fait après un audit pour ancrer la formation dans vos vrais findings."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "08 — Parlons-en",
+      "title": "Une inquiétude sécurité qui ne disparaît pas ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "iot_industrial_page": {
+    "seo": {
+      "title": "Symloop IoT & Industrial — Ingénierie Hardware, Firmware, Objets Connectés",
+      "description": "Symloop conçoit et fabrique du hardware IoT en Algérie. Conception PCB, firmware en C et Rust, ESP32/STM32, connectivité (LoRa/MQTT/4G), plateformes cloud, applications mobiles. La même équipe d'ingénierie possède toute la chaîne verticale — du silicium à l'écran. 500+ appartements déployés. Profil Clutch vérifié 5.0/5.0. Ingénierie hardware pour la production.",
+      "keywords": "développement hardware IoT, systèmes embarqués, conception PCB Algérie, firmware, ESP32, STM32, Arduino, objets connectés, hardware smart home, IoT industriel, SCADA, hardware POS, kiosque, agriculture connectée, IoT élevage, irrigation IoT, MQTT LoRa, AWS IoT, fabrication hardware Algérie, Symloop hardware"
+    },
+    "hero": {
+      "eyebrow": "01 — IoT & Systèmes Industriels",
+      "titleLine1": "Nous fabriquons du hardware. En Algérie.",
+      "titleLine2": "Puis nous exécutons le logiciel qui tourne dessus.",
+      "subtitle": "Conception PCB, firmware en C et Rust, connectivité, plateformes cloud, applications mobiles. La même équipe d'ingénierie possède toute la chaîne verticale — du silicium à l'écran. La plupart des équipes font logiciel OU hardware. Nous faisons les deux.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir ce que nous fabriquons",
+      "spec": {
+        "label": "Fiche technique",
+        "modelName": "SY-HW-1247",
+        "modelTagline": "Passerelle smart-home · gen-2",
+        "model": "Modèle",
+        "mobile_model": "SY-HW-1247-G2",
+        "mcu": "MCU",
+        "mobile_mcu": "ESP32-S3 · 8MB",
+        "temp": "Température",
+        "mobile_temp": "−10 °C → +60 °C",
+        "power": "Consommation",
+        "mobile_power": "2.4W repos · 8W pic",
+        "connect": "Connectivité",
+        "mobile_connect": "WiFi · BLE · LoRa",
+        "uptime": "En production",
+        "mobile_uptime": "1 247 jours",
+        "status": "En livraison"
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Comment nous fabriquons le hardware.",
+      "label": "Notre fabrication"
+    },
+    "specs": {
+      "eyebrow": "03 — Spécifications d'ingénierie",
+      "title": "Ce que nous visons.",
+      "subtitle": "Chaque produit hardware Symloop est construit selon ces quatre spécifications d'ingénierie. C'est la barre — pas le plafond.",
+      "items": {
+        "environment": {
+          "refId": "ENV.OPS",
+          "title": "Environnement opérationnel",
+          "value": "−10 °C → +60 °C  ·  IP54 anti-poussière + projection",
+          "description": "Testé en conditions algériennes réelles — chaleur estivale du désert, humidité côtière, sites industriels poussiéreux. Boîtiers étanches et PCB vernis."
+        },
+        "power": {
+          "refId": "PWR.BUDGET",
+          "title": "Consommation électrique",
+          "value": "2.4W repos  ·  8W pic  ·  batterie en option",
+          "description": "Conçu pour les installations sur secteur et sur batterie. Modes veille sub-mA. Variantes PoE et 12-24V DC pour les déploiements industriels."
+        },
+        "uptime": {
+          "refId": "UPT.GUARANTEED",
+          "title": "Disponibilité terrain",
+          "value": "99.5% garanti  ·  déploiements pluri-annuels",
+          "description": "Watchdogs, recovery OTA, partitions firmware doubles, reset usine automatique. Les appareils se récupèrent eux-mêmes avant que quiconque ne le remarque."
+        },
+        "recovery": {
+          "refId": "MTTR.FIELD",
+          "title": "Récupération terrain",
+          "value": "<4 heures  ·  diagnostic distant  ·  remplacement",
+          "description": "Chaque appareil rapporte sa santé au cloud. Les pannes sont diagnostiquées à distance ; si l'appareil doit être remplacé, nous expédions un remplacement et guidons un technicien sur site."
+        }
+      }
+    },
+    "products": {
+      "eyebrow": "04 — Catalogue produits",
+      "title": "Cinq catégories de produits. Toutes en production.",
+      "subtitle": "Nous ne livrons pas des démos. Chaque ligne de produit ci-dessous est déployée en environnement réel avec des clients payants et de la télémétrie live.",
+      "deployedLabel": "Déployé en",
+      "items": {
+        "smarthome": {
+          "tag": "Résidentiel",
+          "name": "Smart home & bâtiments intelligents",
+          "description": "Passerelles d'automatisation d'appartements, gestion d'énergie, contrôle d'accès sécurisé, capteurs climatiques. Conçu et fabriqué en Algérie pour le climat algérien.",
+          "deployed": "500+ appartements à Sétif, Alger, Oran, Constantine. Déployé par les principaux promoteurs immobiliers algériens."
+        },
+        "industrial": {
+          "tag": "Industriel",
+          "name": "Monitoring industriel & SCADA",
+          "description": "Capteurs de production, monitoring de santé d'équipements, dashboards OEE, intégration aux PLC et SCADA existants. Conçu pour fonctionner 24/7 dans des environnements de fabrication poussiéreux.",
+          "deployed": "Sites de fabrication en Algérie — sidérurgie, verre, agroalimentaire, plastiques."
+        },
+        "pos": {
+          "tag": "Retail",
+          "name": "Hardware POS & kiosques",
+          "description": "Terminaux de point de vente sur mesure, kiosques self-service, gestion de file d'attente. Logiciel offline-first, hardware-bound, uptime multi-jours.",
+          "deployed": "Chaînes retail, restaurants, points de service gouvernementaux en MENA."
+        },
+        "agriculture": {
+          "tag": "Agriculture",
+          "name": "Agriculture connectée",
+          "description": "Contrôleurs d'irrigation intelligents, capteurs d'humidité du sol, traceurs GPS pour bétail, automatisation climatique de serres. Basé sur LoRa pour les déploiements en champ.",
+          "deployed": "Fermes des hauts plateaux de Sétif et de la ceinture agricole algérienne."
+        },
+        "custom": {
+          "tag": "Sur mesure",
+          "name": "Produits embarqués sur mesure",
+          "description": "Lorsque le hardware existant ne convient pas à votre problème, nous concevons depuis zéro — schématique, PCB, firmware, boîtier, certification. Développement produit de bout en bout.",
+          "deployed": "Engagements sur mesure avec clients industriels, santé et fintech."
+        }
+      }
+    },
+    "pipeline": {
+      "eyebrow": "05 — Ligne de production",
+      "title": "De l'idée à l'appareil déployé. Cinq étapes.",
+      "subtitle": "Chaque produit hardware Symloop passe par le même pipeline — Conception → Prototype → Fabrication → Déploiement → Exploitation.",
+      "steps": {
+        "design": {
+          "title": "Conception",
+          "description": "Capture schématique, sélection de composants, layout PCB, CAO mécanique, planification de certification."
+        },
+        "prototype": {
+          "title": "Prototype",
+          "description": "Fabrication PCB en petit lot, assemblage manuel, bring-up firmware, tests environnementaux."
+        },
+        "manufacture": {
+          "title": "Fabrication",
+          "description": "Productions en local en Algérie. Contrôle qualité en ligne. Firmware flashé et vérifié avant expédition."
+        },
+        "deploy": {
+          "title": "Déploiement",
+          "description": "Installation sur site, configuration réseau, provisionnement des appareils, validation de la télémétrie."
+        },
+        "operate": {
+          "title": "Exploitation",
+          "description": "Mises à jour firmware OTA, diagnostics distants, dashboards terrain, voies de remplacement."
+        }
+      }
+    },
+    "stack": {
+      "eyebrow": "06 — Stack vertical complet",
+      "title": "Même équipe, quatre couches, un produit.",
+      "subtitle": "La plupart des projets IoT échouent parce que l'équipe hardware et l'équipe cloud ne se sont jamais rencontrées. Nous sommes une seule équipe sur les quatre couches.",
+      "layers": {
+        "hardware": {
+          "label": "Couche 01",
+          "title": "Hardware",
+          "tools": "Altium Designer · KiCad · STM32 · ESP32-S3 · Nordic nRF · LoRa · BLE · 4G/LTE-M"
+        },
+        "firmware": {
+          "label": "Couche 02",
+          "title": "Firmware",
+          "tools": "C · C++ · Rust · FreeRTOS · Zephyr · Embedded Linux · Yocto · OTA bootloader"
+        },
+        "cloud": {
+          "label": "Couche 03",
+          "title": "Cloud",
+          "tools": "AWS IoT Core · GCP IoT · MQTT · CoAP · TimescaleDB · InfluxDB · Grafana · Kubernetes"
+        },
+        "apps": {
+          "label": "Couche 04",
+          "title": "Apps & dashboards",
+          "tools": "React · Next.js · Flutter · React Native · Grafana · Dashboards mobiles personnalisés"
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "07 — Preuves",
+      "title": "Des chiffres que nous pouvons défendre.",
+      "stats": {
+        "apartments": "Appartements équipés",
+        "uptime":     "Uptime du plus ancien appareil",
+        "clutch":     "Note Clutch vérifiée"
+      },
+      "deployedLabel": "Appareils déployés en",
+      "deployedList": "Sétif · Alger · Oran · Constantine · Annaba · Béjaïa · Blida  ·  Casablanca · Tunis · Le Caire · Dubaï · Riyad · Koweït  ·  Paris · Madrid · Francfort"
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte un projet hardware sur mesure ?",
+          "answer": "L'ingénierie hardware est plus capitalistique que le pur logiciel. Un produit embarqué sur mesure typique commence à 40K€ et va jusqu'à 250K€ selon les exigences de certification, le volume de production et la complexité d'intégration."
+        },
+        "manufacturing": {
+          "question": "Où fabriquez-vous réellement ?",
+          "answer": "Nous concevons et fabriquons en Algérie. La fabrication PCB pour les prototypes est faite en local. La production volume peut être répartie entre l'assemblage local (pour les marchés algérien et MENA) et des fabricants sous contrat certifiés en Chine ou en Europe de l'Est."
+        },
+        "protocols": {
+          "question": "Quels protocoles de connectivité supportez-vous ?",
+          "answer": "Celui qui convient au déploiement : WiFi, Bluetooth Low Energy, LoRa/LoRaWAN, Sigfox, 4G/LTE-M, NB-IoT, Zigbee, Z-Wave, MQTT, CoAP. Nous choisissons selon la portée, le budget énergétique et le volume de données."
+        },
+        "fleet": {
+          "question": "Comment gérez-vous les appareils sur le terrain ?",
+          "answer": "Chaque appareil Symloop rapporte sa santé à une plateforme cloud centrale. Dashboard web pour le monitoring temps réel, mises à jour firmware OTA, diagnostic distant, alertes. La plupart des problèmes sont résolus à distance sans visite sur site."
+        },
+        "compliance": {
+          "question": "Gérez-vous les certifications (CE, FCC) ?",
+          "answer": "Oui. Nous concevons avec la certification en tête dès le jour 1 — conformité EMC, sécurité, conformité RF. Nous travaillons avec des labos accrédités en Europe et au Golfe pour le marquage CE/FCC."
+        },
+        "lifetime": {
+          "question": "Combien de temps vos appareils restent-ils en production ?",
+          "answer": "Nous concevons pour des déploiements de 5 à 10 ans. Les mises à jour firmware restent supportées pendant toute la durée de vie. Composants sélectionnés pour leur disponibilité long terme. Nos plus anciens appareils tournent depuis plus de 1 200 jours."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Parlons-en",
+      "title": "Un produit hardware à livrer ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "cloud_devops_page": {
+    "seo": {
+      "title": "Symloop Cloud & DevOps — Infrastructure Production, Kubernetes, SRE",
+      "description": "Symloop exploite l'infrastructure cloud en production : orchestration Kubernetes, pipelines CI/CD, observabilité, infrastructure as code, FinOps. La même équipe d'ingénierie qui construit votre logiciel le maintient en exécution. Équipe senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0. Nous déployons le vendredi après-midi. Puis nous rentrons à la maison.",
+      "keywords": "ingénierie cloud, DevOps, SRE, ingénierie de fiabilité, Kubernetes, Terraform, infrastructure as code, pipelines CI/CD, observabilité, Prometheus Grafana, optimisation coûts cloud, FinOps, AWS conseil, GCP conseil, Azure conseil, migration cloud, architecture multi-cloud, Kubernetes Algérie, DevOps Algérie, conseil cloud MENA, AWS conseil France, GCP France, Symloop cloud"
+    },
+    "hero": {
+      "eyebrow": "01 — Cloud & DevOps",
+      "titleLine1": "Nous déployons le vendredi après-midi.",
+      "titleLine2": "Puis nous rentrons à la maison.",
+      "subtitle": "Nous concevons une infrastructure de production qui ne réveille personne à 3h du matin. Kubernetes, Terraform, observabilité, CI/CD, optimisation des coûts. La même équipe qui construit votre logiciel le maintient en exécution.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir ce que nous exploitons",
+      "statusLive": "live",
+      "operational": "Opérationnel",
+      "uptime": "Uptime · 90j"
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Comment nous exploitons l'infrastructure.",
+      "label": "Notre méthode"
+    },
+    "principles": {
+      "eyebrow": "03 — Principes",
+      "title": "Quatre principes. Sans compromis.",
+      "items": {
+        "p1": "Infrastructure as code. Pas à la main.",
+        "p2": "Observabilité avant les fonctionnalités.",
+        "p3": "Rollbacks plus rapides que les incidents.",
+        "p4": "Automatiser le toil. Garder le jugement."
+      }
+    },
+    "run": {
+      "eyebrow": "04 — Ce que nous exploitons",
+      "title": "Cinq couches d'infrastructure de production.",
+      "subtitle": "De l'edge à la base de données, chaque couche conçue pour être observable, reproductible et récupérable.",
+      "toolsLabel": "Outils",
+      "layers": {
+        "edge": {
+          "name": "Edge & Réseau",
+          "shortLabel": "Couche 1 — Face utilisateur",
+          "description": "CDN, edge functions, DNS, équilibrage de charge, WAF, protection DDoS. La première ligne de défense et la première milliseconde de latence.",
+          "tools": "Cloudflare · NGINX · AWS CloudFront · Vercel Edge"
+        },
+        "orchestration": {
+          "name": "Orchestration de Conteneurs",
+          "shortLabel": "Couche 2 — Compute",
+          "description": "Clusters Kubernetes, service meshes, autoscaling, déploiements blue-green et canary, workflows GitOps, releases sans interruption.",
+          "tools": "Kubernetes · Helm · ArgoCD · Istio · Linkerd"
+        },
+        "data": {
+          "name": "Data & Stockage",
+          "shortLabel": "Couche 3 — État",
+          "description": "Bases de données managées, réplication, sauvegardes, point-in-time recovery, migrations de schéma, optimisation de requêtes, couches de cache.",
+          "tools": "PostgreSQL · Redis · MongoDB · S3 · Backblaze B2"
+        },
+        "observability": {
+          "name": "Observabilité & SRE",
+          "shortLabel": "Couche 4 — Yeux",
+          "description": "Métriques, logs, traces, alertes, dashboards, rotations on-call, error budgets, runbooks de réponse aux incidents. Nous voyons tout avant les utilisateurs.",
+          "tools": "Prometheus · Grafana · Loki · OpenTelemetry · Sentry"
+        },
+        "security": {
+          "name": "Sécurité & Conformité",
+          "shortLabel": "Couche 5 — Confiance",
+          "description": "Gestion des secrets, network policies, RBAC, scan d'images, sécurité supply-chain, logs d'audit, frameworks de conformité.",
+          "tools": "Vault · Trivy · Falco · OPA · Cosign"
+        }
+      }
+    },
+    "ceremonies": {
+      "eyebrow": "05 — Rituels",
+      "title": "Cadence opérationnelle. Ennuyeuse à dessein.",
+      "subtitle": "Le rythme prévisible bat l'héroïsme. Chaque engagement de production Symloop fonctionne sur les mêmes quatre rituels.",
+      "items": {
+        "daily": {
+          "frequency": "Chaque jour",
+          "title": "Revue ops quotidienne",
+          "description": "Sync de 15 minutes sur les incidents, alertes, santé des déploiements, anomalies de coût. Triage de tout ce qui doit bouger aujourd'hui."
+        },
+        "weekly": {
+          "frequency": "Chaque semaine",
+          "title": "Fenêtre de déploiement hebdo",
+          "description": "Déploiements le vendredi après-midi (oui, vendredi). La confiance vient de l'infrastructure de rollback, pas du timing du cluster."
+        },
+        "monthly": {
+          "frequency": "Chaque mois",
+          "title": "Rétrospective mensuelle",
+          "description": "Revue d'incidents, burndown du budget d'erreur, planification de capacité, rapport de coûts. Ajustement des priorités pour le mois suivant."
+        },
+        "quarterly": {
+          "frequency": "Chaque trimestre",
+          "title": "Audit trimestriel",
+          "description": "Audit de sécurité, revue de dépendances, exercice de disaster recovery, validation RTO/RPO. Le travail ennuyeux qui empêche les pages à 3h du matin."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Preuve",
+      "mainLabel": "Disponibilité production · 90 jours glissants",
+      "context": "Sur tous les systèmes de production exploités par Symloop, la disponibilité moyenne sur 90 jours glissants reste au-dessus de la cible des quatre neufs. C'est le plancher, pas le plafond. Nous concevons pour plus haut.",
+      "support": {
+        "deploys": { "value": "200+/mois", "label": "Déploiements production par mois" },
+        "pages":   { "value": "0",          "label": "Pages 3h du matin dernier trimestre" },
+        "mttr":    { "value": "<8min",      "label": "Temps moyen de récupération" }
+      },
+      "quote": "Ils ont migré toute notre stack vers Kubernetes en six semaines sans interruption. Nous n'avons pas reçu une seule page à 3h pendant la migration. Deux ans plus tard, c'est toujours le cas.",
+      "quoteAttribution": "— CTO, plateforme SaaS, Algérie"
+    },
+    "stack": {
+      "eyebrow": "07 — Stack technique",
+      "title": "Mature, ennuyeux, niveau production.",
+      "groups": {
+        "compute": {
+          "category": "Compute & Orchestration",
+          "tools": "Kubernetes · Docker · Helm · ArgoCD · Karpenter · KEDA · Knative"
+        },
+        "networking": {
+          "category": "Réseau & Edge",
+          "tools": "Cloudflare · NGINX · Istio · Linkerd · AWS ALB · Vercel Edge · Envoy"
+        },
+        "data": {
+          "category": "Data & Stockage",
+          "tools": "PostgreSQL · Redis · MongoDB · Elasticsearch · Kafka · S3 · Backblaze B2"
+        },
+        "observability": {
+          "category": "Observabilité & SRE",
+          "tools": "Prometheus · Grafana · Loki · OpenTelemetry · Sentry · Datadog · PagerDuty"
+        },
+        "security": {
+          "category": "Sécurité & Conformité",
+          "tools": "Vault · Trivy · Falco · OPA · Cosign · Snyk · GitHub Advanced Security"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte le travail cloud + DevOps ?",
+          "answer": "Les engagements sont typiquement structurés en découverte à prix fixe (1–2 semaines) puis projet de migration à prix fixe (4–12 semaines) ou retainer SRE mensuel (8K€–25K€/mois selon le périmètre). Les engagements d'optimisation des coûts se rentabilisent souvent en 60 jours grâce à la réduction de la facture cloud."
+        },
+        "sla": {
+          "question": "Quel SLA pouvez-vous garantir ?",
+          "answer": "Le SLA production par défaut est 99,9% sur 30 jours glissants. Des paliers plus élevés (99,95%, 99,99%) sont disponibles avec une architecture multi-régions et une rotation on-call dédiée. Nous ne vendons jamais des chiffres de disponibilité que nous ne pouvons pas garantir."
+        },
+        "migration": {
+          "question": "Pouvez-vous nous migrer vers Kubernetes / cloud / multi-cloud ?",
+          "answer": "Oui. Nous faisons des migrations incrémentales (strangler-fig), pas des réécritures big-bang. Une migration typique vers Kubernetes prend 6–12 semaines pour une application de taille moyenne sans interruption. Le multi-cloud prend plus de temps car les trade-offs nécessitent une conception soigneuse."
+        },
+        "oncall": {
+          "question": "Gérez-vous l'on-call ?",
+          "answer": "Oui. Nous proposons des rotations on-call 24/7 dans le cadre de retainers à long terme, avec runbooks documentés, chemins d'escalade et revue d'incidents. Nos ingénieurs on-call sont les mêmes ingénieurs qui ont construit le système."
+        },
+        "multicloud": {
+          "question": "AWS, GCP, Azure ou multi-cloud ?",
+          "answer": "Celui qui convient à la charge de travail. Nous avons livré des systèmes de production sur les trois. Nous privilégions le single-cloud sauf raison réelle de multi-cloud (réglementaire, latence, risque vendeur). La plupart des équipes qui pensent avoir besoin de multi-cloud ont en fait besoin d'une meilleure architecture sur un seul cloud."
+        },
+        "security": {
+          "question": "Gérez-vous la sécurité et la conformité ?",
+          "answer": "Oui. Gestion des secrets, network policies, RBAC, scan d'images, sécurité supply-chain, logs d'audit, frameworks de conformité (SOC 2, ISO 27001, HIPAA si applicable). La sécurité est intégrée par conception, pas ajoutée au moment de l'audit."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Parlons-en",
+      "title": "Une infrastructure qui vous réveille la nuit ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "mobile_engineering_page": {
+    "seo": {
+      "title": "Symloop Ingénierie Mobile — iOS Natif, Android, Flutter, React Native",
+      "description": "Symloop construit des applications mobiles en production. iOS natif (Swift), Android natif (Kotlin), Flutter, React Native, et mobile embarqué. Offline-first, multilingue, accessibilité native. Équipe d'ingénierie senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0. Nous livrons des apps qui survivent au-delà de 24 heures.",
+      "keywords": "développement application mobile, ingénierie mobile, iOS natif, Android natif, Swift, Kotlin, Flutter, React Native, application mobile Algérie, application mobile MENA, application mobile France, soumission App Store, soumission Play Store, mobile offline-first, multilingue mobile, mobile arabe RTL, optimisation performance mobile, application embarquée, kiosque, POS, Symloop mobile"
+    },
+    "hero": {
+      "eyebrow": "01 — Ingénierie Mobile",
+      "titleLine1": "76% des applications sont supprimées en 24 heures.",
+      "titleLine2": "Nous ne construisons pas celles-là.",
+      "subtitle": "Nous concevons des applications mobiles pour la production. Performance native, offline-first, multilingue par défaut. iOS, Android, Flutter, React Native — sous une seule équipe, de bout en bout.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir ce qui survit",
+      "stats": {
+        "deletion": { "label": "Apps supprimées en 24h",       "value": "76%" },
+        "fps":      { "label": "Budget d'image production",    "value": "60fps" },
+        "clutch":   { "label": "Note Clutch vérifiée",          "value": "5.0 / 5.0" },
+        "stores":   { "label": "Déploiements régionaux stores", "value": "9" }
+      }
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Comment nous livrons.",
+      "label": "Notre méthode"
+    },
+    "platforms": {
+      "eyebrow": "03 — Plateformes",
+      "title": "Cinq plateformes. Une équipe d'ingénierie.",
+      "subtitle": "Nous choisissons la plateforme qui convient à votre problème — pas celle que nous connaissons le mieux. Native quand l'OS compte, cross-platform quand le budget et la vitesse comptent.",
+      "bestForLabel": "Idéal pour",
+      "items": {
+        "ios": {
+          "name": "iOS Natif",
+          "stack": "Swift · SwiftUI · Combine",
+          "description": "Développement iOS natif pour les produits où la qualité iOS-first compte. Interfaces SwiftUI, réactivité Combine, intégration plateforme profonde (Live Activities, Widgets, App Intents).",
+          "bestFor": "Produits iOS-first, apps grand public premium, déploiements iPad entreprise."
+        },
+        "android": {
+          "name": "Android Natif",
+          "stack": "Kotlin · Jetpack Compose · Coroutines",
+          "description": "Android natif avec Kotlin et Jetpack Compose. Design Material 3, intégration OS profonde, optimisé pour les appareils bas de gamme courants en MENA et Afrique.",
+          "bestFor": "Marchés Android-first, appareils bas de gamme, fonctionnalités OS profondes."
+        },
+        "flutter": {
+          "name": "Flutter",
+          "stack": "Dart · Flutter · Riverpod",
+          "description": "Une seule base de code Dart livrant iOS et Android avec des performances natives. Itération rapide, UI cohérente, mature pour la production.",
+          "bestFor": "Cross-platform dès le jour 1, équipes à budget contrôlé, apps design-heavy."
+        },
+        "reactnative": {
+          "name": "React Native",
+          "stack": "TypeScript · React Native · Hermes",
+          "description": "React Native avec TypeScript pour les équipes qui livrent déjà React sur le web. Modules natifs où nécessaire, ponts JS partout ailleurs.",
+          "bestFor": "Équipes web qui ajoutent le mobile, apps à contenu, outils internes."
+        },
+        "embedded": {
+          "name": "Mobile Embarqué",
+          "stack": "Builds personnalisés · Hardware-aware",
+          "description": "Applications mobiles liées à du matériel spécifique — kiosques, terminaux POS, tablettes industrielles, systèmes véhicules. Offline-first, hardware-aware, uptime multi-jours.",
+          "bestFor": "Kiosques, POS, tablettes industrielles, véhicules de flotte, apps liées au matériel."
+        }
+      }
+    },
+    "survival": {
+      "eyebrow": "04 — Principes de survie",
+      "title": "Ce qui fait survivre une app mobile.",
+      "subtitle": "Six non-négociables. Chaque app mobile Symloop livre les six. Aucun n'est optionnel.",
+      "items": {
+        "s1": "Testée sur de vrais appareils, pas seulement sur simulateurs.",
+        "s2": "Offline-first — fonctionne là où le signal ne fonctionne pas.",
+        "s3": "Multilingue dès le jour 1 (arabe RTL, français, anglais).",
+        "s4": "Cible sans crash supérieure à 99,5%, monitorée dès le jour 1.",
+        "s5": "Budget de performance imposé en CI (pas de premier rendu >2,5s).",
+        "s6": "Accessibilité intégrée (VoiceOver, TalkBack, texte agrandi)."
+      }
+    },
+    "how": {
+      "eyebrow": "05 — Notre méthode",
+      "title": "Quatre phases. De la découverte au store.",
+      "steps": {
+        "discovery": {
+          "title": "Découverte",
+          "duration": "1–2 semaines",
+          "description": "Nous nous asseyons avec votre équipe, comprenons l'utilisateur, auditons les données, identifions la bonne plateforme, et cadrons un pilote payant."
+        },
+        "design": {
+          "title": "Design system",
+          "duration": "2–3 semaines",
+          "description": "Construire le design system d'interface : composants, tokens, patterns d'accessibilité, support RTL. Testé sur de vrais appareils avant la première ligne de code production."
+        },
+        "engineering": {
+          "title": "Ingénierie",
+          "duration": "8–16 semaines",
+          "description": "Code production avec CI, tests unit + UI + intégration, monitoring de crashs, budgets de performance, ferme de tests sur appareils réels, beta releases via TestFlight et Play Console."
+        },
+        "ship": {
+          "title": "Livraison & exploitation",
+          "duration": "En continu",
+          "description": "Soumission App Store + Play Store, rollouts progressifs, triage de crashs, monitoring de performance, revue des updates OS, optimisation des stores."
+        }
+      }
+    },
+    "metrics": {
+      "eyebrow": "06 — Métriques qui comptent",
+      "title": "Les chiffres que nous visons.",
+      "subtitle": "Chaque app mobile Symloop est mesurée selon ces critères. Pas des métriques de vanité — opérationnelles.",
+      "items": {
+        "fps":      { "value": "60fps",  "label": "Cible production",         "description": "Chaque rendu sous le budget de 16ms par image. Testé sur appareils Android d'entrée de gamme, pas sur iPhones haut de gamme." },
+        "paint":    { "value": "<2,5s",  "label": "Premier rendu",            "description": "Time-to-interactive inférieur à 2,5 secondes sur Android milieu de gamme avec connexion 4G." },
+        "crash":    { "value": "99,5%+", "label": "Sessions sans crash",      "description": "Monitoré par Sentry dès le jour 1. Chaque régression triée avant la prochaine release." },
+        "coverage": { "value": "94%",    "label": "Couverture de tests",      "description": "Tests unit + UI + intégration. Chaque chemin critique couvert avant le merge." },
+        "codebase": { "value": "1",      "label": "Codebase (cross-plat)",    "description": "En Flutter ou React Native, une seule base de code pour iOS et Android avec logique partagée et UI plateforme-spécifique où nécessaire." },
+        "stores":   { "value": "9",      "label": "Déploiements régionaux",   "description": "App Store + Play Store + variantes régionales (App Store Connect supporte 175 pays ; nous livrons les 9 pertinents par défaut)." }
+      }
+    },
+    "stack": {
+      "eyebrow": "07 — Stack technique",
+      "title": "Stacks par plateforme. Tous niveau production.",
+      "items": {
+        "ios": {
+          "platform": "iOS",
+          "label": "Natif, Apple-first",
+          "tech": "Swift · SwiftUI · Combine · Core Data · Xcode Cloud · TestFlight · Sentry"
+        },
+        "android": {
+          "platform": "Android",
+          "label": "Natif, Material 3",
+          "tech": "Kotlin · Jetpack Compose · Coroutines · Room · GitHub Actions · Play Console · Sentry"
+        },
+        "flutter": {
+          "platform": "Flutter",
+          "label": "Cross-platform, feeling natif",
+          "tech": "Dart · Flutter · Riverpod · Drift · Codemagic · Fastlane · Firebase Crashlytics"
+        },
+        "reactnative": {
+          "platform": "React Native",
+          "label": "Équipes web, sortie mobile",
+          "tech": "TypeScript · React Native · Hermes · MMKV · EAS · Sentry · Reanimated"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte une application mobile ?",
+          "answer": "Le prix dépend du nombre de plateformes, de la complexité et de la profondeur d'intégration. Un pilote ciblé sur une plateforme commence à 25K€. Une app cross-platform complète (iOS + Android) coûte typiquement entre 60K€ et 200K€. Nous démarrons par une découverte à prix fixe (1–2 semaines) suivie d'un pilote à prix fixe avant de s'engager sur le build complet."
+        },
+        "timeline": {
+          "question": "Combien de temps pour une app mobile ?",
+          "answer": "Un pilote livre une app fonctionnelle en 6–10 semaines. Une app de production complète atteint l'App Store / Play Store en 16–24 semaines en cross-platform, ou 20–28 semaines pour iOS natif + Android natif en parallèle."
+        },
+        "platforms": {
+          "question": "Faut-il aller en natif ou en cross-platform ?",
+          "answer": "Cela dépend. Allez en natif (iOS + Android séparément) quand les fonctionnalités OS spécifiques comptent, quand votre audience est très orientée vers une plateforme, ou quand l'app doit être premium. Allez en cross-platform (Flutter, React Native) quand la vitesse, le budget et la cohérence comptent plus."
+        },
+        "offline": {
+          "question": "Construisez-vous des apps offline-first ?",
+          "answer": "Oui — c'est un défaut, pas une fonctionnalité. Chaque app mobile Symloop est conçue pour fonctionner sans connexion : stockage local-first, mutations en queue, sync à la reconnexion, résolution de conflits. Non négociable dans les marchés au signal peu fiable."
+        },
+        "store": {
+          "question": "Gérez-vous la soumission App Store et Play Store ?",
+          "answer": "Oui. Nous gérons tout le processus : fiches store, métadonnées, screenshots, réponses au review, rollouts progressifs, déploiement de hotfixes. Nous avons livré des apps sur les deux stores dans 9+ marchés régionaux."
+        },
+        "maintenance": {
+          "question": "Maintenez-vous les apps après le lancement ?",
+          "answer": "Oui. Nous proposons des contrats d'exploitation continue : triage de crashs, monitoring de performance, compatibilité avec les updates OS, évolutions, patches de sécurité. Ou nous transférons proprement à votre équipe interne avec documentation."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Parlons-en",
+      "title": "Une app mobile à construire ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "software_engineering_page": {
+    "seo": {
+      "title": "Symloop Ingénierie Logicielle — Systèmes Sur Mesure, SaaS & Backends Entreprise",
+      "description": "Symloop construit des systèmes logiciels sur mesure : plateformes SaaS, backends d'entreprise (ERP/CRM/HRMS), APIs et microservices, systèmes temps réel, modernisation de systèmes legacy. Équipe d'ingénierie senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0. Nous concevons le logiciel comme une infrastructure — bâti pour survivre à l'équipe qui l'a construit.",
+      "keywords": "développement logiciel sur mesure, ingénierie logicielle, plateforme SaaS, ERP sur mesure, CRM sur mesure, APIs microservices, systèmes temps réel, modernisation legacy, ingénierie logicielle Algérie, logiciel sur mesure Algérie, développement SaaS MENA, ERP entreprise Algérie, ingénierie logicielle France, Symloop ingénierie"
+    },
+    "hero": {
+      "eyebrow": "01 — Ingénierie Logicielle",
+      "titleLine1": "Le logiciel est une infrastructure.",
+      "titleLine2": "Conçu pour survivre à l'équipe qui l'a construit.",
+      "subtitle": "Nous ne livrons pas des MVPs et disparaissons. Nous concevons des systèmes sur mesure — plateformes SaaS, backends d'entreprise, APIs, systèmes temps réel — qui fonctionnent de manière fiable pendant des années. Équipe d'ingénierie senior, livraison internationale, sans sous-traitance.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir ce que nous construisons"
+    },
+    "video": {
+      "eyebrow": "02 — Voir",
+      "title": "Notre méthode d'ingénierie.",
+      "label": "Notre méthode"
+    },
+    "manifesto": {
+      "eyebrow": "03 — Principes",
+      "title": "Trois principes. Sans compromis.",
+      "items": {
+        "m1": "Nous ne livrons pas des MVPs et disparaissons.",
+        "m2": "Nous ne customisons pas Odoo en l'appelant ERP.",
+        "m3": "Nous concevons des systèmes qui fonctionnent pendant une décennie."
+      }
+    },
+    "build": {
+      "eyebrow": "04 — Ce que nous construisons",
+      "title": "Cinq types de systèmes, conçus de bout en bout.",
+      "subtitle": "Le logiciel sur mesure couvre un large éventail. Voici ce que nous livrons réellement, avec des exemples concrets.",
+      "navLabel": "Catégories",
+      "items": {
+        "saas": {
+          "title": "SaaS & Ingénierie Plateforme",
+          "description": "Plateformes SaaS multi-tenant conçues pour scaler dès le premier jour. Isolation de tenants, facturation, auth, admin, analytics — un système cohérent, pas un assemblage de templates.",
+          "examples": {
+            "0": "Plateformes SaaS multi-tenant avec isolation stricte des tenants",
+            "1": "Systèmes de facturation par abonnement (Stripe, Lemon Squeezy, paiements locaux)",
+            "2": "Consoles d'administration, portails clients, parcours d'onboarding",
+            "3": "Mesure d'usage, gestion des quotas, analytics par tenant",
+            "4": "SSO, SAML, OAuth, intégrations d'authentification entreprise"
+          }
+        },
+        "enterprise": {
+          "title": "Systèmes Backend Entreprise (ERP · CRM · HRMS)",
+          "description": "Systèmes d'entreprise sur mesure construits depuis zéro — pas de customisation Odoo, pas d'add-ons SAP. Nous concevons le modèle de données autour de vos opérations.",
+          "examples": {
+            "0": "ERP sur mesure — inventaire, finance, achats, RH, modules manufacturing",
+            "1": "CRM sur mesure — pipeline, contacts, scoring, intégrations email/téléphonie",
+            "2": "HRMS sur mesure — paie, présences, évaluations, gestion des congés",
+            "3": "Logiciels industriels / SCADA — intégration usine, MES, dashboards OEE",
+            "4": "Services e-gouvernement avec conformité stricte et pistes d'audit"
+          }
+        },
+        "apis": {
+          "title": "APIs & Microservices",
+          "description": "REST, GraphQL, gRPC. Maillages de services internes, APIs développeurs externes, intégrations B2B. Nous concevons des APIs dont votre future équipe d'ingénierie vous remerciera.",
+          "examples": {
+            "0": "APIs REST et GraphQL pour clients mobiles et web",
+            "1": "Architectures microservices avec frontières et contrats clairs",
+            "2": "APIs d'intégration B2B avec rate limiting, auth, documentation développeur",
+            "3": "Communication service-to-service avec gRPC et bus d'événements",
+            "4": "API gateways, edge functions, routage multi-régions"
+          }
+        },
+        "realtime": {
+          "title": "Systèmes Temps Réel & Event-Driven",
+          "description": "Systèmes où la latence compte et les événements arrivent plus vite que vous ne pouvez les interroger. Kafka, NATS, WebSockets. Conçus pour le débit et la livraison ordonnée.",
+          "examples": {
+            "0": "Dashboards temps réel et systèmes de monitoring live",
+            "1": "Architectures event-driven avec Apache Kafka ou NATS",
+            "2": "Collaboration temps réel via WebSockets et notifications live",
+            "3": "Pipelines d'ingestion haut débit avec gestion de backpressure",
+            "4": "CQRS et event sourcing pour les domaines à fort audit (finance, santé, gouvernement)"
+          }
+        },
+        "modernization": {
+          "title": "Modernisation & Migration de Systèmes",
+          "description": "Systèmes legacy sur PHP 5.6, .NET Framework, ou Oracle vieux de 15 ans. Nous migrons de manière incrémentale — strangler-fig — sans réécritures big-bang qui échouent.",
+          "examples": {
+            "0": "Migrations strangler-fig de monolithes vers microservices",
+            "1": "Migrations de bases de données (Oracle → PostgreSQL, MySQL → PostgreSQL)",
+            "2": "Lift-and-shift vers Kubernetes sans interruption",
+            "3": "Modernisation frontend (jQuery → React/Next.js, AngularJS → Vue/React)",
+            "4": "Extraction d'APIs depuis monolithes et décomposition graduelle"
+          }
+        }
+      }
+    },
+    "how": {
+      "eyebrow": "05 — Notre approche",
+      "title": "Trois étapes. Nous refusons ce que nous ne pouvons pas livrer.",
+      "steps": {
+        "discovery": {
+          "title": "Découverte",
+          "duration": "1–2 semaines · prix fixe",
+          "description": "Nous nous asseyons avec votre équipe, comprenons le problème opérationnel, auditons vos systèmes et données existants, identifions la bonne architecture, et cadrons un pilote payant avec des critères de succès mesurables. Sortie : brief d'engagement écrit + SOW pilote à prix fixe."
+        },
+        "pilot": {
+          "title": "Pilote",
+          "duration": "4–8 semaines · périmètre fixe, prix fixe",
+          "description": "Preuve de valeur sur de vraies données. Le premier module système est construit, déployé derrière un feature flag, validé selon les métriques business. Vous recevez du logiciel fonctionnel, le code source, la documentation, et une décision claire go/no-go."
+        },
+        "production": {
+          "title": "Production & Exploitation",
+          "duration": "En continu",
+          "description": "Une fois la valeur prouvée, nous concevons pour la production : monitoring, on-call, gestion d'incidents, déploiements, scaling, sécurité. Nous restons partenaires d'ingénierie à long terme."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "06 — Preuves",
+      "title": "Des chiffres que nous pouvons défendre.",
+      "stats": {
+        "uptime": "Disponibilité production",
+        "runtime": "Système le plus ancien en exécution",
+        "clutch": "Note Clutch vérifiée"
+      },
+      "quote": "Ils ont construit notre ERP de zéro en six mois. Deux ans plus tard, il fonctionne toujours sans qu'aucun ingénieur Symloop ne soit d'astreinte. C'est la barre.",
+      "quoteAttribution": "— Directeur IT, Groupe industriel, Algérie"
+    },
+    "stack": {
+      "eyebrow": "07 — Stack technique",
+      "title": "Mature, ennuyeux, niveau production.",
+      "subtitle": "Nous utilisons les mêmes outils que les meilleures équipes d'ingénierie au monde. Pas de bibliothèques expérimentales, uniquement de l'infrastructure éprouvée en production."
+    },
+    "faq": {
+      "eyebrow": "08 — FAQ",
+      "title": "Questions fréquentes.",
+      "label": "Réponse",
+      "items": {
+        "cost": {
+          "question": "Combien coûte un système sur mesure ?",
+          "answer": "Le prix dépend du périmètre, du nombre d'intégrations et des SLA de production. Les engagements typiques commencent à 30K€ pour un pilote ciblé et montent jusqu'à des contrats pluriannuels pour les systèmes d'entreprise. Nous démarrons par une découverte à prix fixe (1–2 semaines), puis un pilote à prix fixe (4–8 semaines). La découverte fournit un devis transparent."
+        },
+        "timeline": {
+          "question": "Combien de temps pour construire un système sur mesure ?",
+          "answer": "Un pilote livre du logiciel fonctionnel en 4–8 semaines. Un système d'entreprise complet (ERP, CRM, plateforme complète) atteint typiquement la production en 4–6 mois. Les projets de modernisation varient selon la complexité du legacy. Nous ne promettons jamais une date que nous ne pouvons pas tenir."
+        },
+        "modernization": {
+          "question": "Pouvez-vous moderniser notre système legacy ?",
+          "answer": "Oui — c'est une compétence centrale. Nous faisons des migrations strangler-fig, pas des réécritures big-bang. Le legacy continue de tourner pendant que nous extrayons incrémentalement les fonctionnalités vers une stack moderne. La plupart des clients voient le premier module migré en 6–8 semaines."
+        },
+        "ip": {
+          "question": "Qui possède le code ?",
+          "answer": "Vous. Tous les livrables — code source, infrastructure-as-code, documentation, suites de tests, pipelines de déploiement — sont transférés sous votre propriété intellectuelle. Nous conservons le droit d'utiliser des techniques génériques anonymisées."
+        },
+        "support": {
+          "question": "Maintenez-vous le système après le lancement ?",
+          "answer": "Oui. Nous proposons des contrats d'exploitation continue : monitoring, SLA on-call, gestion d'incidents, patches de sécurité, évolutions. Ou nous transférons proprement à votre équipe interne avec documentation. Les deux options sont valides."
+        },
+        "team": {
+          "question": "Allez-vous remplacer notre équipe interne ?",
+          "answer": "Non. Nous travaillons aux côtés des équipes internes comme une augmentation d'ingénierie senior. Les meilleurs résultats arrivent quand votre équipe possède la connaissance produit et que nous possédons l'exécution d'ingénierie. Nous nous intégrons, documentons tout, et transférons les compétences au fil du temps."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "09 — Parlons-en",
+      "title": "Un système à construire ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
+  "ai_page": {
+    "seo": {
+      "title": "Symloop Technology — Intelligence Artificielle Appliquée, NLP & Machine Learning",
+      "description": "Symloop Technology est une firme d'ingénierie IA appliquée et de machine learning au service des entreprises mondiales. Nous construisons des systèmes IA en production : vision par ordinateur, traitement du langage naturel (NLP), analyse prédictive, intégration LLM et MLOps. Des modèles entraînés sur mesure, pas des wrappers d'API. Équipe d'ingénierie senior en Algérie avec livraison internationale en MENA, Golfe et Europe. Profil Clutch vérifié 5.0/5.0. Nous concevons l'IA comme un intégrateur systèmes d'entreprise — pas comme une agence chatbot.",
+      "keywords": "intelligence artificielle appliquée, ingénierie IA, conseil IA entreprise, machine learning entreprise, société NLP, traitement langage naturel, vision par ordinateur, intégration LLM, MLOps, intégrateur systèmes IA, conseil IA Algérie, intelligence artificielle Algérie, IA appliquée Algérie, machine learning Algérie, vision par ordinateur Algérie, NLP Algérie, ingénierie IA Algérie, recherche IA appliquée, IA entreprise, IA Algérie Alger Oran Constantine Sétif, conseil IA France, intelligence artificielle France, machine learning France, IA Maroc Tunisie Émirats, IA générative entreprise, RAG systèmes, modèles personnalisés, fine-tuning LLM, conseil stratégie IA"
+    },
+    "hero": {
+      "eyebrow": "01 — Intelligence Artificielle",
+      "titleStart": "Une ingénierie IA pour la",
+      "cycle": {
+        "0": "vision par ordinateur.",
+        "1": "analyse prédictive.",
+        "2": "intégration LLM.",
+        "3": "recommandation intelligente.",
+        "4": "production MLOps."
+      },
+      "subtitle": "Nous n'enveloppons pas des APIs. Nous entraînons des modèles sur mesure, les déployons en production, et les exploitons. Conçus de bout en bout par une équipe interne — pour les entreprises qui veulent des résultats réels, pas des démos.",
+      "ctaPrimary": "Réserver un appel",
+      "ctaSecondary": "Voir les capacités",
+      "stats": {
+        "years":     { "label": "Années en production",  "value": "5+" },
+        "team":      { "label": "Ingénieurs ML internes", "value": "10+" },
+        "delivery":  { "label": "Marchés servis",         "value": "UE · MENA · DZ" },
+        "clutch":    { "label": "Note Clutch vérifiée",   "value": "5.0 / 5.0" }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "02 — Capacités",
+      "title": "Cinq capacités, livrées de bout en bout.",
+      "subtitle": "Cliquez sur une capacité pour voir des cas d'usage réels, la profondeur technique, et le type de problèmes que nous résolvons en production.",
+      "cta": "En savoir plus",
+      "activeLabel": "Sélectionné",
+      "useCasesLabel": "Cas d'usage courants",
+      "items": {
+        "cv": {
+          "title": "Vision par Ordinateur",
+          "tagline": "Intelligence visuelle en temps réel pour l'industrie, le retail et la sécurité.",
+          "description": "Nous concevons, entraînons et déployons des systèmes de vision qui fonctionnent de manière fiable en conditions réelles — usines, magasins, flux de surveillance, drones, équipements médicaux. Du traitement d'image classique à la détection, segmentation et tracking par deep learning.",
+          "tech": "PyTorch · OpenCV · YOLO · ONNX · NVIDIA Triton",
+          "useCases": {
+            "0": "Détection de défauts sur lignes de production (acier, verre, agroalimentaire, plastiques)",
+            "1": "Comptage d'inventaire et conformité de rayonnage pour chaînes de retail",
+            "2": "Analyse d'images médicales : tri, segmentation, signalement d'anomalies",
+            "3": "Intelligence de surveillance temps réel avec inférence respectueuse de la vie privée",
+            "4": "Intelligence documentaire et ID : OCR, détection de fraude, pipelines KYC",
+            "5": "Imagerie drone et satellite pour l'agriculture, les mines, l'infrastructure"
+          }
+        },
+        "nlp": {
+          "title": "Traitement du Langage Naturel",
+          "tagline": "Compréhension de documents, extraction, classification, sentiment, résumé et voix.",
+          "description": "Nous construisons des systèmes NLP qui lisent, classent, résument, extraient et routent du contenu à grande échelle. Multilingue par défaut. Nous gérons du texte réel et bruité — emails, PDFs scannés, transcriptions vocales, posts sociaux — pas des datasets académiques propres.",
+          "tech": "Transformers · spaCy · Hugging Face · Whisper · LangChain",
+          "useCases": {
+            "0": "Intelligence contractuelle : extraction de clauses, signalement de risques, comparaison",
+            "1": "Tri et routage d'emails entrants pour les équipes support et opérations",
+            "2": "Compréhension de documents scannés (factures, IDs, formulaires, rapports)",
+            "3": "Transcription vocale et résumé de réunions à l'échelle de l'entreprise",
+            "4": "Analyse multilingue de sentiment et de sujets sur les retours clients",
+            "5": "Construction de bases de connaissances à partir de contenu interne non structuré"
+          }
+        },
+        "predictive": {
+          "title": "Analyse Prédictive",
+          "tagline": "Prévision, détection d'anomalies et intelligence de décision sur vos vraies données opérationnelles.",
+          "description": "Nous construisons des modèles prédictifs sur les vraies données — bruitées, incomplètes — que les opérations possèdent réellement. Les modèles sont évalués selon des métriques business (coût économisé, churn évité, fraude détectée), pas seulement des scores F1.",
+          "tech": "XGBoost · LightGBM · Prophet · scikit-learn · TimescaleDB",
+          "useCases": {
+            "0": "Prévision de demande et optimisation d'inventaire pour retail et logistique",
+            "1": "Maintenance prédictive pour équipements industriels et flottes",
+            "2": "Modélisation du churn client et de la valeur vie client",
+            "3": "Détection de fraude et d'anomalies dans les systèmes transactionnels",
+            "4": "Optimisation de tournées pour le last-mile et les opérations terrain",
+            "5": "Prévision de consommation énergétique pour bâtiments et réseaux"
+          }
+        },
+        "llm": {
+          "title": "Intégration LLM",
+          "tagline": "Intégrations de niveau production de GPT, Claude et modèles open-weight.",
+          "description": "Nous intégrons les grands modèles de langage dans des workflows métier réels — avec retrieval, harnais d'évaluation, tests de régression de prompts, observabilité et garde-fous. Pas des jouets de chat : des systèmes qu'une entreprise peut auditer, versionner et auxquels elle peut faire confiance.",
+          "tech": "OpenAI · Anthropic · Llama · LangChain · LangGraph · pgvector",
+          "useCases": {
+            "0": "Assistants augmentés par retrieval sur des bases de connaissances privées",
+            "1": "Workflows agentiques : planification multi-étapes, utilisation d'outils, hand-off humain",
+            "2": "Extraction structurée depuis documents, contrats et emails",
+            "3": "Compréhension de code et Q&A sur codebase pour équipes d'ingénierie",
+            "4": "Automatisation du support client avec audit trail et escalade",
+            "5": "Copilotes de recherche internes intégrés aux systèmes de l'entreprise"
+          }
+        },
+        "mlops": {
+          "title": "MLOps & Infrastructure IA",
+          "tagline": "Pipelines, monitoring, boucles de réentraînement et l'infrastructure ennuyeuse qui garde l'IA en vie.",
+          "description": "La précision d'un modèle dans un notebook ne signifie rien en production. Nous concevons les parties ennuyeuses : pipelines d'entraînement, registres de modèles, monitoring de drift, déclencheurs de réentraînement, A/B testing, sécurité de rollback, observabilité.",
+          "tech": "Docker · Kubernetes · MLflow · Weights & Biases · DVC · Airflow",
+          "useCases": {
+            "0": "Pipelines d'entraînement reproductibles avec données et code versionnés",
+            "1": "Infrastructure de registre, déploiement et rollback de modèles",
+            "2": "Monitoring temps réel de drift et de performance avec alertes",
+            "3": "Boucles de réentraînement automatique déclenchées par les shifts de données",
+            "4": "Infrastructure d'A/B testing pour déploiements shadow et canary",
+            "5": "Optimisation des coûts d'inférence GPU à l'échelle de production"
+          }
+        }
+      }
+    },
+    "why": {
+      "eyebrow": "03 — Pourquoi Symloop",
+      "title": "Une firme d'ingénierie, pas une boutique de buzzwords.",
+      "items": {
+        "0": {
+          "title": "On entraîne, on n'enveloppe pas",
+          "description": "Nous construisons des modèles sur mesure sur vos données. Les solutions API-only ne sont recommandées que lorsque les mathématiques le justifient — jamais par défaut."
+        },
+        "1": {
+          "title": "Clutch 5.0 / 5.0 vérifié",
+          "description": "Avis clients indépendamment vérifiés sur Clutch.co — Clutch interviewe chaque client directement avant publication. Profil lié dans notre footer."
+        },
+        "2": {
+          "title": "Local + International",
+          "description": "Équipe d'ingénierie senior basée en Algérie, avec des projets livrés en France, Espagne, Allemagne, Italie, EAU, Arabie Saoudite et Koweït."
+        },
+        "3": {
+          "title": "Nous refusons ce que nous ne pouvons pas livrer",
+          "description": "Si la phase de découverte montre que les données ne supportent pas une solution ML, nous le disons et recommandons une alternative."
+        }
+      }
+    },
+    "engagement": {
+      "eyebrow": "04 — Notre approche",
+      "title": "Trois étapes. Aucune surprise.",
+      "subtitle": "Chaque engagement IA commence petit, prouve sa valeur rapidement, et ne grandit que lorsque les données et les mathématiques le justifient.",
+      "steps": {
+        "discovery": {
+          "title": "Découverte",
+          "duration": "1–2 semaines",
+          "description": "Nous nous asseyons avec votre équipe, comprenons le problème opérationnel, auditons les données disponibles, identifions la bonne approche ML (ou vous disons honnêtement que l'IA n'est pas le bon outil), et cadrons un pilote payant avec un critère de succès mesurable."
+        },
+        "pilot": {
+          "title": "Pilote",
+          "duration": "4–8 semaines",
+          "description": "Preuve de valeur à périmètre fixe et prix fixe, sur de vraies données. Les modèles sont entraînés, évalués et déployés derrière un feature flag. Vous recevez un prototype fonctionnel, un rapport d'évaluation, et une décision claire go/no-go."
+        },
+        "production": {
+          "title": "Production & Exploitation",
+          "duration": "En continu",
+          "description": "Une fois la valeur prouvée par le pilote, nous concevons pour la production : monitoring, réentraînement, pipelines MLOps, SLAs, on-call. Nous restons partenaires d'ingénierie à long terme."
+        }
+      }
+    },
+    "stack": {
+      "eyebrow": "05 — Stack technique",
+      "title": "Mature, ennuyeux, niveau production.",
+      "subtitle": "Nous utilisons les mêmes outils que les meilleures équipes d'ingénierie IA au monde. Pas de bibliothèques expérimentales, pas de packages à moitié maintenus — uniquement de l'infrastructure mature et éprouvée en production.",
+      "groups": {
+        "0": { "label": "Modélisation", "items": "PyTorch · TensorFlow · scikit-learn · XGBoost · LightGBM · Hugging Face Transformers" },
+        "1": { "label": "LLM & RAG", "items": "OpenAI · Anthropic · Llama · LangChain · LangGraph · pgvector · Chroma" },
+        "2": { "label": "Vision par Ordinateur", "items": "OpenCV · YOLO · Detectron2 · MMDetection · ONNX · NVIDIA Triton" },
+        "3": { "label": "NLP & Voix", "items": "spaCy · Transformers · Whisper · Wav2Vec · Sentence-Transformers" },
+        "4": { "label": "MLOps", "items": "MLflow · Weights & Biases · DVC · Airflow · Prefect · BentoML" },
+        "5": { "label": "Infrastructure", "items": "Docker · Kubernetes · AWS · GCP · Vercel · PostgreSQL · Redis · Kafka" }
+      }
+    },
+    "video": {
+      "eyebrow": "06 — Voir",
+      "title": "Découvrez notre méthode.",
+      "label": "Notre méthode",
+      "placeholder": "Vidéo bientôt disponible"
+    },
+    "faq": {
+      "eyebrow": "07 — FAQ",
+      "title": "Questions fréquentes.",
+      "items": {
+        "cost": {
+          "question": "Combien coûte un projet IA ?",
+          "answer": "Cela dépend de la qualité des données, du périmètre et de la cible de production. Nous démarrons généralement par une découverte à prix fixe (1–2 semaines), puis un pilote à prix fixe (4–8 semaines) avant de s'engager sur le long terme. La découverte vous fournit un devis transparent."
+        },
+        "data": {
+          "question": "Et si nos données ne sont pas propres ?",
+          "answer": "C'est le cas de la plupart des entreprises. Un projet ML réel passe 60 à 80 % de son temps sur les données : nettoyage, étiquetage, intégration, validation. Nous gérons cela dans le cadre de l'engagement."
+        },
+        "timeline": {
+          "question": "En combien de temps voit-on des résultats ?",
+          "answer": "Un pilote livre un prototype fonctionnel en 4–8 semaines avec une évaluation mesurable selon vos métriques business. Le déploiement en production suit le pilote une fois approuvé. La plupart des clients ont un système IA en production dans les 3 mois."
+        },
+        "ip": {
+          "question": "Qui possède les modèles et le code ?",
+          "answer": "Vous. Tous les livrables — modèles, pipelines, harnais d'évaluation, code source, documentation — sont transférés à votre équipe sous votre propriété intellectuelle. Nous conservons le droit d'utiliser des techniques génériques anonymisées."
+        },
+        "support": {
+          "question": "Exploitez-vous le système après le lancement ?",
+          "answer": "Oui. Nous proposons des contrats d'exploitation continue : monitoring, réentraînement, SLA on-call, revues de performance. Ou nous pouvons transférer proprement à votre équipe interne avec documentation."
+        },
+        "languages": {
+          "question": "Dans quelles langues travaillez-vous ?",
+          "answer": "Notre ingénierie et notre communication client se font en français, anglais et arabe. Les modèles peuvent être entraînés pour n'importe quelle langue avec des données suffisantes — nous avons une force particulière en systèmes multilingues."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "08 — Parlons-en",
+      "title": "Un problème IA à résoudre ? Commençons par un appel de 30 minutes.",
+      "button": "Réserver un appel découverte"
+    }
+  },
   "home": {
+    "insights": {
+      "eyebrow": "02 — Publications",
+      "title": "Ce que nous publions.",
+      "subtitle": "Briefings industrie, guides techniques et points de vue d'ingénierie écrits par les gens qui livrent réellement les systèmes. Pas des livres blancs d'une équipe marketing.",
+      "read": "Lire",
+      "allLink": "Toutes les publications",
+      "items": {
+        "ai": {
+          "kind": "Briefing industrie",
+          "title": "L'automatisation IA dans l'entreprise algérienne — 2026",
+          "description": "Là où l'IA fait réellement bouger les choses pour les entreprises algériennes maintenant, et là où ce n'est encore que du vent. Cinq cas d'usage qui livrent, cinq qui n'arrivent pas en production.",
+          "meta": "24 pages · 18 min de lecture"
+        },
+        "erp": {
+          "kind": "Tech vision",
+          "title": "ERP sur mesure pour PME algériennes — au-delà d'Odoo",
+          "description": "Pourquoi la plupart des projets ERP en Algérie échouent, et ce que nous avons appris en livrant les nôtres. Un guide de terrain pour les CTOs évaluant build-vs-buy sur les systèmes d'entreprise.",
+          "meta": "32 pages · 22 min de lecture"
+        },
+        "cost": {
+          "kind": "Point de vue ingénierie",
+          "title": "Le vrai coût du développement logiciel en Algérie",
+          "description": "Tarification honnête, délais honnêtes, et les coûts cachés que personne ne mentionne dans l'appel de découverte. Mobile, web, ERP et projets IA comparés côte à côte.",
+          "meta": "18 pages · 12 min de lecture"
+        },
+        "healthcare": {
+          "kind": "Rapport de terrain",
+          "title": "L'IA ne remplace pas les médecins. Elle remplace la paperasse.",
+          "description": "Ce que l'IA clinique fait réellement en production aujourd'hui, pourquoi le récit du « remplacement du médecin » est faux, et où se trouve le vrai levier pour les hôpitaux algériens et MENA.",
+          "meta": "26 pages · 16 min de lecture"
+        }
+      }
+    },
     "services": {
-      "eyebrow": "01 — Services",
+      "eyebrow": "03 — Services",
       "title": "Une ingénierie logicielle pour les organisations qui livrent des résultats.",
       "subtitle": "Huit capacités, livrées de bout en bout par une équipe d'ingénieurs seniors. Logiciel, IA, mobile, cloud, IoT, sécurité — sous un même toit.",
       "cta": "Découvrir",
@@ -196,7 +1697,7 @@
       }
     },
     "industries": {
-      "eyebrow": "02 — Industries",
+      "eyebrow": "04 — Industries",
       "title": "Conçu pour les industries, pas pour les mots à la mode.",
       "subtitle": "De vrais projets livrés dans sept secteurs verticaux — en Algérie et à l'international. Chaque engagement commence par comprendre comment l'industrie fonctionne réellement, pas par une stack technique.",
       "cta": "Voir nos projets",

@@ -443,7 +443,7 @@ export const blogs = [
     slug: "developpement-application-mobile-algerie-2026",
     title: "Développement d'Applications Mobiles en Algérie 2026",
     subtitle: "Votre Projet, Notre Expertise — Flutter, React Native, Swift & Kotlin pour Particuliers, Entreprises et Gouvernement",
-    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Sétif, couvre toute l'Algérie.",
+    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Alger, couvre toute l'Algérie.",
     category: "Mobile",
     author: "Symloop Team",
     date: "2026-03-31",
@@ -571,7 +571,7 @@ export const blogs = [
     slug: "solutions-informatiques-algerie-2026",
     title: "Solutions Informatiques en Algérie 2026",
     subtitle: "Développement Web, IoT, IA & Transformation Digitale — Votre Partenaire IT en Algérie",
-    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Sétif, accompagne les entreprises algériennes dans leur transformation digitale.",
+    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Alger, accompagne les entreprises algériennes dans leur transformation digitale.",
     category: "Digital",
     author: "Symloop Team",
     date: "2026-03-31",
@@ -580,17 +580,17 @@ export const blogs = [
     featured: true,
     tags: ["solutions informatiques algérie", "entreprise informatique algérie", "développement informatique algérie", "SSII algérie", "ESN algérie", "prestataire IT algérie", "société informatique alger", "informatique sétif"],
     metaTitle: "Solutions Informatiques en Algérie 2026 | Développement, IoT, IA | Symloop",
-    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Sétif. Devis gratuit.",
+    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Alger. Devis gratuit.",
     translations: {
       en: {
         title: "IT Solutions in Algeria 2026 — Web, IoT, AI & Digital Transformation",
         subtitle: "Web Development, IoT, AI & Digital Transformation — Your IT Partner in Algeria",
-        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Setif, Algeria."
+        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Algiers, Algeria."
       },
       ar: {
         title: "حلول تكنولوجيا المعلومات في الجزائر 2026",
         subtitle: "تطوير الويب، إنترنت الأشياء، الذكاء الاصطناعي والتحول الرقمي — شريكك التقني في الجزائر",
-        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في سطيف."
+        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في الجزائر العاصمة."
       }
     }
   },

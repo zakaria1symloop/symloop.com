@@ -37,7 +37,20 @@ export async function getServerSideProps({ res }) {
   // ═══════════════════════════════════════
   const staticPages = [
     { path: '/', changefreq: 'daily', priority: '1.0' },
-    { path: '/blog/', changefreq: 'daily', priority: '0.9' },
+    { path: '/insights/', changefreq: 'weekly', priority: '0.9' },
+    { path: '/insights/ai/', changefreq: 'monthly', priority: '0.85' },
+    { path: '/insights/erp/', changefreq: 'monthly', priority: '0.85' },
+    { path: '/insights/cost/', changefreq: 'monthly', priority: '0.85' },
+    { path: '/insights/healthcare/', changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/setif/', changefreq: 'monthly', priority: '0.8' },
+    { path: '/locations/alger/ai/',                   changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/software-engineering/', changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/mobile/',               changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/cloud/',                changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/iot/',                  changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/cybersecurity/',        changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/consulting/',           changefreq: 'monthly', priority: '0.85' },
+    { path: '/locations/alger/product/',              changefreq: 'monthly', priority: '0.85' },
     { path: '/services/', changefreq: 'weekly', priority: '0.9' },
     { path: '/mena/', changefreq: 'weekly', priority: '0.7' },
     { path: '/recrutement/', changefreq: 'monthly', priority: '0.5' },
@@ -188,8 +201,21 @@ export async function getServerSideProps({ res }) {
   }));
 
   // ═══════════════════════════════════════
-  // 3. SERVICE PAGES (6 services × 3 slug variants)
+  // 3. SERVICE PAGES
   // ═══════════════════════════════════════
+  // Bespoke high-priority service pages (built with the new design system)
+  const bespokeServicePages = [
+    { path: '/services/ai/',                   changefreq: 'weekly', priority: '0.95' },  // Artificial Intelligence — flagship
+    { path: '/services/software-engineering/', changefreq: 'weekly', priority: '0.95' },  // Software Engineering — flagship
+    { path: '/services/mobile/',               changefreq: 'weekly', priority: '0.95' },  // Mobile Engineering — flagship
+    { path: '/services/cloud/',                changefreq: 'weekly', priority: '0.95' },  // Cloud & DevOps — flagship
+    { path: '/services/iot/',                  changefreq: 'weekly', priority: '0.95' },  // IoT & Industrial — flagship
+    { path: '/services/cybersecurity/',        changefreq: 'weekly', priority: '0.95' },  // Cybersecurity — flagship
+    { path: '/services/consulting/',           changefreq: 'weekly', priority: '0.95' },  // Technology Consulting — flagship
+    { path: '/services/product/',              changefreq: 'weekly', priority: '0.95' },  // Product Engineering — flagship
+  ].map(p => ({ ...p, lastmod: today }));
+
+  // Legacy slug-based service pages (existing rankings — preserved)
   const serviceSlugs = [
     'developpement-logiciel-sur-mesure-mena',
     'developpement-application-mobile-flutter-mena',
@@ -205,12 +231,15 @@ export async function getServerSideProps({ res }) {
     'enterprise-cybersecurity-data-protection-mena',
   ];
 
-  const servicePages = serviceSlugs.map(slug => ({
-    path: `/services/${slug}/`,
-    lastmod: today,
-    changefreq: 'weekly',
-    priority: '0.85',
-  }));
+  const servicePages = [
+    ...bespokeServicePages,
+    ...serviceSlugs.map(slug => ({
+      path: `/services/${slug}/`,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: '0.85',
+    })),
+  ];
 
   // ═══════════════════════════════════════
   // 4. SOLUTION PAGES
@@ -251,28 +280,14 @@ export async function getServerSideProps({ res }) {
   }));
 
   // ═══════════════════════════════════════
-  // 6. SMART HOME & CAMERAS CITY PAGES
+  // 6. SMART HOME & CAMERAS CITY PAGES — REMOVED 2026-04
+  // The owner deprecated the entire camera/smart-home revenue funnel.
+  // City pages have been deleted from src/pages/services/* and are no
+  // longer crawlable. Old URLs will return 404 and Google will drop them
+  // from the index over the next 4-8 weeks.
   // ═══════════════════════════════════════
-  const smartHomeCities = [
-    'alger', 'oran', 'constantine', 'setif', 'annaba', 'blida', 'batna',
-    'tlemcen', 'bejaia', 'tizi-ouzou', 'djelfa', 'biskra', 'chlef',
-    'skikda', 'mostaganem', 'medea', 'msila', 'bordj-bou-arreridj',
-    'el-oued', 'jijel', 'ghardaia', 'ouargla', 'relizane', 'sidi-bel-abbes',
-  ];
-
-  const smartHomePages = smartHomeCities.map(city => ({
-    path: `/services/smart-home/${city}/`,
-    lastmod: today,
-    changefreq: 'monthly',
-    priority: '0.7',
-  }));
-
-  const cameraPages = smartHomeCities.map(city => ({
-    path: `/services/cameras-surveillance/${city}/`,
-    lastmod: today,
-    changefreq: 'monthly',
-    priority: '0.7',
-  }));
+  const smartHomePages = [];
+  const cameraPages    = [];
 
   // ═══════════════════════════════════════
   // COMBINE ALL URLs

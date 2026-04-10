@@ -1,4 +1,5 @@
 import '../../styles/globals.css';
+import { useEffect } from 'react';
 import Script from 'next/script';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -12,6 +13,18 @@ const SmoothScroll = dynamic(() => import('../components/effects/SmoothScroll'),
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isBlog = router.pathname.startsWith('/blog/');
+
+  // Scroll to top on every page navigation so users always start at the top.
+  // Skip when the URL has a hash (e.g. /#clients-partners) so anchor links
+  // still jump to their target instead of being yanked back to the top.
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (url.includes('#')) return;
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => router.events.off('routeChangeComplete', handleRouteChange);
+  }, [router.events]);
 
   const content = (
     <div className="flex flex-col min-h-screen bg-white text-black">

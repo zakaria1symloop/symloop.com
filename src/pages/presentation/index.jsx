@@ -54,7 +54,7 @@ const content = {
         title: "Votre Partenaire Technologique de Confiance",
         paragraphs: [
           "Symloop est une entreprise technologique algerienne fondee avec une vision claire : democratiser l'acces aux solutions digitales de haute qualite pour les entreprises de toutes tailles.",
-          "Basee a Setif, au coeur de l'Algerie, nous combinons expertise technique internationale et comprehension profonde du marche local pour creer des solutions qui font vraiment la difference."
+          "Basee a Alger, au coeur de l'Algerie, nous combinons expertise technique internationale et comprehension profonde du marche local pour creer des solutions qui font vraiment la difference."
         ],
         stats: [
           { value: "2020", label: "Annee de creation" },
@@ -155,7 +155,7 @@ const content = {
         testimonial: {
           quote: "Symloop a transforme notre facon de travailler. Leur solution a revolutionne notre productivite.",
           author: "Client Entreprise",
-          company: "Setif, Algerie"
+          company: "Alger, Algerie"
         }
       },
       {
@@ -170,7 +170,7 @@ const content = {
         contact: {
           phone: "+213 549 575 512",
           email: "contact@symloop.com",
-          address: "Setif, Algerie"
+          address: "Alger, Algerie"
         }
       }
     ]
@@ -199,7 +199,7 @@ const content = {
         title: "Your Trusted Technology Partner",
         paragraphs: [
           "Symloop is an Algerian technology company founded with a clear vision: to democratize access to high-quality digital solutions for businesses of all sizes.",
-          "Based in Setif, in the heart of Algeria, we combine international technical expertise with deep understanding of the local market to create solutions that truly make a difference."
+          "Based in Algiers, in the heart of Algeria, we combine international technical expertise with deep understanding of the local market to create solutions that truly make a difference."
         ],
         stats: [
           { value: "2020", label: "Year founded" },
@@ -300,7 +300,7 @@ const content = {
         testimonial: {
           quote: "Symloop transformed the way we work. Their solution revolutionized our productivity.",
           author: "Enterprise Client",
-          company: "Setif, Algeria"
+          company: "Algiers, Algeria"
         }
       },
       {
@@ -315,7 +315,7 @@ const content = {
         contact: {
           phone: "+213 549 575 512",
           email: "contact@symloop.com",
-          address: "Setif, Algeria"
+          address: "Algiers, Algeria"
         }
       }
     ]
@@ -344,7 +344,7 @@ const content = {
         title: "شريكك التكنولوجي الموثوق",
         paragraphs: [
           "Symloop هي شركة تكنولوجيا جزائرية تأسست برؤية واضحة: إتاحة الوصول إلى حلول رقمية عالية الجودة للشركات من جميع الأحجام.",
-          "مقرنا في سطيف، في قلب الجزائر، نجمع بين الخبرة التقنية الدولية والفهم العميق للسوق المحلي لإنشاء حلول تحدث فرقاً حقيقياً."
+          "مقرنا في الجزائر العاصمة، في قلب الجزائر، نجمع بين الخبرة التقنية الدولية والفهم العميق للسوق المحلي لإنشاء حلول تحدث فرقاً حقيقياً."
         ],
         stats: [
           { value: "2020", label: "سنة التأسيس" },
@@ -445,7 +445,7 @@ const content = {
         testimonial: {
           quote: "غيّر Symloop طريقة عملنا. حلهم أحدث ثورة في إنتاجيتنا.",
           author: "عميل مؤسسة",
-          company: "سطيف، الجزائر"
+          company: "الجزائر العاصمة، الجزائر"
         }
       },
       {
@@ -460,7 +460,7 @@ const content = {
         contact: {
           phone: "+213 549 575 512",
           email: "contact@symloop.com",
-          address: "سطيف، الجزائر"
+          address: "الجزائر العاصمة، الجزائر"
         }
       }
     ]

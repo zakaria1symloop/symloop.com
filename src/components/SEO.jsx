@@ -21,9 +21,9 @@ export default function SEO({
   const currentUrl = `${baseUrl}${router.asPath}`;
 
   // Default SEO values
-  const defaultTitle = 'Symloop | Agence Digitale N°1 en Algérie - Web, Mobile, IA';
-  const defaultDescription = 'Symloop, agence digitale leader en Algérie. Développement web, applications mobiles, e-commerce, ERP, intelligence artificielle. Expertise MENA. Devis gratuit.';
-  const defaultKeywords = 'agence digitale algérie, développement web algérie, application mobile algérie, e-commerce algérie, ERP algérie, intelligence artificielle algérie, transformation digitale, symloop';
+  const defaultTitle = 'Symloop | Software Engineering & AI Company in Algeria';
+  const defaultDescription = 'Symloop — entreprise d\'ingénierie logicielle basée à Alger. Développement logiciel sur mesure, SaaS multi-tenant, applications mobiles, IA/ML, IoT hardware, DevOps et cloud. 58 wilayas couvertes.';
+  const defaultKeywords = 'software engineering company algeria, entreprise ingénierie logicielle algérie, custom software development algeria, développement logiciel sur mesure algérie, SaaS algérie, AI company algeria, IoT hardware algeria, symloop';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
@@ -45,7 +45,7 @@ export default function SEO({
     name: 'Symloop',
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
-    description: 'Agence digitale leader en Algérie et MENA. Développement web, mobile, e-commerce, ERP et solutions IA.',
+    description: 'Software engineering and AI company based in Algiers. Custom software engineering, SaaS platforms, mobile apps, AI/ML, IoT hardware manufacturing, DevOps and cloud across Algeria and MENA.',
     foundingDate: '2020',
     founders: [{ '@type': 'Person', name: 'Symloop Team' }],
     address: {
@@ -59,7 +59,7 @@ export default function SEO({
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+213-550-470-927',
+        telephone: '+213-549-575-512',
         contactType: 'customer service',
         availableLanguage: ['French', 'Arabic', 'English'],
         areaServed: ['DZ', 'TN', 'MA', 'EG', 'SA', 'AE', 'QA', 'KW', 'BH', 'OM', 'JO', 'LB']
@@ -80,14 +80,18 @@ export default function SEO({
       { '@type': 'Country', name: 'United Arab Emirates' }
     ],
     knowsAbout: [
-      'Web Development',
-      'Mobile App Development',
-      'E-commerce',
-      'ERP Systems',
-      'Artificial Intelligence',
-      'Digital Transformation',
-      'SEO',
-      'Cloud Computing'
+      'Software Engineering',
+      'Custom Software Development',
+      'Multi-tenant SaaS Platforms',
+      'Mobile App Engineering',
+      'Machine Learning Engineering',
+      'Computer Vision',
+      'IoT Hardware Manufacturing',
+      'Embedded Systems',
+      'DevOps',
+      'Cloud Infrastructure',
+      'Microservices Architecture',
+      'Enterprise ERP Systems'
     ]
   };
 
@@ -96,10 +100,10 @@ export default function SEO({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': `${baseUrl}/#localbusiness`,
-    name: 'Symloop - Agence Digitale Algérie',
+    name: 'Symloop — Software Engineering Company Algeria',
     image: `${baseUrl}/images/logo.png`,
     url: baseUrl,
-    telephone: '+213-550-470-927',
+    telephone: '+213-549-575-512',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -120,19 +124,6 @@ export default function SEO({
         dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
         opens: '08:00',
         closes: '18:00'
-      }
-    ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127'
-    },
-    review: [
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Ahmed B.' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5' },
-        reviewBody: 'Excellente agence, travail professionnel et équipe réactive.'
       }
     ]
   } : null;
@@ -377,19 +368,19 @@ export default function SEO({
 // Export SEO data for different pages
 export const SEOData = {
   home: {
-    title: 'Symloop | Agence Digitale N°1 en Algérie - Développement Web, Mobile, IA',
-    description: 'Symloop, votre partenaire digital en Algérie. Création sites web, applications mobiles, e-commerce avec paiement CIB, ERP, solutions IA. Leader MENA. Devis gratuit.',
-    keywords: 'agence digitale algérie, création site web algérie, développement mobile algérie, e-commerce algérie, paiement cib, edahabia, erp algérie, intelligence artificielle algérie, symloop, agence web alger'
+    title: 'Symloop | Software Engineering & AI Company in Algeria',
+    description: 'Symloop — entreprise d\'ingénierie logicielle basée à Alger. Développement logiciel sur mesure, SaaS, applications mobiles, IA/ML, IoT hardware, DevOps. 200+ projets livrés à travers les 58 wilayas.',
+    keywords: 'software engineering company algeria, entreprise ingénierie logicielle algérie, custom software development, développement logiciel sur mesure, SaaS algérie, AI company algeria, IoT hardware algeria, symloop, alger'
   },
   services: {
-    title: 'Services Digitaux en Algérie | Web, Mobile, E-commerce, IA | Symloop',
-    description: 'Découvrez nos services digitaux en Algérie : création de sites web, développement d\'applications mobiles, e-commerce avec CIB/Edahabia, ERP, intelligence artificielle.',
-    keywords: 'services digitaux algérie, développement web, application mobile, e-commerce, erp, intelligence artificielle, transformation digitale algérie'
+    title: 'Software Engineering Services in Algeria | Symloop',
+    description: 'Services d\'ingénierie logicielle en Algérie : développement logiciel sur mesure, plateformes SaaS multi-tenant, applications mobiles, IA/ML, IoT hardware, DevOps et cloud.',
+    keywords: 'software engineering services algeria, ingénierie logicielle algérie, custom software development, SaaS development algeria, AI/ML engineering, IoT hardware, DevOps, cloud infrastructure'
   },
   contact: {
-    title: 'Contactez Symloop | Agence Digitale Algérie | Devis Gratuit',
-    description: 'Contactez Symloop pour votre projet digital en Algérie. Devis gratuit sous 24h. Équipe locale à Alger. WhatsApp, email, téléphone.',
-    keywords: 'contact symloop, agence digitale alger, devis gratuit, projet digital algérie'
+    title: 'Contact Symloop | Software Engineering Company Algeria',
+    description: 'Contactez Symloop, entreprise d\'ingénierie logicielle à Alger. Discussion technique et devis sous 24h. WhatsApp, email, téléphone.',
+    keywords: 'contact symloop, software engineering algeria, ingénierie logicielle alger, devis projet logiciel, alger'
   },
   blog: {
     title: 'Blog Tech & Digital Algérie | Guides & Conseils | Symloop',

@@ -186,7 +186,7 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["ERP sur mesure", "Plateforme SaaS", "Développement logiciel personnalisé", "Gestion commerciale", "CRM", "Gestion des stocks", "Gestion RH et paie", "React", "Node.js", "PostgreSQL"],
             "areaServed": { "@type": "Country", "name": "Algeria" }

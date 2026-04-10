@@ -37,9 +37,9 @@ export default function Seo({
 
   // Geographic data for MENA region
   const geoData = {
-    'fr': { country: 'MENA Region', region: 'MENA', placename: 'Sétif, région MENA' },
-    'en': { country: 'MENA Region', region: 'MENA', placename: 'Setif, MENA region' },
-    'ar': { country: 'MENA Region', region: 'MENA', placename: 'سطيف، منطقة مينا' }
+    'fr': { country: 'MENA Region', region: 'MENA', placename: 'Alger, région MENA' },
+    'en': { country: 'MENA Region', region: 'MENA', placename: 'Algiers, MENA region' },
+    'ar': { country: 'MENA Region', region: 'MENA', placename: 'الجزائر العاصمة، منطقة مينا' }
   };
 
   const currentGeo = geoData[currentLocale] || geoData['fr'];
@@ -58,7 +58,7 @@ export default function Seo({
       <meta name="geo.region" content={currentGeo.region} />
       <meta name="geo.country" content={currentGeo.country} />
       <meta name="geo.placename" content={currentGeo.placename} />
-      <meta name="ICBM" content="36.1919, 5.4138" />
+      <meta name="ICBM" content="36.7538, 3.0588" />
       <meta name="DC.title" content={title} />
       <meta name="DC.description" content={description} />
       <meta name="DC.coverage" content="MENA Region" />
@@ -110,7 +110,7 @@ export default function Seo({
       {/* Enhanced Business-specific meta tags */}
       <meta name="business:contact_data:phone" content="+213 549 575 512" />
       <meta name="business:contact_data:email" content="contact@symloop.com" />
-      <meta name="business:contact_data:locality" content="Sétif" />
+      <meta name="business:contact_data:locality" content="Alger" />
       <meta name="business:contact_data:region" content="MENA" />
       <meta name="business:contact_data:country" content="DZ" />
       <meta name="contact" content="contact@symloop.com" />

@@ -5,7 +5,6 @@
 // Animation: scroll-triggered stagger reveal via Framer Motion.
 // ============================================================================
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
@@ -17,20 +16,19 @@ import {
   Building2,
   Sprout,
   GraduationCap,
-  ArrowUpRight,
 } from 'lucide-react';
 
-// NOTE: industry pages don't exist yet. Until we ship dedicated /industries/[slug] pages,
-// each card links to an existing page that's relevant — solutions for healthcare/education,
-// existing service pages for the rest. No 404s, no broken SEO.
+// Industries are display-only — NOT clickable.
+// Reason: each industry is a vertical of work, not a single deliverable.
+// Linking each card would falsely imply a single project page per industry.
 const INDUSTRIES = [
-  { key: 'healthcare',  href: '/solutions/digitalisation-sante-algerie/',  icon: HeartPulse },
-  { key: 'logistics',   href: '/blog/logistique-transport-algerie-2024/',   icon: Truck },
-  { key: 'retail',      href: '/services/creation-site-web-ecommerce-algerie/', icon: ShoppingBag },
-  { key: 'industrial',  href: '/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026/', icon: Factory },
-  { key: 'realestate',  href: '/blog/smart-home-promoteur-immobilier-algerie-2026/', icon: Building2 },
-  { key: 'agriculture', href: '/blog/agriculture-intelligente-irrigation-algerie-2026/', icon: Sprout },
-  { key: 'education',   href: '/solutions/digitalisation-education-algerie/', icon: GraduationCap },
+  { key: 'healthcare',  icon: HeartPulse },
+  { key: 'logistics',   icon: Truck },
+  { key: 'retail',      icon: ShoppingBag },
+  { key: 'industrial',  icon: Factory },
+  { key: 'realestate',  icon: Building2 },
+  { key: 'agriculture', icon: Sprout },
+  { key: 'education',   icon: GraduationCap },
 ];
 
 const fadeUp = {
@@ -101,43 +99,32 @@ export default function IndustriesGrid() {
             const Icon = industry.icon;
             const num = String(i + 1).padStart(2, '0');
             return (
-              <motion.li key={industry.key} variants={fadeUp} className="bg-black">
-                <Link
-                  href={industry.href}
-                  className="group block h-full p-8 lg:p-10 transition-colors duration-300 hover:bg-white/[0.02] focus:outline-none focus:bg-white/[0.03]"
-                >
-                  <div className="flex items-start justify-between mb-10">
-                    <Icon
-                      className="w-7 h-7 text-white/70 group-hover:text-white transition-colors duration-300"
-                      strokeWidth={1.25}
-                    />
-                    <span className="font-mono text-[11px] tracking-[0.15em] text-white/30">
-                      {num}
-                    </span>
-                  </div>
+              <motion.li
+                key={industry.key}
+                variants={fadeUp}
+                className="group bg-black p-8 lg:p-10 transition-colors duration-300 hover:bg-white/[0.02]"
+              >
+                <div className="flex items-start justify-between mb-10">
+                  <Icon
+                    className="w-7 h-7 text-white/70 group-hover:text-white transition-colors duration-300"
+                    strokeWidth={1.25}
+                  />
+                  <span className="font-mono text-[11px] tracking-[0.15em] text-white/30">
+                    {num}
+                  </span>
+                </div>
 
-                  <h3 className="text-xl lg:text-2xl font-normal text-white leading-snug mb-3">
-                    {t(`home.industries.items.${industry.key}.title`, {
-                      defaultValue: industry.key,
-                    })}
-                  </h3>
+                <h3 className="text-xl lg:text-2xl font-normal text-white leading-snug mb-3">
+                  {t(`home.industries.items.${industry.key}.title`, {
+                    defaultValue: industry.key,
+                  })}
+                </h3>
 
-                  <p className="text-sm text-white/50 leading-relaxed mb-8 min-h-[3rem]">
-                    {t(`home.industries.items.${industry.key}.description`, {
-                      defaultValue: '',
-                    })}
-                  </p>
-
-                  <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.15em] text-white/40 group-hover:text-white transition-colors duration-300">
-                    <span>
-                      {t('home.industries.cta', { defaultValue: 'View work' })}
-                    </span>
-                    <ArrowUpRight
-                      className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                </Link>
+                <p className="text-sm text-white/50 leading-relaxed min-h-[3rem]">
+                  {t(`home.industries.items.${industry.key}.description`, {
+                    defaultValue: '',
+                  })}
+                </p>
               </motion.li>
             );
           })}

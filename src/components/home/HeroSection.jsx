@@ -456,7 +456,7 @@ const ChatBotModal = ({ isOpen, onClose, initialMessage = "", isRTL = false, rou
       return `📞 **Contactez nos Experts IT région MENA**
 
 🏢 **Symloop Technology MENA** - Leader depuis 2012
-📍 **Siège social** : Sétif, région MENA  
+📍 **Siège social** : Alger, région MENA
 🌍 **Couverture** : région MENA complète
 
 📞 **Contacts Directs** :

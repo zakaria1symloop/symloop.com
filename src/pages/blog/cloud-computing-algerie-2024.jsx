@@ -26,7 +26,7 @@ export default function CloudComputingAlgerie() {
     },
     {
       question: "Symloop propose-t-il des services cloud en Algérie ?",
-      answer: "Oui, Symloop est spécialisé dans les services cloud pour les entreprises algériennes. Basés à Sétif, nous proposons : migration cloud (AWS, Azure, Google Cloud), hébergement managé, infogérance 24/7, sauvegarde automatisée et optimisation des coûts. Notre équipe certifiée accompagne les PME et grandes entreprises dans toute l'Algérie. Contactez-nous au +213 549 575 512 pour un audit gratuit."
+      answer: "Oui, Symloop est spécialisé dans les services cloud pour les entreprises algériennes. Basés à Alger, nous proposons : migration cloud (AWS, Azure, Google Cloud), hébergement managé, infogérance 24/7, sauvegarde automatisée et optimisation des coûts. Notre équipe certifiée accompagne les PME et grandes entreprises dans toute l'Algérie. Contactez-nous au +213 549 575 512 pour un audit gratuit."
     },
     {
       question: "AWS, Azure ou Google Cloud : lequel choisir en Algérie ?",

@@ -588,16 +588,16 @@ export default function DeveloppeurWebSetif() {
     "email": "contact@symloop.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Cité 1000 Logements",
-      "addressLocality": "Sétif",
-      "addressRegion": "Sétif",
-      "postalCode": "19000",
+      "streetAddress": "Alger Centre",
+      "addressLocality": "Alger",
+      "addressRegion": "Alger",
+      "postalCode": "16000",
       "addressCountry": "DZ"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "36.1919",
-      "longitude": "5.4138"
+      "latitude": "36.7538",
+      "longitude": "3.0588"
     },
     "areaServed": [
       { "@type": "City", "name": "Sétif" },
@@ -933,7 +933,7 @@ export default function DeveloppeurWebSetif() {
             <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
               <Link href="/blog/agence-developpement-web-setif-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-violet-500/50 transition-all group">
                 <span className="font-semibold text-white group-hover:text-violet-400 transition-colors">Agence Développement Web Sétif 2026</span>
-                <p className="text-slate-400 text-sm mt-1">Découvrez notre agence web basée à Sétif</p>
+                <p className="text-slate-400 text-sm mt-1">Découvrez notre agence web qui sert Sétif depuis Alger</p>
               </Link>
               <Link href="/blog/developpement-site-web-algerie-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-violet-500/50 transition-all group">
                 <span className="font-semibold text-white group-hover:text-violet-400 transition-colors">Développement Site Web Algérie 2026</span>

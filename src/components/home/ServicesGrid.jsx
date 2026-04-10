@@ -21,22 +21,25 @@ import {
   ArrowUpRight,
 } from 'lucide-react';
 
-// NOTE: each service points to an EXISTING service page (we keep the working SEO).
-// As we ship dedicated new pages later, we update these slugs.
-// Slugs use the FR canonical (the site's primary content locale); Next.js [slug].jsx
-// resolves all locales via getAllSlugPaths().
+// NOTE: services point to destination pages.
+// `href` overrides slug-based routing (used for bespoke pages like /services/ai/).
+// `slug` falls back to existing dynamic [slug].jsx pages — preserves working SEO.
+// As bespoke pages ship for each service, we replace `slug` with `href`.
 const SERVICES = [
-  { key: 'ai',           slug: 'intelligence-artificielle-machine-learning-algerie', icon: Brain },
-  { key: 'engineering',  slug: 'developpement-logiciel-sur-mesure-algerie',          icon: Cpu },
-  { key: 'mobile',       slug: 'developpement-application-mobile-ios-android-algerie', icon: Smartphone },
-  { key: 'cloud',        slug: 'devops-cloud-cybersecurite-algerie',                 icon: Cloud },
-  { key: 'iot',          slug: 'solutions-iot-objets-connectes-algerie',             icon: Radio },
-  { key: 'security',     slug: 'devops-cloud-cybersecurite-algerie',                 icon: ShieldCheck },
-  { key: 'consulting',   slug: '',                                                    icon: Compass }, // → /services/ index until dedicated page exists
-  { key: 'product',      slug: '',                                                    icon: Boxes },   // → /services/ index until dedicated page exists
+  { key: 'ai',           href: '/services/ai/',                                       icon: Brain },        // bespoke page
+  { key: 'engineering',  href: '/services/software-engineering/',                     icon: Cpu },          // bespoke page
+  { key: 'mobile',       href: '/services/mobile/',                                    icon: Smartphone },     // bespoke page
+  { key: 'cloud',        href: '/services/cloud/',                                     icon: Cloud },         // bespoke page
+  { key: 'iot',          href: '/services/iot/',                                       icon: Radio },         // bespoke page
+  { key: 'security',     href: '/services/cybersecurity/',                             icon: ShieldCheck },   // bespoke page
+  { key: 'consulting',   href: '/services/consulting/',                                icon: Compass },        // bespoke page
+  { key: 'product',      href: '/services/product/',                                   icon: Boxes },         // bespoke page
 ];
 
-const buildHref = (slug) => slug ? `/services/${slug}/` : '/services/';
+const buildHref = (service) => {
+  if (service.href) return service.href;
+  return service.slug ? `/services/${service.slug}/` : '/services/';
+};
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -108,7 +111,7 @@ export default function ServicesGrid() {
             return (
               <motion.li key={service.key} variants={fadeUp} className="bg-black">
                 <Link
-                  href={buildHref(service.slug)}
+                  href={buildHref(service)}
                   className="group block h-full p-8 lg:p-10 transition-colors duration-300 hover:bg-white/[0.02] focus:outline-none focus:bg-white/[0.03]"
                 >
                   <div className="flex items-start justify-between mb-10">

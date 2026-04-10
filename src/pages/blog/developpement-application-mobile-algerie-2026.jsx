@@ -215,7 +215,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Développement application mobile", "Flutter", "React Native", "iOS", "Android", "UX/UI Design", "E-services gouvernementaux"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -331,7 +331,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
               <div data-speakable="summary" className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-8">
                 <h2 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-3">En bref</h2>
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                  <strong className="text-white">Symloop</strong> est une agence de développement d&apos;applications mobiles basée à Sétif, Algérie,
+                  <strong className="text-white">Symloop</strong> est une agence de développement d&apos;applications mobiles basée à Alger, Algérie,
                   spécialisée dans Flutter, React Native, Swift et Kotlin. Plus de 50 applications livrées pour des particuliers,
                   startups, entreprises et administrations gouvernementales. Services : applications e-commerce, santé, éducation,
                   transport, fintech, ERP mobile, CRM, e-services publics. Couverture nationale : Alger, Oran, Constantine, Sétif,
@@ -392,7 +392,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
                   d&apos;une startup, d&apos;une PME, d&apos;un grand groupe ou d&apos;une institution publique.
                 </p>
                 <p className="text-lg text-gray-500 leading-relaxed">
-                  <strong className="text-gray-300">Symloop</strong>, agence de développement mobile basée à Sétif,
+                  <strong className="text-gray-300">Symloop</strong>, agence de développement mobile basée à Alger,
                   accompagne les porteurs de projets dans toute l&apos;Algérie avec les technologies les plus
                   performantes : <strong className="text-gray-300">Flutter, React Native, Swift et Kotlin</strong>.
                 </p>

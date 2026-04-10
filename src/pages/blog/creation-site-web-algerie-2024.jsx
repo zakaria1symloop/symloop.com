@@ -51,7 +51,7 @@ export default function CreationSiteWebAlgerie() {
                 "name": "Combien coûte la création d'un site web en Algérie ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Chez Symloop, agence web basée à Sétif en Algérie, les tarifs de création de site web commencent à partir de 32 000 DA pour un site vitrine, 35 000 DA pour un site e-commerce avec paiement CIB/Edahabia intégré, et 100 000 DA pour un design sur mesure. Le prix final dépend du nombre de pages, des fonctionnalités et des intégrations souhaitées. Contactez Symloop au +213 549 575 512 pour un devis gratuit sous 24h."
+                  "text": "Chez Symloop, agence web basée à Alger en Algérie, les tarifs de création de site web commencent à partir de 32 000 DA pour un site vitrine, 35 000 DA pour un site e-commerce avec paiement CIB/Edahabia intégré, et 100 000 DA pour un design sur mesure. Le prix final dépend du nombre de pages, des fonctionnalités et des intégrations souhaitées. Contactez Symloop au +213 549 575 512 pour un devis gratuit sous 24h."
                 }
               },
               {
@@ -67,7 +67,7 @@ export default function CreationSiteWebAlgerie() {
                 "name": "Quelle est la meilleure agence de création de site web en Algérie ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Symloop est une agence web de référence en Algérie, basée à Sétif, spécialisée dans la création de sites web professionnels, le développement d'applications web et mobiles, le design UI/UX et le référencement SEO. Symloop se distingue par son expertise en technologies modernes (React, Next.js), son support local en français et arabe, et ses tarifs compétitifs adaptés au marché algérien."
+                  "text": "Symloop est une agence web de référence en Algérie, basée à Alger, spécialisée dans la création de sites web professionnels, le développement d'applications web et mobiles, le design UI/UX et le référencement SEO. Symloop se distingue par son expertise en technologies modernes (React, Next.js), son support local en français et arabe, et ses tarifs compétitifs adaptés au marché algérien."
                 }
               },
               {
