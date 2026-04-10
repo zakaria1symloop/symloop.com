@@ -207,23 +207,26 @@ const solutionSlugs = [
   "intelligence-artificielle-tunisie",
 ];
 
-/** Location cities (10 Algerian wilayas) */
+/** Location cities (legacy dynamic [city] pages — excludes setif/alger which have editorial pages) */
 const locationCities = [
-  "alger", "oran", "constantine", "setif", "annaba",
+  "oran", "constantine", "annaba",
   "blida", "batna", "djelfa", "tlemcen", "bejaia",
 ];
 
-/** Smart-home cities (all 24 wilayas) */
-const smartHomeCities = [
-  "alger", "oran", "constantine", "setif", "annaba",
-  "blida", "batna", "djelfa", "tlemcen", "bejaia",
-  "tizi-ouzou", "biskra", "skikda", "sidi-bel-abbes",
-  "mostaganem", "msila", "chlef", "bouira", "medea",
-  "tipaza", "boumerdes", "ghardaia", "ouargla", "laghouat",
+/** NEW: Editorial insight pages */
+const insightSlugs = ["ai", "erp", "cost", "healthcare"];
+
+/** NEW: Dedicated editorial service pages (8 disciplines) */
+const editorialServiceSlugs = [
+  "ai", "software-engineering", "mobile", "cloud",
+  "iot", "cybersecurity", "consulting", "product",
 ];
 
-/** Camera-surveillance cities (same 24 wilayas) */
-const cameraCities = [...smartHomeCities];
+/** NEW: Alger × service editorial pages (8 pages) */
+const algerServiceSlugs = [
+  "ai", "software-engineering", "mobile", "cloud",
+  "iot", "cybersecurity", "consulting", "product",
+];
 
 /** Product pages */
 const productPages = [
@@ -235,12 +238,14 @@ const productPages = [
 /** Other important pages */
 const otherPages = [
   "/",             // homepage
-  "/blog/",        // blog index
+  "/insights/",    // insights hub (replaced blog in nav)
+  "/blog/",        // blog index (still indexed, just hidden from nav)
   "/services/",    // services index
   "/mena/",        // MENA page
   "/recrutement/", // recruitment
   "/learning/",    // learning
   "/presentation/",// presentation
+  "/locations/setif/", // editorial Sétif overview
 ];
 
 // Locales: default is 'en' (no prefix), 'fr' and 'ar' have /fr/ and /ar/ prefixes
@@ -271,22 +276,27 @@ function buildAllUrls() {
     urls.add(`${BASE}/solutions/${slug}/`);
   }
 
-  // 5. Location pages (default locale)
+  // 5. Location pages — legacy dynamic cities (default locale)
   for (const city of locationCities) {
     urls.add(`${BASE}/locations/${city}/`);
   }
 
-  // 6. Smart-home city pages (default locale)
-  for (const city of smartHomeCities) {
-    urls.add(`${BASE}/services/smart-home/${city}/`);
+  // 6. NEW: Insight pages (default locale)
+  for (const slug of insightSlugs) {
+    urls.add(`${BASE}/insights/${slug}/`);
   }
 
-  // 7. Camera-surveillance city pages (default locale)
-  for (const city of cameraCities) {
-    urls.add(`${BASE}/services/cameras-surveillance/${city}/`);
+  // 7. NEW: Editorial service pages (default locale)
+  for (const slug of editorialServiceSlugs) {
+    urls.add(`${BASE}/services/${slug}/`);
   }
 
-  // 8. Product pages (default locale)
+  // 8. NEW: Alger × service pages (default locale)
+  for (const slug of algerServiceSlugs) {
+    urls.add(`${BASE}/locations/alger/${slug}/`);
+  }
+
+  // 9. Product pages (default locale)
   for (const page of productPages) {
     urls.add(`${BASE}${page}`);
   }
@@ -321,19 +331,28 @@ function buildAllUrls() {
       urls.add(`${BASE}/${locale}/blog/${slug}/`);
     }
 
-    // Location pages in fr/ar
+    // Location pages in fr/ar (legacy cities)
     for (const city of locationCities) {
       urls.add(`${BASE}/${locale}/locations/${city}/`);
     }
 
-    // Smart-home city pages in fr/ar
-    for (const city of smartHomeCities) {
-      urls.add(`${BASE}/${locale}/services/smart-home/${city}/`);
+    // Sétif editorial page in fr/ar
+    urls.add(`${BASE}/${locale}/locations/setif/`);
+
+    // Insight pages in fr/ar
+    for (const slug of insightSlugs) {
+      urls.add(`${BASE}/${locale}/insights/${slug}/`);
+    }
+    urls.add(`${BASE}/${locale}/insights/`);
+
+    // Editorial service pages in fr/ar
+    for (const slug of editorialServiceSlugs) {
+      urls.add(`${BASE}/${locale}/services/${slug}/`);
     }
 
-    // Camera-surveillance city pages in fr/ar
-    for (const city of cameraCities) {
-      urls.add(`${BASE}/${locale}/services/cameras-surveillance/${city}/`);
+    // Alger × service pages in fr/ar
+    for (const slug of algerServiceSlugs) {
+      urls.add(`${BASE}/${locale}/locations/alger/${slug}/`);
     }
 
     // Product pages in fr/ar
@@ -403,22 +422,24 @@ async function main() {
   const serviceCount = serviceSlugs.length;
   const solutionCount = solutionSlugs.length;
   const locationCount = locationCities.length;
-  const smartHomeCount = smartHomeCities.length;
-  const cameraCount = cameraCities.length;
+  const insightCount = insightSlugs.length;
+  const editorialServiceCount = editorialServiceSlugs.length;
+  const algerServiceCount = algerServiceSlugs.length;
   const productCount = productPages.length;
   const otherCount = otherPages.length;
 
   console.log("\n  URL Breakdown (default locale / en):");
   console.log(`    Blog posts:           ${blogCount}`);
-  console.log(`    Service pages:        ${serviceCount}`);
+  console.log(`    Service (legacy):     ${serviceCount}`);
+  console.log(`    Service (editorial):  ${editorialServiceCount}`);
   console.log(`    Solution pages:       ${solutionCount}`);
-  console.log(`    Location pages:       ${locationCount}`);
-  console.log(`    Smart-home cities:    ${smartHomeCount}`);
-  console.log(`    Camera cities:        ${cameraCount}`);
+  console.log(`    Insights:             ${insightCount}`);
+  console.log(`    Location (legacy):    ${locationCount}`);
+  console.log(`    Alger × service:      ${algerServiceCount}`);
   console.log(`    Product pages:        ${productCount}`);
   console.log(`    Other pages:          ${otherCount}`);
   console.log(`    ────────────────────────────────`);
-  const defaultTotal = blogCount + serviceCount + solutionCount + locationCount + smartHomeCount + cameraCount + productCount + otherCount;
+  const defaultTotal = blogCount + serviceCount + solutionCount + locationCount + insightCount + editorialServiceCount + algerServiceCount + productCount + otherCount;
   console.log(`    Default locale total: ${defaultTotal}`);
   console.log(`    x3 locales (en/fr/ar) + overlap = ${allUrls.length} total unique URLs`);
   console.log("");
