@@ -71,7 +71,7 @@ function MyApp({ Component, pageProps }) {
       {/* Floating WhatsApp button — square → circle on hover with smile */}
       <style jsx global>{`
         .wa-fab {
-          border-radius: 12px;
+          border-radius: 0;
           transition: border-radius 0.3s ease, transform 0.3s ease;
         }
         .wa-fab:hover {
