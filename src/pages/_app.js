@@ -103,7 +103,13 @@ function MyApp({ Component, pageProps }) {
         style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}
       >
         <MessageCircle className="wa-icon w-5 h-5 lg:w-6 lg:h-6" strokeWidth={1.75} />
-        <span className="wa-smile text-2xl lg:text-3xl leading-none select-none">😊</span>
+        {/* CSS smiley instead of emoji — avoids SSR/client hydration mismatch */}
+        <svg className="wa-smile w-6 h-6 lg:w-7 lg:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+          <line x1="9" y1="9" x2="9.01" y2="9" strokeWidth="3" />
+          <line x1="15" y1="9" x2="15.01" y2="9" strokeWidth="3" />
+        </svg>
       </a>
     </>
   );
