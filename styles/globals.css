@@ -253,7 +253,7 @@ html[dir="rtl"] body {
 
 /* RTL Font optimizations for Arabic */
 [dir="rtl"] {
-  font-family: 'Changa', 'Arial', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', 'Arial', sans-serif;
   font-feature-settings: "liga" 1, "kern" 1;
 }
 
@@ -263,7 +263,7 @@ html[dir="rtl"] body {
 [dir="rtl"] h4, 
 [dir="rtl"] h5, 
 [dir="rtl"] h6 {
-  font-family: 'Changa', 'Arial', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', 'Arial', sans-serif;
   line-height: 1.4;
   letter-spacing: 0;
 }
