@@ -70,40 +70,28 @@ function MyApp({ Component, pageProps }) {
 
       {/* Floating WhatsApp button — square → circle on hover with smile */}
       <style jsx global>{`
-        @keyframes fab-entrance {
-          0% { transform: scale(0) rotate(-45deg); opacity: 0; }
-          60% { transform: scale(1.1) rotate(5deg); opacity: 1; }
-          100% { transform: scale(1) rotate(0deg); opacity: 1; }
-        }
-        @keyframes fab-ring {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.12); }
-          50% { box-shadow: 0 0 0 10px rgba(255,255,255,0); }
-        }
         .wa-fab {
-          animation: fab-entrance 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 1.2s both,
-                     fab-ring 3s ease-in-out 2s infinite;
           border-radius: 12px;
+          transition: border-radius 0.3s ease, transform 0.3s ease;
         }
         .wa-fab:hover {
-          animation: none;
           border-radius: 50%;
           transform: scale(1.08);
         }
-        .wa-fab .wa-icon { display: block; }
-        .wa-fab .wa-smile { display: none; }
-        .wa-fab:hover .wa-icon { display: none; }
-        .wa-fab:hover .wa-smile { display: block; }
+        .wa-fab .wa-smile { opacity: 0; position: absolute; transition: opacity 0.2s ease; }
+        .wa-fab .wa-icon { opacity: 1; transition: opacity 0.2s ease; }
+        .wa-fab:hover .wa-smile { opacity: 1; }
+        .wa-fab:hover .wa-icon { opacity: 0; }
       `}</style>
       <a
         href="https://wa.me/213549575512"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
-        className="wa-fab fixed z-50 bottom-6 right-6 lg:bottom-8 lg:right-8 flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 bg-white text-black shadow-2xl shadow-black/40 transition-all duration-300"
+        className="wa-fab fixed z-50 bottom-6 right-6 lg:bottom-8 lg:right-8 flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 bg-white text-black shadow-2xl shadow-black/40"
         style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}
       >
         <MessageCircle className="wa-icon w-5 h-5 lg:w-6 lg:h-6" strokeWidth={1.75} />
-        {/* CSS smiley instead of emoji — avoids SSR/client hydration mismatch */}
         <svg className="wa-smile w-6 h-6 lg:w-7 lg:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10" />
           <path d="M8 14s1.5 2 4 2 4-2 4-2" />
