@@ -15,16 +15,23 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isBlog = router.pathname.startsWith('/blog/');
 
-  // Disable browser's native scroll restoration — we handle it ourselves
-  // via Lenis in SmoothScroll.jsx. Without this, the browser restores the
-  // previous scroll position on page load/refresh, causing pages to open
-  // at the bottom instead of the top.
+  // Disable browser's native scroll restoration + set lang/dir on <html>
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
     window.scrollTo(0, 0);
   }, []);
+
+  // Keep <html> lang and dir in sync with the active locale on every
+  // navigation. _document.js sets it at SSR time but client-side
+  // navigation doesn't update it, so the Arabic font CSS selector
+  // ([lang="ar"]) and RTL layout ([dir="rtl"]) won't apply without this.
+  useEffect(() => {
+    const locale = router.locale || 'en';
+    document.documentElement.setAttribute('lang', locale);
+    document.documentElement.setAttribute('dir', locale === 'ar' ? 'rtl' : 'ltr');
+  }, [router.locale]);
 
   // Scroll to top on every page navigation (fallback for non-Lenis pages).
   useEffect(() => {

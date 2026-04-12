@@ -251,19 +251,22 @@ html[dir="rtl"] body {
   margin-right: 0;
 }
 
-/* RTL Font optimizations for Arabic */
-[dir="rtl"] {
-  font-family: 'IBM Plex Sans Arabic', 'Arial', sans-serif;
+/* Arabic font — IBM Plex Sans Arabic (premium, corporate)
+   Targets both [dir="rtl"] AND [lang="ar"] to catch all cases
+   (some pages set dir via JS after hydration, not at SSR time).
+   !important ensures it wins over Tailwind defaults. */
+[dir="rtl"],
+[lang="ar"],
+html[lang="ar"],
+html[lang="ar"] body {
+  font-family: 'IBM Plex Sans Arabic', 'Arial', sans-serif !important;
   font-feature-settings: "liga" 1, "kern" 1;
 }
 
-[dir="rtl"] h1, 
-[dir="rtl"] h2, 
-[dir="rtl"] h3, 
-[dir="rtl"] h4, 
-[dir="rtl"] h5, 
-[dir="rtl"] h6 {
-  font-family: 'IBM Plex Sans Arabic', 'Arial', sans-serif;
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6,
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6,
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4, html[lang="ar"] h5, html[lang="ar"] h6 {
+  font-family: 'IBM Plex Sans Arabic', 'Arial', sans-serif !important;
   line-height: 1.4;
   letter-spacing: 0;
 }
