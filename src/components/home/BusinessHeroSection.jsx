@@ -82,6 +82,7 @@ const CONTENT = {
     dek:       "Équipe d'ingénieurs seniors basée à Alger. Logiciel, IA, mobile, cloud, IoT, cybersécurité — huit disciplines sous un seul toit, pour des clients en Algérie et à l'international.",
     ctaWhatsapp: 'WhatsApp',
     ctaServices: 'Voir nos services',
+    ctaEmail:    'contact@symloop.com',
     clutch:      'Clutch 5.0 / 5.0',
     disciplines: '8 disciplines',
     hq:          'Siège Alger',
@@ -95,6 +96,7 @@ const CONTENT = {
     dek:       'Senior engineering team headquartered in Algiers. Software, AI, mobile, cloud, IoT, cybersecurity — eight disciplines under one roof, for clients in Algeria and internationally.',
     ctaWhatsapp: 'WhatsApp',
     ctaServices: 'See our services',
+    ctaEmail:    'contact@symloop.com',
     clutch:      'Clutch 5.0 / 5.0',
     disciplines: '8 disciplines',
     hq:          'Algiers HQ',
@@ -108,6 +110,7 @@ const CONTENT = {
     dek:       'فريق مهندسين كبار مقره الجزائر العاصمة. برمجيات، ذكاء اصطناعي، جوال، سحابة، إنترنت الأشياء، أمن سيبراني — ثمانية تخصصات تحت سقف واحد، لعملاء في الجزائر ودولياً.',
     ctaWhatsapp: 'واتساب',
     ctaServices: 'عرض خدماتنا',
+    ctaEmail:    'contact@symloop.com',
     clutch:      'Clutch 5.0 / 5.0',
     disciplines: '8 تخصصات',
     hq:          'مقر الجزائر العاصمة',
@@ -239,6 +242,17 @@ export default function BusinessHeroSection() {
                   : <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />
                 }
               </Link>
+
+              <a
+                href="mailto:contact@symloop.com"
+                className="group inline-flex items-center gap-3 text-white/50 hover:text-white text-sm tracking-wide transition-colors"
+              >
+                <span>{c.ctaEmail}</span>
+                {isRTL
+                  ? <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" strokeWidth={1.5} />
+                  : <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />
+                }
+              </a>
             </motion.div>
 
             {/* Proof + geo strip */}
