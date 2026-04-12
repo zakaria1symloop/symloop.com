@@ -32,17 +32,13 @@ export default function Document(props) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         
         {/* Google Fonts — ALL fonts loaded here (not in next/head on pages).
-            Using media="print" + onLoad trick for non-render-blocking load.
-            Arabic: IBM Plex Sans Arabic (premium, corporate, editorial) replaces Changa. */}
+            Arabic: IBM Plex Sans Arabic (premium, corporate, editorial).
+            display=swap ensures text renders immediately with fallback, then
+            swaps to the custom font once downloaded. */}
         <link
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
-          media="print"
-          onLoad="this.media='all'"
         />
-        <noscript>
-          <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-        </noscript>
         
         {/* Web App Manifest */}
         <link rel="manifest" href="/manifest.json" />
