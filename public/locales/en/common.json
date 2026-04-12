@@ -1659,6 +1659,12 @@
           "title": "You don't need a CTO. You need an AI operations backbone.",
           "description": "Why most Algerian SMEs can't find a CTO, what an AI operations layer actually replaces, and how to build one that runs your company's decision layer for a fraction of the cost.",
           "meta": "22 pages · 14 min read"
+        },
+        "vision-2030": {
+          "kind": "Strategic brief",
+          "title": "The 2030 company — why AI is not optional for Vision economies.",
+          "description": "Saudi Vision 2030, Algeria's digitalization, UAE Smart Government — every MENA economy bets on 2030. The companies that survive build AI into operations now, not in 2029.",
+          "meta": "28 pages · 16 min read"
         }
       }
     },

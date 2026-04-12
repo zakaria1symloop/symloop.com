@@ -48,6 +48,13 @@ export const INSIGHTS = [
     featured: false,
     publishedAt: '2026-04-10',
   },
+  {
+    key:     'vision-2030',
+    path:    '/insights/vision-2030/',
+    cover:   '/insights/cover-2030.jpg',
+    featured: false,
+    publishedAt: '2026-04-10',
+  },
   // ── Future insights to add when ready ────────────────────────────────────
   // To add more insights:
   //   1. Add an entry here
