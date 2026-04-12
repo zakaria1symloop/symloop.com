@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
-import { ArrowRight, ArrowLeft, MessageCircle } from "lucide-react";
+import { ArrowRight, ArrowLeft, MessageCircle, Mail } from "lucide-react";
 import Link from "next/link";
 
 // ============================================================================
@@ -245,12 +245,13 @@ export default function BusinessHeroSection() {
 
               <a
                 href="mailto:contact@symloop.com"
-                className="group inline-flex items-center gap-3 text-white/50 hover:text-white text-sm tracking-wide transition-colors"
+                className="group inline-flex items-center gap-3 border border-white/20 hover:border-white/60 text-white px-8 py-4 text-sm font-medium tracking-wide transition-colors"
               >
+                <Mail className="w-4 h-4" strokeWidth={1.75} />
                 <span>{c.ctaEmail}</span>
                 {isRTL
-                  ? <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" strokeWidth={1.5} />
-                  : <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />
+                  ? <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" strokeWidth={1.5} />
+                  : <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />
                 }
               </a>
             </motion.div>
