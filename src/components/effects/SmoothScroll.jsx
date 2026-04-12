@@ -21,6 +21,11 @@ export default function SmoothScroll({ children }) {
 
     lenisRef.current = lenis;
 
+    // Force scroll to top on initial mount — prevents browser from
+    // restoring previous scroll position on page load/refresh.
+    lenis.scrollTo(0, { immediate: true });
+    window.scrollTo(0, 0);
+
     let rafId;
     function raf(time) {
       lenis.raf(time);

@@ -14,9 +14,18 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isBlog = router.pathname.startsWith('/blog/');
 
-  // Scroll to top on every page navigation so users always start at the top.
-  // Skip when the URL has a hash (e.g. /#clients-partners) so anchor links
-  // still jump to their target instead of being yanked back to the top.
+  // Disable browser's native scroll restoration — we handle it ourselves
+  // via Lenis in SmoothScroll.jsx. Without this, the browser restores the
+  // previous scroll position on page load/refresh, causing pages to open
+  // at the bottom instead of the top.
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Scroll to top on every page navigation (fallback for non-Lenis pages).
   useEffect(() => {
     const handleRouteChange = (url) => {
       if (url.includes('#')) return;
