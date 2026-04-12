@@ -31,15 +31,17 @@ export default function Document(props) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         
-        {/* Google Fonts - Changa for Arabic (non-blocking load) */}
+        {/* Google Fonts — ALL fonts loaded here (not in next/head on pages).
+            Using media="print" + onLoad trick for non-render-blocking load.
+            PageSpeed flags fonts in next/head as render-blocking. */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
           media="print"
           onLoad="this.media='all'"
         />
         <noscript>
-          <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
         </noscript>
         
         {/* Web App Manifest */}

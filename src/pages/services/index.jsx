@@ -331,14 +331,7 @@ export default function ServicesPage({ services, locale: pageLocale }) {
         <link rel="alternate" hrefLang="en" href={`${baseUrl}/en/services/`} />
         <link rel="alternate" hrefLang="ar" href={`${baseUrl}/ar/services/`} />
         <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/fr/services/`} />
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
+        {/* Fonts loaded in _document.js — no duplicate here */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />

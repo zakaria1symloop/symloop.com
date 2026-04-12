@@ -249,11 +249,7 @@ export default function ServiceDetailPage({ service, locale: pageLocale, related
           hrefLang="x-default"
           href={`${baseUrl}/fr/services/${SERVICES.find((s) => s.id === service.id)?.slugs.fr}/`}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
+        {/* Fonts loaded in _document.js — no duplicate here */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
