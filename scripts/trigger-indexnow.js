@@ -152,6 +152,13 @@ const blogSlugs = [
   "web-development-company-kuwait-2026",
   "web-development-company-saudi-arabia-2026",
   "web-development-company-uae-dubai-2026",
+  "signes-logiciel-sur-mesure-entreprise-algerie-2026",
+  "odoo-vs-erp-sur-mesure-algerie-2026",
+  "prix-application-mobile-algerie-2026",
+  "freelance-vs-agence-vs-atelier-ingenierie-algerie-2026",
+  "digitaliser-entreprise-algerie-par-ou-commencer-2026",
+  "integration-cib-edahabia-satim-guide-technique-algerie-2026",
+  "ia-pme-algeriennes-cas-usage-qui-marchent-2026",
 ];
 
 /** Service slugs (French, English, legacy -- Arabic excluded as non-URL-safe) */
@@ -214,7 +221,7 @@ const locationCities = [
 ];
 
 /** NEW: Editorial insight pages */
-const insightSlugs = ["ai", "erp", "cost", "healthcare"];
+const insightSlugs = ["ai", "erp", "cost", "healthcare", "ai-cto", "vision-2030"];
 
 /** NEW: Dedicated editorial service pages (8 disciplines) */
 const editorialServiceSlugs = [
@@ -498,3 +505,4 @@ main().catch((err) => {
   console.error("Fatal error:", err);
   process.exit(1);
 });
+// This patch won't work — need to edit the blogSlugs array properly
