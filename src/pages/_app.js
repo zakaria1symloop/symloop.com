@@ -55,9 +55,22 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* Default SEO meta tags — pages can override with their own Head */}
+      {/* Default SEO meta tags — locale-aware so Arabic pages get Arabic description */}
       <Head>
-        <meta name="description" content="Symloop — Algeria's #1 software engineering and AI company. Web development, mobile apps, IoT, AI automation, custom ERP/CRM. Serving all 58 wilayas. Contact: +213 549 575 512." />
+        <meta name="description" content={
+          router.locale === 'ar'
+            ? 'سيملوب — شركة هندسة البرمجيات والذكاء الاصطناعي في الجزائر. تطوير برمجيات مخصصة، تطبيقات جوال، إنترنت الأشياء، أتمتة بالذكاء الاصطناعي، ERP/CRM مخصص. نخدم الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا والخليج. اتصل: +213 549 575 512.'
+            : router.locale === 'fr'
+            ? "Symloop — entreprise d'ingénierie logicielle et d'IA en Algérie. Développement logiciel sur mesure, applications mobiles, IoT, automatisation IA, ERP/CRM. Algérie, MENA, Europe, Golfe. Contact : +213 549 575 512."
+            : "Symloop — software engineering and AI company in Algeria. Custom software development, mobile apps, IoT, AI automation, ERP/CRM. Serving Algeria, MENA, Europe and the Gulf. Contact: +213 549 575 512."
+        } />
+        <title>{
+          router.locale === 'ar'
+            ? 'سيملوب | هندسة البرمجيات والذكاء الاصطناعي — الجزائر'
+            : router.locale === 'fr'
+            ? 'Symloop | Ingénierie Logicielle & IA — Algérie'
+            : 'Symloop | Software Engineering & AI — Algeria'
+        }</title>
       </Head>
       {/* Google Analytics */}
       <Script

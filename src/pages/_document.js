@@ -83,7 +83,7 @@ export default function Document(props) {
               "@type": "Organization",
               "@id": "https://symloop.com",
               "name": "Symloop Technology - Intelligence Artificielle Algérie",
-              "alternateName": ["Symloop", "Symloop IA Algérie", "Symloop AI Algeria", "IA Algérie", "Intelligence Artificielle Algérie"],
+              "alternateName": ["Symloop", "Symloop IA Algérie", "Symloop AI Algeria", "IA Algérie", "Intelligence Artificielle Algérie", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب", "هندسة البرمجيات الجزائر"],
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
@@ -105,10 +105,19 @@ export default function Document(props) {
               },
               "areaServed": [
                 {"@type": "Country", "name": "Algeria"},
+                {"@type": "Country", "name": "Tunisia"},
+                {"@type": "Country", "name": "Libya"},
+                {"@type": "Country", "name": "Nigeria"},
+                {"@type": "Country", "name": "Senegal"},
+                {"@type": "Country", "name": "Cameroon"},
+                {"@type": "Country", "name": "Egypt"},
+                {"@type": "Country", "name": "Kenya"},
                 {"@type": "Country", "name": "Saudi Arabia"},
                 {"@type": "Country", "name": "United Arab Emirates"},
                 {"@type": "Country", "name": "Kuwait"},
-                {"@type": "Place", "name": "MENA Region"}
+                {"@type": "Continent", "name": "Africa"},
+                {"@type": "Place", "name": "MENA Region"},
+                {"@type": "Place", "name": "Francophone Africa"}
               ],
               "serviceArea": {
                 "@type": "GeoCircle",
