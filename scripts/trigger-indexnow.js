@@ -85,6 +85,7 @@ const blogSlugs = [
   "erp-business-software-kuwait-2026",
   "erp-business-software-saudi-arabia-2026",
   "erp-business-software-uae-2026",
+  "hub71-startup-engineering-partner-abu-dhabi-2026",
   "erp-sur-mesure-saas-startup-pme-algerie-2026",
   "fintech-algerie-solutions-2024",
   "freelance-vs-agence-algerie",
@@ -248,6 +249,9 @@ const otherPages = [
   "/insights/",    // insights hub (replaced blog in nav)
   "/blog/",        // blog index (still indexed, just hidden from nav)
   "/services/",    // services index
+  "/outsourcing/", // NEW: software dev outsourcing ($23 CPC keyword)
+  "/startup/",     // startup landing page
+  "/africa/",      // Africa hub
   "/mena/",        // MENA page
   "/recrutement/", // recruitment
   "/learning/",    // learning
