@@ -178,9 +178,9 @@ export default function Home() {
 
       {/* SEO Meta + Organization Schema for homepage */}
       <Head>
-        <title>Symloop — Algeria&apos;s #1 Software Engineering &amp; AI Company | Web, Mobile, IoT</title>
-        <meta name="description" content="Symloop is Algeria's leading software engineering and AI company. Mobile apps, websites, custom ERP/CRM, IoT smart home, AI automation. Serving all 58 wilayas. 200+ projects delivered. Contact: +213 549 575 512." />
-        <meta name="keywords" content="Symloop, software engineering company Algeria, entreprise ingénierie logicielle Algérie, custom software development Algeria, développement logiciel sur mesure Algérie, SaaS Algeria, AI ML engineering Algeria, IoT hardware Algeria, DevOps cloud Algeria, mobile app engineering Algeria, Alger" />
+        <title>Développement Logiciel & Intelligence Artificielle Algérie — Startup, ERP, Mobile, Cloud | Symloop</title>
+        <meta name="description" content="Symloop — atelier d'ingénierie logicielle et IA basé à Alger. Développement sur mesure, apps mobiles, ERP, IoT, cybersécurité, cloud. Startups et entreprises en Algérie, Afrique, MENA et Europe. +213 549 575 512." />
+        <meta name="keywords" content="développement logiciel algérie, intelligence artificielle algérie, startup algérie, application mobile algérie, ERP sur mesure algérie, software development algeria, AI company algeria, startup africa, développement application mobile alger, logiciel sur mesure algérie, cybersécurité algérie, cloud devops algérie, سيملوب, شركة برمجة الجزائر, ذكاء اصطناعي الجزائر, Symloop" />
         <link rel="canonical" href="https://symloop.com/" />
         <script
           type="application/ld+json"

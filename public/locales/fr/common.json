@@ -157,7 +157,7 @@
   },
   "product_engineering_page": {
     "seo": {
-      "title": "Symloop Ingénierie Produit — De la Découverte au Lancement, Une Seule Équipe",
+      "title": "Ingénierie Produit & Startup Algérie — MVP, SaaS, Marketplace | Symloop",
       "description": "Ingénierie produit de bout en bout : découverte, design, ingénierie frontend et backend, mobile, DevOps, lancement, itération. La même équipe possède le cycle complet du produit. SaaS, marketplace, mobile, outils internes, web apps. Algérie, MENA, Europe. Profil Clutch vérifié 5.0/5.0.",
       "keywords": "ingénierie produit, développement produit de bout en bout, MVP, développement SaaS, marketplace, application mobile, outils internes, équipe produit, ingénierie produit Algérie, ingénierie produit MENA, ingénierie produit France, Symloop produit"
     },
@@ -338,7 +338,7 @@
   },
   "consulting_page": {
     "seo": {
-      "title": "Symloop Conseil Technologique — Revue d'Architecture, Stratégie IA, Build-vs-Buy",
+      "title": "Conseil Technologique Algérie — Architecture, Stratégie IA, Build-vs-Buy | Symloop",
       "description": "Conseil technologique Symloop : revue d'architecture, stratégie IA, analyse build-vs-buy, feuille de route de modernisation, sélection technologique. Équipe d'ingénieurs seniors qui livrent en production — pas des consultants à PowerPoint. Algérie, MENA, Europe. Profil Clutch vérifié 5.0/5.0.",
       "keywords": "conseil technologique, revue d'architecture, stratégie IA, build vs buy, feuille de route modernisation, sélection technologique, due diligence, conseil CTO, conseil ingénierie, conseil technologique Algérie, conseil tech MENA, revue architecture France, Symloop conseil"
     },
@@ -522,7 +522,7 @@
   },
   "cybersecurity_page": {
     "seo": {
-      "title": "Symloop Cybersécurité — Audits, Tests d'Intrusion, Conformité",
+      "title": "Cybersécurité & Pentest Algérie — Audit Sécurité, SOC 2, ISO 27001 | Symloop",
       "description": "Symloop réalise des audits de cybersécurité, des tests d'intrusion, du durcissement d'infrastructure, et l'implémentation de frameworks de conformité (SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA). Nous supposons que vous êtes déjà compromis et concevons pour le jour d'après. Équipe sécurité senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0.",
       "keywords": "cybersécurité, test d'intrusion, audit sécurité, OWASP, SOC 2, ISO 27001, RGPD, PCI DSS, HIPAA, réponse incident, durcissement, zero trust, IAM, cybersécurité Algérie, pentest Algérie, audit sécurité MENA, cybersécurité France, Symloop sécurité"
     },
@@ -699,7 +699,7 @@
   },
   "iot_industrial_page": {
     "seo": {
-      "title": "Symloop IoT & Industrial — Ingénierie Hardware, Firmware, Objets Connectés",
+      "title": "IoT & Systèmes Industriels Algérie — Capteurs, Firmware, Usine Connectée | Symloop",
       "description": "Symloop conçoit et fabrique du hardware IoT en Algérie. Conception PCB, firmware en C et Rust, ESP32/STM32, connectivité (LoRa/MQTT/4G), plateformes cloud, applications mobiles. La même équipe d'ingénierie possède toute la chaîne verticale — du silicium à l'écran. 500+ appartements déployés. Profil Clutch vérifié 5.0/5.0. Ingénierie hardware pour la production.",
       "keywords": "développement hardware IoT, systèmes embarqués, conception PCB Algérie, firmware, ESP32, STM32, Arduino, objets connectés, hardware smart home, IoT industriel, SCADA, hardware POS, kiosque, agriculture connectée, IoT élevage, irrigation IoT, MQTT LoRa, AWS IoT, fabrication hardware Algérie, Symloop hardware"
     },
@@ -906,7 +906,7 @@
   },
   "cloud_devops_page": {
     "seo": {
-      "title": "Symloop Cloud & DevOps — Infrastructure Production, Kubernetes, SRE",
+      "title": "Cloud & DevOps Algérie — AWS, Kubernetes, Infrastructure | Symloop",
       "description": "Symloop exploite l'infrastructure cloud en production : orchestration Kubernetes, pipelines CI/CD, observabilité, infrastructure as code, FinOps. La même équipe d'ingénierie qui construit votre logiciel le maintient en exécution. Équipe senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0. Nous déployons le vendredi après-midi. Puis nous rentrons à la maison.",
       "keywords": "ingénierie cloud, DevOps, SRE, ingénierie de fiabilité, Kubernetes, Terraform, infrastructure as code, pipelines CI/CD, observabilité, Prometheus Grafana, optimisation coûts cloud, FinOps, AWS conseil, GCP conseil, Azure conseil, migration cloud, architecture multi-cloud, Kubernetes Algérie, DevOps Algérie, conseil cloud MENA, AWS conseil France, GCP France, Symloop cloud"
     },
@@ -1077,7 +1077,7 @@
   },
   "mobile_engineering_page": {
     "seo": {
-      "title": "Symloop Ingénierie Mobile — iOS Natif, Android, Flutter, React Native",
+      "title": "Développement Application Mobile Algérie — iOS, Android, Flutter | Symloop",
       "description": "Symloop construit des applications mobiles en production. iOS natif (Swift), Android natif (Kotlin), Flutter, React Native, et mobile embarqué. Offline-first, multilingue, accessibilité native. Équipe d'ingénierie senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0. Nous livrons des apps qui survivent au-delà de 24 heures.",
       "keywords": "développement application mobile, ingénierie mobile, iOS natif, Android natif, Swift, Kotlin, Flutter, React Native, application mobile Algérie, application mobile MENA, application mobile France, soumission App Store, soumission Play Store, mobile offline-first, multilingue mobile, mobile arabe RTL, optimisation performance mobile, application embarquée, kiosque, POS, Symloop mobile"
     },
@@ -1254,7 +1254,7 @@
   },
   "software_engineering_page": {
     "seo": {
-      "title": "Symloop Ingénierie Logicielle — Systèmes Sur Mesure, SaaS & Backends Entreprise",
+      "title": "Développement Logiciel Sur Mesure Algérie — ERP, SaaS, Startup | Symloop",
       "description": "Symloop construit des systèmes logiciels sur mesure : plateformes SaaS, backends d'entreprise (ERP/CRM/HRMS), APIs et microservices, systèmes temps réel, modernisation de systèmes legacy. Équipe d'ingénierie senior en Algérie, livraison internationale en MENA et Europe. Profil Clutch vérifié 5.0/5.0. Nous concevons le logiciel comme une infrastructure — bâti pour survivre à l'équipe qui l'a construit.",
       "keywords": "développement logiciel sur mesure, ingénierie logicielle, plateforme SaaS, ERP sur mesure, CRM sur mesure, APIs microservices, systèmes temps réel, modernisation legacy, ingénierie logicielle Algérie, logiciel sur mesure Algérie, développement SaaS MENA, ERP entreprise Algérie, ingénierie logicielle France, Symloop ingénierie"
     },
@@ -1419,7 +1419,7 @@
   },
   "ai_page": {
     "seo": {
-      "title": "Symloop Technology — Intelligence Artificielle Appliquée, NLP & Machine Learning",
+      "title": "Intelligence Artificielle Algérie & Afrique — IA Entreprise, NLP, ML | Symloop",
       "description": "Symloop Technology est une firme d'ingénierie IA appliquée et de machine learning au service des entreprises mondiales. Nous construisons des systèmes IA en production : vision par ordinateur, traitement du langage naturel (NLP), analyse prédictive, intégration LLM et MLOps. Des modèles entraînés sur mesure, pas des wrappers d'API. Équipe d'ingénierie senior en Algérie avec livraison internationale en MENA, Golfe et Europe. Profil Clutch vérifié 5.0/5.0. Nous concevons l'IA comme un intégrateur systèmes d'entreprise — pas comme une agence chatbot.",
       "keywords": "intelligence artificielle appliquée, ingénierie IA, conseil IA entreprise, machine learning entreprise, société NLP, traitement langage naturel, vision par ordinateur, intégration LLM, MLOps, intégrateur systèmes IA, conseil IA Algérie, intelligence artificielle Algérie, IA appliquée Algérie, machine learning Algérie, vision par ordinateur Algérie, NLP Algérie, ingénierie IA Algérie, recherche IA appliquée, IA entreprise, IA Algérie Alger Oran Constantine Sétif, conseil IA France, intelligence artificielle France, machine learning France, IA Maroc Tunisie Émirats, IA générative entreprise, RAG systèmes, modèles personnalisés, fine-tuning LLM, conseil stratégie IA"
     },
