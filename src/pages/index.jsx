@@ -178,9 +178,21 @@ export default function Home() {
 
       {/* SEO Meta + Organization Schema for homepage */}
       <Head>
-        <title>Développement Logiciel & Intelligence Artificielle Algérie — Startup, ERP, Mobile, Cloud | Symloop</title>
-        <meta name="description" content="Symloop — atelier d'ingénierie logicielle et IA basé à Alger. Développement sur mesure, apps mobiles, ERP, IoT, cybersécurité, cloud. Startups et entreprises en Algérie, Afrique, MENA et Europe. +213 549 575 512." />
-        <meta name="keywords" content="développement logiciel algérie, intelligence artificielle algérie, startup algérie, application mobile algérie, ERP sur mesure algérie, software development algeria, AI company algeria, startup africa, développement application mobile alger, logiciel sur mesure algérie, cybersécurité algérie, cloud devops algérie, سيملوب, شركة برمجة الجزائر, ذكاء اصطناعي الجزائر, Symloop" />
+        <title>{
+          router.locale === 'ar'
+            ? 'شركة تطوير برمجيات — برمجيات مخصصة، ذكاء اصطناعي، تطبيقات جوال | نيرشور من الجزائر | سيملوب'
+            : router.locale === 'fr'
+            ? 'Développement Logiciel Sur Mesure & IA — ERP Entreprise, Application Mobile, Cloud | Symloop'
+            : 'Software Development Company — Custom Software, AI, Mobile Apps | Nearshore from Algeria | Symloop'
+        }</title>
+        <meta name="description" content={
+          router.locale === 'ar'
+            ? 'سيملوب — شركة تطوير برمجيات مقرها الجزائر. برمجيات مخصصة، ذكاء اصطناعي، تطبيقات جوال، ERP، سحابة. بديل نيرشور للوكالات الأوروبية: نفس المعايير، قوة هندسية أكبر لكل ميزانية. نخدم أفريقيا والشرق الأوسط وأوروبا والخليج.'
+            : router.locale === 'fr'
+            ? "Symloop — développement logiciel sur mesure basé à Alger. ERP entreprise, applications mobiles, IA, migration cloud, cybersécurité. Alternative nearshore aux prestataires européens : mêmes standards, plus de puissance d'ingénierie par budget. Algérie, Afrique, MENA, Europe."
+            : "Symloop — software development company headquartered in Algeria. Custom software, AI, mobile apps, cloud migration, ERP, cybersecurity. Nearshore alternative to European agencies: same standards, more engineering power per budget. Serving Africa, MENA, Europe and the Gulf."
+        } />
+        <meta name="keywords" content="software development company, custom software development, mobile app development company, ai development company, cloud migration services, nearshore software development, software development outsourcing, digital transformation consulting, MVP development startup, app developers, développement logiciel sur mesure, erp entreprise, logiciel gestion entreprise, شركة تطوير برمجيات, سيملوب, Symloop" />
         <link rel="canonical" href="https://symloop.com/" />
         <script
           type="application/ld+json"

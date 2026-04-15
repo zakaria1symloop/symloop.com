@@ -82,12 +82,12 @@ export default function Document(props) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "@id": "https://symloop.com",
-              "name": "Symloop Technology - Intelligence Artificielle Algérie",
-              "alternateName": ["Symloop", "Symloop IA Algérie", "Symloop AI Algeria", "IA Algérie", "Intelligence Artificielle Algérie", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب", "هندسة البرمجيات الجزائر"],
+              "name": "Symloop Technology",
+              "alternateName": ["Symloop", "Symloop Technology", "Nearshore Software Development Algeria", "Software Development Company Africa", "App Development Agency MENA", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب", "شركة تطوير برمجيات الجزائر"],
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
-              "description": "Leader de l'intelligence artificielle en Algérie et au Moyen-Orient depuis 2012. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur, NLP. Développement applications mobiles, sites e-commerce. Expert IA Algérie, Arabie Saoudite (Riyadh, Jeddah), Émirats Arabes Unis (Dubai, Abu Dhabi), Koweït.",
+              "description": "Software development company headquartered in Algeria. Custom software engineering, AI/ML, mobile app development, cloud migration, ERP/CRM, IoT, cybersecurity. Nearshore alternative to European and American agencies — international standards, 60-70% lower cost. Delivering across Africa, MENA, Europe and the Gulf since 2012.",
               "foundingDate": "2012",
               "telephone": "+213549575512",
               "email": "contact@symloop.com",
@@ -105,6 +105,8 @@ export default function Document(props) {
               },
               "areaServed": [
                 {"@type": "Country", "name": "Algeria"},
+                {"@type": "Country", "name": "France"},
+                {"@type": "Country", "name": "Morocco"},
                 {"@type": "Country", "name": "Tunisia"},
                 {"@type": "Country", "name": "Libya"},
                 {"@type": "Country", "name": "Nigeria"},
@@ -115,7 +117,9 @@ export default function Document(props) {
                 {"@type": "Country", "name": "Saudi Arabia"},
                 {"@type": "Country", "name": "United Arab Emirates"},
                 {"@type": "Country", "name": "Kuwait"},
+                {"@type": "Country", "name": "Qatar"},
                 {"@type": "Continent", "name": "Africa"},
+                {"@type": "Continent", "name": "Europe"},
                 {"@type": "Place", "name": "MENA Region"},
                 {"@type": "Place", "name": "Francophone Africa"}
               ],
@@ -129,6 +133,7 @@ export default function Document(props) {
                 "geoRadius": "2000000"
               },
               "knowsLanguage": ["French", "Arabic", "English"],
+              "knowsAbout": ["Custom Software Development", "Mobile App Development", "Artificial Intelligence", "Machine Learning", "Cloud Migration", "DevOps", "ERP Implementation", "Digital Transformation", "Cybersecurity", "IoT", "Software Development Outsourcing", "Nearshore Development", "Fintech Software"],
               "sameAs": [
                 "https://www.facebook.com/symloop",
                 "https://www.linkedin.com/company/symloop-technology/",

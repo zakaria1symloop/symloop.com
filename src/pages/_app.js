@@ -59,17 +59,17 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="description" content={
           router.locale === 'ar'
-            ? 'سيملوب — شركة هندسة البرمجيات والذكاء الاصطناعي في الجزائر. تطوير برمجيات مخصصة، تطبيقات جوال، إنترنت الأشياء، أتمتة بالذكاء الاصطناعي، ERP/CRM مخصص. نخدم الجزائر ومنطقة الشرق الأوسط وشمال أفريقيا وأوروبا والخليج. اتصل: +213 549 575 512.'
+            ? 'سيملوب — شركة تطوير برمجيات في الجزائر. برمجيات مخصصة، تطبيقات جوال، ذكاء اصطناعي، ترحيل سحابي، ERP. بديل نيرشور للوكالات الأوروبية. نخدم أفريقيا والشرق الأوسط وأوروبا والخليج. اتصل: +213 549 575 512.'
             : router.locale === 'fr'
-            ? "Symloop — entreprise d'ingénierie logicielle et d'IA en Algérie. Développement logiciel sur mesure, applications mobiles, IoT, automatisation IA, ERP/CRM. Algérie, MENA, Europe, Golfe. Contact : +213 549 575 512."
-            : "Symloop — software engineering and AI company in Algeria. Custom software development, mobile apps, IoT, AI automation, ERP/CRM. Serving Algeria, MENA, Europe and the Gulf. Contact: +213 549 575 512."
+            ? "Symloop — développement logiciel sur mesure en Algérie. Applications mobiles, IA, migration cloud, ERP entreprise. Alternative nearshore aux prestataires européens : mêmes standards, plus de puissance d'ingénierie par budget. Algérie, MENA, Europe, Golfe. Contact : +213 549 575 512."
+            : "Symloop — software development company in Algeria. Custom software, mobile apps, AI, cloud migration, ERP. Nearshore alternative to European agencies: same standards, more engineering power per budget. Serving Africa, MENA, Europe and the Gulf. Contact: +213 549 575 512."
         } />
         <title>{
           router.locale === 'ar'
-            ? 'سيملوب | هندسة البرمجيات والذكاء الاصطناعي — الجزائر'
+            ? 'سيملوب | شركة تطوير برمجيات — نيرشور من الجزائر'
             : router.locale === 'fr'
-            ? 'Symloop | Ingénierie Logicielle & IA — Algérie'
-            : 'Symloop | Software Engineering & AI — Algeria'
+            ? 'Symloop | Développement Logiciel Sur Mesure — Nearshore depuis l\'Algérie'
+            : 'Symloop | Software Development Company — Nearshore from Algeria'
         }</title>
       </Head>
       {/* Google Analytics */}
