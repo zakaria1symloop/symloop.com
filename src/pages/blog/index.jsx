@@ -1,4 +1,7 @@
-"use client";
+// SSR-friendly: no "use client" directive in Pages Router, no client-only hooks
+// for the initial render. The blog cards must render server-side so Google can
+// crawl all 170+ blog posts from this hub. Filter is purely client-side via
+// CSS classes once hydrated.
 import { useState, useMemo } from "react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";

@@ -177,9 +177,22 @@ export async function getServerSideProps({ res }) {
   }));
 
   // ═══════════════════════════════════════
-  // 7. LOCATIONS — explicit list (cities + Alger × service editorial)
+  // 7. LOCATIONS — auto-discover .jsx files + the alger/ subdirectory hub
+  //    Cities without dedicated .jsx but in the legacy [city].jsx still need
+  //    to be listed (batna, djelfa, etc.)
   // ═══════════════════════════════════════
-  const cities = ['alger', 'oran', 'constantine', 'setif', 'annaba', 'blida', 'batna', 'djelfa', 'tlemcen', 'bejaia'];
+  const dedicatedLocationSlugs = listSlugs(path.join(PAGES_DIR, 'locations'));
+  // The alger directory has an index.jsx (hub) — listSlugs only finds .jsx files
+  // at the top level of the locations directory, so we add 'alger' explicitly.
+  const algerHubExists = fs.existsSync(path.join(PAGES_DIR, 'locations', 'alger', 'index.jsx'));
+  const allLocationSlugs = [
+    ...dedicatedLocationSlugs,
+    ...(algerHubExists && !dedicatedLocationSlugs.includes('alger') ? ['alger'] : []),
+  ];
+  // Cities still relying on the dynamic [city].jsx fallback (in cityData but
+  // without a dedicated .jsx file) — kept here so the sitemap reflects them.
+  const dynamicLocationSlugs = ['batna', 'djelfa'];
+  const cities = [...new Set([...allLocationSlugs, ...dynamicLocationSlugs])];
   const locationPages = cities.map((city) => ({
     path: `/locations/${city}/`,
     lastmod: today,

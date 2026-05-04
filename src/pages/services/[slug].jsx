@@ -624,17 +624,22 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, locale }) {
   const slug = params.slug;
 
-  // Legacy slug → permanent redirect to canonical
+  // Legacy slug → permanent redirect to canonical.
   // IMPORTANT: encodeURIComponent() the slug — locale-specific slugs may contain
   // non-ASCII characters (e.g. Arabic). HTTP Location headers require ASCII-only
   // content, so we must URL-encode before putting the slug into the destination.
+  // CRITICAL: with i18n defaultLocale='en' and localeDetection: false, the URL
+  // for the default locale must NOT have a /en/ prefix. Adding it caused 180+
+  // GSC "Page with redirect" failures — the canonical URL was being redirected
+  // to a non-canonical /en/-prefixed twin.
   if (LEGACY_SLUGS[slug]) {
     const canonical = SERVICES.find((s) => s.id === LEGACY_SLUGS[slug]);
     if (canonical) {
       const targetSlug = canonical.slugs[locale] || canonical.slugs.fr;
+      const localePrefix = locale === 'en' ? '' : `/${locale}`;
       return {
         redirect: {
-          destination: `/${locale}/services/${encodeURIComponent(targetSlug)}/`,
+          destination: `${localePrefix}/services/${encodeURIComponent(targetSlug)}/`,
           permanent: true,
         },
       };
