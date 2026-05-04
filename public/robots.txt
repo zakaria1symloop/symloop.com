@@ -110,10 +110,42 @@ Allow: /fr/services/product/
 Allow: /ar/services/product/
 Allow: /en/services/product/
 Allow: /solutions/
+
+# Case Studies — flagship enterprise proof points
+Allow: /case-studies/
+Allow: /fr/case-studies/
+Allow: /ar/case-studies/
+Allow: /en/case-studies/
+Allow: /case-studies/tracksera/
+Allow: /case-studies/sadia/
+Allow: /case-studies/hajz/
+
+# Industry / sector landing pages
+Allow: /africa/
+Allow: /fr/africa/
+Allow: /ar/africa/
+Allow: /en/africa/
+Allow: /startup/
+Allow: /fr/startup/
+Allow: /ar/startup/
+Allow: /en/startup/
+Allow: /outsourcing/
+Allow: /fr/outsourcing/
+Allow: /ar/outsourcing/
+Allow: /en/outsourcing/
+
 Allow: /insights/
 Allow: /fr/insights/
 Allow: /ar/insights/
 Allow: /en/insights/
+Allow: /insights/oil-gas/
+Allow: /fr/insights/oil-gas/
+Allow: /ar/insights/oil-gas/
+Allow: /en/insights/oil-gas/
+Allow: /insights/vision-2030/
+Allow: /fr/insights/vision-2030/
+Allow: /ar/insights/vision-2030/
+Allow: /en/insights/vision-2030/
 Allow: /insights/ai/
 Allow: /fr/insights/ai/
 Allow: /ar/insights/ai/
@@ -491,14 +523,14 @@ Allow: /
 # SITEMAPS
 # ============================================
 
-# Dynamic sitemap (auto-generated, all pages + hreflang)
-Sitemap: https://symloop.com/sitemap.xml
+# Dynamic sitemap (auto-generated, all pages + hreflang) — uses canonical www host
+Sitemap: https://www.symloop.com/sitemap.xml
 
 # Legacy sitemaps (kept for backward compatibility)
-Sitemap: https://symloop.com/sitemapindex.xml
-Sitemap: https://symloop.com/sitemap-multilingual.xml
-Sitemap: https://symloop.com/sitemap-enhanced.xml
-Sitemap: https://symloop.com/sitemap-images.xml
+Sitemap: https://www.symloop.com/sitemapindex.xml
+Sitemap: https://www.symloop.com/sitemap-multilingual.xml
+Sitemap: https://www.symloop.com/sitemap-enhanced.xml
+Sitemap: https://www.symloop.com/sitemap-images.xml
 
 # For AI crawlers
 # llms.txt: https://symloop.com/llms.txt
@@ -516,7 +548,7 @@ Sitemap: https://symloop.com/sitemap-images.xml
 # HOST
 # ============================================
 
-Host: https://symloop.com
+Host: https://www.symloop.com
 
 # ============================================
 # ADDITIONAL META
