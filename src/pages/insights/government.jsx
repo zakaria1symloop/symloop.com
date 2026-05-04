@@ -21,8 +21,39 @@ import SEO from '../../components/SEO';
 const CONTENT = {
   en: {
     kind:        'Industry brief',
+    titleSeo:    'Government Digitization — Sovereign Public Services Engineering',
+    dekSeo:      'Engineering field guide for ministry CIOs: unified citizen portal, inter-ministerial data exchange, national identity, sovereign cloud, audit-grade transparency.',
     title:       'Government digitization — engineering sovereign public services for Algeria and MENA.',
-    dek:         'A field guide for ministry CIOs and public-sector directors driving the next phase of Algerian and MENA government digitization. Covers e-services architecture, inter-ministerial data exchange, biometric identity integration, sovereign cloud, audit-grade transparency, and the legacy modernization sequence. Written by an engineering team that has shipped public-sector systems in production.',
+    dek:         'A field guide for ministry CIOs and public-sector directors driving the next phase of government digitization. Covers e-services architecture, inter-ministerial data exchange, biometric identity integration, sovereign cloud, audit-grade transparency, and the legacy modernization sequence. Written by an engineering team that has shipped public-sector systems in production for Algeria and MENA — and engineered for international interoperability.',
+    faq: [
+      { q: 'What does data sovereignty mean for government IT in 2026?',
+        a: 'Sovereignty has three dimensions, not one. Data residency: where the bytes physically sit. Operational sovereignty: who controls the keys, logs, and runtime. Jurisdictional sovereignty: which legal regime can compel disclosure. A vendor "data residency in Algeria" claim that operates the service from European data centers solves only the first; it leaves operational and jurisdictional exposure that today\'s regulators flag as non-compliant.' },
+      { q: 'Should government build one unified citizen portal or one portal per ministry?',
+        a: 'One unified portal with one National ID is the only pattern that survives the next decade of regulatory change. The citizen logs in once and sees every procedure, document, appointment, petition, tax, and benefit across every ministry — with one design system and one accessibility standard. Estonia, Singapore, the UAE converged on this. Most of Europe and Latin America still have ministry-by-ministry portals — citizens experience them as worse than the paper version they replaced.' },
+      { q: 'What is X-Road and why does inter-ministerial data exchange matter?',
+        a: 'X-Road is the typed, audited, opt-in data-exchange layer Estonia built. Each ministry exposes the canonical fields of its registry as a contract; other ministries consume those contracts to populate their own systems. Every cross-ministry access is logged and visible to the citizen. ROI is the highest of any single component in a digitization program: every administrative procedure shrinks 60–90% in citizen-side completion time because ministries can pull the rest of the citizen\'s data directly instead of asking for twelve photocopies.' },
+      { q: 'How long does it take to build national identity infrastructure?',
+        a: 'For a country starting from a paper civil registry, a credible build is 24–36 months for the core identity layer (unique citizen ID, multi-factor authentication, biometric capture to ICAO/ISO standards, revocation, audit logging) and another 12–18 months for the delegation system that lets citizens authorize lawyers, notaries, and family members. Buying a turnkey vendor product is faster initially but creates lock-in at the keystone of every other government service downstream — a trade most states regret within five years.' },
+      { q: 'Is hyperscaler cloud compliant for Algerian or MENA government workloads?',
+        a: 'Increasingly not. Algeria\'s Loi 18-07 on personal data protection, the Saudi NDMO framework, the UAE Federal Decree-Law on data protection, the Moroccan Loi 09-08, and equivalents across MENA all now contain explicit data-localization clauses for citizen data. Sovereign deployment means physical hardware in a state-controlled or regulated-local-cloud data center, source code held by the state or in escrow, and runtime keys controlled by state-cleared personnel. Anything less is what the European Court of Justice called "Schrems-relevant exposure."' },
+    ],
+    relatedServices: {
+      heading: 'Capabilities applied here',
+      items: [
+        { name: 'Software Engineering — multi-tenant, microservices, sovereign deployment',     href: '/services/software-engineering/' },
+        { name: 'Cybersecurity — zero-trust, audit logging, identity infrastructure',           href: '/services/cybersecurity/' },
+        { name: 'Cloud & DevOps — on-premise, sovereign cloud, government-grade isolation',     href: '/services/cloud/' },
+        { name: 'Technology Consulting — modernization sequencing, build/buy/wrap analysis',    href: '/services/consulting/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'Read next',
+      items: [
+        { name: 'Vision 2030 — what state digitization budgets actually buy', href: '/insights/vision-2030/' },
+        { name: 'AI for the CTO — pragmatic adoption framework',              href: '/insights/ai-cto/' },
+        { name: 'Healthcare tech — patient registries and EHR federation',     href: '/insights/healthcare/' },
+      ],
+    },
     publishedAt: 'May 2026',
     readTime:    '23 min read',
     pages:       '38 pages',
@@ -118,8 +149,39 @@ const CONTENT = {
 
   fr: {
     kind:        'Étude sectorielle',
+    titleSeo:    "Digitalisation Administration — Services Publics Souverains",
+    dekSeo:      "Guide ingénierie pour DSI ministériels : portail citoyen unifié, échange interministériel, identité nationale, cloud souverain, transparence d'audit.",
     title:       'Digitalisation de l\'administration — ingénierie de services publics souverains pour l\'Algérie et MENA.',
-    dek:         "Un guide terrain pour les DSI ministériels et directeurs du secteur public qui pilotent la prochaine phase de la digitalisation gouvernementale en Algérie et MENA. Couvre l'architecture des e-services, l'échange de données interministériel, l'intégration d'identité biométrique, le cloud souverain, la transparence d'audit et la séquence de modernisation legacy. Écrit par une équipe d'ingénierie qui a livré des systèmes du secteur public en production.",
+    dek:         "Un guide terrain pour les DSI ministériels et directeurs du secteur public qui pilotent la prochaine phase de la digitalisation gouvernementale. Couvre l'architecture des e-services, l'échange de données interministériel, l'intégration d'identité biométrique, le cloud souverain, la transparence d'audit et la séquence de modernisation legacy. Écrit par une équipe d'ingénierie qui a livré des systèmes du secteur public en production pour l'Algérie et MENA — et conçu pour l'interopérabilité internationale.",
+    faq: [
+      { q: "Que signifie la souveraineté des données pour l'IT gouvernemental en 2026 ?",
+        a: "La souveraineté a trois dimensions, pas une. Résidence des données : où les octets se trouvent physiquement. Souveraineté opérationnelle : qui contrôle les clés, journaux et runtime. Souveraineté juridictionnelle : quel régime légal peut contraindre la divulgation. Une revendication fournisseur de « résidence des données en Algérie » qui opère le service depuis des centres de données européens ne résout que la première ; elle laisse une exposition opérationnelle et juridictionnelle que les régulateurs d'aujourd'hui qualifient de non conforme." },
+      { q: "Le gouvernement doit-il construire un portail citoyen unifié ou un portail par ministère ?",
+        a: "Un portail unifié avec une CNI est le seul motif qui survit aux dix prochaines années de changement réglementaire. Le citoyen se connecte une fois et voit chaque procédure, document, rendez-vous, pétition, taxe et bénéfice à travers chaque ministère — avec un système de design et un standard d'accessibilité. L'Estonie, Singapour, les Émirats ont convergé là. La plupart de l'Europe et de l'Amérique latine ont encore des portails ministère-par-ministère — les citoyens les vivent comme pire que le papier qu'ils ont remplacé." },
+      { q: "Qu'est-ce que X-Road et pourquoi l'échange interministériel est-il important ?",
+        a: "X-Road est la couche d'échange de données typée, auditée et opt-in que l'Estonie a construite. Chaque ministère expose les champs canoniques de son registre comme un contrat ; les autres ministères consomment ces contrats. Chaque accès inter-ministériel est enregistré et visible pour le citoyen. ROI le plus élevé de tout composant unique : chaque procédure administrative rétrécit de 60 à 90% en temps côté citoyen parce que les ministères peuvent tirer les données directement au lieu de demander douze photocopies." },
+      { q: "Combien de temps pour construire l'infrastructure d'identité nationale ?",
+        a: "Pour un pays partant d'un registre civil papier, un build crédible est de 24 à 36 mois pour la couche identité de base (identifiant unique, MFA, capture biométrique aux standards ICAO/ISO, révocation, audit) et 12 à 18 mois supplémentaires pour le système de délégation. Acheter un produit fournisseur clé-en-main est plus rapide initialement mais crée un verrouillage à la clé de voûte de chaque autre service gouvernemental — un compromis que la plupart des États regrettent en cinq ans." },
+      { q: "Le cloud hyperscaler est-il conforme pour les charges gouvernementales algériennes ou MENA ?",
+        a: "De plus en plus non. La Loi 18-07 algérienne, le cadre saoudien NDMO, le Décret-Loi Fédéral des Émirats sur la protection des données, la Loi 09-08 marocaine, et les équivalents à travers MENA contiennent maintenant tous des clauses explicites de localisation des données citoyennes. Le déploiement souverain signifie matériel physique dans un centre de données contrôlé par l'État ou cloud-local-régulé, code source détenu par l'État ou en séquestre, et clés runtime contrôlées par du personnel cleared par l'État." },
+    ],
+    relatedServices: {
+      heading: 'Capacités appliquées ici',
+      items: [
+        { name: 'Ingénierie logicielle — multi-tenant, microservices, déploiement souverain',  href: '/services/software-engineering/' },
+        { name: 'Cybersécurité — zero-trust, journalisation audit, infrastructure identité',     href: '/services/cybersecurity/' },
+        { name: 'Cloud & DevOps — on-premise, cloud souverain, isolation gouvernement',          href: '/services/cloud/' },
+        { name: 'Conseil technologique — séquence modernisation, analyse build/buy/wrap',         href: '/services/consulting/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'À lire ensuite',
+      items: [
+        { name: "Vision 2030 — ce que les budgets de digitalisation étatique achètent réellement", href: '/insights/vision-2030/' },
+        { name: "L'IA pour le DSI — cadre d'adoption pragmatique",                                  href: '/insights/ai-cto/' },
+        { name: "Tech santé — registres patients et fédération EHR",                                href: '/insights/healthcare/' },
+      ],
+    },
     publishedAt: 'Mai 2026',
     readTime:    '23 min de lecture',
     pages:       '38 pages',
@@ -215,8 +277,39 @@ const CONTENT = {
 
   ar: {
     kind:        'تقرير قطاعي',
+    titleSeo:    'الرقمنة الحكومية — هندسة خدمات عامة سيادية',
+    dekSeo:      'دليل هندسي لمدراء IT الوزارات: بوابة مواطن موحّدة، تبادل بين الوزارات، هوية وطنية، سحابة سيادية، شفافية تدقيق.',
     title:       'الرقمنة الحكومية — هندسة خدمات عامة سيادية للجزائر والمنطقة.',
-    dek:         'دليل ميداني لرؤساء تقنية المعلومات في الوزارات ومدراء القطاع العام الذين يقودون المرحلة التالية من الرقمنة الحكومية في الجزائر والمنطقة. يغطي معمارية الخدمات الإلكترونية، وتبادل البيانات بين الوزارات، وتكامل الهوية البيومترية، والسحابة السيادية، والشفافية بدرجة التدقيق، وتسلسل تحديث الإرث. كتبه فريق هندسي شحن أنظمة قطاع عام في الإنتاج.',
+    dek:         'دليل ميداني لرؤساء تقنية المعلومات في الوزارات ومدراء القطاع العام الذين يقودون المرحلة التالية من الرقمنة الحكومية. يغطي معمارية الخدمات الإلكترونية، وتبادل البيانات بين الوزارات، وتكامل الهوية البيومترية، والسحابة السيادية، والشفافية بدرجة التدقيق. كتبه فريق هندسي شحن أنظمة قطاع عام في الإنتاج للجزائر والمنطقة — ومُهنَدس للتشغيل البيني الدولي.',
+    faq: [
+      { q: 'ماذا تعني سيادة البيانات لتقنية المعلومات الحكومية في 2026؟',
+        a: 'للسيادة ثلاثة أبعاد، ليس واحداً. إقامة البيانات: أين تقع البتات فيزيائياً. السيادة التشغيلية: من يتحكم في المفاتيح والسجلات ووقت التشغيل. السيادة القضائية: أي نظام قانوني يمكنه فرض الكشف. ادعاء «إقامة البيانات في الجزائر» من مورّد يشغّل الخدمة من مراكز بيانات أوروبية يحل الأول فقط؛ يترك تعرضاً تشغيلياً وقضائياً يصنّفه المنظمون اليوم كغير متوافق.' },
+      { q: 'هل يجب على الحكومة بناء بوابة مواطن موحّدة أم بوابة لكل وزارة؟',
+        a: 'بوابة موحّدة برقم وطني واحد هي النمط الوحيد الذي ينجو من السنوات العشر القادمة من التغيير التنظيمي. يسجّل المواطن الدخول مرة واحدة ويرى كل إجراء ووثيقة وموعد والتماس وضريبة وفائدة عبر كل وزارة — بنظام تصميم واحد ومعيار وصول واحد. إستونيا وسنغافورة والإمارات تقاربت إلى هذا.' },
+      { q: 'ما هو X-Road ولماذا يهم تبادل البيانات بين الوزارات؟',
+        a: 'X-Road هو طبقة تبادل البيانات المكتوبة والمدققة والقابلة للاشتراك التي بنتها إستونيا. كل وزارة تعرض الحقول الأساسية لسجلها كعقد؛ الوزارات الأخرى تستهلك تلك العقود. كل وصول بين الوزارات مسجّل ومرئي للمواطن. أعلى ROI لأي مكوّن واحد: كل إجراء إداري يتقلص 60-90% في وقت جانب المواطن.' },
+      { q: 'كم من الوقت لبناء البنية التحتية للهوية الوطنية؟',
+        a: 'لبلد يبدأ من سجل مدني ورقي، البناء الموثوق هو 24 إلى 36 شهراً لطبقة الهوية الأساسية (معرّف فريد، مصادقة متعدّدة العوامل، التقاط بيومتري بمعايير ICAO/ISO، إلغاء، تدقيق) و12 إلى 18 شهراً إضافية لنظام التفويض. شراء منتج مورّد جاهز أسرع مبدئياً لكنه يخلق قَفلاً عند حجر الزاوية لكل خدمة حكومية أخرى.' },
+      { q: 'هل سحابة المضاعفات الدولية متوافقة لأحمال العمل الحكومية الجزائرية أو المنطقة؟',
+        a: 'بشكل متزايد لا. القانون الجزائري 18-07 لحماية البيانات الشخصية، وإطار NDMO السعودي، والمرسوم بقانون الاتحادي الإماراتي لحماية البيانات، والقانون المغربي 09-08، ونظائرها في المنطقة كلها تحتوي الآن على فقرات صريحة لتوطين بيانات المواطنين. النشر السيادي يعني أجهزة فيزيائية في مركز بيانات تتحكم به الدولة أو سحابة محلية منظمة.' },
+    ],
+    relatedServices: {
+      heading: 'القدرات المطبّقة هنا',
+      items: [
+        { name: 'هندسة البرمجيات — متعدّد المستأجرين، خدمات مصغّرة، نشر سيادي',     href: '/services/software-engineering/' },
+        { name: 'الأمن السيبراني — zero-trust، سجل تدقيق، بنية هوية',                href: '/services/cybersecurity/' },
+        { name: 'السحابة و DevOps — على الموقع، سحابة سيادية، عزل حكومي',           href: '/services/cloud/' },
+        { name: 'الاستشارات التقنية — تسلسل التحديث، تحليل بناء/شراء/تغليف',        href: '/services/consulting/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'اقرأ بعد ذلك',
+      items: [
+        { name: 'رؤية 2030 — ما تشتريه ميزانيات الرقمنة الحكومية فعلاً',            href: '/insights/vision-2030/' },
+        { name: 'الذكاء الاصطناعي للرئيس التقني — إطار اعتماد عملي',                href: '/insights/ai-cto/' },
+        { name: 'تقنية الصحة — سجلات المرضى وفيدرالية EHR',                          href: '/insights/healthcare/' },
+      ],
+    },
     publishedAt: 'مايو 2026',
     readTime:    '23 دقيقة قراءة',
     pages:       '38 صفحة',
@@ -361,11 +454,12 @@ export default function InsightGovernmentPage() {
   return (
     <>
       <SEO
-        title={`${c.title} — Symloop Insights`}
-        description={c.dek}
-        keywords="government digitization, e-government Algeria, e-government MENA, digitalisation administration Algerie, digitalisation gouvernementale, e-gouvernement Algerie, smart government MENA, public sector software, sovereign cloud government, national identity system, biometric identity Algeria, identity infrastructure MENA, inter-ministerial data exchange, X-Road implementation, citizen portal architecture, digital identity citizen, public services digitization, justice digitization, رقمنة قطاع العدالة, رقمنة الجزائر, civil status digitization, digital civil registry, healthcare digitization government, education digitization, public sector cybersecurity, government data sovereignty, sovereign software development, government software developer Algeria, public sector engineering MENA, government IT outsourcing, nearshore government software, Vision 2030 digitization, smart city MENA, open data government, government audit log, citizen access right, e-services platform, symloop insights"
+        title={c.titleSeo}
+        description={c.dekSeo}
+        keywords="government digitization, e-government, digitalisation administration, e-gouvernement, smart government, public sector software, sovereign cloud government, national identity system, biometric identity, identity infrastructure, inter-ministerial data exchange, X-Road implementation, citizen portal architecture, digital identity citizen, public services digitization, justice digitization, رقمنة قطاع العدالة, civil status digitization, digital civil registry, healthcare digitization government, education digitization, public sector cybersecurity, government data sovereignty, sovereign software development, government software developer, public sector engineering, government IT outsourcing, nearshore government software, Vision 2030 digitization, smart city, open data government, government audit log, citizen access right, e-services platform, DORA government, NDMO compliance, symloop insights"
         type="article"
         structuredData={articleLd}
+        faq={c.faq}
         breadcrumbs={breadcrumbs}
         image="/insights/cover-government.jpg"
       />
@@ -457,6 +551,63 @@ export default function InsightGovernmentPage() {
               ))}
             </ul>
           </motion.aside>
+
+          {c.faq && c.faq.length > 0 && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-20 mb-16">
+              <motion.div variants={fadeUp} className="flex items-baseline gap-4 mb-10">
+                <span className="font-mono text-[11px] tracking-[0.15em] text-white/30">FAQ</span>
+                <h2 className="text-2xl lg:text-3xl font-light tracking-tight text-white leading-tight">
+                  {isRtl ? 'أسئلة يطرحها مدراء IT الحكوميون' : (locale === 'fr' ? 'Questions des DSI ministériels' : 'Questions ministry CIOs ask')}
+                </h2>
+              </motion.div>
+              <div className="space-y-8 ps-0 lg:ps-10 border-t border-white/[0.06] pt-8">
+                {c.faq.map((f, i) => (
+                  <motion.div key={i} variants={fadeUp} className="border-b border-white/[0.06] pb-8 last:border-0">
+                    <h3 className="text-lg lg:text-xl font-normal text-white mb-3 leading-snug">{f.q}</h3>
+                    <p className="text-base lg:text-lg text-white/65 leading-relaxed">{f.a}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.section>
+          )}
+
+          {c.relatedServices && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-20 mb-16">
+              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.relatedServices.heading}</span>
+                <span className="h-px flex-1 bg-white/10" />
+              </motion.div>
+              <ul className="space-y-px bg-white/[0.06]">
+                {c.relatedServices.items.map((item) => (
+                  <motion.li key={item.href} variants={fadeUp}>
+                    <Link href={item.href} className="group flex items-start justify-between gap-6 bg-black p-6 hover:bg-white/[0.02] transition-colors">
+                      <span className="text-base lg:text-lg text-white/75 group-hover:text-white transition-colors leading-snug font-light">{item.name}</span>
+                      <ArrowRight className="w-4 h-4 mt-1.5 text-white/30 group-hover:text-white/70 group-hover:translate-x-1 transition-all shrink-0" strokeWidth={1.5} />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
+
+          {c.relatedInsights && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-16 mb-12">
+              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.relatedInsights.heading}</span>
+                <span className="h-px flex-1 bg-white/10" />
+              </motion.div>
+              <ul className="space-y-px bg-white/[0.06]">
+                {c.relatedInsights.items.map((item) => (
+                  <motion.li key={item.href} variants={fadeUp}>
+                    <Link href={item.href} className="group flex items-start justify-between gap-6 bg-black p-6 hover:bg-white/[0.02] transition-colors">
+                      <span className="text-base lg:text-lg text-white/75 group-hover:text-white transition-colors leading-snug font-light">{item.name}</span>
+                      <ArrowRight className="w-4 h-4 mt-1.5 text-white/30 group-hover:text-white/70 group-hover:translate-x-1 transition-all shrink-0" strokeWidth={1.5} />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
         </article>
 
         <section className="border-t border-white/[0.06]">

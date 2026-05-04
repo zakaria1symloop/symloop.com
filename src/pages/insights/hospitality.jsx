@@ -19,8 +19,39 @@ import SEO from '../../components/SEO';
 const CONTENT = {
   en: {
     kind:        'Industry brief',
+    titleSeo:    'Hotel Software Engineering — PMS, Channel, Direct Booking',
+    dekSeo:      'Engineering field guide for hotel CEOs and hospitality groups: PMS modernization, channel manager, direct-booking engine, revenue management, OTA recovery.',
     title:       'Hospitality engineering — from PMS lock-in to direct-booking conversion.',
-    dek:         'A field guide for hotel CEOs and hospitality groups across Algeria, MENA and the Mediterranean evaluating PMS modernization, channel manager strategy, direct-booking engineering, revenue management, and the OTA commission problem. Written by a team that has shipped hotel and booking systems in production.',
+    dek:         'A field guide for hotel CEOs and hospitality groups evaluating PMS modernization, channel manager strategy, direct-booking engineering, revenue management, and the OTA commission problem. Written by a team that has shipped hotel and booking systems in production for properties across MENA, the Mediterranean, and Europe.',
+    faq: [
+      { q: 'How much OTA commission does a typical hotel pay each year?',
+        a: 'For an 80-room mid-market hotel running 70% occupancy at $90 ADR with 60% OTA share at a blended 17% commission, the math is roughly $230,000 per year leaving the P&L. A 200-room city hotel pays closer to $700,000. A regional group of 15 properties pays $4M–$9M annually — the equivalent of several full hotel renovations every year.' },
+      { q: 'What is a hotel channel manager and why does it matter?',
+        a: 'A channel manager is the system that pushes a hotel\'s rates and inventory to OTAs (Booking, Expedia, Agoda, Airbnb, Hotels.com) and the GDS, then pulls reservations back to the PMS. A bad channel manager silently costs 8–15% of revenue through delayed rate updates, missed inventory closes, rate-parity violations, and reservation-sync failures. Replacing it routinely produces 4–8% ADR uplift in the first quarter post-switch.' },
+      { q: 'Should a hotel build or buy revenue management software?',
+        a: 'Single 50–150 room properties are best served by buying RoomPriceGenie or Atomize at the lower end of the price range. Regional hospitality groups with five-plus properties should build the revenue model in-house — modern forecasting models trained on group data outperform vendor black boxes, and the build pays back inside two years while removing a per-room SaaS cost that grows with the group.' },
+      { q: 'How do you reduce dependence on Booking.com and other OTAs?',
+        a: 'Engineering, not marketing, closes the gap. A custom direct-booking engine engineered against the property\'s actual conversion data — sub-2-second mobile time-to-first-paint, three-tap booking flow, transparent fees, multi-currency, abandoned-cart recovery, full RTL Arabic — outperforms every off-the-shelf widget on the metrics that matter. The investment pays back inside one quarter for properties above 60 rooms.' },
+      { q: 'What is a property management system (PMS) and how should it be architected?',
+        a: 'The PMS owns the reservation domain — rooms, guests, stays, charges, accounting tie-out — and exposes it through a typed API. The modern pattern is PMS-as-source-of-truth, not PMS-as-monolith: keep the PMS for the reservation layer, replace channel manager, booking engine, and revenue tool independently as composable services. No weekend cutover; immediate margin recovery on each component.' },
+    ],
+    relatedServices: {
+      heading: 'Capabilities applied here',
+      items: [
+        { name: 'Software Engineering — multi-tenant platforms, composable PMS architecture',  href: '/services/software-engineering/' },
+        { name: 'Mobile Engineering — guest-facing apps, mobile check-in, native iOS/Android',  href: '/services/mobile/' },
+        { name: 'Product Engineering — direct-booking engine, conversion-optimized flows',      href: '/services/product/' },
+        { name: 'Cloud & DevOps — burst-aware infrastructure for booking spikes',               href: '/services/cloud/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'Read next',
+      items: [
+        { name: 'AI in production — practical adoption for operations teams',  href: '/insights/ai/' },
+        { name: 'Cost of software — what build vs buy actually costs',         href: '/insights/cost/' },
+        { name: 'Vision 2030 — tourism and hospitality opportunity in MENA',   href: '/insights/vision-2030/' },
+      ],
+    },
     publishedAt: 'May 2026',
     readTime:    '20 min read',
     pages:       '34 pages',
@@ -115,8 +146,39 @@ const CONTENT = {
 
   fr: {
     kind:        'Étude sectorielle',
+    titleSeo:    'Logiciel Gestion Hôtel — PMS, Channel Manager, Réservation Directe',
+    dekSeo:      "Guide ingénierie pour directions d'hôtels : modernisation PMS, channel manager, moteur de réservation directe, revenue management, récupération commission OTA.",
     title:       "Ingénierie hôtellerie — du verrouillage PMS à la conversion en réservation directe.",
-    dek:         "Un guide terrain pour les directions d'hôtels et groupes hôteliers d'Algérie, MENA et Méditerranée qui évaluent la modernisation du PMS, la stratégie channel manager, l'ingénierie de réservation directe, le revenue management et le problème de la commission OTA. Écrit par une équipe qui a livré des systèmes hôteliers en production.",
+    dek:         "Un guide terrain pour les directions d'hôtels et groupes hôteliers qui évaluent la modernisation du PMS, la stratégie channel manager, l'ingénierie de réservation directe, le revenue management et le problème de la commission OTA. Écrit par une équipe qui a livré des systèmes hôteliers en production pour des propriétés à travers MENA, la Méditerranée et l'Europe.",
+    faq: [
+      { q: 'Combien de commission OTA un hôtel typique paie-t-il chaque année ?',
+        a: "Pour un hôtel mid-market de 80 chambres tournant à 70% d'occupation à 90 $ d'ADR avec 60% de part OTA à une commission mélangée de 17%, le calcul est d'environ 230 000 $ par an quittant le compte de résultat. Un hôtel urbain de 200 chambres paie plus près de 700 000 $. Un groupe régional de 15 propriétés paie 4 à 9 millions par an — l'équivalent de plusieurs rénovations complètes d'hôtel chaque année." },
+      { q: "Qu'est-ce qu'un channel manager hôtelier et pourquoi est-ce important ?",
+        a: "Un channel manager est le système qui pousse les tarifs et l'inventaire d'un hôtel vers les OTAs (Booking, Expedia, Agoda, Airbnb, Hotels.com) et le GDS, puis tire les réservations vers le PMS. Un mauvais channel manager coûte silencieusement 8 à 15% des revenus par mises à jour de tarifs retardées, fermetures d'inventaire manquées, violations de parité de tarifs, et défaillances de synchronisation. Le remplacer produit régulièrement une élévation d'ADR de 4 à 8% dans le premier trimestre." },
+      { q: 'Un hôtel devrait-il construire ou acheter le revenue management ?',
+        a: "Les propriétés uniques de 50 à 150 chambres sont mieux servies en achetant RoomPriceGenie ou Atomize au bas de la fourchette de prix. Les groupes hôteliers régionaux avec cinq propriétés ou plus devraient construire le modèle de revenu en interne — les modèles de prévision modernes entraînés sur les données du groupe surpassent les boîtes noires fournisseurs, et la construction se rembourse en deux ans tout en supprimant un coût SaaS par chambre qui croît avec le groupe." },
+      { q: 'Comment réduire la dépendance à Booking.com et aux autres OTAs ?',
+        a: "L'ingénierie, pas le marketing, ferme l'écart. Un moteur de réservation directe sur mesure conçu contre les données de conversion réelles de la propriété — temps de premier rendu sous 2 secondes en mobile, flux de réservation en trois taps, frais transparents, multi-devise, récupération de panier abandonné, RTL arabe complet — surpasse tout widget prêt-à-l'emploi. L'investissement se rembourse en un trimestre pour les propriétés au-dessus de 60 chambres." },
+      { q: "Qu'est-ce qu'un PMS hôtelier et comment l'architecturer ?",
+        a: "Le PMS possède le domaine de réservation — chambres, clients, séjours, charges, réconciliation comptable — et l'expose via une API typée. Le motif moderne est PMS-comme-source-de-vérité, pas PMS-comme-monolithe : conservez le PMS pour la couche de réservation, remplacez channel manager, moteur de réservation et outil de revenu indépendamment comme services composables. Pas de bascule de week-end ; récupération de marge immédiate sur chaque composant." },
+    ],
+    relatedServices: {
+      heading: 'Capacités appliquées ici',
+      items: [
+        { name: 'Ingénierie logicielle — plateformes multi-tenant, architecture PMS composable',  href: '/services/software-engineering/' },
+        { name: 'Ingénierie mobile — apps clients, check-in mobile, iOS/Android natif',           href: '/services/mobile/' },
+        { name: 'Ingénierie produit — moteur de réservation directe, flux optimisés conversion',  href: '/services/product/' },
+        { name: 'Cloud & DevOps — infrastructure burst-aware pour pics de réservation',           href: '/services/cloud/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'À lire ensuite',
+      items: [
+        { name: "L'IA en production — adoption pratique pour les équipes opérationnelles",  href: '/insights/ai/' },
+        { name: 'Coût des logiciels — ce que construire vs acheter coûte vraiment',          href: '/insights/cost/' },
+        { name: 'Vision 2030 — opportunité tourisme et hôtellerie en MENA',                  href: '/insights/vision-2030/' },
+      ],
+    },
     publishedAt: 'Mai 2026',
     readTime:    '20 min de lecture',
     pages:       '34 pages',
@@ -211,8 +273,39 @@ const CONTENT = {
 
   ar: {
     kind:        'تقرير قطاعي',
+    titleSeo:    'برمجيات الفنادق — PMS و Channel Manager والحجز المباشر',
+    dekSeo:      'دليل هندسي لمدراء الفنادق: تحديث PMS، channel manager، محرك حجز مباشر، إدارة الإيرادات، استرداد عمولة OTA.',
     title:       'هندسة الضيافة — من قَفل PMS إلى تحويل الحجز المباشر.',
-    dek:         'دليل ميداني لمدراء الفنادق والمجموعات الفندقية في الجزائر والمنطقة وحوض المتوسط الذين يقيّمون تحديث PMS، واستراتيجية channel manager، وهندسة الحجز المباشر، وإدارة الإيرادات، ومشكلة عمولة OTA. كتبه فريق شحن أنظمة فنادق وحجز في الإنتاج.',
+    dek:         'دليل ميداني لمدراء الفنادق والمجموعات الفندقية الذين يقيّمون تحديث PMS، واستراتيجية channel manager، وهندسة الحجز المباشر، وإدارة الإيرادات، ومشكلة عمولة OTA. كتبه فريق شحن أنظمة فنادق وحجز في الإنتاج لعقارات عبر المنطقة وحوض المتوسط وأوروبا.',
+    faq: [
+      { q: 'كم عمولة OTA يدفعها فندق نموذجي كل عام؟',
+        a: 'لفندق متوسط بـ 80 غرفة يعمل بإشغال 70% بمعدل سعر يومي 90 دولاراً مع حصة OTA 60% بعمولة مخلوطة 17%، الحساب تقريباً 230,000 دولار سنوياً تخرج من قائمة الأرباح والخسائر. فندق مدينة بـ 200 غرفة يدفع أقرب إلى 700,000 دولار. مجموعة إقليمية من 15 عقاراً تدفع 4 إلى 9 ملايين سنوياً — ما يعادل عدة تجديدات فندقية كاملة كل عام.' },
+      { q: 'ما هو channel manager الفندقي ولماذا يهم؟',
+        a: 'channel manager هو النظام الذي يدفع أسعار ومخزون الفندق إلى OTAs (Booking و Expedia و Agoda و Airbnb و Hotels.com) و GDS، ثم يسحب الحجوزات إلى PMS. channel manager سيء يكلّف بصمت 8 إلى 15% من الإيرادات بسبب تحديثات السعر المتأخرة وإغلاقات المخزون المفقودة وانتهاكات تكافؤ السعر وفشل المزامنة. استبداله ينتج بانتظام ارتفاع ADR بنسبة 4 إلى 8% في الربع الأول.' },
+      { q: 'هل يجب على الفندق بناء أو شراء برمجيات إدارة الإيرادات؟',
+        a: 'العقارات الفردية بـ 50 إلى 150 غرفة تُخدَم بشكل أفضل بشراء RoomPriceGenie أو Atomize. المجموعات الفندقية الإقليمية بخمسة عقارات أو أكثر يجب أن تبني نموذج الإيرادات داخلياً — نماذج التنبؤ الحديثة المُدرَّبة على بيانات المجموعة تتفوق على الصناديق السوداء للمورّدين، والبناء يدفع نفسه في عامين مع إزالة تكلفة SaaS لكل غرفة تنمو مع المجموعة.' },
+      { q: 'كيف تقلل الاعتماد على Booking.com و OTAs الأخرى؟',
+        a: 'الهندسة، وليس التسويق، تغلق الفجوة. محرك حجز مباشر مخصص مهندس على بيانات تحويل العقار الفعلية — زمن أول رسم تحت ثانيتين على الجوال، تدفق حجز بثلاث نقرات، رسوم شفافة، متعدد العملات، استرداد سلة مهجورة، RTL عربي كامل — يتفوق على كل أداة جاهزة. الاستثمار يدفع نفسه في ربع للعقارات فوق 60 غرفة.' },
+      { q: 'ما هو نظام إدارة العقار (PMS) وكيف يجب هندسته؟',
+        a: 'PMS يمتلك مجال الحجز — الغرف والضيوف والإقامات والرسوم والتسوية المحاسبية — ويعرضه عبر API مكتوبة. النمط الحديث هو PMS-كمصدر-للحقيقة، وليس PMS-كـ-monolith: احتفظ بـ PMS لطبقة الحجز، استبدل channel manager ومحرك الحجز وأداة الإيرادات بشكل مستقل كخدمات قابلة للتركيب. لا تحوّل عطلة نهاية أسبوع؛ استعادة هامش فورية لكل مكوّن.' },
+    ],
+    relatedServices: {
+      heading: 'القدرات المطبّقة هنا',
+      items: [
+        { name: 'هندسة البرمجيات — منصات متعدّدة المستأجرين، معمارية PMS قابلة للتركيب', href: '/services/software-engineering/' },
+        { name: 'هندسة الجوال — تطبيقات الضيوف، تسجيل وصول جوال، iOS/Android أصلي',     href: '/services/mobile/' },
+        { name: 'هندسة المنتج — محرك حجز مباشر، تدفقات محسّنة للتحويل',                  href: '/services/product/' },
+        { name: 'السحابة و DevOps — بنية تحتية للذروات في الحجوزات',                      href: '/services/cloud/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'اقرأ بعد ذلك',
+      items: [
+        { name: 'الذكاء الاصطناعي في الإنتاج — اعتماد عملي للفِرَق التشغيلية', href: '/insights/ai/' },
+        { name: 'تكلفة البرمجيات — ما يكلفه البناء مقابل الشراء فعلاً',         href: '/insights/cost/' },
+        { name: 'رؤية 2030 — فرصة السياحة والضيافة في المنطقة',                  href: '/insights/vision-2030/' },
+      ],
+    },
     publishedAt: 'مايو 2026',
     readTime:    '20 دقيقة قراءة',
     pages:       '34 صفحة',
@@ -355,11 +448,12 @@ export default function InsightHospitalityPage() {
   return (
     <>
       <SEO
-        title={`${c.title} — Symloop Insights`}
-        description={c.dek}
-        keywords="hotel management software, hotel software development, logiciel gestion hotel, logiciel hotellerie, PMS hotel, property management system hotel, hotel reservation system, channel manager hotel, hotel direct booking engine, booking engine hotel, hotel revenue management, hotel pricing software, hotel POS F&B, hotel mobile check-in, hotel IoT in-room, hospitality software MENA, hospitality engineering Algeria, hospitality engineering Morocco, hospitality engineering Tunisia, hospitality engineering UAE, hospitality engineering Saudi Arabia, hotel software developer, custom hotel booking platform, hotel booking app, OTA commission recovery, Booking.com alternative, channel manager Algerie, logiciel reservation hotel Algerie, hotel software outsourcing, nearshore hotel software, Mews alternative, Cloudbeds alternative, Opera PMS alternative, symloop insights"
+        title={c.titleSeo}
+        description={c.dekSeo}
+        keywords="hotel management software, hotel software development, logiciel gestion hotel, logiciel hotellerie, PMS hotel, property management system hotel, hotel reservation system, channel manager hotel, hotel direct booking engine, booking engine hotel, hotel revenue management, hotel pricing software, hotel POS F&B, hotel mobile check-in, hotel IoT in-room, hospitality software, hospitality engineering, hotel software developer, custom hotel booking platform, hotel booking app, OTA commission recovery, Booking.com alternative, hotel software outsourcing, nearshore hotel software, Mews alternative, Cloudbeds alternative, Opera PMS alternative, hospitality MENA, hospitality Mediterranean, symloop insights"
         type="article"
         structuredData={articleLd}
+        faq={c.faq}
         breadcrumbs={breadcrumbs}
         image="/insights/cover-hospitality.jpg"
       />
@@ -451,6 +545,63 @@ export default function InsightHospitalityPage() {
               ))}
             </ul>
           </motion.aside>
+
+          {c.faq && c.faq.length > 0 && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-20 mb-16">
+              <motion.div variants={fadeUp} className="flex items-baseline gap-4 mb-10">
+                <span className="font-mono text-[11px] tracking-[0.15em] text-white/30">FAQ</span>
+                <h2 className="text-2xl lg:text-3xl font-light tracking-tight text-white leading-tight">
+                  {isRtl ? 'أسئلة يطرحها مدراء الفنادق' : (locale === 'fr' ? 'Questions des directions hôtelières' : 'Questions hotel executives ask')}
+                </h2>
+              </motion.div>
+              <div className="space-y-8 ps-0 lg:ps-10 border-t border-white/[0.06] pt-8">
+                {c.faq.map((f, i) => (
+                  <motion.div key={i} variants={fadeUp} className="border-b border-white/[0.06] pb-8 last:border-0">
+                    <h3 className="text-lg lg:text-xl font-normal text-white mb-3 leading-snug">{f.q}</h3>
+                    <p className="text-base lg:text-lg text-white/65 leading-relaxed">{f.a}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.section>
+          )}
+
+          {c.relatedServices && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-20 mb-16">
+              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.relatedServices.heading}</span>
+                <span className="h-px flex-1 bg-white/10" />
+              </motion.div>
+              <ul className="space-y-px bg-white/[0.06]">
+                {c.relatedServices.items.map((item) => (
+                  <motion.li key={item.href} variants={fadeUp}>
+                    <Link href={item.href} className="group flex items-start justify-between gap-6 bg-black p-6 hover:bg-white/[0.02] transition-colors">
+                      <span className="text-base lg:text-lg text-white/75 group-hover:text-white transition-colors leading-snug font-light">{item.name}</span>
+                      <ArrowRight className="w-4 h-4 mt-1.5 text-white/30 group-hover:text-white/70 group-hover:translate-x-1 transition-all shrink-0" strokeWidth={1.5} />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
+
+          {c.relatedInsights && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-16 mb-12">
+              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.relatedInsights.heading}</span>
+                <span className="h-px flex-1 bg-white/10" />
+              </motion.div>
+              <ul className="space-y-px bg-white/[0.06]">
+                {c.relatedInsights.items.map((item) => (
+                  <motion.li key={item.href} variants={fadeUp}>
+                    <Link href={item.href} className="group flex items-start justify-between gap-6 bg-black p-6 hover:bg-white/[0.02] transition-colors">
+                      <span className="text-base lg:text-lg text-white/75 group-hover:text-white transition-colors leading-snug font-light">{item.name}</span>
+                      <ArrowRight className="w-4 h-4 mt-1.5 text-white/30 group-hover:text-white/70 group-hover:translate-x-1 transition-all shrink-0" strokeWidth={1.5} />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
         </article>
 
         <section className="border-t border-white/[0.06]">

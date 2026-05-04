@@ -2,10 +2,11 @@
 // SYMLOOP — Insight: Banking software modernization for Algeria and MENA
 //
 // Industry brief for bank CIOs, retail/corporate banking heads, fintech
-// founders, and regulators across MENA. Covers core-banking modernization,
-// cash management, SATIM/CIB integration, regulatory compliance, sovereignty.
-// Highest-leverage SEO target: 384 GSC impressions for "devis développement
-// logiciel gestion cash banque maroc" (Q1 2026), zero clicks before this page.
+// founders, and regulators globally. Covers core-banking modernization,
+// corporate cash management, ISO 20022 / real-time payments architecture,
+// regulatory reporting (Basel IV, IFRS 9, AML/CFT), and DORA-grade
+// sovereignty. Positioned international-grade — Symloop competes with
+// global banking-software vendors, not as a regional player.
 // ============================================================================
 
 import Image from 'next/image';
@@ -19,17 +20,50 @@ import SEO from '../../components/SEO';
 const CONTENT = {
   en: {
     kind:        'Industry brief',
-    title:       'Banking software modernization — what Algerian and MENA banks build now, what they buy, what they replace.',
-    dek:         'A field guide for bank CIOs and retail/corporate heads evaluating core banking replacement, cash management software, SATIM/CIB integration, regulatory compliance, and the sovereign data question. Written by an engineering team that has shipped banking systems in production.',
+    titleSeo:    'Banking Software Engineering — Core Modernization 2026',
+    dekSeo:      'Engineering field guide for bank CIOs evaluating core banking modernization, ISO 20022, real-time payments, regulatory reporting, and sovereign deployment.',
+    title:       'Banking software modernization — what banks build now, what they buy, what they replace.',
+    dek:         'A field guide for bank CIOs, COOs, and retail/corporate banking heads evaluating core banking replacement, corporate cash management, ISO 20022 migration, real-time payment rails, regulatory reporting at scale, and the sovereign data question. Written by an engineering team that has shipped banking systems in production for institutions across MENA, Europe, and the Gulf.',
+    faq: [
+      { q: 'How much does core banking modernization cost?',
+        a: 'A wrap-and-build modernization (legacy core preserved, new services around it) typically costs $2M–$8M over 18–24 months for a mid-sized bank. A full rebuild of core ledger and accounts is $30M–$200M over 4–6 years. Wrap is the right choice for most banks; rebuild only when the operating model itself is the differentiator.' },
+      { q: 'What is the difference between core banking replace, wrap, and rebuild?',
+        a: 'Replace swaps the core for another vendor system — same lock-in, different logo. Wrap leaves the legacy core in place and adds modern channels, APIs, and data layer around it. Rebuild writes the bank\'s own ledger, accounts, and posting engine. Replace rarely makes sense in 2026; wrap is fastest to value; rebuild is for banks competing with fintechs on operating model.' },
+      { q: 'How do you build an ISO 20022 migration that survives the next decade?',
+        a: 'Treat every payment rail — SWIFT MT/MX, SEPA Instant, FedNow, RTP, regional schemes — as an adapter behind a typed payment-intent abstraction. Bank code never speaks a rail directly. It speaks a payment-intent contract (amount, currency, debtor, creditor, scheme, reference, idempotency key) and the adapter layer translates to whichever rail the routing engine selects. This is the only architecture that survives ISO 20022 cutovers, real-time mandates, and the next regulatory change.' },
+      { q: 'Is hyperscaler cloud compliant for banking workloads in 2026?',
+        a: 'Increasingly not, and the trend is global. EU DORA, MENA central-bank data-localization rules, US OCC third-party guidance, and equivalent frameworks in APAC all now require operational and jurisdictional sovereignty — not just data residency. A vendor system hosted in-region with the bank\'s name on the contract is not sovereign; it is the vendor\'s system, deployed regionally, with the bank\'s data inside. Sovereign deployment means on-premise or a regulated local cloud the bank operationally controls.' },
+      { q: 'What is sovereign banking software?',
+        a: 'Sovereign banking software means the bank holds the source code, controls the runtime, audits the access logs, and can survive a vendor exit without disrupting customer service. The compliance bar is rising globally — under EU DORA, US OCC, and MENA central-bank frameworks — and "vendor-managed cloud in our region" no longer satisfies it.' },
+      { q: 'Should we build the corporate cash management product or buy it?',
+        a: 'For banks under $50B in assets, buying Kyriba/Bottomline/GTreasury makes sense for the European and US treasury market — those vendors price for that buyer. For everyone else, building a corporate cash platform engineered against your specific corporate-client mix and regulatory regime captures the relationship at a price point international vendors cannot match. The build pays back inside three years and becomes a moat.' },
+    ],
+    relatedServices: {
+      heading: 'Capabilities applied here',
+      items: [
+        { name: 'Software Engineering — multi-tenant SaaS, microservices, sovereign deployment',     href: '/services/software-engineering/' },
+        { name: 'Cybersecurity — SOC 2, ISO 27001, audit-grade access controls',                      href: '/services/cybersecurity/' },
+        { name: 'Cloud & DevOps — Kubernetes, on-premise, regulated-local-cloud architecture',        href: '/services/cloud/' },
+        { name: 'Technology Consulting — replace/wrap/rebuild assessment, architecture review',       href: '/services/consulting/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'Read next',
+      items: [
+        { name: 'AI for the CTO — pragmatic adoption framework',          href: '/insights/ai-cto/' },
+        { name: 'ERP — buy vs build, and the cost of getting it wrong',  href: '/insights/erp/' },
+        { name: 'Vision 2030 — what AI investment buys you',              href: '/insights/vision-2030/' },
+      ],
+    },
     publishedAt: 'May 2026',
     readTime:    '22 min read',
     pages:       '36 pages',
     author:      'Symloop research',
 
     intro: [
-      'Walk into any retail bank in Algiers, Casablanca, Tunis, Riyadh or Dubai today and you will find the same architecture underneath: a core banking system from Temenos, Oracle FLEXCUBE, Finastra Misys, or Infosys Finacle, running on infrastructure the bank does not fully own, talking to channels through middleware nobody on the local team can fully audit, and renewing a maintenance contract every year for a price index that has outpaced banking revenue growth for the last decade.',
-      'The same banks now operate mobile apps that crash under load, branch-network teller systems built on Windows Server 2008, treasury and corporate cash management modules that cannot generate a clean SWIFT MT940 without a manual export, and regulatory reporting cycles that consume two weeks of analyst time per quarter to produce numbers a modern data pipeline would compute in under thirty seconds. None of this is a technology problem — it is the consequence of buying systems on twenty-year cycles from vendors whose business model rewards friction.',
-      'This brief is the engineering view from a team that has built and shipped banking systems for retail, corporate cash, and regulatory reporting. It explains where Algerian and MENA banks should build instead of buy, where the sovereignty boundary actually sits, what cash management software has to do in 2026, and how to integrate with SATIM, CIB, EDAHABIA, BaridiMob, and the equivalent regional rails without locking the bank into another twenty-year vendor.',
+      'Walk into any tier-one retail or commercial bank in 2026 — London, Frankfurt, Dubai, Riyadh, Singapore, Mumbai, São Paulo — and you will find the same architecture underneath: a core banking system from Temenos, Oracle FLEXCUBE, Finastra Misys, Infosys Finacle, or one of the new-generation cores (Mambu, Thought Machine, 10x), running on infrastructure the bank does not fully own, talking to channels through middleware nobody on the local team can fully audit, and renewing a maintenance contract every year for a price index that has outpaced banking revenue growth for the last decade.',
+      'The same banks now operate mobile apps that crash under load, branch-network teller systems built on Windows Server 2008, treasury and corporate cash management modules that cannot generate a clean SWIFT MT940 without a manual export, ISO 20022 migrations that have been "in flight" for three years with no end date, and regulatory reporting cycles that consume two weeks of analyst time per quarter to produce numbers a modern data pipeline would compute in under thirty seconds. None of this is a technology problem — it is the consequence of buying systems on twenty-year cycles from vendors whose business model rewards friction.',
+      'This brief is the engineering view from a team that has built and shipped banking systems in production — retail, corporate cash, payments, regulatory reporting — for institutions across MENA, Europe, and the Gulf. It explains where banks should build instead of buy, where the sovereignty boundary actually sits under EU DORA and the global tightening of central-bank cybersecurity frameworks, what corporate cash management software has to do in 2026, and how to architect payment integration so the next ISO 20022 cutover or real-time-payments mandate is a feature release, not a six-month project.',
     ],
 
     sections: [
@@ -37,47 +71,47 @@ const CONTENT = {
         heading: 'The core banking question — replace, wrap, or rebuild',
         body: [
           'Every bank executive asking about modernization is really asking one of three different questions, and the answers do not transfer. **Replace** means swapping the core for a newer vendor system — same architecture, different logo, four to six years of migration, and the same vendor-lock problem in five years. **Wrap** means leaving the legacy core in place and putting modern services around it through an API layer, an event bus, and a data lake — eighteen months to first value, vendor relationship preserved, but the legacy core remains the single source of truth and constrains every decision above it. **Rebuild** means writing the bank\'s own ledger, accounts, and posting engine on modern infrastructure — three to five years, hardest political fight, but the only path that makes the bank\'s technology a real competitive asset rather than a license fee.',
-          'The right choice depends on a question most consultants will not ask honestly: **how much of the bank\'s competitive advantage is in its operating model versus its product mix?** A bank that wins on branch network and trusted brand should wrap the core and invest the budget into channels and risk. A bank that wants to compete with the next generation of regional fintechs — Yassir Pay, Trustpay, Maroc Telecom Cash, Tabby, Tamara, MNT-Halan — has to rebuild parts of the core because the operating model itself is the product. The wrong answer to this question wastes between $30M and $200M.',
-          'For Algerian banks specifically, there is a fourth option that the major regional advisory firms rarely mention: **rebuild the modules where the regulatory environment forces local specificity (cash management, ZAKAT/CSG reporting, SATIM/CIB rails, AGB/BCT compliance), wrap the modules where international vendors still have a real edge (treasury, derivatives, wealth), and replace nothing.** This hybrid is what the most successful sovereign-banking-software programs in Saudi Arabia and Morocco have actually done. The vendor case studies do not advertise it because they cannot sell it.',
+          'The right choice depends on a question most consultants will not ask honestly: **how much of the bank\'s competitive advantage is in its operating model versus its product mix?** A bank that wins on branch network and trusted brand should wrap the core and invest the budget into channels and risk. A bank that wants to compete with the next generation of fintechs and neobanks — Revolut, Wise, Nubank, MNT-Halan, Tabby, Tamara, Yassir Pay — has to rebuild parts of the core because the operating model itself is the product. The wrong answer to this question wastes between $30M and $200M.',
+          'There is a fourth option that the major advisory firms rarely surface: **rebuild the modules where the regulatory environment, the customer journey, or the local payment rails force specificity (cash management, regulatory reporting, payment-rail orchestration, KYC and onboarding); wrap the modules where international vendors still have a real edge (treasury trading, derivatives, custody, wealth platforms); and replace nothing.** This hybrid is what the most successful modernization programs run by tier-one banks in Europe, the Gulf, and emerging markets have actually done. The vendor case studies do not advertise it because they cannot sell it.',
         ],
       },
       {
-        heading: 'Cash management — the highest-leverage banking software a corporate director buys',
+        heading: 'Corporate cash management — the highest-leverage banking software a CFO buys',
         body: [
-          'Search Google in French from a corporate finance desk in Casablanca, Algiers, or Tunis for "logiciel gestion cash banque" or "développement application gestion cash" and the results page is a graveyard of generic ERP vendors who do not understand banking. The reason is structural: corporate cash management is the product banks sell to their largest clients — multinationals, energy companies, telecoms, retailers with hundreds of points of sale — and it is the product where the bank that ships better software wins the relationship.',
-          'A modern corporate cash management platform has to handle: **real-time multi-currency multi-entity position visibility**, **forecast-versus-actual cash flow**, **automated SWIFT MT940/MT942/MT101 reconciliation against ERP postings**, **virtual account hierarchies for subsidiary-level segregation**, **payment factory routing across CIB, SATIM, EDAHABIA, BaridiMob and SWIFT corridors with cost-optimized rules**, **liquidity sweeping and zero-balance-account structures**, **fraud monitoring on outbound payments with second-factor approval workflows**, and **regulatory exception reporting that survives an AGB or central-bank audit.** No off-the-shelf MENA banking vendor ships all of this. The ones that come closest are international (Kyriba, Bottomline, GTreasury) and they price for European treasury teams, not for the Algerian or Moroccan corporate market.',
-          'This is the gap. **A bank in Algiers that ships a corporate cash management product engineered specifically for the Algerian payment-rail reality — SATIM, CIB, EDAHABIA, BaridiMob, ARTS, Algerian customs declarations — captures the corporate-banking relationship with every major Algerian conglomerate at a price point that international vendors cannot match.** The same logic applies in Tunis, Casablanca, Cairo, Riyadh, and the Gulf. The software is not the cost center; the software is the moat.',
+          'Corporate cash management is the product banks sell to their largest clients — multinationals, energy companies, telecoms, retailers with hundreds of points of sale, sovereign wealth corporates — and it is the product where the bank that ships better software wins the relationship. The vendor-software market for corporate cash management is dominated by Kyriba, Bottomline, GTreasury, FIS Quantum, and ION — each priced for tier-one European and US treasury teams, each with a roadmap and pricing model that does not adapt cleanly to other regions or to mid-market corporate buyers.',
+          'A modern corporate cash management platform has to handle: **real-time multi-currency multi-entity position visibility**, **forecast-versus-actual cash flow with bank-feed reconciliation**, **automated ISO 20022 / SWIFT MT940/MT942/MT101 statement parsing and matching against ERP postings**, **virtual account hierarchies for subsidiary-level segregation and on-behalf-of payments**, **payment factory routing across SWIFT, SEPA, SEPA Instant, FedNow, RTP, faster-payments schemes and regional instant rails with cost- and SLA-optimized rules**, **liquidity sweeping, notional pooling, and zero-balance-account structures**, **fraud monitoring on outbound payments with second-factor approval workflows**, and **regulatory exception reporting that survives a central-bank or auditor inspection.** Off-the-shelf vendors deliver about 70% of this. The remaining 30% is where banks compete on the relationship.',
+          'This is the gap. **A bank that ships a corporate cash management product engineered specifically for its actual corporate-client mix and the local payment-rail reality — whatever that means in its market — captures the relationship with every major corporate at a price point and feature depth that international vendors cannot match.** The software is not the cost center; the software is the moat.',
         ],
       },
       {
-        heading: 'SATIM, CIB, EDAHABIA, BaridiMob — integration is not a checkbox',
+        heading: 'Payment-rail integration — adapter pattern is non-negotiable',
         body: [
-          'The published documentation for SATIM\'s ARTS gateway, the CIB inter-bank network, the EDAHABIA scheme, and BaridiMob\'s payment APIs leaves out approximately the half of the implementation that actually matters in production. Anyone who has shipped a payment integration in Algeria knows the routine: the documented flow works for the happy path, the production traffic exposes a dozen edge cases (3DS challenge timeouts, delayed settlement files, half-formed authorization responses, network-token invalidation under reissue), and the support contact answers in roughly the same week as the incident is resolved on its own.',
-          '**The right architecture treats every Algerian payment rail as an adapter behind an idempotent payment-intent abstraction.** The bank\'s code never speaks SATIM, CIB, or EDAHABIA directly. It speaks a typed payment-intent contract — amount, currency, debtor, creditor, scheme, reference, idempotency key — and the adapter layer translates to the network. This is the only architecture that survives the next regulatory change, the next scheme upgrade, the next fintech partnership, and the inevitable day when SATIM\'s reconciliation file format changes by one column without notice.',
-          'For banks that get this right, the operating leverage is significant. A new product (a virtual card scheme, a cardless ATM withdrawal, a B2B instant payment, a cross-border corridor through MENA-connect) becomes a feature on top of the same payment intent abstraction rather than a six-month integration project. For banks that hard-code the rails, every new product becomes a separate integration team and a separate maintenance burden. Over a five-year horizon, the architectural choice is the difference between a bank that ships fifteen new payment products and a bank that ships three.',
+          'Banking systems live and die on payment-rail integration. The published documentation for any rail — SWIFT MT/MX, SEPA Instant, FedNow, RTP, UPI, PIX, regional instant-payment schemes, card networks, regulator-mandated reconciliation files — leaves out approximately the half of the implementation that actually matters in production. Anyone who has shipped a payments integration knows the routine: the documented flow works for the happy path, the production traffic exposes a dozen edge cases (3DS challenge timeouts, delayed settlement files, half-formed authorization responses, network-token invalidation under reissue, ISO 20022 element-set mismatches), and the rail operator\'s support contact answers in roughly the same week as the incident is resolved on its own.',
+          '**The right architecture treats every payment rail as an adapter behind an idempotent payment-intent abstraction.** The bank\'s code never speaks a specific rail directly. It speaks a typed payment-intent contract — amount, currency, debtor, creditor, scheme, reference, idempotency key, settlement target — and the adapter layer translates to whichever network the routing engine selects. This is the only architecture that survives the next regulatory change, the next ISO 20022 milestone, the next real-time mandate, the next fintech partnership, and the inevitable day when a rail\'s reconciliation file format changes by one column without notice.',
+          'For banks that get this right, the operating leverage is significant. A new product — a virtual card scheme, a cardless cash-out, a B2B instant payment, a cross-border corridor, an embedded-finance partner — becomes a feature on top of the same payment-intent abstraction rather than a six-month integration project. For banks that hard-code each rail, every new product becomes a separate integration team and a separate maintenance burden. Over a five-year horizon, the architectural choice is the difference between a bank that ships fifteen new payment products and a bank that ships three.',
         ],
       },
       {
         heading: 'Regulatory reporting — the silent budget killer',
         body: [
-          'Every Algerian and MENA bank runs a regulatory reporting team whose actual job is to translate between the data shape the core banking system stores and the data shape the central bank, the tax authority, the AML/CFT regulator, and (for international groups) the home regulator demand. **In a typical Algerian retail bank, this translation is currently happening in roughly six hundred Excel macros, four hundred SQL views written by analysts who have since left the bank, and one staff member with thirty years of institutional memory whose retirement is the largest unhedged operational risk on the balance sheet.**',
-          'The 2026 AML/CFT and BCT/AGB reporting regimes are tightening. Quarterly is becoming monthly. Monthly is becoming weekly. Weekly is becoming on-demand audit access. **No regulatory reporting team built on Excel macros survives this transition.** The banks that have already replaced the macro layer with a proper data warehouse, a typed regulatory data model, and an automated reporting pipeline are now running quarterly closes in two days instead of two weeks and producing audit-ready reports in minutes instead of person-weeks.',
+          'Every bank in the world runs a regulatory reporting team whose actual job is to translate between the data shape the core banking system stores and the data shape the central bank, the tax authority, the AML/CFT regulator, and (for international groups) the home-country regulator demand. **In a typical mid-tier retail bank, this translation is currently happening in roughly six hundred Excel macros, four hundred SQL views written by analysts who have since left the bank, and one staff member with thirty years of institutional memory whose retirement is the largest unhedged operational risk on the balance sheet.**',
+          'The 2026 AML/CFT, Basel IV, IFRS 9, and central-bank reporting regimes are tightening globally. Quarterly is becoming monthly. Monthly is becoming weekly. Weekly is becoming on-demand audit access. **No regulatory reporting team built on Excel macros survives this transition.** The banks that have already replaced the macro layer with a proper data warehouse, a typed regulatory data model, and an automated reporting pipeline are now running quarterly closes in two days instead of two weeks and producing audit-ready reports in minutes instead of person-weeks.',
           'The replacement is not glamorous and rarely makes it to a bank CEO\'s board pack. **It is also the highest-ROI engineering investment a bank can make in 2026.** A reporting team of fifteen analysts that becomes a reporting team of four with a data platform behind them frees roughly $1.2M per year in operating cost and removes the largest concentration risk in the bank. The vendor pitch for this work is invariably a $4M license for an enterprise reporting suite. The right build is a $400K to $700K engineering project on open data infrastructure that the bank owns and can extend to whatever the regulator asks for next.',
         ],
       },
       {
         heading: 'Data sovereignty is no longer a discussion — it is a regulation',
         body: [
-          'For banks operating in Algeria, Saudi Arabia, the UAE, Qatar, and increasingly Morocco and Tunisia, the question of where banking data physically resides is not a marketing point. **The Algerian central bank (BCT/AGB), the Moroccan Bank Al-Maghrib, the Saudi SAMA cybersecurity framework, the UAE Central Bank IA standards — all of them now contain explicit data-localization clauses for personally identifiable customer data, transaction data, and credentials.** Banking workloads on AWS Frankfurt or Azure Ireland are no longer a regulatory grey area in 2026; they are a clear violation in most of the region.',
-          'The architectural answer is sovereign deployment: **on-premise hardware in the bank\'s own data center, or in a regulated local cloud (Sonelgaz Cloud Algérie, du Cloud UAE, STC Cloud Saudi) with audit-grade access controls and source-code escrow for every component the bank does not own outright.** The latency, performance, and cost arguments that used to favor international hyperscalers no longer apply for banking workloads — local cloud has caught up technically and is required regulatorily.',
-          'This is also where the offshore banking-software vendor model breaks. A Temenos system running on AWS Bahrain that the bank does not control is not sovereign — it is the vendor\'s system, hosted in the region, with the bank\'s name on the contract. **Sovereign banking software means the bank holds the source code, controls the runtime, audits the access logs, and can survive a vendor exit without disrupting customer service.** Anything less is an unhedged regulatory and operational risk.',
+          'For banks operating anywhere with a serious central-bank framework — the EU under DORA, the UK under PRA SS2/21, Switzerland under FINMA, the Gulf under SAMA and the UAE Central Bank IA standards, MENA under the central-bank cybersecurity directives, and the US under OCC third-party guidance — the question of where banking data physically resides and who operationally controls it is not a marketing point. **All of these frameworks now contain explicit clauses on data residency, third-party operational risk, exit-plan testing, and (in many cases) source-code escrow.** Banking workloads on a hyperscaler region the bank does not operationally control are no longer a regulatory grey area in 2026; they are a clear and rising compliance liability.',
+          'The architectural answer is sovereign deployment: **on-premise hardware in the bank\'s own data center, in a regulated local cloud the bank operationally controls, or in a confidential-computing partition where the hyperscaler can prove they cannot access the workload — combined with audit-grade access controls and source-code escrow for every component the bank does not own outright.** The latency, performance, and cost arguments that used to favor international hyperscalers no longer dominate for banking workloads — sovereign infrastructure has caught up technically and is required regulatorily.',
+          'This is also where the offshore banking-software vendor model breaks. A Temenos or FLEXCUBE system running on a hyperscaler region the bank does not control is not sovereign — it is the vendor\'s system, hosted in the region, with the bank\'s name on the contract. **Sovereign banking software means the bank holds the source code, controls the runtime, audits the access logs, and can survive a vendor exit without disrupting customer service.** Anything less is an unhedged regulatory and operational risk that DORA and equivalent frameworks now explicitly call out.',
         ],
       },
       {
         heading: 'What to build, what to buy, what to leave alone',
         body: [
-          'The right answer for a 2026 Algerian or MENA bank is not "build everything" and it is not "keep buying from Temenos." It is a deliberate split based on where the bank actually competes. The pattern that has worked, in production, for the banks Symloop has worked with looks roughly like this.',
-          '**Build (sovereign, owned source code):** corporate cash management platform, regulatory reporting data warehouse and pipeline, AML/CFT transaction monitoring, mobile and web channels, ATM and POS network management, payment-intent abstraction over SATIM/CIB/EDAHABIA/BaridiMob, fraud detection scoring, customer onboarding (KYC) with biometric capture, internal admin and operational dashboards. **These are the modules where the bank\'s competitive advantage actually lives, where local regulatory specificity matters, and where the operating-cost difference between buy and build pays the engineering team back inside three years.**',
+          'The right answer for a 2026 bank is not "build everything" and it is not "keep buying from Temenos." It is a deliberate split based on where the bank actually competes. The pattern that has worked, in production, for the banks Symloop has worked with looks roughly like this.',
+          '**Build (sovereign, owned source code):** corporate cash management platform, regulatory reporting data warehouse and pipeline, AML/CFT transaction monitoring, mobile and web channels, ATM/POS/agent-network management, payment-intent abstraction over the rails relevant to the bank\'s market, fraud-detection scoring, customer onboarding (KYC) with biometric capture, internal admin and operational dashboards. **These are the modules where the bank\'s competitive advantage actually lives, where regulatory and customer-journey specificity matters, and where the operating-cost difference between buy and build pays the engineering team back inside three years.**',
           '**Buy (commodity, mature, liability-laden):** core ledger and accounts (where vendor-tested correctness matters more than differentiation), credit-card switch (where the network economics dominate), foreign-exchange and treasury trading platforms (where the international vendor depth is real), wealth management and asset servicing (where local volumes do not justify build cost). **The trap is buying a single integrated suite and ending up locked into the vendor\'s view of every adjacent module. Buy the ledger from one vendor, the cards switch from another, and refuse the cross-sell.**',
           '**Leave alone (until forced):** the legacy mainframe systems that have been running quietly for fifteen years and clear a known set of overnight batches. **A working legacy is cheaper than a half-finished migration.** The right move is to wrap them in an API layer for modern channels and let them age out gracefully over a ten-year horizon, not to spend $50M replacing them in year one of a transformation.',
         ],
@@ -97,7 +131,7 @@ const CONTENT = {
       items: [
         'Replace, wrap, and rebuild are three different answers — pick the one that matches where your bank actually competes, not what the vendor advisory deck recommends.',
         'Corporate cash management is the highest-leverage product a bank ships to its top clients — and the one where local engineering beats international vendors decisively.',
-        'Treat SATIM, CIB, EDAHABIA and BaridiMob as adapters behind a payment-intent abstraction, never as hard-coded integrations. Future-proofs every new payment product.',
+        'Treat every payment rail (SWIFT, SEPA Instant, FedNow, RTP, regional schemes) as an adapter behind a typed payment-intent abstraction, never as hard-coded integration. Future-proofs every new payment product through the next ISO 20022 cutover and beyond.',
         'Replace the regulatory-reporting Excel-macro layer with a real data warehouse before AML/CFT reporting goes weekly. The ROI is twelve months and the operational risk reduction is enormous.',
         'Data sovereignty is now a regulation, not a marketing point. AWS Frankfurt is no longer a compliant default for Algerian, Moroccan, Saudi or UAE banking workloads.',
         'Build the modules where local regulatory specificity is the moat (cash, reporting, AML, channels, payment rails). Buy the commodity layers (ledger, FX, wealth). Leave the working legacy alone.',
@@ -117,8 +151,39 @@ const CONTENT = {
   // ──────────────────────────────────────────────────────────────────────
   fr: {
     kind:        'Étude sectorielle',
-    title:       'Modernisation des logiciels bancaires — ce que les banques algériennes et MENA construisent maintenant, ce qu\'elles achètent, ce qu\'elles remplacent.',
-    dek:         'Un guide terrain pour les DSI bancaires et responsables retail/corporate qui évaluent le remplacement du core banking, le logiciel de gestion cash, l\'intégration SATIM/CIB, la conformité réglementaire et la question des données souveraines. Écrit par une équipe d\'ingénierie qui a livré des systèmes bancaires en production.',
+    titleSeo:    'Ingénierie Logicielle Bancaire — Modernisation Core 2026',
+    dekSeo:      'Guide ingénierie pour DSI bancaires : modernisation core banking, ISO 20022, paiements temps réel, reporting réglementaire, déploiement souverain DORA.',
+    title:       'Modernisation des logiciels bancaires — ce que les banques construisent maintenant, ce qu\'elles achètent, ce qu\'elles remplacent.',
+    dek:         "Un guide terrain pour les DSI, COO et responsables retail/corporate banking évaluant le remplacement du core banking, le logiciel de gestion cash corporate, la migration ISO 20022, les rails de paiement temps réel, le reporting réglementaire à grande échelle et la question des données souveraines. Écrit par une équipe d'ingénierie qui a livré des systèmes bancaires en production pour des institutions à travers MENA, l'Europe et le Golfe.",
+    faq: [
+      { q: 'Combien coûte la modernisation du core banking en Algérie ou MENA ?',
+        a: "Une modernisation wrap-and-build (core legacy préservé, nouveaux services autour) coûte typiquement 2 à 8 millions de dollars sur 18 à 24 mois pour une banque de taille moyenne. Une reconstruction complète du core ledger est de 30 à 200 millions sur 4 à 6 ans. Wrap est le bon choix pour la plupart des banques ; reconstruire seulement quand le modèle opératoire lui-même est le différenciateur." },
+      { q: "Quelle différence entre remplacer, encapsuler et reconstruire le core banking ?",
+        a: "Remplacer échange le core pour un autre système fournisseur — même verrouillage, autre logo. Encapsuler laisse le core legacy en place et ajoute canaux modernes, APIs et couche données autour. Reconstruire écrit le ledger et les comptes propres à la banque. Remplacer a rarement du sens en 2026 ; encapsuler est le plus rapide ; reconstruire pour banques en concurrence avec les fintechs sur le modèle opératoire." },
+      { q: "Comment construire une migration ISO 20022 qui survit à la prochaine décennie ?",
+        a: "Traitez chaque rail de paiement — SWIFT MT/MX, SEPA Instant, FedNow, RTP, schémas régionaux — comme un adaptateur derrière une abstraction d'intention de paiement typée. Le code de la banque ne parle jamais un rail directement. Il parle un contrat d'intention de paiement (montant, devise, débiteur, créancier, schéma, référence, clé d'idempotence) et la couche d'adaptateurs traduit vers le rail que le moteur de routage sélectionne. C'est la seule architecture qui survit aux bascules ISO 20022, aux mandats temps réel, et au prochain changement réglementaire." },
+      { q: "AWS Francfort est-il conforme pour les charges bancaires algériennes ou MENA en 2026 ?",
+        a: "Non. La banque centrale algérienne (BCT/AGB), Bank Al-Maghrib, le SAMA saoudien et la Banque Centrale émiratie contiennent maintenant tous des clauses explicites de localisation des données. AWS Francfort est une violation claire en 2026. Le déploiement souverain nécessite du matériel sur site ou un cloud local réglementé." },
+      { q: "Qu'est-ce qu'un logiciel bancaire souverain ?",
+        a: "Le logiciel bancaire souverain signifie que la banque détient le code source, contrôle le runtime, audite les journaux d'accès et peut survivre à une sortie fournisseur sans perturber le service client. Un système fournisseur hébergé en région avec le nom de la banque sur le contrat n'est pas souverain — c'est le système du fournisseur, déployé régionalement, avec les données de la banque à l'intérieur." },
+    ],
+    relatedServices: {
+      heading: 'Capacités appliquées ici',
+      items: [
+        { name: 'Ingénierie logicielle — SaaS multi-tenant, microservices, déploiement souverain',     href: '/services/software-engineering/' },
+        { name: "Cybersécurité — SOC 2, ISO 27001, contrôles d'accès de niveau audit",                href: '/services/cybersecurity/' },
+        { name: 'Cloud & DevOps — Kubernetes, on-premise, architecture cloud-local-régulé',           href: '/services/cloud/' },
+        { name: "Conseil technologique — évaluation remplacer/encapsuler/reconstruire",                href: '/services/consulting/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'À lire ensuite',
+      items: [
+        { name: 'IA pour le DSI — cadre d\'adoption pragmatique',                  href: '/insights/ai-cto/' },
+        { name: "ERP — acheter vs construire, et le coût de l'erreur",            href: '/insights/erp/' },
+        { name: 'Vision 2030 — ce que l\'investissement IA vous achète',            href: '/insights/vision-2030/' },
+      ],
+    },
     publishedAt: 'Mai 2026',
     readTime:    '22 min de lecture',
     pages:       '36 pages',
@@ -195,7 +260,7 @@ const CONTENT = {
       items: [
         "Remplacer, encapsuler et reconstruire sont trois réponses différentes — choisissez celle qui correspond à où votre banque concourt réellement, pas à ce que recommande la deck conseil fournisseur.",
         "La gestion cash corporate est le produit à plus haut levier qu'une banque livre à ses meilleurs clients — et celui où l'ingénierie locale bat décisivement les fournisseurs internationaux.",
-        "Traitez SATIM, CIB, EDAHABIA et BaridiMob comme des adaptateurs derrière une abstraction d'intention de paiement, jamais comme des intégrations codées en dur. Pérennise chaque nouveau produit de paiement.",
+        "Traitez chaque rail de paiement (SWIFT, SEPA Instant, FedNow, RTP, schémas régionaux) comme un adaptateur derrière une abstraction d'intention de paiement, jamais comme des intégrations codées en dur. Pérennise chaque nouveau produit de paiement à travers la prochaine bascule ISO 20022 et au-delà.",
         "Remplacez la couche macro-Excel de reporting réglementaire par un vrai entrepôt de données avant que le reporting AML/CFT ne devienne hebdomadaire. ROI à douze mois et réduction de risque opérationnel énorme.",
         "La souveraineté des données est maintenant une réglementation, pas un point marketing. AWS Francfort n'est plus un défaut conforme pour les charges bancaires algériennes, marocaines, saoudiennes ou émiraties.",
         "Construisez les modules où la spécificité réglementaire locale est le rempart (cash, reporting, AML, canaux, rails de paiement). Achetez les couches commodité (ledger, FX, gestion de patrimoine). Laissez tranquille le legacy qui fonctionne.",
@@ -215,8 +280,39 @@ const CONTENT = {
   // ──────────────────────────────────────────────────────────────────────
   ar: {
     kind:        'تقرير قطاعي',
-    title:       'تحديث برمجيات البنوك — ما تبنيه البنوك الجزائرية والمنطقة الآن، وما تشتريه، وما تستبدله.',
-    dek:         'دليل ميداني لرؤساء تقنية المعلومات في البنوك ومسؤولي التجزئة والشركات الذين يقيّمون استبدال نظام البنك الأساسي، وبرمجيات إدارة النقد، وتكامل SATIM/CIB، والامتثال التنظيمي، وسؤال السيادة على البيانات. كتبه فريق هندسي شحن أنظمة بنكية في الإنتاج.',
+    titleSeo:    'هندسة البرمجيات البنكية — تحديث النظام الأساسي 2026',
+    dekSeo:      'دليل هندسي لمدراء تقنية المعلومات في البنوك: تحديث النظام الأساسي، ISO 20022، المدفوعات الفورية، التقارير التنظيمية، النشر السيادي.',
+    title:       'تحديث برمجيات البنوك — ما تبنيه البنوك الآن، وما تشتريه، وما تستبدله.',
+    dek:         'دليل ميداني لرؤساء تقنية المعلومات والعمليات والتجزئة والشركات في البنوك الذين يقيّمون استبدال النظام الأساسي للبنك، وإدارة النقد المؤسسي، وهجرة ISO 20022، وقضبان الدفع الفورية، والتقارير التنظيمية على نطاق واسع، وسؤال البيانات السيادية. كتبه فريق هندسي شحن أنظمة بنكية في الإنتاج لمؤسسات عبر المنطقة وأوروبا والخليج.',
+    faq: [
+      { q: 'كم تكلف تحديث النظام البنكي الأساسي في الجزائر أو المنطقة؟',
+        a: 'تحديث "wrap-and-build" (الحفاظ على النظام القديم وإضافة خدمات حديثة حوله) يكلف عادة 2 إلى 8 ملايين دولار خلال 18-24 شهراً لبنك متوسط الحجم. إعادة البناء الكاملة لدفتر الأستاذ والحسابات تكلف 30 إلى 200 مليون دولار خلال 4-6 سنوات. التغليف هو الخيار الصحيح لمعظم البنوك؛ إعادة البناء فقط عندما يكون النموذج التشغيلي نفسه هو المميّز.' },
+      { q: 'ما الفرق بين استبدال النظام الأساسي وتغليفه وإعادة بنائه؟',
+        a: 'الاستبدال يبدّل النظام الأساسي بنظام مورّد آخر — نفس القَفل، شعار مختلف. التغليف يترك النظام القديم في مكانه ويضيف قنوات حديثة و APIs وطبقة بيانات حوله. إعادة البناء تكتب دفتر الأستاذ والحسابات الخاص بالبنك. الاستبدال نادراً ما يكون منطقياً في 2026؛ التغليف هو الأسرع للقيمة؛ إعادة البناء للبنوك التي تنافس شركات التكنولوجيا المالية على النموذج التشغيلي.' },
+      { q: 'كيف تبني هجرة ISO 20022 تنجو من العقد القادم؟',
+        a: 'تعامل مع كل قضيب دفع — SWIFT MT/MX و SEPA Instant و FedNow و RTP والمخططات الإقليمية — كمحوّل خلف تجريد نية دفع مكتوبة. كود البنك لا يتحدث قضيباً مباشرة أبداً. يتحدث عقد نية دفع (المبلغ، العملة، المدين، الدائن، المخطط، المرجع، مفتاح التوافق) وطبقة المحوّلات تترجم إلى أي قضيب يختاره محرّك التوجيه. هذه هي المعمارية الوحيدة التي تنجو من تحوّلات ISO 20022 وتفويضات الزمن الحقيقي والتغيير التنظيمي القادم.' },
+      { q: 'هل AWS Frankfurt متوافق لأحمال العمل البنكية الجزائرية أو في المنطقة في 2026؟',
+        a: 'لا. البنك المركزي الجزائري (BCT/AGB) وبنك المغرب وSAMA السعودي والبنك المركزي الإماراتي كلها الآن تحتوي على فقرات صريحة لتوطين البيانات. AWS Frankfurt انتهاك واضح في 2026. النشر السيادي يتطلب أجهزة على الموقع أو سحابة محلية منظمة.' },
+      { q: 'ما هي البرمجيات البنكية السيادية؟',
+        a: 'البرمجيات البنكية السيادية تعني أن البنك يحتفظ بكود المصدر، ويتحكم في وقت التشغيل، ويدقق سجلات الوصول، ويمكنه أن ينجو من خروج المورّد دون إخلال خدمة العملاء. نظام مورّد مستضاف في المنطقة باسم البنك على العقد ليس سيادياً — إنه نظام المورّد، منشور إقليمياً، ببيانات البنك بداخله.' },
+    ],
+    relatedServices: {
+      heading: 'القدرات المطبّقة هنا',
+      items: [
+        { name: 'هندسة البرمجيات — SaaS متعدّد المستأجرين، خدمات مصغّرة، نشر سيادي', href: '/services/software-engineering/' },
+        { name: 'الأمن السيبراني — SOC 2، ISO 27001، ضوابط وصول بدرجة تدقيق',         href: '/services/cybersecurity/' },
+        { name: 'السحابة و DevOps — Kubernetes، على الموقع، سحابة محلية منظمة',       href: '/services/cloud/' },
+        { name: 'الاستشارات التقنية — تقييم استبدال/تغليف/إعادة بناء',                  href: '/services/consulting/' },
+      ],
+    },
+    relatedInsights: {
+      heading: 'اقرأ بعد ذلك',
+      items: [
+        { name: 'الذكاء الاصطناعي للرئيس التقني — إطار اعتماد عملي',  href: '/insights/ai-cto/' },
+        { name: 'ERP — شراء مقابل بناء، وتكلفة الخطأ',                href: '/insights/erp/' },
+        { name: 'رؤية 2030 — ما يشتريه استثمار الذكاء الاصطناعي',     href: '/insights/vision-2030/' },
+      ],
+    },
     publishedAt: 'مايو 2026',
     readTime:    '22 دقيقة قراءة',
     pages:       '36 صفحة',
@@ -344,12 +440,14 @@ export default function InsightBankingPage() {
       { '@type': 'Thing', name: 'Banking software modernization' },
       { '@type': 'Thing', name: 'Core banking replacement' },
       { '@type': 'Thing', name: 'Corporate cash management software' },
-      { '@type': 'Thing', name: 'SATIM CIB EDAHABIA integration' },
+      { '@type': 'Thing', name: 'ISO 20022 migration' },
+      { '@type': 'Thing', name: 'Real-time payments architecture' },
       { '@type': 'Thing', name: 'Banking regulatory reporting' },
-      { '@type': 'Thing', name: 'Banking data sovereignty' },
+      { '@type': 'Thing', name: 'Banking data sovereignty DORA' },
     ],
-    audience: { '@type': 'BusinessAudience', audienceType: 'Bank CIO, Retail Banking Head, Corporate Banking Head, Treasury Director, Fintech Founder' },
+    audience: { '@type': 'BusinessAudience', audienceType: 'Bank CIO, COO, Retail Banking Head, Corporate Banking Head, Treasury Director, Fintech Founder' },
   };
+
 
   const breadcrumbs = [
     { name: 'Home',     url: 'https://www.symloop.com/' },
@@ -360,11 +458,12 @@ export default function InsightBankingPage() {
   return (
     <>
       <SEO
-        title={`${c.title} — Symloop Insights`}
-        description={c.dek}
-        keywords="banking software development, core banking modernization, core banking replacement, banking software company Algeria, banking software development Morocco, banking software MENA, corporate cash management software, cash management banque, logiciel gestion cash banque, treasury management system, payment factory bank, SATIM integration, CIB integration Algeria, EDAHABIA integration, BaridiMob integration, ARTS gateway Algeria, banking SWIFT integration, AML CFT software, regulatory reporting bank, banking data sovereignty, sovereign banking software, on-premise banking software, banking software developer Algiers, banking software developer Casablanca, fintech development MENA, mobile banking app development, banking microservices, banking API platform, open banking Algeria, KYC software bank, banking fraud detection, retail banking software, corporate banking software, ledger system bank, Temenos alternative, FLEXCUBE alternative, Misys alternative, banking software outsourcing, nearshore banking software, symloop insights"
+        title={c.titleSeo}
+        description={c.dekSeo}
+        keywords="banking software development, core banking modernization, core banking replacement, banking software company, custom banking software, corporate cash management software, treasury management system, ISO 20022 migration, payment factory bank, SWIFT integration banking, real-time payments architecture, faster payments, FedNow integration, SEPA Instant integration, AML CFT software, regulatory reporting bank, Basel IV reporting, IFRS 9 reporting, DORA compliance banking, banking data sovereignty, sovereign banking software, on-premise banking software, fintech development, mobile banking app development, banking microservices, banking API platform, open banking PSD2, KYC software bank, banking fraud detection, retail banking software, corporate banking software, ledger system bank, Temenos alternative, FLEXCUBE alternative, Mambu alternative, Thought Machine alternative, banking software outsourcing, nearshore banking engineering, banking engineering MENA, symloop insights"
         type="article"
         structuredData={articleLd}
+        faq={c.faq}
         breadcrumbs={breadcrumbs}
         image="/insights/cover-banking.jpg"
       />
@@ -456,6 +555,66 @@ export default function InsightBankingPage() {
               ))}
             </ul>
           </motion.aside>
+
+          {/* ── FAQ — answers high-intent queries, gets us into "People Also Ask" ─ */}
+          {c.faq && c.faq.length > 0 && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-20 mb-16">
+              <motion.div variants={fadeUp} className="flex items-baseline gap-4 mb-10">
+                <span className="font-mono text-[11px] tracking-[0.15em] text-white/30">FAQ</span>
+                <h2 className="text-2xl lg:text-3xl font-light tracking-tight text-white leading-tight">
+                  {isRtl ? 'أسئلة يطرحها مدراء البنوك' : (locale === 'fr' ? 'Questions des DSI bancaires' : 'Questions bank executives ask')}
+                </h2>
+              </motion.div>
+              <div className="space-y-8 ps-0 lg:ps-10 border-t border-white/[0.06] pt-8">
+                {c.faq.map((f, i) => (
+                  <motion.div key={i} variants={fadeUp} className="border-b border-white/[0.06] pb-8 last:border-0">
+                    <h3 className="text-lg lg:text-xl font-normal text-white mb-3 leading-snug">{f.q}</h3>
+                    <p className="text-base lg:text-lg text-white/65 leading-relaxed">{f.a}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.section>
+          )}
+
+          {/* ── Related capabilities — internal linking compounds topical authority ─ */}
+          {c.relatedServices && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-20 mb-16">
+              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.relatedServices.heading}</span>
+                <span className="h-px flex-1 bg-white/10" />
+              </motion.div>
+              <ul className="space-y-px bg-white/[0.06]">
+                {c.relatedServices.items.map((item) => (
+                  <motion.li key={item.href} variants={fadeUp}>
+                    <Link href={item.href} className="group flex items-start justify-between gap-6 bg-black p-6 hover:bg-white/[0.02] transition-colors">
+                      <span className="text-base lg:text-lg text-white/75 group-hover:text-white transition-colors leading-snug font-light">{item.name}</span>
+                      <ArrowRight className="w-4 h-4 mt-1.5 text-white/30 group-hover:text-white/70 group-hover:translate-x-1 transition-all shrink-0" strokeWidth={1.5} />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
+
+          {/* ── Related insights — keep readers on site, signal topical clustering ─ */}
+          {c.relatedInsights && (
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true, margin: '-50px' }} variants={stagger} className="mt-16 mb-12">
+              <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.relatedInsights.heading}</span>
+                <span className="h-px flex-1 bg-white/10" />
+              </motion.div>
+              <ul className="space-y-px bg-white/[0.06]">
+                {c.relatedInsights.items.map((item) => (
+                  <motion.li key={item.href} variants={fadeUp}>
+                    <Link href={item.href} className="group flex items-start justify-between gap-6 bg-black p-6 hover:bg-white/[0.02] transition-colors">
+                      <span className="text-base lg:text-lg text-white/75 group-hover:text-white transition-colors leading-snug font-light">{item.name}</span>
+                      <ArrowRight className="w-4 h-4 mt-1.5 text-white/30 group-hover:text-white/70 group-hover:translate-x-1 transition-all shrink-0" strokeWidth={1.5} />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
         </article>
 
         <section className="border-t border-white/[0.06]">
