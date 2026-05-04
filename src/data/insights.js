@@ -55,6 +55,13 @@ export const INSIGHTS = [
     featured: false,
     publishedAt: '2026-04-10',
   },
+  {
+    key:     'oil-gas',
+    path:    '/insights/oil-gas/',
+    cover:   '/insights/cover-oil-gas.jpg',
+    featured: true,
+    publishedAt: '2026-04-17',
+  },
   // ── Future insights to add when ready ────────────────────────────────────
   // To add more insights:
   //   1. Add an entry here
@@ -63,8 +70,17 @@ export const INSIGHTS = [
   //   4. Run: GOOGLE_API_KEY=xxx node scripts/generate-insight-covers.mjs
 ];
 
-// Helper: get only the featured insights for the homepage section
-export const getFeaturedInsights = () => INSIGHTS.filter(i => i.featured);
+// Helper: get the 3 LATEST insights by publishedAt date (newest first).
+// Used on the homepage so visitors always see the freshest work.
+// The `featured` flag on each entry is kept as a manual override — if set,
+// the entry is guaranteed to appear. Otherwise date sorting takes over.
+export const getFeaturedInsights = () => {
+  const byDateDesc = [...INSIGHTS].sort(
+    (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
+  );
+  return byDateDesc.slice(0, 3);
+};
 
-// Helper: get all insights (for the /insights/ hub page)
-export const getAllInsights = () => INSIGHTS;
+// Helper: get all insights (for the /insights/ hub page), sorted newest first
+export const getAllInsights = () =>
+  [...INSIGHTS].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));

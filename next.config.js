@@ -21,10 +21,24 @@ const nextConfig = {
   reactStrictMode: true,
 
   // ═══════════════════════════════════════
-  // 301 REDIRECTS — Fix 404s in Google Search Console
+  // 301 REDIRECTS — Fix 404s + www→non-www + .html → clean URLs
   // ═══════════════════════════════════════
   async redirects() {
     return [
+      // ── www → non-www (canonical host) ──
+      // Forces www.symloop.com/* → symloop.com/* so Google indexes one host only.
+      // Without this rule, GSC was treating www.* as a separate origin and split rankings.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.symloop.com' }],
+        destination: 'https://symloop.com/:path*',
+        permanent: true,
+      },
+
+      // ── Stray /index.html artifacts (kill the duplicate of homepage) ──
+      { source: '/index.html', destination: '/', permanent: true },
+      { source: '/:locale(en|fr|ar)/index.html', destination: '/:locale/', permanent: true },
+
       // ── Old blog slugs that no longer exist ──
       { source: '/blog/hebergement-cloud-algerie/', destination: '/blog/cloud-computing-algerie-2024/', permanent: true },
       { source: '/blog/developpement-ecommerce-algerie-2024/', destination: '/blog/ecommerce-algerie-paiement-cib-edahabia-2024/', permanent: true },
@@ -51,12 +65,13 @@ const nextConfig = {
       { source: '/ecommerce-algerie/', destination: '/blog/ecommerce-algerie-paiement-cib-edahabia-2024/', permanent: true },
 
       // ── Old service slugs ──
+      // Note: /services/iot/ removed from this list — there is now a dedicated
+      // editorial /services/iot.jsx page that must not be redirected.
       { source: '/services/sites-web/', destination: '/services/creation-site-web-ecommerce-mena/', permanent: true },
       { source: '/services/developpement-mobile/', destination: '/services/developpement-application-mobile-flutter-mena/', permanent: true },
       { source: '/services/logiciel/', destination: '/services/developpement-logiciel-sur-mesure-mena/', permanent: true },
       { source: '/services/hebergement/', destination: '/services/solutions-iot-esp32-objets-connectes-mena/', permanent: true },
       { source: '/services/ecommerce/', destination: '/services/creation-site-web-ecommerce-mena/', permanent: true },
-      { source: '/services/iot/', destination: '/services/solutions-iot-esp32-objets-connectes-mena/', permanent: true },
 
       // ── Catch common misspellings / old patterns ──
       { source: '/blog/developpement-web-algerie/', destination: '/blog/developpement-site-web-algerie-2026/', permanent: true },

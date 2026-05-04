@@ -96,7 +96,7 @@ const MobileMenu = ({ isOpen, onClose, onContactClick }) => {
   const navItems = [
     { label: t('navigation.home'), link: '/' },
     { label: t('navigation.services'), link: '/services' },
-    { label: t('navigation.clientsPartners'), link: '/#clients-partners' },
+    { label: t('navigation.clientsPartners'), link: '/case-studies' },
     { label: t('navigation.insights', { defaultValue: 'Insights' }), link: '/insights' },
   ];
 
@@ -260,7 +260,7 @@ export default function Header() {
               {[
                 { label: t('navigation.home'), link: '/' },
                 { label: t('navigation.services'), link: '/services' },
-                { label: t('navigation.clientsPartners'), link: '/#clients-partners' },
+                { label: t('navigation.clientsPartners'), link: '/case-studies' },
                 { label: t('navigation.insights', { defaultValue: 'Insights' }), link: '/insights' },
               ].map((item) => (
                 <Link

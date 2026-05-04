@@ -1665,6 +1665,12 @@
           "title": "L'entreprise 2030 — pourquoi l'IA n'est pas optionnelle pour les économies Vision.",
           "description": "Vision 2030 saoudienne, digitalisation algérienne, Smart Government UAE — chaque économie MENA parie sur 2030. Les entreprises qui survivent intègrent l'IA maintenant, pas en 2029.",
           "meta": "28 pages · 16 min de lecture"
+        },
+        "oil-gas": {
+          "kind": "Étude sectorielle",
+          "title": "Transformation IT pétrole et gaz — du verrouillage fournisseur au contrôle indépendant.",
+          "description": "Pourquoi les opérateurs MENA migrent des architectures AMS et DCS propriétaires vers des systèmes PLC indépendants qu'ils possèdent réellement. Un guide terrain pour les DSI et directeurs OT.",
+          "meta": "32 pages · 20 min de lecture"
         }
       }
     },

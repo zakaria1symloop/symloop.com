@@ -1665,6 +1665,12 @@
           "title": "The 2030 company — why AI is not optional for Vision economies.",
           "description": "Saudi Vision 2030, Algeria's digitalization, UAE Smart Government — every MENA economy bets on 2030. The companies that survive build AI into operations now, not in 2029.",
           "meta": "28 pages · 16 min read"
+        },
+        "oil-gas": {
+          "kind": "Industry brief",
+          "title": "Oil and gas IT transformation — from vendor lock-in to independent control.",
+          "description": "Why MENA operators are moving from proprietary AMS and DCS architectures to independent PLC systems they actually own. A field guide for CIOs and OT directors.",
+          "meta": "32 pages · 20 min read"
         }
       }
     },
