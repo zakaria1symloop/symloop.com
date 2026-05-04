@@ -80,15 +80,28 @@ export default function Document(props) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://symloop.com",
+              "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
+              "@id": "https://www.symloop.com/#organization",
               "name": "Symloop Technology",
-              "alternateName": ["Symloop", "Symloop Technology", "Nearshore Software Development Algeria", "Software Development Company Africa", "App Development Agency MENA", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب", "شركة تطوير برمجيات الجزائر"],
-              "url": "https://symloop.com",
-              "logo": "https://symloop.com/sym-logo.png",
-              "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
-              "description": "Software development company headquartered in Algeria. Custom software engineering, AI/ML, mobile app development, cloud migration, ERP/CRM, IoT, cybersecurity. Nearshore alternative to European and American agencies — international standards, 60-70% lower cost. Delivering across Africa, MENA, Europe and the Gulf since 2012.",
+              "legalName": "Symloop Technology",
+              "alternateName": ["Symloop", "Symloop Technology", "Nearshore Software Development Algeria", "Software Development Company Africa", "App Development Agency MENA", "Banking Software Engineering MENA", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب", "شركة تطوير برمجيات الجزائر"],
+              "slogan": "Engineering-led software, applied AI, and industrial systems — delivered from Algeria to clients across Africa, MENA, Europe, and the Gulf.",
+              "url": "https://www.symloop.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.symloop.com/sym-logo.png",
+                "width": 512,
+                "height": 128
+              },
+              "image": "https://www.symloop.com/assets/symloop-algeria-it-company.png",
+              "description": "Software engineering firm headquartered in Algiers. Custom software development, applied AI / machine learning, mobile engineering, cloud and DevOps, ERP and SaaS platforms, industrial IoT, cybersecurity, and government digitization. International-grade engineering at nearshore cost. Delivering across Africa, MENA, Europe and the Gulf since 2012.",
               "foundingDate": "2012",
+              "founder": {
+                "@type": "Person",
+                "name": "Zakaria Iken",
+                "jobTitle": "Founder and CEO",
+                "url": "https://www.linkedin.com/in/zakaria-iken/"
+              },
               "telephone": "+213549575512",
               "email": "contact@symloop.com",
               "address": {
@@ -133,7 +146,15 @@ export default function Document(props) {
                 "geoRadius": "2000000"
               },
               "knowsLanguage": ["French", "Arabic", "English"],
-              "knowsAbout": ["Custom Software Development", "Mobile App Development", "Artificial Intelligence", "Machine Learning", "Cloud Migration", "DevOps", "ERP Implementation", "Digital Transformation", "Cybersecurity", "IoT", "Software Development Outsourcing", "Nearshore Development", "Fintech Software"],
+              "knowsAbout": ["Custom Software Development", "Mobile App Development", "Artificial Intelligence", "Machine Learning", "Computer Vision", "Natural Language Processing", "LLM Integration", "MLOps", "Cloud Migration", "Cloud Architecture", "DevOps", "Kubernetes", "ERP Implementation", "Core Banking Modernization", "Corporate Cash Management Software", "ISO 20022 Migration", "Real-time Payments Architecture", "Hotel Management Software", "Property Management System", "Channel Manager", "Direct Booking Engine", "Digital Transformation", "Government Digitization", "Sovereign Cloud", "National Identity Infrastructure", "Inter-Ministerial Data Exchange", "Cybersecurity", "SOC 2 Compliance", "ISO 27001", "DORA Compliance", "Industrial IoT", "SCADA Modernization", "Oil and Gas IT", "DCS to PLC Migration", "Software Development Outsourcing", "Nearshore Development", "Fintech Software"],
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "Industry Recognition",
+                  "name": "Clutch 5.0/5.0 verified profile",
+                  "url": "https://clutch.co/profile/symloop-technology"
+                }
+              ],
               "sameAs": [
                 "https://www.facebook.com/symloop",
                 "https://www.linkedin.com/company/symloop-technology/",
@@ -153,10 +174,19 @@ export default function Document(props) {
                 }
               },
               "award": [
+                "Clutch 5.0/5.0 — verified client reviews",
                 "Top IT Company MENA 2023",
                 "Best Software Development Company MENA 2022",
                 "Excellence in Digital Transformation 2021"
               ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "10",
+                "reviewCount": "10"
+              },
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
                 "minValue": 20,
