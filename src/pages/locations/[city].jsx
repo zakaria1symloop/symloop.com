@@ -479,10 +479,21 @@ export default function CityPage() {
 
 export async function getStaticPaths() {
   // Cities that have dedicated static pages or directories are excluded here
-  // so they don't conflict with the dynamic route at build time:
-  //   - "setif" → src/pages/locations/setif.jsx (editorial city page)
-  //   - "alger" → src/pages/locations/alger/ (directory with 8 service pages)
-  const staticOverrides = new Set(['setif', 'alger']);
+  // so they don't conflict with the dynamic route at build time. Each of these
+  // has its own editorial wilaya page in src/pages/locations/<slug>.jsx (or
+  // alger/index.jsx for the capital, which also has service-specific subpages).
+  const staticOverrides = new Set([
+    'alger',         // src/pages/locations/alger/index.jsx + 8 service subpages
+    'setif',         // src/pages/locations/setif.jsx
+    'oran',          // src/pages/locations/oran.jsx
+    'constantine',   // src/pages/locations/constantine.jsx
+    'annaba',        // src/pages/locations/annaba.jsx
+    'tlemcen',       // src/pages/locations/tlemcen.jsx
+    'bejaia',        // src/pages/locations/bejaia.jsx
+    'blida',         // src/pages/locations/blida.jsx
+    // tizi-ouzou and ouargla have dedicated pages but are not in cityData,
+    // so they don't need to be excluded from this getStaticPaths.
+  ]);
   const cities = Object.keys(cityData).filter(c => !staticOverrides.has(c));
   const locales = ['fr', 'en', 'ar'];
 
