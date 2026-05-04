@@ -25,15 +25,8 @@ const nextConfig = {
   // ═══════════════════════════════════════
   async redirects() {
     return [
-      // ── www → non-www (canonical host) ──
-      // Forces www.symloop.com/* → symloop.com/* so Google indexes one host only.
-      // Without this rule, GSC was treating www.* as a separate origin and split rankings.
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.symloop.com' }],
-        destination: 'https://symloop.com/:path*',
-        permanent: true,
-      },
+      // ── Host canonicalization is handled by Vercel (symloop.com → www.symloop.com).
+      //    Do NOT add an inverse rule here — it would create a redirect loop.
 
       // ── Stray /index.html artifacts (kill the duplicate of homepage) ──
       { source: '/index.html', destination: '/', permanent: true },

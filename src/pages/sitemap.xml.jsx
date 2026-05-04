@@ -8,7 +8,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const SITE_URL = 'https://symloop.com';
+const SITE_URL = 'https://www.symloop.com';
 const LOCALES = ['en', 'fr', 'ar'];
 const DEFAULT_LOCALE = 'en';
 const PAGES_DIR = path.join(process.cwd(), 'src', 'pages');

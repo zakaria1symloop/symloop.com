@@ -16,7 +16,8 @@ const fs = require('fs');
 const path = require('path');
 
 // ─── Configuration ──────────────────────────────────────────────────
-const HOST = 'symloop.com';
+// Production canonical is www.symloop.com (Vercel redirects symloop.com → www).
+const HOST = 'www.symloop.com';
 const KEY = 'e9f4a1b2c3d5e6f7a8b9c0d1e2f3a4b5';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
