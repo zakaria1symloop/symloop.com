@@ -1671,6 +1671,24 @@
           "title": "Oil and gas IT transformation — from vendor lock-in to independent control.",
           "description": "Why MENA operators are moving from proprietary AMS and DCS architectures to independent PLC systems they actually own. A field guide for CIOs and OT directors.",
           "meta": "32 pages · 20 min read"
+        },
+        "banking": {
+          "kind": "Industry brief",
+          "title": "Banking software modernization — what Algerian and MENA banks build now, what they buy, what they replace.",
+          "description": "Field guide for bank CIOs evaluating core banking replacement, cash management software, SATIM/CIB integration, regulatory reporting, and data sovereignty.",
+          "meta": "36 pages · 22 min read"
+        },
+        "hospitality": {
+          "kind": "Industry brief",
+          "title": "Hospitality engineering — from PMS lock-in to direct-booking conversion.",
+          "description": "How MENA hotel groups recover OTA commission, modernize PMS architecture, ship faster direct-booking engines, and own the channel manager layer.",
+          "meta": "34 pages · 20 min read"
+        },
+        "government": {
+          "kind": "Industry brief",
+          "title": "Government digitization — engineering sovereign public services for Algeria and MENA.",
+          "description": "Field guide for ministry CIOs on e-services architecture, inter-ministerial data exchange, biometric identity, sovereign cloud, and audit-grade transparency.",
+          "meta": "38 pages · 23 min read"
         }
       }
     },

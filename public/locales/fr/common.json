@@ -1671,6 +1671,24 @@
           "title": "Transformation IT pétrole et gaz — du verrouillage fournisseur au contrôle indépendant.",
           "description": "Pourquoi les opérateurs MENA migrent des architectures AMS et DCS propriétaires vers des systèmes PLC indépendants qu'ils possèdent réellement. Un guide terrain pour les DSI et directeurs OT.",
           "meta": "32 pages · 20 min de lecture"
+        },
+        "banking": {
+          "kind": "Étude sectorielle",
+          "title": "Modernisation des logiciels bancaires — ce que les banques algériennes et MENA construisent maintenant, ce qu'elles achètent, ce qu'elles remplacent.",
+          "description": "Guide terrain pour les DSI bancaires sur le remplacement du core banking, le logiciel de gestion cash, l'intégration SATIM/CIB, le reporting réglementaire et la souveraineté des données.",
+          "meta": "36 pages · 22 min de lecture"
+        },
+        "hospitality": {
+          "kind": "Étude sectorielle",
+          "title": "Ingénierie hôtellerie — du verrouillage PMS à la conversion en réservation directe.",
+          "description": "Comment les groupes hôteliers MENA récupèrent la commission OTA, modernisent l'architecture PMS, livrent des moteurs de réservation directe plus rapides et possèdent la couche channel manager.",
+          "meta": "34 pages · 20 min de lecture"
+        },
+        "government": {
+          "kind": "Étude sectorielle",
+          "title": "Digitalisation de l'administration — ingénierie de services publics souverains pour l'Algérie et MENA.",
+          "description": "Guide terrain pour les DSI ministériels sur l'architecture e-services, l'échange de données interministériel, l'identité biométrique, le cloud souverain et la transparence d'audit.",
+          "meta": "38 pages · 23 min de lecture"
         }
       }
     },

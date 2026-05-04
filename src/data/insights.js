@@ -62,6 +62,27 @@ export const INSIGHTS = [
     featured: true,
     publishedAt: '2026-04-17',
   },
+  {
+    key:     'banking',
+    path:    '/insights/banking/',
+    cover:   '/insights/cover-banking.jpg',
+    featured: true,
+    publishedAt: '2026-05-04',
+  },
+  {
+    key:     'hospitality',
+    path:    '/insights/hospitality/',
+    cover:   '/insights/cover-hospitality.jpg',
+    featured: true,
+    publishedAt: '2026-05-04',
+  },
+  {
+    key:     'government',
+    path:    '/insights/government/',
+    cover:   '/insights/cover-government.jpg',
+    featured: true,
+    publishedAt: '2026-05-04',
+  },
   // ── Future insights to add when ready ────────────────────────────────────
   // To add more insights:
   //   1. Add an entry here
