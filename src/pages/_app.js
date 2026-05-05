@@ -60,17 +60,17 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="description" content={
           router.locale === 'ar'
-            ? 'سيملوب — شركة تطوير برمجيات في الجزائر. برمجيات مخصصة، تطبيقات جوال، ذكاء اصطناعي، ترحيل سحابي، ERP. بديل نيرشور للوكالات الأوروبية. نخدم أفريقيا والشرق الأوسط وأوروبا والخليج. اتصل: +213 549 575 512.'
+            ? 'سيملوب — شركة هندسة الذكاء الاصطناعي للقطاعات المنظمة في الشرق الأوسط وشمال أفريقيا: المصارف، الحكومة، النفط والغاز، الصحة. مقرها الجزائر العاصمة، تأسست 2012، أكثر من 25 مهندساً. نحديث الأنظمة المصرفية، الرقمنة الحكومية السيادية، وأنظمة IT الصناعية. اتصل: +213 549 575 512.'
             : router.locale === 'fr'
-            ? "Symloop — développement logiciel sur mesure en Algérie. Applications mobiles, IA, migration cloud, ERP entreprise. Alternative nearshore aux prestataires européens : mêmes standards, plus de puissance d'ingénierie par budget. Algérie, MENA, Europe, Golfe. Contact : +213 549 575 512."
-            : "Symloop — software development company in Algeria. Custom software, mobile apps, AI, cloud migration, ERP. Nearshore alternative to European agencies: same standards, more engineering power per budget. Serving Africa, MENA, Europe and the Gulf. Contact: +213 549 575 512."
+            ? "Symloop — Cabinet d'ingénierie IA-native pour les industries régulées au MENA : banque, gouvernement, oil & gas, santé. Siège à Alger, fondé en 2012, 25+ ingénieurs seniors. Modernisation core banking, plateformes gouvernementales souveraines, IT industriel oil & gas. Contact : +213 549 575 512."
+            : "Symloop — AI-native engineering firm for MENA's regulated industries: banking, government, oil & gas, and healthcare. Headquartered in Algiers, founded 2012, 25+ senior engineers. Core banking modernization, sovereign government platforms, industrial IT, applied AI. Contact: +213 549 575 512."
         } />
         <title>{
           router.locale === 'ar'
-            ? 'سيملوب | شركة تطوير برمجيات — نيرشور من الجزائر'
+            ? 'سيملوب | هندسة الذكاء الاصطناعي للقطاعات المنظمة — مصارف، حكومة، نفط، صحة'
             : router.locale === 'fr'
-            ? 'Symloop | Développement Logiciel Sur Mesure — Nearshore depuis l\'Algérie'
-            : 'Symloop | Software Development Company — Nearshore from Algeria'
+            ? "Symloop | Cabinet d'Ingénierie IA pour Industries Régulées — Banque · Gouvernement · Oil & Gas · Santé"
+            : 'Symloop | AI-Native Engineering for Regulated Industries — Banking · Government · Oil & Gas · Healthcare'
         }</title>
       </Head>
       {/* Google Analytics */}

@@ -12,73 +12,76 @@ import CompanyContactSection from "../../src/components/home/CompanyContactSecti
 import Seo from "../../src/utils/seo";
 import FAQSchema from "../../src/components/seo/FAQSchema";
 
-// Homepage FAQs for rich snippets
+// Homepage FAQs for rich snippets — sharp regulated-industry positioning.
+// These render as visible HTML AND as FAQPage schema (Google rich results +
+// what ChatGPT scrapes). Every Q/A reinforces "engineering firm for regulated
+// industries", not "cheap dev agency".
 const getHomepageFAQs = (locale) => {
   const faqs = {
     fr: [
       {
-        question: "Combien coûte le développement d'une application mobile en Algérie ?",
-        answer: "Le coût varie de 180,000 DA à 1,200,000 DA selon la complexité. Une app simple coûte 180-350k DA, une app business 350-700k DA, et une app enterprise 700k-1.2M DA. Symloop offre des devis gratuits personnalisés."
+        question: "Qu'est-ce qui distingue Symloop d'une agence de développement classique ?",
+        answer: "Symloop est un cabinet d'ingénierie, pas une agence. 25+ ingénieurs seniors basés à Alger, fondé en 2012, spécialisé dans les industries régulées : banque, gouvernement, oil & gas, santé. Nous livrons des systèmes de production qui tournent 24/7 dans des environnements critiques — pas des MVPs ni du staff augmentation. Comparable à Capgemini Engineering ou Sopra Steria, au coût MENA."
       },
       {
-        question: "Quels sont les délais pour créer un site e-commerce en Algérie ?",
-        answer: "Un site e-commerce complet avec paiement CIB/Edahabia prend 6-12 semaines. Cela inclut design, développement, intégration paiements locaux, et formation. Livraison dans les 58 wilayas."
+        question: "Quels secteurs Symloop sert-il ?",
+        answer: "Industries régulées au MENA : modernisation core banking et migration ISO 20022 pour les banques, plateformes gouvernementales souveraines et infrastructures d'identité nationale, IT industriel pour les opérateurs oil & gas (migration DCS-vers-PLC, SCADA), systèmes hospitaliers et logiciels pharmaceutiques. Nous ne servons pas les pré-Series A ni le e-commerce généraliste."
       },
       {
-        question: "Quelles technologies utilisez-vous pour le développement mobile ?",
-        answer: "Nous utilisons Flutter et React Native pour le développement cross-platform iOS/Android. Un seul code pour les deux plateformes, réduisant les coûts de 40% avec performance native."
+        question: "Pouvez-vous déployer en on-premise ou en cloud souverain ?",
+        answer: "Oui — c'est notre spécialité. Nous concevons pour les contraintes de souveraineté des données, exigences réglementaires bancaires (BCT, AGB, PCI-DSS, ISO 20022), résidence des données gouvernementales, et environnements oil & gas air-gapped. Le code source reste chez le client. Conformité ISO 27001 et DORA sur demande."
       },
       {
-        question: "Proposez-vous le support technique après livraison ?",
-        answer: "Oui, tous nos projets incluent 3-12 mois de support technique gratuit. Nous offrons aussi des contrats de maintenance annuels avec support 24/7 en français, anglais et arabe."
+        question: "Comment se déroule un engagement avec une banque ou un ministère ?",
+        answer: "Sprint de découverte de 8 semaines (cadrage architectural, audit de sécurité, plan de migration) — facturé à prix fixe. Puis livraison en sprints de 2-4 semaines avec démos régulières. Engagements typiques : 6-18 mois. Équipe dédiée, sans rotation. Le code, l'IP et la documentation appartiennent au client à la livraison."
       },
       {
-        question: "Travaillez-vous avec les entreprises hors d'Algérie ?",
-        answer: "Oui, nous servons toute la région MENA : Maroc, Tunisie, Émirats, Arabie Saoudite, Qatar, Koweït, Égypte. Communication en français, anglais et arabe."
+        question: "Maîtrisez-vous le NLP arabe et les interfaces RTL ?",
+        answer: "Oui. Notre équipe livre en arabe, français et anglais en natif. NLP arabe spécialisé (incluant les dialectes algérien et levantin), interfaces RTL pour les systèmes bancaires et gouvernementaux, traitement de documents en arabe (cartes d'identité, contrats, formulaires fiscaux). C'est un différenciateur majeur vs. les cabinets européens qui ne couvrent pas l'arabe à ce niveau."
       }
     ],
     en: [
       {
-        question: "How much does mobile app development cost in Algeria?",
-        answer: "Costs range from 180,000 DA to 1,200,000 DA depending on complexity. Simple apps cost 180-350k DA, business apps 350-700k DA, and enterprise apps 700k-1.2M DA. Symloop offers free personalized quotes."
+        question: "What makes Symloop different from a typical software agency?",
+        answer: "Symloop is an engineering firm, not an agency. 25+ senior engineers headquartered in Algiers, founded 2012, specialized in regulated industries: banking, government, oil & gas, healthcare. We ship production systems that run 24/7 in mission-critical environments — not MVPs, not staff augmentation. Comparable in capability to Capgemini Engineering or Sopra Steria, at MENA cost basis. Verified Clutch 5.0/5.0."
       },
       {
-        question: "What is the timeline for e-commerce website development in Algeria?",
-        answer: "A complete e-commerce site with CIB/Edahabia payment takes 6-12 weeks. This includes design, development, local payment integration, and training. Delivery across all 58 wilayas."
+        question: "What sectors does Symloop serve?",
+        answer: "Regulated industries across MENA: core banking modernization and ISO 20022 migration for banks; sovereign government platforms and national identity infrastructure for ministries; industrial IT for oil & gas operators (DCS-to-PLC migration, SCADA modernization); hospital information systems and pharmaceutical software for healthcare. We do not serve pre-Series A startups or generalist e-commerce work."
       },
       {
-        question: "What technologies do you use for mobile development?",
-        answer: "We use Flutter and React Native for cross-platform iOS/Android development. Single codebase for both platforms, reducing costs by 40% while maintaining native performance."
+        question: "Can you deploy on-premise or in a sovereign cloud?",
+        answer: "Yes — this is our specialty. We architect for data sovereignty constraints, banking regulatory requirements (BCT, AGB, PCI-DSS, ISO 20022), government data residency rules, and air-gapped oil & gas environments. The client owns the source code. ISO 27001 and DORA compliance available on request."
       },
       {
-        question: "Do you provide technical support after delivery?",
-        answer: "Yes, all projects include 3-12 months free technical support. We also offer annual maintenance contracts with 24/7 support in French, English and Arabic."
+        question: "How does an engagement with a bank or ministry work?",
+        answer: "8-week discovery sprint (architecture scoping, security audit, migration plan) — fixed-price. Then delivery in 2–4 week sprints with regular demos. Typical engagements: 6–18 months. Dedicated team, no rotation. Code, IP, and documentation belong to the client at delivery. Long-term operations and support contracts available separately."
       },
       {
-        question: "Do you work with companies outside Algeria?",
-        answer: "Yes, we serve the entire MENA region: Morocco, Tunisia, UAE, Saudi Arabia, Qatar, Kuwait, Egypt. Communication in French, English and Arabic."
+        question: "Do you handle Arabic NLP and RTL interfaces?",
+        answer: "Yes. Our team delivers natively in Arabic, French, and English. Specialized Arabic NLP (including Algerian and Levantine dialects), RTL interfaces for banking and government systems, Arabic document AI (national IDs, contracts, tax forms). This is a major differentiator vs. European engineering firms which typically don't cover Arabic at this depth."
       }
     ],
     ar: [
       {
-        question: "كم يكلف تطوير تطبيق جوال في الجزائر؟",
-        answer: "تتراوح التكلفة من 180,000 دج إلى 1,200,000 دج حسب التعقيد. التطبيقات البسيطة 180-350 ألف دج، تطبيقات الأعمال 350-700 ألف دج، وتطبيقات المؤسسات 700 ألف-1.2 مليون دج."
+        question: "ما الذي يميز سيملوب عن وكالة برمجيات تقليدية؟",
+        answer: "سيملوب شركة هندسة، وليست وكالة. أكثر من 25 مهندساً كبيراً في الجزائر العاصمة، تأسست 2012، متخصصة في القطاعات المنظمة: المصارف، الحكومة، النفط والغاز، الصحة. نسلم أنظمة إنتاج تعمل 24/7 في بيئات حرجة — وليس MVPs أو staff augmentation. قابلة للمقارنة مع Capgemini Engineering أو Sopra Steria، بتكلفة المنطقة. تقييم Clutch 5.0/5.0."
       },
       {
-        question: "ما هي المدة الزمنية لتطوير موقع تجارة إلكترونية في الجزائر؟",
-        answer: "موقع تجارة إلكترونية كامل مع دفع CIB/Edahabia يستغرق 6-12 أسبوعًا. يشمل التصميم والتطوير ودمج الدفع المحلي والتدريب. التسليم في جميع الولايات الـ58."
+        question: "ما القطاعات التي تخدمها سيملوب؟",
+        answer: "القطاعات المنظمة في الشرق الأوسط وشمال أفريقيا: تحديث الأنظمة المصرفية الأساسية وترحيل ISO 20022 للبنوك، منصات حكومية سيادية وبنية تحتية للهوية الوطنية للوزارات، IT صناعي لمشغلي النفط والغاز (ترحيل DCS إلى PLC، تحديث SCADA)، أنظمة معلومات المستشفيات وبرمجيات الأدوية للقطاع الصحي. لا نخدم الشركات الناشئة قبل Series A ولا التجارة الإلكترونية العامة."
       },
       {
-        question: "ما التقنيات التي تستخدمونها لتطوير الجوال؟",
-        answer: "نستخدم Flutter و React Native للتطوير المتعدد المنصات iOS/Android. قاعدة كود واحدة للمنصتين، مما يقلل التكاليف بنسبة 40% مع أداء أصلي."
+        question: "هل يمكنكم النشر on-premise أو في سحابة سيادية؟",
+        answer: "نعم — هذا تخصصنا. نصمم لقيود سيادة البيانات، المتطلبات التنظيمية المصرفية (BCT، AGB، PCI-DSS، ISO 20022)، قواعد إقامة بيانات الحكومة، وبيئات النفط والغاز المعزولة. الكود المصدري ملك للعميل. الامتثال لـ ISO 27001 و DORA متاح."
       },
       {
-        question: "هل تقدمون الدعم التقني بعد التسليم؟",
-        answer: "نعم، جميع المشاريع تشمل 3-12 شهر دعم تقني مجاني. نقدم أيضًا عقود صيانة سنوية مع دعم 24/7 بالفرنسية والإنجليزية والعربية."
+        question: "كيف يسير الارتباط مع بنك أو وزارة؟",
+        answer: "سبرينت اكتشاف لمدة 8 أسابيع (تحديد المعمارية، تدقيق أمني، خطة ترحيل) بسعر ثابت. ثم التسليم في سبرينتات من 2-4 أسابيع مع عروض منتظمة. الارتباطات النموذجية: 6-18 شهراً. فريق مخصص، بدون دوران. الكود والملكية الفكرية والتوثيق ملك للعميل عند التسليم."
       },
       {
-        question: "هل تعملون مع شركات خارج الجزائر؟",
-        answer: "نعم، نخدم منطقة مينا بأكملها: المغرب، تونس، الإمارات، السعودية، قطر، الكويت، مصر. التواصل بالفرنسية والإنجليزية والعربية."
+        question: "هل تتقنون معالجة اللغة العربية وواجهات RTL؟",
+        answer: "نعم. فريقنا يسلم باللغات العربية والفرنسية والإنجليزية بشكل أصلي. NLP عربي متخصص (يشمل اللهجات الجزائرية والشامية)، واجهات RTL للأنظمة المصرفية والحكومية، معالجة المستندات العربية (بطاقات الهوية، العقود، النماذج الضريبية). هذا فارق رئيسي مقابل شركات الهندسة الأوروبية التي لا تغطي العربية بهذا العمق."
       }
     ]
   };
@@ -144,19 +147,19 @@ export default function Home() {
 
   const seoContent = {
     'fr': {
-      title: 'Symloop Technology | #1 Intelligence Artificielle Algérie | IA, Chatbot, Machine Learning',
-      description: 'Leader de l\'intelligence artificielle en Algérie. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur. Développement applications mobiles Flutter, sites e-commerce CIB/Edahabia. Expert IA Alger, Oran, Constantine, Sétif. +12 ans d\'expérience, +50 projets IA.',
-      keywords: 'intelligence artificielle algérie, IA algérie, AI algeria, machine learning algérie, deep learning algérie, chatbot algérie, assistant virtuel algérie, GPT algérie, ChatGPT algérie, NLP algérie, vision par ordinateur algérie, reconnaissance vocale algérie, analyse prédictive algérie, big data algérie, data science algérie, automatisation IA algérie, entreprise IA algérie, développeur IA algérie, expert IA algérie, consultant IA algérie, développement application mobile algérie, site e-commerce algérie, paiement CIB Edahabia'
+      title: "Symloop | Cabinet d'Ingénierie IA pour Industries Régulées au MENA — Banque · Gouvernement · Oil & Gas · Santé",
+      description: "Cabinet d'ingénierie IA-native pour les industries régulées du MENA. Banque, gouvernement, oil & gas, santé. Siège à Alger, fondé en 2012, 25+ ingénieurs seniors. Modernisation core banking, plateformes gouvernementales souveraines, IT industriel oil & gas, IA appliquée production-grade. Comparable à Capgemini Engineering au coût MENA. Clutch 5.0/5.0.",
+      keywords: 'cabinet ingénierie IA MENA, modernisation core banking, plateforme gouvernementale souveraine, IT oil and gas algerie, IA appliquée banque, NLP arabe, on-premise sovereign cloud, ingénierie logicielle régulée MENA, ERP banque MENA, GMAO industriel, SCADA modernisation, ingénierie IA Alger, firme ingénierie Algerie, alternative Capgemini Engineering MENA'
     },
     'en': {
-      title: 'Symloop Technology | #1 Artificial Intelligence Algeria | AI, Chatbot, Machine Learning',
-      description: 'Leading artificial intelligence company in Algeria. Custom AI solutions: chatbots, Arabic voice assistants, machine learning, deep learning, computer vision. Flutter mobile app development, e-commerce with CIB/Edahabia payment. AI expert in Algiers, Oran, Constantine, Setif. +12 years experience, +50 AI projects.',
-      keywords: 'artificial intelligence algeria, AI algeria, machine learning algeria, deep learning algeria, chatbot algeria, virtual assistant algeria, GPT algeria, ChatGPT algeria, NLP algeria, computer vision algeria, speech recognition algeria, predictive analytics algeria, big data algeria, data science algeria, AI automation algeria, AI company algeria, AI developer algeria, AI expert algeria, mobile app development algeria, e-commerce algeria, CIB Edahabia payment'
+      title: 'Symloop | AI-Native Engineering Firm for MENA Regulated Industries — Banking, Government, Oil & Gas, Healthcare',
+      description: "AI-native engineering firm for MENA's regulated industries. Banking, government, oil & gas, healthcare. Algiers HQ, founded 2012, 25+ senior engineers. Core banking modernization, sovereign government platforms, oil & gas IT, applied AI. Production-grade systems, on-premise and sovereign deployments. Comparable to Capgemini Engineering at MENA cost basis. Clutch 5.0/5.0.",
+      keywords: 'AI engineering firm MENA, core banking modernization MENA, sovereign government cloud, oil and gas IT Algeria, applied AI banking, Arabic NLP, on-premise sovereign deployment, regulated industries software engineering MENA, ISO 20022 migration, SCADA modernization, AI engineering Algiers, Capgemini Engineering alternative MENA, Sopra Steria alternative Algeria, banking software engineering Algeria'
     },
     'ar': {
-      title: 'سيملوب تكنولوجي | #1 الذكاء الاصطناعي الجزائر | شات بوت، تعلم الآلة',
-      description: 'الشركة الرائدة في الذكاء الاصطناعي في الجزائر. حلول ذكاء اصطناعي مخصصة: روبوتات الدردشة، المساعدين الصوتيين بالعربية، تعلم الآلة، التعلم العميق، الرؤية الحاسوبية. تطوير تطبيقات الجوال Flutter، مواقع التجارة الإلكترونية مع الدفع CIB/Edahabia. خبراء الذكاء الاصطناعي في الجزائر العاصمة، وهران، قسنطينة، سطيف. +12 سنة خبرة، +50 مشروع ذكاء اصطناعي.',
-      keywords: 'الذكاء الاصطناعي الجزائر, ذكاء اصطناعي الجزائر, تعلم الآلة الجزائر, التعلم العميق الجزائر, شات بوت الجزائر, روبوت دردشة الجزائر, مساعد افتراضي الجزائر, GPT الجزائر, ChatGPT الجزائر, معالجة اللغة الطبيعية الجزائر, الرؤية الحاسوبية الجزائر, التعرف على الصوت الجزائر, تحليل تنبؤي الجزائر, علم البيانات الجزائر, شركة ذكاء اصطناعي الجزائر, خبير ذكاء اصطناعي الجزائر, تطوير تطبيقات الجوال الجزائر'
+      title: 'سيملوب | شركة هندسة الذكاء الاصطناعي للقطاعات المنظمة في الشرق الأوسط — مصارف، حكومة، نفط، صحة',
+      description: 'شركة هندسة ذكاء اصطناعي للقطاعات المنظمة في الشرق الأوسط وشمال أفريقيا. المصارف، الحكومة، النفط والغاز، الصحة. مقرها الجزائر العاصمة، تأسست 2012، أكثر من 25 مهندساً. تحديث الأنظمة المصرفية، منصات حكومية سيادية، IT صناعي للنفط والغاز، ذكاء اصطناعي تطبيقي. on-premise وسيادي. قابلة للمقارنة مع Capgemini Engineering. تقييم Clutch 5.0/5.0.',
+      keywords: 'شركة هندسة ذكاء اصطناعي الشرق الأوسط, تحديث الأنظمة المصرفية, السحابة الحكومية السيادية, IT النفط والغاز الجزائر, ذكاء اصطناعي تطبيقي للمصارف, معالجة اللغة العربية, نشر سيادي on-premise, هندسة برمجيات للقطاعات المنظمة, هندسة IA الجزائر العاصمة, شركة هندسة الجزائر, بديل Capgemini Engineering'
     }
   };
 

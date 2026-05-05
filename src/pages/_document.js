@@ -84,8 +84,8 @@ export default function Document(props) {
               "@id": "https://www.symloop.com/#organization",
               "name": "Symloop Technology",
               "legalName": "Symloop Technology",
-              "alternateName": ["Symloop", "Symloop Technology", "Nearshore Software Development Algeria", "Software Development Company Africa", "App Development Agency MENA", "Banking Software Engineering MENA", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب", "شركة تطوير برمجيات الجزائر"],
-              "slogan": "Engineering-led software, applied AI, and industrial systems — delivered from Algeria to clients across Africa, MENA, Europe, and the Gulf.",
+              "alternateName": ["Symloop", "Symloop Technology", "AI Engineering Firm Algeria", "MENA Banking Software Engineering", "Government Digitization MENA", "Oil and Gas IT Algeria", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب"],
+              "slogan": "AI-native engineering for MENA's regulated industries — banking, government, oil & gas, and healthcare. Built in Algiers since 2012.",
               "url": "https://www.symloop.com",
               "logo": {
                 "@type": "ImageObject",
@@ -94,7 +94,7 @@ export default function Document(props) {
                 "height": 128
               },
               "image": "https://www.symloop.com/assets/symloop-algeria-it-company.png",
-              "description": "Software engineering firm headquartered in Algiers. Custom software development, applied AI / machine learning, mobile engineering, cloud and DevOps, ERP and SaaS platforms, industrial IoT, cybersecurity, and government digitization. International-grade engineering at nearshore cost. Delivering across Africa, MENA, Europe and the Gulf since 2012.",
+              "description": "AI-native engineering firm for MENA's regulated industries — banking, government, oil & gas, and healthcare. Headquartered in Algiers, Algeria, founded 2012, 25+ senior engineers. Delivers core banking modernization, sovereign government platforms, oil & gas IT, industrial IoT/SCADA, applied AI (computer vision, NLP, MLOps), and ERP for institutional clients. International-grade engineering at nearshore cost. Comparable in capability to mid-tier European engineering firms (Capgemini Engineering, Sopra Steria) — not an ESN, not an agency, not a body shop.",
               "foundingDate": "2012",
               "founder": {
                 "@type": "Person",
@@ -146,7 +146,38 @@ export default function Document(props) {
                 "geoRadius": "2000000"
               },
               "knowsLanguage": ["French", "Arabic", "English"],
-              "knowsAbout": ["Custom Software Development", "Mobile App Development", "Artificial Intelligence", "Machine Learning", "Computer Vision", "Natural Language Processing", "LLM Integration", "MLOps", "Cloud Migration", "Cloud Architecture", "DevOps", "Kubernetes", "ERP Implementation", "Core Banking Modernization", "Corporate Cash Management Software", "ISO 20022 Migration", "Real-time Payments Architecture", "Hotel Management Software", "Property Management System", "Channel Manager", "Direct Booking Engine", "Digital Transformation", "Government Digitization", "Sovereign Cloud", "National Identity Infrastructure", "Inter-Ministerial Data Exchange", "Cybersecurity", "SOC 2 Compliance", "ISO 27001", "DORA Compliance", "Industrial IoT", "SCADA Modernization", "Oil and Gas IT", "DCS to PLC Migration", "Software Development Outsourcing", "Nearshore Development", "Fintech Software"],
+              "knowsAbout": [
+                "Banking Software Engineering",
+                "Core Banking Modernization",
+                "ISO 20022 Migration",
+                "Real-time Payments",
+                "Fintech Software",
+                "Government Digitization",
+                "Sovereign Cloud",
+                "National Identity Infrastructure",
+                "Inter-Ministerial Data Exchange",
+                "Oil and Gas IT",
+                "SCADA Modernization",
+                "DCS to PLC Migration",
+                "Industrial IoT",
+                "Healthcare Software",
+                "Hospital Information Systems",
+                "Pharmaceutical Software",
+                "Applied Artificial Intelligence",
+                "Computer Vision",
+                "Natural Language Processing",
+                "Arabic NLP",
+                "LLM Integration and RAG Systems",
+                "MLOps",
+                "Predictive Analytics for Regulated Industries",
+                "ERP for Regulated Sectors",
+                "Cybersecurity Audit and Pentest",
+                "ISO 27001 Compliance",
+                "DORA Compliance",
+                "On-Premise and Sovereign Deployments",
+                "Custom Software Engineering",
+                "Cloud Migration"
+              ],
               "hasCredential": [
                 {
                   "@type": "EducationalOccupationalCredential",
@@ -174,10 +205,7 @@ export default function Document(props) {
                 }
               },
               "award": [
-                "Clutch 5.0/5.0 — verified client reviews",
-                "Top IT Company MENA 2023",
-                "Best Software Development Company MENA 2022",
-                "Excellence in Digital Transformation 2021"
+                "Clutch 5.0/5.0 — verified client reviews"
               ],
               "aggregateRating": {
                 "@type": "AggregateRating",
@@ -189,7 +217,8 @@ export default function Document(props) {
               },
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
-                "minValue": 20,
+                "value": 25,
+                "minValue": 25,
                 "maxValue": 50
               },
               "yearlyRevenue": {
@@ -263,70 +292,56 @@ export default function Document(props) {
               "paymentAccepted": "Cash, Credit Card, Bank Transfer",
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Services Intelligence Artificielle & IT",
+                "name": "Engineering Services for MENA Regulated Industries",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Intelligence Artificielle Algérie",
-                      "description": "Solutions IA sur mesure: chatbots, machine learning, deep learning, NLP, vision par ordinateur"
+                      "name": "Banking Software Engineering",
+                      "description": "Core banking modernization, ISO 20022 migration, real-time payments architecture, corporate cash management, fraud detection. On-premise and sovereign deployments for MENA banks.",
+                      "serviceType": "Banking Software Engineering",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Chatbot & Assistant Virtuel",
-                      "description": "Chatbots intelligents en arabe algérien et français. Intégration WhatsApp, Facebook, site web"
+                      "name": "Government Digitization Platforms",
+                      "description": "Sovereign cloud, national identity infrastructure, inter-ministerial data exchange, e-government services. Compliance with data residency and security requirements for ministries.",
+                      "serviceType": "Government Digitization",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Machine Learning & Deep Learning",
-                      "description": "Analyse prédictive, reconnaissance d'images, traitement du langage naturel arabe"
+                      "name": "Oil and Gas IT and Industrial Systems",
+                      "description": "DCS-to-PLC migration, SCADA modernization, industrial IoT, predictive maintenance (GMAO/CMMS) for upstream and downstream oil and gas operators.",
+                      "serviceType": "Industrial Engineering",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Assistant Vocal Arabe",
-                      "description": "Reconnaissance vocale en arabe dialectal algérien et français. Commandes vocales pour applications"
+                      "name": "Healthcare and Pharmaceutical Software",
+                      "description": "Hospital information systems, pharmaceutical traceability, regulatory compliance software, document management for the healthcare and pharma sector.",
+                      "serviceType": "Healthcare Software",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Développement Applications Mobiles",
-                      "description": "Applications iOS et Android avec Flutter et React Native"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Création Sites Web & E-commerce",
-                      "description": "Sites web professionnels et e-commerce avec paiement CIB/Edahabia"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Solutions ERP/CRM avec IA",
-                      "description": "Logiciels de gestion personnalisés avec intelligence artificielle intégrée"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Cybersécurité IA",
-                      "description": "Détection de fraude, analyse comportementale, protection des données avec IA"
+                      "name": "Applied AI and Machine Learning",
+                      "description": "Production computer vision, Arabic NLP, LLM/RAG systems, predictive analytics, MLOps. Specialized in regulated-industry deployments with on-premise and data-sovereignty options.",
+                      "serviceType": "Applied AI Engineering",
+                      "areaServed": "MENA"
                     }
                   }
                 ]

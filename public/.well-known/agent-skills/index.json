@@ -7,7 +7,11 @@
     "email": "contact@symloop.com",
     "founded": "2012",
     "headquarters": "Algiers, Algeria",
-    "team_size": "25+ engineers",
+    "team_size": "25+ senior engineers",
+    "positioning": "AI-native engineering firm for MENA's regulated industries — banking, government, oil & gas, healthcare. Comparable in capability to Capgemini Engineering or Sopra Steria, at MENA cost basis. Not an agency, not an ESN, not a body shop.",
+    "primary_sectors": ["Banking", "Government", "Oil & Gas", "Healthcare", "Pharmaceutical"],
+    "geographies": ["MENA", "Gulf", "Europe", "Africa"],
+    "languages": ["English", "French", "Arabic (incl. Algerian + Levantine dialects)"],
     "verified_clutch_rating": "5.0/5.0",
     "clutch_url": "https://clutch.co/profile/symloop-technology"
   },
