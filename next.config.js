@@ -78,10 +78,21 @@ const nextConfig = {
   },
 
   // ═══════════════════════════════════════
-  // HEADERS — Security, caching, www→non-www
+  // HEADERS — Security, agent discovery (RFC 8288 Link headers), .well-known content-types
   // ═══════════════════════════════════════
   async headers() {
+    // RFC 8288 Link header value advertising the agent-discovery resources we publish.
+    // Multiple links concatenated in a single header per RFC 8288 §3.5.
+    const agentDiscoveryLink = [
+      '</.well-known/agent-skills/index.json>; rel="https://agentskills.io/rel/skills-index"; type="application/json"',
+      '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
+      '</.well-known/mcp/server-card.json>; rel="https://modelcontextprotocol.io/rel/server-card"; type="application/json"',
+      '</llms.txt>; rel="https://llmstxt.org/rel/llms"; type="text/plain"',
+      '</sitemap.xml>; rel="sitemap"; type="application/xml"',
+    ].join(', ');
+
     return [
+      // Global security + agent-discovery Link headers on every page
       {
         source: '/:path*',
         headers: [
@@ -90,6 +101,39 @@ const nextConfig = {
           { key: 'X-XSS-Protection', value: '1; mode=block' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+          { key: 'Link', value: agentDiscoveryLink },
+        ],
+      },
+      // RFC 9727 — application/linkset+json content-type for the API catalog
+      {
+        source: '/.well-known/api-catalog',
+        headers: [
+          { key: 'Content-Type', value: 'application/linkset+json; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=3600, must-revalidate' },
+        ],
+      },
+      // Agent skills index — application/json (per Agent Skills Discovery RFC v0.2.0)
+      {
+        source: '/.well-known/agent-skills/index.json',
+        headers: [
+          { key: 'Content-Type', value: 'application/json; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=3600, must-revalidate' },
+        ],
+      },
+      // MCP server card — application/json
+      {
+        source: '/.well-known/mcp/server-card.json',
+        headers: [
+          { key: 'Content-Type', value: 'application/json; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=3600, must-revalidate' },
+        ],
+      },
+      // SKILL.md files — text/markdown
+      {
+        source: '/.well-known/agent-skills/:skill/SKILL.md',
+        headers: [
+          { key: 'Content-Type', value: 'text/markdown; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=3600, must-revalidate' },
         ],
       },
     ];

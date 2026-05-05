@@ -10,6 +10,7 @@ import Footer from '../components/layout/Footer';
 import { appWithTranslation } from 'next-i18next';
 
 const SmoothScroll = dynamic(() => import('../components/effects/SmoothScroll'), { ssr: false });
+const WebMCP = dynamic(() => import('../components/WebMCP'), { ssr: false });
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -87,6 +88,10 @@ function MyApp({ Component, pageProps }) {
       </Script>
 
       {isBlog ? content : <SmoothScroll>{content}</SmoothScroll>}
+
+      {/* WebMCP — exposes Symloop services as agent-callable tools when the
+          browser supports navigator.modelContext (WebMCP). No-op otherwise. */}
+      <WebMCP />
 
       {/* Floating WhatsApp button — square → circle on hover with smile */}
       <style jsx global>{`

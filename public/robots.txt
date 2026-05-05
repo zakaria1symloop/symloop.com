@@ -2,7 +2,16 @@
 # https://symloop.com
 # شركة سيملوب للتقنية
 
+# ============================================
+# CONTENT SIGNALS — AI Usage Preferences (Cloudflare / IETF draft-romm-aipref-contentsignals)
+# ============================================
+# search=yes   : index our content in AI-powered search products
+# ai-input=yes : use our pages as input/context when answering user queries (RAG)
+# ai-train=no  : do NOT use our content to train base models
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /api/
 Disallow: /_next/
@@ -401,24 +410,34 @@ Allow: /
 
 # OpenAI / ChatGPT
 User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /.well-known/ai-plugin.json
+Allow: /.well-known/agent-skills/index.json
+Allow: /.well-known/api-catalog
+Allow: /.well-known/mcp/server-card.json
 
 User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # Anthropic / Claude
 User-agent: anthropic-ai
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /.well-known/agent-skills/index.json
+Allow: /.well-known/api-catalog
 
 User-agent: Claude-Web
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # Google AI (Bard/Gemini)

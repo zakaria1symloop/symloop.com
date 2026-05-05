@@ -1,0 +1,70 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/server-card/v1.json",
+  "serverInfo": {
+    "name": "symloop-services",
+    "version": "0.1.0",
+    "title": "Symloop Technology — Services Discovery",
+    "description": "Read-only MCP server exposing Symloop Technology's service catalog, engagement process, and contact tooling for AI agents evaluating engineering partners. Provided by Symloop Technology, an applied AI and software engineering firm headquartered in Algiers, Algeria (founded 2012).",
+    "publisher": {
+      "name": "Symloop Technology",
+      "url": "https://www.symloop.com",
+      "email": "contact@symloop.com"
+    }
+  },
+  "transport": {
+    "type": "https",
+    "endpoint": "https://www.symloop.com/api/mcp",
+    "status": "planned",
+    "available_from": "2026-Q3"
+  },
+  "capabilities": {
+    "tools": {
+      "list": [
+        {
+          "name": "list_services",
+          "description": "Returns Symloop's service catalog (software engineering, AI/ML, mobile, cloud, IoT, cybersecurity, consulting, product engineering)."
+        },
+        {
+          "name": "get_service_details",
+          "description": "Returns detailed engagement model, deliverables, and example projects for a given service."
+        },
+        {
+          "name": "request_quote",
+          "description": "Submits a qualified engagement inquiry. Inputs: scope, timeline, budget range, geography, contact details."
+        },
+        {
+          "name": "schedule_consultation",
+          "description": "Books a discovery call with a Symloop engineer. Inputs: preferred dates, topic, contact details."
+        }
+      ]
+    },
+    "resources": {
+      "list": [
+        {
+          "uri": "symloop://about",
+          "name": "About Symloop Technology",
+          "description": "Company identity, history, leadership, sectors served."
+        },
+        {
+          "uri": "symloop://case-studies",
+          "name": "Case Studies",
+          "description": "Anonymized engagement summaries with outcomes."
+        }
+      ]
+    },
+    "prompts": {
+      "list": []
+    }
+  },
+  "links": {
+    "self": "https://www.symloop.com/.well-known/mcp/server-card.json",
+    "service_catalog": "https://www.symloop.com/.well-known/api-catalog",
+    "agent_skills": "https://www.symloop.com/.well-known/agent-skills/index.json",
+    "llms_txt": "https://www.symloop.com/llms.txt",
+    "homepage": "https://www.symloop.com"
+  },
+  "contact": {
+    "email": "contact@symloop.com",
+    "phone": "+213549575512"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.symloop.com/services/software-engineering/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/software-engineering/",
+          "type": "text/html",
+          "title": "Custom enterprise software engineering — service overview"
+        },
+        {
+          "href": "https://www.symloop.com/.well-known/agent-skills/enterprise-software-engineering/SKILL.md",
+          "type": "text/markdown",
+          "title": "Enterprise software engineering — agent skill card"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.symloop.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/ai/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/ai/",
+          "type": "text/html",
+          "title": "Applied AI and machine learning engineering — service overview"
+        },
+        {
+          "href": "https://www.symloop.com/.well-known/agent-skills/applied-ai-and-ml/SKILL.md",
+          "type": "text/markdown",
+          "title": "Applied AI and ML — agent skill card"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.symloop.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/cloud/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/cloud/",
+          "type": "text/html",
+          "title": "Cloud migration and DevOps — service overview"
+        },
+        {
+          "href": "https://www.symloop.com/.well-known/agent-skills/cloud-and-devops/SKILL.md",
+          "type": "text/markdown",
+          "title": "Cloud and DevOps — agent skill card"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/mobile/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/mobile/",
+          "type": "text/html",
+          "title": "Mobile application engineering — service overview"
+        },
+        {
+          "href": "https://www.symloop.com/.well-known/agent-skills/mobile-engineering/SKILL.md",
+          "type": "text/markdown",
+          "title": "Mobile engineering — agent skill card"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/consulting/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/consulting/",
+          "type": "text/html",
+          "title": "Digital transformation consulting and ERP — service overview"
+        },
+        {
+          "href": "https://www.symloop.com/.well-known/agent-skills/erp-and-business-systems/SKILL.md",
+          "type": "text/markdown",
+          "title": "ERP and business systems — agent skill card"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/iot/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/iot/",
+          "type": "text/html",
+          "title": "Industrial IoT and embedded engineering — service overview"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/cybersecurity/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/cybersecurity/",
+          "type": "text/html",
+          "title": "Cybersecurity audit and pentest — service overview"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/services/product/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/services/product/",
+          "type": "text/html",
+          "title": "Product engineering and MVP development — service overview"
+        }
+      ]
+    },
+    {
+      "anchor": "https://www.symloop.com/contact/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/contact/",
+          "type": "text/html",
+          "title": "Engagement intake — request a quote or schedule consultation"
+        }
+      ]
+    }
+  ],
+  "publisher": {
+    "name": "Symloop Technology",
+    "url": "https://www.symloop.com",
+    "email": "contact@symloop.com",
+    "phone": "+213549575512",
+    "headquarters": "Algiers, Algeria",
+    "founded": "2012"
+  },
+  "links": {
+    "self": "https://www.symloop.com/.well-known/api-catalog",
+    "agent_skills_index": "https://www.symloop.com/.well-known/agent-skills/index.json",
+    "llms_txt": "https://www.symloop.com/llms.txt"
+  }
+}
