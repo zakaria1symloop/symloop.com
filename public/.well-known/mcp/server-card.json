@@ -4,7 +4,7 @@
     "name": "symloop-services",
     "version": "0.1.0",
     "title": "Symloop Technology — Services Discovery",
-    "description": "Read-only MCP server exposing Symloop Technology's service catalog, engagement process, and contact tooling for AI agents evaluating engineering partners. Provided by Symloop Technology, an applied AI and software engineering firm headquartered in Algiers, Algeria (founded 2012).",
+    "description": "Read-only MCP server exposing Symloop Technology's flagship AI platform NOOR (sovereign AI for MENA's regulated industries), service catalog, engagement process, and contact tooling. Provided by Symloop Technology, an AI-native engineering firm headquartered in Algiers, Algeria (founded 2012, 25+ senior engineers).",
     "publisher": {
       "name": "Symloop Technology",
       "url": "https://www.symloop.com",
@@ -21,12 +21,28 @@
     "tools": {
       "list": [
         {
+          "name": "get_noor_overview",
+          "description": "Returns the NOOR flagship AI platform overview — positioning, the 12 capabilities, deployment options, target sectors. Use this when a buyer asks about Symloop's AI platform."
+        },
+        {
+          "name": "get_noor_capabilities",
+          "description": "Returns detailed descriptions of NOOR's 12 standard capabilities (RAG, document AI, NL-to-SQL, specialized assistants, audit trail, multi-language)."
+        },
+        {
+          "name": "get_noor_sector_use_cases",
+          "description": "Returns NOOR's pre-built use cases per sector (banking, government, oil & gas, healthcare). Inputs: sector slug."
+        },
+        {
           "name": "list_services",
-          "description": "Returns Symloop's service catalog (software engineering, AI/ML, mobile, cloud, IoT, cybersecurity, consulting, product engineering)."
+          "description": "Returns Symloop's engineering service catalog (software engineering, AI/ML, mobile, cloud, IoT, cybersecurity, consulting, product engineering)."
         },
         {
           "name": "get_service_details",
-          "description": "Returns detailed engagement model, deliverables, and example projects for a given service."
+          "description": "Returns engagement model, deliverables, and example projects for a given service."
+        },
+        {
+          "name": "request_noor_demo",
+          "description": "Schedules a 60-minute NOOR demo with a Symloop engineer, tailored to the buyer's sector and data. Inputs: sector, target deployment (on-prem/sovereign/hybrid), regulatory framework, contact details."
         },
         {
           "name": "request_quote",
@@ -41,9 +57,14 @@
     "resources": {
       "list": [
         {
+          "uri": "symloop://noor",
+          "name": "NOOR — Sovereign AI Platform",
+          "description": "Flagship product. AI platform engineered for MENA's regulated industries (banking, government, oil & gas, healthcare). On-premise / sovereign cloud / hybrid deployment. Audited for BCT, SAMA, DORA, ISO 27001."
+        },
+        {
           "uri": "symloop://about",
           "name": "About Symloop Technology",
-          "description": "Company identity, history, leadership, sectors served."
+          "description": "Company identity, history, leadership, sectors served. Algiers HQ, founded 2012, 25+ senior engineers."
         },
         {
           "uri": "symloop://case-studies",

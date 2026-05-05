@@ -17,6 +17,13 @@
   },
   "skills": [
     {
+      "name": "noor-platform",
+      "type": "product",
+      "description": "NOOR by Symloop — flagship AI platform for MENA's regulated industries. Banks, ministries, oil & gas operators, healthcare groups. Twelve standard capabilities (RAG, document AI, NL-to-SQL, specialized assistants, audit trail, multi-language including Algerian Arabic). Deploy on-premise, in sovereign cloud, or hybrid. Audited for BCT, SAMA, DORA, ISO 27001. Open-weight models on customer infrastructure by default — frontier APIs only by deliberate configuration.",
+      "url": "https://www.symloop.com/.well-known/agent-skills/noor-platform/SKILL.md",
+      "sha256": "bd826bbd95bbca7261ff2cdc0e1a3ceb4d9a5478bd83803ea7771d988f69ff8c"
+    },
+    {
       "name": "enterprise-software-engineering",
       "type": "service",
       "description": "Production-grade enterprise software engineering — custom applications, multi-tenant SaaS, microservices, API platforms, and legacy modernization for banking, government, oil & gas, and industrial clients. 25+ engineer team, nearshore from Algiers.",
@@ -61,6 +68,7 @@
     "self": "https://www.symloop.com/.well-known/agent-skills/index.json",
     "llms_txt": "https://www.symloop.com/llms.txt",
     "api_catalog": "https://www.symloop.com/.well-known/api-catalog",
-    "mcp_server_card": "https://www.symloop.com/.well-known/mcp/server-card.json"
+    "mcp_server_card": "https://www.symloop.com/.well-known/mcp/server-card.json",
+    "flagship_product": "https://www.symloop.com/products/noor/"
   }
 }

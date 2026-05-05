@@ -339,6 +339,13 @@ Allow: /fr/locations/
 Allow: /ar/locations/
 Allow: /en/locations/
 
+# NOOR — flagship AI platform (high priority for AI search engines)
+Allow: /products/noor/
+Allow: /fr/products/noor/
+Allow: /ar/products/noor/
+Allow: /en/products/noor/
+Allow: /.well-known/agent-skills/noor-platform/SKILL.md
+
 # ============================================
 # SEARCH ENGINE CRAWLERS
 # ============================================

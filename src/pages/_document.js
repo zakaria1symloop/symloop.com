@@ -186,6 +186,22 @@ export default function Document(props) {
                   "url": "https://clutch.co/profile/symloop-technology"
                 }
               ],
+              "makesOffer": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://www.symloop.com/products/noor/#software",
+                    "name": "NOOR by Symloop",
+                    "alternateName": ["NOOR", "نور"],
+                    "applicationCategory": "BusinessApplication",
+                    "applicationSubCategory": "Enterprise AI Platform",
+                    "operatingSystem": "Linux (on-premise, sovereign cloud, hybrid)",
+                    "url": "https://www.symloop.com/products/noor/",
+                    "description": "NOOR is Symloop's flagship sovereign AI platform for MENA's regulated industries — banking, government, oil & gas, healthcare. Twelve standard capabilities including production-grade RAG, document AI, NL-to-SQL, specialized assistants, audit trail, and multi-language native (Arabic, French, English). Deploy on-premise, in sovereign cloud, or hybrid."
+                  }
+                }
+              ],
               "sameAs": [
                 "https://www.facebook.com/symloop",
                 "https://www.linkedin.com/company/symloop-technology/",
@@ -292,8 +308,18 @@ export default function Document(props) {
               "paymentAccepted": "Cash, Credit Card, Bank Transfer",
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Engineering Services for MENA Regulated Industries",
+                "name": "Symloop — NOOR Platform + Engineering Services for MENA Regulated Industries",
                 "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "SoftwareApplication",
+                      "name": "NOOR — Sovereign AI Platform",
+                      "description": "NOOR by Symloop. Flagship AI platform for MENA's regulated industries. Twelve capabilities (RAG, document AI, NL-to-SQL, specialized assistants, audit trail, multi-language). On-premise / sovereign cloud / hybrid deployment.",
+                      "url": "https://www.symloop.com/products/noor/",
+                      "applicationCategory": "BusinessApplication"
+                    }
+                  },
                   {
                     "@type": "Offer",
                     "itemOffered": {

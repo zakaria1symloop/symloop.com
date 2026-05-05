@@ -1,6 +1,28 @@
 {
   "linkset": [
     {
+      "anchor": "https://www.symloop.com/products/noor/",
+      "service-doc": [
+        {
+          "href": "https://www.symloop.com/products/noor/",
+          "type": "text/html",
+          "title": "NOOR by Symloop — flagship sovereign AI platform for MENA regulated industries"
+        },
+        {
+          "href": "https://www.symloop.com/.well-known/agent-skills/noor-platform/SKILL.md",
+          "type": "text/markdown",
+          "title": "NOOR — agent skill card"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.symloop.com/llms.txt",
+          "type": "text/plain",
+          "title": "Symloop identity + NOOR product description"
+        }
+      ]
+    },
+    {
       "anchor": "https://www.symloop.com/services/software-engineering/",
       "service-doc": [
         {
