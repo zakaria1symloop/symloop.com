@@ -211,6 +211,8 @@ export async function getServerSideProps({ res }) {
   // 8. PRODUCTS
   // ═══════════════════════════════════════
   const productPages = [
+    // NOOR — flagship AI platform, weekly changefreq + 0.95 priority
+    { path: '/products/noor/',                 changefreq: 'weekly',  priority: '0.95' },
     { path: '/products/asa/',                  changefreq: 'monthly', priority: '0.7' },
     { path: '/products/logistics-management/', changefreq: 'monthly', priority: '0.7' },
     { path: '/products/symtv-light/',          changefreq: 'monthly', priority: '0.7' },

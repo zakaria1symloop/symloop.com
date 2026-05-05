@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import BusinessHeroSection from "../../src/components/home/BusinessHeroSection";
+import NoorSection from "../../src/components/home/NoorSection";
 import InsightsSection from "../../src/components/home/InsightsSection";
 import ServicesGrid from "../../src/components/home/ServicesGrid";
 import IndustriesGrid from "../../src/components/home/IndustriesGrid";
@@ -208,12 +209,13 @@ export default function Home() {
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-mena-it-company.png",
-              "description": "Symloop est une entreprise d'ingénierie logicielle et d'IA en Algérie. Solutions IA sur mesure (vision par ordinateur, NLP arabe et Darija, LLM, analyse prédictive), systèmes industriels, IoT, cloud et cybersécurité. Livraison en Algérie, MENA et Europe. Profil Clutch vérifié 5.0/5.0.",
-              "foundingDate": "2020",
+              "description": "Symloop Technology — AI-native engineering firm for MENA's regulated industries: banking, government, oil & gas, healthcare. Headquartered in Algiers, founded 2012, 25+ senior engineers. Sovereign AI platform (NOOR), core banking modernization, government digitization, industrial IT. Comparable to Capgemini Engineering at MENA cost basis. Verified Clutch 5.0/5.0.",
+              "foundingDate": "2012",
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
-                "minValue": 10,
-                "maxValue": 25
+                "value": 25,
+                "minValue": 25,
+                "maxValue": 50
               },
               "address": {
                 "@type": "PostalAddress",
@@ -286,6 +288,9 @@ export default function Home() {
       <div className="min-h-screen flex flex-col bg-black">
         {/* Business Hero Section - Revenue & Growth Focus */}
         <BusinessHeroSection />
+
+        {/* NOOR — flagship AI platform showcase (parity with Kabas / DALILE) */}
+        <NoorSection />
 
         {/* Section 2 — Insights / thought leadership (Accenture power slot) */}
         <InsightsSection />
