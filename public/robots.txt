@@ -549,14 +549,14 @@ Allow: /
 # SITEMAPS
 # ============================================
 
-# Dynamic sitemap (auto-generated, all pages + hreflang) — uses canonical www host
+# Dynamic sitemap — auto-generated at request time from src/pages/sitemap.xml.jsx,
+# covers all routes with hreflang alternates (en/fr/ar + x-default). This is
+# the single source of truth. Legacy static XML files removed 2026-05-09:
+# they were stale (last updated Dec 2025), referenced www URLs that 301-
+# redirected, and contained drift from the live filesystem (e.g. one had
+# "Sétif (Headquarters)" comments that were factually wrong). Multiple
+# Sitemap: directives confused Google's crawl prioritization.
 Sitemap: https://symloop.com/sitemap.xml
-
-# Legacy sitemaps (kept for backward compatibility)
-Sitemap: https://symloop.com/sitemapindex.xml
-Sitemap: https://symloop.com/sitemap-multilingual.xml
-Sitemap: https://symloop.com/sitemap-enhanced.xml
-Sitemap: https://symloop.com/sitemap-images.xml
 
 # For AI crawlers
 # llms.txt: https://symloop.com/llms.txt

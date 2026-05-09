@@ -9,7 +9,13 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { appWithTranslation } from 'next-i18next';
 
-const SmoothScroll = dynamic(() => import('../components/effects/SmoothScroll'), { ssr: false });
+// CRITICAL: ssr: false here was the single biggest SEO bug in the codebase —
+// it caused every non-blog page to ship with an EMPTY <body> in SSR (only
+// __NEXT_DATA__, no rendered React tree, no h1, no content). Google saw a
+// homogeneous, content-less site. SmoothScroll has been refactored to
+// lazy-load Lenis inside useEffect, so the component itself is SSR-safe and
+// we can drop the ssr: false flag.
+const SmoothScroll = dynamic(() => import('../components/effects/SmoothScroll'));
 const WebMCP = dynamic(() => import('../components/WebMCP'), { ssr: false });
 
 const SITE_URL = 'https://symloop.com';
@@ -74,28 +80,21 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* Default SEO meta tags — locale-aware so Arabic pages get Arabic description */}
+      {/* Per-page <title> and <meta name="description"> are intentionally NOT
+          set here. When _app.js emits them, they win the Next.js Head dedupe
+          race against page-level Heads, and every page renders the same
+          title — which is exactly what an SEO audit caught (every page
+          showing the same _app.js title in production). The fallback for
+          pages without their own title is the React/browser default, which
+          is acceptable; every editorial page already defines its own.
+
+          What _app.js KEEPS emitting: per-route canonical and the full
+          hreflang set, computed from router.asPath. These are the same
+          across all pages (one canonical per URL), so dedup is a non-issue,
+          and centralizing them here means every page gets them
+          automatically. */}
       <Head>
-        <meta name="description" content={
-          router.locale === 'ar'
-            ? 'سيملوب — شركة هندسة الذكاء الاصطناعي للقطاعات المنظمة في الشرق الأوسط وشمال أفريقيا: المصارف، الحكومة، النفط والغاز، الصحة. مقرها الجزائر العاصمة، تأسست 2012، أكثر من 25 مهندساً. نحديث الأنظمة المصرفية، الرقمنة الحكومية السيادية، وأنظمة IT الصناعية. اتصل: +213 549 575 512.'
-            : router.locale === 'fr'
-            ? "Symloop — Cabinet d'ingénierie IA-native pour les industries régulées au MENA : banque, gouvernement, oil & gas, santé. Siège à Alger, fondé en 2012, 25+ ingénieurs seniors. Modernisation core banking, plateformes gouvernementales souveraines, IT industriel oil & gas. Contact : +213 549 575 512."
-            : "Symloop — AI-native engineering firm for MENA's regulated industries: banking, government, oil & gas, and healthcare. Headquartered in Algiers, founded 2012, 25+ senior engineers. Core banking modernization, sovereign government platforms, industrial IT, applied AI. Contact: +213 549 575 512."
-        } key="meta-description" />
-        <title key="meta-title">{
-          router.locale === 'ar'
-            ? 'سيملوب | هندسة الذكاء الاصطناعي للقطاعات المنظمة — مصارف، حكومة، نفط، صحة'
-            : router.locale === 'fr'
-            ? "Symloop | Cabinet d'Ingénierie IA pour Industries Régulées — Banque · Gouvernement · Oil & Gas · Santé"
-            : 'Symloop | AI-Native Engineering for Regulated Industries — Banking · Government · Oil & Gas · Healthcare'
-        }</title>
-        {/* Self-referencing canonical for every page on every locale.
-            Pages may override by emitting their own <link rel="canonical" key="canonical" />. */}
         <link rel="canonical" href={canonicalUrl} key="canonical" />
-        {/* Hreflang set — required for every locale variant so Google
-            connects them as alternates instead of treating them as
-            duplicates. Includes self + x-default. */}
         {hreflangs.map(h => (
           <link key={`hreflang-${h.lang}`} rel="alternate" hrefLang={h.lang} href={h.href} />
         ))}
