@@ -27,15 +27,14 @@ const nextConfig = {
     return [
       // ── Host canonicalization is handled by Vercel (symloop.com → symloop.com).
       //    Do NOT add an inverse rule here — it would create a redirect loop.
-
-      // ── /en/* → /* — eliminate duplicate URLs caused by the default locale.
-      //    Since defaultLocale is 'en', Next.js i18n serves identical content
-      //    at both `/services/` and `/en/services/`. Google flags the prefixed
-      //    versions as "Crawled - currently not indexed" duplicates. The
-      //    `locale: false` on the source tells Next.js not to apply i18n
-      //    routing logic to this redirect rule itself.
-      { source: '/en/:path*', destination: '/:path*', permanent: true, locale: false },
-      { source: '/en',        destination: '/',        permanent: true, locale: false },
+      //
+      // ── /en/* redirects intentionally NOT added.
+      //    Tried `{ source: '/en/:path*', destination: '/:path*', locale: false }`
+      //    in commit 7e57b3a — broke the site with an infinite redirect loop
+      //    on `/` because Next.js i18n internally normalizes the default-locale
+      //    URL and the redirect rule re-fires. The /en/ duplicate-URL issue
+      //    needs to be solved via canonical tags + hreflang (already in
+      //    _app.js commit 2f16ef4) rather than HTTP redirects.
 
       // ── Stray /index.html artifacts (kill the duplicate of homepage) ──
       { source: '/index.html', destination: '/', permanent: true },
