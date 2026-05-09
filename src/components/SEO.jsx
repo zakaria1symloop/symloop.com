@@ -28,7 +28,21 @@ export default function SEO({
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
   const seoKeywords = keywords || defaultKeywords;
-  const seoImage = image.startsWith('http') ? image : `${baseUrl}${image}`;
+
+  // Dynamic OG image fallback — when the page does not pass `image`, generate a
+  // branded 1200×630 social card via the /api/og edge endpoint. Massive lift
+  // over the previous default (sym-logo.png at 256×256) for messaging-app and
+  // social preview cards. Pages can still override by passing image="..."
+  // explicitly. The default sentinel /images/og-default.jpg means "use the
+  // dynamic card."
+  const isDefaultImage = image === '/images/og-default.jpg' || !image;
+  const ogEyebrow = type === 'article'
+    ? 'Insight · Symloop Technology'
+    : 'AI-native engineering · MENA regulated industries';
+  const dynamicOg = `${baseUrl}/api/og?title=${encodeURIComponent(seoTitle.slice(0, 110))}&eyebrow=${encodeURIComponent(ogEyebrow)}`;
+  const seoImage = isDefaultImage
+    ? dynamicOg
+    : (image.startsWith('http') ? image : `${baseUrl}${image}`);
 
   // Hreflang for multilingual
   const hreflangs = [
