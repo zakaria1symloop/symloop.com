@@ -154,18 +154,29 @@ export default function SEO({
     }))
   } : null;
 
-  // FAQ Schema
-  const faqSchema = faq ? {
+  // FAQ Schema — accepts either { q, a } (the convention used across the
+  // editorial pages) or { question, answer } (legacy). Filters out malformed
+  // entries so we never ship FAQPage with empty Question/Answer objects —
+  // GSC flags those as "FAQ: invalid item detected" and they hurt the page's
+  // structured-data eligibility.
+  const faqMainEntity = faq && faq.length
+    ? faq
+        .map(item => {
+          const name = item.q || item.question;
+          const text = item.a || item.answer;
+          if (!name || !text) return null;
+          return {
+            '@type': 'Question',
+            name,
+            acceptedAnswer: { '@type': 'Answer', text },
+          };
+        })
+        .filter(Boolean)
+    : [];
+  const faqSchema = faqMainEntity.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faq.map(item => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer
-      }
-    }))
+    mainEntity: faqMainEntity,
   } : null;
 
   // Article Schema
