@@ -8,6 +8,33 @@ import { MessageCircle } from 'lucide-react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { appWithTranslation } from 'next-i18next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
+import { IBM_Plex_Sans_Arabic, JetBrains_Mono, Instrument_Serif } from 'next/font/google';
+
+// next/font self-hosts Google Fonts at build time — no render-blocking
+// <link href="fonts.googleapis.com">, no FOUT, zero CLS from font swap, and
+// fonts ship on the same origin (privacy + speed). Each call returns a
+// CSS variable name we attach to body so existing styles can reference it.
+const fontIbmPlex = IBM_Plex_Sans_Arabic({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['arabic', 'latin'],
+  variable: '--font-ibm-plex-arabic',
+  display: 'swap',
+});
+const fontMono = JetBrains_Mono({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
+  display: 'swap',
+});
+const fontSerif = Instrument_Serif({
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-instrument-serif',
+  display: 'swap',
+});
 
 // CRITICAL: ssr: false here was the single biggest SEO bug in the codebase —
 // it caused every non-blog page to ship with an EMPTY <body> in SSR (only
@@ -68,8 +95,12 @@ function MyApp({ Component, pageProps }) {
     return () => router.events.off('routeChangeComplete', handleRouteChange);
   }, [router.events]);
 
+  // Attach all three font CSS variables on the outermost wrapper so any
+  // descendant can resolve var(--font-ibm-plex-arabic) etc.
+  const fontVars = `${fontIbmPlex.variable} ${fontMono.variable} ${fontSerif.variable}`;
+
   const content = (
-    <div className="flex flex-col min-h-screen bg-white text-black">
+    <div className={`${fontVars} flex flex-col min-h-screen bg-white text-black`}>
       <Header />
       <main className="flex-1">
         <Component {...pageProps} />
@@ -118,6 +149,16 @@ function MyApp({ Component, pageProps }) {
       {/* WebMCP — exposes Symloop services as agent-callable tools when the
           browser supports navigator.modelContext (WebMCP). No-op otherwise. */}
       <WebMCP />
+
+      {/* Vercel Speed Insights — measures real-user Core Web Vitals
+          (LCP, INP, CLS) in production. Data feeds Vercel's dashboard
+          and Google Search Console's Core Web Vitals report. CWV is a
+          Google ranking signal. */}
+      <SpeedInsights />
+
+      {/* Vercel Web Analytics — first-party pageview + custom event
+          tracking. Privacy-respecting, no cookies, GDPR-friendly. */}
+      <Analytics />
 
       {/* Floating WhatsApp button — square → circle on hover with smile */}
       <style jsx global>{`

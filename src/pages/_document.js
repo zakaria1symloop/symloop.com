@@ -21,24 +21,18 @@ export default function Document(props) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Symloop Technology MENA" />
         
-        {/* DNS Prefetch for Performance */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        {/* DNS Prefetch for Performance — fonts are now self-hosted via
+            next/font/google in _app.js, so we no longer need fonts.googleapis
+            or fonts.gstatic preconnects. Removing those eliminates two
+            third-party origins from the critical path. */}
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-        
-        {/* Preconnect for Critical Resources */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        
-        {/* Google Fonts — ALL fonts loaded here (not in next/head on pages).
-            Arabic: IBM Plex Sans Arabic (premium, corporate, editorial).
-            display=swap ensures text renders immediately with fallback, then
-            swaps to the custom font once downloaded. */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
+
+        {/* Google Fonts are now bundled at build time via next/font/google
+            in src/pages/_app.js. They self-host on symloop.com (zero render-
+            blocking, zero FOUT, zero CLS from font swap, no third-party DNS
+            lookups). The render-blocking <link href="fonts.googleapis.com">
+            previously here was the single biggest CWV penalty on the site. */}
         
         {/* Web App Manifest */}
         <link rel="manifest" href="/manifest.json" />
