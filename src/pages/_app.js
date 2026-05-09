@@ -12,9 +12,27 @@ import { appWithTranslation } from 'next-i18next';
 const SmoothScroll = dynamic(() => import('../components/effects/SmoothScroll'), { ssr: false });
 const WebMCP = dynamic(() => import('../components/WebMCP'), { ssr: false });
 
+const SITE_URL = 'https://symloop.com';
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isBlog = router.pathname.startsWith('/blog/');
+
+  // Canonical + hreflang — computed once per render. Every page gets a
+  // self-referencing canonical and a complete hreflang set automatically,
+  // so missing-canonical and "Duplicate without user-selected canonical"
+  // never show up in Search Console for any page.
+  const locale = router.locale || 'en';
+  const defaultLocale = router.defaultLocale || 'en';
+  const path = (router.asPath || '/').split('?')[0].split('#')[0];
+  const localePrefix = locale === defaultLocale ? '' : `/${locale}`;
+  const canonicalUrl = `${SITE_URL}${localePrefix}${path}`;
+  const hreflangs = [
+    { lang: 'en',        href: `${SITE_URL}${path}` },
+    { lang: 'fr',        href: `${SITE_URL}/fr${path}` },
+    { lang: 'ar',        href: `${SITE_URL}/ar${path}` },
+    { lang: 'x-default', href: `${SITE_URL}${path}` },
+  ];
 
   // Disable browser's native scroll restoration + set lang/dir on <html>
   useEffect(() => {
@@ -64,14 +82,23 @@ function MyApp({ Component, pageProps }) {
             : router.locale === 'fr'
             ? "Symloop — Cabinet d'ingénierie IA-native pour les industries régulées au MENA : banque, gouvernement, oil & gas, santé. Siège à Alger, fondé en 2012, 25+ ingénieurs seniors. Modernisation core banking, plateformes gouvernementales souveraines, IT industriel oil & gas. Contact : +213 549 575 512."
             : "Symloop — AI-native engineering firm for MENA's regulated industries: banking, government, oil & gas, and healthcare. Headquartered in Algiers, founded 2012, 25+ senior engineers. Core banking modernization, sovereign government platforms, industrial IT, applied AI. Contact: +213 549 575 512."
-        } />
-        <title>{
+        } key="meta-description" />
+        <title key="meta-title">{
           router.locale === 'ar'
             ? 'سيملوب | هندسة الذكاء الاصطناعي للقطاعات المنظمة — مصارف، حكومة، نفط، صحة'
             : router.locale === 'fr'
             ? "Symloop | Cabinet d'Ingénierie IA pour Industries Régulées — Banque · Gouvernement · Oil & Gas · Santé"
             : 'Symloop | AI-Native Engineering for Regulated Industries — Banking · Government · Oil & Gas · Healthcare'
         }</title>
+        {/* Self-referencing canonical for every page on every locale.
+            Pages may override by emitting their own <link rel="canonical" key="canonical" />. */}
+        <link rel="canonical" href={canonicalUrl} key="canonical" />
+        {/* Hreflang set — required for every locale variant so Google
+            connects them as alternates instead of treating them as
+            duplicates. Includes self + x-default. */}
+        {hreflangs.map(h => (
+          <link key={`hreflang-${h.lang}`} rel="alternate" hrefLang={h.lang} href={h.href} />
+        ))}
       </Head>
       {/* Google Analytics */}
       <Script

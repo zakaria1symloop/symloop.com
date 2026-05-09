@@ -128,27 +128,13 @@ export async function getServerSideProps({ res }) {
     changefreq: 'weekly',
     priority: editorialServices.has(slug) ? '0.95' : '0.85',
   }));
-  // Plus the legacy slug-based service URLs (kept because they have rankings)
-  const legacyServiceSlugs = [
-    'developpement-logiciel-sur-mesure-mena',
-    'developpement-application-mobile-flutter-mena',
-    'creation-site-web-ecommerce-mena',
-    'solutions-iot-esp32-objets-connectes-mena',
-    'intelligence-artificielle-chatgpt-machine-learning-mena',
-    'cybersecurite-entreprise-protection-donnees-mena',
-    'custom-software-development-mena',
-    'flutter-mobile-app-development-mena',
-    'website-ecommerce-development-mena',
-    'iot-solutions-esp32-connected-objects-mena',
-    'artificial-intelligence-chatgpt-machine-learning-mena',
-    'enterprise-cybersecurity-data-protection-mena',
-  ];
-  const legacyServicePages = legacyServiceSlugs.map((slug) => ({
-    path: `/services/${slug}/`,
-    lastmod: today,
-    changefreq: 'weekly',
-    priority: '0.85',
-  }));
+  // Legacy /services/*-mena/ slugs were removed from the sitemap on 2026-05-09:
+  // they 308-redirect to canonical service URLs (e.g. /services/ai/),
+  // and Google flags redirected sitemap entries as "Page with redirect"
+  // and skips indexing them. The redirect targets ARE in the sitemap via
+  // serviceSlugs above, so no rankings are lost — the URLs themselves still
+  // exist and 308 to canonical, they just don't pollute the sitemap anymore.
+  const legacyServicePages = [];
 
   // ═══════════════════════════════════════
   // 6. SOLUTIONS — auto-discovered + legacy dynamic slugs

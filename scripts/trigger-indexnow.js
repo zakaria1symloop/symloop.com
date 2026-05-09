@@ -75,21 +75,11 @@ function buildAllUrls() {
   const serviceSlugs    = listSlugs(path.join(PAGES_DIR, 'services'));
   const solutionSlugs   = listSlugs(path.join(PAGES_DIR, 'solutions'));
 
-  // Legacy slug-based service pages (not files — handled by [slug].jsx)
-  const legacyServiceSlugs = [
-    'developpement-logiciel-sur-mesure-mena',
-    'developpement-application-mobile-flutter-mena',
-    'creation-site-web-ecommerce-mena',
-    'solutions-iot-esp32-objets-connectes-mena',
-    'intelligence-artificielle-chatgpt-machine-learning-mena',
-    'cybersecurite-entreprise-protection-donnees-mena',
-    'custom-software-development-mena',
-    'flutter-mobile-app-development-mena',
-    'website-ecommerce-development-mena',
-    'iot-solutions-esp32-connected-objects-mena',
-    'artificial-intelligence-chatgpt-machine-learning-mena',
-    'enterprise-cybersecurity-data-protection-mena',
-  ];
+  // Legacy /services/*-mena/ slugs removed 2026-05-09 — they 308-redirect to
+  // canonical service URLs and submitting redirected URLs to IndexNow wastes
+  // submissions and sends mixed signals to Bing. Canonical service URLs
+  // remain in serviceSlugs.
+  const legacyServiceSlugs = [];
 
   // Legacy dynamic solution slugs (handled by [slug].jsx)
   const dynamicSolutionSlugs = [
