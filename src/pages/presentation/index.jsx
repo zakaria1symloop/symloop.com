@@ -1,1329 +1,684 @@
-"use client";
-import { useState, useEffect, useCallback, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from "next/router";
-import Head from "next/head";
-import Link from "next/link";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import {
-  ChevronDown,
-  ChevronUp,
-  ArrowRight,
-  Code2,
-  Smartphone,
-  Brain,
-  Globe,
-  Users,
-  Target,
-  Sparkles,
-  Rocket,
-  Heart,
-  Shield,
-  Zap,
-  Phone,
-  Mail,
-  MapPin,
-  Home,
-  Quote,
-  Lightbulb
-} from "lucide-react";
+// ============================================================================
+// SYMLOOP — /presentation/ (About Symloop Technology)
+//
+// Editorial about-us page in the Stripe / Linear / Vercel mould — restraint,
+// precision, hairline borders, font-light, mono numerals. Long-form sections,
+// not a slideshow. Locale-aware (en/fr/ar) with native RTL. Schema-rich
+// (Organization + AboutPage + BreadcrumbList JSON-LD) for LLM and Google
+// indexing. Same visual DNA as /products/noor/, /insights/banking/.
+//
+// Section order:
+//   1. Hero          — eyebrow, statement title, dek, stat strip
+//   2. What we are   — three pillars
+//   3. Sectors       — banking, government, oil & gas, healthcare
+//   4. Team          — engineers + capabilities matrix
+//   5. How we work   — engagement model
+//   6. Footprint     — geography
+//   7. Founder note  — brief regulated-industries thesis
+//   8. Final CTA     — engagement intake
+// ============================================================================
 
-// Presentation content in 3 languages
-const content = {
-  fr: {
-    meta: {
-      title: "Symloop - Presentation | Innovation Digitale en Algerie",
-      description: "Decouvrez Symloop, votre partenaire technologique de confiance en Algerie. Solutions digitales sur mesure, expertise IA, et engagement envers l'excellence."
-    },
-    navigation: {
-      home: "Accueil",
-      skip: "Passer",
-      slide: "Diapositive"
-    },
-    slides: [
-      {
-        type: "cover",
-        title: "SYMLOOP",
-        subtitle: "L'Innovation Digitale",
-        tagline: "Transformer les idees en solutions numeriques",
-        cta: "Decouvrir notre histoire"
-      },
-      {
-        type: "about",
-        badge: "QUI SOMMES-NOUS",
-        title: "Votre Partenaire Technologique de Confiance",
-        paragraphs: [
-          "Symloop est une entreprise technologique algerienne fondee avec une vision claire : democratiser l'acces aux solutions digitales de haute qualite pour les entreprises de toutes tailles.",
-          "Basee a Alger, au coeur de l'Algerie, nous combinons expertise technique internationale et comprehension profonde du marche local pour creer des solutions qui font vraiment la difference."
-        ],
-        stats: [
-          { value: "2020", label: "Annee de creation" },
-          { value: "50+", label: "Projets realises" },
-          { value: "98%", label: "Clients satisfaits" },
-          { value: "24/7", label: "Support disponible" }
-        ]
-      },
-      {
-        type: "founder",
-        badge: "MOT DU FONDATEUR",
-        quote: "Notre mission est de construire un pont entre le potentiel enorme de l'Algerie et les possibilites infinies de la technologie. Chaque ligne de code que nous ecrivons, chaque solution que nous deployons, est un pas vers un avenir numerique plus brillant pour notre pays.",
-        name: "Fondateur & CEO",
-        company: "Symloop",
-        message: "Ensemble, construisons l'avenir numerique de l'Algerie."
-      },
-      {
-        type: "mission",
-        badge: "NOTRE MISSION",
-        title: "Accelerer la Transformation Digitale",
-        vision: {
-          title: "Vision",
-          text: "Devenir le leader de l'innovation technologique en Afrique du Nord, en creant des solutions qui inspirent et transforment."
-        },
-        mission: {
-          title: "Mission",
-          text: "Accompagner les entreprises algeriennes dans leur transformation digitale avec des solutions sur mesure, accessibles et performantes."
-        },
-        values: {
-          title: "Valeurs",
-          items: ["Innovation", "Excellence", "Integrite", "Collaboration"]
-        }
-      },
-      {
-        type: "services",
-        badge: "NOS SERVICES",
-        title: "Solutions Digitales Completes",
-        services: [
-          {
-            icon: "Code2",
-            title: "Developpement Web",
-            description: "Sites web et applications sur mesure avec les technologies les plus recentes."
-          },
-          {
-            icon: "Smartphone",
-            title: "Applications Mobiles",
-            description: "Apps iOS et Android natives ou cross-platform pour toucher tous vos utilisateurs."
-          },
-          {
-            icon: "Brain",
-            title: "Intelligence Artificielle",
-            description: "Chatbots, automatisation et solutions IA pour optimiser vos processus."
-          },
-          {
-            icon: "Globe",
-            title: "Transformation Digitale",
-            description: "Accompagnement complet dans votre transition vers le numerique."
-          }
-        ]
-      },
-      {
-        type: "values",
-        badge: "NOS VALEURS",
-        title: "Ce Qui Nous Guide",
-        values: [
-          {
-            icon: "Lightbulb",
-            title: "Innovation Continue",
-            description: "Nous explorons constamment de nouvelles technologies pour vous offrir le meilleur."
-          },
-          {
-            icon: "Heart",
-            title: "Passion du Client",
-            description: "Votre succes est notre priorite absolue. Nous ecoutons, comprenons et delivrons."
-          },
-          {
-            icon: "Shield",
-            title: "Qualite Sans Compromis",
-            description: "Chaque projet respecte les plus hauts standards de l'industrie."
-          },
-          {
-            icon: "Users",
-            title: "Esprit d'Equipe",
-            description: "Une equipe soudee et passionnee, prete a relever tous les defis."
-          }
-        ]
-      },
-      {
-        type: "impact",
-        badge: "NOTRE IMPACT",
-        title: "Des Resultats Concrets",
-        metrics: [
-          { value: "500K+", label: "Utilisateurs touches", suffix: "" },
-          { value: "15+", label: "Wilayas servies", suffix: "" },
-          { value: "40%", label: "Economies realisees", suffix: "avg" },
-          { value: "99.9%", label: "Uptime garanti", suffix: "" }
-        ],
-        testimonial: {
-          quote: "Symloop a transforme notre facon de travailler. Leur solution a revolutionne notre productivite.",
-          author: "Client Entreprise",
-          company: "Alger, Algerie"
-        }
-      },
-      {
-        type: "cta",
-        badge: "PRET A COMMENCER ?",
-        title: "Construisons Ensemble Votre Avenir Digital",
-        subtitle: "Contactez-nous pour discuter de votre projet et decouvrir comment nous pouvons vous aider a atteindre vos objectifs.",
-        buttons: {
-          primary: "Demander un Devis",
-          secondary: "Nous Contacter"
-        },
-        contact: {
-          phone: "+213 549 575 512",
-          email: "contact@symloop.com",
-          address: "Alger, Algerie"
-        }
-      }
-    ]
+import Link from 'next/link';
+import Head from 'next/head';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import {
+  ArrowUpRight,
+  ArrowRight,
+  ArrowLeft,
+  Building2,
+  Landmark,
+  Factory,
+  HeartPulse,
+  Code2,
+  Brain,
+  Smartphone,
+  Cloud,
+  Cpu,
+  Lock,
+  Server,
+  Workflow,
+  ShieldCheck,
+  ScrollText,
+  Compass,
+  Wrench,
+  MessageSquare,
+} from 'lucide-react';
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show:   { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+};
+const stagger = {
+  hidden: { opacity: 0 },
+  show:   { opacity: 1, transition: { staggerChildren: 0.06, delayChildren: 0.04 } },
+};
+
+// ─── Pillars (what we are) ───────────────────────────────────────────────
+const PILLARS = [
+  {
+    num: '01',
+    icon: Code2,
+    title_en: 'An engineering firm. Not an agency.',
+    title_fr: "Un cabinet d'ingénierie. Pas une agence.",
+    title_ar: 'شركة هندسية. وليست وكالة.',
+    body_en: 'Twenty-five senior engineers, salaried, in one office in Algiers. We do not subcontract. We do not flip projects between juniors. The same engineering lead who scopes a project ships it to production and operates it under SLA.',
+    body_fr: "Vingt-cinq ingénieurs seniors, salariés, dans un seul bureau à Alger. Pas de sous-traitance. Pas de projets jonglés entre juniors. Le même lead ingénierie qui cadre un projet le met en production et l'opère sous SLA.",
+    body_ar: 'خمسة وعشرون مهندساً بكبار الخبرات، موظفون، في مكتب واحد بالجزائر العاصمة. لا مقاولات من الباطن. لا تنقل المشاريع بين المبتدئين. نفس قائد الهندسة الذي يحدد نطاق المشروع يطلقه إلى الإنتاج ويشغله بموجب SLA.',
   },
+  {
+    num: '02',
+    icon: ShieldCheck,
+    title_en: "Regulated industries by design.",
+    title_fr: 'Industries régulées dès la conception.',
+    title_ar: 'القطاعات المنظمة بالتصميم.',
+    body_en: 'Banking, government, oil & gas, healthcare. Every system we build is designed from day one to pass BCT, SAMA, DORA, ISO 27001, HDS audits. Audit trails, access controls, on-prem deployment, and data residency are not features added later — they are the floor.',
+    body_fr: 'Banque, gouvernement, oil & gas, santé. Chaque système que nous construisons est conçu dès le premier jour pour passer les audits BCT, SAMA, DORA, ISO 27001, HDS. Pistes d\'audit, contrôles d\'accès, déploiement on-prem et résidence des données ne sont pas des fonctionnalités ajoutées après — c\'est le plancher.',
+    body_ar: 'المصارف والحكومة والنفط والغاز والصحة. كل نظام نبنيه مصمم من اليوم الأول لاجتياز عمليات تدقيق BCT و SAMA و DORA و ISO 27001 و HDS. مسارات التدقيق وعناصر التحكم في الوصول والنشر on-prem وإقامة البيانات ليست ميزات تُضاف لاحقاً — إنها الأساس.',
+  },
+  {
+    num: '03',
+    icon: Server,
+    title_en: 'Sovereign deployment by default.',
+    title_fr: 'Déploiement souverain par défaut.',
+    title_ar: 'النشر السيادي افتراضياً.',
+    body_en: 'Your data stays in Algeria, in your data center, on your hardware — or on the sovereign cloud you have already approved. We build for on-premise first, and offer hybrid only when the regulator allows it. Air-gapped variants for upstream oil & gas and defense-adjacent work.',
+    body_fr: 'Vos données restent en Algérie, dans votre data center, sur votre matériel — ou sur le cloud souverain que vous avez déjà approuvé. Nous construisons d\'abord pour on-premise, et n\'offrons l\'hybride que lorsque le régulateur le permet. Variantes air-gapped pour l\'oil & gas upstream et les missions liées à la défense.',
+    body_ar: 'تبقى بياناتك في الجزائر، في مركز البيانات الخاص بك، على أجهزتك — أو على السحابة السيادية التي اعتمدتها بالفعل. نبني للنشر on-premise أولاً، ونقدم النشر الهجين فقط عندما يسمح المنظم بذلك. متاحة نسخ air-gapped لأعمال النفط والغاز upstream والمشاريع المرتبطة بالدفاع.',
+  },
+];
+
+// ─── Sectors served ──────────────────────────────────────────────────────
+const SECTORS = [
+  {
+    num: '01',
+    icon: Building2,
+    name_en: 'Banking', name_fr: 'Banque', name_ar: 'المصارف',
+    body_en: 'Core banking modernization · ISO 20022 message handling · CIB, Edahabia, SATIM integration · AML/CTF transaction monitoring · KYC document AI · BCT and SAMA reporting.',
+    body_fr: "Modernisation core banking · Gestion ISO 20022 · Intégration CIB, Edahabia, SATIM · Monitoring AML/CTF · IA documentaire KYC · Reporting BCT et SAMA.",
+    body_ar: 'تحديث الأنظمة المصرفية الأساسية · معالجة رسائل ISO 20022 · تكامل CIB و Edahabia و SATIM · مراقبة AML/CTF · ذكاء اصطناعي للمستندات KYC · إعداد تقارير BCT و SAMA.',
+  },
+  {
+    num: '02',
+    icon: Landmark,
+    name_en: 'Government', name_fr: 'Gouvernement', name_ar: 'الحكومة',
+    body_en: 'Sovereign citizen platforms · National ID document AI · Inter-ministerial data exchange · Sovereign cloud residency · Multi-language administrative assistants.',
+    body_fr: "Plateformes citoyennes souveraines · IA documentaire bureaux d'identité · Échange de données inter-ministériel · Résidence cloud souverain · Assistants administratifs multi-langues.",
+    body_ar: 'منصات المواطن السيادية · ذكاء اصطناعي لمستندات بطاقات الهوية الوطنية · تبادل البيانات بين الوزارات · إقامة في السحابة السيادية · مساعدون إداريون متعددو اللغات.',
+  },
+  {
+    num: '03',
+    icon: Factory,
+    name_en: 'Oil & Gas', name_fr: 'Oil & Gas', name_ar: 'النفط والغاز',
+    body_en: 'SCADA telemetry analytics · Predictive maintenance · Computer vision for safety (PPE, leaks, intrusion) · Technical document analysis (P&IDs, procedures) · Air-gapped deployment for upstream operators.',
+    body_fr: "Analyse de télémétrie SCADA · Maintenance prédictive · Vision par ordinateur pour la sécurité (EPI, fuites, intrusion) · Analyse de documentation technique (P&IDs, procédures) · Déploiement air-gapped pour opérateurs upstream.",
+    body_ar: 'تحليلات القياس عن بُعد SCADA · الصيانة التنبؤية · الرؤية الحاسوبية للسلامة (PPE، التسريبات، التطفل) · تحليل الوثائق التقنية (P&IDs، الإجراءات) · نشر air-gapped لمشغلي upstream.',
+  },
+  {
+    num: '04',
+    icon: HeartPulse,
+    name_en: 'Healthcare', name_fr: 'Santé', name_ar: 'الصحة',
+    body_en: 'HIS / HMIS / clinic management · Pharma traceability · Medical imaging analysis · HDS-grade hosting · Clinical workflow assistants in Arabic + French · Patient data sovereignty.',
+    body_fr: "HIS / HMIS / gestion clinique · Traçabilité pharma · Analyse d'imagerie médicale · Hébergement HDS · Assistants workflow clinique en arabe + français · Souveraineté des données patient.",
+    body_ar: 'HIS / HMIS / إدارة العيادات · تتبع الأدوية · تحليل التصوير الطبي · استضافة بمعيار HDS · مساعدو سير العمل السريري بالعربية والفرنسية · سيادة بيانات المرضى.',
+  },
+];
+
+// ─── Capabilities matrix (team) ──────────────────────────────────────────
+const CAPABILITIES = [
+  { icon: Code2,    name_en: 'Software engineering',   name_fr: 'Ingénierie logicielle',   name_ar: 'هندسة البرمجيات' },
+  { icon: Brain,    name_en: 'Applied AI / ML',         name_fr: 'IA appliquée / ML',       name_ar: 'الذكاء الاصطناعي التطبيقي' },
+  { icon: Smartphone, name_en: 'Mobile engineering',     name_fr: 'Ingénierie mobile',       name_ar: 'هندسة الجوال' },
+  { icon: Cloud,    name_en: 'Cloud + DevOps',          name_fr: 'Cloud + DevOps',          name_ar: 'السحابة و DevOps' },
+  { icon: Cpu,      name_en: 'IoT + embedded',          name_fr: 'IoT + embarqué',          name_ar: 'IoT والأنظمة المدمجة' },
+  { icon: Lock,     name_en: 'Cybersecurity',           name_fr: 'Cybersécurité',           name_ar: 'الأمن السيبراني' },
+  { icon: Server,   name_en: 'ERP + business systems',  name_fr: 'ERP + systèmes métier',   name_ar: 'ERP وأنظمة الأعمال' },
+  { icon: Workflow, name_en: 'Product engineering',     name_fr: 'Ingénierie produit',      name_ar: 'هندسة المنتج' },
+];
+
+// ─── How we work ─────────────────────────────────────────────────────────
+const PROCESS = [
+  {
+    num: 'I',
+    title_en: 'Discovery sprint',
+    title_fr: 'Sprint de découverte',
+    title_ar: 'جلسة الاستكشاف',
+    body_en: 'Two-week paid engagement. Engineering lead embedded with your team. Output: scoped problem, target architecture, regulatory map, signed engagement proposal. Walk away with a deliverable even if you do not proceed.',
+    body_fr: 'Engagement payant de deux semaines. Lead ingénierie embarqué dans votre équipe. Livrable : problème cadré, architecture cible, carte réglementaire, proposition d\'engagement signée. Vous repartez avec un livrable même si vous ne continuez pas.',
+    body_ar: 'مهمة مدفوعة لمدة أسبوعين. قائد هندسي مدمج مع فريقك. النتيجة: مشكلة محددة، بنية مستهدفة، خريطة تنظيمية، اقتراح ارتباط موقّع. تخرج بنتيجة قابلة للتسليم حتى لو لم تتابع.',
+  },
+  {
+    num: 'II',
+    title_en: 'Production engagement',
+    title_fr: 'Engagement de production',
+    title_ar: 'التزام الإنتاج',
+    body_en: 'Six to eighteen months typical. Fixed-team / fixed-rate or capped time-and-materials. Bi-weekly demos to your steering committee. Production handover at the end, including runbooks, MLOps pipelines, monitoring dashboards.',
+    body_fr: "Six à dix-huit mois typique. Équipe fixe / taux fixe ou temps-et-matériel plafonné. Démos bi-hebdomadaires à votre comité de pilotage. Transfert en production à la fin — runbooks, pipelines MLOps, dashboards de monitoring inclus.",
+    body_ar: 'من ستة إلى ثمانية عشر شهراً عادة. فريق ثابت / سعر ثابت أو time-and-materials بسقف. عروض كل أسبوعين للجنتك التوجيهية. تسليم الإنتاج في النهاية — كتيبات التشغيل، خطوط أنابيب MLOps، لوحات المراقبة.',
+  },
+  {
+    num: 'III',
+    title_en: 'Operate or hand over',
+    title_fr: 'Opérer ou transférer',
+    title_ar: 'تشغيل أو تسليم',
+    body_en: '99.9% SLA option, operated by our SRE team under a Managed Operations contract — or full handover to your internal team with documentation, training sprints, and a 90-day stabilization warranty.',
+    body_fr: 'Option SLA 99,9% opérée par notre équipe SRE sous contrat Managed Operations — ou transfert complet à votre équipe interne avec documentation, sprints de formation et garantie de stabilisation de 90 jours.',
+    body_ar: 'خيار SLA بنسبة 99.9% مُشغَّل من قبل فريق SRE الخاص بنا بموجب عقد عمليات مُدارة — أو تسليم كامل لفريقك الداخلي مع التوثيق وجلسات التدريب وضمان استقرار لمدة 90 يوماً.',
+  },
+];
+
+// ─── Compliance frameworks ───────────────────────────────────────────────
+const FRAMEWORKS = [
+  { code: 'BCT',         scope_en: 'Banque d\'Algérie',                    scope_fr: 'Banque d\'Algérie',                    scope_ar: 'بنك الجزائر' },
+  { code: 'SAMA',        scope_en: 'Saudi Central Bank',                   scope_fr: 'Banque centrale saoudienne',           scope_ar: 'البنك المركزي السعودي' },
+  { code: 'DORA',        scope_en: 'EU operational resilience',            scope_fr: 'Résilience opérationnelle UE',         scope_ar: 'الصمود التشغيلي الأوروبي' },
+  { code: 'ISO 27001',   scope_en: 'Information security',                 scope_fr: 'Sécurité de l\'information',           scope_ar: 'أمن المعلومات' },
+  { code: 'HDS',         scope_en: 'French health data hosting',           scope_fr: 'Hébergeur de données de santé',        scope_ar: 'استضافة بيانات الصحة الفرنسية' },
+  { code: 'GDPR',        scope_en: 'EU data protection',                   scope_fr: 'Protection des données UE',            scope_ar: 'حماية البيانات الأوروبية' },
+];
+
+// ─── Geographic footprint ────────────────────────────────────────────────
+const FOOTPRINT = [
+  { num: '01', region_en: 'Algeria',         region_fr: 'Algérie',         region_ar: 'الجزائر',         body_en: 'Algiers HQ. National banks, ministries, Sonatrach-adjacent operators, hospital networks.', body_fr: 'Siège Alger. Banques nationales, ministères, opérateurs proches de Sonatrach, réseaux hospitaliers.', body_ar: 'المقر الرئيسي في الجزائر العاصمة. البنوك الوطنية، الوزارات، المشغلون القريبون من Sonatrach، شبكات المستشفيات.' },
+  { num: '02', region_en: 'GCC',             region_fr: 'Golfe',           region_ar: 'الخليج',          body_en: 'Saudi Arabia, UAE, Kuwait, Qatar — Vision 2030 / 2040 partners, Hub71 nearshore engineering, Mubadala-track work.', body_fr: 'Arabie saoudite, EAU, Koweït, Qatar — partenaires Vision 2030 / 2040, ingénierie nearshore Hub71, missions track Mubadala.', body_ar: 'المملكة العربية السعودية، الإمارات، الكويت، قطر — شركاء رؤية 2030 / 2040، هندسة nearshore لـ Hub71، أعمال track Mubadala.' },
+  { num: '03', region_en: 'Maghreb',         region_fr: 'Maghreb',         region_ar: 'المغرب العربي',  body_en: 'Morocco, Tunisia — pan-Maghreb banking groups, francophone government modernization mandates.', body_fr: 'Maroc, Tunisie — groupes bancaires pan-maghrébins, missions de modernisation gouvernementale francophone.', body_ar: 'المغرب وتونس — المجموعات المصرفية المغاربية، مهام تحديث الحكومات الفرنكوفونية.' },
+  { num: '04', region_en: 'Europe',          region_fr: 'Europe',          region_ar: 'أوروبا',          body_en: 'France, Spain, Germany — nearshore alternative to Capgemini Engineering and Sopra Steria for Maghreb-rooted clients and DACH industrial groups.', body_fr: 'France, Espagne, Allemagne — alternative nearshore à Capgemini Engineering et Sopra Steria pour clients enracinés au Maghreb et groupes industriels DACH.', body_ar: 'فرنسا، إسبانيا، ألمانيا — بديل nearshore لشركتي Capgemini Engineering و Sopra Steria للعملاء ذوي الجذور المغاربية والمجموعات الصناعية في DACH.' },
+];
+
+// ─── Locale dictionary ───────────────────────────────────────────────────
+const COPY = {
   en: {
-    meta: {
-      title: "Symloop - Presentation | Digital Innovation in Algeria",
-      description: "Discover Symloop, your trusted technology partner in Algeria. Custom digital solutions, AI expertise, and commitment to excellence."
+    metaTitle:    'About Symloop Technology — AI-native engineering for MENA regulated industries',
+    metaDesc:     'Symloop Technology is an AI-native engineering firm headquartered in Algiers, founded 2012. 25+ senior engineers serving banking, government, oil & gas, and healthcare across MENA, the Gulf, and francophone Europe.',
+    breadcrumb:   'About',
+    hero: {
+      eyebrow:   'About · Symloop Technology · Algiers · Founded 2012',
+      title:     'An engineering firm. Not an agency.',
+      dek:       'Symloop Technology is an AI-native engineering firm headquartered in Algiers. Twenty-five senior engineers, twelve years of production work, and a single focus: regulated industries across MENA — banking, government, oil & gas, healthcare.',
+      stats: [
+        { v: '2012',  k: 'Founded' },
+        { v: '25+',   k: 'Senior engineers' },
+        { v: '4',     k: 'Sectors served' },
+        { v: '3',     k: 'Languages of operation' },
+        { v: '5.0',   k: 'Clutch · verified' },
+      ],
+      ctaPrimary:   'Discuss an engagement',
+      ctaSecondary: 'See production work',
     },
-    navigation: {
-      home: "Home",
-      skip: "Skip",
-      slide: "Slide"
+    pillars:    { eyebrow: '01 / What we are',     title: 'A different kind of engineering firm.' },
+    sectors:    { eyebrow: '02 / Sectors',         title: 'Where we ship in production.' },
+    team:       { eyebrow: '03 / Team',            title: 'Twenty-five senior engineers in one office.', body: 'Salaried, in Algiers, full-stack across the eight engineering disciplines below. No subcontracting. The engineering lead who scopes a project ships it to production and operates it. Native operation in Arabic, French, and English — across Algerian dialect, Modern Standard Arabic, and Levantine.' },
+    process:    { eyebrow: '04 / How we work',     title: 'Three phases. No surprises.' },
+    frameworks: { eyebrow: '05 / Compliance',      title: 'Audited against six regulatory frameworks.', body: 'Every system we build is designed from day one to clear these audits. We carry the documentation, the test evidence, and the regulator-facing artifacts so you do not have to assemble them at the end.' },
+    footprint:  { eyebrow: '06 / Footprint',       title: 'Where we operate.' },
+    founder:    { eyebrow: '07 / Why we exist',    title: 'A note from the founding team.', body_lines: [
+      'In 2012, the gap between European engineering firms and Algerian agencies looked simple. The European firms — Capgemini, Sopra, Atos — billed at €700–1,200 a day for engineers who built reliable, regulated, audit-ready systems. The Algerian agencies billed at one-tenth that, but built for the small business and the launch, not the regulator and the audit.',
+      'We started Symloop to close that gap from the Algerian side. Twelve years later, we are an engineering firm sized like a tier-two European house, billed at MENA cost, with the audit posture European banks and ministries actually need. Sovereign deployment by default. Documentation in three languages. The same engineer for the lifecycle of the engagement.',
+      'We do not work on every brief. We say no to projects we cannot ship. The brief that fits us best: a regulated operator in MENA, a real production problem, and a steering committee that wants the audit cleared on time.',
+    ] },
+    cta: {
+      eyebrow:    'Engage',
+      title:      'Tell us about a regulated production problem.',
+      body:       'Two-week paid discovery sprint. You walk away with a scoped engagement proposal and a target architecture, even if you do not proceed.',
+      primary:    'Request a discovery sprint',
+      secondary:  'Email contact@symloop.com',
     },
-    slides: [
-      {
-        type: "cover",
-        title: "SYMLOOP",
-        subtitle: "Digital Innovation",
-        tagline: "Transforming ideas into digital solutions",
-        cta: "Discover our story"
-      },
-      {
-        type: "about",
-        badge: "WHO WE ARE",
-        title: "Your Trusted Technology Partner",
-        paragraphs: [
-          "Symloop is an Algerian technology company founded with a clear vision: to democratize access to high-quality digital solutions for businesses of all sizes.",
-          "Based in Algiers, in the heart of Algeria, we combine international technical expertise with deep understanding of the local market to create solutions that truly make a difference."
-        ],
-        stats: [
-          { value: "2020", label: "Year founded" },
-          { value: "50+", label: "Projects delivered" },
-          { value: "98%", label: "Satisfied clients" },
-          { value: "24/7", label: "Support available" }
-        ]
-      },
-      {
-        type: "founder",
-        badge: "FOUNDER'S WORD",
-        quote: "Our mission is to build a bridge between Algeria's enormous potential and technology's infinite possibilities. Every line of code we write, every solution we deploy, is a step toward a brighter digital future for our country.",
-        name: "Founder & CEO",
-        company: "Symloop",
-        message: "Together, let's build Algeria's digital future."
-      },
-      {
-        type: "mission",
-        badge: "OUR MISSION",
-        title: "Accelerating Digital Transformation",
-        vision: {
-          title: "Vision",
-          text: "To become the leader of technological innovation in North Africa, creating solutions that inspire and transform."
-        },
-        mission: {
-          title: "Mission",
-          text: "To support Algerian businesses in their digital transformation with custom, accessible, and high-performance solutions."
-        },
-        values: {
-          title: "Values",
-          items: ["Innovation", "Excellence", "Integrity", "Collaboration"]
-        }
-      },
-      {
-        type: "services",
-        badge: "OUR SERVICES",
-        title: "Complete Digital Solutions",
-        services: [
-          {
-            icon: "Code2",
-            title: "Web Development",
-            description: "Custom websites and applications with the latest technologies."
-          },
-          {
-            icon: "Smartphone",
-            title: "Mobile Applications",
-            description: "Native or cross-platform iOS and Android apps to reach all your users."
-          },
-          {
-            icon: "Brain",
-            title: "Artificial Intelligence",
-            description: "Chatbots, automation, and AI solutions to optimize your processes."
-          },
-          {
-            icon: "Globe",
-            title: "Digital Transformation",
-            description: "Complete support in your transition to digital."
-          }
-        ]
-      },
-      {
-        type: "values",
-        badge: "OUR VALUES",
-        title: "What Guides Us",
-        values: [
-          {
-            icon: "Lightbulb",
-            title: "Continuous Innovation",
-            description: "We constantly explore new technologies to offer you the best."
-          },
-          {
-            icon: "Heart",
-            title: "Client Passion",
-            description: "Your success is our absolute priority. We listen, understand, and deliver."
-          },
-          {
-            icon: "Shield",
-            title: "Uncompromised Quality",
-            description: "Every project meets the highest industry standards."
-          },
-          {
-            icon: "Users",
-            title: "Team Spirit",
-            description: "A united and passionate team, ready to take on any challenge."
-          }
-        ]
-      },
-      {
-        type: "impact",
-        badge: "OUR IMPACT",
-        title: "Concrete Results",
-        metrics: [
-          { value: "500K+", label: "Users reached", suffix: "" },
-          { value: "15+", label: "Wilayas served", suffix: "" },
-          { value: "40%", label: "Savings achieved", suffix: "avg" },
-          { value: "99.9%", label: "Guaranteed uptime", suffix: "" }
-        ],
-        testimonial: {
-          quote: "Symloop transformed the way we work. Their solution revolutionized our productivity.",
-          author: "Enterprise Client",
-          company: "Algiers, Algeria"
-        }
-      },
-      {
-        type: "cta",
-        badge: "READY TO START?",
-        title: "Let's Build Your Digital Future Together",
-        subtitle: "Contact us to discuss your project and discover how we can help you achieve your goals.",
-        buttons: {
-          primary: "Request a Quote",
-          secondary: "Contact Us"
-        },
-        contact: {
-          phone: "+213 549 575 512",
-          email: "contact@symloop.com",
-          address: "Algiers, Algeria"
-        }
-      }
-    ]
+  },
+  fr: {
+    metaTitle:    "À propos de Symloop Technology — Cabinet d'ingénierie IA pour industries régulées MENA",
+    metaDesc:     "Symloop Technology est un cabinet d'ingénierie IA-native dont le siège est à Alger, fondé en 2012. 25+ ingénieurs seniors au service des secteurs bancaire, gouvernemental, oil & gas, et santé à travers le MENA, le Golfe et l'Europe francophone.",
+    breadcrumb:   'À propos',
+    hero: {
+      eyebrow:   "À propos · Symloop Technology · Alger · Fondé 2012",
+      title:     "Un cabinet d'ingénierie. Pas une agence.",
+      dek:       "Symloop Technology est un cabinet d'ingénierie IA-native dont le siège est à Alger. Vingt-cinq ingénieurs seniors, douze ans de production, et une seule focale : les industries régulées au MENA — banque, gouvernement, oil & gas, santé.",
+      stats: [
+        { v: '2012',  k: 'Fondé en' },
+        { v: '25+',   k: 'Ingénieurs seniors' },
+        { v: '4',     k: 'Secteurs servis' },
+        { v: '3',     k: "Langues d'opération" },
+        { v: '5.0',   k: 'Clutch · vérifié' },
+      ],
+      ctaPrimary:   'Discuter un engagement',
+      ctaSecondary: 'Voir nos productions',
+    },
+    pillars:    { eyebrow: '01 / Ce que nous sommes',  title: "Un autre type de cabinet d'ingénierie." },
+    sectors:    { eyebrow: '02 / Secteurs',           title: 'Où nous livrons en production.' },
+    team:       { eyebrow: '03 / Équipe',             title: 'Vingt-cinq ingénieurs seniors dans un même bureau.', body: "Salariés, à Alger, full-stack sur les huit disciplines d'ingénierie ci-dessous. Pas de sous-traitance. Le lead ingénierie qui cadre un projet le met en production et l'opère. Opération native en arabe, français et anglais — dialecte algérien, arabe moderne standard et levantin." },
+    process:    { eyebrow: '04 / Comment on travaille', title: 'Trois phases. Pas de surprises.' },
+    frameworks: { eyebrow: '05 / Conformité',         title: 'Audités sur six cadres réglementaires.', body: "Chaque système que nous construisons est conçu dès le premier jour pour passer ces audits. Nous portons la documentation, les preuves de tests et les artefacts pour le régulateur — vous n'avez pas à les assembler à la fin." },
+    footprint:  { eyebrow: '06 / Empreinte',          title: 'Où nous opérons.' },
+    founder:    { eyebrow: '07 / Pourquoi nous existons', title: "Note de l'équipe fondatrice.", body_lines: [
+      "En 2012, l'écart entre les cabinets d'ingénierie européens et les agences algériennes paraissait simple. Les cabinets européens — Capgemini, Sopra, Atos — facturaient 700 à 1 200 € par jour pour des ingénieurs qui construisaient des systèmes régulés, fiables, prêts pour l'audit. Les agences algériennes facturaient au dixième de ce tarif, mais construisaient pour la petite entreprise et le lancement — pas pour le régulateur et l'audit.",
+      "Nous avons fondé Symloop pour fermer cet écart depuis le côté algérien. Douze ans plus tard, nous sommes un cabinet d'ingénierie de la taille d'une ESN tier-deux européenne, facturé au coût MENA, avec la posture d'audit que les banques et ministères européens attendent réellement. Déploiement souverain par défaut. Documentation en trois langues. Le même ingénieur pour le cycle de vie de l'engagement.",
+      "Nous ne travaillons pas sur tous les briefs. Nous disons non aux projets que nous ne pouvons pas livrer. Le brief qui nous va le mieux : un opérateur régulé au MENA, un vrai problème de production, et un comité de pilotage qui veut l'audit passé dans les temps.",
+    ] },
+    cta: {
+      eyebrow:    "S'engager",
+      title:      'Parlez-nous d\'un problème de production en environnement régulé.',
+      body:       "Sprint de découverte payant de deux semaines. Vous repartez avec une proposition d'engagement cadrée et une architecture cible, même si vous ne continuez pas.",
+      primary:    'Demander un sprint de découverte',
+      secondary:  'Écrire à contact@symloop.com',
+    },
   },
   ar: {
-    meta: {
-      title: "Symloop - العرض التقديمي | الابتكار الرقمي في الجزائر",
-      description: "اكتشف Symloop، شريكك التكنولوجي الموثوق في الجزائر. حلول رقمية مخصصة، خبرة في الذكاء الاصطناعي، والتزام بالتميز."
+    metaTitle:    'حول سيملوب تكنولوجي — هندسة IA-native للقطاعات المنظمة في MENA',
+    metaDesc:     'سيملوب تكنولوجي شركة هندسية IA-native مقرها الجزائر العاصمة، تأسست عام 2012. أكثر من 25 مهندساً بكبار الخبرات يخدمون قطاعات المصارف والحكومة والنفط والغاز والصحة عبر MENA والخليج وأوروبا الفرنكوفونية.',
+    breadcrumb:   'حول',
+    hero: {
+      eyebrow:   'حول · سيملوب تكنولوجي · الجزائر العاصمة · تأسست 2012',
+      title:     'شركة هندسية. لا وكالة.',
+      dek:       'سيملوب تكنولوجي شركة هندسية IA-native مقرها الجزائر العاصمة. خمسة وعشرون مهندساً بكبار الخبرات، اثنا عشر عاماً من العمل في الإنتاج، وتركيز واحد: القطاعات المنظمة عبر MENA — المصارف، الحكومة، النفط والغاز، الصحة.',
+      stats: [
+        { v: '2012',  k: 'تأسست' },
+        { v: '+25',   k: 'مهندس بكبار الخبرات' },
+        { v: '4',     k: 'قطاعات نخدمها' },
+        { v: '3',     k: 'لغات التشغيل' },
+        { v: '5.0',   k: 'Clutch · موثق' },
+      ],
+      ctaPrimary:   'ناقش ارتباطاً',
+      ctaSecondary: 'استعرض أعمال الإنتاج',
     },
-    navigation: {
-      home: "الرئيسية",
-      skip: "تخطي",
-      slide: "شريحة"
+    pillars:    { eyebrow: '01 / من نحن',             title: 'نوع مختلف من الشركات الهندسية.' },
+    sectors:    { eyebrow: '02 / القطاعات',          title: 'أين نطلق في الإنتاج.' },
+    team:       { eyebrow: '03 / الفريق',            title: 'خمسة وعشرون مهندساً بكبار الخبرات في مكتب واحد.', body: 'موظفون، في الجزائر العاصمة، full-stack عبر التخصصات الهندسية الثمانية أدناه. لا مقاولات من الباطن. القائد الهندسي الذي يحدد نطاق المشروع يطلقه إلى الإنتاج ويشغله. تشغيل أصلي بالعربية والفرنسية والإنجليزية — العربية الجزائرية، العربية الفصحى الحديثة، والشامية.' },
+    process:    { eyebrow: '04 / كيف نعمل',           title: 'ثلاث مراحل. بلا مفاجآت.' },
+    frameworks: { eyebrow: '05 / الامتثال',           title: 'مدققون مقابل ستة أطر تنظيمية.', body: 'كل نظام نبنيه مصمم من اليوم الأول لاجتياز هذه التدقيقات. نحن نحمل التوثيق وأدلة الاختبار والمستندات الموجهة للمنظم — حتى لا تضطر إلى تجميعها في النهاية.' },
+    footprint:  { eyebrow: '06 / النطاق الجغرافي',    title: 'أين نعمل.' },
+    founder:    { eyebrow: '07 / لماذا نوجد',         title: 'ملاحظة من الفريق المؤسس.', body_lines: [
+      'في عام 2012، بدت الفجوة بين الشركات الهندسية الأوروبية والوكالات الجزائرية بسيطة. كانت الشركات الأوروبية — Capgemini و Sopra و Atos — تفوتر 700 إلى 1,200 يورو في اليوم لمهندسين يبنون أنظمة موثوقة منظمة جاهزة للتدقيق. أما الوكالات الجزائرية، فكانت تفوتر بعشر هذا السعر، لكنها كانت تبني للأعمال الصغيرة والإطلاق — لا للمنظم والتدقيق.',
+      'بدأنا سيملوب لسد تلك الفجوة من الجانب الجزائري. بعد اثني عشر عاماً، نحن شركة هندسية بحجم بيت أوروبي من الفئة الثانية، نفوتر بتكلفة MENA، مع وضع تدقيقي تحتاجه البنوك والوزارات الأوروبية فعلاً. النشر السيادي افتراضياً. التوثيق بثلاث لغات. نفس المهندس لدورة حياة الارتباط.',
+      'لا نعمل على كل brief. نقول لا للمشاريع التي لا يمكننا إطلاقها. الـbrief الأنسب لنا: مشغل منظم في MENA، مشكلة إنتاج حقيقية، ولجنة توجيهية تريد اجتياز التدقيق في الوقت المحدد.',
+    ] },
+    cta: {
+      eyebrow:    'تواصل',
+      title:      'حدّثنا عن مشكلة إنتاج في بيئة منظمة.',
+      body:       'جلسة استكشاف مدفوعة لمدة أسبوعين. تخرج باقتراح ارتباط محدد النطاق وبنية مستهدفة، حتى لو لم تتابع.',
+      primary:    'اطلب جلسة استكشاف',
+      secondary:  'راسل contact@symloop.com',
     },
-    slides: [
-      {
-        type: "cover",
-        title: "SYMLOOP",
-        subtitle: "الابتكار الرقمي",
-        tagline: "تحويل الأفكار إلى حلول رقمية",
-        cta: "اكتشف قصتنا"
-      },
-      {
-        type: "about",
-        badge: "من نحن",
-        title: "شريكك التكنولوجي الموثوق",
-        paragraphs: [
-          "Symloop هي شركة تكنولوجيا جزائرية تأسست برؤية واضحة: إتاحة الوصول إلى حلول رقمية عالية الجودة للشركات من جميع الأحجام.",
-          "مقرنا في الجزائر العاصمة، في قلب الجزائر، نجمع بين الخبرة التقنية الدولية والفهم العميق للسوق المحلي لإنشاء حلول تحدث فرقاً حقيقياً."
-        ],
-        stats: [
-          { value: "2020", label: "سنة التأسيس" },
-          { value: "+50", label: "مشروع منجز" },
-          { value: "98%", label: "عملاء راضون" },
-          { value: "24/7", label: "دعم متاح" }
-        ]
-      },
-      {
-        type: "founder",
-        badge: "كلمة المؤسس",
-        quote: "مهمتنا هي بناء جسر بين الإمكانات الهائلة للجزائر والإمكانيات اللامحدودة للتكنولوجيا. كل سطر من الكود نكتبه، كل حل ننشره، هو خطوة نحو مستقبل رقمي أكثر إشراقاً لبلدنا.",
-        name: "المؤسس والرئيس التنفيذي",
-        company: "Symloop",
-        message: "معاً، لنبني مستقبل الجزائر الرقمي."
-      },
-      {
-        type: "mission",
-        badge: "مهمتنا",
-        title: "تسريع التحول الرقمي",
-        vision: {
-          title: "الرؤية",
-          text: "أن نصبح رائدين في الابتكار التكنولوجي في شمال أفريقيا، بإنشاء حلول تلهم وتحول."
-        },
-        mission: {
-          title: "المهمة",
-          text: "دعم الشركات الجزائرية في تحولها الرقمي بحلول مخصصة وسهلة الوصول وعالية الأداء."
-        },
-        values: {
-          title: "القيم",
-          items: ["الابتكار", "التميز", "النزاهة", "التعاون"]
-        }
-      },
-      {
-        type: "services",
-        badge: "خدماتنا",
-        title: "حلول رقمية شاملة",
-        services: [
-          {
-            icon: "Code2",
-            title: "تطوير الويب",
-            description: "مواقع وتطبيقات مخصصة بأحدث التقنيات."
-          },
-          {
-            icon: "Smartphone",
-            title: "تطبيقات الجوال",
-            description: "تطبيقات iOS و Android أصلية أو متعددة المنصات للوصول إلى جميع المستخدمين."
-          },
-          {
-            icon: "Brain",
-            title: "الذكاء الاصطناعي",
-            description: "روبوتات الدردشة والأتمتة وحلول الذكاء الاصطناعي لتحسين عملياتك."
-          },
-          {
-            icon: "Globe",
-            title: "التحول الرقمي",
-            description: "مرافقة كاملة في انتقالك إلى العالم الرقمي."
-          }
-        ]
-      },
-      {
-        type: "values",
-        badge: "قيمنا",
-        title: "ما يوجهنا",
-        values: [
-          {
-            icon: "Lightbulb",
-            title: "الابتكار المستمر",
-            description: "نستكشف باستمرار تقنيات جديدة لنقدم لك الأفضل."
-          },
-          {
-            icon: "Heart",
-            title: "شغف العميل",
-            description: "نجاحك هو أولويتنا المطلقة. نستمع، نفهم، ونقدم."
-          },
-          {
-            icon: "Shield",
-            title: "جودة بلا تنازل",
-            description: "كل مشروع يلتزم بأعلى معايير الصناعة."
-          },
-          {
-            icon: "Users",
-            title: "روح الفريق",
-            description: "فريق متحد وشغوف، مستعد لمواجهة أي تحدٍ."
-          }
-        ]
-      },
-      {
-        type: "impact",
-        badge: "تأثيرنا",
-        title: "نتائج ملموسة",
-        metrics: [
-          { value: "+500K", label: "مستخدم", suffix: "" },
-          { value: "+15", label: "ولاية مخدومة", suffix: "" },
-          { value: "40%", label: "توفير محقق", suffix: "متوسط" },
-          { value: "99.9%", label: "وقت تشغيل مضمون", suffix: "" }
-        ],
-        testimonial: {
-          quote: "غيّر Symloop طريقة عملنا. حلهم أحدث ثورة في إنتاجيتنا.",
-          author: "عميل مؤسسة",
-          company: "الجزائر العاصمة، الجزائر"
-        }
-      },
-      {
-        type: "cta",
-        badge: "مستعد للبدء؟",
-        title: "لنبني معاً مستقبلك الرقمي",
-        subtitle: "تواصل معنا لمناقشة مشروعك واكتشاف كيف يمكننا مساعدتك في تحقيق أهدافك.",
-        buttons: {
-          primary: "اطلب عرض سعر",
-          secondary: "تواصل معنا"
-        },
-        contact: {
-          phone: "+213 549 575 512",
-          email: "contact@symloop.com",
-          address: "الجزائر العاصمة، الجزائر"
-        }
-      }
-    ]
-  }
+  },
 };
 
-// Icon mapping
-const iconMap = {
-  Code2, Smartphone, Brain, Globe, Users, Target, Sparkles, Rocket,
-  Heart, Shield, Zap, Lightbulb
-};
+// ─── Component ───────────────────────────────────────────────────────────
+export default function PresentationPage() {
+  const { locale } = useRouter();
+  const isRtl = locale === 'ar';
+  const c = COPY[locale] || COPY.en;
+  const arrowIcon = isRtl ? <ArrowLeft className="w-3.5 h-3.5" strokeWidth={1.5} /> : <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} />;
 
-// Slide components
-const CoverSlide = ({ data, isActive }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    {/* Animated background */}
-    <div className="absolute inset-0">
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-900 to-black" />
-      <motion.div
-        className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full"
-        style={{
-          background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)"
-        }}
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full"
-        style={{
-          background: "radial-gradient(circle, rgba(236,72,153,0.12) 0%, transparent 70%)"
-        }}
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.2, 0.4, 0.2],
-        }}
-        transition={{ duration: 10, repeat: Infinity }}
-      />
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }}
-      />
-    </div>
-
-    <div className="relative z-10 text-center px-6 max-w-5xl">
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -30 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mb-8"
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-400 backdrop-blur-sm">
-                <Sparkles className="w-4 h-4 text-indigo-400" />
-                {data.tagline}
-              </span>
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              className="text-[clamp(4rem,15vw,12rem)] font-black tracking-tighter leading-none mb-6"
-              style={{
-                background: "linear-gradient(135deg, #fff 0%, #a5b4fc 50%, #f472b6 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                textShadow: "0 0 80px rgba(99,102,241,0.3)"
-              }}
-            >
-              {data.title}
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -30 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-2xl md:text-3xl text-gray-400 font-light tracking-wide mb-12"
-            >
-              {data.subtitle}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -30 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex items-center justify-center gap-3"
-            >
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="flex flex-col items-center gap-2 text-gray-500"
-              >
-                <span className="text-sm">{data.cta}</span>
-                <ChevronDown className="w-6 h-6" />
-              </motion.div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const AboutSlide = ({ data, isActive, isRTL }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-900" />
-
-    {/* Decorative elements */}
-    <div className="absolute top-20 right-20 w-32 h-32 border border-indigo-500/20 rounded-full" />
-    <div className="absolute bottom-20 left-20 w-48 h-48 border border-pink-500/10 rounded-full" />
-
-    <div className={`relative z-10 max-w-6xl mx-auto px-6 py-20 ${isRTL ? 'text-right' : 'text-left'}`}>
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0, x: isRTL ? 30 : -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-400 text-sm font-medium mb-8"
-            >
-              {data.badge}
-            </motion.span>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold mb-8 max-w-4xl"
-            >
-              {data.title}
-            </motion.h2>
-
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="space-y-6"
-              >
-                {data.paragraphs.map((p, i) => (
-                  <p key={i} className="text-lg text-gray-400 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="grid grid-cols-2 gap-4"
-              >
-                {data.stats.map((stat, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 + i * 0.1 }}
-                    className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm"
-                  >
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">{stat.value}</div>
-                    <div className="text-sm text-gray-500">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const FounderSlide = ({ data, isActive, isRTL, founderImage }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    {/* Dramatic gradient background */}
-    <div className="absolute inset-0">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-black to-zinc-900" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(99,102,241,0.15),transparent_50%)]" />
-    </div>
-
-    <div className={`relative z-10 max-w-5xl mx-auto px-6 py-20 ${isRTL ? 'text-right' : 'text-left'}`}>
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm font-medium mb-12"
-            >
-              {data.badge}
-            </motion.span>
-
-            <div className={`flex flex-col md:flex-row gap-12 items-center ${isRTL ? 'md:flex-row-reverse' : ''}`}>
-              {/* Founder image placeholder */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative flex-shrink-0"
-              >
-                <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white/10 bg-gradient-to-br from-indigo-500/20 to-pink-500/20">
-                  {founderImage ? (
-                    <img src={founderImage} alt="Founder" className="w-full h-full object-cover" />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <Users className="w-24 h-24 text-white/20" />
-                    </div>
-                  )}
-                </div>
-                <motion.div
-                  className="absolute -bottom-2 -right-2 w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center"
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                >
-                  <Quote className="w-8 h-8 text-white" />
-                </motion.div>
-              </motion.div>
-
-              {/* Quote */}
-              <motion.div
-                initial={{ opacity: 0, x: isRTL ? -30 : 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="flex-1"
-              >
-                <blockquote className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8 italic">
-                  &ldquo;{data.quote}&rdquo;
-                </blockquote>
-                <div className={`flex items-center gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <div className="w-12 h-0.5 bg-indigo-500" />
-                  <div>
-                    <div className="font-semibold text-white">{data.name}</div>
-                    <div className="text-sm text-gray-500">{data.company}</div>
-                  </div>
-                </div>
-
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.8 }}
-                  className="mt-8 text-lg text-indigo-400 font-medium"
-                >
-                  {data.message}
-                </motion.p>
-              </motion.div>
-            </div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const MissionSlide = ({ data, isActive, isRTL }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0 bg-black" />
-
-    {/* Animated background shapes */}
-    <motion.div
-      className="absolute top-0 left-0 w-1/2 h-full"
-      style={{ background: "linear-gradient(135deg, rgba(99,102,241,0.1) 0%, transparent 50%)" }}
-      animate={{ opacity: [0.5, 0.8, 0.5] }}
-      transition={{ duration: 6, repeat: Infinity }}
-    />
-
-    <div className={`relative z-10 max-w-6xl mx-auto px-6 py-20 ${isRTL ? 'text-right' : 'text-left'}`}>
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-400 text-sm font-medium mb-8"
-            >
-              {data.badge}
-            </motion.span>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold mb-16"
-            >
-              {data.title}
-            </motion.h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Vision */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-gradient-to-br from-indigo-500/10 to-transparent border border-indigo-500/20 rounded-3xl p-8"
-              >
-                <Target className="w-10 h-10 text-indigo-400 mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-indigo-400">{data.vision.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{data.vision.text}</p>
-              </motion.div>
-
-              {/* Mission */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="bg-gradient-to-br from-pink-500/10 to-transparent border border-pink-500/20 rounded-3xl p-8"
-              >
-                <Rocket className="w-10 h-10 text-pink-400 mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-pink-400">{data.mission.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{data.mission.text}</p>
-              </motion.div>
-
-              {/* Values */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="bg-gradient-to-br from-emerald-500/10 to-transparent border border-emerald-500/20 rounded-3xl p-8"
-              >
-                <Heart className="w-10 h-10 text-emerald-400 mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-emerald-400">{data.values.title}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {data.values.items.map((item, i) => (
-                    <span key={i} className="px-3 py-1 bg-emerald-500/10 rounded-full text-sm text-emerald-400">
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const ServicesSlide = ({ data, isActive, isRTL }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black" />
-
-    <div className={`relative z-10 max-w-6xl mx-auto px-6 py-20 ${isRTL ? 'text-right' : 'text-left'}`}>
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm font-medium mb-8"
-            >
-              {data.badge}
-            </motion.span>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold mb-16"
-            >
-              {data.title}
-            </motion.h2>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {data.services.map((service, i) => {
-                const Icon = iconMap[service.icon];
-                const colors = [
-                  { bg: "from-indigo-500/10", border: "border-indigo-500/20", icon: "text-indigo-400" },
-                  { bg: "from-pink-500/10", border: "border-pink-500/20", icon: "text-pink-400" },
-                  { bg: "from-amber-500/10", border: "border-amber-500/20", icon: "text-amber-400" },
-                  { bg: "from-emerald-500/10", border: "border-emerald-500/20", icon: "text-emerald-400" }
-                ][i];
-
-                return (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 + i * 0.15 }}
-                    className={`group bg-gradient-to-br ${colors.bg} to-transparent border ${colors.border} rounded-2xl p-6 hover:scale-[1.02] transition-transform cursor-pointer`}
-                  >
-                    <div className={`flex items-start gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                      <div className={`p-3 bg-white/5 rounded-xl ${colors.icon}`}>
-                        {Icon && <Icon className="w-6 h-6" />}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                        <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
-                      </div>
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const ValuesSlide = ({ data, isActive, isRTL }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0 bg-black" />
-    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.08),transparent_70%)]" />
-
-    <div className={`relative z-10 max-w-6xl mx-auto px-6 py-20 ${isRTL ? 'text-right' : 'text-left'}`}>
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm font-medium mb-8"
-            >
-              {data.badge}
-            </motion.span>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold mb-16"
-            >
-              {data.title}
-            </motion.h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {data.values.map((value, i) => {
-                const Icon = iconMap[value.icon];
-                return (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: isRTL ? 30 : -30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 + i * 0.15 }}
-                    className={`flex items-start gap-6 ${isRTL ? 'flex-row-reverse' : ''}`}
-                  >
-                    <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-indigo-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center">
-                      {Icon && <Icon className="w-7 h-7 text-white" />}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2">{value.title}</h3>
-                      <p className="text-gray-400 leading-relaxed">{value.description}</p>
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const ImpactSlide = ({ data, isActive, isRTL }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-black to-pink-950" />
-
-    <div className={`relative z-10 max-w-6xl mx-auto px-6 py-20 ${isRTL ? 'text-right' : 'text-left'}`}>
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm font-medium mb-8"
-            >
-              {data.badge}
-            </motion.span>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold mb-16"
-            >
-              {data.title}
-            </motion.h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-              {data.metrics.map((metric, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 0.4 + i * 0.1 }}
-                  className="text-center"
-                >
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.6 + i * 0.1 }}
-                    className="text-4xl md:text-5xl font-black bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent mb-2"
-                  >
-                    {metric.value}
-                  </motion.div>
-                  <div className="text-sm text-gray-400">
-                    {metric.label}
-                    {metric.suffix && <span className="text-xs ml-1">({metric.suffix})</span>}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Testimonial */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm"
-            >
-              <Quote className="w-10 h-10 text-indigo-400/50 mb-4" />
-              <p className="text-xl text-gray-300 italic mb-6">&ldquo;{data.testimonial.quote}&rdquo;</p>
-              <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-full" />
-                <div>
-                  <div className="font-semibold">{data.testimonial.author}</div>
-                  <div className="text-sm text-gray-500">{data.testimonial.company}</div>
-                </div>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-const CTASlide = ({ data, isActive, isRTL }) => (
-  <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    {/* Animated gradient background */}
-    <div className="absolute inset-0">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-black to-pink-900" />
-      <motion.div
-        className="absolute inset-0"
-        style={{
-          background: "radial-gradient(circle at 30% 50%, rgba(99,102,241,0.3) 0%, transparent 50%)"
-        }}
-        animate={{
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{ duration: 4, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute inset-0"
-        style={{
-          background: "radial-gradient(circle at 70% 50%, rgba(236,72,153,0.3) 0%, transparent 50%)"
-        }}
-        animate={{
-          opacity: [0.3, 0.6, 0.3],
-        }}
-        transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-      />
-    </div>
-
-    <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
-      <AnimatePresence>
-        {isActive && (
-          <>
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-block px-4 py-1.5 bg-white/10 border border-white/20 rounded-full text-white text-sm font-medium mb-8"
-            >
-              {data.badge}
-            </motion.span>
-
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold mb-6"
-            >
-              {data.title}
-            </motion.h2>
-
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
-            >
-              {data.subtitle}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-wrap justify-center gap-4 mb-16"
-            >
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-100 transition-colors"
-              >
-                {data.buttons.primary}
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <a
-                href={`tel:${data.contact.phone}`}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-                {data.buttons.secondary}
-              </a>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-wrap justify-center gap-8 text-gray-400"
-            >
-              <a href={`tel:${data.contact.phone}`} className="flex items-center gap-2 hover:text-white transition-colors">
-                <Phone className="w-4 h-4" />
-                {data.contact.phone}
-              </a>
-              <a href={`mailto:${data.contact.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
-                <Mail className="w-4 h-4" />
-                {data.contact.email}
-              </a>
-              <span className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                {data.contact.address}
-              </span>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-);
-
-// Main Presentation Component
-export default function Presentation() {
-  const router = useRouter();
-  const locale = router.locale || 'fr';
-  const isRTL = locale === 'ar';
-  const t = content[locale] || content.fr;
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const [founderImage, setFounderImage] = useState(null);
-  const touchStart = useRef(null);
-  const totalSlides = t.slides.length;
-
-  const goToSlide = useCallback((index) => {
-    if (isTransitioning || index < 0 || index >= totalSlides) return;
-    setIsTransitioning(true);
-    setCurrentSlide(index);
-    setTimeout(() => setIsTransitioning(false), 800);
-  }, [isTransitioning, totalSlides]);
-
-  const nextSlide = useCallback(() => {
-    goToSlide(currentSlide + 1);
-  }, [currentSlide, goToSlide]);
-
-  const prevSlide = useCallback(() => {
-    goToSlide(currentSlide - 1);
-  }, [currentSlide, goToSlide]);
-
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
-        e.preventDefault();
-        nextSlide();
-      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-        e.preventDefault();
-        prevSlide();
-      } else if (e.key === 'Home') {
-        e.preventDefault();
-        goToSlide(0);
-      } else if (e.key === 'End') {
-        e.preventDefault();
-        goToSlide(totalSlides - 1);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [nextSlide, prevSlide, goToSlide, totalSlides]);
-
-  // Mouse wheel navigation
-  useEffect(() => {
-    let lastScrollTime = 0;
-    const handleWheel = (e) => {
-      const now = Date.now();
-      if (now - lastScrollTime < 1000) return;
-
-      if (e.deltaY > 50) {
-        nextSlide();
-        lastScrollTime = now;
-      } else if (e.deltaY < -50) {
-        prevSlide();
-        lastScrollTime = now;
-      }
-    };
-
-    window.addEventListener('wheel', handleWheel, { passive: true });
-    return () => window.removeEventListener('wheel', handleWheel);
-  }, [nextSlide, prevSlide]);
-
-  // Touch navigation
-  const handleTouchStart = (e) => {
-    touchStart.current = e.touches[0].clientY;
+  // ── JSON-LD ──
+  const aboutPageLd = {
+    '@context': 'https://schema.org',
+    '@type':    'AboutPage',
+    name:        c.metaTitle,
+    description: c.metaDesc,
+    url:         'https://symloop.com/presentation/',
+    inLanguage:  isRtl ? 'ar' : (locale === 'fr' ? 'fr' : 'en'),
+    isPartOf:    { '@type': 'WebSite', name: 'Symloop Technology', url: 'https://symloop.com' },
+    about:       { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
   };
 
-  const handleTouchEnd = (e) => {
-    if (!touchStart.current) return;
-    const diff = touchStart.current - e.changedTouches[0].clientY;
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) nextSlide();
-      else prevSlide();
-    }
-    touchStart.current = null;
-  };
-
-  // Render current slide
-  const renderSlide = (slideData, index) => {
-    const isActive = currentSlide === index;
-    const props = { data: slideData, isActive, isRTL };
-
-    switch (slideData.type) {
-      case 'cover': return <CoverSlide {...props} />;
-      case 'about': return <AboutSlide {...props} />;
-      case 'founder': return <FounderSlide {...props} founderImage={founderImage} />;
-      case 'mission': return <MissionSlide {...props} />;
-      case 'services': return <ServicesSlide {...props} />;
-      case 'values': return <ValuesSlide {...props} />;
-      case 'impact': return <ImpactSlide {...props} />;
-      case 'cta': return <CTASlide {...props} />;
-      default: return null;
-    }
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type':    'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: c.breadcrumb === 'حول' ? 'الرئيسية' : (c.breadcrumb === 'À propos' ? 'Accueil' : 'Home'), item: 'https://symloop.com/' },
+      { '@type': 'ListItem', position: 2, name: c.breadcrumb,                                                                               item: 'https://symloop.com/presentation/' },
+    ],
   };
 
   return (
     <>
       <Head>
-        <title>{t.meta.title}</title>
-        <meta name="description" content={t.meta.description} />
-        <meta property="og:title" content={t.meta.title} />
-        <meta property="og:description" content={t.meta.description} />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}presentation`} />
+        <title>{c.metaTitle}</title>
+        <meta name="description" content={c.metaDesc} />
+        <meta name="keywords" content="symloop technology, about symloop, symloop algiers, AI engineering firm MENA, regulated industries engineering, banking software algeria, government digitisation MENA, oil & gas IT, healthcare HIS algeria, ingénierie IA, شركة هندسة" />
+        <link rel="canonical" href="https://symloop.com/presentation/" key="canonical" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={c.metaTitle} />
+        <meta property="og:description" content={c.metaDesc} />
+        <meta property="og:url" content="https://symloop.com/presentation/" />
+        <meta property="og:site_name" content="Symloop Technology" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={c.metaTitle} />
+        <meta name="twitter:description" content={c.metaDesc} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       </Head>
 
-      <div
-        className={`fixed inset-0 bg-black text-white overflow-hidden ${isRTL ? 'rtl' : 'ltr'}`}
-        dir={isRTL ? 'rtl' : 'ltr'}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-      >
-        {/* Navigation header */}
-        <div className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-white/60 hover:text-white transition-colors"
-          >
-            <Home className="w-5 h-5" />
-            <span className="hidden md:inline">{t.navigation.home}</span>
-          </Link>
+      <main dir={isRtl ? 'rtl' : 'ltr'} className="bg-black text-white selection:bg-white selection:text-black">
 
-          <div className="flex items-center gap-4">
-            <span className="text-sm text-white/40">
-              {t.navigation.slide} {currentSlide + 1} / {totalSlides}
-            </span>
+        {/* ════════════════════════════════════════════════════════════════
+            1. HERO
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="relative overflow-hidden border-b border-white/[0.06]">
+          {/* Subtle radial wash, no gradients on UI */}
+          <div className="absolute inset-0 pointer-events-none opacity-[0.05]"
+               style={{ backgroundImage: 'radial-gradient(ellipse at 20% 10%, rgba(255,255,255,0.6), transparent 55%), radial-gradient(ellipse at 80% 90%, rgba(255,255,255,0.4), transparent 50%)' }} />
+
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-36 lg:pt-44 pb-24 lg:pb-32">
+            <motion.div initial="hidden" animate="show" variants={stagger}>
+              <motion.div variants={fadeUp} className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-10">
+                {c.hero.eyebrow}
+              </motion.div>
+
+              <motion.h1 variants={fadeUp} className="text-[44px] md:text-[72px] lg:text-[88px] leading-[0.98] font-light tracking-[-0.02em] text-white mb-12 max-w-5xl">
+                {c.hero.title}
+              </motion.h1>
+
+              <motion.p variants={fadeUp} className="text-[17px] md:text-[20px] leading-[1.65] text-white/55 font-light max-w-3xl mb-16">
+                {c.hero.dek}
+              </motion.p>
+
+              {/* Stat strip */}
+              <motion.div variants={fadeUp} className="grid grid-cols-2 md:grid-cols-5 gap-px bg-white/[0.06] border border-white/[0.06] mb-16">
+                {c.hero.stats.map((s, i) => (
+                  <div key={i} className="bg-black p-6 lg:p-7">
+                    <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/35 mb-3">{s.k}</div>
+                    <div className="text-[32px] lg:text-[44px] font-light tracking-tight text-white leading-none">{s.v}</div>
+                  </div>
+                ))}
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4">
+                <Link href="/contact/" className="group inline-flex items-center gap-3 bg-white text-black px-7 py-4 text-[13px] tracking-[0.05em]">
+                  <span>{c.hero.ctaPrimary}</span>
+                  {arrowIcon}
+                </Link>
+                <Link href="/case-studies/" className="group inline-flex items-center gap-3 px-7 py-4 border border-white/15 hover:border-white/40 text-[13px] tracking-[0.05em] transition-colors text-white/70 hover:text-white">
+                  <span>{c.hero.ctaSecondary}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" strokeWidth={1.5} />
+                </Link>
+              </motion.div>
+            </motion.div>
           </div>
-        </div>
+        </section>
 
-        {/* Progress bar */}
-        <div className="fixed top-0 left-0 right-0 z-40 h-1 bg-white/10">
-          <motion.div
-            className="h-full bg-gradient-to-r from-indigo-500 to-pink-500"
-            initial={{ width: 0 }}
-            animate={{ width: `${((currentSlide + 1) / totalSlides) * 100}%` }}
-            transition={{ duration: 0.5 }}
-          />
-        </div>
+        {/* ════════════════════════════════════════════════════════════════
+            2. WHAT WE ARE — three pillars
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.pillars.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+              <motion.h2 variants={fadeUp} className="text-[34px] md:text-[52px] font-light tracking-tight leading-[1.05] text-white max-w-4xl mb-16">
+                {c.pillars.title}
+              </motion.h2>
 
-        {/* Slides */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="w-full h-full"
-          >
-            {renderSlide(t.slides[currentSlide], currentSlide)}
-          </motion.div>
-        </AnimatePresence>
+              <motion.div variants={stagger} className="grid grid-cols-1 lg:grid-cols-3 gap-px bg-white/[0.06] border border-white/[0.06]">
+                {PILLARS.map((p) => {
+                  const Icon = p.icon;
+                  return (
+                    <motion.article key={p.num} variants={fadeUp} className="bg-black p-8 lg:p-10 flex flex-col">
+                      <div className="flex items-center justify-between mb-10">
+                        <span className="font-mono text-[10px] tracking-[0.25em] text-white/40">{p.num}</span>
+                        <Icon className="w-4 h-4 text-white/40" strokeWidth={1.25} />
+                      </div>
+                      <h3 className="text-[22px] lg:text-[26px] font-light leading-[1.15] tracking-tight text-white mb-6">
+                        {p[`title_${locale}`] || p.title_en}
+                      </h3>
+                      <p className="text-[14px] leading-[1.7] text-white/55 font-light">
+                        {p[`body_${locale}`] || p.body_en}
+                      </p>
+                    </motion.article>
+                  );
+                })}
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
 
-        {/* Side navigation dots */}
-        <div className={`fixed top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3 ${isRTL ? 'left-4 md:left-6' : 'right-4 md:right-6'}`}>
-          {t.slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                currentSlide === index
-                  ? 'bg-white scale-125'
-                  : 'bg-white/30 hover:bg-white/50'
-              }`}
-              aria-label={`${t.navigation.slide} ${index + 1}`}
-            />
-          ))}
-        </div>
+        {/* ════════════════════════════════════════════════════════════════
+            3. SECTORS
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.sectors.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+              <motion.h2 variants={fadeUp} className="text-[34px] md:text-[52px] font-light tracking-tight leading-[1.05] text-white max-w-4xl mb-16">
+                {c.sectors.title}
+              </motion.h2>
 
-        {/* Bottom navigation arrows */}
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4">
-          <button
-            onClick={prevSlide}
-            disabled={currentSlide === 0}
-            className={`p-3 rounded-full border transition-all ${
-              currentSlide === 0
-                ? 'border-white/10 text-white/20 cursor-not-allowed'
-                : 'border-white/20 text-white hover:bg-white/10'
-            }`}
-          >
-            <ChevronUp className="w-5 h-5" />
-          </button>
-          <button
-            onClick={nextSlide}
-            disabled={currentSlide === totalSlides - 1}
-            className={`p-3 rounded-full border transition-all ${
-              currentSlide === totalSlides - 1
-                ? 'border-white/10 text-white/20 cursor-not-allowed'
-                : 'border-white/20 text-white hover:bg-white/10'
-            }`}
-          >
-            <ChevronDown className="w-5 h-5" />
-          </button>
-        </div>
+              <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.06] border border-white/[0.06]">
+                {SECTORS.map((s) => {
+                  const Icon = s.icon;
+                  return (
+                    <motion.article key={s.num} variants={fadeUp} className="bg-black p-8 lg:p-12">
+                      <div className="flex items-center justify-between mb-10">
+                        <span className="font-mono text-[10px] tracking-[0.25em] text-white/40">{s.num}</span>
+                        <Icon className="w-5 h-5 text-white/40" strokeWidth={1.25} />
+                      </div>
+                      <h3 className="text-[28px] lg:text-[36px] font-light tracking-tight text-white mb-6">
+                        {s[`name_${locale}`] || s.name_en}
+                      </h3>
+                      <p className="text-[14px] leading-[1.75] text-white/55 font-light">
+                        {s[`body_${locale}`] || s.body_en}
+                      </p>
+                    </motion.article>
+                  );
+                })}
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
 
-        {/* Keyboard hint */}
-        <div className="fixed bottom-6 right-6 hidden md:flex items-center gap-2 text-white/30 text-xs">
-          <kbd className="px-2 py-1 bg-white/5 rounded">↑</kbd>
-          <kbd className="px-2 py-1 bg-white/5 rounded">↓</kbd>
-          <span>or scroll</span>
-        </div>
-      </div>
+        {/* ════════════════════════════════════════════════════════════════
+            4. TEAM — engineers + capabilities matrix
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.team.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-16">
+                <motion.h2 variants={fadeUp} className="lg:col-span-7 text-[34px] md:text-[48px] font-light tracking-tight leading-[1.08] text-white">
+                  {c.team.title}
+                </motion.h2>
+                <motion.p variants={fadeUp} className="lg:col-span-5 text-[15px] leading-[1.75] text-white/55 font-light">
+                  {c.team.body}
+                </motion.p>
+              </div>
+
+              {/* Capabilities matrix — 4 cols × 2 rows */}
+              <motion.div variants={stagger} className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.06] border border-white/[0.06]">
+                {CAPABILITIES.map((cap, i) => {
+                  const Icon = cap.icon;
+                  return (
+                    <motion.div key={i} variants={fadeUp} className="bg-black p-7 lg:p-8">
+                      <div className="flex items-center justify-between mb-8">
+                        <span className="font-mono text-[10px] tracking-[0.25em] text-white/40">{String(i + 1).padStart(2, '0')}</span>
+                        <Icon className="w-4 h-4 text-white/40" strokeWidth={1.25} />
+                      </div>
+                      <div className="text-[15px] font-light text-white leading-snug">
+                        {cap[`name_${locale}`] || cap.name_en}
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            5. HOW WE WORK
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.process.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+              <motion.h2 variants={fadeUp} className="text-[34px] md:text-[52px] font-light tracking-tight leading-[1.05] text-white max-w-4xl mb-20">
+                {c.process.title}
+              </motion.h2>
+
+              <motion.ol variants={stagger} className="space-y-px bg-white/[0.06] border border-white/[0.06]">
+                {PROCESS.map((p) => (
+                  <motion.li key={p.num} variants={fadeUp} className="bg-black p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div className="lg:col-span-2 font-mono text-[10px] tracking-[0.3em] uppercase text-white/40">
+                      <span className="block text-[40px] lg:text-[56px] tracking-tight text-white/15 font-light leading-none mb-3">{p.num}</span>
+                      <span>Phase {p.num}</span>
+                    </div>
+                    <div className="lg:col-span-4">
+                      <h3 className="text-[22px] lg:text-[28px] font-light tracking-tight text-white leading-[1.15]">
+                        {p[`title_${locale}`] || p.title_en}
+                      </h3>
+                    </div>
+                    <p className="lg:col-span-6 text-[14px] leading-[1.75] text-white/55 font-light">
+                      {p[`body_${locale}`] || p.body_en}
+                    </p>
+                  </motion.li>
+                ))}
+              </motion.ol>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            6. COMPLIANCE FRAMEWORKS
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.frameworks.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-16">
+                <motion.h2 variants={fadeUp} className="lg:col-span-7 text-[34px] md:text-[48px] font-light tracking-tight leading-[1.08] text-white">
+                  {c.frameworks.title}
+                </motion.h2>
+                <motion.p variants={fadeUp} className="lg:col-span-5 text-[15px] leading-[1.75] text-white/55 font-light">
+                  {c.frameworks.body}
+                </motion.p>
+              </div>
+
+              <motion.div variants={stagger} className="grid grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.06] border border-white/[0.06]">
+                {FRAMEWORKS.map((f, i) => (
+                  <motion.div key={f.code} variants={fadeUp} className="bg-black p-7 lg:p-8 flex items-baseline gap-5">
+                    <span className="font-mono text-[10px] tracking-[0.25em] text-white/35">{String(i + 1).padStart(2, '0')}</span>
+                    <div>
+                      <div className="text-[20px] lg:text-[24px] font-light tracking-tight text-white mb-2">{f.code}</div>
+                      <div className="text-[12px] leading-[1.5] text-white/45 font-light">
+                        {f[`scope_${locale}`] || f.scope_en}
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            7. FOOTPRINT
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.footprint.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+              <motion.h2 variants={fadeUp} className="text-[34px] md:text-[52px] font-light tracking-tight leading-[1.05] text-white max-w-4xl mb-20">
+                {c.footprint.title}
+              </motion.h2>
+
+              <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.06] border border-white/[0.06]">
+                {FOOTPRINT.map((f) => (
+                  <motion.article key={f.num} variants={fadeUp} className="bg-black p-8 lg:p-10">
+                    <div className="flex items-baseline gap-5 mb-6">
+                      <span className="font-mono text-[10px] tracking-[0.25em] text-white/35">{f.num}</span>
+                      <span className="h-px flex-1 bg-white/[0.06]" />
+                    </div>
+                    <h3 className="text-[24px] lg:text-[30px] font-light tracking-tight text-white mb-5">
+                      {f[`region_${locale}`] || f.region_en}
+                    </h3>
+                    <p className="text-[14px] leading-[1.7] text-white/55 font-light">
+                      {f[`body_${locale}`] || f.body_en}
+                    </p>
+                  </motion.article>
+                ))}
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            8. FOUNDER NOTE
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="border-b border-white/[0.06]">
+          <div className="max-w-4xl mx-auto px-6 lg:px-10 py-28 lg:py-40">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-14">
+                <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/35">{c.founder.eyebrow}</span>
+                <span className="h-px flex-1 bg-white/[0.08]" />
+              </motion.div>
+              <motion.h2 variants={fadeUp} className="text-[30px] md:text-[42px] font-light tracking-tight leading-[1.1] text-white mb-14">
+                {c.founder.title}
+              </motion.h2>
+
+              <div className="space-y-7">
+                {c.founder.body_lines.map((line, i) => (
+                  <motion.p key={i} variants={fadeUp} className="text-[16px] md:text-[18px] leading-[1.75] text-white/65 font-light">
+                    {line}
+                  </motion.p>
+                ))}
+              </div>
+
+              <motion.div variants={fadeUp} className="mt-16 pt-10 border-t border-white/[0.08] font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
+                — Symloop Technology · Algiers · 2012 → ∞
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            9. FINAL CTA
+            ════════════════════════════════════════════════════════════════ */}
+        <section className="relative overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none opacity-[0.05]"
+               style={{ backgroundImage: 'radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.5), transparent 55%)' }} />
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-28 lg:py-40">
+            <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger}>
+              <motion.div variants={fadeUp} className="font-mono text-[10px] tracking-[0.3em] uppercase text-white/40 mb-10">
+                {c.cta.eyebrow}
+              </motion.div>
+              <motion.h2 variants={fadeUp} className="text-[36px] md:text-[60px] lg:text-[80px] font-light tracking-[-0.02em] leading-[1] text-white mb-12 max-w-5xl">
+                {c.cta.title}
+              </motion.h2>
+              <motion.p variants={fadeUp} className="text-[16px] md:text-[18px] leading-[1.7] text-white/55 font-light max-w-3xl mb-14">
+                {c.cta.body}
+              </motion.p>
+              <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4">
+                <Link href="/contact/?intent=discovery-sprint" className="group inline-flex items-center gap-3 bg-white text-black px-8 py-5 text-[13px] tracking-[0.05em]">
+                  <span>{c.cta.primary}</span>
+                  {arrowIcon}
+                </Link>
+                <a href="mailto:contact@symloop.com" className="inline-flex items-center gap-3 px-8 py-5 border border-white/15 hover:border-white/40 text-[13px] tracking-[0.05em] transition-colors text-white/70 hover:text-white">
+                  <MessageSquare className="w-3.5 h-3.5" strokeWidth={1.5} />
+                  <span>{c.cta.secondary}</span>
+                </a>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+      </main>
     </>
   );
 }
@@ -1331,7 +686,7 @@ export default function Presentation() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale || 'en', ['common'])),
     },
   };
 }
