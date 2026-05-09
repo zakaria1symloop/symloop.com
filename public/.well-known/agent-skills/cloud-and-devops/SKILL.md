@@ -2,7 +2,7 @@
 name: cloud-and-devops
 type: service
 provider: Symloop Technology
-url: https://www.symloop.com/services/cloud/
+url: https://symloop.com/services/cloud/
 contact: contact@symloop.com
 phone: +213549575512
 ---

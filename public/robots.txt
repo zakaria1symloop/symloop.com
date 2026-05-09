@@ -550,13 +550,13 @@ Allow: /
 # ============================================
 
 # Dynamic sitemap (auto-generated, all pages + hreflang) — uses canonical www host
-Sitemap: https://www.symloop.com/sitemap.xml
+Sitemap: https://symloop.com/sitemap.xml
 
 # Legacy sitemaps (kept for backward compatibility)
-Sitemap: https://www.symloop.com/sitemapindex.xml
-Sitemap: https://www.symloop.com/sitemap-multilingual.xml
-Sitemap: https://www.symloop.com/sitemap-enhanced.xml
-Sitemap: https://www.symloop.com/sitemap-images.xml
+Sitemap: https://symloop.com/sitemapindex.xml
+Sitemap: https://symloop.com/sitemap-multilingual.xml
+Sitemap: https://symloop.com/sitemap-enhanced.xml
+Sitemap: https://symloop.com/sitemap-images.xml
 
 # For AI crawlers
 # llms.txt: https://symloop.com/llms.txt
@@ -574,7 +574,7 @@ Sitemap: https://www.symloop.com/sitemap-images.xml
 # HOST
 # ============================================
 
-Host: https://www.symloop.com
+Host: https://symloop.com
 
 # ============================================
 # ADDITIONAL META

@@ -136,19 +136,19 @@ const placeLd = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Symloop — Tlemcen and western Algeria',
   description: CONTENT.fr.dek,
-  url: 'https://www.symloop.com/locations/tlemcen/',
-  image: 'https://www.symloop.com/sym-logo.png',
+  url: 'https://symloop.com/locations/tlemcen/',
+  image: 'https://symloop.com/sym-logo.png',
   telephone: '+213549575512',
   address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Tlemcen and western region', addressLocality: 'Tlemcen', addressRegion: 'Tlemcen', postalCode: '13000', addressCountry: 'DZ' },
   geo: { '@type': 'GeoCoordinates', latitude: 34.8782, longitude: -1.3170 },
   areaServed: [{ '@type': 'City', name: 'Tlemcen' }, { '@type': 'City', name: 'Mansourah' }, { '@type': 'City', name: 'Maghnia' }, { '@type': 'City', name: 'Aïn Témouchent' }],
-  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
 };
 
 const breadcrumbs = [
-  { name: 'Home',      url: 'https://www.symloop.com/' },
-  { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-  { name: 'Tlemcen',   url: 'https://www.symloop.com/locations/tlemcen/' },
+  { name: 'Home',      url: 'https://symloop.com/' },
+  { name: 'Locations', url: 'https://symloop.com/locations/' },
+  { name: 'Tlemcen',   url: 'https://symloop.com/locations/tlemcen/' },
 ];
 
 export default function LocationTlemcenPage() {

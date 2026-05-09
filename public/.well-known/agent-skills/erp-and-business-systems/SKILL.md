@@ -2,7 +2,7 @@
 name: erp-and-business-systems
 type: service
 provider: Symloop Technology
-url: https://www.symloop.com/services/consulting/
+url: https://symloop.com/services/consulting/
 contact: contact@symloop.com
 phone: +213549575512
 ---

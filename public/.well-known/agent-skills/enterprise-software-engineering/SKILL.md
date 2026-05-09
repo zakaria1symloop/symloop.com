@@ -2,7 +2,7 @@
 name: enterprise-software-engineering
 type: service
 provider: Symloop Technology
-url: https://www.symloop.com/services/software-engineering/
+url: https://symloop.com/services/software-engineering/
 contact: contact@symloop.com
 phone: +213549575512
 ---

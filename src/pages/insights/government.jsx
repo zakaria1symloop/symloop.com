@@ -423,16 +423,16 @@ export default function InsightGovernmentPage() {
     '@type':         'Article',
     headline:        c.title,
     description:     c.dek,
-    image:           ['https://www.symloop.com/insights/cover-government.jpg'],
+    image:           ['https://symloop.com/insights/cover-government.jpg'],
     datePublished:   '2026-05-04',
     dateModified:    '2026-05-04',
     author:          { '@type': 'Organization', name: 'Symloop Technology' },
     publisher:       {
       '@type': 'Organization',
       name:    'Symloop Technology',
-      logo:    { '@type': 'ImageObject', url: 'https://www.symloop.com/sym-logo.png' },
+      logo:    { '@type': 'ImageObject', url: 'https://symloop.com/sym-logo.png' },
     },
-    mainEntityOfPage: 'https://www.symloop.com/insights/government/',
+    mainEntityOfPage: 'https://symloop.com/insights/government/',
     about: [
       { '@type': 'Thing', name: 'Government digitization' },
       { '@type': 'Thing', name: 'E-government architecture' },
@@ -446,9 +446,9 @@ export default function InsightGovernmentPage() {
   };
 
   const breadcrumbs = [
-    { name: 'Home',     url: 'https://www.symloop.com/' },
-    { name: 'Insights', url: 'https://www.symloop.com/insights/' },
-    { name: c.title,    url: 'https://www.symloop.com/insights/government/' },
+    { name: 'Home',     url: 'https://symloop.com/' },
+    { name: 'Insights', url: 'https://symloop.com/insights/' },
+    { name: c.title,    url: 'https://symloop.com/insights/government/' },
   ];
 
   return (

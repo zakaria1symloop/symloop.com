@@ -139,19 +139,19 @@ const placeLd = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Symloop — Tizi Ouzou and Kabylia region',
   description: CONTENT.fr.dek,
-  url: 'https://www.symloop.com/locations/tizi-ouzou/',
-  image: 'https://www.symloop.com/sym-logo.png',
+  url: 'https://symloop.com/locations/tizi-ouzou/',
+  image: 'https://symloop.com/sym-logo.png',
   telephone: '+213549575512',
   address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Tizi Ouzou and Kabylia', addressLocality: 'Tizi Ouzou', addressRegion: 'Tizi Ouzou', postalCode: '15000', addressCountry: 'DZ' },
   geo: { '@type': 'GeoCoordinates', latitude: 36.7169, longitude: 4.0497 },
   areaServed: [{ '@type': 'City', name: 'Tizi Ouzou' }, { '@type': 'City', name: 'Draâ Ben Khedda' }, { '@type': 'City', name: 'Azazga' }, { '@type': 'AdministrativeArea', name: 'Kabylia' }],
-  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
 };
 
 const breadcrumbs = [
-  { name: 'Home',       url: 'https://www.symloop.com/' },
-  { name: 'Locations',  url: 'https://www.symloop.com/locations/' },
-  { name: 'Tizi Ouzou', url: 'https://www.symloop.com/locations/tizi-ouzou/' },
+  { name: 'Home',       url: 'https://symloop.com/' },
+  { name: 'Locations',  url: 'https://symloop.com/locations/' },
+  { name: 'Tizi Ouzou', url: 'https://symloop.com/locations/tizi-ouzou/' },
 ];
 
 export default function LocationTiziOuzouPage() {

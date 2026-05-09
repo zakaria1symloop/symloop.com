@@ -13,8 +13,8 @@ const stagger = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { stag
 const ARTICLE = {
   title: 'Logiciel GED en Algérie 2026 — Dématérialisation et Archivage Électronique',
   desc: "Guide complet GED pour entreprises et administrations algériennes. Dématérialisation, workflow, signature électronique, archivage à valeur probante. Alternatives SharePoint et OpenText. Symloop construit du sur-mesure.",
-  url: 'https://www.symloop.com/blog/logiciel-ged-dematerialisation-documents-algerie-2026/',
-  image: 'https://www.symloop.com/blog/cover-ged-dms.jpg',
+  url: 'https://symloop.com/blog/logiciel-ged-dematerialisation-documents-algerie-2026/',
+  image: 'https://symloop.com/blog/cover-ged-dms.jpg',
   published: '2026-05-04',
   modified: '2026-05-04',
   readTime: '18 min',
@@ -111,8 +111,8 @@ export default function BlogGedDmsPage() {
   const articleSchema = {
     '@context': 'https://schema.org', '@type': 'Article',
     headline: ARTICLE.title, description: ARTICLE.desc, image: [ARTICLE.image],
-    author: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
-    publisher: { '@type': 'Organization', name: 'Symloop Technology', logo: { '@type': 'ImageObject', url: 'https://www.symloop.com/sym-logo.png' } },
+    author: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
+    publisher: { '@type': 'Organization', name: 'Symloop Technology', logo: { '@type': 'ImageObject', url: 'https://symloop.com/sym-logo.png' } },
     datePublished: ARTICLE.published, dateModified: ARTICLE.modified,
     mainEntityOfPage: { '@type': 'WebPage', '@id': ARTICLE.url },
     inLanguage: 'fr',
@@ -131,8 +131,8 @@ export default function BlogGedDmsPage() {
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.symloop.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.symloop.com/blog/' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://symloop.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://symloop.com/blog/' },
       { '@type': 'ListItem', position: 3, name: 'GED Algérie 2026', item: ARTICLE.url },
     ],
   };

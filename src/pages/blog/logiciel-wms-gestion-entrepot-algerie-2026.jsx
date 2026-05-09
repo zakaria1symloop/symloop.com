@@ -13,8 +13,8 @@ const stagger = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { stag
 const ARTICLE = {
   title: 'Logiciel WMS en Algérie 2026 — Gestion d\'Entrepôt et Stock Multi-Sites',
   desc: "Guide complet WMS pour entrepôts et e-commerce en Algérie. Picking optimisé, mobile barcode, multi-sites, intégrations Yalidine/ZR Express/Maystro. Alternatives SAP EWM. Symloop construit du sur-mesure.",
-  url: 'https://www.symloop.com/blog/logiciel-wms-gestion-entrepot-algerie-2026/',
-  image: 'https://www.symloop.com/blog/cover-wms.jpg',
+  url: 'https://symloop.com/blog/logiciel-wms-gestion-entrepot-algerie-2026/',
+  image: 'https://symloop.com/blog/cover-wms.jpg',
   published: '2026-05-04',
   modified: '2026-05-04',
   readTime: '15 min',
@@ -110,8 +110,8 @@ export default function BlogWmsPage() {
   const articleSchema = {
     '@context': 'https://schema.org', '@type': 'Article',
     headline: ARTICLE.title, description: ARTICLE.desc, image: [ARTICLE.image],
-    author: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
-    publisher: { '@type': 'Organization', name: 'Symloop Technology', logo: { '@type': 'ImageObject', url: 'https://www.symloop.com/sym-logo.png' } },
+    author: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
+    publisher: { '@type': 'Organization', name: 'Symloop Technology', logo: { '@type': 'ImageObject', url: 'https://symloop.com/sym-logo.png' } },
     datePublished: ARTICLE.published, dateModified: ARTICLE.modified,
     mainEntityOfPage: { '@type': 'WebPage', '@id': ARTICLE.url },
     inLanguage: 'fr',
@@ -130,8 +130,8 @@ export default function BlogWmsPage() {
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.symloop.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.symloop.com/blog/' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://symloop.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://symloop.com/blog/' },
       { '@type': 'ListItem', position: 3, name: 'WMS Algérie 2026', item: ARTICLE.url },
     ],
   };

@@ -254,19 +254,19 @@ export default function LocationOranPage() {
     '@type':     'LocalBusiness',
     name:        'Symloop — Oran and western region',
     description: c.dek,
-    url:         'https://www.symloop.com/locations/oran/',
-    image:       'https://www.symloop.com/sym-logo.png',
+    url:         'https://symloop.com/locations/oran/',
+    image:       'https://symloop.com/sym-logo.png',
     telephone:   '+213549575512',
     address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Oran and western region', addressLocality: 'Oran', addressRegion: 'Oran', postalCode: '31000', addressCountry: 'DZ' },
     geo: { '@type': 'GeoCoordinates', latitude: 35.6987, longitude: -0.6349 },
     areaServed: [{ '@type': 'City', name: 'Oran' }, { '@type': 'City', name: 'Arzew' }, { '@type': 'City', name: 'Bethioua' }, { '@type': 'City', name: 'Bir El Djir' }, { '@type': 'City', name: 'Es Senia' }],
-    parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+    parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
   };
 
   const breadcrumbs = [
-    { name: 'Home',      url: 'https://www.symloop.com/' },
-    { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-    { name: 'Oran',      url: 'https://www.symloop.com/locations/oran/' },
+    { name: 'Home',      url: 'https://symloop.com/' },
+    { name: 'Locations', url: 'https://symloop.com/locations/' },
+    { name: 'Oran',      url: 'https://symloop.com/locations/oran/' },
   ];
 
   return (

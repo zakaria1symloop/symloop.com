@@ -133,19 +133,19 @@ const placeLd = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Symloop — Bejaia and Soummam valley',
   description: CONTENT.fr.dek,
-  url: 'https://www.symloop.com/locations/bejaia/',
-  image: 'https://www.symloop.com/sym-logo.png',
+  url: 'https://symloop.com/locations/bejaia/',
+  image: 'https://symloop.com/sym-logo.png',
   telephone: '+213549575512',
   address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Bejaia and Soummam', addressLocality: 'Bejaia', addressRegion: 'Bejaia', postalCode: '06000', addressCountry: 'DZ' },
   geo: { '@type': 'GeoCoordinates', latitude: 36.7525, longitude: 5.0567 },
   areaServed: [{ '@type': 'City', name: 'Bejaia' }, { '@type': 'City', name: 'Akbou' }, { '@type': 'City', name: 'Sidi Aïch' }, { '@type': 'AdministrativeArea', name: 'Soummam Valley' }],
-  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
 };
 
 const breadcrumbs = [
-  { name: 'Home',      url: 'https://www.symloop.com/' },
-  { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-  { name: 'Bejaia',    url: 'https://www.symloop.com/locations/bejaia/' },
+  { name: 'Home',      url: 'https://symloop.com/' },
+  { name: 'Locations', url: 'https://symloop.com/locations/' },
+  { name: 'Bejaia',    url: 'https://symloop.com/locations/bejaia/' },
 ];
 
 export default function LocationBejaiaPage() {

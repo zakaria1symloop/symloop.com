@@ -198,19 +198,19 @@ export default function LocationConstantinePage() {
     '@type':     'LocalBusiness',
     name:        'Symloop — Constantine and eastern region',
     description: c.dek,
-    url:         'https://www.symloop.com/locations/constantine/',
-    image:       'https://www.symloop.com/sym-logo.png',
+    url:         'https://symloop.com/locations/constantine/',
+    image:       'https://symloop.com/sym-logo.png',
     telephone:   '+213549575512',
     address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Constantine and eastern region', addressLocality: 'Constantine', addressRegion: 'Constantine', postalCode: '25000', addressCountry: 'DZ' },
     geo: { '@type': 'GeoCoordinates', latitude: 36.3650, longitude: 6.6147 },
     areaServed: [{ '@type': 'City', name: 'Constantine' }, { '@type': 'City', name: 'El Khroub' }, { '@type': 'City', name: 'Sidi Mabrouk' }, { '@type': 'City', name: 'Hamma Bouziane' }],
-    parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+    parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
   };
 
   const breadcrumbs = [
-    { name: 'Home',         url: 'https://www.symloop.com/' },
-    { name: 'Locations',    url: 'https://www.symloop.com/locations/' },
-    { name: 'Constantine',  url: 'https://www.symloop.com/locations/constantine/' },
+    { name: 'Home',         url: 'https://symloop.com/' },
+    { name: 'Locations',    url: 'https://symloop.com/locations/' },
+    { name: 'Constantine',  url: 'https://symloop.com/locations/constantine/' },
   ];
 
   return (

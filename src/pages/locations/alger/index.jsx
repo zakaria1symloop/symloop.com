@@ -303,8 +303,8 @@ export default function LocationAlgerPage() {
     '@type':     'LocalBusiness',
     name:        'Symloop — Algiers headquarters',
     description: c.dek,
-    url:         'https://www.symloop.com/locations/alger/',
-    image:       'https://www.symloop.com/sym-logo.png',
+    url:         'https://symloop.com/locations/alger/',
+    image:       'https://symloop.com/sym-logo.png',
     telephone:   '+213549575512',
     address: {
       '@type':         'PostalAddress',
@@ -327,14 +327,14 @@ export default function LocationAlgerPage() {
     parentOrganization: {
       '@type': 'Organization',
       name:    'Symloop Technology',
-      url:     'https://www.symloop.com',
+      url:     'https://symloop.com',
     },
   };
 
   const breadcrumbs = [
-    { name: 'Home',      url: 'https://www.symloop.com/' },
-    { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-    { name: 'Algiers',   url: 'https://www.symloop.com/locations/alger/' },
+    { name: 'Home',      url: 'https://symloop.com/' },
+    { name: 'Locations', url: 'https://symloop.com/locations/' },
+    { name: 'Algiers',   url: 'https://symloop.com/locations/alger/' },
   ];
 
   return (

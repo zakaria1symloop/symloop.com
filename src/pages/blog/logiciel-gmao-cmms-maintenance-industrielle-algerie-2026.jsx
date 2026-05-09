@@ -13,8 +13,8 @@ const stagger = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { stag
 const ARTICLE = {
   title: 'Logiciel GMAO en Algérie 2026 — Guide CMMS Maintenance Industrielle',
   desc: "Guide complet GMAO/CMMS pour l'industrie algérienne. Maintenance préventive, prédictive, IoT industriel, intégration ERP. Comment choisir, prix, alternatives Maximo. Symloop conçoit du sur-mesure.",
-  url: 'https://www.symloop.com/blog/logiciel-gmao-cmms-maintenance-industrielle-algerie-2026/',
-  image: 'https://www.symloop.com/blog/cover-gmao-cmms.jpg',
+  url: 'https://symloop.com/blog/logiciel-gmao-cmms-maintenance-industrielle-algerie-2026/',
+  image: 'https://symloop.com/blog/cover-gmao-cmms.jpg',
   published: '2026-05-04',
   modified: '2026-05-04',
   readTime: '16 min',
@@ -109,11 +109,11 @@ export default function BlogGmaoCmmsPage() {
     headline: ARTICLE.title,
     description: ARTICLE.desc,
     image: [ARTICLE.image],
-    author: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+    author: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
     publisher: {
       '@type': 'Organization',
       name: 'Symloop Technology',
-      logo: { '@type': 'ImageObject', url: 'https://www.symloop.com/sym-logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://symloop.com/sym-logo.png' },
     },
     datePublished: ARTICLE.published,
     dateModified: ARTICLE.modified,
@@ -140,8 +140,8 @@ export default function BlogGmaoCmmsPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.symloop.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.symloop.com/blog/' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://symloop.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://symloop.com/blog/' },
       { '@type': 'ListItem', position: 3, name: 'GMAO Algérie 2026', item: ARTICLE.url },
     ],
   };

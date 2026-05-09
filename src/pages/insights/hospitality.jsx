@@ -418,16 +418,16 @@ export default function InsightHospitalityPage() {
     '@type':         'Article',
     headline:        c.title,
     description:     c.dek,
-    image:           ['https://www.symloop.com/insights/cover-hospitality.jpg'],
+    image:           ['https://symloop.com/insights/cover-hospitality.jpg'],
     datePublished:   '2026-05-04',
     dateModified:    '2026-05-04',
     author:          { '@type': 'Organization', name: 'Symloop Technology' },
     publisher:       {
       '@type': 'Organization',
       name:    'Symloop Technology',
-      logo:    { '@type': 'ImageObject', url: 'https://www.symloop.com/sym-logo.png' },
+      logo:    { '@type': 'ImageObject', url: 'https://symloop.com/sym-logo.png' },
     },
-    mainEntityOfPage: 'https://www.symloop.com/insights/hospitality/',
+    mainEntityOfPage: 'https://symloop.com/insights/hospitality/',
     about: [
       { '@type': 'Thing', name: 'Hotel management software' },
       { '@type': 'Thing', name: 'Property management system PMS' },
@@ -440,9 +440,9 @@ export default function InsightHospitalityPage() {
   };
 
   const breadcrumbs = [
-    { name: 'Home',     url: 'https://www.symloop.com/' },
-    { name: 'Insights', url: 'https://www.symloop.com/insights/' },
-    { name: c.title,    url: 'https://www.symloop.com/insights/hospitality/' },
+    { name: 'Home',     url: 'https://symloop.com/' },
+    { name: 'Insights', url: 'https://symloop.com/insights/' },
+    { name: c.title,    url: 'https://symloop.com/insights/hospitality/' },
   ];
 
   return (

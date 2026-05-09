@@ -25,7 +25,7 @@ const nextConfig = {
   // ═══════════════════════════════════════
   async redirects() {
     return [
-      // ── Host canonicalization is handled by Vercel (symloop.com → www.symloop.com).
+      // ── Host canonicalization is handled by Vercel (symloop.com → symloop.com).
       //    Do NOT add an inverse rule here — it would create a redirect loop.
 
       // ── Stray /index.html artifacts (kill the duplicate of homepage) ──
@@ -52,7 +52,7 @@ const nextConfig = {
       { source: '/%D8%AE%D8%A8%D8%B1/', destination: '/', permanent: true },
       { source: '/%D8%AE%D8%A8%D8%B1', destination: '/', permanent: true },
 
-      // ── Old www.symloop.com blog paths (without /blog/ prefix) ──
+      // ── Old symloop.com blog paths (without /blog/ prefix) ──
       { source: '/developpement-application-mobile-algerie/', destination: '/blog/developpement-application-mobile-algerie-2026/', permanent: true },
       { source: '/creation-site-web-algerie/', destination: '/blog/creation-site-web-algerie-2024/', permanent: true },
       { source: '/ecommerce-algerie/', destination: '/blog/ecommerce-algerie-paiement-cib-edahabia-2024/', permanent: true },

@@ -2,7 +2,7 @@
 name: applied-ai-and-ml
 type: service
 provider: Symloop Technology
-url: https://www.symloop.com/services/ai/
+url: https://symloop.com/services/ai/
 contact: contact@symloop.com
 phone: +213549575512
 ---

@@ -136,19 +136,19 @@ const placeLd = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Symloop — Blida and Mitidja',
   description: CONTENT.fr.dek,
-  url: 'https://www.symloop.com/locations/blida/',
-  image: 'https://www.symloop.com/sym-logo.png',
+  url: 'https://symloop.com/locations/blida/',
+  image: 'https://symloop.com/sym-logo.png',
   telephone: '+213549575512',
   address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Blida and Mitidja', addressLocality: 'Blida', addressRegion: 'Blida', postalCode: '09000', addressCountry: 'DZ' },
   geo: { '@type': 'GeoCoordinates', latitude: 36.4708, longitude: 2.8278 },
   areaServed: [{ '@type': 'City', name: 'Blida' }, { '@type': 'City', name: 'Boufarik' }, { '@type': 'City', name: 'Beni Mered' }, { '@type': 'AdministrativeArea', name: 'Mitidja' }],
-  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
 };
 
 const breadcrumbs = [
-  { name: 'Home',      url: 'https://www.symloop.com/' },
-  { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-  { name: 'Blida',     url: 'https://www.symloop.com/locations/blida/' },
+  { name: 'Home',      url: 'https://symloop.com/' },
+  { name: 'Locations', url: 'https://symloop.com/locations/' },
+  { name: 'Blida',     url: 'https://symloop.com/locations/blida/' },
 ];
 
 export default function LocationBlidaPage() {

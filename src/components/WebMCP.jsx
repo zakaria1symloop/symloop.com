@@ -20,54 +20,54 @@ const SERVICES = [
     slug: 'software-engineering',
     name: 'Custom Software Engineering',
     summary: 'Production-grade enterprise software — multi-tenant SaaS, microservices, API platforms, legacy modernization.',
-    url: 'https://www.symloop.com/services/software-engineering/',
-    skill_card: 'https://www.symloop.com/.well-known/agent-skills/enterprise-software-engineering/SKILL.md',
+    url: 'https://symloop.com/services/software-engineering/',
+    skill_card: 'https://symloop.com/.well-known/agent-skills/enterprise-software-engineering/SKILL.md',
   },
   {
     slug: 'ai',
     name: 'Applied AI and Machine Learning',
     summary: 'Production ML — computer vision, NLP (incl. Arabic), LLM/RAG systems, predictive analytics, MLOps.',
-    url: 'https://www.symloop.com/services/ai/',
-    skill_card: 'https://www.symloop.com/.well-known/agent-skills/applied-ai-and-ml/SKILL.md',
+    url: 'https://symloop.com/services/ai/',
+    skill_card: 'https://symloop.com/.well-known/agent-skills/applied-ai-and-ml/SKILL.md',
   },
   {
     slug: 'cloud',
     name: 'Cloud Migration and DevOps',
     summary: 'AWS / Azure / GCP migration, Kubernetes, CI/CD, IaC, SRE practice. On-prem and hybrid options.',
-    url: 'https://www.symloop.com/services/cloud/',
-    skill_card: 'https://www.symloop.com/.well-known/agent-skills/cloud-and-devops/SKILL.md',
+    url: 'https://symloop.com/services/cloud/',
+    skill_card: 'https://symloop.com/.well-known/agent-skills/cloud-and-devops/SKILL.md',
   },
   {
     slug: 'mobile',
     name: 'Mobile Engineering',
     summary: 'Native iOS (Swift), Android (Kotlin), and cross-platform (Flutter) for enterprise mobile.',
-    url: 'https://www.symloop.com/services/mobile/',
-    skill_card: 'https://www.symloop.com/.well-known/agent-skills/mobile-engineering/SKILL.md',
+    url: 'https://symloop.com/services/mobile/',
+    skill_card: 'https://symloop.com/.well-known/agent-skills/mobile-engineering/SKILL.md',
   },
   {
     slug: 'consulting',
     name: 'Digital Transformation Consulting and ERP',
     summary: 'Custom ERP, CRM, WMS, GMAO, BI. We build, we do not resell. MENA-payments and Arabic-RTL ready.',
-    url: 'https://www.symloop.com/services/consulting/',
-    skill_card: 'https://www.symloop.com/.well-known/agent-skills/erp-and-business-systems/SKILL.md',
+    url: 'https://symloop.com/services/consulting/',
+    skill_card: 'https://symloop.com/.well-known/agent-skills/erp-and-business-systems/SKILL.md',
   },
   {
     slug: 'iot',
     name: 'Industrial IoT and Embedded',
     summary: 'ESP32, sensors, SCADA-aware platforms, smart-factory deployments.',
-    url: 'https://www.symloop.com/services/iot/',
+    url: 'https://symloop.com/services/iot/',
   },
   {
     slug: 'cybersecurity',
     name: 'Cybersecurity Audit and Pentest',
     summary: 'Penetration testing, security audits, SOC 2 / ISO 27001 alignment.',
-    url: 'https://www.symloop.com/services/cybersecurity/',
+    url: 'https://symloop.com/services/cybersecurity/',
   },
   {
     slug: 'product',
     name: 'Product Engineering and MVP',
     summary: 'MVP development, SaaS platforms, fintech engineering for funded startups.',
-    url: 'https://www.symloop.com/services/product/',
+    url: 'https://symloop.com/services/product/',
   },
 ];
 
@@ -85,7 +85,7 @@ const COMPANY = {
   contact: {
     email: 'contact@symloop.com',
     phone: '+213549575512',
-    website: 'https://www.symloop.com',
+    website: 'https://symloop.com',
   },
   clutch_rating: '5.0/5.0',
   clutch_url: 'https://clutch.co/profile/symloop-technology',
@@ -95,8 +95,8 @@ const NOOR = {
   name: 'NOOR by Symloop',
   arabic_name: 'نور',
   meaning: 'NOOR means "light" in Arabic',
-  url: 'https://www.symloop.com/products/noor/',
-  skill_card: 'https://www.symloop.com/.well-known/agent-skills/noor-platform/SKILL.md',
+  url: 'https://symloop.com/products/noor/',
+  skill_card: 'https://symloop.com/.well-known/agent-skills/noor-platform/SKILL.md',
   one_sentence:
     "Sovereign AI platform engineered for banks, ministries, oil & gas operators, and healthcare groups across MENA.",
   capabilities: [
@@ -128,7 +128,7 @@ const NOOR = {
 };
 
 function buildContactUrl(params) {
-  const url = new URL('https://www.symloop.com/contact/');
+  const url = new URL('https://symloop.com/contact/');
   for (const [k, v] of Object.entries(params)) {
     if (v !== undefined && v !== null && v !== '') url.searchParams.set(k, String(v));
   }

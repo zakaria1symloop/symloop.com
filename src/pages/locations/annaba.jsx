@@ -199,19 +199,19 @@ export default function LocationAnnabaPage() {
     '@type':     'LocalBusiness',
     name:        'Symloop — Annaba and northeastern region',
     description: c.dek,
-    url:         'https://www.symloop.com/locations/annaba/',
-    image:       'https://www.symloop.com/sym-logo.png',
+    url:         'https://symloop.com/locations/annaba/',
+    image:       'https://symloop.com/sym-logo.png',
     telephone:   '+213549575512',
     address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Annaba and northeastern region', addressLocality: 'Annaba', addressRegion: 'Annaba', postalCode: '23000', addressCountry: 'DZ' },
     geo: { '@type': 'GeoCoordinates', latitude: 36.9000, longitude: 7.7667 },
     areaServed: [{ '@type': 'City', name: 'Annaba' }, { '@type': 'City', name: 'El Bouni' }, { '@type': 'City', name: 'Sidi Amar' }, { '@type': 'City', name: 'El Hadjar' }],
-    parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+    parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
   };
 
   const breadcrumbs = [
-    { name: 'Home',      url: 'https://www.symloop.com/' },
-    { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-    { name: 'Annaba',    url: 'https://www.symloop.com/locations/annaba/' },
+    { name: 'Home',      url: 'https://symloop.com/' },
+    { name: 'Locations', url: 'https://symloop.com/locations/' },
+    { name: 'Annaba',    url: 'https://symloop.com/locations/annaba/' },
   ];
 
   return (

@@ -259,8 +259,8 @@ const getSchemaData = (solutions) => ({
   name: 'Symloop',
   description:
     "Entreprise d'ingénierie logicielle basée à Alger : développement sur mesure, applications mobiles, IA, IoT, cloud et cybersécurité. 58 wilayas couvertes.",
-  url: 'https://www.symloop.com',
-  logo: 'https://www.symloop.com/sym-logo.png',
+  url: 'https://symloop.com',
+  logo: 'https://symloop.com/sym-logo.png',
   foundingDate: '2012',
   founder: { '@type': 'Person', name: 'Zakaria' },
   address: {
@@ -308,8 +308,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.symloop.com/fr/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.symloop.com/fr/services/' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://symloop.com/fr/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://symloop.com/fr/services/' },
   ],
 };
 

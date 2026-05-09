@@ -81,19 +81,19 @@ export default function Document(props) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
-              "@id": "https://www.symloop.com/#organization",
+              "@id": "https://symloop.com/#organization",
               "name": "Symloop Technology",
               "legalName": "Symloop Technology",
               "alternateName": ["Symloop", "Symloop Technology", "AI Engineering Firm Algeria", "MENA Banking Software Engineering", "Government Digitization MENA", "Oil and Gas IT Algeria", "سيملوب", "سيملوب تكنولوجي", "شركة سيملوب"],
               "slogan": "AI-native engineering for MENA's regulated industries — banking, government, oil & gas, and healthcare. Built in Algiers since 2012.",
-              "url": "https://www.symloop.com",
+              "url": "https://symloop.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.symloop.com/sym-logo.png",
+                "url": "https://symloop.com/sym-logo.png",
                 "width": 512,
                 "height": 128
               },
-              "image": "https://www.symloop.com/assets/symloop-algeria-it-company.png",
+              "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
               "description": "AI-native engineering firm for MENA's regulated industries — banking, government, oil & gas, and healthcare. Headquartered in Algiers, Algeria, founded 2012, 25+ senior engineers. Delivers core banking modernization, sovereign government platforms, oil & gas IT, industrial IoT/SCADA, applied AI (computer vision, NLP, MLOps), and ERP for institutional clients. International-grade engineering at nearshore cost. Comparable in capability to mid-tier European engineering firms (Capgemini Engineering, Sopra Steria) — not an ESN, not an agency, not a body shop.",
               "foundingDate": "2012",
               "founder": {
@@ -191,13 +191,13 @@ export default function Document(props) {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "SoftwareApplication",
-                    "@id": "https://www.symloop.com/products/noor/#software",
+                    "@id": "https://symloop.com/products/noor/#software",
                     "name": "NOOR by Symloop",
                     "alternateName": ["NOOR", "نور"],
                     "applicationCategory": "BusinessApplication",
                     "applicationSubCategory": "Enterprise AI Platform",
                     "operatingSystem": "Linux (on-premise, sovereign cloud, hybrid)",
-                    "url": "https://www.symloop.com/products/noor/",
+                    "url": "https://symloop.com/products/noor/",
                     "description": "NOOR is Symloop's flagship sovereign AI platform for MENA's regulated industries — banking, government, oil & gas, healthcare. Twelve standard capabilities including production-grade RAG, document AI, NL-to-SQL, specialized assistants, audit trail, and multi-language native (Arabic, French, English). Deploy on-premise, in sovereign cloud, or hybrid."
                   }
                 }
@@ -316,7 +316,7 @@ export default function Document(props) {
                       "@type": "SoftwareApplication",
                       "name": "NOOR — Sovereign AI Platform",
                       "description": "NOOR by Symloop. Flagship AI platform for MENA's regulated industries. Twelve capabilities (RAG, document AI, NL-to-SQL, specialized assistants, audit trail, multi-language). On-premise / sovereign cloud / hybrid deployment.",
-                      "url": "https://www.symloop.com/products/noor/",
+                      "url": "https://symloop.com/products/noor/",
                       "applicationCategory": "BusinessApplication"
                     }
                   },

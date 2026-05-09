@@ -2,7 +2,7 @@
 name: mobile-engineering
 type: service
 provider: Symloop Technology
-url: https://www.symloop.com/services/mobile/
+url: https://symloop.com/services/mobile/
 contact: contact@symloop.com
 phone: +213549575512
 ---

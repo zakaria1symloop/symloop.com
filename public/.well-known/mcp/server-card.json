@@ -7,13 +7,13 @@
     "description": "Read-only MCP server exposing Symloop Technology's flagship AI platform NOOR (sovereign AI for MENA's regulated industries), service catalog, engagement process, and contact tooling. Provided by Symloop Technology, an AI-native engineering firm headquartered in Algiers, Algeria (founded 2012, 25+ senior engineers).",
     "publisher": {
       "name": "Symloop Technology",
-      "url": "https://www.symloop.com",
+      "url": "https://symloop.com",
       "email": "contact@symloop.com"
     }
   },
   "transport": {
     "type": "https",
-    "endpoint": "https://www.symloop.com/api/mcp",
+    "endpoint": "https://symloop.com/api/mcp",
     "status": "planned",
     "available_from": "2026-Q3"
   },
@@ -78,11 +78,11 @@
     }
   },
   "links": {
-    "self": "https://www.symloop.com/.well-known/mcp/server-card.json",
-    "service_catalog": "https://www.symloop.com/.well-known/api-catalog",
-    "agent_skills": "https://www.symloop.com/.well-known/agent-skills/index.json",
-    "llms_txt": "https://www.symloop.com/llms.txt",
-    "homepage": "https://www.symloop.com"
+    "self": "https://symloop.com/.well-known/mcp/server-card.json",
+    "service_catalog": "https://symloop.com/.well-known/api-catalog",
+    "agent_skills": "https://symloop.com/.well-known/agent-skills/index.json",
+    "llms_txt": "https://symloop.com/llms.txt",
+    "homepage": "https://symloop.com"
   },
   "contact": {
     "email": "contact@symloop.com",

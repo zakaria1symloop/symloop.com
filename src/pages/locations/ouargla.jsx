@@ -140,19 +140,19 @@ const placeLd = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness',
   name: 'Symloop — Ouargla and Saharan oil & gas region',
   description: CONTENT.fr.dek,
-  url: 'https://www.symloop.com/locations/ouargla/',
-  image: 'https://www.symloop.com/sym-logo.png',
+  url: 'https://symloop.com/locations/ouargla/',
+  image: 'https://symloop.com/sym-logo.png',
   telephone: '+213549575512',
   address: { '@type': 'PostalAddress', streetAddress: 'Algiers HQ — serving Ouargla and Saharan oil region', addressLocality: 'Ouargla', addressRegion: 'Ouargla', postalCode: '30000', addressCountry: 'DZ' },
   geo: { '@type': 'GeoCoordinates', latitude: 31.9539, longitude: 5.3247 },
   areaServed: [{ '@type': 'City', name: 'Ouargla' }, { '@type': 'City', name: 'Hassi Messaoud' }, { '@type': 'City', name: 'Touggourt' }, { '@type': 'AdministrativeArea', name: 'Algerian Sahara' }],
-  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://www.symloop.com' },
+  parentOrganization: { '@type': 'Organization', name: 'Symloop Technology', url: 'https://symloop.com' },
 };
 
 const breadcrumbs = [
-  { name: 'Home',      url: 'https://www.symloop.com/' },
-  { name: 'Locations', url: 'https://www.symloop.com/locations/' },
-  { name: 'Ouargla',   url: 'https://www.symloop.com/locations/ouargla/' },
+  { name: 'Home',      url: 'https://symloop.com/' },
+  { name: 'Locations', url: 'https://symloop.com/locations/' },
+  { name: 'Ouargla',   url: 'https://symloop.com/locations/ouargla/' },
 ];
 
 export default function LocationOuarglaPage() {

@@ -2,7 +2,7 @@
 name: noor-platform
 type: product
 provider: Symloop Technology
-url: https://www.symloop.com/products/noor/
+url: https://symloop.com/products/noor/
 contact: contact@symloop.com
 phone: +213549575512
 ---

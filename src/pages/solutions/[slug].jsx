@@ -114,7 +114,7 @@ export default function SolutionPage() {
   // Hardcoding `/${locale}/...` produced wrong canonicals on default-locale URLs
   // and contributed to GSC "Page with redirect" failures.
   const localePrefix = locale === 'en' ? '' : `/${locale}`;
-  const canonicalUrl = `https://www.symloop.com${localePrefix}/solutions/${key}`;
+  const canonicalUrl = `https://symloop.com${localePrefix}/solutions/${key}`;
 
   // Generate structured data for SEO
   const structuredData = {

@@ -295,11 +295,11 @@ export default function NoorProductPage() {
       <Head>
         <title>{seoTitle}</title>
         <meta name="description" content={seoDesc} />
-        <link rel="canonical" href="https://www.symloop.com/products/noor/" />
+        <link rel="canonical" href="https://symloop.com/products/noor/" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDesc} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.symloop.com/products/noor/" />
+        <meta property="og:url" content="https://symloop.com/products/noor/" />
 
         {/* SoftwareApplication schema */}
         <script
@@ -314,7 +314,7 @@ export default function NoorProductPage() {
               applicationSubCategory: 'Enterprise AI Platform',
               operatingSystem: 'Linux (on-premise, sovereign cloud, hybrid)',
               description: seoDesc,
-              url: 'https://www.symloop.com/products/noor/',
+              url: 'https://symloop.com/products/noor/',
               softwareVersion: '1.0',
               offers: {
                 '@type': 'Offer',
@@ -328,7 +328,7 @@ export default function NoorProductPage() {
               creator: {
                 '@type': 'Organization',
                 name: 'Symloop Technology',
-                url: 'https://www.symloop.com',
+                url: 'https://symloop.com',
                 foundingDate: '2012',
                 address: {
                   '@type': 'PostalAddress',
@@ -373,9 +373,9 @@ export default function NoorProductPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.symloop.com/' },
-                { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.symloop.com/products/' },
-                { '@type': 'ListItem', position: 3, name: 'NOOR', item: 'https://www.symloop.com/products/noor/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://symloop.com/' },
+                { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://symloop.com/products/' },
+                { '@type': 'ListItem', position: 3, name: 'NOOR', item: 'https://symloop.com/products/noor/' },
               ],
             }),
           }}
