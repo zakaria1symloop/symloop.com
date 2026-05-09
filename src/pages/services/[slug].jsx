@@ -615,7 +615,6 @@ export async function getStaticPaths() {
   return {
     paths: getAllSlugPaths(),
     fallback: 'blocking',
-  revalidate: 86400,
   };
 }
 
@@ -700,5 +699,6 @@ export async function getStaticProps({ params, locale }) {
       relatedServices,
       locale,
     },
+    revalidate: 86400,
   };
 }
