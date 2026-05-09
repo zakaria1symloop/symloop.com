@@ -570,5 +570,5 @@ export default function ReussirProjetDigital() {
 }
 
 export async function getStaticProps({ locale }) {
-  return { props: { ...(await serverSideTranslations(locale, ['common'])) } };
+  return { props: { ...(await serverSideTranslations(locale, ['common'])) }, revalidate: 86400 };
 }

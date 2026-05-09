@@ -685,5 +685,6 @@ export async function getStaticProps({ params, locale }) {
     props: {
       ...(await serverSideTranslations(locale, ['common'])),
     },
+  revalidate: 86400,
   };
 }

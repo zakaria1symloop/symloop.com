@@ -615,6 +615,7 @@ export async function getStaticPaths() {
   return {
     paths: getAllSlugPaths(),
     fallback: 'blocking',
+  revalidate: 86400,
   };
 }
 

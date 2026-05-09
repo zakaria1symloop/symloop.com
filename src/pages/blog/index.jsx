@@ -215,5 +215,6 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ['common'])),
       locale: locale || 'fr',
     },
+  revalidate: 86400,
   };
 }

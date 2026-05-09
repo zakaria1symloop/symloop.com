@@ -316,7 +316,7 @@ export default function ServicesPage({ services, locale: pageLocale }) {
   return (
     <>
       <Head>
-        <title>{pageMetaTitle}</title>
+        <title>{pageMetaTitle, revalidate: 86400 }</title>
         <meta name="description" content={pageMetaDescription} />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:type" content="website" />

@@ -555,5 +555,5 @@ export default function HajzCaseStudyPage() {
 }
 
 export async function getStaticProps({ locale }) {
-  return { props: { ...(await serverSideTranslations(locale || 'en', ['common'])) } };
+  return { props: { ...(await serverSideTranslations(locale || 'en', ['common'])) }, revalidate: 86400 };
 }

@@ -551,5 +551,5 @@ export default function TendancesTech2025() {
 }
 
 export async function getStaticProps({ locale }) {
-  return { props: { ...(await serverSideTranslations(locale, ['common'])) } };
+  return { props: { ...(await serverSideTranslations(locale, ['common'])) }, revalidate: 86400 };
 }

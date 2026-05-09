@@ -150,7 +150,7 @@ const C={
 
 const ICONS={clock:Clock,globe:Globe,dollar:DollarSign,shield:Shield};
 
-export async function getStaticProps({locale}){return{props:{...(await serverSideTranslations(locale||'fr',['common']))}}}
+export async function getStaticProps({locale}){return{props:{...(await serverSideTranslations(locale||'fr',['common']))}, revalidate: 86400 }}
 
 export default function OutsourcingPage(){const{locale}=useRouter();const isRtl=locale==='ar';const c=C[locale]||C.fr;
   const ld={'@context':'https://schema.org','@type':'WebPage',name:c.title,description:c.dek,url:'https://symloop.com/outsourcing/',publisher:{'@type':'Organization',name:'Symloop Technology'}};

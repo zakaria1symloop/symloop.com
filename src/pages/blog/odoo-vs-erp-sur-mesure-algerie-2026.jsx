@@ -127,4 +127,4 @@ export default function Page() {
     </>
   );
 }
-export async function getStaticProps({ locale }) { return { props: { ...(await serverSideTranslations(locale, ['common'])) } }; }
+export async function getStaticProps({ locale }) { return { props: { ...(await serverSideTranslations(locale, ['common'])) }, revalidate: 86400 }; }
