@@ -316,7 +316,7 @@ export default function ServicesPage({ services, locale: pageLocale }) {
   return (
     <>
       <Head>
-        <title>{pageMetaTitle, revalidate: 86400 }</title>
+        <title>{pageMetaTitle}</title>
         <meta name="description" content={pageMetaDescription} />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:type" content="website" />
@@ -836,5 +836,6 @@ export async function getStaticProps({ locale }) {
       services,
       locale: locale || 'fr',
     },
+    revalidate: 86400,
   };
 }
