@@ -284,18 +284,33 @@ export default function SEO({
       <meta name="twitter:site" content="@symloop" />
       <meta name="twitter:creator" content="@symloop" />
 
-      {/* Article specific meta tags */}
-      {article && (
-        <>
-          <meta property="article:published_time" content={article.datePublished} />
-          <meta property="article:modified_time" content={article.dateModified || article.datePublished} />
-          <meta property="article:author" content="Symloop" />
-          <meta property="article:section" content={article.category} />
-          {article.tags?.map((tag, i) => (
-            <meta key={i} property="article:tag" content={tag} />
-          ))}
-        </>
-      )}
+      {/* Article specific meta tags — supports BOTH the legacy `article` prop
+          AND the modern pattern of passing JSON-LD via `structuredData` (with
+          @type Article / BlogPosting). Without this, standalone editorial
+          blogs ship without article:published_time and Google will not treat
+          them as fresh articles — they get stuck on "URL is unknown to
+          Google" / "Discovered, not indexed". */}
+      {(() => {
+        const sd = structuredData;
+        const sdIsArticle = sd && (sd['@type'] === 'Article' || sd['@type'] === 'BlogPosting' || sd['@type'] === 'NewsArticle');
+        const a = article || (type === 'article' && sdIsArticle ? sd : null);
+        if (!a) return null;
+        const published = a.datePublished;
+        const modified  = a.dateModified || a.datePublished;
+        const section   = a.category || a.articleSection;
+        const tags      = a.tags || a.keywords;
+        return (
+          <>
+            {published && <meta property="article:published_time" content={published} />}
+            {modified  && <meta property="article:modified_time"  content={modified} />}
+            <meta property="article:author" content="Symloop" />
+            {section && <meta property="article:section" content={section} />}
+            {Array.isArray(tags) && tags.map((tag, i) => (
+              <meta key={i} property="article:tag" content={tag} />
+            ))}
+          </>
+        );
+      })()}
 
       {/* Mobile & PWA */}
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
