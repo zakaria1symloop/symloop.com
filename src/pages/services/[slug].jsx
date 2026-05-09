@@ -699,6 +699,5 @@ export async function getStaticProps({ params, locale }) {
       relatedServices,
       locale,
     },
-    revalidate: 86400,
   };
 }

@@ -836,6 +836,5 @@ export async function getStaticProps({ locale }) {
       services,
       locale: locale || 'fr',
     },
-    revalidate: 86400,
   };
 }

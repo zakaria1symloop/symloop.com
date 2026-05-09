@@ -126,7 +126,7 @@ const C={
   },
 };
 
-export async function getStaticProps({locale}){return{props:{...(await serverSideTranslations(locale||'en',['common']))}, revalidate: 86400 }}
+export async function getStaticProps({locale}){return{props:{...(await serverSideTranslations(locale||'en',['common']))} }}
 
 export default function Hub71Blog(){const{locale}=useRouter();const isRtl=locale==='ar';const c=C[locale]||C.en;
   const ld={'@context':'https://schema.org','@type':'Article',headline:c.title,description:c.dek,datePublished:'2026-04-15',author:{'@type':'Organization',name:'Symloop Technology',url:'https://symloop.com'},publisher:{'@type':'Organization',name:'Symloop Technology',logo:{'@type':'ImageObject',url:'https://symloop.com/sym-logo.png'}}};

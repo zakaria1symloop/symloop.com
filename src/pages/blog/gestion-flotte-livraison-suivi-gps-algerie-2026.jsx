@@ -1629,5 +1629,5 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
 }
 
 export async function getStaticProps({ locale }) {
-  return { props: { ...(await serverSideTranslations(locale, ['common'])) }, revalidate: 86400 };
+  return { props: { ...(await serverSideTranslations(locale, ['common'])) } };
 }

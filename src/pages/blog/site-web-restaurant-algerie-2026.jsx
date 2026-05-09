@@ -955,5 +955,5 @@ export default function SiteWebRestaurantAlgerie() {
 }
 
 export async function getStaticProps({ locale }) {
-  return { props: { ...(await serverSideTranslations(locale, ['common'])) }, revalidate: 86400 };
+  return { props: { ...(await serverSideTranslations(locale, ['common'])) } };
 }

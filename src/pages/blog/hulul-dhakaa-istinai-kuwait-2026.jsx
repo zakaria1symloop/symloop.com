@@ -201,4 +201,4 @@ export default function HululDhakaaIstinaiKuwait2026() {
 
       </article></>);
 }
-export async function getStaticProps({ locale }) { return { props: { ...(await serverSideTranslations(locale, ['common'])) }, revalidate: 86400 }; }
+export async function getStaticProps({ locale }) { return { props: { ...(await serverSideTranslations(locale, ['common'])) } }; }
