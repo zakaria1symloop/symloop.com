@@ -503,9 +503,8 @@ const SeoEnhanced = ({
         }}
       />
 
-      {/* Preconnect to Important Domains */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      {/* Preconnect to important domains — fonts.googleapis removed,
+          Google Fonts now self-hosted via next/font/google in _app.js. */}
       <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     </Head>

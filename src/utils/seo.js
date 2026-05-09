@@ -133,12 +133,12 @@ export default function Seo({
       <meta name="msapplication-TileColor" content="#1e40af" />
       
       {/* Preload critical resources */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link rel="preload" href={image} as="image" />
-      
-      {/* DNS prefetch for external resources */}
-      <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+      {/* DNS prefetch for external resources — fonts.googleapis removed
+          because Google Fonts are now self-hosted via next/font/google
+          (see src/pages/_app.js). Keeping these as a third-party preconnect
+          would cost a useless DNS+TLS handshake on every page load. */}
       <link rel="dns-prefetch" href="//www.google-analytics.com" />
       <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       
