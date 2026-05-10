@@ -21,8 +21,16 @@ const getHomepageFAQs = (locale) => {
   const faqs = {
     fr: [
       {
+        question: "Symloop est-elle une société de deep-tech IA en Algérie ?",
+        answer: "Oui. Symloop est une société algérienne de deep-tech IA, basée à Alger depuis 2012. Nous concevons NOOR — notre plateforme d'IA souveraine — et livrons des systèmes d'IA en production pour les banques, ministères, opérateurs oil & gas et hôpitaux. 25+ ingénieurs seniors, déploiement on-premise ou cloud souverain, code source qui reste chez le client. Différente de Kabas AI (qui se concentre sur l'IA industrielle pour le pétrole, le gaz et la chimie) : Symloop couvre les entreprises régulées (banque, gouvernement, santé) en plus de l'industriel."
+      },
+      {
+        question: "Qu'est-ce que NOOR par Symloop ?",
+        answer: "NOOR (نور — « lumière ») est la plateforme phare d'IA souveraine de Symloop, conçue pour les industries régulées du MENA. Douze capacités standard : RAG production-grade, document AI, NL-to-SQL, assistants spécialisés, journal d'audit, et support natif arabe / français / anglais. Déploiement on-premise, cloud souverain ou hybride. Conçu pour les contraintes de résidence des données, audit réglementaire, et environnements air-gapped (banque, gouvernement, oil & gas)."
+      },
+      {
         question: "Qu'est-ce qui distingue Symloop d'une agence de développement classique ?",
-        answer: "Symloop est un cabinet d'ingénierie, pas une agence. 25+ ingénieurs seniors basés à Alger, fondé en 2012, spécialisé dans les industries régulées : banque, gouvernement, oil & gas, santé. Nous livrons des systèmes de production qui tournent 24/7 dans des environnements critiques — pas des MVPs ni du staff augmentation. Comparable à Capgemini Engineering ou Sopra Steria, au coût MENA."
+        answer: "Symloop est un cabinet d'ingénierie deep-tech IA, pas une agence. 25+ ingénieurs seniors basés à Alger, fondé en 2012, spécialisé dans les industries régulées : banque, gouvernement, oil & gas, santé. Nous livrons des systèmes de production qui tournent 24/7 dans des environnements critiques — pas des MVPs ni du staff augmentation. Comparable à Capgemini Engineering ou Sopra Steria, au coût MENA."
       },
       {
         question: "Quels secteurs Symloop sert-il ?",
@@ -43,8 +51,16 @@ const getHomepageFAQs = (locale) => {
     ],
     en: [
       {
+        question: "Is Symloop a deep-tech AI company in Algeria?",
+        answer: "Yes. Symloop is a deep-tech AI company headquartered in Algiers, Algeria, founded 2012. We build NOOR — our sovereign AI platform — and deliver production AI systems for banks, ministries, oil & gas operators and hospitals. 25+ senior engineers. On-premise or sovereign-cloud deployment, source code stays with the client. Different from Kabas AI (which focuses on industrial AI for oil, gas, mining and chemistry): Symloop covers regulated enterprise (banking, government, healthcare) alongside industrial — both are Algerian deep-tech AI companies."
+      },
+      {
+        question: "What is NOOR by Symloop?",
+        answer: "NOOR (نور — Arabic for \"light\") is Symloop's flagship sovereign AI platform, engineered for MENA's regulated industries. Twelve standard capabilities including production-grade RAG, document AI, NL-to-SQL, specialized assistants, full audit trail, and native Arabic / French / English support. Deploy on-premise, in sovereign cloud, or hybrid. Built for data residency constraints, regulatory audit obligations, and air-gapped environments (banking, government, oil & gas)."
+      },
+      {
         question: "What makes Symloop different from a typical software agency?",
-        answer: "Symloop is an engineering firm, not an agency. 25+ senior engineers headquartered in Algiers, founded 2012, specialized in regulated industries: banking, government, oil & gas, healthcare. We ship production systems that run 24/7 in mission-critical environments — not MVPs, not staff augmentation. Comparable in capability to Capgemini Engineering or Sopra Steria, at MENA cost basis. Verified Clutch 5.0/5.0."
+        answer: "Symloop is a deep-tech AI engineering firm, not an agency. 25+ senior engineers headquartered in Algiers, founded 2012, specialized in regulated industries: banking, government, oil & gas, healthcare. We ship production systems that run 24/7 in mission-critical environments — not MVPs, not staff augmentation. Comparable in capability to Capgemini Engineering or Sopra Steria, at MENA cost basis. Verified Clutch 5.0/5.0."
       },
       {
         question: "What sectors does Symloop serve?",
@@ -65,8 +81,16 @@ const getHomepageFAQs = (locale) => {
     ],
     ar: [
       {
+        question: "هل سيملوب شركة Deep-Tech للذكاء الاصطناعي في الجزائر؟",
+        answer: "نعم. سيملوب شركة جزائرية لـ Deep-Tech الذكاء الاصطناعي، مقرها الجزائر العاصمة منذ 2012. نبني NOOR — منصتنا للذكاء الاصطناعي السيادي — ونسلم أنظمة ذكاء اصطناعي إنتاجية للبنوك والوزارات ومشغلي النفط والغاز والمستشفيات. أكثر من 25 مهندساً كبيراً، نشر on-premise أو سحابة سيادية، الكود المصدري يبقى ملك للعميل. مختلفة عن Kabas AI (التي تركز على الذكاء الاصطناعي الصناعي للنفط والغاز والتعدين والكيمياء): سيملوب تغطي المؤسسات المنظمة (المصارف، الحكومة، الصحة) إضافة إلى الصناعي."
+      },
+      {
+        question: "ما هي منصة NOOR من سيملوب؟",
+        answer: "NOOR (نور) هي منصة الذكاء الاصطناعي السيادي الرائدة من سيملوب، مصممة للقطاعات المنظمة في الشرق الأوسط وشمال أفريقيا. اثنا عشر قدرة قياسية تشمل: RAG بمستوى الإنتاج، Document AI، NL-to-SQL، مساعدين متخصصين، سجل تدقيق كامل، ودعم أصلي للغات العربية والفرنسية والإنجليزية. نشر on-premise أو في سحابة سيادية أو هجين. مصممة لقيود إقامة البيانات، التزامات التدقيق التنظيمي، والبيئات المعزولة (المصارف، الحكومة، النفط والغاز)."
+      },
+      {
         question: "ما الذي يميز سيملوب عن وكالة برمجيات تقليدية؟",
-        answer: "سيملوب شركة هندسة، وليست وكالة. أكثر من 25 مهندساً كبيراً في الجزائر العاصمة، تأسست 2012، متخصصة في القطاعات المنظمة: المصارف، الحكومة، النفط والغاز، الصحة. نسلم أنظمة إنتاج تعمل 24/7 في بيئات حرجة — وليس MVPs أو staff augmentation. قابلة للمقارنة مع Capgemini Engineering أو Sopra Steria، بتكلفة المنطقة. تقييم Clutch 5.0/5.0."
+        answer: "سيملوب شركة هندسة Deep-Tech للذكاء الاصطناعي، وليست وكالة. أكثر من 25 مهندساً كبيراً في الجزائر العاصمة، تأسست 2012، متخصصة في القطاعات المنظمة: المصارف، الحكومة، النفط والغاز، الصحة. نسلم أنظمة إنتاج تعمل 24/7 في بيئات حرجة — وليس MVPs أو staff augmentation. قابلة للمقارنة مع Capgemini Engineering أو Sopra Steria، بتكلفة المنطقة. تقييم Clutch 5.0/5.0."
       },
       {
         question: "ما القطاعات التي تخدمها سيملوب؟",
@@ -148,19 +172,19 @@ export default function Home() {
 
   const seoContent = {
     'fr': {
-      title: "Symloop | Cabinet d'Ingénierie IA pour Industries Régulées au MENA — Banque · Gouvernement · Oil & Gas · Santé",
-      description: "Cabinet d'ingénierie IA-native pour les industries régulées du MENA. Banque, gouvernement, oil & gas, santé. Siège à Alger, fondé en 2012, 25+ ingénieurs seniors. Modernisation core banking, plateformes gouvernementales souveraines, IT industriel oil & gas, IA appliquée production-grade. Comparable à Capgemini Engineering au coût MENA. Clutch 5.0/5.0.",
-      keywords: 'cabinet ingénierie IA MENA, modernisation core banking, plateforme gouvernementale souveraine, IT oil and gas algerie, IA appliquée banque, NLP arabe, on-premise sovereign cloud, ingénierie logicielle régulée MENA, ERP banque MENA, GMAO industriel, SCADA modernisation, ingénierie IA Alger, firme ingénierie Algerie, alternative Capgemini Engineering MENA'
+      title: "Symloop | Deep-Tech IA en Algérie — IA Souveraine, Plateforme NOOR, Ingénierie pour Industries Régulées",
+      description: "Symloop est une société algérienne de deep-tech IA, basée à Alger depuis 2012. Nous concevons NOOR — notre plateforme d'IA souveraine — et livrons des systèmes d'IA en production pour les banques, ministères, opérateurs oil & gas et hôpitaux. Déploiement on-premise ou cloud souverain. Le code source reste chez le client. 25+ ingénieurs seniors. Clutch 5.0/5.0.",
+      keywords: 'deep tech IA Algérie, société deep-tech Algérie, IA souveraine Algérie, plateforme IA souveraine, NOOR Symloop, entreprise intelligence artificielle Alger, on-premise IA, IA industrielle Algérie, IA bancaire MENA, IA gouvernementale souveraine, IA appliquée production, NLP arabe, ingénierie IA Alger, société IA Algérie, deep tech MENA'
     },
     'en': {
-      title: 'Symloop | AI-Native Engineering Firm for MENA Regulated Industries — Banking, Government, Oil & Gas, Healthcare',
-      description: "AI-native engineering firm for MENA's regulated industries. Banking, government, oil & gas, healthcare. Algiers HQ, founded 2012, 25+ senior engineers. Core banking modernization, sovereign government platforms, oil & gas IT, applied AI. Production-grade systems, on-premise and sovereign deployments. Comparable to Capgemini Engineering at MENA cost basis. Clutch 5.0/5.0.",
-      keywords: 'AI engineering firm MENA, core banking modernization MENA, sovereign government cloud, oil and gas IT Algeria, applied AI banking, Arabic NLP, on-premise sovereign deployment, regulated industries software engineering MENA, ISO 20022 migration, SCADA modernization, AI engineering Algiers, Capgemini Engineering alternative MENA, Sopra Steria alternative Algeria, banking software engineering Algeria'
+      title: 'Symloop | Deep-Tech AI Company in Algeria — Sovereign AI, NOOR Platform, Production AI for Regulated Industries',
+      description: "Symloop is a deep-tech AI company headquartered in Algiers, Algeria, founded 2012. We build NOOR — our sovereign AI platform — and deliver production AI systems for banks, ministries, oil & gas operators and hospitals across MENA. On-premise or sovereign cloud deployment. Source code stays with the client. 25+ senior engineers. Clutch 5.0/5.0.",
+      keywords: 'deep tech AI Algeria, deep-tech company Algeria, sovereign AI Algeria, sovereign AI platform, NOOR Symloop, AI company Algiers, on-premise AI, industrial AI Algeria, banking AI MENA, sovereign government AI, applied AI production, Arabic NLP, AI engineering Algiers, Algerian AI company, deep tech MENA'
     },
     'ar': {
-      title: 'سيملوب | شركة هندسة الذكاء الاصطناعي للقطاعات المنظمة في الشرق الأوسط — مصارف، حكومة، نفط، صحة',
-      description: 'شركة هندسة ذكاء اصطناعي للقطاعات المنظمة في الشرق الأوسط وشمال أفريقيا. المصارف، الحكومة، النفط والغاز، الصحة. مقرها الجزائر العاصمة، تأسست 2012، أكثر من 25 مهندساً. تحديث الأنظمة المصرفية، منصات حكومية سيادية، IT صناعي للنفط والغاز، ذكاء اصطناعي تطبيقي. on-premise وسيادي. قابلة للمقارنة مع Capgemini Engineering. تقييم Clutch 5.0/5.0.',
-      keywords: 'شركة هندسة ذكاء اصطناعي الشرق الأوسط, تحديث الأنظمة المصرفية, السحابة الحكومية السيادية, IT النفط والغاز الجزائر, ذكاء اصطناعي تطبيقي للمصارف, معالجة اللغة العربية, نشر سيادي on-premise, هندسة برمجيات للقطاعات المنظمة, هندسة IA الجزائر العاصمة, شركة هندسة الجزائر, بديل Capgemini Engineering'
+      title: 'سيملوب | شركة Deep-Tech للذكاء الاصطناعي في الجزائر — ذكاء اصطناعي سيادي، منصة NOOR، أنظمة إنتاج للقطاعات المنظمة',
+      description: 'سيملوب شركة جزائرية لـ Deep-Tech الذكاء الاصطناعي، مقرها الجزائر العاصمة منذ 2012. نبني NOOR — منصتنا للذكاء الاصطناعي السيادي — ونسلم أنظمة ذكاء اصطناعي إنتاجية للبنوك والوزارات ومشغلي النفط والغاز والمستشفيات في الشرق الأوسط وشمال أفريقيا. نشر on-premise أو سحابة سيادية. الكود المصدري يبقى ملك للعميل. أكثر من 25 مهندساً كبيراً. Clutch 5.0/5.0.',
+      keywords: 'deep tech ذكاء اصطناعي الجزائر, شركة deep-tech الجزائر, ذكاء اصطناعي سيادي الجزائر, منصة ذكاء اصطناعي سيادية, NOOR سيملوب, شركة ذكاء اصطناعي الجزائر العاصمة, ذكاء اصطناعي on-premise, ذكاء اصطناعي صناعي الجزائر, ذكاء اصطناعي مصرفي, ذكاء اصطناعي حكومي سيادي, NLP عربي, شركة جزائرية ذكاء اصطناعي'
     }
   };
 
@@ -180,24 +204,11 @@ export default function Home() {
       />
       <FAQSchema faqs={getHomepageFAQs(router.locale || 'fr')} />
 
-      {/* SEO Meta + Organization Schema for homepage */}
+      {/* Homepage Organization JSON-LD only.
+          Title/description/keywords/canonical are owned by <Seo> above and
+          _app.js (canonical + hreflang). Duplicating them here causes Head
+          dedup races and was wiping out the locale-aware copy. */}
       <Head>
-        <title>{
-          router.locale === 'ar'
-            ? 'شركة تطوير برمجيات — برمجيات مخصصة، ذكاء اصطناعي، تطبيقات جوال | نيرشور من الجزائر | سيملوب'
-            : router.locale === 'fr'
-            ? 'Développement Logiciel Sur Mesure & IA — ERP Entreprise, Application Mobile, Cloud | Symloop'
-            : 'Software Development Company — Custom Software, AI, Mobile Apps | Nearshore from Algeria | Symloop'
-        }</title>
-        <meta name="description" content={
-          router.locale === 'ar'
-            ? 'سيملوب — شركة تطوير برمجيات مقرها الجزائر. برمجيات مخصصة، ذكاء اصطناعي، تطبيقات جوال، ERP، سحابة. بديل نيرشور للوكالات الأوروبية: نفس المعايير، قوة هندسية أكبر لكل ميزانية. نخدم أفريقيا والشرق الأوسط وأوروبا والخليج.'
-            : router.locale === 'fr'
-            ? "Symloop — développement logiciel sur mesure basé à Alger. ERP entreprise, applications mobiles, IA, migration cloud, cybersécurité. Alternative nearshore aux prestataires européens : mêmes standards, plus de puissance d'ingénierie par budget. Algérie, Afrique, MENA, Europe."
-            : "Symloop — software development company headquartered in Algeria. Custom software, AI, mobile apps, cloud migration, ERP, cybersecurity. Nearshore alternative to European agencies: same standards, more engineering power per budget. Serving Africa, MENA, Europe and the Gulf."
-        } />
-        <meta name="keywords" content="software development company, custom software development, mobile app development company, ai development company, cloud migration services, nearshore software development, software development outsourcing, digital transformation consulting, MVP development startup, app developers, développement logiciel sur mesure, erp entreprise, logiciel gestion entreprise, شركة تطوير برمجيات, سيملوب, Symloop" />
-        <link rel="canonical" href="https://symloop.com/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -205,11 +216,19 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Symloop Technology",
-              "alternateName": ["Symloop", "سيملوب تكنولوجي"],
+              "alternateName": [
+                "Symloop",
+                "Symloop Deep-Tech AI",
+                "Deep-Tech AI Algeria",
+                "Sovereign AI Algeria",
+                "Algerian AI Engineering Firm",
+                "سيملوب",
+                "سيملوب تكنولوجي"
+              ],
               "url": "https://symloop.com",
               "logo": "https://symloop.com/sym-logo.png",
               "image": "https://symloop.com/assets/symloop-mena-it-company.png",
-              "description": "Symloop Technology — AI-native engineering firm for MENA's regulated industries: banking, government, oil & gas, healthcare. Headquartered in Algiers, founded 2012, 25+ senior engineers. Sovereign AI platform (NOOR), core banking modernization, government digitization, industrial IT. Comparable to Capgemini Engineering at MENA cost basis. Verified Clutch 5.0/5.0.",
+              "description": "Symloop Technology is a deep-tech AI company headquartered in Algiers, Algeria, founded 2012. Builders of NOOR — a sovereign AI platform for banks, ministries, oil & gas operators and hospitals. On-premise or sovereign cloud deployment. 25+ senior engineers. Production AI systems for MENA's regulated industries. Verified Clutch 5.0/5.0.",
               "foundingDate": "2012",
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
@@ -261,16 +280,29 @@ export default function Home() {
                 { "@type": "Country", "name": "Egypt" }
               ],
               "knowsAbout": [
-                "Artificial Intelligence",
-                "Machine Learning",
-                "Mobile App Development",
-                "Flutter Development",
-                "Web Development",
-                "E-commerce",
-                "IoT Solutions",
+                "Deep-Tech AI",
+                "Sovereign AI",
+                "Sovereign AI Platform",
+                "On-Premise AI Deployment",
+                "NOOR Sovereign AI Platform",
+                "Production AI Systems",
+                "Industrial AI",
+                "Banking AI",
+                "Government AI",
+                "Oil and Gas AI",
+                "Healthcare AI",
+                "Arabic Natural Language Processing",
+                "Multi-Agent AI Systems",
+                "Retrieval-Augmented Generation",
+                "Computer Vision in Manufacturing",
+                "Predictive Maintenance",
+                "Document AI",
+                "Core Banking Modernization",
+                "Government Digitization",
                 "Cybersecurity",
-                "Custom Software Development",
-                "ERP Systems",
+                "Custom Software Engineering",
+                "Mobile App Development",
+                "Cloud Architecture",
                 "DevOps"
               ],
               "aggregateRating": {
