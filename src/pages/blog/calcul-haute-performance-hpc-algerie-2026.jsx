@@ -216,7 +216,7 @@ export default function CalculHautePerformanceAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["High Performance Computing", "GPU Computing", "Cloud HPC", "CUDA", "Deep Learning", "Parallel Computing", "Kubernetes", "DevOps", "AWS", "Azure", "GCP"],
             "areaServed": { "@type": "Country", "name": "Algeria" }

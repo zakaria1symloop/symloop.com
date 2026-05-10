@@ -194,7 +194,7 @@ export default function ApplicationGestionStockAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Gestion de stock", "Application inventaire", "Logiciel gestion magasin", "ERP sur mesure", "Développement logiciel", "Application mobile", "Code-barres", "Multi-dépôts"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -1105,7 +1105,7 @@ export default function ApplicationGestionStockAlgerie() {
                   {
                     icon: Shield,
                     title: "Code propriétaire et support local",
-                    desc: "Le code source vous appartient à 100%. Pas de dépendance envers un éditeur. Et en cas de besoin, notre équipe basée à Sétif est disponible pour le support, la formation et les évolutions futures.",
+                    desc: "Le code source vous appartient à 100%. Pas de dépendance envers un éditeur. Et en cas de besoin, notre équipe basée à Alger est disponible pour le support, la formation et les évolutions futures.",
                     color: "text-indigo-400",
                     bg: "bg-indigo-500/10",
                     border: "border-indigo-500/20"

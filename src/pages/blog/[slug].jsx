@@ -149,8 +149,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
         "url": "https://symloop.com/sym-logo.png"
       }
     },
-    "datePublished": blog.createdAt,
-    "dateModified": blog.updatedAt || blog.createdAt,
+    "datePublished": blog.date,
+    "dateModified": blog.updatedAt || blog.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `https://symloop.com/blog/${blog.slug}`
@@ -170,7 +170,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
         <meta property="og:image" content={blog.image} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://symloop.com/blog/${blog.slug}`} />
-        <meta property="article:published_time" content={blog.createdAt} />
+        <meta property="article:published_time" content={blog.date} />
+        <meta property="article:modified_time" content={blog.updatedAt || blog.date} />
         <meta property="article:author" content={blog.author} />
         <meta property="article:section" content={blog.category} />
         {blog.tags?.map(tag => (

@@ -184,7 +184,7 @@ export default function TatwirTatbiqatJawwalSaudiArabia2026() {
       ctaDesc: "تواصل معنا للحصول على استشارة مجانية وعرض أسعار مفصل لمشروعك",
       ctaWhatsApp: "تواصل عبر واتساب",
       ctaEmail: "راسلنا بالبريد الإلكتروني",
-      ctaPhone: "+213 555 123 456",
+      ctaPhone: "+213 549 575 512",
 
       relatedTitle: "مقالات ذات صلة",
       relatedArticles: [
@@ -363,7 +363,7 @@ export default function TatwirTatbiqatJawwalSaudiArabia2026() {
       ctaDesc: "Contact us for a free consultation and detailed quote for your project",
       ctaWhatsApp: "Chat on WhatsApp",
       ctaEmail: "Email Us",
-      ctaPhone: "+213 555 123 456",
+      ctaPhone: "+213 549 575 512",
 
       relatedTitle: "Related Articles",
       relatedArticles: [
@@ -542,7 +542,7 @@ export default function TatwirTatbiqatJawwalSaudiArabia2026() {
       ctaDesc: "Contactez-nous pour une consultation gratuite et un devis detaille pour votre projet",
       ctaWhatsApp: "Contacter via WhatsApp",
       ctaEmail: "Nous Envoyer un Email",
-      ctaPhone: "+213 555 123 456",
+      ctaPhone: "+213 549 575 512",
 
       relatedTitle: "Articles Connexes",
       relatedArticles: [
@@ -635,7 +635,7 @@ export default function TatwirTatbiqatJawwalSaudiArabia2026() {
     "name": "Symloop - Mobile App Development Saudi Arabia",
     "description": c.metaDesc,
     "url": "https://symloop.com",
-    "telephone": "+213555123456",
+    "telephone": "+213549575512",
     "areaServed": [
       "Saudi Arabia", "Riyadh", "Jeddah", "Dammam", "Mecca", "Medina",
       "المملكة العربية السعودية", "الرياض", "جدة", "الدمام", "مكة المكرمة", "المدينة المنورة"
@@ -1000,7 +1000,7 @@ export default function TatwirTatbiqatJawwalSaudiArabia2026() {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://wa.me/213555123456?text=Hello%20Symloop%20-%20Saudi%20Arabia%20App%20Project"
+                    href="https://wa.me/213549575512?text=Hello%20Symloop%20-%20Saudi%20Arabia%20App%20Project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-colors shadow-lg"

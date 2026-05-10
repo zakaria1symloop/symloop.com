@@ -43,7 +43,7 @@ export default function StartupAlgerie() {
     },
     {
       question: "Comment trouver un développeur pour ma startup en Algérie ?",
-      answer: "Plusieurs options : recruter un développeur freelance (Mostaql, Khamsat), faire appel à une agence tech spécialisée startup comme Symloop, ou rejoindre un incubateur pour rencontrer des profils techniques. Symloop est basé à Sétif et accompagne les startups algériennes avec des équipes full-stack expérimentées. Contactez-nous au +213 549 575 512."
+      answer: "Plusieurs options : recruter un développeur freelance (Mostaql, Khamsat), faire appel à une agence tech spécialisée startup comme Symloop, ou rejoindre un incubateur pour rencontrer des profils techniques. Symloop est basé à Alger et accompagne les startups algériennes avec des équipes full-stack expérimentées. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Symloop accompagne-t-il les startups algériennes ?",

@@ -684,16 +684,16 @@ export default function ECommerceSetif() {
     "email": "contact@symloop.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Cité 1000 Logements",
-      "addressLocality": "Sétif",
-      "addressRegion": "Sétif",
-      "postalCode": "19000",
+      "streetAddress": "Alger Centre",
+      "addressLocality": "Alger",
+      "addressRegion": "Alger",
+      "postalCode": "16000",
       "addressCountry": "DZ"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "36.1919",
-      "longitude": "5.4138"
+      "latitude": "36.7538",
+      "longitude": "3.0588"
     },
     "areaServed": {
       "@type": "Country",

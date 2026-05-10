@@ -216,7 +216,7 @@ export default function PlateformeSaasAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Plateforme SaaS", "Architecture multi-tenant", "Microservices", "API-first", "Cloud Computing", "DevOps", "React", "Next.js", "Node.js", "PostgreSQL", "Docker", "AWS"],
             "areaServed": { "@type": "Country", "name": "Algeria" }

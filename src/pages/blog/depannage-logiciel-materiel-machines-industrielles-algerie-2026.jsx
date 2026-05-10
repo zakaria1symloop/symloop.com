@@ -921,7 +921,7 @@ export default function DepannageLogicielMaterielIndustriel2026() {
           "@type": "Organization",
           "name": "Symloop",
           "telephone": "+213549575512",
-          "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" }
+          "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" }
         },
         "areaServed": "Algerie",
         "description": "Depannage logiciel et materiel pour machines industrielles en Algerie"

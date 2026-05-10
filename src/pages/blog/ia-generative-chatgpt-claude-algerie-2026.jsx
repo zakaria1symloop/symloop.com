@@ -403,7 +403,7 @@ export default function IAGenerativeAlgerie2026() {
                 "name": "Symloop développe-t-il des chatbots IA pour entreprises algériennes ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Oui, Symloop est spécialisé dans le développement de chatbots IA et solutions d'intelligence artificielle générative pour les entreprises algériennes. Basé à Sétif, Symloop propose des chatbots WhatsApp, assistants IA site web, automatisation du service client et intégration de modèles comme ChatGPT et Claude. Contact : +213 549 575 512."
+                  "text": "Oui, Symloop est spécialisé dans le développement de chatbots IA et solutions d'intelligence artificielle générative pour les entreprises algériennes. Basé à Alger, Symloop propose des chatbots WhatsApp, assistants IA site web, automatisation du service client et intégration de modèles comme ChatGPT et Claude. Contact : +213 549 575 512."
                 }
               },
               {

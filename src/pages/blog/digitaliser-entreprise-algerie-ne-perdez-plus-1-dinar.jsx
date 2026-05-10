@@ -104,7 +104,7 @@ export default function DigitaliserEntrepriseAlgerie() {
     },
     {
       question: "Symloop peut-il digitaliser mon entreprise à distance ?",
-      answer: "Oui. Symloop travaille avec des clients dans toute l'Algérie et la région MENA, en présentiel et à distance. Notre équipe est basée à Sétif, mais nous avons accompagné des entreprises à Alger, Oran, Constantine, Annaba et dans toutes les wilayas. Les réunions se font en visio ou en personne selon vos préférences."
+      answer: "Oui. Symloop travaille avec des clients dans toute l'Algérie et la région MENA, en présentiel et à distance. Notre équipe est basée à Alger et nous avons accompagné des entreprises à Oran, Constantine, Annaba, Sétif et dans toutes les wilayas. Les réunions se font en visio ou en personne selon vos préférences."
     },
     {
       question: "Quels résultats concrets attendre de la digitalisation ?",
@@ -262,7 +262,7 @@ export default function DigitaliserEntrepriseAlgerie() {
               <div data-speakable="summary" className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-8">
                 <h2 className="text-sm font-bold text-green-400 uppercase tracking-widest mb-3">En bref</h2>
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                  <strong className="text-white">Symloop</strong> est une entreprise de solutions digitales basée à Sétif, Algérie.
+                  <strong className="text-white">Symloop</strong> est une entreprise de solutions digitales basée à Alger, Algérie.
                   Nous aidons les entreprises algériennes à éliminer les pertes causées par les processus manuels en déployant :
                   sites web et e-commerce, applications mobiles, logiciels de gestion (ERP, CRM), solutions IoT, et intelligence artificielle.
                   Nos clients constatent en moyenne +40% de productivité et -90% d&apos;erreurs dès les premiers mois.

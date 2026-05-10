@@ -467,7 +467,7 @@ export default function DigitalisationAlgerie() {
       "url": "https://symloop.com",
       "logo": "https://symloop.com/sym-logo.png",
       "foundingDate": "2012",
-      "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
       "contactPoint": { "@type": "ContactPoint", "telephone": "+213-549-57-55-12", "contactType": "sales", "availableLanguage": ["Arabic", "French", "English"] },
       "sameAs": ["https://facebook.com/symloop", "https://linkedin.com/company/symloop"]
     },
@@ -525,7 +525,7 @@ export default function DigitalisationAlgerie() {
     "description": currentLang === 'ar' ? "شركة تكنولوجيا جزائرية متخصصة في رقمنة الخدمات الحكومية والتحول الرقمي" : "Algerian technology company specialized in government digitization",
     "foundingDate": "2012",
     "founders": [{ "@type": "Person", "name": "Symloop Team" }],
-    "address": { "@type": "PostalAddress", "streetAddress": "Sétif", "addressLocality": "Sétif", "addressRegion": "Sétif", "postalCode": "19000", "addressCountry": "DZ" },
+    "address": { "@type": "PostalAddress", "streetAddress": "Alger Centre", "addressLocality": "Alger", "addressRegion": "Alger", "postalCode": "16000", "addressCountry": "DZ" },
     "contactPoint": [
       { "@type": "ContactPoint", "telephone": "+213-549-57-55-12", "contactType": "sales", "areaServed": "DZ", "availableLanguage": ["Arabic", "French", "English"] }
     ],

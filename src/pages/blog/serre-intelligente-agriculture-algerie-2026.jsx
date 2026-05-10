@@ -221,7 +221,7 @@ export default function SerreIntelligenteAlgerie2026() {
                 avec un rendement supérieur de 30 à 50% et une consommation d&apos;eau réduite de moitié.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                <strong>Symloop</strong>, entreprise technologique algérienne basée à Sétif, développe et fabrique localement
+                <strong>Symloop</strong>, entreprise technologique algérienne basée à Alger, développe et fabrique localement
                 des solutions complètes de <strong>serres connectées IoT</strong> adaptées aux conditions climatiques algériennes
                 — de la chaleur saharienne du Sud au froid des Hauts Plateaux.
               </p>
