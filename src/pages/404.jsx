@@ -5,10 +5,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Seo from "../utils/seo";
 import { Home, ArrowLeft, Search, Mail } from "lucide-react";
 
-export default function Custom404() {
+// Locale arrives via getStaticProps as a prop so the page renders
+// deterministically on server and client. Previously this component
+// did `useRouter().locale || 'fr'` during render, which mismatched on
+// hydration (router.locale is undefined on SSR for 404 routes) and threw
+// the "Hydration failed" error every time a user clicked any of the 30+
+// site-wide CTAs that pointed to non-existent routes.
+export default function Custom404({ locale = 'fr' }) {
   const router = useRouter();
   const { t } = useTranslation('common');
-  const locale = router.locale || 'fr';
 
   const content = {
     fr: {
@@ -154,7 +159,8 @@ export default function Custom404() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      locale: locale || 'fr',
+      ...(await serverSideTranslations(locale || 'fr', ['common'])),
     },
   };
 }

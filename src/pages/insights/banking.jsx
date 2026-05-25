@@ -50,8 +50,8 @@ const CONTENT = {
     relatedInsights: {
       heading: 'Read next',
       items: [
+        { name: 'AI in insurance — the transformation Algerian and MENA insurers can no longer defer', href: '/insights/insurance/' },
         { name: 'AI for the CTO — pragmatic adoption framework',          href: '/insights/ai-cto/' },
-        { name: 'ERP — buy vs build, and the cost of getting it wrong',  href: '/insights/erp/' },
         { name: 'Vision 2030 — what AI investment buys you',              href: '/insights/vision-2030/' },
       ],
     },
@@ -179,8 +179,8 @@ const CONTENT = {
     relatedInsights: {
       heading: 'À lire ensuite',
       items: [
+        { name: 'L\'IA dans l\'assurance — la transformation que les compagnies algériennes ne peuvent plus reporter', href: '/insights/insurance/' },
         { name: 'IA pour le DSI — cadre d\'adoption pragmatique',                  href: '/insights/ai-cto/' },
-        { name: "ERP — acheter vs construire, et le coût de l'erreur",            href: '/insights/erp/' },
         { name: 'Vision 2030 — ce que l\'investissement IA vous achète',            href: '/insights/vision-2030/' },
       ],
     },
@@ -308,8 +308,8 @@ const CONTENT = {
     relatedInsights: {
       heading: 'اقرأ بعد ذلك',
       items: [
+        { name: 'الذكاء الاصطناعي في التأمين — التحوّل الذي لم يعد بإمكان شركات التأمين الجزائرية تأجيله', href: '/insights/insurance/' },
         { name: 'الذكاء الاصطناعي للرئيس التقني — إطار اعتماد عملي',  href: '/insights/ai-cto/' },
-        { name: 'ERP — شراء مقابل بناء، وتكلفة الخطأ',                href: '/insights/erp/' },
         { name: 'رؤية 2030 — ما يشتريه استثمار الذكاء الاصطناعي',     href: '/insights/vision-2030/' },
       ],
     },

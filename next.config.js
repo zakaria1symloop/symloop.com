@@ -10,6 +10,20 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 2592000,
+    // The /_next/image optimization endpoint conflicts with
+    // `trailingSlash: true` — it gets 308-redirected from
+    // `/_next/image?url=…` to `/_next/image/?url=…`, which the Image
+    // component on the client follows but the SSR HTML pointed at the
+    // un-redirected URL → "Hydration failed because the initial UI does
+    // not match what was rendered on the server" + broken images.
+    //
+    // Setting `unoptimized: true` makes <Image> emit a plain <img src=…>
+    // pointing at the raw file in /public, identical on server and
+    // client, no redirect involved. We lose Next.js's automatic AVIF/
+    // WebP conversion at request time — but on Vercel production the
+    // image CDN still applies its own optimization, and cover images
+    // are already pre-sized appropriately at build/upload time.
+    unoptimized: true,
   },
   // Enable i18n for all builds
   i18n,

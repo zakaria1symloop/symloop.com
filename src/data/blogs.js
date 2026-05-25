@@ -3,6 +3,36 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "137",
+    slug: "transformation-digitale-pharma-algerie-ia-2026",
+    title: "Transformation digitale pharma en Algérie — comment l'IA réduit le coût-par-boîte de 22% en 2026",
+    subtitle: "Maintenance prédictive, vision QC, sérialisation DPM, supply chain — pour DG, Directeur Industriel, Directeur Qualité",
+    excerpt: "Brief décideur pour fabricants pharmaceutiques algériens : où l'IA déplace réellement le coût-par-boîte, les 6 cas d'usage en production aujourd'hui, et pourquoi 2026–2028 décide qui reste producteur indépendant.",
+    category: "Transformation digitale", author: "Symloop Team", date: "2026-05-24", readTime: "14 min", featured: true,
+    tags: ["transformation digitale pharma algérie", "IA industrie pharmaceutique", "digitalisation pharma algérie", "maintenance prédictive pharma", "sérialisation médicament algérie", "conformité DPM IA", "GMP Algeria AI", "pharma AI MENA"],
+    metaTitle: "Transformation digitale pharma Algérie IA 2026 — coût-par-boîte -22% | Symloop",
+    metaDescription: "Transformation digitale pharma Algérie avec IA. 6 cas d'usage en production : maintenance prédictive, vision QC, sérialisation DPM, supply chain. Pour DG, Directeur Industriel, DSI Pharma.",
+    translations: {
+      en: { title: "Pharma digital transformation in Algeria — how AI cuts cost-per-pack 22% in 2026", subtitle: "Predictive maintenance, vision QC, DPM serialization, supply chain — for GMs, Industrial Directors, Quality Directors", excerpt: "Decision-maker brief for Algerian pharma manufacturers: where AI moves cost-per-pack, the 6 use cases in production today, and why 2026–2028 decides who stays an independent producer." },
+      ar: { title: "التحوّل الرقمي للصناعة الدوائية في الجزائر — كيف يخفّض الذكاء الاصطناعي تكلفة العلبة 22٪ في 2026", subtitle: "الصيانة التنبؤية، رؤية QC، الترقيم التسلسلي DPM، سلسلة التوريد", excerpt: "دليل صانع القرار للمصنّعين الجزائريين: أين ينقل الذكاء الاصطناعي تكلفة العلبة، حالات الاستخدام الست في الإنتاج اليوم، ولماذا تقرّر 2026–2028 من يبقى منتجاً مستقلاً." }
+    }
+  },
+  {
+    id: "136",
+    slug: "transformation-digitale-assurance-algerie-ia-2026",
+    title: "Transformation digitale des assurances en Algérie — comment l'IA fait gagner 14 points de ratio combiné en 2026",
+    subtitle: "Souscription automatisée, vision sinistre, détection fraude, IDP — pour DG, CFO, DSI d'assurance",
+    excerpt: "Brief décideur pour DG, CFO et DSI des compagnies d'assurance algériennes (SAA, CAAR, CAAT, CIAR, TRUST, CASH, GAM) : où l'IA déplace réellement le ratio combiné, les 6 cas d'usage en production aujourd'hui, et pourquoi la fenêtre 2026–2028 décide qui reste indépendant.",
+    category: "Transformation digitale", author: "Symloop Team", date: "2026-05-24", readTime: "14 min", featured: true,
+    tags: ["transformation digitale assurance algérie", "IA assurance algérie", "intelligence artificielle assurance", "digitalisation compagnie assurance", "IA souscription", "détection fraude sinistre", "ratio combiné", "insurance AI MENA", "insurtech algérie"],
+    metaTitle: "Transformation digitale assurance Algérie IA 2026 — ratio combiné -14 pts | Symloop",
+    metaDescription: "Transformation digitale assurance Algérie avec IA. 6 cas d'usage en production : souscription automatisée, vision sinistre, détection fraude, IDP. Pour DG, CFO, DSI d'assurance.",
+    translations: {
+      en: { title: "Insurance digital transformation in Algeria — how AI moves combined ratio 14 points in 2026", subtitle: "Automated underwriting, vision claims, fraud detection, IDP — for insurance CEOs, CFOs, CIOs", excerpt: "Decision-maker brief for Algerian insurance CEOs, CFOs and CIOs: where AI moves combined ratio, the 6 use cases in production today, and why the 2026–2028 window decides who stays independent." },
+      ar: { title: "التحوّل الرقمي لشركات التأمين في الجزائر — كيف ينقل الذكاء الاصطناعي 14 نقطة من النسبة المركّبة في 2026", subtitle: "اكتتاب آلي، رؤية مطالبات، كشف احتيال، IDP — للرؤساء التنفيذيين والماليّين ومدراء تقنية المعلومات", excerpt: "دليل صانع القرار للرؤساء التنفيذيين في شركات التأمين الجزائرية: أين ينقل الذكاء الاصطناعي النسبة المركّبة، حالات الاستخدام الست في الإنتاج اليوم." }
+    }
+  },
+  {
     id: "135",
     slug: "high-performance-computing-algeria-2026",
     title: "High Performance Computing (HPC) in Algeria: Powering AI, Research & Industry in 2026",

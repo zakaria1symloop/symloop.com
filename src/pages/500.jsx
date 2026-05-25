@@ -5,10 +5,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Seo from "../utils/seo";
 import { Home, RefreshCw, Mail, AlertTriangle } from "lucide-react";
 
-export default function Custom500() {
+// Locale arrives via getStaticProps as a prop — same fix as 404.jsx.
+// Avoids the `useRouter().locale || 'fr'` runtime mismatch that caused
+// hydration errors after any failed navigation.
+export default function Custom500({ locale = 'fr' }) {
   const router = useRouter();
   const { t } = useTranslation('common');
-  const locale = router.locale || 'fr';
 
   const content = {
     fr: {
@@ -166,7 +168,8 @@ export default function Custom500() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      locale: locale || 'fr',
+      ...(await serverSideTranslations(locale || 'fr', ['common'])),
     },
   };
 }

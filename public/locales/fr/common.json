@@ -1689,6 +1689,36 @@
           "title": "Digitalisation de l'administration — ingénierie de services publics souverains pour l'Algérie et MENA.",
           "description": "Guide terrain pour les DSI ministériels sur l'architecture e-services, l'échange de données interministériel, l'identité biométrique, le cloud souverain et la transparence d'audit.",
           "meta": "38 pages · 23 min de lecture"
+        },
+        "insurance": {
+          "kind": "Étude sectorielle",
+          "title": "L'IA dans l'assurance — la transformation que les compagnies algériennes et MENA ne peuvent plus reporter.",
+          "description": "Comment l'IA fait passer le ratio combiné de 102% à 88%, automatise la souscription, détecte la fraude sinistre, et où se situe la fenêtre 2026–2028 pour les DG et DSI d'assurance.",
+          "meta": "34 pages · 21 min de lecture"
+        },
+        "pharma": {
+          "kind": "Étude sectorielle",
+          "title": "L'IA dans l'industrie pharmaceutique — comment les producteurs algériens protègent leur marge et accélèrent la conformité DPM.",
+          "description": "Maintenance prédictive, contrôle qualité par vision, sérialisation et traçabilité, optimisation supply chain : ce que l'IA livre vraiment aux Directeurs Industriels et DSI Pharma en 2026.",
+          "meta": "32 pages · 20 min de lecture"
+        },
+        "libya": {
+          "kind": "Étude pays",
+          "title": "Libye 2026 — le partenaire ingénierie logicielle et IA pour la reconstruction de Tripoli, Benghazi et Misrata.",
+          "description": "Reconstruction post-conflit, richesse pétrolière, vide d'infrastructure logicielle locale. Comment Symloop livre Ecotrack bâtiments, PMS hôtels et smart home pour les acteurs libyens qui modernisent maintenant.",
+          "meta": "28 pages · 18 min de lecture"
+        },
+        "mauritania": {
+          "kind": "Étude pays",
+          "title": "Mauritanie 2026 — le partenaire AI engineering pour la modernisation de Nouakchott et le boom minier.",
+          "description": "Boom du fer et de l'or, gaz offshore BirAllah, Nouakchott qui se densifie. Pourquoi les mineurs, hôteliers et promoteurs mauritaniens choisissent un partenaire algérien plutôt que sénégalais ou français.",
+          "meta": "26 pages · 17 min de lecture"
+        },
+        "mali": {
+          "kind": "Étude pays",
+          "title": "Mali 2026 — le partenaire ingénierie pour Bamako, l'or sahélien et l'infrastructure diplomatique.",
+          "description": "3e producteur d'or africain, hub diplomatique de l'UA, classe affaires de Bamako en croissance. Comment Symloop sert les opérateurs miniers, les hôtels de sommet UA et les ministères maliens en français natif.",
+          "meta": "26 pages · 17 min de lecture"
         }
       }
     },

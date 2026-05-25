@@ -1689,6 +1689,36 @@
           "title": "Government digitization — engineering sovereign public services for Algeria and MENA.",
           "description": "Field guide for ministry CIOs on e-services architecture, inter-ministerial data exchange, biometric identity, sovereign cloud, and audit-grade transparency.",
           "meta": "38 pages · 23 min read"
+        },
+        "insurance": {
+          "kind": "Industry brief",
+          "title": "AI in insurance — the transformation Algerian and MENA insurers can no longer defer.",
+          "description": "How AI moves combined ratio from 102% to 88%, automates underwriting, catches claims fraud, and why the 2026–2028 window matters for insurance CEOs, CFOs and CIOs.",
+          "meta": "34 pages · 21 min read"
+        },
+        "pharma": {
+          "kind": "Industry brief",
+          "title": "AI in pharmaceutical manufacturing — how Algerian producers protect margin and accelerate DPM compliance.",
+          "description": "Predictive maintenance, computer-vision quality control, serialization and track-and-trace, supply-chain optimization: what AI actually delivers to Industrial Directors and Pharma CIOs in 2026.",
+          "meta": "32 pages · 20 min read"
+        },
+        "libya": {
+          "kind": "Country brief",
+          "title": "Libya 2026 — the software engineering and AI partner for the reconstruction of Tripoli, Benghazi and Misrata.",
+          "description": "Post-conflict reconstruction, oil wealth, near-zero local software infrastructure. How Symloop ships Ecotrack building management, hotel PMS, and smart home for the Libyan operators modernizing now.",
+          "meta": "28 pages · 18 min read"
+        },
+        "mauritania": {
+          "kind": "Country brief",
+          "title": "Mauritania 2026 — the AI engineering partner for Nouakchott modernization and the mining boom.",
+          "description": "Iron-ore and gold boom, BirAllah offshore gas, Nouakchott densifying. Why Mauritanian miners, hoteliers and developers pick an Algerian partner over Senegalese or French alternatives.",
+          "meta": "26 pages · 17 min read"
+        },
+        "mali": {
+          "kind": "Country brief",
+          "title": "Mali 2026 — the engineering partner for Bamako, Sahelian gold and diplomatic-hub infrastructure.",
+          "description": "Africa's #3 gold producer, AU diplomatic hub, Bamako business class growing fast. How Symloop serves Malian mining operators, AU-summit hotels and ministries in native French.",
+          "meta": "26 pages · 17 min read"
         }
       }
     },

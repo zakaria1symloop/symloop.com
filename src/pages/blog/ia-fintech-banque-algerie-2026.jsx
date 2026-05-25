@@ -20,7 +20,7 @@ const C={
     pullQuote1:"Pour la première fois en Algérie, il y a à la fois la demande, les données et les budgets pour déployer de l'IA dans la finance. Pas dans 3 ans. Maintenant.",
     pullQuote2:"Si une fintech algérienne peut scorer les 60% de non-bancarisés de manière fiable, elle ouvre un marché qui n'existe pas encore dans le pays.",
     cta:{eyebrow:"Parlez à un ingénieur fintech",title:"Vous construisez un produit fintech en Algérie ou vous digitalisez une banque ? Décrivez votre projet en 5 minutes."},
-    related:{insights:[{key:'ai',name:"Automatisation IA dans l'entreprise algérienne — 2026"},{key:'healthcare',name:"L'IA ne remplace pas les médecins. Elle remplace la paperasse."}],services:[{key:'ai',name:'Intelligence Artificielle'},{key:'software-engineering',name:'Ingénierie logicielle'}]},
+    related:{insights:[{key:'insurance',name:"L'IA dans l'assurance — la transformation que les compagnies algériennes ne peuvent plus reporter"},{key:'banking',name:"Modernisation des logiciels bancaires — remplacer, encapsuler ou reconstruire"},{key:'ai',name:"Automatisation IA dans l'entreprise algérienne — 2026"}],services:[{key:'ai',name:'Intelligence Artificielle'},{key:'software-engineering',name:'Ingénierie logicielle'}]},
   },
   en:{kind:'Fintech guide',title:'AI and fintech in Algeria — what banks and startups are actually building in 2026.',dek:"Algerian fintech is catching up on 10 years in 2 years. Here are the 6 AI use cases actually deploying in the country's banks and fintechs — not conference talk, production systems.",publishedAt:'April 2026',readTime:'11 min read',author:'Symloop',
     intro:["Algeria lived in **18 months** what most fintech markets lived in 5 years. CIB and Edahabia payments opened to e-commerce, first mobile wallets, Bank of Algeria fintech licenses, e-invoicing rolling out. **The market is no longer \"behind\" — it is accelerating.**","With this acceleration, **AI enters Algerian finance** through the operational door, not the marketing door. The use cases deploying in production are not chatbots — they are systems that directly touch the flow of money."],
@@ -37,7 +37,7 @@ const C={
     pullQuote1:"For the first time in Algeria, there is demand, data, and budgets to deploy AI in finance. Not in 3 years. Now.",
     pullQuote2:"If an Algerian fintech can reliably score the 60% unbanked, it opens a market that doesn't exist yet in the country.",
     cta:{eyebrow:'Talk to a fintech engineer',title:'Building a fintech product in Algeria or digitalizing a bank? Describe your project in 5 minutes.'},
-    related:{insights:[{key:'ai',name:'AI automation in Algerian business — 2026'},{key:'healthcare',name:'AI is not replacing doctors. It is replacing the paperwork.'}],services:[{key:'ai',name:'Artificial Intelligence'},{key:'software-engineering',name:'Software Engineering'}]},
+    related:{insights:[{key:'insurance',name:'AI in insurance — the transformation Algerian and MENA insurers can no longer defer'},{key:'banking',name:'Banking software modernization — replace, wrap, or rebuild'},{key:'ai',name:'AI automation in Algerian business — 2026'}],services:[{key:'ai',name:'Artificial Intelligence'},{key:'software-engineering',name:'Software Engineering'}]},
   },
   ar:{kind:'دليل فينتك',title:'الذكاء الاصطناعي والتكنولوجيا المالية في الجزائر — ما تبنيه البنوك والشركات الناشئة فعلاً في 2026.',dek:'التكنولوجيا المالية الجزائرية تلحق بـ10 سنوات في سنتين. إليك 6 حالات استخدام ذكاء اصطناعي تنتشر فعلاً في بنوك البلاد وشركات الفينتك.',publishedAt:'أبريل 2026',readTime:'11 دقيقة قراءة',author:'سيملوب',
     intro:['عاشت الجزائر في **18 شهراً** ما عاشته معظم أسواق الفينتك في 5 سنوات. فتح مدفوعات CIB والذهبية للتجارة الإلكترونية، أول المحافظ المحمولة، تراخيص الفينتك من بنك الجزائر. **السوق لم يعد "متأخراً" — إنه يتسارع.**','ومع هذا التسارع، **يدخل الذكاء الاصطناعي المالية الجزائرية** من الباب التشغيلي لا من باب التسويق. حالات الاستخدام التي تنتشر في الإنتاج ليست روبوتات محادثة — إنها أنظمة تمس مباشرة تدفق المال.'],
@@ -54,7 +54,7 @@ const C={
     pullQuote1:'لأول مرة في الجزائر، هناك طلب وبيانات وميزانيات لنشر الذكاء الاصطناعي في المالية. ليس في 3 سنوات. الآن.',
     pullQuote2:'إذا استطاعت فينتك جزائرية تسجيل الـ60% غير المتبنكين بشكل موثوق، تفتح سوقاً لا يوجد بعد في البلاد.',
     cta:{eyebrow:'تحدث مع مهندس فينتك',title:'تبني منتج فينتك في الجزائر أو ترقمن بنكاً؟ صف مشروعك في 5 دقائق.'},
-    related:{insights:[{key:'ai',name:'أتمتة الذكاء الاصطناعي في الشركات الجزائرية — 2026'},{key:'healthcare',name:'الذكاء الاصطناعي لا يحل محل الأطباء. إنه يحل محل الأوراق.'}],services:[{key:'ai',name:'الذكاء الاصطناعي'},{key:'software-engineering',name:'هندسة البرمجيات'}]},
+    related:{insights:[{key:'insurance',name:'الذكاء الاصطناعي في التأمين — التحوّل الذي لم يعد بإمكان شركات التأمين الجزائرية تأجيله'},{key:'banking',name:'تحديث برمجيات البنوك — استبدال أم تغليف أم إعادة بناء'},{key:'ai',name:'أتمتة الذكاء الاصطناعي في الشركات الجزائرية — 2026'}],services:[{key:'ai',name:'الذكاء الاصطناعي'},{key:'software-engineering',name:'هندسة البرمجيات'}]},
   },
 };
 
