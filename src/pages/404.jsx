@@ -5,6 +5,11 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Seo from "../utils/seo";
 import { Home, ArrowLeft, Search, Mail } from "lucide-react";
 
+// Year evaluated once at module load — same on Node SSR and on the
+// browser bundle. Eliminates the SSR/CSR mismatch risk that comes from
+// `new Date().getFullYear()` being called during render.
+const YEAR = new Date().getFullYear();
+
 // Locale arrives via getStaticProps as a prop so the page renders
 // deterministically on server and client. Previously this component
 // did `useRouter().locale || 'fr'` during render, which mismatched on
@@ -146,7 +151,7 @@ export default function Custom404({ locale = 'fr' }) {
           {/* Company Info */}
           <div className="mt-12 pt-8 border-t border-gray-200">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Symloop Technology.
+              © {YEAR} Symloop Technology.
               {locale === 'ar' ? ' جميع الحقوق محفوظة.' : locale === 'en' ? ' All rights reserved.' : ' Tous droits réservés.'}
             </p>
           </div>

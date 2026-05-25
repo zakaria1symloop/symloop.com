@@ -19,10 +19,20 @@ const WHATSAPP_URL = 'https://wa.me/213549575512';
 const PHONE_URL    = 'tel:+213549575512';
 const PHONE_LABEL  = '+213 549 57 55 12';
 const EMAIL        = 'contact@symloop.com';
+// Year evaluated ONCE at module load — same value on Node SSR and on
+// the browser bundle (both compute it at import time, not on every render).
+// Eliminates the "Hydration failed" risk that comes from calling
+// `new Date().getFullYear()` during render across midnight UTC.
+const YEAR = new Date().getFullYear();
 
 export default function Footer() {
   const { t } = useTranslation('common');
-  const year = new Date().getFullYear();
+  // Computed once at module load (Node SSR cold start AND browser CSR module
+  // eval), so it's deterministic per build. Previously `new Date().getFullYear()`
+  // was called during every render — which can fire across midnight UTC and
+  // produce different years on SSR vs CSR, throwing "Hydration failed". Pinning
+  // it to a module-scope const eliminates the non-determinism.
+  const year = YEAR;
 
   const colCapabilities = {
     label: 'Capabilities',

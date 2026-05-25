@@ -55,8 +55,14 @@ function MyApp({ Component, pageProps }) {
   // self-referencing canonical and a complete hreflang set automatically,
   // so missing-canonical and "Duplicate without user-selected canonical"
   // never show up in Search Console for any page.
-  const locale = router.locale || 'en';
-  const defaultLocale = router.defaultLocale || 'en';
+  //
+  // CRITICAL: the fallback MUST match `defaultLocale` in next.config.js
+  // ('fr'), not 'en'. Mismatching fallbacks cause SSR/CSR drift on the
+  // canonical/hreflang URLs the moment router.locale resolves on the
+  // client — which throws "Hydration failed" in dev mode. Same applies
+  // to router.defaultLocale below.
+  const locale = router.locale || 'fr';
+  const defaultLocale = router.defaultLocale || 'fr';
   const path = (router.asPath || '/').split('?')[0].split('#')[0];
   const localePrefix = locale === defaultLocale ? '' : `/${locale}`;
   const canonicalUrl = `${SITE_URL}${localePrefix}${path}`;
@@ -80,7 +86,7 @@ function MyApp({ Component, pageProps }) {
   // navigation doesn't update it, so the Arabic font CSS selector
   // ([lang="ar"]) and RTL layout ([dir="rtl"]) won't apply without this.
   useEffect(() => {
-    const locale = router.locale || 'en';
+    const locale = router.locale || 'fr';
     document.documentElement.setAttribute('lang', locale);
     document.documentElement.setAttribute('dir', locale === 'ar' ? 'rtl' : 'ltr');
   }, [router.locale]);
