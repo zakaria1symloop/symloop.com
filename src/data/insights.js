@@ -97,10 +97,27 @@ export const INSIGHTS = [
     featured: true,
     publishedAt: '2026-05-24',
   },
-  // libya / mauritania / mali insight pages are scaffolded (i18n keys + cover
-  // images in place) but the .jsx files have not been built yet. Holding them
-  // out of the hub catalogue here keeps production clean — cards will be
-  // re-added once /insights/libya/, /insights/mauritania/, /insights/mali/ ship.
+  {
+    key:     'libya',
+    path:    '/insights/libya/',
+    cover:   '/insights/cover-libya.jpg',
+    featured: true,
+    publishedAt: '2026-05-25',
+  },
+  {
+    key:     'mauritania',
+    path:    '/insights/mauritania/',
+    cover:   '/insights/cover-mauritania.jpg',
+    featured: true,
+    publishedAt: '2026-05-25',
+  },
+  {
+    key:     'mali',
+    path:    '/insights/mali/',
+    cover:   '/insights/cover-mali.jpg',
+    featured: true,
+    publishedAt: '2026-05-25',
+  },
   // ── Future insights to add when ready ────────────────────────────────────
   // To add more insights:
   //   1. Add an entry here
