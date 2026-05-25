@@ -138,6 +138,11 @@ export default function CountryInsightTemplate({
   schemaMentions,
   schemaAudience,
   keywords,
+  // Pass a custom hero visualization per country (OpportunityStackChart for
+  // Libya, SectorStackChart for Mauritania, DemandCurveChart for Mali, etc.).
+  // When provided, this renders in place of the default DeliveryChart so
+  // every country gets a visually distinct page rather than three clones.
+  customChart,
 }) {
   const { locale } = useRouter();
   const isRtl = locale === 'ar';
@@ -232,13 +237,15 @@ export default function CountryInsightTemplate({
             ))}
           </motion.div>
 
-          <DeliveryChart
-            label={c.chart.label}
-            before={c.chart.before}
-            after={c.chart.after}
-            deltaLabel={c.chart.deltaLabel}
-            note={c.chart.note}
-          />
+          {customChart || (
+            <DeliveryChart
+              label={c.chart.label}
+              before={c.chart.before}
+              after={c.chart.after}
+              deltaLabel={c.chart.deltaLabel}
+              note={c.chart.note}
+            />
+          )}
 
           {c.sections.map((s, idx) => (
             <motion.section key={idx} initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger} className="mb-16 lg:mb-20">

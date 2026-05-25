@@ -6,11 +6,13 @@
 // Mines de Kayes, Energie du Mali (EDM), Azalaï Hotels Group, Sheraton
 // Bamako, Société Hôtelière Salam, Bamako real-estate developers, Ministry
 // of Mines & Petroleum, Ministry of Digital Transformation. Verticals:
-// Ecotrack buildings, hotel PMS (AU-summit grade), smart home.
+// BMS buildings, hotel PMS (AU-summit grade), smart home.
 // ============================================================================
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 import CountryInsightTemplate from '../../components/CountryInsightTemplate';
+import { DemandCurveChart } from '../../components/CountryCharts';
 
 const CONTENT = {
   en: {
@@ -33,7 +35,7 @@ const CONTENT = {
     intro: [
       'Mali in 2026 is Africa\'s third-largest gold producer, a Sahelian economy with deep mineral wealth, and a recurring diplomatic-hub host for African Union and ECOWAS meetings in Bamako. **Barrick Gold operates the Loulo-Gounkoto complex (one of the world\'s largest gold operations). Resolute Mining runs Syama. B2Gold operates Fekola. These three majors plus the smaller artisanal-to-industrial gold operators across Kayes, Sikasso and Koulikoro need operational software at a pace and scale no Malian vendor delivers today.** Bamako\'s hotel inventory — Azalaï Salam, Sheraton Bamako, Radisson Bamako, the boutique business hotels — is being upgraded for diplomatic-summit hosting standards. The capital is densifying with new commercial real estate and residential developments.',
       'The vendor reality in Mali is similar to Mauritania, with one twist. **French agencies** (Capgemini, Sopra Steria, Atos, plus the smaller Bamako-based French integrators) priced at French rates, with French overheads, and limited persistent presence in the country. **Senegalese pan-African firms** (the Dakar-based engineering shops that serve West Africa) with better cost structures but stretched thin across multiple countries and not specifically tuned for the operational reality of a Malian mining operation or the diplomatic-summit hospitality standard. **Or Gulf vendors** for the very largest contracts, with the standard fly-in-and-disappear delivery model.',
-      '**Symloop\'s positioning fills the gap**: native French engineering (a substantial fraction of Algerian senior engineers studied through curricula very close to French grandes écoles), AI-first deep-tech with 25+ senior engineers, geographic neighbor (Algeria-Mali land border, with a long-standing trans-Saharan logistical and cultural link), and a delivery model that maintains persistent local presence in Bamako during engagements rather than flying engineers in from Paris or Dakar. **Three verticals form the wedge: AU-summit-grade hotel PMS for the diplomatic-hosting infrastructure, Ecotrack building management for Bamako\'s densifying commercial and residential stock, and mining-adjacent operational software for Loulo-Gounkoto, Syama and Fekola.**',
+      '**Symloop\'s positioning fills the gap**: native French engineering (a substantial fraction of Algerian senior engineers studied through curricula very close to French grandes écoles), AI-first deep-tech with 25+ senior engineers, geographic neighbor (Algeria-Mali land border, with a long-standing trans-Saharan logistical and cultural link), and a delivery model that maintains persistent local presence in Bamako during engagements rather than flying engineers in from Paris or Dakar. **Three verticals form the wedge: AU-summit-grade hotel PMS for the diplomatic-hosting infrastructure, BMS building management for Bamako\'s densifying commercial and residential stock, and mining-adjacent operational software for Loulo-Gounkoto, Syama and Fekola.**',
     ],
     sections: [
       {
@@ -42,7 +44,7 @@ const CONTENT = {
           '**Gold mining is the largest software opportunity in Mali by far.** Barrick\'s Loulo-Gounkoto complex (a long-life world-class gold mine with substantial expansion potential) needs ongoing predictive maintenance on heavy mining equipment, computer-vision quality control on the gold processing line, integrated environmental and water management, and reporting to the Ministry of Mines & Petroleum in French and the Bamako-standard administrative format. A 24-month operational-software engagement at $4-8M would deliver multi-million-dollar annual savings through downtime reduction alone.',
           '**Resolute Mining at Syama and B2Gold at Fekola have similar profiles.** Plus the smaller Malian-government-stakeholder operations (Société des Mines de Kayes, the joint ventures with the Malian state) need digital transformation that the major French integrators have not been competitive on. **Aggregate mining-software opportunity over 2026–2030: $30-60M of engineering and licensing**, served today almost entirely by global mining-software vendors at European pricing.',
           '**Bamako\'s hotel inventory upgrade is a multi-million-dollar PMS opportunity.** The Azalaï Salam, Sheraton Bamako, Radisson Bamako, plus the smaller business hotels around the airport corridor and the Bamako-Diaspora district, all need modern PMS, channel manager, booking engine, F&B integration, and AI dynamic pricing — particularly for the diplomatic-summit hosting demand cycle (high occupancy during AU summits at top dollar, normal business-travel cycles in between). Most properties run legacy systems that struggle with this dual-mode demand profile.',
-          '**Bamako\'s densification is the third pillar.** New commercial real estate around the Bamako central business district, new residential developments in the upper-middle-class neighborhoods (Hamdallaye, Sébénikoro), and government-building modernization all need integrated building management. The Ecotrack-style platform Symloop deploys in Algeria and adjacent markets ports directly.',
+          '**Bamako\'s densification is the third pillar.** New commercial real estate around the Bamako central business district, new residential developments in the upper-middle-class neighborhoods (Hamdallaye, Sébénikoro), and government-building modernization all need integrated building management. The BMS-style platform Symloop deploys in Algeria and adjacent markets ports directly.',
         ],
       },
       {
@@ -54,11 +56,11 @@ const CONTENT = {
         ],
       },
       {
-        heading: 'Vertical 2 — Ecotrack building management for Bamako',
+        heading: 'Vertical 2 — BMS building management for Bamako',
         body: [
           'Bamako\'s electricity supply (EDM, Energie du Mali) has improved markedly over 2022-2026 but still has reliability issues that make backup-power orchestration and energy management operationally critical for any new commercial or residential building. **The new commercial real estate in the central business district, the government-building modernization programs (Ministry of Foreign Affairs, Ministry of Mines, ANTIM), and the upper-middle-class residential developments in Hamdallaye and Sébénikoro all need integrated building management.**',
-          'The vendor reality: French integrators deploy Schneider EcoStruxure at French pricing (€80-150K per building plus annual maintenance). Pan-African firms cobble together off-the-shelf hardware with integration that struggles with the Bamako electrical-grid reality. There is no Bamako-rooted Ecotrack vendor of scale.',
-          '**Symloop\'s Ecotrack platform** — deployed in Algerian, Libyan and Mauritanian contexts with similar grid-instability characteristics — fits Bamako natively. **Cost: $25-50K per building. Hardware ESP32-based, manufactured in Algiers, customizable for Malian-specific requirements. French + Bambara + Arabic UI. AI-driven energy + water + occupancy optimization. Source-code transfer to the Malian operator at end of engagement.**',
+          'The vendor reality: French integrators deploy Schneider EcoStruxure at French pricing (€80-150K per building plus annual maintenance). Pan-African firms cobble together off-the-shelf hardware with integration that struggles with the Bamako electrical-grid reality. There is no Bamako-rooted BMS vendor of scale.',
+          '**Symloop\'s BMS platform** — deployed in Algerian, Libyan and Mauritanian contexts with similar grid-instability characteristics — fits Bamako natively. **Cost: $25-50K per building. Hardware ESP32-based, manufactured in Algiers, customizable for Malian-specific requirements. French + Bambara + Arabic UI. AI-driven energy + water + occupancy optimization. Source-code transfer to the Malian operator at end of engagement.**',
         ],
       },
       {
@@ -81,8 +83,8 @@ const CONTENT = {
       {
         heading: 'What a Malian operator does next week',
         body: [
-          '**First**, commission a 2-week scoping engagement on the specific vertical — mining-adjacent operational software, AU-summit-grade hotel PMS, Ecotrack building management, or smart home. $30-60K. Outcome: a defensible board paper showing what Symloop delivers, in what timeline, at what cost — versus French and pan-African alternatives.',
-          '**Second**, structure the engagement as a fixed-price milestone-driven delivery. Mining-adjacent operational software: 18-24 months, $4-8M. AU-summit hotel PMS rollout: 6-12 months, $1-2M per property (multi-property for Azalaï: $6-12M over 18-24 months). Ecotrack building deployment: 3-4 months per building at $25-50K.',
+          '**First**, commission a 2-week scoping engagement on the specific vertical — mining-adjacent operational software, AU-summit-grade hotel PMS, BMS building management, or smart home. $30-60K. Outcome: a defensible board paper showing what Symloop delivers, in what timeline, at what cost — versus French and pan-African alternatives.',
+          '**Second**, structure the engagement as a fixed-price milestone-driven delivery. Mining-adjacent operational software: 18-24 months, $4-8M. AU-summit hotel PMS rollout: 6-12 months, $1-2M per property (multi-property for Azalaï: $6-12M over 18-24 months). BMS building deployment: 3-4 months per building at $25-50K.',
           '**Third**, take source-code ownership and on-premise or sovereign-cloud deployment as contractual default. For mining engagements with global majors (Barrick, Resolute, B2Gold), the contracting structure is MSA + SOW with global parent corporation, with Symloop as the local-context delivery partner. For Malian-state-stakeholder engagements (Société des Mines de Kayes, government modernization), public-procurement structure with board-approved scoping.',
         ],
       },
@@ -94,7 +96,7 @@ const CONTENT = {
         'Symloop wins over French agencies on cost (50-60% cheaper), over Senegalese pan-African firms on depth and AI-first posture, over global mining-software vendors on local-context delivery and source-code ownership.',
         'Barrick Gold (Loulo-Gounkoto), Resolute (Syama), B2Gold (Fekola): mining-adjacent operational software is a 24-month, $4-8M-per-major-operator opportunity.',
         'Azalaï Hotels Group multi-property PMS: $6-12M, 18-24 months, pan-Sahelian reference deployment. Single-property rollouts (Sheraton Bamako, Radisson): $1-2M per property over 6 months.',
-        'Ecotrack building management for Bamako densification: $25-50K per building, no recurring fees, French + Bambara + Arabic UI, AI-driven energy + water + occupancy optimization.',
+        'BMS building management for Bamako densification: $25-50K per building, no recurring fees, French + Bambara + Arabic UI, AI-driven energy + water + occupancy optimization.',
         'Diplomatic-summit dynamic pricing (4-6 high-occupancy events per year) is the differentiator that AU-summit-grade hotel PMS must handle — standard international PMS systems do not optimize this dual-mode demand profile correctly.',
       ],
     },
@@ -129,7 +131,7 @@ const CONTENT = {
     },
     cta: {
       eyebrow: 'Talk to the team that ships into Mali',
-      title:   'Considering an AU-summit-grade hotel PMS, mining-adjacent operational software, or Ecotrack building platform in Mali? We scope in two weeks and ship in eight months.',
+      title:   'Considering an AU-summit-grade hotel PMS, mining-adjacent operational software, or BMS building platform in Mali? We scope in two weeks and ship in eight months.',
       button:  'Start the scoping conversation',
     },
     backToHub: 'Back to all insights',
@@ -155,7 +157,7 @@ const CONTENT = {
     intro: [
       'Le Mali en 2026 est le troisième producteur d\'or d\'Afrique, une économie sahélienne à profonde richesse minérale, et un hôte récurrent de hub diplomatique pour les réunions Union Africaine et CEDEAO à Bamako. **Barrick Gold opère le complexe Loulo-Gounkoto (l\'une des plus grandes opérations aurifères au monde). Resolute Mining tourne Syama. B2Gold opère Fekola. Ces trois majors plus les opérateurs aurifères artisanaux-à-industriels plus petits à travers Kayes, Sikasso et Koulikoro ont besoin de logiciel opérationnel à un rythme et à une échelle qu\'aucun éditeur malien ne livre aujourd\'hui.** L\'inventaire hôtelier de Bamako — Azalaï Salam, Sheraton Bamako, Radisson Bamako, les hôtels business boutique — est en cours de mise à niveau pour les standards d\'hébergement de sommets diplomatiques.',
       'La réalité éditeur au Mali est similaire à la Mauritanie, avec une nuance. **Agences françaises** (Capgemini, Sopra Steria, Atos, plus les intégrateurs français basés à Bamako plus petits) tarifées aux taux français, avec frais généraux français, et présence persistante limitée dans le pays. **Firmes pan-africaines sénégalaises** (les ateliers d\'ingénierie basés à Dakar qui servent l\'Afrique de l\'Ouest) avec meilleures structures de coûts mais étalées mince à travers plusieurs pays et pas spécifiquement calibrées pour la réalité opérationnelle d\'une opération minière malienne ou le standard hôtelier de sommet diplomatique. **Ou éditeurs golfiques** pour les très plus gros contrats, avec le modèle de livraison standard fly-in-et-disparaître.',
-      '**Le positionnement de Symloop comble la lacune** : ingénierie française native (une fraction substantielle des ingénieurs seniors algériens a étudié à travers des curricula très proches des grandes écoles françaises), deep-tech IA-first avec 25+ ingénieurs seniors, voisin géographique (frontière terrestre Algérie-Mali, avec un lien logistique et culturel trans-saharien de longue date), et un modèle de livraison qui maintient une présence locale persistante à Bamako pendant les engagements plutôt que d\'envoler les ingénieurs depuis Paris ou Dakar. **Trois verticaux forment le coin : PMS hôtelier de qualité sommet-UA pour l\'infrastructure d\'hébergement diplomatique, gestion bâtiment Ecotrack pour le stock commercial et résidentiel se densifiant de Bamako, et logiciel opérationnel minier-adjacent pour Loulo-Gounkoto, Syama et Fekola.**',
+      '**Le positionnement de Symloop comble la lacune** : ingénierie française native (une fraction substantielle des ingénieurs seniors algériens a étudié à travers des curricula très proches des grandes écoles françaises), deep-tech IA-first avec 25+ ingénieurs seniors, voisin géographique (frontière terrestre Algérie-Mali, avec un lien logistique et culturel trans-saharien de longue date), et un modèle de livraison qui maintient une présence locale persistante à Bamako pendant les engagements plutôt que d\'envoler les ingénieurs depuis Paris ou Dakar. **Trois verticaux forment le coin : PMS hôtelier de qualité sommet-UA pour l\'infrastructure d\'hébergement diplomatique, gestion bâtiment BMS pour le stock commercial et résidentiel se densifiant de Bamako, et logiciel opérationnel minier-adjacent pour Loulo-Gounkoto, Syama et Fekola.**',
     ],
     sections: [
       {
@@ -176,11 +178,11 @@ const CONTENT = {
         ],
       },
       {
-        heading: 'Vertical 2 — Ecotrack gestion bâtiment pour Bamako',
+        heading: 'Vertical 2 — BMS gestion bâtiment pour Bamako',
         body: [
           'L\'approvisionnement électrique de Bamako (EDM, Energie du Mali) s\'est nettement amélioré sur 2022-2026 mais a encore des problèmes de fiabilité qui rendent l\'orchestration de backup-power et la gestion énergie opérationnellement critiques pour tout nouveau bâtiment commercial ou résidentiel. **Le nouvel immobilier commercial dans le quartier central des affaires, les programmes de modernisation de bâtiments gouvernementaux (Ministère des Affaires Étrangères, Ministère des Mines, ANTIM), et les développements résidentiels de classe moyenne supérieure dans Hamdallaye et Sébénikoro ont tous besoin de gestion intégrée de bâtiment.**',
-          'La réalité éditeur : les intégrateurs français déploient Schneider EcoStruxure à tarification française (80-150K€ par bâtiment plus maintenance annuelle). Les firmes pan-africaines bricolent du hardware standard avec une intégration qui lutte avec la réalité du réseau électrique de Bamako. Il n\'y a aucun éditeur Ecotrack enraciné Bamako à l\'échelle.',
-          '**La plateforme Ecotrack de Symloop** — déployée dans des contextes algériens, libyens et mauritaniens avec des caractéristiques d\'instabilité de grid similaires — colle nativement à Bamako. **Coût : 25-50K$ par bâtiment. Hardware ESP32, fabriqué à Alger, personnalisable pour exigences spécifiques maliennes. UI français + bambara + arabe. Optimisation énergie + eau + occupation IA. Transfert de code source à l\'opérateur malien en fin d\'engagement.**',
+          'La réalité éditeur : les intégrateurs français déploient Schneider EcoStruxure à tarification française (80-150K€ par bâtiment plus maintenance annuelle). Les firmes pan-africaines bricolent du hardware standard avec une intégration qui lutte avec la réalité du réseau électrique de Bamako. Il n\'y a aucun éditeur BMS enraciné Bamako à l\'échelle.',
+          '**La plateforme BMS de Symloop** — déployée dans des contextes algériens, libyens et mauritaniens avec des caractéristiques d\'instabilité de grid similaires — colle nativement à Bamako. **Coût : 25-50K$ par bâtiment. Hardware ESP32, fabriqué à Alger, personnalisable pour exigences spécifiques maliennes. UI français + bambara + arabe. Optimisation énergie + eau + occupation IA. Transfert de code source à l\'opérateur malien en fin d\'engagement.**',
         ],
       },
       {
@@ -203,8 +205,8 @@ const CONTENT = {
       {
         heading: 'Ce qu\'un opérateur malien fait la semaine prochaine',
         body: [
-          '**Premièrement**, commander un cadrage de 2 semaines sur le vertical spécifique — logiciel opérationnel minier-adjacent, PMS hôtelier de qualité sommet-UA, gestion bâtiment Ecotrack, ou smart home. 30-60K$. Résultat : un board paper défendable montrant ce que Symloop livre, dans quel délai, à quel coût — versus alternatives françaises et pan-africaines.',
-          '**Deuxièmement**, structurer l\'engagement comme livraison forfait pilotée par jalons. Logiciel opérationnel minier-adjacent : 18-24 mois, 4-8M$. Déploiement PMS hôtelier sommet-UA : 6-12 mois, 1-2M$ par propriété (multi-propriétés pour Azalaï : 6-12M$ sur 18-24 mois). Déploiement bâtiment Ecotrack : 3-4 mois par bâtiment à 25-50K$.',
+          '**Premièrement**, commander un cadrage de 2 semaines sur le vertical spécifique — logiciel opérationnel minier-adjacent, PMS hôtelier de qualité sommet-UA, gestion bâtiment BMS, ou smart home. 30-60K$. Résultat : un board paper défendable montrant ce que Symloop livre, dans quel délai, à quel coût — versus alternatives françaises et pan-africaines.',
+          '**Deuxièmement**, structurer l\'engagement comme livraison forfait pilotée par jalons. Logiciel opérationnel minier-adjacent : 18-24 mois, 4-8M$. Déploiement PMS hôtelier sommet-UA : 6-12 mois, 1-2M$ par propriété (multi-propriétés pour Azalaï : 6-12M$ sur 18-24 mois). Déploiement bâtiment BMS : 3-4 mois par bâtiment à 25-50K$.',
           '**Troisièmement**, prendre la propriété du code source et déploiement on-premise ou cloud souverain comme défaut contractuel. Pour engagements miniers avec majors globaux (Barrick, Resolute, B2Gold), la structure contractuelle est MSA + SOW avec corporation parente globale, avec Symloop comme partenaire de livraison contexte-local. Pour engagements stakeholder-malien-état (Société des Mines de Kayes, modernisation gouvernementale), structure procurement public avec cadrage approuvé en conseil.',
         ],
       },
@@ -216,7 +218,7 @@ const CONTENT = {
         'Symloop gagne sur agences françaises sur coût (50-60% moins cher), sur firmes pan-africaines sénégalaises sur profondeur et posture IA-first, sur éditeurs miniers globaux sur livraison contexte-local et propriété du code source.',
         'Barrick Gold (Loulo-Gounkoto), Resolute (Syama), B2Gold (Fekola) : logiciel opérationnel minier-adjacent est une opportunité 24 mois, 4-8M$ par major-opérateur.',
         'Azalaï Hotels Group PMS multi-propriétés : 6-12M$, 18-24 mois, déploiement de référence pan-sahélien. Déploiements single-propriété (Sheraton Bamako, Radisson) : 1-2M$ par propriété sur 6 mois.',
-        'Ecotrack gestion bâtiment pour densification Bamako : 25-50K$ par bâtiment, pas de frais récurrents, UI français + bambara + arabe, optimisation énergie + eau + occupation IA.',
+        'BMS gestion bâtiment pour densification Bamako : 25-50K$ par bâtiment, pas de frais récurrents, UI français + bambara + arabe, optimisation énergie + eau + occupation IA.',
         'La tarification dynamique sommet diplomatique (4-6 événements haute occupation par an) est le différenciateur que le PMS hôtelier qualité sommet-UA doit gérer — les systèmes PMS internationaux standard n\'optimisent pas correctement ce profil de demande dual-mode.',
       ],
     },
@@ -251,7 +253,7 @@ const CONTENT = {
     },
     cta: {
       eyebrow: 'Parlez à l\'équipe qui livre au Mali',
-      title:   'Vous envisagez un PMS hôtelier qualité sommet-UA, du logiciel opérationnel minier-adjacent, ou une plateforme Ecotrack au Mali ? Nous cadrons en deux semaines et livrons en huit mois.',
+      title:   'Vous envisagez un PMS hôtelier qualité sommet-UA, du logiciel opérationnel minier-adjacent, ou une plateforme BMS au Mali ? Nous cadrons en deux semaines et livrons en huit mois.',
       button:  'Démarrer la conversation de cadrage',
     },
     backToHub: 'Retour à toutes les études',
@@ -277,7 +279,7 @@ const CONTENT = {
     intro: [
       'مالي في 2026 هي ثالث أكبر منتج للذهب في إفريقيا، اقتصاد ساحلي بثروة معدنية عميقة، ومضيف متكرّر لمحور دبلوماسي لاجتماعات الاتحاد الإفريقي وECOWAS في باماكو. **Barrick Gold تشغّل مجمع Loulo-Gounkoto. Resolute Mining تشغّل Syama. B2Gold تشغّل Fekola.**',
       'الواقع البائع في مالي مشابه لموريتانيا، مع تطوّر. **الوكالات الفرنسية** مسعّرة بأسعار فرنسية. **الشركات الأفريقية السنغالية** بهياكل تكلفة أفضل لكن ممتدة عبر بلدان متعدّدة. **أو البائعون الخليجيون** للعقود الكبيرة جداً.',
-      '**موقع Symloop يملأ الفجوة**: هندسة فرنسية أصلية، deep-tech AI-first مع 25+ مهندساً أقدم، جار جغرافي، ونموذج تسليم يحافظ على حضور محلي مستمر في باماكو. **ثلاث قطاعات تشكّل الإسفين: PMS فندقي بجودة قمم UA، إدارة المباني Ecotrack لباماكو، وبرمجيات تشغيلية مجاورة للتعدين.**',
+      '**موقع Symloop يملأ الفجوة**: هندسة فرنسية أصلية، deep-tech AI-first مع 25+ مهندساً أقدم، جار جغرافي، ونموذج تسليم يحافظ على حضور محلي مستمر في باماكو. **ثلاث قطاعات تشكّل الإسفين: PMS فندقي بجودة قمم UA، إدارة المباني BMS لباماكو، وبرمجيات تشغيلية مجاورة للتعدين.**',
     ],
     sections: [
       {
@@ -298,11 +300,11 @@ const CONTENT = {
         ],
       },
       {
-        heading: 'القطاع 2 — Ecotrack لإدارة المباني لباماكو',
+        heading: 'القطاع 2 — BMS لإدارة المباني لباماكو',
         body: [
           '**العقارات التجارية الجديدة، تحديث المباني الحكومية، والتطويرات السكنية للطبقة المتوسطة العليا في باماكو كلها تحتاج إدارة مباني متكاملة.**',
-          'الواقع البائع: المتكاملون الفرنسيون ينشرون Schneider EcoStruxure بأسعار فرنسية. لا يوجد بائع Ecotrack متجذّر في باماكو على نطاق واسع.',
-          '**منصة Ecotrack من Symloop** تناسب باماكو أصلياً. **التكلفة: 25-50 ألف دولار لكل مبنى. هاردوير ESP32. واجهة فرنسية + بمبارا + عربية.**',
+          'الواقع البائع: المتكاملون الفرنسيون ينشرون Schneider EcoStruxure بأسعار فرنسية. لا يوجد بائع BMS متجذّر في باماكو على نطاق واسع.',
+          '**منصة BMS من Symloop** تناسب باماكو أصلياً. **التكلفة: 25-50 ألف دولار لكل مبنى. هاردوير ESP32. واجهة فرنسية + بمبارا + عربية.**',
         ],
       },
       {
@@ -338,7 +340,7 @@ const CONTENT = {
         'Symloop يفوز على الوكالات الفرنسية على التكلفة (50-60٪ أرخص)، على الشركات الأفريقية السنغالية على العمق، على بائعي برمجيات التعدين العالميين على التسليم بسياق محلي.',
         'Barrick Gold وResolute وB2Gold: برمجيات تشغيلية مجاورة للتعدين هي فرصة 24 شهراً، 4-8 مليون دولار لكل مشغّل رئيسي.',
         'Azalaï Hotels Group PMS متعدّد العقارات: 6-12 مليون دولار، 18-24 شهراً، نشر مرجعي عبر الساحل.',
-        'Ecotrack لإدارة المباني لتكثيف باماكو: 25-50 ألف دولار لكل مبنى.',
+        'BMS لإدارة المباني لتكثيف باماكو: 25-50 ألف دولار لكل مبنى.',
         'التسعير الديناميكي للقمم الدبلوماسية هو المُميِّز الذي يجب على PMS فندقي بجودة قمم UA التعامل معه.',
       ],
     },
@@ -373,7 +375,7 @@ const CONTENT = {
     },
     cta: {
       eyebrow: 'تحدّث إلى الفريق الذي يشحن إلى مالي',
-      title:   'تفكر في PMS فندقي بجودة قمم UA أو برمجيات تشغيلية مجاورة للتعدين أو منصة Ecotrack في مالي؟ نحدّد النطاق في أسبوعين ونشحن في ثمانية أشهر.',
+      title:   'تفكر في PMS فندقي بجودة قمم UA أو برمجيات تشغيلية مجاورة للتعدين أو منصة BMS في مالي؟ نحدّد النطاق في أسبوعين ونشحن في ثمانية أشهر.',
       button:  'ابدأ محادثة تحديد النطاق',
     },
     backToHub: 'العودة إلى جميع التقارير',
@@ -405,7 +407,69 @@ const SCHEMA_AUDIENCE = {
   audienceType: 'Malian operators, Barrick Loulo-Gounkoto site management, Resolute Syama, B2Gold Fekola, Azalaï Hotels Group executives, Sheraton Bamako, Bamako real-estate developers, EDM executives, Ministry of Mines & Petroleum, Ministry of Digital Transformation',
 };
 
-const KEYWORDS = "logiciel mali, ingénierie logicielle mali, AI Mali, software development Mali, hotel PMS Bamako, hotel software Bamako, Ecotrack Mali, building management Bamako, BMS Mali, smart home Bamako, domotique Mali, mining software Mali, Barrick Loulo-Gounkoto software, Resolute Syama, B2Gold Fekola, Société Mines Kayes, Azalaï Hotels PMS, Sheraton Bamako software, EDM software, Bamako real estate software, AU summit hotel software, ECOWAS summit hospitality, sovereign software Mali, AI Mali hospitality, AI Mali mining, Bamako smart home, Mali hotel automation, Mali residential automation, Mali energy management, partenaire ingénierie Mali, PMS hôtel Mali, gestion bâtiment Mali, maison intelligente Mali, automatisation Mali, Algérie ingénierie pour Mali, bambara software, sahel software, Symloop Mali, Hamdallaye smart home, Sébénikoro Ecotrack";
+const KEYWORDS = "logiciel mali, ingénierie logicielle mali, AI Mali, software development Mali, hotel PMS Bamako, hotel software Bamako, BMS Mali, building management Bamako, BMS Mali, smart home Bamako, domotique Mali, mining software Mali, Barrick Loulo-Gounkoto software, Resolute Syama, B2Gold Fekola, Société Mines Kayes, Azalaï Hotels PMS, Sheraton Bamako software, EDM software, Bamako real estate software, AU summit hotel software, ECOWAS summit hospitality, sovereign software Mali, AI Mali hospitality, AI Mali mining, Bamako smart home, Mali hotel automation, Mali residential automation, Mali energy management, partenaire ingénierie Mali, PMS hôtel Mali, gestion bâtiment Mali, maison intelligente Mali, automatisation Mali, Algérie ingénierie pour Mali, bambara software, sahel software, Symloop Mali, Hamdallaye smart home, Sébénikoro BMS";
+
+// Bamako hotel occupancy curve. Baseline 40-50% with 4 spikes per year
+// at 95%+ during AU and ECOWAS summit weeks. The chart shows the
+// dual-mode demand profile that AU-summit-grade PMS systems must
+// handle correctly — a story you cannot tell with a comparison bar.
+const POINTS    = [42, 48, 95, 50, 45, 92, 55, 48, 88, 52, 90, 47];
+const SUMMITS_EN = [
+  { idx: 2,  value: 95, label: 'AU summit' },
+  { idx: 5,  value: 92, label: 'ECOWAS' },
+  { idx: 8,  value: 88, label: 'Mining conf.' },
+  { idx: 10, value: 90, label: 'AU sub-cmm.' },
+];
+const SUMMITS_FR = [
+  { idx: 2,  value: 95, label: 'Sommet UA' },
+  { idx: 5,  value: 92, label: 'CEDEAO' },
+  { idx: 8,  value: 88, label: 'Conf. mines' },
+  { idx: 10, value: 90, label: 'Sous-com. UA' },
+];
+const SUMMITS_AR = [
+  { idx: 2,  value: 95, label: 'قمة UA' },
+  { idx: 5,  value: 92, label: 'ECOWAS' },
+  { idx: 8,  value: 88, label: 'مؤتمر تعدين' },
+  { idx: 10, value: 90, label: 'لجنة UA' },
+];
+
+const CHART_DATA = {
+  fr: {
+    label:       'Demande hôtelière Bamako 2026 · occupation par mois',
+    monthsLabel: ['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Aoû','Sep','Oct','Nov','Déc'],
+    points:      POINTS,
+    summits:     SUMMITS_FR,
+    note:        'Pattern de demande hôtelière dual-mode à Bamako : occupation business steady à 40-50% entrelacée avec 4-6 spikes de 88-95% lors des sommets UA / CEDEAO / mining conferences. Le PMS et le revenue management doivent gérer les deux modes — la plupart des systèmes internationaux ne le font pas correctement.',
+  },
+  en: {
+    label:       'Bamako hotel demand 2026 · monthly occupancy',
+    monthsLabel: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    points:      POINTS,
+    summits:     SUMMITS_EN,
+    note:        'Bamako dual-mode hotel demand profile: 40-50% steady business occupancy interleaved with 4-6 spikes at 88-95% during AU / ECOWAS / mining-conference weeks. PMS and revenue management must handle both modes correctly — most international systems do not.',
+  },
+  ar: {
+    label:       'طلب فنادق باماكو 2026 · الإشغال الشهري',
+    monthsLabel: ['ين','ف','مر','أبر','مي','يو','يل','أغ','سب','أك','نو','دس'],
+    points:      POINTS,
+    summits:     SUMMITS_AR,
+    note:        'ملف طلب فنادق باماكو ثنائي الوضع: إشغال أعمال ثابت 40-50٪ متشابك مع 4-6 ارتفاعات بـ 88-95٪ خلال قمم UA / ECOWAS / مؤتمرات التعدين. يجب على PMS وإدارة الإيرادات التعامل مع كلا الوضعين بشكل صحيح — معظم الأنظمة الدولية لا تفعل ذلك.',
+  },
+};
+
+function MaliChart() {
+  const { locale } = useRouter();
+  const d = CHART_DATA[locale] || CHART_DATA.en;
+  return (
+    <DemandCurveChart
+      label={d.label}
+      monthsLabel={d.monthsLabel}
+      points={d.points}
+      summits={d.summits}
+      note={d.note}
+    />
+  );
+}
 
 export default function InsightMaliPage() {
   return (
@@ -418,6 +482,7 @@ export default function InsightMaliPage() {
       schemaMentions={SCHEMA_MENTIONS}
       schemaAudience={SCHEMA_AUDIENCE}
       keywords={KEYWORDS}
+      customChart={<MaliChart />}
     />
   );
 }

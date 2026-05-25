@@ -5,12 +5,14 @@
 // ore), MCM/Tasiast (Kinross gold), Société Mauritanienne des Hydrocarbures,
 // Mauritania Airlines, BSA/BMS banks, Sahara Hotel & Casino, Nouakchott
 // real-estate developers, government modernization (Ministry of Equipment,
-// Ministry of Digital Transformation). Verticals: Ecotrack buildings,
+// Ministry of Digital Transformation). Verticals: BMS buildings,
 // hotel PMS, smart home.
 // ============================================================================
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 import CountryInsightTemplate from '../../components/CountryInsightTemplate';
+import { SectorStackChart } from '../../components/CountryCharts';
 
 const CONTENT = {
   en: {
@@ -33,7 +35,7 @@ const CONTENT = {
     intro: [
       'Mauritania in 2026 is one of the most underserved high-growth software markets in West Africa. **Iron-ore exports through SNIM are running at record volumes. Kinross Tasiast is the largest gold mine in West Africa and is expanding production. The BirAllah offshore gas field with BP and Kosmos Energy goes into production in 2026–2027. Nouakchott is densifying rapidly — new commercial real estate, new residential developments, a growing upper-middle-class market for hotels, restaurants and smart-home services**. And yet there is no indigenous software industry at scale to serve this growth.',
       'The local market has three options today, all flawed. **French agencies** (Capgemini, Sopra Steria, plus the smaller Paris-based digital firms) priced for French clients with French overheads and limited persistent presence in Nouakchott. **Senegalese firms** with better cost structures but a Wolof-Senegalese cultural register that does not map cleanly onto Mauritanian Hassaniya-Arabic operational reality, and weak coverage of Arabic-language interfaces for government and traditional commerce buyers. **Or Gulf vendors** that fly in for major contracts and disappear afterward. **None of them are the right fit for a Mauritanian operator that wants software it owns, with on-the-ground engineering presence, in the actual languages its workforce speaks.**',
-      '**Symloop\'s positioning is calibrated exactly for this market.** Algerian-engineered, French and Arabic native (with strong Hassaniya register fit), AI-first deep-tech firm, 25+ senior engineers, production track record across mining-adjacent, banking, hospitality and government work in MENA and North Africa. Algerian engineering is geographically closer to Nouakchott than Paris, culturally closer than Dakar, and structurally cheaper than European or Gulf alternatives — without sacrificing engineering depth. **Three verticals form the wedge: Ecotrack building management for the Nouakchott densification, hotel PMS for the developing hospitality sector, and mining-grade ERP/MES for SNIM, MCM and the gas operators.**',
+      '**Symloop\'s positioning is calibrated exactly for this market.** Algerian-engineered, French and Arabic native (with strong Hassaniya register fit), AI-first deep-tech firm, 25+ senior engineers, production track record across mining-adjacent, banking, hospitality and government work in MENA and North Africa. Algerian engineering is geographically closer to Nouakchott than Paris, culturally closer than Dakar, and structurally cheaper than European or Gulf alternatives — without sacrificing engineering depth. **Three verticals form the wedge: BMS building management for the Nouakchott densification, hotel PMS for the developing hospitality sector, and mining-grade ERP/MES for SNIM, MCM and the gas operators.**',
     ],
     sections: [
       {
@@ -46,11 +48,11 @@ const CONTENT = {
         ],
       },
       {
-        heading: 'Vertical 1 — Ecotrack building management for Nouakchott densification',
+        heading: 'Vertical 1 — BMS building management for Nouakchott densification',
         body: [
           '**Nouakchott\'s new commercial real estate and residential developments need the same building-management capabilities as any other African capital: energy management (Mauritanian electricity from SOMELEC is improving but unreliable enough that backup orchestration matters), water management (Nouakchott is in the Sahel — water consumption monitoring is operationally and environmentally critical), security and surveillance with computer vision, HVAC optimization for desert climate, and integrated dashboards for property managers.**',
           'The vendor reality: French BMS systems (Schneider EcoStruxure, deployed by Capgemini or local French integrators) cost €100-200K per building plus annual maintenance. Senegalese system integrators offer cheaper pricing but limited Arabic-language support and a Wolof cultural register that does not match the Mauritanian operator base. Gulf vendors are not present at scale.',
-          '**Symloop\'s sovereign Ecotrack platform** — same architecture deployed for Algerian and Libyan clients, with Hassaniya-Arabic + French + English UI, locally-manufactured ESP32-based IoT sensors (Symloop hardware facility in Algiers), and AI-driven energy + water + occupancy optimization — deploys at $25-50K per building. **For a Mauritanian developer deploying a 30-building residential pipeline, the savings versus the French alternative are $3-5M and the operating data stays sovereign.**',
+          '**Symloop\'s sovereign BMS platform** — same architecture deployed for Algerian and Libyan clients, with Hassaniya-Arabic + French + English UI, locally-manufactured ESP32-based IoT sensors (Symloop hardware facility in Algiers), and AI-driven energy + water + occupancy optimization — deploys at $25-50K per building. **For a Mauritanian developer deploying a 30-building residential pipeline, the savings versus the French alternative are $3-5M and the operating data stays sovereign.**',
         ],
       },
       {
@@ -81,7 +83,7 @@ const CONTENT = {
         heading: 'What a Mauritanian operator does next week',
         body: [
           '**First**, commission a 2-week scoping engagement on the specific vertical (mining-adjacent, hotel PMS, building management or smart home). $30-60K. Outcome: a defensible board paper with delivery plan, cost, comparison to French/Senegalese alternatives. No further commitment required.',
-          '**Second**, structure the engagement as fixed-price milestone-driven. A mining-adjacent ERP engagement is typically 18-24 months and $4-8M. A hotel PMS rollout is 6 months and $0.8-2M per property. An Ecotrack building deployment is 3-4 months per building at $25-50K. All sovereign deployment with source-code transfer to the Mauritanian client at end of engagement.',
+          '**Second**, structure the engagement as fixed-price milestone-driven. A mining-adjacent ERP engagement is typically 18-24 months and $4-8M. A hotel PMS rollout is 6 months and $0.8-2M per property. An BMS building deployment is 3-4 months per building at $25-50K. All sovereign deployment with source-code transfer to the Mauritanian client at end of engagement.',
           '**Third**, structure payments via the standard Mauritanian banking channels (BMCI, BNM, GBM) with USD/EUR invoicing — Symloop has shipped engagements with all three banks. For mining engagements with global parent corporations (Kinross Gold, BP), the payment flow goes through Toronto, Houston or London corporate treasury rather than Nouakchott. Symloop has handled this.',
         ],
       },
@@ -94,7 +96,7 @@ const CONTENT = {
         'SNIM (iron-ore) is the most strategically important software buyer — predictive maintenance, mine-to-port optimization, environmental reporting. 24-month, $4-8M engagement opportunity.',
         'Kinross Tasiast (gold) is a global mining major\'s subsidiary — local-engineering-presence is the structural wedge versus Kinross\'s established global vendors.',
         'Hotel PMS for Nouakchott and emerging Saharan tourism: $0.8-2M per property, 12-18 month payback, offline-first architecture for remote desert properties.',
-        'Ecotrack building management for Nouakchott densification: $25-50K per building, no recurring fees, Hassaniya-Arabic + French UI, ESP32 hardware manufactured in Algiers.',
+        'BMS building management for Nouakchott densification: $25-50K per building, no recurring fees, Hassaniya-Arabic + French UI, ESP32 hardware manufactured in Algiers.',
       ],
     },
     faq: [
@@ -128,7 +130,7 @@ const CONTENT = {
     },
     cta: {
       eyebrow: 'Talk to the team that ships into Mauritania',
-      title:   'Considering an Ecotrack building platform, hotel PMS, or mining-grade ERP in Mauritania? We scope in two weeks and ship in nine months.',
+      title:   'Considering an BMS building platform, hotel PMS, or mining-grade ERP in Mauritania? We scope in two weeks and ship in nine months.',
       button:  'Start the scoping conversation',
     },
     backToHub: 'Back to all insights',
@@ -154,7 +156,7 @@ const CONTENT = {
     intro: [
       'La Mauritanie en 2026 est l\'un des marchés logiciels à forte croissance les plus mal servis d\'Afrique de l\'Ouest. **Les exports de minerai de fer via SNIM tournent à des volumes records. Kinross Tasiast est la plus grande mine d\'or d\'Afrique de l\'Ouest et étend sa production. Le champ de gaz offshore BirAllah avec BP et Kosmos Energy entre en production en 2026-2027. Nouakchott se densifie rapidement — nouvel immobilier commercial, nouveaux développements résidentiels, marché en croissance de la classe moyenne supérieure pour hôtels, restaurants et services smart home**. Et pourtant il n\'y a aucune industrie logicielle indigène à grande échelle pour servir cette croissance.',
       'Le marché local a trois options aujourd\'hui, toutes imparfaites. **Agences françaises** (Capgemini, Sopra Steria, plus les firmes digitales basées à Paris plus petites) tarifées pour clients français avec frais généraux français et présence persistante limitée à Nouakchott. **Firmes sénégalaises** avec meilleures structures de coûts mais un registre culturel wolof-sénégalais qui ne mappe pas proprement sur la réalité opérationnelle mauritanienne hassaniya-arabe, et une couverture faible des interfaces langue arabe pour les acheteurs gouvernement et commerce traditionnel. **Ou éditeurs du Golfe** qui s\'envolent pour les contrats majeurs et disparaissent ensuite. **Aucun d\'eux n\'est le bon fit pour un opérateur mauritanien qui veut un logiciel qu\'il possède, avec présence ingénierie sur le terrain, dans les langues réellement parlées par sa main-d\'œuvre.**',
-      '**Le positionnement de Symloop est calibré exactement pour ce marché.** Ingénierie algérienne, français et arabe natifs (avec fort fit registre hassaniya), firme deep-tech IA-first, 25+ ingénieurs seniors, parcours en production dans le minier-adjacent, banque, hôtellerie et gouvernement au MENA et Afrique du Nord. L\'ingénierie algérienne est géographiquement plus proche de Nouakchott que Paris, culturellement plus proche que Dakar, et structurellement moins chère que les alternatives européennes ou golfiques — sans sacrifier la profondeur d\'ingénierie. **Trois verticaux forment le coin : Ecotrack gestion bâtiment pour la densification de Nouakchott, PMS hôtels pour le secteur hôtelier en développement, et ERP/MES de qualité minière pour SNIM, MCM et les opérateurs gaz.**',
+      '**Le positionnement de Symloop est calibré exactement pour ce marché.** Ingénierie algérienne, français et arabe natifs (avec fort fit registre hassaniya), firme deep-tech IA-first, 25+ ingénieurs seniors, parcours en production dans le minier-adjacent, banque, hôtellerie et gouvernement au MENA et Afrique du Nord. L\'ingénierie algérienne est géographiquement plus proche de Nouakchott que Paris, culturellement plus proche que Dakar, et structurellement moins chère que les alternatives européennes ou golfiques — sans sacrifier la profondeur d\'ingénierie. **Trois verticaux forment le coin : BMS gestion bâtiment pour la densification de Nouakchott, PMS hôtels pour le secteur hôtelier en développement, et ERP/MES de qualité minière pour SNIM, MCM et les opérateurs gaz.**',
     ],
     sections: [
       {
@@ -167,11 +169,11 @@ const CONTENT = {
         ],
       },
       {
-        heading: 'Vertical 1 — Ecotrack gestion bâtiment pour la densification de Nouakchott',
+        heading: 'Vertical 1 — BMS gestion bâtiment pour la densification de Nouakchott',
         body: [
           '**Le nouvel immobilier commercial et les développements résidentiels de Nouakchott ont besoin des mêmes capacités de gestion de bâtiment que toute autre capitale africaine : gestion d\'énergie (l\'électricité mauritanienne de SOMELEC s\'améliore mais reste assez peu fiable pour que l\'orchestration de backup compte), gestion d\'eau (Nouakchott est au Sahel — le monitoring de consommation d\'eau est opérationnellement et environnementalement critique), sécurité et surveillance avec vision computationnelle, optimisation CVC pour climat désertique, et tableaux de bord intégrés pour gestionnaires de propriété.**',
           'La réalité éditeur : les systèmes BMS français (Schneider EcoStruxure, déployés par Capgemini ou intégrateurs locaux français) coûtent 100-200K€ par bâtiment plus maintenance annuelle. Les intégrateurs système sénégalais offrent une tarification moins chère mais un support langue arabe limité et un registre culturel wolof qui ne correspond pas à la base d\'opérateurs mauritaniens. Les éditeurs du Golfe ne sont pas présents à grande échelle.',
-          '**La plateforme Ecotrack souveraine de Symloop** — même architecture déployée pour clients algériens et libyens, avec UI hassaniya-arabe + français + anglais, capteurs IoT ESP32 fabriqués localement (usine hardware Symloop à Alger), et optimisation énergie + eau + occupation IA — se déploie à 25-50K$ par bâtiment. **Pour un promoteur mauritanien déployant un pipeline résidentiel de 30 bâtiments, les économies versus l\'alternative française sont de 3-5M$ et les données opérationnelles restent souveraines.**',
+          '**La plateforme BMS souveraine de Symloop** — même architecture déployée pour clients algériens et libyens, avec UI hassaniya-arabe + français + anglais, capteurs IoT ESP32 fabriqués localement (usine hardware Symloop à Alger), et optimisation énergie + eau + occupation IA — se déploie à 25-50K$ par bâtiment. **Pour un promoteur mauritanien déployant un pipeline résidentiel de 30 bâtiments, les économies versus l\'alternative française sont de 3-5M$ et les données opérationnelles restent souveraines.**',
         ],
       },
       {
@@ -202,7 +204,7 @@ const CONTENT = {
         heading: 'Ce qu\'un opérateur mauritanien fait la semaine prochaine',
         body: [
           '**Premièrement**, commander un cadrage de 2 semaines sur le vertical spécifique (minier-adjacent, PMS hôtelier, gestion bâtiment ou smart home). 30-60K$. Résultat : un board paper défendable avec plan de livraison, coût, comparaison aux alternatives françaises/sénégalaises. Aucun engagement supplémentaire requis.',
-          '**Deuxièmement**, structurer l\'engagement comme forfait piloté par jalons. Un engagement ERP minier-adjacent est typiquement 18-24 mois et 4-8M$. Un déploiement PMS hôtelier est 6 mois et 0,8-2M$ par propriété. Un déploiement Ecotrack bâtiment est 3-4 mois par bâtiment à 25-50K$. Tous déploiement souverain avec transfert de code source au client mauritanien en fin d\'engagement.',
+          '**Deuxièmement**, structurer l\'engagement comme forfait piloté par jalons. Un engagement ERP minier-adjacent est typiquement 18-24 mois et 4-8M$. Un déploiement PMS hôtelier est 6 mois et 0,8-2M$ par propriété. Un déploiement BMS bâtiment est 3-4 mois par bâtiment à 25-50K$. Tous déploiement souverain avec transfert de code source au client mauritanien en fin d\'engagement.',
           '**Troisièmement**, structurer les paiements via les canaux bancaires mauritaniens standard (BMCI, BNM, GBM) avec facturation USD/EUR — Symloop a livré des engagements avec les trois banques. Pour les engagements miniers avec corporations parentes globales (Kinross Gold, BP), le flux de paiement passe par la trésorerie corporate Toronto, Houston ou Londres plutôt que Nouakchott. Symloop a géré cela.',
         ],
       },
@@ -215,7 +217,7 @@ const CONTENT = {
         'SNIM (mine de fer) est l\'acheteur logiciel stratégiquement le plus important — maintenance prédictive, optimisation mine-au-port, reporting environnemental. Opportunité engagement 24 mois, 4-8M$.',
         'Kinross Tasiast (or) est une filiale d\'une major minière globale — la présence ingénierie locale est le coin structurel versus les éditeurs globaux établis de Kinross.',
         'PMS hôtels pour Nouakchott et tourisme saharien émergent : 0,8-2M$ par propriété, payback 12-18 mois, architecture offline-first pour propriétés désert distantes.',
-        'Ecotrack gestion bâtiment pour densification de Nouakchott : 25-50K$ par bâtiment, pas de frais récurrents, UI hassaniya-arabe + français, hardware ESP32 fabriqué à Alger.',
+        'BMS gestion bâtiment pour densification de Nouakchott : 25-50K$ par bâtiment, pas de frais récurrents, UI hassaniya-arabe + français, hardware ESP32 fabriqué à Alger.',
       ],
     },
     faq: [
@@ -249,7 +251,7 @@ const CONTENT = {
     },
     cta: {
       eyebrow: 'Parlez à l\'équipe qui livre en Mauritanie',
-      title:   'Vous envisagez une plateforme Ecotrack, un PMS hôtelier ou un ERP minier en Mauritanie ? Nous cadrons en deux semaines et livrons en neuf mois.',
+      title:   'Vous envisagez une plateforme BMS, un PMS hôtelier ou un ERP minier en Mauritanie ? Nous cadrons en deux semaines et livrons en neuf mois.',
       button:  'Démarrer la conversation de cadrage',
     },
     backToHub: 'Retour à toutes les études',
@@ -275,7 +277,7 @@ const CONTENT = {
     intro: [
       'موريتانيا في 2026 هي أحد أكثر أسواق البرمجيات سريعة النمو محرومة من الخدمة في غرب أفريقيا. **صادرات خام الحديد عبر SNIM تعمل بأحجام قياسية. Kinross Tasiast هي أكبر منجم ذهب في غرب أفريقيا. حقل غاز BirAllah البحري مع BP وKosmos Energy يدخل الإنتاج في 2026-2027. نواكشوط تتكثّف بسرعة.**',
       'السوق المحلي له ثلاثة خيارات اليوم، كلها معيبة. **وكالات فرنسية** مسعّرة لعملاء فرنسيين. **شركات سنغالية** بهياكل تكلفة أفضل لكن سياق ثقافي ولوفي-سنغالي لا يتماشى مع الواقع التشغيلي الموريتاني الحساني-العربي. **أو بائعون خليجيون** يطيرون للعقود الكبرى ويختفون بعدها.',
-      '**موقع Symloop معاير لهذا السوق بالضبط.** هندسة جزائرية، فرنسي وعربي أصلي (مع تطابق قوي مع السجل الحساني)، شركة deep-tech AI-first، 25+ مهندساً أقدم. ثلاث قطاعات تشكّل الإسفين: Ecotrack لإدارة المباني، PMS للفنادق، وERP/MES بجودة التعدين.',
+      '**موقع Symloop معاير لهذا السوق بالضبط.** هندسة جزائرية، فرنسي وعربي أصلي (مع تطابق قوي مع السجل الحساني)، شركة deep-tech AI-first، 25+ مهندساً أقدم. ثلاث قطاعات تشكّل الإسفين: BMS لإدارة المباني، PMS للفنادق، وERP/MES بجودة التعدين.',
     ],
     sections: [
       {
@@ -288,11 +290,11 @@ const CONTENT = {
         ],
       },
       {
-        heading: 'القطاع 1 — Ecotrack لإدارة المباني لتكثيف نواكشوط',
+        heading: 'القطاع 1 — BMS لإدارة المباني لتكثيف نواكشوط',
         body: [
           '**العقارات التجارية الجديدة والتطويرات السكنية في نواكشوط تحتاج نفس قدرات إدارة المباني: إدارة طاقة وإدارة مياه وأمن ومراقبة بالرؤية الحاسوبية وتحسين تكييف لمناخ صحراوي.**',
           'الواقع البائع: أنظمة BMS الفرنسية تكلف 100-200 ألف يورو لكل مبنى. المتكاملون السنغاليون أرخص لكن دعم اللغة العربية محدود.',
-          '**منصة Ecotrack السيادية من Symloop** تنشر بـ 25-50 ألف دولار لكل مبنى. لمطوّر موريتاني ينشر خط أنابيب 30 مبنى، التوفيرات مقابل البديل الفرنسي 3-5 مليون دولار.',
+          '**منصة BMS السيادية من Symloop** تنشر بـ 25-50 ألف دولار لكل مبنى. لمطوّر موريتاني ينشر خط أنابيب 30 مبنى، التوفيرات مقابل البديل الفرنسي 3-5 مليون دولار.',
         ],
       },
       {
@@ -336,7 +338,7 @@ const CONTENT = {
         'SNIM (خام الحديد) هي المشتري البرمجي الأكثر أهمية استراتيجياً — فرصة 24 شهراً، 4-8 مليون دولار.',
         'Kinross Tasiast (ذهب) شركة فرعية لشركة تعدين عالمية — الحضور الهندسي المحلي هو الإسفين الهيكلي.',
         'PMS فنادق لنواكشوط: 0.8-2 مليون دولار لكل عقار، استرداد 12-18 شهراً.',
-        'Ecotrack لتكثيف نواكشوط: 25-50 ألف دولار لكل مبنى، بدون رسوم متكررة.',
+        'BMS لتكثيف نواكشوط: 25-50 ألف دولار لكل مبنى، بدون رسوم متكررة.',
       ],
     },
     faq: [
@@ -370,7 +372,7 @@ const CONTENT = {
     },
     cta: {
       eyebrow: 'تحدّث إلى الفريق الذي يشحن إلى موريتانيا',
-      title:   'تفكر في منصة Ecotrack أو PMS فندقي أو ERP تعدين في موريتانيا؟ نحدّد النطاق في أسبوعين ونشحن في تسعة أشهر.',
+      title:   'تفكر في منصة BMS أو PMS فندقي أو ERP تعدين في موريتانيا؟ نحدّد النطاق في أسبوعين ونشحن في تسعة أشهر.',
       button:  'ابدأ محادثة تحديد النطاق',
     },
     backToHub: 'العودة إلى جميع التقارير',
@@ -402,7 +404,43 @@ const SCHEMA_AUDIENCE = {
   audienceType: 'Mauritanian operators, SNIM executives, Kinross Tasiast site management, Société Mauritanienne des Hydrocarbures, Mauritania Airlines, Nouakchott hotel developers, Nouakchott real-estate developers, Ministry of Petroleum Mines & Energy, Ministry of Digital Transformation, BMCI / BNM / GBM bankers',
 };
 
-const KEYWORDS = "logiciel mauritanie, ingénierie logicielle mauritanie, AI Mauritania, software development Mauritania, hotel PMS Nouakchott, hotel software Nouadhibou, Ecotrack Mauritanie, building management Mauritania, BMS Nouakchott, smart home Nouakchott, domotique Mauritanie, mining software Mauritania, SNIM software partner, Kinross Tasiast software, Société Mauritanienne Hydrocarbures, BMCI software, BNM Nouakchott, GBM technology, SOMELEC software, Mauritania Airlines software, Mauritanian government modernization, sovereign software Mauritania, AI Mauritania hospitality, AI Mauritania mining, Nouakchott smart home, Nouakchott real estate software, Mauritania hotel automation, Mauritania residential automation, Mauritania energy management, partenaire ingénierie Mauritanie, PMS hôtel Mauritanie, gestion bâtiment Mauritanie, maison intelligente Mauritanie, automatisation Mauritanie, Algérie ingénierie pour Mauritanie, hassaniya software, Symloop Mauritania, BirAllah software";
+const KEYWORDS = "logiciel mauritanie, ingénierie logicielle mauritanie, AI Mauritania, software development Mauritania, hotel PMS Nouakchott, hotel software Nouadhibou, BMS Mauritanie, building management Mauritania, BMS Nouakchott, smart home Nouakchott, domotique Mauritanie, mining software Mauritania, SNIM software partner, Kinross Tasiast software, Société Mauritanienne Hydrocarbures, BMCI software, BNM Nouakchott, GBM technology, SOMELEC software, Mauritania Airlines software, Mauritanian government modernization, sovereign software Mauritania, AI Mauritania hospitality, AI Mauritania mining, Nouakchott smart home, Nouakchott real estate software, Mauritania hotel automation, Mauritania residential automation, Mauritania energy management, partenaire ingénierie Mauritanie, PMS hôtel Mauritanie, gestion bâtiment Mauritanie, maison intelligente Mauritanie, automatisation Mauritanie, Algérie ingénierie pour Mauritanie, hassaniya software, Symloop Mauritania, BirAllah software";
+
+const CHART_DATA = {
+  fr: {
+    label: 'Pile sectorielle mauritanienne · opportunités logicielles 2026-2030',
+    layers: [
+      { label: 'Mine',         title: 'SNIM + Kinross Tasiast — mine de fer + or',                value: 50,  formattedValue: '$30-50M',   unit: 'sur 5 ans', sub: 'Maintenance prédictive, optimisation mine-au-port, monitoring environnemental, reporting Ministère.' },
+      { label: 'Pétrole-gaz',  title: 'BirAllah — gaz offshore BP/Kosmos',                        value: 35,  formattedValue: '$25-35M',   unit: 'sur 5 ans', sub: 'Gestion installations, conformité environnementale, portail fournisseurs, gestion contrats.' },
+      { label: 'Densification',title: 'Nouakchott — hôtels, bâtiments, smart home',               value: 100, formattedValue: '$80-120M',  unit: 'sur 5 ans', sub: 'PMS hôtelier (Sahara Hotel, Marriott plan), BMS Nouakchott, smart home classe moyenne supérieure.' },
+    ],
+    note: 'Estimation composite — opportunité logicielle mauritanienne agrégée sur le minier, le pétrole-gaz et la densification de Nouakchott. Source : missions Symloop + recherche secteur 2024-2026.',
+  },
+  en: {
+    label: 'Mauritanian sector stack · software opportunity 2026-2030',
+    layers: [
+      { label: 'Mining',          title: 'SNIM + Kinross Tasiast — iron ore + gold',                value: 50,  formattedValue: '$30-50M',  unit: 'over 5 yrs', sub: 'Predictive maintenance, mine-to-port optimization, environmental monitoring, Ministry reporting.' },
+      { label: 'Oil & gas',       title: 'BirAllah — BP/Kosmos offshore gas',                       value: 35,  formattedValue: '$25-35M',  unit: 'over 5 yrs', sub: 'Facility management, environmental compliance, supplier portal, contract management.' },
+      { label: 'Capital growth',  title: 'Nouakchott — hotels, buildings, smart home',              value: 100, formattedValue: '$80-120M', unit: 'over 5 yrs', sub: 'Hotel PMS (Sahara Hotel, Marriott plan), Nouakchott BMS, upper-middle-class smart home.' },
+    ],
+    note: 'Composite estimate — Mauritanian software opportunity aggregated across mining, oil-and-gas and Nouakchott densification. Source: Symloop engagements + sector research 2024-2026.',
+  },
+  ar: {
+    label: 'الكومة القطاعية الموريتانية · فرصة البرمجيات 2026-2030',
+    layers: [
+      { label: 'التعدين',  title: 'SNIM + Kinross Tasiast — الحديد + الذهب',                       value: 50,  formattedValue: '$30-50M',  unit: 'على 5 سنوات', sub: 'صيانة تنبؤية، تحسين المنجم إلى الميناء، مراقبة بيئية، تقارير الوزارة.' },
+      { label: 'النفط والغاز',title: 'BirAllah — غاز بحري BP/Kosmos',                            value: 35,  formattedValue: '$25-35M',  unit: 'على 5 سنوات', sub: 'إدارة المرافق، الامتثال البيئي، بوابة الموردين، إدارة العقود.' },
+      { label: 'تكثيف العاصمة', title: 'نواكشوط — فنادق ومباني ومنزل ذكي',                          value: 100, formattedValue: '$80-120M', unit: 'على 5 سنوات', sub: 'PMS فندقي، BMS نواكشوط، منزل ذكي للطبقة المتوسطة العليا.' },
+    ],
+    note: 'تقدير مركب — فرصة البرمجيات الموريتانية المجمعة عبر التعدين والنفط والغاز وتكثيف نواكشوط.',
+  },
+};
+
+function MauritaniaChart() {
+  const { locale } = useRouter();
+  const d = CHART_DATA[locale] || CHART_DATA.en;
+  return <SectorStackChart label={d.label} layers={d.layers} note={d.note} />;
+}
 
 export default function InsightMauritaniaPage() {
   return (
@@ -415,6 +453,7 @@ export default function InsightMauritaniaPage() {
       schemaMentions={SCHEMA_MENTIONS}
       schemaAudience={SCHEMA_AUDIENCE}
       keywords={KEYWORDS}
+      customChart={<MauritaniaChart />}
     />
   );
 }
