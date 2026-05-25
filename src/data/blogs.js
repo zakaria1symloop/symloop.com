@@ -3,6 +3,51 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "140",
+    slug: "maison-intelligente-smart-home-libye-mauritanie-mali-2026",
+    title: "Maison intelligente et domotique pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "Sécurité IA, gestion énergie, CVC intelligent, accès biométrique, applications française et arabe",
+    excerpt: "Pour promoteurs résidentiels luxe et propriétaires à Tripoli, Misrata, Nouakchott et Bamako : smart home intégrée à 3-8K$ par villa au lieu de 15-25K$ chez les éditeurs golfiques.",
+    category: "Smart Home", author: "Symloop Team", date: "2026-05-25", readTime: "12 min", featured: true,
+    tags: ["maison intelligente Libye", "smart home Mauritanie", "domotique Bamako", "smart home Africa", "residential automation Libya", "domotique sahélienne"],
+    metaTitle: "Maison intelligente Libye Mauritanie Mali 2026 — Smart home 3-8K$ | Symloop",
+    metaDescription: "Smart home intégrée pour villas luxe à Tripoli, Nouakchott, Bamako. 73% moins cher que Honeywell+Lutron golfique. Hardware fabriqué à Alger, applications française + arabe.",
+    translations: {
+      en: { title: "Smart home and residential automation for Libya, Mauritania and Mali — 2026", subtitle: "AI security, energy management, intelligent HVAC, biometric access, French and Arabic apps", excerpt: "Luxury residential smart home at $3-8K per villa instead of $15-25K from Gulf vendors. Hardware manufactured in Algiers." },
+      ar: { title: "المنزل الذكي والأتمتة السكنية لليبيا وموريتانيا ومالي — 2026", subtitle: "الأمن بالذكاء الاصطناعي وإدارة الطاقة والتكييف الذكي والوصول البيومتري", excerpt: "منزل ذكي متكامل لفلل فاخرة في طرابلس ونواكشوط وباماكو. 73٪ أقل تكلفة من البائعين الخليجيين." }
+    }
+  },
+  {
+    id: "139",
+    slug: "logiciel-pms-hotels-libye-mauritanie-mali-2026",
+    title: "Logiciel PMS hôtels pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "PMS souverain, AI-native, multi-propriétés pour Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï",
+    excerpt: "Comment livrer un PMS souverain multi-propriétés à 60-120$ par chambre par an au lieu de 400-800$ chez Oracle Opera. AI dynamic pricing pour les sommets UA et le pattern dual-mode.",
+    category: "Hotel PMS", author: "Symloop Team", date: "2026-05-25", readTime: "13 min", featured: true,
+    tags: ["PMS hôtel Libye", "Oracle Opera alternative", "PMS hôtel Mauritanie", "PMS hôtel Mali", "hotel software Africa", "Azalaï PMS", "Corinthia PMS"],
+    metaTitle: "Logiciel PMS hôtels Libye Mauritanie Mali 2026 — 85% moins cher qu'Opera | Symloop",
+    metaDescription: "PMS souverain multi-propriétés pour Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï. AI dynamic pricing calibrée sommets UA. 85% moins cher qu'Oracle Opera.",
+    translations: {
+      en: { title: "Hotel PMS software for Libya, Mauritania and Mali — 2026", subtitle: "Sovereign, AI-native, multi-property PMS for Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï", excerpt: "Sovereign multi-property PMS at $60-120/room/year instead of $400-800 from Oracle Opera. AI dynamic pricing for AU summits." },
+      ar: { title: "برمجيات PMS للفنادق في ليبيا وموريتانيا ومالي — 2026", subtitle: "PMS سيادي AI-native متعدد العقارات", excerpt: "PMS سيادي متعدد العقارات بـ 60-120 دولاراً لكل غرفة سنوياً بدلاً من 400-800 دولار من Oracle Opera." }
+    }
+  },
+  {
+    id: "138",
+    slug: "logiciel-gestion-batiments-bms-libye-mauritanie-mali-2026",
+    title: "Logiciel BMS gestion bâtiments pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "Plateforme BMS souveraine, hardware IoT ESP32 fabriqué à Alger, AI intégrée, code source possédé",
+    excerpt: "BMS souverain pour bâtiments commerciaux et résidentiels à Tripoli, Nouakchott et Bamako. 62% moins cher que Schneider/Honeywell/Siemens. 6 capacités intégrées en standard.",
+    category: "BMS", author: "Symloop Team", date: "2026-05-25", readTime: "13 min", featured: true,
+    tags: ["BMS Libye", "BMS Mauritanie", "BMS Mali", "logiciel gestion bâtiment", "Schneider EcoStruxure alternative", "gestion énergie bâtiment Afrique", "smart building Tripoli"],
+    metaTitle: "Logiciel BMS gestion bâtiments Libye Mauritanie Mali 2026 — 62% moins cher | Symloop",
+    metaDescription: "Plateforme BMS souveraine pour bâtiments à Tripoli, Nouakchott, Bamako. 30-60K$ par bâtiment au lieu de 120-150K$ chez Schneider/Honeywell. Hardware ESP32 fabriqué à Alger.",
+    translations: {
+      en: { title: "BMS building management software for Libya, Mauritania and Mali — 2026", subtitle: "Sovereign BMS platform, ESP32 IoT hardware manufactured in Algiers, integrated AI, source code owned", excerpt: "Sovereign BMS for commercial and residential buildings in Tripoli, Nouakchott, Bamako. 62% cheaper than Schneider/Honeywell/Siemens." },
+      ar: { title: "برمجيات BMS لإدارة المباني في ليبيا وموريتانيا ومالي — 2026", subtitle: "منصة BMS سيادية، هاردوير IoT ESP32 مصنّع في الجزائر العاصمة", excerpt: "BMS سيادي للمباني التجارية والسكنية في طرابلس ونواكشوط وباماكو. 62٪ أرخص." }
+    }
+  },
+  {
     id: "137",
     slug: "transformation-digitale-pharma-algerie-ia-2026",
     title: "Transformation digitale pharma en Algérie — comment l'IA réduit le coût-par-boîte de 22% en 2026",
