@@ -25,7 +25,10 @@ import SEO from '../components/SEO';
 
 const WA = 'https://wa.me/213549575512';
 const EMAIL = 'contact@symloop.com';
-const PHONE_DISPLAY = '+213 (0) 549 575 512';
+// Single source of truth — matches the format displayed in Header.jsx and
+// Footer.jsx so the same string appears everywhere. <bdi> handles the
+// RTL isolation when rendered inside Arabic copy.
+const PHONE_DISPLAY = '+213 549 57 55 12';
 const PHONE_TEL = 'tel:+213549575512';
 const ADDRESS_LINE_1 = 'Alger, Algérie';
 const ADDRESS_LINE_2 = '16000, Wilaya d\'Alger';
@@ -49,7 +52,7 @@ const CONTENT = {
     channels: {
       heading: 'Canaux de contact',
       items: [
-        { icon: 'MessageCircle', label: 'WhatsApp', value: '+213 549 575 512', sub: 'Réponse en moins de 4 heures sur jours ouvrés.', href: WA,        external: true },
+        { icon: 'MessageCircle', label: 'WhatsApp', value: '+213 549 57 55 12', sub: 'Réponse en moins de 4 heures sur jours ouvrés.', href: WA,        external: true },
         { icon: 'Mail',          label: 'Email',    value: EMAIL,              sub: 'Pour les briefs détaillés et les NDA.',                    href: `mailto:${EMAIL}`, external: false },
         { icon: 'Phone',         label: 'Téléphone',value: PHONE_DISPLAY,      sub: 'Lun-Jeu 09:00–18:00, Dim 10:00–14:00 (heure d\'Alger).', href: PHONE_TEL,   external: false },
       ],
@@ -89,7 +92,7 @@ const CONTENT = {
     channels: {
       heading: 'Contact channels',
       items: [
-        { icon: 'MessageCircle', label: 'WhatsApp', value: '+213 549 575 512', sub: 'Reply within 4 hours on weekdays.',                          href: WA,        external: true },
+        { icon: 'MessageCircle', label: 'WhatsApp', value: '+213 549 57 55 12', sub: 'Reply within 4 hours on weekdays.',                          href: WA,        external: true },
         { icon: 'Mail',          label: 'Email',    value: EMAIL,              sub: 'For detailed briefs and NDAs.',                              href: `mailto:${EMAIL}`, external: false },
         { icon: 'Phone',         label: 'Phone',    value: PHONE_DISPLAY,      sub: 'Sun-Thu 10:00-14:00, Mon-Thu 09:00-18:00 (Algiers time).',  href: PHONE_TEL,   external: false },
       ],
@@ -129,7 +132,7 @@ const CONTENT = {
     channels: {
       heading: 'قنوات التواصل',
       items: [
-        { icon: 'MessageCircle', label: 'واتساب',    value: '+213 549 575 512', sub: 'الرد خلال 4 ساعات في أيّام العمل.',                          href: WA,        external: true },
+        { icon: 'MessageCircle', label: 'واتساب',    value: '+213 549 57 55 12', sub: 'الرد خلال 4 ساعات في أيّام العمل.',                          href: WA,        external: true },
         { icon: 'Mail',          label: 'بريد إلكتروني', value: EMAIL,           sub: 'للملخّصات التفصيلية واتفاقيات السرّية.',                       href: `mailto:${EMAIL}`, external: false },
         { icon: 'Phone',         label: 'هاتف',       value: PHONE_DISPLAY,      sub: 'الأحد-الخميس 09:00 – 18:00 (توقيت الجزائر).',                 href: PHONE_TEL,   external: false },
       ],
@@ -259,7 +262,7 @@ export default function ContactPage({ locale }) {
                       <a {...linkProps} className="group block p-8 lg:p-10 h-full transition-colors hover:bg-white/[0.025]">
                         <Icon className="w-5 h-5 text-white/40 group-hover:text-white mb-6 transition-colors" strokeWidth={1.5} />
                         <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3">{item.label}</div>
-                        <h3 className="text-xl lg:text-2xl font-light text-white mb-4 leading-snug">{item.value}</h3>
+                        <h3 className="text-xl lg:text-2xl font-light text-white mb-4 leading-snug"><bdi>{item.value}</bdi></h3>
                         <p className="text-sm text-white/55 leading-relaxed">{item.sub}</p>
                       </a>
                     </motion.li>

@@ -89,6 +89,40 @@ html[dir="rtl"] body {
   text-align: right;
 }
 
+/* ============================================================================
+   LTR-content isolation in RTL contexts.
+
+   In Arabic (RTL) mode, browsers reverse the visual order of "weak" tokens
+   like phone numbers, percentages, currency amounts and SKU codes when they
+   sit inside an RTL paragraph. "+213 549 57 55 12" would render as
+   "12 55 57 549 213+" — same characters, wrong order.
+
+   Two utilities here:
+
+   1. <bdi> — HTML's Bidirectional Isolate element. Universally supported.
+      We force `unicode-bidi: isolate` + `direction: ltr` on it so any
+      phone, code or mixed-Latin-and-numbers content stays left-to-right
+      regardless of the surrounding paragraph direction. Use whenever
+      possible — it is the semantic element for this exact problem.
+
+   2. .ltr-num — utility class for spans/divs that contain numbers,
+      percentages or money. Same isolation behavior.
+
+   Apply liberally on phone, percentages, "$1.8M", "102%", "TRS 75%", etc.,
+   inside Arabic copy. Visual no-op in LTR mode.
+   ========================================================================== */
+bdi,
+.ltr-num {
+  unicode-bidi: isolate;
+  direction: ltr;
+}
+
+/* All .font-mono numerals stay LTR — covers stats, KPI numbers, version
+   tags, dates, codes throughout the site without per-component edits. */
+[dir="rtl"] .font-mono {
+  unicode-bidi: isolate;
+}
+
 /* RTL specific styles */
 [dir="rtl"] .rtl\:text-right {
   text-align: right;

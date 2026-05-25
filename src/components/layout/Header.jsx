@@ -80,7 +80,7 @@ const ContactPopup = ({ isOpen, onClose }) => {
           </div>
 
           <div className="mt-6 font-mono text-[10px] tracking-[0.15em] uppercase text-white/30 text-center">
-            {PHONE_LABEL}
+            <bdi>{PHONE_LABEL}</bdi>
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@ const MobileMenu = ({ isOpen, onClose, onContactClick }) => {
             className="flex items-center gap-2 text-white/50 hover:text-white text-xs font-mono tracking-wide transition-colors"
           >
             <Phone className="w-4 h-4" strokeWidth={1.5} />
-            <span>{PHONE_LABEL}</span>
+            <bdi>{PHONE_LABEL}</bdi>
           </a>
         </div>
         <LanguageSwitcher scrolled={true} />
@@ -206,7 +206,7 @@ const MobileContactBar = ({ onAIClick }) => {
           className="flex items-center gap-2 bg-white text-black px-5 py-2.5 text-xs font-medium tracking-wide"
         >
           <Phone className="w-3.5 h-3.5" strokeWidth={1.75} />
-          <span>{PHONE_LABEL}</span>
+          <bdi>{PHONE_LABEL}</bdi>
         </a>
       </div>
     </div>
@@ -275,12 +275,14 @@ export default function Header() {
 
             {/* Right section — desktop */}
             <div className="hidden lg:flex items-center gap-5">
-              {/* Phone — small mono */}
+              {/* Phone — small mono. <bdi> isolates the LTR digits from
+                  the surrounding paragraph direction so the number does
+                  not visually reverse in Arabic mode. */}
               <a
                 href={PHONE_URL}
                 className="font-mono text-[11px] tracking-[0.1em] text-white/40 hover:text-white transition-colors"
               >
-                {PHONE_LABEL}
+                <bdi>{PHONE_LABEL}</bdi>
               </a>
 
               {/* Language switcher */}

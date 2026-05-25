@@ -113,7 +113,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <a href={PHONE_URL} className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                 <Phone className="w-3.5 h-3.5" strokeWidth={1.5} />
-                <span className="font-mono text-[11px] tracking-[0.1em]">{PHONE_LABEL}</span>
+                <bdi className="font-mono text-[11px] tracking-[0.1em]">{PHONE_LABEL}</bdi>
               </a>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                 <MessageCircle className="w-3.5 h-3.5" strokeWidth={1.5} />
