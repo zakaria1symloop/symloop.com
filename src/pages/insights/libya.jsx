@@ -12,6 +12,7 @@
 // ============================================================================
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 import CountryInsightTemplate from '../../components/CountryInsightTemplate';
 import { OpportunityStackChart } from '../../components/CountryCharts';
 
@@ -444,8 +445,6 @@ const CHART_DATA = {
     note: 'تقدير مركب — فرصة برمجيات مجمعة عبر PMS الفنادق ومنصات BMS والمنزل الذكي لإعادة إعمار ليبيا 2026-2030. المصدر: مهام Symloop + أبحاث القطاع 2024-2026.',
   },
 };
-
-import { useRouter } from 'next/router';
 
 function LibyaChart() {
   const { locale } = useRouter();
