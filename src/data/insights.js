@@ -118,6 +118,13 @@ export const INSIGHTS = [
     featured: true,
     publishedAt: '2026-05-25',
   },
+  {
+    key:     'banking-ai-partner',
+    path:    '/insights/banking-ai-partner/',
+    cover:   '/insights/cover-banking-ai-partner.jpg',
+    featured: true,
+    publishedAt: '2026-05-25',
+  },
   // ── Future insights to add when ready ────────────────────────────────────
   // To add more insights:
   //   1. Add an entry here
