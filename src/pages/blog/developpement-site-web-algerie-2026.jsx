@@ -239,7 +239,7 @@ export default function DeveloppementSiteWebAlgerie2026() {
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 mb-12">
               <h2 className="text-lg font-bold text-gray-900 mb-3">En bref : Développement de site web en Algérie en 2026</h2>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Symloop</strong> est une agence de développement web basée à Sétif, Algérie, spécialisée dans la création
+                <strong>Symloop</strong> est une agence de développement web basée à Alger, Algérie, spécialisée dans la création
                 de sites web professionnels avec des technologies modernes (Next.js, React, Node.js). Prix : un site vitrine
                 à partir de 32 000 DA (design fourni) ou 100 000 DA (design sur mesure), un e-commerce à partir de 35 000 DA.
                 Délais : 1 à 6 semaines selon la complexité. SEO, multilingue (FR/AR/EN) et paiement CIB/Edahabia inclus.
@@ -576,7 +576,7 @@ export default function DeveloppementSiteWebAlgerie2026() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
                     "Technologies de pointe : Next.js, React, Node.js",
-                    "Équipe locale basée à Sétif, Algérie",
+                    "Équipe locale basée à Alger, Algérie",
                     "SEO technique intégré dans chaque projet",
                     "Support multilingue : Français, Arabe, Anglais",
                     "Portfolio vérifié avec +50 projets livrés",

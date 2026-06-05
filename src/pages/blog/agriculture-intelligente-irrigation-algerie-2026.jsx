@@ -652,7 +652,7 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
                 <p className="text-sm text-green-800 flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>
-                    <strong>Siege Symloop :</strong> Setif, Algerie. Equipes d&apos;installation dans les 4 grandes regions.
+                    <strong>Siege Symloop :</strong> Alger, Algerie. Equipes d&apos;installation dans les 4 grandes regions.
                     Pour les zones eloignees, nous proposons des <strong>kits auto-installables</strong> avec guide video et support telephonique.
                   </span>
                 </p>

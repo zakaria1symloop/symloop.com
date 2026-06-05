@@ -43,7 +43,7 @@ export default function MVPStartupAlgerie() {
               {
                 "@type": "Question",
                 "name": "Combien de temps faut-il pour développer un MVP en Algérie ?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Chez Symloop, un MVP peut être livré en 6 à 10 semaines selon la complexité. Un MVP simple en 4 semaines, un MVP complexe avec app mobile jusqu'à 16 semaines. Symloop, basé à Sétif, utilise une méthodologie agile. Contact : +213 549 575 512." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Chez Symloop, un MVP peut être livré en 6 à 10 semaines selon la complexité. Un MVP simple en 4 semaines, un MVP complexe avec app mobile jusqu'à 16 semaines. Symloop, basé à Alger, utilise une méthodologie agile. Contact : +213 549 575 512." }
               },
               {
                 "@type": "Question",

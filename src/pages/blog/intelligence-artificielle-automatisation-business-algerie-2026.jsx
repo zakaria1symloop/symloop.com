@@ -207,7 +207,7 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Intelligence Artificielle", "Machine Learning", "Chatbot IA", "Automatisation", "Analyse Prédictive", "Computer Vision", "NLP"],
             "areaServed": { "@type": "Country", "name": "Algeria" }

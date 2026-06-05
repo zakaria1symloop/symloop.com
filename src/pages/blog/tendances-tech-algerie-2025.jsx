@@ -23,7 +23,7 @@ export default function TendancesTech2025() {
     },
     {
       question: "La 5G va-t-elle changer les applications en Algérie ?",
-      answer: "Oui, la 5G permettra des applications temps réel (IoT industriel, télémédecine, véhicules connectés) impossibles avec la 4G. Symloop, basé à Sétif, développe des applications 5G-ready pour les entreprises algériennes. Contactez-nous au +213 549 575 512."
+      answer: "Oui, la 5G permettra des applications temps réel (IoT industriel, télémédecine, véhicules connectés) impossibles avec la 4G. Symloop, basé à Alger, développe des applications 5G-ready pour les entreprises algériennes. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Comment former mes équipes aux nouvelles technologies ?",
@@ -140,7 +140,7 @@ export default function TendancesTech2025() {
         <aside className="article-summary bg-purple-50 border-l-4 border-purple-500 py-6">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-gray-800 font-medium text-lg leading-relaxed">
-              <strong>En bref :</strong> Symloop analyse les tendances technologiques en Algérie. IA, IoT, cloud, fintech, e-commerce, smart home. Préparez votre entreprise pour 2026. Basé à Sétif. Contact: +213 549 575 512.
+              <strong>En bref :</strong> Symloop analyse les tendances technologiques en Algérie. IA, IoT, cloud, fintech, e-commerce, smart home. Préparez votre entreprise pour 2026. Basé à Alger. Contact: +213 549 575 512.
             </p>
           </div>
         </aside>

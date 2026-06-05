@@ -3,6 +3,81 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "140",
+    slug: "maison-intelligente-smart-home-libye-mauritanie-mali-2026",
+    title: "Maison intelligente et domotique pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "Sécurité IA, gestion énergie, CVC intelligent, accès biométrique, applications française et arabe",
+    excerpt: "Pour promoteurs résidentiels luxe et propriétaires à Tripoli, Misrata, Nouakchott et Bamako : smart home intégrée à 3-8K$ par villa au lieu de 15-25K$ chez les éditeurs golfiques.",
+    category: "Smart Home", author: "Symloop Team", date: "2026-05-25", readTime: "12 min", featured: true,
+    tags: ["maison intelligente Libye", "smart home Mauritanie", "domotique Bamako", "smart home Africa", "residential automation Libya", "domotique sahélienne"],
+    metaTitle: "Maison intelligente Libye Mauritanie Mali 2026 — Smart home 3-8K$ | Symloop",
+    metaDescription: "Smart home intégrée pour villas luxe à Tripoli, Nouakchott, Bamako. 73% moins cher que Honeywell+Lutron golfique. Hardware fabriqué à Alger, applications française + arabe.",
+    translations: {
+      en: { title: "Smart home and residential automation for Libya, Mauritania and Mali — 2026", subtitle: "AI security, energy management, intelligent HVAC, biometric access, French and Arabic apps", excerpt: "Luxury residential smart home at $3-8K per villa instead of $15-25K from Gulf vendors. Hardware manufactured in Algiers." },
+      ar: { title: "المنزل الذكي والأتمتة السكنية لليبيا وموريتانيا ومالي — 2026", subtitle: "الأمن بالذكاء الاصطناعي وإدارة الطاقة والتكييف الذكي والوصول البيومتري", excerpt: "منزل ذكي متكامل لفلل فاخرة في طرابلس ونواكشوط وباماكو. 73٪ أقل تكلفة من البائعين الخليجيين." }
+    }
+  },
+  {
+    id: "139",
+    slug: "logiciel-pms-hotels-libye-mauritanie-mali-2026",
+    title: "Logiciel PMS hôtels pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "PMS souverain, AI-native, multi-propriétés pour Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï",
+    excerpt: "Comment livrer un PMS souverain multi-propriétés à 60-120$ par chambre par an au lieu de 400-800$ chez Oracle Opera. AI dynamic pricing pour les sommets UA et le pattern dual-mode.",
+    category: "Hotel PMS", author: "Symloop Team", date: "2026-05-25", readTime: "13 min", featured: true,
+    tags: ["PMS hôtel Libye", "Oracle Opera alternative", "PMS hôtel Mauritanie", "PMS hôtel Mali", "hotel software Africa", "Azalaï PMS", "Corinthia PMS"],
+    metaTitle: "Logiciel PMS hôtels Libye Mauritanie Mali 2026 — 85% moins cher qu'Opera | Symloop",
+    metaDescription: "PMS souverain multi-propriétés pour Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï. AI dynamic pricing calibrée sommets UA. 85% moins cher qu'Oracle Opera.",
+    translations: {
+      en: { title: "Hotel PMS software for Libya, Mauritania and Mali — 2026", subtitle: "Sovereign, AI-native, multi-property PMS for Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï", excerpt: "Sovereign multi-property PMS at $60-120/room/year instead of $400-800 from Oracle Opera. AI dynamic pricing for AU summits." },
+      ar: { title: "برمجيات PMS للفنادق في ليبيا وموريتانيا ومالي — 2026", subtitle: "PMS سيادي AI-native متعدد العقارات", excerpt: "PMS سيادي متعدد العقارات بـ 60-120 دولاراً لكل غرفة سنوياً بدلاً من 400-800 دولار من Oracle Opera." }
+    }
+  },
+  {
+    id: "138",
+    slug: "logiciel-gestion-batiments-bms-libye-mauritanie-mali-2026",
+    title: "Logiciel BMS gestion bâtiments pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "Plateforme BMS souveraine, hardware IoT ESP32 fabriqué à Alger, AI intégrée, code source possédé",
+    excerpt: "BMS souverain pour bâtiments commerciaux et résidentiels à Tripoli, Nouakchott et Bamako. 62% moins cher que Schneider/Honeywell/Siemens. 6 capacités intégrées en standard.",
+    category: "BMS", author: "Symloop Team", date: "2026-05-25", readTime: "13 min", featured: true,
+    tags: ["BMS Libye", "BMS Mauritanie", "BMS Mali", "logiciel gestion bâtiment", "Schneider EcoStruxure alternative", "gestion énergie bâtiment Afrique", "smart building Tripoli"],
+    metaTitle: "Logiciel BMS gestion bâtiments Libye Mauritanie Mali 2026 — 62% moins cher | Symloop",
+    metaDescription: "Plateforme BMS souveraine pour bâtiments à Tripoli, Nouakchott, Bamako. 30-60K$ par bâtiment au lieu de 120-150K$ chez Schneider/Honeywell. Hardware ESP32 fabriqué à Alger.",
+    translations: {
+      en: { title: "BMS building management software for Libya, Mauritania and Mali — 2026", subtitle: "Sovereign BMS platform, ESP32 IoT hardware manufactured in Algiers, integrated AI, source code owned", excerpt: "Sovereign BMS for commercial and residential buildings in Tripoli, Nouakchott, Bamako. 62% cheaper than Schneider/Honeywell/Siemens." },
+      ar: { title: "برمجيات BMS لإدارة المباني في ليبيا وموريتانيا ومالي — 2026", subtitle: "منصة BMS سيادية، هاردوير IoT ESP32 مصنّع في الجزائر العاصمة", excerpt: "BMS سيادي للمباني التجارية والسكنية في طرابلس ونواكشوط وباماكو. 62٪ أرخص." }
+    }
+  },
+  {
+    id: "137",
+    slug: "transformation-digitale-pharma-algerie-ia-2026",
+    title: "Transformation digitale pharma en Algérie — comment l'IA réduit le coût-par-boîte de 22% en 2026",
+    subtitle: "Maintenance prédictive, vision QC, sérialisation DPM, supply chain — pour DG, Directeur Industriel, Directeur Qualité",
+    excerpt: "Brief décideur pour fabricants pharmaceutiques algériens : où l'IA déplace réellement le coût-par-boîte, les 6 cas d'usage en production aujourd'hui, et pourquoi 2026–2028 décide qui reste producteur indépendant.",
+    category: "Transformation digitale", author: "Symloop Team", date: "2026-05-24", readTime: "14 min", featured: true,
+    tags: ["transformation digitale pharma algérie", "IA industrie pharmaceutique", "digitalisation pharma algérie", "maintenance prédictive pharma", "sérialisation médicament algérie", "conformité DPM IA", "GMP Algeria AI", "pharma AI MENA"],
+    metaTitle: "Transformation digitale pharma Algérie IA 2026 — coût-par-boîte -22% | Symloop",
+    metaDescription: "Transformation digitale pharma Algérie avec IA. 6 cas d'usage en production : maintenance prédictive, vision QC, sérialisation DPM, supply chain. Pour DG, Directeur Industriel, DSI Pharma.",
+    translations: {
+      en: { title: "Pharma digital transformation in Algeria — how AI cuts cost-per-pack 22% in 2026", subtitle: "Predictive maintenance, vision QC, DPM serialization, supply chain — for GMs, Industrial Directors, Quality Directors", excerpt: "Decision-maker brief for Algerian pharma manufacturers: where AI moves cost-per-pack, the 6 use cases in production today, and why 2026–2028 decides who stays an independent producer." },
+      ar: { title: "التحوّل الرقمي للصناعة الدوائية في الجزائر — كيف يخفّض الذكاء الاصطناعي تكلفة العلبة 22٪ في 2026", subtitle: "الصيانة التنبؤية، رؤية QC، الترقيم التسلسلي DPM، سلسلة التوريد", excerpt: "دليل صانع القرار للمصنّعين الجزائريين: أين ينقل الذكاء الاصطناعي تكلفة العلبة، حالات الاستخدام الست في الإنتاج اليوم، ولماذا تقرّر 2026–2028 من يبقى منتجاً مستقلاً." }
+    }
+  },
+  {
+    id: "136",
+    slug: "transformation-digitale-assurance-algerie-ia-2026",
+    title: "Transformation digitale des assurances en Algérie — comment l'IA fait gagner 14 points de ratio combiné en 2026",
+    subtitle: "Souscription automatisée, vision sinistre, détection fraude, IDP — pour DG, CFO, DSI d'assurance",
+    excerpt: "Brief décideur pour DG, CFO et DSI des compagnies d'assurance algériennes (SAA, CAAR, CAAT, CIAR, TRUST, CASH, GAM) : où l'IA déplace réellement le ratio combiné, les 6 cas d'usage en production aujourd'hui, et pourquoi la fenêtre 2026–2028 décide qui reste indépendant.",
+    category: "Transformation digitale", author: "Symloop Team", date: "2026-05-24", readTime: "14 min", featured: true,
+    tags: ["transformation digitale assurance algérie", "IA assurance algérie", "intelligence artificielle assurance", "digitalisation compagnie assurance", "IA souscription", "détection fraude sinistre", "ratio combiné", "insurance AI MENA", "insurtech algérie"],
+    metaTitle: "Transformation digitale assurance Algérie IA 2026 — ratio combiné -14 pts | Symloop",
+    metaDescription: "Transformation digitale assurance Algérie avec IA. 6 cas d'usage en production : souscription automatisée, vision sinistre, détection fraude, IDP. Pour DG, CFO, DSI d'assurance.",
+    translations: {
+      en: { title: "Insurance digital transformation in Algeria — how AI moves combined ratio 14 points in 2026", subtitle: "Automated underwriting, vision claims, fraud detection, IDP — for insurance CEOs, CFOs, CIOs", excerpt: "Decision-maker brief for Algerian insurance CEOs, CFOs and CIOs: where AI moves combined ratio, the 6 use cases in production today, and why the 2026–2028 window decides who stays independent." },
+      ar: { title: "التحوّل الرقمي لشركات التأمين في الجزائر — كيف ينقل الذكاء الاصطناعي 14 نقطة من النسبة المركّبة في 2026", subtitle: "اكتتاب آلي، رؤية مطالبات، كشف احتيال، IDP — للرؤساء التنفيذيين والماليّين ومدراء تقنية المعلومات", excerpt: "دليل صانع القرار للرؤساء التنفيذيين في شركات التأمين الجزائرية: أين ينقل الذكاء الاصطناعي النسبة المركّبة، حالات الاستخدام الست في الإنتاج اليوم." }
+    }
+  },
+  {
     id: "135",
     slug: "high-performance-computing-algeria-2026",
     title: "High Performance Computing (HPC) in Algeria: Powering AI, Research & Industry in 2026",
@@ -443,7 +518,7 @@ export const blogs = [
     slug: "developpement-application-mobile-algerie-2026",
     title: "Développement d'Applications Mobiles en Algérie 2026",
     subtitle: "Votre Projet, Notre Expertise — Flutter, React Native, Swift & Kotlin pour Particuliers, Entreprises et Gouvernement",
-    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Sétif, couvre toute l'Algérie.",
+    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Alger, couvre toute l'Algérie.",
     category: "Mobile",
     author: "Symloop Team",
     date: "2026-03-31",
@@ -571,7 +646,7 @@ export const blogs = [
     slug: "solutions-informatiques-algerie-2026",
     title: "Solutions Informatiques en Algérie 2026",
     subtitle: "Développement Web, IoT, IA & Transformation Digitale — Votre Partenaire IT en Algérie",
-    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Sétif, accompagne les entreprises algériennes dans leur transformation digitale.",
+    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Alger, accompagne les entreprises algériennes dans leur transformation digitale.",
     category: "Digital",
     author: "Symloop Team",
     date: "2026-03-31",
@@ -580,17 +655,17 @@ export const blogs = [
     featured: true,
     tags: ["solutions informatiques algérie", "entreprise informatique algérie", "développement informatique algérie", "SSII algérie", "ESN algérie", "prestataire IT algérie", "société informatique alger", "informatique sétif"],
     metaTitle: "Solutions Informatiques en Algérie 2026 | Développement, IoT, IA | Symloop",
-    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Sétif. Devis gratuit.",
+    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Alger. Devis gratuit.",
     translations: {
       en: {
         title: "IT Solutions in Algeria 2026 — Web, IoT, AI & Digital Transformation",
         subtitle: "Web Development, IoT, AI & Digital Transformation — Your IT Partner in Algeria",
-        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Setif, Algeria."
+        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Algiers, Algeria."
       },
       ar: {
         title: "حلول تكنولوجيا المعلومات في الجزائر 2026",
         subtitle: "تطوير الويب، إنترنت الأشياء، الذكاء الاصطناعي والتحول الرقمي — شريكك التقني في الجزائر",
-        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في سطيف."
+        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في الجزائر العاصمة."
       }
     }
   },
@@ -3325,6 +3400,118 @@ export const blogs = [
         title: "كيف تنشئ متجرا إلكترونيا في الجزائر 2026؟",
         subtitle: "دليل شامل: المنصة، الدفع CIB/Edahabia، اللوجستيات، SEO",
         excerpt: "دليل شامل لإنشاء متجر إلكتروني في الجزائر 2026. اختيار المنصة، الدفع الإلكتروني، اللوجستيات، التسويق الرقمي."
+      }
+    }
+  },
+  {
+    id: "119",
+    slug: "logiciel-gmao-cmms-maintenance-industrielle-algerie-2026",
+    title: "Logiciel GMAO en Algérie 2026 — Guide CMMS Maintenance Industrielle",
+    subtitle: "Maintenance Préventive, Prédictive, IoT — Du Carnet Papier au Système Connecté",
+    excerpt: "Guide complet du logiciel GMAO (CMMS) pour l'industrie algérienne. Maintenance préventive et prédictive, IoT industriel, intégration ERP, conformité HSE. Comment choisir.",
+    category: "Industrial",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "16 min",
+    image: "/blog/cover-gmao-cmms.jpg",
+    featured: true,
+    tags: ["gmao algerie", "cmms maintenance industrielle", "logiciel maintenance preventive", "maintenance predictive iot", "gestion equipement usine", "gmao open source vs payante"],
+    metaTitle: "Logiciel GMAO Algérie 2026 — Guide CMMS Maintenance Industrielle | Symloop",
+    metaDescription: "Guide complet GMAO/CMMS pour l'industrie algérienne. Maintenance préventive, prédictive, IoT, intégration ERP. Comment choisir, prix, alternatives Maximo. Symloop vous accompagne.",
+    translations: {
+      en: {
+        title: "CMMS Maintenance Software in Algeria 2026 — Industrial Asset Management Guide",
+        subtitle: "Preventive, Predictive, IoT — From Paper Logbook to Connected System",
+        excerpt: "Complete guide to CMMS / industrial maintenance software for Algerian industry. Preventive and predictive maintenance, industrial IoT, ERP integration, HSE compliance."
+      },
+      ar: {
+        title: "برنامج GMAO في الجزائر 2026 — دليل الصيانة الصناعية CMMS",
+        subtitle: "صيانة وقائية وتنبؤية و IoT — من السجل الورقي إلى النظام المتصل",
+        excerpt: "دليل شامل لبرنامج GMAO/CMMS للصناعة الجزائرية. صيانة وقائية وتنبؤية، IoT صناعي، تكامل ERP، امتثال HSE."
+      }
+    }
+  },
+  {
+    id: "120",
+    slug: "logiciel-ged-dematerialisation-documents-algerie-2026",
+    title: "Logiciel GED en Algérie 2026 — Dématérialisation et Archivage Électronique",
+    subtitle: "Gestion Électronique de Documents, Workflow, Signature Électronique, Conformité Légale",
+    excerpt: "Guide complet GED (Gestion Électronique de Documents) pour entreprises et administrations algériennes. Dématérialisation, workflow, signature électronique, archivage à valeur probante.",
+    category: "Enterprise",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "18 min",
+    image: "/blog/cover-ged-dms.jpg",
+    featured: true,
+    tags: ["ged algerie", "dematerialisation entreprise", "logiciel gestion documents", "archivage electronique", "signature electronique algerie", "workflow document"],
+    metaTitle: "Logiciel GED Algérie 2026 — Dématérialisation et Archivage | Symloop",
+    metaDescription: "Guide complet GED en Algérie 2026. Dématérialisation entreprise, workflow, signature électronique, archivage à valeur probante. Alternatives SharePoint, OpenText. Symloop vous accompagne.",
+    translations: {
+      en: {
+        title: "DMS Document Management Software in Algeria 2026 — Digitization & Electronic Archive",
+        subtitle: "Document Management, Workflow, e-Signature, Legal Compliance",
+        excerpt: "Complete DMS guide for Algerian businesses and administrations. Digitization, workflow, e-signature, legally-valid electronic archiving."
+      },
+      ar: {
+        title: "برنامج GED في الجزائر 2026 — رقمنة المستندات والأرشفة الإلكترونية",
+        subtitle: "إدارة المستندات الإلكترونية، سير العمل، التوقيع الإلكتروني، الامتثال القانوني",
+        excerpt: "دليل شامل GED للشركات والإدارات الجزائرية. الرقمنة، سير العمل، التوقيع الإلكتروني، الأرشفة ذات القيمة الإثباتية."
+      }
+    }
+  },
+  {
+    id: "121",
+    slug: "logiciel-wms-gestion-entrepot-algerie-2026",
+    title: "Logiciel WMS en Algérie 2026 — Gestion d'Entrepôt et Stock Multi-Sites",
+    subtitle: "Warehouse Management System, Picking Optimisé, Mobile, Intégration Yalidine/ZR Express",
+    excerpt: "Guide complet WMS pour entrepôts et e-commerce en Algérie. Picking optimisé, mobile barcode, multi-sites, intégrations transporteurs locaux (Yalidine, ZR Express, Maystro).",
+    category: "Logistics",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "15 min",
+    image: "/blog/cover-wms.jpg",
+    featured: true,
+    tags: ["wms algerie", "logiciel gestion entrepot", "warehouse management system", "logiciel gestion stock", "wms yalidine zr express", "stock multi-sites"],
+    metaTitle: "Logiciel WMS Algérie 2026 — Gestion Entrepôt Multi-Sites | Symloop",
+    metaDescription: "Guide complet WMS pour l'Algérie 2026. Picking optimisé, mobile barcode, multi-sites, intégrations Yalidine/ZR Express. Alternatives SAP EWM. Symloop construit du sur-mesure.",
+    translations: {
+      en: {
+        title: "WMS Warehouse Software in Algeria 2026 — Multi-Site Inventory Management",
+        subtitle: "Warehouse Management, Optimized Picking, Mobile, Carrier Integration",
+        excerpt: "Complete WMS guide for warehouses and e-commerce in Algeria. Optimized picking, mobile barcode, multi-site, local carrier integrations (Yalidine, ZR Express, Maystro)."
+      },
+      ar: {
+        title: "برنامج WMS في الجزائر 2026 — إدارة المستودعات والمخزون متعدد المواقع",
+        subtitle: "نظام إدارة المستودعات، انتقاء محسّن، جوال، تكامل ياليدين/ZR Express",
+        excerpt: "دليل شامل WMS للمستودعات والتجارة الإلكترونية في الجزائر. انتقاء محسّن، جوال باركود، متعدد المواقع، تكاملات شركات التوصيل المحلية."
+      }
+    }
+  },
+  {
+    id: "122",
+    slug: "tableau-de-bord-business-intelligence-algerie-2026",
+    title: "Tableau de Bord et Business Intelligence en Algérie 2026",
+    subtitle: "Power BI, Tableau, Metabase, ou Sur Mesure — Comment Choisir et Quand Construire",
+    excerpt: "Guide BI et tableaux de bord pour entreprises algériennes. Power BI vs Tableau vs Metabase vs sur-mesure. Data warehouse, KPI temps réel, analytique prédictive.",
+    category: "Analytics",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "17 min",
+    image: "/blog/cover-bi-dashboard.jpg",
+    featured: true,
+    tags: ["tableau de bord algerie", "business intelligence algerie", "power bi alternative", "decisionnel entreprise", "data warehouse algerie", "kpi pilotage"],
+    metaTitle: "Tableau de Bord & BI Algérie 2026 — Power BI, Tableau, Sur-Mesure | Symloop",
+    metaDescription: "Guide BI Algérie 2026. Power BI, Tableau, Metabase, ou tableau de bord sur-mesure. Data warehouse, KPI temps réel, analytique prédictive. Symloop construit votre BI.",
+    translations: {
+      en: {
+        title: "Business Intelligence & Executive Dashboards in Algeria 2026",
+        subtitle: "Power BI, Tableau, Metabase, or Custom — How to Choose and When to Build",
+        excerpt: "BI and dashboards guide for Algerian companies. Power BI vs Tableau vs Metabase vs custom. Data warehouse, real-time KPI, predictive analytics."
+      },
+      ar: {
+        title: "لوحة المعلومات وذكاء الأعمال في الجزائر 2026",
+        subtitle: "Power BI و Tableau و Metabase أو مخصص — كيف تختار ومتى تبني",
+        excerpt: "دليل ذكاء الأعمال للشركات الجزائرية. Power BI و Tableau و Metabase أو مخصص. مستودع بيانات، KPI آني، تحليلات تنبؤية."
       }
     }
   }

@@ -201,7 +201,7 @@ export default function IoTAlgerie2026() {
             <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl p-6 mb-12">
               <h2 className="text-lg font-bold text-gray-900 mb-3">En bref : L&apos;IoT en Algérie en 2026</h2>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Symloop</strong> est un fabricant algérien de solutions IoT (Internet des Objets) basé à Sétif. Nous concevons
+                <strong>Symloop</strong> est un fabricant algérien de solutions IoT (Internet des Objets) basé à Alger. Nous concevons
                 et assemblons localement des équipements pour la maison intelligente (domotique), l&apos;industrie 4.0 et l&apos;agriculture
                 connectée. Prix : kit smart home à partir de 25 000 DA, solutions industrielles à partir de 150 000 DA.
                 Nos produits sont 40-60% moins chers que les alternatives importées.
@@ -221,7 +221,7 @@ export default function IoTAlgerie2026() {
                 <strong> 33 millions d&apos;internautes</strong> et une couverture 4G/5G en expansion, est prête pour cette révolution.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                <strong>Symloop</strong>, entreprise algérienne basée à Sétif, est pionnière dans le développement de
+                <strong>Symloop</strong>, entreprise algérienne basée à Alger, est pionnière dans le développement de
                 solutions IoT <strong>conçues et fabriquées en Algérie</strong>. Ce guide vous explique tout ce que vous
                 devez savoir sur l&apos;IoT en Algérie en 2026.
               </p>
@@ -436,7 +436,7 @@ export default function IoTAlgerie2026() {
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    "Fabrication locale à Sétif, Algérie",
+                    "Fabrication locale en Algérie (siège à Alger)",
                     "40-60% moins cher que les imports",
                     "Application mobile propriétaire (Android/iOS)",
                     "Support technique local en FR/AR",

@@ -310,7 +310,7 @@ export default function ApplicationLivraisonAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Application de livraison", "GPS tracking", "Flutter", "Node.js", "Paiement CIB Edahabia", "Logistique last-mile"],
             "areaServed": { "@type": "Country", "name": "Algeria" }

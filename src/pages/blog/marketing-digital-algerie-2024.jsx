@@ -43,7 +43,7 @@ export default function MarketingDigitalAlgerie() {
     },
     {
       question: "Quelle agence de marketing digital choisir en Algérie ?",
-      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Sétif, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
+      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Alger, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
     },
     {
       question: "Le marketing digital est-il efficace pour les PME algériennes ?",
@@ -51,7 +51,7 @@ export default function MarketingDigitalAlgerie() {
     },
     {
       question: "Symloop fait-il du marketing digital ?",
-      answer: "Oui, Symloop est une agence digitale basée à Sétif qui propose des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
+      answer: "Oui. Symloop est une entreprise d'ingénierie logicielle et d'IA basée à Alger qui propose également des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
     }
   ];
 

@@ -25,7 +25,7 @@ export default function AgenceWebAlgerie() {
     },
     {
       question: "Quels services propose une agence web en Algérie ?",
-      answer: "Symloop propose une gamme complète de services : création de sites web, développement d'applications mobiles iOS et Android, logiciels sur mesure, SEO, maintenance et hébergement. Notre équipe basée à Sétif dessert toute l'Algérie. Contact : +213 549 575 512."
+      answer: "Symloop propose une gamme complète de services : création de sites web, développement d'applications mobiles iOS et Android, logiciels sur mesure, SEO, maintenance et hébergement. Notre équipe basée à Alger dessert toute l'Algérie. Contact : +213 549 575 512."
     },
     {
       question: "Quel est le délai de création d'un site web en Algérie ?",

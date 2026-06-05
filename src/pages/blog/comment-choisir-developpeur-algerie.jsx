@@ -28,7 +28,7 @@ export default function CommentChoisirDeveloppeur() {
       {
         "@type": "Question",
         "name": "Comment trouver un bon développeur en Algérie ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Cherchez sur LinkedIn, les groupes Facebook tech, Mostaql, Khamsat ou demandez des recommandations. Symloop, agence basée à Sétif, a livré +50 projets avec des technologies modernes. Vérifiez toujours le portfolio et contactez les références. Appelez Symloop au +213 549 575 512." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Cherchez sur LinkedIn, les groupes Facebook tech, Mostaql, Khamsat ou demandez des recommandations. Symloop, agence basée à Alger, a livré +50 projets avec des technologies modernes. Vérifiez toujours le portfolio et contactez les références. Appelez Symloop au +213 549 575 512." }
       },
       {
         "@type": "Question",

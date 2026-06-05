@@ -20,7 +20,7 @@ export default function CoutDeveloppementAlgerie() {
     },
     {
       question: "Pourquoi les prix de Symloop sont-ils compétitifs ?",
-      answer: "Symloop, basé à Sétif en Algérie, optimise ses processus avec des outils modernes et des frameworks réutilisables. Notre équipe locale a des coûts opérationnels réduits par rapport aux agences européennes, ce qui nous permet de proposer des tarifs compétitifs tout en maintenant une qualité professionnelle. Contactez-nous au +213 549 575 512."
+      answer: "Symloop, basé à Alger en Algérie, optimise ses processus avec des outils modernes et des frameworks réutilisables. Notre équipe locale a des coûts opérationnels réduits par rapport aux agences européennes, ce qui nous permet de proposer des tarifs compétitifs tout en maintenant une qualité professionnelle. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Le prix inclut-il l'hébergement et le nom de domaine ?",

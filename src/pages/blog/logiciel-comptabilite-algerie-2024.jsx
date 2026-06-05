@@ -50,7 +50,7 @@ export default function LogicielComptabiliteAlgerie() {
     },
     {
       question: "Symloop développe-t-il des logiciels de comptabilité ?",
-      answer: "Oui, Symloop est une entreprise algérienne basée à Sétif spécialisée dans le développement de logiciels de comptabilité, facturation et gestion commerciale sur mesure. Nos solutions sont conçues nativement pour le marché algérien avec conformité PCN, G50 automatique, interface bilingue FR/AR, et support local. Contact : +213 549 575 512."
+      answer: "Oui, Symloop est une entreprise algérienne basée à Alger spécialisée dans le développement de logiciels de comptabilité, facturation et gestion commerciale sur mesure. Nos solutions sont conçues nativement pour le marché algérien avec conformité PCN, G50 automatique, interface bilingue FR/AR, et support local. Contact : +213 549 575 512."
     },
     {
       question: "Peut-on avoir un logiciel de facturation avec TVA algérienne ?",

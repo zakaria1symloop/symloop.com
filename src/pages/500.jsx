@@ -5,10 +5,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Seo from "../utils/seo";
 import { Home, RefreshCw, Mail, AlertTriangle } from "lucide-react";
 
-export default function Custom500() {
+// Module-scope year — same on SSR and CSR. See 404.jsx for context.
+const YEAR = new Date().getFullYear();
+
+// Locale arrives via getStaticProps as a prop — same fix as 404.jsx.
+// Avoids the `useRouter().locale || 'fr'` runtime mismatch that caused
+// hydration errors after any failed navigation.
+export default function Custom500({ locale = 'fr' }) {
   const router = useRouter();
   const { t } = useTranslation('common');
-  const locale = router.locale || 'fr';
 
   const content = {
     fr: {
@@ -153,7 +158,7 @@ export default function Custom500() {
           {/* Company Info */}
           <div className="mt-8 pt-8 border-t border-gray-200">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Symloop Technology.
+              © {YEAR} Symloop Technology.
               {locale === 'ar' ? ' جميع الحقوق محفوظة.' : locale === 'en' ? ' All rights reserved.' : ' Tous droits réservés.'}
             </p>
           </div>
@@ -166,7 +171,8 @@ export default function Custom500() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      locale: locale || 'fr',
+      ...(await serverSideTranslations(locale || 'fr', ['common'])),
     },
   };
 }

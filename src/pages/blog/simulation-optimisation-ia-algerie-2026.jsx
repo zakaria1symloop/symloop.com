@@ -216,7 +216,7 @@ export default function SimulationOptimisationIaAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Simulation IA", "Optimisation IA", "Jumeaux Numériques", "Digital Twins", "Monte Carlo Simulation", "Agent-Based Modeling", "Reinforcement Learning", "Algorithmes Génétiques", "IoT", "Azure Digital Twins", "AWS IoT TwinMaker"],
             "areaServed": { "@type": "Country", "name": "Algeria" }

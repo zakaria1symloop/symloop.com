@@ -21,26 +21,18 @@ export default function Document(props) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Symloop Technology MENA" />
         
-        {/* DNS Prefetch for Performance */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        {/* DNS Prefetch for Performance — fonts are now self-hosted via
+            next/font/google in _app.js, so we no longer need fonts.googleapis
+            or fonts.gstatic preconnects. Removing those eliminates two
+            third-party origins from the critical path. */}
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-        
-        {/* Preconnect for Critical Resources */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        
-        {/* Google Fonts - Changa for Arabic (non-blocking load) */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&display=swap"
-          rel="stylesheet"
-          media="print"
-          onLoad="this.media='all'"
-        />
-        <noscript>
-          <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700&display=swap" rel="stylesheet" />
-        </noscript>
+
+        {/* Google Fonts are now bundled at build time via next/font/google
+            in src/pages/_app.js. They self-host on symloop.com (zero render-
+            blocking, zero FOUT, zero CLS from font swap, no third-party DNS
+            lookups). The render-blocking <link href="fonts.googleapis.com">
+            previously here was the single biggest CWV penalty on the site. */}
         
         {/* Web App Manifest */}
         <link rel="manifest" href="/manifest.json" />
@@ -53,8 +45,8 @@ export default function Document(props) {
         {/* Geographic and Business Meta */}
         <meta name="geo.region" content="MENA" />
         <meta name="geo.country" content="MENA Region" />
-        <meta name="geo.placename" content="Sétif, région MENA" />
-        <meta name="ICBM" content="36.1919, 5.4138" />
+        <meta name="geo.placename" content="Alger, région MENA" />
+        <meta name="ICBM" content="36.7538, 3.0588" />
 
         {/* Google Search Console Verification
             To verify ownership:
@@ -82,36 +74,79 @@ export default function Document(props) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://symloop.com",
-              "name": "Symloop Technology - Intelligence Artificielle Algérie",
-              "alternateName": ["Symloop", "Symloop IA Algérie", "Symloop AI Algeria", "IA Algérie", "Intelligence Artificielle Algérie"],
+              "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
+              "@id": "https://symloop.com/#organization",
+              "name": "Symloop Technology",
+              "legalName": "Symloop Technology",
+              "alternateName": [
+                "Symloop",
+                "Symloop Technology",
+                "Symloop Deep-Tech AI",
+                "Deep-Tech AI Algeria",
+                "Sovereign AI Algeria",
+                "Algerian AI Company",
+                "Algerian Deep-Tech Company",
+                "AI Engineering Firm Algeria",
+                "NOOR by Symloop",
+                "MENA Banking AI",
+                "Government AI MENA",
+                "Industrial AI Algeria",
+                "Oil and Gas AI Algeria",
+                "سيملوب",
+                "سيملوب تكنولوجي",
+                "شركة سيملوب",
+                "شركة ذكاء اصطناعي الجزائر"
+              ],
+              "slogan": "Deep-tech AI in Algeria. Sovereign AI for MENA's regulated industries. Builders of NOOR — production AI for banks, ministries, oil & gas operators and hospitals. Algiers, since 2012.",
               "url": "https://symloop.com",
-              "logo": "https://symloop.com/sym-logo.png",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://symloop.com/sym-logo.png",
+                "width": 512,
+                "height": 128
+              },
               "image": "https://symloop.com/assets/symloop-algeria-it-company.png",
-              "description": "Leader de l'intelligence artificielle en Algérie et au Moyen-Orient depuis 2012. Solutions IA sur mesure: chatbots, assistants vocaux arabes, machine learning, deep learning, vision par ordinateur, NLP. Développement applications mobiles, sites e-commerce. Expert IA Algérie, Arabie Saoudite (Riyadh, Jeddah), Émirats Arabes Unis (Dubai, Abu Dhabi), Koweït.",
+              "description": "Symloop Technology is a deep-tech AI company in Algeria. Headquartered in Algiers, founded 2012, 25+ senior engineers. We build NOOR — our sovereign AI platform — and deliver production AI systems for banks, ministries, oil & gas operators and hospitals across MENA. Specialized in on-premise and sovereign-cloud AI: industrial AI, banking AI, government AI, Arabic NLP, multi-agent systems, RAG, computer vision in manufacturing, predictive maintenance. Production-grade engineering — not an ESN, not an agency, not a body shop. Verified Clutch 5.0/5.0.",
               "foundingDate": "2012",
+              "founder": {
+                "@type": "Person",
+                "name": "Zakaria Iken",
+                "jobTitle": "Founder and CEO",
+                "url": "https://www.linkedin.com/in/zakaria-iken/"
+              },
               "telephone": "+213549575512",
               "email": "contact@symloop.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Sétif",
-                "addressLocality": "Sétif",
-                "addressRegion": "Sétif Province",
-                "postalCode": "19000",
+                "addressLocality": "Alger",
+                "addressRegion": "Alger",
+                "postalCode": "16000",
                 "addressCountry": "DZ"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "36.1919",
-                "longitude": "5.4138"
+                "latitude": "36.7538",
+                "longitude": "3.0588"
               },
               "areaServed": [
                 {"@type": "Country", "name": "Algeria"},
+                {"@type": "Country", "name": "France"},
+                {"@type": "Country", "name": "Morocco"},
+                {"@type": "Country", "name": "Tunisia"},
+                {"@type": "Country", "name": "Libya"},
+                {"@type": "Country", "name": "Nigeria"},
+                {"@type": "Country", "name": "Senegal"},
+                {"@type": "Country", "name": "Cameroon"},
+                {"@type": "Country", "name": "Egypt"},
+                {"@type": "Country", "name": "Kenya"},
                 {"@type": "Country", "name": "Saudi Arabia"},
                 {"@type": "Country", "name": "United Arab Emirates"},
                 {"@type": "Country", "name": "Kuwait"},
-                {"@type": "Place", "name": "MENA Region"}
+                {"@type": "Country", "name": "Qatar"},
+                {"@type": "Continent", "name": "Africa"},
+                {"@type": "Continent", "name": "Europe"},
+                {"@type": "Place", "name": "MENA Region"},
+                {"@type": "Place", "name": "Francophone Africa"}
               ],
               "serviceArea": {
                 "@type": "GeoCircle",
@@ -123,6 +158,76 @@ export default function Document(props) {
                 "geoRadius": "2000000"
               },
               "knowsLanguage": ["French", "Arabic", "English"],
+              "knowsAbout": [
+                "Deep-Tech AI",
+                "Sovereign AI",
+                "Sovereign AI Platform",
+                "On-Premise AI Deployment",
+                "NOOR Sovereign AI Platform",
+                "Production AI Systems",
+                "Industrial AI",
+                "Banking AI",
+                "Government AI",
+                "Oil and Gas AI",
+                "Healthcare AI",
+                "Applied Artificial Intelligence",
+                "Multi-Agent AI Systems",
+                "Retrieval-Augmented Generation",
+                "LLM Integration and RAG Systems",
+                "Computer Vision in Manufacturing",
+                "Predictive Maintenance",
+                "Document AI",
+                "Arabic Natural Language Processing",
+                "Arabic NLP",
+                "MLOps",
+                "Banking Software Engineering",
+                "Core Banking Modernization",
+                "ISO 20022 Migration",
+                "Real-time Payments",
+                "Fintech Software",
+                "Government Digitization",
+                "Sovereign Cloud",
+                "National Identity Infrastructure",
+                "Inter-Ministerial Data Exchange",
+                "Oil and Gas IT",
+                "SCADA Modernization",
+                "DCS to PLC Migration",
+                "Industrial IoT",
+                "Healthcare Software",
+                "Hospital Information Systems",
+                "Pharmaceutical Software",
+                "ERP for Regulated Sectors",
+                "Cybersecurity Audit and Pentest",
+                "ISO 27001 Compliance",
+                "DORA Compliance",
+                "On-Premise and Sovereign Deployments",
+                "Custom Software Engineering",
+                "Cloud Migration"
+              ],
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "Industry Recognition",
+                  "name": "Clutch 5.0/5.0 verified profile",
+                  "url": "https://clutch.co/profile/symloop-technology"
+                }
+              ],
+              "makesOffer": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://symloop.com/products/noor/#software",
+                    "name": "NOOR by Symloop",
+                    "alternateName": ["NOOR", "نور"],
+                    "applicationCategory": "BusinessApplication",
+                    "applicationSubCategory": "Enterprise AI Platform",
+                    "operatingSystem": "Linux (on-premise, sovereign cloud, hybrid)",
+                    "url": "https://symloop.com/products/noor/",
+                    "description": "NOOR is Symloop's flagship sovereign AI platform for MENA's regulated industries — banking, government, oil & gas, healthcare. Twelve standard capabilities including production-grade RAG, document AI, NL-to-SQL, specialized assistants, audit trail, and multi-language native (Arabic, French, English). Deploy on-premise, in sovereign cloud, or hybrid."
+                  }
+                }
+              ],
               "sameAs": [
                 "https://www.facebook.com/symloop",
                 "https://www.linkedin.com/company/symloop-technology/",
@@ -142,13 +247,20 @@ export default function Document(props) {
                 }
               },
               "award": [
-                "Top IT Company MENA 2023",
-                "Best Software Development Company MENA 2022",
-                "Excellence in Digital Transformation 2021"
+                "Clutch 5.0/5.0 — verified client reviews"
               ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "10",
+                "reviewCount": "10"
+              },
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
-                "minValue": 20,
+                "value": 25,
+                "minValue": 25,
                 "maxValue": 50
               },
               "yearlyRevenue": {
@@ -199,16 +311,15 @@ export default function Document(props) {
               "url": "https://symloop.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Sétif",
-                "addressLocality": "Sétif",
-                "addressRegion": "Sétif",
-                "postalCode": "19000",
+                "addressLocality": "Alger",
+                "addressRegion": "Alger",
+                "postalCode": "16000",
                 "addressCountry": "DZ"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 36.1919,
-                "longitude": 5.4138
+                "latitude": 36.7538,
+                "longitude": 3.0588
               },
               "openingHoursSpecification": [
                 {
@@ -223,70 +334,66 @@ export default function Document(props) {
               "paymentAccepted": "Cash, Credit Card, Bank Transfer",
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Services Intelligence Artificielle & IT",
+                "name": "Symloop — NOOR Platform + Engineering Services for MENA Regulated Industries",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
-                      "@type": "Service",
-                      "name": "Intelligence Artificielle Algérie",
-                      "description": "Solutions IA sur mesure: chatbots, machine learning, deep learning, NLP, vision par ordinateur"
+                      "@type": "SoftwareApplication",
+                      "name": "NOOR — Sovereign AI Platform",
+                      "description": "NOOR by Symloop. Flagship AI platform for MENA's regulated industries. Twelve capabilities (RAG, document AI, NL-to-SQL, specialized assistants, audit trail, multi-language). On-premise / sovereign cloud / hybrid deployment.",
+                      "url": "https://symloop.com/products/noor/",
+                      "applicationCategory": "BusinessApplication"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Chatbot & Assistant Virtuel",
-                      "description": "Chatbots intelligents en arabe algérien et français. Intégration WhatsApp, Facebook, site web"
+                      "name": "Banking Software Engineering",
+                      "description": "Core banking modernization, ISO 20022 migration, real-time payments architecture, corporate cash management, fraud detection. On-premise and sovereign deployments for MENA banks.",
+                      "serviceType": "Banking Software Engineering",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Machine Learning & Deep Learning",
-                      "description": "Analyse prédictive, reconnaissance d'images, traitement du langage naturel arabe"
+                      "name": "Government Digitization Platforms",
+                      "description": "Sovereign cloud, national identity infrastructure, inter-ministerial data exchange, e-government services. Compliance with data residency and security requirements for ministries.",
+                      "serviceType": "Government Digitization",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Assistant Vocal Arabe",
-                      "description": "Reconnaissance vocale en arabe dialectal algérien et français. Commandes vocales pour applications"
+                      "name": "Oil and Gas IT and Industrial Systems",
+                      "description": "DCS-to-PLC migration, SCADA modernization, industrial IoT, predictive maintenance (GMAO/CMMS) for upstream and downstream oil and gas operators.",
+                      "serviceType": "Industrial Engineering",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Développement Applications Mobiles",
-                      "description": "Applications iOS et Android avec Flutter et React Native"
+                      "name": "Healthcare and Pharmaceutical Software",
+                      "description": "Hospital information systems, pharmaceutical traceability, regulatory compliance software, document management for the healthcare and pharma sector.",
+                      "serviceType": "Healthcare Software",
+                      "areaServed": "MENA"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Création Sites Web & E-commerce",
-                      "description": "Sites web professionnels et e-commerce avec paiement CIB/Edahabia"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Solutions ERP/CRM avec IA",
-                      "description": "Logiciels de gestion personnalisés avec intelligence artificielle intégrée"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Cybersécurité IA",
-                      "description": "Détection de fraude, analyse comportementale, protection des données avec IA"
+                      "name": "Applied AI and Machine Learning",
+                      "description": "Production computer vision, Arabic NLP, LLM/RAG systems, predictive analytics, MLOps. Specialized in regulated-industry deployments with on-premise and data-sovereignty options.",
+                      "serviceType": "Applied AI Engineering",
+                      "areaServed": "MENA"
                     }
                   }
                 ]

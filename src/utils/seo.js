@@ -37,9 +37,9 @@ export default function Seo({
 
   // Geographic data for MENA region
   const geoData = {
-    'fr': { country: 'MENA Region', region: 'MENA', placename: 'Sétif, région MENA' },
-    'en': { country: 'MENA Region', region: 'MENA', placename: 'Setif, MENA region' },
-    'ar': { country: 'MENA Region', region: 'MENA', placename: 'سطيف، منطقة مينا' }
+    'fr': { country: 'MENA Region', region: 'MENA', placename: 'Alger, région MENA' },
+    'en': { country: 'MENA Region', region: 'MENA', placename: 'Algiers, MENA region' },
+    'ar': { country: 'MENA Region', region: 'MENA', placename: 'الجزائر العاصمة، منطقة مينا' }
   };
 
   const currentGeo = geoData[currentLocale] || geoData['fr'];
@@ -58,7 +58,7 @@ export default function Seo({
       <meta name="geo.region" content={currentGeo.region} />
       <meta name="geo.country" content={currentGeo.country} />
       <meta name="geo.placename" content={currentGeo.placename} />
-      <meta name="ICBM" content="36.1919, 5.4138" />
+      <meta name="ICBM" content="36.7538, 3.0588" />
       <meta name="DC.title" content={title} />
       <meta name="DC.description" content={description} />
       <meta name="DC.coverage" content="MENA Region" />
@@ -110,7 +110,7 @@ export default function Seo({
       {/* Enhanced Business-specific meta tags */}
       <meta name="business:contact_data:phone" content="+213 549 575 512" />
       <meta name="business:contact_data:email" content="contact@symloop.com" />
-      <meta name="business:contact_data:locality" content="Sétif" />
+      <meta name="business:contact_data:locality" content="Alger" />
       <meta name="business:contact_data:region" content="MENA" />
       <meta name="business:contact_data:country" content="DZ" />
       <meta name="contact" content="contact@symloop.com" />
@@ -133,12 +133,12 @@ export default function Seo({
       <meta name="msapplication-TileColor" content="#1e40af" />
       
       {/* Preload critical resources */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link rel="preload" href={image} as="image" />
-      
-      {/* DNS prefetch for external resources */}
-      <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+      {/* DNS prefetch for external resources — fonts.googleapis removed
+          because Google Fonts are now self-hosted via next/font/google
+          (see src/pages/_app.js). Keeping these as a third-party preconnect
+          would cost a useless DNS+TLS handshake on every page load. */}
       <link rel="dns-prefetch" href="//www.google-analytics.com" />
       <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       
@@ -173,16 +173,15 @@ export default function Seo({
             "currenciesAccepted": ["DZD", "EUR", "USD", "SAR", "AED"],
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Sétif Technology Park",
-              "addressLocality": "Sétif",
-              "addressRegion": "Sétif Province",
-              "postalCode": "19000",
+              "addressLocality": "Alger",
+              "addressRegion": "Alger",
+              "postalCode": "16000",
               "addressCountry": "DZ"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "36.1919",
-              "longitude": "5.4138"
+              "latitude": "36.7538",
+              "longitude": "3.0588"
             },
             "areaServed": [
               {"@type": "Country", "name": "Algeria (MENA)"},

@@ -55,7 +55,7 @@ export default function SeoAlgerie() {
     {
       "@type": "Question",
       "name": "Quelle agence SEO choisir en Algérie ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Sétif, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Alger, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
     },
     {
       "@type": "Question",
