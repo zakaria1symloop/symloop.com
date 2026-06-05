@@ -2,11 +2,12 @@ import '../../styles/globals.css';
 import { useEffect } from 'react';
 import Script from 'next/script';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { MessageCircle } from 'lucide-react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import SmoothScroll from '../components/effects/SmoothScroll';
+import WebMCP from '../components/WebMCP';
 import { appWithTranslation } from 'next-i18next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
@@ -36,14 +37,20 @@ const fontSerif = Instrument_Serif({
   display: 'swap',
 });
 
-// CRITICAL: ssr: false here was the single biggest SEO bug in the codebase —
-// it caused every non-blog page to ship with an EMPTY <body> in SSR (only
-// __NEXT_DATA__, no rendered React tree, no h1, no content). Google saw a
-// homogeneous, content-less site. SmoothScroll has been refactored to
-// lazy-load Lenis inside useEffect, so the component itself is SSR-safe and
-// we can drop the ssr: false flag.
-const SmoothScroll = dynamic(() => import('../components/effects/SmoothScroll'));
-const WebMCP = dynamic(() => import('../components/WebMCP'), { ssr: false });
+// SmoothScroll + WebMCP are imported STATICALLY (top of file), not via
+// next/dynamic. Both are SSR-safe by construction: SmoothScroll renders
+// `<>{children}</>` and lazy-loads Lenis inside useEffect (so Lenis never
+// enters the SSR module graph), and WebMCP returns null and only touches
+// navigator.modelContext inside useEffect.
+//
+// CRITICAL: wrapping them in dynamic() added React.lazy/Suspense boundaries
+// around the entire app shell. Because SmoothScroll wraps ALL page content,
+// a Suspense hydration hiccup there cascaded into "the entire root will
+// switch to client rendering" — the recurring "Hydration failed" root error
+// (the React traces fail at updateSuspenseComponent → tryToClaimNextHydratableInstance).
+// Static imports remove those boundaries, so SSR markup == first client markup.
+// (The earlier ssr:false SEO bug — empty <body> in SSR — does NOT return:
+// static import renders SmoothScroll's children server-side.)
 
 const SITE_URL = 'https://symloop.com';
 
@@ -186,7 +193,7 @@ function MyApp({ Component, pageProps }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
-        className="wa-fab fixed z-50 bottom-6 right-6 lg:bottom-8 lg:right-8 flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 bg-white text-black shadow-2xl shadow-black/40"
+        className="wa-fab hidden lg:flex fixed z-50 lg:bottom-8 lg:right-8 items-center justify-center w-14 h-14 lg:w-16 lg:h-16 bg-white text-black shadow-2xl shadow-black/40"
         style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}
       >
         <MessageCircle className="wa-icon w-5 h-5 lg:w-6 lg:h-6" strokeWidth={1.75} />

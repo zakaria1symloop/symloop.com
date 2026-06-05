@@ -95,30 +95,39 @@ function HeroStat({ eyebrow, from, to, decimals, prefix, suffix, caption }) {
   );
 }
 
-// ── Problem→Solution card with hover-reveal Symloop solution. ────────────
-function PainCard({ idx, IconProblem, IconSolution, pain, painSub, impact, solution, solutionSub }) {
+// ── Problem → Solution card. Monochrome, on-brand: pain on top, hairline
+// divider, solution below — both always visible (no hover, works on touch).
+// Matches the rest of the insight pages: black bg, hairline borders,
+// font-light headings, mono eyebrows, white-on-black. No white flip.
+function PainCard({ idx, IconProblem, IconSolution, pain, painSub, impact, solution, solutionSub, painLabel, solutionLabel }) {
   return (
-    <motion.div variants={fadeUp} className="group relative bg-black border border-white/[0.08] overflow-hidden">
-      {/* Front face — the pain */}
-      <div className="relative p-6 lg:p-8 transition-opacity duration-500 group-hover:opacity-0 group-hover:pointer-events-none">
-        <div className="flex items-start justify-between mb-6">
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40">{String(idx + 1).padStart(2, '0')} · Pain</span>
-          <IconProblem className="w-5 h-5 text-white/35" strokeWidth={1.5} />
-        </div>
-        <h3 className="text-xl lg:text-2xl font-light text-white leading-snug mb-3">{pain}</h3>
-        <p className="text-sm text-white/55 leading-relaxed mb-5">{painSub}</p>
-        <div className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/70 border border-white/15 inline-block px-3 py-1.5">
-          {impact}
-        </div>
+    <motion.div variants={fadeUp} className="bg-black border border-white/[0.08] p-6 lg:p-8 flex flex-col h-full transition-colors duration-300 hover:bg-white/[0.015]">
+      {/* Pain */}
+      <div className="flex items-start justify-between mb-5">
+        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40">
+          {String(idx + 1).padStart(2, '0')} · {painLabel}
+        </span>
+        <IconProblem className="w-5 h-5 text-white/30" strokeWidth={1.5} />
       </div>
-      {/* Back face — the solution. Appears on hover. */}
-      <div className="absolute inset-0 p-6 lg:p-8 bg-white text-black opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500 flex flex-col">
-        <div className="flex items-start justify-between mb-6">
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-black/50">Symloop · Solution</span>
-          <IconSolution className="w-5 h-5 text-black/70" strokeWidth={1.5} />
+      <h3 className="text-xl lg:text-2xl font-light text-white leading-snug mb-3">{pain}</h3>
+      <p className="text-sm text-white/55 leading-relaxed mb-5">{painSub}</p>
+      <div className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/70 border border-white/15 self-start px-3 py-1.5">
+        {impact}
+      </div>
+
+      {/* Hairline divider — pushes the solution block to the bottom so all
+          cards align regardless of pain-copy length */}
+      <div className="h-px bg-white/[0.1] mt-7 mb-7 mt-auto" />
+
+      {/* Solution — distinguished by a white left-accent + white icon, but
+          stays inside the monochrome palette */}
+      <div className="border-l border-white/40 ps-5">
+        <div className="flex items-center gap-2.5 mb-3">
+          <IconSolution className="w-4 h-4 text-white" strokeWidth={1.5} />
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/55">{solutionLabel}</span>
         </div>
-        <h3 className="text-xl lg:text-2xl font-light text-black leading-snug mb-3">{solution}</h3>
-        <p className="text-sm text-black/65 leading-relaxed">{solutionSub}</p>
+        <h4 className="text-base lg:text-lg font-normal text-white leading-snug mb-2">{solution}</h4>
+        <p className="text-sm text-white/55 leading-relaxed">{solutionSub}</p>
       </div>
     </motion.div>
   );
@@ -236,6 +245,8 @@ const CONTENT = {
       { eyebrow: 'Regulatory reporting', from: 14, to: 2, suffix: ' days', caption: 'BCT/AGB quarterly close shortened from two weeks of Excel-macro hell to two days of automated pipeline.' },
     ],
     painsHeading: 'The five pains — and what Symloop ships to solve each',
+    painLabel: 'Pain',
+    solutionLabel: 'Symloop · Solution',
     pains: [
       {
         IconProblem: TrendingDown, IconSolution: BarChart3,
@@ -341,6 +352,8 @@ const CONTENT = {
       { eyebrow: 'Reporting réglementaire',      from: 14, to: 2,  suffix: ' jours', caption: 'Clôture trimestrielle BCT/AGB raccourcie de deux semaines d\'enfer macro-Excel à deux jours de pipeline automatisé.' },
     ],
     painsHeading: 'Les cinq douleurs — et ce que Symloop livre pour résoudre chacune',
+    painLabel: 'Douleur',
+    solutionLabel: 'Symloop · Solution',
     pains: [
       {
         IconProblem: TrendingDown, IconSolution: BarChart3,
@@ -446,6 +459,8 @@ const CONTENT = {
       { eyebrow: 'التقارير التنظيمية', from: 14, to: 2, suffix: ' يوماً', caption: 'إغلاق ربع سنوي BCT/AGB من أسبوعين من جحيم ماكرو Excel إلى يومين من خطّ أنابيب آلي.' },
     ],
     painsHeading: 'الآلام الخمس — وما يشحنه Symloop لحلّ كلّ واحدة',
+    painLabel: 'الألم',
+    solutionLabel: 'Symloop · الحلّ',
     pains: [
       {
         IconProblem: TrendingDown, IconSolution: BarChart3,
@@ -657,13 +672,13 @@ export default function BankingAIPartnerPage() {
             <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-80px' }} variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-baseline justify-between mb-14 gap-6 flex-wrap">
                 <h2 className="text-3xl lg:text-5xl font-light tracking-tight max-w-3xl leading-[1.1]">{c.painsHeading}</h2>
-                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/35">{isRtl ? 'مرّر فوق كل بطاقة' : (locale === 'fr' ? 'Survolez chaque carte' : 'Hover each card')}</span>
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/35">{isRtl ? '5 آلام · 5 حلول' : (locale === 'fr' ? '5 douleurs · 5 solutions' : '5 pains · 5 solutions')}</span>
               </motion.div>
 
               <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.06] border border-white/[0.06]" style={{ minHeight: 280 }}>
                 {c.pains.map((p, i) => (
                   <div key={i} className="lg:[&:nth-child(4)]:col-start-1 lg:[&:nth-child(5)]:col-span-2">
-                    <PainCard idx={i} {...p} />
+                    <PainCard idx={i} {...p} painLabel={c.painLabel} solutionLabel={c.solutionLabel} />
                   </div>
                 ))}
               </motion.div>

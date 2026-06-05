@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none" role="img" aria-label="Digital sovereignty — a secured data core inside a national boundary">
+  <rect width="1200" height="630" fill="#000000"/>
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <!-- subtle jurisdiction boundary -->
+  <rect x="60" y="60" width="1080" height="510" rx="10" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.2" stroke-dasharray="3 9"/>
+
+  <!-- sovereignty rings centered right-of-center -->
+  <g transform="translate(780,315)">
+    <circle r="120" fill="url(#core)"/>
+    <circle r="230" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
+    <circle r="170" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1"/>
+    <circle r="110" stroke="#ffffff" stroke-opacity="0.30" stroke-width="1"/>
+
+    <!-- radial spokes + rim nodes -->
+    <g stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.8">
+      <line x1="0" y1="-110" x2="0" y2="-230"/>
+      <line x1="78" y1="-78" x2="163" y2="-163"/>
+      <line x1="110" y1="0" x2="230" y2="0"/>
+      <line x1="78" y1="78" x2="163" y2="163"/>
+      <line x1="0" y1="110" x2="0" y2="230"/>
+      <line x1="-78" y1="78" x2="-163" y2="163"/>
+      <line x1="-110" y1="0" x2="-230" y2="0"/>
+      <line x1="-78" y1="-78" x2="-163" y2="-163"/>
+    </g>
+    <g fill="#000" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1">
+      <circle cx="0" cy="-230" r="3.4"/><circle cx="163" cy="-163" r="3.4"/>
+      <circle cx="230" cy="0" r="3.4"/><circle cx="163" cy="163" r="3.4"/>
+      <circle cx="0" cy="230" r="3.4"/><circle cx="-163" cy="163" r="3.4"/>
+      <circle cx="-230" cy="0" r="3.4"/><circle cx="-163" cy="-163" r="3.4"/>
+    </g>
+
+    <!-- central core + lock glyph -->
+    <circle r="42" fill="#000" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1.2"/>
+    <g stroke="#ffffff" stroke-opacity="0.92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <rect x="-16" y="-4" width="32" height="26" rx="3"/>
+      <path d="M-9 -4 V-14 a9 9 0 0 1 18 0 V-4"/>
+    </g>
+  </g>
+
+  <!-- left-side editorial label, kept faint and small -->
+  <g font-family="ui-monospace, 'JetBrains Mono', monospace" fill="#ffffff">
+    <text x="60" y="300" font-size="15" letter-spacing="6" fill-opacity="0.45">SYMLOOP · DEEP-TECH AI</text>
+    <text x="60" y="338" font-size="34" letter-spacing="1" fill-opacity="0.92" font-weight="300">Own your technology</text>
+    <text x="60" y="372" font-size="22" letter-spacing="1" fill-opacity="0.55" font-weight="300">Technological independence · Algeria</text>
+  </g>
+
+  <rect width="1200" height="630" fill="url(#fade)"/>
+</svg>
