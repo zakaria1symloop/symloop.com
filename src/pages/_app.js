@@ -21,6 +21,12 @@ const fontIbmPlex = IBM_Plex_Sans_Arabic({
   subsets: ['arabic', 'latin'],
   variable: '--font-ibm-plex-arabic',
   display: 'swap',
+  // No <link rel=preload>: with preload on, every page forced 10 font files
+  // (5 weights x arabic+latin, ~250 KB) before first paint, even on FR/EN pages
+  // that never draw an Arabic glyph. Without it the browser fetches only the
+  // subsets and weights the page actually uses (unicode-range), and
+  // display:swap + next/font's size-adjusted fallback keep CLS at zero.
+  preload: false,
 });
 const fontMono = JetBrains_Mono({
   weight: ['400', '500'],
@@ -139,9 +145,9 @@ function MyApp({ Component, pageProps }) {
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-975333575"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

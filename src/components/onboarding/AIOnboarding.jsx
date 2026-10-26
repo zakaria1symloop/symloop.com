@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { X, ArrowRight, ArrowLeft, Sparkles, Send, Loader2 } from "lucide-react";
-import { db } from "../../lib/firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 // ============================================================================
 // SYMLOOP — AIOnboarding (editorial redesign)
@@ -374,6 +372,12 @@ export default function AIOnboarding({ onComplete, onSkip }) {
 
     try {
       const conversationText = messages.map(m => `${m.type === 'ai' ? 'AI' : 'User'}: ${m.content}`).join('\n');
+      // Firestore is loaded on submit only — keeps ~250 KB of Firebase out of the
+      // shared bundle every page downloads.
+      const [{ db }, { collection, addDoc, serverTimestamp }] = await Promise.all([
+        import("../../lib/firebase"),
+        import("firebase/firestore"),
+      ]);
       await addDoc(collection(db, "ai_onboarding_leads"), {
         name: contactData.name.trim(),
         email: contactData.email.trim(),
@@ -415,7 +419,7 @@ export default function AIOnboarding({ onComplete, onSkip }) {
         {stage === 'welcome' && (
           <motion.div
             key="welcome"
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, y: -30 }}
             className="relative h-full flex flex-col items-center justify-center px-6"
@@ -440,8 +444,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
 
             {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.2 }}
               className="flex items-center gap-3 mb-8"
             >
@@ -452,8 +456,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
 
             {/* Title */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-7xl font-light text-center tracking-tight leading-[1.05] mb-6"
             >
@@ -461,8 +465,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.4 }}
               className="text-lg text-white/50 text-center max-w-md mb-12"
             >
@@ -475,8 +479,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
 
             {/* CTAs */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.5 }}
               className="flex flex-col gap-4 w-full max-w-sm"
             >
@@ -508,7 +512,7 @@ export default function AIOnboarding({ onComplete, onSkip }) {
         {(stage === 'chat' || stage === 'contact' || stage === 'complete') && (
           <motion.div
             key="chat"
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="relative h-full flex flex-col"
@@ -544,8 +548,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
                 {messages.map((message, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ y: 12 }}
+                    animate={{ y: 0 }}
                     transition={{ duration: 0.25 }}
                     className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
                   >
@@ -563,7 +567,7 @@ export default function AIOnboarding({ onComplete, onSkip }) {
               </AnimatePresence>
 
               {isTyping && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start">
+                <motion.div initial={false} animate={{ opacity: 1 }} className="flex justify-start">
                   <div className="bg-white/[0.04] border border-white/[0.08] px-5 py-4 flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 bg-white/40 rounded-full animate-pulse" />
                     <span className="w-1.5 h-1.5 bg-white/40 rounded-full animate-pulse" style={{ animationDelay: '0.15s' }} />
@@ -579,7 +583,7 @@ export default function AIOnboarding({ onComplete, onSkip }) {
             {(stage === 'chat' || stage === 'contact') && messages.length > 0 && (
               <div className="px-6 py-5 border-t border-white/[0.06]">
                 {stage === 'contact' ? (
-                  <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-3">
+                  <motion.div initial={{ y: 12 }} animate={{ y: 0 }} className="space-y-3">
                     <input
                       type="text"
                       value={contactData.name}
@@ -642,7 +646,7 @@ export default function AIOnboarding({ onComplete, onSkip }) {
 
             {/* Complete state */}
             {stage === 'complete' && (
-              <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="px-6 py-5 border-t border-white/[0.06]">
+              <motion.div initial={{ y: 12 }} animate={{ y: 0 }} className="px-6 py-5 border-t border-white/[0.06]">
                 <button
                   onClick={() => onComplete && onComplete(contactData)}
                   className="w-full flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-sm font-medium tracking-wide hover:bg-white/90 transition-colors"

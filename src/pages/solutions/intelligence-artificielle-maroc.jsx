@@ -326,8 +326,8 @@ export default function AIMaroc() {
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="text-center max-w-4xl mx-auto"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-500/20 to-red-500/20 rounded-full border border-green-500/30 mb-6">
@@ -390,8 +390,8 @@ export default function AIMaroc() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.3 }}
               className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
             >

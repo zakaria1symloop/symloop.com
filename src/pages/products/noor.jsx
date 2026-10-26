@@ -415,7 +415,7 @@ export default function NoorProductPage() {
           <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 lg:pt-44 pb-20 lg:pb-28">
             {/* Back link */}
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
               className="mb-12 lg:mb-16"
@@ -429,7 +429,7 @@ export default function NoorProductPage() {
               </Link>
             </motion.div>
 
-            <motion.div initial="hidden" animate="show" variants={stagger} className="max-w-5xl">
+            <motion.div initial={false} animate="show" variants={stagger} className="max-w-5xl">
               {/* Eyebrow */}
               <motion.div variants={fadeUp} className="flex items-center gap-4 mb-10">
                 <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/45">

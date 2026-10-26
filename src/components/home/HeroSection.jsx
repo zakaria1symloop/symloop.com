@@ -97,8 +97,8 @@ function useTypingPlaceholder() {
 // Value proposition cards with MENA region-focused content
 const ValueCard = ({ icon: Icon, title, description, delay = 0, gradient }) => (
   <motion.div
-    initial={{ opacity: 0, y: 30, scale: 0.9 }}
-    animate={{ opacity: 1, y: 0, scale: 1 }}
+    initial={{ y: 30, scale: 0.9 }}
+    animate={{ y: 0, scale: 1 }}
     transition={{ duration: 0.6, delay, type: "spring", stiffness: 100 }}
     whileHover={{ 
       scale: 1.03, 
@@ -132,8 +132,8 @@ const PremiumServiceCard = ({ service, isSelected, onSelect, index }) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ y: 20 }}
+      animate={{ y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
       className="relative"
     >
@@ -723,15 +723,15 @@ Ou continuez la discussion ici ! 💬`;
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ scale: 0.95 }}
+        animate={{ scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
         transition={{ duration: 0.2 }}
         className={`fixed ${isMinimized ? 'bottom-4 right-4 w-80' : 'inset-0 sm:inset-4'} z-50 ${!isMinimized && 'flex items-center justify-center p-4'}`}
       >
         {!isMinimized && (
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -790,8 +790,8 @@ Ou continuez la discussion ici ! 💬`;
                   <div key={message.id}>
                     {message.type === 'user' ? (
                       <motion.div
-                        initial={{ opacity: 0, x: isRTL ? -20 : 20 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ x: isRTL ? -20 : 20 }}
+                        animate={{ x: 0 }}
                         className="flex justify-end"
                       >
                         <div className={`max-w-[80%] bg-black text-white px-4 py-3 shadow-lg ${
@@ -805,8 +805,8 @@ Ou continuez la discussion ici ! 💬`;
                       </motion.div>
                     ) : message.type === 'bot' ? (
                       <motion.div
-                        initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ x: isRTL ? 20 : -20 }}
+                        animate={{ x: 0 }}
                         className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}
                       >
                         <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -824,8 +824,8 @@ Ou continuez la discussion ici ! 💬`;
                       </motion.div>
                     ) : message.type === 'quick-replies' ? (
                       <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ y: 10 }}
+                        animate={{ y: 0 }}
                         className="flex flex-wrap gap-2 justify-center my-4"
                       >
                         {message.options.map((option, idx) => (
@@ -846,7 +846,7 @@ Ou continuez la discussion ici ! 💬`;
 
                 {isTyping && (
                   <motion.div
-                    initial={{ opacity: 0 }}
+                    initial={false}
                     animate={{ opacity: 1 }}
                     className="flex items-start gap-3"
                   >
@@ -939,14 +939,14 @@ const ContactModal = ({ isOpen, onClose, isRTL = false, router }) => {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={false}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className="fixed inset-0 z-50 flex items-center justify-center p-4"
       >
         {/* Backdrop */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -1172,14 +1172,14 @@ export default function HeroSection() {
               
               {/* Left Column - Premium Content */}
               <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="space-y-12 text-white"
               >
                 {/* Premium Badge */}
                 <motion.div
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
                   className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-full text-sm border border-white/20"
@@ -1193,7 +1193,7 @@ export default function HeroSection() {
                 <div className="space-y-6">
                   <motion.h1 
                     className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light leading-tight"
-                    initial={{ opacity: 0 }}
+                    initial={false}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
                   >
@@ -1215,7 +1215,7 @@ export default function HeroSection() {
 
                 {/* Premium Description */}
                 <motion.div
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                   className="space-y-6"
@@ -1233,7 +1233,7 @@ export default function HeroSection() {
                     ].map((item, index) => (
                       <motion.div
                         key={index}
-                        initial={{ opacity: 0 }}
+                        initial={false}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.6 + index * 0.1 }}
                         className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/5 to-white/10 rounded-full border border-white/10"
@@ -1247,7 +1247,7 @@ export default function HeroSection() {
 
                 {/* Premium Service Selector */}
                 <motion.div 
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.7 }}
                   className="space-y-8"
@@ -1267,7 +1267,7 @@ export default function HeroSection() {
 
                 {/* Premium CTA Buttons */}
                 <motion.div 
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.8 }}
                   className="flex flex-col sm:flex-row gap-4 pt-8"
@@ -1293,7 +1293,7 @@ export default function HeroSection() {
 
                 {/* Premium Trust Indicators */}
                 <motion.div 
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.9 }}
                   className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8"
@@ -1306,8 +1306,8 @@ export default function HeroSection() {
                   ].map((item, index) => (
                     <motion.div
                       key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
+                      initial={{ y: 20 }}
+                      animate={{ y: 0 }}
                       transition={{ delay: 0.9 + index * 0.1 }}
                       className="text-center space-y-2"
                     >
@@ -1325,8 +1325,8 @@ export default function HeroSection() {
 
               {/* Right Column - Premium Showcase */}
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 className="relative"
               >
@@ -1364,7 +1364,7 @@ export default function HeroSection() {
 
                     {/* Premium Tech Stack */}
                     <motion.div
-                      initial={{ opacity: 0 }}
+                      initial={false}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 1.2 }}
                       className="space-y-6"
@@ -1377,8 +1377,8 @@ export default function HeroSection() {
                         {['React', 'Node.js', 'Flutter', 'Python', 'AWS', 'Docker'].map((tech, index) => (
                           <motion.div
                             key={tech}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            initial={{ scale: 0.8 }}
+                            animate={{ scale: 1 }}
                             transition={{ delay: 1.3 + index * 0.1 }}
                             className="p-3 bg-gradient-to-br from-white/5 to-transparent rounded-lg text-center border border-white/10 hover:border-white/20 transition-all group"
                           >
@@ -1399,7 +1399,7 @@ export default function HeroSection() {
 
         {/* Premium Scroll Indicator */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/40 flex flex-col items-center gap-3 cursor-pointer group z-20"

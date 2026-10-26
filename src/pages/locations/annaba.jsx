@@ -227,7 +227,7 @@ export default function LocationAnnabaPage() {
       <main dir={isRtl ? 'rtl' : 'ltr'} className="bg-black text-white">
         <section className="relative border-b border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-20 lg:pb-28">
-            <motion.div initial="hidden" animate="show" variants={stagger}>
+            <motion.div initial={false} animate="show" variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
                 <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.eyebrow}</span>
                 <span className="h-px w-12 bg-white/20" />

@@ -165,7 +165,7 @@ export default function AgenceMENA() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-emerald-900 via-teal-800 to-emerald-900 text-white py-16 lg:py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-emerald-300 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
@@ -201,7 +201,7 @@ export default function AgenceMENA() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
+                <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
                   <div className="text-3xl font-bold text-emerald-600">{stat.value}</div>
                   <div className="text-gray-600">{stat.label}</div>
                 </motion.div>
@@ -228,7 +228,7 @@ export default function AgenceMENA() {
               <p className="text-gray-600 mb-8">Expertise locale dans chaque marché de la région MENA</p>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {countries.map((country, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
+                  <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.05 }}
                     className="bg-white border border-gray-200 rounded-xl p-4 hover:border-emerald-300 hover:shadow-md transition-all">
                     <div className="flex items-center gap-3 mb-2">
                       <span className="text-2xl">{country.flag}</span>
@@ -249,7 +249,7 @@ export default function AgenceMENA() {
               <p className="text-gray-600 mb-8">Solutions complètes pour conquérir le marché MENA</p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {services.map((service, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
+                  <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }}
                     className="bg-white border-2 border-gray-100 rounded-2xl p-6 hover:border-emerald-200 hover:shadow-lg transition-all">
                     <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
                       <service.icon className="w-6 h-6 text-emerald-600" />
@@ -318,7 +318,7 @@ export default function AgenceMENA() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 {pricingPlans.map((plan, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
+                  <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }}
                     className={`relative bg-white rounded-2xl p-6 ${plan.popular ? 'border-2 border-emerald-500 shadow-xl' : 'border border-gray-200'}`}>
                     {plan.popular && (
                       <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-medium">

@@ -364,7 +364,7 @@ export default function PlateformeIaIndustrielleAlgerie() {
 
           <div className="prose prose-lg max-w-none">
             {/* ── En Bref Summary Box ── */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}
               className="en-bref bg-gradient-to-br from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-xl p-6 mb-10 not-prose">
               <h2 className="text-lg font-bold text-green-800 mb-3 flex items-center gap-2">
                 <Zap className="w-5 h-5" /> En bref — Plateforme IA Industrielle en Algérie (Algeria)

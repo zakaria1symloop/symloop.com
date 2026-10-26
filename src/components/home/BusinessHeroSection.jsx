@@ -156,15 +156,15 @@ export default function BusinessHeroSection() {
       <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="max-w-5xl"
           >
             {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5 }}
               className="flex items-center gap-3 mb-10"
             >
@@ -176,15 +176,15 @@ export default function BusinessHeroSection() {
 
             {/* Headline with rotating capability */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[1.05]"
             >
               <span className="text-white/60">{c.line1}</span>
               <br />
               <span className="relative inline-block min-h-[1.15em] w-full">
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="wait" initial={false}>
                   <motion.span
                     key={activeWord}
                     initial={{ y: 40, opacity: 0, filter: 'blur(8px)' }}
@@ -203,8 +203,8 @@ export default function BusinessHeroSection() {
 
             {/* Dek */}
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-10 text-lg lg:text-xl text-white/55 leading-relaxed max-w-2xl font-light"
             >
@@ -213,8 +213,8 @@ export default function BusinessHeroSection() {
 
             {/* CTA row — WhatsApp big + Services bordered */}
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               className="mt-12 flex flex-wrap items-center gap-4"
             >
@@ -258,8 +258,8 @@ export default function BusinessHeroSection() {
 
             {/* Proof + geo strip */}
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="mt-16 pt-8 border-t border-white/[0.06]"
             >

@@ -359,7 +359,7 @@ export default function PresentationPage() {
                style={{ backgroundImage: 'radial-gradient(ellipse at 20% 10%, rgba(255,255,255,0.6), transparent 55%), radial-gradient(ellipse at 80% 90%, rgba(255,255,255,0.4), transparent 50%)' }} />
 
           <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-36 lg:pt-44 pb-24 lg:pb-32">
-            <motion.div initial="hidden" animate="show" variants={stagger}>
+            <motion.div initial={false} animate="show" variants={stagger}>
               <motion.div variants={fadeUp} className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-10">
                 {c.hero.eyebrow}
               </motion.div>

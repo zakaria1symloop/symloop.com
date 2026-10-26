@@ -400,8 +400,8 @@ export default function ServicesPage({ services, locale: pageLocale }) {
 
             {/* Display headline */}
             <motion.h1
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 24 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
               className="serif text-[44px] sm:text-[68px] lg:text-[112px] leading-[0.92] tracking-[-0.02em] max-w-[18ch]"
             >

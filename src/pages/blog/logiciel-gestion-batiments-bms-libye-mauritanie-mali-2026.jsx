@@ -452,7 +452,7 @@ export default function Page() {
 
         <section className="relative border-b border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-16">
-            <motion.div initial="hidden" animate="show" variants={stagger}>
+            <motion.div initial={false} animate="show" variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
                 <Link href="/blog/" className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors">{c.kind}</Link>
                 <span className="h-px w-12 bg-white/20" />
@@ -467,7 +467,7 @@ export default function Page() {
             </motion.div>
           </div>
           <div className="relative w-full aspect-[16/9] lg:aspect-[21/9] border-y border-white/[0.06] bg-white/[0.02] overflow-hidden">
-            <Image src="/blog/cover-bms-libye-mauritanie-mali.jpg" alt={c.title} fill priority sizes="100vw" className="object-cover" />
+            <Image src="/blog/cover-bms-libye-mauritanie-mali.jpg" alt={c.title} fill priority fetchPriority="high" sizes="100vw" className="object-cover" />
           </div>
         </section>
 
