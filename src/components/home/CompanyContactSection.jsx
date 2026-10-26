@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ArrowRight, ArrowLeft, Building2, Briefcase, MessageSquare, Phone, Mail, Loader2 } from "lucide-react";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import { db } from "../../lib/firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 // ============================================================================
 // SYMLOOP — CompanyContactSection (editorial redesign)
@@ -63,6 +61,12 @@ export default function CompanyContactSection() {
     setIsSubmitting(true);
     setSubmitError("");
     try {
+      // Firestore is loaded on submit only — keeps ~250 KB of Firebase out of the
+      // shared bundle every page downloads.
+      const [{ db }, { collection, addDoc, serverTimestamp }] = await Promise.all([
+        import("../../lib/firebase"),
+        import("firebase/firestore"),
+      ]);
       await addDoc(collection(db, "company_inquiries"), {
         company: formData.company.trim(),
         sector: formData.sector.trim(),
@@ -185,8 +189,8 @@ export default function CompanyContactSection() {
               <AnimatePresence>
                 {success ? (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ scale: 0.95 }}
+                    animate={{ scale: 1 }}
                     exit={{ opacity: 0, scale: 0.95 }}
                     className="flex flex-col items-center justify-center py-16 text-center"
                   >
@@ -238,8 +242,8 @@ export default function CompanyContactSection() {
                     {/* Error */}
                     {submitError && (
                       <motion.div
-                        initial={{ opacity: 0, y: -8 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ y: -8 }}
+                        animate={{ y: 0 }}
                         className="mb-6 p-4 border border-red-500/30 text-red-400 text-sm"
                       >
                         {submitError}
@@ -265,7 +269,9 @@ export default function CompanyContactSection() {
                             className={inputClass}
                             placeholder={t('companyContact.form.companyName.placeholder')}
                             dir={isRTL ? 'rtl' : 'ltr'}
-                            autoFocus
+                            // `autoFocus` removed: on SSR it made every browser scroll ~12 000 px to
+                            // this field on load, so the hero was never in the first viewport and no
+                            // LCP was ever recorded (homepage perf score 0, Speed Insights empty).
                           />
                         )}
 

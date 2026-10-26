@@ -193,7 +193,7 @@ export default function DigitaliserEntrepriseAlgerie() {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.div initial={false} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-500 hover:text-white mb-8 transition-colors text-sm tracking-wide uppercase">
                 <ArrowLeft className="w-3.5 h-3.5" /> Blog
               </Link>
@@ -208,7 +208,7 @@ export default function DigitaliserEntrepriseAlgerie() {
                 </ol>
               </nav>
 
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-3 mb-8">
+              <motion.div initial={{ y: 30 }} animate={{ y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-3 mb-8">
                 <span className="bg-red-500/20 text-red-300 backdrop-blur-md border border-red-500/20 px-4 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase flex items-center gap-2">
                   <AlertTriangle className="w-3.5 h-3.5" />
                   Chaque Jour Compte
@@ -219,8 +219,8 @@ export default function DigitaliserEntrepriseAlgerie() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
               >
@@ -235,8 +235,8 @@ export default function DigitaliserEntrepriseAlgerie() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -245,7 +245,7 @@ export default function DigitaliserEntrepriseAlgerie() {
                 Symloop met fin à ces pertes — définitivement.
               </motion.p>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.7 }} className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase">
+              <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.7, delay: 0.7 }} className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase">
                 <div className="flex items-center gap-2"><User className="w-3.5 h-3.5" /> Symloop Team</div>
                 <div className="flex items-center gap-2"><Calendar className="w-3.5 h-3.5" /> 1 Avril 2026</div>
                 <div className="flex items-center gap-2"><Clock className="w-3.5 h-3.5" /> 15 min</div>

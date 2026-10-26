@@ -98,14 +98,14 @@ export default function Page() {
       <main dir={isRtl ? 'rtl' : 'ltr'} className="bg-black text-white">
         <section className="relative border-b border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-16">
-            <motion.div initial="hidden" animate="show" variants={stagger}>
+            <motion.div initial={false} animate="show" variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8"><Link href="/blog/" className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors">{c.kind}</Link><span className="h-px w-12 bg-white/20" /><span className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/35">{c.publishedAt}</span></motion.div>
               <motion.h1 variants={fadeUp} className="text-4xl lg:text-6xl xl:text-7xl font-light tracking-tight leading-[1.05]">{c.title}</motion.h1>
               <motion.p variants={fadeUp} className="mt-8 text-xl lg:text-2xl text-white/60 leading-relaxed font-light max-w-3xl">{c.dek}</motion.p>
               <motion.div variants={fadeUp} className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-3 font-mono text-[11px] tracking-[0.15em] uppercase text-white/35 pt-8 border-t border-white/[0.08]"><span>{c.author}</span><span>{c.readTime}</span></motion.div>
             </motion.div>
           </div>
-          <div className="relative w-full aspect-[16/9] lg:aspect-[21/9] border-y border-white/[0.06] bg-white/[0.02] overflow-hidden"><Image src="/blog/cover-odoo-vs-custom.jpg" alt={c.title} fill priority sizes="100vw" className="object-cover" /></div>
+          <div className="relative w-full aspect-[16/9] lg:aspect-[21/9] border-y border-white/[0.06] bg-white/[0.02] overflow-hidden"><Image src="/blog/cover-odoo-vs-custom.jpg" alt={c.title} fill priority fetchPriority="high" sizes="100vw" className="object-cover" /></div>
         </section>
         <article className="max-w-3xl mx-auto px-6 lg:px-10 py-20 lg:py-28">
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-100px' }} variants={stagger} className="space-y-7 mb-20">

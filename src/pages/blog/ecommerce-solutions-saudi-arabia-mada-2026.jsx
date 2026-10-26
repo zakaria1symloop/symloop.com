@@ -960,8 +960,8 @@ export default function EcommerceSolutionsSaudiArabia2026() {
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="max-w-4xl mx-auto text-center"
             >
               {/* Back to blog */}

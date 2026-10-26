@@ -161,7 +161,7 @@ export default function OutsourcingPage(){const{locale}=useRouter();const isRtl=
     <main dir={isRtl?'rtl':'ltr'} className="bg-black text-white">
 
       {/* Hero */}
-      <section className="relative border-b border-white/[0.06]"><div className="max-w-5xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-16"><motion.div initial="hidden" animate="show" variants={st}>
+      <section className="relative border-b border-white/[0.06]"><div className="max-w-5xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-16"><motion.div initial={false} animate="show" variants={st}>
         <motion.div variants={f} className="flex items-center gap-3 mb-8"><span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.eyebrow}</span><span className="h-px w-12 bg-white/20"/><span className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/35">{c.publishedAt}</span></motion.div>
         <motion.h1 variants={f} className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[0.95]">{c.title}</motion.h1>
         <motion.p variants={f} className="mt-10 text-xl lg:text-2xl text-white/60 leading-relaxed font-light max-w-3xl">{c.dek}</motion.p>

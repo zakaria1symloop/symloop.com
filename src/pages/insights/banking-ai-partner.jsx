@@ -637,7 +637,7 @@ export default function BankingAIPartnerPage() {
         {/* ── HERO with animated stat counters ─────────────────────────── */}
         <section className="relative border-b border-white/[0.06]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-20 lg:pb-28">
-            <motion.div initial="hidden" animate="show" variants={stagger}>
+            <motion.div initial={false} animate="show" variants={stagger}>
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
                 <Link href="/insights/" className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors">
                   {c.kind}

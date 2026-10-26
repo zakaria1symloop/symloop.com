@@ -244,8 +244,8 @@ export default function DigitalisationEducationAlgerie() {
             </nav>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8 }}
               className="text-center max-w-4xl mx-auto"
             >
@@ -283,8 +283,8 @@ export default function DigitalisationEducationAlgerie() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
             >

@@ -181,7 +181,23 @@ const AF_CONNS = AF_EDGES.map(([a, b]) => {
 function AfricaAINetwork() {
   const [scope, animate] = useAnimate();
   const inView = useInView(scope, { once: true, margin: "-15%" });
+  // `visible` is NOT once: the perpetual loops below pause while the hero is
+  // scrolled away, so they stop burning main-thread time on the rest of the page.
+  const visible = useInView(scope, { amount: 0.15 });
   const reduce = useReducedMotion();
+  const loopsRef = useRef([]);
+  // Touch devices skip the feTurbulence wobble filter: it re-rasterises the whole
+  // map every animation frame and is the single most expensive paint on mobile.
+  const [coarse, setCoarse] = useState(false);
+  useEffect(() => {
+    try { setCoarse(window.matchMedia("(pointer: coarse)").matches); } catch {}
+  }, []);
+  useEffect(() => {
+    for (const c of loopsRef.current) {
+      if (!c || typeof c.pause !== "function") continue;
+      visible ? c.play() : c.pause();
+    }
+  }, [visible]);
 
   // Pen-nib: a shared progress value drives getPointAtLength on the coastline
   // being inked, so the dot literally rides the line as the hand draws it.
@@ -248,8 +264,10 @@ function AfricaAINetwork() {
 
       // 4) perpetual life — nodes breathe, the Algiers hub emits pulse-rings.
       //    (the data dots that walk the lines run declaratively — see JSX below)
-      run("[data-af-node]", { opacity: [0.55, 1, 0.55] }, { duration: 4, repeat: Infinity, delay: stagger(0.2), ease: "easeInOut" });
-      run("[data-af-hub-ring]", { scale: [1, 2.8], opacity: [0.6, 0] }, { duration: 2.6, repeat: Infinity, ease: "easeOut" });
+      loopsRef.current = [
+        run("[data-af-node]", { opacity: [0.55, 1, 0.55] }, { duration: 4, repeat: Infinity, delay: stagger(0.2), ease: "easeInOut" }),
+        run("[data-af-hub-ring]", { scale: [1, 2.8], opacity: [0.6, 0] }, { duration: 2.6, repeat: Infinity, ease: "easeOut" }),
+      ];
     })();
 
     return () => { alive = false; };
@@ -273,7 +291,7 @@ function AfricaAINetwork() {
         {/* fixed seed → byte-identical SSR/CSR; scale collapses under reduced-motion */}
         <filter id="af-wobble" x="-4%" y="-4%" width="108%" height="108%">
           <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="n" />
-          <feDisplacementMap in="SourceGraphic" in2="n" scale={reduce ? 0 : 1.4} xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" in2="n" scale={reduce || coarse ? 0 : 1.4} xChannelSelector="R" yChannelSelector="G" />
         </filter>
         <radialGradient id="af-hub-glow" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stopColor="#fff" stopOpacity="0.7" />
@@ -305,7 +323,7 @@ function AfricaAINetwork() {
       </g>
 
       {/* data dots WALKING the links — glowing core + soft halo, following the exact arc */}
-      {!reduce && inView &&
+      {!reduce && inView && visible &&
         AF_CONNS.map((c, i) => {
           const t = {
             duration: 1.5 + (i % 4) * 0.2,
@@ -508,15 +526,12 @@ export default function BusinessHeroSection() {
       <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
             className="max-w-5xl"
           >
             {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5 }}
               className="flex items-center gap-3 mb-10"
             >
@@ -528,15 +543,15 @@ export default function BusinessHeroSection() {
 
             {/* Headline with rotating outcome */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[1.05]"
             >
               <span className="text-white/55">{c.line1}</span>
               <br />
               <span className="relative inline-block min-h-[1.15em] w-full">
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="wait" initial={false}>
                   <motion.span
                     key={activeWord}
                     initial={{ y: 40, opacity: 0, filter: 'blur(8px)' }}
@@ -555,8 +570,8 @@ export default function BusinessHeroSection() {
 
             {/* Dek */}
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-10 text-lg lg:text-xl text-white/55 leading-relaxed max-w-2xl font-light"
             >
@@ -565,8 +580,8 @@ export default function BusinessHeroSection() {
 
             {/* CTA row */}
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               className="mt-12 flex flex-wrap items-center gap-4"
             >
@@ -610,8 +625,8 @@ export default function BusinessHeroSection() {
 
             {/* Proof + geo strip */}
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="mt-16 pt-8 border-t border-white/[0.06]"
             >

@@ -476,7 +476,7 @@ export default function MobileEngineeringPage() {
         {/* ════════════════════════════════════════════════════════════════ */}
         <section className="relative border-b border-white/[0.06]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 lg:pt-44 lg:pb-28 text-center">
-            <motion.div initial="hidden" animate="show" variants={stagger}>
+            <motion.div initial={false} animate="show" variants={stagger}>
 
               <motion.div variants={fadeUp} className="flex items-center justify-center gap-3 mb-10">
                 <span className="h-px w-12 bg-white/20" />

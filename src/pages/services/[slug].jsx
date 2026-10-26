@@ -350,8 +350,8 @@ export default function ServiceDetailPage({ service, locale: pageLocale, related
               {/* Headline + tagline */}
               <div className="col-span-12 lg:col-span-9 lg:pl-6">
                 <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ y: 20 }}
+                  animate={{ y: 0 }}
                   transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                   className="serif text-[44px] sm:text-[68px] lg:text-[96px] leading-[0.95] tracking-tight max-w-[16ch]"
                 >

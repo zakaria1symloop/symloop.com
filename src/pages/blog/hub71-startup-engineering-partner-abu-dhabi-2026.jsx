@@ -138,7 +138,7 @@ export default function Hub71Blog(){const{locale}=useRouter();const isRtl=locale
     <main dir={isRtl?'rtl':'ltr'} className="bg-black text-white">
 
       {/* Hero */}
-      <section className="border-b border-white/[0.06]"><div className="max-w-3xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-16"><motion.div initial="hidden" animate="show" variants={st}>
+      <section className="border-b border-white/[0.06]"><div className="max-w-3xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-16"><motion.div initial={false} animate="show" variants={st}>
         <motion.div variants={f} className="flex flex-wrap items-center gap-3 mb-8">
           <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{c.kind}</span><span className="h-px w-8 bg-white/20"/>
           <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/35">{c.publishedAt}</span><span className="h-px w-8 bg-white/20"/>

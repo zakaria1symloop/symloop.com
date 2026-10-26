@@ -498,8 +498,8 @@ export default function TechStack() {
           {/* Active Category Display */}
           <motion.div
             key={activeCategory.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
             className="mb-20"
           >
@@ -518,8 +518,8 @@ export default function TechStack() {
               {activeCategory.technologies.map((tech, index) => (
                 <motion.div
                   key={tech.name}
-                  initial={{ opacity: 0, y: 30, scale: 0.9 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  initial={{ y: 30, scale: 0.9 }}
+                  animate={{ y: 0, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   onMouseEnter={() => setHoveredTech(tech.name)}
                   onMouseLeave={() => setHoveredTech(null)}

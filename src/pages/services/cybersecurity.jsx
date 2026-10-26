@@ -276,7 +276,7 @@ export default function CybersecurityPage() {
         <section className="relative border-b border-white/[0.06]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 lg:pt-44 lg:pb-28">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-              <motion.div initial="hidden" animate="show" variants={stagger} className="lg:col-span-7">
+              <motion.div initial={false} animate="show" variants={stagger} className="lg:col-span-7">
                 <motion.div variants={fadeUp} className="flex items-center gap-3 mb-10">
                   <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">{t('cybersecurity_page.hero.eyebrow')}</span>
                   <span className="h-px w-12 bg-white/20" />

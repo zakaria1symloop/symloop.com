@@ -6,7 +6,9 @@ import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import LanguageSwitcher from './LanguageSwitcher';
-import AIOnboarding from '../onboarding/AIOnboarding';
+import dynamic from 'next/dynamic';
+// The onboarding modal (framer-motion + Firestore) only loads when opened.
+const AIOnboarding = dynamic(() => import('../onboarding/AIOnboarding'), { ssr: false });
 
 // ============================================================================
 // SYMLOOP — Header (editorial redesign 2026-04)

@@ -362,8 +362,8 @@ function CapabilityPanel({ capKey, icon: Icon, t }) {
   return (
     <motion.div
       key={capKey}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ y: 20 }}
+      animate={{ y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
       className="border border-white/[0.06] border-t-0"
@@ -398,8 +398,8 @@ function CapabilityPanel({ capKey, icon: Icon, t }) {
             {useCases.map((uc, k) => (
               <motion.li
                 key={k}
-                initial={{ opacity: 0, x: -8 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ x: -8 }}
+                animate={{ x: 0 }}
                 transition={{ delay: 0.1 + k * 0.05, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 className="group flex items-start gap-4 py-4 border-b border-white/[0.06] last:border-b-0 hover:bg-white/[0.02] transition-colors px-2 -mx-2"
               >
@@ -716,7 +716,7 @@ export default function AiServicePage() {
         {/* ════════════════════════════════════════════════════════════════ */}
         <section className="relative">
           <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 lg:pt-44 lg:pb-28">
-            <motion.div initial="hidden" animate="show" variants={stagger} className="max-w-5xl">
+            <motion.div initial={false} animate="show" variants={stagger} className="max-w-5xl">
 
               <motion.div variants={fadeUp} className="flex items-center gap-3 mb-10">
                 <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">

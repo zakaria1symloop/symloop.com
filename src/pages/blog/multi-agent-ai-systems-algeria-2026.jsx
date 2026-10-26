@@ -315,7 +315,7 @@ export default function MultiAgentAiSystemsAlgeria() {
         {/* ── Hero Section ── */}
         <section className="bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-900 text-white py-16 lg:py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-purple-300 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Back to Blog
               </Link>
@@ -369,7 +369,7 @@ export default function MultiAgentAiSystemsAlgeria() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {aiStats.map((stat, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
+                <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
                   <div className="text-3xl font-bold text-purple-600">{stat.value}</div>
                   <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
                 </motion.div>
@@ -480,7 +480,7 @@ export default function MultiAgentAiSystemsAlgeria() {
               </p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {architectureComponents.map((comp, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all">
+                  <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all">
                     <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
                       <comp.icon className="w-6 h-6 text-purple-600" />
                     </div>
@@ -621,7 +621,7 @@ export default function MultiAgentAiSystemsAlgeria() {
               </p>
               <div className="space-y-6">
                 {implSteps.map((step, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.1 }} className="flex gap-6">
+                  <motion.div key={i} initial={{ x: -20 }} animate={{ x: 0 }} transition={{ delay: i * 0.1 }} className="flex gap-6">
                     <div className="flex-shrink-0">
                       <div className="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl">
                         {step.step}

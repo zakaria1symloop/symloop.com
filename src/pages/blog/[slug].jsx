@@ -213,8 +213,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
           <div className="relative z-10 h-full flex flex-col justify-end max-w-4xl mx-auto px-6 pb-12">
             {/* Back Button */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
               className="absolute top-8 left-6"
             >
               <Link
@@ -228,8 +228,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
 
             {/* Category Badge */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.1 }}
             >
               <span className="inline-block px-4 py-1.5 bg-white text-black text-sm font-medium rounded-full mb-4">
@@ -239,8 +239,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
 
             {/* Title */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.2 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight"
             >
@@ -249,8 +249,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
 
             {/* Meta Info */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.3 }}
               className="flex flex-wrap items-center gap-4 text-white/80 text-sm"
             >
@@ -278,8 +278,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
         <div className="max-w-4xl mx-auto px-6 py-12">
           {/* Share Bar */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ delay: 0.4 }}
             className="flex items-center gap-4 mb-8 pb-8 border-b border-gray-200"
           >
@@ -320,8 +320,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
 
           {/* Blog Content */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ delay: 0.5 }}
             className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-black prose-a:underline hover:prose-a:no-underline prose-img:rounded-xl prose-blockquote:border-gray-900 prose-blockquote:bg-gray-100 prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:rounded-r-lg"
             dangerouslySetInnerHTML={{ __html: content }}
@@ -330,8 +330,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
           {/* Tags */}
           {blog.tags && blog.tags.length > 0 && (
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.6 }}
               className="mt-12 pt-8 border-t border-gray-200"
             >
@@ -352,8 +352,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
 
           {/* Author Box */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ delay: 0.7 }}
             className="mt-12 p-6 bg-gray-100 rounded-2xl"
           >
@@ -372,8 +372,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
 
           {/* CTA Box */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ delay: 0.8 }}
             className="mt-12 p-8 bg-black rounded-2xl text-white text-center"
           >
@@ -408,8 +408,8 @@ export default function BlogPost({ blog, relatedBlogs }) {
                 {relatedBlogs.map((post, index) => (
                   <motion.div
                     key={post.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ y: 20 }}
+                    animate={{ y: 0 }}
                     transition={{ delay: 0.1 * index }}
                   >
                     <Link href={`/blog/${post.slug}`} className="group block">

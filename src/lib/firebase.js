@@ -1,7 +1,6 @@
 // Firebase configuration for Symloop
 import { initializeApp, getApps } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAnalytics, isSupported } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -20,14 +19,9 @@ const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0
 // Initialize Firestore
 const db = getFirestore(app);
 
-// Initialize Analytics (only in browser)
-let analytics = null;
-if (typeof window !== 'undefined') {
-  isSupported().then((supported) => {
-    if (supported) {
-      analytics = getAnalytics(app);
-    }
-  });
-}
+// Firebase Analytics intentionally NOT initialised: it injected a second
+// gtag.js (G-WEZ9RZY5QH) on every page on top of the Ads tag in _app.js and
+// Vercel Analytics. Keep a null export so existing imports keep compiling.
+const analytics = null;
 
 export { app, db, analytics };
