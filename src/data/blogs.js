@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "151",
+    slug: "creer-equivalent-leboncoin-vinted-algerie-2026",
+    title: "Leboncoin et Vinted en Algérie : Ouedkniss a gagné les annonces. Ce qui reste à construire, et comment (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #04 — ce qu'Ouedkniss fait, ce qu'il laisse au téléphone, et trois produits ouverts : seconde main avec paiement protégé, verticale vérifiée, outils des vendeurs pro",
+    excerpt: "L'équivalent de Leboncoin en Algérie s'appelle Ouedkniss, dix millions de visites par mois. Il s'arrête au premier message : paiement, livraison, retours et litiges se font au téléphone. Le modèle Vinted avec argent bloqué et Yalidine, la vérification des voitures et des logements, et les outils des vendeurs Instagram sont encore à construire.",
+    category: "Marketplace", author: "Symloop Team", date: "2026-10-29", readTime: "10 min", featured: true,
+    tags: ["leboncoin algérie", "vinted algérie", "ouedkniss alternative", "seconde main algérie application", "marketplace algérie paiement protégé"],
+    metaTitle: "Leboncoin et Vinted en Algérie : Ouedkniss a gagné, ce qui reste à construire (guide fondateur 2026) | Symloop",
+    metaDescription: "Comment s'appelle Leboncoin en Algérie ? Ouedkniss. Ce qu'il fait, ce qu'il laisse au téléphone, et les trois produits encore ouverts : seconde main avec livraison et paiement protégé (le modèle Vinted), verticale vérifiée, outils des vendeurs professionnels. Architecture, calendrier, budget.",
+    translations: {
+      en: { title: "Leboncoin and Vinted in Algeria: Ouedkniss won the classifieds. What remains to be built, and how (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #04: what Ouedkniss does, what it leaves to the phone, and three open products", excerpt: "The Leboncoin equivalent in Algeria is Ouedkniss, ten million visits a month. It stops at the first message: payment, delivery, returns and disputes happen by phone. The Vinted model with held money and Yalidine, verified cars and homes, and tools for Instagram sellers remain to be built." },
+      ar: { title: "Leboncoin وVinted في الجزائر: Ouedkniss ربح الإعلانات. ما يبقى للبناء وكيف (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #04: ما يفعله Ouedkniss، ما يتركه للهاتف، وثلاثة منتجات مفتوحة", excerpt: "مكافئ Leboncoin في الجزائر هو Ouedkniss بعشرة ملايين زيارة شهرياً. يتوقف عند الرسالة الأولى: الدفع والتوصيل والإرجاع والنزاعات بالهاتف. نموذج Vinted بالمال المحجوز وYalidine، والسيارات والمساكن الموثّقة، وأدوات بائعي إنستغرام ما زالت للبناء." }
+    }
+  },
+  {
     id: "150",
     slug: "payer-cloud-ia-depuis-algerie-carte-internationale-solutions-2026",
     title: "Comment payer le cloud et l'IA depuis l'Algérie quand la carte CIB est refusée : AWS, Google Cloud, OpenAI, les options en 2026",
