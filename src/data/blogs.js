@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "153",
+    slug: "creer-equivalent-uber-blablacar-algerie-2026",
+    title: "Uber et BlaBlaCar en Algérie : le VTC urbain est pris, le reste du transport ne l'est pas. Quoi construire, et comment (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #05 — Yassir, Heetch, inDrive et Yango tiennent le VTC ; transport d'entreprise, transport spécialisé et intercité réservé n'ont pas encore de produit",
+    excerpt: "L'équivalent d'Uber en Algérie existe déjà, trois ou quatre fois. Ce qui n'a pas de produit : les navettes d'employés et comptes B2B facturés au mois, le transport scolaire et médical avec application pour les familles, l'intercité réservé avec siège et acompte. Chacun se lance avec vingt véhicules et des clients qui paient avant.",
+    category: "Transport", author: "Symloop Team", date: "2026-10-29", readTime: "10 min", featured: true,
+    tags: ["équivalent uber algérie", "blablacar algérie", "application vtc algérie", "transport entreprise navettes employés", "transport scolaire application parents"],
+    metaTitle: "Uber et BlaBlaCar en Algérie : le VTC est pris, voici ce qui reste à construire (guide fondateur 2026) | Symloop",
+    metaDescription: "Équivalent Uber Algérie : Yassir, Heetch, inDrive, Yango. Ce qui n'a pas encore de produit : transport d'entreprise avec comptes B2B, transport scolaire et médical, intercité réservé avec acompte. Marché, architecture, calendrier d'un trimestre, budget.",
+    translations: {
+      en: { title: "Uber and BlaBlaCar in Algeria: urban ride-hailing is taken, the rest of transport is not. What to build, and how (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #05: Yassir, Heetch, inDrive and Yango hold ride-hailing; corporate, specialised and booked intercity transport have no product yet", excerpt: "The Uber equivalent in Algeria already exists, three or four times. What has no product: employee shuttles and B2B accounts invoiced monthly, school and medical transport with a family app, booked intercity with seat and deposit. Each launches with twenty vehicles and customers who pay first." },
+      ar: { title: "Uber وBlaBlaCar في الجزائر: النقل الحضري مأخوذ وباقي النقل لا. ماذا تبني وكيف (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #05: Yassir وHeetch وinDrive وYango يمسكون النقل الحضري؛ نقل الشركات والنقل المتخصص وما بين المدن المحجوز لا منتج لها بعد", excerpt: "مكافئ Uber في الجزائر موجود أصلاً ثلاث أو أربع مرات. ما لا منتج له: حافلات الموظفين وحسابات B2B المفوترة شهرياً، النقل المدرسي والطبي بتطبيق للعائلات، ما بين المدن المحجوز بمقعد وعربون. كل واحد ينطلق بعشرين مركبة وعملاء يدفعون مسبقاً." }
+    }
+  },
+  {
     id: "152",
     slug: "caisse-pos-restaurant-commandes-salle-cuisine-algerie-2026",
     title: "Je veux une caisse pour mon restaurant : ce qu'il faut vraiment, caisse du marché ou sur mesure, et dans quel ordre (Algérie, 2026)",

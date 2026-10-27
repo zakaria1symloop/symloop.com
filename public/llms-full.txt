@@ -602,6 +602,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/creer-equivalent-leboncoin-vinted-algerie-2026/
   - Je veux une caisse pour mon restaurant : caisse du marché ou sur mesure
       https://symloop.com/fr/blog/caisse-pos-restaurant-commandes-salle-cuisine-algerie-2026/
+  - Uber et BlaBlaCar en Algérie : le VTC est pris, ce qui reste à construire (série #05)
+      https://symloop.com/fr/blog/creer-equivalent-uber-blablacar-algerie-2026/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
