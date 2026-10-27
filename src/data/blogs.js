@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "152",
+    slug: "caisse-pos-restaurant-commandes-salle-cuisine-algerie-2026",
+    title: "Je veux une caisse pour mon restaurant : ce qu'il faut vraiment, caisse du marché ou sur mesure, et dans quel ordre (Algérie, 2026)",
+    subtitle: "Les quatre fuites d'un restaurant sur papier, ce qu'une caisse du marché règle, quand le sur mesure se justifie, où l'IA aide, huit semaines sans fermer un soir",
+    excerpt: "Pour un seul restaurant standard, une caisse du marché suffit en deux semaines. Le sur mesure se justifie avec la livraison multicanal, plusieurs adresses ou le stock par recette. L'écran cuisine change la soirée, le stock par recette change la marge.",
+    category: "Restaurant", author: "Symloop Team", date: "2026-10-29", readTime: "8 min", featured: true,
+    tags: ["caisse restaurant algérie", "pos restaurant", "écran cuisine", "gestion stock restaurant recettes", "commandes whatsapp restaurant"],
+    metaTitle: "Je veux une caisse pour mon restaurant : caisse du marché ou sur mesure, et dans quel ordre (Algérie 2026) | Symloop",
+    metaDescription: "Les quatre fuites d'un restaurant sur papier, ce qu'une caisse du marché règle en deux semaines, quand le sur mesure se justifie (livraison multicanal, plusieurs adresses, stock par recette), où l'IA aide, et les huit semaines pour basculer sans fermer un soir.",
+    translations: {
+      en: { title: "I want a till for my restaurant: what you really need, market POS or custom, and in what order (Algeria, 2026)", subtitle: "The four leaks of a paper-run restaurant, what a market POS fixes, when custom is justified, where AI helps, eight weeks without closing an evening", excerpt: "For a single standard restaurant, a market POS is enough in two weeks. Custom is justified with multichannel delivery, several addresses or recipe stock. The kitchen screen changes the evening, recipe stock changes the margin." },
+      ar: { title: "أريد صندوقاً لمطعمي: ما تحتاجه فعلاً، صندوق السوق أم مخصص، وبأي ترتيب (الجزائر، 2026)", subtitle: "التسربات الأربعة لمطعم يعمل بالورق، ما يحله صندوق السوق، متى يُبرَّر المخصص، أين يساعد الذكاء الاصطناعي، ثمانية أسابيع دون إغلاق سهرة", excerpt: "لمطعم واحد قياسي يكفي صندوق السوق في أسبوعين. يُبرَّر المخصص مع التوصيل متعدد القنوات أو عدة عناوين أو المخزون حسب الوصفة. شاشة المطبخ تغيّر السهرة، والمخزون حسب الوصفة يغيّر الهامش." }
+    }
+  },
+  {
     id: "151",
     slug: "creer-equivalent-leboncoin-vinted-algerie-2026",
     title: "Leboncoin et Vinted en Algérie : Ouedkniss a gagné les annonces. Ce qui reste à construire, et comment (guide fondateur 2026)",

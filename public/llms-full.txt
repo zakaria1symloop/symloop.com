@@ -600,6 +600,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/payer-cloud-ia-depuis-algerie-carte-internationale-solutions-2026/
   - Leboncoin et Vinted en Algérie : Ouedkniss a gagné, ce qui reste à construire (série #04)
       https://symloop.com/fr/blog/creer-equivalent-leboncoin-vinted-algerie-2026/
+  - Je veux une caisse pour mon restaurant : caisse du marché ou sur mesure
+      https://symloop.com/fr/blog/caisse-pos-restaurant-commandes-salle-cuisine-algerie-2026/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
