@@ -27,6 +27,17 @@ const getGreeting = (locale) => {
   return greetings[locale] || greetings.en;
 };
 
+// Language of a message: Arabic script, darija in Latin letters (answered in
+// French), French or English markers; falls back to the site locale.
+const detectLang = (text, fallback) => {
+  const t = String(text || '');
+  if (/[؀-ۿ]/.test(t)) return 'ar';
+  if (/(wach|kifach|kifech|bghit|nheb|n7eb|rani|ndir|chhal|9adach|wesh|labas|sahit|3la|3andi|habit)/i.test(t)) return 'fr';
+  if (/(je|j'ai|nous|vous|bonjour|salut|une|des|pour|avec|mon|ma|mes|est|sont|projet|besoin|combien|comment|voudrais|veux|société|entreprise|agence)/i.test(t)) return 'fr';
+  if (/(the|i|i'm|we|you|hello|hi|want|need|how|much|app|build|looking|company|business)/i.test(t)) return 'en';
+  return fallback;
+};
+
 // Lightweight intent detection — maps keywords in the user's message to a
 // Symloop service category so the fallback can answer with something specific.
 const detectIntent = (msg) => {
@@ -286,7 +297,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
   const getSmartFallback = (userMessage, turn) => {
     const msg = String(userMessage || '').toLowerCase();
     const keyword = detectIntent(msg);
-    const bank = FALLBACK_BANK[locale] || FALLBACK_BANK.en;
+    const lang = detectLang(userMessage, locale);
+    const bank = FALLBACK_BANK[lang] || FALLBACK_BANK.en;
     const pool = bank[keyword] || bank.generic;
     // Rotate through the pool using turn count so we never repeat consecutively
     return pool[turn % pool.length];
@@ -343,11 +355,12 @@ export default function AIOnboarding({ onComplete, onSkip }) {
         setIsTyping(true);
         setTimeout(() => {
           setIsTyping(false);
-          const contactPrompt = locale === 'fr'
-            ? "J'ai une bonne idée de votre projet. Pour qu'on puisse vous recontacter avec une proposition, laissez-moi vos coordonnées."
-            : locale === 'ar'
-            ? "لدي فكرة جيدة عن مشروعك. لكي نتمكن من التواصل معك بعرض، اترك لي بيانات الاتصال."
-            : "I have a good idea of your project. So we can follow up with a proposal, leave me your contact details.";
+          const lang = detectLang(userMessage, locale);
+          const contactPrompt = lang === 'fr'
+            ? "J'ai une bonne idée de votre projet. Pour qu'un ingénieur vous rappelle, laissez-moi votre prénom et votre numéro."
+            : lang === 'ar'
+            ? "فهمت مشروعك جيداً. ليتصل بك مهندس من سيملوب، اترك لي اسمك ورقم هاتفك."
+            : "I have a clear picture of your project. For an engineer to call you back, leave me your first name and phone number.";
           setMessages(prev => [...prev, { type: 'ai', content: contactPrompt }]);
           setStage('contact');
         }, 800);
