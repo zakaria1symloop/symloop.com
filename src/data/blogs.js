@@ -3,6 +3,51 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "147",
+    slug: "gerer-50-employes-terrain-tout-passe-par-telephone-algerie-2026",
+    title: "Je gère cinquante employés sur le terrain et tout passe par téléphone : par où commencer pour digitaliser sans bloquer l'activité (Algérie, 2026)",
+    subtitle: "Les trois informations que personne ne possède, une semaine de règles, l'application terrain en trois écrans, où l'IA aide vraiment",
+    excerpt: "Ne commencez pas par un ERP. Trois informations n'existent que dans la tête de vos chefs d'équipe : qui travaille où, quelle mission est faite, quelle preuve existe. Une semaine de règles les rend visibles, une application terrain en trois écrans les rend fiables, l'IA transforme le rapport vocal en compte rendu.",
+    category: "Équipes terrain", author: "Symloop Team", date: "2026-10-28", readTime: "9 min", featured: true,
+    tags: ["gérer employés terrain", "application pointage employés algérie", "digitaliser entreprise de transport", "application mission hors ligne", "gestion équipe terrain whatsapp"],
+    metaTitle: "Je gère 50 employés sur le terrain et tout passe par téléphone : par où commencer (Algérie 2026) | Symloop",
+    metaDescription: "Transport, livraison, maintenance, nettoyage : planning sur WhatsApp, pointage de mémoire, preuves perdues. Les trois informations vitales, une semaine de règles sans logiciel, l'application terrain en trois écrans, le rapport vocal par IA, douze semaines sans bloquer l'activité.",
+    translations: {
+      en: { title: "I manage fifty employees in the field and everything goes by phone: where to start digitising without stopping operations (Algeria, 2026)", subtitle: "The three facts nobody owns, a week of rules, the three-screen field app, where AI really helps", excerpt: "Do not start with an ERP. Three facts exist only in your supervisors' heads: who works where, which job is done, what proof exists. A week of rules makes them visible, a three-screen field app makes them reliable, AI turns the voice report into a written summary." },
+      ar: { title: "أسيّر خمسين موظفاً في الميدان وكل شيء يمر بالهاتف: من أين أبدأ الرقمنة دون توقيف النشاط (الجزائر، 2026)", subtitle: "المعلومات الثلاث التي لا يملكها أحد، أسبوع من القواعد، تطبيق الميدان بثلاث شاشات، أين يساعد الذكاء الاصطناعي فعلاً", excerpt: "لا تبدأ بـERP. ثلاث معلومات لا توجد إلا في رؤوس مشرفيك: من يعمل أين، أي مهمة أُنجزت، أي إثبات يوجد. أسبوع من القواعد يجعلها مرئية، وتطبيق ميداني بثلاث شاشات يجعلها موثوقة، والذكاء الاصطناعي يحوّل التقرير الصوتي إلى محضر." }
+    }
+  },
+  {
+    id: "146",
+    slug: "je-vends-sur-instagram-ai-je-besoin-d-une-application-algerie-2026",
+    title: "Je vends sur Instagram et WhatsApp en Algérie : ai-je besoin d'une application ? La plupart du temps, non. Voici quoi faire à la place (2026)",
+    subtitle: "Les trois paliers : règles WhatsApp Business, site de commande léger, puis l'application dans trois cas seulement",
+    excerpt: "Non, dans la grande majorité des cas. Sous trente commandes par semaine, des règles gratuites suffisent ; au-delà, un site de commande léger avec frais par wilaya, Yalidine et paiement à la livraison remplace vos soirées de messages. L'application vient en dernier, dans trois cas précis.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-10-28", readTime: "8 min", featured: true,
+    tags: ["vendre sur instagram algérie", "boutique instagram application", "site de commande algérie", "e-commerce paiement à la livraison", "whatsapp business vente"],
+    metaTitle: "Je vends sur Instagram en Algérie : ai-je besoin d'une application ? (2026) | Symloop",
+    metaDescription: "La plupart du temps, non. Les trois paliers pour une boutique Instagram en Algérie : règles WhatsApp Business, site de commande léger avec Yalidine et paiement à la livraison, puis l'application dans trois cas seulement. Où l'IA aide vraiment.",
+    translations: {
+      en: { title: "I sell on Instagram and WhatsApp in Algeria: do I need an app? Most of the time, no. Here is what to do instead (2026)", subtitle: "The three tiers: WhatsApp Business rules, a light ordering site, then the app in three cases only", excerpt: "No, in the vast majority of cases. Under thirty orders a week, free rules are enough; above that, a light ordering site with fees by wilaya, Yalidine and cash on delivery replaces your evenings of messages. The app comes last, in three precise cases." },
+      ar: { title: "أبيع على إنستغرام وواتساب في الجزائر: هل أحتاج تطبيقاً؟ في أغلب الأحيان لا. إليك ما تفعله بدلاً منه (2026)", subtitle: "الدرجات الثلاث: قواعد WhatsApp Business، موقع طلب خفيف، ثم التطبيق في ثلاث حالات فقط", excerpt: "لا، في الغالبية العظمى من الحالات. تحت ثلاثين طلباً أسبوعياً تكفي قواعد مجانية؛ وفوق ذلك موقع طلب خفيف برسوم حسب الولاية وYalidine والدفع عند التسليم يحل محل أمسيات الرسائل. التطبيق يأتي أخيراً في ثلاث حالات محددة." }
+    }
+  },
+  {
+    id: "145",
+    slug: "connaitre-prix-total-application-avant-de-commencer-algerie-2026",
+    title: "Peut-on connaître le prix total de mon application avant de commencer ? La réponse honnête (Algérie, 2026)",
+    subtitle: "Ce qui fait bouger le prix, comment deux semaines de cadrage le fixent, comment il se paie par jalons, et comment lire un devis",
+    excerpt: "Oui, à une condition : un périmètre écrit. Personne ne peut donner un prix total sur une idée ; tout le monde peut en donner un sur un cadrage. Les huit facteurs qui font varier le prix, la structure par jalons, la grille par catégorie et les signes d'un devis qui va bouger.",
+    category: "Budget", author: "Symloop Team", date: "2026-10-28", readTime: "8 min", featured: true,
+    tags: ["prix total application", "devis application mobile algérie", "cadrage application prix fixe", "combien coûte une application", "prix fixe développement"],
+    metaTitle: "Peut-on connaître le prix total de mon application avant de commencer ? (Algérie 2026) | Symloop",
+    metaDescription: "Oui, si le périmètre est écrit. Les huit facteurs qui font bouger le prix d'une application, le cadrage de deux semaines qui le fixe, le paiement par jalons, la grille par catégorie et comment lire un devis.",
+    translations: {
+      en: { title: "Can I know the total price of my app before starting? The honest answer (Algeria, 2026)", subtitle: "What moves the price, how two weeks of scoping fix it, how it is paid by milestones, and how to read a quote", excerpt: "Yes, on one condition: a written scope. Nobody can give a total price on an idea; everybody can on a scoping document. The eight factors, the milestone structure, the category grid and the signs of a quote that will move." },
+      ar: { title: "هل يمكنني معرفة السعر الإجمالي لتطبيقي قبل البدء؟ الجواب الصادق (الجزائر، 2026)", subtitle: "ما الذي يحرّك السعر، كيف يثبّته أسبوعان من التأطير، كيف يُدفع حسب المراحل، وكيف تقرأ عرض سعر", excerpt: "نعم، بشرط واحد: نطاق مكتوب. لا أحد يستطيع إعطاء سعر إجمالي على فكرة؛ الجميع يستطيع على وثيقة تأطير. العوامل الثمانية، هيكل المراحل، شبكة الفئات وعلامات عرض السعر الذي سيتغير." }
+    }
+  },
+  {
     id: "144",
     slug: "agence-immobiliere-whatsapp-google-sheets-organiser-equipe-algerie-2026",
     title: "Mon agence immobilière tourne sur WhatsApp et Google Sheets : comment organiser mon équipe sans tout casser (Algérie, 2026)",
