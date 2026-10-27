@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "143",
+    slug: "creer-equivalent-uber-eats-algerie-2026",
+    title: "Uber Eats en Algérie : pourquoi il n'y est pas, qui livre vraiment, et comment lancer la version qui tient (2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #02 — livraison de repas : l'état réel du marché, trois positionnements ouverts, l'architecture à trois applications",
+    excerpt: "Uber Eats n'opère pas en Algérie, Jumia Food est parti fin 2023 et Yassir couvre les grandes villes. Ce qui reste ouvert pour un fondateur : les villes moyennes, la commande directe pour restaurants, la logistique B2B. Marché, architecture, calendrier.",
+    category: "Livraison", author: "Symloop Team", date: "2026-10-28", readTime: "11 min", featured: true,
+    tags: ["uber eats algérie", "équivalent uber eats algérie", "application livraison repas algérie", "créer une application de livraison en algérie", "startup livraison algérie"],
+    metaTitle: "Uber Eats en Algérie : équivalent, marché réel et comment lancer la version algérienne (2026) | Symloop",
+    metaDescription: "Uber Eats n'existe pas en Algérie. Qui livre vraiment en 2026 (Yassir, acteurs locaux, restaurants en direct), ce qui doit changer (cash, adresses, livreurs, Ramadan), l'architecture à trois applications, le calendrier et le modèle économique.",
+    translations: {
+      en: { title: "Uber Eats in Algeria: why it is not there, who really delivers, and how to launch the version that lasts (2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #02: the real state of food delivery, three open positions, the three-app architecture", excerpt: "Uber Eats does not operate in Algeria, Jumia Food left at the end of 2023 and Yassir covers the big cities. What remains open for a founder: mid-sized cities, direct ordering for restaurants, B2B logistics." },
+      ar: { title: "Uber Eats في الجزائر: لماذا ليس موجوداً، من يوصّل فعلاً، وكيف تطلق النسخة التي تصمد (2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #02: الحالة الحقيقية لتوصيل الطعام، ثلاثة مواقع مفتوحة، بنية التطبيقات الثلاثة", excerpt: "Uber Eats لا يعمل في الجزائر، Jumia Food غادر نهاية 2023 وYassir يغطي المدن الكبرى. ما يبقى مفتوحاً للمؤسس: المدن المتوسطة، الطلب المباشر للمطاعم، اللوجستيك B2B." }
+    }
+  },
+  {
     id: "142",
     slug: "lancer-startup-tech-algerie-depuis-france-diaspora-2026",
     title: "Lancer une startup tech en Algérie depuis la France : le guide du fondateur de la diaspora (2026)",

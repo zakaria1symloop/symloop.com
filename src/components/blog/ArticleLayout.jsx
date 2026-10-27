@@ -16,6 +16,7 @@ export function renderRichText(text) {
   return String(text).split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map((p, i) => {
     if (p.startsWith('**') && p.endsWith('**')) return <span key={i} className="font-normal text-white border-b border-white/30">{p.slice(2, -2)}</span>;
     const m = p.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (m && /^https?:/.test(m[2])) return <a key={i} href={m[2]} target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white transition-colors">{m[1]}</a>;
     if (m) return <Link key={i} href={m[2]} className="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white transition-colors">{m[1]}</Link>;
     return <span key={i}>{p}</span>;
   });
@@ -66,6 +67,7 @@ export default function ArticleLayout({ slug, locale, content: c, visuals, figur
                 <motion.div variants={fadeUp} className="flex items-baseline gap-5 mb-6">{idx > 0 && <span className="font-mono text-xs tracking-[0.15em] text-white/30">{String(idx).padStart(2, '0')}</span>}<h2 className={`${idx === 0 ? 'text-3xl lg:text-5xl' : 'text-2xl lg:text-3xl'} font-light tracking-tight text-white leading-[1.1]`}>{s.heading}</h2></motion.div>
                 <div className="space-y-5 ps-0 lg:ps-10">
                   {(s.body || []).map((p, i) => <P key={i}>{p}</P>)}
+                  {s.preOrdered && <ol className="space-y-4 pt-2">{s.preOrdered.map((p, i) => <motion.li key={i} variants={fadeUp} className="flex gap-5 text-lg lg:text-xl text-white/70 leading-[1.65]"><span className="font-mono text-xs tracking-[0.15em] text-white/30 mt-2.5 shrink-0">{String(i + 1).padStart(2, '0')}</span><span>{renderRichText(p)}</span></motion.li>)}</ol>}
                   {s.list && <ul className="space-y-4 pt-2">{s.list.map((p, i) => <motion.li key={i} variants={fadeUp} className="flex gap-4 text-lg lg:text-xl text-white/70 leading-[1.65]"><span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" /><span>{renderRichText(p)}</span></motion.li>)}</ul>}
                 </div>
               </motion.section>
