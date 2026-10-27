@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "154",
+    slug: "digitaliser-clinique-medecins-refusent-adoption-logiciel-medical-algerie-2026",
+    title: "Je veux digitaliser ma clinique mais mes médecins refusent : comment faire adopter un logiciel médical sans l'imposer (Algérie, 2026)",
+    subtitle: "Pourquoi ils ont souvent raison, les deux écrans que le médecin accepte, l'ordre de déploiement qui marche, où l'IA aide, vingt semaines service par service",
+    excerpt: "Aucune objection des médecins n'est contre le numérique ; toutes sont contre un mauvais logiciel mal déployé. Deux écrans pour le médecin, dictée vocale, règles écrites sur ce que la direction voit, deux médecins volontaires d'abord, extension à la demande. Dossier patient conforme loi 18-07.",
+    category: "Santé", author: "Symloop Team", date: "2026-10-29", readTime: "9 min", featured: true,
+    tags: ["digitaliser clinique algérie", "logiciel médical adoption médecins", "logiciel clinique cabinet médical", "dossier patient informatisé algérie", "dictée vocale médicale ia"],
+    metaTitle: "Digitaliser ma clinique, mes médecins refusent : comment faire adopter un logiciel médical (Algérie 2026) | Symloop",
+    metaDescription: "Pourquoi les médecins refusent et ce qu'ils veulent dire, les deux écrans qu'un médecin accepte, la dictée vocale par IA, les règles sur ce que la direction voit, et le déploiement service par service avec deux médecins volontaires. Dossier patient conforme loi 18-07.",
+    translations: {
+      en: { title: "I want to digitise my clinic but my doctors refuse: how to get medical software adopted without imposing it (Algeria, 2026)", subtitle: "Why they are often right, the two screens a doctor accepts, the deployment order that works, where AI helps, twenty weeks department by department", excerpt: "None of the doctors' objections is against digital; all are against bad software badly deployed. Two screens for the doctor, voice dictation, written rules on what management sees, two volunteer doctors first, extension on request. Patient record compliant with Law 18-07." },
+      ar: { title: "أريد رقمنة مصحتي لكن أطبائي يرفضون: كيف تجعلهم يتبنّون برنامجاً طبياً دون فرضه (الجزائر، 2026)", subtitle: "لماذا هم على حق غالباً، الشاشتان اللتان يقبلهما الطبيب، ترتيب النشر الذي ينجح، أين يساعد الذكاء الاصطناعي، عشرون أسبوعاً مصلحة بمصلحة", excerpt: "لا اعتراض من الأطباء ضد الرقمنة؛ كلها ضد برنامج سيئ مُنشر بسوء. شاشتان للطبيب، إملاء صوتي، قواعد مكتوبة لما تراه الإدارة، طبيبان متطوعان أولاً، توسيع عند الطلب. ملف مريض مطابق للقانون 18-07." }
+    }
+  },
+  {
     id: "153",
     slug: "creer-equivalent-uber-blablacar-algerie-2026",
     title: "Uber et BlaBlaCar en Algérie : le VTC urbain est pris, le reste du transport ne l'est pas. Quoi construire, et comment (guide fondateur 2026)",
