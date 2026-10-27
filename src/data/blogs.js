@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "157",
+    slug: "ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026",
+    title: "Je gère une école privée et tout est sur papier : inscriptions, paiements par tranches, présences, parents sur WhatsApp. Par où commencer (Algérie, 2026)",
+    subtitle: "Ce qu'une école privée ou un centre de formation perd chaque trimestre, ce qui se règle en une semaine, la plateforme qu'il faut, où l'IA aide, et le calendrier pour être prêt à la rentrée",
+    excerpt: "Une école perd de l'argent à deux endroits : les tranches impayées découvertes trop tard et les élèves qui décrochent sans que personne n'ait vu les absences. Dossier élève unique, échéancier, appel en deux gestes, application parents en arabe et en français. Prêt pour la rentrée en douze semaines en partant de juin.",
+    category: "Éducation", author: "Symloop Team", date: "2026-10-30", readTime: "9 min", featured: true,
+    tags: ["logiciel gestion école privée algérie", "application parents école", "gestion paiements tranches école", "inscription en ligne école privée", "logiciel centre de formation"],
+    metaTitle: "École privée sur papier : inscriptions, tranches, présences, parents sur WhatsApp. Par où commencer (Algérie 2026) | Symloop",
+    metaDescription: "Les cinq fuites d'une école privée gérée sur papier, ce qui se règle en une semaine, la plateforme qu'il faut (dossier élève unique, échéancier, appel en deux gestes, application parents), où l'IA aide (relances, alertes de décrochage), et le calendrier de douze semaines pour la rentrée.",
+    translations: {
+      en: { title: "I run a private school and everything is on paper: enrolments, instalment payments, attendance, parents on WhatsApp. Where to start (Algeria, 2026)", subtitle: "What a private school or training centre loses every term, what gets fixed in a week, the platform it needs, where AI helps, and the timeline to be ready for September", excerpt: "A school loses money in two places: unpaid instalments discovered too late and students who drop out unseen. Single student record, payment schedule, two-tap roll call, parent app in Arabic and French. Ready for September in twelve weeks starting in June." },
+      ar: { title: "أدير مدرسة خاصة وكل شيء على الورق: تسجيلات، أقساط، حضور، أولياء على واتساب. من أين أبدأ (الجزائر، 2026)", subtitle: "ما تخسره مدرسة خاصة أو مركز تكوين كل فصل، ما يُحلّ في أسبوع، المنصة اللازمة، أين يساعد الذكاء الاصطناعي، والجدول لتكون جاهزاً للدخول المدرسي", excerpt: "تخسر المدرسة المال في موضعين: الأقساط غير المدفوعة المكتشفة متأخراً والتلاميذ الذين ينقطعون دون أن يراهم أحد. ملف تلميذ واحد، جدول أقساط، مناداة بلمستين، تطبيق أولياء بالعربية والفرنسية. جاهزون للدخول المدرسي في اثني عشر أسبوعاً انطلاقاً من جوان." }
+    }
+  },
+  {
     id: "156",
     slug: "commandes-annulees-a-la-livraison-ecommerce-algerie-2026",
     title: "La moitié de mes commandes est refusée à la livraison : comment diviser les retours par deux quand on vend en paiement à la livraison (Algérie, 2026)",

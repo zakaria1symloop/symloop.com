@@ -610,6 +610,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/label-startup-algerie-2026-conditions-dossier-avantages/
   - La moitié de mes commandes est refusée à la livraison : diviser les retours par deux
       https://symloop.com/fr/blog/commandes-annulees-a-la-livraison-ecommerce-algerie-2026/
+  - Je gère une école privée et tout est sur papier : inscriptions, tranches, présences, parents
+      https://symloop.com/fr/blog/ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
