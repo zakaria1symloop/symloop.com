@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "155",
+    slug: "label-startup-algerie-2026-conditions-dossier-avantages",
+    title: "Comment obtenir le label startup en Algérie en 2026 : conditions, dossier, avantages fiscaux, renouvellement, et pourquoi il faut un produit avant",
+    subtitle: "Les critères d'éligibilité, le parcours sur startup.dz, ce que le label apporte d'après les textes cités, le calendrier réaliste, et l'erreur qui coûte six mois : déposer avec une idée",
+    excerpt: "Société de droit algérien de moins de huit ans, modèle innovant, capital détenu à 50 % au moins par des personnes physiques, dépôt sur startup.dz, label pour quatre ans renouvelable. Quatre ans d'exonération d'impôt sur le bénéfice d'après les sources, à vérifier. Le comité labellise des startups, pas des idées.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-29", readTime: "9 min", featured: true,
+    tags: ["label startup algérie", "comment obtenir le label startup", "dossier label startup", "avantages label startup", "startup.dz"],
+    metaTitle: "Label startup Algérie 2026 : conditions, dossier, avantages, renouvellement | Symloop",
+    metaDescription: "Comment obtenir le label startup en Algérie en 2026 : conditions d'éligibilité, parcours sur startup.dz, avantages fiscaux d'après les textes cités (quatre ans d'exonération, renouvelable), calendrier réaliste, erreurs à éviter, et pourquoi le label se demande avec un produit.",
+    translations: {
+      en: { title: "How to get the startup label in Algeria in 2026: conditions, file, tax benefits, renewal, and why you need a product first", subtitle: "Eligibility criteria, the path on startup.dz, what the label brings according to cited texts, realistic timeline, and the mistake that costs six months: filing with an idea", excerpt: "Algerian-law company under eight years, innovative model, capital at least 50% held by natural persons, filing on startup.dz, four-year renewable label. Four years of profit tax exemption according to sources, to be verified. The committee labels startups, not ideas." },
+      ar: { title: "كيف تحصل على علامة Startup في الجزائر في 2026: الشروط، الملف، المزايا الضريبية، التجديد، ولماذا تحتاج منتجاً أولاً", subtitle: "معايير الأهلية، المسار على startup.dz، ما تمنحه العلامة حسب النصوص، الجدول الواقعي، والخطأ الذي يكلّف ستة أشهر: الإيداع بفكرة", excerpt: "شركة خاضعة للقانون الجزائري عمرها أقل من ثماني سنوات، نموذج مبتكر، رأس مال 50% على الأقل لأشخاص طبيعيين، إيداع على startup.dz، علامة لأربع سنوات قابلة للتجديد. أربع سنوات من الإعفاء الضريبي حسب المصادر، للتحقق. تمنح اللجنة العلامة لشركات ناشئة لا لأفكار." }
+    }
+  },
+  {
     id: "154",
     slug: "digitaliser-clinique-medecins-refusent-adoption-logiciel-medical-algerie-2026",
     title: "Je veux digitaliser ma clinique mais mes médecins refusent : comment faire adopter un logiciel médical sans l'imposer (Algérie, 2026)",
