@@ -435,6 +435,12 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/logiciel-immobilier-agence-algerie-2026/
   - Logiciel de clinique et cabinet médical en Algérie
       https://symloop.com/fr/blog/logiciel-clinique-cabinet-medical-algerie-2026/
+  - Airbnb en Algérie : la demande existe, la plateforme non (série #03)
+      https://symloop.com/fr/blog/creer-equivalent-airbnb-algerie-2026/
+  - Trois officines, un stock sur Excel, des périmés chaque mois : comment reprendre la main
+      https://symloop.com/fr/blog/pharmacie-trois-officines-stock-excel-dates-de-peremption-algerie-2026/
+  - Je gère cinquante employés sur le terrain et tout passe par téléphone
+      https://symloop.com/fr/blog/gerer-50-employes-terrain-tout-passe-par-telephone-algerie-2026/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

@@ -3,6 +3,36 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "149",
+    slug: "creer-equivalent-airbnb-algerie-2026",
+    title: "Airbnb en Algérie : la demande existe, la plateforme non. Comment lancer la location saisonnière qui tient (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #03 — pourquoi Airbnb ne fonctionne pas ici, qui loue vraiment, acompte en dinars et versement aux hôtes, architecture, calendrier avant juin",
+    excerpt: "Airbnb affiche des logements en Algérie mais les hôtes ne peuvent pas être payés et les voyageurs ne peuvent pas payer en CIB. La location saisonnière se fait sur Facebook, en espèces. Ce qu'il faut construire à la place : paiement dans les deux sens, confiance par la visite, cent logements vérifiés dans une ville avant juin.",
+    category: "Tourisme", author: "Symloop Team", date: "2026-10-29", readTime: "11 min", featured: true,
+    tags: ["airbnb algérie", "équivalent airbnb algérie", "location saisonnière algérie plateforme", "créer plateforme location vacances algérie", "startup location saisonnière"],
+    metaTitle: "Airbnb en Algérie : équivalent, marché réel et comment lancer la plateforme de location saisonnière (2026) | Symloop",
+    metaDescription: "Airbnb ne fonctionne pas en Algérie : pas de versement aux hôtes, pas de paiement CIB. Qui loue vraiment, ce qui doit changer (acompte en dinars, versement local, vérification physique, loi 99-06), l'architecture, le calendrier d'une première saison.",
+    translations: {
+      en: { title: "Airbnb in Algeria: the demand exists, the platform does not. How to launch short-term rental that lasts (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #03: why Airbnb does not work here, who really rents, dinar deposits and host payouts, architecture, timeline before June", excerpt: "Airbnb lists homes in Algeria but hosts cannot get paid and guests cannot pay with CIB. Short-term rental happens on Facebook, in cash. What to build instead: payment both ways, trust through visits, one hundred verified homes in one city before June." },
+      ar: { title: "Airbnb في الجزائر: الطلب موجود والمنصة لا. كيف تطلق الإيجار الموسمي الذي يصمد (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #03: لماذا لا يعمل Airbnb هنا، من يؤجّر فعلاً، عربون بالدينار وتحويل للمضيفين، البنية، الجدول قبل جوان", excerpt: "يعرض Airbnb مساكن في الجزائر لكن المضيفين لا يُدفَع لهم والمسافرين لا يدفعون بـCIB. الإيجار الموسمي يتم على فيسبوك نقداً. ما يجب بناؤه: دفع في الاتجاهين، ثقة بالزيارة، مئة سكن موثّق في مدينة واحدة قبل جوان." }
+    }
+  },
+  {
+    id: "148",
+    slug: "pharmacie-trois-officines-stock-excel-dates-de-peremption-algerie-2026",
+    title: "J'ai trois officines, mon stock est sur Excel et je perds des produits périmés chaque mois : comment reprendre la main (Algérie, 2026)",
+    subtitle: "Pourquoi Excel casse à partir de la deuxième officine, une semaine de règles, le logiciel multi-officines, où l'IA aide, dix semaines sans fermer",
+    excerpt: "Excel n'a ni lot, ni date de péremption, ni transfert entre officines. Un stock unique par lot et par date partagé par trois comptoirs, les transferts proposés avant toute commande, l'alerte au comptoir, l'inventaire tournant. Dix semaines, officine par officine.",
+    category: "Pharmacie", author: "Symloop Team", date: "2026-10-29", readTime: "9 min", featured: true,
+    tags: ["gestion stock pharmacie plusieurs officines", "logiciel pharmacie multi officines", "dates de péremption stock excel", "transfert stock entre officines", "logiciel gestion stock supérette"],
+    metaTitle: "Trois officines, un stock sur Excel, des périmés chaque mois : comment reprendre la main (Algérie 2026) | Symloop",
+    metaDescription: "Pourquoi Excel casse à partir de la deuxième officine, ce qui se règle en une semaine, le logiciel multi-officines qu'il vous faut (lot, date, transfert, Chifa), où l'IA aide vraiment, et le calendrier de dix semaines sans fermer une officine.",
+    translations: {
+      en: { title: "I have three pharmacies, my stock is on Excel and I lose expired products every month: how to take back control (Algeria, 2026)", subtitle: "Why Excel breaks from the second branch, a week of rules, multi-branch software, where AI helps, ten weeks without closing", excerpt: "Excel has no batch, no expiry date, no transfer between branches. A single stock per batch and date shared by three counters, transfers proposed before any order, counter alerts, rolling inventory. Ten weeks, one branch at a time." },
+      ar: { title: "لديّ ثلاث صيدليات، مخزوني على Excel وأخسر منتجات منتهية كل شهر: كيف أستعيد السيطرة (الجزائر، 2026)", subtitle: "لماذا ينكسر Excel من الفرع الثاني، أسبوع من القواعد، برنامج متعدد الفروع، أين يساعد الذكاء الاصطناعي، عشرة أسابيع دون إغلاق", excerpt: "Excel لا يعرف الدفعة ولا تاريخ الانتهاء ولا التحويل بين الفروع. مخزون واحد بالدفعة والتاريخ لثلاثة أكشاك، تحويلات تُقترح قبل أي طلب، تنبيه عند الكشك، جرد دوري. عشرة أسابيع، صيدلية بصيدلية." }
+    }
+  },
+  {
     id: "147",
     slug: "gerer-50-employes-terrain-tout-passe-par-telephone-algerie-2026",
     title: "Je gère cinquante employés sur le terrain et tout passe par téléphone : par où commencer pour digitaliser sans bloquer l'activité (Algérie, 2026)",
