@@ -37,7 +37,7 @@ const CONTENT = {
       ] },
       { heading: 'Ce qui doit changer par rapport au modèle français', body: [
         "Copier Doctolib écran par écran est l'erreur la plus courante. Cinq points changent tout.",
-      ], ordered: [
+      ], preOrdered: [
         "**Le téléphone est l'identité.** Pas de compte par email. Inscription par numéro et code SMS, en dix secondes. Le rappel de rendez-vous passe par SMS, et de plus en plus par WhatsApp.",
         "**Les premiers clients sont les cabinets privés et les cliniques.** Le médecin algérien n'achètera pas un abonnement sur une promesse. Il faut une version gratuite le premier mois, un agenda qui remplace vraiment son cahier, et un onboarding fait par une personne qui se déplace au cabinet. La vente est locale et physique avant d'être numérique.",
         "**La loi 18-07 encadre les données de santé.** Les données personnelles doivent être hébergées et traitées conformément à la loi algérienne, avec consentement explicite et sécurisation forte. Un hébergement à l'étranger par défaut est un risque juridique. Ce point doit être intégré à l'architecture dès le premier jour, pas ajouté plus tard.",
@@ -60,7 +60,7 @@ const CONTENT = {
       ], visual: 'timeline', after: [
         "Lancer dans une seule ville avec trente cabinets actifs vaut mieux que lancer dans tout le pays avec trois. C'est la leçon de Doctolib, et elle vaut encore plus en Algérie.",
       ] },
-      { heading: 'Le modèle économique', body: ["Trois sources de revenus, dans cet ordre."], ordered: [
+      { heading: 'Le modèle économique', body: ["Trois sources de revenus, dans cet ordre."], preOrdered: [
         "**Abonnement mensuel par praticien**, avec un mois gratuit et un tarif adapté au marché local. C'est la base.",
         "**Services premium pour les cliniques** : multi-praticiens, statistiques, rappels WhatsApp, intégration avec leur logiciel de gestion.",
         "**Plus tard, la téléconsultation et les services associés**, quand le cadre le permettra.",
@@ -123,7 +123,7 @@ const CONTENT = {
       ] },
       { heading: 'What must change from the French model', body: [
         "Copying Doctolib screen by screen is the most common mistake. Five points change everything.",
-      ], ordered: [
+      ], preOrdered: [
         "**The phone is the identity.** No email account. Sign-up by number and SMS code, in ten seconds. Appointment reminders go by SMS, and increasingly by WhatsApp.",
         "**First customers are private practices and clinics.** An Algerian doctor will not buy a subscription on a promise. You need a free first month, an agenda that really replaces their notebook, and onboarding done by someone who visits the practice. Sales are local and physical before they are digital.",
         "**Law 18-07 governs health data.** Personal data must be hosted and processed in compliance with Algerian law, with explicit consent and strong security. Hosting abroad by default is a legal risk. This must be built into the architecture from day one, not added later.",
@@ -146,7 +146,7 @@ const CONTENT = {
       ], visual: 'timeline', after: [
         "Launching in one city with thirty active practices beats launching nationwide with three. It is Doctolib's lesson, and it is even more true in Algeria.",
       ] },
-      { heading: 'The business model', body: ['Three revenue sources, in this order.'], ordered: [
+      { heading: 'The business model', body: ['Three revenue sources, in this order.'], preOrdered: [
         "**Monthly subscription per practitioner**, with a free month and a price adapted to the local market. This is the base.",
         "**Premium services for clinics**: multi-practitioner, statistics, WhatsApp reminders, integration with their management software.",
         "**Later, teleconsultation and related services**, when the framework allows it.",
@@ -200,7 +200,7 @@ const CONTENT = {
         '**هاتف ذكي في كل جيب.** المريض الجزائري معتاد على تطبيقات التوصيل والنقل.',
         '**سياسة عمومية مواتية.** رقمنة الصحة أولوية معلنة. نحللها في ملف [رقمنة الصحة في الجزائر](/solutions/digitalisation-sante-algerie/).',
       ] },
-      { heading: 'ما يجب تغييره مقارنة بالنموذج الفرنسي', body: ['نسخ Doctolib شاشة بشاشة هو الخطأ الأكثر شيوعاً. خمس نقاط تغيّر كل شيء.'], ordered: [
+      { heading: 'ما يجب تغييره مقارنة بالنموذج الفرنسي', body: ['نسخ Doctolib شاشة بشاشة هو الخطأ الأكثر شيوعاً. خمس نقاط تغيّر كل شيء.'], preOrdered: [
         '**الهاتف هو الهوية.** تسجيل برقم ورمز SMS في عشر ثوانٍ. التذكير عبر SMS وواتساب.',
         '**أول العملاء هم العيادات الخاصة والمصحات.** شهر مجاني، أجندة تعوّض الدفتر فعلاً، وتفعيل يقوم به شخص يزور العيادة. البيع محلي وميداني قبل أن يكون رقمياً.',
         '**القانون 18-07 يؤطر البيانات الصحية.** استضافة ومعالجة مطابقة للقانون الجزائري مع موافقة صريحة وتأمين قوي، منذ اليوم الأول.',
@@ -215,7 +215,7 @@ const CONTENT = {
         '**الأسبوعان 15 و16.** اختبار مع خمس إلى عشر عيادات في مدينة واحدة، النشر على المتاجر.',
         '**الشهران 5 و6.** التفعيل الميداني، أول الاشتراكات، النسخة الثانية.',
       ], visual: 'timeline', after: ['الإطلاق في مدينة واحدة مع ثلاثين عيادة نشطة أفضل من الإطلاق في كل البلاد مع ثلاث. هذا درس Doctolib، وهو أصدق في الجزائر.'] },
-      { heading: 'نموذج الأعمال', body: ['ثلاثة مصادر إيراد، بهذا الترتيب.'], ordered: [
+      { heading: 'نموذج الأعمال', body: ['ثلاثة مصادر إيراد، بهذا الترتيب.'], preOrdered: [
         '**اشتراك شهري لكل طبيب**، بشهر مجاني وسعر ملائم للسوق المحلية.',
         '**خدمات مميزة للمصحات**: تعدد الأطباء، إحصائيات، تذكيرات واتساب، تكامل مع برنامج التسيير.',
         '**لاحقاً، الاستشارة عن بعد** عندما يسمح الإطار.',

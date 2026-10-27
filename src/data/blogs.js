@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "144",
+    slug: "agence-immobiliere-whatsapp-google-sheets-organiser-equipe-algerie-2026",
+    title: "Mon agence immobilière tourne sur WhatsApp et Google Sheets : comment organiser mon équipe sans tout casser (Algérie, 2026)",
+    subtitle: "Diagnostic, ce qui se règle en une semaine sans logiciel, ce qui demande une plateforme, où l'IA fait vraiment gagner du temps, et ce que ça coûte",
+    excerpt: "Les clients sont dans des groupes WhatsApp, les biens dans un Google Sheets, et personne ne sait qui a appelé qui. Trois paliers : règles gratuites, plateforme avec fiche bien unique et application agent, IA pour le matching et la réponse aux premiers messages.",
+    category: "Immobilier", author: "Symloop Team", date: "2026-10-28", readTime: "9 min", featured: true,
+    tags: ["agence immobilière whatsapp", "logiciel agence immobilière algérie", "crm immobilier algérie", "organiser équipe agence immobilière", "ia agence immobilière"],
+    metaTitle: "Mon agence immobilière tourne sur WhatsApp et Google Sheets : comment organiser mon équipe (Algérie 2026) | Symloop",
+    metaDescription: "Clients dans WhatsApp, biens dans Google Sheets, personne ne sait qui a appelé qui. Ce qui se règle en une semaine sans logiciel, quand il faut une plateforme avec fiche bien unique et application agent, où l'IA fait gagner du temps, et le coût.",
+    translations: {
+      en: { title: "My real-estate agency runs on WhatsApp and Google Sheets: how to organise my team without breaking everything (Algeria, 2026)", subtitle: "Diagnosis, what gets fixed in a week without software, what needs a platform, where AI really saves time, and what it costs", excerpt: "Clients in WhatsApp groups, listings in a Google Sheet, nobody knows who called whom. Three tiers: free rules, a platform with a single listing record and an agent app, AI for matching and first-message replies." },
+      ar: { title: "وكالتي العقارية تشتغل على واتساب وGoogle Sheets: كيف أنظّم فريقي دون أن أكسر كل شيء (الجزائر، 2026)", subtitle: "التشخيص، ما يُحلّ في أسبوع بلا برنامج، ما يحتاج منصة، أين يوفّر الذكاء الاصطناعي الوقت فعلاً، وكم يكلف", excerpt: "العملاء في مجموعات واتساب، العقارات في ملف Google Sheets، ولا أحد يعرف من اتصل بمن. ثلاث درجات: قواعد مجانية، منصة ببطاقة عقار واحدة وتطبيق للوكلاء، ذكاء اصطناعي للمطابقة والرد على الرسائل الأولى." }
+    }
+  },
+  {
     id: "143",
     slug: "creer-equivalent-uber-eats-algerie-2026",
     title: "Uber Eats en Algérie : pourquoi il n'y est pas, qui livre vraiment, et comment lancer la version qui tient (2026)",
