@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "156",
+    slug: "commandes-annulees-a-la-livraison-ecommerce-algerie-2026",
+    title: "La moitié de mes commandes est refusée à la livraison : comment diviser les retours par deux quand on vend en paiement à la livraison (Algérie, 2026)",
+    subtitle: "Les six causes de refus, le processus de confirmation qui les divise par deux, ce qu'un système fait à votre place, et les chiffres à suivre chaque semaine",
+    excerpt: "Tant que le client n'a rien payé, la commande n'est qu'une intention. Confirmation sous deux heures, frais par wilaya affichés avant la commande, score par numéro de téléphone, acompte conditionnel, message la veille de la livraison, tableau de bord des refus par wilaya et par transporteur.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-10-30", readTime: "8 min", featured: true,
+    tags: ["commandes annulées à la livraison", "taux de refus paiement à la livraison", "colis refusé yalidine", "réduire retours e-commerce algérie", "confirmation commande whatsapp"],
+    metaTitle: "La moitié de mes commandes est refusée à la livraison : diviser les retours par deux (Algérie 2026) | Symloop",
+    metaDescription: "Pourquoi un client refuse un colis qu'il a commandé, les six causes et leur remède, le processus de confirmation en cinq étapes qui divise les refus par deux, l'acompte conditionnel CIB Edahabia, le tableau de bord par wilaya et transporteur, et les chiffres à suivre chaque semaine.",
+    translations: {
+      en: { title: "Half my orders are refused at delivery: how to halve returns when you sell cash on delivery (Algeria, 2026)", subtitle: "The six causes of refusal, the confirmation process that halves them, what a system does for you, and the numbers to track every week", excerpt: "As long as the customer has paid nothing, the order is only an intention. Confirmation within two hours, fees by wilaya shown before ordering, score per phone number, conditional deposit, day-before message, refusal dashboard by wilaya and carrier." },
+      ar: { title: "نصف طلباتي تُرفض عند التسليم: كيف تقلّص المرتجعات إلى النصف عندما تبيع بالدفع عند التسليم (الجزائر، 2026)", subtitle: "أسباب الرفض الستة، عملية التأكيد التي تقلّصها إلى النصف، ما يفعله النظام نيابة عنك، والأرقام التي تتابعها كل أسبوع", excerpt: "ما دام العميل لم يدفع شيئاً فالطلب مجرد نية. تأكيد خلال ساعتين، رسوم حسب الولاية قبل الطلب، نقاط لكل رقم هاتف، عربون مشروط، رسالة عشية التسليم، لوحة الرفض حسب الولاية والناقل." }
+    }
+  },
+  {
     id: "155",
     slug: "label-startup-algerie-2026-conditions-dossier-avantages",
     title: "Comment obtenir le label startup en Algérie en 2026 : conditions, dossier, avantages fiscaux, renouvellement, et pourquoi il faut un produit avant",
