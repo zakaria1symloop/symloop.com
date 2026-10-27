@@ -596,6 +596,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/pharmacie-trois-officines-stock-excel-dates-de-peremption-algerie-2026/
   - Je gère cinquante employés sur le terrain et tout passe par téléphone
       https://symloop.com/fr/blog/gerer-50-employes-terrain-tout-passe-par-telephone-algerie-2026/
+  - Payer le cloud et l'IA depuis l'Algérie quand la carte CIB est refusée
+      https://symloop.com/fr/blog/payer-cloud-ia-depuis-algerie-carte-internationale-solutions-2026/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

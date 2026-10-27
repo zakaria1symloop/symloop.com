@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "150",
+    slug: "payer-cloud-ia-depuis-algerie-carte-internationale-solutions-2026",
+    title: "Comment payer le cloud et l'IA depuis l'Algérie quand la carte CIB est refusée : AWS, Google Cloud, OpenAI, les options en 2026",
+    subtitle: "Six façons de payer, ce qu'elles valent, ce qu'il faut vérifier auprès de votre banque, et l'architecture qui réduit le besoin en devises à quelques dizaines de dollars",
+    excerpt: "Les cartes CIB et Edahabia ne fonctionnent pas sur les sites étrangers. Carte internationale adossée à un compte devises, compte d'entreprise exportatrice, revendeur local en dinars, fintech en zone grise, et l'hébergement en Algérie avec des modèles d'IA ouverts, la seule option sans devises.",
+    category: "Cloud & IA", author: "Symloop Team", date: "2026-10-29", readTime: "8 min", featured: true,
+    tags: ["payer aws depuis l'algérie", "payer openai algérie", "carte internationale algérie paiement en ligne", "héberger application en algérie", "modèles ia ouverts auto-hébergés"],
+    metaTitle: "Payer le cloud et l'IA depuis l'Algérie quand la carte CIB est refusée : les options en 2026 | Symloop",
+    metaDescription: "AWS, Google Cloud, OpenAI refusent la carte CIB. Les six façons de payer depuis l'Algérie, ce qu'elles valent, ce qu'il faut vérifier auprès de votre banque, et l'architecture (hébergement local, modèles ouverts) qui réduit le besoin en devises à presque rien.",
+    translations: {
+      en: { title: "How to pay for cloud and AI from Algeria when the CIB card is declined: AWS, Google Cloud, OpenAI, the options in 2026", subtitle: "Six ways to pay, what they are worth, what to check with your bank, and the architecture that reduces the foreign currency need to a few tens of dollars", excerpt: "CIB and Edahabia cards do not work on foreign sites. International card backed by a foreign currency account, exporting company account, local reseller in dinars, grey-zone fintech, and hosting in Algeria with open-weight AI models, the only option without foreign currency." },
+      ar: { title: "كيف تدفع للسحابة والذكاء الاصطناعي من الجزائر عندما تُرفض بطاقة CIB: AWS وGoogle Cloud وOpenAI، الخيارات في 2026", subtitle: "ست طرق للدفع، قيمتها، ما يجب التحقق منه لدى بنكك، والبنية التي تقلّص الحاجة إلى العملة الصعبة إلى بضع عشرات من الدولارات", excerpt: "بطاقتا CIB والذهبية لا تعملان على المواقع الأجنبية. بطاقة دولية مرتبطة بحساب بالعملة الصعبة، حساب شركة مصدّرة، موزّع محلي بالدينار، فينتك في منطقة رمادية، والاستضافة في الجزائر بنماذج مفتوحة، الخيار الوحيد بلا عملة صعبة." }
+    }
+  },
+  {
     id: "149",
     slug: "creer-equivalent-airbnb-algerie-2026",
     title: "Airbnb en Algérie : la demande existe, la plateforme non. Comment lancer la location saisonnière qui tient (guide fondateur 2026)",
