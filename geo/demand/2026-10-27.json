@@ -1,0 +1,1697 @@
+{
+ "date": "2026-10-27",
+ "calls": 348,
+ "seeds": 174,
+ "rows": [
+  {
+   "query": "airbnb algérie oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algérie tipaza",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "alan algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "alan",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "alternative jumia algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "deliveroo algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "deliveroo",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "doctolib algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 9
+  },
+  {
+   "query": "equivalent airbnb algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent jumia algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent leboncoin.algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent uber algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent uber eats algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie contact",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie inscription",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "investir en algerie diaspora",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "jumia algérie chaussure",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "jumia algérie parfum",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "lydia algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "lydia",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "too good to go algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "too good to go",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eat algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eat en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eats en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "yassir algérie avis",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "yassir algérie contact",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "yassir algérie tarif",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb algerie bejaia",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb algerie bord de mer",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "application yassir en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "blablacar algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "blablacar",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "blablacar en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "blablacar",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "bolt algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "bolt",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "bolt en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "bolt",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algerie ferries",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algerie hotel",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algérie oran'",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking en dinars algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "comment s appelle leboncoin en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "doctolib algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 8
+  },
+  {
+   "query": "doctolib en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 8
+  },
+  {
+   "query": "equivalent uber eat algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "extrait de malt algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "malt",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "getaround algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "getaround",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "glovo algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "glovo",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "glovo en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "glovo",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "indeed algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "indeed",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "indeed en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "indeed",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "jumia algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "jumia en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "jumia ferme en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "le bon coin algérie ouedkniss",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "leboncoin algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "leboncoin en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "location airbnb en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "maillot algérie vinted",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "vinted",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "malt algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "malt",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "maltais en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "malt",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss algérie automobile",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss algérie voiture",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss algérienne",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss auto en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss automobiles en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "ouedkniss en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "pap algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "pap en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "papa algérien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "papa en algérien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "qonto algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "qonto",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "sauce algérienne yuka",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "yuka",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "seloger algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "seloger",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "taxi uber en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "taxi yassir en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber eats algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber eats in algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "vinted algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "vinted",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "vinted en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "vinted",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "vinted livraison algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "vinted",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "visite du pap en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "yassir algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "yassir algérie numéro",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "yassir en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "yuka algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "yuka",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "yuka en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "yuka",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch algérie application",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "heetch algérie avis",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "heetch algérie numéro de téléphone",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "heetch algérie prix",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "jumia algérie app",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "jumia algérie contact",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "jumia algérie dz",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "jumia algérie electromenager",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "jumia algérie fermeture",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "jumia algérie téléphone",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "ouedkniss algérie fiat 500",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "ouedkniss algérie voiture occasion",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "yassir algérie recrutement",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "agence digitale algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": "agence-digitale-mena-2024",
+   "score": 6
+  },
+  {
+   "query": "agence marketing digital algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": "marketing-digital-algerie-2024",
+   "score": 6
+  },
+  {
+   "query": "agence web algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "agence-developpement-web-alger-2026",
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algérie bord de mer",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie constantine",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie ghazaouet",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie livret de famille",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie reglementation",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie tlemcen",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "application achat en ligne algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "application uber en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking air algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking alger dz",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking algerie oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking go algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "boulon algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "création site e commerce algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une application en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "comment-creer-application-mobile",
+   "score": 6
+  },
+  {
+   "query": "créer une entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une société en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une startup en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "heetch algerie chauffeur",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "heetch algerie code promo",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "heetch algerie service client",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idee de business algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idée de projet algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "jumia algérie affiliate program",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "jumia",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "l'arrivée du pape en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "label incubateur algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "label startup algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "le bon coin algérie voiture",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "logo startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss algérie auto",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss algerie camion",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss algerie immobilier",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss algerie voiture a vendre",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss immobilier en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouedkniss voiture en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "pap enpard algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "pap immobilier algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "pap",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "particulier à particulier algérie mostaganem",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "prix application mobile algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "prix-application-mobile-algerie-2026",
+   "score": 6
+  },
+  {
+   "query": "symloop",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "symloop_max",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "tunisie booking algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "vtc algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "vtc en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "yassir algerie application",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "yassir algérie numero",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "yassir algerie service client",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "yassir algerie taxi",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "yassir algerie telephone",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "yassir",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "comment créer une entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "comment créer une startup en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "créer une entreprise de nettoyage en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "créer une entreprise en ligne algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": "creer-boutique-en-ligne-algerie-2026",
+   "score": 4
+  },
+  {
+   "query": "créer une micro entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "créer une société de transport en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "créer une société import export en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "le bon coin algérie bordj bou arreridj",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "le bon coin algérie oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": "application-reservation-algerie-2026",
+   "score": 4
+  },
+  {
+   "query": "reservation algérie ferries",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "startup label algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  }
+ ]
+}

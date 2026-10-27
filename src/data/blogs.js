@@ -3,6 +3,36 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "142",
+    slug: "lancer-startup-tech-algerie-depuis-france-diaspora-2026",
+    title: "Lancer une startup tech en Algérie depuis la France : le guide du fondateur de la diaspora (2026)",
+    subtitle: "Structure juridique à distance, produit adapté au terrain, choix de l'équipe, calendrier réel",
+    excerpt: "Vous vivez en France et voulez lancer une application pour le marché algérien ? Structure juridique par procuration, label startup, paiement CIB/Edahabia, choix de l'équipe technique et calendrier de 4 à 6 mois. Guide 2026 avec cinq schémas.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-27", readTime: "11 min", featured: true,
+    tags: ["startup diaspora algérie", "créer une startup en algérie depuis la france", "lancer une application en algérie", "label startup algérie", "créer une société en algérie depuis l'étranger"],
+    metaTitle: "Lancer une startup tech en Algérie depuis la France (2026) — Guide du fondateur de la diaspora | Symloop",
+    metaDescription: "Vous vivez en France et voulez lancer une application en Algérie ? Structure juridique à distance, label startup, paiement CIB/Edahabia, choix de l'équipe technique et calendrier réaliste. Guide 2026.",
+    translations: {
+      en: { title: "Launching a tech startup in Algeria from France: the diaspora founder's guide (2026)", subtitle: "Remote legal structure, a product built for the field, choosing the team, a real timeline", excerpt: "Living in France and launching an app for the Algerian market? Legal structure by proxy, startup label, CIB/Edahabia payments, choosing the technical team and a 4 to 6 month timeline." },
+      ar: { title: "إطلاق شركة تقنية ناشئة في الجزائر انطلاقاً من فرنسا: دليل مؤسس الجالية (2026)", subtitle: "الهيكل القانوني عن بعد، منتج ملائم للميدان، اختيار الفريق، جدول زمني حقيقي", excerpt: "تعيش في فرنسا وتريد إطلاق تطبيق للسوق الجزائرية؟ الهيكل القانوني بالوكالة، علامة Startup، الدفع CIB والذهبية، اختيار الفريق التقني وجدول من 4 إلى 6 أشهر." }
+    }
+  },
+  {
+    id: "141",
+    slug: "creer-equivalent-doctolib-algerie-2026",
+    title: "Doctolib en Algérie : comment lancer la prise de rendez-vous médical en ligne (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » — le modèle, le marché, ce qui doit changer, l'architecture, le calendrier",
+    excerpt: "Doctolib n'existe pas en Algérie. Ce que fait le modèle français, l'état du marché algérien, ce qui doit changer (SMS, loi 18-07, cabinets privés), l'architecture technique et le calendrier pour lancer l'équivalent algérien.",
+    category: "Santé", author: "Symloop Team", date: "2026-10-27", readTime: "10 min", featured: true,
+    tags: ["doctolib algérie", "équivalent doctolib algérie", "prise de rendez-vous médical en ligne algérie", "application rendez-vous médecin algérie", "startup santé algérie"],
+    metaTitle: "Doctolib en Algérie : lancer la prise de rendez-vous médical en ligne (guide fondateur 2026) | Symloop",
+    metaDescription: "Doctolib n'existe pas en Algérie. Le modèle français, l'état du marché algérien, ce qui doit changer (SMS, loi 18-07, cabinets privés), l'architecture technique, le budget et le calendrier pour lancer l'équivalent algérien.",
+    translations: {
+      en: { title: "Doctolib in Algeria: how to launch online medical booking (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\": the model, the market, what must change, the architecture, the timeline", excerpt: "Doctolib does not exist in Algeria. What the French model does, the state of the Algerian market, what must change (SMS, Law 18-07, private practices), the technical architecture and the timeline." },
+      ar: { title: "Doctolib في الجزائر: كيف تطلق حجز المواعيد الطبية عبر الإنترنت (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر»: النموذج، السوق، ما يجب تغييره، البنية، الجدول الزمني", excerpt: "Doctolib غير موجود في الجزائر. ما يفعله النموذج الفرنسي، حال السوق الجزائرية، ما يجب تغييره، البنية التقنية والجدول الزمني لإطلاق المكافئ الجزائري." }
+    }
+  },
+  {
     id: "140",
     slug: "maison-intelligente-smart-home-libye-mauritanie-mali-2026",
     title: "Maison intelligente et domotique pour Libye, Mauritanie et Mali — 2026",
