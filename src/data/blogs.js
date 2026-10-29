@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "160",
+    slug: "lancer-startup-en-algerie-depuis-la-france-2027-calendrier-quatre-voyages",
+    title: "Lancer sa startup en Algérie depuis la France en 2027 : le calendrier à rebours en quatre voyages",
+    subtitle: "Ce qui se fait depuis la France et ce qui exige d'être sur place, le montage qui tient (société, label, associé opérationnel, studio), les douze mois avec le Ramadan et l'été placés, et les quatre voyages qui les rythment",
+    excerpt: "Un fondateur de la diaspora n'a pas besoin de douze allers-retours : quatre voyages suffisent si chacun a un objectif. Novembre-décembre 2026 pour les entretiens et l'associé, mars 2027 après l'Aïd pour la banque et les pilotes, juillet-août pour lancer pendant l'été de la diaspora, octobre pour la rentrée et la deuxième ville. Entre deux, le studio développe et l'associé sur place avance.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["lancer startup algérie depuis la france 2027", "créer entreprise algérie diaspora 2027", "startup diaspora algérie", "calendrier création startup algérie", "label startup 2027"],
+    metaTitle: "Lancer sa startup en Algérie depuis la France en 2027 : quatre voyages, douze mois | Symloop",
+    metaDescription: "Le calendrier à rebours d'un fondateur de la diaspora pour 2027 : ce qui se fait depuis la France et ce qui exige d'être en Algérie, le montage qui tient (SARL/EURL, label startup, web-marchand, associé opérationnel au capital, studio sur cadrage écrit), les douze mois avec le Ramadan et l'été placés, et les quatre voyages qui les rythment.",
+    translations: {
+      en: { title: "Launching your startup in Algeria from France in 2027: the countdown in four trips", subtitle: "What can be done from France and what requires being there, the setup that holds (company, label, operating partner, studio), the twelve months with Ramadan and summer placed, and the four trips that pace them", excerpt: "A diaspora founder does not need twelve round trips: four are enough if each has a goal. November-December 2026 for interviews and the partner, March 2027 after Eid for the bank and pilots, July-August to launch during the diaspora summer, October for back-to-school and the second city. In between, the studio develops and the partner on site moves forward." },
+      ar: { title: "إطلاق ستارت-أب في الجزائر من فرنسا سنة 2027: العد التنازلي في أربع رحلات", subtitle: "ما يُنجز من فرنسا وما يتطلب الحضور، التركيبة التي تصمد (شركة، علامة، شريك تشغيلي، استوديو)، الأشهر الاثنا عشر مع رمضان والصيف، والرحلات الأربع التي تضبط إيقاعها", excerpt: "مؤسس من الجالية لا يحتاج اثنتي عشرة رحلة ذهاباً وإياباً: أربع تكفي إن كان لكل منها هدف. نوفمبر-ديسمبر 2026 للمقابلات والشريك، مارس 2027 بعد العيد للبنك والزبائن التجريبيين، جويلية-أوت للإطلاق خلال صيف الجالية، أكتوبر للدخول والمدينة الثانية." }
+    }
+  },
+  {
     id: "159",
     slug: "creer-une-application-mobile-en-algerie-2027-sept-decisions-avant-janvier",
     title: "Créer une application mobile en Algérie en 2027 : les sept décisions à prendre avant janvier",
