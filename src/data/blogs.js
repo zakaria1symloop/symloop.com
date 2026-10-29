@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "158",
+    slug: "lancer-un-saas-en-algerie-2027-abonnement-paiement-calendrier",
+    title: "Lancer un SaaS en Algérie en 2027 : qui paie un abonnement, comment encaisser sans carte internationale, et le calendrier à rebours",
+    subtitle: "Les segments qui paient et ceux qui ne paieront pas, le modèle d'abonnement qui marche en dinars (annuel d'avance, CIB/Edahabia, revendeurs), la facture conforme, et les huit mois pour être en ligne au printemps 2027",
+    excerpt: "Les entreprises algériennes paient des abonnements quand le logiciel arrête une perte mesurable chaque mois. 1 004 web-marchands, 15 millions de transactions en ligne au premier semestre 2026 et une réduction d'impôt prévue par le PLF 2027 pour ceux qui encaissent électroniquement : 2027 est l'année où un SaaS en dinars devient normal. Qui cibler, comment encaisser, et le calendrier depuis novembre 2026.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["lancer un saas en algérie 2027", "saas algérie abonnement", "paiement abonnement cib edahabia", "web-marchand algérie", "startup algérie 2027"],
+    metaTitle: "Lancer un SaaS en Algérie en 2027 : qui paie, comment encaisser, calendrier à rebours | Symloop",
+    metaDescription: "Qui paie un abonnement en Algérie et qui ne paiera pas, le modèle d'encaissement en dinars (annuel d'avance, CIB/Edahabia web-marchand, revendeurs), la facture conforme, l'hébergement, l'onboarding, et les huit mois pour être en ligne et payé au printemps 2027. Chiffres GIE Monétique S1 2026 et PLF 2027.",
+    translations: {
+      en: { title: "Launching a SaaS in Algeria in 2027: who pays a subscription, how to collect without an international card, and the countdown", subtitle: "The segments that pay and those that will not, the subscription model that works in dinars (annual upfront, CIB/Edahabia, resellers), compliant invoicing, and the eight months to be live by spring 2027", excerpt: "Algerian companies pay subscriptions when the software stops a measurable monthly loss. 1,004 online merchants, 15 million online transactions in H1 2026 and a tax reduction planned by the 2027 finance bill for electronic receipts: 2027 is the year a SaaS in dinars becomes normal. Who to target, how to collect, and the calendar from November 2026." },
+      ar: { title: "إطلاق SaaS في الجزائر سنة 2027: من يدفع اشتراكاً، كيف تحصّل بلا بطاقة دولية، والعد التنازلي", subtitle: "القطاعات التي تدفع والتي لن تدفع، نموذج الاشتراك الذي ينجح بالدينار (سنوي مسبق، CIB/الذهبية، موزعون)، الفاتورة المطابقة، والأشهر الثمانية لتكون على الخط في ربيع 2027", excerpt: "تدفع الشركات الجزائرية اشتراكات عندما يوقف البرنامج خسارة شهرية قابلة للقياس. 1 004 تاجر إلكتروني و15 مليون معاملة عبر الإنترنت في السداسي الأول 2026 وتخفيض ضريبي في مشروع قانون المالية 2027 لمن يحصّل إلكترونياً: 2027 هي سنة يصبح فيها SaaS بالدينار أمراً عادياً." }
+    }
+  },
+  {
     id: "157",
     slug: "ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026",
     title: "Je gère une école privée et tout est sur papier : inscriptions, paiements par tranches, présences, parents sur WhatsApp. Par où commencer (Algérie, 2026)",
