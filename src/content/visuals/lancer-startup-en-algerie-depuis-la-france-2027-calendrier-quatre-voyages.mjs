@@ -6,10 +6,10 @@ const T = {
   fr: {
     cover: { eyebrow: 'Diaspora · Lancer en 2027', title: ['Lancer en Algérie', 'depuis la France en 2027 :', 'quatre voyages, douze mois.'], subtitle: 'Ce qui se fait depuis la France et ce qui exige d’être sur place, le montage qui tient, le calendrier qui respecte le Ramadan et l’été, et les quatre voyages qui le rythment.', left: { label: 'Novembre 2026', sub: 'un modèle vu en France, un réseau, des soirs et des week-ends' }, right: { label: 'Octobre 2027', sub: 'société, produit, premiers clients payants, équipe sur place' }, note: 'Algérie · France · 2027' },
     trips: { title: 'Les quatre voyages de 2027', items: [
-      { n: 'NOV–DÉC 2026', label: 'Le voyage des entretiens', sub: 'Vingt entretiens avec de futurs clients, le choix de l’associé opérationnel, le dossier de société ouvert, le studio choisi sur cadrage écrit.' },
-      { n: 'MARS 2027', label: 'Le voyage de la banque', sub: 'Après l’Aïd : compte bancaire, dossier web-marchand, label startup déposé, cinq clients pilotes signés sur le prototype.' },
-      { n: 'JUIL–AOÛT 2027', label: 'Le voyage du lancement', sub: 'L’été où la diaspora rentre : produit en ligne, premiers payants, présence terrain quotidienne, recrutement du premier commercial.', accent: true },
-      { n: 'OCT 2027', label: 'Le voyage de la rentrée', sub: 'Chiffres des trois premiers mois, correction du produit, deuxième ville, décision de passer à plein temps ou pas.' },
+      { n: 'NOV–DÉC 2026', label: 'Le voyage des entretiens', sub: 'Vingt entretiens clients, choix de l’associé opérationnel, dossier de société ouvert, studio choisi sur cadrage écrit.' },
+      { n: 'MARS 2027', label: 'Le voyage de la banque', sub: 'Après l’Aïd : compte bancaire, dossier web-marchand, label startup déposé, cinq pilotes signés sur le prototype.' },
+      { n: 'JUIL–AOÛT 2027', label: 'Le voyage du lancement', sub: 'L’été où la diaspora rentre : produit en ligne, premiers payants, terrain chaque jour, premier commercial recruté.', accent: true },
+      { n: 'OCT 2027', label: 'Le voyage de la rentrée', sub: 'Chiffres des trois premiers mois, produit corrigé, deuxième ville, décision : plein temps ou pas.' },
     ], caption: 'Figure 1 · Quatre voyages, pas douze. Entre deux, l’associé sur place et le studio avancent ; le fondateur pilote le soir et le week-end.', alt: 'Quatre voyages : novembre-décembre 2026 entretiens et dossier, mars 2027 banque et pilotes après l’Aïd, juillet-août 2027 lancement pendant l’été de la diaspora, octobre 2027 rentrée et chiffres.' },
     where: { title: 'Ce qui se fait depuis la France, et ce qui exige d’être en Algérie', columns: ['Depuis la France', 'Sur place'], rows: [
       { label: 'Entretiens avec les futurs clients', cells: ['La moitié en visio, via le réseau familial et professionnel', 'L’autre moitié en face à face : on voit la boutique, l’entrepôt, le cahier'] },
@@ -40,10 +40,10 @@ const T = {
   en: {
     cover: { eyebrow: 'Diaspora · Launching in 2027', title: ['Launching in Algeria', 'from France in 2027:', 'four trips, twelve months.'], subtitle: 'What can be done from France and what requires being there, the setup that holds, the calendar that respects Ramadan and summer, and the four trips that pace it.', left: { label: 'November 2026', sub: 'a model seen in France, a network, evenings and weekends' }, right: { label: 'October 2027', sub: 'company, product, first paying customers, team on site' }, note: 'Algeria · France · 2027' },
     trips: { title: 'The four trips of 2027', items: [
-      { n: 'NOV–DEC 2026', label: 'The interviews trip', sub: 'Twenty interviews with future customers, the choice of the operating partner, the company file opened, the studio chosen on a written scope.' },
-      { n: 'MARCH 2027', label: 'The bank trip', sub: 'After Eid: bank account, online-merchant file, startup label submitted, five pilot customers signed on the prototype.' },
-      { n: 'JUL–AUG 2027', label: 'The launch trip', sub: 'The summer the diaspora comes home: product live, first payers, daily field presence, first salesperson hired.', accent: true },
-      { n: 'OCT 2027', label: 'The back-to-school trip', sub: 'Numbers of the first three months, product corrections, second city, decision to go full time or not.' },
+      { n: 'NOV–DEC 2026', label: 'The interviews trip', sub: 'Twenty customer interviews, operating partner chosen, company file opened, studio chosen on a written scope.' },
+      { n: 'MARCH 2027', label: 'The bank trip', sub: 'After Eid: bank account, online-merchant file, startup label submitted, five pilots signed on the prototype.' },
+      { n: 'JUL–AUG 2027', label: 'The launch trip', sub: 'The summer the diaspora comes home: product live, first payers, field every day, first salesperson hired.', accent: true },
+      { n: 'OCT 2027', label: 'The back-to-school trip', sub: 'Numbers of the first three months, product fixed, second city, decision: full time or not.' },
     ], caption: 'Figure 1 · Four trips, not twelve. In between, the partner on site and the studio move forward; the founder steers in the evenings and at weekends.', alt: 'Four trips: November-December 2026 interviews and file, March 2027 bank and pilots after Eid, July-August 2027 launch during the diaspora summer, October 2027 back-to-school and numbers.' },
     where: { title: 'What can be done from France, and what requires being in Algeria', columns: ['From France', 'On site'], rows: [
       { label: 'Interviews with future customers', cells: ['Half by video, through the family and professional network', 'The other half face to face: you see the shop, the warehouse, the notebook'] },
@@ -74,10 +74,10 @@ const T = {
   ar: {
     cover: { eyebrow: 'الجالية · الإطلاق في 2027', title: ['الإطلاق في الجزائر', 'من فرنسا سنة 2027:', 'أربع رحلات، اثنا عشر شهراً.'], subtitle: 'ما يُنجز من فرنسا وما يتطلب الحضور، التركيبة التي تصمد، الجدول الذي يحترم رمضان والصيف، والرحلات الأربع التي تضبط إيقاعه.', left: { label: 'نوفمبر 2026', sub: 'نموذج رأيته في فرنسا، شبكة علاقات، أمسيات وعطل نهاية الأسبوع' }, right: { label: 'أكتوبر 2027', sub: 'شركة، منتج، أول زبائن يدفعون، فريق في الميدان' }, note: 'الجزائر · فرنسا · 2027' },
     trips: { title: 'الرحلات الأربع لسنة 2027', items: [
-      { n: 'نوف–ديس 2026', label: 'رحلة المقابلات', sub: 'عشرون مقابلة مع زبائن مستقبليين، اختيار الشريك التشغيلي، فتح ملف الشركة، اختيار الاستوديو على تأطير مكتوب.' },
+      { n: 'نوف–ديس 2026', label: 'رحلة المقابلات', sub: 'عشرون مقابلة مع الزبائن، اختيار الشريك التشغيلي، فتح ملف الشركة، استوديو مختار على تأطير مكتوب.' },
       { n: 'مارس 2027', label: 'رحلة البنك', sub: 'بعد العيد: حساب بنكي، ملف التاجر الإلكتروني، إيداع علامة ستارت-أب، خمسة زبائن تجريبيين موقَّعون على النموذج.' },
-      { n: 'جوي–أوت 2027', label: 'رحلة الإطلاق', sub: 'صيف عودة الجالية: المنتج على الخط، أول الدافعين، حضور ميداني يومي، توظيف أول مندوب تجاري.', accent: true },
-      { n: 'أكت 2027', label: 'رحلة الدخول', sub: 'أرقام الأشهر الثلاثة الأولى، تصحيح المنتج، مدينة ثانية، قرار التفرغ الكامل أو لا.' },
+      { n: 'جوي–أوت 2027', label: 'رحلة الإطلاق', sub: 'صيف عودة الجالية: المنتج على الخط، أول الدافعين، ميدان كل يوم، توظيف أول مندوب تجاري.', accent: true },
+      { n: 'أكت 2027', label: 'رحلة الدخول', sub: 'أرقام الأشهر الثلاثة الأولى، منتج مصحَّح، مدينة ثانية، قرار: تفرغ كامل أو لا.' },
     ], caption: 'الشكل 1 · أربع رحلات لا اثنتا عشرة. بينها يتقدم الشريك في الميدان والاستوديو؛ ويقود المؤسس مساءً وفي نهاية الأسبوع.', alt: 'أربع رحلات بين نوفمبر 2026 وأكتوبر 2027.' },
     where: { title: 'ما يُنجز من فرنسا، وما يتطلب الحضور في الجزائر', columns: ['من فرنسا', 'في الميدان'], rows: [
       { label: 'مقابلات مع الزبائن المستقبليين', cells: ['النصف عبر الفيديو من خلال شبكة العائلة والعمل', 'النصف الآخر وجهاً لوجه: ترى المحل والمستودع والدفتر'] },
