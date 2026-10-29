@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "159",
+    slug: "creer-une-application-mobile-en-algerie-2027-sept-decisions-avant-janvier",
+    title: "Créer une application mobile en Algérie en 2027 : les sept décisions à prendre avant janvier",
+    subtitle: "Ce qui change d'ici fin 2027 (QR interopérable, SoftPos, vérification des développeurs Android, PLF 2027), les sept choix par défaut et quand faire l'inverse, ce qu'il y a dans l'application, et le calendrier pour publier au printemps",
+    excerpt: "Android d'abord, hors-ligne d'abord, paiement CIB/Edahabia et QR dès la première version, identification par téléphone, arabe et français, hébergement documenté, budget de maintenance décidé avant le lancement. Sept décisions qui se prennent en novembre sur une page et coûtent des semaines si elles arrivent en mars. Avec le calendrier pour être sur les stores en mai 2027.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["créer une application mobile en algérie 2027", "application mobile algérie 2027", "développement application android algérie", "paiement dans application cib edahabia", "publier application google play algérie"],
+    metaTitle: "Créer une application mobile en Algérie en 2027 : sept décisions avant janvier | Symloop",
+    metaDescription: "Ce qui change pour une application mobile en Algérie d'ici fin 2027 : QR interopérable, SoftPos, vérification mondiale des développeurs Android, PLF 2027. Les sept décisions à prendre avant janvier (Android d'abord, hors-ligne, paiement, identification, langues, données, maintenance), ce qu'il y a dans l'application et le calendrier pour publier en mai 2027.",
+    translations: {
+      en: { title: "Building a mobile app in Algeria in 2027: the seven decisions to make before January", subtitle: "What changes by the end of 2027 (interoperable QR, SoftPos, Android developer verification, 2027 finance bill), the seven default choices and when to do the opposite, what is inside the app, and the calendar to publish in spring", excerpt: "Android first, offline first, CIB/Edahabia and QR payment from version one, phone identification, Arabic and French, documented hosting, maintenance budget decided before launch. Seven decisions made in November on one page that cost weeks if they arrive in March. With the calendar to be on the stores in May 2027." },
+      ar: { title: "إنشاء تطبيق جوّال في الجزائر سنة 2027: القرارات السبعة قبل جانفي", subtitle: "ما يتغير حتى نهاية 2027 (QR متوافق، SoftPos، التحقق من مطوري أندرويد، مشروع قانون المالية 2027)، الخيارات السبعة الافتراضية ومتى تفعل العكس، ما داخل التطبيق، والجدول للنشر في الربيع", excerpt: "أندرويد أولاً، دون اتصال أولاً، دفع CIB/الذهبية وQR منذ الإصدار الأول، تعريف بالهاتف، عربي وفرنسي، استضافة موثّقة، ميزانية صيانة مقرَّرة قبل الإطلاق. سبعة قرارات تُتخذ في نوفمبر على صفحة واحدة وتكلّف أسابيع إن جاءت في مارس." }
+    }
+  },
+  {
     id: "158",
     slug: "lancer-un-saas-en-algerie-2027-abonnement-paiement-calendrier",
     title: "Lancer un SaaS en Algérie en 2027 : qui paie un abonnement, comment encaisser sans carte internationale, et le calendrier à rebours",
