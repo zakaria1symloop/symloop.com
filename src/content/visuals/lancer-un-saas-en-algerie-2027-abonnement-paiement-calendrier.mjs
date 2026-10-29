@@ -9,7 +9,7 @@ const T = {
       { value: '1 004', label: 'web-marchands actifs fin juin 2026, +55 % en un an' },
       { value: '15,4 M', label: 'transactions en ligne au 1er semestre 2026, +52 %' },
       { value: '23 M', label: 'cartes en circulation : 19 M Edahabia, 4 M CIB' },
-      { value: '−10 %', label: 'd’impôt (PLF 2027) si la moitié des encaissements est électronique', accent: true },
+      { value: '−10 %', label: 'd’impôt (PLF 2027) si 50 % des encaissements sont électroniques', accent: true },
     ], caption: 'Figure 1 · L’obstacle « personne ne paie en ligne » a reculé. En 2027, le projet de loi de finances récompense même les commerçants qui encaissent électroniquement.', alt: 'Quatre chiffres : 1 004 web-marchands fin juin 2026, 15,4 millions de transactions en ligne au premier semestre 2026, 23 millions de cartes dont 19 millions Edahabia et 4 millions CIB, réduction d’impôt de 10 % prévue par le PLF 2027 pour les contribuables dont la moitié des encaissements est électronique.' },
     who: { title: 'Qui paie un abonnement en Algérie, et qui ne paiera pas', columns: ['Chance de payer', 'Pourquoi'], rows: [
       { label: 'Pharmacies, cliniques, cabinets', cells: [2, 'Perte mesurable chaque mois (péremption, impayés), budget existant'] },
@@ -71,7 +71,7 @@ const T = {
       { value: '1 004', label: 'تاجر إلكتروني نشط نهاية جوان 2026، +55 % في سنة' },
       { value: '15,4 م', label: 'معاملة عبر الإنترنت في السداسي الأول 2026، +52 %' },
       { value: '23 م', label: 'بطاقة متداولة: 19 م الذهبية و4 م CIB' },
-      { value: '−10 %', label: 'من الضريبة (مشروع قانون المالية 2027) إن كان نصف التحصيل إلكترونياً', accent: true },
+      { value: '−10 %', label: 'من الضريبة (PLF 2027) إن كان نصف التحصيل إلكترونياً', accent: true },
     ], caption: 'الشكل 1 · تراجعت حجة «لا أحد يدفع عبر الإنترنت». وفي 2027 يكافئ مشروع قانون المالية حتى التجار الذين يحصّلون إلكترونياً.', alt: 'أربعة أرقام عن الدفع الإلكتروني في الجزائر.' },
     who: { title: 'من يدفع اشتراكاً في الجزائر، ومن لن يدفع', columns: ['حظ الدفع', 'لماذا'], rows: [
       { label: 'صيدليات، عيادات، مكاتب', cells: [2, 'خسارة شهرية قابلة للقياس (انتهاء صلاحية، ديون)، ميزانية موجودة'] },
