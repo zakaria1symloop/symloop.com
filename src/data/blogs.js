@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "161",
+    slug: "digitaliser-pme-algerie-2027-feuille-de-route-12-mois-par-ou-commencer",
+    title: "Digitaliser une PME en Algérie en 2027 : par où commencer, dans quel ordre, et la feuille de route sur douze mois",
+    subtitle: "Les quatre paliers dans l'ordre où ils paient (encaisser et facturer, le flux qui perd de l'argent, l'équipe et le client, l'IA), ce qui s'achète en abonnement et ce qui se construit, la pile complète, et le calendrier trimestre par trimestre",
+    excerpt: "Une PME qui vit sur WhatsApp, Excel et un cahier ne se digitalise pas d'un coup. Elle commence par encaisser et facturer, parce que le PLF 2027 récompense l'encaissement électronique, puis outille le seul flux qui lui coûte de l'argent chaque mois, puis l'équipe et le client, et l'IA en dernier parce qu'elle a besoin des données des trois premiers. Un trimestre par palier.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["digitaliser pme algérie 2027", "transformation digitale pme algérie", "digitalisation entreprise algérie par où commencer", "logiciel ou sur mesure pme algérie", "feuille de route digitale 2027"],
+    metaTitle: "Digitaliser une PME en Algérie en 2027 : par où commencer, dans quel ordre, feuille de route 12 mois | Symloop",
+    metaDescription: "Les quatre paliers pour digitaliser une PME algérienne en 2027, dans l'ordre où ils paient : encaisser et facturer (PLF 2027), le flux qui perd de l'argent, l'équipe et le client, l'IA. Ce qui s'achète en abonnement et ce qui se construit, la pile complète fin 2027, et le calendrier trimestre par trimestre.",
+    translations: {
+      en: { title: "Digitising an SME in Algeria in 2027: where to start, in what order, and the twelve-month roadmap", subtitle: "The four steps in the order they pay (collect and invoice, the flow that loses money, the team and the customer, AI), what to buy by subscription and what to build, the full stack, and the quarter-by-quarter calendar", excerpt: "An SME living on WhatsApp, Excel and a notebook does not digitise in one go. It starts by collecting and invoicing, because the 2027 finance bill rewards electronic collection, then equips the one flow that costs it money every month, then the team and the customer, and AI last because it needs the data of the first three. One quarter per step." },
+      ar: { title: "رقمنة مؤسسة صغيرة أو متوسطة في الجزائر سنة 2027: من أين تبدأ، بأي ترتيب، وخارطة طريق اثني عشر شهراً", subtitle: "المراحل الأربع بالترتيب الذي تؤتي فيه ثمارها (التحصيل والفوترة، التدفق الذي يخسر المال، الفريق والزبون، الذكاء الاصطناعي)، ما يُشترى بالاشتراك وما يُبنى، الطبقات الكاملة، والجدول فصلاً بفصل", excerpt: "مؤسسة تعيش على واتساب وإكسل ودفتر لا تُرقمَن دفعة واحدة. تبدأ بالتحصيل والفوترة لأن مشروع قانون المالية 2027 يكافئ التحصيل الإلكتروني، ثم تجهّز التدفق الوحيد الذي يكلّفها المال كل شهر، ثم الفريق والزبون، والذكاء الاصطناعي أخيراً لأنه يحتاج بيانات المراحل الثلاث. فصل لكل مرحلة." }
+    }
+  },
+  {
     id: "160",
     slug: "lancer-startup-en-algerie-depuis-la-france-2027-calendrier-quatre-voyages",
     title: "Lancer sa startup en Algérie depuis la France en 2027 : le calendrier à rebours en quatre voyages",
