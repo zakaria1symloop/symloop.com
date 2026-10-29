@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "168",
+    slug: "apres-jumia-creer-marketplace-ecommerce-algerie-2027-verticale-logistique-paiement",
+    title: "Après Jumia : créer la marketplace e-commerce en Algérie en 2027, verticale, avec la logistique et le paiement maîtrisés (série #07)",
+    subtitle: "Pourquoi le modèle généraliste n'a pas tenu en Algérie, ce qu'une marketplace verticale change sur le paiement, la logistique, le catalogue, l'acquisition et la marge, les quatre verticales où elle tient en 2027, la pile à construire, et le calendrier une verticale, une ville",
+    excerpt: "Jumia a annoncé en février 2026 la fin de ses activités en Algérie après quatorze ans : un marché à environ deux pour cent de son volume, des espèces à la livraison, des refus, des géants chinois. Le généraliste perd sur chaque ligne parce qu'il doit tout faire partout. La marketplace qui tient en 2027 est verticale : pièces auto, matériaux, parapharmacie, reconditionné, avec des vendeurs vérifiés, un paiement qui réduit le refus à la source et des transporteurs partenaires.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["équivalent jumia algérie 2027", "créer marketplace e-commerce algérie", "marketplace verticale algérie", "jumia algérie fermeture remplaçant", "plateforme e-commerce algérie 2027"],
+    metaTitle: "Après Jumia : créer la marketplace e-commerce en Algérie en 2027, verticale, logistique et paiement maîtrisés | Symloop",
+    metaDescription: "Pourquoi le modèle généraliste de Jumia n'a pas tenu en Algérie et ce qu'une marketplace verticale change en 2027 : paiement qui réduit le refus, logistique partenaire, vendeurs vérifiés, marge par les services, conformité PLF 2027. Les quatre verticales qui tiennent, la pile à construire et le calendrier une verticale, une ville.",
+    translations: {
+      en: { title: "After Jumia: building the e-commerce marketplace in Algeria in 2027, vertical, with logistics and payment under control (series #07)", subtitle: "Why the generalist model did not hold in Algeria, what a vertical marketplace changes on payment, logistics, catalogue, acquisition and margin, the four verticals where it holds in 2027, the stack to build, and the one vertical, one city calendar", excerpt: "Jumia announced in February 2026 the end of its activities in Algeria after fourteen years: a market at around two percent of its volume, cash on delivery, refusals, Chinese giants. The generalist loses on every line because it has to do everything everywhere. The marketplace that holds in 2027 is vertical: auto parts, building materials, parapharmacy, refurbished goods, with verified sellers, payment that reduces refusal at the source and partner carriers." },
+      ar: { title: "بعد جوميا: إنشاء سوق التجارة الإلكترونية في الجزائر سنة 2027، متخصصة، باللوجستيك والدفع المضبوطين (السلسلة #07)", subtitle: "لماذا لم يصمد النموذج العام في الجزائر، ما تغيّره السوق المتخصصة في الدفع واللوجستيك والكتالوج والاكتساب والهامش، المجالات الأربعة التي تصمد فيها في 2027، الطبقات التي تُبنى، وجدول مجال واحد مدينة واحدة", excerpt: "أعلنت جوميا في فيفري 2026 نهاية أنشطتها في الجزائر بعد أربعة عشر عاماً: سوق بنحو اثنين بالمئة من حجمها، نقد عند الاستلام، رفض، عمالقة صينيون. تخسر السوق العامة في كل سطر لأنها مضطرة لفعل كل شيء في كل مكان. السوق التي تصمد في 2027 متخصصة: قطع غيار، مواد بناء، شبه صيدلة، أجهزة مجدَّدة، ببائعين متحقَّق منهم ودفع يقلّل الرفض من المصدر وناقلين شركاء." }
+    }
+  },
+  {
     id: "167",
     slug: "creer-equivalent-booking-algerie-2027-reservation-hotels-depuis-la-france",
     title: "Créer l'équivalent de Booking en Algérie en 2027 : réserver un hôtel depuis la France, payer sur place (série #06)",
