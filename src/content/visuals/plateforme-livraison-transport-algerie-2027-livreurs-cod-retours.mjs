@@ -27,8 +27,8 @@ const T = {
       { label: 'Données et IA', items: [{ name: 'Confirmation automatisée AR/FR, prédiction de refus', sub: 'une base, hébergement loi 18-07' }] },
     ], caption: 'Figure 3 · Le portail e-commerçant est ce qui se vend. L’application livreur hors-ligne est ce qui fait que les chiffres du portail sont vrais.', alt: 'Cinq couches : portail e-commerçant et suivi client ; application livreur hors-ligne et paiement à la porte ; back-office de dispatch ; COD encaissé et versé, factures ; données et IA.' },
     timeline: { title: 'Huit mois : une wilaya pilote avant le réseau', unit: 'mois', items: [
-      { label: 'Cadrage avec cinq e-commerçants et le dispatch', note: 'les règles réelles de tri, de COD et de retour', from: 0, to: 1 },
-      { label: 'Application livreur : tournée, scan, preuve, COD', note: 'hors-ligne, testée sur les téléphones des livreurs', from: 1, to: 4 },
+      { label: 'Cadrage avec cinq e-commerçants', note: 'les règles réelles de tri, de COD et de retour', from: 0, to: 1 },
+      { label: 'Application livreur : tournée, scan, COD', note: 'hors-ligne, testée sur les téléphones des livreurs', from: 1, to: 4 },
       { label: 'Portail e-commerçant et versements COD', note: 'import boutique, suivi, relevés, facture', from: 3, to: 6 },
       { label: 'Pilote : une wilaya, cinq e-commerçants', note: 'taux de refus et délai de versement mesurés', from: 6, to: 7 },
       { label: 'Paiement à la porte et confirmation IA', note: 'SoftPos, QR, confirmation automatisée ; puis le réseau', from: 7, to: 8, accent: true },
@@ -58,8 +58,8 @@ const T = {
       { label: 'Data and AI', items: [{ name: 'Automated AR/FR confirmation, refusal prediction', sub: 'one base, Law 18-07 hosting' }] },
     ], caption: 'Figure 3 · The e-merchant portal is what sells. The offline courier app is what makes the portal’s numbers true.', alt: 'Five layers: e-merchant portal and customer tracking; offline courier app and payment at the door; dispatch back-office; COD collected and paid out, invoices; data and AI.' },
     timeline: { title: 'Eight months: one pilot wilaya before the network', unit: 'months', items: [
-      { label: 'Scoping with five e-merchants and dispatch', note: 'the real rules of sorting, COD and returns', from: 0, to: 1 },
-      { label: 'Courier app: round, scan, proof, COD', note: 'offline, tested on the couriers’ own phones', from: 1, to: 4 },
+      { label: 'Scoping with five e-merchants', note: 'the real rules of sorting, COD and returns', from: 0, to: 1 },
+      { label: 'Courier app: round, scan, COD', note: 'offline, tested on the couriers’ own phones', from: 1, to: 4 },
       { label: 'E-merchant portal and COD payouts', note: 'shop import, tracking, statements, invoice', from: 3, to: 6 },
       { label: 'Pilot: one wilaya, five e-merchants', note: 'refusal rate and payout delay measured', from: 6, to: 7 },
       { label: 'Payment at the door and AI confirmation', note: 'SoftPos, QR, automated confirmation; then the network', from: 7, to: 8, accent: true },
@@ -89,8 +89,8 @@ const T = {
       { label: 'البيانات والذكاء الاصطناعي', items: [{ name: 'تأكيد آلي عربي/فرنسي، توقّع الرفض', sub: 'قاعدة واحدة، استضافة القانون 18-07' }] },
     ], caption: 'الشكل 3 · بوابة التاجر هي ما يُباع. تطبيق الموصّل دون اتصال هو ما يجعل أرقام البوابة صحيحة.', alt: 'خمس طبقات لمنصة توصيل في الجزائر 2027.' },
     timeline: { title: 'ثمانية أشهر: ولاية تجريبية قبل الشبكة', unit: 'أشهر', items: [
-      { label: 'تأطير مع خمسة تجار وقسم التوزيع', note: 'القواعد الحقيقية للفرز والدفع عند الاستلام والإرجاع', from: 0, to: 1 },
-      { label: 'تطبيق الموصّل: جولة، مسح، إثبات، مبلغ', note: 'دون اتصال، مختبَر على هواتف الموصّلين', from: 1, to: 4 },
+      { label: 'تأطير مع خمسة تجار', note: 'القواعد الحقيقية للفرز والدفع عند الاستلام والإرجاع', from: 0, to: 1 },
+      { label: 'تطبيق الموصّل: جولة، مسح، مبلغ', note: 'دون اتصال، مختبَر على هواتف الموصّلين', from: 1, to: 4 },
       { label: 'بوابة التاجر وتحويلات المبالغ', note: 'استيراد المتجر، تتبع، كشوف، فاتورة', from: 3, to: 6 },
       { label: 'تجربة: ولاية واحدة، خمسة تجار', note: 'قياس نسبة الرفض وأجل التحويل', from: 6, to: 7 },
       { label: 'دفع عند الباب وتأكيد بالذكاء الاصطناعي', note: 'SoftPos، QR، تأكيد آلي؛ ثم الشبكة', from: 7, to: 8, accent: true },
