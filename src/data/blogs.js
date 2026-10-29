@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "165",
+    slug: "application-a-ma-marque-ou-super-app-marketplace-algerie-2027",
+    title: "Faut-il une application à ma marque en 2027, ou vendre via les super-apps et les marketplaces ? (Algérie)",
+    subtitle: "L'échelle à monter dans l'ordre, de WhatsApp Business à l'application à votre marque en passant par les plateformes et la commande en ligne, le verdict par type de marque, ce qu'on cède à une plateforme (client, marge, données) contre ce qu'elle apporte (trafic), et le calendrier 2027 où l'application se décide sur des chiffres",
+    excerpt: "Les plateformes vendent ce que le client achète une fois ; l'application à votre marque garde celui qui revient. En 2027, une marque algérienne monte l'échelle dans l'ordre : WhatsApp Business tenu, présence sur les super-apps et marketplaces pour acquérir, commande en ligne à sa marque pour posséder ses clients et ses données, puis l'application quand les chiffres montrent que des clients reviennent chaque semaine. Pas avant, pas sur une intuition.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "10 min", featured: true,
+    tags: ["application à ma marque ou marketplace algérie 2027", "super-app algérie vendre", "créer application restaurant algérie", "application fidélité marque algérie", "commande en ligne à sa marque"],
+    metaTitle: "Application à ma marque ou super-apps et marketplaces en 2027 ? Le verdict par type de marque (Algérie) | Symloop",
+    metaDescription: "L'échelle à monter dans l'ordre en 2027 (WhatsApp Business, super-apps et marketplaces, commande en ligne à votre marque, application à votre marque), le verdict par type de marque, ce que vous cédez à une plateforme contre le trafic qu'elle apporte, et le calendrier où l'application se décide au huitième mois sur des chiffres.",
+    translations: {
+      en: { title: "Do I need my own branded app in 2027, or should I sell through the super-apps and marketplaces? (Algeria)", subtitle: "The ladder to climb in order, from WhatsApp Business to your branded app via the platforms and online ordering, the verdict by brand type, what you give up to a platform (customer, margin, data) against what it brings (traffic), and the 2027 calendar where the app is decided on numbers", excerpt: "Platforms sell what the customer buys once; your branded app keeps the one who comes back. In 2027 an Algerian brand climbs the ladder in order: WhatsApp Business kept, presence on super-apps and marketplaces to acquire, branded online ordering to own its customers and data, then the app when the numbers show customers coming back every week. Not before, not on a hunch." },
+      ar: { title: "هل أحتاج تطبيقاً بعلامتي في 2027، أم أبيع عبر التطبيقات الشاملة والأسواق الإلكترونية؟ (الجزائر)", subtitle: "السلّم الذي يُصعد بالترتيب من واتساب للأعمال إلى تطبيق بعلامتك مروراً بالمنصات والطلب الإلكتروني، الحكم حسب نوع العلامة، ما تتنازل عنه لمنصة (زبون، هامش، بيانات) مقابل ما تجلبه (زيارات)، وجدول 2027 حيث يُقرَّر التطبيق على أرقام", excerpt: "تبيع المنصات ما يشتريه الزبون مرة؛ ويحتفظ تطبيق علامتك بمن يعود. في 2027 تصعد العلامة الجزائرية السلّم بالترتيب: واتساب للأعمال مضبوط، حضور على التطبيقات الشاملة والأسواق للاكتساب، طلب إلكتروني بعلامتها لامتلاك زبائنها وبياناتها، ثم التطبيق حين تُظهر الأرقام زبائن يعودون كل أسبوع." }
+    }
+  },
+  {
     id: "164",
     slug: "plateforme-livraison-transport-algerie-2027-livreurs-cod-retours",
     title: "Une plateforme de livraison en Algérie en 2027 : livreurs, paiement à la livraison, retours, e-commerçants. Ce qu'il faut construire",
