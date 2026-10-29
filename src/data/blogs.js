@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "162",
+    slug: "creer-une-marketplace-en-algerie-2027-commission-tva-paiement-modele",
+    title: "Créer une marketplace en Algérie en 2027 : comment l'argent circule, quel modèle de revenu tient, et ce que le PLF 2027 impose aux plateformes",
+    subtitle: "Le circuit client → plateforme → vendeur avec séquestre et commission facturée, les six modèles de revenu et lesquels tiennent, ce qu'il y a dans une plateforme de mise en relation, les obligations du PLF 2027 (identification, déclaration annuelle, TVA), et le calendrier une ville, une catégorie",
+    excerpt: "Une marketplace qui laisse le client payer le vendeur directement n'a ni commission, ni données, ni raison d'exister. En 2027, l'argent passe par la plateforme : carte, QR ou espèces enregistrées, séquestre jusqu'à la livraison, commission facturée avec TVA, reversement au vendeur. Le PLF 2027 ajoute l'identification au fisc et une déclaration annuelle. Un modèle de revenu au lancement, trente vendeurs recrutés avant le code, une ville, une catégorie.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "12 min", featured: true,
+    tags: ["créer une marketplace en algérie 2027", "plateforme de mise en relation algérie", "commission marketplace algérie", "plf 2027 plateformes tva", "paiement séquestre marketplace"],
+    metaTitle: "Créer une marketplace en Algérie en 2027 : circuit de l'argent, modèle de revenu, PLF 2027 | Symloop",
+    metaDescription: "Comment l'argent circule dans une marketplace algérienne (paiement à la plateforme, séquestre, commission facturée avec TVA, reversement), les modèles de revenu qui tiennent en Algérie, ce qu'il y a dans une plateforme de mise en relation, ce que le PLF 2027 impose aux plateformes locales et étrangères, et le calendrier pour lancer une ville, une catégorie en 2027.",
+    translations: {
+      en: { title: "Building a marketplace in Algeria in 2027: how the money flows, which revenue model holds, and what the 2027 finance bill imposes on platforms", subtitle: "The customer → platform → seller circuit with escrow and invoiced commission, the six revenue models and which ones hold, what is inside a marketplace platform, the 2027 finance bill obligations (registration, annual declaration, VAT), and the one city, one category calendar", excerpt: "A marketplace that lets the customer pay the seller directly has no commission, no data and no reason to exist. In 2027 the money goes through the platform: card, QR or recorded cash, escrow until delivery, commission invoiced with VAT, payout to the seller. The 2027 finance bill adds tax registration and an annual declaration. One revenue model at launch, thirty sellers recruited before the code, one city, one category." },
+      ar: { title: "إنشاء سوق إلكترونية في الجزائر سنة 2027: كيف يتحرك المال، أي نموذج إيراد يصمد، وما يفرضه مشروع قانون المالية 2027 على المنصات", subtitle: "دورة الزبون ← المنصة ← البائع بحجز وعمولة مفوترة، نماذج الإيراد الستة وأيها يصمد، ما داخل منصة وساطة، التزامات مشروع قانون المالية 2027 (تعريف، تصريح سنوي، TVA)، وجدول مدينة واحدة فئة واحدة", excerpt: "سوق تترك الزبون يدفع للبائع مباشرة لا عمولة لها ولا بيانات ولا سبب لوجودها. في 2027 يمر المال عبر المنصة: بطاقة أو QR أو نقد مسجَّل، حجز حتى التسليم، عمولة مفوترة بـTVA، تحويل للبائع. يضيف مشروع قانون المالية 2027 التعريف لدى الضرائب وتصريحاً سنوياً. نموذج إيراد واحد عند الإطلاق، ثلاثون بائعاً قبل الكود، مدينة واحدة، فئة واحدة." }
+    }
+  },
+  {
     id: "161",
     slug: "digitaliser-pme-algerie-2027-feuille-de-route-12-mois-par-ou-commencer",
     title: "Digitaliser une PME en Algérie en 2027 : par où commencer, dans quel ordre, et la feuille de route sur douze mois",
