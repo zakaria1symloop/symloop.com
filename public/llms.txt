@@ -473,6 +473,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/plateforme-livraison-transport-algerie-2027-livreurs-cod-retours/
   - Faut-il une application à ma marque en 2027, ou vendre via les super-apps et les marketplaces ?
       https://symloop.com/fr/blog/application-a-ma-marque-ou-super-app-marketplace-algerie-2027/
+  - Mon application est bloquée chez un développeur qui a disparu : reprendre le projet en 2027
+      https://symloop.com/fr/blog/mon-application-bloquee-chez-un-developpeur-disparu-reprendre-projet-algerie-2027/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

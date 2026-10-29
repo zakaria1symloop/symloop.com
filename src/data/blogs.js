@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "166",
+    slug: "mon-application-bloquee-chez-un-developpeur-disparu-reprendre-projet-algerie-2027",
+    title: "Mon application est bloquée chez un développeur qui a disparu : reprendre le projet en 2027 (Algérie)",
+    subtitle: "Ce qui se récupère et comment (stores, domaine, hébergement, code, données, clés), l'audit qui décide entre garder, réparer et réécrire, pourquoi 2027 rend la reprise urgente, le kit de propriété pour que ça n'arrive plus, et les six semaines de la reprise",
+    excerpt: "Un prestataire qui ne répond plus, des comptes à son nom, un code introuvable, une application figée que les stores vont bientôt retirer : la reprise se fait en quatre étapes, inventaire, récupération actif par actif, audit, remise en route, en six semaines. La décision de réécrire se prend sur l'audit, pas sur la colère. Et le kit de propriété, comptes, code, clés, contrat, documentation, fait que cela n'arrive plus.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["développeur disparu récupérer application", "reprendre projet application abandonné algérie", "récupérer code source prestataire", "transfert application google play app store", "audit application mobile algérie 2027"],
+    metaTitle: "Mon application est bloquée chez un développeur qui a disparu : reprendre le projet en 2027 (Algérie) | Symloop",
+    metaDescription: "Comment reprendre une application abandonnée par son développeur en Algérie en 2027 : inventaire des actifs, récupération des comptes stores, du domaine, de l'hébergement, du code, des données et des clés, audit qui décide entre garder, réparer et réécrire, kit de propriété pour que ça n'arrive plus, et calendrier de six semaines.",
+    translations: {
+      en: { title: "My app is stuck with a developer who vanished: taking the project back in 2027 (Algeria)", subtitle: "What can be recovered and how (stores, domain, hosting, code, data, keys), the audit that decides between keeping, repairing and rewriting, why 2027 makes the takeover urgent, the ownership kit so it never happens again, and the six weeks of the takeover", excerpt: "A vendor who no longer answers, accounts in their name, code nowhere to be found, a frozen app the stores will soon remove: the takeover happens in four steps, inventory, asset-by-asset recovery, audit, restart, in six weeks. The decision to rewrite is made on the audit, not on anger. And the ownership kit, accounts, code, keys, contract, documentation, makes sure it never happens again." },
+      ar: { title: "تطبيقي معلّق عند مطوّر اختفى: استعادة المشروع في 2027 (الجزائر)", subtitle: "ما يُسترجع وكيف (متاجر، نطاق، استضافة، كود، بيانات، مفاتيح)، التدقيق الذي يحسم بين الاحتفاظ والإصلاح وإعادة الكتابة، لماذا تجعل 2027 الاستعادة عاجلة، عدّة الملكية حتى لا يتكرر ذلك، والأسابيع الستة للاستعادة", excerpt: "مزوّد لم يعد يجيب، حسابات باسمه، كود مفقود، تطبيق متجمّد ستسحبه المتاجر قريباً: تتم الاستعادة في أربع خطوات، جرد، استرجاع أصلاً أصلاً، تدقيق، إعادة تشغيل، في ستة أسابيع. قرار إعادة الكتابة يُتخذ على التدقيق لا على الغضب. وعدّة الملكية تجعل ذلك لا يتكرر." }
+    }
+  },
+  {
     id: "165",
     slug: "application-a-ma-marque-ou-super-app-marketplace-algerie-2027",
     title: "Faut-il une application à ma marque en 2027, ou vendre via les super-apps et les marketplaces ? (Algérie)",
