@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "169",
+    slug: "combien-de-temps-pour-developper-application-plateforme-algerie-2027-delais-reels",
+    title: "Combien de temps pour développer une application ou une plateforme en Algérie en 2027 ? Les délais réels, par type de projet",
+    subtitle: "Les délais de construction par type de projet (site de commande, application mobile, SaaS, plateforme, agent IA, reprise), ce qui les fait durer et ne dépend de personne (web-marchand, stores, administration), les cinq phases et qui tient chacune, et un calendrier réel de seize semaines",
+    excerpt: "Un site de commande se construit en six à dix semaines, une application mobile avec back-office en trois à cinq mois, un SaaS en quatre à six, une plateforme à deux faces en cinq à huit. Ce qui fait qu'un projet de trois mois en prend six n'est presque jamais le code : c'est le dossier web-marchand lancé trop tard, les comptes stores, les données à reprendre, et les validations qui attendent. Un calendrier honnête a cinq lignes, pas une.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "10 min", featured: true,
+    tags: ["combien de temps développer application mobile algérie", "délai développement application 2027", "durée projet application plateforme algérie", "combien de temps créer plateforme algérie", "calendrier développement application"],
+    metaTitle: "Combien de temps pour développer une application ou une plateforme en Algérie en 2027 ? Délais réels | Symloop",
+    metaDescription: "Les délais réels par type de projet en Algérie en 2027 : site de commande, application mobile, SaaS, plateforme, agent IA, reprise. Ce qui fait durer un projet et ne dépend de personne (statut de web-marchand, comptes stores, administration), les cinq phases, et un calendrier réel de seize semaines pour une application avec back-office.",
+    translations: {
+      en: { title: "How long does it take to build an app or a platform in Algeria in 2027? Real timelines by project type", subtitle: "Build times by project type (ordering site, mobile app, SaaS, platform, AI agent, takeover), what makes them longer and depends on nobody (merchant status, stores, administration), the five phases and who holds each, and a real sixteen-week calendar", excerpt: "An ordering site is built in six to ten weeks, a mobile app with back-office in three to five months, a SaaS in four to six, a two-sided platform in five to eight. What turns a three-month project into six is almost never the code: it is the merchant file started too late, the store accounts, the data to import, and the sign-offs that wait. An honest calendar has five lines, not one." },
+      ar: { title: "كم من الوقت لتطوير تطبيق أو منصة في الجزائر سنة 2027؟ الآجال الحقيقية حسب نوع المشروع", subtitle: "آجال البناء حسب نوع المشروع (موقع طلب، تطبيق جوّال، SaaS، منصة، وكيل ذكاء اصطناعي، استعادة)، ما يطيلها ولا يعتمد على أحد (التاجر الإلكتروني، المتاجر، الإدارة)، المراحل الخمس ومن يمسك كلاً منها، وجدول حقيقي من ستة عشر أسبوعاً", excerpt: "يُبنى موقع الطلب في ستة إلى عشرة أسابيع، وتطبيق جوّال بمكتب خلفي في ثلاثة إلى خمسة أشهر، وSaaS في أربعة إلى ستة، ومنصة بوجهين في خمسة إلى ثمانية. ما يجعل مشروع ثلاثة أشهر يستغرق ستة ليس الكود تقريباً أبداً: بل ملف التاجر الإلكتروني المنطلق متأخراً، حسابات المتاجر، البيانات التي تُسترجع، والمصادقات التي تنتظر." }
+    }
+  },
+  {
     id: "168",
     slug: "apres-jumia-creer-marketplace-ecommerce-algerie-2027-verticale-logistique-paiement",
     title: "Après Jumia : créer la marketplace e-commerce en Algérie en 2027, verticale, avec la logistique et le paiement maîtrisés (série #07)",
