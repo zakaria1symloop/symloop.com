@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "163",
+    slug: "agent-ia-entreprise-algerie-2027-par-ou-commencer-ce-qui-marche",
+    title: "Mettre un agent IA dans mon entreprise en Algérie en 2027 : par où commencer, ce qui marche, ce qui doit exister avant",
+    subtitle: "Les sept usages classés par gain pour une PME algérienne, les quatre niveaux d'autonomie à franchir dans l'ordre (il répond, il propose, il agit dans des limites, il rend compte), comment l'agent s'insère dans l'entreprise, où il tourne et comment on le paie, et les six mois pour y arriver",
+    excerpt: "Un agent IA ne travaille que s'il a quelque chose à lire et quelque chose à faire : un échéancier pour relancer, des règles pour répondre, un back-office où écrire. Les trois usages qui paient en Algérie, relances, support en arabe, français et darija, qualification des demandes WhatsApp, ont ce prérequis. Ensuite, un niveau d'autonomie à la fois, du répondeur à l'agent qui agit dans des limites et rend compte.",
+    category: "Intelligence artificielle", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["agent ia entreprise algérie 2027", "intelligence artificielle pme algérie", "chatbot whatsapp entreprise algérie", "ia relances clients", "automatisation ia entreprise algérie"],
+    metaTitle: "Un agent IA dans mon entreprise en Algérie en 2027 : par où commencer, ce qui marche | Symloop",
+    metaDescription: "Les usages d'un agent IA qui paient pour une PME algérienne (relances, support trilingue, qualification WhatsApp) et ceux qui ne servent à rien, ce qui doit exister avant, les quatre niveaux d'autonomie à franchir dans l'ordre, comment l'agent s'insère dans l'entreprise, où il tourne et comment on le paie depuis l'Algérie, et le calendrier sur six mois pour 2027.",
+    translations: {
+      en: { title: "Putting an AI agent in my company in Algeria in 2027: where to start, what works, what must exist first", subtitle: "The seven uses ranked by gain for an Algerian SME, the four autonomy levels to climb in order (it answers, it proposes, it acts within limits, it reports), how the agent fits into the company, where it runs and how it is paid, and the six months to get there", excerpt: "An AI agent only works if it has something to read and something to do: a schedule to follow up, rules to answer from, a back-office to write into. The three uses that pay in Algeria, reminders, support in Arabic, French and darija, qualifying WhatsApp requests, share that prerequisite. Then one autonomy level at a time, from the answering machine to the agent that acts within limits and reports." },
+      ar: { title: "إدخال وكيل ذكاء اصطناعي في شركتي في الجزائر سنة 2027: من أين أبدأ، ما ينجح، وما يجب أن يوجد قبله", subtitle: "الاستخدامات السبعة مرتبة حسب الفائدة لمؤسسة جزائرية، مستويات الاستقلالية الأربعة التي تُجتاز بالترتيب (يجيب، يقترح، يتصرف ضمن حدود، يقدّم تقريراً)، كيف يندمج الوكيل في الشركة، أين يعمل وكيف يُدفع ثمنه، والأشهر الستة للوصول", excerpt: "لا يعمل وكيل الذكاء الاصطناعي إلا إن كان لديه ما يقرأ وما يفعل: جدول استحقاقات ليذكّر، قواعد ليجيب، مكتب خلفي ليكتب فيه. الاستخدامات الثلاثة المجدية في الجزائر، التذكيرات، الدعم بالعربية والفرنسية والدارجة، تأهيل طلبات واتساب، لها هذا الشرط. ثم مستوى استقلالية واحد في كل مرة." }
+    }
+  },
+  {
     id: "162",
     slug: "creer-une-marketplace-en-algerie-2027-commission-tva-paiement-modele",
     title: "Créer une marketplace en Algérie en 2027 : comment l'argent circule, quel modèle de revenu tient, et ce que le PLF 2027 impose aux plateformes",
