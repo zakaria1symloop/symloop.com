@@ -3,6 +3,516 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "169",
+    slug: "combien-de-temps-pour-developper-application-plateforme-algerie-2027-delais-reels",
+    title: "Combien de temps pour développer une application ou une plateforme en Algérie en 2027 ? Les délais réels, par type de projet",
+    subtitle: "Les délais de construction par type de projet (site de commande, application mobile, SaaS, plateforme, agent IA, reprise), ce qui les fait durer et ne dépend de personne (web-marchand, stores, administration), les cinq phases et qui tient chacune, et un calendrier réel de seize semaines",
+    excerpt: "Un site de commande se construit en six à dix semaines, une application mobile avec back-office en trois à cinq mois, un SaaS en quatre à six, une plateforme à deux faces en cinq à huit. Ce qui fait qu'un projet de trois mois en prend six n'est presque jamais le code : c'est le dossier web-marchand lancé trop tard, les comptes stores, les données à reprendre, et les validations qui attendent. Un calendrier honnête a cinq lignes, pas une.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "10 min", featured: true,
+    tags: ["combien de temps développer application mobile algérie", "délai développement application 2027", "durée projet application plateforme algérie", "combien de temps créer plateforme algérie", "calendrier développement application"],
+    metaTitle: "Combien de temps pour développer une application ou une plateforme en Algérie en 2027 ? Délais réels | Symloop",
+    metaDescription: "Les délais réels par type de projet en Algérie en 2027 : site de commande, application mobile, SaaS, plateforme, agent IA, reprise. Ce qui fait durer un projet et ne dépend de personne (statut de web-marchand, comptes stores, administration), les cinq phases, et un calendrier réel de seize semaines pour une application avec back-office.",
+    translations: {
+      en: { title: "How long does it take to build an app or a platform in Algeria in 2027? Real timelines by project type", subtitle: "Build times by project type (ordering site, mobile app, SaaS, platform, AI agent, takeover), what makes them longer and depends on nobody (merchant status, stores, administration), the five phases and who holds each, and a real sixteen-week calendar", excerpt: "An ordering site is built in six to ten weeks, a mobile app with back-office in three to five months, a SaaS in four to six, a two-sided platform in five to eight. What turns a three-month project into six is almost never the code: it is the merchant file started too late, the store accounts, the data to import, and the sign-offs that wait. An honest calendar has five lines, not one." },
+      ar: { title: "كم من الوقت لتطوير تطبيق أو منصة في الجزائر سنة 2027؟ الآجال الحقيقية حسب نوع المشروع", subtitle: "آجال البناء حسب نوع المشروع (موقع طلب، تطبيق جوّال، SaaS، منصة، وكيل ذكاء اصطناعي، استعادة)، ما يطيلها ولا يعتمد على أحد (التاجر الإلكتروني، المتاجر، الإدارة)، المراحل الخمس ومن يمسك كلاً منها، وجدول حقيقي من ستة عشر أسبوعاً", excerpt: "يُبنى موقع الطلب في ستة إلى عشرة أسابيع، وتطبيق جوّال بمكتب خلفي في ثلاثة إلى خمسة أشهر، وSaaS في أربعة إلى ستة، ومنصة بوجهين في خمسة إلى ثمانية. ما يجعل مشروع ثلاثة أشهر يستغرق ستة ليس الكود تقريباً أبداً: بل ملف التاجر الإلكتروني المنطلق متأخراً، حسابات المتاجر، البيانات التي تُسترجع، والمصادقات التي تنتظر." }
+    }
+  },
+  {
+    id: "168",
+    slug: "apres-jumia-creer-marketplace-ecommerce-algerie-2027-verticale-logistique-paiement",
+    title: "Après Jumia : créer la marketplace e-commerce en Algérie en 2027, verticale, avec la logistique et le paiement maîtrisés (série #07)",
+    subtitle: "Pourquoi le modèle généraliste n'a pas tenu en Algérie, ce qu'une marketplace verticale change sur le paiement, la logistique, le catalogue, l'acquisition et la marge, les quatre verticales où elle tient en 2027, la pile à construire, et le calendrier une verticale, une ville",
+    excerpt: "Jumia a annoncé en février 2026 la fin de ses activités en Algérie après quatorze ans : un marché à environ deux pour cent de son volume, des espèces à la livraison, des refus, des géants chinois. Le généraliste perd sur chaque ligne parce qu'il doit tout faire partout. La marketplace qui tient en 2027 est verticale : pièces auto, matériaux, parapharmacie, reconditionné, avec des vendeurs vérifiés, un paiement qui réduit le refus à la source et des transporteurs partenaires.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["équivalent jumia algérie 2027", "créer marketplace e-commerce algérie", "marketplace verticale algérie", "jumia algérie fermeture remplaçant", "plateforme e-commerce algérie 2027"],
+    metaTitle: "Après Jumia : créer la marketplace e-commerce en Algérie en 2027, verticale, logistique et paiement maîtrisés | Symloop",
+    metaDescription: "Pourquoi le modèle généraliste de Jumia n'a pas tenu en Algérie et ce qu'une marketplace verticale change en 2027 : paiement qui réduit le refus, logistique partenaire, vendeurs vérifiés, marge par les services, conformité PLF 2027. Les quatre verticales qui tiennent, la pile à construire et le calendrier une verticale, une ville.",
+    translations: {
+      en: { title: "After Jumia: building the e-commerce marketplace in Algeria in 2027, vertical, with logistics and payment under control (series #07)", subtitle: "Why the generalist model did not hold in Algeria, what a vertical marketplace changes on payment, logistics, catalogue, acquisition and margin, the four verticals where it holds in 2027, the stack to build, and the one vertical, one city calendar", excerpt: "Jumia announced in February 2026 the end of its activities in Algeria after fourteen years: a market at around two percent of its volume, cash on delivery, refusals, Chinese giants. The generalist loses on every line because it has to do everything everywhere. The marketplace that holds in 2027 is vertical: auto parts, building materials, parapharmacy, refurbished goods, with verified sellers, payment that reduces refusal at the source and partner carriers." },
+      ar: { title: "بعد جوميا: إنشاء سوق التجارة الإلكترونية في الجزائر سنة 2027، متخصصة، باللوجستيك والدفع المضبوطين (السلسلة #07)", subtitle: "لماذا لم يصمد النموذج العام في الجزائر، ما تغيّره السوق المتخصصة في الدفع واللوجستيك والكتالوج والاكتساب والهامش، المجالات الأربعة التي تصمد فيها في 2027، الطبقات التي تُبنى، وجدول مجال واحد مدينة واحدة", excerpt: "أعلنت جوميا في فيفري 2026 نهاية أنشطتها في الجزائر بعد أربعة عشر عاماً: سوق بنحو اثنين بالمئة من حجمها، نقد عند الاستلام، رفض، عمالقة صينيون. تخسر السوق العامة في كل سطر لأنها مضطرة لفعل كل شيء في كل مكان. السوق التي تصمد في 2027 متخصصة: قطع غيار، مواد بناء، شبه صيدلة، أجهزة مجدَّدة، ببائعين متحقَّق منهم ودفع يقلّل الرفض من المصدر وناقلين شركاء." }
+    }
+  },
+  {
+    id: "167",
+    slug: "creer-equivalent-booking-algerie-2027-reservation-hotels-depuis-la-france",
+    title: "Créer l'équivalent de Booking en Algérie en 2027 : réserver un hôtel depuis la France, payer sur place (série #06)",
+    subtitle: "Le parcours d'une réservation faite depuis la France, qui réserve et comment il paie (diaspora, touriste national, voyageur d'affaires, hôtel, location), la pile à deux pays avec acompte en euros et solde en dinars, les obligations 2027, et le calendrier pour ouvrir en mai, avant que la diaspora réserve août",
+    excerpt: "La réservation d'hôtel en Algérie se fait encore par appel ou WhatsApp, avec un « on verra à l'arrivée » qui n'engage personne. La plateforme qui manque garantit la réservation : acompte en euros côté France pour la diaspora, solde en dinars sur place, extranet pour les hôtels, avis vérifiés après séjour réel. Vingt hôtels d'une ville, ouverture en mai 2027, parce que la diaspora réserve août en mai.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["équivalent booking algérie 2027", "réserver hôtel algérie depuis la france", "plateforme réservation hôtel algérie", "réservation en ligne hôtel algérie paiement", "créer site de réservation algérie"],
+    metaTitle: "Créer l'équivalent de Booking en Algérie en 2027 : réserver depuis la France, payer sur place | Symloop",
+    metaDescription: "Le parcours d'une réservation d'hôtel en Algérie faite depuis la France, qui réserve et comment il paie, la plateforme à deux pays (acompte en euros, solde en dinars, extranet hôtels, avis vérifiés), les obligations du PLF 2027 pour les plateformes, et le calendrier pour ouvrir en mai 2027 avant la saison de la diaspora.",
+    translations: {
+      en: { title: "Building the Booking equivalent in Algeria in 2027: book a hotel from France, pay on site (series #06)", subtitle: "The journey of a booking made from France, who books and how they pay (diaspora, domestic tourist, business traveller, hotel, rental), the two-country stack with deposit in euros and balance in dinars, the 2027 obligations, and the calendar to open in May, before the diaspora books August", excerpt: "Hotel booking in Algeria still happens by phone or WhatsApp, with a “we'll see on arrival” that binds nobody. The missing platform guarantees the booking: deposit in euros on the France side for the diaspora, balance in dinars on site, an extranet for hotels, verified reviews after real stays. Twenty hotels in one city, opening in May 2027, because the diaspora books August in May." },
+      ar: { title: "إنشاء معادل بوكينغ في الجزائر سنة 2027: احجز فندقاً من فرنسا وادفع في المكان (السلسلة #06)", subtitle: "مسار حجز يُجرى من فرنسا، من يحجز وكيف يدفع (الجالية، السائح المحلي، مسافر الأعمال، الفندق، الشقة)، طبقات منصة ببلدين بعربون باليورو وباقٍ بالدينار، التزامات 2027، والجدول للافتتاح في ماي قبل أن تحجز الجالية أوت", excerpt: "ما زال حجز الفنادق في الجزائر يتم بمكالمة أو واتساب مع «نرى عند الوصول» الذي لا يُلزم أحداً. المنصة الناقصة تضمن الحجز: عربون باليورو من جهة فرنسا للجالية، باقٍ بالدينار في المكان، بوابة للفنادق، تقييمات موثَّقة بعد إقامة حقيقية. عشرون فندقاً في مدينة، افتتاح في ماي 2027، لأن الجالية تحجز أوت في ماي." }
+    }
+  },
+  {
+    id: "166",
+    slug: "mon-application-bloquee-chez-un-developpeur-disparu-reprendre-projet-algerie-2027",
+    title: "Mon application est bloquée chez un développeur qui a disparu : reprendre le projet en 2027 (Algérie)",
+    subtitle: "Ce qui se récupère et comment (stores, domaine, hébergement, code, données, clés), l'audit qui décide entre garder, réparer et réécrire, pourquoi 2027 rend la reprise urgente, le kit de propriété pour que ça n'arrive plus, et les six semaines de la reprise",
+    excerpt: "Un prestataire qui ne répond plus, des comptes à son nom, un code introuvable, une application figée que les stores vont bientôt retirer : la reprise se fait en quatre étapes, inventaire, récupération actif par actif, audit, remise en route, en six semaines. La décision de réécrire se prend sur l'audit, pas sur la colère. Et le kit de propriété, comptes, code, clés, contrat, documentation, fait que cela n'arrive plus.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["développeur disparu récupérer application", "reprendre projet application abandonné algérie", "récupérer code source prestataire", "transfert application google play app store", "audit application mobile algérie 2027"],
+    metaTitle: "Mon application est bloquée chez un développeur qui a disparu : reprendre le projet en 2027 (Algérie) | Symloop",
+    metaDescription: "Comment reprendre une application abandonnée par son développeur en Algérie en 2027 : inventaire des actifs, récupération des comptes stores, du domaine, de l'hébergement, du code, des données et des clés, audit qui décide entre garder, réparer et réécrire, kit de propriété pour que ça n'arrive plus, et calendrier de six semaines.",
+    translations: {
+      en: { title: "My app is stuck with a developer who vanished: taking the project back in 2027 (Algeria)", subtitle: "What can be recovered and how (stores, domain, hosting, code, data, keys), the audit that decides between keeping, repairing and rewriting, why 2027 makes the takeover urgent, the ownership kit so it never happens again, and the six weeks of the takeover", excerpt: "A vendor who no longer answers, accounts in their name, code nowhere to be found, a frozen app the stores will soon remove: the takeover happens in four steps, inventory, asset-by-asset recovery, audit, restart, in six weeks. The decision to rewrite is made on the audit, not on anger. And the ownership kit, accounts, code, keys, contract, documentation, makes sure it never happens again." },
+      ar: { title: "تطبيقي معلّق عند مطوّر اختفى: استعادة المشروع في 2027 (الجزائر)", subtitle: "ما يُسترجع وكيف (متاجر، نطاق، استضافة، كود، بيانات، مفاتيح)، التدقيق الذي يحسم بين الاحتفاظ والإصلاح وإعادة الكتابة، لماذا تجعل 2027 الاستعادة عاجلة، عدّة الملكية حتى لا يتكرر ذلك، والأسابيع الستة للاستعادة", excerpt: "مزوّد لم يعد يجيب، حسابات باسمه، كود مفقود، تطبيق متجمّد ستسحبه المتاجر قريباً: تتم الاستعادة في أربع خطوات، جرد، استرجاع أصلاً أصلاً، تدقيق، إعادة تشغيل، في ستة أسابيع. قرار إعادة الكتابة يُتخذ على التدقيق لا على الغضب. وعدّة الملكية تجعل ذلك لا يتكرر." }
+    }
+  },
+  {
+    id: "165",
+    slug: "application-a-ma-marque-ou-super-app-marketplace-algerie-2027",
+    title: "Faut-il une application à ma marque en 2027, ou vendre via les super-apps et les marketplaces ? (Algérie)",
+    subtitle: "L'échelle à monter dans l'ordre, de WhatsApp Business à l'application à votre marque en passant par les plateformes et la commande en ligne, le verdict par type de marque, ce qu'on cède à une plateforme (client, marge, données) contre ce qu'elle apporte (trafic), et le calendrier 2027 où l'application se décide sur des chiffres",
+    excerpt: "Les plateformes vendent ce que le client achète une fois ; l'application à votre marque garde celui qui revient. En 2027, une marque algérienne monte l'échelle dans l'ordre : WhatsApp Business tenu, présence sur les super-apps et marketplaces pour acquérir, commande en ligne à sa marque pour posséder ses clients et ses données, puis l'application quand les chiffres montrent que des clients reviennent chaque semaine. Pas avant, pas sur une intuition.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "10 min", featured: true,
+    tags: ["application à ma marque ou marketplace algérie 2027", "super-app algérie vendre", "créer application restaurant algérie", "application fidélité marque algérie", "commande en ligne à sa marque"],
+    metaTitle: "Application à ma marque ou super-apps et marketplaces en 2027 ? Le verdict par type de marque (Algérie) | Symloop",
+    metaDescription: "L'échelle à monter dans l'ordre en 2027 (WhatsApp Business, super-apps et marketplaces, commande en ligne à votre marque, application à votre marque), le verdict par type de marque, ce que vous cédez à une plateforme contre le trafic qu'elle apporte, et le calendrier où l'application se décide au huitième mois sur des chiffres.",
+    translations: {
+      en: { title: "Do I need my own branded app in 2027, or should I sell through the super-apps and marketplaces? (Algeria)", subtitle: "The ladder to climb in order, from WhatsApp Business to your branded app via the platforms and online ordering, the verdict by brand type, what you give up to a platform (customer, margin, data) against what it brings (traffic), and the 2027 calendar where the app is decided on numbers", excerpt: "Platforms sell what the customer buys once; your branded app keeps the one who comes back. In 2027 an Algerian brand climbs the ladder in order: WhatsApp Business kept, presence on super-apps and marketplaces to acquire, branded online ordering to own its customers and data, then the app when the numbers show customers coming back every week. Not before, not on a hunch." },
+      ar: { title: "هل أحتاج تطبيقاً بعلامتي في 2027، أم أبيع عبر التطبيقات الشاملة والأسواق الإلكترونية؟ (الجزائر)", subtitle: "السلّم الذي يُصعد بالترتيب من واتساب للأعمال إلى تطبيق بعلامتك مروراً بالمنصات والطلب الإلكتروني، الحكم حسب نوع العلامة، ما تتنازل عنه لمنصة (زبون، هامش، بيانات) مقابل ما تجلبه (زيارات)، وجدول 2027 حيث يُقرَّر التطبيق على أرقام", excerpt: "تبيع المنصات ما يشتريه الزبون مرة؛ ويحتفظ تطبيق علامتك بمن يعود. في 2027 تصعد العلامة الجزائرية السلّم بالترتيب: واتساب للأعمال مضبوط، حضور على التطبيقات الشاملة والأسواق للاكتساب، طلب إلكتروني بعلامتها لامتلاك زبائنها وبياناتها، ثم التطبيق حين تُظهر الأرقام زبائن يعودون كل أسبوع." }
+    }
+  },
+  {
+    id: "164",
+    slug: "plateforme-livraison-transport-algerie-2027-livreurs-cod-retours",
+    title: "Une plateforme de livraison en Algérie en 2027 : livreurs, paiement à la livraison, retours, e-commerçants. Ce qu'il faut construire",
+    subtitle: "Le parcours d'un colis COD et les quatre endroits où l'argent se perd, ce que chaque acteur attend de la plateforme, la pile à construire (application livreur hors-ligne, portail e-commerçant, dispatch, versements COD, IA de confirmation), le paiement à la porte en 2027, et le calendrier pour une wilaya pilote",
+    excerpt: "Une société de livraison perd son argent à trois endroits : les colis non confirmés qui seront refusés, les tentatives de livraison inutiles, et le COD en espèces qui circule sans trace. La plateforme qui tient commence par l'application livreur hors-ligne, scan, preuve et COD saisi, puis le portail e-commerçant avec versements à J+3, puis le paiement à la porte par SoftPos et QR et la confirmation automatisée. Une wilaya pilote avant le réseau.",
+    category: "Logistique", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["plateforme de livraison algérie 2027", "application livreur algérie", "logiciel société de livraison", "gestion cod paiement à la livraison", "transport e-commerce algérie"],
+    metaTitle: "Une plateforme de livraison en Algérie en 2027 : livreurs, COD, retours, e-commerçants | Symloop",
+    metaDescription: "Le parcours d'un colis payé à la livraison et où l'argent se perd, ce que l'e-commerçant, le livreur, le dispatch, le client, la direction et le fisc attendent de la plateforme, la pile à construire en 2027 (application livreur hors-ligne, portail e-commerçant, versements COD, paiement à la porte par SoftPos et QR, confirmation IA), et le calendrier de huit mois pour une wilaya pilote.",
+    translations: {
+      en: { title: "A delivery platform in Algeria in 2027: couriers, cash on delivery, returns, e-merchants. What to build", subtitle: "The journey of a COD parcel and the four places where money leaks, what each actor expects from the platform, the stack to build (offline courier app, e-merchant portal, dispatch, COD payouts, AI confirmation), payment at the door in 2027, and the calendar for a pilot wilaya", excerpt: "A delivery company loses its money in three places: unconfirmed parcels that will be refused, useless delivery attempts, and cash COD moving without a trace. The platform that holds starts with the offline courier app, scan, proof and COD entered, then the e-merchant portal with D+3 payouts, then payment at the door via SoftPos and QR and automated confirmation. One pilot wilaya before the network." },
+      ar: { title: "منصة توصيل في الجزائر سنة 2027: موصّلون، دفع عند الاستلام، مرتجعات، تجار إلكترونيون. ما الذي يجب بناؤه", subtitle: "مسار طرد مدفوع عند الاستلام والمواضع الأربعة التي يضيع فيها المال، ما ينتظره كل طرف من المنصة، الطبقات التي تُبنى (تطبيق موصّل دون اتصال، بوابة تاجر، توزيع، تحويلات، تأكيد بالذكاء الاصطناعي)، الدفع عند الباب في 2027، والجدول لولاية تجريبية", excerpt: "تخسر شركة التوصيل مالها في ثلاثة مواضع: الطرود غير المؤكدة التي ستُرفض، محاولات التسليم غير المجدية، والمبالغ النقدية التي تتحرك بلا أثر. المنصة التي تصمد تبدأ بتطبيق الموصّل دون اتصال، مسح وإثبات ومبلغ مُدخَل، ثم بوابة التاجر بتحويلات في ي+3، ثم الدفع عند الباب بـSoftPos وQR والتأكيد الآلي. ولاية تجريبية قبل الشبكة." }
+    }
+  },
+  {
+    id: "163",
+    slug: "agent-ia-entreprise-algerie-2027-par-ou-commencer-ce-qui-marche",
+    title: "Mettre un agent IA dans mon entreprise en Algérie en 2027 : par où commencer, ce qui marche, ce qui doit exister avant",
+    subtitle: "Les sept usages classés par gain pour une PME algérienne, les quatre niveaux d'autonomie à franchir dans l'ordre (il répond, il propose, il agit dans des limites, il rend compte), comment l'agent s'insère dans l'entreprise, où il tourne et comment on le paie, et les six mois pour y arriver",
+    excerpt: "Un agent IA ne travaille que s'il a quelque chose à lire et quelque chose à faire : un échéancier pour relancer, des règles pour répondre, un back-office où écrire. Les trois usages qui paient en Algérie, relances, support en arabe, français et darija, qualification des demandes WhatsApp, ont ce prérequis. Ensuite, un niveau d'autonomie à la fois, du répondeur à l'agent qui agit dans des limites et rend compte.",
+    category: "Intelligence artificielle", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["agent ia entreprise algérie 2027", "intelligence artificielle pme algérie", "chatbot whatsapp entreprise algérie", "ia relances clients", "automatisation ia entreprise algérie"],
+    metaTitle: "Un agent IA dans mon entreprise en Algérie en 2027 : par où commencer, ce qui marche | Symloop",
+    metaDescription: "Les usages d'un agent IA qui paient pour une PME algérienne (relances, support trilingue, qualification WhatsApp) et ceux qui ne servent à rien, ce qui doit exister avant, les quatre niveaux d'autonomie à franchir dans l'ordre, comment l'agent s'insère dans l'entreprise, où il tourne et comment on le paie depuis l'Algérie, et le calendrier sur six mois pour 2027.",
+    translations: {
+      en: { title: "Putting an AI agent in my company in Algeria in 2027: where to start, what works, what must exist first", subtitle: "The seven uses ranked by gain for an Algerian SME, the four autonomy levels to climb in order (it answers, it proposes, it acts within limits, it reports), how the agent fits into the company, where it runs and how it is paid, and the six months to get there", excerpt: "An AI agent only works if it has something to read and something to do: a schedule to follow up, rules to answer from, a back-office to write into. The three uses that pay in Algeria, reminders, support in Arabic, French and darija, qualifying WhatsApp requests, share that prerequisite. Then one autonomy level at a time, from the answering machine to the agent that acts within limits and reports." },
+      ar: { title: "إدخال وكيل ذكاء اصطناعي في شركتي في الجزائر سنة 2027: من أين أبدأ، ما ينجح، وما يجب أن يوجد قبله", subtitle: "الاستخدامات السبعة مرتبة حسب الفائدة لمؤسسة جزائرية، مستويات الاستقلالية الأربعة التي تُجتاز بالترتيب (يجيب، يقترح، يتصرف ضمن حدود، يقدّم تقريراً)، كيف يندمج الوكيل في الشركة، أين يعمل وكيف يُدفع ثمنه، والأشهر الستة للوصول", excerpt: "لا يعمل وكيل الذكاء الاصطناعي إلا إن كان لديه ما يقرأ وما يفعل: جدول استحقاقات ليذكّر، قواعد ليجيب، مكتب خلفي ليكتب فيه. الاستخدامات الثلاثة المجدية في الجزائر، التذكيرات، الدعم بالعربية والفرنسية والدارجة، تأهيل طلبات واتساب، لها هذا الشرط. ثم مستوى استقلالية واحد في كل مرة." }
+    }
+  },
+  {
+    id: "162",
+    slug: "creer-une-marketplace-en-algerie-2027-commission-tva-paiement-modele",
+    title: "Créer une marketplace en Algérie en 2027 : comment l'argent circule, quel modèle de revenu tient, et ce que le PLF 2027 impose aux plateformes",
+    subtitle: "Le circuit client → plateforme → vendeur avec séquestre et commission facturée, les six modèles de revenu et lesquels tiennent, ce qu'il y a dans une plateforme de mise en relation, les obligations du PLF 2027 (identification, déclaration annuelle, TVA), et le calendrier une ville, une catégorie",
+    excerpt: "Une marketplace qui laisse le client payer le vendeur directement n'a ni commission, ni données, ni raison d'exister. En 2027, l'argent passe par la plateforme : carte, QR ou espèces enregistrées, séquestre jusqu'à la livraison, commission facturée avec TVA, reversement au vendeur. Le PLF 2027 ajoute l'identification au fisc et une déclaration annuelle. Un modèle de revenu au lancement, trente vendeurs recrutés avant le code, une ville, une catégorie.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "12 min", featured: true,
+    tags: ["créer une marketplace en algérie 2027", "plateforme de mise en relation algérie", "commission marketplace algérie", "plf 2027 plateformes tva", "paiement séquestre marketplace"],
+    metaTitle: "Créer une marketplace en Algérie en 2027 : circuit de l'argent, modèle de revenu, PLF 2027 | Symloop",
+    metaDescription: "Comment l'argent circule dans une marketplace algérienne (paiement à la plateforme, séquestre, commission facturée avec TVA, reversement), les modèles de revenu qui tiennent en Algérie, ce qu'il y a dans une plateforme de mise en relation, ce que le PLF 2027 impose aux plateformes locales et étrangères, et le calendrier pour lancer une ville, une catégorie en 2027.",
+    translations: {
+      en: { title: "Building a marketplace in Algeria in 2027: how the money flows, which revenue model holds, and what the 2027 finance bill imposes on platforms", subtitle: "The customer → platform → seller circuit with escrow and invoiced commission, the six revenue models and which ones hold, what is inside a marketplace platform, the 2027 finance bill obligations (registration, annual declaration, VAT), and the one city, one category calendar", excerpt: "A marketplace that lets the customer pay the seller directly has no commission, no data and no reason to exist. In 2027 the money goes through the platform: card, QR or recorded cash, escrow until delivery, commission invoiced with VAT, payout to the seller. The 2027 finance bill adds tax registration and an annual declaration. One revenue model at launch, thirty sellers recruited before the code, one city, one category." },
+      ar: { title: "إنشاء سوق إلكترونية في الجزائر سنة 2027: كيف يتحرك المال، أي نموذج إيراد يصمد، وما يفرضه مشروع قانون المالية 2027 على المنصات", subtitle: "دورة الزبون ← المنصة ← البائع بحجز وعمولة مفوترة، نماذج الإيراد الستة وأيها يصمد، ما داخل منصة وساطة، التزامات مشروع قانون المالية 2027 (تعريف، تصريح سنوي، TVA)، وجدول مدينة واحدة فئة واحدة", excerpt: "سوق تترك الزبون يدفع للبائع مباشرة لا عمولة لها ولا بيانات ولا سبب لوجودها. في 2027 يمر المال عبر المنصة: بطاقة أو QR أو نقد مسجَّل، حجز حتى التسليم، عمولة مفوترة بـTVA، تحويل للبائع. يضيف مشروع قانون المالية 2027 التعريف لدى الضرائب وتصريحاً سنوياً. نموذج إيراد واحد عند الإطلاق، ثلاثون بائعاً قبل الكود، مدينة واحدة، فئة واحدة." }
+    }
+  },
+  {
+    id: "161",
+    slug: "digitaliser-pme-algerie-2027-feuille-de-route-12-mois-par-ou-commencer",
+    title: "Digitaliser une PME en Algérie en 2027 : par où commencer, dans quel ordre, et la feuille de route sur douze mois",
+    subtitle: "Les quatre paliers dans l'ordre où ils paient (encaisser et facturer, le flux qui perd de l'argent, l'équipe et le client, l'IA), ce qui s'achète en abonnement et ce qui se construit, la pile complète, et le calendrier trimestre par trimestre",
+    excerpt: "Une PME qui vit sur WhatsApp, Excel et un cahier ne se digitalise pas d'un coup. Elle commence par encaisser et facturer, parce que le PLF 2027 récompense l'encaissement électronique, puis outille le seul flux qui lui coûte de l'argent chaque mois, puis l'équipe et le client, et l'IA en dernier parce qu'elle a besoin des données des trois premiers. Un trimestre par palier.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["digitaliser pme algérie 2027", "transformation digitale pme algérie", "digitalisation entreprise algérie par où commencer", "logiciel ou sur mesure pme algérie", "feuille de route digitale 2027"],
+    metaTitle: "Digitaliser une PME en Algérie en 2027 : par où commencer, dans quel ordre, feuille de route 12 mois | Symloop",
+    metaDescription: "Les quatre paliers pour digitaliser une PME algérienne en 2027, dans l'ordre où ils paient : encaisser et facturer (PLF 2027), le flux qui perd de l'argent, l'équipe et le client, l'IA. Ce qui s'achète en abonnement et ce qui se construit, la pile complète fin 2027, et le calendrier trimestre par trimestre.",
+    translations: {
+      en: { title: "Digitising an SME in Algeria in 2027: where to start, in what order, and the twelve-month roadmap", subtitle: "The four steps in the order they pay (collect and invoice, the flow that loses money, the team and the customer, AI), what to buy by subscription and what to build, the full stack, and the quarter-by-quarter calendar", excerpt: "An SME living on WhatsApp, Excel and a notebook does not digitise in one go. It starts by collecting and invoicing, because the 2027 finance bill rewards electronic collection, then equips the one flow that costs it money every month, then the team and the customer, and AI last because it needs the data of the first three. One quarter per step." },
+      ar: { title: "رقمنة مؤسسة صغيرة أو متوسطة في الجزائر سنة 2027: من أين تبدأ، بأي ترتيب، وخارطة طريق اثني عشر شهراً", subtitle: "المراحل الأربع بالترتيب الذي تؤتي فيه ثمارها (التحصيل والفوترة، التدفق الذي يخسر المال، الفريق والزبون، الذكاء الاصطناعي)، ما يُشترى بالاشتراك وما يُبنى، الطبقات الكاملة، والجدول فصلاً بفصل", excerpt: "مؤسسة تعيش على واتساب وإكسل ودفتر لا تُرقمَن دفعة واحدة. تبدأ بالتحصيل والفوترة لأن مشروع قانون المالية 2027 يكافئ التحصيل الإلكتروني، ثم تجهّز التدفق الوحيد الذي يكلّفها المال كل شهر، ثم الفريق والزبون، والذكاء الاصطناعي أخيراً لأنه يحتاج بيانات المراحل الثلاث. فصل لكل مرحلة." }
+    }
+  },
+  {
+    id: "160",
+    slug: "lancer-startup-en-algerie-depuis-la-france-2027-calendrier-quatre-voyages",
+    title: "Lancer sa startup en Algérie depuis la France en 2027 : le calendrier à rebours en quatre voyages",
+    subtitle: "Ce qui se fait depuis la France et ce qui exige d'être sur place, le montage qui tient (société, label, associé opérationnel, studio), les douze mois avec le Ramadan et l'été placés, et les quatre voyages qui les rythment",
+    excerpt: "Un fondateur de la diaspora n'a pas besoin de douze allers-retours : quatre voyages suffisent si chacun a un objectif. Novembre-décembre 2026 pour les entretiens et l'associé, mars 2027 après l'Aïd pour la banque et les pilotes, juillet-août pour lancer pendant l'été de la diaspora, octobre pour la rentrée et la deuxième ville. Entre deux, le studio développe et l'associé sur place avance.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["lancer startup algérie depuis la france 2027", "créer entreprise algérie diaspora 2027", "startup diaspora algérie", "calendrier création startup algérie", "label startup 2027"],
+    metaTitle: "Lancer sa startup en Algérie depuis la France en 2027 : quatre voyages, douze mois | Symloop",
+    metaDescription: "Le calendrier à rebours d'un fondateur de la diaspora pour 2027 : ce qui se fait depuis la France et ce qui exige d'être en Algérie, le montage qui tient (SARL/EURL, label startup, web-marchand, associé opérationnel au capital, studio sur cadrage écrit), les douze mois avec le Ramadan et l'été placés, et les quatre voyages qui les rythment.",
+    translations: {
+      en: { title: "Launching your startup in Algeria from France in 2027: the countdown in four trips", subtitle: "What can be done from France and what requires being there, the setup that holds (company, label, operating partner, studio), the twelve months with Ramadan and summer placed, and the four trips that pace them", excerpt: "A diaspora founder does not need twelve round trips: four are enough if each has a goal. November-December 2026 for interviews and the partner, March 2027 after Eid for the bank and pilots, July-August to launch during the diaspora summer, October for back-to-school and the second city. In between, the studio develops and the partner on site moves forward." },
+      ar: { title: "إطلاق ستارت-أب في الجزائر من فرنسا سنة 2027: العد التنازلي في أربع رحلات", subtitle: "ما يُنجز من فرنسا وما يتطلب الحضور، التركيبة التي تصمد (شركة، علامة، شريك تشغيلي، استوديو)، الأشهر الاثنا عشر مع رمضان والصيف، والرحلات الأربع التي تضبط إيقاعها", excerpt: "مؤسس من الجالية لا يحتاج اثنتي عشرة رحلة ذهاباً وإياباً: أربع تكفي إن كان لكل منها هدف. نوفمبر-ديسمبر 2026 للمقابلات والشريك، مارس 2027 بعد العيد للبنك والزبائن التجريبيين، جويلية-أوت للإطلاق خلال صيف الجالية، أكتوبر للدخول والمدينة الثانية." }
+    }
+  },
+  {
+    id: "159",
+    slug: "creer-une-application-mobile-en-algerie-2027-sept-decisions-avant-janvier",
+    title: "Créer une application mobile en Algérie en 2027 : les sept décisions à prendre avant janvier",
+    subtitle: "Ce qui change d'ici fin 2027 (QR interopérable, SoftPos, vérification des développeurs Android, PLF 2027), les sept choix par défaut et quand faire l'inverse, ce qu'il y a dans l'application, et le calendrier pour publier au printemps",
+    excerpt: "Android d'abord, hors-ligne d'abord, paiement CIB/Edahabia et QR dès la première version, identification par téléphone, arabe et français, hébergement documenté, budget de maintenance décidé avant le lancement. Sept décisions qui se prennent en novembre sur une page et coûtent des semaines si elles arrivent en mars. Avec le calendrier pour être sur les stores en mai 2027.",
+    category: "Mobile", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["créer une application mobile en algérie 2027", "application mobile algérie 2027", "développement application android algérie", "paiement dans application cib edahabia", "publier application google play algérie"],
+    metaTitle: "Créer une application mobile en Algérie en 2027 : sept décisions avant janvier | Symloop",
+    metaDescription: "Ce qui change pour une application mobile en Algérie d'ici fin 2027 : QR interopérable, SoftPos, vérification mondiale des développeurs Android, PLF 2027. Les sept décisions à prendre avant janvier (Android d'abord, hors-ligne, paiement, identification, langues, données, maintenance), ce qu'il y a dans l'application et le calendrier pour publier en mai 2027.",
+    translations: {
+      en: { title: "Building a mobile app in Algeria in 2027: the seven decisions to make before January", subtitle: "What changes by the end of 2027 (interoperable QR, SoftPos, Android developer verification, 2027 finance bill), the seven default choices and when to do the opposite, what is inside the app, and the calendar to publish in spring", excerpt: "Android first, offline first, CIB/Edahabia and QR payment from version one, phone identification, Arabic and French, documented hosting, maintenance budget decided before launch. Seven decisions made in November on one page that cost weeks if they arrive in March. With the calendar to be on the stores in May 2027." },
+      ar: { title: "إنشاء تطبيق جوّال في الجزائر سنة 2027: القرارات السبعة قبل جانفي", subtitle: "ما يتغير حتى نهاية 2027 (QR متوافق، SoftPos، التحقق من مطوري أندرويد، مشروع قانون المالية 2027)، الخيارات السبعة الافتراضية ومتى تفعل العكس، ما داخل التطبيق، والجدول للنشر في الربيع", excerpt: "أندرويد أولاً، دون اتصال أولاً، دفع CIB/الذهبية وQR منذ الإصدار الأول، تعريف بالهاتف، عربي وفرنسي، استضافة موثّقة، ميزانية صيانة مقرَّرة قبل الإطلاق. سبعة قرارات تُتخذ في نوفمبر على صفحة واحدة وتكلّف أسابيع إن جاءت في مارس." }
+    }
+  },
+  {
+    id: "158",
+    slug: "lancer-un-saas-en-algerie-2027-abonnement-paiement-calendrier",
+    title: "Lancer un SaaS en Algérie en 2027 : qui paie un abonnement, comment encaisser sans carte internationale, et le calendrier à rebours",
+    subtitle: "Les segments qui paient et ceux qui ne paieront pas, le modèle d'abonnement qui marche en dinars (annuel d'avance, CIB/Edahabia, revendeurs), la facture conforme, et les huit mois pour être en ligne au printemps 2027",
+    excerpt: "Les entreprises algériennes paient des abonnements quand le logiciel arrête une perte mesurable chaque mois. 1 004 web-marchands, 15 millions de transactions en ligne au premier semestre 2026 et une réduction d'impôt prévue par le PLF 2027 pour ceux qui encaissent électroniquement : 2027 est l'année où un SaaS en dinars devient normal. Qui cibler, comment encaisser, et le calendrier depuis novembre 2026.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["lancer un saas en algérie 2027", "saas algérie abonnement", "paiement abonnement cib edahabia", "web-marchand algérie", "startup algérie 2027"],
+    metaTitle: "Lancer un SaaS en Algérie en 2027 : qui paie, comment encaisser, calendrier à rebours | Symloop",
+    metaDescription: "Qui paie un abonnement en Algérie et qui ne paiera pas, le modèle d'encaissement en dinars (annuel d'avance, CIB/Edahabia web-marchand, revendeurs), la facture conforme, l'hébergement, l'onboarding, et les huit mois pour être en ligne et payé au printemps 2027. Chiffres GIE Monétique S1 2026 et PLF 2027.",
+    translations: {
+      en: { title: "Launching a SaaS in Algeria in 2027: who pays a subscription, how to collect without an international card, and the countdown", subtitle: "The segments that pay and those that will not, the subscription model that works in dinars (annual upfront, CIB/Edahabia, resellers), compliant invoicing, and the eight months to be live by spring 2027", excerpt: "Algerian companies pay subscriptions when the software stops a measurable monthly loss. 1,004 online merchants, 15 million online transactions in H1 2026 and a tax reduction planned by the 2027 finance bill for electronic receipts: 2027 is the year a SaaS in dinars becomes normal. Who to target, how to collect, and the calendar from November 2026." },
+      ar: { title: "إطلاق SaaS في الجزائر سنة 2027: من يدفع اشتراكاً، كيف تحصّل بلا بطاقة دولية، والعد التنازلي", subtitle: "القطاعات التي تدفع والتي لن تدفع، نموذج الاشتراك الذي ينجح بالدينار (سنوي مسبق، CIB/الذهبية، موزعون)، الفاتورة المطابقة، والأشهر الثمانية لتكون على الخط في ربيع 2027", excerpt: "تدفع الشركات الجزائرية اشتراكات عندما يوقف البرنامج خسارة شهرية قابلة للقياس. 1 004 تاجر إلكتروني و15 مليون معاملة عبر الإنترنت في السداسي الأول 2026 وتخفيض ضريبي في مشروع قانون المالية 2027 لمن يحصّل إلكترونياً: 2027 هي سنة يصبح فيها SaaS بالدينار أمراً عادياً." }
+    }
+  },
+  {
+    id: "157",
+    slug: "ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026",
+    title: "Je gère une école privée et tout est sur papier : inscriptions, paiements par tranches, présences, parents sur WhatsApp. Par où commencer (Algérie, 2026)",
+    subtitle: "Ce qu'une école privée ou un centre de formation perd chaque trimestre, ce qui se règle en une semaine, la plateforme qu'il faut, où l'IA aide, et le calendrier pour être prêt à la rentrée",
+    excerpt: "Une école perd de l'argent à deux endroits : les tranches impayées découvertes trop tard et les élèves qui décrochent sans que personne n'ait vu les absences. Dossier élève unique, échéancier, appel en deux gestes, application parents en arabe et en français. Prêt pour la rentrée en douze semaines en partant de juin.",
+    category: "Éducation", author: "Symloop Team", date: "2026-10-30", readTime: "9 min", featured: true,
+    tags: ["logiciel gestion école privée algérie", "application parents école", "gestion paiements tranches école", "inscription en ligne école privée", "logiciel centre de formation"],
+    metaTitle: "École privée sur papier : inscriptions, tranches, présences, parents sur WhatsApp. Par où commencer (Algérie 2026) | Symloop",
+    metaDescription: "Les cinq fuites d'une école privée gérée sur papier, ce qui se règle en une semaine, la plateforme qu'il faut (dossier élève unique, échéancier, appel en deux gestes, application parents), où l'IA aide (relances, alertes de décrochage), et le calendrier de douze semaines pour la rentrée.",
+    translations: {
+      en: { title: "I run a private school and everything is on paper: enrolments, instalment payments, attendance, parents on WhatsApp. Where to start (Algeria, 2026)", subtitle: "What a private school or training centre loses every term, what gets fixed in a week, the platform it needs, where AI helps, and the timeline to be ready for September", excerpt: "A school loses money in two places: unpaid instalments discovered too late and students who drop out unseen. Single student record, payment schedule, two-tap roll call, parent app in Arabic and French. Ready for September in twelve weeks starting in June." },
+      ar: { title: "أدير مدرسة خاصة وكل شيء على الورق: تسجيلات، أقساط، حضور، أولياء على واتساب. من أين أبدأ (الجزائر، 2026)", subtitle: "ما تخسره مدرسة خاصة أو مركز تكوين كل فصل، ما يُحلّ في أسبوع، المنصة اللازمة، أين يساعد الذكاء الاصطناعي، والجدول لتكون جاهزاً للدخول المدرسي", excerpt: "تخسر المدرسة المال في موضعين: الأقساط غير المدفوعة المكتشفة متأخراً والتلاميذ الذين ينقطعون دون أن يراهم أحد. ملف تلميذ واحد، جدول أقساط، مناداة بلمستين، تطبيق أولياء بالعربية والفرنسية. جاهزون للدخول المدرسي في اثني عشر أسبوعاً انطلاقاً من جوان." }
+    }
+  },
+  {
+    id: "156",
+    slug: "commandes-annulees-a-la-livraison-ecommerce-algerie-2026",
+    title: "La moitié de mes commandes est refusée à la livraison : comment diviser les retours par deux quand on vend en paiement à la livraison (Algérie, 2026)",
+    subtitle: "Les six causes de refus, le processus de confirmation qui les divise par deux, ce qu'un système fait à votre place, et les chiffres à suivre chaque semaine",
+    excerpt: "Tant que le client n'a rien payé, la commande n'est qu'une intention. Confirmation sous deux heures, frais par wilaya affichés avant la commande, score par numéro de téléphone, acompte conditionnel, message la veille de la livraison, tableau de bord des refus par wilaya et par transporteur.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-10-30", readTime: "8 min", featured: true,
+    tags: ["commandes annulées à la livraison", "taux de refus paiement à la livraison", "colis refusé yalidine", "réduire retours e-commerce algérie", "confirmation commande whatsapp"],
+    metaTitle: "La moitié de mes commandes est refusée à la livraison : diviser les retours par deux (Algérie 2026) | Symloop",
+    metaDescription: "Pourquoi un client refuse un colis qu'il a commandé, les six causes et leur remède, le processus de confirmation en cinq étapes qui divise les refus par deux, l'acompte conditionnel CIB Edahabia, le tableau de bord par wilaya et transporteur, et les chiffres à suivre chaque semaine.",
+    translations: {
+      en: { title: "Half my orders are refused at delivery: how to halve returns when you sell cash on delivery (Algeria, 2026)", subtitle: "The six causes of refusal, the confirmation process that halves them, what a system does for you, and the numbers to track every week", excerpt: "As long as the customer has paid nothing, the order is only an intention. Confirmation within two hours, fees by wilaya shown before ordering, score per phone number, conditional deposit, day-before message, refusal dashboard by wilaya and carrier." },
+      ar: { title: "نصف طلباتي تُرفض عند التسليم: كيف تقلّص المرتجعات إلى النصف عندما تبيع بالدفع عند التسليم (الجزائر، 2026)", subtitle: "أسباب الرفض الستة، عملية التأكيد التي تقلّصها إلى النصف، ما يفعله النظام نيابة عنك، والأرقام التي تتابعها كل أسبوع", excerpt: "ما دام العميل لم يدفع شيئاً فالطلب مجرد نية. تأكيد خلال ساعتين، رسوم حسب الولاية قبل الطلب، نقاط لكل رقم هاتف، عربون مشروط، رسالة عشية التسليم، لوحة الرفض حسب الولاية والناقل." }
+    }
+  },
+  {
+    id: "155",
+    slug: "label-startup-algerie-2026-conditions-dossier-avantages",
+    title: "Comment obtenir le label startup en Algérie en 2026 : conditions, dossier, avantages fiscaux, renouvellement, et pourquoi il faut un produit avant",
+    subtitle: "Les critères d'éligibilité, le parcours sur startup.dz, ce que le label apporte d'après les textes cités, le calendrier réaliste, et l'erreur qui coûte six mois : déposer avec une idée",
+    excerpt: "Société de droit algérien de moins de huit ans, modèle innovant, capital détenu à 50 % au moins par des personnes physiques, dépôt sur startup.dz, label pour quatre ans renouvelable. Quatre ans d'exonération d'impôt sur le bénéfice d'après les sources, à vérifier. Le comité labellise des startups, pas des idées.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-29", readTime: "9 min", featured: true,
+    tags: ["label startup algérie", "comment obtenir le label startup", "dossier label startup", "avantages label startup", "startup.dz"],
+    metaTitle: "Label startup Algérie 2026 : conditions, dossier, avantages, renouvellement | Symloop",
+    metaDescription: "Comment obtenir le label startup en Algérie en 2026 : conditions d'éligibilité, parcours sur startup.dz, avantages fiscaux d'après les textes cités (quatre ans d'exonération, renouvelable), calendrier réaliste, erreurs à éviter, et pourquoi le label se demande avec un produit.",
+    translations: {
+      en: { title: "How to get the startup label in Algeria in 2026: conditions, file, tax benefits, renewal, and why you need a product first", subtitle: "Eligibility criteria, the path on startup.dz, what the label brings according to cited texts, realistic timeline, and the mistake that costs six months: filing with an idea", excerpt: "Algerian-law company under eight years, innovative model, capital at least 50% held by natural persons, filing on startup.dz, four-year renewable label. Four years of profit tax exemption according to sources, to be verified. The committee labels startups, not ideas." },
+      ar: { title: "كيف تحصل على علامة Startup في الجزائر في 2026: الشروط، الملف، المزايا الضريبية، التجديد، ولماذا تحتاج منتجاً أولاً", subtitle: "معايير الأهلية، المسار على startup.dz، ما تمنحه العلامة حسب النصوص، الجدول الواقعي، والخطأ الذي يكلّف ستة أشهر: الإيداع بفكرة", excerpt: "شركة خاضعة للقانون الجزائري عمرها أقل من ثماني سنوات، نموذج مبتكر، رأس مال 50% على الأقل لأشخاص طبيعيين، إيداع على startup.dz، علامة لأربع سنوات قابلة للتجديد. أربع سنوات من الإعفاء الضريبي حسب المصادر، للتحقق. تمنح اللجنة العلامة لشركات ناشئة لا لأفكار." }
+    }
+  },
+  {
+    id: "154",
+    slug: "digitaliser-clinique-medecins-refusent-adoption-logiciel-medical-algerie-2026",
+    title: "Je veux digitaliser ma clinique mais mes médecins refusent : comment faire adopter un logiciel médical sans l'imposer (Algérie, 2026)",
+    subtitle: "Pourquoi ils ont souvent raison, les deux écrans que le médecin accepte, l'ordre de déploiement qui marche, où l'IA aide, vingt semaines service par service",
+    excerpt: "Aucune objection des médecins n'est contre le numérique ; toutes sont contre un mauvais logiciel mal déployé. Deux écrans pour le médecin, dictée vocale, règles écrites sur ce que la direction voit, deux médecins volontaires d'abord, extension à la demande. Dossier patient conforme loi 18-07.",
+    category: "Santé", author: "Symloop Team", date: "2026-10-29", readTime: "9 min", featured: true,
+    tags: ["digitaliser clinique algérie", "logiciel médical adoption médecins", "logiciel clinique cabinet médical", "dossier patient informatisé algérie", "dictée vocale médicale ia"],
+    metaTitle: "Digitaliser ma clinique, mes médecins refusent : comment faire adopter un logiciel médical (Algérie 2026) | Symloop",
+    metaDescription: "Pourquoi les médecins refusent et ce qu'ils veulent dire, les deux écrans qu'un médecin accepte, la dictée vocale par IA, les règles sur ce que la direction voit, et le déploiement service par service avec deux médecins volontaires. Dossier patient conforme loi 18-07.",
+    translations: {
+      en: { title: "I want to digitise my clinic but my doctors refuse: how to get medical software adopted without imposing it (Algeria, 2026)", subtitle: "Why they are often right, the two screens a doctor accepts, the deployment order that works, where AI helps, twenty weeks department by department", excerpt: "None of the doctors' objections is against digital; all are against bad software badly deployed. Two screens for the doctor, voice dictation, written rules on what management sees, two volunteer doctors first, extension on request. Patient record compliant with Law 18-07." },
+      ar: { title: "أريد رقمنة مصحتي لكن أطبائي يرفضون: كيف تجعلهم يتبنّون برنامجاً طبياً دون فرضه (الجزائر، 2026)", subtitle: "لماذا هم على حق غالباً، الشاشتان اللتان يقبلهما الطبيب، ترتيب النشر الذي ينجح، أين يساعد الذكاء الاصطناعي، عشرون أسبوعاً مصلحة بمصلحة", excerpt: "لا اعتراض من الأطباء ضد الرقمنة؛ كلها ضد برنامج سيئ مُنشر بسوء. شاشتان للطبيب، إملاء صوتي، قواعد مكتوبة لما تراه الإدارة، طبيبان متطوعان أولاً، توسيع عند الطلب. ملف مريض مطابق للقانون 18-07." }
+    }
+  },
+  {
+    id: "153",
+    slug: "creer-equivalent-uber-blablacar-algerie-2026",
+    title: "Uber et BlaBlaCar en Algérie : le VTC urbain est pris, le reste du transport ne l'est pas. Quoi construire, et comment (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #05 — Yassir, Heetch, inDrive et Yango tiennent le VTC ; transport d'entreprise, transport spécialisé et intercité réservé n'ont pas encore de produit",
+    excerpt: "L'équivalent d'Uber en Algérie existe déjà, trois ou quatre fois. Ce qui n'a pas de produit : les navettes d'employés et comptes B2B facturés au mois, le transport scolaire et médical avec application pour les familles, l'intercité réservé avec siège et acompte. Chacun se lance avec vingt véhicules et des clients qui paient avant.",
+    category: "Transport", author: "Symloop Team", date: "2026-10-29", readTime: "10 min", featured: true,
+    tags: ["équivalent uber algérie", "blablacar algérie", "application vtc algérie", "transport entreprise navettes employés", "transport scolaire application parents"],
+    metaTitle: "Uber et BlaBlaCar en Algérie : le VTC est pris, voici ce qui reste à construire (guide fondateur 2026) | Symloop",
+    metaDescription: "Équivalent Uber Algérie : Yassir, Heetch, inDrive, Yango. Ce qui n'a pas encore de produit : transport d'entreprise avec comptes B2B, transport scolaire et médical, intercité réservé avec acompte. Marché, architecture, calendrier d'un trimestre, budget.",
+    translations: {
+      en: { title: "Uber and BlaBlaCar in Algeria: urban ride-hailing is taken, the rest of transport is not. What to build, and how (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #05: Yassir, Heetch, inDrive and Yango hold ride-hailing; corporate, specialised and booked intercity transport have no product yet", excerpt: "The Uber equivalent in Algeria already exists, three or four times. What has no product: employee shuttles and B2B accounts invoiced monthly, school and medical transport with a family app, booked intercity with seat and deposit. Each launches with twenty vehicles and customers who pay first." },
+      ar: { title: "Uber وBlaBlaCar في الجزائر: النقل الحضري مأخوذ وباقي النقل لا. ماذا تبني وكيف (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #05: Yassir وHeetch وinDrive وYango يمسكون النقل الحضري؛ نقل الشركات والنقل المتخصص وما بين المدن المحجوز لا منتج لها بعد", excerpt: "مكافئ Uber في الجزائر موجود أصلاً ثلاث أو أربع مرات. ما لا منتج له: حافلات الموظفين وحسابات B2B المفوترة شهرياً، النقل المدرسي والطبي بتطبيق للعائلات، ما بين المدن المحجوز بمقعد وعربون. كل واحد ينطلق بعشرين مركبة وعملاء يدفعون مسبقاً." }
+    }
+  },
+  {
+    id: "152",
+    slug: "caisse-pos-restaurant-commandes-salle-cuisine-algerie-2026",
+    title: "Je veux une caisse pour mon restaurant : ce qu'il faut vraiment, caisse du marché ou sur mesure, et dans quel ordre (Algérie, 2026)",
+    subtitle: "Les quatre fuites d'un restaurant sur papier, ce qu'une caisse du marché règle, quand le sur mesure se justifie, où l'IA aide, huit semaines sans fermer un soir",
+    excerpt: "Pour un seul restaurant standard, une caisse du marché suffit en deux semaines. Le sur mesure se justifie avec la livraison multicanal, plusieurs adresses ou le stock par recette. L'écran cuisine change la soirée, le stock par recette change la marge.",
+    category: "Restaurant", author: "Symloop Team", date: "2026-10-29", readTime: "8 min", featured: true,
+    tags: ["caisse restaurant algérie", "pos restaurant", "écran cuisine", "gestion stock restaurant recettes", "commandes whatsapp restaurant"],
+    metaTitle: "Je veux une caisse pour mon restaurant : caisse du marché ou sur mesure, et dans quel ordre (Algérie 2026) | Symloop",
+    metaDescription: "Les quatre fuites d'un restaurant sur papier, ce qu'une caisse du marché règle en deux semaines, quand le sur mesure se justifie (livraison multicanal, plusieurs adresses, stock par recette), où l'IA aide, et les huit semaines pour basculer sans fermer un soir.",
+    translations: {
+      en: { title: "I want a till for my restaurant: what you really need, market POS or custom, and in what order (Algeria, 2026)", subtitle: "The four leaks of a paper-run restaurant, what a market POS fixes, when custom is justified, where AI helps, eight weeks without closing an evening", excerpt: "For a single standard restaurant, a market POS is enough in two weeks. Custom is justified with multichannel delivery, several addresses or recipe stock. The kitchen screen changes the evening, recipe stock changes the margin." },
+      ar: { title: "أريد صندوقاً لمطعمي: ما تحتاجه فعلاً، صندوق السوق أم مخصص، وبأي ترتيب (الجزائر، 2026)", subtitle: "التسربات الأربعة لمطعم يعمل بالورق، ما يحله صندوق السوق، متى يُبرَّر المخصص، أين يساعد الذكاء الاصطناعي، ثمانية أسابيع دون إغلاق سهرة", excerpt: "لمطعم واحد قياسي يكفي صندوق السوق في أسبوعين. يُبرَّر المخصص مع التوصيل متعدد القنوات أو عدة عناوين أو المخزون حسب الوصفة. شاشة المطبخ تغيّر السهرة، والمخزون حسب الوصفة يغيّر الهامش." }
+    }
+  },
+  {
+    id: "151",
+    slug: "creer-equivalent-leboncoin-vinted-algerie-2026",
+    title: "Leboncoin et Vinted en Algérie : Ouedkniss a gagné les annonces. Ce qui reste à construire, et comment (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #04 — ce qu'Ouedkniss fait, ce qu'il laisse au téléphone, et trois produits ouverts : seconde main avec paiement protégé, verticale vérifiée, outils des vendeurs pro",
+    excerpt: "L'équivalent de Leboncoin en Algérie s'appelle Ouedkniss, dix millions de visites par mois. Il s'arrête au premier message : paiement, livraison, retours et litiges se font au téléphone. Le modèle Vinted avec argent bloqué et Yalidine, la vérification des voitures et des logements, et les outils des vendeurs Instagram sont encore à construire.",
+    category: "Marketplace", author: "Symloop Team", date: "2026-10-29", readTime: "10 min", featured: true,
+    tags: ["leboncoin algérie", "vinted algérie", "ouedkniss alternative", "seconde main algérie application", "marketplace algérie paiement protégé"],
+    metaTitle: "Leboncoin et Vinted en Algérie : Ouedkniss a gagné, ce qui reste à construire (guide fondateur 2026) | Symloop",
+    metaDescription: "Comment s'appelle Leboncoin en Algérie ? Ouedkniss. Ce qu'il fait, ce qu'il laisse au téléphone, et les trois produits encore ouverts : seconde main avec livraison et paiement protégé (le modèle Vinted), verticale vérifiée, outils des vendeurs professionnels. Architecture, calendrier, budget.",
+    translations: {
+      en: { title: "Leboncoin and Vinted in Algeria: Ouedkniss won the classifieds. What remains to be built, and how (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #04: what Ouedkniss does, what it leaves to the phone, and three open products", excerpt: "The Leboncoin equivalent in Algeria is Ouedkniss, ten million visits a month. It stops at the first message: payment, delivery, returns and disputes happen by phone. The Vinted model with held money and Yalidine, verified cars and homes, and tools for Instagram sellers remain to be built." },
+      ar: { title: "Leboncoin وVinted في الجزائر: Ouedkniss ربح الإعلانات. ما يبقى للبناء وكيف (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #04: ما يفعله Ouedkniss، ما يتركه للهاتف، وثلاثة منتجات مفتوحة", excerpt: "مكافئ Leboncoin في الجزائر هو Ouedkniss بعشرة ملايين زيارة شهرياً. يتوقف عند الرسالة الأولى: الدفع والتوصيل والإرجاع والنزاعات بالهاتف. نموذج Vinted بالمال المحجوز وYalidine، والسيارات والمساكن الموثّقة، وأدوات بائعي إنستغرام ما زالت للبناء." }
+    }
+  },
+  {
+    id: "150",
+    slug: "payer-cloud-ia-depuis-algerie-carte-internationale-solutions-2026",
+    title: "Comment payer le cloud et l'IA depuis l'Algérie quand la carte CIB est refusée : AWS, Google Cloud, OpenAI, les options en 2026",
+    subtitle: "Six façons de payer, ce qu'elles valent, ce qu'il faut vérifier auprès de votre banque, et l'architecture qui réduit le besoin en devises à quelques dizaines de dollars",
+    excerpt: "Les cartes CIB et Edahabia ne fonctionnent pas sur les sites étrangers. Carte internationale adossée à un compte devises, compte d'entreprise exportatrice, revendeur local en dinars, fintech en zone grise, et l'hébergement en Algérie avec des modèles d'IA ouverts, la seule option sans devises.",
+    category: "Cloud & IA", author: "Symloop Team", date: "2026-10-29", readTime: "8 min", featured: true,
+    tags: ["payer aws depuis l'algérie", "payer openai algérie", "carte internationale algérie paiement en ligne", "héberger application en algérie", "modèles ia ouverts auto-hébergés"],
+    metaTitle: "Payer le cloud et l'IA depuis l'Algérie quand la carte CIB est refusée : les options en 2026 | Symloop",
+    metaDescription: "AWS, Google Cloud, OpenAI refusent la carte CIB. Les six façons de payer depuis l'Algérie, ce qu'elles valent, ce qu'il faut vérifier auprès de votre banque, et l'architecture (hébergement local, modèles ouverts) qui réduit le besoin en devises à presque rien.",
+    translations: {
+      en: { title: "How to pay for cloud and AI from Algeria when the CIB card is declined: AWS, Google Cloud, OpenAI, the options in 2026", subtitle: "Six ways to pay, what they are worth, what to check with your bank, and the architecture that reduces the foreign currency need to a few tens of dollars", excerpt: "CIB and Edahabia cards do not work on foreign sites. International card backed by a foreign currency account, exporting company account, local reseller in dinars, grey-zone fintech, and hosting in Algeria with open-weight AI models, the only option without foreign currency." },
+      ar: { title: "كيف تدفع للسحابة والذكاء الاصطناعي من الجزائر عندما تُرفض بطاقة CIB: AWS وGoogle Cloud وOpenAI، الخيارات في 2026", subtitle: "ست طرق للدفع، قيمتها، ما يجب التحقق منه لدى بنكك، والبنية التي تقلّص الحاجة إلى العملة الصعبة إلى بضع عشرات من الدولارات", excerpt: "بطاقتا CIB والذهبية لا تعملان على المواقع الأجنبية. بطاقة دولية مرتبطة بحساب بالعملة الصعبة، حساب شركة مصدّرة، موزّع محلي بالدينار، فينتك في منطقة رمادية، والاستضافة في الجزائر بنماذج مفتوحة، الخيار الوحيد بلا عملة صعبة." }
+    }
+  },
+  {
+    id: "149",
+    slug: "creer-equivalent-airbnb-algerie-2026",
+    title: "Airbnb en Algérie : la demande existe, la plateforme non. Comment lancer la location saisonnière qui tient (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #03 — pourquoi Airbnb ne fonctionne pas ici, qui loue vraiment, acompte en dinars et versement aux hôtes, architecture, calendrier avant juin",
+    excerpt: "Airbnb affiche des logements en Algérie mais les hôtes ne peuvent pas être payés et les voyageurs ne peuvent pas payer en CIB. La location saisonnière se fait sur Facebook, en espèces. Ce qu'il faut construire à la place : paiement dans les deux sens, confiance par la visite, cent logements vérifiés dans une ville avant juin.",
+    category: "Tourisme", author: "Symloop Team", date: "2026-10-29", readTime: "11 min", featured: true,
+    tags: ["airbnb algérie", "équivalent airbnb algérie", "location saisonnière algérie plateforme", "créer plateforme location vacances algérie", "startup location saisonnière"],
+    metaTitle: "Airbnb en Algérie : équivalent, marché réel et comment lancer la plateforme de location saisonnière (2026) | Symloop",
+    metaDescription: "Airbnb ne fonctionne pas en Algérie : pas de versement aux hôtes, pas de paiement CIB. Qui loue vraiment, ce qui doit changer (acompte en dinars, versement local, vérification physique, loi 99-06), l'architecture, le calendrier d'une première saison.",
+    translations: {
+      en: { title: "Airbnb in Algeria: the demand exists, the platform does not. How to launch short-term rental that lasts (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #03: why Airbnb does not work here, who really rents, dinar deposits and host payouts, architecture, timeline before June", excerpt: "Airbnb lists homes in Algeria but hosts cannot get paid and guests cannot pay with CIB. Short-term rental happens on Facebook, in cash. What to build instead: payment both ways, trust through visits, one hundred verified homes in one city before June." },
+      ar: { title: "Airbnb في الجزائر: الطلب موجود والمنصة لا. كيف تطلق الإيجار الموسمي الذي يصمد (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #03: لماذا لا يعمل Airbnb هنا، من يؤجّر فعلاً، عربون بالدينار وتحويل للمضيفين، البنية، الجدول قبل جوان", excerpt: "يعرض Airbnb مساكن في الجزائر لكن المضيفين لا يُدفَع لهم والمسافرين لا يدفعون بـCIB. الإيجار الموسمي يتم على فيسبوك نقداً. ما يجب بناؤه: دفع في الاتجاهين، ثقة بالزيارة، مئة سكن موثّق في مدينة واحدة قبل جوان." }
+    }
+  },
+  {
+    id: "148",
+    slug: "pharmacie-trois-officines-stock-excel-dates-de-peremption-algerie-2026",
+    title: "J'ai trois officines, mon stock est sur Excel et je perds des produits périmés chaque mois : comment reprendre la main (Algérie, 2026)",
+    subtitle: "Pourquoi Excel casse à partir de la deuxième officine, une semaine de règles, le logiciel multi-officines, où l'IA aide, dix semaines sans fermer",
+    excerpt: "Excel n'a ni lot, ni date de péremption, ni transfert entre officines. Un stock unique par lot et par date partagé par trois comptoirs, les transferts proposés avant toute commande, l'alerte au comptoir, l'inventaire tournant. Dix semaines, officine par officine.",
+    category: "Pharmacie", author: "Symloop Team", date: "2026-10-29", readTime: "9 min", featured: true,
+    tags: ["gestion stock pharmacie plusieurs officines", "logiciel pharmacie multi officines", "dates de péremption stock excel", "transfert stock entre officines", "logiciel gestion stock supérette"],
+    metaTitle: "Trois officines, un stock sur Excel, des périmés chaque mois : comment reprendre la main (Algérie 2026) | Symloop",
+    metaDescription: "Pourquoi Excel casse à partir de la deuxième officine, ce qui se règle en une semaine, le logiciel multi-officines qu'il vous faut (lot, date, transfert, Chifa), où l'IA aide vraiment, et le calendrier de dix semaines sans fermer une officine.",
+    translations: {
+      en: { title: "I have three pharmacies, my stock is on Excel and I lose expired products every month: how to take back control (Algeria, 2026)", subtitle: "Why Excel breaks from the second branch, a week of rules, multi-branch software, where AI helps, ten weeks without closing", excerpt: "Excel has no batch, no expiry date, no transfer between branches. A single stock per batch and date shared by three counters, transfers proposed before any order, counter alerts, rolling inventory. Ten weeks, one branch at a time." },
+      ar: { title: "لديّ ثلاث صيدليات، مخزوني على Excel وأخسر منتجات منتهية كل شهر: كيف أستعيد السيطرة (الجزائر، 2026)", subtitle: "لماذا ينكسر Excel من الفرع الثاني، أسبوع من القواعد، برنامج متعدد الفروع، أين يساعد الذكاء الاصطناعي، عشرة أسابيع دون إغلاق", excerpt: "Excel لا يعرف الدفعة ولا تاريخ الانتهاء ولا التحويل بين الفروع. مخزون واحد بالدفعة والتاريخ لثلاثة أكشاك، تحويلات تُقترح قبل أي طلب، تنبيه عند الكشك، جرد دوري. عشرة أسابيع، صيدلية بصيدلية." }
+    }
+  },
+  {
+    id: "147",
+    slug: "gerer-50-employes-terrain-tout-passe-par-telephone-algerie-2026",
+    title: "Je gère cinquante employés sur le terrain et tout passe par téléphone : par où commencer pour digitaliser sans bloquer l'activité (Algérie, 2026)",
+    subtitle: "Les trois informations que personne ne possède, une semaine de règles, l'application terrain en trois écrans, où l'IA aide vraiment",
+    excerpt: "Ne commencez pas par un ERP. Trois informations n'existent que dans la tête de vos chefs d'équipe : qui travaille où, quelle mission est faite, quelle preuve existe. Une semaine de règles les rend visibles, une application terrain en trois écrans les rend fiables, l'IA transforme le rapport vocal en compte rendu.",
+    category: "Équipes terrain", author: "Symloop Team", date: "2026-10-28", readTime: "9 min", featured: true,
+    tags: ["gérer employés terrain", "application pointage employés algérie", "digitaliser entreprise de transport", "application mission hors ligne", "gestion équipe terrain whatsapp"],
+    metaTitle: "Je gère 50 employés sur le terrain et tout passe par téléphone : par où commencer (Algérie 2026) | Symloop",
+    metaDescription: "Transport, livraison, maintenance, nettoyage : planning sur WhatsApp, pointage de mémoire, preuves perdues. Les trois informations vitales, une semaine de règles sans logiciel, l'application terrain en trois écrans, le rapport vocal par IA, douze semaines sans bloquer l'activité.",
+    translations: {
+      en: { title: "I manage fifty employees in the field and everything goes by phone: where to start digitising without stopping operations (Algeria, 2026)", subtitle: "The three facts nobody owns, a week of rules, the three-screen field app, where AI really helps", excerpt: "Do not start with an ERP. Three facts exist only in your supervisors' heads: who works where, which job is done, what proof exists. A week of rules makes them visible, a three-screen field app makes them reliable, AI turns the voice report into a written summary." },
+      ar: { title: "أسيّر خمسين موظفاً في الميدان وكل شيء يمر بالهاتف: من أين أبدأ الرقمنة دون توقيف النشاط (الجزائر، 2026)", subtitle: "المعلومات الثلاث التي لا يملكها أحد، أسبوع من القواعد، تطبيق الميدان بثلاث شاشات، أين يساعد الذكاء الاصطناعي فعلاً", excerpt: "لا تبدأ بـERP. ثلاث معلومات لا توجد إلا في رؤوس مشرفيك: من يعمل أين، أي مهمة أُنجزت، أي إثبات يوجد. أسبوع من القواعد يجعلها مرئية، وتطبيق ميداني بثلاث شاشات يجعلها موثوقة، والذكاء الاصطناعي يحوّل التقرير الصوتي إلى محضر." }
+    }
+  },
+  {
+    id: "146",
+    slug: "je-vends-sur-instagram-ai-je-besoin-d-une-application-algerie-2026",
+    title: "Je vends sur Instagram et WhatsApp en Algérie : ai-je besoin d'une application ? La plupart du temps, non. Voici quoi faire à la place (2026)",
+    subtitle: "Les trois paliers : règles WhatsApp Business, site de commande léger, puis l'application dans trois cas seulement",
+    excerpt: "Non, dans la grande majorité des cas. Sous trente commandes par semaine, des règles gratuites suffisent ; au-delà, un site de commande léger avec frais par wilaya, Yalidine et paiement à la livraison remplace vos soirées de messages. L'application vient en dernier, dans trois cas précis.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-10-28", readTime: "8 min", featured: true,
+    tags: ["vendre sur instagram algérie", "boutique instagram application", "site de commande algérie", "e-commerce paiement à la livraison", "whatsapp business vente"],
+    metaTitle: "Je vends sur Instagram en Algérie : ai-je besoin d'une application ? (2026) | Symloop",
+    metaDescription: "La plupart du temps, non. Les trois paliers pour une boutique Instagram en Algérie : règles WhatsApp Business, site de commande léger avec Yalidine et paiement à la livraison, puis l'application dans trois cas seulement. Où l'IA aide vraiment.",
+    translations: {
+      en: { title: "I sell on Instagram and WhatsApp in Algeria: do I need an app? Most of the time, no. Here is what to do instead (2026)", subtitle: "The three tiers: WhatsApp Business rules, a light ordering site, then the app in three cases only", excerpt: "No, in the vast majority of cases. Under thirty orders a week, free rules are enough; above that, a light ordering site with fees by wilaya, Yalidine and cash on delivery replaces your evenings of messages. The app comes last, in three precise cases." },
+      ar: { title: "أبيع على إنستغرام وواتساب في الجزائر: هل أحتاج تطبيقاً؟ في أغلب الأحيان لا. إليك ما تفعله بدلاً منه (2026)", subtitle: "الدرجات الثلاث: قواعد WhatsApp Business، موقع طلب خفيف، ثم التطبيق في ثلاث حالات فقط", excerpt: "لا، في الغالبية العظمى من الحالات. تحت ثلاثين طلباً أسبوعياً تكفي قواعد مجانية؛ وفوق ذلك موقع طلب خفيف برسوم حسب الولاية وYalidine والدفع عند التسليم يحل محل أمسيات الرسائل. التطبيق يأتي أخيراً في ثلاث حالات محددة." }
+    }
+  },
+  {
+    id: "145",
+    slug: "connaitre-prix-total-application-avant-de-commencer-algerie-2026",
+    title: "Peut-on connaître le prix total de mon application avant de commencer ? La réponse honnête (Algérie, 2026)",
+    subtitle: "Ce qui fait bouger le prix, comment deux semaines de cadrage le fixent, comment il se paie par jalons, et comment lire un devis",
+    excerpt: "Oui, à une condition : un périmètre écrit. Personne ne peut donner un prix total sur une idée ; tout le monde peut en donner un sur un cadrage. Les huit facteurs qui font varier le prix, la structure par jalons, la grille par catégorie et les signes d'un devis qui va bouger.",
+    category: "Budget", author: "Symloop Team", date: "2026-10-28", readTime: "8 min", featured: true,
+    tags: ["prix total application", "devis application mobile algérie", "cadrage application prix fixe", "combien coûte une application", "prix fixe développement"],
+    metaTitle: "Peut-on connaître le prix total de mon application avant de commencer ? (Algérie 2026) | Symloop",
+    metaDescription: "Oui, si le périmètre est écrit. Les huit facteurs qui font bouger le prix d'une application, le cadrage de deux semaines qui le fixe, le paiement par jalons, la grille par catégorie et comment lire un devis.",
+    translations: {
+      en: { title: "Can I know the total price of my app before starting? The honest answer (Algeria, 2026)", subtitle: "What moves the price, how two weeks of scoping fix it, how it is paid by milestones, and how to read a quote", excerpt: "Yes, on one condition: a written scope. Nobody can give a total price on an idea; everybody can on a scoping document. The eight factors, the milestone structure, the category grid and the signs of a quote that will move." },
+      ar: { title: "هل يمكنني معرفة السعر الإجمالي لتطبيقي قبل البدء؟ الجواب الصادق (الجزائر، 2026)", subtitle: "ما الذي يحرّك السعر، كيف يثبّته أسبوعان من التأطير، كيف يُدفع حسب المراحل، وكيف تقرأ عرض سعر", excerpt: "نعم، بشرط واحد: نطاق مكتوب. لا أحد يستطيع إعطاء سعر إجمالي على فكرة؛ الجميع يستطيع على وثيقة تأطير. العوامل الثمانية، هيكل المراحل، شبكة الفئات وعلامات عرض السعر الذي سيتغير." }
+    }
+  },
+  {
+    id: "144",
+    slug: "agence-immobiliere-whatsapp-google-sheets-organiser-equipe-algerie-2026",
+    title: "Mon agence immobilière tourne sur WhatsApp et Google Sheets : comment organiser mon équipe sans tout casser (Algérie, 2026)",
+    subtitle: "Diagnostic, ce qui se règle en une semaine sans logiciel, ce qui demande une plateforme, où l'IA fait vraiment gagner du temps, et ce que ça coûte",
+    excerpt: "Les clients sont dans des groupes WhatsApp, les biens dans un Google Sheets, et personne ne sait qui a appelé qui. Trois paliers : règles gratuites, plateforme avec fiche bien unique et application agent, IA pour le matching et la réponse aux premiers messages.",
+    category: "Immobilier", author: "Symloop Team", date: "2026-10-28", readTime: "9 min", featured: true,
+    tags: ["agence immobilière whatsapp", "logiciel agence immobilière algérie", "crm immobilier algérie", "organiser équipe agence immobilière", "ia agence immobilière"],
+    metaTitle: "Mon agence immobilière tourne sur WhatsApp et Google Sheets : comment organiser mon équipe (Algérie 2026) | Symloop",
+    metaDescription: "Clients dans WhatsApp, biens dans Google Sheets, personne ne sait qui a appelé qui. Ce qui se règle en une semaine sans logiciel, quand il faut une plateforme avec fiche bien unique et application agent, où l'IA fait gagner du temps, et le coût.",
+    translations: {
+      en: { title: "My real-estate agency runs on WhatsApp and Google Sheets: how to organise my team without breaking everything (Algeria, 2026)", subtitle: "Diagnosis, what gets fixed in a week without software, what needs a platform, where AI really saves time, and what it costs", excerpt: "Clients in WhatsApp groups, listings in a Google Sheet, nobody knows who called whom. Three tiers: free rules, a platform with a single listing record and an agent app, AI for matching and first-message replies." },
+      ar: { title: "وكالتي العقارية تشتغل على واتساب وGoogle Sheets: كيف أنظّم فريقي دون أن أكسر كل شيء (الجزائر، 2026)", subtitle: "التشخيص، ما يُحلّ في أسبوع بلا برنامج، ما يحتاج منصة، أين يوفّر الذكاء الاصطناعي الوقت فعلاً، وكم يكلف", excerpt: "العملاء في مجموعات واتساب، العقارات في ملف Google Sheets، ولا أحد يعرف من اتصل بمن. ثلاث درجات: قواعد مجانية، منصة ببطاقة عقار واحدة وتطبيق للوكلاء، ذكاء اصطناعي للمطابقة والرد على الرسائل الأولى." }
+    }
+  },
+  {
+    id: "143",
+    slug: "creer-equivalent-uber-eats-algerie-2026",
+    title: "Uber Eats en Algérie : pourquoi il n'y est pas, qui livre vraiment, et comment lancer la version qui tient (2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » #02 — livraison de repas : l'état réel du marché, trois positionnements ouverts, l'architecture à trois applications",
+    excerpt: "Uber Eats n'opère pas en Algérie, Jumia Food est parti fin 2023 et Yassir couvre les grandes villes. Ce qui reste ouvert pour un fondateur : les villes moyennes, la commande directe pour restaurants, la logistique B2B. Marché, architecture, calendrier.",
+    category: "Livraison", author: "Symloop Team", date: "2026-10-28", readTime: "11 min", featured: true,
+    tags: ["uber eats algérie", "équivalent uber eats algérie", "application livraison repas algérie", "créer une application de livraison en algérie", "startup livraison algérie"],
+    metaTitle: "Uber Eats en Algérie : équivalent, marché réel et comment lancer la version algérienne (2026) | Symloop",
+    metaDescription: "Uber Eats n'existe pas en Algérie. Qui livre vraiment en 2026 (Yassir, acteurs locaux, restaurants en direct), ce qui doit changer (cash, adresses, livreurs, Ramadan), l'architecture à trois applications, le calendrier et le modèle économique.",
+    translations: {
+      en: { title: "Uber Eats in Algeria: why it is not there, who really delivers, and how to launch the version that lasts (2026)", subtitle: "Series \"Seen in France, to be built in Algeria\" #02: the real state of food delivery, three open positions, the three-app architecture", excerpt: "Uber Eats does not operate in Algeria, Jumia Food left at the end of 2023 and Yassir covers the big cities. What remains open for a founder: mid-sized cities, direct ordering for restaurants, B2B logistics." },
+      ar: { title: "Uber Eats في الجزائر: لماذا ليس موجوداً، من يوصّل فعلاً، وكيف تطلق النسخة التي تصمد (2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر» #02: الحالة الحقيقية لتوصيل الطعام، ثلاثة مواقع مفتوحة، بنية التطبيقات الثلاثة", excerpt: "Uber Eats لا يعمل في الجزائر، Jumia Food غادر نهاية 2023 وYassir يغطي المدن الكبرى. ما يبقى مفتوحاً للمؤسس: المدن المتوسطة، الطلب المباشر للمطاعم، اللوجستيك B2B." }
+    }
+  },
+  {
+    id: "142",
+    slug: "lancer-startup-tech-algerie-depuis-france-diaspora-2026",
+    title: "Lancer une startup tech en Algérie depuis la France : le guide du fondateur de la diaspora (2026)",
+    subtitle: "Structure juridique à distance, produit adapté au terrain, choix de l'équipe, calendrier réel",
+    excerpt: "Vous vivez en France et voulez lancer une application pour le marché algérien ? Structure juridique par procuration, label startup, paiement CIB/Edahabia, choix de l'équipe technique et calendrier de 4 à 6 mois. Guide 2026 avec cinq schémas.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-27", readTime: "11 min", featured: true,
+    tags: ["startup diaspora algérie", "créer une startup en algérie depuis la france", "lancer une application en algérie", "label startup algérie", "créer une société en algérie depuis l'étranger"],
+    metaTitle: "Lancer une startup tech en Algérie depuis la France (2026) — Guide du fondateur de la diaspora | Symloop",
+    metaDescription: "Vous vivez en France et voulez lancer une application en Algérie ? Structure juridique à distance, label startup, paiement CIB/Edahabia, choix de l'équipe technique et calendrier réaliste. Guide 2026.",
+    translations: {
+      en: { title: "Launching a tech startup in Algeria from France: the diaspora founder's guide (2026)", subtitle: "Remote legal structure, a product built for the field, choosing the team, a real timeline", excerpt: "Living in France and launching an app for the Algerian market? Legal structure by proxy, startup label, CIB/Edahabia payments, choosing the technical team and a 4 to 6 month timeline." },
+      ar: { title: "إطلاق شركة تقنية ناشئة في الجزائر انطلاقاً من فرنسا: دليل مؤسس الجالية (2026)", subtitle: "الهيكل القانوني عن بعد، منتج ملائم للميدان، اختيار الفريق، جدول زمني حقيقي", excerpt: "تعيش في فرنسا وتريد إطلاق تطبيق للسوق الجزائرية؟ الهيكل القانوني بالوكالة، علامة Startup، الدفع CIB والذهبية، اختيار الفريق التقني وجدول من 4 إلى 6 أشهر." }
+    }
+  },
+  {
+    id: "141",
+    slug: "creer-equivalent-doctolib-algerie-2026",
+    title: "Doctolib en Algérie : comment lancer la prise de rendez-vous médical en ligne (guide fondateur 2026)",
+    subtitle: "Série « Vu en France, à construire en Algérie » — le modèle, le marché, ce qui doit changer, l'architecture, le calendrier",
+    excerpt: "Doctolib n'existe pas en Algérie. Ce que fait le modèle français, l'état du marché algérien, ce qui doit changer (SMS, loi 18-07, cabinets privés), l'architecture technique et le calendrier pour lancer l'équivalent algérien.",
+    category: "Santé", author: "Symloop Team", date: "2026-10-27", readTime: "10 min", featured: true,
+    tags: ["doctolib algérie", "équivalent doctolib algérie", "prise de rendez-vous médical en ligne algérie", "application rendez-vous médecin algérie", "startup santé algérie"],
+    metaTitle: "Doctolib en Algérie : lancer la prise de rendez-vous médical en ligne (guide fondateur 2026) | Symloop",
+    metaDescription: "Doctolib n'existe pas en Algérie. Le modèle français, l'état du marché algérien, ce qui doit changer (SMS, loi 18-07, cabinets privés), l'architecture technique, le budget et le calendrier pour lancer l'équivalent algérien.",
+    translations: {
+      en: { title: "Doctolib in Algeria: how to launch online medical booking (founder guide 2026)", subtitle: "Series \"Seen in France, to be built in Algeria\": the model, the market, what must change, the architecture, the timeline", excerpt: "Doctolib does not exist in Algeria. What the French model does, the state of the Algerian market, what must change (SMS, Law 18-07, private practices), the technical architecture and the timeline." },
+      ar: { title: "Doctolib في الجزائر: كيف تطلق حجز المواعيد الطبية عبر الإنترنت (دليل المؤسس 2026)", subtitle: "سلسلة «رأيته في فرنسا، ابنِه في الجزائر»: النموذج، السوق، ما يجب تغييره، البنية، الجدول الزمني", excerpt: "Doctolib غير موجود في الجزائر. ما يفعله النموذج الفرنسي، حال السوق الجزائرية، ما يجب تغييره، البنية التقنية والجدول الزمني لإطلاق المكافئ الجزائري." }
+    }
+  },
+  {
+    id: "140",
+    slug: "maison-intelligente-smart-home-libye-mauritanie-mali-2026",
+    title: "Maison intelligente et domotique pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "Sécurité IA, gestion énergie, CVC intelligent, accès biométrique, applications française et arabe",
+    excerpt: "Pour promoteurs résidentiels luxe et propriétaires à Tripoli, Misrata, Nouakchott et Bamako : smart home intégrée à 3-8K$ par villa au lieu de 15-25K$ chez les éditeurs golfiques.",
+    category: "Smart Home", author: "Symloop Team", date: "2026-05-25", readTime: "12 min", featured: true,
+    tags: ["maison intelligente Libye", "smart home Mauritanie", "domotique Bamako", "smart home Africa", "residential automation Libya", "domotique sahélienne"],
+    metaTitle: "Maison intelligente Libye Mauritanie Mali 2026 — Smart home 3-8K$ | Symloop",
+    metaDescription: "Smart home intégrée pour villas luxe à Tripoli, Nouakchott, Bamako. 73% moins cher que Honeywell+Lutron golfique. Hardware fabriqué à Alger, applications française + arabe.",
+    translations: {
+      en: { title: "Smart home and residential automation for Libya, Mauritania and Mali — 2026", subtitle: "AI security, energy management, intelligent HVAC, biometric access, French and Arabic apps", excerpt: "Luxury residential smart home at $3-8K per villa instead of $15-25K from Gulf vendors. Hardware manufactured in Algiers." },
+      ar: { title: "المنزل الذكي والأتمتة السكنية لليبيا وموريتانيا ومالي — 2026", subtitle: "الأمن بالذكاء الاصطناعي وإدارة الطاقة والتكييف الذكي والوصول البيومتري", excerpt: "منزل ذكي متكامل لفلل فاخرة في طرابلس ونواكشوط وباماكو. 73٪ أقل تكلفة من البائعين الخليجيين." }
+    }
+  },
+  {
+    id: "139",
+    slug: "logiciel-pms-hotels-libye-mauritanie-mali-2026",
+    title: "Logiciel PMS hôtels pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "PMS souverain, AI-native, multi-propriétés pour Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï",
+    excerpt: "Comment livrer un PMS souverain multi-propriétés à 60-120$ par chambre par an au lieu de 400-800$ chez Oracle Opera. AI dynamic pricing pour les sommets UA et le pattern dual-mode.",
+    category: "Hotel PMS", author: "Symloop Team", date: "2026-05-25", readTime: "13 min", featured: true,
+    tags: ["PMS hôtel Libye", "Oracle Opera alternative", "PMS hôtel Mauritanie", "PMS hôtel Mali", "hotel software Africa", "Azalaï PMS", "Corinthia PMS"],
+    metaTitle: "Logiciel PMS hôtels Libye Mauritanie Mali 2026 — 85% moins cher qu'Opera | Symloop",
+    metaDescription: "PMS souverain multi-propriétés pour Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï. AI dynamic pricing calibrée sommets UA. 85% moins cher qu'Oracle Opera.",
+    translations: {
+      en: { title: "Hotel PMS software for Libya, Mauritania and Mali — 2026", subtitle: "Sovereign, AI-native, multi-property PMS for Corinthia, Al Waddan, Rixos, Sahara Hotel, Azalaï", excerpt: "Sovereign multi-property PMS at $60-120/room/year instead of $400-800 from Oracle Opera. AI dynamic pricing for AU summits." },
+      ar: { title: "برمجيات PMS للفنادق في ليبيا وموريتانيا ومالي — 2026", subtitle: "PMS سيادي AI-native متعدد العقارات", excerpt: "PMS سيادي متعدد العقارات بـ 60-120 دولاراً لكل غرفة سنوياً بدلاً من 400-800 دولار من Oracle Opera." }
+    }
+  },
+  {
+    id: "138",
+    slug: "logiciel-gestion-batiments-bms-libye-mauritanie-mali-2026",
+    title: "Logiciel BMS gestion bâtiments pour Libye, Mauritanie et Mali — 2026",
+    subtitle: "Plateforme BMS souveraine, hardware IoT ESP32 fabriqué à Alger, AI intégrée, code source possédé",
+    excerpt: "BMS souverain pour bâtiments commerciaux et résidentiels à Tripoli, Nouakchott et Bamako. 62% moins cher que Schneider/Honeywell/Siemens. 6 capacités intégrées en standard.",
+    category: "BMS", author: "Symloop Team", date: "2026-05-25", readTime: "13 min", featured: true,
+    tags: ["BMS Libye", "BMS Mauritanie", "BMS Mali", "logiciel gestion bâtiment", "Schneider EcoStruxure alternative", "gestion énergie bâtiment Afrique", "smart building Tripoli"],
+    metaTitle: "Logiciel BMS gestion bâtiments Libye Mauritanie Mali 2026 — 62% moins cher | Symloop",
+    metaDescription: "Plateforme BMS souveraine pour bâtiments à Tripoli, Nouakchott, Bamako. 30-60K$ par bâtiment au lieu de 120-150K$ chez Schneider/Honeywell. Hardware ESP32 fabriqué à Alger.",
+    translations: {
+      en: { title: "BMS building management software for Libya, Mauritania and Mali — 2026", subtitle: "Sovereign BMS platform, ESP32 IoT hardware manufactured in Algiers, integrated AI, source code owned", excerpt: "Sovereign BMS for commercial and residential buildings in Tripoli, Nouakchott, Bamako. 62% cheaper than Schneider/Honeywell/Siemens." },
+      ar: { title: "برمجيات BMS لإدارة المباني في ليبيا وموريتانيا ومالي — 2026", subtitle: "منصة BMS سيادية، هاردوير IoT ESP32 مصنّع في الجزائر العاصمة", excerpt: "BMS سيادي للمباني التجارية والسكنية في طرابلس ونواكشوط وباماكو. 62٪ أرخص." }
+    }
+  },
+  {
+    id: "137",
+    slug: "transformation-digitale-pharma-algerie-ia-2026",
+    title: "Transformation digitale pharma en Algérie — comment l'IA réduit le coût-par-boîte de 22% en 2026",
+    subtitle: "Maintenance prédictive, vision QC, sérialisation DPM, supply chain — pour DG, Directeur Industriel, Directeur Qualité",
+    excerpt: "Brief décideur pour fabricants pharmaceutiques algériens : où l'IA déplace réellement le coût-par-boîte, les 6 cas d'usage en production aujourd'hui, et pourquoi 2026–2028 décide qui reste producteur indépendant.",
+    category: "Transformation digitale", author: "Symloop Team", date: "2026-05-24", readTime: "14 min", featured: true,
+    tags: ["transformation digitale pharma algérie", "IA industrie pharmaceutique", "digitalisation pharma algérie", "maintenance prédictive pharma", "sérialisation médicament algérie", "conformité DPM IA", "GMP Algeria AI", "pharma AI MENA"],
+    metaTitle: "Transformation digitale pharma Algérie IA 2026 — coût-par-boîte -22% | Symloop",
+    metaDescription: "Transformation digitale pharma Algérie avec IA. 6 cas d'usage en production : maintenance prédictive, vision QC, sérialisation DPM, supply chain. Pour DG, Directeur Industriel, DSI Pharma.",
+    translations: {
+      en: { title: "Pharma digital transformation in Algeria — how AI cuts cost-per-pack 22% in 2026", subtitle: "Predictive maintenance, vision QC, DPM serialization, supply chain — for GMs, Industrial Directors, Quality Directors", excerpt: "Decision-maker brief for Algerian pharma manufacturers: where AI moves cost-per-pack, the 6 use cases in production today, and why 2026–2028 decides who stays an independent producer." },
+      ar: { title: "التحوّل الرقمي للصناعة الدوائية في الجزائر — كيف يخفّض الذكاء الاصطناعي تكلفة العلبة 22٪ في 2026", subtitle: "الصيانة التنبؤية، رؤية QC، الترقيم التسلسلي DPM، سلسلة التوريد", excerpt: "دليل صانع القرار للمصنّعين الجزائريين: أين ينقل الذكاء الاصطناعي تكلفة العلبة، حالات الاستخدام الست في الإنتاج اليوم، ولماذا تقرّر 2026–2028 من يبقى منتجاً مستقلاً." }
+    }
+  },
+  {
+    id: "136",
+    slug: "transformation-digitale-assurance-algerie-ia-2026",
+    title: "Transformation digitale des assurances en Algérie — comment l'IA fait gagner 14 points de ratio combiné en 2026",
+    subtitle: "Souscription automatisée, vision sinistre, détection fraude, IDP — pour DG, CFO, DSI d'assurance",
+    excerpt: "Brief décideur pour DG, CFO et DSI des compagnies d'assurance algériennes (SAA, CAAR, CAAT, CIAR, TRUST, CASH, GAM) : où l'IA déplace réellement le ratio combiné, les 6 cas d'usage en production aujourd'hui, et pourquoi la fenêtre 2026–2028 décide qui reste indépendant.",
+    category: "Transformation digitale", author: "Symloop Team", date: "2026-05-24", readTime: "14 min", featured: true,
+    tags: ["transformation digitale assurance algérie", "IA assurance algérie", "intelligence artificielle assurance", "digitalisation compagnie assurance", "IA souscription", "détection fraude sinistre", "ratio combiné", "insurance AI MENA", "insurtech algérie"],
+    metaTitle: "Transformation digitale assurance Algérie IA 2026 — ratio combiné -14 pts | Symloop",
+    metaDescription: "Transformation digitale assurance Algérie avec IA. 6 cas d'usage en production : souscription automatisée, vision sinistre, détection fraude, IDP. Pour DG, CFO, DSI d'assurance.",
+    translations: {
+      en: { title: "Insurance digital transformation in Algeria — how AI moves combined ratio 14 points in 2026", subtitle: "Automated underwriting, vision claims, fraud detection, IDP — for insurance CEOs, CFOs, CIOs", excerpt: "Decision-maker brief for Algerian insurance CEOs, CFOs and CIOs: where AI moves combined ratio, the 6 use cases in production today, and why the 2026–2028 window decides who stays independent." },
+      ar: { title: "التحوّل الرقمي لشركات التأمين في الجزائر — كيف ينقل الذكاء الاصطناعي 14 نقطة من النسبة المركّبة في 2026", subtitle: "اكتتاب آلي، رؤية مطالبات، كشف احتيال، IDP — للرؤساء التنفيذيين والماليّين ومدراء تقنية المعلومات", excerpt: "دليل صانع القرار للرؤساء التنفيذيين في شركات التأمين الجزائرية: أين ينقل الذكاء الاصطناعي النسبة المركّبة، حالات الاستخدام الست في الإنتاج اليوم." }
+    }
+  },
+  {
     id: "135",
     slug: "high-performance-computing-algeria-2026",
     title: "High Performance Computing (HPC) in Algeria: Powering AI, Research & Industry in 2026",
@@ -443,7 +953,7 @@ export const blogs = [
     slug: "developpement-application-mobile-algerie-2026",
     title: "Développement d'Applications Mobiles en Algérie 2026",
     subtitle: "Votre Projet, Notre Expertise — Flutter, React Native, Swift & Kotlin pour Particuliers, Entreprises et Gouvernement",
-    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Sétif, couvre toute l'Algérie.",
+    excerpt: "Agence experte en développement d'applications mobiles en Algérie. Flutter, React Native, Swift, Kotlin. +50 apps livrées pour particuliers, entreprises et institutions gouvernementales. Symloop, basée à Alger, couvre toute l'Algérie.",
     category: "Mobile",
     author: "Symloop Team",
     date: "2026-03-31",
@@ -571,7 +1081,7 @@ export const blogs = [
     slug: "solutions-informatiques-algerie-2026",
     title: "Solutions Informatiques en Algérie 2026",
     subtitle: "Développement Web, IoT, IA & Transformation Digitale — Votre Partenaire IT en Algérie",
-    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Sétif, accompagne les entreprises algériennes dans leur transformation digitale.",
+    excerpt: "Guide complet sur les solutions informatiques en Algérie en 2026. Développement web et mobile, IoT, intelligence artificielle, ERP/CRM, cybersécurité. Symloop, entreprise informatique basée à Alger, accompagne les entreprises algériennes dans leur transformation digitale.",
     category: "Digital",
     author: "Symloop Team",
     date: "2026-03-31",
@@ -580,17 +1090,17 @@ export const blogs = [
     featured: true,
     tags: ["solutions informatiques algérie", "entreprise informatique algérie", "développement informatique algérie", "SSII algérie", "ESN algérie", "prestataire IT algérie", "société informatique alger", "informatique sétif"],
     metaTitle: "Solutions Informatiques en Algérie 2026 | Développement, IoT, IA | Symloop",
-    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Sétif. Devis gratuit.",
+    metaDescription: "Solutions informatiques complètes en Algérie. Développement web & mobile, IoT, IA, ERP/CRM, cybersécurité. Symloop, entreprise IT à Alger. Devis gratuit.",
     translations: {
       en: {
         title: "IT Solutions in Algeria 2026 — Web, IoT, AI & Digital Transformation",
         subtitle: "Web Development, IoT, AI & Digital Transformation — Your IT Partner in Algeria",
-        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Setif, Algeria."
+        excerpt: "Complete guide to IT solutions in Algeria in 2026. Web and mobile development, IoT, AI, ERP/CRM, cybersecurity. Symloop, IT company based in Algiers, Algeria."
       },
       ar: {
         title: "حلول تكنولوجيا المعلومات في الجزائر 2026",
         subtitle: "تطوير الويب، إنترنت الأشياء، الذكاء الاصطناعي والتحول الرقمي — شريكك التقني في الجزائر",
-        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في سطيف."
+        excerpt: "دليل شامل لحلول تكنولوجيا المعلومات في الجزائر 2026. تطوير الويب والتطبيقات، إنترنت الأشياء، الذكاء الاصطناعي. سيملوب، شركة تقنية في الجزائر العاصمة."
       }
     }
   },
@@ -3325,6 +3835,118 @@ export const blogs = [
         title: "كيف تنشئ متجرا إلكترونيا في الجزائر 2026؟",
         subtitle: "دليل شامل: المنصة، الدفع CIB/Edahabia، اللوجستيات، SEO",
         excerpt: "دليل شامل لإنشاء متجر إلكتروني في الجزائر 2026. اختيار المنصة، الدفع الإلكتروني، اللوجستيات، التسويق الرقمي."
+      }
+    }
+  },
+  {
+    id: "119",
+    slug: "logiciel-gmao-cmms-maintenance-industrielle-algerie-2026",
+    title: "Logiciel GMAO en Algérie 2026 — Guide CMMS Maintenance Industrielle",
+    subtitle: "Maintenance Préventive, Prédictive, IoT — Du Carnet Papier au Système Connecté",
+    excerpt: "Guide complet du logiciel GMAO (CMMS) pour l'industrie algérienne. Maintenance préventive et prédictive, IoT industriel, intégration ERP, conformité HSE. Comment choisir.",
+    category: "Industrial",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "16 min",
+    image: "/blog/cover-gmao-cmms.jpg",
+    featured: true,
+    tags: ["gmao algerie", "cmms maintenance industrielle", "logiciel maintenance preventive", "maintenance predictive iot", "gestion equipement usine", "gmao open source vs payante"],
+    metaTitle: "Logiciel GMAO Algérie 2026 — Guide CMMS Maintenance Industrielle | Symloop",
+    metaDescription: "Guide complet GMAO/CMMS pour l'industrie algérienne. Maintenance préventive, prédictive, IoT, intégration ERP. Comment choisir, prix, alternatives Maximo. Symloop vous accompagne.",
+    translations: {
+      en: {
+        title: "CMMS Maintenance Software in Algeria 2026 — Industrial Asset Management Guide",
+        subtitle: "Preventive, Predictive, IoT — From Paper Logbook to Connected System",
+        excerpt: "Complete guide to CMMS / industrial maintenance software for Algerian industry. Preventive and predictive maintenance, industrial IoT, ERP integration, HSE compliance."
+      },
+      ar: {
+        title: "برنامج GMAO في الجزائر 2026 — دليل الصيانة الصناعية CMMS",
+        subtitle: "صيانة وقائية وتنبؤية و IoT — من السجل الورقي إلى النظام المتصل",
+        excerpt: "دليل شامل لبرنامج GMAO/CMMS للصناعة الجزائرية. صيانة وقائية وتنبؤية، IoT صناعي، تكامل ERP، امتثال HSE."
+      }
+    }
+  },
+  {
+    id: "120",
+    slug: "logiciel-ged-dematerialisation-documents-algerie-2026",
+    title: "Logiciel GED en Algérie 2026 — Dématérialisation et Archivage Électronique",
+    subtitle: "Gestion Électronique de Documents, Workflow, Signature Électronique, Conformité Légale",
+    excerpt: "Guide complet GED (Gestion Électronique de Documents) pour entreprises et administrations algériennes. Dématérialisation, workflow, signature électronique, archivage à valeur probante.",
+    category: "Enterprise",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "18 min",
+    image: "/blog/cover-ged-dms.jpg",
+    featured: true,
+    tags: ["ged algerie", "dematerialisation entreprise", "logiciel gestion documents", "archivage electronique", "signature electronique algerie", "workflow document"],
+    metaTitle: "Logiciel GED Algérie 2026 — Dématérialisation et Archivage | Symloop",
+    metaDescription: "Guide complet GED en Algérie 2026. Dématérialisation entreprise, workflow, signature électronique, archivage à valeur probante. Alternatives SharePoint, OpenText. Symloop vous accompagne.",
+    translations: {
+      en: {
+        title: "DMS Document Management Software in Algeria 2026 — Digitization & Electronic Archive",
+        subtitle: "Document Management, Workflow, e-Signature, Legal Compliance",
+        excerpt: "Complete DMS guide for Algerian businesses and administrations. Digitization, workflow, e-signature, legally-valid electronic archiving."
+      },
+      ar: {
+        title: "برنامج GED في الجزائر 2026 — رقمنة المستندات والأرشفة الإلكترونية",
+        subtitle: "إدارة المستندات الإلكترونية، سير العمل، التوقيع الإلكتروني، الامتثال القانوني",
+        excerpt: "دليل شامل GED للشركات والإدارات الجزائرية. الرقمنة، سير العمل، التوقيع الإلكتروني، الأرشفة ذات القيمة الإثباتية."
+      }
+    }
+  },
+  {
+    id: "121",
+    slug: "logiciel-wms-gestion-entrepot-algerie-2026",
+    title: "Logiciel WMS en Algérie 2026 — Gestion d'Entrepôt et Stock Multi-Sites",
+    subtitle: "Warehouse Management System, Picking Optimisé, Mobile, Intégration Yalidine/ZR Express",
+    excerpt: "Guide complet WMS pour entrepôts et e-commerce en Algérie. Picking optimisé, mobile barcode, multi-sites, intégrations transporteurs locaux (Yalidine, ZR Express, Maystro).",
+    category: "Logistics",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "15 min",
+    image: "/blog/cover-wms.jpg",
+    featured: true,
+    tags: ["wms algerie", "logiciel gestion entrepot", "warehouse management system", "logiciel gestion stock", "wms yalidine zr express", "stock multi-sites"],
+    metaTitle: "Logiciel WMS Algérie 2026 — Gestion Entrepôt Multi-Sites | Symloop",
+    metaDescription: "Guide complet WMS pour l'Algérie 2026. Picking optimisé, mobile barcode, multi-sites, intégrations Yalidine/ZR Express. Alternatives SAP EWM. Symloop construit du sur-mesure.",
+    translations: {
+      en: {
+        title: "WMS Warehouse Software in Algeria 2026 — Multi-Site Inventory Management",
+        subtitle: "Warehouse Management, Optimized Picking, Mobile, Carrier Integration",
+        excerpt: "Complete WMS guide for warehouses and e-commerce in Algeria. Optimized picking, mobile barcode, multi-site, local carrier integrations (Yalidine, ZR Express, Maystro)."
+      },
+      ar: {
+        title: "برنامج WMS في الجزائر 2026 — إدارة المستودعات والمخزون متعدد المواقع",
+        subtitle: "نظام إدارة المستودعات، انتقاء محسّن، جوال، تكامل ياليدين/ZR Express",
+        excerpt: "دليل شامل WMS للمستودعات والتجارة الإلكترونية في الجزائر. انتقاء محسّن، جوال باركود، متعدد المواقع، تكاملات شركات التوصيل المحلية."
+      }
+    }
+  },
+  {
+    id: "122",
+    slug: "tableau-de-bord-business-intelligence-algerie-2026",
+    title: "Tableau de Bord et Business Intelligence en Algérie 2026",
+    subtitle: "Power BI, Tableau, Metabase, ou Sur Mesure — Comment Choisir et Quand Construire",
+    excerpt: "Guide BI et tableaux de bord pour entreprises algériennes. Power BI vs Tableau vs Metabase vs sur-mesure. Data warehouse, KPI temps réel, analytique prédictive.",
+    category: "Analytics",
+    author: "Symloop Engineering",
+    date: "2026-05-04",
+    readTime: "17 min",
+    image: "/blog/cover-bi-dashboard.jpg",
+    featured: true,
+    tags: ["tableau de bord algerie", "business intelligence algerie", "power bi alternative", "decisionnel entreprise", "data warehouse algerie", "kpi pilotage"],
+    metaTitle: "Tableau de Bord & BI Algérie 2026 — Power BI, Tableau, Sur-Mesure | Symloop",
+    metaDescription: "Guide BI Algérie 2026. Power BI, Tableau, Metabase, ou tableau de bord sur-mesure. Data warehouse, KPI temps réel, analytique prédictive. Symloop construit votre BI.",
+    translations: {
+      en: {
+        title: "Business Intelligence & Executive Dashboards in Algeria 2026",
+        subtitle: "Power BI, Tableau, Metabase, or Custom — How to Choose and When to Build",
+        excerpt: "BI and dashboards guide for Algerian companies. Power BI vs Tableau vs Metabase vs custom. Data warehouse, real-time KPI, predictive analytics."
+      },
+      ar: {
+        title: "لوحة المعلومات وذكاء الأعمال في الجزائر 2026",
+        subtitle: "Power BI و Tableau و Metabase أو مخصص — كيف تختار ومتى تبني",
+        excerpt: "دليل ذكاء الأعمال للشركات الجزائرية. Power BI و Tableau و Metabase أو مخصص. مستودع بيانات، KPI آني، تحليلات تنبؤية."
       }
     }
   }

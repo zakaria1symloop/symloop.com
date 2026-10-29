@@ -55,7 +55,7 @@ export default function SeoAlgerie() {
     {
       "@type": "Question",
       "name": "Quelle agence SEO choisir en Algérie ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Sétif, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Alger, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
     },
     {
       "@type": "Question",
@@ -276,7 +276,7 @@ export default function SeoAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

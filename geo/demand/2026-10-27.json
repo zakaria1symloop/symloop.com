@@ -1,0 +1,4557 @@
+{
+ "date": "2026-10-27",
+ "calls": 9744,
+ "seeds": 174,
+ "rows": [
+  {
+   "query": "equivalent uber eat algerie",
+   "gl": "fr+dz",
+   "seeds": 4,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 11
+  },
+  {
+   "query": "equivalent uber en algerie",
+   "gl": "fr+dz",
+   "seeds": 4,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 11
+  },
+  {
+   "query": "uber eat d'algérie",
+   "gl": "fr+dz",
+   "seeds": 4,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 11
+  },
+  {
+   "query": "equivalent uber eats algerie",
+   "gl": "fr+dz",
+   "seeds": 3,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 10
+  },
+  {
+   "query": "reservation alger france",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 10
+  },
+  {
+   "query": "airbnb alger avec piscine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger avis",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger bab ezzouar",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger centre",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger centre pas cher",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger couple non marié",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger dar el beida",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger dely brahim",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger draria",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger el achour",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger el biar",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger el mouradia",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger en dinars",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger golf",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger grande poste",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger hotel",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger hussein dey",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger hydra",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger la grande poste",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger maison piscine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger mohammadia",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger non mariee",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger ouled fayet",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger plage",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger prix",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger rais hamidou",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger sidi fredj",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger studio",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger urba 2000",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger villa",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger villa piscine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb alger vue sur mer",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie annaba",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie bejaia",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie bord de mer",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algérie bord de mer",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie constantine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie ghazaouet",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie legal",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie livret de famille",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie mostaganem",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algérie oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie piscine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie reglementation",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie setif",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie skikda",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algérie tipaza",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie tizi ouzou",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb algerie tlemcen",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb jijel algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb nedroma algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "airbnb remchi algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "application uber en algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking air algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger appartement",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger by ilyes immo",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger centre",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger dz",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger ilyes immo",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger paris",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking alger sofitel",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking algerie ferries",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking algerie hotel",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking algerie oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking bejaia algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking com algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking go algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking jijel algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking mostaganem algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking tunisie algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "booking vol algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "création d entreprise algérien en france",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "deliveroo algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "deliveroo",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "doctolib algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 9
+  },
+  {
+   "query": "equivalent airbnb algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent de uber en algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent leboncoin.algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "equivalent uber algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie adresse",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie application",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie avis",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie chauffeur",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie code promo",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie contact",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie inscription",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie numéro de téléphone",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie photos",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie prix",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie recrutement",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algérie reviews",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie service client",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch algerie telephone",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch driver algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch femme algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch pro algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "heetch taxi algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "investir en algerie diaspora",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "le bon coin algérie ouedkniss",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "ouedkniss",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "leboncoin d'algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "leboncoin en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "leboncoin export algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "leboncoin l'algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "leboncoin livraison algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "ouvrir une entreprise en france pour algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "reservation air algerie france",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "reservation france algerie bateau",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": true,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "site comme leboncoin en algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "taxi uber en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber d'algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eat algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eat algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eat en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eats en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber eats in algeria",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber equivalent in algeria",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber femme algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber oran algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "uber taxi algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 9
+  },
+  {
+   "query": "air algerie booking reference",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "air algerie booking uk",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb en dinars algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb in alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb in alger michigan",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "airbnb in algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": "app-cost-in-algeria",
+   "score": 8
+  },
+  {
+   "query": "airbnb interdit en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "algeria uber app",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "uber",
+   "diaspora": false,
+   "covered": "app-cost-in-algeria",
+   "score": 8
+  },
+  {
+   "query": "application comme uber en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "application doctolib algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking alger aeroport",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking alger istanbul",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algérie hotel",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking algérie oran'",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking en dinars algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking ibis alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "booking sheraton alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "chauffeur heetch salaire algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "comment s appelle leboncoin en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "doctolib algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 8
+  },
+  {
+   "query": "doctolib en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 8
+  },
+  {
+   "query": "doctolib en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "doctolib",
+   "diaspora": false,
+   "covered": "creer-equivalent-doctolib-algerie-2026",
+   "score": 8
+  },
+  {
+   "query": "faire du airbnb en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch chauffeur inscription algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "heetch service client numéro algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "installer heetch algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "leboncoin algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "leboncoin voiture export algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "location airbnb en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "siege heetch algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "site leboncoin algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "leboncoin",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "télécharger heetch algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber a alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber eat en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber eats algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber eats en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 8
+  },
+  {
+   "query": "uber in algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": "uber",
+   "diaspora": false,
+   "covered": "app-cost-in-algeria",
+   "score": 8
+  },
+  {
+   "query": "airbnb alger aeroport",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger ain benian",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger ain naadja",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger ain taya",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger appartement",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger bab el oued",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger ben aknoun",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger bir mourad rais",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 9,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger birkhadem",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger bordj el bahri",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger bordj el kiffan",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger bouzareah",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger casbah",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger centre avec piscine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger centre la grande poste",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger centre ville",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger cheraga",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger couple",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 9,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger didouche mourad",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger location",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger maison",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger pas cher",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger proche aeroport",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger said hamdine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger sans livret de famille",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger sidi yahia",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger staoueli",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb alger telemly",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb azeffoun algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb dellys algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb djanet algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb ghardaia algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb guelma algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb l algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb luxe alger",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb maghnia algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb medea algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb mila algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb port say algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb relizane algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb saida algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb taghit algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb tebessa algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb tenes algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb tiaret algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb tigzirt algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "airbnb visa algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "booking annaba algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "doctome bejaia algerie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "heetch algérie avis",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "le bon coin algérie bordj bou arreridj",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "le bon coin algerie moto",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "le bon coin algerie oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "le bon coin algérie voiture",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "le bon coin immobilier algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "le bon coin immobilier algérie oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation air algerie en euro",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation air algerie en ligne",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger constantine",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger doha",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger dubai",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger egypte",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger guangzhou",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger istanbul",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger jijel",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger lille",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger lyon",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger marseille bateau",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger montreal",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger nantes",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger new york",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger nice",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger oran train",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger paris",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger qatar",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger rome",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger setif",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger tebessa",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation alger tunis",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation algerie avion",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation algerie ferrie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation algerie ferries ete 2026",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation algerie go",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation algerie hotel",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": "logiciel-hotel-reservation-hebergement-algerie-2026",
+   "score": 7
+  },
+  {
+   "query": "reservation algerie pas cher",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "reservation hotel algerie en ligne",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": "logiciel-hotel-reservation-hebergement-algerie-2026",
+   "score": 7
+  },
+  {
+   "query": "vtc algerie oran",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "vtc en algérie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 7
+  },
+  {
+   "query": "agence creation site web algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "creation-site-web-algerie-2024",
+   "score": 6
+  },
+  {
+   "query": "agence de communication alger centre",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "agence digital en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "agence digitale algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": "agence-digitale-mena-2024",
+   "score": 6
+  },
+  {
+   "query": "agence marketing digital algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": "marketing-digital-algerie-2024",
+   "score": 6
+  },
+  {
+   "query": "agence web algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "agence-developpement-web-alger-2026",
+   "score": 6
+  },
+  {
+   "query": "agence web en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "agence-developpement-web-alger-2026",
+   "score": 6
+  },
+  {
+   "query": "air algerie booking details",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "air algerie booking number",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb a alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb alger mi",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algeria reddit",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb location alger centre",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb location vacances algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb miramar alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb rouiba alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "airbnb sur alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "application achat en ligne algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "application uber algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "application uber eat algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "application uber en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "avantage label startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking air algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking cheraga alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking constantine algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking dinar algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking go algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking hotel alger centre",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking hotel alger les mieux notés",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking hyatt alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking hydra alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking ielts algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking in algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "booking",
+   "diaspora": false,
+   "covered": "app-cost-in-algeria",
+   "score": 6
+  },
+  {
+   "query": "booking location alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking lyon alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking marriott alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking opera alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking opera alger dz",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking prix en dinars algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking tunisie en dinars algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "booking villa alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "car online agence alger aéroport international",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "code promo heetch algérie aujourd hui",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "comment avoir le label startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "comment créer une application en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "comment-creer-application-mobile",
+   "score": 6
+  },
+  {
+   "query": "comment créer une entreprise en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "comment créer une startup en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "comment obtenir le label startup en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "commission heetch algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "création d entreprise en algérie pdf",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "création d une entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "création site e commerce algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "creer sa societe en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "creer sa startup en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer son entreprise en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une application en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "comment-creer-application-mobile",
+   "score": 6
+  },
+  {
+   "query": "creer une entreprise de nettoyage en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une entreprise en ligne algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "creer-boutique-en-ligne-algerie-2026",
+   "score": 6
+  },
+  {
+   "query": "créer une micro entreprise en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une société de transport en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une société en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une société import export en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "créer une startup en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "demande label startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "digi booking algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "dossier label startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "etapes pour créer une entreprise en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idee de business algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idee de business en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idée de projet algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idée de projet en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idée de projet rentable en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "idée projet rentable algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "inscription heetch chauffeur algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "label incubateur algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "label startup algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "le bon coin dz alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "location airbnb oran algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "logo startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "numero airbnb algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "numero heetch chauffeur algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": "heetch",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "ouvrir une societe avec passeport algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "prix application mobile algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": "prix-application-mobile-algerie-2026",
+   "score": 6
+  },
+  {
+   "query": "renouvellement label startup algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation airbnb visa algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": "airbnb",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation algerie bateau",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation emirates algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation en bateau algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation en ligne algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation en ligne hotel algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": "logiciel-hotel-reservation-hebergement-algerie-2026",
+   "score": 6
+  },
+  {
+   "query": "reservation lufthansa algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation vol algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation volotea algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 2,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "symloop",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "symloop_max",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "tunisie booking algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": "booking",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "uber eats algerien",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": "uber",
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "vtc a alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "vtc algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "vtc femme algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 1,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "vtc moto algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 0,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 6
+  },
+  {
+   "query": "reservation alger alicante",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger annaba",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger bali",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger barcelone",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger batna",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger bechar",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger bejaia",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger biskra",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger bruxelles",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger djeddah",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger francfort",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger geneve",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger madrid",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger malaisie",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger marseille",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger milan",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger montreal air canada",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger ouargla",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger paris orly",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger tamanrasset",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger tindouf",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger tlemcen",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger toulouse",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation alger tunis train",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation algerie montpellier",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 5
+  },
+  {
+   "query": "reservation hotel algerie en dinars",
+   "gl": "fr+dz",
+   "seeds": 2,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": "logiciel-hotel-reservation-hebergement-algerie-2026",
+   "score": 5
+  },
+  {
+   "query": "book club alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "book nook algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "bookstore algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "comment créer une entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "créer une entreprise de nettoyage en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "créer une micro entreprise en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "le bon coin algérie oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "meilleur idée de projet en algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie dz",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie en dinars",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie gerer",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie gratuit",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie light trip",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie ligne interieure",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie lyon oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie lyon setif",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie national",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie numero",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie numero de telephone",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie online",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie otla",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie par telephone",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie paris annaba",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie paris oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie promotion",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation air algerie vol interieur",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation alger adrar",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation alger istanbul turkish airlines",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation alger le caire",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation algérie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": "application-reservation-algerie-2026",
+   "score": 4
+  },
+  {
+   "query": "réservation algérie férié",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation algérie ferries",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "réservation algérie ferries badji mokhtar 3",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "réservation algérie ferries bateau",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "réservation algérie ferries marseille oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation bateau algerie ete 2026",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation cnan algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation consulat algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation corsica algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation desert algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation en algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": "application-reservation-algerie-2026",
+   "score": 4
+  },
+  {
+   "query": "reservation en ligne air algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation entmv algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation gnv algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation hotel alger centre",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation ibis alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation opera alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation orly alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation paris alger pas cher",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation piscine alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation sete alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 6,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation sheraton alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation sntf alger oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation sntf algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation sofitel alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation sogral alger",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation tassili algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation train algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation vacance algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 5,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation voiture algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 4,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation vol alger constantine",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 7,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation vol alger oran",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 8,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation vol alger paris",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 9,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "reservation vueling algerie",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  },
+  {
+   "query": "startup label algeria",
+   "gl": "fr+dz",
+   "seeds": 1,
+   "bestRank": 3,
+   "model": null,
+   "diaspora": false,
+   "covered": null,
+   "score": 4
+  }
+ ]
+}

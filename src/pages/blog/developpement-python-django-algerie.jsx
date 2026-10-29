@@ -183,7 +183,7 @@ export default function PythonDjangoAlgerie() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-yellow-900 via-amber-800 to-yellow-900 text-white py-16 lg:py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-yellow-300 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
@@ -228,7 +228,7 @@ export default function PythonDjangoAlgerie() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
+                <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
                   <div className="text-3xl font-bold text-yellow-600">{stat.value}</div>
                   <div className="text-gray-600">{stat.label}</div>
                 </motion.div>
@@ -277,7 +277,7 @@ export default function PythonDjangoAlgerie() {
               <p className="text-gray-600 mb-8">De l'application web à l'intelligence artificielle</p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {services.map((service, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
+                  <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }}
                     className="bg-white border-2 border-gray-100 rounded-2xl p-6 hover:border-yellow-200 hover:shadow-lg transition-all">
                     <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
                       <service.icon className="w-6 h-6 text-yellow-600" />
@@ -322,7 +322,7 @@ export default function PythonDjangoAlgerie() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 {pricingPlans.map((plan, i) => (
-                  <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
+                  <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }}
                     className={`relative bg-white rounded-2xl p-6 ${plan.popular ? 'border-2 border-yellow-500 shadow-xl' : 'border border-gray-200'}`}>
                     {plan.popular && (
                       <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-white px-4 py-1 rounded-full text-sm font-medium">

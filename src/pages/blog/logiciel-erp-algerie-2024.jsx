@@ -75,7 +75,7 @@ export default function LogicielERPAlgerie() {
                 "name": "Pourquoi choisir Symloop pour un ERP en Algérie ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Symloop, basé à Sétif, développe des ERP sur mesure avec des technologies modernes (React, Node.js, cloud). Nos logiciels couvrent la gestion commerciale, stocks, facturation, RH et production, 100% conformes à la réglementation fiscale algérienne. Support local, pas de licence récurrente, et accompagnement complet."
+                  "text": "Symloop, basé à Alger, développe des ERP sur mesure avec des technologies modernes (React, Node.js, cloud). Nos logiciels couvrent la gestion commerciale, stocks, facturation, RH et production, 100% conformes à la réglementation fiscale algérienne. Support local, pas de licence récurrente, et accompagnement complet."
                 }
               },
               {
@@ -121,8 +121,8 @@ export default function LogicielERPAlgerie() {
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
             >
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />

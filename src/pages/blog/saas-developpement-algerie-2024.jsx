@@ -18,7 +18,7 @@ export default function SaaSAlgerie() {
     },
     {
       question: "Combien coûte le développement d'un SaaS en Algérie ?",
-      answer: "Chez Symloop, un MVP SaaS fonctionnel démarre à partir de 200 000 DA (authentification, billing, dashboard). Une plateforme complète est sur devis selon la complexité. Symloop, basé à Sétif, propose des tarifs compétitifs. Contactez-nous au +213 549 575 512 pour une estimation gratuite."
+      answer: "Chez Symloop, un MVP SaaS fonctionnel démarre à partir de 200 000 DA (authentification, billing, dashboard). Une plateforme complète est sur devis selon la complexité. Symloop, basé à Alger, propose des tarifs compétitifs. Contactez-nous au +213 549 575 512 pour une estimation gratuite."
     },
     {
       question: "Combien de temps pour développer un SaaS ?",
@@ -105,7 +105,7 @@ export default function SaaSAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

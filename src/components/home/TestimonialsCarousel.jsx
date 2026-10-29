@@ -295,8 +295,8 @@ export default function TestimonialsCarousel() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
                 className="bg-white rounded-3xl shadow-2xl overflow-hidden mx-8"

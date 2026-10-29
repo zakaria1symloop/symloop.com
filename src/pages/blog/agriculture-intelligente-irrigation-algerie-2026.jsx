@@ -122,7 +122,7 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-green-900 via-green-800 to-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog
@@ -652,7 +652,7 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
                 <p className="text-sm text-green-800 flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>
-                    <strong>Siege Symloop :</strong> Setif, Algerie. Equipes d&apos;installation dans les 4 grandes regions.
+                    <strong>Siege Symloop :</strong> Alger, Algerie. Equipes d&apos;installation dans les 4 grandes regions.
                     Pour les zones eloignees, nous proposons des <strong>kits auto-installables</strong> avec guide video et support telephonique.
                   </span>
                 </p>

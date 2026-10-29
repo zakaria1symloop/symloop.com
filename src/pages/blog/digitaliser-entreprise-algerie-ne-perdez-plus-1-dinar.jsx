@@ -104,7 +104,7 @@ export default function DigitaliserEntrepriseAlgerie() {
     },
     {
       question: "Symloop peut-il digitaliser mon entreprise à distance ?",
-      answer: "Oui. Symloop travaille avec des clients dans toute l'Algérie et la région MENA, en présentiel et à distance. Notre équipe est basée à Sétif, mais nous avons accompagné des entreprises à Alger, Oran, Constantine, Annaba et dans toutes les wilayas. Les réunions se font en visio ou en personne selon vos préférences."
+      answer: "Oui. Symloop travaille avec des clients dans toute l'Algérie et la région MENA, en présentiel et à distance. Notre équipe est basée à Alger et nous avons accompagné des entreprises à Oran, Constantine, Annaba, Sétif et dans toutes les wilayas. Les réunions se font en visio ou en personne selon vos préférences."
     },
     {
       question: "Quels résultats concrets attendre de la digitalisation ?",
@@ -193,7 +193,7 @@ export default function DigitaliserEntrepriseAlgerie() {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.div initial={false} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-500 hover:text-white mb-8 transition-colors text-sm tracking-wide uppercase">
                 <ArrowLeft className="w-3.5 h-3.5" /> Blog
               </Link>
@@ -208,7 +208,7 @@ export default function DigitaliserEntrepriseAlgerie() {
                 </ol>
               </nav>
 
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-3 mb-8">
+              <motion.div initial={{ y: 30 }} animate={{ y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-3 mb-8">
                 <span className="bg-red-500/20 text-red-300 backdrop-blur-md border border-red-500/20 px-4 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase flex items-center gap-2">
                   <AlertTriangle className="w-3.5 h-3.5" />
                   Chaque Jour Compte
@@ -219,8 +219,8 @@ export default function DigitaliserEntrepriseAlgerie() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
               >
@@ -235,8 +235,8 @@ export default function DigitaliserEntrepriseAlgerie() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -245,7 +245,7 @@ export default function DigitaliserEntrepriseAlgerie() {
                 Symloop met fin à ces pertes — définitivement.
               </motion.p>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.7 }} className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase">
+              <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.7, delay: 0.7 }} className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase">
                 <div className="flex items-center gap-2"><User className="w-3.5 h-3.5" /> Symloop Team</div>
                 <div className="flex items-center gap-2"><Calendar className="w-3.5 h-3.5" /> 1 Avril 2026</div>
                 <div className="flex items-center gap-2"><Clock className="w-3.5 h-3.5" /> 15 min</div>
@@ -262,7 +262,7 @@ export default function DigitaliserEntrepriseAlgerie() {
               <div data-speakable="summary" className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-8">
                 <h2 className="text-sm font-bold text-green-400 uppercase tracking-widest mb-3">En bref</h2>
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                  <strong className="text-white">Symloop</strong> est une entreprise de solutions digitales basée à Sétif, Algérie.
+                  <strong className="text-white">Symloop</strong> est une entreprise de solutions digitales basée à Alger, Algérie.
                   Nous aidons les entreprises algériennes à éliminer les pertes causées par les processus manuels en déployant :
                   sites web et e-commerce, applications mobiles, logiciels de gestion (ERP, CRM), solutions IoT, et intelligence artificielle.
                   Nos clients constatent en moyenne +40% de productivité et -90% d&apos;erreurs dès les premiers mois.

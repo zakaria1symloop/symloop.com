@@ -467,7 +467,7 @@ export default function DigitalisationAlgerie() {
       "url": "https://symloop.com",
       "logo": "https://symloop.com/sym-logo.png",
       "foundingDate": "2012",
-      "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
       "contactPoint": { "@type": "ContactPoint", "telephone": "+213-549-57-55-12", "contactType": "sales", "availableLanguage": ["Arabic", "French", "English"] },
       "sameAs": ["https://facebook.com/symloop", "https://linkedin.com/company/symloop"]
     },
@@ -525,7 +525,7 @@ export default function DigitalisationAlgerie() {
     "description": currentLang === 'ar' ? "شركة تكنولوجيا جزائرية متخصصة في رقمنة الخدمات الحكومية والتحول الرقمي" : "Algerian technology company specialized in government digitization",
     "foundingDate": "2012",
     "founders": [{ "@type": "Person", "name": "Symloop Team" }],
-    "address": { "@type": "PostalAddress", "streetAddress": "Sétif", "addressLocality": "Sétif", "addressRegion": "Sétif", "postalCode": "19000", "addressCountry": "DZ" },
+    "address": { "@type": "PostalAddress", "streetAddress": "Alger Centre", "addressLocality": "Alger", "addressRegion": "Alger", "postalCode": "16000", "addressCountry": "DZ" },
     "contactPoint": [
       { "@type": "ContactPoint", "telephone": "+213-549-57-55-12", "contactType": "sales", "areaServed": "DZ", "availableLanguage": ["Arabic", "French", "English"] }
     ],
@@ -612,7 +612,7 @@ export default function DigitalisationAlgerie() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl" />
 
           <div className="max-w-7xl mx-auto relative">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }} className="text-center mb-12">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium mb-6">
                 <Cpu className="w-4 h-4" />
@@ -653,7 +653,7 @@ export default function DigitalisationAlgerie() {
               {/* Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {benefits.map((stat, idx) => (
-                  <motion.div key={idx} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: idx * 0.1 }}
+                  <motion.div key={idx} initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ delay: idx * 0.1 }}
                     className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                     <stat.icon className="w-8 h-8 text-emerald-600 mx-auto mb-3" />
                     <div className="text-3xl font-bold text-gray-900">{stat.value}</div>

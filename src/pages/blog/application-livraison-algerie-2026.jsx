@@ -310,7 +310,7 @@ export default function ApplicationLivraisonAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Application de livraison", "GPS tracking", "Flutter", "Node.js", "Paiement CIB Edahabia", "Logistique last-mile"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -333,7 +333,7 @@ export default function ApplicationLivraisonAlgerie() {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.div initial={false} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-500 hover:text-white mb-8 transition-colors text-sm tracking-wide uppercase">
                 <ArrowLeft className="w-3.5 h-3.5" /> Blog
               </Link>
@@ -348,7 +348,7 @@ export default function ApplicationLivraisonAlgerie() {
                 </ol>
               </nav>
 
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-3 mb-8">
+              <motion.div initial={{ y: 30 }} animate={{ y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-3 mb-8">
                 <span className="bg-cyan-500/20 text-cyan-300 backdrop-blur-md border border-cyan-500/20 px-4 py-1.5 rounded-full text-xs font-medium tracking-wider uppercase flex items-center gap-2">
                   <Truck className="w-3.5 h-3.5" /> Livraison & Logistique
                 </span>
@@ -358,8 +358,8 @@ export default function ApplicationLivraisonAlgerie() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
               >
@@ -371,8 +371,8 @@ export default function ApplicationLivraisonAlgerie() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg text-gray-400 max-w-3xl leading-relaxed mb-10"
                 data-speakable="true"
@@ -385,8 +385,8 @@ export default function ApplicationLivraisonAlgerie() {
               {/* Hero stats */}
               <motion.div
                 ref={statsRef}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
                 className="grid grid-cols-2 md:grid-cols-4 gap-4"
               >

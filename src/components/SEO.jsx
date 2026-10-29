@@ -21,14 +21,28 @@ export default function SEO({
   const currentUrl = `${baseUrl}${router.asPath}`;
 
   // Default SEO values
-  const defaultTitle = 'Symloop | Agence Digitale N°1 en Algérie - Web, Mobile, IA';
-  const defaultDescription = 'Symloop, agence digitale leader en Algérie. Développement web, applications mobiles, e-commerce, ERP, intelligence artificielle. Expertise MENA. Devis gratuit.';
-  const defaultKeywords = 'agence digitale algérie, développement web algérie, application mobile algérie, e-commerce algérie, ERP algérie, intelligence artificielle algérie, transformation digitale, symloop';
+  const defaultTitle = 'Symloop | Software Engineering & AI Company in Algeria';
+  const defaultDescription = 'Symloop — entreprise d\'ingénierie logicielle basée à Alger. Développement logiciel sur mesure, SaaS multi-tenant, applications mobiles, IA/ML, IoT hardware, DevOps et cloud. 58 wilayas couvertes.';
+  const defaultKeywords = 'software engineering company algeria, entreprise ingénierie logicielle algérie, custom software development algeria, développement logiciel sur mesure algérie, SaaS algérie, AI company algeria, IoT hardware algeria, symloop';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
   const seoKeywords = keywords || defaultKeywords;
-  const seoImage = image.startsWith('http') ? image : `${baseUrl}${image}`;
+
+  // Dynamic OG image fallback — when the page does not pass `image`, generate a
+  // branded 1200×630 social card via the /api/og edge endpoint. Massive lift
+  // over the previous default (sym-logo.png at 256×256) for messaging-app and
+  // social preview cards. Pages can still override by passing image="..."
+  // explicitly. The default sentinel /images/og-default.jpg means "use the
+  // dynamic card."
+  const isDefaultImage = image === '/images/og-default.jpg' || !image;
+  const ogEyebrow = type === 'article'
+    ? 'Insight · Symloop Technology'
+    : 'AI-native engineering · MENA regulated industries';
+  const dynamicOg = `${baseUrl}/api/og?title=${encodeURIComponent(seoTitle.slice(0, 110))}&eyebrow=${encodeURIComponent(ogEyebrow)}`;
+  const seoImage = isDefaultImage
+    ? dynamicOg
+    : (image.startsWith('http') ? image : `${baseUrl}${image}`);
 
   // Hreflang for multilingual
   const hreflangs = [
@@ -45,7 +59,7 @@ export default function SEO({
     name: 'Symloop',
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
-    description: 'Agence digitale leader en Algérie et MENA. Développement web, mobile, e-commerce, ERP et solutions IA.',
+    description: 'Software engineering and AI company based in Algiers. Custom software engineering, SaaS platforms, mobile apps, AI/ML, IoT hardware manufacturing, DevOps and cloud across Algeria and MENA.',
     foundingDate: '2020',
     founders: [{ '@type': 'Person', name: 'Symloop Team' }],
     address: {
@@ -59,7 +73,7 @@ export default function SEO({
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+213-550-470-927',
+        telephone: '+213-549-575-512',
         contactType: 'customer service',
         availableLanguage: ['French', 'Arabic', 'English'],
         areaServed: ['DZ', 'TN', 'MA', 'EG', 'SA', 'AE', 'QA', 'KW', 'BH', 'OM', 'JO', 'LB']
@@ -80,14 +94,18 @@ export default function SEO({
       { '@type': 'Country', name: 'United Arab Emirates' }
     ],
     knowsAbout: [
-      'Web Development',
-      'Mobile App Development',
-      'E-commerce',
-      'ERP Systems',
-      'Artificial Intelligence',
-      'Digital Transformation',
-      'SEO',
-      'Cloud Computing'
+      'Software Engineering',
+      'Custom Software Development',
+      'Multi-tenant SaaS Platforms',
+      'Mobile App Engineering',
+      'Machine Learning Engineering',
+      'Computer Vision',
+      'IoT Hardware Manufacturing',
+      'Embedded Systems',
+      'DevOps',
+      'Cloud Infrastructure',
+      'Microservices Architecture',
+      'Enterprise ERP Systems'
     ]
   };
 
@@ -96,10 +114,10 @@ export default function SEO({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': `${baseUrl}/#localbusiness`,
-    name: 'Symloop - Agence Digitale Algérie',
+    name: 'Symloop — Software Engineering Company Algeria',
     image: `${baseUrl}/images/logo.png`,
     url: baseUrl,
-    telephone: '+213-550-470-927',
+    telephone: '+213-549-575-512',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -121,19 +139,6 @@ export default function SEO({
         opens: '08:00',
         closes: '18:00'
       }
-    ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127'
-    },
-    review: [
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Ahmed B.' },
-        reviewRating: { '@type': 'Rating', ratingValue: '5' },
-        reviewBody: 'Excellente agence, travail professionnel et équipe réactive.'
-      }
     ]
   } : null;
 
@@ -149,18 +154,29 @@ export default function SEO({
     }))
   } : null;
 
-  // FAQ Schema
-  const faqSchema = faq ? {
+  // FAQ Schema — accepts either { q, a } (the convention used across the
+  // editorial pages) or { question, answer } (legacy). Filters out malformed
+  // entries so we never ship FAQPage with empty Question/Answer objects —
+  // GSC flags those as "FAQ: invalid item detected" and they hurt the page's
+  // structured-data eligibility.
+  const faqMainEntity = faq && faq.length
+    ? faq
+        .map(item => {
+          const name = item.q || item.question;
+          const text = item.a || item.answer;
+          if (!name || !text) return null;
+          return {
+            '@type': 'Question',
+            name,
+            acceptedAnswer: { '@type': 'Answer', text },
+          };
+        })
+        .filter(Boolean)
+    : [];
+  const faqSchema = faqMainEntity.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faq.map(item => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer
-      }
-    }))
+    mainEntity: faqMainEntity,
   } : null;
 
   // Article Schema
@@ -293,18 +309,33 @@ export default function SEO({
       <meta name="twitter:site" content="@symloop" />
       <meta name="twitter:creator" content="@symloop" />
 
-      {/* Article specific meta tags */}
-      {article && (
-        <>
-          <meta property="article:published_time" content={article.datePublished} />
-          <meta property="article:modified_time" content={article.dateModified || article.datePublished} />
-          <meta property="article:author" content="Symloop" />
-          <meta property="article:section" content={article.category} />
-          {article.tags?.map((tag, i) => (
-            <meta key={i} property="article:tag" content={tag} />
-          ))}
-        </>
-      )}
+      {/* Article specific meta tags — supports BOTH the legacy `article` prop
+          AND the modern pattern of passing JSON-LD via `structuredData` (with
+          @type Article / BlogPosting). Without this, standalone editorial
+          blogs ship without article:published_time and Google will not treat
+          them as fresh articles — they get stuck on "URL is unknown to
+          Google" / "Discovered, not indexed". */}
+      {(() => {
+        const sd = structuredData;
+        const sdIsArticle = sd && (sd['@type'] === 'Article' || sd['@type'] === 'BlogPosting' || sd['@type'] === 'NewsArticle');
+        const a = article || (type === 'article' && sdIsArticle ? sd : null);
+        if (!a) return null;
+        const published = a.datePublished;
+        const modified  = a.dateModified || a.datePublished;
+        const section   = a.category || a.articleSection;
+        const tags      = a.tags || a.keywords;
+        return (
+          <>
+            {published && <meta property="article:published_time" content={published} />}
+            {modified  && <meta property="article:modified_time"  content={modified} />}
+            <meta property="article:author" content="Symloop" />
+            {section && <meta property="article:section" content={section} />}
+            {Array.isArray(tags) && tags.map((tag, i) => (
+              <meta key={i} property="article:tag" content={tag} />
+            ))}
+          </>
+        );
+      })()}
 
       {/* Mobile & PWA */}
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
@@ -361,15 +392,7 @@ export default function SEO({
         />
       )}
 
-      {/* Preconnect for Performance */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link rel="preconnect" href="https://www.googletagmanager.com" />
-      <link rel="preconnect" href="https://www.google-analytics.com" />
-
-      {/* DNS Prefetch */}
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-      <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      {/* Preconnect/prefetch moved to _document.js to avoid duplicates */}
     </Head>
   );
 }
@@ -377,19 +400,19 @@ export default function SEO({
 // Export SEO data for different pages
 export const SEOData = {
   home: {
-    title: 'Symloop | Agence Digitale N°1 en Algérie - Développement Web, Mobile, IA',
-    description: 'Symloop, votre partenaire digital en Algérie. Création sites web, applications mobiles, e-commerce avec paiement CIB, ERP, solutions IA. Leader MENA. Devis gratuit.',
-    keywords: 'agence digitale algérie, création site web algérie, développement mobile algérie, e-commerce algérie, paiement cib, edahabia, erp algérie, intelligence artificielle algérie, symloop, agence web alger'
+    title: 'Symloop | Software Engineering & AI Company in Algeria',
+    description: 'Symloop — entreprise d\'ingénierie logicielle basée à Alger. Développement logiciel sur mesure, SaaS, applications mobiles, IA/ML, IoT hardware, DevOps. 200+ projets livrés à travers les 58 wilayas.',
+    keywords: 'software engineering company algeria, entreprise ingénierie logicielle algérie, custom software development, développement logiciel sur mesure, SaaS algérie, AI company algeria, IoT hardware algeria, symloop, alger'
   },
   services: {
-    title: 'Services Digitaux en Algérie | Web, Mobile, E-commerce, IA | Symloop',
-    description: 'Découvrez nos services digitaux en Algérie : création de sites web, développement d\'applications mobiles, e-commerce avec CIB/Edahabia, ERP, intelligence artificielle.',
-    keywords: 'services digitaux algérie, développement web, application mobile, e-commerce, erp, intelligence artificielle, transformation digitale algérie'
+    title: 'Software Engineering Services in Algeria | Symloop',
+    description: 'Services d\'ingénierie logicielle en Algérie : développement logiciel sur mesure, plateformes SaaS multi-tenant, applications mobiles, IA/ML, IoT hardware, DevOps et cloud.',
+    keywords: 'software engineering services algeria, ingénierie logicielle algérie, custom software development, SaaS development algeria, AI/ML engineering, IoT hardware, DevOps, cloud infrastructure'
   },
   contact: {
-    title: 'Contactez Symloop | Agence Digitale Algérie | Devis Gratuit',
-    description: 'Contactez Symloop pour votre projet digital en Algérie. Devis gratuit sous 24h. Équipe locale à Alger. WhatsApp, email, téléphone.',
-    keywords: 'contact symloop, agence digitale alger, devis gratuit, projet digital algérie'
+    title: 'Contact Symloop | Software Engineering Company Algeria',
+    description: 'Contactez Symloop, entreprise d\'ingénierie logicielle à Alger. Discussion technique et devis sous 24h. WhatsApp, email, téléphone.',
+    keywords: 'contact symloop, software engineering algeria, ingénierie logicielle alger, devis projet logiciel, alger'
   },
   blog: {
     title: 'Blog Tech & Digital Algérie | Guides & Conseils | Symloop',

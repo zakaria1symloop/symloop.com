@@ -109,13 +109,20 @@ export default function SolutionPage() {
     } : null)
   };
 
+  // Build canonical URL prefix — default locale 'en' has NO /en/ prefix
+  // (per next-i18next.config: defaultLocale: 'en', localeDetection: false).
+  // Hardcoding `/${locale}/...` produced wrong canonicals on default-locale URLs
+  // and contributed to GSC "Page with redirect" failures.
+  const localePrefix = locale === 'en' ? '' : `/${locale}`;
+  const canonicalUrl = `https://symloop.com${localePrefix}/solutions/${key}`;
+
   // Generate structured data for SEO
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
-        "@id": `https://symloop.com/${locale}/solutions/${key}#service`,
+        "@id": `${canonicalUrl}#service`,
         "name": title,
         "description": description,
         "provider": {
@@ -164,7 +171,7 @@ export default function SolutionPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": `https://symloop.com/${locale}/solutions/${key}#breadcrumb`,
+        "@id": `${canonicalUrl}#breadcrumb`,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -182,7 +189,7 @@ export default function SolutionPage() {
             "@type": "ListItem",
             "position": 3,
             "name": title,
-            "item": `https://symloop.com/${locale}/solutions/${key}`
+            "item": `${canonicalUrl}`
           }
         ]
       },
@@ -225,7 +232,7 @@ export default function SolutionPage() {
       },
       {
         "@type": "FAQPage",
-        "@id": `https://symloop.com/${locale}/solutions/${key}#faq`,
+        "@id": `${canonicalUrl}#faq`,
         "mainEntity": content?.faq?.map(item => ({
           "@type": "Question",
           "name": item.question,
@@ -261,7 +268,7 @@ export default function SolutionPage() {
         <meta property="og:image" content={`https://symloop.com${solution.image || '/og-image-default.jpg'}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://symloop.com/${locale}/solutions/${key}`} />
+        <meta property="og:url" content={`${canonicalUrl}`} />
         <meta property="og:site_name" content="Symloop Technology" />
         <meta property="og:locale" content={locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : 'ar_AR'} />
 
@@ -311,8 +318,8 @@ export default function SolutionPage() {
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center space-y-6"
           >

@@ -43,7 +43,7 @@ export default function StartupAlgerie() {
     },
     {
       question: "Comment trouver un développeur pour ma startup en Algérie ?",
-      answer: "Plusieurs options : recruter un développeur freelance (Mostaql, Khamsat), faire appel à une agence tech spécialisée startup comme Symloop, ou rejoindre un incubateur pour rencontrer des profils techniques. Symloop est basé à Sétif et accompagne les startups algériennes avec des équipes full-stack expérimentées. Contactez-nous au +213 549 575 512."
+      answer: "Plusieurs options : recruter un développeur freelance (Mostaql, Khamsat), faire appel à une agence tech spécialisée startup comme Symloop, ou rejoindre un incubateur pour rencontrer des profils techniques. Symloop est basé à Alger et accompagne les startups algériennes avec des équipes full-stack expérimentées. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Symloop accompagne-t-il les startups algériennes ?",
@@ -119,7 +119,7 @@ export default function StartupAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

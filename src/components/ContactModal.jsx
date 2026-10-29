@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { X, Send, CheckCircle, Loader2 } from "lucide-react";
-import { db } from "../lib/firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 export default function ContactModal({ isOpen, onClose, service, type = "devis" }) {
   const router = useRouter();
@@ -138,6 +136,12 @@ export default function ContactModal({ isOpen, onClose, service, type = "devis" 
 
     try {
       // Save to Firebase Firestore
+      // Firestore is loaded on submit only — keeps ~250 KB of Firebase out of the
+      // shared bundle every page downloads.
+      const [{ db }, { collection, addDoc, serverTimestamp }] = await Promise.all([
+        import("../lib/firebase"),
+        import("firebase/firestore"),
+      ]);
       await addDoc(collection(db, "leads"), {
         ...formData,
         service: service || "General",
@@ -168,7 +172,7 @@ export default function ContactModal({ isOpen, onClose, service, type = "devis" 
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
@@ -194,8 +198,8 @@ export default function ContactModal({ isOpen, onClose, service, type = "devis" 
             {/* Success State */}
             {isSuccess ? (
               <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ scale: 0.9 }}
+                animate={{ scale: 1 }}
                 className="p-8 text-center"
               >
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-500/20 flex items-center justify-center">

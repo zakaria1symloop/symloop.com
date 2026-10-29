@@ -186,7 +186,7 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["ERP sur mesure", "Plateforme SaaS", "Développement logiciel personnalisé", "Gestion commerciale", "CRM", "Gestion des stocks", "Gestion RH et paie", "React", "Node.js", "PostgreSQL"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -215,7 +215,7 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -236,8 +236,8 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -251,8 +251,8 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-8 leading-[1.08] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -271,8 +271,8 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -281,8 +281,8 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

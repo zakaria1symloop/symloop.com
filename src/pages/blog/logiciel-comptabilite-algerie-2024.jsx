@@ -50,7 +50,7 @@ export default function LogicielComptabiliteAlgerie() {
     },
     {
       question: "Symloop développe-t-il des logiciels de comptabilité ?",
-      answer: "Oui, Symloop est une entreprise algérienne basée à Sétif spécialisée dans le développement de logiciels de comptabilité, facturation et gestion commerciale sur mesure. Nos solutions sont conçues nativement pour le marché algérien avec conformité PCN, G50 automatique, interface bilingue FR/AR, et support local. Contact : +213 549 575 512."
+      answer: "Oui, Symloop est une entreprise algérienne basée à Alger spécialisée dans le développement de logiciels de comptabilité, facturation et gestion commerciale sur mesure. Nos solutions sont conçues nativement pour le marché algérien avec conformité PCN, G50 automatique, interface bilingue FR/AR, et support local. Contact : +213 549 575 512."
     },
     {
       question: "Peut-on avoir un logiciel de facturation avec TVA algérienne ?",
@@ -152,7 +152,7 @@ export default function LogicielComptabiliteAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

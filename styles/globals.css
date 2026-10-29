@@ -89,6 +89,40 @@ html[dir="rtl"] body {
   text-align: right;
 }
 
+/* ============================================================================
+   LTR-content isolation in RTL contexts.
+
+   In Arabic (RTL) mode, browsers reverse the visual order of "weak" tokens
+   like phone numbers, percentages, currency amounts and SKU codes when they
+   sit inside an RTL paragraph. "+213 549 57 55 12" would render as
+   "12 55 57 549 213+" — same characters, wrong order.
+
+   Two utilities here:
+
+   1. <bdi> — HTML's Bidirectional Isolate element. Universally supported.
+      We force `unicode-bidi: isolate` + `direction: ltr` on it so any
+      phone, code or mixed-Latin-and-numbers content stays left-to-right
+      regardless of the surrounding paragraph direction. Use whenever
+      possible — it is the semantic element for this exact problem.
+
+   2. .ltr-num — utility class for spans/divs that contain numbers,
+      percentages or money. Same isolation behavior.
+
+   Apply liberally on phone, percentages, "$1.8M", "102%", "TRS 75%", etc.,
+   inside Arabic copy. Visual no-op in LTR mode.
+   ========================================================================== */
+bdi,
+.ltr-num {
+  unicode-bidi: isolate;
+  direction: ltr;
+}
+
+/* All .font-mono numerals stay LTR — covers stats, KPI numbers, version
+   tags, dates, codes throughout the site without per-component edits. */
+[dir="rtl"] .font-mono {
+  unicode-bidi: isolate;
+}
+
 /* RTL specific styles */
 [dir="rtl"] .rtl\:text-right {
   text-align: right;
@@ -251,19 +285,22 @@ html[dir="rtl"] body {
   margin-right: 0;
 }
 
-/* RTL Font optimizations for Arabic */
-[dir="rtl"] {
-  font-family: 'Changa', 'Arial', sans-serif;
+/* Arabic font — IBM Plex Sans Arabic (premium, corporate)
+   Targets both [dir="rtl"] AND [lang="ar"] to catch all cases
+   (some pages set dir via JS after hydration, not at SSR time).
+   !important ensures it wins over Tailwind defaults. */
+[dir="rtl"],
+[lang="ar"],
+html[lang="ar"],
+html[lang="ar"] body {
+  font-family: var(--font-ibm-plex-arabic), 'Arial', sans-serif !important;
   font-feature-settings: "liga" 1, "kern" 1;
 }
 
-[dir="rtl"] h1, 
-[dir="rtl"] h2, 
-[dir="rtl"] h3, 
-[dir="rtl"] h4, 
-[dir="rtl"] h5, 
-[dir="rtl"] h6 {
-  font-family: 'Changa', 'Arial', sans-serif;
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6,
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6,
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4, html[lang="ar"] h5, html[lang="ar"] h6 {
+  font-family: var(--font-ibm-plex-arabic), 'Arial', sans-serif !important;
   line-height: 1.4;
   letter-spacing: 0;
 }

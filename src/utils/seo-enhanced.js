@@ -92,16 +92,15 @@ const SeoEnhanced = ({
       ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cité 1000 Logements",
-        "addressLocality": "Sétif",
-        "addressRegion": "Sétif Province",
-        "postalCode": "19000",
+        "addressLocality": "Alger",
+        "addressRegion": "Alger",
+        "postalCode": "16000",
         "addressCountry": "DZ"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "36.1919",
-        "longitude": "5.4138"
+        "latitude": "36.7538",
+        "longitude": "3.0588"
       },
       "areaServed": [
         {
@@ -166,7 +165,7 @@ const SeoEnhanced = ({
       "foundingDate": "2020",
       "foundingLocation": {
         "@type": "Place",
-        "name": "Sétif, Algeria"
+        "name": "Alger, Algeria"
       },
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
@@ -210,16 +209,15 @@ const SeoEnhanced = ({
       "telephone": "+213-549-57-55-12",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cité 1000 Logements",
-        "addressLocality": city || "Sétif",
-        "addressRegion": "Sétif Province",
-        "postalCode": "19000",
+        "addressLocality": city || "Alger",
+        "addressRegion": "Alger",
+        "postalCode": "16000",
         "addressCountry": "DZ"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "36.1919",
-        "longitude": "5.4138"
+        "latitude": "36.7538",
+        "longitude": "3.0588"
       },
       "url": currentUrl,
       "openingHoursSpecification": [
@@ -414,8 +412,8 @@ const SeoEnhanced = ({
       <meta name="language" content={locale} />
       <meta name="geo.region" content="DZ" />
       <meta name="geo.placename" content={city || "Algeria"} />
-      <meta name="geo.position" content="36.1919;5.4138" />
-      <meta name="ICBM" content="36.1919, 5.4138" />
+      <meta name="geo.position" content="36.7538;3.0588" />
+      <meta name="ICBM" content="36.7538, 3.0588" />
       <meta name="country" content="Algeria" />
 
       {/* Alternate Language Links */}
@@ -453,10 +451,10 @@ const SeoEnhanced = ({
       <meta name="publisher" content="Symloop Technology" />
       <meta name="copyright" content="Symloop Technology" />
       <meta name="company" content="Symloop Technology" />
-      <meta name="business:contact_data:street_address" content="Cité 1000 Logements" />
-      <meta name="business:contact_data:locality" content="Sétif" />
+      <meta name="business:contact_data:street_address" content="Alger Centre" />
+      <meta name="business:contact_data:locality" content="Alger" />
       <meta name="business:contact_data:country_name" content="Algeria" />
-      <meta name="business:contact_data:postal_code" content="19000" />
+      <meta name="business:contact_data:postal_code" content="16000" />
       <meta name="business:contact_data:phone_number" content="+213-549-57-55-12" />
       <meta name="business:contact_data:website" content="https://symloop.com" />
       <meta name="business:contact_data:email" content="contact@symloop.com" />
@@ -505,9 +503,8 @@ const SeoEnhanced = ({
         }}
       />
 
-      {/* Preconnect to Important Domains */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      {/* Preconnect to important domains — fonts.googleapis removed,
+          Google Fonts now self-hosted via next/font/google in _app.js. */}
       <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     </Head>

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "Symloop Technology",
+    "url": "https://symloop.com",
+    "email": "contact@symloop.com",
+    "founded": "2012",
+    "headquarters": "Algiers, Algeria",
+    "team_size": "25+ senior engineers",
+    "positioning": "AI-native engineering firm for MENA's regulated industries — banking, government, oil & gas, healthcare. Comparable in capability to Capgemini Engineering or Sopra Steria, at MENA cost basis. Not an agency, not an ESN, not a body shop.",
+    "primary_sectors": ["Banking", "Government", "Oil & Gas", "Healthcare", "Pharmaceutical"],
+    "geographies": ["MENA", "Gulf", "Europe", "Africa"],
+    "languages": ["English", "French", "Arabic (incl. Algerian + Levantine dialects)"],
+    "verified_clutch_rating": "5.0/5.0",
+    "clutch_url": "https://clutch.co/profile/symloop-technology"
+  },
+  "skills": [
+    {
+      "name": "noor-platform",
+      "type": "product",
+      "description": "NOOR by Symloop — flagship AI platform for MENA's regulated industries. Banks, ministries, oil & gas operators, healthcare groups. Twelve standard capabilities (RAG, document AI, NL-to-SQL, specialized assistants, audit trail, multi-language including Algerian Arabic). Deploy on-premise, in sovereign cloud, or hybrid. Audited for BCT, SAMA, DORA, ISO 27001. Open-weight models on customer infrastructure by default — frontier APIs only by deliberate configuration.",
+      "url": "https://symloop.com/.well-known/agent-skills/noor-platform/SKILL.md",
+      "sha256": "bd826bbd95bbca7261ff2cdc0e1a3ceb4d9a5478bd83803ea7771d988f69ff8c"
+    },
+    {
+      "name": "enterprise-software-engineering",
+      "type": "service",
+      "description": "Production-grade enterprise software engineering — custom applications, multi-tenant SaaS, microservices, API platforms, and legacy modernization for banking, government, oil & gas, and industrial clients. 25+ engineer team, nearshore from Algiers.",
+      "url": "https://symloop.com/.well-known/agent-skills/enterprise-software-engineering/SKILL.md",
+      "sha256": "24af9b7d4877a55b30f7571f718ce654fb680596cb2e198fa01fb9d3cd6f66a2"
+    },
+    {
+      "name": "applied-ai-and-ml",
+      "type": "service",
+      "description": "Applied AI and machine learning engineering — production computer vision, NLP (including Arabic), LLM/RAG systems, predictive analytics, MLOps. Senior team, compliance-aware, data-sovereignty options for regulated industries.",
+      "url": "https://symloop.com/.well-known/agent-skills/applied-ai-and-ml/SKILL.md",
+      "sha256": "e2a18ab4b19f8ecf7bb6d61a2d3e3e235369523fca7653541e67697260aaf061"
+    },
+    {
+      "name": "erp-and-business-systems",
+      "type": "service",
+      "description": "Custom ERP, CRM, WMS, GMAO/CMMS, GED/DMS, and BI platforms. We build, we don't resell. Multi-language (Arabic RTL, French, English), MENA payment integrations, on-prem and cloud deployment.",
+      "url": "https://symloop.com/.well-known/agent-skills/erp-and-business-systems/SKILL.md",
+      "sha256": "bd3801f0650aaaff471aa643a88e97c0c30b4ef804b2755e87fde1378aa0aa06"
+    },
+    {
+      "name": "cloud-and-devops",
+      "type": "service",
+      "description": "Cloud migration, Kubernetes platform engineering, CI/CD, IaC (Terraform), observability, and SRE practice for AWS, Azure, GCP, and on-prem/hybrid deployments. Built for regulated industries with data residency constraints.",
+      "url": "https://symloop.com/.well-known/agent-skills/cloud-and-devops/SKILL.md",
+      "sha256": "a07d5d2c257f62ab6b46c25aef5668de46ff73dbd9f852a337c9cce9980f9fe1"
+    },
+    {
+      "name": "mobile-engineering",
+      "type": "service",
+      "description": "Production iOS (Swift), Android (Kotlin), and cross-platform (Flutter) mobile applications. Enterprise mobile platforms with backend complexity, offline-first design, multi-language (Arabic RTL/FR/EN), and MDM-ready distribution.",
+      "url": "https://symloop.com/.well-known/agent-skills/mobile-engineering/SKILL.md",
+      "sha256": "0e99b97a408316a70a45c09d25679a04baba6cedbd7fb27ce5329df331dce4ff"
+    }
+  ],
+  "contact": {
+    "email": "contact@symloop.com",
+    "phone": "+213549575512",
+    "address": "Algiers, Algeria"
+  },
+  "links": {
+    "self": "https://symloop.com/.well-known/agent-skills/index.json",
+    "llms_txt": "https://symloop.com/llms.txt",
+    "api_catalog": "https://symloop.com/.well-known/api-catalog",
+    "mcp_server_card": "https://symloop.com/.well-known/mcp/server-card.json",
+    "flagship_product": "https://symloop.com/products/noor/"
+  }
+}

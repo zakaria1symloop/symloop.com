@@ -708,8 +708,8 @@ export default function AgenceWebSetif2026() {
             "name": "Symloop",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Setif",
-              "addressRegion": "Setif",
+              "addressLocality": "Alger",
+              "addressRegion": "Alger",
               "addressCountry": "DZ"
             },
             "telephone": "+213549575512",

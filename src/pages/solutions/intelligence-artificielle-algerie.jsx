@@ -130,7 +130,7 @@ export default function AIAlgeria() {
       "logo": "https://symloop.com/sym-logo.png",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Sétif",
+        "addressLocality": "Alger",
         "addressCountry": "DZ"
       },
       "telephone": "+213549575512"
@@ -242,8 +242,8 @@ export default function AIAlgeria() {
         {/* Geo Tags */}
         <meta name="geo.region" content="DZ" />
         <meta name="geo.placename" content="Algeria" />
-        <meta name="geo.position" content="36.1919;5.4138" />
-        <meta name="ICBM" content="36.1919, 5.4138" />
+        <meta name="geo.position" content="36.7538;3.0588" />
+        <meta name="ICBM" content="36.7538, 3.0588" />
 
         {/* Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -261,8 +261,8 @@ export default function AIAlgeria() {
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="text-center max-w-4xl mx-auto"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/10 to-white/5 rounded-full border border-white/20 mb-6">
@@ -314,8 +314,8 @@ export default function AIAlgeria() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.3 }}
               className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
             >
@@ -548,7 +548,7 @@ export default function AIAlgeria() {
               </p>
               <h3 className="text-lg font-bold mb-3 text-white/70">Pourquoi choisir Symloop pour vos projets IA en Algérie?</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-4">
-                Basés à Sétif avec une présence à Alger, Oran et Constantine, nous comprenons les défis uniques du marché algérien. Nos solutions IA sont conçues pour fonctionner avec l'arabe dialectal algérien (الدارجة), intégrer les systèmes de paiement locaux (CIB, Edahabia), et respecter la réglementation algérienne en matière de protection des données.
+                Basés à Alger avec une présence à Oran, Constantine et Sétif, nous comprenons les défis uniques du marché algérien. Nos solutions IA sont conçues pour fonctionner avec l'arabe dialectal algérien (الدارجة), intégrer les systèmes de paiement locaux (CIB, Edahabia), et respecter la réglementation algérienne en matière de protection des données.
               </p>
               <h3 className="text-lg font-bold mb-3 text-white/70">Applications de l'IA pour les entreprises algériennes</h3>
               <p className="text-white/50 text-sm leading-relaxed">

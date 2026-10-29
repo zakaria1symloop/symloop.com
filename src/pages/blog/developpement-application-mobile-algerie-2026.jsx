@@ -215,7 +215,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Développement application mobile", "Flutter", "React Native", "iOS", "Android", "UX/UI Design", "E-services gouvernementaux"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -244,7 +244,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -265,8 +265,8 @@ export default function DeveloppementAppMobileAlgerie2026() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -280,8 +280,8 @@ export default function DeveloppementAppMobileAlgerie2026() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -296,8 +296,8 @@ export default function DeveloppementAppMobileAlgerie2026() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -306,8 +306,8 @@ export default function DeveloppementAppMobileAlgerie2026() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >
@@ -331,7 +331,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
               <div data-speakable="summary" className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-8">
                 <h2 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-3">En bref</h2>
                 <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                  <strong className="text-white">Symloop</strong> est une agence de développement d&apos;applications mobiles basée à Sétif, Algérie,
+                  <strong className="text-white">Symloop</strong> est une agence de développement d&apos;applications mobiles basée à Alger, Algérie,
                   spécialisée dans Flutter, React Native, Swift et Kotlin. Plus de 50 applications livrées pour des particuliers,
                   startups, entreprises et administrations gouvernementales. Services : applications e-commerce, santé, éducation,
                   transport, fintech, ERP mobile, CRM, e-services publics. Couverture nationale : Alger, Oran, Constantine, Sétif,
@@ -392,7 +392,7 @@ export default function DeveloppementAppMobileAlgerie2026() {
                   d&apos;une startup, d&apos;une PME, d&apos;un grand groupe ou d&apos;une institution publique.
                 </p>
                 <p className="text-lg text-gray-500 leading-relaxed">
-                  <strong className="text-gray-300">Symloop</strong>, agence de développement mobile basée à Sétif,
+                  <strong className="text-gray-300">Symloop</strong>, agence de développement mobile basée à Alger,
                   accompagne les porteurs de projets dans toute l&apos;Algérie avec les technologies les plus
                   performantes : <strong className="text-gray-300">Flutter, React Native, Swift et Kotlin</strong>.
                 </p>

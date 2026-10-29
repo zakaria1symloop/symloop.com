@@ -122,7 +122,7 @@ export default function SerreIntelligenteAlgerie2026() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-emerald-950 via-green-900 to-emerald-950 text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog
@@ -221,7 +221,7 @@ export default function SerreIntelligenteAlgerie2026() {
                 avec un rendement supérieur de 30 à 50% et une consommation d&apos;eau réduite de moitié.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                <strong>Symloop</strong>, entreprise technologique algérienne basée à Sétif, développe et fabrique localement
+                <strong>Symloop</strong>, entreprise technologique algérienne basée à Alger, développe et fabrique localement
                 des solutions complètes de <strong>serres connectées IoT</strong> adaptées aux conditions climatiques algériennes
                 — de la chaleur saharienne du Sud au froid des Hauts Plateaux.
               </p>

@@ -170,7 +170,7 @@ const content = {
         },
         {
           title: "Support Local",
-          description: "Équipe basée à Sétif, support en français et arabe, intervention sur site possible."
+          description: "Équipe basée à Alger avec couverture Sétif, support en français et arabe, intervention sur site possible."
         },
         {
           title: "Mises à Jour",
@@ -604,7 +604,7 @@ const content = {
         },
         {
           title: "Local Support",
-          description: "Team based in Setif, support in French and Arabic, on-site intervention possible."
+          description: "Team based in Algiers covering Setif, support in French and Arabic, on-site intervention possible."
         },
         {
           title: "Updates",
@@ -708,16 +708,16 @@ export default function LogicielGestionSetif() {
     "email": "contact@symloop.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Cité 1000 Logements",
-      "addressLocality": "Sétif",
-      "addressRegion": "Sétif",
-      "postalCode": "19000",
+      "streetAddress": "Alger Centre",
+      "addressLocality": "Alger",
+      "addressRegion": "Alger",
+      "postalCode": "16000",
       "addressCountry": "DZ"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "36.1919",
-      "longitude": "5.4138"
+      "latitude": "36.7538",
+      "longitude": "3.0588"
     },
     "areaServed": [
       { "@type": "City", "name": "Sétif" },
@@ -807,8 +807,8 @@ export default function LogicielGestionSetif() {
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="max-w-4xl mx-auto text-center"
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/20 text-amber-300 text-sm font-medium mb-6">
@@ -839,8 +839,8 @@ export default function LogicielGestionSetif() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 40 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.2 }}
               className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto"
             >

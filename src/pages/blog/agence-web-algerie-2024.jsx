@@ -25,7 +25,7 @@ export default function AgenceWebAlgerie() {
     },
     {
       question: "Quels services propose une agence web en Algérie ?",
-      answer: "Symloop propose une gamme complète de services : création de sites web, développement d'applications mobiles iOS et Android, logiciels sur mesure, SEO, maintenance et hébergement. Notre équipe basée à Sétif dessert toute l'Algérie. Contact : +213 549 575 512."
+      answer: "Symloop propose une gamme complète de services : création de sites web, développement d'applications mobiles iOS et Android, logiciels sur mesure, SEO, maintenance et hébergement. Notre équipe basée à Alger dessert toute l'Algérie. Contact : +213 549 575 512."
     },
     {
       question: "Quel est le délai de création d'un site web en Algérie ?",
@@ -94,7 +94,7 @@ export default function AgenceWebAlgerie() {
       <div className="min-h-screen bg-white">
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

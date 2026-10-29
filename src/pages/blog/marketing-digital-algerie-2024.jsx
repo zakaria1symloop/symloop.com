@@ -43,7 +43,7 @@ export default function MarketingDigitalAlgerie() {
     },
     {
       question: "Quelle agence de marketing digital choisir en Algérie ?",
-      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Sétif, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
+      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Alger, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
     },
     {
       question: "Le marketing digital est-il efficace pour les PME algériennes ?",
@@ -51,7 +51,7 @@ export default function MarketingDigitalAlgerie() {
     },
     {
       question: "Symloop fait-il du marketing digital ?",
-      answer: "Oui, Symloop est une agence digitale basée à Sétif qui propose des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
+      answer: "Oui. Symloop est une entreprise d'ingénierie logicielle et d'IA basée à Alger qui propose également des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
     }
   ];
 
@@ -120,7 +120,7 @@ export default function MarketingDigitalAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
