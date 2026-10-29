@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "167",
+    slug: "creer-equivalent-booking-algerie-2027-reservation-hotels-depuis-la-france",
+    title: "Créer l'équivalent de Booking en Algérie en 2027 : réserver un hôtel depuis la France, payer sur place (série #06)",
+    subtitle: "Le parcours d'une réservation faite depuis la France, qui réserve et comment il paie (diaspora, touriste national, voyageur d'affaires, hôtel, location), la pile à deux pays avec acompte en euros et solde en dinars, les obligations 2027, et le calendrier pour ouvrir en mai, avant que la diaspora réserve août",
+    excerpt: "La réservation d'hôtel en Algérie se fait encore par appel ou WhatsApp, avec un « on verra à l'arrivée » qui n'engage personne. La plateforme qui manque garantit la réservation : acompte en euros côté France pour la diaspora, solde en dinars sur place, extranet pour les hôtels, avis vérifiés après séjour réel. Vingt hôtels d'une ville, ouverture en mai 2027, parce que la diaspora réserve août en mai.",
+    category: "Startup", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["équivalent booking algérie 2027", "réserver hôtel algérie depuis la france", "plateforme réservation hôtel algérie", "réservation en ligne hôtel algérie paiement", "créer site de réservation algérie"],
+    metaTitle: "Créer l'équivalent de Booking en Algérie en 2027 : réserver depuis la France, payer sur place | Symloop",
+    metaDescription: "Le parcours d'une réservation d'hôtel en Algérie faite depuis la France, qui réserve et comment il paie, la plateforme à deux pays (acompte en euros, solde en dinars, extranet hôtels, avis vérifiés), les obligations du PLF 2027 pour les plateformes, et le calendrier pour ouvrir en mai 2027 avant la saison de la diaspora.",
+    translations: {
+      en: { title: "Building the Booking equivalent in Algeria in 2027: book a hotel from France, pay on site (series #06)", subtitle: "The journey of a booking made from France, who books and how they pay (diaspora, domestic tourist, business traveller, hotel, rental), the two-country stack with deposit in euros and balance in dinars, the 2027 obligations, and the calendar to open in May, before the diaspora books August", excerpt: "Hotel booking in Algeria still happens by phone or WhatsApp, with a “we'll see on arrival” that binds nobody. The missing platform guarantees the booking: deposit in euros on the France side for the diaspora, balance in dinars on site, an extranet for hotels, verified reviews after real stays. Twenty hotels in one city, opening in May 2027, because the diaspora books August in May." },
+      ar: { title: "إنشاء معادل بوكينغ في الجزائر سنة 2027: احجز فندقاً من فرنسا وادفع في المكان (السلسلة #06)", subtitle: "مسار حجز يُجرى من فرنسا، من يحجز وكيف يدفع (الجالية، السائح المحلي، مسافر الأعمال، الفندق، الشقة)، طبقات منصة ببلدين بعربون باليورو وباقٍ بالدينار، التزامات 2027، والجدول للافتتاح في ماي قبل أن تحجز الجالية أوت", excerpt: "ما زال حجز الفنادق في الجزائر يتم بمكالمة أو واتساب مع «نرى عند الوصول» الذي لا يُلزم أحداً. المنصة الناقصة تضمن الحجز: عربون باليورو من جهة فرنسا للجالية، باقٍ بالدينار في المكان، بوابة للفنادق، تقييمات موثَّقة بعد إقامة حقيقية. عشرون فندقاً في مدينة، افتتاح في ماي 2027، لأن الجالية تحجز أوت في ماي." }
+    }
+  },
+  {
     id: "166",
     slug: "mon-application-bloquee-chez-un-developpeur-disparu-reprendre-projet-algerie-2027",
     title: "Mon application est bloquée chez un développeur qui a disparu : reprendre le projet en 2027 (Algérie)",
