@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "164",
+    slug: "plateforme-livraison-transport-algerie-2027-livreurs-cod-retours",
+    title: "Une plateforme de livraison en Algérie en 2027 : livreurs, paiement à la livraison, retours, e-commerçants. Ce qu'il faut construire",
+    subtitle: "Le parcours d'un colis COD et les quatre endroits où l'argent se perd, ce que chaque acteur attend de la plateforme, la pile à construire (application livreur hors-ligne, portail e-commerçant, dispatch, versements COD, IA de confirmation), le paiement à la porte en 2027, et le calendrier pour une wilaya pilote",
+    excerpt: "Une société de livraison perd son argent à trois endroits : les colis non confirmés qui seront refusés, les tentatives de livraison inutiles, et le COD en espèces qui circule sans trace. La plateforme qui tient commence par l'application livreur hors-ligne, scan, preuve et COD saisi, puis le portail e-commerçant avec versements à J+3, puis le paiement à la porte par SoftPos et QR et la confirmation automatisée. Une wilaya pilote avant le réseau.",
+    category: "Logistique", author: "Symloop Team", date: "2026-10-30", readTime: "11 min", featured: true,
+    tags: ["plateforme de livraison algérie 2027", "application livreur algérie", "logiciel société de livraison", "gestion cod paiement à la livraison", "transport e-commerce algérie"],
+    metaTitle: "Une plateforme de livraison en Algérie en 2027 : livreurs, COD, retours, e-commerçants | Symloop",
+    metaDescription: "Le parcours d'un colis payé à la livraison et où l'argent se perd, ce que l'e-commerçant, le livreur, le dispatch, le client, la direction et le fisc attendent de la plateforme, la pile à construire en 2027 (application livreur hors-ligne, portail e-commerçant, versements COD, paiement à la porte par SoftPos et QR, confirmation IA), et le calendrier de huit mois pour une wilaya pilote.",
+    translations: {
+      en: { title: "A delivery platform in Algeria in 2027: couriers, cash on delivery, returns, e-merchants. What to build", subtitle: "The journey of a COD parcel and the four places where money leaks, what each actor expects from the platform, the stack to build (offline courier app, e-merchant portal, dispatch, COD payouts, AI confirmation), payment at the door in 2027, and the calendar for a pilot wilaya", excerpt: "A delivery company loses its money in three places: unconfirmed parcels that will be refused, useless delivery attempts, and cash COD moving without a trace. The platform that holds starts with the offline courier app, scan, proof and COD entered, then the e-merchant portal with D+3 payouts, then payment at the door via SoftPos and QR and automated confirmation. One pilot wilaya before the network." },
+      ar: { title: "منصة توصيل في الجزائر سنة 2027: موصّلون، دفع عند الاستلام، مرتجعات، تجار إلكترونيون. ما الذي يجب بناؤه", subtitle: "مسار طرد مدفوع عند الاستلام والمواضع الأربعة التي يضيع فيها المال، ما ينتظره كل طرف من المنصة، الطبقات التي تُبنى (تطبيق موصّل دون اتصال، بوابة تاجر، توزيع، تحويلات، تأكيد بالذكاء الاصطناعي)، الدفع عند الباب في 2027، والجدول لولاية تجريبية", excerpt: "تخسر شركة التوصيل مالها في ثلاثة مواضع: الطرود غير المؤكدة التي ستُرفض، محاولات التسليم غير المجدية، والمبالغ النقدية التي تتحرك بلا أثر. المنصة التي تصمد تبدأ بتطبيق الموصّل دون اتصال، مسح وإثبات ومبلغ مُدخَل، ثم بوابة التاجر بتحويلات في ي+3، ثم الدفع عند الباب بـSoftPos وQR والتأكيد الآلي. ولاية تجريبية قبل الشبكة." }
+    }
+  },
+  {
     id: "163",
     slug: "agent-ia-entreprise-algerie-2027-par-ou-commencer-ce-qui-marche",
     title: "Mettre un agent IA dans mon entreprise en Algérie en 2027 : par où commencer, ce qui marche, ce qui doit exister avant",
