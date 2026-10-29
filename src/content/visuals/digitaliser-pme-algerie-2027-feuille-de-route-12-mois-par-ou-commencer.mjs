@@ -4,7 +4,7 @@ export const slug = 'digitaliser-pme-algerie-2027-feuille-de-route-12-mois-par-o
 
 const T = {
   fr: {
-    cover: { eyebrow: 'Problème · PME algérienne', title: ['Digitaliser une PME', 'en Algérie en 2027 :', 'par où commencer, dans quel ordre.'], subtitle: 'Les quatre paliers dans le bon ordre, ce qui s’achète en abonnement et ce qui se construit, la pile complète, et la feuille de route trimestre par trimestre.', left: { label: 'Janvier 2027', sub: 'WhatsApp, Excel, cahier, espèces, le patron qui sait tout' }, right: { label: 'Décembre 2027', sub: 'encaissement tracé, un flux maîtrisé, une équipe outillée, l’IA qui relance' }, note: 'Algérie · 2027' },
+    cover: { eyebrow: 'Problème · PME algérienne', title: ['Digitaliser une PME', 'en Algérie en 2027 :', 'par où commencer, dans quel ordre.'], subtitle: 'Les quatre paliers dans le bon ordre, ce qui s’achète en abonnement et ce qui se construit, la pile complète, et la feuille de route trimestre par trimestre.', left: { label: 'Janvier 2027', sub: 'WhatsApp, Excel, cahier, espèces' }, right: { label: 'Décembre 2027', sub: 'encaissement tracé, équipe outillée, IA qui relance' }, note: 'Algérie · 2027' },
     order: { title: 'Les quatre paliers, dans l’ordre où ils paient', items: [
       { n: 'T1', label: 'Encaisser et facturer', sub: 'Carte CIB/Edahabia, QR, facture conforme, relances. Le PLF 2027 récompense l’encaissement électronique.', accent: true },
       { n: 'T2', label: 'Le flux qui perd de l’argent', sub: 'Commandes, stock ou terrain : un seul flux, celui qui coûte chaque mois, outillé jusqu’au bout.' },
@@ -36,7 +36,7 @@ const T = {
     ], caption: 'Figure 4 · Chaque trimestre livre quelque chose que l’entreprise utilise le lendemain. Rien n’attend décembre.', alt: 'Calendrier en mois : T1 encaissement 0 à 3, dossier web-marchand 0 à 4, T2 flux 3 à 6, T3 équipe et client 6 à 9, T4 IA et bilan 9 à 12.' },
   },
   en: {
-    cover: { eyebrow: 'Problem · Algerian SME', title: ['Digitising an SME', 'in Algeria in 2027:', 'where to start, in what order.'], subtitle: 'The four steps in the right order, what to buy by subscription and what to build, the full stack, and the quarter-by-quarter roadmap.', left: { label: 'January 2027', sub: 'WhatsApp, Excel, notebook, cash, the owner who knows everything' }, right: { label: 'December 2027', sub: 'traced collection, one flow under control, an equipped team, AI that follows up' }, note: 'Algeria · 2027' },
+    cover: { eyebrow: 'Problem · Algerian SME', title: ['Digitising an SME', 'in Algeria in 2027:', 'where to start, in what order.'], subtitle: 'The four steps in the right order, what to buy by subscription and what to build, the full stack, and the quarter-by-quarter roadmap.', left: { label: 'January 2027', sub: 'WhatsApp, Excel, notebook, cash' }, right: { label: 'December 2027', sub: 'traced collection, equipped team, AI follow-ups' }, note: 'Algeria · 2027' },
     order: { title: 'The four steps, in the order they pay', items: [
       { n: 'Q1', label: 'Collect and invoice', sub: 'CIB/Edahabia card, QR, compliant invoice, reminders. The 2027 finance bill rewards electronic collection.', accent: true },
       { n: 'Q2', label: 'The flow that loses money', sub: 'Orders, stock or field: one flow only, the one that costs every month, equipped end to end.' },
@@ -68,7 +68,7 @@ const T = {
     ], caption: 'Figure 4 · Each quarter delivers something the company uses the next day. Nothing waits for December.', alt: 'Timeline in months: Q1 collection 0 to 3, merchant file 0 to 4, Q2 flow 3 to 6, Q3 team and customer 6 to 9, Q4 AI and review 9 to 12.' },
   },
   ar: {
-    cover: { eyebrow: 'مشكلة · مؤسسة جزائرية صغيرة أو متوسطة', title: ['رقمنة مؤسسة صغيرة', 'في الجزائر سنة 2027:', 'من أين تبدأ وبأي ترتيب.'], subtitle: 'المراحل الأربع بالترتيب الصحيح، ما يُشترى بالاشتراك وما يُبنى، الطبقات الكاملة، وخارطة الطريق فصلاً بفصل.', left: { label: 'جانفي 2027', sub: 'واتساب، إكسل، دفتر، نقد، المسيّر الذي يعرف كل شيء' }, right: { label: 'ديسمبر 2027', sub: 'تحصيل متتبَّع، تدفق واحد مضبوط، فريق مجهَّز، ذكاء اصطناعي يذكّر' }, note: 'الجزائر · 2027' },
+    cover: { eyebrow: 'مشكلة · مؤسسة جزائرية صغيرة أو متوسطة', title: ['رقمنة مؤسسة صغيرة', 'في الجزائر سنة 2027:', 'من أين تبدأ وبأي ترتيب.'], subtitle: 'المراحل الأربع بالترتيب الصحيح، ما يُشترى بالاشتراك وما يُبنى، الطبقات الكاملة، وخارطة الطريق فصلاً بفصل.', left: { label: 'جانفي 2027', sub: 'واتساب، إكسل، دفتر، نقد' }, right: { label: 'ديسمبر 2027', sub: 'تحصيل متتبَّع، فريق مجهَّز، ذكاء اصطناعي يذكّر' }, note: 'الجزائر · 2027' },
     order: { title: 'المراحل الأربع بالترتيب الذي تؤتي فيه ثمارها', items: [
       { n: 'الفصل 1', label: 'التحصيل والفوترة', sub: 'بطاقة CIB/الذهبية، QR، فاتورة مطابقة، تذكيرات. مشروع قانون المالية 2027 يكافئ التحصيل الإلكتروني.', accent: true },
       { n: 'الفصل 2', label: 'التدفق الذي يخسر المال', sub: 'طلبات أو مخزون أو ميدان: تدفق واحد فقط، الذي يكلّف كل شهر، مجهَّز حتى النهاية.' },
