@@ -27,6 +27,15 @@ const nextConfig = {
   },
   // Enable i18n for all builds
   i18n,
+  // next-i18next loads `next-i18next.config.js` and `public/locales/**` from
+  // the filesystem at request time (dynamic require + fs backend), so Next's
+  // file tracer cannot see them. Without this, every runtime invocation of
+  // getStaticProps (ISR revalidation, fallback: 'blocking' slugs) died with
+  // "next-i18next was unable to find a user config at /var/task/next-i18next.config.js"
+  // and the production function error rate sat around 78%.
+  outputFileTracingIncludes: {
+    '/**': ['./next-i18next.config.js', './public/locales/**/*'],
+  },
   // Compression for better performance
   compress: true,
   // Power optimizations
