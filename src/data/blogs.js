@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "171",
+    slug: "creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux",
+    title: "Créer une plateforme de location de voitures en Algérie en 2027 : réserver depuis la France, la caution, l'état des lieux et la flotte (série #08)",
+    subtitle: "Les six moments d'une location réservée depuis la France, ce qu'il faut construire en premier (l'outil de l'agence), le calcul qui le justifie, les six modèles possibles, et le calendrier pour ouvrir en avril, avant que la diaspora réserve l'été",
+    excerpt: "En Algérie, la location de voitures se négocie encore sur WhatsApp : voiture absente à l'aéroport, caution en espèces sans reçu, rayure contestée au retour. Une plateforme qui marche, c'est d'abord un calendrier juste et un état des lieux photographié sous les mêmes angles au départ et au retour. Commencer par l'outil de l'agence, ouvrir en avril, donc commencer en novembre.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-10-31", readTime: "11 min", featured: true,
+    tags: ["plateforme location voiture algérie", "créer site location voiture algérie", "logiciel location voiture algérie", "gestion flotte agence location algérie", "location voiture algérie diaspora 2027"],
+    metaTitle: "Créer une plateforme de location de voitures en Algérie en 2027 : réservation, caution, état des lieux | Symloop",
+    metaDescription: "Lancer une plateforme ou un logiciel de location de voitures en Algérie en 2027 : réservation depuis la France avec acompte, conducteurs nommés, caution écrite, état des lieux photo horodaté, calendrier unique de la flotte, six modèles comparés et calendrier pour ouvrir en avril.",
+    translations: {
+      en: { title: "Building a car rental platform in Algeria in 2027: booking from France, the deposit, the condition report and the fleet (series #08)", subtitle: "The six moments of a rental booked from France, what to build first (the agency's tool), the calculation that justifies it, the six possible models, and the calendar to open in April, before the diaspora books summer", excerpt: "In Algeria car rental is still negotiated on WhatsApp: no car at the airport, cash deposit with no receipt, disputed scratch at return. A platform that works is first a true calendar and a condition report photographed from the same angles at departure and return. Start with the agency's tool, open in April, so start in November." },
+      ar: { title: "إنشاء منصة لكراء السيارات في الجزائر سنة 2027: الحجز من فرنسا، الضمان، المعاينة والأسطول (سلسلة #08)", subtitle: "اللحظات الست لكراء محجوز من فرنسا، وما يُبنى أولاً (أداة الوكالة)، والحساب الذي يبرّره، والنماذج الستة الممكنة، والجدول الزمني للافتتاح في أفريل قبل أن تحجز الجالية صيفها", excerpt: "في الجزائر ما يزال كراء السيارات يُتفاوض عليه على واتساب: سيارة غائبة في المطار، ضمان نقدي دون وصل، خدش متنازع عليه عند الإرجاع. المنصة الناجحة هي أولاً رزنامة صحيحة ومعاينة مصوَّرة من الزوايا نفسها عند الخروج والإرجاع. ابدأ بأداة الوكالة، وافتح في أفريل، أي ابدأ في نوفمبر." }
+    }
+  },
+  {
     id: "170",
     slug: "gerer-son-commerce-en-algerie-depuis-la-france-2027-caisse-stock-ventes-a-distance",
     title: "Gérer son commerce en Algérie depuis la France en 2027 : voir la caisse, le stock et les ventes sans être sur place",
