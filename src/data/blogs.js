@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "172",
+    slug: "creer-equivalent-planity-algerie-2027-reservation-salon-beaute-acompte-mariees",
+    title: "Créer l'équivalent de Planity en Algérie en 2027 : la réservation des salons de beauté, l'acompte contre les absences et la saison des mariées (série #09)",
+    subtitle: "Les six moments d'un rendez-vous en salon, le calcul qui justifie l'acompte, l'outil du salon à construire en premier, le forfait de la mariée qui réserve depuis la France, six modèles comparés et le calendrier pour être prêt avant le Ramadan 2027",
+    excerpt: "En Algérie, les salons prennent leurs rendez-vous en messages Instagram et WhatsApp, les notent dans un cahier, et perdent des fauteuils aux absences. L'équivalent de Planity, c'est d'abord l'outil du salon : un agenda par employée avec les vraies durées, un acompte, des rappels, une fiche cliente privée. Puis le forfait mariée de la diaspora. Commencer en novembre pour tourner avant le Ramadan.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-01", readTime: "11 min", featured: true,
+    tags: ["équivalent planity algérie", "application réservation salon coiffure algérie", "logiciel salon de beauté algérie", "acompte rendez-vous salon", "forfait mariée algérie diaspora 2027"],
+    metaTitle: "Créer l'équivalent de Planity en Algérie en 2027 : réservation salon de beauté, acompte, mariées | Symloop",
+    metaDescription: "Lancer une application ou un logiciel de réservation pour salons de coiffure, instituts et hammams en Algérie en 2027 : agenda par employée, acompte CIB, Edahabia ou euros, rappels WhatsApp, fiche cliente privée, forfaits mariée de la diaspora, six modèles et calendrier avant le Ramadan.",
+    translations: {
+      en: { title: "Building the Planity of Algeria in 2027: salon booking, a deposit against no-shows, and the bridal season (series #09)", subtitle: "The six moments of a salon appointment, the calculation that justifies a deposit, the salon's tool to build first, the package for the bride booking from France, six models compared and the calendar to be ready before Ramadan 2027", excerpt: "In Algeria salons take bookings in Instagram and WhatsApp messages, write them in a notebook, and lose chairs to no-shows. The Planity of Algeria is first the salon's tool: a calendar per employee with real lengths, a deposit, reminders, a private client card. Then the diaspora bridal package. Start in November to run before Ramadan." },
+      ar: { title: "إنشاء مقابل Planity في الجزائر سنة 2027: حجز صالونات التجميل، العربون ضد الغياب، وموسم العرائس (سلسلة #09)", subtitle: "اللحظات الست لموعد في الصالون، والحساب الذي يبرّر العربون، وأداة الصالون التي تُبنى أولاً، وباقة العروس التي تحجز من فرنسا، وستة نماذج مقارنة، والجدول الزمني للجاهزية قبل رمضان 2027", excerpt: "في الجزائر تأخذ الصالونات مواعيدها في رسائل إنستغرام وواتساب، وتكتبها في دفتر، وتخسر كراسي بسبب الغياب. مقابل Planity هو أولاً أداة الصالون: رزنامة لكل عاملة بالمدد الحقيقية، وعربون، وتذكير، وبطاقة زبونة خاصة. ثم باقة عروس الجالية. ابدأ في نوفمبر لتشتغل قبل رمضان." }
+    }
+  },
+  {
     id: "171",
     slug: "creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux",
     title: "Créer une plateforme de location de voitures en Algérie en 2027 : réserver depuis la France, la caution, l'état des lieux et la flotte (série #08)",
