@@ -4,7 +4,7 @@ export const slug = 'creer-equivalent-planity-algerie-2027-reservation-salon-bea
 
 const T = {
   fr: {
-    cover: { eyebrow: 'Série · Vu en France #09', title: ['Créer l’équivalent', 'de Planity en Algérie', 'en 2027.'], subtitle: 'L’agenda du salon, l’acompte contre les absences, les forfaits des mariées réservés depuis la France : ce qu’il faut construire, et dans quel ordre.', left: { label: 'La réservation', sub: 'Paris, Lyon, Marseille, ou le quartier' }, right: { label: 'Le fauteuil', sub: 'Alger, Oran, Sétif, Constantine' }, note: 'France · Algérie · 2027' },
+    cover: { eyebrow: 'Série · Vu en France #09', title: ['Créer l’équivalent', 'de Planity en Algérie', 'en 2027.'], subtitle: 'L’agenda, l’acompte contre les absences, les forfaits des mariées : quoi construire, et dans quel ordre.', left: { label: 'La réservation', sub: 'Paris, Lyon, Marseille, ou le quartier' }, right: { label: 'Le fauteuil', sub: 'Alger, Oran, Sétif, Constantine' }, note: 'France · Algérie · 2027' },
     journey: { title: 'Un rendez-vous en salon, en six moments', items: [
       { n: '01', label: 'La prestation', sub: 'Choisie avec sa durée réelle : une couleur, c’est 2 h 30, pas 30 min.' },
       { n: '02', label: 'La bonne personne', sub: 'Le créneau est pris sur l’agenda de la coiffeuse ou de la cabine.' },
@@ -54,7 +54,7 @@ const T = {
     ], caption: 'Figure 5 · Les six modèles reposent sur le même socle : un agenda juste par employée et un acompte. Nous conseillons de commencer par la première ligne, puis d’ouvrir le logiciel à d’autres salons ; l’annuaire vient en dernier.', alt: 'Matrice de six modèles : salon ou chaîne avec sa propre réservation, logiciel par abonnement pour salons, annuaire de réservation, forfaits mariée multi-prestataires, prestations à domicile, hammams et spas ; pour chacun ce qui rapporte et ce qui casse.' },
   },
   en: {
-    cover: { eyebrow: 'Series · Seen in France #09', title: ['Building the Planity', 'of Algeria', 'in 2027.'], subtitle: 'The salon’s calendar, a deposit against no-shows, bridal packages booked from France: what to build, and in what order.', left: { label: 'The booking', sub: 'Paris, Lyon, Marseille, or next door' }, right: { label: 'The chair', sub: 'Algiers, Oran, Sétif, Constantine' }, note: 'France · Algeria · 2027' },
+    cover: { eyebrow: 'Series · Seen in France #09', title: ['Building the Planity', 'of Algeria', 'in 2027.'], subtitle: 'The calendar, a deposit against no-shows, bridal packages: what to build, and in what order.', left: { label: 'The booking', sub: 'Paris, Lyon, Marseille, or next door' }, right: { label: 'The chair', sub: 'Algiers, Oran, Sétif, Constantine' }, note: 'France · Algeria · 2027' },
     journey: { title: 'A salon appointment, in six moments', items: [
       { n: '01', label: 'The service', sub: 'Chosen with its real length: a colour takes 2.5 hours, not 30 minutes.' },
       { n: '02', label: 'The right person', sub: 'The slot is taken on that stylist’s or that room’s calendar.' },
@@ -104,7 +104,7 @@ const T = {
     ], caption: 'Figure 5 · All six models stand on the same base: a true calendar per employee and a deposit. We advise starting with the first row, then opening the software to other salons; the directory comes last.', alt: 'Matrix of six models: salon or chain with its own booking, subscription software for salons, booking directory, multi-provider bridal packages, home services, hammams and spas; for each, what pays and what breaks.' },
   },
   ar: {
-    cover: { eyebrow: 'سلسلة · رأيناه في فرنسا #09', title: ['إنشاء مقابل Planity', 'في الجزائر', 'سنة 2027.'], subtitle: 'رزنامة الصالون، العربون ضد الغياب، باقات العرائس المحجوزة من فرنسا: ما يجب بناؤه وبأي ترتيب.', left: { label: 'الحجز', sub: 'باريس، ليون، مرسيليا، أو الحي' }, right: { label: 'الكرسي', sub: 'الجزائر، وهران، سطيف، قسنطينة' }, note: 'فرنسا · الجزائر · 2027' },
+    cover: { eyebrow: 'سلسلة · رأيناه في فرنسا #09', title: ['إنشاء مقابل Planity', 'في الجزائر', 'سنة 2027.'], subtitle: 'الرزنامة، العربون ضد الغياب، باقات العرائس: ما يُبنى وبأي ترتيب.', left: { label: 'الحجز', sub: 'باريس، ليون، مرسيليا، أو الحي' }, right: { label: 'الكرسي', sub: 'الجزائر، وهران، سطيف، قسنطينة' }, note: 'فرنسا · الجزائر · 2027' },
     journey: { title: 'موعد في الصالون في ست لحظات', items: [
       { n: '01', label: 'الخدمة', sub: 'تُختار بمدتها الحقيقية: الصباغة ساعتان ونصف لا ثلاثون دقيقة.' },
       { n: '02', label: 'الشخص المناسب', sub: 'يؤخذ الموعد على رزنامة الحلاقة أو القاعة المعنية.' },
