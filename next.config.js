@@ -105,6 +105,17 @@ const nextConfig = {
       { source: '/blog/smart-home-algerie/', destination: '/blog/maison-intelligente-smart-home-algerie-2026/', permanent: true },
       { source: '/blog/erp-algerie/', destination: '/blog/erp-sur-mesure-saas-startup-pme-algerie-2026/', permanent: true },
       { source: '/blog/devops-algerie/', destination: '/blog/devops-developpement-logiciel-algerie-2026/', permanent: true },
+
+      // ── Dead slugs still linked from live posts (served 500 until 31 Oct 2026, then 404) ──
+      //    Point each one at its closest live page so the link equity is kept.
+      { source: '/blog/erp-sur-mesure-algerie-2024/', destination: '/blog/erp-sur-mesure-saas-startup-pme-algerie-2026/', permanent: true },
+      { source: '/blog/erp-sur-mesure-algerie-2026/', destination: '/blog/erp-sur-mesure-saas-startup-pme-algerie-2026/', permanent: true },
+      { source: '/blog/developpement-web-algerie-2024/', destination: '/blog/developpement-site-web-algerie-2026/', permanent: true },
+      { source: '/blog/developpement-mobile-algerie-2024/', destination: '/blog/developpement-application-mobile-algerie-2026/', permanent: true },
+      { source: '/blog/developpement-flutter-algerie/', destination: '/blog/developpement-flutter-algerie-2024/', permanent: true },
+      { source: '/blog/ecommerce-algerie-2024/', destination: '/blog/ecommerce-algerie-paiement-cib-edahabia-2024/', permanent: true },
+      { source: '/blog/flutter-vs-react-native/', destination: '/blog/developpement-react-native-algerie/', permanent: true },
+      { source: '/blog/logistics-management-software-2026/', destination: '/products/logistics-management/', permanent: true },
     ];
   },
 
