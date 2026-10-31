@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "170",
+    slug: "gerer-son-commerce-en-algerie-depuis-la-france-2027-caisse-stock-ventes-a-distance",
+    title: "Gérer son commerce en Algérie depuis la France en 2027 : voir la caisse, le stock et les ventes sans être sur place",
+    subtitle: "Ce qu'il faut enregistrer sur place (ventes, entrées de stock, dépenses, comptage des espèces), comment cela arrive sur votre téléphone même après une coupure, ce qu'il faut regarder chaque soir selon le commerce, le rituel du soir, et huit semaines pour le mettre en place sans fermer",
+    excerpt: "La photo du cahier sur WhatsApp montre le total que quelqu'un a écrit, pas les ventes qui ont eu lieu. Pour piloter un restaurant, une supérette ou une agence de location en Algérie depuis la France, quatre choses doivent être enregistrées là où elles se passent et arriver seules sur un serveur à votre nom, hors-ligne d'abord. De là, un écran du soir : cinq chiffres et trois à cinq alertes. Six à dix semaines, sans fermer.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-10-31", readTime: "10 min", featured: true,
+    tags: ["gérer commerce algérie depuis la france", "suivre caisse à distance algérie", "gestion magasin algérie depuis l'étranger", "logiciel caisse hors-ligne algérie", "diaspora commerce algérie 2027"],
+    metaTitle: "Gérer son commerce en Algérie depuis la France en 2027 : caisse, stock et ventes à distance | Symloop",
+    metaDescription: "Piloter un restaurant, une supérette, une boutique ou une agence de location en Algérie depuis la France en 2027 : les quatre choses à enregistrer sur place, la synchronisation hors-ligne, l'écran du soir par type de commerce, le rituel de clôture, et huit semaines pour le mettre en place sans fermer.",
+    translations: {
+      en: { title: "Running a business in Algeria from France in 2027: seeing the till, the stock and the sales without being there", subtitle: "What to record on site (sales, stock deliveries, expenses, cash count), how it reaches your phone even after an outage, what to look at every evening by type of business, the evening routine, and eight weeks to set it up without closing", excerpt: "The photo of the notebook on WhatsApp shows the total someone wrote, not the sales that happened. To run a restaurant, a convenience store or a rental agency in Algeria from France, four things must be recorded where they happen and reach a server in your name on their own, offline first. From there, an evening screen: five numbers and three to five alerts. Six to ten weeks, without closing." },
+      ar: { title: "إدارة تجارتك في الجزائر من فرنسا سنة 2027: رؤية الصندوق والمخزون والمبيعات دون أن تكون هناك", subtitle: "ما يجب تسجيله في عين المكان (المبيعات، دخول السلع، المصاريف، عدّ النقود)، وكيف يصل إلى هاتفك حتى بعد الانقطاع، وما تراقبه كل مساء حسب نوع التجارة، وطقس المساء، وثمانية أسابيع لوضعه دون إغلاق", excerpt: "صورة الدفتر على واتساب تُريك المجموع الذي كتبه أحدهم، لا المبيعات التي حدثت. لإدارة مطعم أو سوبيرات أو وكالة كراء في الجزائر من فرنسا، يجب تسجيل أربعة أشياء حيث تحدث وأن تصل وحدها إلى خادم باسمك، دون اتصال أولاً. ومن هناك شاشة المساء: خمسة أرقام ومن ثلاثة إلى خمسة تنبيهات. من ستة إلى عشرة أسابيع دون إغلاق." }
+    }
+  },
+  {
     id: "169",
     slug: "combien-de-temps-pour-developper-application-plateforme-algerie-2027-delais-reels",
     title: "Combien de temps pour développer une application ou une plateforme en Algérie en 2027 ? Les délais réels, par type de projet",
