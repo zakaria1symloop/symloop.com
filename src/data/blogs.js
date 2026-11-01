@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "176",
+    slug: "promoteur-immobilier-vendre-sur-plan-diaspora-2027-espace-acquereur-suivi-chantier",
+    title: "Promoteur immobilier : vendre sur plan à la diaspora en 2027, avec un espace acquéreur qui remplace les allers-retours",
+    subtitle: "Les six moments d'une vente sur plan à distance, le journal de chantier à construire en premier, ce que vaut un salon bien suivi, les six questions d'un acquéreur de la diaspora et six modèles comparés",
+    excerpt: "Les promoteurs algériens vont chercher leurs acquéreurs jusqu'au salon SINA à Paris, mais après la signature l'acheteur qui vit en France ne voit plus rien du chantier. Un espace acquéreur nourri par un journal de chantier, photos datées depuis les mêmes points chaque mois, échéancier et reçus visibles, interlocuteur nommé, remplace les allers-retours et fait vendre le projet suivant.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-01", readTime: "11 min", featured: true,
+    tags: ["promoteur immobilier algérie diaspora", "vente sur plan algérie", "espace acquéreur", "suivi de chantier à distance", "logiciel promotion immobilière 2027"],
+    metaTitle: "Promoteur immobilier : vendre sur plan à la diaspora en 2027, espace acquéreur et suivi de chantier | Symloop",
+    metaDescription: "Vendre sur plan aux Algériens de France en 2027 : contacts de salon qualifiés et relancés, visite à distance, journal de chantier en photos datées, échéancier et reçus visibles, finitions choisies à distance, livraison avec réserves en photo, six modèles comparés.",
+    translations: {
+      en: { title: "Property developers: selling off-plan to the diaspora in 2027, with a buyer portal that replaces the round trips", subtitle: "The six moments of a remote off-plan sale, the site log to build first, what a well-followed fair is worth, the six questions of a diaspora buyer and six models compared", excerpt: "Algerian developers travel as far as the SINA fair in Paris to find buyers, but after signing, the buyer living in France sees nothing of the site. A buyer portal fed by a site log, dated photos from the same points every month, visible schedule and receipts, a named contact, replaces the round trips and sells the next project." },
+      ar: { title: "المرقّي العقاري: البيع على التصاميم للجالية سنة 2027، بفضاء مشترٍ يغني عن الذهاب والإياب", subtitle: "اللحظات الست للبيع على التصاميم عن بُعد، وسجل الورشة الذي يُبنى أولاً، وكم يساوي صالون متابَع جيداً، والأسئلة الست لمشتري الجالية، وستة نماذج مقارنة", excerpt: "يذهب المرقّون الجزائريون إلى صالون SINA في باريس بحثاً عن مشترين، لكن بعد التوقيع لا يرى المشتري المقيم في فرنسا شيئاً من الورشة. فضاء مشترٍ يغذّيه سجل ورشة، بصور مؤرَّخة من النقاط نفسها كل شهر وجدول دفع ووصولات مرئية ومحاور بالاسم، يغني عن الذهاب والإياب ويبيع المشروع التالي." }
+    }
+  },
+  {
     id: "175",
     slug: "creer-application-salle-de-sport-algerie-2027-abonnement-acces-renouvellement",
     title: "Créer une application de salle de sport en Algérie en 2027 : l'abonnement, l'accès sans réseau, les créneaux femmes et le renouvellement qui ne se perd plus (série #12)",
