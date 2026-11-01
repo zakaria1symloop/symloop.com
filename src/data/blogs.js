@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "178",
+    slug: "transporteur-voyageurs-algerie-2027-billets-en-ligne-caisse-receveur-colis",
+    title: "Transporteur de voyageurs en Algérie en 2027 : vendre ses places en ligne à côté de Mahatati, tenir la caisse du receveur et tracer les colis (série #14)",
+    subtitle: "Les six moments d'un voyage qui tient, le téléphone du receveur à construire en premier, ce que coûte un billet vendu à bord sans trace, six fuites et leur parade, les navettes de la diaspora et six modèles comparés",
+    excerpt: "La SOGRAL a vendu plus de deux millions de billets de car en ligne en 2025 avec Mahatati, mais chez le transporteur privé une grande partie de l'argent circule encore en espèces à bord. Avec des tarifs encadrés, le remplissage et la caisse font la marge : téléphone du receveur qui marche sans réseau, stock de places unique, colis tracés, caisse de chaque voyage rapprochée.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-02", readTime: "11 min", featured: true,
+    tags: ["transporteur de voyageurs algérie", "logiciel transport voyageurs", "billetterie autocar en ligne", "application receveur bus", "équivalent flixbus algérie 2027"],
+    metaTitle: "Transporteur de voyageurs en Algérie en 2027 : billets en ligne, caisse du receveur, colis | Symloop",
+    metaDescription: "Équiper une société de transport de voyageurs en Algérie en 2027 : stock de places unique entre guichet, vente en ligne et agents, téléphone du receveur hors ligne, colis tracés, caisse par voyage, navettes pour la diaspora, six modèles comparés et calendrier jusqu'à l'Aïd el-Adha.",
+    translations: {
+      en: { title: "Coach operators in Algeria in 2027: selling seats online alongside Mahatati, controlling the conductor's cash and tracking parcels (series #14)", subtitle: "The six moments of a trip that holds, the conductor's phone to build first, what an untraced on-board ticket costs, six leaks and their counters, diaspora shuttles and six models compared", excerpt: "SOGRAL sold more than two million coach tickets online in 2025 with Mahatati, but at private operators much of the money still moves in cash on board. With regulated fares, load and cash make the margin: a conductor's phone that works offline, a single seat stock, tracked parcels, each trip's cash reconciled." },
+      ar: { title: "ناقل المسافرين في الجزائر سنة 2027: بيع المقاعد عبر الإنترنت إلى جانب «محطتي»، وضبط صندوق القابض، وتتبّع الطرود (سلسلة #14)", subtitle: "اللحظات الست لرحلة تصمد، وهاتف القابض الذي يُبنى أولاً، وكم تكلّف تذكرة تُباع على المتن بلا أثر، وستة تسرّبات وردودها، والنقل المكوكي للجالية، وستة نماذج مقارنة", excerpt: "باعت «سوقرال» أكثر من مليوني تذكرة حافلة عبر الإنترنت سنة 2025 بتطبيق «محطتي»، لكن عند الناقل الخاص ما زال جزء كبير من المال يدور نقداً على المتن. ومع تسعيرة مؤطَّرة، نسبة الملء والصندوق هما ما يصنع الهامش: هاتف قابض يعمل دون شبكة، مخزون مقاعد واحد، طرود متتبَّعة، وصندوق كل رحلة مطابَق." }
+    }
+  },
+  {
     id: "177",
     slug: "creer-plateforme-cours-soutien-scolaire-algerie-2027-bac-cours-arabe-diaspora",
     title: "Créer une plateforme de cours de soutien en Algérie en 2027 : le prof vérifié, la séance suivie, le paiement tracé, du bac aux cours d'arabe pour la diaspora (série #13)",
