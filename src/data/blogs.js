@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "175",
+    slug: "creer-application-salle-de-sport-algerie-2027-abonnement-acces-renouvellement",
+    title: "Créer une application de salle de sport en Algérie en 2027 : l'abonnement, l'accès sans réseau, les créneaux femmes et le renouvellement qui ne se perd plus (série #12)",
+    subtitle: "Les six moments d'un abonnement qui tient, ce qu'il faut construire en premier, ce que vaut un renouvellement relancé, six fuites et leur parade, l'adhérent payé depuis la France et six modèles comparés",
+    excerpt: "En Algérie, l'abonnement à la salle se paie le plus souvent en espèces à l'accueil, mois après mois, sans prélèvement automatique : c'est là que les clubs perdent leurs adhérents sans le voir. Une application de salle de sport se juge au tourniquet et au renouvellement : accès qui marche sans réseau, espèces saisies avec reçu, créneaux femmes inscrits dans l'accès, rappel, gel et relance.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-01", readTime: "11 min", featured: true,
+    tags: ["application salle de sport algérie", "logiciel salle de sport algérie", "contrôle d'accès salle de sport", "abonnement fitness CIB Edahabia", "équivalent basic-fit algérie 2027"],
+    metaTitle: "Créer une application de salle de sport en Algérie en 2027 : abonnement, accès, renouvellement | Symloop",
+    metaDescription: "Lancer une application ou un logiciel de salle de sport en Algérie en 2027 : contrôle d'accès hors ligne au tourniquet, espèces saisies, créneaux femmes, renouvellement relancé sans prélèvement automatique, paiement CIB, Edahabia et euros, six fuites et six modèles comparés.",
+    translations: {
+      en: { title: "Building a gym app and platform in Algeria in 2027: the membership, offline access, women's hours and renewals that stop slipping away (series #12)", subtitle: "The six moments of a membership that holds, what to build first, what a chased renewal is worth, six leaks and their counters, the member paid for from France and six models compared", excerpt: "In Algeria a gym membership is mostly paid in cash at the front desk, month after month, with no automatic debit: that is where clubs lose members without noticing. A gym app is judged at the turnstile and at renewal: access that works offline, cash entered with a receipt, women's hours written into access, reminder, freeze and follow-up." },
+      ar: { title: "إنشاء تطبيق لقاعة رياضة في الجزائر سنة 2027: الاشتراك، الدخول دون شبكة، أوقات النساء، وتجديد لا يضيع بعد اليوم (سلسلة #12)", subtitle: "اللحظات الست لاشتراك يصمد، وما يُبنى أولاً، وكم يساوي تجديد متابَع، وستة تسرّبات وردودها، والمشترك الذي يُدفع عنه من فرنسا، وستة نماذج مقارنة", excerpt: "في الجزائر يُدفع اشتراك القاعة غالباً نقداً في الاستقبال، شهراً بعد شهر، دون اقتطاع تلقائي: وهناك تخسر النوادي مشتركيها دون أن تنتبه. تطبيق قاعة الرياضة يُقاس عند البوابة وعند التجديد: دخول يعمل دون شبكة، نقد مسجَّل بوصل، أوقات النساء مكتوبة في نظام الدخول، تذكير وتجميد ومتابعة." }
+    }
+  },
+  {
     id: "174",
     slug: "creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement",
     title: "Créer une billetterie en ligne en Algérie en 2027 : le billet signé, la porte qui scanne hors ligne, le paiement en dinars et en euros, le reversement à l'organisateur (série #11)",
