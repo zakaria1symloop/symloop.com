@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "174",
+    slug: "creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement",
+    title: "Créer une billetterie en ligne en Algérie en 2027 : le billet signé, la porte qui scanne hors ligne, le paiement en dinars et en euros, le reversement à l'organisateur (série #11)",
+    subtitle: "Les six moments d'une billetterie qui tient, ce qu'il faut construire en premier, le calcul des files à la porte, six fraudes et leur parade, les achats depuis la France et six modèles comparés",
+    excerpt: "En Algérie, les billets se vendent déjà en ligne, mais les pannes à l'ouverture des ventes, le retrait au guichet et les faux concerts sur Instagram montrent où ça casse. Une billetterie se juge à la porte et au reversement : billet nominatif à QR signé, page officielle vérifiable, application de porte qui scanne sans réseau, et versement à l'organisateur rapproché des entrées réelles.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-01", readTime: "11 min", featured: true,
+    tags: ["billetterie en ligne algérie", "plateforme billetterie algérie", "application billetterie événement", "contrôle d'accès QR code", "billet électronique 2027"],
+    metaTitle: "Créer une billetterie en ligne en Algérie en 2027 : billet QR signé, porte hors ligne, paiement | Symloop",
+    metaDescription: "Lancer une plateforme de billetterie en Algérie en 2027 : billet nominatif à QR signé, contrôle d'accès hors ligne, paiement CIB, Edahabia et euros, reversement aux organisateurs, fraudes et parades, six modèles comparés et calendrier jusqu'à l'été.",
+    translations: {
+      en: { title: "Building an online ticketing platform in Algeria in 2027: the signed ticket, the gate that scans offline, payment in dinars and euros, the payout to the organiser (series #11)", subtitle: "The six moments of a ticketing platform that holds, what to build first, the maths of gate lanes, six frauds and their counters, buying from France and six models compared", excerpt: "In Algeria tickets already sell online, but outages when sales open, box-office pickup and fake concerts on Instagram show where it breaks. A ticketing platform is judged at the gate and at the payout: a named ticket with a signed QR, a checkable official page, a gate app that scans with no network, and a payout to the organiser matched against real entries." },
+      ar: { title: "إنشاء منصة لبيع التذاكر عبر الإنترنت في الجزائر سنة 2027: التذكرة الموقَّعة، البوابة التي تمسح دون شبكة، الدفع بالدينار واليورو، وتحويل المداخيل إلى المنظِّم (سلسلة #11)", subtitle: "اللحظات الست لمنصة تذاكر تصمد، وما يُبنى أولاً، وحساب الطوابير عند البوابة، وستة أنواع من الغش وردودها، والشراء من فرنسا، وستة نماذج مقارنة", excerpt: "في الجزائر تُباع التذاكر أصلاً عبر الإنترنت، لكن الأعطال عند فتح البيع والسحب من الشباك والحفلات المزيّفة على إنستغرام تُظهر أين يقع الخلل. منصة التذاكر تُقاس عند البوابة وعند تحويل المداخيل: تذكرة اسمية برمز QR موقَّع، صفحة رسمية قابلة للتحقق، تطبيق بوابة يمسح دون شبكة، وتحويل للمنظِّم يطابق الدخول الفعلي." }
+    }
+  },
+  {
     id: "173",
     slug: "creer-equivalent-idgarages-algerie-2027-garage-devis-pieces-carnet-entretien",
     title: "Créer l'équivalent d'iDGarages en Algérie en 2027 : le devis par ligne, l'accord à distance, l'origine des pièces et le carnet d'entretien (série #10)",
