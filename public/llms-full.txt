@@ -642,6 +642,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux/
   - Créer l'équivalent de Planity en Algérie en 2027 : réservation salon de beauté, acompte, forfaits mariée
       https://symloop.com/fr/blog/creer-equivalent-planity-algerie-2027-reservation-salon-beaute-acompte-mariees/
+  - Créer l'équivalent d'iDGarages en Algérie en 2027 : logiciel garage, devis par ligne, origine des pièces, carnet d'entretien
+      https://symloop.com/fr/blog/creer-equivalent-idgarages-algerie-2027-garage-devis-pieces-carnet-entretien/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

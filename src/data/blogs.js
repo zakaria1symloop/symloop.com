@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "173",
+    slug: "creer-equivalent-idgarages-algerie-2027-garage-devis-pieces-carnet-entretien",
+    title: "Créer l'équivalent d'iDGarages en Algérie en 2027 : le devis par ligne, l'accord à distance, l'origine des pièces et le carnet d'entretien (série #10)",
+    subtitle: "Les six moments d'une réparation qui inspire confiance, l'outil de l'atelier à construire en premier, le calcul des heures-pont perdues, la règle sur l'origine des pièces, la réparation payée depuis la France et six modèles comparés",
+    excerpt: "En Algérie, le prix d'une réparation se donne au téléphone, le travail en plus se découvre à la caisse, et l'origine de la pièce montée reste floue. L'équivalent d'iDGarages, c'est d'abord l'outil de l'atelier : dossier véhicule, devis ligne par ligne avec l'origine des pièces, accord du client en photo sur son téléphone, carnet d'entretien. Le comparateur vient quand les devis sont comparables.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-01", readTime: "11 min", featured: true,
+    tags: ["logiciel garage algérie", "application garage automobile algérie", "équivalent idgarages algérie", "devis garage en ligne", "carnet entretien numérique 2027"],
+    metaTitle: "Créer l'équivalent d'iDGarages en Algérie en 2027 : logiciel garage, devis, pièces, carnet | Symloop",
+    metaDescription: "Lancer un logiciel ou une plateforme pour garages automobiles en Algérie en 2027 : devis par ligne avec origine des pièces, accord du client à distance avec photos, planning des ponts, stock, carnet d'entretien numérique, paiement en dinars ou en euros, six modèles comparés.",
+    translations: {
+      en: { title: "Building the iDGarages of Algeria in 2027: the itemised quote, remote approval, the origin of parts and the service book (series #10)", subtitle: "The six moments of a repair people can trust, the workshop tool to build first, the calculation of lost lift-hours, the rule on part origin, repairs paid from France and six models compared", excerpt: "In Algeria a repair price is given on the phone, extra work is discovered at the till, and the origin of the fitted part stays vague. The iDGarages of Algeria is first the workshop's tool: vehicle file, itemised quote with part origin, customer approval by photo on a phone, service book. The comparison site comes once quotes are comparable." },
+      ar: { title: "إنشاء مقابل iDGarages في الجزائر سنة 2027: التقدير المفصّل، الموافقة عن بُعد، مصدر القطع ودفتر الصيانة (سلسلة #10)", subtitle: "اللحظات الست لتصليح يبعث على الثقة، وأداة الورشة التي تُبنى أولاً، وحساب ساعات الرافعات الضائعة، وقاعدة مصدر القطع، والتصليح المدفوع من فرنسا، وستة نماذج مقارنة", excerpt: "في الجزائر يُعطى سعر التصليح بالهاتف، ويُكتشف العمل الإضافي عند الدفع، ويبقى مصدر القطعة المركَّبة غامضاً. مقابل iDGarages هو أولاً أداة الورشة: ملف السيارة، تقدير مفصّل بمصدر القطع، موافقة الزبون بالصورة على هاتفه، ودفتر صيانة. والمقارن يأتي عندما تصبح التقديرات قابلة للمقارنة." }
+    }
+  },
+  {
     id: "172",
     slug: "creer-equivalent-planity-algerie-2027-reservation-salon-beaute-acompte-mariees",
     title: "Créer l'équivalent de Planity en Algérie en 2027 : la réservation des salons de beauté, l'acompte contre les absences et la saison des mariées (série #09)",
