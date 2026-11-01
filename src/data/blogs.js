@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "177",
+    slug: "creer-plateforme-cours-soutien-scolaire-algerie-2027-bac-cours-arabe-diaspora",
+    title: "Créer une plateforme de cours de soutien en Algérie en 2027 : le prof vérifié, la séance suivie, le paiement tracé, du bac aux cours d'arabe pour la diaspora (série #13)",
+    subtitle: "Les six moments d'un cours de soutien qui tient, le suivi de séance à construire en premier, ce que coûtent les mois non payés, ce que les parents ignorent, l'arabe en ligne pour la diaspora et six modèles comparés",
+    excerpt: "En Algérie, huit lycéens de terminale sur dix prenaient des cours de soutien selon une étude de 2019, mais le prof se choisit au bouche-à-oreille et se paie en espèces à la porte. Une plateforme de soutien se juge à ce que les parents savent après chaque séance : prof vérifié, groupe plafonné, suivi en deux minutes, paiement tracé, et des cours d'arabe en ligne pour les enfants de la diaspora.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-01", readTime: "11 min", featured: true,
+    tags: ["plateforme cours de soutien algérie", "application soutien scolaire", "cours particuliers bac algérie", "cours d'arabe en ligne diaspora", "équivalent superprof algérie 2027"],
+    metaTitle: "Créer une plateforme de cours de soutien en Algérie en 2027 : bac, suivi, arabe pour la diaspora | Symloop",
+    metaDescription: "Lancer une plateforme ou une application de cours de soutien en Algérie en 2027 : profs vérifiés, groupes plafonnés, suivi de séance envoyé aux parents, paiement CIB, Edahabia et euros, examens blancs, cours d'arabe en ligne pour les enfants de la diaspora, six modèles comparés.",
+    translations: {
+      en: { title: "Building a tutoring platform in Algeria in 2027: the vetted tutor, the tracked session, the traced payment, from the bac to Arabic lessons for the diaspora (series #13)", subtitle: "The six moments of a tutoring course that holds, the session follow-up to build first, what unpaid months cost, what parents do not know, online Arabic for the diaspora and six models compared", excerpt: "In Algeria eight in ten final-year secondary pupils took private tutoring according to a 2019 study, yet tutors are chosen by word of mouth and paid in cash at the door. A tutoring platform is judged by what parents know after each session: vetted tutor, capped group, two-minute follow-up, traced payment, and online Arabic lessons for diaspora children." },
+      ar: { title: "إنشاء منصة لدروس الدعم في الجزائر سنة 2027: الأستاذ الموثَّق، الحصة المتابَعة، الدفع المتتبَّع، من البكالوريا إلى دروس العربية للجالية (سلسلة #13)", subtitle: "اللحظات الست لدرس دعم يصمد، ومتابعة الحصة التي تُبنى أولاً، وكم تكلّف الأشهر غير المدفوعة، وما يجهله الأولياء، والعربية عن بُعد للجالية، وستة نماذج مقارنة", excerpt: "في الجزائر كان ثمانية من كل عشرة تلاميذ في السنة الثالثة ثانوي يتلقّون دروس دعم حسب دراسة من 2019، لكن الأستاذ يُختار بالسماع ويُدفع له نقداً عند الباب. منصة الدعم تُقاس بما يعرفه الأولياء بعد كل حصة: أستاذ موثَّق، فوج محدود، متابعة في دقيقتين، دفع متتبَّع، ودروس عربية عن بُعد لأبناء الجالية." }
+    }
+  },
+  {
     id: "176",
     slug: "promoteur-immobilier-vendre-sur-plan-diaspora-2027-espace-acquereur-suivi-chantier",
     title: "Promoteur immobilier : vendre sur plan à la diaspora en 2027, avec un espace acquéreur qui remplace les allers-retours",
