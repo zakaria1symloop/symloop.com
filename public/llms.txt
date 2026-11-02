@@ -501,6 +501,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/transporteur-voyageurs-algerie-2027-billets-en-ligne-caisse-receveur-colis/
   - Encaisser par QR code, carte et espèces en 2027 : caisse qui rapproche chaque paiement de sa vente, confirmation bancaire au lieu des captures d'écran
       https://symloop.com/fr/blog/caisse-commerce-algerie-2027-paiement-qr-code-carte-tpe-rapprochement/
+  - Agence de tourisme saharien en 2027 : vendre ses circuits en ligne, départs datés, acompte en euros, dossier voyageur, guide hors ligne
+      https://symloop.com/fr/blog/agence-tourisme-saharien-algerie-2027-reservation-en-ligne-circuits-djanet/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

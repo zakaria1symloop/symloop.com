@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "180",
+    slug: "agence-tourisme-saharien-algerie-2027-reservation-en-ligne-circuits-djanet",
+    title: "Agence de tourisme saharien en 2027 : vendre ses circuits en ligne aux étrangers et à la diaspora, des départs datés au guide qui travaille sans réseau",
+    subtitle: "Les six moments d'un circuit vendu à distance, le calendrier des départs à construire en premier, ce que vaut un calendrier en ligne, six raisons de ne pas réserver, la diaspora et six modèles comparés",
+    excerpt: "Le Sud algérien a reçu environ 470 000 visiteurs pendant la saison 2025-2026, dont 47 000 étrangers, et vise 1,5 million de touristes d'ici 2028. Une agence saharienne vend à distance avec des départs datés, un prix tout compris écrit, un acompte en euros, un dossier voyageur préparé en ligne et une application du guide qui fonctionne sans réseau.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-02", readTime: "11 min", featured: true,
+    tags: ["agence tourisme saharien", "circuit djanet réservation", "logiciel agence de tourisme algérie", "réservation en ligne sahara", "tourisme saharien 2027"],
+    metaTitle: "Agence de tourisme saharien en 2027 : vendre ses circuits en ligne, Djanet, Tamanrasset | Symloop",
+    metaDescription: "Vendre des circuits sahariens en ligne en 2027 : calendrier de départs datés, prix tout compris, acompte en euros, dossier voyageur et visa préparés, application du guide hors ligne, chiffres de la saison 2025-2026 et six modèles comparés.",
+    translations: {
+      en: { title: "Saharan tour agencies in 2027: selling tours online to foreigners and the diaspora, from dated departures to a guide who works with no network", subtitle: "The six moments of a tour sold at a distance, the departure calendar to build first, what an online calendar is worth, six reasons not to book, the diaspora and six models compared", excerpt: "Southern Algeria received about 470,000 visitors in the 2025-2026 season, including 47,000 foreigners, and is aiming for 1.5 million tourists by 2028. A Saharan agency sells at a distance with dated departures, an all-inclusive written price, a deposit in euros, an online traveller file and a guide app that works with no network." },
+      ar: { title: "وكالة السياحة الصحراوية سنة 2027: بيع الرحلات عبر الإنترنت للأجانب والجالية، من الانطلاقات المؤرَّخة إلى الدليل الذي يعمل دون شبكة", subtitle: "اللحظات الست لرحلة تُباع عن بُعد، ورزنامة الانطلاقات التي تُبنى أولاً، وكم تساوي رزنامة على الإنترنت، وستة أسباب لعدم الحجز، والجالية، وستة نماذج مقارنة", excerpt: "استقبل الجنوب الجزائري نحو 470000 زائر خلال موسم 2025-2026، منهم 47000 أجنبي، ويستهدف 1,5 مليون سائح بحلول 2028. الوكالة الصحراوية تبيع عن بُعد بانطلاقات مؤرَّخة وسعر شامل مكتوب وعربون باليورو وملف مسافر عبر الإنترنت وتطبيق دليل يعمل دون شبكة." }
+    }
+  },
+  {
     id: "179",
     slug: "caisse-commerce-algerie-2027-paiement-qr-code-carte-tpe-rapprochement",
     title: "Encaisser par QR code, carte et espèces en 2027 : la caisse qui lie chaque paiement à sa vente et n'accepte plus les captures d'écran",
