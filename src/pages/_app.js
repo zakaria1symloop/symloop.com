@@ -10,7 +10,8 @@ import Footer from '../components/layout/Footer';
 import { appWithTranslation } from 'next-i18next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
-import { IBM_Plex_Sans_Arabic, JetBrains_Mono, Instrument_Serif } from 'next/font/google';
+import { IBM_Plex_Sans_Arabic, Instrument_Serif } from 'next/font/google';
+import localFont from 'next/font/local';
 
 // next/font self-hosts Google Fonts at build time — no render-blocking
 // <link href="fonts.googleapis.com">, no FOUT, zero CLS from font swap, and
@@ -28,11 +29,16 @@ const fontIbmPlex = IBM_Plex_Sans_Arabic({
   // display:swap + next/font's size-adjusted fallback keep CLS at zero.
   preload: false,
 });
-const fontMono = JetBrains_Mono({
-  weight: ['400', '500'],
-  subsets: ['latin'],
+// JetBrains Mono is self-hosted from src/fonts: since Nov 2026 Google Fonts
+// serves its files with an extra `skey` query parameter that Next 16.1.6's
+// Turbopack font loader rejects ("next/font/google queries have exactly one
+// entry"), which failed every production build. Same variable font file
+// (latin subset, weights 400-500) that next/font/google used to download.
+const fontMono = localFont({
+  src: [{ path: '../fonts/jetbrains-mono-latin-var.woff2', weight: '400 500', style: 'normal' }],
   variable: '--font-jetbrains-mono',
   display: 'swap',
+  fallback: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
 });
 const fontSerif = Instrument_Serif({
   weight: ['400'],
