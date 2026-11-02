@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "181",
+    slug: "station-thermale-algerie-2027-reservation-cure-planning-soins-hammam",
+    title: "Station thermale en Algérie en 2027 : réserver une cure en ligne, planifier les soins sans trou ni conflit, et remplir les lits hors saison (série #15)",
+    subtitle: "Les six moments d'une cure qui tient, le planning des soins à construire en premier, ce que vaut un planning sans trou, six pertes et leur parade, les cures offertes par la diaspora et six modèles comparés",
+    excerpt: "Les 36 stations thermales algériennes ont reçu 312 736 curistes en 2025 et les hammams traditionnels 2,8 millions de visiteurs, avec 14 projets qui vont ajouter 2 366 lits. La capacité réelle d'une station se joue dans le planning des soins : créneaux attribués sans trou ni conflit, réattribués quand un curiste annule, envoyés par SMS, avec réservation en ligne et billets par créneau pour le hammam.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-02", readTime: "11 min", featured: true,
+    tags: ["station thermale algérie", "réservation cure thermale", "logiciel station thermale", "planning des soins", "hammam réservation 2027"],
+    metaTitle: "Station thermale en Algérie en 2027 : réservation de cure, planning des soins, hammam | Symloop",
+    metaDescription: "Équiper une station thermale en Algérie en 2027 : réservation de cure en ligne avec acompte, moteur de planning des soins sans trou ni conflit, dossier de cure, billets de hammam par créneau, cures payées depuis la France, chiffres 2025 et six modèles comparés.",
+    translations: {
+      en: { title: "Thermal spas in Algeria in 2027: booking a cure online, scheduling treatments with no gaps or clashes, and filling beds off-season (series #15)", subtitle: "The six moments of a cure that holds, the treatment schedule to build first, what a gap-free schedule is worth, six losses and their counters, cures paid by the diaspora and six models compared", excerpt: "Algeria's 36 thermal spas received 312,736 patients in 2025 and traditional hammams 2.8 million visitors, with 14 projects set to add 2,366 beds. A spa's real capacity is decided by its treatment schedule: slots assigned with no gaps or clashes, reassigned when a patient cancels, sent by SMS, with online booking and time-slot hammam tickets." },
+      ar: { title: "المحطة الحموية في الجزائر سنة 2027: حجز العلاج عبر الإنترنت، تخطيط الحصص دون فراغ ولا تداخل، وملء الأسرّة خارج الموسم (سلسلة #15)", subtitle: "اللحظات الست لعلاج يصمد، وتخطيط الحصص الذي يُبنى أولاً، وكم يساوي تخطيط بلا فراغ، وست خسائر وردودها، والعلاج الذي تهديه الجالية، وستة نماذج مقارنة", excerpt: "استقبلت المحطات الحموية الجزائرية الـ36 نحو 312736 معالَجاً سنة 2025، والحمّامات التقليدية 2,8 مليون زائر، مع 14 مشروعاً سيضيف 2366 سريراً. السعة الحقيقية للمحطة تُحسم في تخطيط الحصص: مواعيد مخصَّصة دون فراغ ولا تداخل، يُعاد تخصيصها عند الإلغاء، وتُرسل برسالة قصيرة، مع حجز عبر الإنترنت وتذاكر حمّام بالمواعيد." }
+    }
+  },
+  {
     id: "180",
     slug: "agence-tourisme-saharien-algerie-2027-reservation-en-ligne-circuits-djanet",
     title: "Agence de tourisme saharien en 2027 : vendre ses circuits en ligne aux étrangers et à la diaspora, des départs datés au guide qui travaille sans réseau",
