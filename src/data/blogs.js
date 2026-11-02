@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "179",
+    slug: "caisse-commerce-algerie-2027-paiement-qr-code-carte-tpe-rapprochement",
+    title: "Encaisser par QR code, carte et espèces en 2027 : la caisse qui lie chaque paiement à sa vente et n'accepte plus les captures d'écran",
+    subtitle: "Les six moments d'une vente bien encaissée, le rapprochement à construire en premier, le temps perdu à pointer, six erreurs de caisse et leur parade, la livraison et le marché, six modèles et un calendrier avant le Ramadan",
+    excerpt: "Les terminaux de paiement sont passés de 78 000 à 126 000 entre décembre 2025 et août 2026, et les paiements QR entre banques ont bondi. La caisse à construire en 2027 lie chaque paiement à sa vente : QR propre à chaque ticket, vente close sur la confirmation de la banque et jamais sur une capture d'écran, crédit client numérique, clôture du soir par mode de paiement.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-02", readTime: "10 min", featured: true,
+    tags: ["logiciel de caisse algérie", "paiement QR code commerçant", "TPE carte CIB Edahabia", "rapprochement paiements caisse", "caisse supérette 2027"],
+    metaTitle: "Encaisser par QR code, carte et espèces en 2027 : caisse et rapprochement des paiements | Symloop",
+    metaDescription: "Caisse de commerce en Algérie en 2027 : QR propre à chaque vente, confirmation bancaire au lieu des captures d'écran, liaison avec le terminal de paiement, crédit client numérique, clôture par mode de paiement, chiffres 2026 du GIE Monétique et calendrier avant le Ramadan.",
+    translations: {
+      en: { title: "Taking QR, card and cash payments in 2027: the till that ties every payment to its sale and no longer accepts screenshots", subtitle: "The six moments of a properly paid sale, the reconciliation to build first, the time lost checking payments, six till errors and their counters, delivery and markets, six models and a calendar before Ramadan", excerpt: "Payment terminals rose from 78,000 to 126,000 between December 2025 and August 2026, and QR payments between banks surged. The till to build in 2027 ties every payment to its sale: a QR per receipt, sales closed on the bank's confirmation and never on a screenshot, digital customer credit, an evening close by payment type." },
+      ar: { title: "التحصيل بالـQR والبطاقة والنقد سنة 2027: الصندوق الذي يربط كل دفعة ببيعها ولا يقبل لقطات الشاشة بعد اليوم", subtitle: "اللحظات الست لبيع محصَّل كما يجب، والمطابقة التي تُبنى أولاً، والوقت الضائع في المراجعة، وستة أخطاء صندوق وردودها، والتسليم والأسواق، وستة نماذج وجدول زمني قبل رمضان", excerpt: "ارتفع عدد أجهزة الدفع من 78000 إلى 126000 بين ديسمبر 2025 وأوت 2026، وقفزت مدفوعات QR بين البنوك. الصندوق الذي يُبنى سنة 2027 يربط كل دفعة ببيعها: رمز QR لكل تذكرة، بيع يُغلق بتأكيد البنك لا بلقطة شاشة، كريدي زبائن رقمي، وإغلاق مسائي حسب طريقة الدفع." }
+    }
+  },
+  {
     id: "178",
     slug: "transporteur-voyageurs-algerie-2027-billets-en-ligne-caisse-receveur-colis",
     title: "Transporteur de voyageurs en Algérie en 2027 : vendre ses places en ligne à côté de Mahatati, tenir la caisse du receveur et tracer les colis (série #14)",
