@@ -21,7 +21,6 @@ export default function TransformationDigitaleAlgerie() {
         <title>{blog?.metaTitle || "Transformation Digitale Algérie 2024 | Stratégie & Accompagnement | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="transformation digitale algérie, digitalisation entreprise, stratégie digitale, consulting digital algérie, accompagnement digital" />
-        <link rel="canonical" href="https://symloop.com/blog/transformation-digitale-algerie-2024" />
 
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />

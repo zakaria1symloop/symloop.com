@@ -568,13 +568,6 @@ export default function DigitalisationAlgerie() {
         <meta name="twitter:image" content="https://symloop.com/og-digitalization.png" />
 
         {/* Hreflang for international SEO */}
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-algerie" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-algerie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-algerie" />
-        <link rel="alternate" hrefLang="ar-DZ" href="https://symloop.com/ar/solutions/digitalisation-algerie" />
-        <link rel="alternate" hrefLang="fr-DZ" href="https://symloop.com/fr/solutions/digitalisation-algerie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-algerie" />
-        <link rel="canonical" href="https://symloop.com/solutions/digitalisation-algerie" />
 
         {/* Additional SEO meta tags */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

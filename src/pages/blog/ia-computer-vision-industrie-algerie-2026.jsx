@@ -125,7 +125,6 @@ export default function IaComputerVisionIndustrieAlgerie2026() {
         <title>Computer Vision & IA Industrielle Alg\u00e9rie 2026 | Contr\u00f4le Qualit\u00e9 IA | Symloop</title>
         <meta name="description" content="Solutions de computer vision et IA industrielle pour les entreprises alg\u00e9riennes. Contr\u00f4le qualit\u00e9 automatique, d\u00e9tection de d\u00e9fauts, comptage inventaire, surveillance s\u00e9curit\u00e9, OCR. Symloop. Contact: +213 549 575 512." />
         <meta name="keywords" content="computer vision alg\u00e9rie, IA industrielle alg\u00e9rie, contr\u00f4le qualit\u00e9 IA alg\u00e9rie, d\u00e9tection d\u00e9fauts IA, vision par ordinateur alg\u00e9rie, OCR alg\u00e9rie, surveillance IA alg\u00e9rie, inspection automatique alg\u00e9rie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-computer-vision-industrie-algerie-2026/" />
 
         <meta property="og:title" content="Computer Vision & IA Industrielle en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions de computer vision pour l'industrie alg\u00e9rienne. Contr\u00f4le qualit\u00e9 99.9%, d\u00e9tection d\u00e9fauts, comptage inventaire, OCR." />

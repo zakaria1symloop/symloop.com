@@ -125,7 +125,6 @@ export default function IALogistiqueSupplyChainAlgerie2026() {
         <title>IA pour la Logistique & Supply Chain Alg\u00e9rie 2026 | Optimisation & Pr\u00e9vision | Symloop</title>
         <meta name="description" content="Solutions IA pour la logistique et la supply chain en Alg\u00e9rie. Optimisation itin\u00e9raires, pr\u00e9vision demande, automatisation entrep\u00f4t, gestion flotte IA, pr\u00e9diction livraison. Symloop, expert IA logistique. Contact: +213 549 575 512." />
         <meta name="keywords" content="IA logistique alg\u00e9rie, supply chain IA alg\u00e9rie, optimisation itin\u00e9raires IA, pr\u00e9vision demande IA, gestion entrep\u00f4t IA, gestion flotte IA, livraison intelligente alg\u00e9rie 2026, logistique pr\u00e9dictive alg\u00e9rie" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-logistique-supply-chain-algerie-2026/" />
 
         <meta property="og:title" content="IA pour la Logistique & Supply Chain en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions IA logistique en Alg\u00e9rie. Optimisation itin\u00e9raires, pr\u00e9vision demande, gestion entrep\u00f4t et flotte IA." />

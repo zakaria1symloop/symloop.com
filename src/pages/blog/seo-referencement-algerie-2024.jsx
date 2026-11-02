@@ -261,7 +261,6 @@ export default function SeoAlgerie() {
         <title>SEO & Référencement Algérie 2024 | Agence SEO Alger - Symloop</title>
         <meta name="description" content="Expert SEO en Algérie. Audit SEO, référencement Google, optimisation site web. Dominez la première page Google avec notre agence SEO à Alger. Devis gratuit." />
         <meta name="keywords" content="seo algérie, référencement google algérie, agence seo alger, optimisation site web, première page google, audit seo algérie, mots-clés algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/seo-referencement-algerie-2024" />
         <meta property="og:title" content="SEO & Référencement Algérie 2024 | Agence SEO Alger" />
         <meta property="og:description" content="Expert SEO en Algérie. Audit SEO, référencement Google, optimisation site web. Dominez la première page Google." />
         <meta property="og:type" content="article" />

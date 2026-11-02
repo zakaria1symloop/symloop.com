@@ -295,7 +295,6 @@ export default function NoorProductPage() {
       <Head>
         <title>{seoTitle}</title>
         <meta name="description" content={seoDesc} />
-        <link rel="canonical" href="https://symloop.com/products/noor/" />
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDesc} />
         <meta property="og:type" content="website" />

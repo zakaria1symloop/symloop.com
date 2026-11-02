@@ -204,7 +204,6 @@ export default function DevOpsAlgerie() {
         <title>DevOps Algérie 2024 | CI/CD, Docker, Kubernetes | Symloop</title>
         <meta name="description" content="Services DevOps en Algérie : CI/CD automatisé, Docker, Kubernetes, déploiement cloud. Infrastructure moderne pour applications performantes. À partir de 40 000 DA." />
         <meta name="keywords" content="devops algérie, ci cd algérie, docker kubernetes, déploiement cloud algérie, infrastructure cloud, automatisation déploiement" />
-        <link rel="canonical" href="https://symloop.com/blog/devops-deployment-algerie-2024" />
         <meta property="og:title" content="DevOps Algérie 2024 | CI/CD, Docker, Kubernetes" />
         <meta property="og:description" content="Infrastructure DevOps moderne pour entreprises algériennes. CI/CD, containers, cloud, monitoring." />
         <meta property="og:type" content="article" />

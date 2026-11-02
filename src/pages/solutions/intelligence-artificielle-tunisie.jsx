@@ -296,13 +296,8 @@ export default function AITunisie() {
         } />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://symloop.com/solutions/intelligence-artificielle-tunisie" />
 
         {/* Alternate languages */}
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/solutions/intelligence-artificielle-tunisie" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/intelligence-artificielle-tunisie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/intelligence-artificielle-tunisie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/intelligence-artificielle-tunisie" />
 
         {/* Geo Tags */}
         <meta name="geo.region" content="TN" />

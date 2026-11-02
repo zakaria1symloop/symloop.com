@@ -167,7 +167,6 @@ export default function ReactNativeAlgerie() {
         <title>Développement React Native Algérie | Apps iOS & Android | Symloop</title>
         <meta name="description" content="Expert développement React Native en Algérie. Applications mobiles cross-platform iOS et Android avec un seul code. JavaScript, TypeScript, Expo. Devis gratuit." />
         <meta name="keywords" content="react native algérie, application mobile cross-platform, développement javascript mobile, app ios android algérie, développeur react native" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-react-native-algerie" />
         <meta property="og:title" content="Développement React Native Algérie | Apps iOS & Android" />
         <meta property="og:description" content="Applications mobiles React Native en Algérie. iOS et Android avec code partagé. Expo, TypeScript, Firebase." />
         <meta property="og:url" content="https://symloop.com/blog/developpement-react-native-algerie" />

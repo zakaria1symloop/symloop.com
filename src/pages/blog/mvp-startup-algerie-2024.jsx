@@ -15,7 +15,6 @@ export default function MVPStartupAlgerie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="mvp algérie, startup tech algérie, développement mvp, partenaire tech startup, minimum viable product, lancer startup algérie, co-fondateur technique, cto as a service algérie, développement rapide application, agence startup alger, créer startup algérie, idée startup, financement startup algérie, incubateur algérie, accélérateur startup" />
-        <link rel="canonical" href="https://symloop.com/blog/mvp-startup-algerie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />

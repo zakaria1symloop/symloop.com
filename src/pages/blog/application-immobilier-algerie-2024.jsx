@@ -229,7 +229,6 @@ export default function ImmobilierAlgerie() {
         <title>Application Immobilier Algérie 2024 | Développement PropTech | Symloop</title>
         <meta name="description" content="Développement d'applications immobilières en Algérie : portail annonces, gestion locative, CRM agence, visite virtuelle 360°. Solutions PropTech sur mesure à partir de 80 000 DA." />
         <meta name="keywords" content="application immobilier algérie, proptech algérie, plateforme immobilière, gestion locative algérie, annonces immobilier, visite virtuelle 360, CRM agence immobilière, développement immobilier algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/application-immobilier-algerie-2024" />
         <meta property="og:title" content="Application Immobilier Algérie 2024 | Développement PropTech" />
         <meta property="og:description" content="Développement d'applications immobilières en Algérie : portail annonces, gestion locative, visite virtuelle. Solutions PropTech sur mesure." />
         <meta property="og:type" content="article" />

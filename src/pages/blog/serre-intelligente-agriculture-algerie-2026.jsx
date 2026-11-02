@@ -48,7 +48,6 @@ export default function SerreIntelligenteAlgerie2026() {
         <title>Serres Intelligentes en Algérie 2026 : Agriculture Sous Serre Connectée IoT | Symloop</title>
         <meta name="description" content="Guide complet sur les serres intelligentes en Algérie 2026. Contrôle IoT automatique : température, humidité, irrigation, ventilation. Capteurs fabriqués en Algérie. Rendement +30-50%. Solutions à partir de 120 000 DA. Symloop." />
         <meta name="keywords" content="serre intelligente algérie, agriculture sous serre algérie, serre connectée IoT, serre automatique algérie 2026, culture sous serre algérie, serre IoT algérie, smart greenhouse Algeria, irrigation goutte à goutte serre algérie, capteurs serre algérie, serre intelligente Biskra, serre intelligente Blida, agriculture intelligente algérie, serre high tech algérie, serre climatisée algérie, combien coûte une serre intelligente en algérie, meilleure serre intelligente algérie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/serre-intelligente-agriculture-algerie-2026/" />
 
         <meta property="og:title" content="Serres Intelligentes en Algérie 2026 : Agriculture Sous Serre Connectée IoT | Symloop" />
         <meta property="og:description" content="Serres intelligentes IoT en Algérie 2026. Contrôle automatique température, humidité, irrigation. Capteurs fabriqués en Algérie par Symloop. Rendement +30-50%." />

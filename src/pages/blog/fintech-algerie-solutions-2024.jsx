@@ -15,7 +15,6 @@ export default function FintechAlgerie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="fintech algérie, paiement mobile algérie, application bancaire, cib edahabia, finance digitale, satim, baridimob, portefeuille électronique, mobile banking algérie, startup fintech, paiement en ligne algérie, intégration paiement" />
-        <link rel="canonical" href="https://symloop.com/blog/fintech-algerie-solutions-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />

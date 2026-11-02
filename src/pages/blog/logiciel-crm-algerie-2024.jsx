@@ -162,7 +162,6 @@ export default function LogicielCRMAlgerie() {
         <title>Logiciel CRM Algérie 2024 - Gestion Relation Client | Symloop</title>
         <meta name="description" content="Solution CRM sur mesure pour entreprises algériennes. Gestion contacts, pipeline ventes, marketing automation. Prix -40% vs Salesforce/HubSpot. Devis gratuit." />
         <meta name="keywords" content="crm algérie, gestion client algérie, logiciel commercial, automatisation ventes, pipeline ventes, crm sur mesure, salesforce alternative algérie, hubspot alternative algérie, gestion prospect algérie, suivi client" />
-        <link rel="canonical" href="https://symloop.com/blog/logiciel-crm-algerie-2024" />
         <meta property="og:title" content="Logiciel CRM Algérie 2024 - Solution Sur Mesure | Symloop" />
         <meta property="og:description" content="CRM adapté aux entreprises algériennes. Gestion contacts, ventes, marketing. -40% vs solutions étrangères. Devis gratuit." />
         <meta property="og:type" content="article" />

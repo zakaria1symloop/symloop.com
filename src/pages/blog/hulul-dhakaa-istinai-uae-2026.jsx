@@ -581,7 +581,6 @@ export default function HululDhakaaIstinaiUae2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.seoKeywords.join(', ')} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/hulul-dhakaa-istinai-uae-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

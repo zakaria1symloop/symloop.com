@@ -41,7 +41,6 @@ export default function TendancesTech2025() {
         <title>Tendances Tech Algérie 2025 | IA, 5G, Cloud, Fintech | Guide Complet | Symloop</title>
         <meta name="description" content="Découvrez les tendances technologiques 2025 en Algérie : Intelligence Artificielle, 5G, Cloud Computing, Fintech, Cybersécurité. Guide complet pour les entreprises algériennes." />
         <meta name="keywords" content="tendances tech algérie 2025, innovation digitale, futur tech mena, technologies émergentes, ia algérie, 5g algérie, cloud algérie, fintech algérie, transformation digitale 2025" />
-        <link rel="canonical" href="https://symloop.com/blog/tendances-tech-algerie-2025" />
         <meta property="og:title" content="Tendances Tech Algérie 2025 | Guide Complet Innovation" />
         <meta property="og:description" content="Les technologies qui vont transformer l'Algérie en 2025 : IA, 5G, Cloud, Fintech et plus encore." />
         <meta property="og:type" content="article" />

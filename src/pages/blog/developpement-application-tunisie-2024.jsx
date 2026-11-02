@@ -15,7 +15,6 @@ export default function DeveloppementTunisie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="développement tunisie, application mobile tunisie, agence web tunis, développement web tunisie, création site web tunisie, e-commerce tunisie, startup tunisie, agence digitale tunis, développeur tunisie, flutter tunisie, react native tunisie" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-application-tunisie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />

@@ -206,7 +206,6 @@ export default function LogistiqueAlgerie() {
         <title>Logistique Transport Algérie 2024 | Tracking GPS TMS | Symloop</title>
         <meta name="description" content="Solutions logistique en Algérie : tracking GPS, TMS, WMS, optimisation tournées. Applications pour transport et livraison à partir de 60 000 DA." />
         <meta name="keywords" content="logistique algérie, gestion flotte algérie, tracking gps véhicules, transport digital algérie, tms algérie, optimisation livraison" />
-        <link rel="canonical" href="https://symloop.com/blog/logistique-transport-algerie-2024" />
         <meta property="og:title" content="Logistique Transport Algérie 2024 | Tracking GPS TMS" />
         <meta property="og:description" content="Solutions digitales pour transport et logistique : tracking GPS, optimisation tournées. À partir de 60 000 DA." />
         <meta property="og:type" content="article" />

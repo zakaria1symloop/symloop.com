@@ -703,7 +703,6 @@ export default function LogicielEcole2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel ecole algerie, gestion scolaire, logiciel college lycee, notes bulletins, emploi du temps, logiciel education algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-ecole-gestion-scolaire-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

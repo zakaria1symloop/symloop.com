@@ -280,7 +280,6 @@ export default function IntelligenceArtificielleAlgerie2026() {
         <title>Intelligence Artificielle Algérie 2026 | Tendances IA MENA | Symloop</title>
         <meta name="description" content="Guide complet sur l'Intelligence Artificielle en Algérie 2026. Tendances IA, opportunités business, solutions chatbot, agents IA autonomes. Expert IA Algérie." />
         <meta name="keywords" content="intelligence artificielle algérie 2026, ia algérie, ai algeria 2026, chatbot algérie, agent ia, machine learning algérie, deep learning, gpt algérie, claude algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/intelligence-artificielle-algerie-2026" />
 
         <meta property="og:title" content="Intelligence Artificielle Algérie 2026 | Tendances IA | Symloop" />
         <meta property="og:description" content="Guide complet sur l'IA en Algérie 2026. Tendances, opportunités et solutions pour les entreprises algériennes." />

@@ -138,7 +138,6 @@ export default function CalculHautePerformanceAlgerie() {
         <title>Calcul Haute Performance (HPC) en Algérie : Guide Complet 2026 | Symloop</title>
         <meta name="description" content="Guide complet sur le calcul haute performance (HPC) en Algérie en 2026. GPU computing, cloud HPC, supercalcul, CUDA, clusters GPU pour l'IA. Symloop — expert HPC Algeria." />
         <meta name="keywords" content="calcul haute performance algérie, high performance computing Algeria, HPC algérie, GPU computing algérie, supercalcul algérie, cloud HPC, GPU cluster Algeria, HPC Algeria 2026, calcul parallèle algérie, CUDA algérie, deep learning GPU algérie, infrastructure HPC algérie, HPC cloud Algeria, supercomputing Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/calcul-haute-performance-hpc-algerie-2026" />
 
         <meta property="og:title" content="Calcul Haute Performance (HPC) en Algérie : Guide Complet 2026 | Symloop" />
         <meta property="og:description" content="Guide complet sur le calcul haute performance (HPC) en Algérie (Algeria). GPU computing, cloud HPC, supercalcul, clusters GPU. Symloop — expert HPC." />

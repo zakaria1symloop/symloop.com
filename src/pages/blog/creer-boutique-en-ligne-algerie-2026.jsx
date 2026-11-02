@@ -20,7 +20,6 @@ export default function CreerBoutiqueEnLigneAlgerie() {
         <title>{blog?.metaTitle || "Créer Boutique en Ligne Algérie 2026 | Guide Complet | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription || "Comment créer une boutique en ligne en Algérie en 2026 ? Guide complet : plateforme, paiement CIB/Edahabia, logistique, SEO. Symloop accompagne les entreprises algériennes."} />
         <meta name="keywords" content="créer boutique en ligne algérie, vendre en ligne algérie, site e-commerce algérie 2026, boutique en ligne CIB Edahabia, créer site vente algérie, e-commerce algérie, paiement en ligne algérie, SATIM, plateforme e-commerce algérie, create online store Algeria, e-commerce Algeria, online shop Algeria, sell online Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/creer-boutique-en-ligne-algerie-2026" />
 
         <meta property="og:title" content="Comment Créer une Boutique en Ligne en Algérie en 2026 ? | Symloop" />
         <meta property="og:description" content="Guide complet pour créer une boutique en ligne en Algérie (Algeria) en 2026. Choix de plateforme, paiement CIB/Edahabia, logistique, SEO et marketing digital." />

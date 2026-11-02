@@ -96,7 +96,6 @@ export default function CloudComputingAlgerie() {
         <title>Cloud Computing Algérie 2024 - Migration & Hébergement | Symloop</title>
         <meta name="description" content="Migration cloud pour entreprises algériennes. AWS, Azure, Google Cloud, OVH. Réduisez vos coûts IT de 40%. Audit gratuit et devis personnalisé." />
         <meta name="keywords" content="cloud computing algérie, aws algérie, azure algérie, google cloud algérie, hébergement cloud, migration cloud, infogérance cloud, serveur cloud algérie, ovh algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/cloud-computing-algerie-2024" />
         <meta property="og:title" content="Cloud Computing Algérie 2024 - Migration Cloud | Symloop" />
         <meta property="og:description" content="Migration cloud pour entreprises algériennes. AWS, Azure, Google Cloud. Réduisez vos coûts IT de 40%." />
         <meta property="og:type" content="article" />

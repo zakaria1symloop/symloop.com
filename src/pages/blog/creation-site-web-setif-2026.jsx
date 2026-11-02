@@ -237,7 +237,6 @@ export default function CreationSiteWebSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.keywords} />
-        <link rel="canonical" href={`https://symloop.com/blog/creation-site-web-setif-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

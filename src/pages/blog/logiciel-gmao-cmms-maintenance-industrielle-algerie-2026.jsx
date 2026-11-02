@@ -152,7 +152,6 @@ export default function BlogGmaoCmmsPage() {
         <title>{ARTICLE.title} | Symloop</title>
         <meta name="description" content={ARTICLE.desc} />
         <meta name="keywords" content="gmao algerie, logiciel gmao, cmms algerie, logiciel maintenance preventive algerie, maintenance predictive iot, gestion equipement industriel, gmao open source, gmao maximo alternative, gmao saas algerie, mobile maintenance technicien, scada integration gmao, sonatrach maintenance software, hassi messaoud cmms, industrial asset management algeria, gmao sonelgaz, mtbf mttr industrial, gmao iso 9001 14001 45001, hse algerie maintenance, gmao cevital saidal, predictive maintenance machine learning industrie" />
-        <link rel="canonical" href={ARTICLE.url} />
         <meta property="og:title" content={ARTICLE.title} />
         <meta property="og:description" content={ARTICLE.desc} />
         <meta property="og:type" content="article" />

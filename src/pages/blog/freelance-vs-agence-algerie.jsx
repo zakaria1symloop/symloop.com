@@ -75,7 +75,6 @@ export default function FreelanceVsAgence() {
         <title>Freelance vs Agence en Algérie : Guide Complet pour Choisir 2024 | Symloop</title>
         <meta name="description" content="Comparatif détaillé freelance vs agence web en Algérie. Prix, avantages, inconvénients et critères de choix pour votre projet digital en 2024." />
         <meta name="keywords" content="freelance algérie, agence vs freelance, développeur indépendant algérie, comparatif agence web, choisir développeur, tarif freelance algérie, agence digitale algérie, développeur web freelance, prestataire informatique algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/freelance-vs-agence-algerie" />
         <meta property="og:title" content="Freelance vs Agence en Algérie : Guide Complet 2024" />
         <meta property="og:description" content="Comparatif détaillé freelance vs agence web en Algérie. Prix, avantages, inconvénients pour votre projet." />
         <meta property="og:url" content="https://symloop.com/blog/freelance-vs-agence-algerie" />

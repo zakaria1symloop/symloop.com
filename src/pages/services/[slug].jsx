@@ -222,7 +222,6 @@ export default function ServiceDetailPage({ service, locale: pageLocale, related
       <Head>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
-        <link rel="canonical" href={pageUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
@@ -231,24 +230,23 @@ export default function ServiceDetailPage({ service, locale: pageLocale, related
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={service.metaTitle} />
         <meta name="twitter:description" content={service.metaDescription} />
-        {/* hreflang — one entry per locale slug */}
+        {/* hreflang — one entry per locale slug. Keys match _app.js so this
+            page's set replaces the generic one (slugs differ per locale).
+            en is the default locale: no /en prefix. */}
         {SERVICES.find((s) => s.id === service.id) &&
-          ['fr', 'en', 'ar'].map((l) => {
+          ['en', 'fr', 'ar', 'x-default'].map((l) => {
             const svc = SERVICES.find((s) => s.id === service.id);
+            const loc = l === 'x-default' ? 'en' : l;
+            const prefix = loc === 'en' ? '' : `/${loc}`;
             return (
               <link
-                key={l}
+                key={`hreflang-${l}`}
                 rel="alternate"
                 hrefLang={l}
-                href={`${baseUrl}/${l}/services/${svc.slugs[l]}/`}
+                href={`${baseUrl}${prefix}/services/${svc.slugs[loc]}/`}
               />
             );
           })}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`${baseUrl}/fr/services/${SERVICES.find((s) => s.id === service.id)?.slugs.fr}/`}
-        />
         {/* Fonts loaded in _document.js — no duplicate here */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />

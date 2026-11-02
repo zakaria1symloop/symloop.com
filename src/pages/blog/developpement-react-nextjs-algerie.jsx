@@ -181,7 +181,6 @@ export default function ReactNextjsAlgerie() {
         <title>Développement React & Next.js Algérie | Applications Web Modernes | Symloop</title>
         <meta name="description" content="Expert développement React et Next.js en Algérie. Applications web performantes, SEO-optimisées. Server-Side Rendering, TypeScript, Tailwind. Devis gratuit." />
         <meta name="keywords" content="react algérie, nextjs algérie, développement frontend, application web react, agence react alger, développeur next.js" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-react-nextjs-algerie" />
         <meta property="og:title" content="Développement React & Next.js Algérie | Applications Web" />
         <meta property="og:description" content="Applications web React et Next.js en Algérie. SSR, SSG, SEO optimisé. TypeScript, Tailwind CSS." />
         <meta property="og:url" content="https://symloop.com/blog/developpement-react-nextjs-algerie" />

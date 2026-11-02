@@ -206,7 +206,6 @@ export default function DeveloppementOran() {
         <title>Développement Web Oran 2024 | Agence Digitale Ouest Algérien | Symloop</title>
         <meta name="description" content="Développement web à Oran et Ouest algérien. Sites vitrines, e-commerce, solutions import-export. Agence digitale pour Tlemcen, Mostaganem. À partir de 40 000 DA." />
         <meta name="keywords" content="développement web oran, agence web oran, site internet oran, création site web ouest algérie, e-commerce oran, développeur oran" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-web-oran-2024" />
         <meta property="og:title" content="Développement Web Oran 2024 | Agence Digitale Ouest Algérien" />
         <meta property="og:description" content="Services web pour Oran, Tlemcen, Mostaganem. Sites vitrines, e-commerce, applications sur mesure." />
         <meta property="og:type" content="article" />

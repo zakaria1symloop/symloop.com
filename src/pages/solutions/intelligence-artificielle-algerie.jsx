@@ -231,13 +231,8 @@ export default function AIAlgeria() {
         <meta name="twitter:image" content="https://symloop.com/assets/symloop-ai-algeria.png" />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://symloop.com/solutions/intelligence-artificielle-algerie" />
 
         {/* Alternate languages */}
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/solutions/intelligence-artificielle-algerie" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/intelligence-artificielle-algerie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/intelligence-artificielle-algerie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/intelligence-artificielle-algerie" />
 
         {/* Geo Tags */}
         <meta name="geo.region" content="DZ" />

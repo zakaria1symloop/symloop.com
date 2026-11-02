@@ -79,7 +79,6 @@ export default function ReussirProjetDigital() {
         <title>Comment Réussir Votre Projet Digital en Algérie - Guide Complet 2024 | Symloop</title>
         <meta name="description" content="Guide complet pour réussir votre projet web ou mobile en Algérie. Méthodologie agile, bonnes pratiques, erreurs à éviter. Conseils d'experts Symloop." />
         <meta name="keywords" content="réussir projet digital algérie, gestion projet web algérie, méthodologie agile algérie, bonnes pratiques développement, cahier des charges projet web, réussir transformation digitale, projet digital PME algérie, accompagnement projet IT, développement web algérie, application mobile algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/reussir-projet-digital-algerie" />
         <meta property="og:title" content="Comment Réussir Votre Projet Digital en Algérie - Guide Complet 2024" />
         <meta property="og:description" content="Guide complet pour réussir votre projet web ou mobile en Algérie. Méthodologie, bonnes pratiques et conseils d'experts." />
         <meta property="og:url" content="https://symloop.com/blog/reussir-projet-digital-algerie" />

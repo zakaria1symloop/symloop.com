@@ -144,7 +144,6 @@ export default function BlogBiPage() {
         <title>{ARTICLE.title} | Symloop</title>
         <meta name="description" content={ARTICLE.desc} />
         <meta name="keywords" content="tableau de bord algerie, business intelligence algerie, bi algerie 2026, power bi alternative algerie, tableau software algerie, metabase open source, looker algerie, decisionnel entreprise, kpi pilotage, data warehouse algerie, data warehouse postgresql clickhouse, etl pipeline algerie, dbt modelisation, analytique predictive, ia previsions ventes algerie, dashboard executif sur mesure, embedded analytics, tableau de bord temps reel, reporting automatise, dso bfr stocks, kpi dirigeant pme algerie" />
-        <link rel="canonical" href={ARTICLE.url} />
         <meta property="og:title" content={ARTICLE.title} />
         <meta property="og:description" content={ARTICLE.desc} />
         <meta property="og:type" content="article" />

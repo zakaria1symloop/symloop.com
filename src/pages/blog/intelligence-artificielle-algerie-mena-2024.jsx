@@ -21,7 +21,6 @@ export default function IntelligenceArtificielleAlgerie() {
         <title>{blog?.metaTitle || "Intelligence Artificielle Algérie MENA 2024 | Solutions IA | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="intelligence artificielle algérie, ia mena, chatbot arabe, machine learning algérie, automatisation ia, gpt algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/intelligence-artificielle-algerie-mena-2024" />
 
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />

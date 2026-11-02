@@ -15,7 +15,6 @@ export default function FlutterAlgerie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="flutter algérie, développement mobile flutter, application ios android, dart flutter, agence flutter alger" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-flutter-algerie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <script type="application/ld+json">

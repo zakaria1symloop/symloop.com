@@ -350,11 +350,6 @@ export default function IoTIndustrialPage() {
         <meta name="author" content="Symloop Technology" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-        <link rel="canonical" href="https://symloop.com/services/iot/" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/services/iot/" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services/iot/" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services/iot/" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services/iot/" />
 
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />

@@ -48,7 +48,6 @@ export default function IoTAlgerie2026() {
         <title>IoT en Algérie 2026 : Internet des Objets, Maison Intelligente & Industrie 4.0 | Symloop</title>
         <meta name="description" content="Guide complet sur l'IoT (Internet des Objets) en Algérie 2026. Solutions maison intelligente, industrie 4.0, agriculture connectée. Équipements fabriqués en Algérie par Symloop. Devis gratuit." />
         <meta name="keywords" content="IoT algérie, internet des objets algérie 2026, maison intelligente algérie, smart home algérie, domotique algérie, industrie 4.0 algérie, objets connectés algérie, capteurs IoT algérie, solutions IoT algérie, IoT Alger, IoT Sétif, IoT Oran, IoT Constantine, agriculture connectée algérie, ville intelligente algérie, smart city algérie, quelle est la meilleure solution IoT en algérie, combien coûte une maison intelligente en algérie, domotique algérie prix 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/iot-internet-des-objets-algerie-2026/" />
 
         <meta property="og:title" content="IoT en Algérie 2026 : Internet des Objets & Solutions Connectées | Symloop" />
         <meta property="og:description" content="Guide complet sur l'IoT en Algérie 2026. Maison intelligente, industrie 4.0, agriculture connectée. Équipements fabriqués localement par Symloop." />

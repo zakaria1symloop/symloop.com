@@ -21,7 +21,6 @@ export default function CreationSiteWebAlgerie() {
         <title>{blog?.metaTitle || "Création Site Web Algérie 2024 | Guide Complet | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="création site web algérie, agence web algérie, développement web alger, site internet algérie, site vitrine algérie, site e-commerce algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/creation-site-web-algerie-2024" />
 
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />

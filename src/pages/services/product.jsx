@@ -145,11 +145,6 @@ export default function ProductEngineeringPage() {
         <meta name="keywords" content={t('product_engineering_page.seo.keywords')} />
         <meta name="author" content="Symloop Technology" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://symloop.com/services/product/" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/services/product/" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services/product/" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services/product/" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services/product/" />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:url" content="https://symloop.com/services/product/" />

@@ -675,7 +675,6 @@ export default function MobileAppDevelopmentSaudiArabia2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.seoKeywords ? t.seoKeywords.join(', ') : ''} />
-        <link rel="canonical" href="https://symloop.com/blog/mobile-app-development-saudi-arabia-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
@@ -690,9 +689,6 @@ export default function MobileAppDevelopmentSaudiArabia2026() {
         <meta name="geo.placename" content="Riyadh" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Symloop" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/mobile-app-development-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/mobile-app-development-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/mobile-app-development-saudi-arabia-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

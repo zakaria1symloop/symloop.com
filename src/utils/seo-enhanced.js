@@ -405,7 +405,6 @@ const SeoEnhanced = ({
       )}
 
       {/* Canonical URL */}
-      <link rel="canonical" href={currentUrl} />
 
       {/* Language and Region */}
       <meta httpEquiv="content-language" content={`${locale}-DZ`} />
@@ -417,10 +416,6 @@ const SeoEnhanced = ({
       <meta name="country" content="Algeria" />
 
       {/* Alternate Language Links */}
-      <link rel="alternate" hrefLang="fr-DZ" href={`https://symloop.com/fr${router.asPath}`} />
-      <link rel="alternate" hrefLang="ar-DZ" href={`https://symloop.com/ar${router.asPath}`} />
-      <link rel="alternate" hrefLang="en" href={`https://symloop.com/en${router.asPath}`} />
-      <link rel="alternate" hrefLang="x-default" href={`https://symloop.com${router.asPath}`} />
 
       {/* Open Graph Meta Tags */}
       <meta property="og:type" content={article ? "article" : "website"} />

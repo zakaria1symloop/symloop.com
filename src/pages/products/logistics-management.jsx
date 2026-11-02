@@ -423,7 +423,6 @@ export default function LogisticsManagement() {
         <title>Logistics Management Software | Delivery & Fleet Tracking | Symloop</title>
         <meta name="description" content="Complete logistics management system. Seller app for orders, driver app with GPS navigation, admin dashboard with real-time tracking. Works offline. Multi-language support." />
         <meta name="keywords" content="logistics management software, delivery tracking app, fleet management system, driver app, delivery management, GPS tracking, offline delivery app, MENA logistics software" />
-        <link rel="canonical" href="https://symloop.com/products/logistics-management" />
         <meta property="og:title" content="Symloop Logistics Management - Delivery & Fleet System" />
         <meta property="og:description" content="Complete delivery management with seller app, driver app and admin dashboard. Real-time GPS tracking, offline mode, multi-language." />
         <meta property="og:type" content="product" />

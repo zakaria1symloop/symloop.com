@@ -125,7 +125,6 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
         <title>IA pour E-commerce Alg\u00e9rie 2026 | Personnalisation & Recommandations IA | Symloop</title>
         <meta name="description" content="Int\u00e9grez l'IA dans votre e-commerce en Alg\u00e9rie. Recommandations produits personnalis\u00e9es, recherche intelligente, pricing dynamique, r\u00e9cup\u00e9ration paniers abandonn\u00e9s. Augmentez vos ventes de 30-50%. Symloop, expert IA e-commerce. Contact: +213 549 575 512." />
         <meta name="keywords" content="IA e-commerce alg\u00e9rie, personnalisation IA alg\u00e9rie, recommandation produits IA, recherche intelligente e-commerce, pricing dynamique alg\u00e9rie, r\u00e9cup\u00e9ration panier abandonn\u00e9 IA, segmentation clients IA, e-commerce alg\u00e9rie 2026, intelligence artificielle boutique en ligne" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-ecommerce-personnalisation-algerie-2026/" />
 
         <meta property="og:title" content="IA pour E-commerce : Personnalisation & Recommandations en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions IA pour e-commerce alg\u00e9rien. Recommandations, recherche intelligente, pricing dynamique. +30-50% ventes." />

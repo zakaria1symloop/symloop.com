@@ -241,7 +241,6 @@ export default function EdtechAlgerie() {
         <title>EdTech E-Learning Algérie 2024 | Plateforme LMS | Symloop</title>
         <meta name="description" content="Développement de plateformes e-learning en Algérie : LMS, classes virtuelles, quiz, certifications. Solutions EdTech pour écoles et universités à partir de 80 000 DA." />
         <meta name="keywords" content="edtech algérie, e-learning algérie, plateforme éducative, lms algérie, formation en ligne, classes virtuelles, cours en ligne algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/edtech-education-algerie-2024" />
         <meta property="og:title" content="EdTech E-Learning Algérie 2024 | Plateforme LMS" />
         <meta property="og:description" content="Solutions EdTech pour écoles et universités : LMS, classes virtuelles, certifications. À partir de 80 000 DA." />
         <meta property="og:type" content="article" />

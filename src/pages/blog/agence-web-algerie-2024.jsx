@@ -82,7 +82,6 @@ export default function AgenceWebAlgerie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="agence web algérie, agence digitale alger, agence web oran, création site web algérie, meilleure agence web" />
-        <link rel="canonical" href="https://symloop.com/blog/agence-web-algerie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />

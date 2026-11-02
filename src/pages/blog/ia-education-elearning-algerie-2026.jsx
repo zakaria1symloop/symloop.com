@@ -125,7 +125,6 @@ export default function IAEducationElearningAlgerie2026() {
         <title>IA pour l&apos;\u00c9ducation & E-learning Alg\u00e9rie 2026 | Apprentissage Adaptatif & Tuteurs IA | Symloop</title>
         <meta name="description" content="Solutions IA pour l'\u00e9ducation en Alg\u00e9rie. Apprentissage adaptatif, correction automatique, analyse des performances \u00e9tudiants, tuteurs virtuels IA. Plateformes e-learning intelligentes. Contact: +213 549 575 512." />
         <meta name="keywords" content="IA \u00e9ducation alg\u00e9rie, e-learning alg\u00e9rie, apprentissage adaptatif IA, correction automatique IA, tuteur virtuel IA, plateforme e-learning alg\u00e9rie 2026, edtech alg\u00e9rie, intelligence artificielle \u00e9ducation" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-education-elearning-algerie-2026/" />
 
         <meta property="og:title" content="IA pour l'\u00c9ducation & E-learning en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions IA pour l'\u00e9ducation alg\u00e9rienne. Apprentissage adaptatif, correction IA, tuteurs virtuels, analytics \u00e9tudiants." />

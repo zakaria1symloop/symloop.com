@@ -1023,7 +1023,6 @@ export default function SupportInformatiqueCompletUsine2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="support informatique usine algerie, partenaire industriel, maintenance complete, automatisation usine, SCADA, PLC, industrie 4.0" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/support-informatique-complet-usine-machines-pc-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

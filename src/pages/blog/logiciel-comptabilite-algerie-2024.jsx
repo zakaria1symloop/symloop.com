@@ -135,7 +135,6 @@ export default function LogicielComptabiliteAlgerie() {
         <title>Logiciel Comptabilité Algérie 2024 - Conforme PCN & G50 | Symloop</title>
         <meta name="description" content="Logiciel comptable conforme PCN algérien. Génération automatique G50, TVA, TAP, IBS, bilan, TCR. Prix -40% vs solutions étrangères. Devis gratuit." />
         <meta name="keywords" content="logiciel comptabilité algérie, pcn algérie, g50 déclaration, facturation électronique algérie, comptabilité pme algérie, logiciel gestion commerciale algérie, tap algérie, tva algérie, ibs algérie, sage alternative algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/logiciel-comptabilite-algerie-2024" />
         <meta property="og:title" content="Logiciel Comptabilité Algérie 2024 - Conforme PCN | Symloop" />
         <meta property="og:description" content="Solution comptable 100% conforme au PCN algérien. G50 automatique, facturation, états financiers. Devis gratuit." />
         <meta property="og:type" content="article" />

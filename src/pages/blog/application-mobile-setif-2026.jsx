@@ -242,7 +242,6 @@ export default function ApplicationMobileSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.keywords} />
-        <link rel="canonical" href="https://symloop.com/blog/application-mobile-setif-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta name="geo.region" content="DZ-19" />

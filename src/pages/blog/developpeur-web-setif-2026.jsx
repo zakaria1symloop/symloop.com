@@ -666,7 +666,6 @@ export default function DeveloppeurWebSetif() {
         <title>{c.meta.title}</title>
         <meta name="description" content={c.meta.description} />
         <meta name="keywords" content={c.meta.keywords} />
-        <link rel="canonical" href={`https://symloop.com${locale !== 'fr' ? '/' + locale : ''}/blog/developpeur-web-setif-2026`} />
 
         {/* Geo Meta Tags */}
         <meta name="geo.region" content="DZ-19" />
@@ -682,10 +681,6 @@ export default function DeveloppeurWebSetif() {
         <meta property="og:locale" content={locale === 'ar' ? 'ar_DZ' : locale === 'en' ? 'en_US' : 'fr_DZ'} />
 
         {/* Hreflang */}
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/blog/developpeur-web-setif-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/developpeur-web-setif-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/developpeur-web-setif-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/blog/developpeur-web-setif-2026" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />

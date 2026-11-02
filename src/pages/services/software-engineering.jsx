@@ -466,11 +466,6 @@ export default function SoftwareEngineeringPage() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
         {/* Canonical + hreflang */}
-        <link rel="canonical" href="https://symloop.com/services/software-engineering/" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/services/software-engineering/" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services/software-engineering/" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services/software-engineering/" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services/software-engineering/" />
 
         {/* Open Graph */}
         <meta property="og:title" content={seo.title} />

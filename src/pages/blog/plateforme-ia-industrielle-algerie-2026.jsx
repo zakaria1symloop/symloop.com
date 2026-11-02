@@ -294,7 +294,6 @@ export default function PlateformeIaIndustrielleAlgerie() {
         <title>Plateformes IA Industrielles en Algérie : Vers l'Industrie 4.0 en 2026 | Symloop</title>
         <meta name="description" content="Guide complet sur les plateformes IA industrielles en Algérie (Algeria) en 2026. Maintenance prédictive, contrôle qualité, optimisation énergie, usine intelligente, smart factory. Symloop — expert IA industrielle." />
         <meta name="keywords" content="plateforme IA industrielle algérie, industrial AI platform Algeria, IA industrie algérie, maintenance prédictive IA, industrie 4.0 algérie, usine intelligente algérie, smart factory Algeria, predictive maintenance Algeria, IA manufacturing Algeria, digital twin algérie, IoT industriel algérie, SCADA IA algérie, contrôle qualité IA algérie, optimisation énergie IA, Sonatrach IA, Cevital IA, industrial AI Algeria, Industry 4.0 Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/plateforme-ia-industrielle-algerie-2026" />
 
         <meta property="og:title" content="Plateformes IA Industrielles en Algérie : Industrie 4.0 en 2026 | Symloop" />
         <meta property="og:description" content="Guide complet sur les plateformes IA industrielles en Algérie (Algeria). Maintenance prédictive, smart factory, computer vision, IoT. Symloop — expert IA industrielle." />

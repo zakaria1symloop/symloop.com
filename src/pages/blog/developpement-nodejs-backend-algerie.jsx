@@ -170,7 +170,6 @@ export default function NodejsBackendAlgerie() {
         <title>Développement Node.js Backend Algérie | APIs REST & Microservices | Symloop</title>
         <meta name="description" content="Expert développement Node.js en Algérie. APIs REST, GraphQL, microservices, applications temps réel. Express, NestJS, PostgreSQL, MongoDB. Devis gratuit." />
         <meta name="keywords" content="nodejs algérie, développement backend algérie, api rest algérie, microservices, express.js, nestjs, graphql algérie, développeur node.js" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-nodejs-backend-algerie" />
         <meta property="og:title" content="Développement Node.js Backend Algérie | APIs Performantes" />
         <meta property="og:description" content="Services de développement backend Node.js en Algérie. APIs REST, GraphQL, microservices. Express, NestJS, PostgreSQL." />
         <meta property="og:url" content="https://symloop.com/blog/developpement-nodejs-backend-algerie" />

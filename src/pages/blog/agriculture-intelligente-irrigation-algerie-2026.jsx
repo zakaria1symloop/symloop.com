@@ -48,7 +48,6 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
         <title>Irrigation Intelligente en Algerie 2026 : Systemes IoT pour Agriculture Durable | Symloop</title>
         <meta name="description" content="Solutions d'irrigation intelligente pour l'agriculture algerienne en 2026. Capteurs d'humidite IoT, vannes automatiques, station meteo connectee, app mobile. Economie d'eau 40-60%. Kits a partir de 35 000 DA. Fabrique en Algerie par Symloop." />
         <meta name="keywords" content="irrigation intelligente algerie, irrigation IoT algerie, agriculture connectee algerie, economie eau agriculture algerie, capteur humidite sol algerie, irrigation automatique algerie 2026, systeme irrigation automatique algerie, smart irrigation algerie, agriculture intelligente algerie, arrosage automatique algerie, capteur sol algerie, station meteo agricole algerie, irrigation goutte a goutte connectee algerie, irrigation intelligente setif, irrigation intelligente mitidja, irrigation intelligente hauts plateaux" />
-        <link rel="canonical" href="https://symloop.com/blog/agriculture-intelligente-irrigation-algerie-2026/" />
 
         <meta property="og:title" content="Irrigation Intelligente en Algerie 2026 : Systemes IoT Agriculture | Symloop" />
         <meta property="og:description" content="Solutions d'irrigation intelligente pour l'agriculture algerienne. Capteurs IoT, vannes automatiques, station meteo. Economie d'eau 40-60%. Fabrique en Algerie." />

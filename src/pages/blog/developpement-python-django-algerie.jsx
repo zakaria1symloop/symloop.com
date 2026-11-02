@@ -170,7 +170,6 @@ export default function PythonDjangoAlgerie() {
         <title>Développement Python Django Algérie | Data Science & Web | Symloop</title>
         <meta name="description" content="Expert Python Django en Algérie. Applications web robustes, data science, machine learning, APIs FastAPI. TensorFlow, Pandas, Scikit-learn. Devis gratuit." />
         <meta name="keywords" content="python algérie, django algérie, développement web python, data science algérie, machine learning, fastapi, développeur python" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-python-django-algerie" />
         <meta property="og:title" content="Développement Python Django Algérie | Data Science & IA" />
         <meta property="og:description" content="Services Python Django en Algérie. Applications web, data science, machine learning. FastAPI, TensorFlow, Pandas." />
         <meta property="og:url" content="https://symloop.com/blog/developpement-python-django-algerie" />

@@ -309,11 +309,6 @@ export default function MobileEngineeringPage() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
         {/* Canonical + hreflang */}
-        <link rel="canonical" href="https://symloop.com/services/mobile/" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/services/mobile/" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services/mobile/" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services/mobile/" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services/mobile/" />
 
         {/* Open Graph */}
         <meta property="og:title" content={seo.title} />

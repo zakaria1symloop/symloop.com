@@ -253,13 +253,8 @@ export default function SolutionPage() {
         <meta name="keywords" content={keywords} />
 
         {/* Hreflang tags for multilingual SEO */}
-        <link rel="alternate" hrefLang="fr" href={`https://symloop.com/fr/solutions/${key}`} />
-        <link rel="alternate" hrefLang="en" href={`https://symloop.com/en/solutions/${key}`} />
-        <link rel="alternate" hrefLang="ar" href={`https://symloop.com/ar/solutions/${key}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://symloop.com/fr/solutions/${key}`} />
 
         {/* Canonical URL */}
-        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
 
         {/* Open Graph Tags */}
         <meta property="og:title" content={title} />

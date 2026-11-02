@@ -288,7 +288,6 @@ export default function MultiAgentAiSystemsAlgeria() {
         <title>Multi-Agent AI Systems in Algeria: Building Autonomous AI Workflows in 2026 | Symloop</title>
         <meta name="description" content="Comprehensive guide to multi-agent AI systems in Algeria. Architecture patterns, frameworks (LangChain, CrewAI, AutoGen, Claude Agent SDK), use cases for Algerian businesses, implementation roadmap, and pricing. Symloop — AI development agency in Algeria." />
         <meta name="keywords" content="multi-agent AI systems Algeria, AI agents Algeria, autonomous AI agents Algeria, LLM agents Algeria, AI automation Algeria, multi-agent systems North Africa, artificial intelligence Algeria 2026, AI development Algeria, AI chatbot Algeria, machine learning Algeria, LangChain Algeria, CrewAI Algeria, Claude Agent SDK Algeria, AI enterprise solutions Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/multi-agent-ai-systems-algeria-2026" />
 
         <meta property="og:title" content="Multi-Agent AI Systems in Algeria: Building Autonomous AI Workflows in 2026 | Symloop" />
         <meta property="og:description" content="Complete guide to building multi-agent AI systems in Algeria. Frameworks, architecture, use cases, costs. Symloop — leading AI development agency in Algeria." />

@@ -125,7 +125,6 @@ export default function ChatbotWhatsappIaEntrepriseAlgerie2026() {
         <title>Chatbot WhatsApp IA Entreprise Alg\u00e9rie 2026 | Service Client 24/7 | Symloop</title>
         <meta name="description" content="Chatbot WhatsApp IA pour entreprises alg\u00e9riennes. Service client 24/7, qualification leads, suivi commandes, prise de rendez-vous. IA conversationnelle en arabe, fran\u00e7ais et darja. Symloop, expert chatbot IA Alg\u00e9rie. Contact: +213 549 575 512." />
         <meta name="keywords" content="chatbot whatsapp alg\u00e9rie, chatbot IA entreprise alg\u00e9rie, whatsapp business IA alg\u00e9rie, chatbot service client alg\u00e9rie, IA conversationnelle alg\u00e9rie, bot whatsapp arabe darja, chatbot lead qualification alg\u00e9rie, automatisation whatsapp alg\u00e9rie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/chatbot-whatsapp-ia-entreprise-algerie-2026/" />
 
         <meta property="og:title" content="Chatbot WhatsApp IA pour Entreprises en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Chatbot WhatsApp IA pour entreprises alg\u00e9riennes. Service client 24/7, qualification leads, suivi commandes. IA en arabe, fran\u00e7ais et darja." />

@@ -237,9 +237,6 @@ export default function AIMENA() {
         <meta property="twitter:title" content="Symloop - Intelligence Artificielle MENA" />
 
         {/* Hreflang tags */}
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/intelligence-artificielle-mena" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/intelligence-artificielle-mena" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/intelligence-artificielle-mena" />
 
         {/* Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

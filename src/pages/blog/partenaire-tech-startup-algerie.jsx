@@ -206,7 +206,6 @@ export default function PartenaireTechStartup() {
         <title>Partenaire Tech Startup Algérie | CTO as a Service - Symloop</title>
         <meta name="description" content="Trouvez votre partenaire tech en Algérie. CTO as a Service, équipe développement dédiée, et accompagnement complet pour startups. À partir de 50,000 DA/mois." />
         <meta name="keywords" content="partenaire tech algérie, cto startup, équipe développement startup, fournisseur tech, co-fondateur technique, cto as a service algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/partenaire-tech-startup-algerie" />
         <meta property="og:title" content="Partenaire Tech Startup Algérie | CTO as a Service" />
         <meta property="og:description" content="Votre partenaire tech en Algérie. CTO as a Service et équipe développement dédiée pour startups. À partir de 50,000 DA/mois." />
         <meta property="og:type" content="article" />

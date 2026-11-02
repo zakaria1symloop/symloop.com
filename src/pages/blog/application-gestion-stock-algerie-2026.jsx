@@ -116,7 +116,6 @@ export default function ApplicationGestionStockAlgerie() {
         <title>Application Gestion de Stock Algérie 2026 | Logiciel Inventaire Entreprise | Symloop</title>
         <meta name="description" content="Application de gestion de stock en Algérie 2026. Logiciel inventaire, code-barres, multi-dépôts, alertes stock, facturation. Solution sur mesure pour entreprises algériennes. Symloop." />
         <meta name="keywords" content="application gestion stock algérie, logiciel gestion stock algérie 2026, gestion inventaire algérie, application stock entreprise algérie, logiciel gestion magasin algérie, logiciel stock algérie, gestion entrepôt algérie, application inventaire algérie, logiciel gestion commerciale stock algérie, gestion stock multi-dépôts algérie, inventory management app Algeria, stock management software Algeria, warehouse management Algeria, inventory tracking Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/application-gestion-stock-algerie-2026" />
 
         <meta property="og:title" content="Application Gestion de Stock Algérie 2026 | Symloop" />
         <meta property="og:description" content="Application de gestion de stock pour entreprises algériennes (Algeria). Inventaire, code-barres, multi-dépôts, alertes, facturation. Solution sur mesure par Symloop." />

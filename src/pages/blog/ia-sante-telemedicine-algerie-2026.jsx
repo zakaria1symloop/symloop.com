@@ -125,7 +125,6 @@ export default function IASanteTelemedicineAlgerie2026() {
         <title>IA pour la Sant\u00e9 & T\u00e9l\u00e9m\u00e9decine Alg\u00e9rie 2026 | Diagnostic IA & Plateformes M\u00e9dicales | Symloop</title>
         <meta name="description" content="Solutions IA pour le secteur de la sant\u00e9 en Alg\u00e9rie. Aide au diagnostic, analyse d'images m\u00e9dicales, triage patients, t\u00e9l\u00e9m\u00e9decine intelligente. Conforme aux normes m\u00e9dicales. Symloop, expert IA sant\u00e9. Contact: +213 549 575 512." />
         <meta name="keywords" content="IA sant\u00e9 alg\u00e9rie, t\u00e9l\u00e9m\u00e9decine alg\u00e9rie, intelligence artificielle m\u00e9decine alg\u00e9rie, diagnostic IA, analyse images m\u00e9dicales IA, triage patients IA, plateforme t\u00e9l\u00e9m\u00e9decine alg\u00e9rie 2026, logiciel m\u00e9dical IA alg\u00e9rie" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-sante-telemedicine-algerie-2026/" />
 
         <meta property="og:title" content="IA pour la Sant\u00e9 & T\u00e9l\u00e9m\u00e9decine en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions IA pour la sant\u00e9 en Alg\u00e9rie. Diagnostic assist\u00e9, analyse d'images, triage IA, t\u00e9l\u00e9m\u00e9decine intelligente." />

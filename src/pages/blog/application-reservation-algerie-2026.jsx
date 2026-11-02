@@ -302,7 +302,6 @@ export default function ApplicationReservationAlgerie() {
         <title>Application Réservation Algérie 2026 | Booking Hôtel Restaurant Clinique | Symloop</title>
         <meta name="description" content="Développement d'applications de réservation en Algérie : hôtels, restaurants, cliniques, salons. Calendrier temps réel, paiement CIB/Edahabia, notifications. Devis gratuit +213 549 575 512." />
         <meta name="keywords" content="application réservation algérie, application booking algérie 2026, système réservation en ligne algérie, application réservation hôtel restaurant algérie, développement application réservation, réservation en ligne algérie, booking app Algeria, reservation system Algeria, hotel booking Algeria, appointment scheduling app Algeria, online reservation Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/application-reservation-algerie-2026" />
         <meta property="og:title" content="Application Réservation Algérie 2026 | Booking Hôtel Restaurant Clinique" />
         <meta property="og:description" content="Guide complet pour créer une application de réservation en Algérie (Algeria). Hôtels, restaurants, cliniques, salons. Paiement CIB/Edahabia intégré." />
         <meta property="og:type" content="article" />

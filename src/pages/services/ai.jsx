@@ -528,11 +528,6 @@ export default function AiServicePage() {
         <meta name="googlebot" content="index, follow" />
 
         {/* Canonical + hreflang (locale alternates) */}
-        <link rel="canonical" href="https://symloop.com/services/ai/" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/services/ai/" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services/ai/" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services/ai/" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services/ai/" />
 
         {/* Open Graph */}
         <meta property="og:title" content={seo.title} />

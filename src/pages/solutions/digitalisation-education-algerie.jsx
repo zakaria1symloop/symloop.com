@@ -214,15 +214,10 @@ export default function DigitalisationEducationAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة التعليم, رقمنة المدارس الجزائر, e-learning Algérie, digitalisation éducation, منصات التعلم الإلكتروني, education digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-education-algerie" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-education-algerie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-education-algerie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-education-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>

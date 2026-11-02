@@ -147,7 +147,6 @@ export default function CoutDeveloppementAlgerie() {
         <title>Coût Développement Application & Site Web Algérie 2024 | Prix & Tarifs | Symloop</title>
         <meta name="description" content="Guide complet des prix de développement en Algérie. Sites vitrines à partir de 35,000 DA, applications mobiles dès 60,000 DA. Tarifs transparents, devis gratuit." />
         <meta name="keywords" content="prix site web algérie, coût application mobile algérie, tarif développement, budget digital, devis site internet, prix application algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/cout-developpement-application-algerie" />
         <meta property="og:title" content="Coût Développement Application & Site Web Algérie 2024" />
         <meta property="og:description" content="Guide des prix de développement en Algérie. Sites web dès 35,000 DA, apps dès 60,000 DA. Tarifs transparents." />
         <meta property="og:url" content="https://symloop.com/blog/cout-developpement-application-algerie" />

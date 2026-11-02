@@ -48,7 +48,6 @@ export default function AgriculturePrecisionDronesCapteurs2026() {
         <title>Agriculture de Pr\u00e9cision en Alg\u00e9rie 2026 : Drones, Capteurs IoT & IA | Symloop</title>
         <meta name="description" content="Agriculture de pr\u00e9cision en Alg\u00e9rie 2026. Drones multispectraux, capteurs au sol IoT, intelligence artificielle pour la d\u00e9tection de maladies et l'optimisation des rendements agricoles. +20-35% productivit\u00e9. Symloop." />
         <meta name="keywords" content="agriculture de pr\u00e9cision alg\u00e9rie, drone agriculture alg\u00e9rie, capteur sol alg\u00e9rie, agriculture intelligente alg\u00e9rie 2026, IA agriculture alg\u00e9rie, drone multispectral alg\u00e9rie, capteur NPK alg\u00e9rie, agriculture connect\u00e9e alg\u00e9rie, surveillance a\u00e9rienne cultures alg\u00e9rie, optimisation rendement agricole alg\u00e9rie, d\u00e9tection maladies cultures alg\u00e9rie, agriculture num\u00e9rique alg\u00e9rie, smart farming alg\u00e9rie, agriculture drone Alger, agriculture drone S\u00e9tif, agriculture drone Biskra" />
-        <link rel="canonical" href="https://symloop.com/blog/agriculture-precision-drones-capteurs-algerie-2026/" />
 
         <meta property="og:title" content="Agriculture de Pr\u00e9cision en Alg\u00e9rie 2026 : Drones, Capteurs IoT & IA | Symloop" />
         <meta property="og:description" content="Solutions d'agriculture de pr\u00e9cision en Alg\u00e9rie. Drones multispectraux, capteurs IoT, IA pour d\u00e9tection de maladies. +20-35% rendement. Symloop." />

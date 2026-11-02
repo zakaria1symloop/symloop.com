@@ -210,7 +210,6 @@ export default function APIIntegrationAlgerie() {
         <title>Développement API Algérie | REST, GraphQL, Intégrations | Symloop</title>
         <meta name="description" content="Services de développement d'APIs REST, GraphQL et intégration de systèmes en Algérie. APIs sécurisées, webhooks, intégration SATIM/CIB, Firebase, et plus. À partir de 35 000 DA." />
         <meta name="keywords" content="développement api algérie, api rest algérie, graphql algérie, intégration systèmes, webhooks, satim api, cib api, développeur api algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-api-integration-algerie" />
         <meta property="og:title" content="Développement API Algérie | REST, GraphQL, Intégrations" />
         <meta property="og:description" content="APIs REST, GraphQL et intégrations sur mesure pour entreprises algériennes. Sécurité, performance, documentation complète." />
         <meta property="og:type" content="article" />

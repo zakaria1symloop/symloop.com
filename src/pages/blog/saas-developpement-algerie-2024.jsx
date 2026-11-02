@@ -89,7 +89,6 @@ export default function SaaSAlgerie() {
         <title>Développement SaaS Algérie 2024 - Logiciel Cloud Sur Mesure | Symloop</title>
         <meta name="description" content="Créez votre SaaS en Algérie : architecture multi-tenant, billing récurrent, analytics. MVP à partir de 2M DA. Du concept au lancement. Devis gratuit." />
         <meta name="keywords" content="développement saas algérie, logiciel cloud algérie, multi-tenant, abonnement, saas b2b, application cloud, stripe algérie, billing saas, startup saas algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/saas-developpement-algerie-2024" />
         <meta property="og:title" content="Développement SaaS Algérie 2024 - Logiciel Cloud | Symloop" />
         <meta property="og:description" content="Créez votre SaaS en Algérie. Architecture scalable, paiement récurrent, analytics. Devis gratuit." />
         <meta property="og:type" content="article" />

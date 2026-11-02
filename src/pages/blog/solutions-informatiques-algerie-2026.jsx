@@ -48,7 +48,6 @@ export default function SolutionsInformatiquesAlgerie2026() {
         <title>Solutions Informatiques en Algérie 2026 | Développement, IoT, IA | Symloop</title>
         <meta name="description" content="Symloop : entreprise de solutions informatiques en Algérie. Développement web, applications mobiles, IoT, smart home, ERP/CRM, IA et cybersécurité. Basée à Alger. Devis gratuit." />
         <meta name="keywords" content="solutions informatiques algérie, entreprise informatique algérie, développement informatique algérie 2026, société informatique alger, prestataire IT algérie, SSII algérie, ESN algérie, développement web algérie, application mobile algérie, ERP algérie, CRM algérie, IoT algérie, intelligence artificielle algérie, cybersécurité algérie, Symloop, IT company Algeria, software development Algeria, meilleures entreprises informatiques algérie, transformation digitale algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/solutions-informatiques-algerie-2026/" />
 
         <meta property="og:title" content="Solutions Informatiques en Algérie 2026 | Symloop" />
         <meta property="og:description" content="Symloop : votre partenaire IT en Algérie. Développement web, mobile, IoT, IA, ERP/CRM et cybersécurité. Technologies modernes, prix compétitifs." />

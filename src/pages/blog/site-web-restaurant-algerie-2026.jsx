@@ -275,7 +275,6 @@ export default function SiteWebRestaurantAlgerie() {
         <title>Site Web Restaurant Algerie 2026 : Menu Digital, Commande en Ligne | Symloop</title>
         <meta name="description" content="Comment creer un site web pour restaurant en Algerie en 2026 ? Menu digital, commande en ligne, reservation, paiement CIB/Edahabia, SEO local. Guide complet et tarifs a partir de 40 000 DA." />
         <meta name="keywords" content="site web restaurant algerie, creer site restaurant algerie, site internet restaurant algerie 2026, menu en ligne restaurant algerie, commande en ligne restaurant, reservation restaurant en ligne algerie, restaurant website Algeria, online ordering Algeria, food ordering website Algeria, restaurant digital menu Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/site-web-restaurant-algerie-2026" />
         <meta property="og:title" content="Site Web Restaurant Algerie 2026 : Menu Digital, Commande en Ligne | Symloop" />
         <meta property="og:description" content="Guide complet pour creer un site web pour restaurant en Algérie (Algeria). Menu digital, commande en ligne, paiement CIB, SEO local. Tarifs a partir de 40 000 DA." />
         <meta property="og:type" content="article" />

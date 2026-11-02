@@ -61,7 +61,6 @@ export default function StartupAlgerie() {
         <title>Créer une Startup en Algérie 2024 | Guide Complet : Financement, Label, Incubateurs | Symloop</title>
         <meta name="description" content="Guide complet pour créer votre startup en Algérie 2024 : Label Startup, financement ANADE, incubateurs, Startup Act, étapes de création et accompagnement technique." />
         <meta name="keywords" content="startup algérie, créer startup, entrepreneuriat algérie, anade, ansej, financement startup, incubateur algérie, label startup, startup act algérie, mvp startup, algeria venture" />
-        <link rel="canonical" href="https://symloop.com/blog/startup-algerie-guide-2024" />
         <meta property="og:title" content="Créer une Startup en Algérie 2024 | Guide Complet" />
         <meta property="og:description" content="Financement, Label Startup, Incubateurs - Tout pour lancer votre startup en Algérie." />
         <meta property="og:type" content="article" />

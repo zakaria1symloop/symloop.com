@@ -61,7 +61,6 @@ export default function MarketingDigitalAlgerie() {
         <title>Marketing Digital Algérie 2024 | Facebook Ads, Google Ads, SEO | Symloop</title>
         <meta name="description" content="Services de marketing digital en Algérie : Facebook Ads, Google Ads, SEO, gestion réseaux sociaux. Agence marketing digital Alger. Boostez votre visibilité en ligne." />
         <meta name="keywords" content="marketing digital algérie, facebook ads algérie, google ads algérie, publicité en ligne, réseaux sociaux algérie, agence marketing alger, seo algérie, community management, publicité facebook, instagram ads" />
-        <link rel="canonical" href="https://symloop.com/blog/marketing-digital-algerie-2024" />
         <meta property="og:title" content="Marketing Digital Algérie 2024 | Facebook & Google Ads" />
         <meta property="og:description" content="Boostez votre présence en ligne avec nos services de marketing digital : Facebook Ads, Google Ads, SEO, Social Media." />
         <meta property="og:type" content="article" />

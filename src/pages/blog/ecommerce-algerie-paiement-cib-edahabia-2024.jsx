@@ -21,7 +21,6 @@ export default function EcommerceAlgerie() {
         <title>{blog?.metaTitle || "E-commerce Algérie 2024 | Paiement CIB Edahabia | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="e-commerce algérie, paiement cib, edahabia, satim, boutique en ligne algérie, vendre en ligne algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/ecommerce-algerie-paiement-cib-edahabia-2024" />
 
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />

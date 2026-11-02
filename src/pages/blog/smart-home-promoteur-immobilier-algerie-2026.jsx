@@ -48,7 +48,6 @@ export default function SmartHomePromoteurImmobilierAlgerie2026() {
         <title>Smart Home pour Promoteurs Immobiliers en Alg\u00e9rie 2026 | Solutions Domotiques Cl\u00e9 en Main | Symloop</title>
         <meta name="description" content="Solutions smart home cl\u00e9 en main pour promoteurs immobiliers en Alg\u00e9rie. Domotique par appartement \u00e0 partir de 45 000 DA. \u00c9clairage, climatisation, s\u00e9curit\u00e9, interphone vid\u00e9o. +500 logements \u00e9quip\u00e9s. Symloop S\u00e9tif." />
         <meta name="keywords" content="smart home promoteur immobilier alg\u00e9rie, domotique programme immobilier alg\u00e9rie, maison intelligente r\u00e9sidence alg\u00e9rie, solutions domotiques promoteur alg\u00e9rie 2026, int\u00e9gration smart home logements alg\u00e9rie, smart home real estate algeria, domotique appartement alg\u00e9rie, promoteur immobilier domotique s\u00e9tif, smart home alger oran constantine, \u00e9quipement domotique immeuble alg\u00e9rie, interphone vid\u00e9o ip alg\u00e9rie, \u00e9clairage intelligent appartement alg\u00e9rie" />
-        <link rel="canonical" href="https://symloop.com/blog/smart-home-promoteur-immobilier-algerie-2026/" />
 
         <meta property="og:title" content="Smart Home pour Promoteurs Immobiliers en Alg\u00e9rie 2026 | Solutions Domotiques Cl\u00e9 en Main" />
         <meta property="og:description" content="Symloop propose des solutions domotiques cl\u00e9 en main pour promoteurs immobiliers en Alg\u00e9rie. \u00c0 partir de 45 000 DA/appartement. +500 logements \u00e9quip\u00e9s." />

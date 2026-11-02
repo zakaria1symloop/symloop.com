@@ -142,7 +142,6 @@ export default function BlogWmsPage() {
         <title>{ARTICLE.title} | Symloop</title>
         <meta name="description" content={ARTICLE.desc} />
         <meta name="keywords" content="wms algerie, logiciel wms algerie, gestion entrepot algerie, warehouse management system algeria, logiciel gestion stock multi-sites, integration yalidine api, integration zr express, maystro delivery integration, picking optimise, mobile barcode scanning, sap ewm alternative algerie, odoo inventory algerie, ecommerce wms, distributeur national wms, 3pl wms multi-tenant, paiement a la livraison cod, fefo agroalimentaire algerie, tracabilite pharmaceutique, reverse logistics, kpi entrepot temps reel" />
-        <link rel="canonical" href={ARTICLE.url} />
         <meta property="og:title" content={ARTICLE.title} />
         <meta property="og:description" content={ARTICLE.desc} />
         <meta property="og:type" content="article" />

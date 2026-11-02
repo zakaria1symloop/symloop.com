@@ -125,7 +125,6 @@ export default function IAImmobilierEstimationAlgerie2026() {
         <title>IA pour l&apos;Immobilier Alg\u00e9rie 2026 | Estimation & Analyse de March\u00e9 IA | Symloop</title>
         <meta name="description" content="Solutions IA pour le secteur immobilier en Alg\u00e9rie. Estimation automatique des biens, analyse pr\u00e9dictive du march\u00e9, scoring leads, visites virtuelles, g\u00e9n\u00e9ration automatique d'annonces. Symloop, expert IA immobilier. Contact: +213 549 575 512." />
         <meta name="keywords" content="IA immobilier alg\u00e9rie, estimation immobili\u00e8re IA, pr\u00e9diction prix immobilier alg\u00e9rie, analyse march\u00e9 immobilier IA, scoring leads immobilier, visite virtuelle IA, plateforme immobili\u00e8re IA alg\u00e9rie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-immobilier-estimation-algerie-2026/" />
 
         <meta property="og:title" content="IA pour l'Immobilier : Estimation & Analyse de March\u00e9 en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions IA pour l'immobilier alg\u00e9rien. Estimation automatique, pr\u00e9diction prix, scoring leads, visites virtuelles." />

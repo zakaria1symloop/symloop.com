@@ -118,7 +118,6 @@ export default function DigitaliserEntrepriseAlgerie() {
         <title>Comment Digitaliser Votre Entreprise en Algérie et Ne Plus Perdre 1 Dinar | Symloop</title>
         <meta name="description" content="Découvrez comment Symloop aide les entreprises algériennes à se digitaliser et éliminer les pertes. Site web, application, ERP, CRM, IoT. Audit gratuit. Ne perdez plus un seul dinar." />
         <meta name="keywords" content="digitaliser entreprise algérie, transformation digitale algérie, digitalisation PME algérie, solutions digitales entreprise algérie 2026, comment digitaliser son entreprise, numérisation entreprise algérie, Symloop digitalisation, ERP algérie, CRM algérie, perte argent entreprise algérie, économie entreprise digitalisation, passage au numérique algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/digitaliser-entreprise-algerie-ne-perdez-plus-1-dinar/" />
 
         <meta property="og:title" content="Comment Symloop Aide Votre Entreprise à Ne Plus Perdre 1 Dinar | Digitalisation Algérie" />
         <meta property="og:description" content="Chaque jour sans digitalisation, votre entreprise perd de l'argent. Découvrez comment Symloop élimine ces pertes avec des solutions sur mesure." />

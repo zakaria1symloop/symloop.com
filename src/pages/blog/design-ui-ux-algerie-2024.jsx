@@ -41,7 +41,6 @@ export default function DesignUIUXAlgerie() {
         <title>Design UI/UX Algérie 2024 | Maquettes Figma, Interfaces Modernes | Symloop</title>
         <meta name="description" content="Services de design UI/UX en Algérie : maquettes Figma professionnelles, interfaces utilisateur modernes, design system complet. Tarifs compétitifs et qualité internationale." />
         <meta name="keywords" content="design ui ux algérie, interface utilisateur, maquette figma, expérience utilisateur, agence design alger, ux design algérie, ui designer, prototype figma, design system, conception interface" />
-        <link rel="canonical" href="https://symloop.com/blog/design-ui-ux-algerie-2024" />
         <meta property="og:title" content="Design UI/UX Algérie 2024 | Maquettes Figma Professionnelles" />
         <meta property="og:description" content="Création d'interfaces utilisateur modernes et intuitives. Design UI/UX de qualité internationale à prix algérien." />
         <meta property="og:type" content="article" />

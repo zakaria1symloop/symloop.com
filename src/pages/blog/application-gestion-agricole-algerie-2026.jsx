@@ -48,7 +48,6 @@ export default function ApplicationGestionAgricoleAlgerie2026() {
         <title>Application de Gestion Agricole en Algérie 2026 : Logiciel pour Agriculteurs et Exploitations | Symloop</title>
         <meta name="description" content="Application de gestion agricole pour agriculteurs algériens. Planification cultures, suivi dépenses/revenus, gestion récoltes, météo, marketplace vente directe. Android & iOS. À partir de 2 000 DA/mois. Symloop." />
         <meta name="keywords" content="application gestion agricole algérie, logiciel agriculteur algérie, app ferme algérie 2026, gestion exploitation agricole algérie, logiciel agriculture algérie, application agricole algérie, gestion ferme algérie, planification cultures algérie, marketplace agricole algérie, suivi récoltes algérie, application mobile agriculteur algérie, logiciel ferme algérie, gestion parcelles algérie, comptabilité agricole algérie, calendrier agricole algérie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/application-gestion-agricole-algerie-2026/" />
 
         <meta property="og:title" content="Application de Gestion Agricole en Algérie 2026 | Logiciel Agriculteurs | Symloop" />
         <meta property="og:description" content="Application mobile de gestion agricole pour les agriculteurs algériens. Planification, finances, récoltes, météo, marketplace. Android & iOS." />

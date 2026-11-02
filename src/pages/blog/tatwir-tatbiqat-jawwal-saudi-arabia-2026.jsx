@@ -660,11 +660,6 @@ export default function TatwirTatbiqatJawwalSaudiArabia2026() {
         <meta name="geo.placename" content="Saudi Arabia" />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://symloop.com/ar/blog/tatwir-tatbiqat-jawwal-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/tatwir-tatbiqat-jawwal-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/tatwir-tatbiqat-jawwal-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/tatwir-tatbiqat-jawwal-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/ar/blog/tatwir-tatbiqat-jawwal-saudi-arabia-2026" />
 
         {/* Open Graph */}
         <meta property="og:title" content={c.metaTitle} />

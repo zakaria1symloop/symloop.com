@@ -108,7 +108,6 @@ export default function ErpSurMesureSaasStartupPmeAlgerie2026() {
         <title>ERP Sur Mesure &amp; Plateformes SaaS Algérie 2026 | Logiciel Gestion Entreprise | Symloop</title>
         <meta name="description" content="Développement ERP sur mesure et plateformes SaaS pour startups et PME en Algérie. Gestion commerciale, facturation, stocks, RH, CRM, production. Alternative Odoo/SAP. Symloop, Sétif." />
         <meta name="keywords" content="ERP sur mesure algérie, logiciel gestion entreprise algérie, SaaS algérie, développement logiciel personnalisé algérie, alternative Odoo algérie, ERP PME algérie 2026, plateforme SaaS startup algérie, logiciel facturation algérie, gestion commerciale algérie, CRM sur mesure algérie, gestion stocks algérie, logiciel RH paie algérie, ERP personnalisé algérie, développement ERP algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/erp-sur-mesure-saas-startup-pme-algerie-2026/" />
 
         <meta property="og:title" content="ERP Sur Mesure & Plateformes SaaS Algérie 2026 | Symloop" />
         <meta property="og:description" content="Développement ERP sur mesure et plateformes SaaS pour startups et PME en Algérie. Alternative Odoo/SAP. Logiciel conçu pour votre métier." />

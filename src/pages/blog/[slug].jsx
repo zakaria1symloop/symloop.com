@@ -185,11 +185,6 @@ export default function BlogPost({ blog, relatedBlogs }) {
         <meta name="twitter:image" content={blog.image} />
 
         {/* Canonical & Hreflang */}
-        <link rel="canonical" href={`https://symloop.com/blog/${blog.slug}`} />
-        <link rel="alternate" hrefLang="fr" href={`https://symloop.com/fr/blog/${blog.slug}`} />
-        <link rel="alternate" hrefLang="en" href={`https://symloop.com/en/blog/${blog.slug}`} />
-        <link rel="alternate" hrefLang="ar" href={`https://symloop.com/ar/blog/${blog.slug}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://symloop.com/blog/${blog.slug}`} />
 
         {/* Structured Data */}
         <script

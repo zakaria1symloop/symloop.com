@@ -335,7 +335,6 @@ export default function PresentationPage() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDesc} />
         <meta name="keywords" content="symloop technology, about symloop, symloop algiers, AI engineering firm MENA, regulated industries engineering, banking software algeria, government digitisation MENA, oil & gas IT, healthcare HIS algeria, ingénierie IA, شركة هندسة" />
-        <link rel="canonical" href="https://symloop.com/presentation/" key="canonical" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDesc} />

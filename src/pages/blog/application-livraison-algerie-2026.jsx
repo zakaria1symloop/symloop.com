@@ -232,7 +232,6 @@ export default function ApplicationLivraisonAlgerie() {
         <title>Application de Livraison Algerie 2026 | Creer App Livraison comme Glovo | Symloop</title>
         <meta name="description" content="Comment creer une application de livraison en Algérie (Algeria) en 2026 ? Guide complet : fonctionnalites, technologies (Flutter, Node.js), cout, integration CIB/Edahabia. Symloop, +50 apps livrees. Devis gratuit." />
         <meta name="keywords" content="application livraison algerie, creer application livraison algerie, app livraison comme glovo algerie, application commande livraison algerie 2026, developpement application livraison, application livraison yassir, application livraison tempo algerie, creer app livraison algerie, developpement application livraison algerie, application suivi livraison gps algerie, delivery app Algeria, food delivery app Algeria, logistics app Algeria, create delivery application Algeria, last-mile delivery Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/application-livraison-algerie-2026" />
 
         <meta property="og:title" content="Application de Livraison Algerie 2026 | Creer App comme Glovo | Symloop" />
         <meta property="og:description" content="Guide complet pour creer une application de livraison en Algérie (Algeria). Fonctionnalites, technologies, cout et integration paiement local. +50 apps livrees par Symloop." />

@@ -152,8 +152,7 @@ export default function ErpBusinessSoftwareKuwait2026() {
   return (
     <>
       <Head>
-        <title>{c.metaTitle}</title><meta name="description" content={c.metaDescription} /><meta name="keywords" content={c.seoKeywords} /><link rel="canonical" href="https://symloop.com/blog/erp-business-software-kuwait-2026" />
-        <meta property="og:title" content={c.title} /><meta property="og:description" content={c.metaDescription} /><meta property="og:type" content="article" /><meta property="og:url" content="https://symloop.com/blog/erp-business-software-kuwait-2026" /><meta property="og:site_name" content="Symloop" />
+        <title>{c.metaTitle}</title><meta name="description" content={c.metaDescription} /><meta name="keywords" content={c.seoKeywords} />        <meta property="og:title" content={c.title} /><meta property="og:description" content={c.metaDescription} /><meta property="og:type" content="article" /><meta property="og:url" content="https://symloop.com/blog/erp-business-software-kuwait-2026" /><meta property="og:site_name" content="Symloop" />
         <meta property="og:image" content="https://symloop.com/logo.png" />
         <meta property="og:locale" content={locale === 'ar' ? 'ar_KW' : locale === 'en' ? 'en_US' : 'fr_FR'} />
         <meta property="article:published_time" content={c.date || "2026-01-15"} />
@@ -161,7 +160,6 @@ export default function ErpBusinessSoftwareKuwait2026() {
         <meta property="article:section" content={c.category} />
         <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={c.title} /><meta name="twitter:description" content={c.metaDescription} />
         <meta name="robots" content="index, follow" /><meta name="author" content="Symloop" /><meta name="geo.region" content="KW" /><meta name="geo.placename" content="Kuwait" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/erp-business-software-kuwait-2026" /><link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/erp-business-software-kuwait-2026" /><link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/erp-business-software-kuwait-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocalBusiness) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://symloop.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://symloop.com/blog" }, { "@type": "ListItem", "position": 3, "name": c.title }] }) }} />
       </Head>

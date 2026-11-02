@@ -318,7 +318,6 @@ export default function ServicesPage({ services, locale: pageLocale }) {
       <Head>
         <title>{pageMetaTitle}</title>
         <meta name="description" content={pageMetaDescription} />
-        <link rel="canonical" href={pageUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageMetaTitle} />
         <meta property="og:description" content={pageMetaDescription} />
@@ -327,10 +326,6 @@ export default function ServicesPage({ services, locale: pageLocale }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageMetaTitle} />
         <meta name="twitter:description" content={pageMetaDescription} />
-        <link rel="alternate" hrefLang="fr" href={`${baseUrl}/fr/services/`} />
-        <link rel="alternate" hrefLang="en" href={`${baseUrl}/en/services/`} />
-        <link rel="alternate" hrefLang="ar" href={`${baseUrl}/ar/services/`} />
-        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/fr/services/`} />
         {/* Fonts loaded in _document.js — no duplicate here */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

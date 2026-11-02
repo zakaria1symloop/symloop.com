@@ -349,7 +349,6 @@ export default function IAGenerativeAlgerie2026() {
         <title>IA Générative Algérie 2026 | ChatGPT, Claude, Gemini | Symloop</title>
         <meta name="description" content="Guide complet sur l'IA Générative en Algérie 2026. ChatGPT, Claude, Gemini : applications business, chatbots, génération de contenu. Expert IA Algérie." />
         <meta name="keywords" content="ia generative algérie 2026, chatgpt algérie, claude ai algérie, gemini algérie, chatbot ia, génération contenu ia, automatisation ia, gpt-4, الذكاء الاصطناعي التوليدي" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-generative-chatgpt-claude-algerie-2026" />
 
         <meta property="og:title" content="IA Générative Algérie 2026 | ChatGPT, Claude | Symloop" />
         <meta property="og:description" content="Guide complet sur l'IA Générative : ChatGPT, Claude, Gemini. Applications business pour entreprises algériennes." />

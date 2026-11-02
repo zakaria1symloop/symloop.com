@@ -21,7 +21,6 @@ export default function LogicielERPAlgerie() {
         <title>{blog?.metaTitle || "ERP Algérie 2024 | Sage, Odoo, SAP | Comparatif & Prix | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="erp algérie, sage algérie, odoo algérie, logiciel gestion, logiciel comptabilité algérie, sap algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/logiciel-erp-algerie-2024" />
 
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />

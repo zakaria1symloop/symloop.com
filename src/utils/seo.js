@@ -52,7 +52,6 @@ export default function Seo({
       <meta name="keywords" content={menaKeywords} />
       <meta name="author" content={author} />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      <link rel="canonical" href={canonicalUrl} />
       
       {/* Enhanced Geographic SEO for MENA region */}
       <meta name="geo.region" content={currentGeo.region} />
@@ -65,16 +64,6 @@ export default function Seo({
       <meta name="DC.language" content={currentLocale} />
       
       {/* Enhanced Hreflang for multilingual MENA */}
-      <link rel="alternate" hrefLang="fr" href={`https://symloop.com/fr${router.asPath}`} />
-      <link rel="alternate" hrefLang="en" href={`https://symloop.com/en${router.asPath}`} />
-      <link rel="alternate" hrefLang="ar" href={`https://symloop.com/ar${router.asPath}`} />
-      <link rel="alternate" hrefLang="x-default" href={`https://symloop.com${router.asPath}`} />
-      <link rel="alternate" hrefLang="fr-DZ" href={`https://symloop.com/fr${router.asPath}`} />
-      <link rel="alternate" hrefLang="fr-MA" href={`https://symloop.com/fr${router.asPath}`} />
-      <link rel="alternate" hrefLang="fr-TN" href={`https://symloop.com/fr${router.asPath}`} />
-      <link rel="alternate" hrefLang="ar-SA" href={`https://symloop.com/ar${router.asPath}`} />
-      <link rel="alternate" hrefLang="ar-AE" href={`https://symloop.com/ar${router.asPath}`} />
-      <link rel="alternate" hrefLang="en-AE" href={`https://symloop.com/en${router.asPath}`} />
       
       {/* Enhanced Open Graph */}
       <meta property="og:title" content={title} />

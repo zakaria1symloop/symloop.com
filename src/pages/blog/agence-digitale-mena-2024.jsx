@@ -152,7 +152,6 @@ export default function AgenceMENA() {
         <title>Agence Digitale MENA 2024 | Applications Multilingues Arabe RTL | Symloop</title>
         <meta name="description" content="Agence digitale spécialisée MENA. Applications multilingues arabe/français/anglais avec support RTL natif. Paiements locaux Algérie, Tunisie, Maroc, Golfe. Devis gratuit." />
         <meta name="keywords" content="agence digitale mena, développement arabe, rtl support, multilingue mena, middle east north africa, application arabe, paiement algérie tunisie maroc" />
-        <link rel="canonical" href="https://symloop.com/blog/agence-digitale-mena-2024" />
         <meta property="og:title" content="Agence Digitale MENA | Applications Multilingues Arabe" />
         <meta property="og:description" content="Applications multilingues pour la région MENA. Support RTL arabe natif, paiements locaux, SEO régional." />
         <meta property="og:url" content="https://symloop.com/blog/agence-digitale-mena-2024" />

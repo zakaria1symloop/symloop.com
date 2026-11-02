@@ -703,7 +703,6 @@ export default function LogicielCRMSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="CRM Setif, logiciel gestion client, CRM Bordj Bou Arreridj, CRM M'sila, gestion commerciale, logiciel vente Algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-crm-setif-bordj-msila-gestion-clients-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

@@ -208,7 +208,6 @@ export default function DeveloppementConstantine() {
         <title>Développement Web Constantine 2024 | Agence Digitale Est Algérien | Symloop</title>
         <meta name="description" content="Développement web à Constantine et Est algérien. Sites vitrines, e-commerce, e-learning pour universités. Agence digitale pour Sétif, Annaba, Batna. À partir de 40 000 DA." />
         <meta name="keywords" content="développement web constantine, agence digitale constantine, site web sétif, création site annaba, e-commerce est algérien, développeur constantine" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-web-constantine-2024" />
         <meta property="og:title" content="Développement Web Constantine 2024 | Agence Digitale Est Algérien" />
         <meta property="og:description" content="Services web pour Constantine, Sétif, Annaba. Sites vitrines, e-commerce, applications sur mesure." />
         <meta property="og:type" content="article" />

@@ -183,13 +183,8 @@ export default function DigitalisationJusticeAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة العدالة, رقمنة المحاكم الجزائر, digitalisation justice Algérie, e-justice, السجل العدلي الرقمي, justice digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-justice-algerie" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-justice-algerie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-justice-algerie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-justice-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>

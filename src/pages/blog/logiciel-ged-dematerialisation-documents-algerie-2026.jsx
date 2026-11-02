@@ -143,7 +143,6 @@ export default function BlogGedDmsPage() {
         <title>{ARTICLE.title} | Symloop</title>
         <meta name="description" content={ARTICLE.desc} />
         <meta name="keywords" content="ged algerie, logiciel ged, dematerialisation entreprise, dematerialisation administration algerie, logiciel gestion documents, electronic document management algeria, dms algeria, archivage electronique, signature electronique algerie 15-04, valeur probante document electronique, workflow document, gestion electronique documents banque, ged ministere algerie, ged justice rقمنة, ged sante hopital, alfresco nuxeo algerie, sharepoint alternative algerie, opentext alternative algerie, dgi facturation electronique, cnas dematerialisation rh, archivage fiscal algerie 10 ans" />
-        <link rel="canonical" href={ARTICLE.url} />
         <meta property="og:title" content={ARTICLE.title} />
         <meta property="og:description" content={ARTICLE.desc} />
         <meta property="og:type" content="article" />

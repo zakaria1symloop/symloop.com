@@ -429,11 +429,6 @@ export default function MobileAppDevelopmentGermanyDACH() {
         <meta name="twitter:description" content={c.metaDescription} />
 
         {/* Canonical & Hreflang */}
-        <link rel="canonical" href={`https://symloop.com/${locale}/blog/entwicklung-mobile-apps-deutschland-dach-2026`} />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/entwicklung-mobile-apps-deutschland-dach-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/entwicklung-mobile-apps-deutschland-dach-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/entwicklung-mobile-apps-deutschland-dach-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/fr/blog/entwicklung-mobile-apps-deutschland-dach-2026" />
 
         {/* Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

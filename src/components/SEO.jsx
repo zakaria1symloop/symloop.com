@@ -18,7 +18,10 @@ export default function SEO({
   const router = useRouter();
   const locale = router.locale || 'fr';
   const baseUrl = 'https://symloop.com';
-  const currentUrl = `${baseUrl}${router.asPath}`;
+  // Locale-aware URL (en is the default locale, served without a prefix).
+  // Canonical and hreflang are emitted once, in _app.js, for every page.
+  const currentPath = (router.asPath || '/').split('?')[0].split('#')[0];
+  const currentUrl = `${baseUrl}${locale === (router.defaultLocale || 'en') ? '' : `/${locale}`}${currentPath}`;
 
   // Default SEO values
   const defaultTitle = 'Symloop | Software Engineering & AI Company in Algeria';
@@ -43,14 +46,6 @@ export default function SEO({
   const seoImage = isDefaultImage
     ? dynamicOg
     : (image.startsWith('http') ? image : `${baseUrl}${image}`);
-
-  // Hreflang for multilingual
-  const hreflangs = [
-    { lang: 'fr', href: `${baseUrl}/fr${router.asPath}` },
-    { lang: 'en', href: `${baseUrl}/en${router.asPath}` },
-    { lang: 'ar', href: `${baseUrl}/ar${router.asPath}` },
-    { lang: 'x-default', href: `${baseUrl}${router.asPath}` },
-  ];
 
   // Organization Schema
   const organizationSchema = {
@@ -262,18 +257,7 @@ export default function SEO({
       <meta name="googlebot" content="index, follow" />
       <meta name="bingbot" content="index, follow" />
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={currentUrl} />
-
-      {/* Hreflang Tags for Multilingual */}
-      {hreflangs.map((hreflang) => (
-        <link
-          key={hreflang.lang}
-          rel="alternate"
-          hrefLang={hreflang.lang}
-          href={hreflang.href}
-        />
-      ))}
+      {/* Canonical and hreflang: emitted once in _app.js (locale-aware). */}
 
       {/* Geographic Tags for Algeria and MENA */}
       <meta name="geo.region" content="DZ" />

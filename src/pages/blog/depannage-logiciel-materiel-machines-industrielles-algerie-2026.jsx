@@ -935,7 +935,6 @@ export default function DepannageLogicielMaterielIndustriel2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="depannage industriel algerie, reparation machine usine, probleme logiciel industriel, panne hardware usine, maintenance corrective, SCADA, PLC" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/depannage-logiciel-materiel-machines-industrielles-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

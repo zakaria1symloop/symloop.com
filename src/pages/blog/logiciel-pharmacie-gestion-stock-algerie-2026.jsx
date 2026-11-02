@@ -703,7 +703,6 @@ export default function LogicielPharmacie2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel pharmacie algerie, gestion stock pharmacie, logiciel officine, tiers payant CNAS, gestion medicaments, caisse pharmacie algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-pharmacie-gestion-stock-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

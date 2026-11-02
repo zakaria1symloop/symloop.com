@@ -80,7 +80,6 @@ export default function LogicielRHAlgerie() {
         <title>Logiciel RH et Paie Algérie 2024 - SIRH Conforme CNAS/CASNOS | Symloop</title>
         <meta name="description" content="Solution SIRH complète pour entreprises algériennes. Gestion paie CNAS/CASNOS/IRG, congés, recrutement, évaluations. Prix à partir de 150K DA. Démo gratuite." />
         <meta name="keywords" content="logiciel rh algérie, sirh algérie, gestion paie algérie, logiciel paie cnas, logiciel casnos, gestion ressources humaines, logiciel pointage, gestion congés, bulletin paie algérie, déclaration sociale algérie, irg algérie, logiciel rh prix" />
-        <link rel="canonical" href="https://symloop.com/blog/logiciel-rh-algerie-2024" />
         <meta property="og:title" content="Logiciel RH et Paie Algérie 2024 - SIRH Conforme CNAS/CASNOS" />
         <meta property="og:description" content="Solution SIRH complète pour entreprises algériennes. Gestion paie, congés, recrutement. Prix compétitifs." />
         <meta property="og:url" content="https://symloop.com/blog/logiciel-rh-algerie-2024" />

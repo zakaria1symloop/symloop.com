@@ -181,11 +181,6 @@ export default function ConsultingPage() {
         <meta name="keywords" content={t('consulting_page.seo.keywords')} />
         <meta name="author" content="Symloop Technology" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://symloop.com/services/consulting/" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/services/consulting/" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/services/consulting/" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/services/consulting/" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/services/consulting/" />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:url" content="https://symloop.com/services/consulting/" />
