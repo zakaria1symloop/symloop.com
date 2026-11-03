@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "184",
+    slug: "installateur-solaire-algerie-2027-devis-chantier-monitoring-installations-maintenance",
+    title: "Installateur solaire en Algérie en 2027 : devis depuis une photo de toit, chantier suivi, monitoring de chaque installation, contrats de maintenance",
+    subtitle: "2,1 GW de panneaux importés en 2025 : l'outil de l'installateur, du devis en un jour au monitoring du parc, avec un exemple chiffré, six pannes silencieuses et le calendrier 2027",
+    excerpt: "L'Algérie a importé 2,1 gigawatts de panneaux chinois en 2025, six fois plus qu'en 2024, posés par des entreprises qui vendent au téléphone et chiffrent sur Excel. Ce guide décrit la plateforme de l'installateur solaire en 2027 : relevé et devis écrit le lendemain, chantier avec liste photo et numéros de série, monitoring de chaque installation par portail fabricant ou passerelle 4G, application client, contrats de maintenance ; un exemple sur des hypothèses, six pannes silencieuses, six profils et le calendrier 2027.",
+    category: "IoT", author: "Symloop Team", date: "2026-11-03", readTime: "12 min", featured: true,
+    tags: ["installateur solaire", "monitoring photovoltaïque", "logiciel installateur", "iot énergie", "pompage solaire"],
+    metaTitle: "Installateur solaire en Algérie en 2027 : devis, chantier, monitoring, maintenance | Symloop",
+    metaDescription: "L'outil de l'installateur solaire en Algérie en 2027 : devis depuis une photo de toit et une facture Sonelgaz, chantier avec liste photo, monitoring de chaque installation par portail fabricant ou passerelle 4G, application client, contrats de maintenance. Chiffres Ember 2025, programme 2027, exemple chiffré, six pannes, calendrier.",
+    translations: {
+      en: { title: "Solar installer in Algeria in 2027: quotes from a roof photo, tracked jobs, monitoring of every system, maintenance contracts", subtitle: "2.1 GW of panels imported in 2025: the installer's tool, from the one-day quote to fleet monitoring, with a worked example, six silent failures and the 2027 calendar", excerpt: "Algeria imported 2.1 gigawatts of Chinese panels in 2025, six times more than in 2024, fitted by companies that sell by phone and price on Excel. This guide describes the solar installer's platform in 2027: survey and written quote the next day, job with photo checklist and serial numbers, monitoring of every system through manufacturer portals or 4G gateways, client app, maintenance contracts; a worked example on assumptions, six silent failures, six profiles and the 2027 calendar." },
+      ar: { title: "شركة تركيب الطاقة الشمسية في الجزائر سنة 2027: عرض سعر من صورة السطح، ورشة متابَعة، مراقبة كل منشأة، عقود صيانة", subtitle: "2.1 جيغاواط من الألواح مستوردة سنة 2025: أداة شركة التركيب من عرض السعر في يوم إلى مراقبة الحظيرة، مع مثال محسوب وستة أعطال صامتة وتقويم 2027", excerpt: "استوردت الجزائر 2.1 جيغاواط من الألواح الصينية سنة 2025، ستة أضعاف 2024، ركّبتها شركات تبيع بالهاتف وتحسب على Excel. يصف هذا الدليل منصة شركة التركيب الشمسي سنة 2027: معاينة وعرض مكتوب في اليوم الموالي، ورشة بقائمة صور وأرقام تسلسلية، مراقبة كل منشأة عبر بوابة الصانع أو بوابة 4G، تطبيق زبون، عقود صيانة؛ مثال على فرضيات، ستة أعطال صامتة، ستة أنماط وتقويم 2027." }
+    }
+  },
+  {
     id: "183",
     slug: "faire-vivre-une-application-algerie-2027-cout-annee-stores-serveurs-mises-a-jour",
     title: "Faire vivre une application en Algérie en 2027 : ce que coûte vraiment la première année, stores, serveur, SMS, mises à jour et correctifs",
