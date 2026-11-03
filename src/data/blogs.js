@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "182",
+    slug: "agence-omra-algerie-2027-dossier-pelerin-paiement-par-tranches-suivi-groupes",
+    title: "Agence de Omra en Algérie en 2027 : dossier pèlerin, paiement par tranches, groupes et suivi jusqu'au retour, sans cahier ni WhatsApp",
+    subtitle: "Les six moments d'un pèlerinage qui tient, les dossiers et les paiements à construire en premier, ce que coûte le suivi à la main, six risques et leur parade, la Omra offerte depuis la France et six modèles comparés",
+    excerpt: "Pour la saison 1448, l'Office national du pèlerinage et de la Omra a retenu 490 agences sur 768 candidates et rappelle les signes d'une arnaque : prix très bas, espèces sans reçu, agence absente de la liste. Les agences retenues ont un autre problème : des centaines de dossiers, des tranches payées au comptoir et des groupes gérés dans WhatsApp. Un dossier par pèlerin, un paiement par tranches tracé avec reçus par SMS, une application du guide hors ligne et un pointage jusqu'au retour.",
+    category: "Digitalisation", author: "Symloop Team", date: "2026-11-03", readTime: "11 min", featured: true,
+    tags: ["agence omra algérie", "logiciel agence omra", "dossier pèlerin", "paiement par tranches", "agences agréées 2027"],
+    metaTitle: "Agence de Omra en Algérie en 2027 : dossier pèlerin, paiement par tranches, suivi des groupes | Symloop",
+    metaDescription: "Équiper une agence de Omra en Algérie en 2027 : dossier par pèlerin avec statut visa et vol, paiement par tranches avec reçus SMS (espèces, CIB, Edahabia, euros), groupes et chambrées, application du guide hors ligne, pointage au retour, chiffres ONPO 1448 et six modèles comparés.",
+    translations: {
+      en: { title: "Umrah agencies in Algeria in 2027: pilgrim file, instalment payments, groups and follow-up until the return, without notebooks or WhatsApp", subtitle: "The six moments of a pilgrimage that holds, the files and payments to build first, what hand-kept follow-up costs, six risks and their counters, the Umrah paid from France and six models compared", excerpt: "For season 1448 the National Office for Hajj and Umrah shortlisted 490 agencies out of 768 applicants and repeats the signs of a scam: very low price, cash without receipt, agency missing from the list. Shortlisted agencies have another problem: hundreds of files, instalments paid at the counter and groups run in WhatsApp. One file per pilgrim, traced instalment payments with SMS receipts, an offline guide app and roll call until the return." },
+      ar: { title: "وكالة العمرة في الجزائر سنة 2027: ملف المعتمر، الدفع بالأقساط، الأفواج والمتابعة حتى العودة، بلا دفتر ولا واتساب", subtitle: "اللحظات الست لعمرة تصمد، والملفات والمدفوعات التي تُبنى أولاً، وكم تكلّف المتابعة اليدوية، وستة مخاطر وردودها، والعمرة المدفوعة من فرنسا، وستة نماذج مقارنة", excerpt: "لموسم 1448 قبل الديوان الوطني للحج والعمرة 490 وكالة من أصل 768 مترشحة ويذكّر بعلامات النصب: سعر منخفض جداً، نقد بلا وصل، وكالة غائبة عن القائمة. وللوكالات المقبولة مشكلة أخرى: مئات الملفات وأقساط تُدفع في الشباك وأفواج تُسيَّر في واتساب. ملف لكل معتمر، ودفع بالأقساط متتبَّع بوصولات برسائل قصيرة، وتطبيق مرشد دون اتصال، وتفقّد حتى العودة." }
+    }
+  },
+  {
     id: "181",
     slug: "station-thermale-algerie-2027-reservation-cure-planning-soins-hammam",
     title: "Station thermale en Algérie en 2027 : réserver une cure en ligne, planifier les soins sans trou ni conflit, et remplir les lits hors saison (série #15)",
