@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "183",
+    slug: "faire-vivre-une-application-algerie-2027-cout-annee-stores-serveurs-mises-a-jour",
+    title: "Faire vivre une application en Algérie en 2027 : ce que coûte vraiment la première année, stores, serveur, SMS, mises à jour et correctifs",
+    subtitle: "Les cinq postes d'une année, un exemple chiffré sur des hypothèses, six pannes silencieuses, qui s'en occupe, et le calendrier 2027 avec les dates fixes de Google et d'Apple",
+    excerpt: "Une application livrée coûte encore chaque année : 99 dollars chez Apple, un serveur de quelques milliers à quelques dizaines de milliers de dinars par mois, des SMS à l'usage, et surtout des jours d'ingénieur pour suivre Android en juin, iOS en septembre, la cible Android imposée par Google Play au 31 août et le SDK exigé par Apple fin avril. Les cinq postes, un exemple à cinq mille utilisateurs, six pannes silencieuses, six façons de s'en occuper et le calendrier 2027.",
+    category: "Applications mobiles", author: "Symloop Team", date: "2026-11-03", readTime: "11 min", featured: true,
+    tags: ["maintenance application mobile", "coût maintenance application", "google play cible api", "apple developer program", "hébergement application algérie"],
+    metaTitle: "Faire vivre une application en Algérie en 2027 : ce que coûte la première année | Symloop",
+    metaDescription: "Ce que coûte la première année d'une application mobile en Algérie en 2027 : comptes Apple et Google, serveur et domaine, SMS, jours d'ingénieur pour Android, iOS et les exigences des stores (31 août, fin avril), six pannes silencieuses, qui s'en occupe, calendrier 2027.",
+    translations: {
+      en: { title: "Keeping an app alive in Algeria in 2027: what the first year really costs, stores, server, SMS, updates and fixes", subtitle: "The five cost lines of a year, a worked example on assumptions, six silent failures, who looks after it, and the 2027 calendar with Google's and Apple's fixed dates", excerpt: "A delivered app still costs money every year: 99 dollars at Apple, a server from a few thousand to a few tens of thousands of dinars a month, SMS per use, and above all engineer-days to follow Android in June, iOS in September, the Android target imposed by Google Play on 31 August and the SDK required by Apple in late April. The five cost lines, a five-thousand-user example, six silent failures, six ways to look after it and the 2027 calendar." },
+      ar: { title: "إبقاء تطبيق حيّاً في الجزائر سنة 2027: كم تكلّف السنة الأولى فعلاً، المتاجر والخادم والرسائل والتحديثات والتصحيحات", subtitle: "البنود الخمسة للسنة، مثال محسوب على فرضيات، ستة أعطال صامتة، من يتكفّل به، وتقويم 2027 بتواريخ غوغل وآبل الثابتة", excerpt: "التطبيق المسلَّم يكلّف كل سنة: 99 دولاراً عند آبل، وخادم من بضعة آلاف إلى بضع عشرات الآلاف من الدنانير شهرياً، ورسائل حسب الاستعمال، وقبل كل شيء أيام مهندس لمتابعة أندرويد في جوان وiOS في سبتمبر ومستوى أندرويد الذي يفرضه Google Play في 31 أوت وSDK الذي تشترطه آبل نهاية أفريل. البنود الخمسة، مثال بخمسة آلاف مستعمل، ستة أعطال صامتة، ست طرق للتكفّل وتقويم 2027." }
+    }
+  },
+  {
     id: "182",
     slug: "agence-omra-algerie-2027-dossier-pelerin-paiement-par-tranches-suivi-groupes",
     title: "Agence de Omra en Algérie en 2027 : dossier pèlerin, paiement par tranches, groupes et suivi jusqu'au retour, sans cahier ni WhatsApp",
