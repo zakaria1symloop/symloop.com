@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "185",
+    slug: "chaine-du-froid-algerie-2027-grossiste-pharma-agroalimentaire-sondes-alertes-preuve-de-livraison",
+    title: "Chaîne du froid en Algérie en 2027 : grossiste pharmaceutique, distributeur agroalimentaire, chaque chambre froide et chaque camion sous sonde, l'alerte avant la perte, la preuve à la livraison",
+    subtitle: "Le guide 2026 de l'agence du médicament demande des sondes, des alarmes et des relevés de transport : la plateforme qui les produit sans employé qui recopie, avec un exemple chiffré, six ruptures silencieuses et le calendrier 2027",
+    excerpt: "Un vaccin, une insuline, une glace ou un yaourt traverse quatre à six mains entre l'usine et le client, et personne ne voit sa température entre deux. Ce guide décrit la plateforme chaîne du froid de 2027 pour les grossistes pharmaceutiques, les distributeurs de surgelés et de frais, les chaînes de sites et les fondateurs de la diaspora : sondes dans chaque chambre froide et chaque caisson de camion, alerte avec escalade avant la perte, courbe de température jointe à chaque livraison, tableau de bord des excursions ; chiffres 2026, exemple sur des hypothèses, six ruptures silencieuses, six profils, calendrier 2027.",
+    category: "IoT", author: "Symloop Team", date: "2026-11-04", readTime: "13 min", featured: true,
+    tags: ["chaîne du froid", "grossiste pharmaceutique", "distribution agroalimentaire", "iot température", "preuve de livraison"],
+    metaTitle: "Chaîne du froid en Algérie en 2027 : sondes, alertes, preuve de livraison | Symloop",
+    metaDescription: "La plateforme chaîne du froid en Algérie en 2027 pour grossistes pharmaceutiques et distributeurs agroalimentaires : sondes dans chaque chambre froide et chaque camion, alerte avec escalade avant la perte, courbe de température jointe à chaque livraison, tableau de bord des excursions. Guide 2026 de l'agence, listes de distributeurs agréés, exemple chiffré, six ruptures, calendrier 2027.",
+    translations: {
+      en: { title: "Cold chain in Algeria in 2027: pharma wholesaler, food distributor, every cold room and every truck under probes, the alert before the loss, the proof at delivery", subtitle: "The medicines agency's 2026 guide asks for probes, alarms and transport records: the platform that produces them without an employee copying, with a worked example, six silent breaches and the 2027 calendar", excerpt: "A vaccine, an insulin, an ice cream or a yoghurt passes through four to six hands between the factory and the client, and nobody sees its temperature in between. This guide describes the 2027 cold-chain platform for pharma wholesalers, frozen and fresh distributors, chains of sites and diaspora founders: probes in every cold room and every truck body, an alert with escalation before the loss, a temperature curve attached to every delivery, a dashboard of excursions; 2026 figures, a worked example on assumptions, six silent breaches, six profiles, the 2027 calendar." },
+      ar: { title: "سلسلة التبريد في الجزائر سنة 2027: موزّع الجملة الصيدلاني وموزّع المواد الغذائية، كل غرفة تبريد وكل شاحنة تحت المجسّات، التنبيه قبل الخسارة، والإثبات عند التسليم", subtitle: "دليل 2026 لوكالة الدواء يطلب مجسّات وإنذارات وسجلات نقل: المنصة التي تنتجها دون موظف ينسخ، مع مثال محسوب وستة انقطاعات صامتة وتقويم 2027", excerpt: "لقاح أو أنسولين أو مثلّجات أو ياغورت يمرّ بأربع إلى ست أيادٍ بين المصنع والزبون، ولا أحد يرى حرارته بينهما. يصف هذا الدليل منصة سلسلة التبريد سنة 2027 لموزّعي الجملة الصيدلانيين وموزّعي المجمَّدات والطازج وسلاسل المواقع ومؤسِّسي الجالية: مجسّات في كل غرفة تبريد وكل صندوق شاحنة، تنبيه بتصعيد قبل الخسارة، منحنى حرارة مرفق بكل تسليم، لوحة متابعة للتجاوزات؛ أرقام 2026، مثال على فرضيات، ستة انقطاعات صامتة، ستة أنماط، تقويم 2027." }
+    }
+  },
+  {
     id: "184",
     slug: "installateur-solaire-algerie-2027-devis-chantier-monitoring-installations-maintenance",
     title: "Installateur solaire en Algérie en 2027 : devis depuis une photo de toit, chantier suivi, monitoring de chaque installation, contrats de maintenance",
