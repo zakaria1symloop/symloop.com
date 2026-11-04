@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "189",
+    slug: "prevente-commerciaux-terrain-distributeur-algerie-2027-application-tournee-commande-recouvrement",
+    title: "Prévente et commerciaux terrain d'un distributeur en Algérie en 2027 : l'application de tournée, de commande et de recouvrement qui remplace le carnet",
+    subtitle: "Les six moments d'une journée de prévente, la plateforme en cinq couches (référentiel, règles, application hors ligne, dépôt, pilotage), un exemple chiffré (480 visites, 17 h de ressaisie supprimées, 45 à 30 jours de délai de paiement), six fuites, prévente ou vente en camion, le propriétaire en France, le calendrier 2027 autour du ramadan",
+    excerpt: "Vos prévendeurs déclarent quarante visites par jour, le dépôt ressaisit leurs carnets jusqu'à 20 h, les camions partent tard et l'encours chez les détaillants grossit sans que personne n'en connaisse le total. Ce guide décrit l'application de prévente d'un distributeur ou d'un grossiste en 2027 : la commande qui part du téléphone pendant la visite, la liste de préparation à 14 h, le reçu SMS numéroté, le plafond de crédit, la visite horodatée, le tableau de bord et l'agent IA de relance, ce qu'on construit d'abord selon le métier, et le calendrier qui ne touche à rien pendant le ramadan.",
+    category: "Mobile", author: "Symloop Team", date: "2026-11-04", readTime: "14 min", featured: true,
+    tags: ["prévente", "distribution", "commerciaux terrain", "recouvrement", "application mobile"],
+    metaTitle: "Application de prévente et commerciaux terrain pour distributeur en Algérie 2027 : tournée, commande, recouvrement | Symloop",
+    metaDescription: "Application de prévente pour distributeurs et grossistes en Algérie en 2027 : tournée, visite horodatée, commande hors ligne envoyée au dépôt, liste de préparation, reçu SMS numéroté, plafond de crédit, tableau de bord et agent IA de relance. Exemple chiffré, six fuites, prévente ou vente en camion, calendrier 2027 autour du ramadan.",
+    translations: {
+      en: { title: "Pre-sale and field sales for a distributor in Algeria in 2027: the route, order and collection app that replaces the notebook", subtitle: "The six moments of a pre-sale day, the platform in five layers (master data, rules, offline app, depot, management), a worked example (480 visits, 17 hours of re-entry removed, 45 to 30 days of payment delay), six leaks, pre-sale or van selling, the owner in France, the 2027 calendar around Ramadan", excerpt: "Your pre-sellers declare forty visits a day, the depot re-enters their notebooks until 8 pm, the trucks leave late and the outstanding credit at retailers grows without anyone knowing the total. This guide describes the pre-sale app of a distributor or wholesaler in 2027: the order leaving from the phone during the visit, the picking list at 2 pm, the numbered SMS receipt, the credit ceiling, the time-stamped visit, the dashboard and the AI follow-up agent, what gets built first by trade, and the calendar that touches nothing during Ramadan." },
+      ar: { title: "البيع المسبق ومندوبو الميدان عند موزّع في الجزائر سنة 2027: تطبيق الجولة والطلبية والتحصيل الذي يحل محل الدفتر", subtitle: "اللحظات الست ليوم بيع مسبق، المنصة في خمس طبقات (المرجع، القواعد، التطبيق دون اتصال، المستودع، القيادة)، مثال محسوب (480 زيارة، 17 ساعة إعادة إدخال ملغاة، من 45 إلى 30 يوماً أجل دفع)، ست تسريبات، بيع مسبق أم بيع من الشاحنة، المالك في فرنسا، تقويم 2027 حول رمضان", excerpt: "مندوبوكم يصرّحون بأربعين زيارة يومياً، والمستودع يعيد إدخال دفاترهم حتى الثامنة مساءً، والشاحنات تخرج متأخرة، والديون عند تجار التجزئة تتضخم دون أن يعرف أحد مجموعها. يصف هذا الدليل تطبيق البيع المسبق لموزّع أو تاجر جملة في 2027: الطلبية التي تخرج من الهاتف أثناء الزيارة، قائمة التحضير على الساعة 14، وصل SMS المرقّم، سقف الدين، الزيارة الموقّتة، لوحة القيادة ووكيل المتابعة بالذكاء الاصطناعي، ما يُبنى أولاً حسب المهنة، والتقويم الذي لا يمس شيئاً خلال رمضان." }
+    }
+  },
+  {
     id: "188",
     slug: "cahier-des-charges-application-plateforme-algerie-2027-quoi-ecrire-comparer-trois-devis",
     title: "Cahier des charges d'une application ou d'une plateforme en Algérie en 2027 : ce qu'il faut écrire, ce qu'il faut laisser au prestataire, et comment obtenir trois devis comparables",
