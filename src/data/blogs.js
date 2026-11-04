@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "187",
+    slug: "migrer-vieux-logiciel-de-gestion-algerie-2027-windev-access-excel-vers-plateforme-web-mobile-sans-arreter",
+    title: "Migrer son vieux logiciel de gestion en Algérie en 2027 : WinDev, Access, Excel, Delphi, le passage à la plateforme web et mobile sans perdre une facture et sans arrêter l'activité",
+    subtitle: "Inventaire, extraction de l'historique complet, premier module en parallèle, rapprochement au dinar près, bascule module par module, extinction de l'ancien : la migration de 2027, avec les calendriers de Microsoft, les chiffres StatCounter pour l'Algérie, un exemple chiffré et le calendrier 2027",
+    excerpt: "Le logiciel de gestion a douze ans, il tourne sur un PC sous Windows 10 dont le support a pris fin le 14 octobre 2025, sa base ne s'ouvre qu'avec lui et l'éditeur ne répond plus. Ce guide décrit la migration de 2027 vers une plateforme web et mobile : inventaire, extraction de toutes les données, premier module en parallèle, rapprochement chiffré, bascule module par module, extinction de l'ancien ; ce qu'on garde et ce qu'on refait, six façons de perdre, le cas du propriétaire en France qui suit l'entreprise par AnyDesk, qui vous êtes et par où commencer, calendrier 2027.",
+    category: "Web", author: "Symloop Team", date: "2026-11-04", readTime: "14 min", featured: true,
+    tags: ["migration logiciel", "WinDev", "Access Excel", "plateforme web", "reprise de données"],
+    metaTitle: "Migrer son vieux logiciel de gestion en Algérie en 2027 : WinDev, Access, Excel | Symloop",
+    metaDescription: "Migrer un logiciel de gestion WinDev, Access, Excel ou Delphi vers une plateforme web et mobile en Algérie en 2027 : reprise de l'historique complet, premier module en parallèle, rapprochement au dinar près, bascule module par module, zéro jour d'arrêt. Fin de support Windows 10, chiffres StatCounter Algérie, exemple chiffré, six pièges, calendrier 2027.",
+    translations: {
+      en: { title: "Migrating your old business software in Algeria in 2027: WinDev, Access, Excel, Delphi, the move to a web and mobile platform without losing an invoice and without stopping the business", subtitle: "Inventory, extraction of the full history, first module in parallel, reconciliation to the dinar, switch module by module, old system switched off: the 2027 migration, with Microsoft’s calendars, StatCounter figures for Algeria, a worked example and the 2027 calendar", excerpt: "The business software is twelve years old, it runs on a Windows 10 PC whose support ended on 14 October 2025, its database only opens with it and the vendor no longer answers. This guide describes the 2027 migration to a web and mobile platform: inventory, extraction of all the data, first module in parallel, reconciliation in figures, switch module by module, old system switched off; what we keep and what we rebuild, six ways to lose, the owner in France following the company through AnyDesk, who you are and where to start, the 2027 calendar." },
+      ar: { title: "ترحيل برنامج التسيير القديم في الجزائر سنة 2027: WinDev وAccess وExcel وDelphi، الانتقال إلى منصة ويب وهاتف دون فقدان فاتورة ودون توقيف النشاط", subtitle: "جرد، استخراج التاريخ الكامل، أول وحدة بالتوازي، مطابقة حتى الدينار، انتقال وحدة بوحدة، إطفاء القديم: ترحيل 2027، مع تقويمات مايكروسوفت وأرقام StatCounter للجزائر ومثال محسوب وتقويم 2027", excerpt: "برنامج التسيير عمره اثنتا عشرة سنة، يعمل على حاسوب بويندوز 10 انتهى دعمه يوم 14 أكتوبر 2025، قاعدته لا تُفتح إلا به والمورّد لم يعد يجيب. يصف هذا الدليل ترحيل 2027 إلى منصة ويب وهاتف: جرد، استخراج كل البيانات، أول وحدة بالتوازي، مطابقة بالأرقام، انتقال وحدة بوحدة، إطفاء القديم؛ ما نحتفظ به وما نعيد بناءه، ست طرق للخسارة، حالة المالك في فرنسا الذي يتابع الشركة عبر AnyDesk، من أنتم ومن أين تبدؤون، تقويم 2027." }
+    }
+  },
+  {
     id: "186",
     slug: "programme-de-fidelite-algerie-2027-cafe-fast-food-chaine-application-points-caisse-relance",
     title: "Programme de fidélité en Algérie en 2027 : café, fast-food, pâtisserie, chaîne de magasins, l'application qui reconnaît le client à la caisse, les points qu'on ne triche pas, la relance qui le fait revenir",
