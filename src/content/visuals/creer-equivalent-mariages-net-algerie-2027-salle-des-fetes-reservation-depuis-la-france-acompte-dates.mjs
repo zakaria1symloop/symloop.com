@@ -2,7 +2,7 @@ import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals
 export const slug = 'creer-equivalent-mariages-net-algerie-2027-salle-des-fetes-reservation-depuis-la-france-acompte-dates';
 const T = {
   fr: {
-    cover: { eyebrow: 'Vu en France · Mariages.net · Salles des fêtes · 2027', title: ['Une date, deux familles,', 'un acompte en espèces', 'dans la poche d’un cousin.'], subtitle: 'Réserver la salle des fêtes, le traiteur et la negafa en Algérie depuis la France : le calendrier des dates, l’acompte avec reçu, le contrat, le planning du jour, et le calendrier 2027 autour du ramadan et de l’été', left: { label: 'Depuis Lyon', sub: 'quarante messages WhatsApp, un cousin, zéro contrat' }, right: { label: 'Sur la plateforme', sub: 'date bloquée 72 h, acompte reçu, contrat signé' } },
+    cover: { eyebrow: 'Vu en France · Mariages.net · Salles des fêtes · 2027', title: ['Une date, deux familles,', 'un acompte en espèces', 'dans la poche d’un cousin.'], subtitle: 'Réserver la salle des fêtes, le traiteur et la negafa en Algérie depuis la France : le calendrier des dates, l’acompte avec reçu, le contrat, le planning du jour, et le calendrier 2027 autour du ramadan et de l’été', left: { label: 'Depuis Lyon', sub: 'quarante messages, zéro contrat' }, right: { label: 'Sur la plateforme', sub: 'date posée 72 h, acompte, contrat' } },
     moments: { title: 'Un mariage réservé depuis la France, en six moments', items: [
       { n: '01', label: 'La recherche', sub: 'Une date, une wilaya, un nombre d’invités, un budget par table ; en novembre, depuis Lyon.' },
       { n: '02', label: 'La visite à distance', sub: 'Vidéo de la salle, plan des tables, menus avec prix, dégustation par un proche sur place.' },
@@ -51,7 +51,7 @@ const T = {
     ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. Le ramadan est la saison creuse des mariages : on y construit. Le pilote vise les familles encore sans salle pour l’été 2027 ; la vraie saison de réservation à distance est l’automne, pour l’été 2028. Dates du ramadan et des Aïds prévisionnelles.', alt: 'Frise de 48 semaines : cadrage, calendrier V1, pilote, prestataires, saison d’été, ouverture 2028, bilan.' },
   },
   en: {
-    cover: { eyebrow: 'Seen in France · Mariages.net · Wedding halls · 2027', title: ['One date, two families,', 'a cash deposit', 'in a cousin’s pocket.'], subtitle: 'Booking the wedding hall, the caterer and the negafa in Algeria from France: the date calendar, the deposit with a receipt, the contract, the day’s schedule, and the 2027 calendar around Ramadan and summer', left: { label: 'From Lyon', sub: 'forty WhatsApp messages, one cousin, no contract' }, right: { label: 'On the platform', sub: 'date held 72 h, deposit received, contract signed' } },
+    cover: { eyebrow: 'Seen in France · Mariages.net · Wedding halls · 2027', title: ['One date, two families,', 'a cash deposit', 'in a cousin’s pocket.'], subtitle: 'Booking the wedding hall, the caterer and the negafa in Algeria from France: the date calendar, the deposit with a receipt, the contract, the day’s schedule, and the 2027 calendar around Ramadan and summer', left: { label: 'From Lyon', sub: 'forty messages, no contract' }, right: { label: 'On the platform', sub: 'date held 72 h, deposit, contract' } },
     moments: { title: 'A wedding booked from France, in six moments', items: [
       { n: '01', label: 'The search', sub: 'A date, a wilaya, a guest count, a budget per table; in November, from Lyon.' },
       { n: '02', label: 'The remote visit', sub: 'Video of the hall, table plan, menus with prices, tasting by a relative on site.' },
@@ -100,7 +100,7 @@ const T = {
     ], caption: 'Figure 6 · Week 0 = mid-January 2027. Ramadan is the weddings’ low season: that is when to build. The pilot targets families still without a hall for summer 2027; the real remote-booking season is autumn, for summer 2028. Ramadan and Eid dates are forecasts.', alt: 'Timeline of 48 weeks: scoping, calendar V1, pilot, vendors, summer season, 2028 opening, review.' },
   },
   ar: {
-    cover: { eyebrow: 'رأيناه في فرنسا · Mariages.net · قاعات الحفلات · 2027', title: ['تاريخ واحد، عائلتان،', 'عربون نقدي', 'في جيب ابن العم.'], subtitle: 'حجز قاعة الحفلات والطبّاخ والنقّافة في الجزائر من فرنسا: تقويم التواريخ، العربون بوصل، العقد، برنامج اليوم، وتقويم 2027 حول رمضان والصيف', left: { label: 'من ليون', sub: 'أربعون رسالة WhatsApp، ابن عم، لا عقد' }, right: { label: 'على المنصة', sub: 'تاريخ محجوز 72 س، عربون مستلَم، عقد موقَّع' } },
+    cover: { eyebrow: 'رأيناه في فرنسا · Mariages.net · قاعات الحفلات · 2027', title: ['تاريخ واحد، عائلتان،', 'عربون نقدي', 'في جيب ابن العم.'], subtitle: 'حجز قاعة الحفلات والطبّاخ والنقّافة في الجزائر من فرنسا: تقويم التواريخ، العربون بوصل، العقد، برنامج اليوم، وتقويم 2027 حول رمضان والصيف', left: { label: 'من ليون', sub: 'أربعون رسالة، لا عقد' }, right: { label: 'على المنصة', sub: 'تاريخ معلَّق 72 س، عربون، عقد' } },
     moments: { title: 'عرس يُحجز من فرنسا، في ست لحظات', items: [
       { n: '01', label: 'البحث', sub: 'تاريخ، ولاية، عدد المدعوين، ميزانية لكل طاولة؛ في نوفمبر، من ليون.' },
       { n: '02', label: 'الزيارة عن بُعد', sub: 'فيديو القاعة، مخطط الطاولات، قوائم الطعام بأسعارها، تذوّق يقوم به قريب في المكان.' },
