@@ -513,6 +513,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/blog/installateur-solaire-algerie-2027-devis-chantier-monitoring-installations-maintenance/
   - Chaîne du froid en Algérie en 2027 : plateforme pour grossistes pharmaceutiques et distributeurs agroalimentaires, sondes dans chaque chambre froide et chaque caisson de camion, alerte avec escalade avant la perte, courbe de température jointe à chaque livraison, tableau de bord des excursions ; guide 2026 de l'agence (2–8 °C, cartographie, étalonnage, alarmes, relevés de transport), listes de distributeurs agréés, capacités frigorifiques, exemple chiffré, six ruptures silencieuses, calendrier 2027
       https://symloop.com/fr/blog/chaine-du-froid-algerie-2027-grossiste-pharma-agroalimentaire-sondes-alertes-preuve-de-livraison/
+  - Programme de fidélité en Algérie en 2027 : application et plateforme pour cafés, fast-foods, pâtisseries, supérettes et chaînes de magasins, identification en cinq secondes à la caisse par numéro ou QR, points calculés sur le ticket réel, récompense en produit, pass wallet ou application à la marque, relance des clients dormants par segment, tableau de bord par point de vente et par caissier ; chiffres McDonald's 2025 (≈210 M d'utilisateurs actifs, ≈37 Md$), Burger King France (7,8 M de comptes), Ifop 2024, registre du commerce (2,42 M d'opérateurs au 10 déc. 2025), KFC en Algérie, exemple chiffré, six fuites silencieuses, calendrier 2027
+      https://symloop.com/fr/blog/programme-de-fidelite-algerie-2027-cafe-fast-food-chaine-application-points-caisse-relance/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
