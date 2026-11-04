@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "188",
+    slug: "cahier-des-charges-application-plateforme-algerie-2027-quoi-ecrire-comparer-trois-devis",
+    title: "Cahier des charges d'une application ou d'une plateforme en Algérie en 2027 : ce qu'il faut écrire, ce qu'il faut laisser au prestataire, et comment obtenir trois devis comparables",
+    subtitle: "Une page de problème, cinq parcours racontés, les fonctions triées en version 1, ensuite, jamais, un critère vérifiable par fonction, la propriété du code et des comptes : le cahier des charges de 2027 écrit en deux semaines, les six questions qui rendent trois devis comparables, l'exemple chiffré et le calendrier jusqu'au pilote",
+    excerpt: "Vous avez vu l'application en France, vous avez un fichier Excel et une idée claire, et les trois devis reçus pour « la même chose » vont du simple au sextuple : chaque prestataire a lu un projet différent. Ce guide décrit le cahier des charges qu'un dirigeant écrit lui-même sans compétence technique : six parties, six étapes en deux semaines, un exemple chiffré (38 fonctions ramenées à 14), six phrases qui rendent les devis incomparables, six questions pour comparer trois devis, ce qu'il faut laisser au prestataire, le cas du fondateur en France, le calendrier 2027 jusqu'au pilote.",
+    category: "Mobile", author: "Symloop Team", date: "2026-11-04", readTime: "14 min", featured: true,
+    tags: ["cahier des charges", "application mobile", "plateforme web", "devis", "spécifications"],
+    metaTitle: "Cahier des charges application ou plateforme en Algérie 2027 : quoi écrire, comparer trois devis | Symloop",
+    metaDescription: "Rédiger le cahier des charges d'une application mobile, d'une plateforme web ou d'un SaaS en Algérie en 2027 : une page de problème, cinq parcours, fonctions triées, critères d'acceptation, propriété du code et des comptes. Six questions pour comparer trois devis, exemple chiffré, chiffres PMI et McKinsey, calendrier 2027 jusqu'au pilote.",
+    translations: {
+      en: { title: "The specification for an app or a platform in Algeria in 2027: what to write, what to leave to the vendor, and how to get three comparable quotes", subtitle: "One page of problem, five journeys told, features sorted into version 1, later, never, one checkable criterion per feature, ownership of code and accounts: the 2027 specification written in two weeks, the six questions that make three quotes comparable, the worked example and the calendar to the pilot", excerpt: "You saw the app in France, you have an Excel file and a clear idea, and the three quotes received for “the same thing” are one to six apart: each vendor read a different project. This guide describes the specification a business owner writes without technical skill: six parts, six steps in two weeks, a worked example (38 features brought down to 14), six sentences that make quotes incomparable, six questions to compare three quotes, what to leave to the vendor, the founder in France, the 2027 calendar to the pilot." },
+      ar: { title: "دفتر شروط تطبيق أو منصة في الجزائر سنة 2027: ما يجب كتابته، ما يجب تركه للمورّد، وكيف تحصلون على ثلاثة عروض أسعار قابلة للمقارنة", subtitle: "صفحة للمشكلة، خمسة مسارات تُروى، وظائف مفروزة إلى النسخة الأولى ولاحقاً وأبداً، معيار قابل للتحقق لكل وظيفة، ملكية الكود والحسابات: دفتر شروط 2027 المكتوب في أسبوعين، الأسئلة الستة التي تجعل ثلاثة عروض قابلة للمقارنة، المثال المحسوب والتقويم حتى التجربة", excerpt: "رأيتم التطبيق في فرنسا، عندكم ملف Excel وفكرة واضحة، والعروض الثلاثة التي وصلتكم لـ«الشيء نفسه» تتراوح من واحد إلى ستة: كل مورّد قرأ مشروعاً مختلفاً. يصف هذا الدليل دفتر الشروط الذي يكتبه المسيّر بنفسه دون كفاءة تقنية: ستة أجزاء، ست خطوات في أسبوعين، مثال محسوب (38 وظيفة خُفضت إلى 14)، ست جمل تجعل العروض غير قابلة للمقارنة، ستة أسئلة لمقارنة ثلاثة عروض، ما يُترك للمورّد، حالة المؤسس في فرنسا، تقويم 2027 حتى التجربة." }
+    }
+  },
+  {
     id: "187",
     slug: "migrer-vieux-logiciel-de-gestion-algerie-2027-windev-access-excel-vers-plateforme-web-mobile-sans-arreter",
     title: "Migrer son vieux logiciel de gestion en Algérie en 2027 : WinDev, Access, Excel, Delphi, le passage à la plateforme web et mobile sans perdre une facture et sans arrêter l'activité",
