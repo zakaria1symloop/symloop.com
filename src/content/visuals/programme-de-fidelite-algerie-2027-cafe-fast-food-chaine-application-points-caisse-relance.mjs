@@ -49,7 +49,7 @@ const T = {
       { label: 'Marque lancée depuis la France', cells: ['Programme écrit avant l’ouverture, comptes à votre nom, tableau de bord à distance', 'Cadeau offert par un proche en France, extension aux sites suivants, franchise'] },
     ], caption: 'Figure 5 · Le même socle, caisse, règles, relance, sert tous les profils ; ce qui change, c’est le premier geste : le numéro à la caisse pour le café, la récompense en heures creuses pour le fast-food, la précommande de fêtes pour la pâtisserie, la cagnotte en dinars pour le magasin. La marque lancée depuis la France écrit son programme avant d’ouvrir, parce qu’il est plus dur de l’ajouter après.', alt: 'Matrice de six profils : chaîne de cafés, fast-food ou franchise, boulangerie-pâtisserie, supérette ou chaîne de magasins, parfumerie et prêt-à-porter, marque lancée depuis la France ; avec ce qu’il faut d’abord et ce qui vient ensuite.' },
     calendrier: { title: 'Le calendrier 2027 d’une enseigne qui lance son programme, en mois', unit: 'mois', items: [
-      { label: 'Règles écrites, caisse équipée, pilote sur un site', note: 'janvier : points, récompenses, garde-fous, caissiers formés', from: 0, to: 1 },
+      { label: 'Règles, caisse, pilote sur un site', note: 'janvier : points, récompenses, garde-fous, caissiers formés', from: 0, to: 1 },
       { label: 'Ramadan : identification, offres du soir', note: 'février et mars : horaires du soir, premiers milliers de clients connus', from: 1, to: 3 },
       { label: 'Relance et pass wallet', note: 'avril et mai : dormants à 21 jours, premières campagnes mesurées', from: 3, to: 5, accent: true },
       { label: 'Été : tous les sites, cadeau depuis la France', note: 'juin à août : affluence, diaspora, règles identiques partout', from: 5, to: 8 },
@@ -105,7 +105,7 @@ const T = {
       { label: 'Brand launched from France', cells: ['Programme written before opening, accounts in your name, remote dashboard', 'Gift from a relative in France, extension to the next sites, franchise'] },
     ], caption: 'Figure 5 · The same base, till, rules, win-back, serves every profile; what changes is the first move: the number at the till for the café, the off-peak reward for the fast-food, festive pre-orders for the pastry shop, the dinar balance for the shop. The brand launched from France writes its programme before opening, because it is harder to add afterwards.', alt: 'Matrix of six profiles: chain of cafés, fast-food or franchise, bakery-pastry, minimarket or chain of shops, perfumery and clothing, brand launched from France; with what comes first and what comes next.' },
     calendrier: { title: 'The 2027 calendar of a brand launching its programme, in months', unit: 'months', items: [
-      { label: 'Rules written, till equipped, pilot on one site', note: 'January: points, rewards, guardrails, cashiers trained', from: 0, to: 1 },
+      { label: 'Rules, till, pilot on one site', note: 'January: points, rewards, guardrails, cashiers trained', from: 0, to: 1 },
       { label: 'Ramadan: identification, evening offers', note: 'February and March: evening hours, first thousands of known customers', from: 1, to: 3 },
       { label: 'Win-back and wallet pass', note: 'April and May: dormant at 21 days, first measured campaigns', from: 3, to: 5, accent: true },
       { label: 'Summer: every site, gift from France', note: 'June to August: crowds, diaspora, identical rules everywhere', from: 5, to: 8 },
@@ -161,7 +161,7 @@ const T = {
       { label: 'علامة تُطلق من فرنسا', cells: ['برنامج مكتوب قبل الافتتاح، حسابات باسمكم، لوحة متابعة عن بُعد', 'هدية من قريب في فرنسا، توسّع إلى المواقع التالية، امتياز'] },
     ], caption: 'الشكل 5 · الأساس نفسه، الصندوق والقواعد والاسترجاع، يخدم كل الأنماط؛ وما يتغيّر هو الخطوة الأولى: الرقم عند الصندوق للمقهى، المكافأة في ساعات الهدوء للوجبات السريعة، الطلب المسبق للأعياد لمحل الحلويات، الرصيد بالدينار للمتجر. والعلامة التي تُطلق من فرنسا تكتب برنامجها قبل الافتتاح، لأن إضافته لاحقاً أصعب.', alt: 'مصفوفة ستة أنماط: سلسلة مقاهٍ، وجبات سريعة أو امتياز، مخبزة وحلويات، سوبيرات أو سلسلة متاجر، عطور وملابس جاهزة، علامة تُطلق من فرنسا؛ مع ما يلزم أولاً وما يأتي بعده.' },
     calendrier: { title: 'تقويم 2027 لعلامة تطلق برنامجها، بالأشهر', unit: 'شهر', items: [
-      { label: 'قواعد مكتوبة، صندوق مجهَّز، تجربة في موقع واحد', note: 'جانفي: نقاط، مكافآت، ضوابط، تدريب أمناء الصندوق', from: 0, to: 1 },
+      { label: 'قواعد، صندوق، تجربة في موقع واحد', note: 'جانفي: نقاط، مكافآت، ضوابط، تدريب أمناء الصندوق', from: 0, to: 1 },
       { label: 'رمضان: التعريف، عروض المساء', note: 'فيفري ومارس: أوقات المساء، أول آلاف الزبائن المعروفين', from: 1, to: 3 },
       { label: 'الاسترجاع وبطاقة المحفظة', note: 'أفريل وماي: الخاملون بعد 21 يوماً، أول حملات مقاسة', from: 3, to: 5, accent: true },
       { label: 'الصيف: كل المواقع، هدية من فرنسا', note: 'جوان إلى أوت: الازدحام، الجالية، قواعد واحدة في كل مكان', from: 5, to: 8 },
