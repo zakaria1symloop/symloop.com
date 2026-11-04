@@ -2,7 +2,7 @@ import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals
 export const slug = 'prevente-commerciaux-terrain-distributeur-algerie-2027-application-tournee-commande-recouvrement';
 const T = {
   fr: {
-    cover: { eyebrow: 'Prévente · Distribution · Commerciaux terrain · 2027', title: ['Quarante visites', 'sur le rapport,', 'vingt-cinq sur le terrain.'], subtitle: 'La tournée, la visite, la commande, le dépôt, l’encaissement et le soir : l’application du prévendeur qui remplace le carnet, le plafond de crédit, le reçu SMS, le tableau de bord du distributeur et le calendrier 2027 autour du ramadan', left: 'Carnet et ressaisie', right: 'Commande au téléphone' },
+    cover: { eyebrow: 'Prévente · Distribution · Commerciaux terrain · 2027', title: ['Quarante visites', 'sur le rapport,', 'vingt-cinq sur le terrain.'], subtitle: 'La tournée, la visite, la commande, le dépôt, l’encaissement et le soir : l’application du prévendeur qui remplace le carnet, le plafond de crédit, le reçu SMS, le tableau de bord du distributeur et le calendrier 2027 autour du ramadan', left: { label: 'Au carnet', sub: 'quarante visites déclarées, ressaisie au dépôt jusqu’à 20 h, camions tard, encours inconnu' }, right: { label: 'Au téléphone', sub: 'commande pendant la visite, liste de préparation à 14 h, reçu SMS numéroté, plafond de crédit' } },
     journee: { title: 'Une journée de prévente, en six moments', items: [
       { n: '01', label: 'La tournée du jour', sub: 'Quarante points de vente dans l’ordre, avec les priorités : impayé, promotion, rupture signalée.' },
       { n: '02', label: 'La visite', sub: 'Rayon et réfrigérateur photographiés, stock relevé, ruptures notées : deux minutes.' },
@@ -51,7 +51,7 @@ const T = {
     ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. Les trois semaines avant le ramadan sont les plus chargées de l’année pour un distributeur alimentaire : on y nettoie le référentiel, on ne change rien sur le terrain. Le pilote commence après l’Aïd el-Fitr, le déploiement complet se termine avant l’été. Dates du ramadan et des Aïds prévisionnelles.', alt: 'Frise de 40 semaines : référentiel, application V1, pilote, dépôt et encaissement, déploiement, pilotage, bilan.' },
   },
   en: {
-    cover: { eyebrow: 'Pre-sale · Distribution · Field sales · 2027', title: ['Forty visits', 'on the report,', 'twenty-five in the field.'], subtitle: 'The route, the visit, the order, the depot, the collection and the evening: the pre-seller’s app that replaces the notebook, the credit ceiling, the SMS receipt, the distributor’s dashboard and the 2027 calendar around Ramadan', left: 'Notebook and re-entry', right: 'Order from the phone' },
+    cover: { eyebrow: 'Pre-sale · Distribution · Field sales · 2027', title: ['Forty visits', 'on the report,', 'twenty-five in the field.'], subtitle: 'The route, the visit, the order, the depot, the collection and the evening: the pre-seller’s app that replaces the notebook, the credit ceiling, the SMS receipt, the distributor’s dashboard and the 2027 calendar around Ramadan', left: { label: 'Notebook', sub: 'forty declared visits, re-entry at the depot until 8 pm, late trucks, unknown outstanding credit' }, right: { label: 'Phone', sub: 'order during the visit, picking list at 2 pm, numbered SMS receipt, credit ceiling' } },
     journee: { title: 'A day of pre-sale, in six moments', items: [
       { n: '01', label: 'The day’s route', sub: 'Forty outlets in order, with priorities: unpaid balance, promotion, reported stock-out.' },
       { n: '02', label: 'The visit', sub: 'Shelf and fridge photographed, stock counted, stock-outs noted: two minutes.' },
@@ -100,7 +100,7 @@ const T = {
     ], caption: 'Figure 6 · Week 0 = mid-January 2027. The three weeks before Ramadan are the busiest of the year for a food distributor: the master data is cleaned then, nothing changes in the field. The pilot starts after Eid al-Fitr, the full roll-out ends before summer. Ramadan and Eid dates are forecasts.', alt: 'Timeline of 40 weeks: master data, app V1, pilot, depot and collection, roll-out, management, review.' },
   },
   ar: {
-    cover: { eyebrow: 'البيع المسبق · التوزيع · مندوبو الميدان · 2027', title: ['أربعون زيارة', 'في التقرير،', 'خمس وعشرون في الميدان.'], subtitle: 'الجولة، الزيارة، الطلبية، المستودع، التحصيل والمساء: تطبيق المندوب الذي يحل محل الدفتر، سقف الدين، الوصل عبر SMS، لوحة قيادة الموزّع وتقويم 2027 حول رمضان', left: 'دفتر وإعادة إدخال', right: 'طلبية من الهاتف' },
+    cover: { eyebrow: 'البيع المسبق · التوزيع · مندوبو الميدان · 2027', title: ['أربعون زيارة', 'في التقرير،', 'خمس وعشرون في الميدان.'], subtitle: 'الجولة، الزيارة، الطلبية، المستودع، التحصيل والمساء: تطبيق المندوب الذي يحل محل الدفتر، سقف الدين، الوصل عبر SMS، لوحة قيادة الموزّع وتقويم 2027 حول رمضان', left: { label: 'بالدفتر', sub: 'أربعون زيارة مصرَّح بها، إعادة إدخال في المستودع حتى الثامنة، شاحنات متأخرة، ديون مجهولة' }, right: { label: 'بالهاتف', sub: 'طلبية أثناء الزيارة، قائمة تحضير على الساعة 14، وصل SMS مرقّم، سقف دين' } },
     journee: { title: 'يوم من البيع المسبق، في ست لحظات', items: [
       { n: '01', label: 'جولة اليوم', sub: 'أربعون نقطة بيع بالترتيب، مع الأولويات: دين غير مسدد، ترويج، نفاد مبلّغ عنه.' },
       { n: '02', label: 'الزيارة', sub: 'الرف والثلاجة مصوّران، المخزون مسجّل، النفاد مدوّن: دقيقتان.' },
