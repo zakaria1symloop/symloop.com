@@ -15,7 +15,6 @@ export default function MVPStartupAlgerie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="mvp algérie, startup tech algérie, développement mvp, partenaire tech startup, minimum viable product, lancer startup algérie, co-fondateur technique, cto as a service algérie, développement rapide application, agence startup alger, créer startup algérie, idée startup, financement startup algérie, incubateur algérie, accélérateur startup" />
-        <link rel="canonical" href="https://symloop.com/blog/mvp-startup-algerie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />
@@ -43,7 +42,7 @@ export default function MVPStartupAlgerie() {
               {
                 "@type": "Question",
                 "name": "Combien de temps faut-il pour développer un MVP en Algérie ?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Chez Symloop, un MVP peut être livré en 6 à 10 semaines selon la complexité. Un MVP simple en 4 semaines, un MVP complexe avec app mobile jusqu'à 16 semaines. Symloop, basé à Sétif, utilise une méthodologie agile. Contact : +213 549 575 512." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Chez Symloop, un MVP peut être livré en 6 à 10 semaines selon la complexité. Un MVP simple en 4 semaines, un MVP complexe avec app mobile jusqu'à 16 semaines. Symloop, basé à Alger, utilise une méthodologie agile. Contact : +213 549 575 512." }
               },
               {
                 "@type": "Question",
@@ -85,7 +84,7 @@ export default function MVPStartupAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

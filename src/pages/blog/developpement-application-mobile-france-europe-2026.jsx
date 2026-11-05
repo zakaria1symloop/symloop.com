@@ -254,7 +254,6 @@ export default function MobileAppFranceEurope2026() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="développement application mobile France, app mobile Paris, agence mobile Europe, Flutter France, React Native Europe, iOS Android développement, application mobile 2026, création app France" />
-        <link rel="canonical" href={`https://symloop.com/${locale}/blog/developpement-application-mobile-france-europe-2026`} />
         <meta property="og:title" content={c.title} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="article" />
@@ -264,9 +263,6 @@ export default function MobileAppFranceEurope2026() {
         <meta name="twitter:description" content={c.metaDescription} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Symloop" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/developpement-application-mobile-france-europe-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/developpement-application-mobile-france-europe-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/developpement-application-mobile-france-europe-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",

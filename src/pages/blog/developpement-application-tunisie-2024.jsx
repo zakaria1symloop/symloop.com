@@ -15,7 +15,6 @@ export default function DeveloppementTunisie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="développement tunisie, application mobile tunisie, agence web tunis, développement web tunisie, création site web tunisie, e-commerce tunisie, startup tunisie, agence digitale tunis, développeur tunisie, flutter tunisie, react native tunisie" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-application-tunisie-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />
@@ -37,7 +36,7 @@ export default function DeveloppementTunisie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

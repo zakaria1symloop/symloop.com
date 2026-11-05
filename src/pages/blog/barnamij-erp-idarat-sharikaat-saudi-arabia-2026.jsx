@@ -714,7 +714,6 @@ export default function BarnamijErpIdaratSharikaatSaudiArabia2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.seoKeywords?.join(', ')} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/barnamij-erp-idarat-sharikaat-saudi-arabia-2026" />
 
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
@@ -734,9 +733,6 @@ export default function BarnamijErpIdaratSharikaatSaudiArabia2026() {
         <meta name="geo.region" content="SA" />
         <meta name="geo.placename" content="Saudi Arabia" />
 
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/barnamij-erp-idarat-sharikaat-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/barnamij-erp-idarat-sharikaat-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/barnamij-erp-idarat-sharikaat-saudi-arabia-2026" />
 
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

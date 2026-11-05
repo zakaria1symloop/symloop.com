@@ -79,7 +79,6 @@ export default function MaintenanceSupportAlgerie() {
         <title>Maintenance Application Algérie - Support Technique TMA | Symloop</title>
         <meta name="description" content="Services de maintenance applicative en Algérie. Support 24/7, correction bugs, monitoring, mises à jour sécurité. Forfaits à partir de 25 000 DA/mois. Devis gratuit." />
         <meta name="keywords" content="maintenance application algérie, support technique algérie, tma algérie, monitoring application, correction bugs, maintenance logiciel, support 24/7, sla algérie, infogérance application" />
-        <link rel="canonical" href="https://symloop.com/blog/maintenance-support-application-algerie" />
         <meta property="og:title" content="Maintenance Application Algérie - TMA & Support | Symloop" />
         <meta property="og:description" content="Support technique professionnel pour vos applications. Monitoring 24/7, SLA garanti, équipe locale." />
         <meta property="og:type" content="article" />
@@ -112,7 +111,7 @@ export default function MaintenanceSupportAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

@@ -429,11 +429,6 @@ export default function MobileAppDevelopmentSpainPortugal() {
         <meta name="twitter:description" content={c.metaDescription} />
 
         {/* Canonical & Hreflang */}
-        <link rel="canonical" href={`https://symloop.com/${locale}/blog/desarrollo-aplicaciones-moviles-espana-portugal-2026`} />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/desarrollo-aplicaciones-moviles-espana-portugal-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/desarrollo-aplicaciones-moviles-espana-portugal-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/desarrollo-aplicaciones-moviles-espana-portugal-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/fr/blog/desarrollo-aplicaciones-moviles-espana-portugal-2026" />
 
         {/* Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
@@ -447,8 +442,8 @@ export default function MobileAppDevelopmentSpainPortugal() {
           <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-yellow-500/5 to-red-500/10" />
           <div className="max-w-4xl mx-auto px-4 relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6 }}
             >
               {/* Breadcrumb */}

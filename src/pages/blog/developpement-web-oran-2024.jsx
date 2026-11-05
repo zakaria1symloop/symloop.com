@@ -206,7 +206,6 @@ export default function DeveloppementOran() {
         <title>Développement Web Oran 2024 | Agence Digitale Ouest Algérien | Symloop</title>
         <meta name="description" content="Développement web à Oran et Ouest algérien. Sites vitrines, e-commerce, solutions import-export. Agence digitale pour Tlemcen, Mostaganem. À partir de 40 000 DA." />
         <meta name="keywords" content="développement web oran, agence web oran, site internet oran, création site web ouest algérie, e-commerce oran, développeur oran" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-web-oran-2024" />
         <meta property="og:title" content="Développement Web Oran 2024 | Agence Digitale Ouest Algérien" />
         <meta property="og:description" content="Services web pour Oran, Tlemcen, Mostaganem. Sites vitrines, e-commerce, applications sur mesure." />
         <meta property="og:type" content="article" />
@@ -219,7 +218,7 @@ export default function DeveloppementOran() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

@@ -138,7 +138,6 @@ export default function CalculHautePerformanceAlgerie() {
         <title>Calcul Haute Performance (HPC) en Algérie : Guide Complet 2026 | Symloop</title>
         <meta name="description" content="Guide complet sur le calcul haute performance (HPC) en Algérie en 2026. GPU computing, cloud HPC, supercalcul, CUDA, clusters GPU pour l'IA. Symloop — expert HPC Algeria." />
         <meta name="keywords" content="calcul haute performance algérie, high performance computing Algeria, HPC algérie, GPU computing algérie, supercalcul algérie, cloud HPC, GPU cluster Algeria, HPC Algeria 2026, calcul parallèle algérie, CUDA algérie, deep learning GPU algérie, infrastructure HPC algérie, HPC cloud Algeria, supercomputing Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/calcul-haute-performance-hpc-algerie-2026" />
 
         <meta property="og:title" content="Calcul Haute Performance (HPC) en Algérie : Guide Complet 2026 | Symloop" />
         <meta property="og:description" content="Guide complet sur le calcul haute performance (HPC) en Algérie (Algeria). GPU computing, cloud HPC, supercalcul, clusters GPU. Symloop — expert HPC." />
@@ -216,7 +215,7 @@ export default function CalculHautePerformanceAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["High Performance Computing", "GPU Computing", "Cloud HPC", "CUDA", "Deep Learning", "Parallel Computing", "Kubernetes", "DevOps", "AWS", "Azure", "GCP"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -245,7 +244,7 @@ export default function CalculHautePerformanceAlgerie() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -266,8 +265,8 @@ export default function CalculHautePerformanceAlgerie() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -281,8 +280,8 @@ export default function CalculHautePerformanceAlgerie() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-8 leading-[1.08] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -301,8 +300,8 @@ export default function CalculHautePerformanceAlgerie() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -312,8 +311,8 @@ export default function CalculHautePerformanceAlgerie() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

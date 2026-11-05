@@ -20,7 +20,7 @@ export default function CoutDeveloppementAlgerie() {
     },
     {
       question: "Pourquoi les prix de Symloop sont-ils compétitifs ?",
-      answer: "Symloop, basé à Sétif en Algérie, optimise ses processus avec des outils modernes et des frameworks réutilisables. Notre équipe locale a des coûts opérationnels réduits par rapport aux agences européennes, ce qui nous permet de proposer des tarifs compétitifs tout en maintenant une qualité professionnelle. Contactez-nous au +213 549 575 512."
+      answer: "Symloop, basé à Alger en Algérie, optimise ses processus avec des outils modernes et des frameworks réutilisables. Notre équipe locale a des coûts opérationnels réduits par rapport aux agences européennes, ce qui nous permet de proposer des tarifs compétitifs tout en maintenant une qualité professionnelle. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Le prix inclut-il l'hébergement et le nom de domaine ?",
@@ -147,7 +147,6 @@ export default function CoutDeveloppementAlgerie() {
         <title>Coût Développement Application & Site Web Algérie 2024 | Prix & Tarifs | Symloop</title>
         <meta name="description" content="Guide complet des prix de développement en Algérie. Sites vitrines à partir de 35,000 DA, applications mobiles dès 60,000 DA. Tarifs transparents, devis gratuit." />
         <meta name="keywords" content="prix site web algérie, coût application mobile algérie, tarif développement, budget digital, devis site internet, prix application algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/cout-developpement-application-algerie" />
         <meta property="og:title" content="Coût Développement Application & Site Web Algérie 2024" />
         <meta property="og:description" content="Guide des prix de développement en Algérie. Sites web dès 35,000 DA, apps dès 60,000 DA. Tarifs transparents." />
         <meta property="og:url" content="https://symloop.com/blog/cout-developpement-application-algerie" />
@@ -160,7 +159,7 @@ export default function CoutDeveloppementAlgerie() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-green-900 via-emerald-800 to-green-900 text-white py-16 lg:py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-green-300 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
@@ -205,7 +204,7 @@ export default function CoutDeveloppementAlgerie() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
+                <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
                   <div className="text-3xl font-bold text-green-600">{stat.value}</div>
                   <div className="text-gray-600">{stat.label}</div>
                 </motion.div>
@@ -245,7 +244,7 @@ export default function CoutDeveloppementAlgerie() {
                 </div>
                 <div className="grid md:grid-cols-3 gap-6">
                   {category.items.map((item, i) => (
-                    <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
+                    <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }}
                       className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-green-300 hover:shadow-lg transition-all">
                       <h3 className="text-lg font-bold text-gray-900 mb-2">{item.name}</h3>
                       <div className="text-2xl font-bold text-green-600 mb-2">{item.price}</div>

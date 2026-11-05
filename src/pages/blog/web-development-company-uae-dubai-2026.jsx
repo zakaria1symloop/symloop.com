@@ -388,7 +388,6 @@ export default function WebDevelopmentUaeDubai2026() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content={seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/blog/web-development-company-uae-dubai-2026" />
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="article" />
@@ -405,10 +404,6 @@ export default function WebDevelopmentUaeDubai2026() {
         <meta name="author" content="Symloop" />
         <meta name="geo.region" content="AE" />
         <meta name="geo.placename" content="Dubai, United Arab Emirates" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/web-development-company-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/web-development-company-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/web-development-company-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/blog/web-development-company-uae-dubai-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataArticle) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataFAQ) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataLocalBusiness) }} />

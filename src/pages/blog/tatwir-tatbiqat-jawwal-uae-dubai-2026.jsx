@@ -626,7 +626,6 @@ export default function TatwirTatbiqatJawwalUaeDubai2026() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content={c.seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/tatwir-tatbiqat-jawwal-uae-dubai-2026" />
         <meta property="og:title" content={c.title} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="article" />
@@ -644,10 +643,6 @@ export default function TatwirTatbiqatJawwalUaeDubai2026() {
         <meta name="author" content="Symloop" />
         <meta name="geo.region" content="AE" />
         <meta name="geo.placename" content="Dubai, United Arab Emirates" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/tatwir-tatbiqat-jawwal-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/tatwir-tatbiqat-jawwal-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/tatwir-tatbiqat-jawwal-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/ar/blog/tatwir-tatbiqat-jawwal-uae-dubai-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />

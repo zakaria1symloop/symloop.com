@@ -726,7 +726,6 @@ export default function LogicielHotel2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel hotel algerie, PMS hotel, gestion hoteliere, channel manager algerie, reservation hotel, logiciel hebergement" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-hotel-reservation-hebergement-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

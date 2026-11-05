@@ -49,7 +49,6 @@ export default function DeveloppementMaroc() {
         <title>Développement Application Mobile & Web au Maroc 2024 | Symloop</title>
         <meta name="description" content="Services de développement web et mobile pour le Maroc. Applications iOS/Android, sites e-commerce avec paiement CMI, solutions entreprise. Agence experte marché marocain." />
         <meta name="keywords" content="développement application maroc, agence web casablanca, application mobile rabat, site e-commerce maroc, développeur web maroc, paiement CMI maroc, agence digitale marrakech, application iOS Android maroc, création site internet maroc, développement logiciel maroc" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-application-maroc-2024" />
         <meta property="og:title" content="Développement Application Mobile & Web au Maroc 2024" />
         <meta property="og:description" content="Services de développement web et mobile pour le Maroc. Applications, e-commerce, solutions entreprise." />
         <meta property="og:url" content="https://symloop.com/blog/developpement-application-maroc-2024" />
@@ -62,7 +61,7 @@ export default function DeveloppementMaroc() {
       <div className="min-h-screen bg-white">
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

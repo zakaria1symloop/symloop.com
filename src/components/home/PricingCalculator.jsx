@@ -474,8 +474,8 @@ export default function PricingCalculator() {
             {/* Price Summary */}
             <div className="lg:col-span-1">
               <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ x: 20 }}
+                animate={{ x: 0 }}
                 transition={{ duration: 0.6 }}
                 className="bg-black text-white rounded-2xl p-8 sticky top-8"
               >

@@ -715,11 +715,6 @@ export default function TijaraIliktruniyaUaeDubai2026() {
         <meta name="geo.placename" content="United Arab Emirates" />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://symloop.com/ar/blog/tijara-iliktruniya-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/tijara-iliktruniya-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/tijara-iliktruniya-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/tijara-iliktruniya-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/ar/blog/tijara-iliktruniya-uae-dubai-2026" />
 
         {/* Open Graph */}
         <meta property="og:title" content={c.metaTitle} />

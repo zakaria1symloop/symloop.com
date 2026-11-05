@@ -1265,7 +1265,6 @@ export default function LogicielGestionLivraisonDistribution2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel gestion livraison algérie, برنامج إدارة التوصيل الجزائر, delivery management software algeria, application livreur, تطبيق السائق, fleet management algeria, gestion flotte algérie, suivi GPS livraison, تتبع GPS التوصيل, distribution algérie 2026, توزيع الجزائر 2026, logiciel distribution FMCG, برنامج توزيع المواد الغذائية, e-commerce delivery algeria, last mile delivery algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/logiciel-gestion-livraison-distribution-algerie-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

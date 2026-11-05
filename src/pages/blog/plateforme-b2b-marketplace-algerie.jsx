@@ -82,7 +82,6 @@ export default function MarketplaceB2BAlgerie() {
         <title>Marketplace B2B Algérie - Plateforme Multi-Vendeurs | Symloop</title>
         <meta name="description" content="Créez votre marketplace B2B en Algérie. Plateforme multi-vendeurs avec paiements CIB/Edahabia, gestion commissions, logistique intégrée. Devis gratuit." />
         <meta name="keywords" content="marketplace b2b algérie, plateforme multi-vendeurs algérie, e-commerce b2b, place de marché algérie, créer marketplace, alibaba algérie, marketplace grossiste, plateforme import export" />
-        <link rel="canonical" href="https://symloop.com/blog/plateforme-b2b-marketplace-algerie" />
         <meta property="og:title" content="Marketplace B2B Algérie - Créez Votre Plateforme | Symloop" />
         <meta property="og:description" content="Développement marketplace B2B sur mesure en Algérie. Multi-vendeurs, paiements intégrés, commissions automatiques." />
         <meta property="og:type" content="article" />
@@ -96,7 +95,7 @@ export default function MarketplaceB2BAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

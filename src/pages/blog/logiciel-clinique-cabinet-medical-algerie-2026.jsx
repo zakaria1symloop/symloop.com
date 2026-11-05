@@ -718,7 +718,6 @@ export default function LogicielCliniqueMedical2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel clinique algerie, logiciel cabinet medical, gestion patients, logiciel medecin, logiciel dentiste, dossier medical electronique algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-clinique-cabinet-medical-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

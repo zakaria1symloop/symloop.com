@@ -129,7 +129,6 @@ export default function DevOpsDeveloppementLogicielAlgerie2026() {
         <title>DevOps &amp; D\u00e9veloppement Logiciel Alg\u00e9rie 2026 | Livraison Rapide, Z\u00e9ro Downtime | Symloop</title>
         <meta name="description" content="Symloop applique les pratiques DevOps modernes pour d\u00e9velopper et d\u00e9ployer des logiciels fiables pour les entreprises alg\u00e9riennes. CI/CD automatis\u00e9, infrastructure cloud AWS, monitoring 24/7, d\u00e9ploiements sans interruption." />
         <meta name="keywords" content="DevOps alg\u00e9rie, d\u00e9veloppement logiciel alg\u00e9rie, CI/CD alg\u00e9rie, infrastructure cloud alg\u00e9rie, d\u00e9ploiement automatis\u00e9 alg\u00e9rie, d\u00e9veloppement logiciel sur mesure alg\u00e9rie 2026, devops alg\u00e9rie 2026, logiciel sur mesure alg\u00e9rie, microservices alg\u00e9rie, kubernetes alg\u00e9rie, docker alg\u00e9rie" />
-        <link rel="canonical" href="https://symloop.com/blog/devops-developpement-logiciel-algerie-2026/" />
 
         <meta property="og:title" content="DevOps & D\u00e9veloppement Logiciel Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Pratiques DevOps modernes pour les entreprises alg\u00e9riennes. CI/CD, cloud, monitoring 24/7. Livraison rapide, z\u00e9ro downtime." />
@@ -221,7 +220,7 @@ export default function DevOpsDeveloppementLogicielAlgerie2026() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -242,8 +241,8 @@ export default function DevOpsDeveloppementLogicielAlgerie2026() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -257,8 +256,8 @@ export default function DevOpsDeveloppementLogicielAlgerie2026() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -277,8 +276,8 @@ export default function DevOpsDeveloppementLogicielAlgerie2026() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -287,8 +286,8 @@ export default function DevOpsDeveloppementLogicielAlgerie2026() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

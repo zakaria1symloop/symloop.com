@@ -28,7 +28,7 @@ export default function FreelanceVsAgence() {
       {
         "@type": "Question",
         "name": "Freelance ou agence web en Algérie : lequel choisir ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Choisissez un freelance pour les petits projets (< 300K DA) avec budget limité. Optez pour une agence pour les projets complexes. Symloop offre la fiabilité d'une agence avec la flexibilité d'un freelance, basée à Sétif. Contact : +213 549 575 512." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Choisissez un freelance pour les petits projets (< 300K DA) avec budget limité. Optez pour une agence pour les projets complexes. Symloop offre la fiabilité d'une agence avec la flexibilité d'un freelance, basée à Alger. Contact : +213 549 575 512." }
       },
       {
         "@type": "Question",
@@ -38,12 +38,12 @@ export default function FreelanceVsAgence() {
       {
         "@type": "Question",
         "name": "Quels sont les risques de travailler avec un freelance ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Les risques incluent : disparition en cours de projet, expertise limitée, pas de backup si maladie/absence, qualité variable. Symloop élimine ces risques avec une équipe locale à Sétif, un support garanti et des technologies modernes. Contact : +213 549 575 512." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Les risques incluent : disparition en cours de projet, expertise limitée, pas de backup si maladie/absence, qualité variable. Symloop élimine ces risques avec une équipe locale à Alger, un support garanti et des technologies modernes. Contact : +213 549 575 512." }
       },
       {
         "@type": "Question",
         "name": "Comment vérifier la fiabilité d'une agence web en Algérie ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Vérifiez l'existence légale, le siège physique, le portfolio en ligne, les avis clients. Symloop est basé à Sétif avec +50 projets livrés, portfolio vérifiable et références disponibles. Contactez-nous au +213 549 575 512." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Vérifiez l'existence légale, le siège physique, le portfolio en ligne, les avis clients. Symloop est basé à Alger avec +50 projets livrés, portfolio vérifiable et références disponibles. Contactez-nous au +213 549 575 512." }
       },
       {
         "@type": "Question",
@@ -75,7 +75,6 @@ export default function FreelanceVsAgence() {
         <title>Freelance vs Agence en Algérie : Guide Complet pour Choisir 2024 | Symloop</title>
         <meta name="description" content="Comparatif détaillé freelance vs agence web en Algérie. Prix, avantages, inconvénients et critères de choix pour votre projet digital en 2024." />
         <meta name="keywords" content="freelance algérie, agence vs freelance, développeur indépendant algérie, comparatif agence web, choisir développeur, tarif freelance algérie, agence digitale algérie, développeur web freelance, prestataire informatique algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/freelance-vs-agence-algerie" />
         <meta property="og:title" content="Freelance vs Agence en Algérie : Guide Complet 2024" />
         <meta property="og:description" content="Comparatif détaillé freelance vs agence web en Algérie. Prix, avantages, inconvénients pour votre projet." />
         <meta property="og:url" content="https://symloop.com/blog/freelance-vs-agence-algerie" />
@@ -90,7 +89,7 @@ export default function FreelanceVsAgence() {
       <div className="min-h-screen bg-white">
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

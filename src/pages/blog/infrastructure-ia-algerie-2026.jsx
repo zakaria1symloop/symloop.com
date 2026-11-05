@@ -133,7 +133,6 @@ export default function InfrastructureIaAlgerie() {
         <title>Infrastructure IA Alg&eacute;rie 2026 | D&eacute;ployer Mod&egrave;les Intelligence Artificielle, MLOps, GPU Cloud | Symloop</title>
         <meta name="description" content="Guide complet pour d\u00e9ployer une infrastructure IA en Alg\u00e9rie en 2026. GPU cloud, MLOps, Kubernetes, PyTorch, TensorFlow. Symloop con\u00e7oit et op\u00e8re votre infrastructure machine learning. AI infrastructure Algeria." />
         <meta name="keywords" content="infrastructure IA alg\u00e9rie, AI infrastructure Algeria, MLOps alg\u00e9rie, GPU cloud alg\u00e9rie, d\u00e9ploiement mod\u00e8les IA, infrastructure machine learning, deploy AI models Algeria, intelligence artificielle alg\u00e9rie 2026, Kubernetes IA, PyTorch alg\u00e9rie, TensorFlow alg\u00e9rie, LLM deployment Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/infrastructure-ia-algerie-2026" />
 
         <meta property="og:title" content="Infrastructure IA Alg\u00e9rie 2026 | MLOps, GPU Cloud, D\u00e9ploiement IA | Symloop" />
         <meta property="og:description" content="Guide complet pour d\u00e9ployer une infrastructure IA en Alg\u00e9rie. GPU cloud, MLOps, Kubernetes, s\u00e9curit\u00e9 des donn\u00e9es. AI infrastructure Algeria." />
@@ -224,7 +223,7 @@ export default function InfrastructureIaAlgerie() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -245,8 +244,8 @@ export default function InfrastructureIaAlgerie() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -263,8 +262,8 @@ export default function InfrastructureIaAlgerie() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -280,8 +279,8 @@ export default function InfrastructureIaAlgerie() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -290,8 +289,8 @@ export default function InfrastructureIaAlgerie() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

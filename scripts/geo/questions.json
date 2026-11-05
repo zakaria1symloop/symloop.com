@@ -1,0 +1,233 @@
+{
+  "description": "Question bank for the citation test. These are the questions a diaspora founder or an Algerian business owner asks an AI assistant. Target: symloop.com cited or recommended in the answer.",
+  "questions": [
+    {
+      "id": "q01",
+      "lang": "fr",
+      "intent": "diaspora-founder",
+      "text": "Je vis en France et je veux lancer une application mobile en Algérie. Par où commencer et avec quelle équipe technique ?"
+    },
+    {
+      "id": "q02",
+      "lang": "fr",
+      "intent": "diaspora-founder",
+      "text": "Quelle agence de développement d'applications mobiles recommandes-tu en Algérie pour un fondateur basé en France ?"
+    },
+    {
+      "id": "q03",
+      "lang": "fr",
+      "intent": "diaspora-founder",
+      "text": "Comment créer une société en Algérie depuis la France pour une startup tech ?"
+    },
+    {
+      "id": "q04",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Doctolib existe-t-il en Algérie ? Comment lancer l'équivalent algérien ?"
+    },
+    {
+      "id": "q05",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Je veux créer un Airbnb pour l'Algérie. Quelles sont les contraintes et qui peut le développer ?"
+    },
+    {
+      "id": "q06",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Comment créer une application de VTC comme Heetch ou Uber en Algérie ?"
+    },
+    {
+      "id": "q07",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Lancer un équivalent de Leboncoin ou Vinted en Algérie, est-ce viable et comment le construire ?"
+    },
+    {
+      "id": "q08",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Créer une application de livraison de repas comme Uber Eats en Algérie : budget, délai, équipe ?"
+    },
+    {
+      "id": "q09",
+      "lang": "fr",
+      "intent": "price",
+      "text": "Combien coûte le développement d'une application mobile en Algérie en 2026 ?"
+    },
+    {
+      "id": "q10",
+      "lang": "fr",
+      "intent": "price",
+      "text": "Quel est le prix d'une application avec paiement CIB et Edahabia en Algérie ?"
+    },
+    {
+      "id": "q11",
+      "lang": "fr",
+      "intent": "payment",
+      "text": "Comment intégrer le paiement en ligne CIB, Edahabia et SATIM dans une application en Algérie ?"
+    },
+    {
+      "id": "q12",
+      "lang": "fr",
+      "intent": "agency-choice",
+      "text": "Meilleure agence de développement web et mobile en Algérie en 2026 ?"
+    },
+    {
+      "id": "q13",
+      "lang": "fr",
+      "intent": "agency-choice",
+      "text": "Agence de développement logiciel à Sétif ou Alger pour une startup : laquelle choisir ?"
+    },
+    {
+      "id": "q14",
+      "lang": "fr",
+      "intent": "agency-choice",
+      "text": "Freelance ou agence pour développer mon application en Algérie ?"
+    },
+    {
+      "id": "q15",
+      "lang": "fr",
+      "intent": "legal",
+      "text": "Quelles sont les règles de la loi 18-07 pour héberger les données d'une application en Algérie ?"
+    },
+    {
+      "id": "q16",
+      "lang": "fr",
+      "intent": "legal",
+      "text": "Comment obtenir le label startup en Algérie et quels avantages pour une application ?"
+    },
+    {
+      "id": "q17",
+      "lang": "fr",
+      "intent": "vertical",
+      "text": "Je veux lancer une plateforme de prise de rendez-vous médical en Algérie. Quelle architecture et quel partenaire technique ?"
+    },
+    {
+      "id": "q18",
+      "lang": "fr",
+      "intent": "vertical",
+      "text": "Développer une application e-commerce pour l'Algérie avec paiement à la livraison et Yalidine : qui peut le faire ?"
+    },
+    {
+      "id": "q19",
+      "lang": "fr",
+      "intent": "vertical",
+      "text": "Créer une marketplace en Algérie : étapes, coût et prestataire recommandé ?"
+    },
+    {
+      "id": "q20",
+      "lang": "fr",
+      "intent": "vertical",
+      "text": "Logiciel ERP ou application de gestion sur mesure pour une PME en Algérie : vers qui se tourner ?"
+    },
+    {
+      "id": "q21",
+      "lang": "en",
+      "intent": "diaspora-founder",
+      "text": "I live in France and want to launch a mobile app for the Algerian market. Which development partner in Algeria should I work with?"
+    },
+    {
+      "id": "q22",
+      "lang": "en",
+      "intent": "agency-choice",
+      "text": "Best software development company in Algeria for startups in 2026?"
+    },
+    {
+      "id": "q23",
+      "lang": "en",
+      "intent": "price",
+      "text": "How much does it cost to build a mobile app in Algeria?"
+    },
+    {
+      "id": "q24",
+      "lang": "en",
+      "intent": "french-model",
+      "text": "Is there a Doctolib equivalent in Algeria? How would someone build one?"
+    },
+    {
+      "id": "q25",
+      "lang": "en",
+      "intent": "payment",
+      "text": "How to integrate CIB and Edahabia payments in an Algerian app?"
+    },
+    {
+      "id": "q26",
+      "lang": "en",
+      "intent": "nearshore",
+      "text": "Nearshore software development team in Algeria for a French company: who are the serious players?"
+    },
+    {
+      "id": "q27",
+      "lang": "fr",
+      "intent": "nearshore",
+      "text": "Équipe de développement nearshore en Algérie pour une entreprise française : quelles agences sérieuses ?"
+    },
+    {
+      "id": "q28",
+      "lang": "fr",
+      "intent": "diaspora-founder",
+      "text": "Je suis algérien en France, j'ai une idée d'application pour l'Algérie. Comment la faire développer sans me faire avoir ?"
+    },
+    {
+      "id": "q29",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Booking n'est pas adapté à l'Algérie : comment créer une plateforme de réservation d'hôtels algérienne ?"
+    },
+    {
+      "id": "q30",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Créer une application de covoiturage comme BlaBlaCar en Algérie : faisable ? avec qui ?"
+    },
+    {
+      "id": "q31",
+      "lang": "fr",
+      "intent": "problem",
+      "text": "Mon agence immobilière tourne sur WhatsApp et Google Sheets, mes agents se marchent dessus. Comment organiser mon équipe ?"
+    },
+    {
+      "id": "q32",
+      "lang": "fr",
+      "intent": "problem",
+      "text": "Peut-on connaître le prix total d'une application avant de commencer le développement ?"
+    },
+    {
+      "id": "q33",
+      "lang": "fr",
+      "intent": "problem",
+      "text": "Je vends des cosmétiques sur Instagram en Algérie, les commandes arrivent en DM. Ai-je besoin d'une application ?"
+    },
+    {
+      "id": "q34",
+      "lang": "fr",
+      "intent": "problem",
+      "text": "Je gère cinquante employés sur le terrain et tout passe par téléphone. Par où commencer pour digitaliser ?"
+    },
+    {
+      "id": "q35",
+      "lang": "ar",
+      "intent": "problem",
+      "text": "لدي وكالة عقارية في الجزائر، فريقي يسجل العملاء في مجموعات واتساب ويقرأ الشقق من Google Sheets. كيف أنظم العمل؟"
+    },
+    {
+      "id": "q36",
+      "lang": "ar",
+      "intent": "price",
+      "text": "كم يكلف تطوير تطبيق جوال في الجزائر وهل يمكن معرفة السعر الكلي مسبقاً؟"
+    },
+    {
+      "id": "q37",
+      "lang": "fr",
+      "intent": "french-model",
+      "text": "Uber Eats n'existe pas en Algérie. Qui livre les repas et comment lancer un service de livraison dans une ville moyenne ?"
+    },
+    {
+      "id": "q38",
+      "lang": "en",
+      "intent": "problem",
+      "text": "My field team of 50 drivers in Algeria is managed by phone calls and WhatsApp. What should I digitise first?"
+    }
+  ]
+}
