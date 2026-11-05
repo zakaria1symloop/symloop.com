@@ -21,7 +21,7 @@ const T = {
     exemple: { title: 'Un cabinet, deux fauteuils, un été : l’exemple', items: [
       { value: '120 patients', label: 'de la diaspora entre juin et septembre, soit environ un tiers des patients de la saison ; hypothèse à remplacer par la vôtre' },
       { value: '30 % → 8 %', label: 'de séances non honorées ou annulées la veille, avec l’acompte qui bloque les créneaux et le rappel avant chaque séance' },
-      { value: '4 → 2 semaines', label: 'pour un plan à prothèse, quand le plan est écrit en mars et le laboratoire réservé avant l’arrivée' },
+      { value: '4 → 2 sem.', label: 'pour un plan à prothèse, quand le plan est écrit en mars et le laboratoire réservé avant l’arrivée' },
       { value: '+40 patients', label: 'reçus sur la saison grâce aux séances groupées et aux créneaux libérés ; à devis moyen égal, un tiers de chiffre d’été en plus', accent: true },
     ], caption: 'Figure 3 · Un calcul sur des hypothèses, pas une mesure : le nombre de patients, le taux de séances non honorées et la durée des plans sont à remplacer par les vôtres. Ce qui se vérifie partout : un plan écrit avant l’arrivée raccourcit le séjour, et un acompte fait venir à l’heure.', alt: 'Quatre chiffres : 120 patients de la diaspora, séances non honorées de 30 à 8 %, plan de 4 à 2 semaines, 40 patients de plus sur la saison.' },
     pieges: { title: 'Six pièges de l’été dentaire, et ce que la plateforme change', columns: ['Ce qui se passe aujourd’hui', 'Ce que la plateforme change'], rows: [
