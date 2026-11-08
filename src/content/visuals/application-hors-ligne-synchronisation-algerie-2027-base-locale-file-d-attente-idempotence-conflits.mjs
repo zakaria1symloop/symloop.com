@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'application-hors-ligne-synchronisation-algerie-2027-base-locale-file-d-attente-idempotence-conflits';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Hors ligne · Synchronisation · Architecture · 2027', title: ['Le réseau revient', 'à 16 h. La commande', 'existe depuis 9 h.'], subtitle: 'La base locale comme vérité de l’écran, la file d’attente des écritures, la clé d’idempotence qui interdit le doublon, les règles de conflit écrites avant le code, les tests en mode avion : l’architecture d’une application qui tient une journée sans réseau en Algérie, et le calendrier 2027', left: { label: 'En ligne seulement', sub: 'roue qui tourne, saisie perdue, doublon' }, right: { label: 'Hors ligne d’abord', sub: 'écrit local, en file, envoyé une fois' } },
+    moments: { title: 'La vie d’une saisie hors ligne, en six moments', items: [
+      { n: '01', label: 'L’écriture locale', sub: 'La commande est enregistrée dans la base du téléphone, avec un identifiant créé sur place, l’heure et une version.' },
+      { n: '02', label: 'La file d’attente', sub: 'L’opération entre dans une file persistante avec sa clé d’idempotence ; l’écran affiche « en attente ».' },
+      { n: '03', label: 'Le réseau revient', sub: 'La file se vide dans l’ordre ; en cas d’échec, nouvel essai à intervalle croissant, jamais en boucle.' },
+      { n: '04', label: 'Le serveur reçoit', sub: 'Clé déjà vue : même réponse, rien de refait. Clé nouvelle : appliquée. Conflit : la règle écrite tranche.', accent: true },
+      { n: '05', label: 'La réconciliation', sub: 'Le serveur renvoie l’état vrai ; la base locale se met à jour ; l’écran suit sans que personne n’appuie.' },
+      { n: '06', label: 'La preuve', sub: 'Chaque saisie porte un statut visible : en attente, envoyée, confirmée, rejetée avec sa raison.' },
+    ], caption: 'Figure 1 · Le moment 04 est celui qui distingue une application hors ligne d’une application qui réessaie : la clé d’idempotence fait qu’une commande envoyée deux fois, parce que le réseau a coupé après l’envoi, n’existe qu’une fois. Le moment 06 est celui que les utilisateurs exigent : savoir ce qui est parti.', alt: 'Six étapes : écriture locale, file d’attente, retour du réseau, réception par le serveur, réconciliation, preuve.' },
+    couches: { title: 'L’architecture hors ligne, en cinq couches', layers: [
+      { label: 'Base locale', items: [{ name: 'La base du téléphone, seule source de vérité pour l’écran', sub: 'l’écran lit toujours ici, jamais le réseau ; catalogue, clients, commandes du jour, photos', accent: true }] },
+      { label: 'File', items: [{ name: 'La file d’attente des écritures, persistante et ordonnée', sub: 'chaque écriture avec sa clé d’idempotence, son horodatage, son nombre d’essais, son statut' }] },
+      { label: 'Synchro', items: [{ name: 'La synchronisation : vider la file, tirer les changements', sub: 'tâche de fond qui attend le réseau, intervalle croissant, deltas depuis la dernière synchronisation' }] },
+      { label: 'API', items: [{ name: 'L’API idempotente, avec versions et règles de conflit', sub: 'même clé, même réponse ; version par enregistrement ; une règle par champ, écrite avant le code' }] },
+      { label: 'Pilotage', items: [{ name: 'Supervision : files bloquées, âge des données, rejets', sub: 'un appareil dont la file a plus de deux heures est un appel à passer, pas une statistique' }] },
+    ], caption: 'Figure 2 · La couche du bas est la décision : l’écran ne parle jamais au réseau, il parle à la base locale, et la synchronisation est un travail de fond. Une application qui lit le réseau et « garde une copie au cas où » n’est pas hors ligne ; elle est en ligne avec un cache.', alt: 'Cinq couches : base locale, file d’attente, synchronisation, API idempotente, supervision.' },
+    exemple: { title: 'Douze prévendeurs, une journée sans réseau garanti : l’exemple', items: [
+      { value: '8 h', label: 'de tournée pendant lesquelles l’application doit lire le catalogue, les prix du client et l’historique sans réseau ; marchés couverts, sous-sols, villages' },
+      { value: '350 → 0', label: 'commandes du jour mises en file sur douze téléphones, zéro perdue et zéro doublon à l’arrivée au dépôt ; hypothèse sur le volume, pas sur le mécanisme' },
+      { value: '2 min', label: 'entre le retour du réseau et le dépôt qui voit la commande, avec une file vidée dans l’ordre et un serveur qui répond ; hypothèse' },
+      { value: '1 règle', label: 'de conflit par champ, écrite avant le code : le serveur tranche le prix, le téléphone tranche la quantité saisie, le plus récent tranche la note', accent: true },
+    ], caption: 'Figure 3 · Les huit heures et les règles ne sont pas des hypothèses : ce sont des exigences à écrire dans le cahier des charges. Le volume et le délai sont à remplacer par les vôtres. Ce qui se vérifie partout : sans clé d’idempotence, une journée de réseau instable produit des doublons, et chaque doublon est une tournée de livraison perdue.', alt: 'Quatre chiffres : huit heures hors ligne, 350 commandes en file sans perte ni doublon, deux minutes de synchronisation, une règle de conflit par champ.' },
+    conflits: { title: 'Six conflits qui arrivent, et la règle qu’on écrit avant le code', columns: ['Ce qui arrive', 'La règle écrite avant'], rows: [
+      { label: 'Deux prévendeurs modifient le même client', cells: ['L’un change le téléphone, l’autre l’adresse, hors ligne tous les deux', 'Fusion par champ : chaque champ garde la modification la plus récente ; aucun des deux n’écrase l’autre'] },
+      { label: 'La même commande envoyée deux fois', cells: ['Le réseau coupe après l’envoi, avant la réponse ; le téléphone réessaie', 'Clé d’idempotence : le serveur reconnaît la clé et renvoie la première réponse ; une seule commande'] },
+      { label: 'Le prix a changé pendant la journée', cells: ['Le prévendeur a vendu au prix du matin ; le dépôt a le prix de 14 h', 'Le serveur fait foi pour le prix ; la commande est acceptée au prix saisi si l’écart est sous le seuil, sinon envoyée en validation'] },
+      { label: 'Le stock ne suffit plus', cells: ['Trois prévendeurs ont vendu le même dernier carton', 'La commande est acceptée avec une ligne « à confirmer » ; le dépôt propose la substitution, le client est prévenu'] },
+      { label: 'Supprimé au serveur, modifié en local', cells: ['Le gérant a retiré un produit ; un téléphone l’a vendu hors ligne', 'La suppression gagne ; la ligne passe en « rejetée, produit retiré » avec sa raison, visible du prévendeur'] },
+      { label: 'L’horloge du téléphone est fausse', cells: ['Un téléphone à l’heure de l’an dernier horodate ses écritures', 'Le serveur horodate à la réception et garde l’heure du téléphone comme information ; l’ordre vient de la file, pas de l’horloge'] },
+    ], caption: 'Figure 4 · Aucun de ces six conflits n’est rare ; ils arrivent la première semaine. Ce qui les rend inoffensifs n’est pas une bibliothèque mais une règle écrite avant le code, par champ, et un statut visible quand la règle a tranché contre l’utilisateur.', alt: 'Matrice de six conflits avec ce qui arrive et la règle écrite avant.' },
+    modeles: { title: 'Six produits : ce qui marche sans réseau, ce qui l’attend', columns: ['Ce qui doit marcher hors ligne', 'Ce qui attend le réseau'], rows: [
+      { label: 'Prévendeur, commande en tournée', cells: ['Catalogue, prix du client, historique, saisie de commande, relevé de rayon avec photos', 'Confirmation du dépôt, stock réel, substitution proposée'] },
+      { label: 'Livreur, preuve de livraison', cells: ['Liste de la tournée, bon de livraison, signature, photo, encaissement et reçu', 'Reçu SMS au client, mise à jour de l’encours'] },
+      { label: 'État des lieux, inspection, chantier', cells: ['Grille complète, photos horodatées, signature, dans une cave ou sur un toit', 'Rapport envoyé au propriétaire, comparaison avec l’entrée'] },
+      { label: 'Caisse de boutique', cells: ['Vente, ticket, remise, clôture, impression ; toute la journée si besoin', 'Paiement par carte en ligne, rapprochement, tableau de la chaîne'] },
+      { label: 'Portail ou application client', cells: ['Lecture du catalogue, du panier, des dernières commandes ; saisie d’une commande mise en file', 'Prix et promotions du jour, confirmation, paiement'] },
+      { label: 'Tableau de bord du gérant', cells: ['Rien : il affiche le dernier état connu avec son heure, sans permettre d’agir', 'Tout ; c’est un écran de lecture du serveur'] },
+    ], caption: 'Figure 5 · La colonne de gauche est ce que l’utilisateur fait quand il n’a pas le choix ; la colonne de droite est ce qui ne doit jamais être simulé hors ligne, parce que la vérité est ailleurs. Le tableau de bord du gérant est le seul écran qui n’a pas à fonctionner sans réseau, et c’est aussi le seul qu’on demande en premier.', alt: 'Matrice de six produits avec ce qui doit marcher hors ligne et ce qui attend le réseau.' },
+    calendrier: { title: 'Construire le hors ligne en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Inventaire des écritures et règles', note: 'chaque écriture possible, sa clé, sa règle de conflit, son statut ; avec le métier', from: 0, to: 2 },
+      { label: 'Base locale et lecture hors ligne', note: 'écran branché sur la base du téléphone ; synchronisation de lecture par deltas', from: 2, to: 6 },
+      { label: 'File d’attente et API idempotente', note: 'clés, versions, règles codées ; statuts visibles', from: 6, to: 10, accent: true },
+      { label: 'Recette en mode avion', note: 'coupure pendant l’envoi, deux appareils, horloge fausse, batterie vide, 2 000 lignes', from: 10, to: 12 },
+      { label: 'Pilote terrain, une tournée', note: 'douze téléphones réels, files et rejets observés chaque soir', from: 12, to: 16 },
+      { label: 'Supervision et extension', note: 'files bloquées, âge des données, rejets par règle ; toutes les équipes', from: 16, to: 20 },
+      { label: 'Bilan', note: 'pertes, doublons, conflits par règle ; ce qui passe en ligne seulement', from: 20, to: 24 },
+    ], caption: 'Figure 6 · Semaine 0 = janvier 2027. Les deux premières semaines ne produisent pas de code et décident de tout : la liste des écritures et la règle de chacune. La recette en mode avion est un jalon à part entière, pas une case dans la recette générale.', alt: 'Frise de 24 semaines : inventaire, base locale, file et API, recette en mode avion, pilote, supervision, bilan.' },
+  },
+  en: {
+    cover: { eyebrow: 'Offline · Synchronisation · Architecture · 2027', title: ['The network is back', 'at 4 pm. The order', 'has existed since 9 am.'], subtitle: 'The local database as the screen’s truth, the write queue, the idempotency key that forbids duplicates, conflict rules written before the code, airplane-mode tests: the architecture of an app that lasts a day without network in Algeria, and the 2027 calendar', left: { label: 'Online only', sub: 'spinning wheel, lost entry, duplicate' }, right: { label: 'Offline first', sub: 'written locally, queued, sent once' } },
+    moments: { title: 'The life of an offline entry, in six moments', items: [
+      { n: '01', label: 'The local write', sub: 'The order is saved in the phone’s database, with an identifier created on the spot, the time and a version.' },
+      { n: '02', label: 'The queue', sub: 'The operation enters a persistent queue with its idempotency key; the screen shows “pending”.' },
+      { n: '03', label: 'The network returns', sub: 'The queue drains in order; on failure, a new attempt at a growing interval, never in a loop.' },
+      { n: '04', label: 'The server receives', sub: 'Key already seen: same response, nothing redone. New key: applied. Conflict: the written rule decides.', accent: true },
+      { n: '05', label: 'Reconciliation', sub: 'The server returns the true state; the local database updates; the screen follows without anyone tapping.' },
+      { n: '06', label: 'The proof', sub: 'Every entry carries a visible status: pending, sent, confirmed, rejected with its reason.' },
+    ], caption: 'Figure 1 · Moment 04 is what separates an offline app from an app that retries: the idempotency key means an order sent twice, because the network dropped after sending, exists only once. Moment 06 is what users demand: knowing what has gone out.', alt: 'Six steps: local write, queue, network returns, server receives, reconciliation, proof.' },
+    couches: { title: 'The offline architecture, in five layers', layers: [
+      { label: 'Local DB', items: [{ name: 'The phone’s database, sole source of truth for the screen', sub: 'the screen always reads here, never the network; catalogue, customers, the day’s orders, photos', accent: true }] },
+      { label: 'Queue', items: [{ name: 'The write queue, persistent and ordered', sub: 'each write with its idempotency key, timestamp, attempt count, status' }] },
+      { label: 'Sync', items: [{ name: 'Synchronisation: drain the queue, pull the changes', sub: 'background task that waits for the network, growing interval, deltas since the last sync' }] },
+      { label: 'API', items: [{ name: 'The idempotent API, with versions and conflict rules', sub: 'same key, same response; version per record; one rule per field, written before the code' }] },
+      { label: 'Management', items: [{ name: 'Supervision: stuck queues, data age, rejections', sub: 'a device whose queue is over two hours old is a phone call to make, not a statistic' }] },
+    ], caption: 'Figure 2 · The bottom layer is the decision: the screen never talks to the network, it talks to the local database, and synchronisation is background work. An app that reads the network and “keeps a copy just in case” is not offline; it is online with a cache.', alt: 'Five layers: local database, write queue, synchronisation, idempotent API, supervision.' },
+    exemple: { title: 'Twelve pre-sellers, a day without guaranteed network: the example', items: [
+      { value: '8 h', label: 'of route during which the app must read the catalogue, the customer’s prices and history without network; covered markets, basements, villages' },
+      { value: '350 → 0', label: 'orders of the day queued on twelve phones, zero lost and zero duplicated on arrival at the depot; an assumption on volume, not on the mechanism' },
+      { value: '2 min', label: 'between the network returning and the depot seeing the order, with a queue drained in order and a server that answers; assumption' },
+      { value: '1 rule', label: 'of conflict per field, written before the code: the server decides the price, the phone decides the quantity entered, the most recent decides the note', accent: true },
+    ], caption: 'Figure 3 · The eight hours and the rules are not assumptions: they are requirements to write in the specification. Volume and delay are to be replaced by yours. What holds everywhere: without an idempotency key, a day of unstable network produces duplicates, and every duplicate is a lost delivery route.', alt: 'Four figures: eight hours offline, 350 orders queued without loss or duplicate, two minutes of sync, one conflict rule per field.' },
+    conflits: { title: 'Six conflicts that happen, and the rule written before the code', columns: ['What happens', 'The rule written before'], rows: [
+      { label: 'Two pre-sellers edit the same customer', cells: ['One changes the phone number, the other the address, both offline', 'Merge per field: each field keeps the most recent change; neither overwrites the other'] },
+      { label: 'The same order sent twice', cells: ['The network drops after sending, before the response; the phone retries', 'Idempotency key: the server recognises the key and returns the first response; one order'] },
+      { label: 'The price changed during the day', cells: ['The pre-seller sold at the morning price; the depot has the 2 pm price', 'The server is authoritative on price; the order is accepted at the entered price if the gap is under the threshold, otherwise sent for approval'] },
+      { label: 'Stock no longer suffices', cells: ['Three pre-sellers sold the same last case', 'The order is accepted with a “to confirm” line; the depot offers a substitution, the customer is told'] },
+      { label: 'Deleted on the server, edited locally', cells: ['The manager removed a product; a phone sold it offline', 'The deletion wins; the line becomes “rejected, product removed” with its reason, visible to the pre-seller'] },
+      { label: 'The phone’s clock is wrong', cells: ['A phone set to last year timestamps its writes', 'The server timestamps on receipt and keeps the phone’s time as information; order comes from the queue, not the clock'] },
+    ], caption: 'Figure 4 · None of these six conflicts is rare; they happen in the first week. What makes them harmless is not a library but a rule written before the code, per field, and a visible status when the rule decided against the user.', alt: 'Matrix of six conflicts with what happens and the rule written before.' },
+    modeles: { title: 'Six products: what works without network, what waits for it', columns: ['What must work offline', 'What waits for the network'], rows: [
+      { label: 'Pre-seller, order on the route', cells: ['Catalogue, customer prices, history, order entry, shelf check with photos', 'Depot confirmation, real stock, proposed substitution'] },
+      { label: 'Driver, proof of delivery', cells: ['Route list, delivery note, signature, photo, collection and receipt', 'SMS receipt to the customer, balance update'] },
+      { label: 'Inventory, inspection, site visit', cells: ['Full checklist, time-stamped photos, signature, in a basement or on a roof', 'Report sent to the owner, comparison with move-in'] },
+      { label: 'Shop till', cells: ['Sale, ticket, discount, closing, printing; all day if needed', 'Online card payment, reconciliation, chain dashboard'] },
+      { label: 'Customer portal or app', cells: ['Reading the catalogue, basket, last orders; entering an order that is queued', 'Day’s prices and promotions, confirmation, payment'] },
+      { label: 'Manager’s dashboard', cells: ['Nothing: it shows the last known state with its time, without allowing action', 'Everything; it is a read screen of the server'] },
+    ], caption: 'Figure 5 · The left column is what the user does when they have no choice; the right column is what must never be simulated offline, because the truth is elsewhere. The manager’s dashboard is the only screen that need not work without network, and it is also the only one asked for first.', alt: 'Matrix of six products with what must work offline and what waits for the network.' },
+    calendrier: { title: 'Building offline in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Inventory of writes and rules', note: 'every possible write, its key, its conflict rule, its status; with the business', from: 0, to: 2 },
+      { label: 'Local database and offline reads', note: 'screen wired to the phone’s database; read sync by deltas', from: 2, to: 6 },
+      { label: 'Queue and idempotent API', note: 'keys, versions, rules coded; visible statuses', from: 6, to: 10, accent: true },
+      { label: 'Airplane-mode acceptance', note: 'drop during send, two devices, wrong clock, flat battery, 2,000 lines', from: 10, to: 12 },
+      { label: 'Field pilot, one route', note: 'twelve real phones, queues and rejections watched every evening', from: 12, to: 16 },
+      { label: 'Supervision and extension', note: 'stuck queues, data age, rejections per rule; all teams', from: 16, to: 20 },
+      { label: 'Review', note: 'losses, duplicates, conflicts per rule; what becomes online-only', from: 20, to: 24 },
+    ], caption: 'Figure 6 · Week 0 = January 2027. The first two weeks produce no code and decide everything: the list of writes and the rule for each. Airplane-mode acceptance is a milestone of its own, not a box in the general acceptance.', alt: 'Timeline of 24 weeks: inventory, local database, queue and API, airplane-mode acceptance, pilot, supervision, review.' },
+  },
+  ar: {
+    cover: { eyebrow: 'دون اتصال · المزامنة · الهندسة · 2027', title: ['الشبكة تعود في الرابعة.', 'الطلبية موجودة', 'منذ التاسعة.'], subtitle: 'قاعدة البيانات المحلية حقيقةً للشاشة، طابور الكتابات، مفتاح التكرار الذي يمنع النسخ المزدوجة، قواعد التعارض المكتوبة قبل الكود، اختبارات وضع الطائرة: هندسة تطبيق يصمد يوماً دون شبكة في الجزائر، وتقويم 2027', left: { label: 'متصل فقط', sub: 'عجلة تدور، إدخال ضائع، تكرار' }, right: { label: 'دون اتصال أولاً', sub: 'يُكتب محلياً، في الطابور، يُرسل مرة' } },
+    moments: { title: 'حياة إدخال دون اتصال، في ست لحظات', items: [
+      { n: '01', label: 'الكتابة المحلية', sub: 'تُحفظ الطلبية في قاعدة بيانات الهاتف، بمعرّف يُنشأ في المكان، والوقت، ونسخة.' },
+      { n: '02', label: 'الطابور', sub: 'تدخل العملية طابوراً دائماً بمفتاح تكرارها؛ تعرض الشاشة «في الانتظار».' },
+      { n: '03', label: 'عودة الشبكة', sub: 'يُفرَّغ الطابور بالترتيب؛ عند الفشل، محاولة جديدة بفاصل متزايد، لا في حلقة أبداً.' },
+      { n: '04', label: 'الخادم يستقبل', sub: 'مفتاح مرئي من قبل: الجواب نفسه ولا شيء يُعاد. مفتاح جديد: يُطبَّق. تعارض: القاعدة المكتوبة تحسم.', accent: true },
+      { n: '05', label: 'المصالحة', sub: 'يعيد الخادم الحالة الحقيقية؛ تتحدث القاعدة المحلية؛ تتبعها الشاشة دون أن يضغط أحد.' },
+      { n: '06', label: 'الإثبات', sub: 'كل إدخال يحمل حالة مرئية: في الانتظار، مُرسَل، مؤكَّد، مرفوض مع سببه.' },
+    ], caption: 'الشكل 1 · اللحظة 04 هي ما يميّز تطبيقاً دون اتصال عن تطبيق يعيد المحاولة: مفتاح التكرار يجعل طلبية أُرسلت مرتين، لأن الشبكة انقطعت بعد الإرسال، لا توجد إلا مرة واحدة. اللحظة 06 هي ما يطلبه المستعملون: معرفة ما خرج.', alt: 'ست خطوات: الكتابة المحلية، الطابور، عودة الشبكة، استقبال الخادم، المصالحة، الإثبات.' },
+    couches: { title: 'هندسة العمل دون اتصال، في خمس طبقات', layers: [
+      { label: 'القاعدة المحلية', items: [{ name: 'قاعدة بيانات الهاتف، مصدر الحقيقة الوحيد للشاشة', sub: 'الشاشة تقرأ هنا دائماً لا من الشبكة؛ الكتالوج، الزبائن، طلبيات اليوم، الصور', accent: true }] },
+      { label: 'الطابور', items: [{ name: 'طابور الكتابات، دائم ومرتَّب', sub: 'كل كتابة بمفتاح تكرارها وطابعها الزمني وعدد محاولاتها وحالتها' }] },
+      { label: 'المزامنة', items: [{ name: 'المزامنة: تفريغ الطابور، سحب التغييرات', sub: 'مهمة خلفية تنتظر الشبكة، فاصل متزايد، فروق منذ آخر مزامنة' }] },
+      { label: 'API', items: [{ name: 'API غير قابلة للتكرار، بنسخ وقواعد تعارض', sub: 'المفتاح نفسه، الجواب نفسه؛ نسخة لكل سجل؛ قاعدة لكل حقل تُكتب قبل الكود' }] },
+      { label: 'القيادة', items: [{ name: 'الإشراف: طوابير عالقة، عمر البيانات، الرفض', sub: 'جهاز عمر طابوره أكثر من ساعتين هو مكالمة تُجرى لا إحصائية' }] },
+    ], caption: 'الشكل 2 · الطبقة السفلى هي القرار: الشاشة لا تخاطب الشبكة أبداً بل القاعدة المحلية، والمزامنة عمل خلفي. تطبيق يقرأ الشبكة و«يحتفظ بنسخة احتياطاً» ليس دون اتصال؛ بل متصل مع ذاكرة مؤقتة.', alt: 'خمس طبقات: القاعدة المحلية، الطابور، المزامنة، API غير قابلة للتكرار، الإشراف.' },
+    exemple: { title: 'اثنا عشر مندوباً، يوم بلا شبكة مضمونة: المثال', items: [
+      { value: '8 س', label: 'من الجولة يجب أن يقرأ فيها التطبيق الكتالوج وأسعار الزبون وتاريخه دون شبكة؛ أسواق مغطاة، أقبية، قرى' },
+      { value: '350 ← 0', label: 'طلبية في اليوم موضوعة في طوابير اثني عشر هاتفاً، صفر ضائعة وصفر مكررة عند الوصول إلى المستودع؛ فرضية على الحجم لا على الآلية' },
+      { value: 'دقيقتان', label: 'بين عودة الشبكة ورؤية المستودع للطلبية، بطابور يُفرَّغ بالترتيب وخادم يجيب؛ فرضية' },
+      { value: 'قاعدة 1', label: 'للتعارض لكل حقل، تُكتب قبل الكود: الخادم يحسم السعر، الهاتف يحسم الكمية المدخلة، والأحدث يحسم الملاحظة', accent: true },
+    ], caption: 'الشكل 3 · الساعات الثماني والقواعد ليست فرضيات: بل متطلبات تُكتب في دفتر الشروط. الحجم والمهلة يُستبدلان بأرقامكم. ما يثبت في كل مكان: بلا مفتاح تكرار، ينتج يوم من الشبكة غير المستقرة نسخاً مكررة، وكل نسخة مكررة جولة تسليم ضائعة.', alt: 'أربعة أرقام: ثماني ساعات دون اتصال، 350 طلبية في الطابور بلا ضياع ولا تكرار، دقيقتان مزامنة، قاعدة تعارض لكل حقل.' },
+    conflits: { title: 'ستة تعارضات تحدث، والقاعدة التي تُكتب قبل الكود', columns: ['ما يحدث', 'القاعدة المكتوبة قبلاً'], rows: [
+      { label: 'مندوبان يعدّلان الزبون نفسه', cells: ['أحدهما يغيّر الهاتف والآخر العنوان، وكلاهما دون اتصال', 'دمج لكل حقل: كل حقل يحتفظ بأحدث تعديل؛ لا أحدهما يمحو الآخر'] },
+      { label: 'الطلبية نفسها تُرسل مرتين', cells: ['تنقطع الشبكة بعد الإرسال وقبل الجواب؛ يعيد الهاتف المحاولة', 'مفتاح التكرار: يتعرف الخادم على المفتاح ويعيد الجواب الأول؛ طلبية واحدة'] },
+      { label: 'تغيّر السعر خلال اليوم', cells: ['باع المندوب بسعر الصباح؛ وعند المستودع سعر الثانية', 'الخادم مرجع السعر؛ تُقبل الطلبية بالسعر المدخل إن كان الفارق تحت العتبة، وإلا تُرسل للموافقة'] },
+      { label: 'المخزون لم يعد يكفي', cells: ['ثلاثة مندوبين باعوا الكرتون الأخير نفسه', 'تُقبل الطلبية بسطر «للتأكيد»؛ يقترح المستودع بديلاً ويُبلَّغ الزبون'] },
+      { label: 'محذوف في الخادم، معدَّل محلياً', cells: ['سحب المسيّر منتجاً؛ وباعه هاتف دون اتصال', 'الحذف يغلب؛ يصبح السطر «مرفوض، المنتج مسحوب» بسببه، مرئياً للمندوب'] },
+      { label: 'ساعة الهاتف خاطئة', cells: ['هاتف على توقيت السنة الماضية يؤرّخ كتاباته', 'يؤرّخ الخادم عند الاستلام ويحتفظ بوقت الهاتف كمعلومة؛ الترتيب من الطابور لا من الساعة'] },
+    ], caption: 'الشكل 4 · لا شيء من هذه التعارضات الستة نادر؛ تحدث في الأسبوع الأول. ما يجعلها غير مؤذية ليس مكتبة بل قاعدة مكتوبة قبل الكود، لكل حقل، وحالة مرئية حين تحسم القاعدة ضد المستعمل.', alt: 'مصفوفة ستة تعارضات مع ما يحدث والقاعدة المكتوبة قبلاً.' },
+    modeles: { title: 'ستة منتجات: ما يعمل دون شبكة، وما ينتظرها', columns: ['ما يجب أن يعمل دون اتصال', 'ما ينتظر الشبكة'], rows: [
+      { label: 'مندوب، طلبية في الجولة', cells: ['الكتالوج، أسعار الزبون، التاريخ، إدخال الطلبية، جرد الرف بالصور', 'تأكيد المستودع، المخزون الحقيقي، البديل المقترح'] },
+      { label: 'سائق، إثبات التسليم', cells: ['قائمة الجولة، وصل التسليم، التوقيع، الصورة، التحصيل والوصل', 'وصل SMS للزبون، تحديث الرصيد'] },
+      { label: 'معاينة، تفتيش، ورشة', cells: ['الشبكة الكاملة، صور موقّتة، توقيع، في قبو أو على سطح', 'تقرير يُرسل إلى المالك، مقارنة مع الدخول'] },
+      { label: 'صندوق المحل', cells: ['بيع، تذكرة، خصم، إقفال، طباعة؛ طوال اليوم عند الحاجة', 'الدفع بالبطاقة عبر الإنترنت، المطابقة، لوحة السلسلة'] },
+      { label: 'بوابة أو تطبيق الزبون', cells: ['قراءة الكتالوج والسلة وآخر الطلبيات؛ إدخال طلبية توضع في الطابور', 'أسعار وترويجات اليوم، التأكيد، الدفع'] },
+      { label: 'لوحة قيادة المسيّر', cells: ['لا شيء: تعرض آخر حالة معروفة بوقتها دون إتاحة أي فعل', 'كل شيء؛ هي شاشة قراءة من الخادم'] },
+    ], caption: 'الشكل 5 · العمود الأيسر هو ما يفعله المستعمل حين لا خيار له؛ والعمود الأيمن ما يجب ألا يُحاكى دون اتصال أبداً، لأن الحقيقة في مكان آخر. لوحة قيادة المسيّر هي الشاشة الوحيدة التي لا يلزم أن تعمل دون شبكة، وهي أيضاً الوحيدة التي تُطلب أولاً.', alt: 'مصفوفة ستة منتجات مع ما يجب أن يعمل دون اتصال وما ينتظر الشبكة.' },
+    calendrier: { title: 'بناء العمل دون اتصال في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'جرد الكتابات والقواعد', note: 'كل كتابة ممكنة، مفتاحها، قاعدة تعارضها، حالتها؛ مع أهل المهنة', from: 0, to: 2 },
+      { label: 'القاعدة المحلية والقراءة دون اتصال', note: 'الشاشة موصولة بقاعدة الهاتف؛ مزامنة قراءة بالفروق', from: 2, to: 6 },
+      { label: 'الطابور وAPI غير القابلة للتكرار', note: 'مفاتيح، نسخ، قواعد مبرمجة؛ حالات مرئية', from: 6, to: 10, accent: true },
+      { label: 'القبول في وضع الطائرة', note: 'انقطاع أثناء الإرسال، جهازان، ساعة خاطئة، بطارية فارغة، 2 000 سطر', from: 10, to: 12 },
+      { label: 'تجربة ميدانية، جولة واحدة', note: 'اثنا عشر هاتفاً حقيقياً، الطوابير والرفض يُراقَبان كل مساء', from: 12, to: 16 },
+      { label: 'الإشراف والتوسيع', note: 'طوابير عالقة، عمر البيانات، الرفض لكل قاعدة؛ كل الفرق', from: 16, to: 20 },
+      { label: 'الحصيلة', note: 'الخسائر، التكرارات، التعارضات لكل قاعدة؛ ما يصبح متصلاً فقط', from: 20, to: 24 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = يناير 2027. الأسبوعان الأولان لا ينتجان كوداً ويقرران كل شيء: قائمة الكتابات وقاعدة كل منها. القبول في وضع الطائرة معلم قائم بذاته، لا خانة في القبول العام.', alt: 'خط زمني من 24 أسبوعاً: الجرد، القاعدة المحلية، الطابور وAPI، القبول في وضع الطائرة، التجربة، الإشراف، الحصيلة.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      moments: { svg: steps({ title: t.moments.title, steps: t.moments.items, arrows: true, rtl }), caption: t.moments.caption, alt: t.moments.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      conflits: { svg: matrix({ title: t.conflits.title, columns: t.conflits.columns, rows: t.conflits.rows, rtl }), caption: t.conflits.caption, alt: t.conflits.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 24, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}
