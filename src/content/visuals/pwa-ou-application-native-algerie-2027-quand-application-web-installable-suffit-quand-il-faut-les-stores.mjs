@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'pwa-ou-application-native-algerie-2027-quand-application-web-installable-suffit-quand-il-faut-les-stores';
+const T = {
+  fr: {
+    cover: { eyebrow: 'PWA · Application native · Stores · 2027', title: ['Un lien WhatsApp', 'ou deux stores :', 'la mauvaise question.'], subtitle: 'Qui ouvre l’application et combien de fois, ce que le téléphone doit faire, comment on la trouve, les notifications, le paiement : six questions qui décident entre application web installable, application native et les deux ; une seule base de code, et le calendrier 2027', left: { label: 'Deux stores d’abord', sub: '99 $ + 25 $, deux fiches, zéro client' }, right: { label: 'Un lien d’abord', sub: 'installable, puis les stores si besoin' } },
+    decision: { title: 'Six questions qui décident, dans cet ordre', items: [
+      { n: '01', label: 'Qui l’ouvre, et combien de fois', sub: 'Un client deux fois par mois ou un employé quarante fois par jour : ce n’est pas la même application.' },
+      { n: '02', label: 'Ce que le téléphone doit faire', sub: 'Caméra, GPS en continu, Bluetooth, NFC, imprimante, hors ligne pendant des heures : chaque « oui » pèse vers le natif.' },
+      { n: '03', label: 'Comment on la trouve', sub: 'Un lien WhatsApp ou SMS envoyé par un vendeur, ou une recherche dans un store : la découverte décide du canal.' },
+      { n: '04', label: 'Les notifications', sub: 'Sur Android, le web notifie ; sur iPhone, seulement une fois ajoutée à l’écran d’accueil.' },
+      { n: '05', label: 'Le paiement et la confiance', sub: 'Carte CIB ou Edahabia : la page de paiement est web dans les deux cas ; la présence sur un store rassure certains clients.' },
+      { n: '06', label: 'La décision', sub: 'Application web installable, native, ou les deux sur une seule base : écrite avant le cahier des charges.', accent: true },
+    ], caption: 'Figure 1 · Les deux premières questions décident de presque tout : un client occasionnel qui a besoin d’un catalogue, d’un prix et d’un paiement n’a pas besoin d’un store ; un employé qui scanne, photographie et travaille sans réseau en a besoin. La question 06 n’est pas « PWA ou native » mais « laquelle d’abord ».', alt: 'Six questions : qui ouvre l’application, ce que le téléphone doit faire, comment on la trouve, les notifications, le paiement et la confiance, la décision.' },
+    couches: { title: 'Un produit, trois faces, une seule base', layers: [
+      { label: 'API', items: [{ name: 'Un seul serveur, une seule API, un seul modèle de données', sub: 'les règles, les prix, les comptes et les paiements vivent ici, jamais dans l’application' }] },
+      { label: 'Web', items: [{ name: 'L’application web installable, pour les clients', sub: 'ouverte par un lien, ajoutée à l’écran d’accueil, hors ligne pour l’essentiel, notifications sur Android', accent: true }] },
+      { label: 'Native', items: [{ name: 'L’application native, pour le terrain et le matériel', sub: 'scan, GPS continu, Bluetooth, hors ligne long ; publiée sur Play puis App Store' }] },
+      { label: 'Canaux', items: [{ name: 'WhatsApp, SMS, QR, fiches de stores', sub: 'le lien profond ouvre la bonne face ; l’agent IA répond dans le canal que le client utilise déjà' }] },
+      { label: 'Pilotage', items: [{ name: 'Un tableau de bord, des usages par face', sub: 'installations, ouvertures, commandes, par canal et par version d’Android' }] },
+    ], caption: 'Figure 2 · La face web et la face native partagent l’API du bas ; c’est ce qui évite de payer deux fois. La face web se publie aussi sur Play dans une coque quand la présence sur un store compte : même code, une fiche de plus.', alt: 'Cinq couches : API unique, application web installable, application native, canaux, pilotage.' },
+    exemple: { title: 'Ce que disent les téléphones algériens en 2026', items: [
+      { value: '89 %', label: 'des téléphones mesurés en Algérie sont sous Android en août 2026 selon StatCounter, 11 % sous iOS ; mesure de trafic web, pas de parc' },
+      { value: '≈ 43 %', label: 'des Android mesurés en octobre 2026 sont en version 13 ou plus ancienne : une application web lourde ou une application native récente les perdent toutes deux' },
+      { value: '7 jours', label: 'sans visite après lesquels Safari efface le stockage d’un site web ordinaire ; une application ajoutée à l’écran d’accueil a son propre compteur' },
+      { value: '1 base', label: 'de code pour l’application web installable, sa version Play dans une coque et l’espace client ; le natif ne s’ajoute que pour le terrain et le matériel', accent: true },
+    ], caption: 'Figure 3 · Les parts de StatCounter mesurent des visites de sites web, pas des téléphones vendus ; elles disent l’ordre de grandeur. La règle des sept jours est celle de WebKit pour Safari ; elle décide à elle seule que l’application web d’un client iPhone doit être ajoutée à l’écran d’accueil, ou ne rien garder.', alt: 'Quatre chiffres : 89 % Android, environ 43 % en Android 13 ou plus ancien, sept jours de stockage Safari, une base de code.' },
+    matrice: { title: 'Application web installable ou application native : ce que chacune fait en 2027', columns: ['Application web installable', 'Application native sur les stores'], rows: [
+      { label: 'Installation et premier contact', cells: ['Un lien, trois secondes, aucun compte store ; ajout à l’écran d’accueil en deux gestes', 'Téléchargement de 30 à 80 Mo, compte Google ou Apple, mise à jour du système parfois exigée'] },
+      { label: 'Notifications', cells: ['Android : oui, après accord ; iPhone : seulement une fois ajoutée à l’écran d’accueil, après un geste', 'Oui, sur les deux systèmes, dès l’installation'] },
+      { label: 'Hors ligne et stockage', cells: ['Catalogue, panier, dernières commandes ; Safari efface après sept jours sans visite si non installée', 'Journées entières hors ligne, base locale, synchronisation différée'] },
+      { label: 'Caméra, GPS, Bluetooth, NFC, imprimante', cells: ['Photo et position ponctuelle : oui ; GPS continu, Bluetooth, NFC, imprimante thermique : non ou fragile', 'Tout, y compris en arrière-plan ; c’est la raison d’être du natif'] },
+      { label: 'Paiement CIB et Edahabia', cells: ['Page de paiement web : identique ; pas de commission de store', 'Même page web ouverte dans l’application ; aucune commission de store sur les biens physiques'] },
+      { label: 'Mises à jour et exigences des stores', cells: ['Déployée en une fois, visible à la prochaine ouverture ; aucune revue', 'Revue Apple, cible Android imposée chaque année, testeurs et délais pour un compte personnel'] },
+    ], caption: 'Figure 4 · Les deux lignes du milieu décident : un employé de terrain a besoin de la colonne de droite ; un client a besoin de la gauche. La dernière ligne explique pourquoi la colonne de gauche sort en premier : elle n’attend personne.', alt: 'Matrice de six critères comparant l’application web installable et l’application native.' },
+    modeles: { title: 'Six produits, ce qu’on construit d’abord', columns: ['Ce qu’on construit d’abord', 'Ce qui vient ensuite'], rows: [
+      { label: 'Portail de commande pour détaillants', cells: ['Application web installable, lien SMS envoyé par le prévendeur, panier type, paiement web', 'Version Play dans une coque ; notifications de recommande'] },
+      { label: 'Réservation : salle, hôtel, cabinet, salon', cells: ['Application web installable, calendrier, acompte, espace client', 'Stores si la découverte passe par la recherche ; notifications iPhone'] },
+      { label: 'Prévendeur, livreur, agent de terrain', cells: ['Application native Android : scan, GPS, photos, hors ligne toute la journée', 'Tableau de bord web pour le chef ; iOS seulement si l’équipe en a'] },
+      { label: 'Caisse et scan en boutique', cells: ['Application native ou web sur tablette avec imprimante et lecteur ; hors ligne obligatoire', 'Espace client web pour la fidélité et les reçus'] },
+      { label: 'Espace client, propriétaire, patient', cells: ['Application web installable ; documents, reçus, rappels par SMS et WhatsApp', 'Notifications push après ajout à l’écran d’accueil ; stores si le volume le justifie'] },
+      { label: 'Produit grand public, croissance par les stores', cells: ['Natif sur les deux systèmes dès le départ, ou web + coque Play et natif iOS', 'Campagnes, avis, fiches de stores par pays'] },
+    ], caption: 'Figure 5 · Quatre produits sur six commencent par l’application web installable ; deux par le natif, et ce sont ceux où un employé travaille avec le matériel du téléphone. Le natif n’est pas supérieur au web, il est nécessaire ailleurs.', alt: 'Matrice de six produits avec ce qu’on construit d’abord et ce qui vient ensuite.' },
+    calendrier: { title: 'Sortir en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Décision et cahier des charges', note: 'les six questions, la face qui sort d’abord, les écrans ; janvier', from: 0, to: 3 },
+      { label: 'API + application web installable', note: 'construites pendant le ramadan (≈ 8 février – 9 mars) ; rien n’est lancé', from: 3, to: 11, accent: true },
+      { label: 'Pilote par lien WhatsApp', note: 'cinquante utilisateurs réels, mesure des installations et des retours', from: 11, to: 14 },
+      { label: 'Application native terrain', note: 'si la question 02 l’exige : scan, GPS, hors ligne ; Android d’abord', from: 14, to: 22 },
+      { label: 'Stores : coque Play, puis App Store', note: 'compte, testeurs, revue ; la version web continue de vivre', from: 22, to: 26 },
+      { label: 'Notifications, agent IA, mesure', note: 'ajout à l’écran d’accueil guidé ; push sur Android ; été', from: 26, to: 34 },
+      { label: 'Bilan par face et par canal', note: 'installations, ouvertures, commandes ; décision sur le natif iOS', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. L’application web installable est en pilote à la semaine 11 ; une application native seule n’y serait pas avant la semaine 20, revue des stores comprise. Le natif arrive quand la question 02 l’exige, pas avant. Dates du ramadan prévisionnelles.', alt: 'Frise de 40 semaines : décision, API et application web, pilote, native terrain, stores, notifications, bilan.' },
+  },
+  en: {
+    cover: { eyebrow: 'PWA · Native app · Stores · 2027', title: ['A WhatsApp link', 'or two stores:', 'the wrong question.'], subtitle: 'Who opens the app and how often, what the phone must do, how it is found, notifications, payment: six questions that decide between an installable web app, a native app and both; one code base, and the 2027 calendar', left: { label: 'Two stores first', sub: '$99 + $25, two listings, zero customers' }, right: { label: 'One link first', sub: 'installable, then stores if needed' } },
+    decision: { title: 'Six questions that decide, in this order', items: [
+      { n: '01', label: 'Who opens it, and how often', sub: 'A customer twice a month or an employee forty times a day: not the same app.' },
+      { n: '02', label: 'What the phone must do', sub: 'Camera, continuous GPS, Bluetooth, NFC, printer, hours offline: every “yes” weighs towards native.' },
+      { n: '03', label: 'How it is found', sub: 'A WhatsApp or SMS link sent by a salesperson, or a search in a store: discovery decides the channel.' },
+      { n: '04', label: 'Notifications', sub: 'On Android, the web notifies; on iPhone, only once added to the Home Screen.' },
+      { n: '05', label: 'Payment and trust', sub: 'CIB or Edahabia card: the payment page is web in both cases; a store presence reassures some customers.' },
+      { n: '06', label: 'The decision', sub: 'Installable web app, native, or both on one base: written before the specification.', accent: true },
+    ], caption: 'Figure 1 · The first two questions decide almost everything: an occasional customer who needs a catalogue, a price and a payment does not need a store; an employee who scans, photographs and works without network does. Question 06 is not “PWA or native” but “which one first”.', alt: 'Six questions: who opens the app, what the phone must do, how it is found, notifications, payment and trust, the decision.' },
+    couches: { title: 'One product, three faces, one base', layers: [
+      { label: 'API', items: [{ name: 'One server, one API, one data model', sub: 'rules, prices, accounts and payments live here, never in the app' }] },
+      { label: 'Web', items: [{ name: 'The installable web app, for customers', sub: 'opened from a link, added to the Home Screen, offline for the essentials, notifications on Android', accent: true }] },
+      { label: 'Native', items: [{ name: 'The native app, for the field and the hardware', sub: 'scanning, continuous GPS, Bluetooth, long offline; published on Play then the App Store' }] },
+      { label: 'Channels', items: [{ name: 'WhatsApp, SMS, QR, store listings', sub: 'the deep link opens the right face; the AI agent answers in the channel the customer already uses' }] },
+      { label: 'Management', items: [{ name: 'One dashboard, usage per face', sub: 'installs, opens, orders, per channel and per Android version' }] },
+    ], caption: 'Figure 2 · The web face and the native face share the API below; that is what avoids paying twice. The web face is also published on Play in a shell when a store presence matters: same code, one more listing.', alt: 'Five layers: single API, installable web app, native app, channels, management.' },
+    exemple: { title: 'What Algerian phones say in 2026', items: [
+      { value: '89 %', label: 'of phones measured in Algeria run Android in August 2026 according to StatCounter, 11 % iOS; a web-traffic measure, not an installed base' },
+      { value: '≈ 43 %', label: 'of Android phones measured in October 2026 run version 13 or older: a heavy web app or a recent native app loses them both' },
+      { value: '7 days', label: 'without a visit after which Safari wipes an ordinary website’s storage; an app added to the Home Screen has its own counter' },
+      { value: '1 base', label: 'of code for the installable web app, its Play version in a shell and the customer space; native is added only for the field and the hardware', accent: true },
+    ], caption: 'Figure 3 · StatCounter shares measure website visits, not phones sold; they give the order of magnitude. The seven-day rule is WebKit’s for Safari; on its own it decides that an iPhone customer’s web app must be added to the Home Screen, or keep nothing.', alt: 'Four figures: 89 % Android, about 43 % on Android 13 or older, seven days of Safari storage, one code base.' },
+    matrice: { title: 'Installable web app or native app: what each does in 2027', columns: ['Installable web app', 'Native app on the stores'], rows: [
+      { label: 'Installation and first contact', cells: ['A link, three seconds, no store account; added to the Home Screen in two taps', '30 to 80 MB download, Google or Apple account, sometimes a system update required'] },
+      { label: 'Notifications', cells: ['Android: yes, after consent; iPhone: only once added to the Home Screen, after a tap', 'Yes, on both systems, from installation'] },
+      { label: 'Offline and storage', cells: ['Catalogue, basket, last orders; Safari wipes after seven days without a visit if not installed', 'Whole days offline, local database, deferred sync'] },
+      { label: 'Camera, GPS, Bluetooth, NFC, printer', cells: ['Photo and one-off position: yes; continuous GPS, Bluetooth, NFC, thermal printer: no or fragile', 'Everything, including in the background; that is what native is for'] },
+      { label: 'CIB and Edahabia payment', cells: ['Web payment page: identical; no store commission', 'Same web page opened inside the app; no store commission on physical goods'] },
+      { label: 'Updates and store requirements', cells: ['Deployed once, visible at the next open; no review', 'Apple review, Android target imposed every year, testers and delays for a personal account'] },
+    ], caption: 'Figure 4 · The two middle rows decide: a field employee needs the right column; a customer needs the left. The last row explains why the left column ships first: it waits for nobody.', alt: 'Matrix of six criteria comparing the installable web app and the native app.' },
+    modeles: { title: 'Six products, what gets built first', columns: ['What gets built first', 'What comes next'], rows: [
+      { label: 'Ordering portal for retailers', cells: ['Installable web app, SMS link sent by the pre-seller, typical basket, web payment', 'Play version in a shell; reorder notifications'] },
+      { label: 'Booking: hall, hotel, practice, salon', cells: ['Installable web app, calendar, deposit, customer space', 'Stores if discovery goes through search; iPhone notifications'] },
+      { label: 'Pre-seller, driver, field agent', cells: ['Native Android app: scanning, GPS, photos, offline all day', 'Web dashboard for the manager; iOS only if the team has it'] },
+      { label: 'Till and scanning in a shop', cells: ['Native or web app on a tablet with printer and scanner; offline mandatory', 'Web customer space for loyalty and receipts'] },
+      { label: 'Customer, owner, patient space', cells: ['Installable web app; documents, receipts, reminders by SMS and WhatsApp', 'Push notifications after adding to the Home Screen; stores if volume justifies'] },
+      { label: 'Consumer product, growth through the stores', cells: ['Native on both systems from the start, or web + Play shell and native iOS', 'Campaigns, reviews, store listings per country'] },
+    ], caption: 'Figure 5 · Four products out of six start with the installable web app; two with native, and those are the ones where an employee works with the phone’s hardware. Native is not superior to web, it is necessary elsewhere.', alt: 'Matrix of six products with what gets built first and what comes next.' },
+    calendrier: { title: 'Shipping in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Decision and specification', note: 'the six questions, the face that ships first, the screens; January', from: 0, to: 3 },
+      { label: 'API + installable web app', note: 'built during Ramadan (≈ 8 February – 9 March); nothing launched', from: 3, to: 11, accent: true },
+      { label: 'Pilot through a WhatsApp link', note: 'fifty real users, installs and feedback measured', from: 11, to: 14 },
+      { label: 'Native field app', note: 'if question 02 requires it: scanning, GPS, offline; Android first', from: 14, to: 22 },
+      { label: 'Stores: Play shell, then App Store', note: 'account, testers, review; the web version keeps living', from: 22, to: 26 },
+      { label: 'Notifications, AI agent, measurement', note: 'guided add-to-Home-Screen; push on Android; summer', from: 26, to: 34 },
+      { label: 'Review per face and per channel', note: 'installs, opens, orders; decision on native iOS', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Week 0 = mid-January 2027. The installable web app is in pilot by week 11; a native app alone would not be before week 20, store review included. Native arrives when question 02 requires it, not before. Ramadan dates are forecasts.', alt: 'Timeline of 40 weeks: decision, API and web app, pilot, native field app, stores, notifications, review.' },
+  },
+  ar: {
+    cover: { eyebrow: 'PWA · تطبيق أصلي · المتاجر · 2027', title: ['رابط WhatsApp', 'أم متجران:', 'السؤال الخاطئ.'], subtitle: 'من يفتح التطبيق وكم مرة، ما يجب أن يفعله الهاتف، كيف يُعثر عليه، الإشعارات، الدفع: ستة أسئلة تحسم بين تطبيق ويب قابل للتثبيت وتطبيق أصلي والاثنين معاً؛ قاعدة كود واحدة، وتقويم 2027', left: { label: 'متجران أولاً', sub: '99 $ + 25 $، بطاقتان، صفر زبون' }, right: { label: 'رابط أولاً', sub: 'قابل للتثبيت، ثم المتاجر عند الحاجة' } },
+    decision: { title: 'ستة أسئلة تحسم، بهذا الترتيب', items: [
+      { n: '01', label: 'من يفتحه، وكم مرة', sub: 'زبون مرتين في الشهر أو موظف أربعين مرة في اليوم: ليس التطبيق نفسه.' },
+      { n: '02', label: 'ما يجب أن يفعله الهاتف', sub: 'كاميرا، GPS متواصل، بلوتوث، NFC، طابعة، ساعات دون اتصال: كل «نعم» ترجّح الأصلي.' },
+      { n: '03', label: 'كيف يُعثر عليه', sub: 'رابط WhatsApp أو SMS يرسله بائع، أو بحث في متجر: الاكتشاف يحدد القناة.' },
+      { n: '04', label: 'الإشعارات', sub: 'على Android يُشعر الويب؛ على iPhone فقط بعد الإضافة إلى الشاشة الرئيسية.' },
+      { n: '05', label: 'الدفع والثقة', sub: 'بطاقة CIB أو الذهبية: صفحة الدفع ويب في الحالتين؛ الوجود في متجر يطمئن بعض الزبائن.' },
+      { n: '06', label: 'القرار', sub: 'تطبيق ويب قابل للتثبيت، أو أصلي، أو الاثنان على قاعدة واحدة: يُكتب قبل دفتر الشروط.', accent: true },
+    ], caption: 'الشكل 1 · السؤالان الأولان يحسمان كل شيء تقريباً: زبون عابر يحتاج كتالوجاً وسعراً ودفعاً لا يحتاج متجراً؛ وموظف يمسح ويصوّر ويعمل دون شبكة يحتاجه. السؤال 06 ليس «PWA أم أصلي» بل «أيهما أولاً».', alt: 'ستة أسئلة: من يفتح التطبيق، ما يجب أن يفعله الهاتف، كيف يُعثر عليه، الإشعارات، الدفع والثقة، القرار.' },
+    couches: { title: 'منتج واحد، ثلاثة أوجه، قاعدة واحدة', layers: [
+      { label: 'API', items: [{ name: 'خادم واحد، API واحدة، نموذج بيانات واحد', sub: 'القواعد والأسعار والحسابات والمدفوعات تعيش هنا، لا في التطبيق أبداً' }] },
+      { label: 'الويب', items: [{ name: 'تطبيق الويب القابل للتثبيت، للزبائن', sub: 'يُفتح برابط، يُضاف إلى الشاشة الرئيسية، يعمل دون اتصال للأساسيات، إشعارات على Android', accent: true }] },
+      { label: 'الأصلي', items: [{ name: 'التطبيق الأصلي، للميدان والعتاد', sub: 'مسح، GPS متواصل، بلوتوث، عمل طويل دون اتصال؛ يُنشر على Play ثم App Store' }] },
+      { label: 'القنوات', items: [{ name: 'WhatsApp وSMS وQR وبطاقات المتاجر', sub: 'الرابط العميق يفتح الوجه الصحيح؛ وكيل الذكاء الاصطناعي يجيب في القناة التي يستعملها الزبون أصلاً' }] },
+      { label: 'القيادة', items: [{ name: 'لوحة قيادة واحدة، استعمال لكل وجه', sub: 'التثبيتات، الفتحات، الطلبيات، لكل قناة ولكل إصدار Android' }] },
+    ], caption: 'الشكل 2 · الوجه الويب والوجه الأصلي يتقاسمان API في الأسفل؛ وهذا ما يجنّب الدفع مرتين. الوجه الويب يُنشر أيضاً على Play في غلاف حين يهم الوجود في متجر: الكود نفسه، بطاقة إضافية.', alt: 'خمس طبقات: API واحدة، تطبيق ويب قابل للتثبيت، تطبيق أصلي، قنوات، قيادة.' },
+    exemple: { title: 'ما تقوله الهواتف الجزائرية في 2026', items: [
+      { value: '89 %', label: 'من الهواتف المقاسة في الجزائر تعمل بـAndroid في أوت 2026 وفق StatCounter، و11 % بـiOS؛ قياس لحركة الويب لا لحظيرة الأجهزة' },
+      { value: '≈ 43 %', label: 'من هواتف Android المقاسة في أكتوبر 2026 بإصدار 13 أو أقدم: تطبيق ويب ثقيل أو تطبيق أصلي حديث يخسرانها معاً' },
+      { value: '7 أيام', label: 'دون زيارة يمسح بعدها Safari تخزين موقع ويب عادي؛ التطبيق المضاف إلى الشاشة الرئيسية له عدّاده الخاص' },
+      { value: 'قاعدة 1', label: 'من الكود لتطبيق الويب القابل للتثبيت ونسخته على Play في غلاف وفضاء الزبون؛ الأصلي يُضاف للميدان والعتاد فقط', accent: true },
+    ], caption: 'الشكل 3 · حصص StatCounter تقيس زيارات مواقع ويب لا هواتف مبيعة؛ وتعطي رتبة الحجم. قاعدة الأيام السبعة هي قاعدة WebKit لـSafari؛ وهي وحدها تقرر أن تطبيق ويب لزبون iPhone يجب أن يُضاف إلى الشاشة الرئيسية، وإلا لم يحتفظ بشيء.', alt: 'أربعة أرقام: 89 % Android، نحو 43 % بإصدار 13 أو أقدم، سبعة أيام تخزين Safari، قاعدة كود واحدة.' },
+    matrice: { title: 'تطبيق ويب قابل للتثبيت أم تطبيق أصلي: ما يفعله كل منهما في 2027', columns: ['تطبيق ويب قابل للتثبيت', 'تطبيق أصلي على المتاجر'], rows: [
+      { label: 'التثبيت وأول اتصال', cells: ['رابط، ثلاث ثوانٍ، لا حساب متجر؛ إضافة إلى الشاشة الرئيسية بلمستين', 'تنزيل من 30 إلى 80 ميغا، حساب Google أو Apple، وأحياناً تحديث نظام مطلوب'] },
+      { label: 'الإشعارات', cells: ['Android: نعم بعد الموافقة؛ iPhone: فقط بعد الإضافة إلى الشاشة الرئيسية وبلمسة', 'نعم على النظامين منذ التثبيت'] },
+      { label: 'دون اتصال والتخزين', cells: ['الكتالوج، السلة، آخر الطلبيات؛ Safari يمسح بعد سبعة أيام بلا زيارة إن لم يُثبَّت', 'أيام كاملة دون اتصال، قاعدة بيانات محلية، مزامنة مؤجَّلة'] },
+      { label: 'كاميرا، GPS، بلوتوث، NFC، طابعة', cells: ['صورة وموقع لمرة: نعم؛ GPS متواصل، بلوتوث، NFC، طابعة حرارية: لا أو هش', 'كل شيء حتى في الخلفية؛ هذا سبب وجود الأصلي'] },
+      { label: 'الدفع بـCIB والذهبية', cells: ['صفحة دفع ويب: متطابقة؛ لا عمولة متجر', 'صفحة الويب نفسها تُفتح داخل التطبيق؛ لا عمولة متجر على السلع المادية'] },
+      { label: 'التحديثات ومتطلبات المتاجر', cells: ['يُنشر مرة ويظهر عند الفتح التالي؛ لا مراجعة', 'مراجعة Apple، هدف Android يُفرض كل سنة، مختبِرون ومهل لحساب شخصي'] },
+    ], caption: 'الشكل 4 · السطران الأوسطان يحسمان: موظف الميدان يحتاج العمود الأيمن؛ والزبون يحتاج الأيسر. السطر الأخير يشرح لماذا يخرج العمود الأيسر أولاً: لا ينتظر أحداً.', alt: 'مصفوفة ستة معايير تقارن تطبيق الويب القابل للتثبيت والتطبيق الأصلي.' },
+    modeles: { title: 'ستة منتجات، ما يُبنى أولاً', columns: ['ما يُبنى أولاً', 'ما يأتي بعده'], rows: [
+      { label: 'بوابة طلب لتجار التجزئة', cells: ['تطبيق ويب قابل للتثبيت، رابط SMS يرسله المندوب، سلة نموذجية، دفع ويب', 'نسخة Play في غلاف؛ إشعارات إعادة الطلب'] },
+      { label: 'حجز: قاعة، فندق، عيادة، صالون', cells: ['تطبيق ويب قابل للتثبيت، تقويم، عربون، فضاء زبون', 'المتاجر إن مرّ الاكتشاف بالبحث؛ إشعارات iPhone'] },
+      { label: 'مندوب، سائق، عون ميدان', cells: ['تطبيق Android أصلي: مسح، GPS، صور، دون اتصال طوال اليوم', 'لوحة قيادة ويب للمدير؛ iOS فقط إن كان لدى الفريق'] },
+      { label: 'صندوق ومسح في المحل', cells: ['تطبيق أصلي أو ويب على لوح بطابعة وقارئ؛ العمل دون اتصال إلزامي', 'فضاء زبون ويب للولاء والوصولات'] },
+      { label: 'فضاء زبون أو مالك أو مريض', cells: ['تطبيق ويب قابل للتثبيت؛ وثائق، وصولات، تذكيرات عبر SMS وWhatsApp', 'إشعارات دفع بعد الإضافة إلى الشاشة الرئيسية؛ المتاجر إن برّر الحجم'] },
+      { label: 'منتج جماهيري، نمو عبر المتاجر', cells: ['أصلي على النظامين منذ البداية، أو ويب + غلاف Play وأصلي iOS', 'حملات، تقييمات، بطاقات متاجر لكل بلد'] },
+    ], caption: 'الشكل 5 · أربعة منتجات من ستة تبدأ بتطبيق الويب القابل للتثبيت؛ واثنان بالأصلي، وهما اللذان يعمل فيهما موظف بعتاد الهاتف. الأصلي ليس أفضل من الويب، بل ضروري في مكان آخر.', alt: 'مصفوفة ستة منتجات مع ما يُبنى أولاً وما يأتي بعده.' },
+    calendrier: { title: 'الخروج في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'القرار ودفتر الشروط', note: 'الأسئلة الستة، الوجه الذي يخرج أولاً، الشاشات؛ يناير', from: 0, to: 3 },
+      { label: 'API + تطبيق ويب قابل للتثبيت', note: 'يُبنيان خلال رمضان (≈ 8 فبراير – 9 مارس)؛ لا شيء يُطلق', from: 3, to: 11, accent: true },
+      { label: 'تجربة عبر رابط WhatsApp', note: 'خمسون مستعملاً حقيقياً، قياس التثبيتات والملاحظات', from: 11, to: 14 },
+      { label: 'تطبيق ميداني أصلي', note: 'إن اقتضاه السؤال 02: مسح، GPS، دون اتصال؛ Android أولاً', from: 14, to: 22 },
+      { label: 'المتاجر: غلاف Play ثم App Store', note: 'حساب، مختبِرون، مراجعة؛ نسخة الويب تواصل العيش', from: 22, to: 26 },
+      { label: 'إشعارات، وكيل ذكاء اصطناعي، قياس', note: 'إضافة موجَّهة إلى الشاشة الرئيسية؛ دفع على Android؛ الصيف', from: 26, to: 34 },
+      { label: 'حصيلة لكل وجه ولكل قناة', note: 'تثبيتات، فتحات، طلبيات؛ القرار بشأن الأصلي على iOS', from: 34, to: 40 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = منتصف يناير 2027. تطبيق الويب القابل للتثبيت في التجربة في الأسبوع 11؛ ولم يكن تطبيق أصلي وحده ليصل قبل الأسبوع 20 بما فيه مراجعة المتاجر. الأصلي يأتي حين يقتضيه السؤال 02، لا قبل. تواريخ رمضان تقديرية.', alt: 'خط زمني من 40 أسبوعاً: القرار، API وتطبيق الويب، التجربة، الأصلي الميداني، المتاجر، الإشعارات، الحصيلة.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      decision: { svg: steps({ title: t.decision.title, steps: t.decision.items, arrows: true, rtl }), caption: t.decision.caption, alt: t.decision.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      matrice: { svg: matrix({ title: t.matrice.title, columns: t.matrice.columns, rows: t.matrice.rows, rtl }), caption: t.matrice.caption, alt: t.matrice.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 40, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}
