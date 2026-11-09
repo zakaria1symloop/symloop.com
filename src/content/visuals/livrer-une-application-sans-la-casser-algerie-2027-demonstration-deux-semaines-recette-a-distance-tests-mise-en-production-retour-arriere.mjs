@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'livrer-une-application-sans-la-casser-algerie-2027-demonstration-deux-semaines-recette-a-distance-tests-mise-en-production-retour-arriere';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Livraison · Recette · Tests · 2027', title: ['« Ça marche chez moi. »', 'Pas chez vos clients.', 'Pas un vendredi soir.'], subtitle: 'Comment une application se livre sans se casser : un lot de deux semaines écrit avant le code, des tests automatisés à chaque changement, un environnement de recette que le client ouvre depuis la France, une démonstration et une acceptation écrites, une mise en production progressive et un retour arrière en quelques minutes', left: { label: 'Grande livraison', sub: 'six mois, puis tout en même temps' }, right: { label: 'Lot de deux semaines', sub: 'démontré, recetté, mis en ligne' } },
+    cycle: { title: 'La vie d’une livraison, en six moments', items: [
+      { n: '01', label: 'Le lot de deux semaines', sub: 'Ce qui sera démontré dans quinze jours est écrit avant le premier commit, avec son scénario de recette : qui fait quoi, et ce qu’on doit voir.' },
+      { n: '02', label: 'Le développement avec tests', sub: 'Chaque fonction arrive avec ses tests automatisés ; un changement qui fait échouer un test existant n’entre pas dans la livraison.' },
+      { n: '03', label: 'La revue et l’intégration', sub: 'Un second développeur relit ; l’intégration continue construit et teste à chaque changement, sur le serveur, pas sur un poste.' },
+      { n: '04', label: 'L’environnement de recette', sub: 'Une copie de la production avec des données de test, à sa propre adresse, que le client ouvre sur son téléphone depuis la France.' },
+      { n: '05', label: 'La démonstration et la recette', sub: 'Le client exécute les scénarios écrits en semaine 1, sur l’environnement de recette ; il accepte ou refuse par écrit, point par point.', accent: true },
+      { n: '06', label: 'La mise en production progressive', sub: 'Déploiement sans coupure, d’abord un magasin ou une fraction des utilisateurs, supervision, et retour arrière en une commande si un signal monte.' },
+    ], caption: 'Figure 1 · Le moment 05 est celui qui remplace le voyage : le client en France recette sur son téléphone, sur une adresse qui n’est pas la production, avec des scénarios écrits avant le code. Le moment 06 est celui qui rend la livraison réversible : ce qui est mis en ligne peut être retiré en quelques minutes, et la migration de base aussi.', alt: 'Six étapes : lot, développement avec tests, revue et intégration, environnement de recette, démonstration et recette, mise en production progressive' },
+    couches: { title: 'La livraison d’une application, en cinq couches', layers: [
+      { label: 'Exigences et scénarios', items: [{ name: 'Le lot écrit, les scénarios de recette, les critères d’acceptation', sub: 'écrits avant le code ; c’est contre eux que la livraison est acceptée ou refusée' }] },
+      { label: 'Code et tests', items: [{ name: 'Tests unitaires, tests d’intégration, tests de bout en bout sur téléphone, tests d’abus', sub: 'un test par règle métier ; la livraison est refusée par la machine avant d’être vue par le client' }] },
+      { label: 'Intégration et environnements', items: [{ name: 'Intégration continue, dépôt au nom du client, environnements de recette, préproduction et production', sub: 'chaque changement est construit et testé sur un serveur ; la recette a sa propre adresse' }] },
+      { label: 'Mise en production', items: [{ name: 'Déploiement sans coupure, progressif, migrations réversibles, retour arrière en une commande', sub: 'c’est cette couche qui fait qu’une livraison ratée coûte dix minutes et pas un week-end', accent: true }] },
+      { label: 'Supervision et retours', items: [{ name: 'Erreurs, lenteurs, alertes, retours des utilisateurs, journal des versions', sub: 'ce qui dit, dans l’heure, si la livraison a cassé quelque chose' }] },
+    ], caption: 'Figure 2 · La couche du milieu bas est celle que les devis oublient : tout le monde promet des tests, peu décrivent comment une livraison revient en arrière. Un prestataire qui met en ligne par copie de fichiers un vendredi soir a construit une application, pas une livraison.', alt: 'Cinq couches : exigences et scénarios, code et tests, intégration et environnements, mise en production, supervision et retours' },
+    exemple: { title: 'Une application sur un an, vingt-quatre livraisons : l’exemple', items: [
+      { value: '24', label: 'livraisons en un an, une toutes les deux semaines, chacune démontrée et recettée depuis la France avant la mise en ligne' },
+      { value: '2', label: 'retours arrière dans l’année : une lenteur et une règle métier mal comprise, retirées en quelques minutes ; hypothèse à mesurer chez vous' },
+      { value: '< 10 min', label: 'entre le signal et le retour à la version précédente, migration de base comprise ; c’est la mécanique qui le garantit, pas la chance' },
+      { value: '0', label: 'coupure visible par les utilisateurs : déploiement sans interruption, d’abord un magasin, puis tous, pendant les heures creuses', accent: true },
+    ], caption: 'Figure 3 · Le nombre de retours arrière est une hypothèse ; leur durée et l’absence de coupure ne le sont pas. Sans mise en production progressive, chaque livraison est un pari sur tous les utilisateurs à la fois ; avec elle, une livraison ratée touche un magasin pendant dix minutes.', alt: 'Quatre chiffres : 24 livraisons, 2 retours arrière, moins de dix minutes, zéro coupure' },
+    verifs: { title: 'Six choses que le client vérifie à chaque livraison, depuis la France', columns: ['Ce qu’on vérifie', 'Comment, sans se déplacer'], rows: [
+      { label: 'Le scénario de recette passe', cells: ['Chaque scénario écrit en semaine 1 est exécuté de bout en bout', 'Sur l’environnement de recette, depuis son téléphone, avec une courte vidéo du prestataire pour guider ; acceptation écrite point par point'] },
+      { label: 'Les tests automatisés existent', cells: ['La fonction livrée est couverte par des tests qui tournent à chaque changement', 'Le rapport de tests de l’intégration continue est joint à la livraison ; le nombre de tests ne doit pas baisser'] },
+      { label: 'Le code est dans votre dépôt', cells: ['Le code, les scripts de déploiement et la documentation sont au nom de l’entreprise', 'Accès au dépôt Git de l’entreprise ; la livraison est une étiquette de version, pas un fichier envoyé'] },
+      { label: 'La migration se renverse', cells: ['Le changement de base de données peut être défait sans perdre de données', 'Démonstration du retour arrière sur l’environnement de recette, chronométrée'] },
+      { label: 'Ça marche sur un vrai téléphone', cells: ['Sur des Android d’entrée de gamme, en arabe et en français, sur réseau dégradé', 'Test sur appareils réels ou ferme d’appareils, réseau bridé ; capture jointe à la livraison'] },
+      { label: 'Le journal des versions est tenu', cells: ['Chaque livraison a un numéro, une liste de changements, une date', 'Journal lisible par le client ; c’est ce qui permet de dire « depuis la 1.14, le stock est faux »'] },
+    ], caption: 'Figure 4 · Aucune de ces six vérifications ne demande d’être dans les locaux du prestataire ni de savoir lire du code. Un client en France qui les fait toutes les deux semaines sait, à chaque instant, où en est son application ; celui qui attend la grande livraison le découvre à la fin.', alt: 'Matrice de six vérifications : scénario, tests, dépôt, migration, téléphone réel, journal des versions' },
+    pieges: { title: 'Six situations qui cassent une livraison, et ce que la méthode fait', columns: ['Ce qui se passe', 'Ce que la méthode fait'], rows: [
+      { label: '« Ça marche chez moi »', cells: ['La démonstration se fait sur le poste du développeur ; en ligne, rien ne marche pareil', 'Démonstration et recette uniquement sur l’environnement de recette, construit par l’intégration continue, jamais sur un poste'] },
+      { label: 'La grande livraison', cells: ['Six mois de travail livrés d’un coup ; tout est à recetter en même temps, tout casse en même temps', 'Un lot toutes les deux semaines, démontré et mis en ligne ; la première version utilisable arrive en semaine 6, pas en mois 6'] },
+      { label: 'La migration qui ne se renverse pas', cells: ['Le changement de base est fait, la livraison échoue, et on ne peut plus revenir sans perdre des données', 'Migrations en deux temps : ajouter avant, retirer après ; chaque migration a son retour testé en recette'] },
+      { label: 'La recette sans scénarios', cells: ['Le client « regarde » et dit que c’est bien ; trois semaines plus tard, la fonction n’est pas celle attendue', 'Scénarios écrits avant le code, exécutés point par point ; refus écrit avec le scénario qui échoue'] },
+      { label: 'Le jeudi soir', cells: ['Mise en ligne avant le week-end ; personne pour regarder, les clients découvrent la panne samedi', 'Mise en production en heures creuses, en semaine, avec quelqu’un qui supervise l’heure qui suit ; jamais la veille d’un jour férié'] },
+      { label: 'Les tests manuels seulement', cells: ['Chaque nouvelle fonction casse une ancienne que personne n’a repassée', 'Tests automatisés sur toutes les règles métier, rejoués à chaque changement ; la machine refuse avant le client'] },
+    ], caption: 'Figure 5 · Les six situations ont le même remède : une livraison est un processus répétable, pas un événement. Un prestataire qui livre toutes les deux semaines depuis un an a déjà rencontré les six ; celui qui prépare sa grande livraison les rencontrera toutes le même jour.', alt: 'Matrice de six situations : ça marche chez moi, grande livraison, migration irréversible, recette sans scénarios, jeudi soir, tests manuels' },
+    calendrier: { title: 'Un lot de deux semaines, en jours', unit: 'j', items: [
+      { label: 'Lot écrit et scénarios', note: 'ce qui sera démontré, les scénarios de recette, les critères ; validés par le client avant le premier commit', from: 0, to: 1 },
+      { label: 'Développement avec tests', note: 'fonctions et tests ensemble ; intégration continue à chaque changement ; environnement de recette mis à jour chaque jour', from: 1, to: 8, accent: true },
+      { label: 'Revue et gel', note: 'relecture par un second développeur ; plus de nouvelle fonction après le jour 9, seulement des corrections', from: 8, to: 9 },
+      { label: 'Recette par le client', note: 'scénarios exécutés depuis la France sur l’environnement de recette ; acceptation ou refus écrit point par point', from: 9, to: 11 },
+      { label: 'Corrections', note: 'les points refusés corrigés et re-recettés ; ce qui ne tient pas dans le délai passe au lot suivant, écrit', from: 11, to: 12 },
+      { label: 'Mise en production progressive', note: 'heures creuses, un magasin ou une fraction d’abord, supervision, retour arrière prêt', from: 12, to: 13 },
+      { label: 'Supervision et bilan', note: 'erreurs et lenteurs de la version, retours des utilisateurs, journal mis à jour, lot suivant écrit', from: 13, to: 14 },
+    ], caption: 'Figure 6 · Quatorze jours, et le même cycle recommence vingt-quatre fois dans l’année. Les jours 9 à 11 sont ceux du client en France : trois jours pour recetter sur son téléphone, sans voyage. Ce qui n’est pas accepté au jour 12 ne part pas en production ; il est réécrit dans le lot suivant.', alt: 'Frise de quatorze jours : lot écrit, développement avec tests, revue, recette par le client, corrections, mise en production, supervision' },
+  },
+  en: {
+    cover: { eyebrow: 'Delivery · Acceptance · Tests · 2027', title: ['“Works on my machine.”', 'Not for your customers.', 'Not on a Friday night.'], subtitle: 'How an app is delivered without breaking: a two-week batch written before the code, automated tests at every change, an acceptance environment the client opens from France, a written demo and acceptance, a progressive release and a rollback in minutes', left: { label: 'Big-bang delivery', sub: 'six months, then everything at once' }, right: { label: 'Two-week batch', sub: 'demoed, accepted, released' } },
+    cycle: { title: 'The life of a delivery, in six moments', items: [
+      { n: '01', label: 'The two-week batch', sub: 'What will be demoed in a fortnight is written before the first commit, with its acceptance scenario: who does what, and what must be seen.' },
+      { n: '02', label: 'Development with tests', sub: 'Every feature arrives with its automated tests; a change that fails an existing test does not enter the delivery.' },
+      { n: '03', label: 'Review and integration', sub: 'A second developer reviews; continuous integration builds and tests at every change, on a server, not on a laptop.' },
+      { n: '04', label: 'The acceptance environment', sub: 'A copy of production with test data, at its own address, that the client opens on their phone from France.' },
+      { n: '05', label: 'Demo and acceptance', sub: 'The client runs the scenarios written in week 1, on the acceptance environment; they accept or refuse in writing, point by point.', accent: true },
+      { n: '06', label: 'Progressive release', sub: 'Zero-downtime deployment, first one shop or a fraction of users, supervision, and rollback in one command if a signal rises.' },
+    ], caption: 'Figure 1 · Moment 05 is what replaces the trip: the client in France accepts on their phone, at an address that is not production, with scenarios written before the code. Moment 06 is what makes the delivery reversible: what goes live can be withdrawn in minutes, and the database migration too.', alt: 'Six steps: batch, development with tests, review and integration, acceptance environment, demo and acceptance, progressive release' },
+    couches: { title: 'Delivering an app, in five layers', layers: [
+      { label: 'Requirements and scenarios', items: [{ name: 'The written batch, the acceptance scenarios, the acceptance criteria', sub: 'written before the code; the delivery is accepted or refused against them' }] },
+      { label: 'Code and tests', items: [{ name: 'Unit tests, integration tests, end-to-end tests on phones, abuse tests', sub: 'one test per business rule; the delivery is refused by the machine before the client sees it' }] },
+      { label: 'Integration and environments', items: [{ name: 'Continuous integration, repository in the client’s name, acceptance, pre-production and production environments', sub: 'every change is built and tested on a server; acceptance has its own address' }] },
+      { label: 'Release', items: [{ name: 'Zero-downtime, progressive deployment, reversible migrations, one-command rollback', sub: 'this layer is what makes a failed delivery cost ten minutes and not a weekend', accent: true }] },
+      { label: 'Supervision and feedback', items: [{ name: 'Errors, slowness, alerts, user feedback, version log', sub: 'what says, within the hour, whether the delivery broke something' }] },
+    ], caption: 'Figure 2 · The lower-middle layer is the one quotes forget: everyone promises tests, few describe how a delivery rolls back. A vendor who goes live by copying files on a Friday night has built an app, not a delivery.', alt: 'Five layers: requirements and scenarios, code and tests, integration and environments, release, supervision and feedback' },
+    exemple: { title: 'One app over one year, twenty-four deliveries: the example', items: [
+      { value: '24', label: 'deliveries in a year, one every two weeks, each demoed and accepted from France before going live' },
+      { value: '2', label: 'rollbacks in the year: a slowdown and a misunderstood business rule, withdrawn in minutes; an assumption to measure at home' },
+      { value: '< 10 min', label: 'between the signal and the return to the previous version, database migration included; the mechanics guarantee it, not luck' },
+      { value: '0', label: 'outage visible to users: zero-downtime deployment, first one shop, then all, during off-peak hours', accent: true },
+    ], caption: 'Figure 3 · The number of rollbacks is an assumption; their duration and the absence of outage are not. Without progressive release, every delivery is a bet on all users at once; with it, a failed delivery touches one shop for ten minutes.', alt: 'Four figures: 24 deliveries, 2 rollbacks, under ten minutes, zero outage' },
+    verifs: { title: 'Six things the client checks at every delivery, from France', columns: ['What is checked', 'How, without travelling'], rows: [
+      { label: 'The acceptance scenario passes', cells: ['Every scenario written in week 1 is run end to end', 'On the acceptance environment, from their phone, with a short video from the vendor as a guide; written acceptance point by point'] },
+      { label: 'Automated tests exist', cells: ['The delivered feature is covered by tests that run at every change', 'The continuous integration test report is attached to the delivery; the number of tests must not go down'] },
+      { label: 'The code is in your repository', cells: ['Code, deployment scripts and documentation are in the company’s name', 'Access to the company’s Git repository; the delivery is a version tag, not a file sent over'] },
+      { label: 'The migration rolls back', cells: ['The database change can be undone without losing data', 'Rollback demonstrated on the acceptance environment, timed'] },
+      { label: 'It works on a real phone', cells: ['On entry-level Androids, in Arabic and French, on a degraded network', 'Test on real devices or a device farm, throttled network; capture attached to the delivery'] },
+      { label: 'The version log is kept', cells: ['Every delivery has a number, a list of changes, a date', 'Log readable by the client; it is what lets you say “since 1.14, stock is wrong”'] },
+    ], caption: 'Figure 4 · None of these six checks requires being at the vendor’s premises or knowing how to read code. A client in France who does them every two weeks knows, at any moment, where their app stands; the one waiting for the big delivery finds out at the end.', alt: 'Matrix of six checks: scenario, tests, repository, migration, real phone, version log' },
+    pieges: { title: 'Six situations that break a delivery, and what the method does', columns: ['What happens', 'What the method does'], rows: [
+      { label: '“Works on my machine”', cells: ['The demo runs on the developer’s laptop; online, nothing works the same', 'Demo and acceptance only on the acceptance environment, built by continuous integration, never on a laptop'] },
+      { label: 'The big-bang delivery', cells: ['Six months of work delivered at once; everything to accept at the same time, everything breaks at the same time', 'One batch every two weeks, demoed and released; the first usable version arrives in week 6, not month 6'] },
+      { label: 'The migration that does not roll back', cells: ['The database change is made, the delivery fails, and there is no way back without losing data', 'Two-step migrations: add before, remove after; every migration has its rollback tested in acceptance'] },
+      { label: 'Acceptance without scenarios', cells: ['The client “has a look” and says it is fine; three weeks later the feature is not the one expected', 'Scenarios written before the code, run point by point; written refusal with the failing scenario'] },
+      { label: 'Thursday night', cells: ['Release before the weekend; nobody watching, customers discover the outage on Saturday', 'Release in off-peak hours, on a weekday, with someone supervising the following hour; never the eve of a holiday'] },
+      { label: 'Manual tests only', cells: ['Every new feature breaks an old one nobody re-ran', 'Automated tests on every business rule, replayed at every change; the machine refuses before the client'] },
+    ], caption: 'Figure 5 · The six situations share one remedy: a delivery is a repeatable process, not an event. A vendor who has delivered every two weeks for a year has already met all six; the one preparing their big delivery will meet them all on the same day.', alt: 'Matrix of six situations: works on my machine, big-bang delivery, irreversible migration, acceptance without scenarios, Thursday night, manual tests' },
+    calendrier: { title: 'A two-week batch, in days', unit: 'd', items: [
+      { label: 'Batch written and scenarios', note: 'what will be demoed, the acceptance scenarios, the criteria; validated by the client before the first commit', from: 0, to: 1 },
+      { label: 'Development with tests', note: 'features and tests together; continuous integration at every change; acceptance environment updated daily', from: 1, to: 8, accent: true },
+      { label: 'Review and freeze', note: 'review by a second developer; no new feature after day 9, only fixes', from: 8, to: 9 },
+      { label: 'Acceptance by the client', note: 'scenarios run from France on the acceptance environment; written acceptance or refusal point by point', from: 9, to: 11 },
+      { label: 'Fixes', note: 'refused points fixed and re-accepted; what does not fit the deadline moves to the next batch, in writing', from: 11, to: 12 },
+      { label: 'Progressive release', note: 'off-peak hours, one shop or a fraction first, supervision, rollback ready', from: 12, to: 13 },
+      { label: 'Supervision and review', note: 'errors and slowness of the version, user feedback, log updated, next batch written', from: 13, to: 14 },
+    ], caption: 'Figure 6 · Fourteen days, and the same cycle repeats twenty-four times a year. Days 9 to 11 belong to the client in France: three days to accept on their phone, without a trip. What is not accepted by day 12 does not go to production; it is rewritten into the next batch.', alt: 'Fourteen-day timeline: batch written, development with tests, review, acceptance by the client, fixes, release, supervision' },
+  },
+  ar: {
+    cover: { eyebrow: 'التسليم · القبول · الاختبارات · 2027', title: ['«يعمل عندي.»', 'لا عند زبائنكم.', 'ولا مساء الجمعة.'], subtitle: 'كيف يُسلَّم تطبيق دون أن ينكسر: دفعة من أسبوعين تُكتب قبل الكود، اختبارات آلية مع كل تغيير، بيئة قبول يفتحها الزبون من فرنسا، عرض وقبول مكتوبان، إطلاق تدريجي، وتراجع في دقائق', left: { label: 'التسليم الكبير', sub: 'ستة أشهر ثم كل شيء دفعة واحدة' }, right: { label: 'دفعة أسبوعين', sub: 'معروضة، مقبولة، منشورة' } },
+    cycle: { title: 'حياة تسليم، في ست لحظات', items: [
+      { n: '01', label: 'دفعة الأسبوعين', sub: 'ما سيُعرض بعد خمسة عشر يوماً يُكتب قبل أول commit، مع سيناريو قبوله: من يفعل ماذا، وما يجب أن يُرى.' },
+      { n: '02', label: 'التطوير مع الاختبارات', sub: 'كل وظيفة تصل باختباراتها الآلية؛ وتغيير يُفشل اختباراً قائماً لا يدخل التسليم.' },
+      { n: '03', label: 'المراجعة والتكامل', sub: 'مطوّر ثانٍ يراجع؛ والتكامل المستمر يبني ويختبر مع كل تغيير، على خادم لا على حاسوب محمول.' },
+      { n: '04', label: 'بيئة القبول', sub: 'نسخة من الإنتاج ببيانات اختبار، على عنوانها الخاص، يفتحها الزبون على هاتفه من فرنسا.' },
+      { n: '05', label: 'العرض والقبول', sub: 'ينفّذ الزبون السيناريوهات المكتوبة في الأسبوع 1 على بيئة القبول؛ ويقبل أو يرفض كتابةً، نقطة نقطة.', accent: true },
+      { n: '06', label: 'الإطلاق التدريجي', sub: 'نشر دون انقطاع، متجر واحد أو جزء من المستعملين أولاً، إشراف، وتراجع بأمر واحد إن ارتفعت إشارة.' },
+    ], caption: 'الشكل 1 · اللحظة 05 هي ما يحل محل السفر: الزبون في فرنسا يقبل على هاتفه، على عنوان ليس الإنتاج، بسيناريوهات كُتبت قبل الكود. واللحظة 06 هي ما يجعل التسليم قابلاً للتراجع: ما يُنشر يمكن سحبه في دقائق، وترحيل القاعدة أيضاً.', alt: 'ست خطوات: الدفعة، التطوير مع الاختبارات، المراجعة والتكامل، بيئة القبول، العرض والقبول، الإطلاق التدريجي' },
+    couches: { title: 'تسليم تطبيق، في خمس طبقات', layers: [
+      { label: 'المتطلبات والسيناريوهات', items: [{ name: 'الدفعة المكتوبة، سيناريوهات القبول، معايير القبول', sub: 'تُكتب قبل الكود؛ وعليها يُقبل التسليم أو يُرفض' }] },
+      { label: 'الكود والاختبارات', items: [{ name: 'اختبارات وحدة، اختبارات تكامل، اختبارات شاملة على الهاتف، اختبارات إساءة', sub: 'اختبار لكل قاعدة عمل؛ ترفض الآلة التسليم قبل أن يراه الزبون' }] },
+      { label: 'التكامل والبيئات', items: [{ name: 'تكامل مستمر، مستودع باسم الزبون، بيئات قبول وما قبل الإنتاج والإنتاج', sub: 'كل تغيير يُبنى ويُختبر على خادم؛ وللقبول عنوانه الخاص' }] },
+      { label: 'الإطلاق', items: [{ name: 'نشر دون انقطاع، تدريجي، ترحيلات قابلة للتراجع، تراجع بأمر واحد', sub: 'هذه الطبقة هي ما يجعل التسليم الفاشل يكلّف عشر دقائق لا عطلة نهاية أسبوع', accent: true }] },
+      { label: 'الإشراف والتغذية الراجعة', items: [{ name: 'الأخطاء، البطء، التنبيهات، ملاحظات المستعملين، سجل الإصدارات', sub: 'ما يقول، خلال ساعة، إن كان التسليم قد كسر شيئاً' }] },
+    ], caption: 'الشكل 2 · الطبقة الوسطى السفلى هي التي تنساها عروض الأسعار: الجميع يعد بالاختبارات، وقليلون يصفون كيف يتراجع التسليم. ومورّد ينشر بنسخ الملفات مساء الجمعة بنى تطبيقاً لا تسليماً.', alt: 'خمس طبقات: المتطلبات والسيناريوهات، الكود والاختبارات، التكامل والبيئات، الإطلاق، الإشراف والتغذية الراجعة' },
+    exemple: { title: 'تطبيق على مدى سنة، أربعة وعشرون تسليماً: المثال', items: [
+      { value: '24', label: 'تسليماً في السنة، واحد كل أسبوعين، كلٌّ معروض ومقبول من فرنسا قبل النشر' },
+      { value: '2', label: 'تراجعان في السنة: بطء وقاعدة عمل أُسيء فهمها، سُحبا في دقائق؛ فرضية تُقاس عندكم' },
+      { value: '< 10 د', label: 'بين الإشارة والعودة إلى الإصدار السابق، بترحيل القاعدة؛ الآلية تضمنه لا الحظ' },
+      { value: '0', label: 'انقطاع يراه المستعملون: نشر دون توقف، متجر واحد أولاً ثم الكل، في ساعات الهدوء', accent: true },
+    ], caption: 'الشكل 3 · عدد التراجعات فرضية؛ أما مدتها وغياب الانقطاع فلا. بلا إطلاق تدريجي يكون كل تسليم رهاناً على كل المستعملين دفعة واحدة؛ ومعه يمسّ التسليم الفاشل متجراً واحداً عشر دقائق.', alt: 'أربعة أرقام: 24 تسليماً، تراجعان، أقل من عشر دقائق، صفر انقطاع' },
+    verifs: { title: 'ستة أشياء يتحقق منها الزبون في كل تسليم، من فرنسا', columns: ['ما يُتحقَّق منه', 'كيف، دون سفر'], rows: [
+      { label: 'سيناريو القبول يمرّ', cells: ['كل سيناريو كُتب في الأسبوع 1 يُنفَّذ من البداية إلى النهاية', 'على بيئة القبول، من هاتفه، بفيديو قصير من المورّد للإرشاد؛ قبول مكتوب نقطة نقطة'] },
+      { label: 'الاختبارات الآلية موجودة', cells: ['الوظيفة المسلَّمة مغطاة باختبارات تدور مع كل تغيير', 'تقرير اختبارات التكامل المستمر مرفق بالتسليم؛ وعدد الاختبارات يجب ألا ينخفض'] },
+      { label: 'الكود في مستودعكم', cells: ['الكود وسكريبتات النشر والتوثيق باسم الشركة', 'وصول إلى مستودع Git للشركة؛ التسليم وسم إصدار لا ملف مُرسَل'] },
+      { label: 'الترحيل يتراجع', cells: ['تغيير قاعدة البيانات يمكن إلغاؤه دون فقدان بيانات', 'عرض التراجع على بيئة القبول، مع توقيت'] },
+      { label: 'يعمل على هاتف حقيقي', cells: ['على هواتف Android من الفئة الأولى، بالعربية والفرنسية، على شبكة متدهورة', 'اختبار على أجهزة حقيقية أو مزرعة أجهزة، شبكة مقيَّدة؛ لقطة مرفقة بالتسليم'] },
+      { label: 'سجل الإصدارات مُمسَك', cells: ['لكل تسليم رقم وقائمة تغييرات وتاريخ', 'سجل يقرؤه الزبون؛ وهو ما يتيح القول «منذ 1.14 المخزون خاطئ»'] },
+    ], caption: 'الشكل 4 · لا يتطلب أي من هذه التحققات الستة الوجود في مقر المورّد ولا معرفة قراءة الكود. والزبون في فرنسا الذي يجريها كل أسبوعين يعرف في كل لحظة أين يقف تطبيقه؛ ومن ينتظر التسليم الكبير يكتشفه في النهاية.', alt: 'مصفوفة ست تحققات: السيناريو، الاختبارات، المستودع، الترحيل، الهاتف الحقيقي، سجل الإصدارات' },
+    pieges: { title: 'ست حالات تكسر التسليم، وما تفعله المنهجية', columns: ['ما يحدث', 'ما تفعله المنهجية'], rows: [
+      { label: '«يعمل عندي»', cells: ['يُجرى العرض على حاسوب المطوّر؛ وعلى الإنترنت لا يعمل شيء بالطريقة نفسها', 'العرض والقبول على بيئة القبول فقط، التي يبنيها التكامل المستمر، لا على حاسوب أبداً'] },
+      { label: 'التسليم الكبير', cells: ['ستة أشهر من العمل تُسلَّم دفعة واحدة؛ كل شيء يُقبل في الوقت نفسه وينكسر في الوقت نفسه', 'دفعة كل أسبوعين، معروضة ومنشورة؛ أول إصدار صالح يصل في الأسبوع 6 لا الشهر 6'] },
+      { label: 'الترحيل الذي لا يتراجع', cells: ['يُجرى تغيير القاعدة، يفشل التسليم، ولا عودة دون فقدان بيانات', 'ترحيلات على مرحلتين: إضافة قبل، وإزالة بعد؛ ولكل ترحيل تراجعه المختبَر في القبول'] },
+      { label: 'القبول بلا سيناريوهات', cells: ['الزبون «يلقي نظرة» ويقول إنه جيد؛ وبعد ثلاثة أسابيع الوظيفة ليست المنتظرة', 'سيناريوهات تُكتب قبل الكود وتُنفَّذ نقطة نقطة؛ رفض مكتوب بالسيناريو الفاشل'] },
+      { label: 'مساء الخميس', cells: ['نشر قبل عطلة نهاية الأسبوع؛ لا أحد يراقب، ويكتشف الزبائن العطل يوم السبت', 'نشر في ساعات الهدوء، في يوم عمل، مع من يشرف على الساعة التالية؛ لا عشية عطلة أبداً'] },
+      { label: 'اختبارات يدوية فقط', cells: ['كل وظيفة جديدة تكسر قديمة لم يعد أحد تجريبها', 'اختبارات آلية على كل قواعد العمل، تُعاد مع كل تغيير؛ ترفض الآلة قبل الزبون'] },
+    ], caption: 'الشكل 5 · للحالات الست علاج واحد: التسليم عملية متكررة لا حدث. ومورّد يسلّم كل أسبوعين منذ سنة قد صادف الست كلها؛ ومن يعدّ تسليمه الكبير سيصادفها كلها في اليوم نفسه.', alt: 'مصفوفة ست حالات: يعمل عندي، التسليم الكبير، ترحيل لا يتراجع، قبول بلا سيناريوهات، مساء الخميس، اختبارات يدوية' },
+    calendrier: { title: 'دفعة من أسبوعين، بالأيام', unit: 'يوم', items: [
+      { label: 'الدفعة المكتوبة والسيناريوهات', note: 'ما سيُعرض، سيناريوهات القبول، المعايير؛ يصادق عليها الزبون قبل أول commit', from: 0, to: 1 },
+      { label: 'التطوير مع الاختبارات', note: 'الوظائف والاختبارات معاً؛ تكامل مستمر مع كل تغيير؛ بيئة القبول تُحدَّث يومياً', from: 1, to: 8, accent: true },
+      { label: 'المراجعة والتجميد', note: 'مراجعة مطوّر ثانٍ؛ لا وظيفة جديدة بعد اليوم 9، تصحيحات فقط', from: 8, to: 9 },
+      { label: 'قبول الزبون', note: 'سيناريوهات تُنفَّذ من فرنسا على بيئة القبول؛ قبول أو رفض مكتوب نقطة نقطة', from: 9, to: 11 },
+      { label: 'التصحيحات', note: 'النقاط المرفوضة تُصحَّح ويُعاد قبولها؛ وما لا يتسع له الأجل ينتقل إلى الدفعة التالية كتابةً', from: 11, to: 12 },
+      { label: 'الإطلاق التدريجي', note: 'ساعات الهدوء، متجر واحد أو جزء أولاً، إشراف، تراجع جاهز', from: 12, to: 13 },
+      { label: 'الإشراف والحصيلة', note: 'أخطاء الإصدار وبطؤه، ملاحظات المستعملين، السجل محدَّث، الدفعة التالية مكتوبة', from: 13, to: 14 },
+    ], caption: 'الشكل 6 · أربعة عشر يوماً، والدورة نفسها تتكرر أربعاً وعشرين مرة في السنة. الأيام 9 إلى 11 للزبون في فرنسا: ثلاثة أيام للقبول على هاتفه دون سفر. وما لا يُقبل في اليوم 12 لا يذهب إلى الإنتاج؛ بل يُعاد كتابته في الدفعة التالية.', alt: 'خط زمني من أربعة عشر يوماً: الدفعة، التطوير مع الاختبارات، المراجعة، قبول الزبون، التصحيحات، الإطلاق، الإشراف' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      cycle: { svg: steps({ title: t.cycle.title, steps: t.cycle.items, arrows: true, rtl }), caption: t.cycle.caption, alt: t.cycle.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      verifs: { svg: matrix({ title: t.verifs.title, columns: t.verifs.columns, rows: t.verifs.rows, rtl }), caption: t.verifs.caption, alt: t.verifs.alt },
+      pieges: { svg: matrix({ title: t.pieges.title, columns: t.pieges.columns, rows: t.pieges.rows, rtl }), caption: t.pieges.caption, alt: t.pieges.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 14, tick: 2, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}
