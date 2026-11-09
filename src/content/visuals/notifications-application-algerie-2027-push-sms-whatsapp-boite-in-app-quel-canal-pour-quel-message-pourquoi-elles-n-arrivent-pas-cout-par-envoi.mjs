@@ -1,4 +1,5 @@
-import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+import { cover, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+import { journey, STRINGS as J } from './custom/notifications-journey.mjs';
 export const slug = 'notifications-application-algerie-2027-push-sms-whatsapp-boite-in-app-quel-canal-pour-quel-message-pourquoi-elles-n-arrivent-pas-cout-par-envoi';
 const T = {
   fr: {
@@ -155,7 +156,7 @@ export function visuals(locale = 'fr') {
   return {
     cover: cover({ ...t.cover, rtl }),
     figures: {
-      parcours: { svg: steps({ title: t.parcours.title, steps: t.parcours.items, arrows: true, rtl }), caption: t.parcours.caption, alt: t.parcours.alt },
+      parcours: { svg: journey(J[locale] || J.fr, rtl), caption: t.parcours.caption, alt: (J[locale] || J.fr).alt },
       couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
       exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
       canaux: { svg: matrix({ title: t.canaux.title, columns: t.canaux.columns, rows: t.canaux.rows, rtl }), caption: t.canaux.caption, alt: t.canaux.alt },

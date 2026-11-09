@@ -244,3 +244,6 @@ export function stats({ title, items, rtl }) {
   });
   return s + '</svg>';
 }
+
+// Primitives for bespoke, per-post figures (animated SVGs written in the spec files).
+export { C, F, ctx, text, rect, line, circle, open, heading, dots };

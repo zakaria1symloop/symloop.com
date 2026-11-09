@@ -1,4 +1,5 @@
-import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+import { cover, steps, layers, matrix, timeline } from '../../lib/visuals/index.mjs';
+import { aiCache, STRINGS as AC } from './custom/ai-cache.mjs';
 export const slug = 'mettre-de-l-ia-dans-une-application-algerie-2027-cinq-fonctions-recherche-documents-extraction-factures-classification-cout-par-requete';
 const T = {
   fr: {
@@ -157,7 +158,7 @@ export function visuals(locale = 'fr') {
     figures: {
       requete: { svg: steps({ title: t.requete.title, steps: t.requete.items, arrows: true, rtl }), caption: t.requete.caption, alt: t.requete.alt },
       couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
-      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      exemple: { svg: aiCache(AC[locale] || AC.fr, rtl), caption: t.exemple.caption, alt: (AC[locale] || AC.fr).alt },
       fonctions: { svg: matrix({ title: t.fonctions.title, columns: t.fonctions.columns, rows: t.fonctions.rows, rtl }), caption: t.fonctions.caption, alt: t.fonctions.alt },
       pieges: { svg: matrix({ title: t.pieges.title, columns: t.pieges.columns, rows: t.pieges.rows, rtl }), caption: t.pieges.caption, alt: t.pieges.alt },
       calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 12, tick: 2, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
