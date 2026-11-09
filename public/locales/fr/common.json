@@ -30,7 +30,12 @@
     "ctaSecondary": "Consultation Gratuite",
     "learnMore": "En savoir plus",
     "serviceSelector": "Quelle révolution voulez-vous lancer ?",
-    "technologies": "Développement Sur Mesure • Applications Mobiles • Solutions Web • Infrastructure Cloud",
+    "technologies": {
+      "custom": "Développement Sur Mesure",
+      "mobile": "Applications Mobiles",
+      "web": "Solutions Web",
+      "cloud": "Infrastructure Cloud"
+    },
     "stats": {
       "satisfaction": "Satisfaction Client",
       "partners": "Projets Réalisés",
@@ -99,13 +104,7 @@
     "techStack": {
       "title": "Technologies Maîtrisées"
     },
-    "scrollIndicator": "Découvrir nos réalisations",
-    "technologies": {
-      "custom": "Développement Sur Mesure",
-      "mobile": "Applications Mobiles",
-      "web": "Solutions Web",
-      "cloud": "Infrastructure Cloud"
-    }
+    "scrollIndicator": "Découvrir nos réalisations"
   },
   "aiHero": {
     "badge": "Leader IA en Algérie",
@@ -116,42 +115,74 @@
       "health": {
         "title": "IA Santé",
         "description": "Diagnostic intelligent, analyse imagerie médicale, prédiction maladies et suivi patients",
-        "useCases": ["Analyse imagerie", "Prédiction maladies", "Assistant médical"]
+        "useCases": [
+          "Analyse imagerie",
+          "Prédiction maladies",
+          "Assistant médical"
+        ]
       },
       "marketing": {
         "title": "IA Marketing",
         "description": "Campagnes personnalisées, analyse comportement clients, prédiction ventes et optimisation ROI",
-        "useCases": ["Personnalisation", "Prédiction ventes", "Analyse marché"]
+        "useCases": [
+          "Personnalisation",
+          "Prédiction ventes",
+          "Analyse marché"
+        ]
       },
       "logistics": {
         "title": "IA Logistique",
         "description": "Optimisation routes, gestion stock intelligente, prédiction demande et livraison",
-        "useCases": ["Optimisation routes", "Prédiction demande", "Gestion stock"]
+        "useCases": [
+          "Optimisation routes",
+          "Prédiction demande",
+          "Gestion stock"
+        ]
       },
       "industry": {
         "title": "IA Industrie",
         "description": "Maintenance prédictive, contrôle qualité automatisé, automatisation production",
-        "useCases": ["Maintenance prédictive", "Contrôle qualité", "Automatisation"]
+        "useCases": [
+          "Maintenance prédictive",
+          "Contrôle qualité",
+          "Automatisation"
+        ]
       },
       "finance": {
         "title": "IA Finance",
         "description": "Détection fraude, évaluation risques temps réel, trading automatisé",
-        "useCases": ["Détection fraude", "Évaluation risques", "Trading auto"]
+        "useCases": [
+          "Détection fraude",
+          "Évaluation risques",
+          "Trading auto"
+        ]
       },
       "education": {
         "title": "IA Éducation",
         "description": "Apprentissage personnalisé, évaluation intelligente, tuteur IA adaptatif",
-        "useCases": ["Apprentissage adapté", "Évaluation auto", "Tuteur IA"]
+        "useCases": [
+          "Apprentissage adapté",
+          "Évaluation auto",
+          "Tuteur IA"
+        ]
       },
       "commerce": {
         "title": "IA Commerce",
         "description": "Recommandations intelligentes, pricing dynamique, service client automatisé",
-        "useCases": ["Recommandations", "Pricing dynamique", "Service client"]
+        "useCases": [
+          "Recommandations",
+          "Pricing dynamique",
+          "Service client"
+        ]
       },
       "realestate": {
         "title": "IA Immobilier",
         "description": "Estimation précise biens, prédiction tendances prix, matching clients",
-        "useCases": ["Estimation biens", "Prédiction prix", "Matching"]
+        "useCases": [
+          "Estimation biens",
+          "Prédiction prix",
+          "Matching"
+        ]
       }
     }
   },
@@ -862,8 +893,8 @@
       "title": "Des chiffres que nous pouvons défendre.",
       "stats": {
         "apartments": "Appartements équipés",
-        "uptime":     "Uptime du plus ancien appareil",
-        "clutch":     "Note Clutch vérifiée"
+        "uptime": "Uptime du plus ancien appareil",
+        "clutch": "Note Clutch vérifiée"
       },
       "deployedLabel": "Appareils déployés en",
       "deployedList": "Sétif · Alger · Oran · Constantine · Annaba · Béjaïa · Blida  ·  Casablanca · Tunis · Le Caire · Dubaï · Riyad · Koweït  ·  Paris · Madrid · Francfort"
@@ -1006,9 +1037,18 @@
       "mainLabel": "Disponibilité production · 90 jours glissants",
       "context": "Sur tous les systèmes de production exploités par Symloop, la disponibilité moyenne sur 90 jours glissants reste au-dessus de la cible des quatre neufs. C'est le plancher, pas le plafond. Nous concevons pour plus haut.",
       "support": {
-        "deploys": { "value": "200+/mois", "label": "Déploiements production par mois" },
-        "pages":   { "value": "0",          "label": "Pages 3h du matin dernier trimestre" },
-        "mttr":    { "value": "<8min",      "label": "Temps moyen de récupération" }
+        "deploys": {
+          "value": "200+/mois",
+          "label": "Déploiements production par mois"
+        },
+        "pages": {
+          "value": "0",
+          "label": "Pages 3h du matin dernier trimestre"
+        },
+        "mttr": {
+          "value": "<8min",
+          "label": "Temps moyen de récupération"
+        }
       },
       "quote": "Ils ont migré toute notre stack vers Kubernetes en six semaines sans interruption. Nous n'avons pas reçu une seule page à 3h pendant la migration. Deux ans plus tard, c'est toujours le cas.",
       "quoteAttribution": "— CTO, plateforme SaaS, Algérie"
@@ -1089,10 +1129,22 @@
       "ctaPrimary": "Réserver un appel",
       "ctaSecondary": "Voir ce qui survit",
       "stats": {
-        "deletion": { "label": "Apps supprimées en 24h",       "value": "76%" },
-        "fps":      { "label": "Budget d'image production",    "value": "60fps" },
-        "clutch":   { "label": "Note Clutch vérifiée",          "value": "5.0 / 5.0" },
-        "stores":   { "label": "Déploiements régionaux stores", "value": "9" }
+        "deletion": {
+          "label": "Apps supprimées en 24h",
+          "value": "76%"
+        },
+        "fps": {
+          "label": "Budget d'image production",
+          "value": "60fps"
+        },
+        "clutch": {
+          "label": "Note Clutch vérifiée",
+          "value": "5.0 / 5.0"
+        },
+        "stores": {
+          "label": "Déploiements régionaux stores",
+          "value": "9"
+        }
       }
     },
     "video": {
@@ -1182,12 +1234,36 @@
       "title": "Les chiffres que nous visons.",
       "subtitle": "Chaque app mobile Symloop est mesurée selon ces critères. Pas des métriques de vanité — opérationnelles.",
       "items": {
-        "fps":      { "value": "60fps",  "label": "Cible production",         "description": "Chaque rendu sous le budget de 16ms par image. Testé sur appareils Android d'entrée de gamme, pas sur iPhones haut de gamme." },
-        "paint":    { "value": "<2,5s",  "label": "Premier rendu",            "description": "Time-to-interactive inférieur à 2,5 secondes sur Android milieu de gamme avec connexion 4G." },
-        "crash":    { "value": "99,5%+", "label": "Sessions sans crash",      "description": "Monitoré par Sentry dès le jour 1. Chaque régression triée avant la prochaine release." },
-        "coverage": { "value": "94%",    "label": "Couverture de tests",      "description": "Tests unit + UI + intégration. Chaque chemin critique couvert avant le merge." },
-        "codebase": { "value": "1",      "label": "Codebase (cross-plat)",    "description": "En Flutter ou React Native, une seule base de code pour iOS et Android avec logique partagée et UI plateforme-spécifique où nécessaire." },
-        "stores":   { "value": "9",      "label": "Déploiements régionaux",   "description": "App Store + Play Store + variantes régionales (App Store Connect supporte 175 pays ; nous livrons les 9 pertinents par défaut)." }
+        "fps": {
+          "value": "60fps",
+          "label": "Cible production",
+          "description": "Chaque rendu sous le budget de 16ms par image. Testé sur appareils Android d'entrée de gamme, pas sur iPhones haut de gamme."
+        },
+        "paint": {
+          "value": "<2,5s",
+          "label": "Premier rendu",
+          "description": "Time-to-interactive inférieur à 2,5 secondes sur Android milieu de gamme avec connexion 4G."
+        },
+        "crash": {
+          "value": "99,5%+",
+          "label": "Sessions sans crash",
+          "description": "Monitoré par Sentry dès le jour 1. Chaque régression triée avant la prochaine release."
+        },
+        "coverage": {
+          "value": "94%",
+          "label": "Couverture de tests",
+          "description": "Tests unit + UI + intégration. Chaque chemin critique couvert avant le merge."
+        },
+        "codebase": {
+          "value": "1",
+          "label": "Codebase (cross-plat)",
+          "description": "En Flutter ou React Native, une seule base de code pour iOS et Android avec logique partagée et UI plateforme-spécifique où nécessaire."
+        },
+        "stores": {
+          "value": "9",
+          "label": "Déploiements régionaux",
+          "description": "App Store + Play Store + variantes régionales (App Store Connect supporte 175 pays ; nous livrons les 9 pertinents par défaut)."
+        }
       }
     },
     "stack": {
@@ -1419,166 +1495,196 @@
   },
   "ai_page": {
     "seo": {
-      "title": "Intelligence Artificielle & Machine Learning — Développement IA | Nearshore depuis l'Algérie | Symloop",
-      "description": "Développement IA et machine learning livré en nearshore depuis l'Algérie. Vision par ordinateur, NLP, intégration LLM, analyse prédictive, MLOps. Modèles entraînés sur mesure, pas des wrappers d'API. Alternative aux prestataires européens : tarifs compétitifs, équipe senior. Clutch 5.0/5.0.",
-      "keywords": "intelligence artificielle entreprise, développement IA, machine learning entreprise, société IA, gestion de la relation client IA, automatisation IA, analyse prédictive, NLP, vision par ordinateur, intégration LLM, MLOps, conseil IA France, intelligence artificielle Afrique, IA MENA, IA générative entreprise, développement IA nearshore, Symloop IA"
+      "title": "Symloop | Agents IA, RAG et assistants en arabe, français et darija — développement IA en Algérie (Alger, Sétif)",
+      "description": "Symloop construit des fonctions IA en production pour des applications utilisées en Algérie et en France : agents IA sur WhatsApp et dans le back-office, RAG sur vos documents privés, lecture de factures et de pièces, assistants en arabe, français et darija, modèles ouverts (Llama, Mistral, Qwen, Jais) déployés sur vos serveurs ou en Europe. Jeu d'évaluation, repli humain, coût par requête. NOOR, notre plateforme IA souveraine. Alger et Sétif.",
+      "keywords": "agent IA Algérie, développement IA Algérie, société IA Algérie, RAG documents entreprise, agent IA WhatsApp, assistant IA arabe darija, LLM déploiement privé on-premise Algérie, extraction factures IA, fine-tuning Llama Mistral Qwen Jais, Symloop AI, Symloop IA, NOOR plateforme IA souveraine, entreprise intelligence artificielle Alger Sétif"
     },
     "hero": {
-      "eyebrow": "01 — Intelligence Artificielle",
-      "titleStart": "Une ingénierie IA pour la",
+      "eyebrow": "01 · Intelligence artificielle",
+      "titleStart": "Des fonctions IA en production :",
       "cycle": {
-        "0": "vision par ordinateur.",
-        "1": "analyse prédictive.",
-        "2": "intégration LLM.",
-        "3": "recommandation intelligente.",
-        "4": "production MLOps."
+        "0": "agents IA sur WhatsApp.",
+        "1": "RAG sur vos documents.",
+        "2": "lecture de factures et de pièces.",
+        "3": "assistants en arabe et en darija.",
+        "4": "modèles ouverts sur vos serveurs."
       },
-      "subtitle": "Nous n'enveloppons pas des APIs. Nous entraînons des modèles sur mesure, les déployons en production, et les exploitons. Conçus de bout en bout par une équipe interne — pour les entreprises qui veulent des résultats réels, pas des démos.",
-      "ctaPrimary": "Réserver un appel",
-      "ctaSecondary": "Voir les capacités",
+      "subtitle": "Nous ne branchons pas un chatbot sur l'API d'un éditeur. Nous construisons la fonction IA dans votre application : une orchestration qui vous appartient, des documents récupérés plutôt que tout envoyé, une sortie vérifiée contre un schéma, un repli vers un humain, un jeu d'évaluation écrit avec vous et un coût par requête lu chaque semaine. En français, en anglais, en arabe et en darija, hébergé là où vos contrats l'exigent.",
+      "ctaPrimary": "Parler de votre fonction IA",
+      "ctaSecondary": "Voir les six fonctions",
       "stats": {
-        "years":     { "label": "Années en production",  "value": "5+" },
-        "team":      { "label": "Ingénieurs ML internes", "value": "10+" },
-        "delivery":  { "label": "Marchés servis",         "value": "UE · MENA · DZ" },
-        "clutch":    { "label": "Note Clutch vérifiée",   "value": "5.0 / 5.0" }
+        "years": {
+          "label": "Plateforme IA souveraine",
+          "value": "NOOR"
+        },
+        "team": {
+          "label": "Langues des assistants",
+          "value": "FR · EN · AR · darija"
+        },
+        "delivery": {
+          "label": "Déploiement",
+          "value": "Vos serveurs ou Europe"
+        },
+        "clutch": {
+          "label": "Avis vérifiés Clutch",
+          "value": "5,0 · 2 avis"
+        }
       }
     },
     "capabilities": {
-      "eyebrow": "02 — Capacités",
-      "title": "Cinq capacités, livrées de bout en bout.",
-      "subtitle": "Cliquez sur une capacité pour voir des cas d'usage réels, la profondeur technique, et le type de problèmes que nous résolvons en production.",
-      "cta": "En savoir plus",
-      "activeLabel": "Sélectionné",
-      "useCasesLabel": "Cas d'usage courants",
+      "eyebrow": "02 · Fonctions",
+      "title": "Six fonctions IA, et comment chacune est construite.",
+      "subtitle": "Cliquez sur une fonction pour voir ce que l'utilisateur obtient, comment c'est construit, et avec quels modèles. Chaque fonction a son guide « comment on construit » dans le blog.",
+      "cta": "Lire le guide",
+      "activeLabel": "Sélectionnée",
+      "useCasesLabel": "Ce que nous construisons",
       "items": {
-        "cv": {
-          "title": "Vision par Ordinateur",
-          "tagline": "Intelligence visuelle en temps réel pour l'industrie, le retail et la sécurité.",
-          "description": "Nous concevons, entraînons et déployons des systèmes de vision qui fonctionnent de manière fiable en conditions réelles — usines, magasins, flux de surveillance, drones, équipements médicaux. Du traitement d'image classique à la détection, segmentation et tracking par deep learning.",
-          "tech": "PyTorch · OpenCV · YOLO · ONNX · NVIDIA Triton",
+        "llm": {
+          "title": "Agents IA & RAG",
+          "tagline": "Un agent qui répond, agit dans vos outils et passe à un humain ; une recherche qui cite ses sources.",
+          "description": "Agents sur WhatsApp, dans le back-office ou dans l'application, avec des outils (commande, facture, rendez-vous), des limites écrites et un passage à l'humain mesuré. RAG sur vos documents privés : découpage, index, récupération des seuls passages utiles, réponse contrainte à citer ou à dire « je ne sais pas ». Instructions versionnées, schémas de sortie et journal complet, dans votre dépôt, pas dans la console d'un éditeur.",
+          "tech": "Llama · Mistral · Qwen · Claude · GPT · LangGraph · pgvector · Meilisearch",
           "useCases": {
-            "0": "Détection de défauts sur lignes de production (acier, verre, agroalimentaire, plastiques)",
-            "1": "Comptage d'inventaire et conformité de rayonnage pour chaînes de retail",
-            "2": "Analyse d'images médicales : tri, segmentation, signalement d'anomalies",
-            "3": "Intelligence de surveillance temps réel avec inférence respectueuse de la vie privée",
-            "4": "Intelligence documentaire et ID : OCR, détection de fraude, pipelines KYC",
-            "5": "Imagerie drone et satellite pour l'agriculture, les mines, l'infrastructure"
+            "0": "Agent WhatsApp Business : commande, suivi, réclamation, avec fenêtre de 24 h, gabarits approuvés et coût par message",
+            "1": "Recherche dans contrats, procédures et fiches produit, avec la source citée ; « je ne sais pas » quand rien n'est trouvé",
+            "2": "Tri des messages entrants en catégories fermées, file humaine pour l'incertain",
+            "3": "Assistant interne sur l'ERP et la comptabilité, outils en lecture d'abord, action après validation",
+            "4": "Génération de devis, réponses et résumés de dossier relus avant envoi",
+            "5": "Passage à l'humain sous un seuil de confiance, avec le contexte, délai de reprise mesuré"
           }
         },
         "nlp": {
-          "title": "Traitement du Langage Naturel",
-          "tagline": "Compréhension de documents, extraction, classification, sentiment, résumé et voix.",
-          "description": "Nous construisons des systèmes NLP qui lisent, classent, résument, extraient et routent du contenu à grande échelle. Multilingue par défaut. Nous gérons du texte réel et bruité — emails, PDFs scannés, transcriptions vocales, posts sociaux — pas des datasets académiques propres.",
-          "tech": "Transformers · spaCy · Hugging Face · Whisper · LangChain",
+          "title": "Documents & assistants en arabe, français et darija",
+          "tagline": "Factures, bons de commande et pièces d'identité lus ; vocaux en darija transcrits.",
+          "description": "Lecture de documents photographiés : modèle de lecture puis schéma strict, règles de cohérence (totaux, dates), score par champ, validation humaine sous le seuil ; c'est la fonction qui remplace le plus de ressaisie. Transcription de vocaux en arabe dialectal avec des modèles multidialectaux évalués sur de vrais vocaux de vos clients, mots en français conservés. Recherche produit en arabe, en français et en darija en lettres latines, avec des synonymes écrits à la main.",
+          "tech": "Jais · Whisper · Hugging Face · OCR · schémas JSON · Meilisearch",
           "useCases": {
-            "0": "Intelligence contractuelle : extraction de clauses, signalement de risques, comparaison",
-            "1": "Tri et routage d'emails entrants pour les équipes support et opérations",
-            "2": "Compréhension de documents scannés (factures, IDs, formulaires, rapports)",
-            "3": "Transcription vocale et résumé de réunions à l'échelle de l'entreprise",
-            "4": "Analyse multilingue de sentiment et de sujets sur les retours clients",
-            "5": "Construction de bases de connaissances à partir de contenu interne non structuré"
-          }
-        },
-        "predictive": {
-          "title": "Analyse Prédictive",
-          "tagline": "Prévision, détection d'anomalies et intelligence de décision sur vos vraies données opérationnelles.",
-          "description": "Nous construisons des modèles prédictifs sur les vraies données — bruitées, incomplètes — que les opérations possèdent réellement. Les modèles sont évalués selon des métriques business (coût économisé, churn évité, fraude détectée), pas seulement des scores F1.",
-          "tech": "XGBoost · LightGBM · Prophet · scikit-learn · TimescaleDB",
-          "useCases": {
-            "0": "Prévision de demande et optimisation d'inventaire pour retail et logistique",
-            "1": "Maintenance prédictive pour équipements industriels et flottes",
-            "2": "Modélisation du churn client et de la valeur vie client",
-            "3": "Détection de fraude et d'anomalies dans les systèmes transactionnels",
-            "4": "Optimisation de tournées pour le last-mile et les opérations terrain",
-            "5": "Prévision de consommation énergétique pour bâtiments et réseaux"
-          }
-        },
-        "llm": {
-          "title": "Intégration LLM",
-          "tagline": "Intégrations de niveau production de GPT, Claude et modèles open-weight.",
-          "description": "Nous intégrons les grands modèles de langage dans des workflows métier réels — avec retrieval, harnais d'évaluation, tests de régression de prompts, observabilité et garde-fous. Pas des jouets de chat : des systèmes qu'une entreprise peut auditer, versionner et auxquels elle peut faire confiance.",
-          "tech": "OpenAI · Anthropic · Llama · LangChain · LangGraph · pgvector",
-          "useCases": {
-            "0": "Assistants augmentés par retrieval sur des bases de connaissances privées",
-            "1": "Workflows agentiques : planification multi-étapes, utilisation d'outils, hand-off humain",
-            "2": "Extraction structurée depuis documents, contrats et emails",
-            "3": "Compréhension de code et Q&A sur codebase pour équipes d'ingénierie",
-            "4": "Automatisation du support client avec audit trail et escalade",
-            "5": "Copilotes de recherche internes intégrés aux systèmes de l'entreprise"
+            "0": "Factures et bons de commande photographiés transformés en champs vérifiés, puis poussés dans l'ERP ou la comptabilité",
+            "1": "Pièces d'identité et dossiers (location, inscription, crédit) lus avec score par champ et validation humaine",
+            "2": "Vocaux en darija des commerciaux et des clients transcrits puis traités comme des demandes écrites",
+            "3": "Recherche produit tolérante aux fautes, « zit » retrouve l'huile, « الزيت » et « زيت » donnent le même résultat",
+            "4": "Résumés et classification de dossiers médicaux, juridiques et administratifs, en arabe et en français",
+            "5": "Jeu d'évaluation de soixante cas réels écrit avec le gérant avant le code, rejoué à chaque changement"
           }
         },
         "mlops": {
-          "title": "MLOps & Infrastructure IA",
-          "tagline": "Pipelines, monitoring, boucles de réentraînement et l'infrastructure ennuyeuse qui garde l'IA en vie.",
-          "description": "La précision d'un modèle dans un notebook ne signifie rien en production. Nous concevons les parties ennuyeuses : pipelines d'entraînement, registres de modèles, monitoring de drift, déclencheurs de réentraînement, A/B testing, sécurité de rollback, observabilité.",
-          "tech": "Docker · Kubernetes · MLflow · Weights & Biases · DVC · Airflow",
+          "title": "Déploiement privé & exploitation",
+          "tagline": "Modèles ouverts sur vos serveurs, en Algérie ou en Europe ; coût par requête sous les yeux.",
+          "description": "Modèles ouverts (Llama, Mistral, Qwen, Jais) servis sur vos serveurs quand les documents ne doivent pas sortir ; éditeurs hébergés en Europe sinon, avec contrats et clés à votre nom. Cache du préfixe, documents récupérés plutôt que tout envoyé, limite de tokens, modèle plus petit là où la note tient. Journal par requête et écran hebdomadaire : volume, coût, latence, qualité sur le jeu d'évaluation, dérive. NOOR, notre plateforme IA souveraine, pour les banques, les administrations et les industriels.",
+          "tech": "vLLM · Docker · Kubernetes · MLflow · Prometheus · PostgreSQL",
           "useCases": {
-            "0": "Pipelines d'entraînement reproductibles avec données et code versionnés",
-            "1": "Infrastructure de registre, déploiement et rollback de modèles",
-            "2": "Monitoring temps réel de drift et de performance avec alertes",
-            "3": "Boucles de réentraînement automatique déclenchées par les shifts de données",
-            "4": "Infrastructure d'A/B testing pour déploiements shadow et canary",
-            "5": "Optimisation des coûts d'inférence GPU à l'échelle de production"
+            "0": "Déploiement sur site ou hors ligne pour les données qui ne sortent pas (banque, administration, santé, industrie)",
+            "1": "Montage mixte : production chez un hébergeur en Algérie, modèles les plus capables appelés en Europe, données minimales envoyées",
+            "2": "Réglage du coût : cache du préfixe, récupération, modèle plus petit, mesuré avant et après sur le jeu d'évaluation",
+            "3": "Supervision : coût par requête, latence, note, part passée à l'humain, alertes de dérive",
+            "4": "Fine-tuning d'un modèle ouvert quand soixante cas montrent que les instructions ne suffisent plus",
+            "5": "Contrats éditeurs, clés et comptes au nom de votre entreprise ; paiement en devise anticipé"
+          }
+        },
+        "predictive": {
+          "title": "Prévision & détection",
+          "tagline": "Prévoir la demande, repérer l'anomalie, sur vos vraies données opérationnelles.",
+          "description": "Modèles de prévision et de détection construits sur les données bruitées et incomplètes que les opérations possèdent vraiment, évalués sur une période tenue à l'écart, déployés derrière une règle métier et un humain. Nous disons quand les données ne suffisent pas.",
+          "tech": "scikit-learn · XGBoost · LightGBM · Prophet · PostgreSQL",
+          "useCases": {
+            "0": "Prévision de demande et réassort pour la distribution et le retail",
+            "1": "Détection d'anomalies et de fraude dans les transactions et les tournées",
+            "2": "Maintenance prédictive sur équipements et flottes instrumentés",
+            "3": "Score de risque de retard de paiement par client, avec règle métier et validation humaine",
+            "4": "Optimisation de tournées pour la prévente et la livraison du dernier kilomètre",
+            "5": "Prévision de consommation pour bâtiments et sites industriels"
+          }
+        },
+        "cv": {
+          "title": "Vision par ordinateur",
+          "tagline": "Compter, contrôler, lire ce que la caméra voit, en conditions réelles.",
+          "description": "Systèmes de vision qui tiennent en usine, en entrepôt et en magasin : détection de défauts, comptage, conformité de rayonnage, lecture de documents et de pièces, imagerie drone et satellite. Entraînés sur vos images, évalués sur un jeu tenu à l'écart, servis sur site quand la connexion ne tient pas.",
+          "tech": "PyTorch · YOLO · OpenCV · ONNX · NVIDIA Triton",
+          "useCases": {
+            "0": "Détection de défauts sur lignes de production (agroalimentaire, plastiques, verre, acier)",
+            "1": "Comptage d'inventaire et conformité de rayonnage pour le retail",
+            "2": "Lecture de pièces, factures et formulaires : OCR, détection de fraude, dossiers d'inscription",
+            "3": "Imagerie drone et satellite pour l'agriculture, les mines et l'infrastructure",
+            "4": "Analyse d'images médicales : tri, segmentation, signalement, validation par le praticien",
+            "5": "Surveillance temps réel avec inférence sur site, respectueuse de la vie privée"
           }
         }
       }
     },
     "why": {
-      "eyebrow": "03 — Pourquoi Symloop",
-      "title": "Une firme d'ingénierie, pas une boutique de buzzwords.",
-      "items": {
-        "0": {
-          "title": "On entraîne, on n'enveloppe pas",
-          "description": "Nous construisons des modèles sur mesure sur vos données. Les solutions API-only ne sont recommandées que lorsque les mathématiques le justifient — jamais par défaut."
+      "eyebrow": "03 · Ce qu'on peut vérifier",
+      "title": "Ce qu'on peut vérifier, pas ce qu'on promet.",
+      "items": [
+        {
+          "title": "Un guide « comment on construit » par fonction",
+          "description": "Agent IA sur WhatsApp, IA dans l'application, recherche en arabe et darija, connexion par OTP, mode hors ligne, hébergement, livraison, intégration : huit guides publiés avec architecture, chiffres et calendrier. Lisez comment nous faisons avant d'appeler."
         },
-        "1": {
-          "title": "Clutch 5.0 / 5.0 vérifié",
-          "description": "Avis clients indépendamment vérifiés sur Clutch.co — Clutch interviewe chaque client directement avant publication. Profil lié dans notre footer."
+        {
+          "title": "Clutch 5,0, deux avis vérifiés",
+          "description": "Clutch interviewe chaque client avant de publier un avis. Profil lié dans le pied de page ; demandez-nous les deux clients."
         },
-        "2": {
-          "title": "Local + International",
-          "description": "Équipe d'ingénierie senior basée en Algérie, avec des projets livrés en France, Espagne, Allemagne, Italie, EAU, Arabie Saoudite et Koweït."
+        {
+          "title": "NOOR, une plateforme IA à nous",
+          "description": "Notre plateforme IA souveraine tourne sur les serveurs du client, hors ligne si nécessaire, en arabe, en français et en anglais. Page produit publique, fiche de compétences publique."
         },
-        "3": {
-          "title": "Nous refusons ce que nous ne pouvons pas livrer",
-          "description": "Si la phase de découverte montre que les données ne supportent pas une solution ML, nous le disons et recommandons une alternative."
+        {
+          "title": "Le code, les modèles et les clés sont à vous",
+          "description": "Dépôt, clés d'éditeurs, comptes et domaines à votre nom dès la première livraison ; démonstration toutes les deux semaines sur un environnement que vous ouvrez vous-même."
         }
-      }
+      ]
     },
     "engagement": {
-      "eyebrow": "04 — Notre approche",
-      "title": "Trois étapes. Aucune surprise.",
-      "subtitle": "Chaque engagement IA commence petit, prouve sa valeur rapidement, et ne grandit que lorsque les données et les mathématiques le justifient.",
+      "eyebrow": "04 · Notre méthode",
+      "title": "Douze semaines pour deux ou trois fonctions IA. La première sans code.",
+      "subtitle": "Chaque fonction a une entrée connue, une sortie contrainte, un seuil sous lequel un humain reprend, et un jeu d'évaluation écrit avec vous avant la première ligne de code.",
       "steps": {
         "discovery": {
-          "title": "Découverte",
-          "duration": "1–2 semaines",
-          "description": "Nous nous asseyons avec votre équipe, comprenons le problème opérationnel, auditons les données disponibles, identifions la bonne approche ML (ou vous disons honnêtement que l'IA n'est pas le bon outil), et cadrons un pilote payant avec un critère de succès mesurable."
+          "title": "Fonctions, limites et jeu d'évaluation",
+          "duration": "Semaines 0 à 2",
+          "description": "Les deux ou trois fonctions retenues, ce que l'IA fait, ce qu'elle ne fait jamais, le seuil de repli, le lieu des données ; signés. Puis soixante cas réels avec la bonne réponse attendue, écrits avec votre gérant : c'est la recette de toute la suite."
         },
         "pilot": {
-          "title": "Pilote",
-          "duration": "4–8 semaines",
-          "description": "Preuve de valeur à périmètre fixe et prix fixe, sur de vraies données. Les modèles sont entraînés, évalués et déployés derrière un feature flag. Vous recevez un prototype fonctionnel, un rapport d'évaluation, et une décision claire go/no-go."
+          "title": "Construction et pilote",
+          "duration": "Semaines 2 à 9",
+          "description": "Orchestration et première fonction, celle qui remplace le plus de ressaisie, puis les suivantes sur la même couche. Pilote avec de vrais utilisateurs et repli humain actif ; part passée à l'humain, coût par requête et latence lus chaque jour. Démonstration toutes les deux semaines."
         },
         "production": {
-          "title": "Production & Exploitation",
-          "duration": "En continu",
-          "description": "Une fois la valeur prouvée par le pilote, nous concevons pour la production : monitoring, réentraînement, pipelines MLOps, SLAs, on-call. Nous restons partenaires d'ingénierie à long terme."
+          "title": "Réglage, supervision, exploitation",
+          "duration": "Semaines 9 à 12, puis en continu",
+          "description": "Le coût baisse sans que la qualité bouge : cache, récupération, modèle plus petit, mesurés sur le jeu d'évaluation. Supervision hebdomadaire installée, puis exploitation par nous ou transfert à votre équipe, avec le dépôt et la documentation."
         }
       }
     },
     "stack": {
-      "eyebrow": "05 — Stack technique",
-      "title": "Mature, ennuyeux, niveau production.",
-      "subtitle": "Nous utilisons les mêmes outils que les meilleures équipes d'ingénierie IA au monde. Pas de bibliothèques expérimentales, pas de packages à moitié maintenus — uniquement de l'infrastructure mature et éprouvée en production.",
-      "groups": {
-        "0": { "label": "Modélisation", "items": "PyTorch · TensorFlow · scikit-learn · XGBoost · LightGBM · Hugging Face Transformers" },
-        "1": { "label": "LLM & RAG", "items": "OpenAI · Anthropic · Llama · LangChain · LangGraph · pgvector · Chroma" },
-        "2": { "label": "Vision par Ordinateur", "items": "OpenCV · YOLO · Detectron2 · MMDetection · ONNX · NVIDIA Triton" },
-        "3": { "label": "NLP & Voix", "items": "spaCy · Transformers · Whisper · Wav2Vec · Sentence-Transformers" },
-        "4": { "label": "MLOps", "items": "MLflow · Weights & Biases · DVC · Airflow · Prefect · BentoML" },
-        "5": { "label": "Infrastructure", "items": "Docker · Kubernetes · AWS · GCP · Vercel · PostgreSQL · Redis · Kafka" }
-      }
+      "eyebrow": "05 · Modèles et outils",
+      "title": "Des modèles interchangeables derrière une orchestration à vous.",
+      "subtitle": "Les modèles changent de nom et de prix tous les six mois ; vos instructions, vos limites, votre jeu d'évaluation et votre journal restent. Nous choisissons le modèle par fonction, par langue, par coût et par lieu d'hébergement.",
+      "groups": [
+        {
+          "label": "Modèles",
+          "items": "Llama · Mistral · Qwen · Jais · Claude · GPT · Whisper"
+        },
+        {
+          "label": "Orchestration & RAG",
+          "items": "LangGraph · pgvector · Meilisearch · schémas JSON · jeux d'évaluation"
+        },
+        {
+          "label": "Documents & voix",
+          "items": "OCR · Hugging Face · Jais Speech · Whisper · Sentence-Transformers"
+        },
+        {
+          "label": "Prévision & vision",
+          "items": "scikit-learn · XGBoost · PyTorch · YOLO · ONNX"
+        },
+        {
+          "label": "Déploiement privé",
+          "items": "vLLM · Docker · Kubernetes · MLflow · Prometheus"
+        },
+        {
+          "label": "Infrastructure",
+          "items": "PostgreSQL · Redis · Kafka · hébergeurs en Algérie et en Europe · Vercel"
+        }
+      ]
     },
     "video": {
       "eyebrow": "06 — Voir",
@@ -1587,39 +1693,39 @@
       "placeholder": "Vidéo bientôt disponible"
     },
     "faq": {
-      "eyebrow": "07 — FAQ",
+      "eyebrow": "07 · FAQ",
       "title": "Questions fréquentes.",
       "items": {
         "cost": {
-          "question": "Combien coûte un projet IA ?",
-          "answer": "Cela dépend de la qualité des données, du périmètre et de la cible de production. Nous démarrons généralement par une découverte à prix fixe (1–2 semaines), puis un pilote à prix fixe (4–8 semaines) avant de s'engager sur le long terme. La découverte vous fournit un devis transparent."
+          "question": "Combien coûte une fonction IA ?",
+          "answer": "Le projet se chiffre en semaines : douze semaines pour deux ou trois fonctions, dont deux sans code pour écrire les fonctions, les limites et le jeu d'évaluation. Le coût de fonctionnement se tient par requête : préfixe en cache, documents récupérés plutôt que tout envoyé, modèle plus petit là où la note tient ; il est affiché et lu chaque semaine. Nous citons notre grille par catégorie, pas un chiffre avant d'avoir lu vos cas."
         },
         "data": {
-          "question": "Et si nos données ne sont pas propres ?",
-          "answer": "C'est le cas de la plupart des entreprises. Un projet ML réel passe 60 à 80 % de son temps sur les données : nettoyage, étiquetage, intégration, validation. Nous gérons cela dans le cadre de l'engagement."
+          "question": "Et si nos données et nos documents ne sont pas propres ?",
+          "answer": "C'est le cas de presque toutes les entreprises. La lecture de factures et de pièces est précisément la fonction qui transforme des documents photographiés en champs vérifiés, et le jeu d'évaluation est écrit sur vos vrais documents, pas sur une démonstration. Quand les données ne suffisent pas pour une prévision, nous le disons."
         },
         "timeline": {
           "question": "En combien de temps voit-on des résultats ?",
-          "answer": "Un pilote livre un prototype fonctionnel en 4–8 semaines avec une évaluation mesurable selon vos métriques business. Le déploiement en production suit le pilote une fois approuvé. La plupart des clients ont un système IA en production dans les 3 mois."
+          "answer": "La première fonction tourne sur votre environnement de démonstration à la cinquième semaine, avec sa note sur le jeu d'évaluation. Le pilote avec de vrais utilisateurs et un repli humain commence à la septième. Chaque lot de deux semaines est démontré et recetté."
         },
         "ip": {
-          "question": "Qui possède les modèles et le code ?",
-          "answer": "Vous. Tous les livrables — modèles, pipelines, harnais d'évaluation, code source, documentation — sont transférés à votre équipe sous votre propriété intellectuelle. Nous conservons le droit d'utiliser des techniques génériques anonymisées."
+          "question": "Qui possède les modèles, le code et les clés ?",
+          "answer": "Vous. Instructions, schémas, jeu d'évaluation, code, index, modèles affinés et documentation sont dans votre dépôt ; les contrats éditeurs, les clés et les comptes sont au nom de votre entreprise dès la première livraison. NOOR, notre plateforme, reste à nous ; ce qui est entraîné sur vos données est à vous."
         },
         "support": {
-          "question": "Exploitez-vous le système après le lancement ?",
-          "answer": "Oui. Nous proposons des contrats d'exploitation continue : monitoring, réentraînement, SLA on-call, revues de performance. Ou nous pouvons transférer proprement à votre équipe interne avec documentation."
+          "question": "Exploitez-vous la fonction après la mise en production ?",
+          "answer": "Oui : supervision hebdomadaire, coût par requête, qualité sur le jeu d'évaluation, dérive, ajout de cas, changement de modèle quand un meilleur sort. Ou nous transférons à votre équipe avec le dépôt, la documentation et une période d'accompagnement."
         },
         "languages": {
-          "question": "Dans quelles langues travaillez-vous ?",
-          "answer": "Notre ingénierie et notre communication client se font en français, anglais et arabe. Les modèles peuvent être entraînés pour n'importe quelle langue avec des données suffisantes — nous avons une force particulière en systèmes multilingues."
+          "question": "Dans quelles langues l'IA travaille-t-elle ?",
+          "answer": "Arabe, français et anglais pour les documents et les assistants. L'arabe dialectal algérien, à l'écrit et en vocal, est traité avec des modèles multidialectaux et testé sur de vrais messages et vocaux de vos clients, avec un seuil de confiance et un repli humain en dessous. La darija en lettres latines est couverte par des synonymes écrits avec vous."
         }
       }
     },
     "cta": {
-      "eyebrow": "08 — Parlons-en",
-      "title": "Un problème IA à résoudre ? Commençons par un appel de 30 minutes.",
-      "button": "Réserver un appel découverte"
+      "eyebrow": "08 · Parlons-en",
+      "title": "Envoyez-nous ce que vos équipes ressaisissent, trient ou répondent à la main. Nous revenons avec la fonction IA, son jeu d'évaluation et son calendrier.",
+      "button": "Parler de votre fonction IA"
     }
   },
   "home": {
@@ -1861,7 +1967,11 @@
       "title": "Développement Logiciel",
       "subtitle": "Solutions Sur Mesure MENA",
       "description": "ERP, CRM, applications métiers conformes aux normes MENA. Java, .NET, PHP Laravel.",
-      "features": ["ERP/CRM personnalisés", "Applications métiers MENA", "Conformité réglementaire"],
+      "features": [
+        "ERP/CRM personnalisés",
+        "Applications métiers MENA",
+        "Conformité réglementaire"
+      ],
       "metric": "50+",
       "metricLabel": "Projets livrés"
     },
@@ -1869,7 +1979,11 @@
       "title": "Infrastructure Réseau",
       "subtitle": "Solutions Cisco & Datacenter",
       "description": "Installation, configuration, maintenance réseaux entreprises. Serveurs, switches, sécurité.",
-      "features": ["Architecture réseau", "Pare-feu & VPN", "Maintenance 24/7"],
+      "features": [
+        "Architecture réseau",
+        "Pare-feu & VPN",
+        "Maintenance 24/7"
+      ],
       "metric": "10+",
       "metricLabel": "Entreprises connectées"
     },
@@ -1877,7 +1991,11 @@
       "title": "Base de Données",
       "subtitle": "Oracle, MySQL, PostgreSQL",
       "description": "Conception, optimisation, migration bases de données. Big Data et Business Intelligence.",
-      "features": ["Migration données", "Optimisation performance", "Backup & récupération"],
+      "features": [
+        "Migration données",
+        "Optimisation performance",
+        "Backup & récupération"
+      ],
       "metric": "50TB+",
       "metricLabel": "Données gérées"
     },
@@ -1885,7 +2003,11 @@
       "title": "Cloud & Hébergement",
       "subtitle": "Solutions Cloud MENA",
       "description": "Hébergement local sécurisé, serveurs dédiés, solutions cloud hybrides pour entreprises MENA.",
-      "features": ["Datacenter MENA", "Cloud privé/hybride", "Haute disponibilité"],
+      "features": [
+        "Datacenter MENA",
+        "Cloud privé/hybride",
+        "Haute disponibilité"
+      ],
       "metric": "99.9%",
       "metricLabel": "Uptime garanti"
     }
@@ -1969,12 +2091,22 @@
     "healthcare": {
       "title": "Santé Digitale",
       "description": "Solutions pour cliniques, hôpitaux et cabinets médicaux",
-      "features": ["Gestion patients", "Dossier médical", "Téléconsultation", "Pharmacie"]
+      "features": [
+        "Gestion patients",
+        "Dossier médical",
+        "Téléconsultation",
+        "Pharmacie"
+      ]
     },
     "education": {
       "title": "EdTech MENA",
       "description": "Plateformes éducatives pour écoles et universités MENA",
-      "features": ["LMS complet", "Classes virtuelles", "Évaluation en ligne", "Suivi élèves"]
+      "features": [
+        "LMS complet",
+        "Classes virtuelles",
+        "Évaluation en ligne",
+        "Suivi élèves"
+      ]
     }
   },
   "technologies": {
@@ -1997,23 +2129,58 @@
     "seoText": "Solutions techniques avancées pour la région MENA incluant l'Algérie, le Maroc, la Tunisie, les Émirats Arabes Unis, l'Arabie Saoudite, le Qatar, le Koweït, le Liban, la Jordanie et l'Égypte. Stack moderne adaptée aux défis du développement numérique au Moyen-Orient et en Afrique du Nord.",
     "frontend": {
       "title": "Frontend",
-      "technologies": ["React.js", "Next.js", "Vue.js", "Angular", "TypeScript", "Tailwind CSS"]
+      "technologies": [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "Angular",
+        "TypeScript",
+        "Tailwind CSS"
+      ]
     },
     "backend": {
       "title": "Backend",
-      "technologies": ["Node.js", "PHP Laravel", "Python Django", "Java Spring", ".NET Core", "Go"]
+      "technologies": [
+        "Node.js",
+        "PHP Laravel",
+        "Python Django",
+        "Java Spring",
+        ".NET Core",
+        "Go"
+      ]
     },
     "mobile": {
       "title": "Mobile",
-      "technologies": ["React Native", "Flutter", "iOS Native", "Android Native", "Ionic", "Xamarin"]
+      "technologies": [
+        "React Native",
+        "Flutter",
+        "iOS Native",
+        "Android Native",
+        "Ionic",
+        "Xamarin"
+      ]
     },
     "database": {
       "title": "Bases de Données",
-      "technologies": ["Oracle", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch"]
+      "technologies": [
+        "Oracle",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch"
+      ]
     },
     "cloud": {
       "title": "Cloud & DevOps",
-      "technologies": ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+      "technologies": [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Terraform"
+      ]
     }
   },
   "services": {
@@ -2041,46 +2208,18 @@
     },
     "industries": {
       "title": "Industries que Nous Servons",
-      "subtitle": "Solutions IT adaptées aux besoins spécifiques de chaque secteur d'activité dans la région MENA",
-      "manufacturing": "Solutions ERP pour usines MENA",
-      "health": "Logiciels gestion médicale MENA",
-      "education": "E-learning et gestion scolaire",
-      "commerce": "Solutions point de vente et stock",
-      "transport": "Tracking et gestion flottes",
-      "construction": "Gestion projets construction",
-      "agriculture": "IoT agriculture intelligente",
-      "banking": "Fintech solutions bancaires"
+      "subtitle": "Solutions IT adaptées aux besoins spécifiques de chaque secteur d'activité dans la région MENA"
     },
     "process": {
       "title": "Notre Processus de Travail",
-      "subtitle": "Une méthodologie éprouvée pour garantir le succès de vos projets IT",
-      "step1": {
-        "title": "Consultation Gratuite",
-        "description": "Analyse besoins, conseil expert, devis personnalisé"
-      },
-      "step2": {
-        "title": "Conception & Design",
-        "description": "Architecture technique, maquettes UI/UX, validation"
-      },
-      "step3": {
-        "title": "Développement Agile",
-        "description": "Coding, tests, livraisons itératives, feedback client"
-      },
-      "step4": {
-        "title": "Déploiement & Formation",
-        "description": "Mise en production, formation utilisateurs, documentation"
-      },
-      "step5": {
-        "title": "Support & Évolution",
-        "description": "Maintenance, mises à jour, support technique 24/7"
-      }
+      "subtitle": "Une méthodologie éprouvée pour garantir le succès de vos projets IT"
     },
     "testimonials": {
-      "title": "Ce que Disent nos Clients",
+      "title": "Ce que Disent Nos Clients",
       "subtitle": "Plus de 1200 entreprises MENA nous font confiance pour leur transformation digitale"
     },
     "finalCta": {
-      "title": "Prêt à Digitaliser Votre Entreprise?",
+      "title": "Prêt à Digitaliser Votre Entreprise ?",
       "subtitle": "Rejoignez plus de 1200 entreprises MENA qui ont choisi Symloop pour leur transformation digitale",
       "contact": {
         "phone": "Appelez-nous",
@@ -2191,33 +2330,8 @@
       "support": "Support"
     },
     "cta": {
-      "notFound": "Vous ne trouvez pas le service que vous cherchez ?",
-      "talkToExperts": "Discutez avec nos experts"
-    },
-    "industries": {
-      "title": "Industries que Nous Servons",
-      "subtitle": "Solutions IT adaptées aux besoins spécifiques de chaque secteur d'activité dans la région MENA"
-    },
-    "process": {
-      "title": "Notre Processus de Travail",
-      "subtitle": "Une méthodologie éprouvée pour garantir le succès de vos projets IT"
-    },
-    "testimonials": {
-      "title": "Ce que Disent Nos Clients",
-      "subtitle": "Plus de 1200 entreprises MENA nous font confiance pour leur transformation digitale"
-    },
-    "finalCta": {
-      "title": "Prêt à Digitaliser Votre Entreprise ?",
-      "subtitle": "Rejoignez plus de 1200 entreprises MENA qui ont choisi Symloop pour leur transformation digitale",
-      "contact": {
-        "phone": "Appelez-nous",
-        "email": "Email",
-        "offices": "Bureaux",
-        "support247": "Support 24/7",
-        "response2h": "Réponse sous 2h",
-        "locations": "EAU • Arabie Saoudite • Qatar"
-      },
-      "footer": "🌍 Entreprise Régionale MENA • Solutions Sur Mesure • Support Local • Expertise Internationale"
+      "title": "Prêt à Lancer Votre Projet ?",
+      "subtitle": "Obtenez une consultation gratuite et un devis personnalisé pour vos besoins"
     },
     "notFound": {
       "title": "Service Introuvable",
@@ -2227,11 +2341,7 @@
     "duration": "Délai",
     "features": "Fonctionnalités Incluses",
     "technologies": "Technologies Utilisées",
-    "applications": "Applications Concrètes",
-    "cta": {
-      "title": "Prêt à Lancer Votre Projet ?",
-      "subtitle": "Obtenez une consultation gratuite et un devis personnalisé pour vos besoins"
-    }
+    "applications": "Applications Concrètes"
   },
   "company": {
     "title": "Symloop Technology",
@@ -2358,17 +2468,32 @@
     "website": {
       "title": "Site Web",
       "price": "60k - 500k DA",
-      "features": ["Design responsive", "CMS intégré", "SEO optimisé", "Hébergement 1 an"]
+      "features": [
+        "Design responsive",
+        "CMS intégré",
+        "SEO optimisé",
+        "Hébergement 1 an"
+      ]
     },
     "mobile": {
       "title": "Application Mobile",
       "price": "180k - 1.2M DA",
-      "features": ["iOS & Android", "Backend inclus", "Publication stores", "Maintenance 6 mois"]
+      "features": [
+        "iOS & Android",
+        "Backend inclus",
+        "Publication stores",
+        "Maintenance 6 mois"
+      ]
     },
     "erp": {
       "title": "ERP Sur Mesure",
       "price": "500k - 3M DA",
-      "features": ["Modules personnalisés", "Formation équipes", "Migration données", "Support 12 mois"]
+      "features": [
+        "Modules personnalisés",
+        "Formation équipes",
+        "Migration données",
+        "Support 12 mois"
+      ]
     }
   },
   "companyContact": {
@@ -2474,8 +2599,21 @@
       "description": "Nous créons des sites modernes, rapides et optimisés SEO pour votre présence en ligne dans la région MENA.",
       "price": "60k - 500k DA",
       "duration": "2-6 semaines",
-      "features": ["Design Responsive", "Optimisation SEO", "Intégration CMS", "Hébergement Local", "Certificat SSL", "Google Analytics"],
-      "technologies": ["React", "Next.js", "WordPress", "Laravel", "Tailwind CSS"]
+      "features": [
+        "Design Responsive",
+        "Optimisation SEO",
+        "Intégration CMS",
+        "Hébergement Local",
+        "Certificat SSL",
+        "Google Analytics"
+      ],
+      "technologies": [
+        "React",
+        "Next.js",
+        "WordPress",
+        "Laravel",
+        "Tailwind CSS"
+      ]
     },
     "mobile": {
       "title": "Développement d'Applications Mobiles",
@@ -2483,8 +2621,21 @@
       "description": "Applications mobiles Android et iOS performantes et intuitives pour votre entreprise MENA.",
       "price": "180k - 1.2M DA",
       "duration": "8-16 semaines",
-      "features": ["Cross-platform", "Performance Native", "Mode Hors-ligne", "Notifications Push", "Publication Stores", "Intégration API"],
-      "technologies": ["Flutter", "React Native", "Dart", "JavaScript", "Firebase"]
+      "features": [
+        "Cross-platform",
+        "Performance Native",
+        "Mode Hors-ligne",
+        "Notifications Push",
+        "Publication Stores",
+        "Intégration API"
+      ],
+      "technologies": [
+        "Flutter",
+        "React Native",
+        "Dart",
+        "JavaScript",
+        "Firebase"
+      ]
     },
     "hosting": {
       "title": "Hébergement Web et Cloud",
@@ -2492,8 +2643,21 @@
       "description": "Solutions d'hébergement sécurisées et rapides adaptées à vos besoins avec serveurs locaux MENA.",
       "price": "5k - 50k DA/mois",
       "duration": "Configuration immédiate",
-      "features": ["99.9% Uptime", "Serveurs DZ", "Certificat SSL", "Sauvegardes Quotidiennes", "Support 24/7", "Intégration CDN"],
-      "technologies": ["Serveurs Linux", "cPanel", "CloudFlare", "Apache", "Nginx"]
+      "features": [
+        "99.9% Uptime",
+        "Serveurs DZ",
+        "Certificat SSL",
+        "Sauvegardes Quotidiennes",
+        "Support 24/7",
+        "Intégration CDN"
+      ],
+      "technologies": [
+        "Serveurs Linux",
+        "cPanel",
+        "CloudFlare",
+        "Apache",
+        "Nginx"
+      ]
     },
     "software": {
       "title": "Logiciels sur Mesure",
@@ -2501,8 +2665,21 @@
       "description": "Développement de logiciels personnalisés pour optimiser les opérations de votre entreprise MENA.",
       "price": "500k - 3M DA",
       "duration": "12-24 semaines",
-      "features": ["Développement sur Mesure", "Conception Base de Données", "Formation Utilisateurs", "Documentation", "Support 1 An", "Architecture Évolutive"],
-      "technologies": ["Laravel", "React", "Node.js", "MySQL", "PostgreSQL"]
+      "features": [
+        "Développement sur Mesure",
+        "Conception Base de Données",
+        "Formation Utilisateurs",
+        "Documentation",
+        "Support 1 An",
+        "Architecture Évolutive"
+      ],
+      "technologies": [
+        "Laravel",
+        "React",
+        "Node.js",
+        "MySQL",
+        "PostgreSQL"
+      ]
     },
     "iot": {
       "title": "Solutions IoT et Objets Connectés",
@@ -2522,7 +2699,18 @@
         "Contrôle à Distance des Appareils",
         "Analyse de Données et Rapports"
       ],
-      "technologies": ["ESP32", "Arduino", "C++", "MQTT", "LoRaWAN", "WiFi", "Bluetooth", "React Native", "Node.js", "InfluxDB"],
+      "technologies": [
+        "ESP32",
+        "Arduino",
+        "C++",
+        "MQTT",
+        "LoRaWAN",
+        "WiFi",
+        "Bluetooth",
+        "React Native",
+        "Node.js",
+        "InfluxDB"
+      ],
       "applications": [
         "Agriculture Intelligente : Monitoring du sol, automatisation irrigation, optimisation des cultures",
         "Monitoring Industriel : Suivi d'équipements, maintenance prédictive, efficacité énergétique",
@@ -2549,7 +2737,18 @@
         "Support Client Automatisé",
         "Tableaux de Bord Business Intelligence"
       ],
-      "technologies": ["OpenAI GPT", "Python", "TensorFlow", "PyTorch", "Whisper", "OpenCV", "Scikit-learn", "FastAPI", "React", "Docker"],
+      "technologies": [
+        "OpenAI GPT",
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Whisper",
+        "OpenCV",
+        "Scikit-learn",
+        "FastAPI",
+        "React",
+        "Docker"
+      ],
       "applications": [
         "Service Client : Chatbots IA avec ChatGPT, support multilingue (Arabe/Français/Anglais)",
         "Assistants Vocaux : Contrôle vocal intelligent pour entreprises, commandes vocales en arabe",
@@ -2565,8 +2764,21 @@
       "description": "Boutiques en ligne optimisées avec intégration paiement local pour le marché MENA.",
       "price": "150k - 800k DA",
       "duration": "6-12 semaines",
-      "features": ["Paiement CIB", "Intégration Edahabia", "Gestion Stock", "Suivi Commandes", "Multi-devises", "Livraison 58 Wilayas"],
-      "technologies": ["WooCommerce", "Shopify", "Laravel", "React", "APIs Paiement"]
+      "features": [
+        "Paiement CIB",
+        "Intégration Edahabia",
+        "Gestion Stock",
+        "Suivi Commandes",
+        "Multi-devises",
+        "Livraison 58 Wilayas"
+      ],
+      "technologies": [
+        "WooCommerce",
+        "Shopify",
+        "Laravel",
+        "React",
+        "APIs Paiement"
+      ]
     },
     "cybersecurity": {
       "title": "Cybersécurité Entreprise",
@@ -2574,8 +2786,21 @@
       "description": "Solutions de cybersécurité adaptées aux PME et entreprises MENA avec conformité réglementaire.",
       "price": "100k - 1M DA",
       "duration": "4-12 semaines",
-      "features": ["Audit Sécurité", "Configuration Firewall", "Configuration VPN", "Protection Données", "Formation Personnel", "Rapports Conformité"],
-      "technologies": ["pfSense", "OpenVPN", "Fail2Ban", "OSSEC", "Wireshark"]
+      "features": [
+        "Audit Sécurité",
+        "Configuration Firewall",
+        "Configuration VPN",
+        "Protection Données",
+        "Formation Personnel",
+        "Rapports Conformité"
+      ],
+      "technologies": [
+        "pfSense",
+        "OpenVPN",
+        "Fail2Ban",
+        "OSSEC",
+        "Wireshark"
+      ]
     }
   },
   "servicesPage": {
@@ -2683,7 +2908,7 @@
     },
     "stats": {
       "students": "Étudiants formés",
-      "courses": "Cours disponibles", 
+      "courses": "Cours disponibles",
       "satisfaction": "Taux de satisfaction",
       "support": "Suivi post-formation"
     },
@@ -2741,7 +2966,7 @@
       "required": "*",
       "levels": {
         "beginner": "Débutant",
-        "intermediate": "Intermédiaire", 
+        "intermediate": "Intermédiaire",
         "advanced": "Avancé",
         "expert": "Expert"
       },

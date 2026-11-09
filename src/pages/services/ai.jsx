@@ -491,11 +491,11 @@ export default function AiServicePage() {
   const isRtl = locale === 'ar';
 
   const CAPABILITIES = [
-    { key: 'cv',         icon: Eye },
-    { key: 'nlp',        icon: MessagesSquare },
-    { key: 'predictive', icon: LineChart },
     { key: 'llm',        icon: Sparkles },
+    { key: 'nlp',        icon: MessagesSquare },
     { key: 'mlops',      icon: Cpu },
+    { key: 'predictive', icon: LineChart },
+    { key: 'cv',         icon: Eye },
   ];
 
   const ENGAGEMENT = ['discovery', 'pilot', 'production'];
@@ -560,12 +560,12 @@ export default function AiServicePage() {
               '@context': 'https://schema.org',
               '@type': 'Service',
               '@id': 'https://symloop.com/services/ai/#service',
-              name: 'Symloop Technology — Applied Artificial Intelligence, NLP & Machine Learning Engineering',
-              alternateName: ['Symloop Technology', 'Symloop Applied AI', 'Symloop NLP Lab'],
-              serviceType: 'Applied artificial intelligence research, NLP engineering, machine learning systems integration, computer vision, LLM integration, MLOps',
+              name: 'Symloop Technology — AI agents, RAG, document AI and Arabic/French/darija assistants in production',
+              alternateName: ['Symloop Technology', 'Symloop AI', 'Symloop IA', 'Symloop Applied AI'],
+              serviceType: 'AI agents (WhatsApp, back office), retrieval-augmented generation on private documents, invoice and ID extraction, Arabic/French/darija assistants and voice transcription, private LLM deployment (Llama, Mistral, Qwen, Jais) on-premise or in Europe, evaluation sets and human fallback, forecasting, computer vision',
               category: 'Artificial Intelligence Consulting',
               description: t('ai_page.seo.description'),
-              slogan: 'AI engineering for production.',
+              slogan: 'AI functions in production, with an evaluation set, a human fallback and a cost per request.',
               url: 'https://symloop.com/services/ai/',
               image: 'https://symloop.com/assets/symloop-ai-lab.png',
               provider: {
@@ -609,9 +609,19 @@ export default function AiServicePage() {
               ],
               audience: {
                 '@type': 'BusinessAudience',
-                audienceType: 'Enterprises, government agencies, scale-ups, and research organizations seeking applied AI solutions',
+                audienceType: 'Founders settled in France building a product for Algeria, companies in Algeria (distribution, clinics, schools, real estate, logistics), banks, government and industry needing private AI deployment',
               },
               knowsAbout: [
+                'AI Agents',
+                'WhatsApp Business AI Agent',
+                'Retrieval Augmented Generation on private documents',
+                'Document extraction (invoices, purchase orders, IDs)',
+                'Arabic and Algerian darija NLP',
+                'Arabic speech recognition (Jais Speech, Whisper)',
+                'Private LLM deployment (vLLM, on-premise, sovereign)',
+                'Open-weight models (Llama, Mistral, Qwen, Jais)',
+                'LLM evaluation sets and human fallback',
+                'LLM cost per request (prompt caching, retrieval)',
                 'Artificial Intelligence',
                 'Applied Artificial Intelligence',
                 'Machine Learning',
@@ -656,12 +666,12 @@ export default function AiServicePage() {
                 '@type': 'OfferCatalog',
                 name: 'Symloop Technology — Capabilities',
                 itemListElement: [
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Computer Vision Engineering', description: 'Production computer vision systems: defect detection, medical imaging, surveillance intelligence, document AI.' } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Natural Language Processing', description: 'Document understanding, entity extraction, classification, sentiment, summarization, multilingual systems.' } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Predictive Analytics & Forecasting', description: 'Demand forecasting, churn prediction, fraud detection, route optimization, anomaly detection.' } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LLM Integration & RAG Systems', description: 'Production-grade integration of GPT, Claude and open-weight models with retrieval, evaluation harnesses, observability.' } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'MLOps & AI Infrastructure', description: 'Training pipelines, model registries, drift monitoring, retraining loops, A/B testing, GPU cost optimization.' } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Strategy Consulting', description: 'AI roadmap, build-vs-buy analysis, technology selection, organizational readiness, ROI modeling.' } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI agents and RAG', description: 'Agents on WhatsApp, in the back office or inside the app, with tools, written limits and a measured handover to a human; retrieval-augmented search on private documents with cited sources; versioned instructions and full log in the client repository.' } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Document AI and Arabic/French/darija assistants', description: 'Invoices, purchase orders and IDs read into checked fields with a score per field and human validation; dialectal Arabic voice notes transcribed with multi-dialect models; product search in Arabic, French and Latin-letter darija.' } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Private LLM deployment and operations', description: 'Open models (Llama, Mistral, Qwen, Jais) served on the client servers in Algeria or vendors hosted in Europe; prefix cache, retrieval, token limits; per-request log and weekly cost, latency, quality and drift supervision; NOOR sovereign AI platform.' } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Forecasting and anomaly detection', description: 'Demand forecasting, replenishment, late-payment risk, fraud and anomaly detection on real operational data, behind a business rule and a human.' } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Computer vision', description: 'Defect detection, counting, shelf compliance, document and ID reading, drone and satellite imagery, served on site.' } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Evaluation sets and AI delivery method', description: 'Sixty real cases written with the manager before the code, replayed at every change; twelve-week delivery for two or three functions with a demo every two weeks; code, models and keys owned by the client.' } },
                 ],
               },
             }),
@@ -765,7 +775,7 @@ export default function AiServicePage() {
             >
               <motion.div variants={fadeUp} className="bg-black p-8 lg:p-10">
                 <div className="text-3xl lg:text-4xl font-light text-white mb-2">
-                  <AnimatedCounter target={5} suffix="+" />
+                  {t('ai_page.hero.stats.years.value')}
                 </div>
                 <div className="font-mono text-[10px] tracking-[0.15em] uppercase text-white/40">
                   {t('ai_page.hero.stats.years.label')}
@@ -774,7 +784,7 @@ export default function AiServicePage() {
 
               <motion.div variants={fadeUp} className="bg-black p-8 lg:p-10">
                 <div className="text-3xl lg:text-4xl font-light text-white mb-2">
-                  <AnimatedCounter target={10} suffix="+" />
+                  {t('ai_page.hero.stats.team.value')}
                 </div>
                 <div className="font-mono text-[10px] tracking-[0.15em] uppercase text-white/40">
                   {t('ai_page.hero.stats.team.label')}
