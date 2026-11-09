@@ -249,14 +249,6 @@ export default function Document(props) {
               "award": [
                 "Clutch 5.0/5.0 — verified client reviews"
               ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "bestRating": "5",
-                "worstRating": "1",
-                "ratingCount": "10",
-                "reviewCount": "10"
-              },
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
                 "value": 25,
