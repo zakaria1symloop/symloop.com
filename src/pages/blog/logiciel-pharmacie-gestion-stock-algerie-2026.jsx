@@ -11,6 +11,7 @@ import {
   QrCode, Truck, CreditCard, Bell,
   Users, Building2, Search, RefreshCw
 } from "lucide-react";
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function LogicielPharmacie2026() {
   const router = useRouter();
@@ -1021,6 +1022,8 @@ export default function LogicielPharmacie2026() {
                 </Link>
               </div>
             </div>
+
+            <SectorSoftwareLinks locale={locale} exclude={["logiciel-pharmacie-gestion-stock-algerie-2026"]} tone="dark" />
 
             {/* CTA */}
             <div className="bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-emerald-500/20 border border-emerald-500/30 rounded-2xl p-8 text-center">

@@ -9,11 +9,11 @@ const DATE = '2026-11-01';
 
 const CONTENT = {
   fr: {
-    kind: 'Série · Vu en France #12', title: "Créer une application de salle de sport en Algérie en 2027 : l'abonnement, l'accès sans réseau, les créneaux femmes et le renouvellement qui ne se perd plus.",
+    kind: 'Série · Vu en France #12', title: "Logiciel salle de sport en Algérie (2027) : abonnement, accès sans réseau, créneaux femmes et renouvellement qui ne se perd plus",
     dek: "En France, on s'inscrit chez Basic-Fit sur son téléphone, l'abonnement est prélevé chaque mois et l'application ouvre le tourniquet. En Algérie, l'abonnement se paie le plus souvent en espèces à l'accueil, mois après mois, et c'est là que les salles perdent leurs adhérents sans le voir. Ce qu'un club doit tenir à chaque moment, ce qu'il faut construire en premier, le calcul d'un renouvellement relancé, six fuites et leur parade, et un calendrier jusqu'à la rentrée 2027.",
     publishedAt: 'Novembre 2026', readTime: '11 min de lecture', author: 'Symloop', about: ['Salle de sport', 'Contrôle d’accès', 'Abonnements', 'Diaspora', 'Algérie 2027'],
     intro: [
-      "**Réponse courte.** Une application de salle de sport en Algérie en 2027 ne se juge pas à ses vidéos d'exercices : elle se juge **au tourniquet et au renouvellement**. Il faut un contrôle d'accès qui ne laisse passer que les abonnements payés, même quand le réseau tombe ; un accueil où chaque dinar encaissé en espèces est saisi et lié à un reçu ; des créneaux, dont les horaires réservés aux femmes, inscrits dans l'accès lui-même ; et surtout un renouvellement **relancé** : rappel avant la date de fin, gel pour un voyage ou une maladie, paiement en ligne, relance après. Là où il n'y a pas de prélèvement automatique, c'est ce moment-là qui fait le chiffre d'affaires.",
+      "**Réponse courte.** Un logiciel de salle de sport en Algérie en 2027 (l'application du club, à l'accueil et sur le téléphone de l'adhérent) ne se juge pas à ses vidéos d'exercices : elle se juge **au tourniquet et au renouvellement**. Il faut un contrôle d'accès qui ne laisse passer que les abonnements payés, même quand le réseau tombe ; un accueil où chaque dinar encaissé en espèces est saisi et lié à un reçu ; des créneaux, dont les horaires réservés aux femmes, inscrits dans l'accès lui-même ; et surtout un renouvellement **relancé** : rappel avant la date de fin, gel pour un voyage ou une maladie, paiement en ligne, relance après. Là où il n'y a pas de prélèvement automatique, c'est ce moment-là qui fait le chiffre d'affaires.",
       "Ce guide est le douzième de la série « Vu en France, à construire en Algérie », après [la billetterie en ligne](/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement/) et [les salons de beauté](/blog/creer-equivalent-planity-algerie-2027-reservation-salon-beaute-acompte-mariees/). Il s'adresse au fondateur de la diaspora qui a vu fonctionner Basic-Fit ou Fitness Park et veut ouvrir ou équiper des salles en Algérie, et au gérant qui tient aujourd'hui ses adhérents sur un cahier, un tableur ou un groupe de messagerie.",
     ],
     sections: [
@@ -96,7 +96,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Series · Seen in France #12', title: 'Building a gym app and platform in Algeria in 2027: the membership, offline access, women’s hours and renewals that stop slipping away.',
+    kind: 'Series · Seen in France #12', title: "Gym management software in Algeria (2027): membership, offline access, women’s hours and renewals that stop slipping away",
     dek: "In France you join Basic-Fit on your phone, the membership is debited every month and the app opens the turnstile. In Algeria the membership is mostly paid in cash at the front desk, month after month, and that is where gyms lose members without noticing. What a club must hold at each moment, what to build first, the maths of a chased renewal, six leaks and their counters, and a calendar to September 2027.",
     publishedAt: 'November 2026', readTime: '11 min read', author: 'Symloop', about: ['Gym', 'Access control', 'Memberships', 'Diaspora', 'Algeria 2027'],
     intro: [
@@ -183,7 +183,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'سلسلة · رأيناه في فرنسا #12', title: 'إنشاء تطبيق لقاعة رياضة في الجزائر سنة 2027: الاشتراك، الدخول دون شبكة، أوقات النساء، وتجديد لا يضيع بعد اليوم.',
+    kind: 'سلسلة · رأيناه في فرنسا #12', title: "برنامج تسيير قاعة رياضة في الجزائر (2027): الاشتراك، الدخول دون شبكة، أوقات النساء، وتجديد لا يضيع",
     dek: 'في فرنسا يُسجَّل المرء في Basic-Fit من هاتفه، ويُقتطع الاشتراك كل شهر، ويفتح التطبيق البوابة الدوّارة. في الجزائر يُدفع الاشتراك غالباً نقداً في الاستقبال، شهراً بعد شهر، وهناك تخسر القاعات مشتركيها دون أن تنتبه. ما يجب أن يصمد عنده النادي في كل لحظة، وما يُبنى أولاً، وحساب التجديد المتابَع، وستة تسرّبات وردودها، وجدول زمني حتى الدخول الاجتماعي 2027.',
     publishedAt: 'نوفمبر 2026', readTime: '11 دقيقة قراءة', author: 'Symloop', about: ['قاعة رياضة', 'مراقبة الدخول', 'الاشتراكات', 'الجالية', 'الجزائر 2027'],
     intro: [

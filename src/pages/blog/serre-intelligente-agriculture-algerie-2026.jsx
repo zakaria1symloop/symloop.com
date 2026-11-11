@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 import { getBlogBySlug, getRelatedBlogs } from '../../data/blogs';
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function SerreIntelligenteAlgerie2026() {
   const router = useRouter();
@@ -593,6 +594,8 @@ export default function SerreIntelligenteAlgerie2026() {
                     <div className="px-6 pb-6 pt-2">
                       <p className="text-gray-600 leading-relaxed">{item.answer}</p>
                     </div>
+
+                    <SectorSoftwareLinks locale={locale} exclude={["serre-intelligente-agriculture-algerie-2026"]} tone="light" />
                   </details>
                 ))}
               </div>

@@ -11,6 +11,7 @@ import {
   CalendarCheck, ClipboardList, CreditCard, Pill,
   UserPlus, Building2, Bell, Lock
 } from "lucide-react";
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function LogicielCliniqueMedical2026() {
   const router = useRouter();
@@ -1012,6 +1013,8 @@ export default function LogicielCliniqueMedical2026() {
                 </Link>
               </div>
             </div>
+
+            <SectorSoftwareLinks locale={locale} exclude={["logiciel-clinique-cabinet-medical-algerie-2026"]} tone="dark" />
 
             {/* CTA */}
             <div className="bg-gradient-to-br from-red-500/20 via-pink-500/20 to-red-500/20 border border-red-500/30 rounded-2xl p-8 text-center">

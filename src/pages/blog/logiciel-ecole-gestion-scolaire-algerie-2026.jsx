@@ -11,6 +11,7 @@ import {
   CalendarCheck, ClipboardList, CreditCard, Bell,
   UserPlus, Building2, MessageCircle, Award
 } from "lucide-react";
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function LogicielEcole2026() {
   const router = useRouter();
@@ -988,6 +989,8 @@ export default function LogicielEcole2026() {
                 </Link>
               </div>
             </div>
+
+            <SectorSoftwareLinks locale={locale} exclude={["logiciel-ecole-gestion-scolaire-algerie-2026"]} tone="dark" />
 
             {/* CTA */}
             <div className="bg-gradient-to-br from-blue-500/20 via-indigo-500/20 to-blue-500/20 border border-blue-500/30 rounded-2xl p-8 text-center">

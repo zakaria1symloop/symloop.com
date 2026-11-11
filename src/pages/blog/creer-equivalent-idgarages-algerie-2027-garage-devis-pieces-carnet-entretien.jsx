@@ -9,11 +9,11 @@ const DATE = '2026-11-01';
 
 const CONTENT = {
   fr: {
-    kind: 'Série · Vu en France #10', title: "Créer l'équivalent d'iDGarages en Algérie en 2027 : le devis par ligne, l'accord à distance, l'origine des pièces et le carnet d'entretien.",
+    kind: 'Série · Vu en France #10', title: "Logiciel garage automobile en Algérie (2027) : devis par ligne, accord à distance, origine des pièces et carnet d’entretien",
     dek: "En France, on compare trois garages en ligne, on réserve un créneau, et la facture ressemble au devis. En Algérie, le prix se donne au téléphone, le travail en plus se découvre à la caisse, et personne ne sait vraiment d'où vient la pièce montée. Ce qu'une plateforme doit faire à chaque moment de la réparation, ce qu'il faut construire en premier, le calcul qui la justifie, la règle sur l'origine des pièces, et le modèle à choisir pour 2027.",
     publishedAt: 'Novembre 2026', readTime: '11 min de lecture', author: 'Symloop', about: ['Garage automobile', 'Logiciel garage', 'Pièces détachées', 'Diaspora', 'Algérie 2027'],
     intro: [
-      "**Réponse courte.** L'équivalent d'iDGarages en Algérie en 2027 n'est pas d'abord un comparateur de garages : c'est **l'outil de l'atelier**, un dossier par véhicule, un devis écrit ligne par ligne avec l'origine de chaque pièce, l'accord du client donné sur son téléphone avec la photo de la pièce usée, et un carnet d'entretien qui garde tout. Un comparateur ne peut afficher des prix justes que si les devis sont comparables ; en Algérie, ils ne le sont pas encore. Commencer par l'atelier, c'est ce qui rend le reste possible, y compris pour **le fils qui, depuis Lyon, paie la réparation de la voiture de ses parents à Sétif**.",
+      "**Réponse courte.** Un logiciel de garage automobile en Algérie en 2027, l'équivalent d'iDGarages, n'est pas d'abord un comparateur de garages : c'est **l'outil de l'atelier**, un dossier par véhicule, un devis écrit ligne par ligne avec l'origine de chaque pièce, l'accord du client donné sur son téléphone avec la photo de la pièce usée, et un carnet d'entretien qui garde tout. Un comparateur ne peut afficher des prix justes que si les devis sont comparables ; en Algérie, ils ne le sont pas encore. Commencer par l'atelier, c'est ce qui rend le reste possible, y compris pour **le fils qui, depuis Lyon, paie la réparation de la voiture de ses parents à Sétif**.",
       "Ce guide est le dixième de la série « Vu en France, à construire en Algérie », après [la réservation des salons de beauté](/blog/creer-equivalent-planity-algerie-2027-reservation-salon-beaute-acompte-mariees/) et [la location de voitures](/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux/). Il s'adresse au fondateur de la diaspora qui veut lancer la plateforme, et au gérant de garage, de réseau ou de flotte qui veut des devis acceptés plus vite et des clients qui reviennent.",
     ],
     sections: [
@@ -95,7 +95,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Series · Seen in France #10', title: "Building the iDGarages of Algeria in 2027: the itemised quote, remote approval, the origin of parts and the service book.",
+    kind: 'Series · Seen in France #10', title: "Auto garage software in Algeria (2027): itemised quote, remote approval, origin of parts and service book",
     dek: "In France you compare three garages online, book a slot, and the invoice looks like the quote. In Algeria the price is given on the phone, the extra work is discovered at the till, and nobody really knows where the fitted part comes from. What a platform must do at each moment of a repair, what to build first, the calculation that justifies it, the rule on part origin, and the model to choose for 2027.",
     publishedAt: 'November 2026', readTime: '11 min read', author: 'Symloop', about: ['Car repair', 'Garage software', 'Spare parts', 'Diaspora', 'Algeria 2027'],
     intro: [
@@ -181,7 +181,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'سلسلة · رأيناه في فرنسا #10', title: "إنشاء مقابل iDGarages في الجزائر سنة 2027: التقدير المفصّل، الموافقة عن بُعد، مصدر القطع ودفتر الصيانة.",
+    kind: 'سلسلة · رأيناه في فرنسا #10', title: "برنامج ورشة ميكانيك السيارات في الجزائر (2027): التقدير المفصّل، الموافقة عن بُعد، مصدر القطع ودفتر الصيانة",
     dek: "في فرنسا تقارن ثلاث ورشات عبر الإنترنت، وتحجز موعداً، وتشبه الفاتورة التقدير. في الجزائر يُعطى السعر بالهاتف، ويُكتشف العمل الإضافي عند الدفع، ولا أحد يعرف حقاً من أين جاءت القطعة المركَّبة. ما يجب أن تفعله المنصة في كل لحظة من التصليح، وما يُبنى أولاً، والحساب الذي يبرّره، وقاعدة مصدر القطع، والنموذج الذي يُختار لسنة 2027.",
     publishedAt: 'نوفمبر 2026', readTime: '11 دقيقة قراءة', author: 'Symloop', about: ['ورشة السيارات', 'برنامج الورشة', 'قطع الغيار', 'الجالية', 'الجزائر 2027'],
     intro: [

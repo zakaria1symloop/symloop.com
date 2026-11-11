@@ -9,11 +9,11 @@ const DATE = '2026-11-05';
 
 const CONTENT = {
   fr: {
-    kind: 'Cabinet dentaire · Patients de la diaspora · Été · 2027', title: "Cabinet dentaire en Algérie en 2027 : les patients de la diaspora qui viennent l'été, le plan de traitement à distance, le devis en deux monnaies, les radios partagées et le suivi après le retour",
+    kind: 'Cabinet dentaire · Patients de la diaspora · Été · 2027', title: "Logiciel cabinet dentaire en Algérie (2027) : patients de la diaspora l’été, plan de traitement à distance, devis en deux monnaies, radios partagées et suivi",
     dek: "Le patient écrit depuis Lyon en mars, arrive le 2 août avec trois semaines devant lui, et le plan de traitement découvert au fauteuil en demande six : la couronne arrive après son départ, le devis converti de tête se discute à la dernière séance, et la douleur à J+10 se soigne chez un confrère qui ne sait rien. Ce guide décrit la plateforme d'un cabinet dentaire qui reçoit la diaspora en 2027 : les six moments du parcours, les cinq couches, un exemple chiffré pour deux fauteuils, six pièges, ce qu'on construit d'abord selon qu'on est praticien, clinique, laboratoire, centre d'imagerie ou fondateur en France, et le calendrier qui construit pendant le ramadan pour recevoir les plans dès mars.",
     publishedAt: 'Novembre 2026', readTime: '14 min de lecture', author: 'Symloop', about: ['Cabinet dentaire', 'Patients de la diaspora', 'Plan de traitement à distance', 'Espace patient', 'Algérie 2027'],
     intro: [
-      "**Réponse courte.** Un cabinet dentaire qui reçoit des patients de la diaspora l'été a besoin de trois choses avant tout : **un plan de traitement écrit à distance**, en mars, qui dit ce qui tiendra dans les trois semaines du séjour et ce qui attendra ; **un devis en deux monnaies figé à l'acompte**, qui bloque les créneaux d'août ; et **un agenda qui groupe les séances** d'un même plan sur le séjour, avec le laboratoire de prothèse réservé en même temps. L'espace patient avec les radios et le compte rendu, le suivi à quinze et quatre-vingt-dix jours et l'agent IA qui trie les premiers messages viennent ensuite. Dix à quatorze semaines pour la première colonne, un pilote de vingt patients aux vacances d'avril, et l'été 2027 préparé depuis mars.",
+      "**Réponse courte.** Le logiciel d'un cabinet dentaire en Algérie qui reçoit des patients de la diaspora l'été doit tenir trois choses avant tout : **un plan de traitement écrit à distance**, en mars, qui dit ce qui tiendra dans les trois semaines du séjour et ce qui attendra ; **un devis en deux monnaies figé à l'acompte**, qui bloque les créneaux d'août ; et **un agenda qui groupe les séances** d'un même plan sur le séjour, avec le laboratoire de prothèse réservé en même temps. L'espace patient avec les radios et le compte rendu, le suivi à quinze et quatre-vingt-dix jours et l'agent IA qui trie les premiers messages viennent ensuite. Dix à quatorze semaines pour la première colonne, un pilote de vingt patients aux vacances d'avril, et l'été 2027 préparé depuis mars.",
       "Ce guide s'adresse au chirurgien-dentiste dont l'agenda d'août se remplit de patients venus de France, à la clinique dentaire de groupe, au laboratoire de prothèse qui reçoit les commandes trop tard, au centre d'imagerie, et au fondateur installé en France qui veut une plateforme de séjours dentaires entre les deux pays. Il ne traite ni des tarifs des soins, ni des remboursements en France ou en Algérie, ni des règles d'exercice ; il traite de ce qu'il faut écrire, quand, et de ce que cela change dans un été.",
     ],
     sections: [
@@ -100,7 +100,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Dental practice · Diaspora patients · Summer · 2027', title: 'A dental practice in Algeria in 2027: the diaspora patients who come in summer, the remote treatment plan, the two-currency quote, shared X-rays and the follow-up after the return',
+    kind: 'Dental practice · Diaspora patients · Summer · 2027', title: "Dental practice software in Algeria (2027): diaspora patients in summer, remote treatment plan, two-currency quote, shared X-rays and follow-up",
     dek: 'The patient writes from Lyon in March, arrives on 2 August with three weeks ahead, and the treatment plan discovered in the chair needs six: the crown arrives after departure, the quote converted in the head is disputed at the last session, and the pain at D+10 is treated by a colleague who knows nothing. This guide describes the platform of a dental practice that receives the diaspora in 2027: the six moments of the journey, the five layers, a worked example for two chairs, six traps, what gets built first depending on whether you are a practitioner, a clinic, a lab, an imaging centre or a founder in France, and the calendar that builds during Ramadan to receive plans from March.',
     publishedAt: 'November 2026', readTime: '14 min read', author: 'Symloop', about: ['Dental practice', 'Diaspora patients', 'Remote treatment plan', 'Patient space', 'Algeria 2027'],
     intro: [
@@ -191,7 +191,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'عيادة أسنان · مرضى الجالية · الصيف · 2027', title: 'عيادة أسنان في الجزائر سنة 2027: مرضى الجالية الذين يأتون صيفاً، خطة العلاج عن بُعد، عرض السعر بعملتين، الأشعة المشتركة والمتابعة بعد العودة',
+    kind: 'عيادة أسنان · مرضى الجالية · الصيف · 2027', title: "برنامج عيادة أسنان في الجزائر (2027): مرضى الجالية صيفاً، خطة العلاج عن بُعد، عرض السعر بعملتين، الأشعة المشتركة والمتابعة",
     dek: 'يكتب المريض من ليون في مارس، ويصل يوم 2 أوت وأمامه ثلاثة أسابيع، وخطة العلاج المكتشفة على الكرسي تحتاج ستة: التاج يصل بعد مغادرته، وعرض السعر المحوَّل ذهنياً يُنازَع فيه في آخر جلسة، والألم بعد عشرة أيام يُعالَج عند زميل لا يعرف شيئاً. يصف هذا الدليل منصة عيادة أسنان تستقبل الجالية في 2027: اللحظات الست للمسار، الطبقات الخمس، مثال محسوب لكرسيين، ستة فخاخ، ما يُبنى أولاً حسب ما إذا كنتم طبيباً أو مصحة أو مخبراً أو مركز تصوير أو مؤسساً في فرنسا، والتقويم الذي يبني خلال رمضان لاستقبال الخطط من مارس.',
     publishedAt: 'نوفمبر 2026', readTime: '14 دقيقة قراءة', author: 'Symloop', about: ['عيادة أسنان', 'مرضى الجالية', 'خطة علاج عن بُعد', 'فضاء المريض', 'الجزائر 2027'],
     intro: [

@@ -9,11 +9,11 @@ const DATE = '2026-11-05';
 
 const CONTENT = {
   fr: {
-    kind: 'Vu en France · Mariages.net · Salles des fêtes · 2027', title: "Créer l'équivalent de Mariages.net en Algérie en 2027 : réserver la salle des fêtes, le traiteur et la negafa depuis la France, avec acompte, contrat et calendrier des dates",
+    kind: 'Vu en France · Mariages.net · Salles des fêtes · 2027', title: "Logiciel salle des fêtes en Algérie (2027) : réserver la salle, le traiteur et la negafa depuis la France, acompte, contrat, calendrier des dates",
     dek: "La famille est à Lyon, le mariage est à Tizi Ouzou en août, et la réservation se fait aujourd'hui par quarante messages WhatsApp, un cousin qui visite la salle, un acompte en espèces remis de la main à la main et aucun contrat. Quand la date se révèle promise à une autre famille, c'est en juillet, à l'arrivée. Ce guide décrit ce qu'une plateforme de réservation de mariage doit tenir en Algérie en 2027, en commençant par la seule chose qui compte : l'état d'une date. Les six moments d'un mariage réservé depuis la France, la plateforme en cinq couches, un exemple chiffré pour un propriétaire de deux salles, six pièges, ce qu'on construit d'abord selon qu'on est une salle, un traiteur, une agence ou un fondateur en France, et le calendrier 2027 autour du ramadan et de l'été.",
     publishedAt: 'Novembre 2026', readTime: '14 min de lecture', author: 'Symloop', about: ['Mariages.net', 'Salles des fêtes', 'Réservation depuis la France', 'Diaspora', 'Algérie 2027'],
     intro: [
-      "**Réponse courte.** L'équivalent algérien de Mariages.net ne commence pas par un annuaire de prestataires avec des avis ; il commence par vingt salles des fêtes dont le calendrier des dates est tenu sur la plateforme, parce qu'une date y a un seul état : libre, posée 72 heures, confirmée par un acompte avec reçu numéroté et contrat signé, soldée. Les fiches, les prestataires, le planning du jour et les avis viennent ensuite et se nourrissent de ces réservations. Dix à quatorze semaines pour la première colonne, un pilote après l'Aïd el-Fitr sur les familles encore sans salle pour l'été 2027, et la vraie saison de réservation à distance à l'automne, pour l'été 2028.",
+      "**Réponse courte.** Un logiciel de salle des fêtes en Algérie, l'équivalent algérien de Mariages.net, ne commence pas par un annuaire de prestataires avec des avis ; il commence par vingt salles des fêtes dont le calendrier des dates est tenu sur la plateforme, parce qu'une date y a un seul état : libre, posée 72 heures, confirmée par un acompte avec reçu numéroté et contrat signé, soldée. Les fiches, les prestataires, le planning du jour et les avis viennent ensuite et se nourrissent de ces réservations. Dix à quatorze semaines pour la première colonne, un pilote après l'Aïd el-Fitr sur les familles encore sans salle pour l'été 2027, et la vraie saison de réservation à distance à l'automne, pour l'été 2028.",
       "Ce guide s'adresse au fondateur installé en France qui a réservé son propre mariage sur Mariages.net et veut construire la même chose pour les familles qui se marient au pays, au propriétaire d'une ou plusieurs salles des fêtes qui veut des acomptes au lieu d'appels, au traiteur, à la negafa et au photographe qui perdent des dates faute de calendrier, et à l'agence de mariage qui organise pour la diaspora. Il ne traite ni du régime d'agrément des salles ni de la fiscalité ; il traite de ce qu'il faut enregistrer, où, et de ce que cela change dans la trésorerie d'une saison.",
     ],
     sections: [
@@ -101,7 +101,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Seen in France · Mariages.net · Wedding halls · 2027', title: 'Building the Algerian equivalent of Mariages.net in 2027: booking the wedding hall, the caterer and the negafa from France, with a deposit, a contract and a date calendar',
+    kind: 'Seen in France · Mariages.net · Wedding halls · 2027', title: "Wedding hall booking software in Algeria (2027): booking the hall, the caterer and the negafa from France, deposit, contract, date calendar",
     dek: 'The family is in Lyon, the wedding is in Tizi Ouzou in August, and the booking today goes through forty WhatsApp messages, a cousin who visits the hall, a cash deposit handed over in person and no contract. When the date turns out to be promised to another family, it is July, on arrival. This guide describes what a wedding booking platform must hold in Algeria in 2027, starting with the only thing that matters: the state of a date. The six moments of a wedding booked from France, the platform in five layers, a worked example for the owner of two halls, six traps, what gets built first depending on whether you are a hall, a caterer, an agency or a founder in France, and the 2027 calendar around Ramadan and summer.',
     publishedAt: 'November 2026', readTime: '14 min read', author: 'Symloop', about: ['Mariages.net', 'Wedding halls', 'Booking from France', 'Diaspora', 'Algeria 2027'],
     intro: [
@@ -193,7 +193,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'رأيناه في فرنسا · Mariages.net · قاعات الحفلات · 2027', title: 'إنشاء المعادل الجزائري لـMariages.net في 2027: حجز قاعة الحفلات والطبّاخ والنقّافة من فرنسا، بعربون وعقد وتقويم للتواريخ',
+    kind: 'رأيناه في فرنسا · Mariages.net · قاعات الحفلات · 2027', title: "برنامج قاعة الحفلات في الجزائر (2027): حجز القاعة والطبّاخ والنقّافة من فرنسا، عربون، عقد، تقويم المواعيد",
     dek: 'العائلة في ليون، والعرس في تيزي وزو في أوت، والحجز يتم اليوم بأربعين رسالة WhatsApp، وابن عم يزور القاعة، وعربون نقدي يُسلَّم يداً بيد، ولا عقد. وحين يتبيّن أن التاريخ موعود لعائلة أخرى، يكون ذلك في جويلية، عند الوصول. يصف هذا الدليل ما يجب أن تمسكه منصة حجز الأعراس في الجزائر سنة 2027، بدءاً بالشيء الوحيد المهم: حالة التاريخ. اللحظات الست لعرس يُحجز من فرنسا، المنصة في خمس طبقات، مثال محسوب لمالك قاعتين، ستة فخاخ، ما يُبنى أولاً حسب ما إذا كنتم قاعة أو طبّاخاً أو وكالة أو مؤسساً في فرنسا، وتقويم 2027 حول رمضان والصيف.',
     publishedAt: 'نوفمبر 2026', readTime: '14 دقيقة قراءة', author: 'Symloop', about: ['Mariages.net', 'قاعات الحفلات', 'الحجز من فرنسا', 'الجالية', 'الجزائر 2027'],
     intro: [

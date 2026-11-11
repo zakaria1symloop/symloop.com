@@ -9,11 +9,11 @@ const DATE = '2026-11-01';
 
 const CONTENT = {
   fr: {
-    kind: 'Promoteurs · Diaspora · 2027', title: "Promoteur immobilier : vendre sur plan à la diaspora en 2027, avec un espace acquéreur qui remplace les allers-retours.",
+    kind: 'Promoteurs · Diaspora · 2027', title: "Logiciel promoteur immobilier en Algérie (2027) : vendre sur plan à la diaspora, espace acquéreur, suivi de chantier",
     dek: "Les promoteurs algériens viennent chercher leurs acquéreurs jusqu'à Paris, au salon SINA. Mais une fois le contrat signé, l'acheteur qui vit en France ne voit plus rien du chantier pendant deux ou trois ans, appelle, attend, et finit par prendre l'avion pour vérifier. Ce qu'une vente sur plan à distance doit tenir à chaque moment, ce qu'il faut construire en premier, ce que vaut un salon bien suivi, les six questions d'un acquéreur à distance, et un calendrier jusqu'au salon d'octobre 2027.",
     publishedAt: 'Novembre 2026', readTime: '11 min de lecture', author: 'Symloop', about: ['Promotion immobilière', 'Vente sur plan', 'Suivi de chantier', 'Diaspora', 'Algérie 2027'],
     intro: [
-      "**Réponse courte.** Pour vendre sur plan à la diaspora en 2027, un promoteur algérien n'a pas d'abord besoin d'un plus beau site : il a besoin d'un **espace acquéreur** alimenté par un **journal de chantier**. Chaque mois, le conducteur de travaux photographie les mêmes points du chantier depuis une application simple ; les photos datées sont validées puis publiées dans l'espace de chaque acquéreur, avec l'échéancier des versements, les reçus, les documents du lot et un interlocuteur nommé qui répond sous 48 heures. Avant la vente, les contacts du salon sont qualifiés et relancés ; après, la livraison se fait avec les réserves en photo. **Ce qui fait vendre au suivant, c'est l'acquéreur qui n'a pas eu besoin de prendre l'avion.**",
+      "**Réponse courte.** Pour vendre sur plan à la diaspora en 2027, un promoteur algérien n'a pas d'abord besoin d'un plus beau site : il a besoin d'un logiciel de promoteur immobilier qui tient un **espace acquéreur** alimenté par un **journal de chantier**. Chaque mois, le conducteur de travaux photographie les mêmes points du chantier depuis une application simple ; les photos datées sont validées puis publiées dans l'espace de chaque acquéreur, avec l'échéancier des versements, les reçus, les documents du lot et un interlocuteur nommé qui répond sous 48 heures. Avant la vente, les contacts du salon sont qualifiés et relancés ; après, la livraison se fait avec les réserves en photo. **Ce qui fait vendre au suivant, c'est l'acquéreur qui n'a pas eu besoin de prendre l'avion.**",
       "Ce guide s'adresse aux promoteurs immobiliers, architectes, bureaux d'études et entrepreneurs du bâtiment qui vendent ou veulent vendre à des Algériens vivant en France, et au fondateur de la diaspora qui veut construire la plateforme qui manque entre les deux rives. Il ne traite pas des règles juridiques et fiscales de l'achat, qui relèvent du notaire.",
     ],
     sections: [
@@ -92,7 +92,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Developers · Diaspora · 2027', title: 'Property developers: selling off-plan to the diaspora in 2027, with a buyer portal that replaces the round trips.',
+    kind: 'Developers · Diaspora · 2027', title: "Property developer software in Algeria (2027): selling off-plan to the diaspora, buyer portal, site progress",
     dek: "Algerian developers now travel to Paris, to the SINA fair, to find their buyers. But once the contract is signed, the buyer living in France sees nothing of the site for two or three years, calls, waits, and ends up flying over to check. What a remote off-plan sale must hold at each moment, what to build first, what a well-followed fair is worth, the six questions of a remote buyer, and a calendar to the October 2027 fair.",
     publishedAt: 'November 2026', readTime: '11 min read', author: 'Symloop', about: ['Property development', 'Off-plan sales', 'Site follow-up', 'Diaspora', 'Algeria 2027'],
     intro: [
@@ -175,7 +175,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'المرقّون · الجالية · 2027', title: 'المرقّي العقاري: البيع على التصاميم للجالية سنة 2027، بفضاء مشترٍ يغني عن الذهاب والإياب.',
+    kind: 'المرقّون · الجالية · 2027', title: "برنامج المرقّي العقاري في الجزائر (2027): البيع على التصاميم للجالية، فضاء المشتري، متابعة الورشة",
     dek: 'صار المرقّون الجزائريون يذهبون إلى باريس، إلى صالون SINA، بحثاً عن مشتريهم. لكن بعد توقيع العقد لا يرى المشتري المقيم في فرنسا شيئاً من الورشة طوال سنتين أو ثلاث، فيتصل وينتظر، وينتهي به الأمر إلى ركوب الطائرة ليتحقق. ما يجب أن يصمد عنده البيع على التصاميم عن بُعد في كل لحظة، وما يُبنى أولاً، وكم يساوي صالون متابَع جيداً، والأسئلة الست للمشتري عن بُعد، وجدول زمني حتى صالون أكتوبر 2027.',
     publishedAt: 'نوفمبر 2026', readTime: '11 دقيقة قراءة', author: 'Symloop', about: ['الترقية العقارية', 'البيع على التصاميم', 'متابعة الورشة', 'الجالية', 'الجزائر 2027'],
     intro: [

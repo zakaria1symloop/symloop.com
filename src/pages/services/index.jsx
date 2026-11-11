@@ -28,6 +28,7 @@ import {
   getAllServicesForLocale,
   formatPriceRange,
 } from '../../data/services';
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 // Insight cards are inlined here instead of imported from src/data/insights.js
 // because Turbopack throws "CJS module can't be async" when this page imports
@@ -774,6 +775,12 @@ export default function ServicesPage({ services, locale: pageLocale }) {
                 );
               })}
             </ul>
+          </div>
+        </section>
+
+        <section>
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-16 pb-8">
+            <SectorSoftwareLinks locale={locale} tone="dark" className="max-w-[900px]" />
           </div>
         </section>
 

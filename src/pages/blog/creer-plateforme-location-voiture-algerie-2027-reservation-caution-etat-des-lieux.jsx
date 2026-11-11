@@ -9,11 +9,11 @@ const DATE = '2026-10-31';
 
 const CONTENT = {
   fr: {
-    kind: 'Série · Vu en France #08', title: "Créer une plateforme de location de voitures en Algérie en 2027 : réserver depuis la France, la caution, l'état des lieux et la flotte.",
+    kind: 'Série · Vu en France #08', title: "Logiciel de location de voitures en Algérie (2027) : réservation depuis la France, caution, état des lieux et flotte",
     dek: "En France, on réserve une voiture en trois minutes et on la récupère au comptoir avec un contrat déjà signé. En Algérie, la location se négocie encore sur WhatsApp : la voiture promise n'est pas toujours celle qui attend à l'aéroport, la caution se donne en espèces, et la rayure du retour devient une dispute. Ce qu'une plateforme doit faire à chaque moment de la location, ce qu'il faut construire en premier, le calcul qui la justifie, le modèle à choisir, et le calendrier pour ouvrir avant l'été 2027.",
     publishedAt: 'Octobre 2026', readTime: '11 min de lecture', author: 'Symloop', about: ['Location de voitures', 'Plateforme', 'Diaspora', 'Gestion de flotte', 'Algérie 2027'],
     intro: [
-      "**Réponse courte.** Une plateforme de location de voitures qui marche en Algérie en 2027 n'est pas d'abord un site de réservation : c'est **un calendrier juste et un état des lieux incontestable**. Le calendrier juste suppose que l'agence enregistre chaque sortie et chaque retour dans un outil, pas dans un cahier ; sinon la plateforme vend des voitures déjà sur la route. L'état des lieux incontestable suppose des photos horodatées prises sous les mêmes angles au départ et au retour, envoyées au client dans la minute. Par-dessus, la réservation depuis la France avec acompte, les conducteurs nommés et une caution écrite. Pour être prêt quand la diaspora réserve, il faut **ouvrir en avril, donc commencer en novembre**.",
+      "**Réponse courte.** Un logiciel de location de voitures qui marche en Algérie en 2027, pour une agence ou pour une plateforme, n'est pas d'abord un site de réservation : c'est **un calendrier juste et un état des lieux incontestable**. Le calendrier juste suppose que l'agence enregistre chaque sortie et chaque retour dans un outil, pas dans un cahier ; sinon la plateforme vend des voitures déjà sur la route. L'état des lieux incontestable suppose des photos horodatées prises sous les mêmes angles au départ et au retour, envoyées au client dans la minute. Par-dessus, la réservation depuis la France avec acompte, les conducteurs nommés et une caution écrite. Pour être prêt quand la diaspora réserve, il faut **ouvrir en avril, donc commencer en novembre**.",
       "Ce guide est le huitième de la série « Vu en France, à construire en Algérie », après [l'équivalent de Booking](/blog/creer-equivalent-booking-algerie-2027-reservation-hotels-depuis-la-france/) et [l'équivalent d'Airbnb](/blog/creer-equivalent-airbnb-algerie-2026/). Il s'adresse au fondateur de la diaspora qui veut lancer la plateforme, et au gérant d'agence qui veut que ses voitures se réservent sans lui au téléphone.",
     ],
     sections: [
@@ -84,7 +84,7 @@ const CONTENT = {
   },
 
   en: {
-    kind: 'Series · Seen in France #08', title: "Building a car rental platform in Algeria in 2027: booking from France, the deposit, the condition report and the fleet.",
+    kind: 'Series · Seen in France #08', title: "Car rental software in Algeria (2027): booking from France, deposit, condition report and fleet",
     dek: "In France you book a car in three minutes and pick it up at the counter with a contract already signed. In Algeria rental is still negotiated on WhatsApp: the car promised is not always the one waiting at the airport, the deposit is paid in cash, and the scratch at return becomes an argument. What a platform must do at each moment of the rental, what to build first, the calculation that justifies it, the model to choose, and the calendar to open before summer 2027.",
     publishedAt: 'October 2026', readTime: '11 min read', author: 'Symloop', about: ['Car rental', 'Platform', 'Diaspora', 'Fleet management', 'Algeria 2027'],
     intro: [
@@ -159,7 +159,7 @@ const CONTENT = {
   },
 
   ar: {
-    kind: 'سلسلة · رأيناه في فرنسا #08', title: "إنشاء منصة لكراء السيارات في الجزائر سنة 2027: الحجز من فرنسا، الضمان، معاينة الحالة والأسطول.",
+    kind: 'سلسلة · رأيناه في فرنسا #08', title: "برنامج كراء السيارات في الجزائر (2027): الحجز من فرنسا، الضمان، المعاينة والأسطول",
     dek: "في فرنسا تُحجز السيارة في ثلاث دقائق وتُستلم من الشباك بعقد موقَّع مسبقاً. في الجزائر ما يزال الكراء يُتفاوض عليه على واتساب: السيارة الموعودة ليست دائماً التي تنتظر في المطار، والضمان يُدفع نقداً، والخدش عند الإرجاع يتحول إلى نزاع. ما يجب أن تفعله المنصة في كل لحظة من الكراء، وما يُبنى أولاً، والحساب الذي يبرّرها، والنموذج الذي يُختار، والجدول الزمني للافتتاح قبل صيف 2027.",
     publishedAt: 'أكتوبر 2026', readTime: '11 دقيقة قراءة', author: 'Symloop', about: ['كراء السيارات', 'منصة', 'الجالية', 'تسيير الأسطول', 'الجزائر 2027'],
     intro: [
