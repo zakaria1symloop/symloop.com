@@ -9,7 +9,7 @@ const DATE = '2026-11-05';
 
 const CONTENT = {
   fr: {
-    kind: 'Portail de commande B2B · Grossiste · Détaillants · 2027', title: "Portail de commande B2B d'un grossiste en Algérie en 2027 : faire commander les détaillants eux-mêmes, à leur prix, avec leur crédit, une heure limite et la livraison du lendemain",
+    kind: 'Portail de commande B2B · Grossiste · Détaillants · 2027', title: "Logiciel grossiste en Algérie (2027) : portail de commande B2B où les détaillants commandent eux-mêmes, à leur prix, avec leur crédit, une heure limite et la livraison du lendemain",
     dek: "Mille détaillants, douze prévendeurs, et chaque commande coûte trois appels au dépôt, un prix renégocié et une livraison à J+2. Le portail de commande où le détaillant commande lui-même existe en France pour les restaurants et au Caire pour les épiceries ; en Algérie, les grossistes qui l'ont essayé l'ont souvent vu rester vide, parce qu'ils ont lancé une application au lieu d'une heure limite, et parce que le prévendeur avait intérêt à ce qu'il échoue. Ce guide décrit le portail qui se remplit : les six moments d'une commande, trois canaux pour un seul dépôt, un exemple chiffré sur douze mois, les six raisons pour lesquelles le détaillant ne commande pas seul, ce qu'on construit d'abord selon le métier, et le calendrier 2027.",
     publishedAt: 'Novembre 2026', readTime: '14 min de lecture', author: 'Symloop', about: ['Portail de commande B2B', 'Grossistes', 'Distribution', 'Agents IA', 'Algérie 2027'],
     intro: [
@@ -100,7 +100,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'B2B ordering portal · Wholesaler · Retailers · 2027', title: 'A wholesaler’s B2B ordering portal in Algeria in 2027: getting retailers to order by themselves, at their price, with their credit, a cut-off time and next-day delivery',
+    kind: 'B2B ordering portal · Wholesaler · Retailers · 2027', title: 'Wholesaler software in Algeria (2027): a B2B ordering portal where retailers order by themselves, at their price, with their credit, a cut-off time and next-day delivery',
     dek: 'A thousand retailers, twelve pre-sellers, and every order costs three calls to the depot, a renegotiated price and D+2 delivery. The ordering portal where the retailer orders by themselves exists in France for restaurants and in Cairo for grocery shops; in Algeria, the wholesalers who tried it often saw it stay empty, because they launched an app instead of a cut-off time, and because the pre-seller had an interest in its failure. This guide describes the portal that fills up: the six moments of an order, three channels for one depot, a twelve-month worked example, the six reasons retailers do not order alone, what gets built first by trade, and the 2027 calendar.',
     publishedAt: 'November 2026', readTime: '14 min read', author: 'Symloop', about: ['B2B ordering portal', 'Wholesalers', 'Distribution', 'AI agents', 'Algeria 2027'],
     intro: [
@@ -191,7 +191,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'بوابة طلب B2B · تاجر جملة · تجار تجزئة · 2027', title: 'بوابة طلب B2B لتاجر جملة في الجزائر سنة 2027: جعل تجار التجزئة يطلبون بأنفسهم، بسعرهم، بدينهم، بساعة حدّ وتسليم الغد',
+    kind: 'بوابة طلب B2B · تاجر جملة · تجار تجزئة · 2027', title: 'برنامج تاجر جملة في الجزائر (2027): بوابة طلب B2B يطلب فيها تجار التجزئة بأنفسهم، بسعرهم، بدينهم، بساعة حد وتوصيل الغد',
     dek: 'ألف تاجر تجزئة، اثنا عشر مندوباً، وكل طلبية تكلّف ثلاث مكالمات للمستودع وسعراً يُعاد التفاوض عليه وتسليماً بعد يومين. بوابة الطلب التي يطلب فيها التاجر بنفسه موجودة في فرنسا للمطاعم وفي القاهرة للبقالات؛ وفي الجزائر، كثيراً ما رآها تجار الجملة الذين جرّبوها تبقى فارغة، لأنهم أطلقوا تطبيقاً بدل ساعة حدّ، ولأن للمندوب مصلحة في فشلها. يصف هذا الدليل البوابة التي تمتلئ: اللحظات الست لطلبية، ثلاث قنوات لمستودع واحد، مثال محسوب على اثني عشر شهراً، الأسباب الستة التي تمنع التاجر من الطلب وحده، ما يُبنى أولاً حسب المهنة، وتقويم 2027.',
     publishedAt: 'نوفمبر 2026', readTime: '14 دقيقة قراءة', author: 'Symloop', about: ['بوابة طلب B2B', 'تجار الجملة', 'التوزيع', 'وكلاء الذكاء الاصطناعي', 'الجزائر 2027'],
     intro: [

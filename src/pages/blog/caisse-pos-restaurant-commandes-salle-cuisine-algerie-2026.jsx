@@ -9,7 +9,7 @@ const DATE = '2026-10-29';
 
 const CONTENT = {
   fr: {
-    kind: 'Problème · Restaurant', title: "Je veux une caisse pour mon restaurant : ce qu'il faut vraiment, caisse du marché ou sur mesure, et dans quel ordre (Algérie, 2026).",
+    kind: 'Problème · Restaurant', title: "Logiciel restaurant et fast food en Algérie (2026) : caisse, commandes salle et cuisine, livraison, caisse du marché ou sur mesure et dans quel ordre",
     dek: "« Je veux un POS pour mon restaurant, commandes et menus. » Derrière cette phrase, il y a quatre fuites : la commande perdue entre la salle et la cuisine, la caisse qui ne dit pas la vérité, le stock d'ingrédients invisible et les commandes de livraison hors système. Ce qu'une caisse du marché règle, quand le sur mesure se justifie, où l'IA aide, et les huit semaines pour basculer sans fermer un soir.",
     publishedAt: 'Octobre 2026', readTime: '8 min de lecture', author: 'Symloop', about: ['Restaurant', 'Caisse POS', 'Écran cuisine', 'Livraison', 'Algérie'],
     intro: [
@@ -70,7 +70,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Problem · Restaurant', title: 'I want a till for my restaurant: what you really need, market POS or custom, and in what order (Algeria, 2026).',
+    kind: 'Problem · Restaurant', title: 'Restaurant and fast food software in Algeria (2026): till, dining-room and kitchen orders, delivery, market POS or custom and in what order',
     dek: "\"I want a POS for my restaurant, orders and menus.\" Behind that sentence are four leaks: the order lost between the floor and the kitchen, the till that does not tell the truth, the invisible ingredient stock and the delivery orders outside the system. What a market POS fixes, when custom is justified, where AI helps, and the eight weeks to switch without closing an evening.",
     publishedAt: 'October 2026', readTime: '8 min read', author: 'Symloop', about: ['Restaurant', 'POS', 'Kitchen display', 'Delivery', 'Algeria'],
     intro: [
@@ -131,7 +131,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'مشكلة · مطعم', title: 'أريد صندوقاً لمطعمي: ما تحتاجه فعلاً، صندوق السوق أم مخصص، وبأي ترتيب (الجزائر، 2026).',
+    kind: 'مشكلة · مطعم', title: 'برنامج مطعم ووجبات سريعة في الجزائر (2026): الصندوق، طلبات القاعة والمطبخ، التوصيل، صندوق السوق أو المخصص وبأي ترتيب',
     dek: '«أريد POS لمطعمي، طلبات وقوائم.» خلف هذه الجملة أربعة تسربات: الطلب الضائع بين الصالة والمطبخ، الصندوق الذي لا يقول الحقيقة، مخزون المكوّنات غير المرئي، وطلبات التوصيل خارج النظام. ما يحله صندوق السوق، متى يُبرَّر المخصص، أين يساعد الذكاء الاصطناعي، والأسابيع الثمانية للانتقال دون إغلاق سهرة.',
     publishedAt: 'أكتوبر 2026', readTime: '8 دقائق قراءة', author: 'سيملوب', about: ['مطعم', 'صندوق POS', 'شاشة المطبخ', 'التوصيل', 'الجزائر'],
     intro: [

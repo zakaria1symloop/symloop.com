@@ -13,9 +13,14 @@ export const SECTOR_PAGES = [
   { slug: 'creer-equivalent-idgarages-algerie-2027-garage-devis-pieces-carnet-entretien', fr: 'Logiciel garage automobile en Algérie', en: 'Auto garage software in Algeria', ar: 'برنامج ورشة ميكانيك السيارات في الجزائر' },
   { slug: 'creer-equivalent-mariages-net-algerie-2027-salle-des-fetes-reservation-depuis-la-france-acompte-dates', fr: 'Logiciel salle des fêtes en Algérie', en: 'Wedding hall booking software in Algeria', ar: 'برنامج قاعة الحفلات في الجزائر' },
   { slug: 'promoteur-immobilier-vendre-sur-plan-diaspora-2027-espace-acquereur-suivi-chantier', fr: 'Logiciel promoteur immobilier en Algérie', en: 'Property developer software in Algeria', ar: 'برنامج المرقّي العقاري في الجزائر' },
+  { slug: 'logiciel-hotel-reservation-hebergement-algerie-2026', fr: 'Logiciel hôtel en Algérie', en: 'Hotel software in Algeria', ar: 'برنامج فندق في الجزائر' },
+  { slug: 'caisse-pos-restaurant-commandes-salle-cuisine-algerie-2026', fr: 'Logiciel restaurant et fast food en Algérie', en: 'Restaurant and fast food software in Algeria', ar: 'برنامج مطعم ووجبات سريعة في الجزائر' },
+  { slug: 'ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026', fr: 'Logiciel centre de formation et école privée en Algérie', en: 'Training centre and private school software in Algeria', ar: 'برنامج مركز تكوين ومدرسة خاصة في الجزائر' },
+  { slug: 'agence-immobiliere-whatsapp-google-sheets-organiser-equipe-algerie-2026', fr: 'Logiciel agence immobilière en Algérie', en: 'Real estate agency software in Algeria', ar: 'برنامج وكالة عقارية في الجزائر' },
+  { slug: 'portail-de-commande-b2b-grossiste-algerie-2027-detaillants-commandent-eux-memes-prix-credit-heure-limite', fr: 'Logiciel grossiste en Algérie', en: 'Wholesaler software in Algeria', ar: 'برنامج تاجر جملة في الجزائر' },
   { slug: 'logiciel-ecole-gestion-scolaire-algerie-2026', fr: 'Logiciel école et gestion scolaire en Algérie', en: 'School management software in Algeria', ar: 'برنامج تسيير المدارس في الجزائر' },
   { slug: 'logiciel-pharmacie-gestion-stock-algerie-2026', fr: 'Logiciel pharmacie et gestion de stock en Algérie', en: 'Pharmacy stock software in Algeria', ar: 'برنامج الصيدلية وتسيير المخزون في الجزائر' },
-  { slug: 'logiciel-clinique-cabinet-medical-algerie-2026', fr: 'Logiciel clinique et cabinet médical en Algérie', en: 'Clinic and medical practice software in Algeria', ar: 'برنامج المصحة والعيادة الطبية في الجزائر' },
+  { slug: 'logiciel-clinique-cabinet-medical-algerie-2026', fr: 'Logiciel clinique, cabinet médical et hôpital en Algérie', en: 'Clinic, medical practice and hospital software in Algeria', ar: 'برنامج المصحة والعيادة الطبية والمستشفى في الجزائر' },
   { slug: 'serre-intelligente-agriculture-algerie-2026', fr: 'Serre intelligente et agriculture en Algérie', en: 'Smart greenhouse and agriculture software in Algeria', ar: 'البيت البلاستيكي الذكي والفلاحة في الجزائر' },
 ];
 

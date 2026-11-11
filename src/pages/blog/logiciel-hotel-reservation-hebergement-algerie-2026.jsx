@@ -19,9 +19,9 @@ export default function LogicielHotel2026() {
 
   const content = {
     fr: {
-      title: "Logiciel de Gestion Hoteliere en Algerie",
+      title: "Logiciel hôtel en Algérie : réservation, PMS, check-in, facturation, channel manager",
       subtitle: "Solution PMS Complete pour Hotels, Riads, Maisons d'Hotes et Residences",
-      metaTitle: "Logiciel Hotel PMS Reservation Algerie 2026 | Gestion Hoteliere | Symloop",
+      metaTitle: "Logiciel hôtel Algérie 2026 : réservation, PMS, check-in, channel manager | Symloop",
       metaDesc: "Logiciel de gestion hoteliere pour hotels en Algerie. Reservations, check-in/out, facturation, channel manager OTA. Interface arabe/francais. Demo gratuite.",
       date: "10 Janvier 2026",
       readTime: "14 min",
@@ -244,9 +244,9 @@ export default function LogicielHotel2026() {
       backToBlog: "Retour au Blog"
     },
     en: {
-      title: "Hotel Management Software in Algeria",
+      title: "Hotel software in Algeria: booking, PMS, check-in, invoicing, channel manager",
       subtitle: "Complete PMS Solution for Hotels, Riads, Guest Houses and Residences",
-      metaTitle: "Hotel PMS Reservation Software Algeria 2026 | Hotel Management | Symloop",
+      metaTitle: "Hotel software Algeria 2026: booking, PMS, check-in, channel manager | Symloop",
       metaDesc: "Hotel management software for hotels in Algeria. Reservations, check-in/out, billing, OTA channel manager. Arabic/French interface. Free demo.",
       date: "January 10, 2026",
       readTime: "14 min",
@@ -469,9 +469,9 @@ export default function LogicielHotel2026() {
       backToBlog: "Back to Blog"
     },
     ar: {
-      title: "برنامج إدارة الفنادق في الجزائر",
+      title: "برنامج فندق في الجزائر: الحجز، PMS، تسجيل الوصول، الفوترة، مدير القنوات",
       subtitle: "حل PMS شامل للفنادق والرياض ودور الضيافة والإقامات",
-      metaTitle: "برنامج فندق PMS حجز الجزائر 2026 | إدارة فندقية | Symloop",
+      metaTitle: "برنامج فندق الجزائر 2026: حجز، PMS، تسجيل وصول، مدير قنوات | Symloop",
       metaDesc: "برنامج إدارة فندقية للفنادق في الجزائر. الحجوزات، تسجيل الدخول/الخروج، الفوترة، مدير القنوات OTA. واجهة عربية/فرنسية. عرض مجاني.",
       date: "10 يناير 2026",
       readTime: "14 دقيقة",

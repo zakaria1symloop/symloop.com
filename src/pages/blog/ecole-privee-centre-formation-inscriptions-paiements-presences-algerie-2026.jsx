@@ -9,7 +9,7 @@ const DATE = '2026-10-30';
 
 const CONTENT = {
   fr: {
-    kind: 'Problème · École privée et formation', title: "Je gère une école privée et tout est sur papier : inscriptions, paiements par tranches, présences, parents sur WhatsApp. Par où commencer (Algérie, 2026).",
+    kind: 'Problème · École privée et formation', title: "Logiciel centre de formation et école privée en Algérie (2026) : inscriptions, paiements par tranches, présences, parents sur WhatsApp, par où commencer",
     dek: "École privée, crèche, école de langues, centre de soutien ou de formation : les inscriptions se font en septembre dans la cour, les tranches se paient en espèces avec un reçu manuel, l'appel est dans un cahier et les parents vivent dans un groupe WhatsApp. Ce que vous perdez chaque trimestre, ce qui se règle en une semaine, la plateforme qu'il faut, où l'IA aide, et le calendrier pour être prêt à la rentrée.",
     publishedAt: 'Octobre 2026', readTime: '9 min de lecture', author: 'Symloop', about: ['École privée', 'Centre de formation', 'Gestion scolaire', 'Application parents', 'Algérie'],
     intro: [
@@ -77,7 +77,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Problem · Private school and training', title: 'I run a private school and everything is on paper: enrolments, instalment payments, attendance, parents on WhatsApp. Where to start (Algeria, 2026).',
+    kind: 'Problem · Private school and training', title: 'Training centre and private school software in Algeria (2026): enrolments, instalment payments, attendance, parents on WhatsApp, where to start',
     dek: "Private school, nursery, language school, tutoring or training centre: enrolments happen in September in the yard, instalments are paid in cash with a handwritten receipt, roll call is in a notebook and parents live in a WhatsApp group. What you lose every term, what gets fixed in a week, the platform you need, where AI helps, and the timeline to be ready for September.",
     publishedAt: 'October 2026', readTime: '9 min read', author: 'Symloop', about: ['Private school', 'Training centre', 'School management', 'Parent app', 'Algeria'],
     intro: [
@@ -145,7 +145,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'مشكلة · مدرسة خاصة وتكوين', title: 'أدير مدرسة خاصة وكل شيء على الورق: تسجيلات، أقساط، حضور، أولياء على واتساب. من أين أبدأ (الجزائر، 2026).',
+    kind: 'مشكلة · مدرسة خاصة وتكوين', title: 'برنامج مركز تكوين ومدرسة خاصة في الجزائر (2026): التسجيل، الدفع بالأقساط، الحضور، الوالدون على واتساب، من أين نبدأ',
     dek: 'مدرسة خاصة، روضة، مدرسة لغات، مركز دعم أو تكوين: التسجيلات في سبتمبر في الساحة، الأقساط نقداً بوصل يدوي، المناداة في دفتر، والأولياء يعيشون في مجموعة واتساب. ما تخسره كل فصل، ما يُحلّ في أسبوع، المنصة اللازمة، أين يساعد الذكاء الاصطناعي، والجدول لتكون جاهزاً للدخول المدرسي.',
     publishedAt: 'أكتوبر 2026', readTime: '9 دقائق قراءة', author: 'سيملوب', about: ['مدرسة خاصة', 'مركز تكوين', 'تسيير مدرسي', 'تطبيق الأولياء', 'الجزائر'],
     intro: [

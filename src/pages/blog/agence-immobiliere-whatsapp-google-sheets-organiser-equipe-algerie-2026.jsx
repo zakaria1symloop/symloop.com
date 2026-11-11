@@ -9,7 +9,7 @@ const DATE = '2026-10-28';
 
 const CONTENT = {
   fr: {
-    kind: 'Problème · Agence immobilière', title: "Mon agence immobilière tourne sur WhatsApp et Google Sheets : comment organiser mon équipe sans tout casser (Algérie, 2026).",
+    kind: 'Problème · Agence immobilière', title: "Logiciel agence immobilière en Algérie (2026) : organiser l'équipe, les biens et les demandes au-delà de WhatsApp et Google Sheets, sans tout casser",
     dek: "Les clients sont dans des groupes WhatsApp, les biens disponibles dans un Google Sheets, et personne ne sait qui a appelé qui. Le diagnostic, ce qui se règle en une semaine sans logiciel, ce qui demande une plateforme, où l'IA fait vraiment gagner du temps, et ce que ça coûte.",
     publishedAt: 'Octobre 2026', readTime: '9 min de lecture', author: 'Symloop', about: ['Agence immobilière', 'CRM immobilier', 'WhatsApp Business', 'Algérie'],
     intro: [
@@ -78,7 +78,7 @@ const CONTENT = {
     ] },
   },
   en: {
-    kind: 'Problem · Real-estate agency', title: 'My real-estate agency runs on WhatsApp and Google Sheets: how to organise my team without breaking everything (Algeria, 2026).',
+    kind: 'Problem · Real-estate agency', title: 'Real estate agency software in Algeria (2026): organising the team, listings and enquiries beyond WhatsApp and Google Sheets, without breaking everything',
     dek: "Clients live in WhatsApp groups, available listings in a Google Sheet, and nobody knows who called whom. The diagnosis, what gets fixed in a week without software, what needs a platform, where AI really saves time, and what it costs.",
     publishedAt: 'October 2026', readTime: '9 min read', author: 'Symloop', about: ['Real-estate agency', 'Real-estate CRM', 'WhatsApp Business', 'Algeria'],
     intro: [
@@ -147,7 +147,7 @@ const CONTENT = {
     ] },
   },
   ar: {
-    kind: 'مشكلة · وكالة عقارية', title: 'وكالتي العقارية تشتغل على واتساب وGoogle Sheets: كيف أنظّم فريقي دون أن أكسر كل شيء (الجزائر، 2026).',
+    kind: 'مشكلة · وكالة عقارية', title: 'برنامج وكالة عقارية في الجزائر (2026): تنظيم الفريق والعقارات والطلبات بعد واتساب وغوغل شيتس، دون كسر كل شيء',
     dek: 'العملاء في مجموعات واتساب، العقارات المتاحة في ملف Google Sheets، ولا أحد يعرف من اتصل بمن. التشخيص، ما يُحلّ في أسبوع بلا برنامج، ما يحتاج منصة، أين يوفّر الذكاء الاصطناعي الوقت فعلاً، وكم يكلف.',
     publishedAt: 'أكتوبر 2026', readTime: '9 دقائق قراءة', author: 'سيملوب', about: ['وكالة عقارية', 'CRM عقاري', 'WhatsApp Business', 'الجزائر'],
     intro: [
