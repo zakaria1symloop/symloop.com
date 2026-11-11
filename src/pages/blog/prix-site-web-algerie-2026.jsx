@@ -91,7 +91,6 @@ export default function PrixSiteWebAlgerie() {
         <title>Prix Site Web Algérie 2026 : Combien Coûte un Site Internet ? | Symloop</title>
         <meta name="description" content="Combien coûte un site web en Algérie en 2026 ? Tarifs réels : site vitrine dès 32 000 DA, e-commerce dès 150 000 DA. Comparatif prix freelance vs agence. Devis gratuit Symloop." />
         <meta name="keywords" content="prix site web algérie, combien coute un site web en algérie, tarif création site web algérie 2026, prix site internet algérie, devis site web algérie, cout site web algérie, prix site vitrine algérie, prix site e-commerce algérie, tarif développeur web algérie, agence web algérie prix, website price Algeria, web development cost Algeria, how much does a website cost in Algeria, website design Algeria pricing" />
-        <link rel="canonical" href="https://symloop.com/blog/prix-site-web-algerie-2026" />
         <meta property="og:title" content="Prix Site Web Algérie 2026 : Combien Coûte un Site Internet ?" />
         <meta property="og:description" content="Guide complet des prix de création de site web en Algérie (Algeria) en 2026. Tarifs réels, comparatif freelance vs agence, coûts cachés à connaître." />
         <meta property="og:url" content="https://symloop.com/blog/prix-site-web-algerie-2026" />
@@ -107,7 +106,7 @@ export default function PrixSiteWebAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

@@ -195,8 +195,8 @@ export default function ApplicationMobileSetif2026() {
         "description": t.metaDesc,
         "url": "https://symloop.com/blog/application-mobile-setif-2026",
         "telephone": "+213549575512",
-        "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressCountry": "DZ" },
-        "geo": { "@type": "GeoCoordinates", "latitude": "36.1919", "longitude": "5.4138" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
+        "geo": { "@type": "GeoCoordinates", "latitude": "36.7538", "longitude": "3.0588" },
         "areaServed": { "@type": "City", "name": "Setif" },
         "priceRange": "300000 DA - 800000 DA"
       },
@@ -242,7 +242,6 @@ export default function ApplicationMobileSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.keywords} />
-        <link rel="canonical" href="https://symloop.com/blog/application-mobile-setif-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta name="geo.region" content="DZ-19" />

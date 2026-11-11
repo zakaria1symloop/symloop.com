@@ -41,7 +41,6 @@ export default function DesignUIUXAlgerie() {
         <title>Design UI/UX Algérie 2024 | Maquettes Figma, Interfaces Modernes | Symloop</title>
         <meta name="description" content="Services de design UI/UX en Algérie : maquettes Figma professionnelles, interfaces utilisateur modernes, design system complet. Tarifs compétitifs et qualité internationale." />
         <meta name="keywords" content="design ui ux algérie, interface utilisateur, maquette figma, expérience utilisateur, agence design alger, ux design algérie, ui designer, prototype figma, design system, conception interface" />
-        <link rel="canonical" href="https://symloop.com/blog/design-ui-ux-algerie-2024" />
         <meta property="og:title" content="Design UI/UX Algérie 2024 | Maquettes Figma Professionnelles" />
         <meta property="og:description" content="Création d'interfaces utilisateur modernes et intuitives. Design UI/UX de qualité internationale à prix algérien." />
         <meta property="og:type" content="article" />
@@ -99,7 +98,7 @@ export default function DesignUIUXAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

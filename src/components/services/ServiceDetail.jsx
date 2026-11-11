@@ -33,15 +33,15 @@ export default function ServiceDetail({
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative container mx-auto px-6 py-24">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
             <motion.h1 
               className="text-4xl md:text-6xl font-bold mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               {title}
@@ -50,8 +50,8 @@ export default function ServiceDetail({
             {subtitle && (
               <motion.p 
                 className="text-xl md:text-2xl text-blue-100 mb-8 font-medium"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
                 {subtitle}
@@ -60,8 +60,8 @@ export default function ServiceDetail({
             
             <motion.p 
               className="text-lg md:text-xl text-blue-50 max-w-3xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               {description}
@@ -70,8 +70,8 @@ export default function ServiceDetail({
             {/* Price and Duration */}
             <motion.div 
               className="flex flex-col md:flex-row justify-center items-center gap-8 mt-12"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               {price && (
@@ -99,8 +99,8 @@ export default function ServiceDetail({
           {/* Features Section */}
           {features.length > 0 && (
             <motion.div
-              initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ x: isRTL ? 50 : -50 }}
+              animate={{ x: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
               className="bg-white rounded-2xl shadow-xl p-8"
             >
@@ -112,8 +112,8 @@ export default function ServiceDetail({
                 {features.map((feature, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ x: isRTL ? 20 : -20 }}
+                    animate={{ x: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
                     className="flex items-center group"
                   >
@@ -132,8 +132,8 @@ export default function ServiceDetail({
           {/* Technologies Section */}
           {technologies.length > 0 && (
             <motion.div
-              initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ x: isRTL ? -50 : 50 }}
+              animate={{ x: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
               className="bg-white rounded-2xl shadow-xl p-8"
             >
@@ -145,8 +145,8 @@ export default function ServiceDetail({
                 {technologies.map((tech, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ scale: 0.8 }}
+                    animate={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
                     className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4 text-center border border-purple-100 hover:border-purple-300 transition-all hover:shadow-md"
                   >
@@ -161,8 +161,8 @@ export default function ServiceDetail({
         {/* Applications Section */}
         {applications.length > 0 && (
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
             className="mt-16 bg-white rounded-2xl shadow-xl p-8"
           >
@@ -173,8 +173,8 @@ export default function ServiceDetail({
               {applications.map((app, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ y: 20 }}
+                  animate={{ y: 0 }}
                   transition={{ duration: 0.5, delay: 1.8 + index * 0.1 }}
                   className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100 hover:border-blue-300 transition-all hover:shadow-md"
                 >
@@ -187,8 +187,8 @@ export default function ServiceDetail({
 
         {/* CTA Section */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 30 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.8, delay: 2 }}
           className="mt-16 text-center"
         >

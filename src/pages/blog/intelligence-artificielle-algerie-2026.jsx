@@ -280,7 +280,6 @@ export default function IntelligenceArtificielleAlgerie2026() {
         <title>Intelligence Artificielle Algérie 2026 | Tendances IA MENA | Symloop</title>
         <meta name="description" content="Guide complet sur l'Intelligence Artificielle en Algérie 2026. Tendances IA, opportunités business, solutions chatbot, agents IA autonomes. Expert IA Algérie." />
         <meta name="keywords" content="intelligence artificielle algérie 2026, ia algérie, ai algeria 2026, chatbot algérie, agent ia, machine learning algérie, deep learning, gpt algérie, claude algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/intelligence-artificielle-algerie-2026" />
 
         <meta property="og:title" content="Intelligence Artificielle Algérie 2026 | Tendances IA | Symloop" />
         <meta property="og:description" content="Guide complet sur l'IA en Algérie 2026. Tendances, opportunités et solutions pour les entreprises algériennes." />
@@ -375,7 +374,7 @@ export default function IntelligenceArtificielleAlgerie2026() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 {t.backToBlog}

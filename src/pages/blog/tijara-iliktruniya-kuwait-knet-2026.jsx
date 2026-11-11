@@ -132,7 +132,6 @@ export default function TijaraIliktruniyaKuwaitKnet2026() {
     <>
       <Head>
         <title>{c.metaTitle}</title><meta name="description" content={c.metaDescription} /><meta name="keywords" content={c.seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/tijara-iliktruniya-kuwait-knet-2026" />
         <meta property="og:title" content={c.title} /><meta property="og:description" content={c.metaDescription} /><meta property="og:type" content="article" /><meta property="og:url" content="https://symloop.com/ar/blog/tijara-iliktruniya-kuwait-knet-2026" /><meta property="og:site_name" content="Symloop" />
         <meta property="og:image" content="https://symloop.com/logo.png" />
         <meta property="og:locale" content={locale === 'ar' ? 'ar_KW' : locale === 'en' ? 'en_US' : 'fr_FR'} />
@@ -141,9 +140,6 @@ export default function TijaraIliktruniyaKuwaitKnet2026() {
         <meta property="article:section" content={c.category} />
         <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={c.title} /><meta name="twitter:description" content={c.metaDescription} />
         <meta name="robots" content="index, follow" /><meta name="author" content="Symloop" /><meta name="geo.region" content="KW" /><meta name="geo.placename" content="Kuwait" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/tijara-iliktruniya-kuwait-knet-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/ecommerce-solutions-kuwait-knet-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/ecommerce-solutions-kuwait-knet-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocalBusiness) }} />

@@ -95,7 +95,7 @@ export default function BlogSEO({
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+213-555-123456",
+        "telephone": "+213-549-575-512",
         "contactType": "customer service",
         "areaServed": ["DZ", "MA", "TN", "EG", "SA", "AE"],
         "availableLanguage": ["French", "Arabic", "English"]
@@ -143,7 +143,7 @@ export default function BlogSEO({
     "url": baseUrl,
     "logo": `${baseUrl}/sym-logo.png`,
     "image": imageUrl,
-    "telephone": "+213-555-123456",
+    "telephone": "+213-549-575-512",
     "email": "contact@symloop.com",
     "address": {
       "@type": "PostalAddress",
@@ -302,17 +302,12 @@ export default function BlogSEO({
       <meta name="bingbot" content="index, follow" />
 
       {/* Canonical URL */}
-      <link rel="canonical" href={currentUrl} />
 
       {/* Language */}
       <meta httpEquiv="content-language" content={langCode} />
       <html lang={currentLocale} dir={isRTL ? 'rtl' : 'ltr'} />
 
       {/* Hreflang - Multi-language SEO */}
-      <link rel="alternate" hrefLang="fr" href={alternateUrls.fr} />
-      <link rel="alternate" hrefLang="ar" href={alternateUrls.ar} />
-      <link rel="alternate" hrefLang="en" href={alternateUrls.en} />
-      <link rel="alternate" hrefLang="x-default" href={alternateUrls.fr} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="article" />

@@ -296,13 +296,8 @@ export default function AITunisie() {
         } />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://symloop.com/solutions/intelligence-artificielle-tunisie" />
 
         {/* Alternate languages */}
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/solutions/intelligence-artificielle-tunisie" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/intelligence-artificielle-tunisie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/intelligence-artificielle-tunisie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/intelligence-artificielle-tunisie" />
 
         {/* Geo Tags */}
         <meta name="geo.region" content="TN" />
@@ -326,8 +321,8 @@ export default function AITunisie() {
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="text-center max-w-4xl mx-auto"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500/20 to-white/10 rounded-full border border-red-500/30 mb-6">
@@ -390,8 +385,8 @@ export default function AITunisie() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.3 }}
               className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
             >

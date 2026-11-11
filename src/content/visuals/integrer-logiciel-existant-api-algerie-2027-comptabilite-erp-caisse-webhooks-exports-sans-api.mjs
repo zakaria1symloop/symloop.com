@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'integrer-logiciel-existant-api-algerie-2027-comptabilite-erp-caisse-webhooks-exports-sans-api';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Intégration · API · Logiciels existants · 2027', title: ['La même facture,', 'saisie trois fois,', 'par trois personnes.'], subtitle: 'Relier l’application à la comptabilité, à la facturation, à l’ERP et à la caisse qui existent déjà : le contrat de données, la couche d’intégration avec sa file et ses clés d’idempotence, les webhooks de retour, le rapprochement du soir, et ce qu’on fait quand il n’y a pas d’API', left: { label: 'Ressaisie', sub: 'trois logiciels, trois vérités' }, right: { label: 'Intégré', sub: 'un événement, un identifiant' } },
+    flux: { title: 'La vie d’une commande à travers les logiciels, en six moments', items: [
+      { n: '01', label: 'L’événement naît', sub: 'La commande est confirmée dans l’application : un événement horodaté, avec un identifiant créé une fois pour toutes.' },
+      { n: '02', label: 'Le contrat de données', sub: 'Client, lignes, montants, taxes, références : le même objet pour tous les logiciels, avec la table de correspondance des identifiants.' },
+      { n: '03', label: 'L’envoi', sub: 'Par l’API si elle existe, par fichier sinon ; dans une file, avec une clé d’idempotence, jamais deux fois.' },
+      { n: '04', label: 'L’accusé et l’identifiant retour', sub: 'Le logiciel de facturation renvoie son numéro ; il est stocké en face de l’identifiant de l’application. Sinon : « en attente », visible.', accent: true },
+      { n: '05', label: 'Le retour des événements', sub: 'Paiement saisi en comptabilité, stock corrigé dans l’ERP : webhook si l’éditeur en offre, lecture périodique sinon ; l’application se met à jour.' },
+      { n: '06', label: 'Le rapprochement du soir', sub: 'Les deux côtés sont comparés : ce qui manque, ce qui diffère, ce qui est en double ; chaque écart est listé et rejoué ou arbitré.' },
+    ], caption: 'Figure 1 · Le moment 04 est celui qui fait tenir l’intégration dans le temps : sans l’identifiant du logiciel cible stocké en face du vôtre, personne ne peut dire si la facture 2027-0142 est la commande 8f3a… ou une autre. Le moment 06 est celui qui rend l’intégration honnête : elle dit ses écarts au lieu de les cacher.', alt: 'Six étapes : événement, contrat de données, envoi, accusé et identifiant retour, retour des événements, rapprochement du soir.' },
+    couches: { title: 'L’intégration, en cinq couches', layers: [
+      { label: 'Existant', items: [{ name: 'Les logiciels déjà là : comptabilité, facturation, ERP, caisse, Excel', sub: 'on ne les remplace pas ; on les relie, et chacun reste maître de ce qu’il sait faire' }] },
+      { label: 'Connecteurs', items: [{ name: 'Un connecteur par logiciel : API, exports, base en lecture, écran', sub: 'le connecteur parle la langue du logiciel ; rien d’autre dans l’application ne la connaît' }] },
+      { label: 'Intégration', items: [{ name: 'La couche d’intégration : file, idempotence, transformation, correspondance, journal', sub: 'chaque message a une clé, un statut, un essai ; chaque identifiant a son jumeau ; tout est journalisé', accent: true }] },
+      { label: 'Application', items: [{ name: 'L’application Symloop : web, mobile, agent IA', sub: 'elle émet et reçoit des événements ; elle ne sait pas comment la comptabilité est faite' }] },
+      { label: 'Supervision', items: [{ name: 'Écarts, rejets, files bloquées, rapprochement', sub: 'un écran que le comptable et le gérant lisent le soir, avec un bouton « rejouer »' }] },
+    ], caption: 'Figure 2 · La couche du milieu est ce qu’on construit vraiment : les connecteurs changent avec les logiciels, l’application change avec le métier, mais la file, les clés, la correspondance et le journal restent. Un prestataire qui branche l’application directement sur l’API de la comptabilité a construit un câble, pas une intégration.', alt: 'Cinq couches : logiciels existants, connecteurs, couche d’intégration, application, supervision.' },
+    exemple: { title: 'Un distributeur, quatre logiciels, un mois : l’exemple', items: [
+      { value: '4', label: 'logiciels reliés : la facturation sous Windows, la comptabilité du cabinet, la caisse du dépôt et l’export de la banque ; hypothèse à remplacer par vos logiciels' },
+      { value: '1 200', label: 'factures par mois créées dans la facturation à partir des commandes de l’application, avec leur numéro stocké en face de l’identifiant de la commande' },
+      { value: '0', label: 'ressaisie : la facture n’est tapée qu’une fois, par personne ; les écritures comptables partent par fichier chaque soir, les paiements reviennent par lecture du matin' },
+      { value: '3 h→15 min', label: 'de rapprochement en fin de mois : les écarts sont listés chaque soir au lieu d’être cherchés le 30 ; hypothèse sur la durée, pas sur le mécanisme', accent: true },
+    ], caption: 'Figure 3 · Les volumes et les durées sont des hypothèses à remplacer par les vôtres ; le zéro ressaisie et l’identifiant stocké en face ne le sont pas. Ce qui se vérifie partout : une intégration sans rapprochement quotidien produit un écart de fin de mois que personne ne sait expliquer.', alt: 'Quatre chiffres : quatre logiciels reliés, 1 200 factures par mois, zéro ressaisie, rapprochement de trois heures à quinze minutes.' },
+    modes: { title: 'Six situations d’accès au logiciel existant, et comment on le relie', columns: ['Ce qu’on a', 'Comment on relie'], rows: [
+      { label: 'Une API documentée', cells: ['Odoo par XML-RPC, un logiciel moderne en REST, un éditeur SaaS avec clés et quotas', 'Connecteur API avec clé au nom de l’entreprise, pagination, limites respectées, bac à sable testé avant la production'] },
+      { label: 'Des exports et des imports de fichiers', cells: ['La plupart des logiciels de facturation et de comptabilité sous Windows exportent et importent CSV ou Excel', 'Fichier généré par l’application, déposé dans un dossier surveillé, importé par le logiciel ; accusé par relecture du résultat'] },
+      { label: 'Une base de données accessible', cells: ['Le logiciel garde ses données dans un fichier ou un serveur local accessible', 'Lecture seule, jamais d’écriture directe ; on lit les factures et les paiements, on écrit par l’import officiel'] },
+      { label: 'Seulement un écran', cells: ['Aucune API, aucun export utile, un éditeur injoignable', 'Automatisation de l’écran en dernier recours, sur un poste dédié, avec capture de preuve ; et un plan pour en sortir'] },
+      { label: 'Un éditeur SaaS étranger', cells: ['Facturation ou CRM en ligne, webhooks disponibles, paiement en devise', 'Webhooks signés et vérifiés, rejeu protégé, clés au nom de l’entreprise ; le paiement du service suit le guide dédié'] },
+      { label: 'Un fichier Excel partagé', cells: ['Le « logiciel » est un classeur que trois personnes modifient', 'Soit l’application devient la source et Excel un export, soit on importe le classeur une fois et on l’arrête'] },
+    ], caption: 'Figure 4 · Les deux premières lignes couvrent la plupart des cas algériens : une API quand le logiciel est récent, des fichiers quand il tourne sous Windows depuis dix ans. La quatrième ligne existe, elle marche, et elle doit toujours être accompagnée d’une date de sortie.', alt: 'Matrice de six situations d’accès avec ce qu’on a et comment on relie.' },
+    modeles: { title: 'Six entreprises, ce qu’on relie d’abord', columns: ['Ce qu’on relie d’abord', 'Ce qui vient ensuite'], rows: [
+      { label: 'Distributeur', cells: ['Commandes de l’application vers la facturation ; encaissements vers la comptabilité', 'Stock de l’ERP vers l’application ; relevés bancaires vers le rapprochement'] },
+      { label: 'Chaîne de boutiques', cells: ['Ventes de la caisse vers le stock central et la comptabilité, chaque soir', 'Fidélité et reçus vers l’espace client ; prix centraux vers les caisses'] },
+      { label: 'Clinique ou cabinet', cells: ['Actes de l’agenda vers la facturation ; paiements vers la comptabilité', 'Résultats du laboratoire vers le dossier ; conventions vers la facturation'] },
+      { label: 'Agence immobilière', cells: ['Quittances de l’application vers la comptabilité ; loyers encaissés vers le relevé propriétaire', 'Relevé bancaire vers le rapprochement des loyers ; charges vers les relevés'] },
+      { label: 'SaaS d’un fondateur', cells: ['Abonnements et factures du SaaS vers la comptabilité du fondateur, par export mensuel', 'Export comptable pour chaque client du SaaS, dans le format de son logiciel'] },
+      { label: 'Importateur avec ERP', cells: ['Catalogue, prix et encours de l’ERP vers le portail B2B ; commandes du portail vers l’ERP', 'Statuts de livraison vers l’agent WhatsApp ; paiements vers l’ERP'] },
+    ], caption: 'Figure 5 · Dans les six cas, le premier flux relié est celui qui est ressaisi aujourd’hui, et il part toujours de l’événement vers la comptabilité, jamais l’inverse : la comptabilité reçoit, elle ne pilote pas l’opération.', alt: 'Matrice de six entreprises avec ce qu’on relie d’abord et ce qui vient ensuite.' },
+    calendrier: { title: 'Relier l’existant en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Inventaire des logiciels et des flux', note: 'chaque logiciel, son mode d’accès, chaque flux ressaisi aujourd’hui ; le contrat de données', from: 0, to: 2 },
+      { label: 'Accès et comptes', note: 'clés d’API, exports, bac à sable, comptes au nom de l’entreprise ; l’éditeur contacté', from: 2, to: 4 },
+      { label: 'Couche d’intégration', note: 'file, idempotence, correspondance des identifiants, journal, écran des écarts', from: 4, to: 8, accent: true },
+      { label: 'Premier flux en parallèle', note: 'la facturation reçoit de l’application et de la saisie ; les deux sont comparés chaque soir', from: 8, to: 10 },
+      { label: 'Retours et rapprochement', note: 'paiements et stocks reviennent ; le rapprochement automatique liste les écarts', from: 10, to: 12 },
+      { label: 'Bascule flux par flux', note: 'la saisie s’arrête pour le premier flux, puis le deuxième, puis le troisième', from: 12, to: 14 },
+      { label: 'Supervision et bilan', note: 'écarts par flux et par semaine, rejets, décision sur le logiciel à remplacer un jour', from: 14, to: 16 },
+    ], caption: 'Figure 6 · Semaine 0 = janvier 2027. Les deux premières semaines décident de tout : quels logiciels, quel accès, quel contrat de données. Le premier flux tourne deux semaines en parallèle de la saisie avant qu’on l’arrête ; c’est le seul moyen de savoir que l’intégration dit vrai.', alt: 'Frise de 16 semaines : inventaire, accès, couche d’intégration, premier flux en parallèle, retours, bascule, supervision.' },
+  },
+  en: {
+    cover: { eyebrow: 'Integration · API · Existing software · 2027', title: ['The same invoice,', 'typed three times,', 'by three people.'], subtitle: 'Connecting the app to the accounting, invoicing, ERP and till that already exist: the data contract, the integration layer with its queue and idempotency keys, return webhooks, the evening reconciliation, and what to do when there is no API', left: { label: 'Re-entry', sub: 'three programs, three truths' }, right: { label: 'Integrated', sub: 'one event, one identifier, one gap' } },
+    flux: { title: 'The life of an order across the software, in six moments', items: [
+      { n: '01', label: 'The event is born', sub: 'The order is confirmed in the app: a time-stamped event, with an identifier created once and for all.' },
+      { n: '02', label: 'The data contract', sub: 'Customer, lines, amounts, taxes, references: the same object for every program, with the identifier mapping table.' },
+      { n: '03', label: 'The send', sub: 'Through the API if there is one, by file otherwise; in a queue, with an idempotency key, never twice.' },
+      { n: '04', label: 'The acknowledgement and the return identifier', sub: 'The invoicing software returns its number; it is stored next to the app’s identifier. Otherwise: “pending”, visible.', accent: true },
+      { n: '05', label: 'Events coming back', sub: 'Payment entered in accounting, stock corrected in the ERP: webhook if the vendor offers one, periodic read otherwise; the app updates.' },
+      { n: '06', label: 'The evening reconciliation', sub: 'Both sides are compared: what is missing, what differs, what is duplicated; every gap is listed and replayed or arbitrated.' },
+    ], caption: 'Figure 1 · Moment 04 is what makes the integration last: without the target software’s identifier stored next to yours, nobody can say whether invoice 2027-0142 is order 8f3a… or another. Moment 06 is what makes the integration honest: it states its gaps instead of hiding them.', alt: 'Six steps: event, data contract, send, acknowledgement and return identifier, events coming back, evening reconciliation.' },
+    couches: { title: 'The integration, in five layers', layers: [
+      { label: 'Existing', items: [{ name: 'The software already there: accounting, invoicing, ERP, till, Excel', sub: 'they are not replaced; they are connected, and each stays in charge of what it does well' }] },
+      { label: 'Connectors', items: [{ name: 'One connector per program: API, exports, read-only database, screen', sub: 'the connector speaks the program’s language; nothing else in the app knows it' }] },
+      { label: 'Integration', items: [{ name: 'The integration layer: queue, idempotency, transformation, mapping, log', sub: 'every message has a key, a status, an attempt; every identifier has its twin; everything is logged', accent: true }] },
+      { label: 'App', items: [{ name: 'The Symloop app: web, mobile, AI agent', sub: 'it emits and receives events; it does not know how the accounting is done' }] },
+      { label: 'Supervision', items: [{ name: 'Gaps, rejections, stuck queues, reconciliation', sub: 'a screen the accountant and the manager read in the evening, with a “replay” button' }] },
+    ], caption: 'Figure 2 · The middle layer is what is really built: connectors change with the software, the app changes with the business, but the queue, the keys, the mapping and the log remain. A vendor who wires the app straight into the accounting API has built a cable, not an integration.', alt: 'Five layers: existing software, connectors, integration layer, app, supervision.' },
+    exemple: { title: 'One distributor, four programs, one month: the example', items: [
+      { value: '4', label: 'programs connected: the Windows invoicing software, the accountant’s bookkeeping, the depot till and the bank export; an assumption to replace with your programs' },
+      { value: '1,200', label: 'invoices a month created in the invoicing software from the app’s orders, with their number stored next to the order identifier' },
+      { value: '0', label: 're-entry: the invoice is typed once, by nobody; accounting entries leave by file every evening, payments come back by a morning read' },
+      { value: '3 h→15 min', label: 'of month-end reconciliation: gaps are listed every evening instead of being hunted on the 30th; an assumption on duration, not on the mechanism', accent: true },
+    ], caption: 'Figure 3 · Volumes and durations are assumptions to replace with yours; zero re-entry and the identifier stored alongside are not. What holds everywhere: an integration without daily reconciliation produces a month-end gap nobody can explain.', alt: 'Four figures: four programs connected, 1,200 invoices a month, zero re-entry, reconciliation from three hours to fifteen minutes.' },
+    modes: { title: 'Six ways of reaching the existing software, and how to connect', columns: ['What you have', 'How to connect'], rows: [
+      { label: 'A documented API', cells: ['Odoo over XML-RPC, a modern program over REST, a SaaS vendor with keys and quotas', 'API connector with a key in the company’s name, pagination, limits respected, sandbox tested before production'] },
+      { label: 'File exports and imports', cells: ['Most Windows invoicing and accounting programs export and import CSV or Excel', 'File generated by the app, dropped in a watched folder, imported by the program; acknowledged by re-reading the result'] },
+      { label: 'An accessible database', cells: ['The program keeps its data in a file or a reachable local server', 'Read-only, never direct writes; invoices and payments are read, writes go through the official import'] },
+      { label: 'Only a screen', cells: ['No API, no useful export, an unreachable vendor', 'Screen automation as a last resort, on a dedicated machine, with proof captures; and a plan to get out of it'] },
+      { label: 'A foreign SaaS vendor', cells: ['Online invoicing or CRM, webhooks available, payment in foreign currency', 'Signed and verified webhooks, replay protection, keys in the company’s name; paying for the service follows the dedicated guide'] },
+      { label: 'A shared Excel file', cells: ['The “program” is a workbook three people edit', 'Either the app becomes the source and Excel an export, or the workbook is imported once and retired'] },
+    ], caption: 'Figure 4 · The first two rows cover most Algerian cases: an API when the program is recent, files when it has run on Windows for ten years. The fourth row exists, it works, and it must always come with an exit date.', alt: 'Matrix of six access situations with what you have and how to connect.' },
+    modeles: { title: 'Six companies, what gets connected first', columns: ['What gets connected first', 'What comes next'], rows: [
+      { label: 'Distributor', cells: ['App orders to invoicing; collections to accounting', 'ERP stock to the app; bank statements to reconciliation'] },
+      { label: 'Chain of shops', cells: ['Till sales to central stock and accounting, every evening', 'Loyalty and receipts to the customer space; central prices to the tills'] },
+      { label: 'Clinic or practice', cells: ['Diary procedures to invoicing; payments to accounting', 'Lab results to the file; insurer agreements to invoicing'] },
+      { label: 'Real-estate agency', cells: ['App receipts to accounting; collected rents to the owner statement', 'Bank statement to rent reconciliation; charges to statements'] },
+      { label: 'A founder’s SaaS', cells: ['SaaS subscriptions and invoices to the founder’s accounting, by monthly export', 'Accounting export for each SaaS customer, in their program’s format'] },
+      { label: 'Importer with an ERP', cells: ['ERP catalogue, prices and balances to the B2B portal; portal orders to the ERP', 'Delivery statuses to the WhatsApp agent; payments to the ERP'] },
+    ], caption: 'Figure 5 · In all six cases the first connected flow is the one re-entered today, and it always runs from the event to the accounting, never the reverse: accounting receives, it does not drive the operation.', alt: 'Matrix of six companies with what gets connected first and what comes next.' },
+    calendrier: { title: 'Connecting the existing software in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Inventory of programs and flows', note: 'each program, its access mode, each flow re-entered today; the data contract', from: 0, to: 2 },
+      { label: 'Access and accounts', note: 'API keys, exports, sandbox, accounts in the company’s name; the vendor contacted', from: 2, to: 4 },
+      { label: 'Integration layer', note: 'queue, idempotency, identifier mapping, log, gaps screen', from: 4, to: 8, accent: true },
+      { label: 'First flow in parallel', note: 'invoicing receives from the app and from manual entry; both compared every evening', from: 8, to: 10 },
+      { label: 'Returns and reconciliation', note: 'payments and stock come back; automatic reconciliation lists the gaps', from: 10, to: 12 },
+      { label: 'Switch flow by flow', note: 'manual entry stops for the first flow, then the second, then the third', from: 12, to: 14 },
+      { label: 'Supervision and review', note: 'gaps per flow and per week, rejections, decision on the program to replace one day', from: 14, to: 16 },
+    ], caption: 'Figure 6 · Week 0 = January 2027. The first two weeks decide everything: which programs, which access, which data contract. The first flow runs two weeks in parallel with manual entry before it is stopped; it is the only way to know the integration tells the truth.', alt: 'Timeline of 16 weeks: inventory, access, integration layer, first flow in parallel, returns, switch, supervision.' },
+  },
+  ar: {
+    cover: { eyebrow: 'التكامل · API · البرامج القائمة · 2027', title: ['الفاتورة نفسها،', 'تُكتب ثلاث مرات،', 'بثلاثة أشخاص.'], subtitle: 'ربط التطبيق بالمحاسبة والفوترة وERP والصندوق الموجودة أصلاً: عقد البيانات، طبقة التكامل بطابورها ومفاتيح منع التكرار، webhooks العودة، مطابقة المساء، وما يُفعل حين لا توجد API', left: { label: 'إعادة إدخال', sub: 'ثلاثة برامج، ثلاث حقائق' }, right: { label: 'متكامل', sub: 'حدث واحد، معرّف واحد، فارق واحد' } },
+    flux: { title: 'حياة طلبية عبر البرامج، في ست لحظات', items: [
+      { n: '01', label: 'ولادة الحدث', sub: 'تُؤكَّد الطلبية في التطبيق: حدث مؤرَّخ، بمعرّف يُنشأ مرة واحدة إلى الأبد.' },
+      { n: '02', label: 'عقد البيانات', sub: 'الزبون، السطور، المبالغ، الضرائب، المراجع: الكائن نفسه لكل البرامج، مع جدول مطابقة المعرّفات.' },
+      { n: '03', label: 'الإرسال', sub: 'عبر API إن وُجدت، وبملف إن لم توجد؛ في طابور، بمفتاح منع تكرار، لا مرتين أبداً.' },
+      { n: '04', label: 'الإشعار والمعرّف العائد', sub: 'يعيد برنامج الفوترة رقمه؛ يُخزَّن قبالة معرّف التطبيق. وإلا: «في الانتظار»، مرئياً.', accent: true },
+      { n: '05', label: 'عودة الأحداث', sub: 'دفع مُدخل في المحاسبة، مخزون مصحَّح في ERP: webhook إن وفّره الناشر، وقراءة دورية إن لم يوفره؛ يتحدث التطبيق.' },
+      { n: '06', label: 'مطابقة المساء', sub: 'يُقارَن الجانبان: ما ينقص، ما يختلف، ما تكرر؛ كل فارق يُدرج ويُعاد أو يُحكَّم فيه.' },
+    ], caption: 'الشكل 1 · اللحظة 04 هي ما يجعل التكامل يصمد مع الزمن: بلا معرّف البرنامج الهدف مخزَّناً قبالة معرّفكم، لا يستطيع أحد القول إن كانت الفاتورة 2027-0142 هي الطلبية 8f3a… أم أخرى. واللحظة 06 هي ما يجعل التكامل صادقاً: يقول فوارقه بدل إخفائها.', alt: 'ست خطوات: الحدث، عقد البيانات، الإرسال، الإشعار والمعرّف العائد، عودة الأحداث، مطابقة المساء.' },
+    couches: { title: 'التكامل، في خمس طبقات', layers: [
+      { label: 'القائم', items: [{ name: 'البرامج الموجودة أصلاً: محاسبة، فوترة، ERP، صندوق، Excel', sub: 'لا تُستبدل؛ تُربط، ويبقى كل منها سيد ما يحسن فعله' }] },
+      { label: 'الموصلات', items: [{ name: 'موصل لكل برنامج: API، تصديرات، قاعدة للقراءة، شاشة', sub: 'الموصل يتكلم لغة البرنامج؛ ولا شيء آخر في التطبيق يعرفها' }] },
+      { label: 'التكامل', items: [{ name: 'طبقة التكامل: طابور، منع تكرار، تحويل، مطابقة، سجل', sub: 'لكل رسالة مفتاح وحالة ومحاولة؛ لكل معرّف توأمه؛ كل شيء مسجَّل', accent: true }] },
+      { label: 'التطبيق', items: [{ name: 'تطبيق Symloop: ويب، محمول، وكيل ذكاء اصطناعي', sub: 'يصدر الأحداث ويستقبلها؛ لا يعرف كيف تُمسك المحاسبة' }] },
+      { label: 'الإشراف', items: [{ name: 'الفوارق، الرفض، الطوابير العالقة، المطابقة', sub: 'شاشة يقرؤها المحاسب والمسيّر مساءً، بزر «إعادة»' }] },
+    ], caption: 'الشكل 2 · الطبقة الوسطى هي ما يُبنى فعلاً: الموصلات تتغير مع البرامج، والتطبيق يتغير مع المهنة، لكن الطابور والمفاتيح والمطابقة والسجل تبقى. مورّد يوصل التطبيق مباشرة بـAPI المحاسبة بنى كابلاً لا تكاملاً.', alt: 'خمس طبقات: البرامج القائمة، الموصلات، طبقة التكامل، التطبيق، الإشراف.' },
+    exemple: { title: 'موزّع واحد، أربعة برامج، شهر واحد: المثال', items: [
+      { value: '4', label: 'برامج مربوطة: الفوترة على Windows، محاسبة المكتب، صندوق المستودع، وتصدير البنك؛ فرضية تُستبدل ببرامجكم' },
+      { value: '1 200', label: 'فاتورة شهرياً تُنشأ في برنامج الفوترة من طلبيات التطبيق، برقمها مخزَّناً قبالة معرّف الطلبية' },
+      { value: '0', label: 'إعادة إدخال: تُكتب الفاتورة مرة واحدة، ولا يكتبها أحد؛ القيود المحاسبية تخرج بملف كل مساء، والمدفوعات تعود بقراءة الصباح' },
+      { value: '3 س ← 15 د', label: 'من المطابقة في آخر الشهر: الفوارق تُدرج كل مساء بدل البحث عنها يوم 30؛ فرضية على المدة لا على الآلية', accent: true },
+    ], caption: 'الشكل 3 · الأحجام والمدد فرضيات تُستبدل بأرقامكم؛ أما صفر إعادة إدخال والمعرّف المخزَّن قبالة فليسا كذلك. ما يثبت في كل مكان: تكامل بلا مطابقة يومية ينتج فارق آخر شهر لا يستطيع أحد تفسيره.', alt: 'أربعة أرقام: أربعة برامج مربوطة، 1 200 فاتورة شهرياً، صفر إعادة إدخال، مطابقة من ثلاث ساعات إلى خمس عشرة دقيقة.' },
+    modes: { title: 'ست حالات للوصول إلى البرنامج القائم، وكيف يُربط', columns: ['ما لديكم', 'كيف نربط'], rows: [
+      { label: 'API موثَّقة', cells: ['Odoo عبر XML-RPC، برنامج حديث عبر REST، ناشر SaaS بمفاتيح وحصص', 'موصل API بمفتاح باسم الشركة، تقسيم صفحات، احترام الحدود، بيئة اختبار قبل الإنتاج'] },
+      { label: 'تصدير واستيراد ملفات', cells: ['أغلب برامج الفوترة والمحاسبة على Windows تصدّر وتستورد CSV أو Excel', 'ملف يولّده التطبيق ويُودَع في مجلد مراقَب ويستورده البرنامج؛ إشعار بإعادة قراءة النتيجة'] },
+      { label: 'قاعدة بيانات قابلة للوصول', cells: ['يحفظ البرنامج بياناته في ملف أو خادم محلي يمكن الوصول إليه', 'قراءة فقط، لا كتابة مباشرة أبداً؛ تُقرأ الفواتير والمدفوعات، وتتم الكتابة عبر الاستيراد الرسمي'] },
+      { label: 'شاشة فقط', cells: ['لا API، لا تصدير مفيد، ناشر لا يُتواصل معه', 'أتمتة الشاشة كملاذ أخير، على جهاز مخصص، بالتقاط إثباتات؛ وخطة للخروج منها'] },
+      { label: 'ناشر SaaS أجنبي', cells: ['فوترة أو CRM عبر الإنترنت، webhooks متاحة، دفع بالعملة الأجنبية', 'webhooks موقَّعة ومتحقَّق منها، حماية من الإعادة، مفاتيح باسم الشركة؛ دفع الخدمة يتبع الدليل المخصص'] },
+      { label: 'ملف Excel مشترك', cells: ['«البرنامج» مصنف يعدّله ثلاثة أشخاص', 'إما يصبح التطبيق المصدر وExcel تصديراً، أو يُستورد المصنف مرة ويُوقَف'] },
+    ], caption: 'الشكل 4 · السطران الأولان يغطيان أغلب الحالات الجزائرية: API حين يكون البرنامج حديثاً، وملفات حين يعمل على Windows منذ عشر سنوات. السطر الرابع موجود ويعمل، ويجب أن يُرفق دائماً بتاريخ خروج.', alt: 'مصفوفة ست حالات وصول مع ما لديكم وكيف نربط.' },
+    modeles: { title: 'ست شركات، ما يُربط أولاً', columns: ['ما يُربط أولاً', 'ما يأتي بعده'], rows: [
+      { label: 'موزّع', cells: ['طلبيات التطبيق إلى الفوترة؛ التحصيلات إلى المحاسبة', 'مخزون ERP إلى التطبيق؛ كشوف البنك إلى المطابقة'] },
+      { label: 'سلسلة متاجر', cells: ['مبيعات الصندوق إلى المخزون المركزي والمحاسبة، كل مساء', 'الولاء والوصولات إلى فضاء الزبون؛ الأسعار المركزية إلى الصناديق'] },
+      { label: 'مصحة أو عيادة', cells: ['أعمال المفكرة إلى الفوترة؛ المدفوعات إلى المحاسبة', 'نتائج المخبر إلى الملف؛ الاتفاقيات إلى الفوترة'] },
+      { label: 'وكالة عقارية', cells: ['وصولات التطبيق إلى المحاسبة؛ الأكرية المحصَّلة إلى كشف المالك', 'كشف البنك إلى مطابقة الأكرية؛ الأعباء إلى الكشوف'] },
+      { label: 'SaaS لمؤسس', cells: ['اشتراكات SaaS وفواتيره إلى محاسبة المؤسس، بتصدير شهري', 'تصدير محاسبي لكل زبون من زبائن SaaS، بصيغة برنامجه'] },
+      { label: 'مستورد لديه ERP', cells: ['كتالوج ERP وأسعاره وأرصدته إلى بوابة B2B؛ طلبيات البوابة إلى ERP', 'حالات التسليم إلى وكيل WhatsApp؛ المدفوعات إلى ERP'] },
+    ], caption: 'الشكل 5 · في الحالات الست، أول تدفق يُربط هو الذي يُعاد إدخاله اليوم، وينطلق دائماً من الحدث نحو المحاسبة لا العكس: المحاسبة تستقبل ولا تقود العملية.', alt: 'مصفوفة ست شركات مع ما يُربط أولاً وما يأتي بعده.' },
+    calendrier: { title: 'ربط القائم في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'جرد البرامج والتدفقات', note: 'كل برنامج، طريقة الوصول إليه، كل تدفق يُعاد إدخاله اليوم؛ عقد البيانات', from: 0, to: 2 },
+      { label: 'الوصول والحسابات', note: 'مفاتيح API، تصديرات، بيئة اختبار، حسابات باسم الشركة؛ التواصل مع الناشر', from: 2, to: 4 },
+      { label: 'طبقة التكامل', note: 'طابور، منع تكرار، مطابقة المعرّفات، سجل، شاشة الفوارق', from: 4, to: 8, accent: true },
+      { label: 'التدفق الأول بالتوازي', note: 'الفوترة تستقبل من التطبيق ومن الإدخال؛ يُقارَن الاثنان كل مساء', from: 8, to: 10 },
+      { label: 'العودة والمطابقة', note: 'المدفوعات والمخزون تعود؛ المطابقة الآلية تدرج الفوارق', from: 10, to: 12 },
+      { label: 'التحويل تدفقاً تدفقاً', note: 'يتوقف الإدخال للتدفق الأول، ثم الثاني، ثم الثالث', from: 12, to: 14 },
+      { label: 'الإشراف والحصيلة', note: 'الفوارق لكل تدفق ولكل أسبوع، الرفض، القرار بشأن البرنامج الذي سيُستبدل يوماً', from: 14, to: 16 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = يناير 2027. الأسبوعان الأولان يقرران كل شيء: أي برامج، أي وصول، أي عقد بيانات. يعمل التدفق الأول أسبوعين بالتوازي مع الإدخال قبل إيقافه؛ وهذا السبيل الوحيد لمعرفة أن التكامل يقول الحقيقة.', alt: 'خط زمني من 16 أسبوعاً: الجرد، الوصول، طبقة التكامل، التدفق الأول بالتوازي، العودة، التحويل، الإشراف.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      flux: { svg: steps({ title: t.flux.title, steps: t.flux.items, arrows: true, rtl }), caption: t.flux.caption, alt: t.flux.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      modes: { svg: matrix({ title: t.modes.title, columns: t.modes.columns, rows: t.modes.rows, rtl }), caption: t.modes.caption, alt: t.modes.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 16, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

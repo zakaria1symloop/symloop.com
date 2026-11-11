@@ -43,7 +43,7 @@ export default function MarketingDigitalAlgerie() {
     },
     {
       question: "Quelle agence de marketing digital choisir en Algérie ?",
-      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Sétif, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
+      answer: "Choisissez une agence avec une expertise locale du marché algérien, des certifications (Facebook Blueprint, Google Ads), des résultats prouvés et une transparence totale sur les performances. Symloop, basée à Alger, combine expertise technique, connaissance du marché local et approche data-driven pour maximiser votre ROI."
     },
     {
       question: "Le marketing digital est-il efficace pour les PME algériennes ?",
@@ -51,7 +51,7 @@ export default function MarketingDigitalAlgerie() {
     },
     {
       question: "Symloop fait-il du marketing digital ?",
-      answer: "Oui, Symloop est une agence digitale basée à Sétif qui propose des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
+      answer: "Oui. Symloop est une entreprise d'ingénierie logicielle et d'IA basée à Alger qui propose également des services complets de marketing digital : gestion de campagnes Facebook/Instagram/Google Ads, community management, SEO et référencement naturel, email marketing, production de contenu et analytics. Contactez-nous au +213 549 575 512 pour un audit gratuit."
     }
   ];
 
@@ -61,7 +61,6 @@ export default function MarketingDigitalAlgerie() {
         <title>Marketing Digital Algérie 2024 | Facebook Ads, Google Ads, SEO | Symloop</title>
         <meta name="description" content="Services de marketing digital en Algérie : Facebook Ads, Google Ads, SEO, gestion réseaux sociaux. Agence marketing digital Alger. Boostez votre visibilité en ligne." />
         <meta name="keywords" content="marketing digital algérie, facebook ads algérie, google ads algérie, publicité en ligne, réseaux sociaux algérie, agence marketing alger, seo algérie, community management, publicité facebook, instagram ads" />
-        <link rel="canonical" href="https://symloop.com/blog/marketing-digital-algerie-2024" />
         <meta property="og:title" content="Marketing Digital Algérie 2024 | Facebook & Google Ads" />
         <meta property="og:description" content="Boostez votre présence en ligne avec nos services de marketing digital : Facebook Ads, Google Ads, SEO, Social Media." />
         <meta property="og:type" content="article" />
@@ -120,7 +119,7 @@ export default function MarketingDigitalAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

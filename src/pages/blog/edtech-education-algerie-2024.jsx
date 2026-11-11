@@ -241,7 +241,6 @@ export default function EdtechAlgerie() {
         <title>EdTech E-Learning Algérie 2024 | Plateforme LMS | Symloop</title>
         <meta name="description" content="Développement de plateformes e-learning en Algérie : LMS, classes virtuelles, quiz, certifications. Solutions EdTech pour écoles et universités à partir de 80 000 DA." />
         <meta name="keywords" content="edtech algérie, e-learning algérie, plateforme éducative, lms algérie, formation en ligne, classes virtuelles, cours en ligne algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/edtech-education-algerie-2024" />
         <meta property="og:title" content="EdTech E-Learning Algérie 2024 | Plateforme LMS" />
         <meta property="og:description" content="Solutions EdTech pour écoles et universités : LMS, classes virtuelles, certifications. À partir de 80 000 DA." />
         <meta property="og:type" content="article" />
@@ -254,7 +253,7 @@ export default function EdtechAlgerie() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

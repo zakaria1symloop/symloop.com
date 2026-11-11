@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'creer-equivalent-mariages-net-algerie-2027-salle-des-fetes-reservation-depuis-la-france-acompte-dates';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Vu en France · Mariages.net · Salles des fêtes · 2027', title: ['Une date, deux familles,', 'un acompte en espèces', 'dans la poche d’un cousin.'], subtitle: 'Réserver la salle des fêtes, le traiteur et la negafa en Algérie depuis la France : le calendrier des dates, l’acompte avec reçu, le contrat, le planning du jour, et le calendrier 2027 autour du ramadan et de l’été', left: { label: 'Depuis Lyon', sub: 'quarante messages, zéro contrat' }, right: { label: 'Sur la plateforme', sub: 'date posée 72 h, acompte, contrat' } },
+    moments: { title: 'Un mariage réservé depuis la France, en six moments', items: [
+      { n: '01', label: 'La recherche', sub: 'Une date, une wilaya, un nombre d’invités, un budget par table ; en novembre, depuis Lyon.' },
+      { n: '02', label: 'La visite à distance', sub: 'Vidéo de la salle, plan des tables, menus avec prix, dégustation par un proche sur place.' },
+      { n: '03', label: 'Le devis et la date posée', sub: 'Devis par table et par option, date posée 72 heures, le temps de décider en famille.', accent: true },
+      { n: '04', label: 'L’acompte depuis la France', sub: 'En dinars par un proche ou en euros, reçu numéroté, contrat signé en ligne ; la date est confirmée.' },
+      { n: '05', label: 'Le planning du jour', sub: 'Traiteur, negafa, photographe, orchestre, horaires et solde ; chacun voit sa ligne.' },
+      { n: '06', label: 'Le jour J et après', sub: 'Solde réglé, état des lieux, avis vérifié par la famille qui a payé.' },
+    ], caption: 'Figure 1 · Le moment 03 est celui que personne ne tient aujourd’hui : une date « réservée » au téléphone ne l’est pour personne. Posée 72 heures puis confirmée par l’acompte du moment 04, elle devient la seule vérité, pour la salle comme pour la famille.', alt: 'Six étapes : recherche, visite à distance, devis et date posée, acompte depuis la France, planning du jour, jour J et après.' },
+    plateforme: { title: 'La plateforme, en cinq couches', layers: [
+      { label: 'Calendrier', items: [{ name: 'Le calendrier des dates, une salle, une soirée, un seul état', sub: 'libre, posée 72 h, confirmée par acompte, soldée ; personne d’autre ne le tient', accent: true }] },
+      { label: 'Fiches', items: [{ name: 'Salles et prestataires : capacité, menus, prix, photos datées, agrément vérifié', sub: 'traiteurs, negafas, photographes, orchestres, voitures ; une fiche, un calendrier chacun' }] },
+      { label: 'Règles', items: [{ name: 'Acompte, annulation, report, options, devise', sub: 'écrites une fois, affichées avant le paiement, appliquées pareil à toutes les familles' }] },
+      { label: 'Espaces', items: [{ name: 'L’espace famille et l’application du propriétaire', sub: 'la famille suit depuis la France ; le propriétaire bloque, confirme, encaisse depuis son téléphone' }] },
+      { label: 'Pilotage', items: [{ name: 'Tableau de bord et agent IA', sub: 'taux de remplissage par mois, acomptes, « le 14 août est-il libre ? » répondu la nuit en arabe et en français' }] },
+    ], caption: 'Figure 2 · La première couche est la seule qui compte au départ : un calendrier que le propriétaire tient vraiment, parce qu’il y gagne l’acompte et perd les appels. Les fiches sans calendrier font un annuaire ; un annuaire ne résout pas la date promise à deux familles.', alt: 'Cinq couches : calendrier des dates, fiches, règles, espaces famille et propriétaire, pilotage.' },
+    exemple: { title: 'Un propriétaire, deux salles, une saison : l’exemple', items: [
+      { value: '220 soirées', label: 'de mai à septembre pour deux salles à cinq soirées par semaine sur vingt-deux semaines ; hypothèse à remplacer par la vôtre' },
+      { value: '40 → 6', label: 'messages et appels par réservation : quarante aujourd’hui entre la famille, le cousin et la salle ; six quand la vidéo, les prix et le calendrier sont en ligne' },
+      { value: '30 % → 100 %', label: 'des dates confirmées par un acompte avec reçu et contrat ; les dates posées sans acompte se libèrent seules après 72 heures' },
+      { value: '18 soirées', label: 'récupérées par saison : 8 % de dates tenues à l’oral puis abandonnées, remises en vente à temps ; à 350 000 DA la soirée, plus de 6 millions de dinars', accent: true },
+    ], caption: 'Figure 3 · Un calcul sur des hypothèses, pas une mesure : le nombre de soirées, le prix et le taux d’abandon sont à remplacer par les vôtres. Ce qui se vérifie partout : la date posée qui expire seule remet en vente des soirées que personne ne revendait.', alt: 'Quatre chiffres : 220 soirées, 40 à 6 messages par réservation, 30 à 100 % de dates confirmées, 18 soirées récupérées.' },
+    pieges: { title: 'Six pièges du mariage réservé à distance, et ce que la plateforme change', columns: ['Ce qui se passe aujourd’hui', 'Ce que la plateforme change'], rows: [
+      { label: 'La date promise à deux familles', cells: ['Réservée au téléphone, notée sur un cahier ; la famille l’apprend à l’arrivée en juillet', 'Une date, un état : posée 72 h, confirmée par l’acompte ; aucune autre réservation possible'] },
+      { label: 'L’acompte en espèces par un cousin', cells: ['Remis de la main à la main, sans reçu ; le montant diffère selon qui raconte', 'Reçu numéroté par SMS et e-mail, contrat qui dit le montant, la date et les conditions'] },
+      { label: 'Le devis par tête qui change', cells: ['« 6 000 par invité » devient 7 500 à la dégustation, options comprises ou non', 'Devis par table et par option, figé à l’acompte ; les ajouts se signent à part'] },
+      { label: 'Juillet et août saturés, mai et septembre vides', cells: ['La salle refuse en été et attend en mai ; la famille ne connaît pas les prix de mai', 'Prix par saison affichés ; dates de mai, juin et septembre proposées avec leur prix'] },
+      { label: 'Cinq prestataires, personne ne coordonne', cells: ['Traiteur, negafa, photographe, orchestre et voiture appelés un à un ; horaires contradictoires', 'Un planning du jour partagé, chaque prestataire voit sa ligne et son heure'] },
+      { label: 'Des avis et des photos invérifiables', cells: ['Photos d’il y a dix ans, avis d’amis ; la famille décide sur la foi d’un cousin', 'Photos datées, avis réservé à la famille qui a payé, note par saison'] },
+    ], caption: 'Figure 4 · Les trois premiers pièges coûtent de l’argent et des procès de famille ; les trois derniers coûtent des réservations. Tous les six viennent de la même absence : personne ne tient l’état d’une date.', alt: 'Matrice de six pièges avec ce qui se passe aujourd’hui et ce que la plateforme change.' },
+    modeles: { title: 'Six situations, ce qu’on construit d’abord', columns: ['Ce qu’on construit d’abord', 'Ce qui vient ensuite'], rows: [
+      { label: 'Propriétaire d’une salle des fêtes', cells: ['Calendrier des dates, fiche avec vidéo et prix, acompte avec reçu, contrat', 'Planning du jour avec les prestataires, solde, avis, prix par saison'] },
+      { label: 'Groupe de salles ou hôtel', cells: ['Un calendrier par salle, un tableau de bord de remplissage, règles communes', 'Prestataires recommandés, forfaits, espace famille multilingue'] },
+      { label: 'Traiteur', cells: ['Menus avec prix par table, dégustation planifiée, acompte, commandes par date', 'Calendrier partagé avec les salles, approvisionnement par semaine'] },
+      { label: 'Negafa, coiffure, photographe, orchestre', cells: ['Fiche, calendrier, acompte ; une ligne dans le planning du jour', 'Rappels automatiques, portfolio daté, avis'] },
+      { label: 'Agence de mariage pour la diaspora', cells: ['Espace famille, devis consolidé, planning du jour, suivi des paiements', 'Catalogue de prestataires vérifiés, agent IA de réponse, forfaits'] },
+      { label: 'Fondateur en France : la place de marché', cells: ['Vingt salles pilotes dans trois wilayas, calendrier tenu par elles, acompte via la plateforme', 'Prestataires, avis, abonnement des professionnels, ouverture des dates de l’année suivante'] },
+    ], caption: 'Figure 5 · Dans les six cas, la première colonne tient en dix à quatorze semaines. La place de marché ne commence pas par les prestataires : elle commence par vingt calendriers tenus, parce que c’est la date, pas la liste, que la famille vient chercher.', alt: 'Matrice de six situations avec ce qu’on construit d’abord et ce qui vient ensuite.' },
+    calendrier: { title: 'Lancer en 2027, en semaines, autour du ramadan et de l’été', unit: 'sem.', items: [
+      { label: 'Cadrage et vingt salles pilotes', note: 'Alger, Oran, Tizi Ouzou ou Béjaïa ; règles d’acompte écrites avec elles', from: 0, to: 4 },
+      { label: 'Calendrier et acompte V1', note: 'construits pendant le ramadan (≈ 8 février – 9 mars), saison creuse des mariages', from: 4, to: 8 },
+      { label: 'Pilote : dates tardives été 2027', note: 'après l’Aïd el-Fitr ; les familles qui n’ont pas encore de salle pour juillet-août', from: 8, to: 14, accent: true },
+      { label: 'Prestataires et planning du jour', note: 'traiteurs, negafas, photographes ; l’Aïd el-Adha (≈ 16 mai) en semaine 17', from: 14, to: 24 },
+      { label: 'Saison d’été : jour J, soldes, avis', note: 'la diaspora est sur place ; chaque mariage produit un avis et des photos datées', from: 24, to: 34 },
+      { label: 'Ouverture des dates 2028', note: 'septembre à novembre : le pic des réservations à distance pour l’été suivant', from: 34, to: 44 },
+      { label: 'Bilan et abonnement pro', note: 'remplissage, acomptes, litiges ; décision sur le modèle payant des professionnels', from: 44, to: 48 },
+    ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. Le ramadan est la saison creuse des mariages : on y construit. Le pilote vise les familles encore sans salle pour l’été 2027 ; la vraie saison de réservation à distance est l’automne, pour l’été 2028. Dates du ramadan et des Aïds prévisionnelles.', alt: 'Frise de 48 semaines : cadrage, calendrier V1, pilote, prestataires, saison d’été, ouverture 2028, bilan.' },
+  },
+  en: {
+    cover: { eyebrow: 'Seen in France · Mariages.net · Wedding halls · 2027', title: ['One date, two families,', 'a cash deposit', 'in a cousin’s pocket.'], subtitle: 'Booking the wedding hall, the caterer and the negafa in Algeria from France: the date calendar, the deposit with a receipt, the contract, the day’s schedule, and the 2027 calendar around Ramadan and summer', left: { label: 'From Lyon', sub: 'forty messages, no contract' }, right: { label: 'On the platform', sub: 'date held 72 h, deposit, contract' } },
+    moments: { title: 'A wedding booked from France, in six moments', items: [
+      { n: '01', label: 'The search', sub: 'A date, a wilaya, a guest count, a budget per table; in November, from Lyon.' },
+      { n: '02', label: 'The remote visit', sub: 'Video of the hall, table plan, menus with prices, tasting by a relative on site.' },
+      { n: '03', label: 'The quote and the held date', sub: 'Quote per table and per option, date held for 72 hours, time to decide as a family.', accent: true },
+      { n: '04', label: 'The deposit from France', sub: 'In dinars through a relative or in euros, numbered receipt, contract signed online; the date is confirmed.' },
+      { n: '05', label: 'The day’s schedule', sub: 'Caterer, negafa, photographer, band, times and balance; each sees their own line.' },
+      { n: '06', label: 'The day and after', sub: 'Balance paid, inventory check, review verified from the family that paid.' },
+    ], caption: 'Figure 1 · Moment 03 is the one nobody holds today: a date “reserved” by phone is reserved for no one. Held for 72 hours then confirmed by the deposit of moment 04, it becomes the single truth, for the hall as for the family.', alt: 'Six steps: search, remote visit, quote and held date, deposit from France, day’s schedule, the day and after.' },
+    plateforme: { title: 'The platform, in five layers', layers: [
+      { label: 'Calendar', items: [{ name: 'The date calendar: one hall, one evening, one state', sub: 'free, held 72 h, confirmed by deposit, settled; nobody else keeps it', accent: true }] },
+      { label: 'Listings', items: [{ name: 'Halls and vendors: capacity, menus, prices, dated photos, approval checked', sub: 'caterers, negafas, photographers, bands, cars; one listing, one calendar each' }] },
+      { label: 'Rules', items: [{ name: 'Deposit, cancellation, postponement, options, currency', sub: 'written once, shown before payment, applied the same to every family' }] },
+      { label: 'Spaces', items: [{ name: 'The family space and the owner’s app', sub: 'the family follows from France; the owner holds, confirms and collects from the phone' }] },
+      { label: 'Management', items: [{ name: 'Dashboard and AI agent', sub: 'occupancy per month, deposits, “is 14 August free?” answered at night in Arabic and French' }] },
+    ], caption: 'Figure 2 · The first layer is the only one that matters at the start: a calendar the owner really keeps, because it earns the deposit and removes the calls. Listings without a calendar make a directory; a directory does not solve the date promised to two families.', alt: 'Five layers: date calendar, listings, rules, family and owner spaces, management.' },
+    exemple: { title: 'One owner, two halls, one season: the example', items: [
+      { value: '220 evenings', label: 'from May to September for two halls at five evenings a week over twenty-two weeks; an assumption to replace with yours' },
+      { value: '40 → 6', label: 'messages and calls per booking: forty today between the family, the cousin and the hall; six when video, prices and calendar are online' },
+      { value: '30 % → 100 %', label: 'of dates confirmed by a deposit with receipt and contract; dates held without deposit release themselves after 72 hours' },
+      { value: '18 evenings', label: 'recovered per season: 8 % of dates held verbally then dropped, put back on sale in time; at 350,000 DZD an evening, over 6 million dinars', accent: true },
+    ], caption: 'Figure 3 · A calculation on assumptions, not a measurement: the number of evenings, the price and the drop rate are to be replaced by yours. What holds everywhere: the held date that expires on its own puts evenings back on sale that nobody was reselling.', alt: 'Four figures: 220 evenings, 40 to 6 messages per booking, 30 to 100 % of dates confirmed, 18 evenings recovered.' },
+    pieges: { title: 'Six traps of the wedding booked remotely, and what the platform changes', columns: ['What happens today', 'What the platform changes'], rows: [
+      { label: 'The date promised to two families', cells: ['Reserved by phone, written in a notebook; the family finds out on arrival in July', 'One date, one state: held 72 h, confirmed by deposit; no other booking possible'] },
+      { label: 'The cash deposit through a cousin', cells: ['Handed over in person, no receipt; the amount differs depending on who tells it', 'Numbered receipt by SMS and e-mail, contract stating amount, date and conditions'] },
+      { label: 'The per-head quote that changes', cells: ['“6,000 per guest” becomes 7,500 at the tasting, options included or not', 'Quote per table and per option, frozen at the deposit; additions are signed separately'] },
+      { label: 'July and August full, May and September empty', cells: ['The hall refuses in summer and waits in May; the family does not know May prices', 'Prices per season shown; May, June and September dates offered with their price'] },
+      { label: 'Five vendors, nobody coordinates', cells: ['Caterer, negafa, photographer, band and car called one by one; conflicting times', 'One shared day schedule; each vendor sees their line and their time'] },
+      { label: 'Unverifiable reviews and photos', cells: ['Ten-year-old photos, friends’ reviews; the family decides on a cousin’s word', 'Dated photos, review reserved to the family that paid, rating per season'] },
+    ], caption: 'Figure 4 · The first three traps cost money and family quarrels; the last three cost bookings. All six come from the same absence: nobody keeps the state of a date.', alt: 'Matrix of six traps with what happens today and what the platform changes.' },
+    modeles: { title: 'Six situations, what gets built first', columns: ['What gets built first', 'What comes next'], rows: [
+      { label: 'Owner of one wedding hall', cells: ['Date calendar, listing with video and prices, deposit with receipt, contract', 'Day schedule with vendors, balance, reviews, prices per season'] },
+      { label: 'Group of halls or hotel', cells: ['One calendar per hall, an occupancy dashboard, common rules', 'Recommended vendors, packages, multilingual family space'] },
+      { label: 'Caterer', cells: ['Menus with price per table, scheduled tasting, deposit, orders per date', 'Shared calendar with halls, weekly purchasing'] },
+      { label: 'Negafa, hairdresser, photographer, band', cells: ['Listing, calendar, deposit; one line in the day schedule', 'Automatic reminders, dated portfolio, reviews'] },
+      { label: 'Wedding agency for the diaspora', cells: ['Family space, consolidated quote, day schedule, payment tracking', 'Catalogue of verified vendors, AI answering agent, packages'] },
+      { label: 'Founder in France: the marketplace', cells: ['Twenty pilot halls in three wilayas, calendar kept by them, deposit through the platform', 'Vendors, reviews, professional subscription, opening of next year’s dates'] },
+    ], caption: 'Figure 5 · In all six cases the first column fits in ten to fourteen weeks. The marketplace does not start with vendors: it starts with twenty kept calendars, because the family comes for the date, not the list.', alt: 'Matrix of six situations with what gets built first and what comes next.' },
+    calendrier: { title: 'Launching in 2027, in weeks, around Ramadan and summer', unit: 'wks', items: [
+      { label: 'Scoping and twenty pilot halls', note: 'Algiers, Oran, Tizi Ouzou or Béjaïa; deposit rules written with them', from: 0, to: 4 },
+      { label: 'Calendar and deposit V1', note: 'built during Ramadan (≈ 8 February – 9 March), the weddings’ low season', from: 4, to: 8 },
+      { label: 'Pilot: late summer-2027 dates', note: 'after Eid al-Fitr; families who still have no hall for July–August', from: 8, to: 14, accent: true },
+      { label: 'Vendors and day schedule', note: 'caterers, negafas, photographers; Eid al-Adha (≈ 16 May) in week 17', from: 14, to: 24 },
+      { label: 'Summer season: days, balances, reviews', note: 'the diaspora is on site; every wedding produces a review and dated photos', from: 24, to: 34 },
+      { label: 'Opening of 2028 dates', note: 'September to November: the peak of remote bookings for the following summer', from: 34, to: 44 },
+      { label: 'Review and pro subscription', note: 'occupancy, deposits, disputes; decision on the paid model for professionals', from: 44, to: 48 },
+    ], caption: 'Figure 6 · Week 0 = mid-January 2027. Ramadan is the weddings’ low season: that is when to build. The pilot targets families still without a hall for summer 2027; the real remote-booking season is autumn, for summer 2028. Ramadan and Eid dates are forecasts.', alt: 'Timeline of 48 weeks: scoping, calendar V1, pilot, vendors, summer season, 2028 opening, review.' },
+  },
+  ar: {
+    cover: { eyebrow: 'رأيناه في فرنسا · Mariages.net · قاعات الحفلات · 2027', title: ['تاريخ واحد، عائلتان،', 'عربون نقدي', 'في جيب ابن العم.'], subtitle: 'حجز قاعة الحفلات والطبّاخ والنقّافة في الجزائر من فرنسا: تقويم التواريخ، العربون بوصل، العقد، برنامج اليوم، وتقويم 2027 حول رمضان والصيف', left: { label: 'من ليون', sub: 'أربعون رسالة، لا عقد' }, right: { label: 'على المنصة', sub: 'تاريخ معلَّق 72 س، عربون، عقد' } },
+    moments: { title: 'عرس يُحجز من فرنسا، في ست لحظات', items: [
+      { n: '01', label: 'البحث', sub: 'تاريخ، ولاية، عدد المدعوين، ميزانية لكل طاولة؛ في نوفمبر، من ليون.' },
+      { n: '02', label: 'الزيارة عن بُعد', sub: 'فيديو القاعة، مخطط الطاولات، قوائم الطعام بأسعارها، تذوّق يقوم به قريب في المكان.' },
+      { n: '03', label: 'عرض السعر والتاريخ المعلَّق', sub: 'عرض لكل طاولة ولكل خيار، التاريخ معلَّق 72 ساعة، وقت للقرار العائلي.', accent: true },
+      { n: '04', label: 'العربون من فرنسا', sub: 'بالدينار عبر قريب أو باليورو، وصل مرقّم، عقد موقَّع إلكترونياً؛ التاريخ مؤكَّد.' },
+      { n: '05', label: 'برنامج اليوم', sub: 'الطبّاخ، النقّافة، المصوّر، الفرقة، المواعيد والرصيد؛ كلٌّ يرى سطره.' },
+      { n: '06', label: 'يوم العرس وما بعده', sub: 'الرصيد مدفوع، معاينة القاعة، تقييم موثَّق من العائلة التي دفعت.' },
+    ], caption: 'الشكل 1 · اللحظة 03 هي التي لا يمسكها أحد اليوم: تاريخ «محجوز» بالهاتف ليس محجوزاً لأحد. معلَّقاً 72 ساعة ثم مؤكَّداً بعربون اللحظة 04، يصبح الحقيقة الوحيدة، للقاعة كما للعائلة.', alt: 'ست خطوات: البحث، الزيارة عن بعد، عرض السعر والتاريخ المعلق، العربون من فرنسا، برنامج اليوم، يوم العرس وما بعده.' },
+    plateforme: { title: 'المنصة، في خمس طبقات', layers: [
+      { label: 'التقويم', items: [{ name: 'تقويم التواريخ: قاعة واحدة، سهرة واحدة، حالة واحدة', sub: 'حر، معلَّق 72 س، مؤكَّد بعربون، مسدَّد؛ لا يمسكه أحد غيره', accent: true }] },
+      { label: 'البطاقات', items: [{ name: 'القاعات والمزوّدون: السعة، القوائم، الأسعار، صور مؤرَّخة، اعتماد متحقَّق منه', sub: 'طبّاخون، نقّافات، مصوّرون، فرق، سيارات؛ بطاقة وتقويم لكل واحد' }] },
+      { label: 'القواعد', items: [{ name: 'العربون، الإلغاء، التأجيل، الخيارات، العملة', sub: 'تُكتب مرة، تُعرض قبل الدفع، تُطبَّق بالتساوي على كل العائلات' }] },
+      { label: 'الفضاءات', items: [{ name: 'فضاء العائلة وتطبيق المالك', sub: 'العائلة تتابع من فرنسا؛ المالك يعلّق ويؤكد ويحصّل من هاتفه' }] },
+      { label: 'القيادة', items: [{ name: 'لوحة قيادة ووكيل ذكاء اصطناعي', sub: 'نسبة الامتلاء شهرياً، العرابين، «هل 14 أوت حر؟» يُجاب عنه ليلاً بالعربية والفرنسية' }] },
+    ], caption: 'الشكل 2 · الطبقة الأولى هي الوحيدة المهمة في البداية: تقويم يمسكه المالك فعلاً، لأنه يربح به العربون ويتخلص من المكالمات. البطاقات بلا تقويم تصنع دليلاً؛ والدليل لا يحل مشكلة التاريخ الموعود لعائلتين.', alt: 'خمس طبقات: تقويم التواريخ، البطاقات، القواعد، فضاءات العائلة والمالك، القيادة.' },
+    exemple: { title: 'مالك واحد، قاعتان، موسم واحد: المثال', items: [
+      { value: '220 سهرة', label: 'من ماي إلى سبتمبر لقاعتين بخمس سهرات أسبوعياً على اثنين وعشرين أسبوعاً؛ فرضية تُستبدل بفرضيتكم' },
+      { value: '40 ← 6', label: 'رسالة ومكالمة لكل حجز: أربعون اليوم بين العائلة وابن العم والقاعة؛ ست حين يكون الفيديو والأسعار والتقويم على الإنترنت' },
+      { value: '30 % ← 100 %', label: 'من التواريخ المؤكَّدة بعربون مع وصل وعقد؛ التواريخ المعلَّقة بلا عربون تتحرر وحدها بعد 72 ساعة' },
+      { value: '18 سهرة', label: 'مستردَّة في الموسم: 8 % من التواريخ المحجوزة شفهياً ثم المتروكة، تُعاد للبيع في وقتها؛ بـ350 000 دج للسهرة، أكثر من 6 ملايين دينار', accent: true },
+    ], caption: 'الشكل 3 · حساب على فرضيات لا قياس: عدد السهرات والسعر ونسبة التخلي تُستبدل بأرقامكم. ما يثبت في كل مكان: التاريخ المعلَّق الذي ينتهي وحده يعيد للبيع سهرات لم يكن أحد يعيد بيعها.', alt: 'أربعة أرقام: 220 سهرة، من 40 إلى 6 رسائل لكل حجز، من 30 إلى 100 % تواريخ مؤكدة، 18 سهرة مستردة.' },
+    pieges: { title: 'ستة فخاخ للعرس المحجوز عن بُعد، وما تغيّره المنصة', columns: ['ما يحدث اليوم', 'ما تغيّره المنصة'], rows: [
+      { label: 'التاريخ الموعود لعائلتين', cells: ['محجوز بالهاتف، مدوَّن في دفتر؛ العائلة تكتشف عند وصولها في جويلية', 'تاريخ واحد، حالة واحدة: معلَّق 72 س، مؤكَّد بالعربون؛ لا حجز آخر ممكن'] },
+      { label: 'العربون نقداً عبر ابن العم', cells: ['يُسلَّم يداً بيد، بلا وصل؛ المبلغ يختلف حسب من يروي', 'وصل مرقّم عبر SMS والبريد، عقد يذكر المبلغ والتاريخ والشروط'] },
+      { label: 'عرض السعر للفرد الذي يتغير', cells: ['«6 000 للمدعو» تصبح 7 500 عند التذوق، الخيارات مشمولة أو لا', 'عرض لكل طاولة ولكل خيار، مجمَّد عند العربون؛ الإضافات تُوقَّع على حدة'] },
+      { label: 'جويلية وأوت ممتلئان، ماي وسبتمبر فارغان', cells: ['القاعة ترفض في الصيف وتنتظر في ماي؛ العائلة لا تعرف أسعار ماي', 'أسعار لكل موسم معروضة؛ تواريخ ماي وجوان وسبتمبر تُقترح بسعرها'] },
+      { label: 'خمسة مزوّدين ولا أحد ينسّق', cells: ['الطبّاخ والنقّافة والمصوّر والفرقة والسيارة يُتصل بهم واحداً واحداً؛ مواعيد متضاربة', 'برنامج يوم واحد مشترك؛ كل مزوّد يرى سطره وساعته'] },
+      { label: 'تقييمات وصور لا يمكن التحقق منها', cells: ['صور من عشر سنوات، تقييمات أصدقاء؛ العائلة تقرر على كلام ابن العم', 'صور مؤرَّخة، تقييم مقصور على العائلة التي دفعت، تنقيط لكل موسم'] },
+    ], caption: 'الشكل 4 · الفخاخ الثلاثة الأولى تكلّف مالاً وخصومات عائلية؛ والثلاثة الأخيرة تكلّف حجوزات. الستة كلها تأتي من الغياب نفسه: لا أحد يمسك حالة التاريخ.', alt: 'مصفوفة ستة فخاخ مع ما يحدث اليوم وما تغيّره المنصة.' },
+    modeles: { title: 'ست حالات، ما يُبنى أولاً', columns: ['ما يُبنى أولاً', 'ما يأتي بعده'], rows: [
+      { label: 'مالك قاعة حفلات واحدة', cells: ['تقويم التواريخ، بطاقة بفيديو وأسعار، عربون بوصل، عقد', 'برنامج اليوم مع المزوّدين، الرصيد، التقييمات، أسعار لكل موسم'] },
+      { label: 'مجموعة قاعات أو فندق', cells: ['تقويم لكل قاعة، لوحة قيادة للامتلاء، قواعد مشتركة', 'مزوّدون موصى بهم، باقات، فضاء عائلة متعدد اللغات'] },
+      { label: 'طبّاخ', cells: ['قوائم بسعر لكل طاولة، تذوّق مبرمج، عربون، طلبيات لكل تاريخ', 'تقويم مشترك مع القاعات، تموين أسبوعي'] },
+      { label: 'نقّافة، حلاقة، مصوّر، فرقة', cells: ['بطاقة، تقويم، عربون؛ سطر في برنامج اليوم', 'تذكيرات تلقائية، ألبوم مؤرَّخ، تقييمات'] },
+      { label: 'وكالة أعراس للجالية', cells: ['فضاء العائلة، عرض سعر مجمَّع، برنامج اليوم، متابعة المدفوعات', 'كتالوج مزوّدين موثَّقين، وكيل ذكاء اصطناعي للرد، باقات'] },
+      { label: 'مؤسس في فرنسا: السوق الإلكترونية', cells: ['عشرون قاعة تجريبية في ثلاث ولايات، تقويم تمسكه هي، عربون عبر المنصة', 'مزوّدون، تقييمات، اشتراك المهنيين، فتح تواريخ السنة التالية'] },
+    ], caption: 'الشكل 5 · في الحالات الست، العمود الأول يُنجز في عشرة إلى أربعة عشر أسبوعاً. السوق الإلكترونية لا تبدأ بالمزوّدين: تبدأ بعشرين تقويماً ممسوكاً، لأن العائلة تأتي من أجل التاريخ لا القائمة.', alt: 'مصفوفة ست حالات مع ما يُبنى أولاً وما يأتي بعده.' },
+    calendrier: { title: 'الإطلاق في 2027، بالأسابيع، حول رمضان والصيف', unit: 'أسبوع', items: [
+      { label: 'التأطير وعشرون قاعة تجريبية', note: 'الجزائر، وهران، تيزي وزو أو بجاية؛ قواعد العربون تُكتب معها', from: 0, to: 4 },
+      { label: 'التقويم والعربون، النسخة الأولى', note: 'يُبنيان خلال رمضان (≈ 8 فبراير – 9 مارس)، الموسم الراكد للأعراس', from: 4, to: 8 },
+      { label: 'التجربة: تواريخ صيف 2027 المتأخرة', note: 'بعد عيد الفطر؛ العائلات التي لا قاعة لها بعد لجويلية وأوت', from: 8, to: 14, accent: true },
+      { label: 'المزوّدون وبرنامج اليوم', note: 'طبّاخون، نقّافات، مصوّرون؛ عيد الأضحى (≈ 16 مايو) في الأسبوع 17', from: 14, to: 24 },
+      { label: 'موسم الصيف: الأعراس، الأرصدة، التقييمات', note: 'الجالية في البلد؛ كل عرس ينتج تقييماً وصوراً مؤرَّخة', from: 24, to: 34 },
+      { label: 'فتح تواريخ 2028', note: 'من سبتمبر إلى نوفمبر: ذروة الحجوزات عن بُعد للصيف التالي', from: 34, to: 44 },
+      { label: 'الحصيلة واشتراك المهنيين', note: 'الامتلاء، العرابين، النزاعات؛ القرار بشأن النموذج المدفوع للمهنيين', from: 44, to: 48 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = منتصف يناير 2027. رمضان هو الموسم الراكد للأعراس: فيه نبني. التجربة تستهدف العائلات التي لا قاعة لها بعد لصيف 2027؛ أما الموسم الحقيقي للحجز عن بُعد فهو الخريف، لصيف 2028. تواريخ رمضان والعيدين تقديرية.', alt: 'خط زمني من 48 أسبوعاً: التأطير، النسخة الأولى، التجربة، المزوّدون، موسم الصيف، فتح 2028، الحصيلة.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      moments: { svg: steps({ title: t.moments.title, steps: t.moments.items, arrows: true, rtl }), caption: t.moments.caption, alt: t.moments.alt },
+      plateforme: { svg: layers({ title: t.plateforme.title, layers: t.plateforme.layers, rtl }), caption: t.plateforme.caption, alt: t.plateforme.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      pieges: { svg: matrix({ title: t.pieges.title, columns: t.pieges.columns, rows: t.pieges.rows, rtl }), caption: t.pieges.caption, alt: t.pieges.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 48, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

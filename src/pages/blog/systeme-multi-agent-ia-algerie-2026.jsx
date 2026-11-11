@@ -266,7 +266,6 @@ export default function SystemeMultiAgentIaAlgerie() {
         <title>Systèmes Multi-Agents IA Algérie 2026 | Agents IA Autonomes | Symloop</title>
         <meta name="description" content="Guide complet sur les systèmes multi-agents IA en Algérie 2026. Architecture multi-agent, frameworks (LangChain, CrewAI, Claude Agent SDK), cas d'usage entreprises. Multi-agent AI systems Algeria. Expert IA Algérie Symloop." />
         <meta name="keywords" content="système multi-agent IA algérie, multi-agent AI systems Algeria, agents IA autonomes algérie, orchestration agents IA, LLM agents algérie, AI agents Algeria, autonomous AI agents Algeria, multi-agent systems Algeria, LangChain algérie, CrewAI, Claude Agent SDK, automatisation intelligente algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/systeme-multi-agent-ia-algerie-2026" />
 
         <meta property="og:title" content="Systèmes Multi-Agents IA en Algérie 2026 | Multi-Agent AI Systems Algeria | Symloop" />
         <meta property="og:description" content="L'avenir de l'automatisation intelligente : systèmes multi-agents IA pour les entreprises algériennes. Architecture, frameworks, cas d'usage et pricing." />
@@ -289,7 +288,7 @@ export default function SystemeMultiAgentIaAlgerie() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-gray-900 via-indigo-950 to-purple-950 text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog

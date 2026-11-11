@@ -1052,7 +1052,6 @@ export default function GestionFlotteLivraisonSuiviGPS2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="suivi GPS livreur algérie, تتبع GPS السائق الجزائر, GPS fleet tracking algeria, gestion flotte livraison, إدارة أسطول التوصيل, tracking temps réel, تتبع مباشر, optimisation tournées, تحسين الجولات, logiciel suivi véhicule algérie 2026, géofencing, سياج جغرافي, driver tracking app" />
-        <link rel="canonical" href="https://symloop.com/blog/gestion-flotte-livraison-suivi-gps-algerie-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

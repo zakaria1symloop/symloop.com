@@ -588,16 +588,16 @@ export default function DeveloppeurWebSetif() {
     "email": "contact@symloop.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Cité 1000 Logements",
-      "addressLocality": "Sétif",
-      "addressRegion": "Sétif",
-      "postalCode": "19000",
+      "streetAddress": "Alger Centre",
+      "addressLocality": "Alger",
+      "addressRegion": "Alger",
+      "postalCode": "16000",
       "addressCountry": "DZ"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "36.1919",
-      "longitude": "5.4138"
+      "latitude": "36.7538",
+      "longitude": "3.0588"
     },
     "areaServed": [
       { "@type": "City", "name": "Sétif" },
@@ -666,7 +666,6 @@ export default function DeveloppeurWebSetif() {
         <title>{c.meta.title}</title>
         <meta name="description" content={c.meta.description} />
         <meta name="keywords" content={c.meta.keywords} />
-        <link rel="canonical" href={`https://symloop.com${locale !== 'fr' ? '/' + locale : ''}/blog/developpeur-web-setif-2026`} />
 
         {/* Geo Meta Tags */}
         <meta name="geo.region" content="DZ-19" />
@@ -682,10 +681,6 @@ export default function DeveloppeurWebSetif() {
         <meta property="og:locale" content={locale === 'ar' ? 'ar_DZ' : locale === 'en' ? 'en_US' : 'fr_DZ'} />
 
         {/* Hreflang */}
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/blog/developpeur-web-setif-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/developpeur-web-setif-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/developpeur-web-setif-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/blog/developpeur-web-setif-2026" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
@@ -705,8 +700,8 @@ export default function DeveloppeurWebSetif() {
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="max-w-4xl mx-auto text-center"
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-500/20 text-violet-300 text-sm font-medium mb-6">
@@ -737,8 +732,8 @@ export default function DeveloppeurWebSetif() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 40 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.2 }}
               className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto"
             >
@@ -933,7 +928,7 @@ export default function DeveloppeurWebSetif() {
             <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
               <Link href="/blog/agence-developpement-web-setif-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-violet-500/50 transition-all group">
                 <span className="font-semibold text-white group-hover:text-violet-400 transition-colors">Agence Développement Web Sétif 2026</span>
-                <p className="text-slate-400 text-sm mt-1">Découvrez notre agence web basée à Sétif</p>
+                <p className="text-slate-400 text-sm mt-1">Découvrez notre agence web qui sert Sétif depuis Alger</p>
               </Link>
               <Link href="/blog/developpement-site-web-algerie-2026" className="block p-5 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-violet-500/50 transition-all group">
                 <span className="font-semibold text-white group-hover:text-violet-400 transition-colors">Développement Site Web Algérie 2026</span>

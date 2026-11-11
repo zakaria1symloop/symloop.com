@@ -11,6 +11,7 @@ import {
   QrCode, Truck, CreditCard, Bell,
   Users, Building2, Search, RefreshCw
 } from "lucide-react";
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function LogicielPharmacie2026() {
   const router = useRouter();
@@ -703,7 +704,6 @@ export default function LogicielPharmacie2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel pharmacie algerie, gestion stock pharmacie, logiciel officine, tiers payant CNAS, gestion medicaments, caisse pharmacie algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-pharmacie-gestion-stock-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
@@ -1022,6 +1022,8 @@ export default function LogicielPharmacie2026() {
                 </Link>
               </div>
             </div>
+
+            <SectorSoftwareLinks locale={locale} exclude={["logiciel-pharmacie-gestion-stock-algerie-2026"]} tone="dark" />
 
             {/* CTA */}
             <div className="bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-emerald-500/20 border border-emerald-500/30 rounded-2xl p-8 text-center">

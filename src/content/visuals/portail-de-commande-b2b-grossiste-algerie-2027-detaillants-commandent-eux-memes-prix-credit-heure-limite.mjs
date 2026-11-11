@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'portail-de-commande-b2b-grossiste-algerie-2027-detaillants-commandent-eux-memes-prix-credit-heure-limite';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Portail de commande B2B · Grossiste · Détaillants · 2027', title: ['Mille détaillants,', 'douze prévendeurs,', 'une heure limite.'], subtitle: 'Le portail où le détaillant commande lui-même à son prix, avec son plafond de crédit et sa livraison du lendemain ; WhatsApp lu par un agent IA ; le prévendeur payé pour le remplir ; trois canaux, un seul dépôt ; le calendrier 2027', left: { label: 'Au téléphone', sub: 'trois appels, un prix négocié, J+2' }, right: { label: 'Sur le portail', sub: 'son prix, avant 14 h, livré demain' } },
+    commande: { title: 'Une commande de détaillant, en six moments', items: [
+      { n: '01', label: 'L’ouverture du compte', sub: 'Le prévendeur crée le compte en visite : tarif, plafond de crédit, jour de tournée ; le détaillant reçoit son lien.' },
+      { n: '02', label: 'La commande', sub: 'Catalogue à son prix, dernières commandes en un geste, promotion du mois ; ou un message WhatsApp lu par l’agent IA.' },
+      { n: '03', label: 'L’heure limite', sub: 'Avant 14 h : livré demain sur la tournée ; après : après-demain. Le détaillant le voit avant de valider.', accent: true },
+      { n: '04', label: 'La préparation', sub: 'Liste de picking par tournée, substitution proposée en cas de rupture, confirmation envoyée.' },
+      { n: '05', label: 'La livraison et le paiement', sub: 'Bon numéroté, espèces, chèque ou carte, encours mis à jour, reçu SMS.' },
+      { n: '06', label: 'La recommande', sub: 'Rappel le jour habituel avec le panier type ; relance si trois semaines sans commande.' },
+    ], caption: 'Figure 1 · Le moment 03 est celui qui fait adopter le portail : le détaillant n’adopte pas une application, il adopte une heure limite et une livraison du lendemain qu’il voit avant de valider. Le moment 01 est celui qu’on oublie : personne ne s’inscrit seul, le prévendeur ouvre le compte.', alt: 'Six étapes : ouverture du compte, commande, heure limite, préparation, livraison et paiement, recommande.' },
+    canaux: { title: 'Trois canaux de commande, un seul dépôt', layers: [
+      { label: 'Référentiel', items: [{ name: 'Clients, tarifs par client, plafonds, stock disponible, tournées', sub: 'le même pour les trois canaux ; un prix, un plafond, une heure limite par détaillant' }] },
+      { label: 'Prévendeur', items: [{ name: 'L’application du prévendeur en visite', sub: 'ouvre les comptes, commande pour ceux qui ne le feront jamais, montre le portail aux autres' }] },
+      { label: 'Portail', items: [{ name: 'Le portail web et l’application du détaillant', sub: 'sans installation d’abord, lien par SMS ; catalogue à son prix, recommande en un geste', accent: true }] },
+      { label: 'WhatsApp', items: [{ name: 'WhatsApp lu par un agent IA', sub: 'texte ou vocal en arabe ou en français, transformé en commande à confirmer, jamais validée seule' }] },
+      { label: 'Dépôt', items: [{ name: 'Une seule liste de préparation, un tableau de bord par canal', sub: 'quel que soit le canal, la commande arrive au même endroit, à la même heure limite' }] },
+    ], caption: 'Figure 2 · Les trois canaux du milieu partagent le référentiel du bas et le dépôt du haut : c’est ce qui fait que le portail ne crée pas un deuxième circuit. Un grossiste qui lance le portail sans le prévendeur n’ouvre pas de comptes ; sans WhatsApp, il perd les détaillants qui commandent déjà par message.', alt: 'Cinq couches : référentiel, application du prévendeur, portail et application du détaillant, WhatsApp lu par un agent IA, dépôt et pilotage.' },
+    exemple: { title: 'Un distributeur, 1 100 détaillants, douze mois : l’exemple', items: [
+      { value: '38 %', label: 'des commandes passées par le portail ou WhatsApp après douze mois, le reste par le prévendeur ; hypothèse à remplacer par la vôtre' },
+      { value: '95 %', label: 'des commandes livrées le lendemain grâce à l’heure limite de 14 h, contre une livraison à J+2 quand le carnet était ressaisi le soir' },
+      { value: '75 % → 90 %', label: 'de détaillants visités dans le mois : les visites libérées par les commandes en libre-service vont aux petits points de vente' },
+      { value: '+1 commande', label: 'par mois et par détaillant actif grâce au rappel de recommande du jour habituel ; sur 400 détaillants actifs, 400 commandes de plus par mois', accent: true },
+    ], caption: 'Figure 3 · Un calcul sur des hypothèses, pas une mesure : la part en libre-service, la couverture et l’effet du rappel sont à remplacer par les vôtres. Ce qui se vérifie partout : la part en libre-service monte par tournée, pas par wilaya, parce que c’est le prévendeur de la tournée qui ouvre les comptes.', alt: 'Quatre chiffres : 38 % de commandes en libre-service, 95 % livrées le lendemain, couverture de 75 à 90 %, une commande de plus par mois et par détaillant actif.' },
+    freins: { title: 'Six raisons pour lesquelles le détaillant ne commande pas seul, et ce qu’on fait', columns: ['Ce que dit le détaillant', 'Ce que fait la plateforme'], rows: [
+      { label: '« Je n’installe pas d’application »', cells: ['Le téléphone est plein, la mémoire aussi ; une application de plus ne sera pas ouverte', 'Un lien web par SMS, sans installation ; WhatsApp accepté ; l’application vient après, pour ceux qui commandent chaque semaine'] },
+      { label: '« Je ne connais pas mes prix »', cells: ['Chaque prévendeur a son tarif ; le détaillant ne sait pas lequel s’applique', 'Un tarif par client dans le référentiel, affiché à lui seul ; aucun prix public'] },
+      { label: '« Je veux négocier »', cells: ['La remise se discute à chaque visite ; la commande sans discussion lui paraît perdante', 'Une fourchette de remise libre, le reste validé par le chef des ventes ; la promotion du mois visible'] },
+      { label: '« Je paie à crédit »', cells: ['Son encours est connu du prévendeur, pas de lui ; il craint le refus', 'Plafond et encours affichés ; commande acceptée, bloquée ou envoyée en validation selon la règle écrite'] },
+      { label: '« Je ne sais pas quand ça arrive »', cells: ['La livraison dépend du camion ; il appelle le dépôt trois fois', 'Heure limite et jour de tournée affichés avant validation ; confirmation puis avis de passage'] },
+      { label: '« Je préfère le prévendeur »', cells: ['La relation compte plus que l’outil ; il ne veut pas le perdre', 'Le prévendeur garde la relation et ouvre le compte ; il touche une prime sur les commandes passées par le portail de sa tournée'] },
+    ], caption: 'Figure 4 · Les trois premiers freins se lèvent par construction ; les trois derniers par des règles écrites avec le chef des ventes et les prévendeurs avant le pilote. Le sixième est celui qui décide : un prévendeur payé contre le portail le fera échouer, un prévendeur payé pour le remplir le fera réussir.', alt: 'Matrice de six freins avec ce que dit le détaillant et ce que fait la plateforme.' },
+    modeles: { title: 'Six situations, ce qu’on construit d’abord', columns: ['Ce qu’on construit d’abord', 'Ce qui vient ensuite'], rows: [
+      { label: 'Distributeur agroalimentaire, mille détaillants', cells: ['Portail web + WhatsApp lu par l’agent IA, tarif par client, heure limite, liste de préparation unique', 'Application détaillant, paiement carte, rappel de recommande, prime prévendeur'] },
+      { label: 'Grossiste en boissons', cells: ['Recommande en un geste à partir du panier type, consigne des emballages, heure limite par tournée', 'Promotions par volume, stock camion lié aux commandes du portail'] },
+      { label: 'Importateur vers des grossistes', cells: ['Portail multi-niveaux : grossiste, puis ses détaillants ; remises par palier, encours par grossiste', 'Visibilité des ventes au détail, promotions ciblées'] },
+      { label: 'Grossiste pharma ou parapharma', cells: ['Catalogue avec lots et dates, commande par officine, heure limite et livraison à température', 'Preuve de livraison, alertes de péremption, réassort automatique'] },
+      { label: 'Fournisseur de restaurants et de cafés', cells: ['Commande du soir pour livraison du matin, WhatsApp vocal lu, bon de livraison contrôlé en cuisine', 'Prix par semaine, substitutions, historique par plat'] },
+      { label: 'Marque locale avec ses distributeurs', cells: ['Portail pour les distributeurs, allocation en cas de rupture, remontée des ventes', 'Sell-out par zone, promotions financées, score d’exécution'] },
+    ], caption: 'Figure 5 · Dans les six cas, la première colonne tient en dix à quatorze semaines, à condition que le référentiel des tarifs et des plafonds existe. Le portail multi-fournisseurs, où plusieurs grossistes vendent aux mêmes détaillants, est un autre projet : il vient après qu’un grossiste a prouvé le sien.', alt: 'Matrice de six situations avec ce qu’on construit d’abord et ce qui vient ensuite.' },
+    calendrier: { title: 'Lancer le portail en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Référentiel et règles', note: 'tarifs par client, plafonds, heures limites par tournée, remises libres ; avec le chef des ventes', from: 0, to: 4 },
+      { label: 'Portail web + agent WhatsApp', note: 'construits pendant le ramadan (≈ 8 février – 9 mars) ; rien n’est lancé', from: 4, to: 10, accent: true },
+      { label: 'Pilote : une tournée, 80 détaillants', note: 'après l’Aïd el-Fitr ; comptes ouverts par le prévendeur, prime écrite', from: 10, to: 14 },
+      { label: 'Application détaillant, paiement carte', note: 'pour ceux qui commandent chaque semaine ; CIB et Edahabia', from: 14, to: 20 },
+      { label: 'Extension à toutes les tournées', note: 'avant l’été ; une tournée par semaine, le prévendeur ouvre les comptes', from: 20, to: 26 },
+      { label: 'Été : recommande, relances, promotions', note: 'saison des boissons ; rappel du jour habituel, relance à trois semaines', from: 26, to: 34 },
+      { label: 'Rentrée : bilan par canal', note: 'part en libre-service par tournée, couverture, décision sur le multi-fournisseurs', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. Le portail se construit pendant le ramadan et se lance après l’Aïd el-Fitr, une tournée à la fois : c’est le prévendeur de la tournée qui ouvre les comptes, et c’est lui qu’on paie pour cela. Dates du ramadan prévisionnelles.', alt: 'Frise de 40 semaines : référentiel, portail et agent WhatsApp, pilote, application détaillant, extension, été, rentrée.' },
+  },
+  en: {
+    cover: { eyebrow: 'B2B ordering portal · Wholesaler · Retailers · 2027', title: ['A thousand retailers,', 'twelve pre-sellers,', 'one cut-off time.'], subtitle: 'The portal where the retailer orders by themselves at their price, with their credit ceiling and next-day delivery; WhatsApp read by an AI agent; the pre-seller paid to fill it; three channels, one depot; the 2027 calendar', left: { label: 'By phone', sub: 'three calls, a haggled price, D+2' }, right: { label: 'On the portal', sub: 'their price, by 2 pm, due tomorrow' } },
+    commande: { title: 'A retailer’s order, in six moments', items: [
+      { n: '01', label: 'Opening the account', sub: 'The pre-seller creates the account during a visit: price list, credit ceiling, route day; the retailer receives their link.' },
+      { n: '02', label: 'The order', sub: 'Catalogue at their price, last orders in one tap, the month’s promotion; or a WhatsApp message read by the AI agent.' },
+      { n: '03', label: 'The cut-off', sub: 'Before 2 pm: delivered tomorrow on the route; after: the day after. The retailer sees it before confirming.', accent: true },
+      { n: '04', label: 'Picking', sub: 'Picking list per route, substitution offered on stock-out, confirmation sent.' },
+      { n: '05', label: 'Delivery and payment', sub: 'Numbered note, cash, cheque or card, outstanding balance updated, SMS receipt.' },
+      { n: '06', label: 'Reordering', sub: 'Reminder on the usual day with the typical basket; follow-up after three weeks without an order.' },
+    ], caption: 'Figure 1 · Moment 03 is what makes retailers adopt the portal: they do not adopt an app, they adopt a cut-off time and a next-day delivery they see before confirming. Moment 01 is the one everyone forgets: nobody signs up alone, the pre-seller opens the account.', alt: 'Six steps: opening the account, order, cut-off, picking, delivery and payment, reordering.' },
+    canaux: { title: 'Three ordering channels, one depot', layers: [
+      { label: 'Master data', items: [{ name: 'Customers, price per customer, ceilings, available stock, routes', sub: 'the same for all three channels; one price, one ceiling, one cut-off per retailer' }] },
+      { label: 'Pre-seller', items: [{ name: 'The pre-seller’s app during visits', sub: 'opens accounts, orders for those who never will, shows the portal to the others' }] },
+      { label: 'Portal', items: [{ name: 'The web portal and the retailer app', sub: 'no installation first, link by SMS; catalogue at their price, reorder in one tap', accent: true }] },
+      { label: 'WhatsApp', items: [{ name: 'WhatsApp read by an AI agent', sub: 'text or voice in Arabic or French, turned into an order to confirm, never validated on its own' }] },
+      { label: 'Depot', items: [{ name: 'One picking list, one dashboard per channel', sub: 'whatever the channel, the order lands in the same place, at the same cut-off' }] },
+    ], caption: 'Figure 2 · The three middle channels share the master data below and the depot above: that is what keeps the portal from creating a second circuit. A wholesaler who launches the portal without the pre-seller opens no accounts; without WhatsApp, they lose the retailers who already order by message.', alt: 'Five layers: master data, pre-seller app, portal and retailer app, WhatsApp read by an AI agent, depot and management.' },
+    exemple: { title: 'One distributor, 1,100 retailers, twelve months: the example', items: [
+      { value: '38 %', label: 'of orders placed through the portal or WhatsApp after twelve months, the rest through the pre-seller; an assumption to replace with yours' },
+      { value: '95 %', label: 'of orders delivered next day thanks to the 2 pm cut-off, against D+2 delivery when the notebook was re-entered in the evening' },
+      { value: '75 % → 90 %', label: 'of retailers visited in the month: the visits freed by self-service orders go to the small outlets' },
+      { value: '+1 order', label: 'a month per active retailer thanks to the usual-day reorder reminder; on 400 active retailers, 400 more orders a month', accent: true },
+    ], caption: 'Figure 3 · A calculation on assumptions, not a measurement: the self-service share, coverage and the reminder effect are to be replaced by yours. What holds everywhere: the self-service share rises route by route, not wilaya by wilaya, because it is the route’s pre-seller who opens the accounts.', alt: 'Four figures: 38 % self-service orders, 95 % delivered next day, coverage from 75 to 90 %, one more order a month per active retailer.' },
+    freins: { title: 'Six reasons retailers do not order by themselves, and what gets done', columns: ['What the retailer says', 'What the platform does'], rows: [
+      { label: '“I don’t install apps”', cells: ['The phone is full, so is the memory; one more app will not be opened', 'A web link by SMS, no installation; WhatsApp accepted; the app comes later, for those who order every week'] },
+      { label: '“I don’t know my prices”', cells: ['Each pre-seller has their own price list; the retailer does not know which applies', 'One price per customer in the master data, shown to them alone; no public price'] },
+      { label: '“I want to haggle”', cells: ['The discount is argued at every visit; an order without haggling feels like a loss', 'A free discount range, the rest approved by the sales manager; the month’s promotion visible'] },
+      { label: '“I buy on credit”', cells: ['Their balance is known to the pre-seller, not to them; they fear refusal', 'Ceiling and balance shown; order accepted, blocked or sent for approval as the written rule says'] },
+      { label: '“I don’t know when it arrives”', cells: ['Delivery depends on the truck; they call the depot three times', 'Cut-off and route day shown before confirming; confirmation then delivery notice'] },
+      { label: '“I prefer the pre-seller”', cells: ['The relationship matters more than the tool; they do not want to lose it', 'The pre-seller keeps the relationship and opens the account; they earn a bonus on portal orders from their route'] },
+    ], caption: 'Figure 4 · The first three obstacles are removed by construction; the last three by rules written with the sales manager and the pre-sellers before the pilot. The sixth decides: a pre-seller paid against the portal will make it fail, one paid to fill it will make it succeed.', alt: 'Matrix of six obstacles with what the retailer says and what the platform does.' },
+    modeles: { title: 'Six situations, what gets built first', columns: ['What gets built first', 'What comes next'], rows: [
+      { label: 'Food distributor, a thousand retailers', cells: ['Web portal + WhatsApp read by the AI agent, price per customer, cut-off, single picking list', 'Retailer app, card payment, reorder reminder, pre-seller bonus'] },
+      { label: 'Beverage wholesaler', cells: ['One-tap reorder from the typical basket, returnable packaging deposits, cut-off per route', 'Volume promotions, truck stock linked to portal orders'] },
+      { label: 'Importer selling to wholesalers', cells: ['Multi-level portal: wholesaler, then their retailers; tiered discounts, balance per wholesaler', 'Visibility of retail sales, targeted promotions'] },
+      { label: 'Pharma or parapharma wholesaler', cells: ['Catalogue with batches and dates, order per pharmacy, cut-off and temperature-controlled delivery', 'Proof of delivery, expiry alerts, automatic replenishment'] },
+      { label: 'Supplier to restaurants and cafés', cells: ['Evening order for morning delivery, voice WhatsApp read, delivery note checked in the kitchen', 'Weekly prices, substitutions, history per dish'] },
+      { label: 'Local brand with its distributors', cells: ['Portal for distributors, allocation on stock-out, sales reporting', 'Sell-out per zone, funded promotions, execution score'] },
+    ], caption: 'Figure 5 · In all six cases the first column fits in ten to fourteen weeks, provided the price and ceiling master data exists. The multi-supplier portal, where several wholesalers sell to the same retailers, is another project: it comes after one wholesaler has proven their own.', alt: 'Matrix of six situations with what gets built first and what comes next.' },
+    calendrier: { title: 'Launching the portal in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Master data and rules', note: 'price per customer, ceilings, cut-offs per route, free discounts; with the sales manager', from: 0, to: 4 },
+      { label: 'Web portal + WhatsApp agent', note: 'built during Ramadan (≈ 8 February – 9 March); nothing launched', from: 4, to: 10, accent: true },
+      { label: 'Pilot: one route, 80 retailers', note: 'after Eid al-Fitr; accounts opened by the pre-seller, bonus written down', from: 10, to: 14 },
+      { label: 'Retailer app, card payment', note: 'for those who order every week; CIB and Edahabia', from: 14, to: 20 },
+      { label: 'Extension to all routes', note: 'before summer; one route a week, the pre-seller opens the accounts', from: 20, to: 26 },
+      { label: 'Summer: reorders, follow-ups, promotions', note: 'beverage season; usual-day reminder, three-week follow-up', from: 26, to: 34 },
+      { label: 'September: review per channel', note: 'self-service share per route, coverage, decision on multi-supplier', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Week 0 = mid-January 2027. The portal is built during Ramadan and launched after Eid al-Fitr, one route at a time: the route’s pre-seller opens the accounts, and they are the one paid for it. Ramadan dates are forecasts.', alt: 'Timeline of 40 weeks: master data, portal and WhatsApp agent, pilot, retailer app, extension, summer, September.' },
+  },
+  ar: {
+    cover: { eyebrow: 'بوابة طلب B2B · تاجر جملة · تجار تجزئة · 2027', title: ['ألف تاجر تجزئة،', 'اثنا عشر مندوباً،', 'ساعة حدّ واحدة.'], subtitle: 'البوابة التي يطلب فيها تاجر التجزئة بنفسه بسعره، بسقف دينه وتسليم الغد؛ WhatsApp يقرؤه وكيل ذكاء اصطناعي؛ المندوب يُدفع له ليملأها؛ ثلاث قنوات ومستودع واحد؛ تقويم 2027', left: { label: 'بالهاتف', sub: 'ثلاث مكالمات، سعر مساوَم، بعد يومين' }, right: { label: 'على البوابة', sub: 'سعره، قبل الثانية، يُسلَّم غداً' } },
+    commande: { title: 'طلبية تاجر تجزئة، في ست لحظات', items: [
+      { n: '01', label: 'فتح الحساب', sub: 'المندوب ينشئ الحساب أثناء الزيارة: التسعيرة، سقف الدين، يوم الجولة؛ يتلقى التاجر رابطه.' },
+      { n: '02', label: 'الطلبية', sub: 'كتالوج بسعره، آخر الطلبيات بلمسة، ترويج الشهر؛ أو رسالة WhatsApp يقرؤها وكيل الذكاء الاصطناعي.' },
+      { n: '03', label: 'ساعة الحدّ', sub: 'قبل الثانية: يُسلَّم غداً على الجولة؛ بعدها: بعد غد. التاجر يراها قبل التأكيد.', accent: true },
+      { n: '04', label: 'التحضير', sub: 'قائمة تحضير لكل جولة، بديل مقترح عند النفاد، تأكيد مرسَل.' },
+      { n: '05', label: 'التسليم والدفع', sub: 'وصل مرقّم، نقد أو شيك أو بطاقة، الرصيد محدَّث، وصل SMS.' },
+      { n: '06', label: 'إعادة الطلب', sub: 'تذكير في اليوم المعتاد بالسلة النموذجية؛ متابعة بعد ثلاثة أسابيع بلا طلبية.' },
+    ], caption: 'الشكل 1 · اللحظة 03 هي ما يجعل التجار يتبنّون البوابة: لا يتبنّون تطبيقاً، بل ساعة حدّ وتسليماً في الغد يرونه قبل التأكيد. اللحظة 01 هي التي ينساها الجميع: لا أحد يسجّل نفسه وحده، المندوب يفتح الحساب.', alt: 'ست خطوات: فتح الحساب، الطلبية، ساعة الحد، التحضير، التسليم والدفع، إعادة الطلب.' },
+    canaux: { title: 'ثلاث قنوات طلب، مستودع واحد', layers: [
+      { label: 'المرجع', items: [{ name: 'الزبائن، سعر لكل زبون، السقوف، المخزون المتاح، الجولات', sub: 'نفسه للقنوات الثلاث؛ سعر واحد وسقف واحد وساعة حدّ واحدة لكل تاجر' }] },
+      { label: 'المندوب', items: [{ name: 'تطبيق المندوب أثناء الزيارة', sub: 'يفتح الحسابات، يطلب لمن لن يفعل أبداً، يُري البوابة للآخرين' }] },
+      { label: 'البوابة', items: [{ name: 'بوابة الويب وتطبيق تاجر التجزئة', sub: 'بلا تثبيت أولاً، رابط عبر SMS؛ كتالوج بسعره، إعادة طلب بلمسة', accent: true }] },
+      { label: 'WhatsApp', items: [{ name: 'WhatsApp يقرؤه وكيل ذكاء اصطناعي', sub: 'نص أو صوت بالعربية أو الفرنسية، يُحوَّل إلى طلبية للتأكيد، لا تُعتمد وحدها أبداً' }] },
+      { label: 'المستودع', items: [{ name: 'قائمة تحضير واحدة، لوحة قيادة لكل قناة', sub: 'أياً كانت القناة، تصل الطلبية إلى المكان نفسه، في ساعة الحدّ نفسها' }] },
+    ], caption: 'الشكل 2 · القنوات الثلاث في الوسط تتقاسم المرجع في الأسفل والمستودع في الأعلى: هذا ما يمنع البوابة من خلق دارة ثانية. تاجر جملة يطلق البوابة بلا المندوب لا يفتح حسابات؛ وبلا WhatsApp يخسر التجار الذين يطلبون أصلاً بالرسائل.', alt: 'خمس طبقات: المرجع، تطبيق المندوب، البوابة وتطبيق التاجر، WhatsApp بوكيل ذكاء اصطناعي، المستودع والقيادة.' },
+    exemple: { title: 'موزّع واحد، 1 100 تاجر تجزئة، اثنا عشر شهراً: المثال', items: [
+      { value: '38 %', label: 'من الطلبيات عبر البوابة أو WhatsApp بعد اثني عشر شهراً، والباقي عبر المندوب؛ فرضية تُستبدل بفرضيتكم' },
+      { value: '95 %', label: 'من الطلبيات تُسلَّم في الغد بفضل ساعة حدّ الثانية، مقابل تسليم بعد يومين حين كان الدفتر يُعاد إدخاله مساءً' },
+      { value: '75 % ← 90 %', label: 'من تجار التجزئة يُزارون في الشهر: الزيارات التي تحررها الطلبيات الذاتية تذهب إلى نقاط البيع الصغيرة' },
+      { value: '+1 طلبية', label: 'شهرياً لكل تاجر نشط بفضل تذكير إعادة الطلب في اليوم المعتاد؛ على 400 تاجر نشط، 400 طلبية إضافية شهرياً', accent: true },
+    ], caption: 'الشكل 3 · حساب على فرضيات لا قياس: حصة الخدمة الذاتية والتغطية وأثر التذكير تُستبدل بأرقامكم. ما يثبت في كل مكان: حصة الخدمة الذاتية ترتفع جولة بجولة لا ولاية بولاية، لأن مندوب الجولة هو من يفتح الحسابات.', alt: 'أربعة أرقام: 38 % طلبيات ذاتية، 95 % تُسلَّم في الغد، تغطية من 75 إلى 90 %، طلبية إضافية شهرياً لكل تاجر نشط.' },
+    freins: { title: 'ستة أسباب تمنع التاجر من الطلب وحده، وما يُفعل', columns: ['ما يقوله التاجر', 'ما تفعله المنصة'], rows: [
+      { label: '«لا أثبّت تطبيقات»', cells: ['الهاتف ممتلئ والذاكرة أيضاً؛ تطبيق إضافي لن يُفتح', 'رابط ويب عبر SMS بلا تثبيت؛ WhatsApp مقبول؛ التطبيق يأتي لاحقاً لمن يطلب كل أسبوع'] },
+      { label: '«لا أعرف أسعاري»', cells: ['لكل مندوب تسعيرته؛ التاجر لا يعرف أيها ينطبق', 'سعر واحد لكل زبون في المرجع، يُعرض له وحده؛ لا سعر عام'] },
+      { label: '«أريد أن أساوم»', cells: ['الخصم يُناقَش في كل زيارة؛ الطلبية بلا مساومة تبدو له خسارة', 'هامش خصم حر، والباقي يوافق عليه مدير المبيعات؛ ترويج الشهر مرئي'] },
+      { label: '«أشتري بالدين»', cells: ['رصيده يعرفه المندوب لا هو؛ يخشى الرفض', 'السقف والرصيد معروضان؛ الطلبية تُقبل أو تُحجب أو تُرسل للموافقة حسب القاعدة المكتوبة'] },
+      { label: '«لا أعرف متى تصل»', cells: ['التسليم يتوقف على الشاحنة؛ يتصل بالمستودع ثلاث مرات', 'ساعة الحدّ ويوم الجولة معروضان قبل التأكيد؛ تأكيد ثم إشعار بالمرور'] },
+      { label: '«أفضّل المندوب»', cells: ['العلاقة أهم من الأداة؛ لا يريد أن يخسرها', 'المندوب يحتفظ بالعلاقة ويفتح الحساب؛ يتقاضى منحة على طلبيات البوابة في جولته'] },
+    ], caption: 'الشكل 4 · العوائق الثلاثة الأولى تُزال بحكم البناء؛ والثلاثة الأخيرة بقواعد تُكتب مع مدير المبيعات والمندوبين قبل التجربة. السادس هو الحاسم: مندوب يُدفع له ضد البوابة سيُفشلها، ومندوب يُدفع له ليملأها سيُنجحها.', alt: 'مصفوفة ستة عوائق مع ما يقوله التاجر وما تفعله المنصة.' },
+    modeles: { title: 'ست حالات، ما يُبنى أولاً', columns: ['ما يُبنى أولاً', 'ما يأتي بعده'], rows: [
+      { label: 'موزّع مواد غذائية، ألف تاجر تجزئة', cells: ['بوابة ويب + WhatsApp يقرؤه وكيل الذكاء الاصطناعي، سعر لكل زبون، ساعة حدّ، قائمة تحضير واحدة', 'تطبيق التاجر، الدفع بالبطاقة، تذكير إعادة الطلب، منحة المندوب'] },
+      { label: 'تاجر جملة مشروبات', cells: ['إعادة طلب بلمسة من السلة النموذجية، رهن العبوات، ساعة حدّ لكل جولة', 'ترويجات بالحجم، مخزون الشاحنة مرتبط بطلبيات البوابة'] },
+      { label: 'مستورد يبيع لتجار الجملة', cells: ['بوابة متعددة المستويات: تاجر الجملة ثم تجاره؛ خصومات بالدرجات، رصيد لكل تاجر جملة', 'رؤية مبيعات التجزئة، ترويجات موجّهة'] },
+      { label: 'تاجر جملة أدوية أو شبه صيدلانية', cells: ['كتالوج بالدفعات والتواريخ، طلبية لكل صيدلية، ساعة حدّ وتسليم بدرجة حرارة مضبوطة', 'إثبات التسليم، تنبيهات انتهاء الصلاحية، تموين تلقائي'] },
+      { label: 'مورّد مطاعم ومقاهٍ', cells: ['طلبية المساء لتسليم الصباح، WhatsApp صوتي يُقرأ، وصل تسليم يُراجَع في المطبخ', 'أسعار أسبوعية، بدائل، تاريخ لكل طبق'] },
+      { label: 'علامة محلية مع موزّعيها', cells: ['بوابة للموزّعين، توزيع الحصص عند النفاد، رفع المبيعات', 'البيع النهائي لكل منطقة، ترويجات ممولة، درجة تنفيذ'] },
+    ], caption: 'الشكل 5 · في الحالات الست، العمود الأول يُنجز في عشرة إلى أربعة عشر أسبوعاً شرط وجود مرجع الأسعار والسقوف. أما البوابة متعددة الموردين، حيث يبيع عدة تجار جملة للتجار أنفسهم، فمشروع آخر: يأتي بعد أن يثبت تاجر جملة واحد بوابته.', alt: 'مصفوفة ست حالات مع ما يُبنى أولاً وما يأتي بعده.' },
+    calendrier: { title: 'إطلاق البوابة في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'المرجع والقواعد', note: 'سعر لكل زبون، سقوف، ساعات حدّ لكل جولة، خصومات حرة؛ مع مدير المبيعات', from: 0, to: 4 },
+      { label: 'بوابة ويب + وكيل WhatsApp', note: 'تُبنى خلال رمضان (≈ 8 فبراير – 9 مارس)؛ لا شيء يُطلق', from: 4, to: 10, accent: true },
+      { label: 'التجربة: جولة واحدة، 80 تاجراً', note: 'بعد عيد الفطر؛ حسابات يفتحها المندوب، منحة مكتوبة', from: 10, to: 14 },
+      { label: 'تطبيق التاجر، الدفع بالبطاقة', note: 'لمن يطلب كل أسبوع؛ CIB والذهبية', from: 14, to: 20 },
+      { label: 'التوسيع إلى كل الجولات', note: 'قبل الصيف؛ جولة كل أسبوع، المندوب يفتح الحسابات', from: 20, to: 26 },
+      { label: 'الصيف: إعادة طلب، متابعات، ترويجات', note: 'موسم المشروبات؛ تذكير اليوم المعتاد، متابعة بعد ثلاثة أسابيع', from: 26, to: 34 },
+      { label: 'الدخول: حصيلة لكل قناة', note: 'حصة الخدمة الذاتية لكل جولة، التغطية، القرار بشأن تعدد الموردين', from: 34, to: 40 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = منتصف يناير 2027. البوابة تُبنى خلال رمضان وتُطلق بعد عيد الفطر، جولة بجولة: مندوب الجولة هو من يفتح الحسابات، وهو من يُدفع له لذلك. تواريخ رمضان تقديرية.', alt: 'خط زمني من 40 أسبوعاً: المرجع، البوابة ووكيل WhatsApp، التجربة، تطبيق التاجر، التوسيع، الصيف، الدخول.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      commande: { svg: steps({ title: t.commande.title, steps: t.commande.items, arrows: true, rtl }), caption: t.commande.caption, alt: t.commande.alt },
+      canaux: { svg: layers({ title: t.canaux.title, layers: t.canaux.layers, rtl }), caption: t.canaux.caption, alt: t.canaux.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      freins: { svg: matrix({ title: t.freins.title, columns: t.freins.columns, rows: t.freins.rows, rtl }), caption: t.freins.caption, alt: t.freins.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 40, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

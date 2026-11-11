@@ -22,7 +22,6 @@ export default function MobileAppBlog() {
         <title>{blog.metaTitle}</title>
         <meta name="description" content={blog.metaDescription} />
         <meta name="keywords" content={blog.tags.join(', ')} />
-        <link rel="canonical" href={`https://symloop.com/blog/${blog.slug}`} />
         <meta property="og:title" content={blog.title} />
         <meta property="og:description" content={blog.excerpt} />
         <meta property="og:type" content="article" />

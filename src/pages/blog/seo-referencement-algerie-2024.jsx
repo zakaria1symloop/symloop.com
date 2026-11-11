@@ -55,7 +55,7 @@ export default function SeoAlgerie() {
     {
       "@type": "Question",
       "name": "Quelle agence SEO choisir en Algérie ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Sétif, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Choisissez une agence SEO algérienne qui connaît le marché local, propose un audit gratuit, partage des études de cas vérifiables et offre un suivi mensuel transparent. Symloop, basée à Alger, accompagne des entreprises dans toute l'Algérie avec des résultats mesurables et un reporting détaillé." }
     },
     {
       "@type": "Question",
@@ -261,7 +261,6 @@ export default function SeoAlgerie() {
         <title>SEO & Référencement Algérie 2024 | Agence SEO Alger - Symloop</title>
         <meta name="description" content="Expert SEO en Algérie. Audit SEO, référencement Google, optimisation site web. Dominez la première page Google avec notre agence SEO à Alger. Devis gratuit." />
         <meta name="keywords" content="seo algérie, référencement google algérie, agence seo alger, optimisation site web, première page google, audit seo algérie, mots-clés algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/seo-referencement-algerie-2024" />
         <meta property="og:title" content="SEO & Référencement Algérie 2024 | Agence SEO Alger" />
         <meta property="og:description" content="Expert SEO en Algérie. Audit SEO, référencement Google, optimisation site web. Dominez la première page Google." />
         <meta property="og:type" content="article" />
@@ -276,7 +275,7 @@ export default function SeoAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

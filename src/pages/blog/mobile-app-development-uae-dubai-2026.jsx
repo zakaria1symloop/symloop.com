@@ -632,7 +632,6 @@ export default function MobileAppDevelopmentUaeDubai2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.seoKeywords?.join(', ')} />
-        <link rel="canonical" href="https://symloop.com/blog/mobile-app-development-uae-dubai-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
@@ -650,10 +649,6 @@ export default function MobileAppDevelopmentUaeDubai2026() {
         <meta name="author" content="Symloop" />
         <meta name="geo.region" content="AE" />
         <meta name="geo.placename" content="Dubai" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/mobile-app-development-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/mobile-app-development-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/mobile-app-development-uae-dubai-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/blog/mobile-app-development-uae-dubai-2026" />
 
         {/* Article JSON-LD */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
