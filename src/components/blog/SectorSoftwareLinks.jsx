@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-superette-supermarche-algerie-2027-caisse-hors-ligne-code-barres-balance-dlc-marge-cloture', fr: 'Logiciel supérette et supermarché en Algérie', en: 'Convenience store and supermarket software in Algeria', ar: 'برنامج سوبيرات وسوبرماركت في الجزائر' },
   { slug: 'logiciel-auto-ecole-algerie-2027-planning-moniteurs-vehicules-heures-comptees-tranches-code-en-ligne', fr: 'Logiciel auto-école en Algérie', en: 'Driving school software in Algeria', ar: 'برنامج مدرسة سياقة في الجزائر' },
   { slug: 'logiciel-creche-algerie-2027-inscriptions-pointage-mensualites-journal-parents-liste-d-attente', fr: 'Logiciel crèche en Algérie', en: 'Nursery software in Algeria', ar: 'برنامج روضة أطفال في الجزائر' },
   { slug: 'creer-application-salle-de-sport-algerie-2027-abonnement-acces-renouvellement', fr: 'Logiciel salle de sport en Algérie', en: 'Gym management software in Algeria', ar: 'برنامج تسيير قاعة رياضة في الجزائر' },
