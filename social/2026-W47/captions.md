@@ -12,7 +12,7 @@ Images: `day1-same-list-en.jpg` (English) · `day1-same-list-ar.jpg` (Arabic)
 
 ### LinkedIn (English)
 
-We asked search engines one question 3,816 times: “software development company in…”, and let them finish the sentence.
+We sent two search engines 3,816 requests: phrases a buyer types, such as “software development company in…”, in four languages. Then we let them finish the sentence.
 
 First result of our first study: a buyer in Riyadh, Dubai or Doha is handed the same list as a buyer in London or New York. On Google, the 1,309 letter-by-letter suggestions are identical in all five markets.
 
@@ -25,7 +25,7 @@ https://symloop.com/blog/outsourcing-map-2027-what-search-engines-show-software-
 
 ### Facebook (Arabic)
 
-طرحنا على محركات البحث سؤالاً واحداً 3,816 مرة: «software development company in…»، وتركناها تُكمل الجملة.
+أرسلنا إلى محرّكَي بحث 3,816 طلباً: عبارات يكتبها المشتري، مثل «software development company in…»، بأربع لغات. ثم تركناهما يُكملان الجملة.
 
 أول نتيجة في أول دراسة لنا: المشتري في الرياض أو دبي أو الدوحة يتلقى القائمة نفسها التي يتلقاها المشتري في لندن أو نيويورك. عند غوغل، الاقتراحات الـ1,309 مطابقة في الأسواق الخمسة.
 
@@ -40,7 +40,7 @@ https://symloop.com/ar/blog/outsourcing-map-2027-what-search-engines-show-softwa
 
 Same list in five capitals.
 
-We asked search engines “software development company in…” 3,816 times. In Riyadh, Dubai, Doha, London and New York, Google completes it with the same 1,309 suggestions.
+We sent search engines 3,816 requests built on phrases like “software development company in…”. In Riyadh, Dubai, Doha, London and New York, Google completes the English ones with the same 1,309 suggestions.
 
 One map per language, not per country.
 
@@ -51,7 +51,7 @@ https://symloop.com/blog/outsourcing-map-2027-what-search-engines-show-software-
 
 القائمة نفسها في خمس عواصم.
 
-سألنا محركات البحث «software development company in…» 3,816 مرة. في الرياض ودبي والدوحة ولندن ونيويورك، يُكملها غوغل بالاقتراحات الـ1,309 نفسها.
+أرسلنا إلى محركات البحث 3,816 طلباً مبنياً على عبارات مثل «software development company in…». في الرياض ودبي والدوحة ولندن ونيويورك، يُكمل غوغل العبارات الإنجليزية بالاقتراحات الـ1,309 نفسها.
 
 خريطة لكل لغة، لا لكل بلد.
 
