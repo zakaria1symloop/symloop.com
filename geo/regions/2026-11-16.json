@@ -1,0 +1,6357 @@
+{
+ "date": "2026-11-16",
+ "calls": 244,
+ "method": "Google suggest (client=firefox, gl per country) + Bing osjson (market per country); seeds listed in scripts/seo/listen-regions.mjs; a suggestion is a phrase the engine proposes, not a search volume",
+ "countries": {
+  "sa": {
+   "name": "Saudi Arabia",
+   "total": 150,
+   "counts": {
+    "other": 75,
+    "place": 29,
+    "ranking": 22,
+    "price": 24,
+    "outsourcing": 11
+   },
+   "rows": [
+    {
+     "q": "شركة برمجة",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة تطبيقات",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات الجوال",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة في الأردن",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق الكتروني",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق جوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات الرياض",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "برمجة متجر الكتروني",
+     "hl": "ar",
+     "seed": "برمجة متجر الكتروني",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة طلبات العلاج",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي بالانجليزي",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in india",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "mobile app development company in saudi arabia",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "app development cost in india",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in india",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "custom software development",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "custom software development company",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "it outsourcing company",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في السعودية",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات الجوال",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في الكويت",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في مصر",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق جاهز",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق جوال بالذكاء الاصطناعي",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "برمجة متجر الكتروني من الصفر",
+     "hl": "ar",
+     "seed": "برمجة متجر الكتروني",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة التعلم كليات الخليج",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعة الزقازيق",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in usa",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in chennai",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost breakdown",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in bangladesh",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development services",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing guidelines rbi",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الرياض",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات الجوال في السعودية",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة تطبيقات",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة متجر الكتروني متكامل",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق متجر الكتروني",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق جوال مجاني",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات جدة",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "نظام ادارة التعلم",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعة عين شمس",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in noida",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in noida",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost calculator",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in the world",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development company in india",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "it outsourcing meaning",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة بلا حدود",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة تطوير تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات الجوال صنعاء اليمن",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة متجر إلكتروني",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق توصيل",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تكلفة تصميم تطبيق جوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات الخبر",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة التعلم دبلومات كليات الخليج",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعة حلوان",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in bangalore",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in india",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost calculator india",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in bangalore",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development company in usa",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing services",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في مصر",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في العراق",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في السعودية",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم واجهة تطبيق جوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات الدمام",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "نظام ادارة طلبات العلاج وزارة الصحة",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعة طنطا",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in pune",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in dubai",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost in pakistan",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in hyderabad",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development cost",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "it outsourcing guidelines rbi 2025",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة تطبيقات في مصر",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في اليمن",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في سوريا",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق مثل اوبر",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "خطوات تصميم تطبيق جوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات للبيع",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة التعلم جامعة الملك سعود",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي حلوان",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in ahmedabad",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in usa",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost uk",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in bhubaneswar",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development in usa",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing company in malaysia",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في سوريا",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في السعودية",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق توصيل طلبات",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تكلفة تصميم تطبيق جوال في السعودية",
+     "hl": "ar",
+     "seed": "تصميم تطبيق جوال",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تقنية معلومات في السعودية",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "نظام إدارة النفايات",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعة القاهرة",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in mumbai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in hyderabad",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost in australia",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in kolkata",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development agency",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing companies in india",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "place",
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الاردن",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في سوريا",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في الرياض",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق اوبر",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "بروفايل شركة تقنية معلومات",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة الرواتب مدد",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعه السادات",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in jaipur",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in bangalore",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost malaysia",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in lucknow",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development icon",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing companies in singapore",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الفيوم",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في دبي",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق سلة",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تأسيس شركة تقنية معلومات",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة الفعاليات جامعة الملك عبدالعزيز",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي pdf",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in chennai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in pune",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost philippines",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in pune",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development images",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing là gì",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "شركة برمجة في المنصورة",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تصميم تطبيقات في الامارات",
+     "hl": "ar",
+     "seed": "شركة تصميم تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة تطبيقات في السعودية",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تطبيق تكلفة بناء منزل في الجزائر",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "شعار شركة تقنية معلومات",
+     "hl": "ar",
+     "seed": "شركة تقنية معلومات",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "نظام ادارة الاموال المحجوزة",
+     "hl": "ar",
+     "seed": "نظام ادارة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تحول رقمي جامعة الفيوم",
+     "hl": "ar",
+     "seed": "تحول رقمي",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in kolkata",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in coimbatore",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "how much does it cost to design an app",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in ahmedabad",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development near me",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "it outsourcing in uae",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "place",
+      "outsourcing"
+     ]
+    }
+   ]
+  },
+  "ae": {
+   "name": "United Arab Emirates",
+   "total": 136,
+   "counts": {
+    "place": 30,
+    "other": 63,
+    "price": 22,
+    "ranking": 22,
+    "outsourcing": 11
+   },
+   "rows": [
+    {
+     "q": "software development company in dubai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "mobile app development company in dubai",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "app development cost in india",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in uae",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "custom software development company",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing in uae",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place",
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "ai development company in india",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "erp software",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software meaning",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة تطبيقات",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة في الأردن",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق جاهز",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيقات الجوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بالذكاء الاصطناعي",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in india",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "mobile app development company",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in chennai",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost breakdown",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in india",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "custom software development",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "custom software development services",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing companies in uae",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place",
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in usa",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software uae",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة برمجة في مصر",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات الجوال",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في مصر",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق الكتروني",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بالذكاء الاصطناعي مجانا",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in usa",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in noida",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost calculator",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in bangladesh",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development company in india",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "it outsourcing",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "it outsourcing company",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in chennai",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software full form",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في السعودية",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات الجوال في السعودية",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة تطبيقات",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق متجر الكتروني",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق مجاني",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in noida",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in india",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost calculator india",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in the world",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development company in usa",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing guidelines rbi",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in uk",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software list",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة تطبيقات في مصر",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "افضل شركة تطوير تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق توصيل",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيقات",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بنكك",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in bangalore",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in usa",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost in pakistan",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in bangalore",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development cost",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "it outsourcing meaning",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in bangalore",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software examples",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في سوريا",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في السعودية",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق جوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in pune",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in hyderabad",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost uk",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in hyderabad",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development in usa",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing services",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in dubai",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "erp software dubai",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الرياض",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في سوريا",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق مثل اوبر",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق اندرويد مجاني",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in ahmedabad",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in bangalore",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost in australia",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in bhubaneswar",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development agency",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing guidelines rbi 2025",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in australia",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software names",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الاردن",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة متجر الكتروني متكامل",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق توصيل طلبات",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق اندرويد",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in mumbai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in saudi arabia",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost malaysia",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in kolkata",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development icon",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing company in malaysia",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in mohali",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software companies in dubai",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الفيوم",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في الرياض",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق اوبر",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيقات بالذكاء الاصطناعي مجانا",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق اندرويد بالذكاء الاصطناعي",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in jaipur",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in pune",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost philippines",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in lucknow",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development images",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it outsourcing companies in india",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "place",
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in noida",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software course",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة بلا حدود",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة متجر إلكتروني",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تكلفة تطبيق سلة",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بنك",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in chennai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in coimbatore",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "how much does it cost to design an app",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in pune",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development near me",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "it outsourcing companies in singapore",
+     "hl": "en",
+     "seed": "it outsourcing",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "ai development company in jaipur",
+     "hl": "en",
+     "seed": "ai development company",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "erp software companies in uae",
+     "hl": "en",
+     "seed": "erp software",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة برمجة في المنصورة",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة تطبيقات في السعودية",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تطبيق تكلفة بناء منزل في الجزائر",
+     "hl": "ar",
+     "seed": "تكلفة تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق صور",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    }
+   ]
+  },
+  "qa": {
+   "name": "Qatar",
+   "total": 104,
+   "counts": {
+    "place": 23,
+    "other": 56,
+    "price": 12,
+    "ranking": 22
+   },
+   "rows": [
+    {
+     "q": "software development company in india",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "mobile app development company in qatar",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "app development cost in india",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in qatar",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "custom software development",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "custom software development company",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in doha",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة برمجة",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة تطبيقات",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة في الأردن",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بالذكاء الاصطناعي",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in usa",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in chennai",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost breakdown",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in india",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "custom software development services",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in india",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة برمجة في مصر",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات الجوال",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في مصر",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بالذكاء الاصطناعي مجانا",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in noida",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in noida",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost calculator",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in bangladesh",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development company in india",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "it company in bangalore",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في السعودية",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "شركة تطوير تطبيقات الجوال في السعودية",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة تطبيقات",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تصميم تطبيقات",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق مجاني",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in bangalore",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in india",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost calculator india",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in the world",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development company in usa",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in pune",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة تطبيقات في مصر",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "افضل شركة تطوير تطبيقات",
+     "hl": "ar",
+     "seed": "شركة تطوير تطبيقات",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تصميم تطبيقات الجوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بنكك",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in pune",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in dubai",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost in pakistan",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "best software company in bangalore",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development cost",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "it company in noida",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في سوريا",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في السعودية",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق جوال",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in ahmedabad",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in usa",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost uk",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in hyderabad",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development in usa",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in indore",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in chennai",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الرياض",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في سوريا",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق اندرويد مجاني",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in mumbai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in hyderabad",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost in australia",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in bhubaneswar",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development agency",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in ahmedabad",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الاردن",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة متجر الكتروني متكامل",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق اندرويد",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in jaipur",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in bangalore",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "app development cost malaysia",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in kolkata",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development icon",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in philippines",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في الفيوم",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "افضل شركة برمجة في الرياض",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تصميم تطبيقات بالذكاء الاصطناعي مجانا",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق اندرويد بالذكاء الاصطناعي",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in chennai",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in saudi arabia",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "app development cost philippines",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in lucknow",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development images",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "it company in kolkata",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة بلا حدود",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة متجر إلكتروني",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق بنك",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software development company in kolkata",
+     "hl": "en",
+     "seed": "software development company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "mobile app development company in pune",
+     "hl": "en",
+     "seed": "mobile app development company",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "how much does it cost to design an app",
+     "hl": "en",
+     "seed": "app development cost",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "best software company in pune",
+     "hl": "en",
+     "seed": "best software company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "custom software development near me",
+     "hl": "en",
+     "seed": "custom software development",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "it company in coimbatore",
+     "hl": "en",
+     "seed": "it company in",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "شركة برمجة في المنصورة",
+     "hl": "ar",
+     "seed": "شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "أفضل شركة برمجة تطبيقات في السعودية",
+     "hl": "ar",
+     "seed": "أفضل شركة برمجة",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "ranking",
+      "place"
+     ]
+    },
+    {
+     "q": "تصميم تطبيق صور",
+     "hl": "ar",
+     "seed": "تصميم تطبيق",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "name": "France",
+   "total": 60,
+   "counts": {
+    "place": 15,
+    "other": 27,
+    "price": 5,
+    "outsourcing": 12,
+    "ranking": 3
+   },
+   "rows": [
+    {
+     "q": "agence développement application mobile paris",
+     "hl": "fr",
+     "seed": "agence développement application mobile",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "création application mobile prix",
+     "hl": "fr",
+     "seed": "développement application mobile prix",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "agence développement web",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence developpement web",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "developpeur offshore",
+     "hl": "fr",
+     "seed": "développeur offshore",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "developpement nearshore",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "prestataire developpement logiciel",
+     "hl": "fr",
+     "seed": "prestataire développement logiciel",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "best development agency",
+     "hl": "fr",
+     "seed": "meilleure agence développement",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "développement logiciel sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence de développement social algérie",
+     "hl": "fr",
+     "seed": "agence développement algérie",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "agence de développement algerie",
+     "hl": "fr",
+     "seed": "agence développement algérie",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "créer une application",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application gratuitement",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence developpement application mobile nantes",
+     "hl": "fr",
+     "seed": "agence développement application mobile",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "développeur application mobile prix",
+     "hl": "fr",
+     "seed": "développement application mobile prix",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "agence développement web paris",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "dev offshore",
+     "hl": "fr",
+     "seed": "développeur offshore",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "nearshore development",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "service développement logiciel",
+     "hl": "fr",
+     "seed": "prestataire développement logiciel",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "top development agency",
+     "hl": "fr",
+     "seed": "meilleure agence développement",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "développeur logiciel sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence française de développement algerie",
+     "hl": "fr",
+     "seed": "agence développement algérie",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "créer une application mobile",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence développement application mobile maroc",
+     "hl": "fr",
+     "seed": "agence développement application mobile",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "prix développement application mobile maroc",
+     "hl": "fr",
+     "seed": "développement application mobile prix",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "agence développement web lyon",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "développement offshore",
+     "hl": "fr",
+     "seed": "développeur offshore",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "nearshore development services",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "service developpement informatique",
+     "hl": "fr",
+     "seed": "prestataire développement logiciel",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "best dev agency",
+     "hl": "fr",
+     "seed": "meilleure agence développement",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "développement informatique sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application avec ia gratuit",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence création application mobile",
+     "hl": "fr",
+     "seed": "agence développement application mobile",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "prix développement application mobile tunisie",
+     "hl": "fr",
+     "seed": "développement application mobile prix",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price",
+      "place"
+     ]
+    },
+    {
+     "q": "agence développement web bordeaux",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "developer offshore",
+     "hl": "fr",
+     "seed": "développeur offshore",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "nearshore development center",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "prix développement logiciel sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "créer une application mobile gratuitement",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "entreprise développement application mobile",
+     "hl": "fr",
+     "seed": "agence développement application mobile",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence développement web nantes",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "nearshore development team",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "développement logiciel métier sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application android",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "entreprise création application mobile",
+     "hl": "fr",
+     "seed": "agence développement application mobile",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence developpement web tunisie",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "nearshore development company",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "agence de développement logiciel sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application gratuitement en français",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence developpement web toulouse",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "nearshore dev",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "logiciel conception meuble sur mesure",
+     "hl": "fr",
+     "seed": "développement logiciel sur mesure",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application avec claude",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence développement web maroc",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "nearshore development meaning",
+     "hl": "fr",
+     "seed": "nearshore développement",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "créer une application android et ios gratuitement",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence developpement web madagascar",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application sans coder gratuitement",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "agence développement web et mobile",
+     "hl": "fr",
+     "seed": "agence développement web",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "créer une application android gratuitement",
+     "hl": "fr",
+     "seed": "créer une application",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    }
+   ]
+  },
+  "es": {
+   "name": "Spain",
+   "total": 71,
+   "counts": {
+    "other": 34,
+    "place": 4,
+    "price": 31,
+    "outsourcing": 1,
+    "ranking": 1
+   },
+   "rows": [
+    {
+     "q": "empresa desarrollo software",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles pdf",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo app precio",
+     "hl": "es",
+     "seed": "desarrollo app precio",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo apps moviles",
+     "hl": "es",
+     "seed": "empresa desarrollo apps",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "outsourcing desarrollo de software",
+     "hl": "es",
+     "seed": "outsourcing desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "outsourcing"
+     ]
+    },
+    {
+     "q": "mejor empresa de desarrollo de software",
+     "hl": "es",
+     "seed": "mejor empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "ranking"
+     ]
+    },
+    {
+     "q": "software a medida",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida para empresas",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuánto cuesta una apple",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta subir una app a play store",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 0,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo software madrid",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles multiplataforma",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "empresa desarrollo apps",
+     "hl": "es",
+     "seed": "empresa desarrollo apps",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida ejemplos",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuánto cuesta una app",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app para mi negocio",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "apple music cuánto cuesta",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 1,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo software a medida",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles ejemplos",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuánto cuesta una apple card",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app movil",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "apple tv cuánto cuesta",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 2,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo software barcelona",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones moviles",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida barcelona",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "cuánto cuesta una apple watch",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app en iphone",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta desarrollar una app",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 3,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo software argentina",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles android trainee",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones moviles curso",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida chile",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una apple tablet",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app en colombia",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta hacer una app",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 4,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo software chile",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles con android pdf",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones moviles en venezuela",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida madrid",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "place"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una apple laptop",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app de ia",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta desarrollar una app en méxico",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 5,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo de software colombia",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles para android",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones moviles mep",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida en ingles",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app.web",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta crear una app",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 6,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "organigrama empresa desarrollo software",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles y su impacto en el mercado",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones moviles android",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida peru",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuánto cuesta una apple pencil",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app en argentina",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta crear una aplicacion",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 7,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo de software cordoba",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles en venezuela",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones moviles nativas escom",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida argentina",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app como uber",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "precio para crear una app",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 8,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "empresa desarrollo de software medellin",
+     "hl": "es",
+     "seed": "empresa desarrollo software",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "desarrollo de aplicaciones móviles carrera",
+     "hl": "es",
+     "seed": "desarrollo de aplicaciones móviles",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "software a medida ecuador",
+     "hl": "es",
+     "seed": "software a medida",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "other"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una apple computadora",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuanto cuesta una app en ecuador",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "google"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta hacer una app en méxico",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 9,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta hacer una aplicación",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 10,
+     "classes": [
+      "price"
+     ]
+    },
+    {
+     "q": "cuánto cuesta crear una app en perú",
+     "hl": "es",
+     "seed": "cuánto cuesta una app",
+     "engines": [
+      "bing"
+     ],
+     "best": 11,
+     "classes": [
+      "price"
+     ]
+    }
+   ]
+  }
+ }
+}
