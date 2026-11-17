@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "270",
+    slug: "partage-de-fichiers-entreprise-algerie-2027-serveur-de-fichiers-nas-ou-cloud-droits-par-dossier-versions-acces-a-distance",
+    title: "Partage de fichiers en entreprise en Algérie (2027) : serveur de fichiers, NAS ou cloud, droits par dossier et versions, quand le même devis existe en sept exemplaires",
+    subtitle: "Un devis retrouvé à sept endroits, la course d'un fichier de 200 Mo selon le débit montant, bureau ou en ligne en six critères, cinq couches, un déménagement en six gestes et quatre semaines",
+    excerpt: "« Nos fichiers sont partout : sur chaque poste, sur des clés USB, dans WhatsApp et dans les boîtes mail. Il y a quatre versions du même devis et personne ne sait laquelle est partie chez le client. Faut-il acheter un serveur, un NAS, ou tout mettre en ligne ? » La bonne question vient avant le matériel : un seul endroit pour chaque fichier, des droits donnés à des groupes, des versions qu'on peut reprendre, un accès de l'extérieur qui n'expose rien, et une sauvegarde à part. Le choix du lieu se fait ensuite, avec un seul chiffre : le débit montant.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["partage de fichiers", "serveur de fichiers", "NAS", "cloud entreprise", "droits d'accès"],
+    metaTitle: "Partage de fichiers en entreprise Algérie 2027 : serveur de fichiers, NAS ou cloud, droits, versions | Symloop",
+    metaDescription: "Partage de fichiers en entreprise en Algérie en 2027 : un seul endroit par fichier, arborescence par service et par projet, droits donnés à des groupes, versions et corbeille, accès de l'extérieur par tunnel chiffré ou espace en ligne, sauvegarde indépendante. Serveur de fichiers ou NAS au bureau, espace en ligne, ou les deux : le calcul par le débit montant (un fichier de 200 Mo : 2 secondes au bureau, 2 min 40 s à 10 Mbit/s, 13 min 20 s à 2 Mbit/s ; 300 Go : de 13 heures à 14 jours). Déménagement en six gestes, mise en place en quatre semaines.",
+    translations: {
+      en: { title: "File sharing in a company in Algeria (2027): file server, NAS or cloud, rights per folder and versions, for when the same quotation exists in seven copies", subtitle: "One quotation found in seven places, the race of a 200 MB file by upload rate, office or online on six criteria, five layers, a move in six steps and four weeks", excerpt: "“Our files are everywhere: on every computer, on USB keys, in WhatsApp and in mailboxes. There are four versions of the same quotation and nobody knows which one went to the customer. Should we buy a server, a NAS, or put everything online?” The right question comes before the hardware: one place for each file, rights given to groups, versions you can go back to, access from outside that exposes nothing, and a separate backup. The choice of place comes after, with a single figure: the upload rate." },
+      ar: { title: "مشاركة الملفات في المؤسسة في الجزائر (2027): خادم ملفات، تخزين شبكي أم سحابة، صلاحيات لكل مجلد وإصدارات، حين يوجد عرض السعر نفسه في سبع نسخ", subtitle: "عرض سعر في سبعة أماكن، سباق ملف من 200 ميغا حسب تدفق الرفع، المكتب أم الإنترنت في ستة معايير، خمس طبقات، ترحيل في ست خطوات وأربعة أسابيع", excerpt: "«ملفاتنا في كل مكان: على كل حاسوب، على مفاتيح USB، في واتساب وفي علب البريد. عندنا أربعة إصدارات لعرض السعر نفسه ولا أحد يعرف أيها ذهب إلى الزبون. هل نشتري خادماً، أم جهاز تخزين شبكي، أم نضع كل شيء على الإنترنت؟» السؤال الصحيح يأتي قبل العتاد: مكان واحد لكل ملف، صلاحيات تُعطى لمجموعات، إصدارات يمكن الرجوع إليها، وصول من الخارج لا يعرض شيئاً للخطر، ونسخ احتياطي مستقل. واختيار المكان يأتي بعد ذلك، برقم واحد: تدفق الرفع." }
+    }
+  },
+  {
     id: "269",
     slug: "logiciel-entreprise-batiment-btp-algerie-2027-devis-metre-suivi-de-chantier-situations-de-travaux-achats-pointage-marge-par-chantier",
     title: "Logiciel pour entreprise de bâtiment en Algérie (2027) : devis, suivi de chantier, achats et situations de travaux, quand on découvre la perte à la fin du chantier",
