@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "266",
+    slug: "piratage-entreprise-algerie-2027-boite-mail-piratee-faux-rib-fournisseur-que-faire-premiere-heure-double-verification-regles-de-transfert",
+    title: "Piratage en entreprise en Algérie (2027) : boîte mail piratée et faux RIB du fournisseur, que faire dans l'heure et comment fermer la porte",
+    subtitle: "Six situations réelles, le fil de discussion où un seul message est faux, ce que le journal de la boîte disait déjà, les sept gestes de la première heure, le changement de RIB en six gestes, cinq couches et quatre semaines",
+    excerpt: "« Notre fournisseur nous réclame une facture que nous avons payée il y a deux jours. Nous avions reçu un mail de sa comptabilité avec un nouveau RIB, dans la même conversation, avec le bon numéro de facture. » Ce n'est pas un virus : quelqu'un est entré dans une boîte avec un mot de passe volé, a lu pendant un mois, puis a écrit au bon moment. La réponse tient en une heure de gestes dans l'ordre, puis en deux règles : une seconde preuve à la connexion, et aucun RIB changé sans un rappel téléphonique.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["piratage entreprise", "boîte mail piratée", "fraude au faux RIB", "double vérification", "cybersécurité"],
+    metaTitle: "Piratage en entreprise Algérie 2027 : boîte mail piratée, faux RIB du fournisseur, que faire dans l'heure | Symloop",
+    metaDescription: "Piratage en entreprise en Algérie en 2027 : que faire quand une boîte mail est piratée (sept gestes dans l'heure : mot de passe, sessions, règles et transferts, double vérification, banque, contacts, preuves), comment fonctionne la fraude au faux RIB du fournisseur (domaine à une lettre près, règle cachée dans la boîte, réponse dans le fil), et comment fermer la porte : seconde preuve liée au site, alertes de connexion, aucun changement de RIB sans rappel au numéro connu et deuxième validation. Exemple : boîte ouverte 31 jours, facture de 3 240 000 DA.",
+    translations: {
+      en: { title: "A company hacked in Algeria (2027): a hacked mailbox and forged supplier bank details, what to do within the hour and how to close the door", subtitle: "Six real situations, the email thread where only one message is forged, what the mailbox log was already saying, the seven actions of the first hour, changing bank details in six steps, five layers and four weeks", excerpt: "“Our supplier is chasing an invoice we paid two days ago. We had received an email from their accounts department with new bank details, in the same conversation, with the right invoice number.” This is not a virus: someone got into a mailbox with a stolen password, read for a month, then wrote at the right moment. The answer is one hour of actions in order, then two rules: a second proof at sign-in, and no bank details changed without a phone call." },
+      ar: { title: "اختراق المؤسسة في الجزائر (2027): علبة بريد مخترَقة وحساب بنكي مزوَّر للمورِّد، ماذا نفعل في الساعة الأولى وكيف نغلق الباب", subtitle: "ست حالات واقعية، سلسلة الرسائل التي فيها رسالة واحدة مزوَّرة، ما كان سجل العلبة يقوله من قبل، الحركات السبع في الساعة الأولى، تغيير الحساب البنكي في ست خطوات، خمس طبقات وأربعة أسابيع", excerpt: "«مورِّدنا يطالبنا بفاتورة دفعناها قبل يومين. كنا تلقّينا رسالة من محاسبته بحساب بنكي جديد، في المحادثة نفسها، وبرقم الفاتورة الصحيح.» هذا ليس فيروساً: أحدهم دخل علبة بكلمة مرور مسروقة، وقرأ شهراً، ثم كتب في الوقت المناسب. والجواب ساعة من الحركات بالترتيب، ثم قاعدتان: إثبات ثانٍ عند الدخول، ولا تغيير لحساب بنكي دون مكالمة هاتفية." }
+    }
+  },
+  {
     id: "265",
     slug: "application-qui-plante-algerie-2027-pourquoi-elle-se-ferme-chez-vos-clients-rapports-de-plantage-taux-sans-plantage-telephones-modestes",
     title: "Application qui plante chez vos clients en Algérie (2027) : rapports de plantage, causes classées et téléphones modestes, quand « chez nous, elle marche »",
