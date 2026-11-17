@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "257",
+    slug: "standard-telephonique-ip-entreprise-algerie-2027-ipbx-lignes-postes-menu-vocal-file-d-attente-appels-manques-crm",
+    title: "Standard téléphonique IP d'entreprise en Algérie (2027) : lignes, IPBX, postes, accueil vocal, file d'attente et appels manqués rappelés, quand les clients tombent sur « occupé »",
+    subtitle: "Six situations réelles, l'heure de pointe comptée en erlangs avec la part d'appels refusés selon le nombre de lignes, cinq couches dont les règles d'accueil, le trajet d'un appel seconde par seconde, six décisions avant de commander et le calendrier 2027 en quatre semaines",
+    excerpt: "« Les clients nous disent qu'ils appellent et que ça sonne occupé. Le standard a quinze ans et plus personne ne sait le programmer. Quand la standardiste est en pause, personne ne répond, et on ne sait pas combien d'appels on rate. » Un standard téléphonique, ce sont des canaux comptés à l'heure de pointe, des règles d'accueil, des postes et des mobiles sur le même numéro, et un journal qui dit le soir ce que le téléphone a fait.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["standard téléphonique", "téléphonie IP", "IPBX", "accueil vocal", "appels manqués"],
+    metaTitle: "Standard téléphonique IP entreprise Algérie 2027 : lignes, IPBX, accueil vocal, appels manqués rappelés | Symloop",
+    metaDescription: "Standard téléphonique IP d'entreprise en Algérie en 2027, ce qu'on installe : canaux comptés à l'heure de pointe (48 appels de 2 min 30 = 2 erlangs ; 40 % d'appels refusés avec 2 lignes, environ 1 % avec 6), IPBX sur site ou hébergé, téléphones IP, application mobile et sans-fil, accueil vocal, groupes, file d'attente, débordement, messagerie par e-mail, journal des appels et liste des rappels, liaison avec le CRM ou l'ERP. Six décisions avant de commander, calendrier en quatre semaines.",
+    translations: {
+      en: { title: "Business IP phone system in Algeria (2027): lines, IP PBX, handsets, voice menu, queue and missed calls called back, for when customers get the busy tone", subtitle: "Six real situations, the busy hour counted in erlangs with the share of calls refused by number of lines, five layers including greeting rules, the path of a call second by second, six decisions before ordering and the 2027 calendar in four weeks", excerpt: "“Customers tell us they call and it rings busy. The phone system is fifteen years old and nobody knows how to program it any more. When the receptionist is on break nobody answers, and we do not know how many calls we miss.” A phone system is channels counted at the busy hour, greeting rules, desk phones and mobiles on the same number, and a log that says in the evening what the phone did." },
+      ar: { title: "مقسّم هاتفي IP للمؤسسة في الجزائر (2027): الخطوط، المقسّم، الهواتف، القائمة الصوتية، طابور الانتظار ومعاودة الاتصال بالمكالمات الفائتة، حين يسمع الزبائن «مشغول»", subtitle: "ست حالات واقعية، ساعة الذروة محسوبة بالإرلانغ مع حصة المكالمات المرفوضة حسب عدد الخطوط، خمس طبقات منها قواعد الاستقبال، مسار مكالمة ثانية بثانية، ستة قرارات قبل الطلب، وتقويم 2027 في أربعة أسابيع", excerpt: "«الزبائن يقولون لنا إنهم يتصلون فيسمعون مشغول. المقسّم عمره خمس عشرة سنة ولم يعد أحد يعرف برمجته. حين تكون موظفة الاستقبال في استراحة لا يردّ أحد، ولا نعرف كم مكالمة تفوتنا.» المقسّم الهاتفي هو قنوات محسوبة في ساعة الذروة، وقواعد استقبال، وهواتف مكتبية ومحمولة على الرقم نفسه، وسجل يقول في المساء ما فعله الهاتف." }
+    }
+  },
+  {
     id: "256",
     slug: "installation-reseau-informatique-entreprise-algerie-2027-cablage-baie-de-brassage-switch-wifi-pare-feu-lien-de-secours",
     title: "Installation réseau informatique d'entreprise en Algérie (2027) : câblage, baie de brassage, switchs, Wi-Fi, pare-feu et lien de secours quand le réseau rame et que tout s'arrête",
