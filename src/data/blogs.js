@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "269",
+    slug: "logiciel-entreprise-batiment-btp-algerie-2027-devis-metre-suivi-de-chantier-situations-de-travaux-achats-pointage-marge-par-chantier",
+    title: "Logiciel pour entreprise de bâtiment en Algérie (2027) : devis, suivi de chantier, achats et situations de travaux, quand on découvre la perte à la fin du chantier",
+    subtitle: "Un chantier à la semaine 9 (40 % réalisé, 45,6 % dépensé), six situations réelles, le prix d'un ouvrage décomposé, une situation de travaux en six temps, cinq couches et la mise en place en cinq semaines",
+    excerpt: "« J'ai quatre chantiers en même temps. Mes devis sont faits sur un tableur, le ciment est commandé par trois personnes, les ouvriers sont pointés sur des cahiers, et c'est au dernier décompte que je découvre si le chantier a gagné ou perdu de l'argent. » Ce qui manque n'est pas un logiciel de devis de plus : c'est un budget par chantier, tiré du devis, auquel chaque achat et chaque heure sont rattachés le jour même, pour lire la marge chaque semaine pendant qu'il est encore temps de la corriger.",
+    category: "Software", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["logiciel bâtiment", "gestion de chantier", "devis et métré", "situations de travaux", "BTP"],
+    metaTitle: "Logiciel entreprise de bâtiment Algérie 2027 : devis, suivi de chantier, achats, situations de travaux | Symloop",
+    metaDescription: "Logiciel pour entreprise de bâtiment et de travaux publics en Algérie en 2027 : étude de prix par ouvrage (déboursé sec et coefficient), budget par chantier et par lot tiré du devis signé, achats, pointage, matériel et sous-traitants rattachés au chantier depuis le téléphone, situations de travaux calculées sur les quantités réalisées, marge projetée chaque semaine. Exemple : chantier de 20 semaines, 40 % réalisé pour 45,6 % dépensé à la semaine 9, marge prévue de 1,2 million qui disparaît ; un mètre carré de mur à 2 553 DA décomposé. Mise en place en cinq semaines.",
+    translations: {
+      en: { title: "Software for a construction company in Algeria (2027): quotations, site tracking, purchases and progress claims, for when the loss is discovered at the end of the site", subtitle: "One site at week 9 (40 % done, 45.6 % spent), six real situations, the price of one item of work broken down, a progress claim in six steps, five layers and a five-week set-up", excerpt: "“I have four sites running at once. My quotations are made in a spreadsheet, cement is ordered by three people, workers are clocked in notebooks, and it is at the final account that I find out whether the site made or lost money.” What is missing is not one more quotation tool: it is a budget per site, taken from the quotation, to which every purchase and every hour is booked the same day, so that the margin can be read every week while there is still time to correct it." },
+      ar: { title: "برنامج لمؤسسة البناء في الجزائر (2027): عروض السعر، متابعة الورشة، المشتريات ووضعيات الأشغال، حين تُكتشف الخسارة عند نهاية الورشة", subtitle: "ورشة في الأسبوع 9 (أُنجز 40 بالمئة وصُرف 45,6 بالمئة)، ست حالات واقعية، سعر عمل واحد مفصَّلاً، وضعية الأشغال في ست مراحل، خمس طبقات، والوضع في الخدمة في خمسة أسابيع", excerpt: "«عندي أربع ورشات في الوقت نفسه. عروض أسعاري تُعدّ في جدول، الإسمنت يطلبه ثلاثة أشخاص، العمال يُسجَّل حضورهم في دفاتر، وعند الكشف الأخير أكتشف إن كانت الورشة ربحت أو خسرت.» ما ينقص ليس برنامج عروض سعر إضافياً: هو ميزانية لكل ورشة، مأخوذة من عرض السعر، يُربط بها كل شراء وكل ساعة في اليوم نفسه، ليُقرأ الهامش كل أسبوع والوقت ما زال يسمح بتصحيحه." }
+    }
+  },
+  {
     id: "268",
     slug: "serveur-lent-entreprise-algerie-2027-logiciel-qui-rame-le-matin-memoire-disques-sauvegarde-en-pleine-journee-mesurer-avant-de-remplacer",
     title: "Serveur lent en entreprise en Algérie (2027) : pourquoi le logiciel rame tous les matins, et quoi mesurer avant d'en acheter un autre",

@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-entreprise-batiment-btp-algerie-2027-devis-metre-suivi-de-chantier-situations-de-travaux-achats-pointage-marge-par-chantier', fr: 'Logiciel entreprise de bâtiment et BTP en Algérie', en: 'Construction company software in Algeria', ar: 'برنامج مؤسسات البناء والأشغال في الجزائر' },
   { slug: 'logiciel-gestion-commerciale-algerie-2027-devis-commande-bon-de-livraison-facture-stock-reglements-erp-ou-pas-sans-ressaisie', fr: 'Logiciel de gestion commerciale en Algérie', en: 'Sales and inventory management software in Algeria', ar: 'برنامج التسيير التجاري في الجزائر' },
   { slug: 'logiciel-transport-marchandises-algerie-2027-voyages-lettre-de-voiture-avances-chauffeur-retours-a-vide-marge', fr: 'Logiciel transport de marchandises en Algérie', en: 'Freight transport software in Algeria', ar: 'برنامج نقل البضائع في الجزائر' },
   { slug: 'logiciel-laboratoire-analyses-medicales-algerie-2027-tubes-code-barres-automates-validation-compte-rendu-whatsapp', fr: 'Logiciel laboratoire d’analyses médicales en Algérie', en: 'Medical laboratory software in Algeria', ar: 'برنامج مخبر التحاليل الطبية في الجزائر' },
