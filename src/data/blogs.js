@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "260",
+    slug: "ransomware-entreprise-algerie-2027-que-faire-premiere-heure-fichiers-chiffres-cinq-barrieres-sauvegarde-reprise",
+    title: "Ransomware en entreprise en Algérie (2027) : que faire la première heure quand tous les fichiers sont chiffrés, et les cinq barrières contre le piratage",
+    subtitle: "Six phrases de ce matin-là et la bonne réponse, la première heure en sept gestes et cinq à ne pas faire, la chaîne de l'attaque sur trois semaines avec les cinq barrières qui l'auraient cassée, le calendrier 2027 en quatre semaines et la reprise en six temps",
+    excerpt: "« Ce matin, plus aucun fichier ne s'ouvre. Ils ont tous une extension bizarre, et un message demande une rançon. On a une sauvegarde sur un disque, mais il était branché. Qu'est-ce qu'on fait, là, maintenant ? » La première heure ne sert pas à réparer : elle sert à empêcher que cela s'étende et à garder ce qui est encore sain. Et l'attaque a commencé trois semaines plus tôt, par un mot de passe, une porte ouverte et un réseau sans cloisons.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["ransomware", "rançongiciel", "piratage entreprise", "sauvegarde hors d'atteinte", "reprise après attaque"],
+    metaTitle: "Ransomware entreprise Algérie 2027 : que faire la première heure, cinq barrières contre le piratage | Symloop",
+    metaDescription: "Ransomware en entreprise en Algérie en 2027 : que faire quand tous les fichiers sont chiffrés. La première heure en sept gestes (couper internet, isoler les machines touchées sans les éteindre, mettre les sauvegardes à l'abri, alerter, noter, ne pas payer dans l'urgence, décider), cinq choses à ne pas faire, la chaîne de l'attaque sur trois semaines, cinq barrières (comptes, portes, cloisons, sauvegardes hors d'atteinte, détection), la reprise sur des machines propres. D'après les consignes publiques officielles.",
+    translations: {
+      en: { title: "Ransomware in a company in Algeria (2027): what to do in the first hour when every file is encrypted, and the five barriers against being hacked", subtitle: "Six sentences from that morning and the right answer, the first hour in seven actions and five things not to do, the attack chain over three weeks with the five barriers that would have broken it, the 2027 calendar in four weeks and recovery in six steps", excerpt: "“This morning not a single file opens. They all have a strange extension, and a message demands a ransom. We have a backup on a disk, but it was plugged in. What do we do, right now?” The first hour is not for repairing: it is for stopping the spread and keeping what is still healthy. And the attack started three weeks earlier, with a password, an open door and a network with no partitions." },
+      ar: { title: "فيروس الفدية في المؤسسة في الجزائر (2027): ماذا نفعل في الساعة الأولى حين تُشفَّر كل الملفات، والحواجز الخمسة ضد الاختراق", subtitle: "ست جمل من ذلك الصباح والجواب الصحيح، الساعة الأولى في سبع حركات وخمسة أشياء لا تُفعل، سلسلة الهجوم على ثلاثة أسابيع مع الحواجز الخمسة التي كانت ستقطعها، تقويم 2027 في أربعة أسابيع، والاستئناف في ست مراحل", excerpt: "«هذا الصباح لا يُفتح أي ملف. لكلها امتداد غريب، ورسالة تطلب فدية. عندنا نسخة احتياطية على قرص، لكنه كان موصولاً. ماذا نفعل الآن؟» الساعة الأولى ليست للإصلاح: هي لمنع الانتشار وحفظ ما زال سليماً. والهجوم بدأ قبل ثلاثة أسابيع، بكلمة مرور، وباب مفتوح، وشبكة دون فواصل." }
+    }
+  },
+  {
     id: "259",
     slug: "interconnecter-deux-sites-distants-algerie-2027-vpn-siege-agences-depot-plan-d-adresses-debit-secours-logiciel-lent",
     title: "Interconnecter deux sites distants en Algérie (2027) : VPN entre le siège, les agences et le dépôt, plan d'adresses, débit et secours, quand chaque site travaille dans son coin",
