@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "262",
+    slug: "infogerance-maintenance-informatique-entreprise-algerie-2027-contrat-delais-inventaire-supervision-rapport-mensuel",
+    title: "Infogérance et maintenance informatique d'entreprise en Algérie (2027) : inventaire, supervision, délais d'intervention et rapport mensuel, quand toute l'informatique repose sur une seule personne",
+    subtitle: "Six situations réelles, le même mois tenu de deux façons (dix-neuf heures d'arrêt ou deux), cinq couches dont l'entretien fait le soir, le rapport du mois sur une page, la prise en charge en quatre semaines et six questions avant de signer",
+    excerpt: "« Notre informatique tient sur une personne : un technicien qui passe quand il peut. Quand il ne répond pas, tout attend. Personne ne sait quels mots de passe il a ni ce qui est sauvegardé. On paie à la panne, et les pannes reviennent. » L'infogérance n'est pas un dépanneur sous contrat : c'est un inventaire tenu à jour, une supervision qui voit le problème avant celui qui l'utilise, un entretien fait le soir, des délais écrits, et un rapport d'une page que le gérant lit chaque mois.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["infogérance", "maintenance informatique", "société informatique", "supervision", "contrat de maintenance"],
+    metaTitle: "Infogérance et maintenance informatique entreprise Algérie 2027 : inventaire, supervision, délais, rapport mensuel | Symloop",
+    metaDescription: "Infogérance et maintenance informatique d'entreprise en Algérie en 2027 : inventaire des postes, serveurs, comptes, licences et échéances ; supervision de chaque machine avec alertes avant la panne ; entretien fait le soir (mises à jour, sauvegardes vérifiées, restauration essayée) ; assistance avec délais écrits par priorité ; rapport d'une page par mois et plan de renouvellement ; documentation et mots de passe à l'entreprise. Exemple : le même mois, 19 heures d'arrêt à la panne contre 2 en infogérance. Six questions avant de signer un contrat.",
+    translations: {
+      en: { title: "Managed IT and IT maintenance for a company in Algeria (2027): inventory, monitoring, response times and a monthly report, for when all your IT rests on one person", subtitle: "Six real situations, the same month run two ways (nineteen hours stopped or two), five layers including evening maintenance, the month's report on one page, the takeover in four weeks and six questions before signing", excerpt: "“Our IT rests on one person: a technician who comes by when he can. When he does not answer, everything waits. Nobody knows which passwords he holds or what is backed up. We pay per breakdown, and the breakdowns come back.” Managed IT is not a repair technician under contract: it is an inventory kept up to date, monitoring that sees the problem before the person using the machine, maintenance done in the evening, written response times, and a one-page report the manager reads every month." },
+      ar: { title: "صيانة الإعلام الآلي وتسييره للمؤسسة في الجزائر (2027): الجرد، المراقبة، آجال التدخل والتقرير الشهري، حين يقوم كل الإعلام الآلي على شخص واحد", subtitle: "ست حالات واقعية، الشهر نفسه بطريقتين (تسع عشرة ساعة توقف أو ساعتان)، خمس طبقات منها صيانة المساء، تقرير الشهر في صفحة واحدة، التسلّم في أربعة أسابيع، وستة أسئلة قبل التوقيع", excerpt: "«إعلامنا الآلي يقوم على شخص واحد: تقني يمرّ حين يستطيع. حين لا يجيب ينتظر كل شيء. لا أحد يعرف أي كلمات مرور عنده ولا ما هو منسوخ احتياطياً. ندفع عند العطل، والأعطال تعود.» التسيير المنتظم للإعلام الآلي ليس مصلِّحاً بعقد: هو جرد محدَّث، ومراقبة ترى المشكلة قبل من يستعمل الجهاز، وصيانة تُنجز في المساء، وآجال مكتوبة، وتقرير من صفحة يقرؤه المسيّر كل شهر." }
+    }
+  },
+  {
     id: "261",
     slug: "pointeuse-biometrique-logiciel-presence-algerie-2027-controle-d-acces-pointage-mobile-releve-d-heures-sans-ressaisie",
     title: "Pointeuse biométrique et logiciel de présence en Algérie (2027) : du doigt posé au relevé d'heures sans ressaisie, quand les pointages finissent recopiés dans Excel",
