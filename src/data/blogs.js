@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "263",
+    slug: "logiciel-crm-algerie-2027-portefeuille-clients-pipeline-relances-devis-prevision-commerciaux",
+    title: "Logiciel CRM en Algérie (2027) : portefeuille clients, pipeline, relances de devis et prévision, quand les clients sont dans le téléphone des commerciaux",
+    subtitle: "Six situations réelles, un mois de demandes (cent reçues, douze gagnées, cinquante et une perdues sans que personne dise non), le tableau des affaires et sa prévision pondérée, cinq couches, une affaire en six temps et la mise en place en quatre semaines",
+    excerpt: "« Mes clients sont dans le téléphone de mes commerciaux. Quand l'un d'eux part, il emporte son carnet et nous repartons de zéro. Je ne sais pas combien de devis sont dehors ni lesquels ont été relancés. » Un CRM n'est pas un carnet d'adresses en ligne : c'est un fichier qui appartient à l'entreprise, des affaires qui portent chacune une prochaine action datée, des relances qui partent aux délais écrits, et un tableau où le gérant lit ce qui est en retard et ce que le mois prochain devrait rapporter.",
+    category: "Software", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["CRM", "logiciel CRM", "pipeline commercial", "relance de devis", "prévision des ventes"],
+    metaTitle: "Logiciel CRM Algérie 2027 : portefeuille clients, pipeline, relances de devis, prévision | Symloop",
+    metaDescription: "Logiciel CRM en Algérie en 2027 : fichier client unique à l'entreprise, affaires avec étape, montant et prochaine action datée, historique rattaché au client, relances de devis aux délais écrits, tableau du gérant avec prévision pondérée et motifs de perte. Exemple : 100 demandes, 12 ventes, 51 affaires perdues sans que personne dise non ; 35,9 millions de dinars ouverts, 15,1 millions attendus. CRM du marché ou sur mesure, mise en place en quatre semaines.",
+    translations: {
+      en: { title: "CRM software in Algeria (2027): customer portfolio, pipeline, quotation follow-ups and forecast, for when your customers live in the salespeople's phones", subtitle: "Six real situations, one month of enquiries (a hundred received, twelve won, fifty-one lost without anyone saying no), the deal board and its weighted forecast, five layers, one deal in six steps and a four-week set-up", excerpt: "“My customers are in my salespeople's phones. When one of them leaves, the notebook leaves too and we start again from zero. I do not know how many quotations are out or which ones were followed up.” A CRM is not an online address book: it is a file the company owns, deals that each carry a dated next action, follow-ups that go out on written delays, and a board where the manager reads what is late and what next month should bring." },
+      ar: { title: "برنامج إدارة الزبائن CRM في الجزائر (2027): محفظة الزبائن، مسار الصفقات، متابعة عروض السعر والتوقع، حين يكون الزبائن في هواتف البائعين", subtitle: "ست حالات واقعية، شهر من الطلبات (مئة وصلت، اثنتا عشرة رُبحت، إحدى وخمسون ضاعت دون أن يقول أحد لا)، لوحة الصفقات وتوقعها المرجَّح، خمس طبقات، صفقة في ست مراحل، ووضع البرنامج في أربعة أسابيع", excerpt: "«زبائني في هواتف البائعين. حين يغادر أحدهم يأخذ دفتره معه ونبدأ من الصفر. لا أعرف كم عرض سعر في الخارج ولا أيها تمّت متابعته.» برنامج إدارة الزبائن ليس دفتر عناوين على الإنترنت: هو ملف تملكه المؤسسة، وصفقات تحمل كل واحدة منها خطوة موالية بتاريخ، ومتابعات تنطلق في الآجال المكتوبة، ولوحة يقرأ فيها المسيّر ما هو متأخر وما يُنتظر أن يأتي به الشهر القادم." }
+    }
+  },
+  {
     id: "262",
     slug: "infogerance-maintenance-informatique-entreprise-algerie-2027-contrat-delais-inventaire-supervision-rapport-mensuel",
     title: "Infogérance et maintenance informatique d'entreprise en Algérie (2027) : inventaire, supervision, délais d'intervention et rapport mensuel, quand toute l'informatique repose sur une seule personne",
