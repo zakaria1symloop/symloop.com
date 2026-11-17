@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "259",
+    slug: "interconnecter-deux-sites-distants-algerie-2027-vpn-siege-agences-depot-plan-d-adresses-debit-secours-logiciel-lent",
+    title: "Interconnecter deux sites distants en Algérie (2027) : VPN entre le siège, les agences et le dépôt, plan d'adresses, débit et secours, quand chaque site travaille dans son coin",
+    subtitle: "Trois sites et deux tunnels dessinés avec leurs débits et leurs délais, le calcul qui explique un logiciel lent à l'agence (400 allers-retours), six situations réelles, cinq couches dont les tunnels chiffrés, le calendrier 2027 en trois semaines et six décisions avant de relier un site",
+    excerpt: "« On a un siège à Alger, une agence à Oran et un dépôt à Sétif. L'agence envoie ses ventes par fichier le soir, ou travaille par TeamViewer sur un poste qu'on laisse allumé. Quand sa connexion tombe, elle ne peut plus rien faire. » Relier des sites, c'est un plan d'adresses qui ne se chevauche pas, un pare-feu à chaque bout, un tunnel chiffré qui remonte seul, et le bon choix de ce qui voyage : l'écran, quelques requêtes ou une copie.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["interconnexion de sites", "VPN site à site", "plan d'adresses", "bureau à distance", "application web"],
+    metaTitle: "Interconnecter deux sites distants Algérie 2027 : VPN siège, agences, dépôt, plan d'adresses, logiciel lent | Symloop",
+    metaDescription: "Interconnecter deux sites distants en Algérie en 2027 : un plan d'adresses par site sans chevauchement, un pare-feu à chaque site, un point fixe (adresse publique fixe ou point central hébergé), des tunnels chiffrés (IPsec ou WireGuard) qui remontent seuls, des règles entre sites, un second lien. Pourquoi un logiciel est lent à travers le VPN : 400 allers-retours à 20 ms font 8 secondes ; les remèdes sont le bureau à distance, l'application web ou la copie locale synchronisée. Étoile ou maillage, port 3389 à ne jamais ouvrir, calendrier en trois semaines.",
+    translations: {
+      en: { title: "Linking two distant company sites in Algeria (2027): VPN between head office, branches and warehouse, address plan, speed and backup, for when each site works on its own", subtitle: "Three sites and two tunnels drawn with their speeds and delays, the calculation that explains slow software at the branch (400 round trips), six real situations, five layers including encrypted tunnels, the 2027 calendar in three weeks and six decisions before linking a site", excerpt: "“We have a head office in Algiers, a branch in Oran and a warehouse in Sétif. The branch sends its sales by file in the evening, or works through TeamViewer on a PC we leave switched on. When its connection drops it can do nothing.” Linking sites is an address plan that does not overlap, a firewall at each end, an encrypted tunnel that comes back by itself, and the right choice of what travels: the screen, a few requests or a copy." },
+      ar: { title: "ربط موقعين متباعدين في الجزائر (2027): شبكة خاصة بين المقر والوكالات والمستودع، مخطط العناوين، التدفق والاحتياط، حين يعمل كل موقع وحده", subtitle: "ثلاثة مواقع ونفقان مرسومة بتدفقاتها ومهلها، الحساب الذي يفسّر بطء البرنامج في الوكالة (400 ذهاب وإياب)، ست حالات واقعية، خمس طبقات منها الأنفاق المشفَّرة، تقويم 2027 في ثلاثة أسابيع، وستة قرارات قبل ربط موقع", excerpt: "«لنا مقر في الجزائر العاصمة ووكالة في وهران ومستودع في سطيف. الوكالة ترسل مبيعاتها في ملف كل مساء، أو تعمل بأداة تحكم عن بعد على حاسوب نتركه مشتعلاً. وحين ينقطع اتصالها لا تستطيع فعل شيء.» ربط المواقع هو مخطط عناوين لا يتداخل، وجدار حماية في كل طرف، ونفق مشفَّر يعود وحده، واختيار صحيح لما يسافر: الشاشة، أو بضعة طلبات، أو نسخة." }
+    }
+  },
+  {
     id: "258",
     slug: "messagerie-professionnelle-entreprise-algerie-2027-nom-de-domaine-boites-spf-dkim-dmarc-depart-employe-microsoft-365",
     title: "Messagerie professionnelle d'entreprise en Algérie (2027) : nom de domaine, boîtes par personne, SPF, DKIM, DMARC et départs, quand vos mails finissent en indésirables et qu'un employé part avec sa boîte",
