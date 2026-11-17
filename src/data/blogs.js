@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "265",
+    slug: "application-qui-plante-algerie-2027-pourquoi-elle-se-ferme-chez-vos-clients-rapports-de-plantage-taux-sans-plantage-telephones-modestes",
+    title: "Application qui plante chez vos clients en Algérie (2027) : rapports de plantage, causes classées et téléphones modestes, quand « chez nous, elle marche »",
+    subtitle: "Où plante l'application (pas sur le téléphone du développeur), d'un avis une étoile à la ligne de code, cinq couches, six situations réelles, la stabilisation en quatre semaines et six questions à poser à votre développeur",
+    excerpt: "« Notre application se ferme toute seule chez certains clients. Chez nous, elle marche. Les avis du store parlent de plantages et la note est tombée à 3,1. Le développeur dit qu'il n'arrive pas à reproduire. » Une application ne plante pas au hasard : elle plante sur des téléphones précis, à des écrans précis, pour quelques causes qui font l'essentiel des dégâts. Il faut un rapport à chaque plantage, des causes classées par clients touchés, les téléphones des clients sur la table, et une sortie qui s'arrête quand le chiffre monte.",
+    category: "Mobile", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["application qui plante", "rapports de plantage", "stabilité application mobile", "Android vitals", "maintenance application"],
+    metaTitle: "Application qui plante chez vos clients (2027) : rapports de plantage, causes classées, téléphones modestes | Symloop",
+    metaDescription: "Application mobile qui plante chez vos clients en Algérie en 2027 : pourquoi elle se ferme sur les téléphones de 2 et 3 Go et pas sur celui du développeur, ce que contient un rapport de plantage, comment classer les causes par clients touchés, reproduire, corriger avec des tests et livrer par paliers. Repères Android vitals : 1,09 % d'utilisateurs quotidiens touchés par un plantage, 8 % sur un même modèle, 0,47 % pour les blocages. Exemple : 3 800 clients, 2,9 % touchés chaque jour, trois causes pour 78 % des plantages.",
+    translations: {
+      en: { title: "An app that crashes on your customers' phones in Algeria (2027): crash reports, ranked causes and modest phones, for when “it works for us”", subtitle: "Where the app crashes (not on the developer's phone), from a one-star review to a line of code, five layers, six real situations, stabilising in four weeks and six questions to ask your developer", excerpt: "“Our app closes by itself for some customers. For us, it works. The store reviews talk about crashes and the rating has fallen to 3.1. The developer says he cannot reproduce it.” An app does not crash at random: it crashes on specific phones, on specific screens, for a few causes that do most of the damage. What it takes is a report for every crash, causes ranked by customers affected, the customers' phones on the table, and a release that stops when the figure rises." },
+      ar: { title: "التطبيق يتوقف فجأة عند زبائنكم في الجزائر (2027): تقارير التوقف، الأسباب المرتَّبة والهواتف المتواضعة، حين «عندنا يشتغل»", subtitle: "أين يتوقف التطبيق (ليس على هاتف المطوِّر)، من تقييم بنجمة واحدة إلى سطر في الشيفرة، خمس طبقات، ست حالات واقعية، التثبيت في أربعة أسابيع، وستة أسئلة تطرحونها على مطوِّركم", excerpt: "«تطبيقنا يُغلق وحده عند بعض الزبائن. عندنا يشتغل. تقييمات المتجر تتكلم عن توقفات والنقطة نزلت إلى 3,1. المطوِّر يقول إنه لا يستطيع إعادة الحالة.» التطبيق لا يتوقف بالصدفة: يتوقف على هواتف بعينها، وفي شاشات بعينها، لأسباب قليلة تصنع معظم الضرر. يلزم تقرير عند كل توقف، وأسباب مرتَّبة حسب الزبائن المتضررين، وهواتف الزبائن على الطاولة، وإصدار يتوقف حين يرتفع الرقم." }
+    }
+  },
+  {
     id: "264",
     slug: "videosurveillance-ip-entreprise-algerie-2027-cameras-enregistreur-jours-de-conservation-acces-a-distance-image-exploitable",
     title: "Vidéosurveillance d'entreprise en Algérie (2027) : caméras IP, enregistreur, jours de conservation et accès à distance, quand l'image manque le jour où il la faut",
