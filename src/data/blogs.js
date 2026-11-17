@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "268",
+    slug: "serveur-lent-entreprise-algerie-2027-logiciel-qui-rame-le-matin-memoire-disques-sauvegarde-en-pleine-journee-mesurer-avant-de-remplacer",
+    title: "Serveur lent en entreprise en Algérie (2027) : pourquoi le logiciel rame tous les matins, et quoi mesurer avant d'en acheter un autre",
+    subtitle: "La journée du serveur (quarante secondes à 10 h 30, trois le reste du temps), quatre ressources dont une seule est saturée, six causes et leur signe, six vérifications avant d'acheter, cinq couches et trois semaines",
+    excerpt: "« Tous les matins, entre neuf heures et demie et onze heures, le logiciel rame : il faut quarante secondes pour enregistrer un bon. L'après-midi, tout va bien. Le prestataire dit que le serveur est vieux et qu'il faut le remplacer. » Un serveur n'est presque jamais lent partout et tout le temps : il est lent à certaines heures, pour une ressource précise. On mesure d'abord, on règle ce qui se règle, on renforce ce qui manque, et l'on remplace quand le système arrive en fin de support ou que la machine ne vaut plus qu'on la renforce.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["serveur lent", "serveur d'entreprise", "logiciel de gestion lent", "Windows Server 2016", "maintenance serveur"],
+    metaTitle: "Serveur lent en entreprise Algérie 2027 : pourquoi le logiciel rame, quoi mesurer avant de remplacer | Symloop",
+    metaDescription: "Serveur lent en entreprise en Algérie en 2027 : pourquoi le logiciel rame à heures fixes (sauvegarde, antivirus et rapports lancés en pleine journée), comment lire les quatre ressources au moment où cela rame (processeur, mémoire, disque, réseau), les limites de SQL Server Express (10 Go par base, 1 410 Mo de mémoire), les disques mécaniques (environ 75 opérations par seconde) face aux SSD, et la fin du support étendu de Windows Server 2016 le 12 janvier 2027. Exemple : 40 secondes ramenées à 12 par des réglages, puis à 3. Six vérifications avant d'acheter un serveur.",
+    translations: {
+      en: { title: "A slow company server in Algeria (2027): why the software crawls every morning, and what to measure before buying another one", subtitle: "The server's day (forty seconds at 10:30, three the rest of the time), four resources of which only one is saturated, six causes and their sign, six checks before buying, five layers and three weeks", excerpt: "“Every morning, between half past nine and eleven, the software crawls: it takes forty seconds to save a delivery note. In the afternoon everything is fine. The provider says the server is old and must be replaced.” A server is almost never slow everywhere and all the time: it is slow at certain hours, for one specific resource. Measure first, tune what can be tuned, reinforce what is missing, and replace when the system reaches end of support or the machine is no longer worth reinforcing." },
+      ar: { title: "خادم بطيء في المؤسسة في الجزائر (2027): لماذا يتثاقل البرنامج كل صباح، وماذا نقيس قبل شراء خادم آخر", subtitle: "يوم الخادم (أربعون ثانية على العاشرة والنصف، وثلاث باقي الوقت)، أربعة موارد واحد منها فقط مشبع، ستة أسباب وعلامة كل واحد، ست معاينات قبل الشراء، خمس طبقات وثلاثة أسابيع", excerpt: "«كل صباح، بين التاسعة والنصف والحادية عشرة، يتثاقل البرنامج: تلزم أربعون ثانية لتسجيل وصل. وبعد الظهر كل شيء يسير. المتعهّد يقول إن الخادم قديم ويجب تعويضه.» الخادم لا يكون بطيئاً في كل مكان وكل وقت تقريباً: يكون بطيئاً في ساعات معيّنة، بسبب مورد بعينه. نقيس أولاً، نضبط ما يُضبط، نقوّي ما ينقص، ونعوّض حين يبلغ النظام نهاية الدعم أو حين لا يستحق الجهاز أن يُقوَّى." }
+    }
+  },
+  {
     id: "267",
     slug: "logiciel-gestion-commerciale-algerie-2027-devis-commande-bon-de-livraison-facture-stock-reglements-erp-ou-pas-sans-ressaisie",
     title: "Logiciel de gestion commerciale en Algérie (2027) : devis, commande, bon de livraison, facture, stock et règlements dans une seule chaîne, quand tout est ressaisi trois fois",
