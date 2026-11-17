@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "267",
+    slug: "logiciel-gestion-commerciale-algerie-2027-devis-commande-bon-de-livraison-facture-stock-reglements-erp-ou-pas-sans-ressaisie",
+    title: "Logiciel de gestion commerciale en Algérie (2027) : devis, commande, bon de livraison, facture, stock et règlements dans une seule chaîne, quand tout est ressaisi trois fois",
+    subtitle: "Trois outils qui ne se parlent pas (128 ressaisies par jour), une vente en cinq documents et une seule saisie, cinq couches, gestion commerciale ou ERP en six critères, six questions avant de choisir et le changement en six semaines",
+    excerpt: "« Nous avons un logiciel de gestion commerciale installé sur un seul poste, et trois tableurs autour. Les commandes arrivent par téléphone et par WhatsApp, on les retape. Le stock du logiciel ne correspond jamais au dépôt. On me propose un ERP : est-ce qu'il m'en faut un ? » Ce qui manque n'est pas un logiciel plus gros : c'est une chaîne où chaque document naît du précédent, où le stock et la créance du client découlent des documents, et que les agences et les commerciaux utilisent au même moment.",
+    category: "Software", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["logiciel de gestion commerciale", "gestion de stock", "facturation", "ERP", "négoce et distribution"],
+    metaTitle: "Logiciel de gestion commerciale Algérie 2027 : devis, commande, livraison, facture, stock, règlements | Symloop",
+    metaDescription: "Logiciel de gestion commerciale en Algérie en 2027 : une chaîne de documents où chaque pièce naît de la précédente (devis, commande, bon de livraison, facture, avoir ; commande fournisseur, réception, facture), un stock mis à jour par les documents avec réservations et plusieurs dépôts, des règlements rattachés aux factures, un pilotage par agence et sur téléphone. Gestion commerciale ou ERP : six critères. Exemple : 128 ressaisies par jour, 3 h 12, 56 erreurs par mois ; une vente de 100 pièces suivie en cinq documents. Six questions avant de choisir, changement en six semaines.",
+    translations: {
+      en: { title: "Sales management software in Algeria (2027): quotation, order, delivery note, invoice, stock and payments in one chain, for when everything is typed three times", subtitle: "Three tools that do not talk to each other (128 retypings a day), one sale in five documents typed once, five layers, sales management software or ERP on six criteria, six questions before choosing and a six-week change", excerpt: "“We have sales management software installed on a single workstation, and three spreadsheets around it. Orders come in by phone and on WhatsApp, and we retype them. The stock in the software never matches the warehouse. I am being offered an ERP: do I need one?” What is missing is not bigger software: it is a chain where each document is born from the previous one, where stock and the customer's balance follow from the documents, and which branches and salespeople use at the same moment." },
+      ar: { title: "برنامج التسيير التجاري في الجزائر (2027): عرض السعر، الطلبية، وصل التسليم، الفاتورة، المخزون والتسديدات في سلسلة واحدة، حين يُعاد إدخال كل شيء ثلاث مرات", subtitle: "ثلاث أدوات لا تتكلم مع بعضها (128 إعادة إدخال في اليوم)، بيعة في خمس وثائق بإدخال واحد، خمس طبقات، تسيير تجاري أم برنامج متكامل في ستة معايير، ستة أسئلة قبل الاختيار، والتغيير في ستة أسابيع", excerpt: "«عندنا برنامج تسيير تجاري منصَّب على حاسوب واحد، وثلاثة جداول حوله. الطلبيات تصل بالهاتف وعبر واتساب، فنعيد إدخالها. مخزون البرنامج لا يطابق المستودع أبداً. يقترحون عليّ برنامجاً متكاملاً: هل أحتاجه؟» ما ينقص ليس برنامجاً أكبر: هو سلسلة تولد فيها كل وثيقة من سابقتها، وينتج فيها المخزون ودين الزبون عن الوثائق، وتستعملها الوكالات والبائعون في اللحظة نفسها." }
+    }
+  },
+  {
     id: "266",
     slug: "piratage-entreprise-algerie-2027-boite-mail-piratee-faux-rib-fournisseur-que-faire-premiere-heure-double-verification-regles-de-transfert",
     title: "Piratage en entreprise en Algérie (2027) : boîte mail piratée et faux RIB du fournisseur, que faire dans l'heure et comment fermer la porte",
