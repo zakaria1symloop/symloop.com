@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "258",
+    slug: "messagerie-professionnelle-entreprise-algerie-2027-nom-de-domaine-boites-spf-dkim-dmarc-depart-employe-microsoft-365",
+    title: "Messagerie professionnelle d'entreprise en Algérie (2027) : nom de domaine, boîtes par personne, SPF, DKIM, DMARC et départs, quand vos mails finissent en indésirables et qu'un employé part avec sa boîte",
+    subtitle: "Quatre e-mails et ce que vérifie le serveur du client, cinq couches dont les preuves d'envoi, six situations réelles, le plan d'adresses de trente personnes avec les quatre enregistrements du domaine, le calendrier 2027 en trois semaines et le départ d'un employé en six gestes",
+    excerpt: "« Nos commerciaux écrivent aux clients depuis des adresses Gmail. Nos mails arrivent en indésirables. Quand un employé part, il part avec sa boîte. Et un client a reçu une fausse facture à notre nom. » Une messagerie professionnelle, c'est un domaine au nom de l'entreprise, une boîte par personne, trois enregistrements qui prouvent que le message vient de vous, et une procédure pour le jour où quelqu'un s'en va.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["messagerie professionnelle", "nom de domaine", "SPF DKIM DMARC", "boîtes partagées", "départ d'un employé"],
+    metaTitle: "Messagerie professionnelle entreprise Algérie 2027 : domaine, boîtes, SPF, DKIM, DMARC, départs | Symloop",
+    metaDescription: "Messagerie professionnelle d'entreprise en Algérie en 2027 : nom de domaine au nom de l'entreprise, une boîte par personne, boîtes partagées par service, listes et alias, SPF, DKIM et DMARC publiés dans le domaine (observer, mettre de côté, rejeter), double vérification à la connexion, sauvegarde des boîtes, départ d'un employé en six gestes. Pourquoi les mails arrivent en spam, ce que vérifie le serveur du client, plan d'adresses pour trente personnes, bascule en trois semaines.",
+    translations: {
+      en: { title: "Professional email for a company in Algeria (2027): domain name, one mailbox per person, SPF, DKIM, DMARC and leavers, for when your emails land in spam and an employee leaves with the mailbox", subtitle: "Four emails and what the customer's server checks, five layers including proof of sending, six real situations, the address plan for thirty people with the four records of the domain, the 2027 calendar in three weeks and an employee's departure in six actions", excerpt: "“Our salespeople write to customers from Gmail addresses. Our emails land in spam. When an employee leaves, they leave with the mailbox. And a customer received a fake invoice in our name.” Professional email is a domain in the company's name, one mailbox per person, three records proving the message comes from you, and a procedure for the day someone goes." },
+      ar: { title: "بريد إلكتروني مهني للمؤسسة في الجزائر (2027): اسم النطاق، علبة لكل شخص، تسجيلات إثبات الإرسال ومغادرة الموظفين، حين تصل رسائلكم إلى البريد غير المرغوب ويغادر موظف بعلبته", subtitle: "أربع رسائل وما يتحقق منه خادم الزبون، خمس طبقات منها أدلة الإرسال، ست حالات واقعية، مخطط عناوين ثلاثين شخصاً مع التسجيلات الأربعة للنطاق، تقويم 2027 في ثلاثة أسابيع، ومغادرة موظف في ست حركات", excerpt: "«بائعونا يكتبون للزبائن من عناوين مجانية. رسائلنا تصل إلى البريد غير المرغوب. حين يغادر موظف يغادر بعلبته. وتلقى زبون فاتورة مزيَّفة باسمنا.» البريد المهني هو نطاق باسم المؤسسة، وعلبة لكل شخص، وثلاثة تسجيلات تثبت أن الرسالة منكم، وإجراء لليوم الذي يغادر فيه أحد." }
+    }
+  },
+  {
     id: "257",
     slug: "standard-telephonique-ip-entreprise-algerie-2027-ipbx-lignes-postes-menu-vocal-file-d-attente-appels-manques-crm",
     title: "Standard téléphonique IP d'entreprise en Algérie (2027) : lignes, IPBX, postes, accueil vocal, file d'attente et appels manqués rappelés, quand les clients tombent sur « occupé »",
