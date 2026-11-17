@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "264",
+    slug: "videosurveillance-ip-entreprise-algerie-2027-cameras-enregistreur-jours-de-conservation-acces-a-distance-image-exploitable",
+    title: "Vidéosurveillance d'entreprise en Algérie (2027) : caméras IP, enregistreur, jours de conservation et accès à distance, quand l'image manque le jour où il la faut",
+    subtitle: "Jusqu'où l'enregistreur remonte (11,6 jours ou 35,6 sur le même disque), cinq couches, ce que voit vraiment une caméra à 5, 10, 20 et 50 mètres, six situations réelles, la mise en place en quatre semaines et six gestes le jour où il faut l'image",
+    excerpt: "« On a seize caméras au dépôt. Le vol a été découvert à l'inventaire, dix-neuf jours après, et l'enregistreur ne remontait qu'à onze jours. Sur ce qui restait, on voyait des silhouettes, pas des visages. » Une vidéosurveillance utile n'est pas un nombre de caméras : c'est une caméra par rôle, des jours de conservation calculés, un accès à distance qui n'ouvre aucune porte, et quelqu'un qui est prévenu quand une caméra se tait.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["vidéosurveillance", "caméra IP", "enregistreur NVR", "durée de conservation", "accès à distance"],
+    metaTitle: "Vidéosurveillance entreprise Algérie 2027 : caméras IP, enregistreur, conservation, accès à distance | Symloop",
+    metaDescription: "Vidéosurveillance d'entreprise en Algérie en 2027 : une caméra par rôle avec une densité de pixels calculée (250 px/m pour identifier, 125 pour reconnaître, norme IEC 62676-4), un réseau séparé et alimenté par le câble, des jours de conservation calculés (10,8 Go par jour pour chaque Mbit/s), un accès à distance par tunnel chiffré sans port ouvert, une supervision qui alerte quand une caméra se tait. Exemple : 16 caméras, 8 To, 11,6 jours en H.264 contre 35,6 en H.265 avec détection de mouvement. Six gestes pour extraire une séquence.",
+    translations: {
+      en: { title: "Video surveillance for a company in Algeria (2027): IP cameras, recorder, retention days and remote access, for when the footage is missing the day you need it", subtitle: "How far back the recorder goes (11.6 days or 35.6 on the same disk), five layers, what a camera really sees at 5, 10, 20 and 50 metres, six real situations, a four-week set-up and six steps for the day the footage is needed", excerpt: "“We have sixteen cameras at the warehouse. The theft was found at stock-take, nineteen days later, and the recorder only went back eleven days. On what was left you could see silhouettes, not faces.” Useful video surveillance is not a number of cameras: it is one camera per role, retention days that are calculated, remote access that opens no door, and someone who is warned when a camera goes silent." },
+      ar: { title: "كاميرات المراقبة للمؤسسات في الجزائر (2027): كاميرات الشبكة، المسجِّل، أيام الحفظ والوصول عن بعد، حين تغيب الصورة يوم نحتاجها", subtitle: "إلى أي يوم يرجع المسجِّل (11,6 يوماً أو 35,6 على القرص نفسه)، خمس طبقات، ما تراه الكاميرا فعلاً على 5 و10 و20 و50 متراً، ست حالات واقعية، التركيب في أربعة أسابيع، وست خطوات يوم نحتاج الصورة", excerpt: "«عندنا ست عشرة كاميرا في المستودع. السرقة اكتُشفت عند الجرد، بعد تسعة عشر يوماً، والمسجِّل لم يكن يرجع إلا أحد عشر يوماً. وفيما بقي كنا نرى ظلالاً لا وجوهاً.» المراقبة النافعة ليست عدد كاميرات: هي كاميرا لكل دور، وأيام حفظ محسوبة، ووصول عن بعد لا يفتح أي باب، وشخص يُنبَّه حين تسكت كاميرا." }
+    }
+  },
+  {
     id: "263",
     slug: "logiciel-crm-algerie-2027-portefeuille-clients-pipeline-relances-devis-prevision-commerciaux",
     title: "Logiciel CRM en Algérie (2027) : portefeuille clients, pipeline, relances de devis et prévision, quand les clients sont dans le téléphone des commerciaux",
