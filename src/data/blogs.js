@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "261",
+    slug: "pointeuse-biometrique-logiciel-presence-algerie-2027-controle-d-acces-pointage-mobile-releve-d-heures-sans-ressaisie",
+    title: "Pointeuse biométrique et logiciel de présence en Algérie (2027) : du doigt posé au relevé d'heures sans ressaisie, quand les pointages finissent recopiés dans Excel",
+    subtitle: "Une semaine de présence en grille avec ses cinq anomalies à traiter, six situations réelles, cinq couches dont le traitement des anomalies, le chemin d'un pointage jusqu'au relevé du mois, le calendrier 2027 en quatre semaines et six questions avant d'acheter un terminal",
+    excerpt: "« On a acheté une pointeuse à empreinte. À la fin du mois, quelqu'un recopie le fichier dans Excel, corrige les oublis de mémoire, et il y passe deux jours. Les commerciaux et les chauffeurs ne pointent nulle part, et un salarié parti en mars pouvait encore entrer. » Une pointeuse n'est qu'une porte d'entrée : la valeur est dans les pointages reçus sans ressaisie, rattachés au planning, les anomalies traitées le lendemain avec un motif, et un relevé que la paie reprend sans le retaper.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["pointeuse biométrique", "logiciel de présence", "contrôle d'accès", "pointage mobile", "relevé d'heures"],
+    metaTitle: "Pointeuse biométrique et logiciel de présence Algérie 2027 : pointage sans ressaisie, contrôle d'accès, mobile | Symloop",
+    metaDescription: "Pointeuse biométrique et logiciel de présence en Algérie en 2027 : terminaux à empreinte, badge ou visage reliés au réseau, pointage au téléphone pour les commerciaux et les chauffeurs, salarié enrôlé une fois et retiré partout au départ, planning et règles écrites par l'entreprise, anomalies (oubli, retard, absence) signalées le lendemain et corrigées avec un motif, relevé du mois validé puis exporté vers la paie, contrôle d'accès aux portes. Exemple : 1 408 journées par mois, 42 à traiter. Six questions avant d'acheter un terminal.",
+    translations: {
+      en: { title: "Biometric time clock and attendance software in Algeria (2027): from the finger on the reader to the timesheet with no retyping, for when clock-ins end up copied into Excel", subtitle: "One week of attendance as a grid with its five anomalies to settle, six real situations, five layers including anomaly handling, the path of a punch to the monthly timesheet, the 2027 calendar in four weeks and six questions before buying a terminal", excerpt: "“We bought a fingerprint time clock. At the end of the month someone copies the file into Excel, fixes the forgotten punches from memory, and spends two days on it. The salespeople and drivers do not clock in anywhere, and an employee who left in March could still get in.” A time clock is only a way in: the value is in punches received with no retyping, matched to the schedule, anomalies settled the next day with a reason, and a timesheet payroll takes over without retyping it." },
+      ar: { title: "جهاز البصمة وبرنامج الحضور في الجزائر (2027): من الإصبع على الجهاز إلى كشف الساعات دون إعادة إدخال، حين تُنقل البصمات يدوياً إلى جدول", subtitle: "أسبوع من الحضور في شبكة مع خمس حالات تُعالَج، ست حالات واقعية، خمس طبقات منها معالجة الحالات الشاذة، مسار البصمة حتى كشف الشهر، تقويم 2027 في أربعة أسابيع، وستة أسئلة قبل شراء جهاز", excerpt: "«اشترينا جهاز بصمة. في آخر الشهر ينقل أحدهم الملف إلى جدول، ويصحّح النسيان من الذاكرة، ويقضي في ذلك يومين. البائعون والسائقون لا يبصمون في أي مكان، وعامل غادر في مارس ما زال يستطيع الدخول.» جهاز البصمة مجرد مدخل: القيمة في بصمات تصل دون إعادة إدخال، مربوطة بالبرنامج الزمني، وحالات شاذة تُعالَج في الغد بسبب، وكشف تأخذه مصلحة الأجور دون إعادة كتابته." }
+    }
+  },
+  {
     id: "260",
     slug: "ransomware-entreprise-algerie-2027-que-faire-premiere-heure-fichiers-chiffres-cinq-barrieres-sauvegarde-reprise",
     title: "Ransomware en entreprise en Algérie (2027) : que faire la première heure quand tous les fichiers sont chiffrés, et les cinq barrières contre le piratage",
