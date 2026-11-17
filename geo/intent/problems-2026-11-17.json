@@ -1,8 +1,38 @@
 {
  "date": "2026-11-17",
- "calls": 498,
+ "calls": 648,
  "method": "Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised",
  "items": [
+  {
+   "query": "bureau à distance ne fonctionne pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 16
+  },
+  {
+   "query": "comment créer un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing",
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 16
+  },
   {
    "query": "problème connexion société générale",
    "stem": "problème réseau entreprise",
@@ -227,6 +257,50 @@
   {
    "query": "comment brancher un switch",
    "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment connecter mon pc bureau en wifi",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment travailler à distance",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment partager une imprimante en réseau",
+   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -557,6 +631,81 @@
    "score": 13
   },
   {
+   "query": "comment vendre en ligne",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une application de livraison",
+   "stem": "application de livraison comment",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment fidéliser les clients",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment attirer et fidéliser les clients",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "مشاركة الملفات بين الهاتف والكمبيوتر",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "comment avoir plusieurs bureaux",
    "stem": "comment relier deux bureaux",
    "domain": "network",
@@ -602,6 +751,35 @@
   {
    "query": "pourquoi mon réseau est instable",
    "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment aller sur le bureau du pc",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment partager une imprimante entre deux pc",
+   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -715,6 +893,36 @@
    "score": 12.5
   },
   {
+   "query": "comment fidéliser ses clients",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "برنامج فواتير مجاني للكمبيوتر",
+   "stem": "برنامج فواتير",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
    "query": "probleme connexion net entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -758,6 +966,35 @@
    "score": 12
   },
   {
+   "query": "comment trouver le bureau sur mon pc",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment partager une imprimante",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
    "query": "comment créer une adresse mail professionnelle gmail",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -775,6 +1012,20 @@
    "query": "pirate entreprise",
    "stem": "piratage entreprise",
    "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment créer un site e commerce avec wordpress",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
     "google"
@@ -870,6 +1121,34 @@
    "score": 11
   },
   {
+   "query": "comment avoir ce pc sur le bureau",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "bureau a distance clavier ne fonctionne plus",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
    "query": "perte déductible au titre d'entreprise",
    "stem": "perte de données entreprise",
    "domain": "infra",
@@ -940,18 +1219,18 @@
    "score": 11
   },
   {
-   "query": "probleme connection net entreprise",
-   "stem": "problème réseau entreprise",
-   "domain": "network",
+   "query": "comment ouvrir un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
     "google"
    ],
-   "best": 5,
+   "best": 4,
    "company": true,
    "problem": true,
    "consumer": false,
-   "score": 10.5
+   "score": 11
   },
   {
    "query": "probleme connexion bnp entreprise",
@@ -1002,6 +1281,48 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment retrouver mon bureau sur mon pc",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "copier coller bureau à distance ne fonctionne plus",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "bureau à distance erreur 0x104",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 5,
    "company": true,
@@ -1062,6 +1383,20 @@
    ],
    "best": 5,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment lancer un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 10.5
@@ -1291,6 +1626,62 @@
    "score": 10
   },
   {
+   "query": "comment remettre mon bureau sur mon pc",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment travailler à distance avec anydesk",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment travailler à distance sur son pc",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "redirection imprimante bureau à distance ne fonctionne pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "serveur en panne aujourd'hui",
    "stem": "serveur en panne",
    "domain": "infra",
@@ -1381,20 +1772,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 10
-  },
-  {
-   "query": "comment choisir un serveur informatique",
-   "stem": "comment choisir un serveur",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 0,
    "company": false,
@@ -1697,6 +2074,76 @@
    "score": 10
   },
   {
+   "query": "comment vendre en ligne en algerie",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer un e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment monter un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment prendre des rendez vous en ligne",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment faire pour prendre un rendez vous",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "comment utiliser l'intelligence artificielle au travail",
    "stem": "comment utiliser l’intelligence artificielle dans mon entreprise",
    "domain": "ai",
@@ -1809,12 +2256,96 @@
    "score": 10
   },
   {
+   "query": "كيف اضع كلمة سر للحاسوب",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كيفية تنزيل يوتيوب على الحاسوب",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "كيف احفظ البيانات",
    "stem": "كيف احفظ البيانات",
    "domain": "infra",
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "مشكلة السيرفرات",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "مشكلة السيرفر لا يستجيب",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كيف انشاء بريد الكتروني",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كيفية انشاء بريد الكتروني",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 0,
    "company": false,
@@ -1895,6 +2426,20 @@
   {
    "query": "التطبيق بطيء",
    "stem": "التطبيق بطيء",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كيف ابيع على الانترنت",
+   "stem": "كيف ابيع على الانترنت",
    "domain": "apps",
    "hl": "ar",
    "engines": [
@@ -2075,6 +2620,20 @@
    "score": 9.5
   },
   {
+   "query": "mon imprimante réseau ne fonctionne pas",
+   "stem": "imprimante réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment brancher un switch sur une box",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -2112,6 +2671,34 @@
    ],
    "best": 1,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment mettre ce pc sur le bureau",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "pourquoi le bureau à distance ne fonctionne pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 9.5
@@ -2229,8 +2816,36 @@
    "score": 9.5
   },
   {
+   "query": "comment choisir un serveur informatique",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment choisir son serveur internet",
    "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer le cloud",
+   "stem": "comment migrer vers le cloud",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -2497,6 +3112,76 @@
    "score": 9.5
   },
   {
+   "query": "comment vendre en ligne en côte d'ivoire",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment prendre rendez vous en ligne avec la carsat",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment fidéliser les clients d un restaurant",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment fidéliser sa clientèle",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment développer un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -2595,6 +3280,62 @@
    "score": 9.5
   },
   {
+   "query": "كيفية وضع كلمة سر للحاسوب",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "مشاركة الملفات بين اجهزة الكمبيوتر",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "مشكلة السيرفر غير متاح",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "كيف اعمل بريد الكتروني",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "كيف تصمم موقع الكتروني",
    "stem": "كيف اصمم تطبيق لشركتي",
    "domain": "apps",
@@ -2615,6 +3356,34 @@
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "كيف ابيع صور على الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "كيف اربح مال من الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 1,
    "company": false,
@@ -2819,6 +3588,90 @@
    "score": 9
   },
   {
+   "query": "comment afficher le bureau sur mon pc",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment accéder au bureau",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment travailler à distance avec amazon",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment partager une imprimante sous reseau",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment partager une imprimante en wifi",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "bureau à distance erreur 0x3",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "lenteur serveur",
    "stem": "serveur lent",
    "domain": "infra",
@@ -2847,12 +3700,12 @@
    "score": 9
   },
   {
-   "query": "comment sauvegarder les données de mon téléphone sur mon ordinateur",
+   "query": "comment sauvegarder les données de mon pc",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 2,
    "company": false,
@@ -2861,12 +3714,12 @@
    "score": 9
   },
   {
-   "query": "comment sauvegarder les données de mon pc",
+   "query": "comment sauvegarder les données de mon téléphone sur mon ordinateur",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -2940,6 +3793,20 @@
    ],
    "best": 8,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment mettre sur le cloud",
+   "stem": "comment migrer vers le cloud",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 9
@@ -3156,6 +4023,62 @@
    "score": 9
   },
   {
+   "query": "comment vendre en ligne ses créations",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment prendre rendez vous en ligne pour visa france",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment fideliser les clients d une banque",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "de combien peut-on fidéliser les clients",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "comment faire un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -3240,8 +4163,64 @@
    "score": 9
   },
   {
+   "query": "الوصول الى الكمبيوتر عن بعد",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "استرجاع البيانات المحذوفة من الكمبيوتر",
    "stem": "استرجاع البيانات",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "مشكلة السيرفرات في فورت نايت",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "مشكلة السيرفر",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "كيف انشئ موقع الكتروني",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
    "domain": "infra",
    "hl": "ar",
    "engines": [
@@ -3310,6 +4289,34 @@
    "score": 9
   },
   {
+   "query": "كيف ابيع كتاب على الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "كيف ابث شبكه من الكمبيوتر",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "internet qui coupe",
    "stem": "wifi qui coupe",
    "domain": "network",
@@ -3344,6 +4351,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "internet se coupe regulierement",
+   "stem": "internet coupe souvent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 3,
    "company": false,
@@ -3464,6 +4485,20 @@
    "score": 8.5
   },
   {
+   "query": "comment installer un reseau rj45",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "comment sécuriser un réseau local",
    "stem": "comment sécuriser un réseau",
    "domain": "network",
@@ -3543,6 +4578,48 @@
    ],
    "best": 3,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment accéder au bureau windows",
+   "stem": "comment accéder à mon pc du bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment travailler pour amazon à distance",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "bureau à distance erreur 0x204",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 8.5
@@ -3702,6 +4779,20 @@
    "score": 8.5
   },
   {
+   "query": "comment aller sur le cloud",
+   "stem": "comment migrer vers le cloud",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "piratage groupe 3r",
    "stem": "piratage entreprise",
    "domain": "security",
@@ -3772,7 +4863,7 @@
    "score": 8.5
   },
   {
-   "query": "lenteur application canal plus",
+   "query": "lenteur application",
    "stem": "application lente",
    "domain": "apps",
    "hl": "fr",
@@ -3898,6 +4989,90 @@
    "score": 8.5
   },
   {
+   "query": "comment vendre en ligne sans stock",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment vendre en ligne avec sumup",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment créer un site web e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment prendre rendez vous en ligne france travail",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "pourquoi fidéliser les clients",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment suivre une voiture à distance",
+   "stem": "comment suivre mes véhicules",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "مشكلة الشبكة",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -3940,6 +5115,48 @@
    "score": 8.5
   },
   {
+   "query": "كيفية معرفة كود الويفي من الحاسوب",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "مشاركة الملفات بين الايفون والكمبيوتر",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "حل مشكلة السيرفر 400",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "كم يكلف انشاء تطبيق",
    "stem": "كم يكلف تطبيق",
    "domain": "apps",
@@ -3968,6 +5185,20 @@
    "score": 8.5
   },
   {
+   "query": "كيف ابيع رسوماتي على الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "internet qui coupe sans arret",
    "stem": "wifi qui coupe",
    "domain": "network",
@@ -3988,20 +5219,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "connexion internet se coupe souvent",
-   "stem": "internet coupe souvent",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 4,
    "company": false,
@@ -4207,6 +5424,20 @@
    "score": 8
   },
   {
+   "query": "comment travailler a distance sur un autre ordinateur",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "lenteur serveur rds",
    "stem": "serveur lent",
    "domain": "infra",
@@ -4235,7 +5466,7 @@
    "score": 8
   },
   {
-   "query": "comment sauvegarder les données sur google",
+   "query": "comment sauvegarder les données sur la carte sd",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -4249,7 +5480,7 @@
    "score": 8
   },
   {
-   "query": "comment sauvegarder les données sur la carte sd",
+   "query": "comment sauvegarder les données sur google",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -4361,6 +5592,20 @@
    "score": 8
   },
   {
+   "query": "comment voir son cloud",
+   "stem": "comment migrer vers le cloud",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "mon compte microsoft à été piraté",
    "stem": "compte piraté entreprise",
    "domain": "security",
@@ -4381,6 +5626,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "lenteur application canal plus",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 4,
    "company": false,
@@ -4529,6 +5788,105 @@
    "score": 8
   },
   {
+   "query": "comment vendre en ligne sur facebook",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 8
+  },
+  {
+   "query": "comment vendre en ligne sur le bon coin",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment vendre un produit en ligne",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "commentaires sur la livraison",
+   "stem": "application de livraison comment",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment prendre rendez vous en ligne à l ambassade de france",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment fidéliser clients en ligne",
+   "stem": "comment fidéliser les clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment savoir à qui appartient un véhicule",
+   "stem": "comment suivre mes véhicules",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment puis-je contacter le service client",
    "stem": "comment automatiser le service client",
    "domain": "ai",
@@ -4557,7 +5915,7 @@
    "score": 8
   },
   {
-   "query": "مشكلة الشبكة في سامسونج s24 ultra",
+   "query": "مشكلة الشبكة في الايفون",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -4599,12 +5957,82 @@
    "score": 8
   },
   {
+   "query": "مشاركة الملفات بين جهازين كمبيوتر",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "حل مشكلة السيرفرات في انمي سلاير",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "حل مشكلة السيرفر الاحتياطي في انمي سلاير",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "كم يكلف انشاء تطبيق الكتروني",
    "stem": "كم يكلف تطبيق",
    "domain": "apps",
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "كيف ابيع منتج على الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "كيف ابث نت من الكمبيوتر للهاتف",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 4,
    "company": false,
@@ -4633,6 +6061,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "connexion internet se coupe souvent",
+   "stem": "internet coupe souvent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 5,
    "company": false,
@@ -4683,21 +6125,7 @@
    "score": 7.5
   },
   {
-   "query": "comment installer un reseau mesh",
-   "stem": "comment installer un réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
-   "query": "pourquoi mon réseau est indisponible",
+   "query": "pourquoi mon réseau internet est instable",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -4711,7 +6139,7 @@
    "score": 7.5
   },
   {
-   "query": "pourquoi mon réseau internet est instable",
+   "query": "pourquoi mon réseau est indisponible",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -4773,6 +6201,48 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment trouver un travail à distance",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment travailler en télétravail",
+   "stem": "télétravail entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment partager une imprimante avec un autre ordinateur",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 5,
    "company": false,
@@ -4963,36 +6433,8 @@
    "score": 7.5
   },
   {
-   "query": "lenteur application outlook",
-   "stem": "application lente",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
    "query": "application chatgpt lente",
    "stem": "application lente",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
-   "query": "appli qui plante des arbres",
-   "stem": "application qui plante",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -5117,6 +6559,62 @@
    "score": 7.5
   },
   {
+   "query": "comment vendre sa musique en ligne",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment prendre rendez vous en ligne avec les impots",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment obtenir un rendez vous",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire quand on vend un véhicule",
+   "stem": "comment suivre mes véhicules",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment faire apparaitre un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -5145,7 +6643,21 @@
    "score": 7.5
   },
   {
-   "query": "مشكلة الشبكة في الايفون",
+   "query": "مشكلة الشبكة في سامسونج s24 ultra",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج a16",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -5176,6 +6688,76 @@
    "query": "الواي فاي ضعيف جدا",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "حل مشكلات الكمبيوتر عن بعد",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "كيف تحصل على حافز",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "مشاركة الملفات بين أجهزة الكمبيوتر على نفس الشبكة",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "برنامج مشاركة الملفات بين الهاتف والكمبيوتر",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "حل مشكلة السيرفر في فيفا 16",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
    "hl": "ar",
    "engines": [
     "google"
@@ -5221,6 +6803,20 @@
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "كيف انزل الواتس اب على الكمبيوتر",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 5,
    "company": false,
@@ -5355,6 +6951,20 @@
    "score": 7
   },
   {
+   "query": "comment installer un reseau mesh",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "comment sécuriser un réseau sans fil",
    "stem": "comment sécuriser un réseau",
    "domain": "network",
@@ -5411,7 +7021,49 @@
    "score": 7
   },
   {
-   "query": "comment sauvegarder les données sur compte google",
+   "query": "comment faire un travail à distance",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "combien de personnes travaillent à distance",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment fonctionne le télétravail",
+   "stem": "télétravail entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -5439,7 +7091,7 @@
    "score": 7
   },
   {
-   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
+   "query": "comment sauvegarder les données sur compte google",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -5497,6 +7149,20 @@
   {
    "query": "mon ordinateur est devenu lent",
    "stem": "ordinateurs lents entreprise",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment ne pas utiliser le cloud",
+   "stem": "comment migrer vers le cloud",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -5593,6 +7259,20 @@
    "score": 7
   },
   {
+   "query": "lenteur application outlook",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "application mail lente",
    "stem": "application lente",
    "domain": "apps",
@@ -5663,8 +7343,36 @@
    "score": 7
   },
   {
-   "query": "مشكلة الشبكة في سامسونج a16",
-   "stem": "مشكلة الشبكة",
+   "query": "comment prendre rendez vous en ligne avec doctolib",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment suivre une voiture avec un smartphone",
+   "stem": "comment suivre mes véhicules",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "الواي فاي ضعيف عندي",
+   "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
    "engines": [
@@ -5677,9 +7385,37 @@
    "score": 7
   },
   {
-   "query": "الواي فاي ضعيف عندي",
-   "stem": "الواي فاي ضعيف",
+   "query": "الاتصال عن بعد بالكمبيوتر",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
    "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "كيف اعرف ان حاسوبي مراقب",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "حل مشكلة السيرفر",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
    "hl": "ar",
    "engines": [
     "google"
@@ -5711,6 +7447,34 @@
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "كيف ابيع منتجات رقمية",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "كيف احصل على المال من الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 6,
    "company": false,
@@ -5789,20 +7553,6 @@
    "score": 6.5
   },
   {
-   "query": "comment installer un réseau intranet",
-   "stem": "comment installer un réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
    "query": "comment se connecter à un réseau",
    "stem": "comment installer un réseau",
    "domain": "network",
@@ -5861,6 +7611,34 @@
   {
    "query": "comment brancher un switch sur la tele",
    "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment travailler sur un ordinateur à distance",
+   "stem": "comment travailler à distance",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment partager une imprimante entre plusieurs ordinateurs",
+   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -5960,6 +7738,20 @@
   {
    "query": "mon ordinateur est lent",
    "stem": "ordinateurs lents entreprise",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment avoir un cloud",
+   "stem": "comment migrer vers le cloud",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -6084,6 +7876,62 @@
    "score": 6.5
   },
   {
+   "query": "comment vendre en ligne sur amazon",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un bon de livraison",
+   "stem": "application de livraison comment",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment prendre rendez vous en ligne avec un médecin",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment retrouver un véhicule",
+   "stem": "comment suivre mes véhicules",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "comment activer whatsapp sur mon téléphone",
    "stem": "répondre automatiquement whatsapp",
    "domain": "ai",
@@ -6126,12 +7974,96 @@
    "score": 6.5
   },
   {
+   "query": "كيف احل هذه المشكلة",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "كيف يمكن الحصول على فيزا",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "مشاركة الملفات بين الهاتف والكمبيوتر بدون برامج",
+   "stem": "مشاركة الملفات بين",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "حل مشكلة السيرفر في موبايل ليجند",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "كيفية انشاء موقع الكتروني",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "كم يكلف انشاء تطبيق توصيل",
    "stem": "كم يكلف تطبيق",
    "domain": "apps",
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "كيف احمل واتس اب على الكمبيوتر",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 7,
    "company": false,
@@ -6196,7 +8128,7 @@
    "score": 6
   },
   {
-   "query": "comment installer un reseau lan",
+   "query": "comment installer un réseau intranet",
    "stem": "comment installer un réseau",
    "domain": "network",
    "hl": "fr",
@@ -6252,7 +8184,7 @@
    "score": 6
   },
   {
-   "query": "pourquoi mon réseau est faible",
+   "query": "pourquoi mon réseau mobile ne fonctionne pas",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -6266,7 +8198,7 @@
    "score": 6
   },
   {
-   "query": "pourquoi mon réseau mobile ne fonctionne pas",
+   "query": "pourquoi mon réseau est faible",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -6300,6 +8232,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment partager une imprimante sur un reseau local",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 8,
    "company": false,
@@ -6370,6 +8316,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment faire un cloud",
+   "stem": "comment migrer vers le cloud",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 8,
    "company": false,
@@ -6518,6 +8478,20 @@
    "score": 6
   },
   {
+   "query": "comment prendre rendez vous en ligne à la préfecture",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "whatsapp comment répondre à un message",
    "stem": "répondre automatiquement whatsapp",
    "domain": "ai",
@@ -6574,12 +8548,54 @@
    "score": 6
   },
   {
+   "query": "كيف اعلج هذه المشكلة",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "كيفية انشاء بريد الكتروني في الحاسوب",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "كم يكلف رفع تطبيق على جوجل بلاي",
    "stem": "كم يكلف تطبيق",
    "domain": "apps",
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "كيف افرمت ايباد ابل",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 8,
    "company": false,
@@ -6608,6 +8624,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment installer un reseau lan",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 9,
    "company": false,
@@ -6678,6 +8708,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment demander le télétravail",
+   "stem": "télétravail entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 9,
    "company": false,
@@ -6776,6 +8820,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer un cloud",
+   "stem": "comment migrer vers le cloud",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 9,
    "company": false,
@@ -6938,6 +8996,48 @@
    "score": 5.5
   },
   {
+   "query": "comment vendre en ligne sur yango",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment faire du e-commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment prendre rendez vous en ligne pour la retraite",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "comment mettre en place un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -6994,6 +9094,62 @@
    "score": 5.5
   },
   {
+   "query": "ايقاف تشغيل الكمبيوتر بعد وقت معين",
+   "stem": "كيف اصل الى حاسوبي عن بعد",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "حل مشكلة السيرفرات في فورت نايت",
+   "stem": "مشكلة السيرفر",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "كيف تنشئ بريد الكتروني",
+   "stem": "كيف انشئ بريد الكتروني للشركة",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "كيفية الربح من الانترنت",
+   "stem": "كيف ابيع على الانترنت",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "comment créer une adresse mail professionnelle gratuitement",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -7036,6 +9192,21 @@
    "score": 5
   },
   {
+   "query": "comment vendre en ligne gratuitement",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5
+  },
+  {
    "query": "probleme connexion groupe d amis xbox one",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -7064,6 +9235,34 @@
    "score": 4.5
   },
   {
+   "query": "comment partager une imprimante entre deux pc windows 10",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "comment créer un site e commerce pdf",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 4.5
+  },
+  {
    "query": "comment brancher un switch sur une livebox",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -7073,6 +9272,20 @@
    ],
    "best": 2,
    "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "windows 11 bureau a distance ne fonctionne pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
    "problem": true,
    "consumer": true,
    "score": 4
@@ -7134,6 +9347,34 @@
    "score": 3.5
   },
   {
+   "query": "comment partager imprimante windows 10",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
+   "query": "windows 10 bureau a distance ne fonctionne pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
    "query": "comment sauvegarder les données d'un samsung",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
@@ -7145,6 +9386,20 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 3.5
+  },
+  {
+   "query": "comment créer un site e commerce gratuitement",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
    "score": 3.5
   },
   {
@@ -7176,9 +9431,9 @@
    "score": 3
   },
   {
-   "query": "comment limiter accès photos facebook",
-   "stem": "comment contrôler les accès",
-   "domain": "security",
+   "query": "comment partager une imprimante sous windows 10",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
    "hl": "fr",
    "engines": [
     "google"
@@ -7190,9 +9445,9 @@
    "score": 3
   },
   {
-   "query": "lenteur application mail iphone",
-   "stem": "application lente",
-   "domain": "apps",
+   "query": "comment limiter accès photos facebook",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
    "hl": "fr",
    "engines": [
     "google"
@@ -7258,6 +9513,34 @@
    "problem": true,
    "consumer": true,
    "score": 2.5
+  },
+  {
+   "query": "lenteur application mail iphone",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment partager une imprimante sous windows 11",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
   },
   {
    "query": "serveur orange en panne",
@@ -7456,6 +9739,34 @@
    "score": 1
   },
   {
+   "query": "comment vendre en ligne sur tiktok",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "comment faire un site e-commerce gratuit",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 1
+  },
+  {
    "query": "livebox wifi qui coupe",
    "stem": "wifi qui coupe",
    "domain": "network",
@@ -7514,6 +9825,20 @@
   {
    "query": "comment avoir un livre gratuitement",
    "stem": "comment suivre les livreurs",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 0.5
+  },
+  {
+   "query": "comment avoir la livraison gratuite",
+   "stem": "application de livraison comment",
    "domain": "apps",
    "hl": "fr",
    "engines": [

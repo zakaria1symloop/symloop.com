@@ -19,15 +19,15 @@ const TODAY = new Date().toISOString().slice(0, 10);
 
 const THEMES = {
   mobile: ['application mobile', 'développement application mobile', 'création application mobile', 'application android', 'application ios', 'application flutter', 'agence application mobile'],
-  platform: ['plateforme web', 'plateforme e-commerce', 'site e-commerce', 'marketplace', 'application web', 'portail client', 'intranet', 'saas', 'plateforme de réservation', 'plateforme e-learning'],
-  business: ['erp', 'crm', 'logiciel sur mesure', 'gestion électronique des documents', 'logiciel de gestion commerciale', 'logiciel de gestion de stock', 'tableau de bord', 'business intelligence', 'digitalisation entreprise', 'transformation digitale'],
+  platform: ['plateforme web', 'plateforme e-commerce', 'site e-commerce', 'marketplace', 'application web', 'portail client', 'intranet', 'saas', 'plateforme de réservation', 'plateforme e-learning', 'application de livraison', 'boutique en ligne', 'création site web', 'site web entreprise', 'prise de rendez-vous en ligne'],
+  business: ['erp', 'crm', 'logiciel sur mesure', 'gestion électronique des documents', 'logiciel de gestion commerciale', 'logiciel de gestion de stock', 'tableau de bord', 'business intelligence', 'digitalisation entreprise', 'transformation digitale', 'logiciel de facturation', 'logiciel de caisse', 'logiciel de gestion', 'gestion de flotte', 'géolocalisation véhicules', 'gestion de maintenance gmao'],
   ai: ['intelligence artificielle', 'chatbot', 'agent ia', 'automatisation', 'chatbot whatsapp'],
   network: ['réseau informatique', 'installation réseau informatique', 'câblage réseau', 'câblage informatique', 'fibre optique entreprise', 'wifi entreprise', 'wifi professionnel', 'vpn entreprise', 'pare-feu', 'firewall', 'switch réseau', 'salle serveur', 'baie de brassage', 'téléphonie ip', 'standard téléphonique', 'interconnexion sites'],
-  infra: ['serveur entreprise', 'installation serveur', 'virtualisation', 'sauvegarde données entreprise', 'cloud entreprise', 'hébergement cloud', 'datacenter', 'active directory', 'microsoft 365', 'messagerie professionnelle', 'nas synology'],
+  infra: ['serveur entreprise', 'installation serveur', 'virtualisation', 'sauvegarde données entreprise', 'cloud entreprise', 'hébergement cloud', 'datacenter', 'active directory', 'microsoft 365', 'messagerie professionnelle', 'nas synology', 'serveur de fichiers', 'partage de fichiers', 'accès à distance', 'bureau à distance', 'télétravail', 'hébergement site web', 'nom de domaine'],
   services: ['infogérance', 'maintenance informatique', 'contrat de maintenance informatique', 'prestataire informatique', 'société informatique', 'société de services informatiques', 'solution informatique', 'intégrateur informatique', 'audit informatique', 'support informatique', 'externalisation informatique'],
   security: ['cybersécurité', 'sécurité informatique', 'audit de sécurité informatique', 'antivirus entreprise', 'vidéosurveillance', 'caméra de surveillance entreprise', 'contrôle d’accès', 'pointeuse biométrique'],
 };
-const THEMES_AR = ['تطبيق جوال', 'تصميم تطبيق', 'شبكات', 'تركيب شبكات', 'صيانة اعلام الي', 'كاميرات مراقبة', 'موقع الكتروني', 'متجر الكتروني', 'شركة برمجة', 'حلول تقنية', 'أمن المعلومات', 'سيرفر'];
+const THEMES_AR = ['تطبيق جوال', 'تصميم تطبيق', 'شبكات', 'تركيب شبكات', 'صيانة اعلام الي', 'كاميرات مراقبة', 'موقع الكتروني', 'متجر الكتروني', 'شركة برمجة', 'حلول تقنية', 'أمن المعلومات', 'سيرفر', 'خادم', 'شبكة الشركة', 'برنامج فواتير', 'برنامج تسيير', 'برنامج كاشير', 'تخزين سحابي', 'تطبيق توصيل'];
 
 const SHAPES = [(t) => `${t} algérie`, (t) => `${t} alger`, (t) => `${t} entreprise algérie`, (t) => `prix ${t} algérie`, (t) => `société ${t} algérie`, (t) => `${t} algérie 2027`];
 const SHAPES_AR = [(t) => `${t} الجزائر`, (t) => `${t} في الجزائر`, (t) => `سعر ${t} الجزائر`, (t) => `شركة ${t} الجزائر`];
