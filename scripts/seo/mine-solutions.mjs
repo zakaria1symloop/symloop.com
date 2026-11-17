@@ -32,10 +32,12 @@ const THEMES_AR = ['تطبيق جوال', 'تصميم تطبيق', 'شبكات',
 const SHAPES = [(t) => `${t} algérie`, (t) => `${t} alger`, (t) => `${t} entreprise algérie`, (t) => `prix ${t} algérie`, (t) => `société ${t} algérie`, (t) => `${t} algérie 2027`];
 const SHAPES_AR = [(t) => `${t} الجزائر`, (t) => `${t} في الجزائر`, (t) => `سعر ${t} الجزائر`, (t) => `شركة ${t} الجزائر`];
 
+// api.bing.com answers only to a full browser user agent (checked 17 Nov 2026).
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function getJson(u) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0' } }); return await r.json(); } catch { return null; } }
+async function getJson(u) { try { const r = await fetch(u, { headers: { 'user-agent': UA } }); return await r.json(); } catch { return null; } }
 const google = async (q, hl) => { const j = await getJson(`https://suggestqueries.google.com/complete/search?client=firefox&hl=${hl}&gl=dz&q=${encodeURIComponent(q)}`); return (j && j[1]) || []; };
-const bing = async (q, hl) => { const j = await getJson(`https://www.bing.com/osjson.aspx?query=${encodeURIComponent(q)}&market=${hl === 'ar' ? 'ar-DZ' : 'fr-DZ'}`); return (j && j[1]) || []; };
+const bing = async (q, hl) => { const j = await getJson(`https://api.bing.com/osjson.aspx?query=${encodeURIComponent(q)}&mkt=${hl === 'ar' ? 'ar-DZ' : 'fr-DZ'}`); return (j && j[1]) || []; };
 
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/’/g, "'");
 const STOP = new Set(['algerie', 'alger', 'en', 'de', 'la', 'le', 'les', 'une', 'un', 'des', 'du', 'd', 'l', 'pour', 'et', 'a', 'au', 'aux', 'prix', 'societe', 'entreprise', 'avec', 'sur', 'par', '2024', '2025', '2026', '2027']);
@@ -99,7 +101,7 @@ for (const x of keep) {
 const themes = Object.values(byTheme).map((s) => ({ ...s, demand: Math.round(s.demand), coverage: s.n ? Math.round((s.covered / s.n) * 100) : 0 })).sort((a, b) => b.demand - a.demand);
 
 fs.mkdirSync(OUT, { recursive: true });
-fs.writeFileSync(path.join(OUT, `solutions-${TODAY}.json`), JSON.stringify({ date: TODAY, calls, method: 'Google suggest (client=firefox, gl=dz) + Bing osjson (fr-DZ / ar-DZ); themes and shapes listed in scripts/seo/mine-solutions.mjs; kept = suggestions with an Algeria marker and no noise word; coverage = share matched to an existing page slug', totals: { suggestions: items.length, kept: keep.length }, themes, items: keep }, null, 1));
+fs.writeFileSync(path.join(OUT, `solutions-${TODAY}.json`), JSON.stringify({ date: TODAY, calls, method: 'Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); themes and shapes listed in scripts/seo/mine-solutions.mjs; kept = suggestions with an Algeria marker and no noise word; coverage = share matched to an existing page slug', totals: { suggestions: items.length, kept: keep.length }, themes, items: keep }, null, 1));
 const md = [`# Solution intent ${TODAY}`, '', `${calls} calls · ${items.length} suggestions · ${keep.length} kept (Algeria marker, no noise). A suggestion is a phrase the engine proposes, not a volume.`, '',
   '| theme | group | kept | buyer-shaped | demand | matched to a page | samples |', '|---|---|---|---|---|---|---|',
   ...themes.map((s) => `| ${s.theme} | ${s.group} | ${s.n} | ${s.buyer} | ${s.demand} | ${s.coverage} % | ${s.samples.join(' · ')} |`), '',

@@ -29,10 +29,12 @@ const STEMS = {
 };
 const STEMS_AR = { network: ['مشكلة الشبكة', 'الواي فاي ضعيف', 'الانترنت بطيء في الشركة', 'كيف اربط بين مكتبين', 'كيف اشارك الملفات'], infra: ['السيرفر بطيء', 'كيف احفظ البيانات', 'استرجاع البيانات'], apps: ['كيف اصمم تطبيق لشركتي', 'كم يكلف تطبيق', 'كيف ادير المخزون', 'التطبيق بطيء', 'كيف ارقمن شركتي'], security: ['اختراق الشركة', 'فيروس الفدية'] };
 
+// api.bing.com answers only to a full browser user agent (checked 17 Nov 2026).
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function getJson(u) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0' } }); return await r.json(); } catch { return null; } }
+async function getJson(u) { try { const r = await fetch(u, { headers: { 'user-agent': UA } }); return await r.json(); } catch { return null; } }
 const google = async (q, hl) => { const j = await getJson(`https://suggestqueries.google.com/complete/search?client=firefox&hl=${hl}&gl=dz&q=${encodeURIComponent(q)}`); return (j && j[1]) || []; };
-const bing = async (q, hl) => { const j = await getJson(`https://www.bing.com/osjson.aspx?query=${encodeURIComponent(q)}&market=${hl === 'ar' ? 'ar-DZ' : 'fr-DZ'}`); return (j && j[1]) || []; };
+const bing = async (q, hl) => { const j = await getJson(`https://api.bing.com/osjson.aspx?query=${encodeURIComponent(q)}&mkt=${hl === 'ar' ? 'ar-DZ' : 'fr-DZ'}`); return (j && j[1]) || []; };
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/’/g, "'");
 
 const found = new Map(); let calls = 0;
@@ -64,7 +66,7 @@ const items = [...found.values()].map((it) => {
 }).filter((x) => x.score > 0 && x.problem).sort((a, b) => b.score - a.score);
 
 fs.mkdirSync(OUT, { recursive: true });
-fs.writeFileSync(path.join(OUT, `problems-${TODAY}.json`), JSON.stringify({ date: TODAY, calls, method: 'Google suggest (client=firefox, gl=dz) + Bing osjson (fr-DZ / ar-DZ); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised', items }, null, 1));
+fs.writeFileSync(path.join(OUT, `problems-${TODAY}.json`), JSON.stringify({ date: TODAY, calls, method: 'Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised', items }, null, 1));
 const byDomain = {};
 for (const x of items) (byDomain[x.domain] || (byDomain[x.domain] = [])).push(x);
 const md = [`# Problem phrasing ${TODAY}`, '', `${calls} calls · ${items.length} problem-shaped suggestions kept. A suggestion is a phrase the engine proposes, not a volume.`, '',
