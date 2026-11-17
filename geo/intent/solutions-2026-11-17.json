@@ -1,0 +1,4635 @@
+{
+ "date": "2026-11-17",
+ "calls": 1032,
+ "method": "Google suggest (client=firefox, gl=dz) + Bing osjson (fr-DZ / ar-DZ); themes and shapes listed in scripts/seo/mine-solutions.mjs; kept = suggestions with an Algeria marker and no noise word; coverage = share matched to an existing page slug",
+ "totals": {
+  "suggestions": 352,
+  "kept": 261
+ },
+ "themes": [
+  {
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "n": 16,
+   "buyer": 5,
+   "demand": 158,
+   "covered": 0,
+   "samples": [
+    "prix camera algérie",
+    "prix dvr algerie",
+    "prix camera canon algérie",
+    "prix camera dahua algérie",
+    "vidéosurveillance algérie",
+    "camera algerie prix"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "marketplace",
+   "group": "platform",
+   "n": 15,
+   "buyer": 0,
+   "demand": 134,
+   "covered": 0,
+   "samples": [
+    "marketplace algérie",
+    "marketplace algérie maison",
+    "marketplace algeria",
+    "marketplace algérie voiture",
+    "marketplace algerie facebook",
+    "marketplace algérie électroménager"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "téléphonie ip",
+   "group": "network",
+   "n": 13,
+   "buyer": 1,
+   "demand": 121,
+   "covered": 2,
+   "samples": [
+    "telephone ip prix algerie",
+    "téléphone ip algérie",
+    "mail algérie télécom dz",
+    "standard téléphonique ip algérie",
+    "numéro de téléphone algérie",
+    "email algérie télécom dz"
+   ],
+   "coverage": 15
+  },
+  {
+   "theme": "erp",
+   "group": "business",
+   "n": 13,
+   "buyer": 2,
+   "demand": 118,
+   "covered": 4,
+   "samples": [
+    "erp prix algérie",
+    "erp algérie",
+    "erp air algérie",
+    "meilleur erp algérie",
+    "logiciel erp algerie",
+    "erp odoo algérie"
+   ],
+   "coverage": 31
+  },
+  {
+   "theme": "cybersécurité",
+   "group": "security",
+   "n": 12,
+   "buyer": 1,
+   "demand": 115,
+   "covered": 0,
+   "samples": [
+    "entreprise cybersécurité algérie",
+    "cybersécurité algérie",
+    "cybersécurité algérie université",
+    "cyber alger",
+    "cyber algérie",
+    "cybersecurity algeria"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "application mobile",
+   "group": "mobile",
+   "n": 10,
+   "buyer": 3,
+   "demand": 108,
+   "covered": 9,
+   "samples": [
+    "prix application mobile algérie",
+    "creation application mobile algerie",
+    "developpement application mobile algerie",
+    "application mobile algérie",
+    "développeur application mobile algérie",
+    "application telephone algerie"
+   ],
+   "coverage": 90
+  },
+  {
+   "theme": "portail client",
+   "group": "platform",
+   "n": 11,
+   "buyer": 0,
+   "demand": 99,
+   "covered": 5,
+   "samples": [
+    "espace client algérie télécom",
+    "espace client alger",
+    "espace client algérie télécom fibre",
+    "espace client algérie",
+    "espace client algérie poste",
+    "espace client algérie télécom inscription"
+   ],
+   "coverage": 45
+  },
+  {
+   "theme": "chatbot",
+   "group": "ai",
+   "n": 10,
+   "buyer": 1,
+   "demand": 96,
+   "covered": 0,
+   "samples": [
+    "robot prix algérie",
+    "chatbot algérie",
+    "air algérie",
+    "chat algerie",
+    "robot algérie",
+    "chat algerie sans inscription"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "support informatique",
+   "group": "services",
+   "n": 10,
+   "buyer": 0,
+   "demand": 92,
+   "covered": 0,
+   "samples": [
+    "service technique algérie télécom",
+    "service technique algérie télécom oran",
+    "service technique algérie télécom boufarik",
+    "support technique algerie telecom",
+    "service technique algérie télécom blida",
+    "support pc algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "n": 10,
+   "buyer": 0,
+   "demand": 88,
+   "covered": 10,
+   "samples": [
+    "intelligence artificielle algérie",
+    "intelligence artificielle algérie startup",
+    "école intelligence artificielle algérie",
+    "artificial intelligence algeria",
+    "master intelligence artificielle algérie",
+    "ecole intelligence artificielle alger"
+   ],
+   "coverage": 100
+  },
+  {
+   "theme": "microsoft 365",
+   "group": "infra",
+   "n": 8,
+   "buyer": 3,
+   "demand": 87,
+   "covered": 0,
+   "samples": [
+    "prix office 365 algerie",
+    "office 365 prix algérie",
+    "microsoft 365 prix algerie",
+    "microsoft 365 algérie",
+    "abonnement microsoft 365 algerie",
+    "office 365 algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "tableau de bord",
+   "group": "business",
+   "n": 9,
+   "buyer": 0,
+   "demand": 83,
+   "covered": 7,
+   "samples": [
+    "tableau de bord algerie",
+    "reparation tableau de bord algerie",
+    "produit tableau de bord algerie",
+    "tableau de bord passeport algerien",
+    "tableau de bord rh algerie",
+    "nettoyant tableau de bord algerie"
+   ],
+   "coverage": 78
+  },
+  {
+   "theme": "solution informatique",
+   "group": "services",
+   "n": 7,
+   "buyer": 6,
+   "demand": 81,
+   "covered": 0,
+   "samples": [
+    "solution informatique algerie",
+    "intégrateur de solution informatique algérie",
+    "solutions it algérie",
+    "it solution algerie",
+    "solution dz",
+    "it solutions algeria"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "datacenter",
+   "group": "infra",
+   "n": 7,
+   "buyer": 1,
+   "demand": 76,
+   "covered": 0,
+   "samples": [
+    "société alger centre",
+    "data center algérie",
+    "datacenter algerie",
+    "centre algérien du contrôle de la qualité et de l emballage",
+    "data center algeria",
+    "centre algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "site e-commerce",
+   "group": "platform",
+   "n": 7,
+   "buyer": 2,
+   "demand": 74,
+   "covered": 1,
+   "samples": [
+    "site e commerce algérie prix",
+    "site e commerce algérie",
+    "création site e commerce algérie",
+    "site e commerce dz",
+    "top site e commerce algérie",
+    "liste site e commerce algérie"
+   ],
+   "coverage": 14
+  },
+  {
+   "theme": "prestataire informatique",
+   "group": "services",
+   "n": 7,
+   "buyer": 2,
+   "demand": 73,
+   "covered": 0,
+   "samples": [
+    "entreprise informatique algerie",
+    "entreprise informatique alger",
+    "fournisseur informatique algerie",
+    "fournisseur informatique alger",
+    "consultant informatique algerie",
+    "fournisseur matériel informatique algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "maintenance informatique",
+   "group": "services",
+   "n": 7,
+   "buyer": 0,
+   "demand": 73,
+   "covered": 1,
+   "samples": [
+    "maintenance informatique alger",
+    "technicien informatique algerie",
+    "service informatique algerie",
+    "réparation informatique alger",
+    "technicien informatique alger",
+    "service numérique algerie"
+   ],
+   "coverage": 14
+  },
+  {
+   "theme": "automatisation",
+   "group": "ai",
+   "n": 6,
+   "buyer": 2,
+   "demand": 68,
+   "covered": 0,
+   "samples": [
+    "automate prix algérie",
+    "prix distributeur automatique algérie",
+    "programmation algérie",
+    "automatisation algerie",
+    "automate algérie",
+    "automation algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "n": 7,
+   "buyer": 1,
+   "demand": 67,
+   "covered": 7,
+   "samples": [
+    "logiciel de gestion de stock algerie prix",
+    "logiciel de gestion de stock algérie",
+    "logiciel gestion de stock algerie ouedkniss",
+    "meilleur logiciel gestion de stock algérie",
+    "logiciel gestion de stock pharmacie algerie",
+    "logiciel gestion de stock certifié en algerie"
+   ],
+   "coverage": 100
+  },
+  {
+   "theme": "pointeuse biométrique",
+   "group": "security",
+   "n": 5,
+   "buyer": 3,
+   "demand": 59,
+   "covered": 0,
+   "samples": [
+    "prix pointeuse digitale algerie",
+    "pointeuse digitale algérie prix",
+    "pointeuse biometrique prix algerie",
+    "pointeuse biométrique algérie",
+    "pointeuse digitale algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "réseau informatique",
+   "group": "network",
+   "n": 5,
+   "buyer": 2,
+   "demand": 57,
+   "covered": 0,
+   "samples": [
+    "installation réseau informatique algérie",
+    "prix abonnement internet algerie",
+    "réseau internet algérie",
+    "reseau informatique algerie",
+    "meilleur reseau internet algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "contrôle d’accès",
+   "group": "security",
+   "n": 5,
+   "buyer": 1,
+   "demand": 55,
+   "covered": 0,
+   "samples": [
+    "entreprise de contrôle d accès en algérie",
+    "contrôle d accès algérie",
+    "contrôle d accès zkteco algérie",
+    "controle d'acces zkteco algerie",
+    "controle d accès ascenseur algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "n": 5,
+   "buyer": 1,
+   "demand": 54,
+   "covered": 1,
+   "samples": [
+    "prix hébergement site web algérie",
+    "hébergement cloud algérie",
+    "hébergement web algérie",
+    "hebergement web algerie telecom",
+    "hebergeur web algerie"
+   ],
+   "coverage": 20
+  },
+  {
+   "theme": "intranet",
+   "group": "platform",
+   "n": 5,
+   "buyer": 0,
+   "demand": 51,
+   "covered": 0,
+   "samples": [
+    "intranet algerie telecom",
+    "intranet algerie",
+    "intranet banque d'algérie",
+    "intranet air algerie",
+    "intranet bank of algeria dz"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "virtualisation",
+   "group": "infra",
+   "n": 5,
+   "buyer": 0,
+   "demand": 50,
+   "covered": 0,
+   "samples": [
+    "virtual algeria number",
+    "virtual algeria phone number",
+    "vm algeriet",
+    "vm algerie",
+    "vm algeriet österrike"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "câblage réseau",
+   "group": "network",
+   "n": 4,
+   "buyer": 2,
+   "demand": 47,
+   "covered": 0,
+   "samples": [
+    "prix cable reseau algerie",
+    "câble réseau prix algérie",
+    "câble réseau algérie",
+    "cable reseau cat6 algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "n": 4,
+   "buyer": 0,
+   "demand": 42,
+   "covered": 4,
+   "samples": [
+    "plateforme de réservation algérie",
+    "plateforme de réservation d hôtel algérie",
+    "plateforme de reservation hotel algerie",
+    "application reservation algerie"
+   ],
+   "coverage": 100
+  },
+  {
+   "theme": "baie de brassage",
+   "group": "network",
+   "n": 3,
+   "buyer": 2,
+   "demand": 37,
+   "covered": 0,
+   "samples": [
+    "prix armoire de brassage algerie",
+    "armoire de brassage prix algérie",
+    "armoire de brassage algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "standard téléphonique",
+   "group": "network",
+   "n": 3,
+   "buyer": 2,
+   "demand": 37,
+   "covered": 0,
+   "samples": [
+    "prix standard téléphonique panasonic algérie",
+    "standard téléphonique prix algérie",
+    "standard téléphonique algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "société informatique",
+   "group": "services",
+   "n": 3,
+   "buyer": 2,
+   "demand": 36,
+   "covered": 0,
+   "samples": [
+    "societe informatique algerie",
+    "société informatique alger",
+    "boite informatique alger"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "firewall",
+   "group": "network",
+   "n": 3,
+   "buyer": 1,
+   "demand": 34,
+   "covered": 0,
+   "samples": [
+    "firewall prix algérie",
+    "firewall algérie",
+    "firewall fortinet algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "saas",
+   "group": "platform",
+   "n": 3,
+   "buyer": 0,
+   "demand": 32,
+   "covered": 0,
+   "samples": [
+    "saas algérie",
+    "saas algeria",
+    "algerian saas"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "crm",
+   "group": "business",
+   "n": 3,
+   "buyer": 0,
+   "demand": 32,
+   "covered": 1,
+   "samples": [
+    "crm algérie",
+    "crm algeria",
+    "logiciel crm algerie"
+   ],
+   "coverage": 33
+  },
+  {
+   "theme": "switch réseau",
+   "group": "network",
+   "n": 2,
+   "buyer": 1,
+   "demand": 24,
+   "covered": 0,
+   "samples": [
+    "switch réseau prix algérie",
+    "switch reseau algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "plateforme e-learning",
+   "group": "platform",
+   "n": 2,
+   "buyer": 0,
+   "demand": 22,
+   "covered": 0,
+   "samples": [
+    "plateforme e learning algerie",
+    "plateforme e learning alger 2"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "business intelligence",
+   "group": "business",
+   "n": 2,
+   "buyer": 0,
+   "demand": 22,
+   "covered": 1,
+   "samples": [
+    "business intelligence algerie",
+    "business news algeria"
+   ],
+   "coverage": 50
+  },
+  {
+   "theme": "messagerie professionnelle",
+   "group": "infra",
+   "n": 2,
+   "buyer": 0,
+   "demand": 22,
+   "covered": 0,
+   "samples": [
+    "messagerie professionnelle algérie",
+    "hébergement messagerie professionnelle algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "sécurité informatique",
+   "group": "security",
+   "n": 2,
+   "buyer": 0,
+   "demand": 22,
+   "covered": 0,
+   "samples": [
+    "sécurité informatique algérie",
+    "référentiel national de sécurité informatique algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "logiciel de gestion commerciale",
+   "group": "business",
+   "n": 2,
+   "buyer": 0,
+   "demand": 20,
+   "covered": 1,
+   "samples": [
+    "logiciel de gestion commerciale algérie",
+    "meilleur logiciel gestion commerciale algérie"
+   ],
+   "coverage": 50
+  },
+  {
+   "theme": "fibre optique entreprise",
+   "group": "network",
+   "n": 1,
+   "buyer": 1,
+   "demand": 13,
+   "covered": 0,
+   "samples": [
+    "entreprise fibre optique algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "caméra de surveillance entreprise",
+   "group": "security",
+   "n": 1,
+   "buyer": 1,
+   "demand": 13,
+   "covered": 0,
+   "samples": [
+    "entreprise de camera de surveillance en algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "plateforme e-commerce",
+   "group": "platform",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "plateforme e commerce algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "agent ia",
+   "group": "ai",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "agent ia algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "wifi professionnel",
+   "group": "network",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "internet professionnel algérie telecom"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "pare-feu",
+   "group": "network",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "pare feu algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "nas synology",
+   "group": "infra",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "nas synology algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "application ios",
+   "group": "mobile",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "1xbet app ios algérie"
+   ],
+   "coverage": 0
+  }
+ ],
+ "items": [
+  {
+   "query": "prix application mobile algérie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "creation application mobile algerie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "developpement application mobile algerie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/developpement-application-mobile-algerie-2024"
+  },
+  {
+   "query": "site e commerce algérie prix",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "erp prix algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "logiciel de gestion de stock algerie prix",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "robot prix algérie",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "automate prix algérie",
+   "theme": "automatisation",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "installation réseau informatique algérie",
+   "theme": "réseau informatique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix abonnement internet algerie",
+   "theme": "réseau informatique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix cable reseau algerie",
+   "theme": "câblage réseau",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "entreprise fibre optique algérie",
+   "theme": "fibre optique entreprise",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "firewall prix algérie",
+   "theme": "firewall",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "switch réseau prix algérie",
+   "theme": "switch réseau",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix armoire de brassage algerie",
+   "theme": "baie de brassage",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix standard téléphonique panasonic algérie",
+   "theme": "standard téléphonique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix hébergement site web algérie",
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/creation-site-web-algerie-2024"
+  },
+  {
+   "query": "société alger centre",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "societe informatique algerie",
+   "theme": "société informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "société informatique alger",
+   "theme": "société informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "solution informatique algerie",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "intégrateur de solution informatique algérie",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "entreprise cybersécurité algérie",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix camera algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "entreprise de camera de surveillance en algerie",
+   "theme": "caméra de surveillance entreprise",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "entreprise de contrôle d accès en algérie",
+   "theme": "contrôle d’accès",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix pointeuse digitale algerie",
+   "theme": "pointeuse biométrique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "prix distributeur automatique algérie",
+   "theme": "automatisation",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "câble réseau prix algérie",
+   "theme": "câblage réseau",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "armoire de brassage prix algérie",
+   "theme": "baie de brassage",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "standard téléphonique prix algérie",
+   "theme": "standard téléphonique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "prix office 365 algerie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "entreprise informatique algerie",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "entreprise informatique alger",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "solutions it algérie",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "prix dvr algerie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "pointeuse digitale algérie prix",
+   "theme": "pointeuse biométrique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
+   "query": "telephone ip prix algerie",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12,
+   "page": null
+  },
+  {
+   "query": "office 365 prix algérie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12,
+   "page": null
+  },
+  {
+   "query": "prix camera canon algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12,
+   "page": null
+  },
+  {
+   "query": "pointeuse biometrique prix algerie",
+   "theme": "pointeuse biométrique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12,
+   "page": null
+  },
+  {
+   "query": "microsoft 365 prix algerie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11.5,
+   "page": null
+  },
+  {
+   "query": "it solution algerie",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11.5,
+   "page": null
+  },
+  {
+   "query": "prix camera dahua algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11.5,
+   "page": null
+  },
+  {
+   "query": "application mobile algérie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "développeur application mobile algérie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "plateforme e commerce algérie",
+   "theme": "plateforme e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "site e commerce algérie",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "création site e commerce algérie",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/creation-site-web-algerie-2024"
+  },
+  {
+   "query": "marketplace algérie",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/le-client-a-appele-trois-fois-reclamations-sav-application-algerie-2027-ticket-unique-priorite-delais-escalade-retours-avoirs-espace-client"
+  },
+  {
+   "query": "espace client alger",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/le-client-a-appele-trois-fois-reclamations-sav-application-algerie-2027-ticket-unique-priorite-delais-escalade-retours-avoirs-espace-client"
+  },
+  {
+   "query": "intranet algerie telecom",
+   "theme": "intranet",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "saas algérie",
+   "theme": "saas",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "plateforme de réservation algérie",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
+  },
+  {
+   "query": "plateforme e learning algerie",
+   "theme": "plateforme e-learning",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "erp algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "crm algérie",
+   "theme": "crm",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "logiciel de gestion commerciale algérie",
+   "theme": "logiciel de gestion commerciale",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/developpement-logiciel-bancaire-gestion-cash-2026"
+  },
+  {
+   "query": "logiciel de gestion de stock algérie",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "tableau de bord algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "business intelligence algerie",
+   "theme": "business intelligence",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/ia-analyse-predictive-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "intelligence artificielle algérie",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "chatbot algérie",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "agent ia algerie",
+   "theme": "agent ia",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "programmation algérie",
+   "theme": "automatisation",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "automatisation algerie",
+   "theme": "automatisation",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "réseau internet algérie",
+   "theme": "réseau informatique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "reseau informatique algerie",
+   "theme": "réseau informatique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "câble réseau algérie",
+   "theme": "câblage réseau",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "internet professionnel algérie telecom",
+   "theme": "wifi professionnel",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "pare feu algerie",
+   "theme": "pare-feu",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "firewall algérie",
+   "theme": "firewall",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "switch reseau algerie",
+   "theme": "switch réseau",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "armoire de brassage algérie",
+   "theme": "baie de brassage",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "téléphone ip algérie",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "mail algérie télécom dz",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "standard téléphonique algérie",
+   "theme": "standard téléphonique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "virtual algeria number",
+   "theme": "virtualisation",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "hébergement cloud algérie",
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "data center algérie",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "datacenter algerie",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "microsoft 365 algérie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "abonnement microsoft 365 algerie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "messagerie professionnelle algérie",
+   "theme": "messagerie professionnelle",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "nas synology algerie",
+   "theme": "nas synology",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "maintenance informatique alger",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/informatique-industrielle-algerie-maintenance-pc-usine-2026"
+  },
+  {
+   "query": "fournisseur informatique algerie",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "fournisseur informatique alger",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "solution dz",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "it solutions algeria",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "service technique algérie télécom",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "cybersécurité algérie",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "sécurité informatique algérie",
+   "theme": "sécurité informatique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "vidéosurveillance algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "camera algerie prix",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "contrôle d accès algérie",
+   "theme": "contrôle d’accès",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "pointeuse biométrique algérie",
+   "theme": "pointeuse biométrique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "application telephone algerie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/connexion-otp-sms-whatsapp-application-algerie-2027-numero-de-telephone-code-cout-par-envoi-fraude-passkeys"
+  },
+  {
+   "query": "1xbet app ios algérie",
+   "theme": "application ios",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "marketplace algérie maison",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "marketplace algeria",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom fibre",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "intranet algerie",
+   "theme": "intranet",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "saas algeria",
+   "theme": "saas",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "plateforme de réservation d hôtel algérie",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
+  },
+  {
+   "query": "plateforme de reservation hotel algerie",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
+  },
+  {
+   "query": "plateforme e learning alger 2",
+   "theme": "plateforme e-learning",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "crm algeria",
+   "theme": "crm",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "reparation tableau de bord algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "business news algeria",
+   "theme": "business intelligence",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "intelligence artificielle algérie startup",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "air algérie",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "chat algerie",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "automate algérie",
+   "theme": "automatisation",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "standard téléphonique ip algérie",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "numéro de téléphone algérie",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/connexion-otp-sms-whatsapp-application-algerie-2027-numero-de-telephone-code-cout-par-envoi-fraude-passkeys"
+  },
+  {
+   "query": "virtual algeria phone number",
+   "theme": "virtualisation",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "hébergement web algérie",
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "centre algérien du contrôle de la qualité et de l emballage",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "data center algeria",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "office 365 algérie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "hébergement messagerie professionnelle algérie",
+   "theme": "messagerie professionnelle",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "technicien informatique algerie",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "service informatique algerie",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "réparation informatique alger",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "technicien informatique alger",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "service technique algérie télécom oran",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "cybersécurité algérie université",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "cyber alger",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "référentiel national de sécurité informatique algérie",
+   "theme": "sécurité informatique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "télésurveillance algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "camera algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "contrôle d accès zkteco algérie",
+   "theme": "contrôle d’accès",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "controle d'acces zkteco algerie",
+   "theme": "contrôle d’accès",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "pointeuse digitale algérie",
+   "theme": "pointeuse biométrique",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "application algérie telecom",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "site e commerce dz",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "top site e commerce algérie",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "marketplace algérie voiture",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "marketplace algerie facebook",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "espace client algérie",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": "/blog/le-client-a-appele-trois-fois-reclamations-sav-application-algerie-2027-ticket-unique-priorite-delais-escalade-retours-avoirs-espace-client"
+  },
+  {
+   "query": "intranet banque d'algérie",
+   "theme": "intranet",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "intranet air algerie",
+   "theme": "intranet",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "algerian saas",
+   "theme": "saas",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "application reservation algerie",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": "/blog/application-reservation-algerie-2026"
+  },
+  {
+   "query": "erp air algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "logiciel crm algerie",
+   "theme": "crm",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": "/blog/logiciel-crm-algerie-2024"
+  },
+  {
+   "query": "logiciel gestion de stock algerie ouedkniss",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "produit tableau de bord algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "tableau de bord passeport algerien",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "robot algérie",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "chat algerie sans inscription",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "cable reseau cat6 algerie",
+   "theme": "câblage réseau",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "firewall fortinet algerie",
+   "theme": "firewall",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "email algérie télécom dz",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "vm algeriet",
+   "theme": "virtualisation",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "hebergement web algerie telecom",
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "centre algérie",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "centre alger",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "microsoft office 365 algerie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "service numérique algerie",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "boite informatique alger",
+   "theme": "société informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "service technique algérie télécom boufarik",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "support technique algerie telecom",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "cyber algérie",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "cybersecurity algeria",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "controle d accès ascenseur algerie",
+   "theme": "contrôle d’accès",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "application mobile air algérie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "liste site e commerce algérie",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "meilleur site e commerce algerie",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "marketplace algérie électroménager",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "marketplace algerie location appartement",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "espace client algérie poste",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/le-client-a-appele-trois-fois-reclamations-sav-application-algerie-2027-ticket-unique-priorite-delais-escalade-retours-avoirs-espace-client"
+  },
+  {
+   "query": "intranet bank of algeria dz",
+   "theme": "intranet",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "meilleur erp algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "logiciel erp algerie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/integrer-logiciel-existant-api-algerie-2027-comptabilite-erp-caisse-webhooks-exports-sans-api"
+  },
+  {
+   "query": "tableau de bord rh algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "école intelligence artificielle algérie",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "artificial intelligence algeria",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/artificial-intelligence-solutions-kuwait-2026"
+  },
+  {
+   "query": "ai algeria",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "automation algerie",
+   "theme": "automatisation",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "algérie télécom annuaire inversé",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "vm algerie",
+   "theme": "virtualisation",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "hebergeur web algerie",
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "service informatique dz",
+   "theme": "maintenance informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "consultant informatique algerie",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "service technique algérie télécom blida",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "cyber alger centre",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "décret vidéosurveillance algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "camera algeria",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "marketplace algérie vetement",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom inscription",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "erp odoo algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": "/blog/odoo-vs-erp-sur-mesure-algerie-2026"
+  },
+  {
+   "query": "meilleur logiciel gestion commerciale algérie",
+   "theme": "logiciel de gestion commerciale",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "meilleur logiciel gestion de stock algérie",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "nettoyant tableau de bord algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "master intelligence artificielle algérie",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "ecole intelligence artificielle alger",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "meilleur reseau internet algerie",
+   "theme": "réseau informatique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "annuaire téléphonique algérie télécom",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "support pc algerie",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "service technique algerie telecom annaba",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "réglementation vidéosurveillance algérie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "application poste mobile algerie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "marketplace algérie immobilier",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "marketplace algérie oran",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom ouvert actuellement",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "réglementation erp algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "erp airalgerie dz",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "logiciel erp algerie prix",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 8.5,
+   "page": "/blog/integrer-logiciel-existant-api-algerie-2027-comptabilite-erp-caisse-webhooks-exports-sans-api"
+  },
+  {
+   "query": "logiciel gestion de stock pharmacie algerie",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "tapis tableau de bord algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "université intelligence artificielle algérie",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "taux tap algérie 2023",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "vm algeriet österrike",
+   "theme": "virtualisation",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "licence office 365 algerie",
+   "theme": "microsoft 365",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "fournisseur matériel informatique algérie",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "vente outil informatique algerie",
+   "theme": "solution informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "service technique algerie telecom bouzareah",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "master cybersécurité algérie",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "cyber alger plage",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "security algerie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "application recharge mobile algerie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
+   "query": "marketplace algérie maison echange appartement",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "marketplace algerie telecom",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom login",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "erp logiciel algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": "/blog/integrer-logiciel-existant-api-algerie-2027-comptabilite-erp-caisse-webhooks-exports-sans-api"
+  },
+  {
+   "query": "sap erp algerie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "logiciel gestion de stock certifié en algerie",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "numéro de téléphone algérie télécom",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": "/blog/connexion-otp-sms-whatsapp-application-algerie-2027-numero-de-telephone-code-cout-par-envoi-fraude-passkeys"
+  },
+  {
+   "query": "loi cybersécurité algérie",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "cyber algeria",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "security algeria",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "marketplace algérie téléphone",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom 4g",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": "/blog/le-client-a-appele-trois-fois-reclamations-sav-application-algerie-2027-ticket-unique-priorite-delais-escalade-retours-avoirs-espace-client"
+  },
+  {
+   "query": "erp system algerie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "logiciel gestion de stock et facturation algerie",
+   "theme": "logiciel de gestion de stock",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": "/blog/logiciel-pharmacie-gestion-stock-algerie-2026"
+  },
+  {
+   "query": "tableau de bord aeroport alger",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": "/blog/tableau-de-bord-business-intelligence-algerie-2026"
+  },
+  {
+   "query": "doctorat intelligence artificielle algerie",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "assistance algerie telecom",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "prochain match algérie 2026",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "fournisseur consommable informatique algerie",
+   "theme": "prestataire informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "service technique algerie telecom tizi ouzou",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "ecole cybersécurité alger",
+   "theme": "cybersécurité",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "dvr algerie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "marketplace alger massage",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "espace client algérie télécom ne fonctionne pas",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "tableau de bord fiat 500 algerie",
+   "theme": "tableau de bord",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "moyenne intelligence artificielle algerie",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "chat algeria online",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "élections législatives algérie 2026",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "support pc dz",
+   "theme": "support informatique",
+   "group": "services",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "cctv algerie",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "jumia algérie",
+   "theme": "marketplace",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "espace client algérie telecom particuliers",
+   "theme": "portail client",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "erp gp air algérie",
+   "theme": "erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "institut intelligence artificielle alger",
+   "theme": "intelligence artificielle",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": "/blog/intelligence-artificielle-algerie-2026"
+  },
+  {
+   "query": "ai algerian voice",
+   "theme": "chatbot",
+   "group": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "actualités algérie février 2026",
+   "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "algérie cctv",
+   "theme": "vidéosurveillance",
+   "group": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  }
+ ]
+}

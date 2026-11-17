@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "256",
+    slug: "installation-reseau-informatique-entreprise-algerie-2027-cablage-baie-de-brassage-switch-wifi-pare-feu-lien-de-secours",
+    title: "Installation réseau informatique d'entreprise en Algérie (2027) : câblage, baie de brassage, switchs, Wi-Fi, pare-feu et lien de secours quand le réseau rame et que tout s'arrête",
+    subtitle: "Le réseau d'un siège et de son dépôt dessiné avec ses deux liens internet et ses six réseaux séparés, six situations réelles, le Wi-Fi mesuré pièce par pièce avant et après, cinq couches dont les réseaux séparés, le calendrier 2027 en cinq semaines et la recette en six contrôles avant de signer",
+    excerpt: "« Le réseau a poussé tout seul : la box de l'opérateur au fond du couloir, trois petits switchs en cascade sous les bureaux, un répéteur Wi-Fi, et personne ne sait quel câble va où. Le dimanche matin la caisse rame, la visio coupe en salle de réunion, et quand internet tombe toute l'entreprise attend. » Un réseau d'entreprise, ce sont des prises numérotées et testées, une baie, des switchs, des réseaux séparés, des bornes câblées, un pare-feu, un second lien avec bascule automatique, et un dossier qui reste à l'entreprise.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-17", readTime: "13 min", featured: true,
+    tags: ["installation réseau informatique", "câblage", "Wi-Fi entreprise", "pare-feu", "lien de secours"],
+    metaTitle: "Installation réseau informatique entreprise Algérie 2027 : câblage, Wi-Fi, pare-feu, lien de secours | Symloop",
+    metaDescription: "Installation réseau informatique d'entreprise en Algérie en 2027, ce qu'on installe : câblage (prises numérotées aux deux bouts, catégorie 6 ou 6A, baie de brassage, chaque prise testée, fibre au-delà de 90 m), switchs administrables et PoE (budget de puissance compté), six réseaux séparés (VLAN) avec règles au pare-feu, Wi-Fi par bornes câblées mesuré pièce par pièce (repère −67 dBm), deux liens internet avec bascule automatique, onduleur, supervision, et une recette en six contrôles avec dossier remis. Exemple chiffré de 30 postes et 96 prises, calendrier en cinq semaines.",
+    translations: {
+      en: { title: "Company network installation in Algeria (2027): cabling, patch cabinet, switches, Wi-Fi, firewall and a backup link, for when the network crawls and everything stops", subtitle: "The network of a head office and its warehouse drawn with its two internet links and six separated networks, six real situations, Wi-Fi measured room by room before and after, five layers including separated networks, the 2027 calendar in five weeks and acceptance in six checks before signing", excerpt: "“The network grew on its own: the operator's box at the end of the corridor, three small switches daisy-chained under the desks, a Wi-Fi repeater, and nobody knows which cable goes where. On Sunday morning the till crawls, video calls drop in the meeting room, and when the internet goes down the whole company waits.” A company network is numbered and tested outlets, a cabinet, switches, separated networks, wired access points, a firewall, a second link with automatic failover, and a file that stays with the company." },
+      ar: { title: "تركيب شبكة معلوماتية للمؤسسة في الجزائر (2027): الكوابل، خزانة التوصيل، المبدّلات، الواي فاي، جدار الحماية والخط الاحتياطي حين تتباطأ الشبكة ويتوقف كل شيء", subtitle: "شبكة مقر ومستودعه مرسومة بخطَّي الإنترنت والشبكات الست المعزولة، ست حالات واقعية، الواي فاي مقاساً غرفة غرفة قبل وبعد، خمس طبقات منها الشبكات المعزولة، تقويم 2027 في خمسة أسابيع، والاستلام في ستة فحوص قبل التوقيع", excerpt: "«الشبكة نمت وحدها: علبة المتعامل في آخر الرواق، ثلاثة مبدّلات صغيرة متسلسلة تحت المكاتب، مكرِّر واي فاي، ولا أحد يعرف أي كابل يذهب إلى أين. صباح الأحد يتباطأ الصندوق، وتنقطع مكالمة الفيديو في قاعة الاجتماعات، وحين ينقطع الإنترنت تنتظر المؤسسة كلها.» شبكة المؤسسة هي مآخذ مرقَّمة ومختبَرة، وخزانة، ومبدّلات، وشبكات معزولة، ونقاط وصول موصولة بالكابل، وجدار حماية، وخط ثانٍ بتحويل تلقائي، وملف يبقى عند المؤسسة." }
+    }
+  },
+  {
     id: "255",
     slug: "outsourcing-map-2027-what-search-engines-show-software-buyers-saudi-uae-qatar-france-spain",
     title: "Outsourcing Map 2027 : la carte que les moteurs de recherche tendent aux acheteurs de logiciels, de Riyad à Madrid",

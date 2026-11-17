@@ -1,0 +1,3983 @@
+{
+ "date": "2026-11-17",
+ "calls": 498,
+ "method": "Google suggest (client=firefox, gl=dz) + Bing osjson (fr-DZ / ar-DZ); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised",
+ "items": [
+  {
+   "query": "problème connexion société générale",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment interconnecter deux sites distant",
+   "stem": "comment connecter deux sites distants",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "perte de données entreprise",
+   "stem": "perte de données entreprise",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "panne informatique entreprise",
+   "stem": "panne informatique entreprise",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "ransomware entreprise",
+   "stem": "ransomware entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "piratage entreprise",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "piratage entreprise ia",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "lenteur site web",
+   "stem": "site web lent",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une application pour mon entreprise",
+   "stem": "comment créer une application pour mon entreprise",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle outlook",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "panne internet entreprise",
+   "stem": "panne informatique entreprise",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "site lentes web é confiavel",
+   "stem": "site web lent",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "probleme connexion net entreprise",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle gmail",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "pirate entreprise",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "problème connexion suite entreprise",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle microsoft",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "problème connexion skype entreprise",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "piratage informatique entreprise",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "comment sécuriser les données d'une entreprise",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "probleme connexion bnp entreprise",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment installer un réseau dans une entreprise",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment sécuriser un réseau d entreprise",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle sans nom de domaine",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "piratage net entreprise",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "wifi qui coupe tout le temps",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "mon internet coupe souvent",
+   "stem": "internet coupe souvent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment partager des fichiers entre deux pc",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment activer l accès à distance au serveur",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment installer un réseau wifi",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment sécuriser un réseau informatique",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "réseau lent",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "pourquoi mon réseau mobile est indisponible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "imprimante reseau ne fonctionne pas",
+   "stem": "imprimante réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment brancher un switch ethernet",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "serveur lent",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "serveur en panne aujourd'hui",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment récupérer des données sur un téléphone portable cassé",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment choisir un serveur informatique",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle avec nom de domaine",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "openai piratage entreprise",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment sécuriser les données personnelles",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "application lente au demarrage",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "application qui plante",
+   "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "combien coûte une application",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "combien coûte une application mobile",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "logiciel trop lent",
+   "stem": "logiciel trop lent",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment suivre livreur amazon",
+   "stem": "comment suivre les livreurs",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment automatiser un tableau excel",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "erreurs de stock",
+   "stem": "erreurs de stock",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment associer deux applications",
+   "stem": "comment connecter deux logiciels",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment utiliser l'intelligence artificielle au travail",
+   "stem": "comment utiliser l’intelligence artificielle dans mon entreprise",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment répondre automatiquement sur whatsapp",
+   "stem": "répondre automatiquement whatsapp",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج s22 ultra",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "الواي فاي ضعيف",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "الواي فاي ضعيف جدا اعمل ايه",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كيف احفظ البيانات",
+   "stem": "كيف احفظ البيانات",
+   "domain": "infra",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كم يكلف تطبيق توصيل",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "كيف تدير المخزون",
+   "stem": "كيف ادير المخزون",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "التطبيق بطيء",
+   "stem": "التطبيق بطيء",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "فيروس الفدية ransomware",
+   "stem": "فيروس الفدية",
+   "domain": "security",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "wifi qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "mon wifi coupe souvent",
+   "stem": "internet coupe souvent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment partager des fichiers entre pc et smartphone android",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment accéder à une autre dimension",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment acceder au dimension dofus",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment installer un réseau informatique",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment sécuriser un réseau wifi",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "pourquoi mon réseau est instable",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment brancher un switch",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment brancher un switch sur une box",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "serveur lent que faire",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "serveur en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment sauvegarder les données sur whatsapp",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment récupérer des données sur un disque dur",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment choisir un serveur sur once human",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "ransomware groupe",
+   "stem": "ransomware entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment sécuriser les données",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer les accès sur google drive",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "application lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "application qui plante android",
+   "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment suivre livreur dpd",
+   "stem": "comment suivre les livreurs",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment automatiser des taches avec l'ia",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "erreur de stock en anglais",
+   "stem": "erreurs de stock",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment synchroniser deux applications",
+   "stem": "comment connecter deux logiciels",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "مشكلة الشبكة في هواتف سامسونج",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "الواي فاي ضعيف في الهاتف",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "كم يكلف تطبيق الجوال",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "internet qui coupe tout le temps",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment partager des fichiers entre deux mac",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment accéder au téléphone à distance",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment installer un réseau ethernet",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment sécuriser un réseau",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "réseau lenticulaire",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "reseau lent free",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "pourquoi mon réseau est instable sur mon portable",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "lenteur serveur",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "serveur steam lent",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment récupérer des données sur whatsapp",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment choisir un serveur",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle google",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment sécuriser les données informatiques",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer les accès sharepoint",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "application lente que faire",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "combien coute une application apple store",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment automatiser le sommaire sur word",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "erreur de stockage",
+   "stem": "erreurs de stock",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "مشكلة الشبكة في ريلمي c53",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "الواي فاي ضعيف في الموبايل",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "كم يكلف تطبيق",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "internet qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "pourquoi internet se coupe souvent",
+   "stem": "internet coupe souvent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment transferer des fichiers entre 2 pc",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment se connecter à distance sur un autre ordinateur",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment accéder au nas synology à distance",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment installer un réseau local",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment installer un reseau rj45",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment sécuriser un réseau local",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment securiser un reseau wifi starlink",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "pourquoi mon réseau mobile n'est pas disponible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment brancher un switch tp link",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "lenteur serveur microsoft",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "serveur trop lent",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "serveur netatmo en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment sauvegarder les données de mon ordinateur",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment récupérer des données sur une clé usb",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment choisir un serveur priver sur roblox console",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment ajouter une adresse mail professionnelle sur outlook",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "piratage groupe 3r",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment sécuriser les données de mon téléphone",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer les accès sur teams",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "lenteur application",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "application spotify lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "application qui plante des arbres",
+   "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "combien coute de mettre une application sur apple store",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment automatiser un volet roulant",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "erreur de stockage des modifications par ia",
+   "stem": "erreurs de stock",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "مشكلة الشبكة",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "مشكلة الشبكة في الايفون 11",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "كم يكلف انشاء تطبيق",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "internet qui coupe sans arret",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "connexion internet se coupe souvent",
+   "stem": "internet coupe souvent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment transferer des fichiers entre deux telephones",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment installer un réseau",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment sécuriser un réseau starlink",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment brancher un switch internet",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "lenteur serveur rds",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "serveur free en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment sauvegarder les données sur la carte sd",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment choisir un serveur vpn",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "mail orange pro ne fonctionne pas",
+   "stem": "mail professionnel ne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": true,
+   "score": 8
+  },
+  {
+   "query": "info panne groupe e",
+   "stem": "panne informatique entreprise",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "lenteur application canal plus",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "application vinted lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "appli qui plante",
+   "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "combien coute de créer une application",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment automatiser un portail",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "مشكلة الشبكة في الايفون",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "الواي فاي ضعيف في الايفون",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "كم يكلف انشاء تطبيق الكتروني",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "wifi qui se coupe tout seul",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment partager des dossiers entre deux ordinateurs",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "pourquoi mon réseau est indisponible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment brancher un switch poe",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "lenteur serveur ovh",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment sauvegarder les données sur google",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment récupérer des données sur une clé usb endommagée",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment choisir un serveur nas",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "piratage groupe bpce",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment verrouiller les données mobiles",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment contrôler l accès internet",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "application chatgpt lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "application plante qui pousse",
+   "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "combien coute de mettre une application sur play store",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment automatiser un fichier excel",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج a16",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "الواي فاي ضعيف جدا",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "كم يكلف تصميم تطبيق",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "فيروس الفدية ransomware عبارة عن",
+   "stem": "فيروس الفدية",
+   "domain": "security",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "free wifi qui coupe tout le temps",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment transferer données entre 2 android",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment installer un réseau filaire",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment installer un reseau mesh",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment sécuriser un réseau sans fil",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "reseau lent que faire",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "pourquoi mon réseau wifi est instable",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment brancher un switch hdmi",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment récupérer des données sur icloud",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment trouver un serveur sur discord",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "piratage groupe la poste",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment protéger les données personnelles des clients",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment controler l'accès à internet par wifi",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "lenteur application outlook",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "application mail lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "combien coute de creer une application mobile",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment automatiser des taches avec claude",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج s24 ultra",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "الواي فاي ضعيف عندي",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "كم يكلف فتح تطبيق",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "appel wifi qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment partager les fichiers entre android et pc",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment installer un réseau internet",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "reseau internet lent",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "pourquoi mon réseau internet est instable",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment brancher un switch sur la tele",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "serveur apple en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment récupérer des données sur un disque dur externe",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment trouver un serveur sur last war",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment protéger les données",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment gérer les droits d accès d un fichier",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "application tres lente sur android",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "combien coute de developper une application",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment automatiser un message sur whatsapp",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "مشكلة الشبكة في الايفون بعد التحديث",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "الواي فاي ضعيف في اللاب توب",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "كم يكلف انشاء تطبيق توصيل",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "wifi qui se coupe sans arret",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment installer un réseau local sans fil",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment installer un réseau intranet",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment protéger un réseau informatique",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment verrouiller un reseau",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "reseau mobile lent",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "pourquoi mon réseau est faible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment brancher un switch netgear",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "server lenti",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment sauvegarder les données d'un téléphone",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment récupérer des données sur excel",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment trouver un serveur",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment protéger les données personnelles sur internet",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "application deezer lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "combien coute l application foodvisor",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment automatiser un mail sur outlook",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "مشكلة الشبكة في هاتف سامسونج b310",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "الواي فاي ضعيفه",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "لماذا الواي فاي ضعيف",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "كم يكلف رفع تطبيق على جوجل بلاي",
+   "stem": "كم يكلف تطبيق",
+   "domain": "apps",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment installer un reseau lan",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "lenteur reseau",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "reseau bell lent",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "pourquoi mon réseau ne fonctionne pas",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment brancher un switch 16 ports",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "server fc26 lenti",
+   "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "serveur legrand en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment sauvegarder les données whatsapp sur google",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment récupérer des données sur un téléphone cassé",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment trouver un serveur minecraft",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer une adresse mail contact@",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment protéger les données personnelles et la vie privée",
+   "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment limiter acces youtube",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "application canal lente",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "combien coute l application baobab",
+   "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment automatiser des volets roulants électriques",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "مشكلة الشبكة غير متاحة",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "نت الواي فاي ضعيف",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle gratuitement",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 5
+  },
+  {
+   "query": "comment gérer les accès à une page facebook",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
+   "query": "probleme connexion groupe d amis xbox one",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "reseau lent orange",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "serveur en panne fortnite",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone samsung",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "application qui plante iphone",
+   "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "reseau lent bouygues",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
+   "query": "reseau lent sfr",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
+   "query": "pourquoi mon réseau orange ne fonctionne pas",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
+   "query": "comment limiter accès photos facebook",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
+   "query": "reseau lent iphone",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "serveur ps5 en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment limiter acces amis facebook",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "lenteur application mail iphone",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "serveur orange en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
+   "query": "comment limiter acces instagram",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
+   "query": "comment sauvegarder les données de mon iphone",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle avec gmail gratuit",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 1.5
+  },
+  {
+   "query": "comment limiter acces facebook",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1.5
+  },
+  {
+   "query": "comment transférer les données entre deux téléphones samsung",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "lenteur reseau orange",
+   "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "serveur iptv en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "comment limiter acces photo iphone",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "livebox wifi qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 0.5
+  },
+  {
+   "query": "comment transférer les données entre 2 samsung",
+   "stem": "comment partager des fichiers entre",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 0.5
+  }
+ ]
+}
