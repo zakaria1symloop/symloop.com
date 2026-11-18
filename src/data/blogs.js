@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "275",
+    slug: "logiciel-lavage-auto-algerie-2027-application-station-de-lavage-file-d-attente-ticket-par-voiture-laveurs-abonnements-lavage-a-domicile",
+    title: "Logiciel lavage auto en Algérie (2027) : application pour station de lavage, file d'attente, un ticket par voiture, laveurs, abonnements et lavage à domicile, quand le samedi déborde et que la caisse ne tombe pas juste",
+    subtitle: "Le samedi face à la capacité de la station, le passage d'une voiture en six temps, trois chiffres pour la même journée puis un seul, cinq couches, station ou domicile, quatre semaines",
+    excerpt: "« J'ai une station de lavage, trois baies et huit laveurs. Le samedi il y a une heure de queue et des clients repartent ; le mardi, les laveurs attendent. Je les paie à la voiture et je ne sais jamais combien de voitures ont vraiment été lavées : le cahier dit un chiffre, la caisse un autre. Quel logiciel, quelle application me faut-il ? » Tout part d'un geste : un ticket par voiture, ouvert à l'entrée par la plaque. La caisse, le décompte des laveurs, les abonnements, les flottes et la réservation n'en sont que des lectures.",
+    category: "Software", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["logiciel lavage auto", "station de lavage", "file d'attente", "abonnements", "lavage à domicile"],
+    metaTitle: "Logiciel lavage auto Algérie 2027 : application station de lavage, ticket par voiture, file, abonnements, lavage à domicile | Symloop",
+    metaDescription: "Logiciel et application pour station de lavage auto en Algérie en 2027 : un ticket par voiture ouvert à l'entrée par la plaque (formule, laveur, baie, paiement), caisse qui tombe juste, décompte des laveurs, abonnements et carnets rattachés à la plaque, comptes de flotte avec relevé, photos à l'entrée, file visible et créneaux réservés, lavage à domicile par application. Calculs : capacité = baies × 60 ÷ minutes par voiture (3 baies, 25 minutes : 7,2 voitures par heure) ; un samedi de 69 arrivées pour 57,6 places ; un laveur mobile fait six à sept lavages par jour. Mise en place en quatre semaines.",
+    translations: {
+      en: { title: "Car wash software in Algeria (2027): an app for the washing station, the queue, one ticket per car, washers, subscriptions and washing at home, for when Saturday overflows and the till does not balance", subtitle: "Saturday against the station's capacity, one car through the station in six steps, three figures for the same day then one, five layers, station or at home, four weeks", excerpt: "“I run a car wash, three bays and eight washers. On Saturday there is an hour's queue and customers drive away; on Tuesday the washers wait. I pay them per car and I never know how many cars were really washed: the notebook says one figure, the till another. Which software, which app do I need?” It all starts with one action: a ticket per car, opened at entry from the plate. The till, the washers' count, the subscriptions, the fleets and the booking are only readings of it." },
+      ar: { title: "برنامج غسل السيارات في الجزائر (2027): تطبيق لمحطة الغسل، الطابور، تذكرة لكل سيارة، الغسّالون، الاشتراكات والغسل في البيت، حين يفيض السبت ولا يتوازن الصندوق", subtitle: "السبت مقابل طاقة المحطة، مرور سيارة في ست مراحل، ثلاثة أرقام لليوم نفسه ثم رقم واحد، خمس طبقات، المحطة أم البيت، وأربعة أسابيع", excerpt: "«عندي محطة غسل، ثلاثة أروقة وثمانية غسّالين. يوم السبت طابور من ساعة وزبائن يغادرون؛ ويوم الثلاثاء الغسّالون ينتظرون. أدفع لهم بالسيارة ولا أعرف أبداً كم سيارة غُسلت فعلاً: الكرّاس يقول رقماً والصندوق رقماً آخر. أي برنامج، أي تطبيق يلزمني؟» كل شيء ينطلق من حركة واحدة: تذكرة لكل سيارة، تُفتح عند الدخول باللوحة. والصندوق وحساب الغسّالين والاشتراكات والأساطيل والحجز ليست إلا قراءات لها." }
+    }
+  },
+  {
     id: "274",
     slug: "nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main",
     title: "Nom de domaine et hébergement de site web en Algérie (2027) : qui possède quoi, et que faire quand le domaine expire ou que l'ancien prestataire a gardé les accès",

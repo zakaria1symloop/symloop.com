@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-lavage-auto-algerie-2027-application-station-de-lavage-file-d-attente-ticket-par-voiture-laveurs-abonnements-lavage-a-domicile', fr: 'Logiciel lavage auto et station de lavage en Algérie', en: 'Car wash software in Algeria', ar: 'برنامج غسل السيارات في الجزائر' },
   { slug: 'logiciel-pieces-auto-algerie-2027-magasin-pieces-detachees-recherche-par-vehicule-references-equivalentes-emplacements-demandes-non-servies', fr: 'Logiciel pièces auto et pièces détachées en Algérie', en: 'Auto parts store software in Algeria', ar: 'برنامج قطع غيار السيارات في الجزائر' },
   { slug: 'logiciel-quincaillerie-materiaux-de-construction-algerie-2027-caisse-stock-unites-multiples-credit-artisans-marchandise-payee-non-enlevee', fr: 'Logiciel quincaillerie et matériaux de construction en Algérie', en: 'Hardware and building-materials store software in Algeria', ar: 'برنامج محل الخردوات ومواد البناء في الجزائر' },
   { slug: 'logiciel-entreprise-batiment-btp-algerie-2027-devis-metre-suivi-de-chantier-situations-de-travaux-achats-pointage-marge-par-chantier', fr: 'Logiciel entreprise de bâtiment et BTP en Algérie', en: 'Construction company software in Algeria', ar: 'برنامج مؤسسات البناء والأشغال في الجزائر' },
