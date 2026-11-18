@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "293",
+    slug: "comment-faire-un-formulaire-en-ligne-en-algerie-2027-inscriptions-demandes-de-devis-reponses-dans-un-tableur-doublons-spam-accuse-de-reception",
+    title: "Comment faire un formulaire en ligne en Algérie (2027) : les réponses arrivent dans un tableur que personne ne suit, doublons, messages indésirables, clients qui rappellent pour savoir si c'est bien reçu",
+    subtitle: "La même semaine dans un tableur puis en demandes suivies, six temps après « Envoyer », cinq couches, douze champs ou cinq, outil gratuit ou application, quatre semaines",
+    excerpt: "« On a mis un formulaire gratuit pour les inscriptions et les demandes de devis. Les réponses arrivent dans un tableur que personne ne regarde tous les jours ; on reçoit des doublons et des messages indésirables ; les gens rappellent pour savoir si on a bien reçu, et deux collègues répondent parfois au même. Comment faire un formulaire en ligne qui marche vraiment ? » Le formulaire n'est pas la page avec les champs : c'est ce qui se passe après « Envoyer ». Peu de champs, un accusé de réception, et une demande suivie au lieu d'une ligne.",
+    category: "Web", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["formulaire en ligne", "formulaire d'inscription", "demande de devis", "accusé de réception", "suivi des demandes"],
+    metaTitle: "Comment faire un formulaire en ligne Algérie 2027 : inscriptions, demandes de devis, doublons, spam, suivi | Symloop",
+    metaDescription: "Comment faire un formulaire en ligne en Algérie en 2027, pour des inscriptions, des demandes de devis, des candidatures ou des réclamations : un formulaire se juge après le bouton « Envoyer ». Six temps : vérifier la saisie pendant qu'on tape, confirmer par un accusé de réception numéroté, filtrer les messages indésirables et les doublons, créer une demande avec un responsable et un état au lieu d'une ligne de tableur, prévenir la bonne personne, suivre le délai. Trier les champs : ne demander à l'entrée que ce qu'il faut pour rappeler ; exemple, cinq champs sur douze. Téléphone accepté dans tous les formats, pièces jointes depuis le téléphone, français et arabe. Six questions pour savoir quand un outil gratuit suffit et quand il faut une application. Quatre semaines.",
+    translations: {
+      en: { title: "How to make an online form in Algeria (2027): the answers land in a spreadsheet nobody follows, duplicates, spam, customers calling back to ask whether it was received", subtitle: "The same week in a spreadsheet then as tracked requests, six steps after “Send”, five layers, twelve fields or five, free tool or application, four weeks", excerpt: "“We set up a free form for enrolments and quote requests. The answers land in a spreadsheet nobody looks at every day; we get duplicates and spam; people call back to ask whether we received it, and two colleagues sometimes reply to the same one. How do we make an online form that really works?” The form is not the page with the fields: it is what happens after “Send”. Few fields, an acknowledgement, and a tracked request instead of a row." },
+      ar: { title: "كيف تُنشأ استمارة على الخط في الجزائر (2027): الأجوبة تصل إلى جدول لا يتابعه أحد، مكرَّرات، رسائل مزعجة، وزبائن يتصلون ليسألوا هل وصل الطلب", subtitle: "الأسبوع نفسه في جدول ثم في طلبات متابَعة، ست مراحل بعد «إرسال»، خمس طبقات، اثنا عشر حقلاً أو خمسة، أداة مجانية أم تطبيق، وأربعة أسابيع", excerpt: "«وضعنا استمارة مجانية للتسجيلات وطلبات عرض السعر. الأجوبة تصل إلى جدول لا ينظر فيه أحد كل يوم؛ نستلم مكرَّرات ورسائل مزعجة؛ الناس يتصلون ليسألوا هل استلمنا، وزميلان يجيبان أحياناً عن الطلب نفسه. كيف ننشئ استمارة على الخط تعمل فعلاً؟» الاستمارة ليست الصفحة التي فيها الحقول: هي ما يجري بعد «إرسال». حقول قليلة، إشعار بالاستلام، وطلب متابَع بدل سطر." }
+    }
+  },
+  {
     id: "292",
     slug: "comment-mesurer-la-satisfaction-client-en-algerie-2027-une-question-apres-chaque-prestation-score-de-recommandation-rappel-sous-48-h-causes",
     title: "Comment mesurer la satisfaction client en Algérie (2027) : personne ne se plaint et pourtant des clients partent, une question juste après la prestation, un rappel sous 48 heures, et les causes comptées chaque lundi",
