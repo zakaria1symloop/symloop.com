@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "286",
+    slug: "wifi-qui-coupe-au-bureau-entreprise-algerie-2027-internet-qui-se-coupe-souvent-la-ligne-ou-le-wifi-couverture-bornes-canaux-itinerance",
+    title: "Wi-Fi qui coupe au bureau en Algérie (2027) : internet se coupe plusieurs fois par jour, savoir si c'est la ligne ou le Wi-Fi, couverture, bornes câblées, canaux, itinérance, lien de secours",
+    subtitle: "L'ordre du diagnostic, trois questions pour savoir si c'est la ligne ou le Wi-Fi, le même étage avec un boîtier ou trois bornes, six causes et leur signature, cinq couches, quatre semaines",
+    excerpt: "« Internet se coupe plusieurs fois par jour. En salle de réunion, la visioconférence gèle ; au dépôt, les terminaux perdent la connexion ; et de temps en temps, tout le bureau tombe d'un coup. On a ajouté un répéteur, c'est pire. L'opérateur dit que la ligne est bonne, l'installateur dit que c'est la ligne. Qui croire ? » Ni l'un ni l'autre sans mesure. Un poste branché par câble tranche en une journée ; un relevé des coupures fait le reste.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["Wi-Fi qui coupe", "internet qui coupe", "bornes Wi-Fi", "couverture Wi-Fi", "lien de secours"],
+    metaTitle: "Wi-Fi qui coupe au bureau Algérie 2027 : internet qui se coupe souvent, la ligne ou le Wi-Fi, bornes, canaux | Symloop",
+    metaDescription: "Wi-Fi qui coupe au bureau en Algérie en 2027 : quatre pannes derrière le même symptôme (la ligne ou le boîtier, la couverture, la saturation, l'itinérance) et comment les départager : un poste relié au boîtier par un câble pendant une journée, un relevé des coupures d'une semaine (heure, pièce, appareil), le signal mesuré pièce par pièce. Six causes et leur signature, dont « connecté, pas d'internet » quand les adresses sont épuisées. Pourquoi un répéteur aggrave (débit réduit d'au moins 50 %) et pourquoi il faut des bornes câblées au plafond. Canaux 1, 6 et 11 en 2,4 GHz, repère courant de −67 dBm, lien de secours. Exemple : un étage de six pièces, de −84 dBm en salle de réunion à −51 avec trois bornes. Quatre semaines.",
+    translations: {
+      en: { title: "Wi-Fi that keeps dropping at the office in Algeria (2027): the internet cuts out several times a day, how to tell the line from the Wi-Fi, coverage, wired access points, channels, roaming, backup link", subtitle: "The order of diagnosis, three questions to tell the line from the Wi-Fi, the same floor with one box or three access points, six causes and their signature, five layers, four weeks", excerpt: "“The internet cuts out several times a day. In the meeting room the video call freezes; in the warehouse the handhelds lose the connection; and now and then the whole office goes down at once. We added a repeater and it got worse. The operator says the line is fine, the installer says it is the line. Who do we believe?” Neither of them without a measurement. A computer plugged in by cable settles it in a day; a log of the drops does the rest." },
+      ar: { title: "الواي فاي ينقطع في المكتب في الجزائر (2027): الإنترنت ينقطع عدة مرات في اليوم، كيف نعرف هل هو الخط أم الواي فاي، التغطية، نقاط وصول بكابل، القنوات، التجوال، وخط الإسعاف", subtitle: "ترتيب التشخيص، ثلاثة أسئلة لمعرفة هل هو الخط أم الواي فاي، الطابق نفسه بعلبة أو بثلاث نقاط، ستة أسباب وعلاماتها، خمس طبقات، وأربعة أسابيع", excerpt: "«الإنترنت ينقطع عدة مرات في اليوم. في قاعة الاجتماعات، يتجمّد الاجتماع بالفيديو؛ وفي المستودع، تفقد الأجهزة المحمولة الاتصال؛ ومن حين لآخر، يسقط المكتب كله دفعة واحدة. أضفنا مكرِّراً فصار الأمر أسوأ. المتعامل يقول إن الخط جيد، والمركِّب يقول إنه الخط. من نصدّق؟» لا هذا ولا ذاك دون قياس. حاسوب موصول بكابل يفصل في يوم؛ وسجل للانقطاعات يفعل الباقي." }
+    }
+  },
+  {
     id: "285",
     slug: "comment-creer-un-intranet-d-entreprise-en-algerie-2027-notes-de-service-documents-annuaire-demandes-internes-recherche-accuse-de-lecture",
     title: "Comment créer un intranet d'entreprise en Algérie (2027) : les notes de service se perdent dans les groupes de messagerie, cinq blocs, documents en vigueur, annuaire, demandes internes suivies, accusé de lecture",
