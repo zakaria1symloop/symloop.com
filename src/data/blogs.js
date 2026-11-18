@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "287",
+    slug: "comment-utiliser-chatgpt-en-entreprise-algerie-2027-ia-au-travail-donnees-confidentielles-compte-personnel-ou-professionnel-trois-bacs",
+    title: "Comment utiliser ChatGPT en entreprise en Algérie (2027) : vos employés y collent déjà des contrats et des fichiers clients, ce qu'on peut y mettre, ce qu'on n'y met jamais, compte personnel ou compte de l'entreprise",
+    subtitle: "Trois bacs pour ce qu'on colle, l'ordre pour poser un cadre, compte personnel ou compte de l'entreprise, cinq règles sur une page, dix usages classés, quatre semaines",
+    excerpt: "« J'ai découvert qu'une assistante collait nos contrats dans ChatGPT pour les résumer, et qu'un commercial y avait mis le fichier clients pour préparer une relance. Ils gagnent du temps, je ne veux pas l'interdire. Mais où vont ces données ? Faut-il un abonnement d'entreprise ? Et que peut-on lui confier ? » Ne l'interdisez pas : encadrez-le. Un compte de l'entreprise, une règle en trois bacs sur ce qui entre, et une relecture par celui qui signe.",
+    category: "IA", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["ChatGPT en entreprise", "IA au travail", "données confidentielles", "compte professionnel", "règles d'usage de l'IA"],
+    metaTitle: "Comment utiliser ChatGPT en entreprise Algérie 2027 : données confidentielles, compte personnel ou professionnel | Symloop",
+    metaDescription: "Comment utiliser ChatGPT en entreprise en Algérie en 2027 : vos employés utilisent déjà un assistant, la question est sur quel compte et avec quelles données. Cinq règles sur une page : un compte de l'entreprise, trois bacs pour ce qu'on colle (tel quel, nettoyé, jamais : mots de passe, données de personnes, documents sous confidentialité), une relecture par celui qui signe, aucune action sans validation humaine, deux heures de formation par équipe. Ce que l'éditeur indique sur l'usage des conversations selon le type de compte, à relire pour l'offre souscrite. Dix usages classés par temps gagné et par sensibilité : cinq dès demain, trois avec un cadre puis un assistant branché sur vos documents, deux jamais. Pourquoi interdire ne marche pas. Quatre semaines, du recensement au premier bilan.",
+    translations: {
+      en: { title: "How to use ChatGPT in a company in Algeria (2027): your employees are already pasting contracts and customer files into it, what can go in, what never does, personal account or company account", subtitle: "Three bins for what is pasted, the order for setting a frame, personal account or company account, five rules on one page, ten uses sorted, four weeks", excerpt: "“I found out that an assistant was pasting our contracts into ChatGPT to summarise them, and that a salesperson had put the customer file in it to prepare a follow-up. They save time, and I do not want to ban it. But where does that data go? Do we need a company subscription? And what can we entrust to it?” Do not ban it: frame it. A company account, a three-bin rule for what goes in, and a reread by whoever signs." },
+      ar: { title: "كيف يُستعمل ChatGPT في المؤسسة في الجزائر (2027): عمّالكم يلصقون فيه العقود وملفات الزبائن أصلاً، ما يمكن وضعه فيه، ما لا يوضع أبداً، حساب شخصي أم حساب المؤسسة", subtitle: "ثلاث سلال لما يُلصق، ترتيب وضع الإطار، حساب شخصي أم حساب المؤسسة، خمس قواعد في صفحة، عشرة استعمالات مرتَّبة، وأربعة أسابيع", excerpt: "«اكتشفت أن مساعِدة تلصق عقودنا في ChatGPT لتلخيصها، وأن تاجراً وضع فيه ملف الزبائن لتحضير متابعة. يربحون الوقت، ولا أريد منعه. لكن أين تذهب هذه البيانات؟ هل يلزم اشتراك للمؤسسة؟ وماذا يمكن ائتمانه عليه؟» لا تمنعوه: أطّروه. حساب للمؤسسة، قاعدة من ثلاث سلال لما يدخل، ومراجعة ممن يوقّع." }
+    }
+  },
+  {
     id: "286",
     slug: "wifi-qui-coupe-au-bureau-entreprise-algerie-2027-internet-qui-se-coupe-souvent-la-ligne-ou-le-wifi-couverture-bornes-canaux-itinerance",
     title: "Wi-Fi qui coupe au bureau en Algérie (2027) : internet se coupe plusieurs fois par jour, savoir si c'est la ligne ou le Wi-Fi, couverture, bornes câblées, canaux, itinérance, lien de secours",
