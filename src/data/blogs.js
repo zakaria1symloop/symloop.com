@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "283",
+    slug: "comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure",
+    title: "Comment créer un site e-commerce en Algérie (2027) : les commandes se perdent dans les messages et un colis sur quatre revient, catalogue, confirmation, paiement à la livraison ou par carte, tarif par wilaya, retours",
+    subtitle: "Où se perdent les commandes, cinq couches d'un site e-commerce, cinq façons de vendre en ligne, l'ordre de construction, où est le colis et où est l'argent, dix semaines jusqu'à la première commande livrée",
+    excerpt: "« Je vends sur Instagram et Facebook depuis deux ans. Les commandes arrivent par messages, on les note dans un cahier, on rappelle pour confirmer quand on a le temps, et un colis sur quatre revient. Je veux un vrai site : WordPress, une plateforme, ou sur mesure ? Paiement à la livraison ou par carte ? » Le site est la partie facile. Ce qui fait qu'il rapporte, c'est ce qui se passe après le clic : la confirmation, la livraison, et l'argent qui revient des transporteurs.",
+    category: "E-commerce", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["site e-commerce", "paiement à la livraison", "livraison par wilaya", "taux de conversion", "retours de colis"],
+    metaTitle: "Comment créer un site e-commerce en Algérie 2027 : paiement à la livraison, livraison par wilaya, retours | Symloop",
+    metaDescription: "Créer un site e-commerce en Algérie en 2027 : cinq couches (catalogue au stock réel, commande en trois écrans avec frais affichés avant de valider, paiement à la livraison puis par carte CIB ou Edahabia, livraison au tarif connu par wilaya, après-vente qui confirme dans l'heure), cinq taux à mesurer de la visite à la commande payée, cinq façons de vendre en ligne (réseaux sociaux, plateforme hébergée, WordPress avec WooCommerce, marketplace, sur mesure), l'ordre de construction, où est le colis et où est l'argent pendant dix jours, rapprochement des versements des transporteurs. Exemple : 240 commandes passées, 135 livrées et payées, 179 après deux corrections. Dix semaines jusqu'à la première commande livrée.",
+    translations: {
+      en: { title: "How to create an e-commerce site in Algeria (2027): orders get lost in the messages and one parcel in four comes back, catalogue, confirmation, cash on delivery or card, fee per wilaya, returns", subtitle: "Where orders are lost, five layers of an e-commerce site, five ways to sell online, the order to build in, where the parcel is and where the money is, ten weeks to the first delivered order", excerpt: "“I have been selling on Instagram and Facebook for two years. Orders come in by message, we write them in a notebook, we call back to confirm when we have time, and one parcel in four comes back. I want a real site: WordPress, a platform, or custom-built? Cash on delivery or card?” The site is the easy part. What makes it pay is what happens after the click: confirmation, delivery, and the money coming back from the carriers." },
+      ar: { title: "كيف يُنشأ موقع تجارة إلكترونية في الجزائر (2027): الطلبيات تضيع في الرسائل وطرد من أربعة يعود، فهرس، تأكيد، دفع عند التسليم أو بالبطاقة، تسعيرة لكل ولاية، وإرجاع", subtitle: "أين تضيع الطلبيات، خمس طبقات لموقع تجارة إلكترونية، خمس طرق للبيع على الإنترنت، ترتيب البناء، أين الطرد وأين المال، وعشرة أسابيع إلى أول طلبية مسلَّمة", excerpt: "«أبيع على إنستغرام وفيسبوك منذ سنتين. الطلبيات تصل برسائل، نسجّلها في كراس، نعاود الاتصال للتأكيد حين يتوفر الوقت، وطرد من أربعة يعود. أريد موقعاً حقيقياً: ووردبريس، منصة، أم على المقاس؟ دفع عند التسليم أم بالبطاقة؟» الموقع هو الجزء السهل. وما يجعله مربحاً هو ما يحدث بعد النقرة: التأكيد، التسليم، والمال الذي يعود من الناقلين." }
+    }
+  },
+  {
     id: "282",
     slug: "comment-gerer-un-parc-informatique-entreprise-algerie-2027-inventaire-des-postes-qui-a-quoi-licences-mises-a-jour-arrivee-depart-renouvellement",
     title: "Comment gérer un parc informatique en Algérie (2027) : personne ne sait combien de postes on a ni qui a quoi, registre, installation type, mises à jour, licences, arrivées et départs, renouvellement par cinquièmes",
