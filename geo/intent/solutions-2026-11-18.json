@@ -1,62 +1,62 @@
 {
  "date": "2026-11-18",
- "calls": 1772,
+ "calls": 1892,
  "method": "Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); themes and shapes listed in scripts/seo/mine-solutions.mjs; kept = suggestions with an Algeria marker and no noise word; coverage = share matched to an existing page slug",
  "totals": {
-  "suggestions": 2467,
-  "kept": 1033
+  "suggestions": 2555,
+  "kept": 1083
  },
  "themes": [
   {
    "theme": "application mobile",
    "group": "mobile",
-   "n": 32,
-   "buyer": 14,
-   "demand": 372,
-   "covered": 13,
+   "n": 24,
+   "buyer": 13,
+   "demand": 291,
+   "covered": 6,
    "samples": [
     "espace client algérie télécom",
     "achat en ligne algérie",
-    "prix application mobile algérie",
-    "creation application mobile algerie",
-    "developpement application mobile algerie",
-    "les entreprises en algérie"
+    "les entreprises en algérie",
+    "comment créer une entreprise en algérie",
+    "création d'entreprise en algérie",
+    "prix application mobile algérie"
    ],
-   "coverage": 41
+   "coverage": 25
   },
   {
    "theme": "géolocalisation véhicules",
    "group": "business",
-   "n": 34,
-   "buyer": 6,
-   "demand": 328,
-   "covered": 9,
+   "n": 30,
+   "buyer": 4,
+   "demand": 282,
+   "covered": 8,
    "samples": [
-    "location voiture algérie prix",
-    "agence du service géologique de l'algérie",
     "prix gps voiture algérie",
     "prix location voiture algérie",
     "prix location voiture algerie forum",
-    "location véhicule algérie"
+    "location véhicule algérie",
+    "location véhicules alger",
+    "location auto alger prix"
    ],
-   "coverage": 26
+   "coverage": 27
   },
   {
    "theme": "paiement en ligne",
    "group": "platform",
-   "n": 26,
+   "n": 24,
    "buyer": 0,
-   "demand": 248,
-   "covered": 15,
+   "demand": 234,
+   "covered": 13,
    "samples": [
     "paiement en ligne algérie télécom",
     "paiement en ligne algérie",
     "paiement internet algérie télécom",
-    "paiement en ligne algérie poste",
     "air algérie paiement en ligne",
-    "paiement facture algérie télécom en ligne"
+    "paiement facture algérie télécom en ligne",
+    "payer vignette 2026 algérie en ligne"
    ],
-   "coverage": 58
+   "coverage": 54
   },
   {
    "theme": "vidéosurveillance",
@@ -97,15 +97,15 @@
    "group": "mobile",
    "n": 20,
    "buyer": 14,
-   "demand": 224,
+   "demand": 225,
    "covered": 7,
    "samples": [
     "agence de communication algérie",
     "agence immobilière alger centre",
+    "agence de location de voiture alger",
     "entreprise algérienne en france",
     "référentiel des prix immobilier algérie",
-    "agence de communication alger",
-    "prix de l'immobilier en algérie"
+    "agence de communication alger"
    ],
    "coverage": 35
   },
@@ -127,6 +127,23 @@
    "coverage": 0
   },
   {
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "n": 22,
+   "buyer": 1,
+   "demand": 207,
+   "covered": 8,
+   "samples": [
+    "réservation en ligne air algérie",
+    "plateforme de réservation algérie",
+    "algérie réservation en ligne",
+    "réserves de change algérie 2024",
+    "plateforme de réservation d hôtel algérie",
+    "site air algérie réservation"
+   ],
+   "coverage": 36
+  },
+  {
    "theme": "billetterie en ligne",
    "group": "platform",
    "n": 22,
@@ -144,38 +161,21 @@
    "coverage": 23
   },
   {
-   "theme": "plateforme de réservation",
-   "group": "platform",
-   "n": 22,
-   "buyer": 1,
-   "demand": 203,
-   "covered": 8,
-   "samples": [
-    "réservation en ligne air algérie",
-    "plateforme de réservation algérie",
-    "algérie réservation en ligne",
-    "réserves de change algérie 2024",
-    "plateforme de réservation d hôtel algérie",
-    "plateforme de reservation hotel algerie"
-   ],
-   "coverage": 36
-  },
-  {
    "theme": "application de livraison",
    "group": "platform",
    "n": 20,
    "buyer": 1,
    "demand": 191,
-   "covered": 3,
+   "covered": 4,
    "samples": [
     "société de livraison algérie",
     "application de livraison algérie",
     "application de livraison alger",
-    "application de livraison food algerie",
     "direction de logement alger",
+    "application de livraison food algerie",
     "activités à découvrir à alger"
    ],
-   "coverage": 15
+   "coverage": 20
   },
   {
    "theme": "boutique en ligne",
@@ -246,6 +246,23 @@
    "coverage": 5
   },
   {
+   "theme": "site e-commerce",
+   "group": "platform",
+   "n": 17,
+   "buyer": 3,
+   "demand": 168,
+   "covered": 12,
+   "samples": [
+    "site e commerce algérie prix",
+    "entreprise publique économique en algérie",
+    "site e commerce algérie",
+    "création site e commerce algérie",
+    "liste site e-commerce algérie",
+    "code de commerce algérie"
+   ],
+   "coverage": 71
+  },
+  {
    "theme": "gestion des tickets",
    "group": "platform",
    "n": 19,
@@ -261,23 +278,6 @@
     "billets pas cher algérie"
    ],
    "coverage": 0
-  },
-  {
-   "theme": "site e-commerce",
-   "group": "platform",
-   "n": 17,
-   "buyer": 3,
-   "demand": 167,
-   "covered": 5,
-   "samples": [
-    "site e commerce algérie prix",
-    "entreprise publique économique en algérie",
-    "site e commerce algérie",
-    "création site e commerce algérie",
-    "liste site e-commerce algérie",
-    "code de commerce algérie"
-   ],
-   "coverage": 29
   },
   {
    "theme": "marketplace",
@@ -314,23 +314,6 @@
    "coverage": 28
   },
   {
-   "theme": "hébergement site web",
-   "group": "infra",
-   "n": 17,
-   "buyer": 0,
-   "demand": 149,
-   "covered": 2,
-   "samples": [
-    "hébergement site web algérie télécom",
-    "algerian energy company spa",
-    "calendrier hijri 2026 algérie",
-    "hebergeur site web algerie",
-    "hôtel pas cher alger",
-    "vacances scolaire algérie 2026"
-   ],
-   "coverage": 12
-  },
-  {
    "theme": "intranet",
    "group": "platform",
    "n": 15,
@@ -363,6 +346,23 @@
     "ministère de l'intérieur algérie dz"
    ],
    "coverage": 0
+  },
+  {
+   "theme": "gestion de location",
+   "group": "platform",
+   "n": 14,
+   "buyer": 2,
+   "demand": 134,
+   "covered": 3,
+   "samples": [
+    "location voiture algérie prix",
+    "agence du service géologique de l'algérie",
+    "location de voiture algerie",
+    "direction logement wilaya alger",
+    "location appartement alger par mois",
+    "location appartement en algerie"
+   ],
+   "coverage": 21
   },
   {
    "theme": "cybersécurité",
@@ -433,6 +433,40 @@
    "coverage": 31
   },
   {
+   "theme": "datacenter",
+   "group": "infra",
+   "n": 11,
+   "buyer": 1,
+   "demand": 121,
+   "covered": 0,
+   "samples": [
+    "data center algérie",
+    "data center algeria",
+    "société alger centre",
+    "datacenter algerie",
+    "centre algérien du contrôle de la qualité et de l emballage",
+    "data center algerie telecom"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "plateforme e-learning",
+   "group": "platform",
+   "n": 13,
+   "buyer": 0,
+   "demand": 121,
+   "covered": 1,
+   "samples": [
+    "plateforme e learning algerie",
+    "école privée en algérie",
+    "elearning alger 2 2025 2026",
+    "plateforme e learning alger 2",
+    "premier site d'éducation en algérie",
+    "elearning alger 2 2024 2025"
+   ],
+   "coverage": 8
+  },
+  {
    "theme": "messagerie professionnelle",
    "group": "infra",
    "n": 12,
@@ -448,40 +482,6 @@
     "services en ligne algérie poste"
    ],
    "coverage": 25
-  },
-  {
-   "theme": "datacenter",
-   "group": "infra",
-   "n": 11,
-   "buyer": 1,
-   "demand": 118,
-   "covered": 0,
-   "samples": [
-    "data center algérie",
-    "société alger centre",
-    "datacenter algerie",
-    "data center algeria",
-    "centre algérien du contrôle de la qualité et de l emballage",
-    "data center algerie telecom"
-   ],
-   "coverage": 0
-  },
-  {
-   "theme": "plateforme e-learning",
-   "group": "platform",
-   "n": 13,
-   "buyer": 0,
-   "demand": 117,
-   "covered": 1,
-   "samples": [
-    "plateforme e learning algerie",
-    "elearning alger 2 2025 2026",
-    "plateforme e learning alger 2",
-    "premier site d'éducation en algérie",
-    "elearning alger 2 2024 2025",
-    "e learning université alger 3"
-   ],
-   "coverage": 8
   },
   {
    "theme": "câblage réseau",
@@ -501,6 +501,23 @@
    "coverage": 0
   },
   {
+   "theme": "application android",
+   "group": "mobile",
+   "n": 11,
+   "buyer": 4,
+   "demand": 113,
+   "covered": 4,
+   "samples": [
+    "comparateur de prix algérie",
+    "créer une entreprise en algérie",
+    "pc gamer prix algérie",
+    "application mobile algérie",
+    "prochain match algérie 2026",
+    "date soldes été 2023 en algérie"
+   ],
+   "coverage": 36
+  },
+  {
    "theme": "fibre optique entreprise",
    "group": "network",
    "n": 11,
@@ -516,6 +533,23 @@
     "demande fibre optique algérie télécom"
    ],
    "coverage": 0
+  },
+  {
+   "theme": "logiciel de planning",
+   "group": "platform",
+   "n": 10,
+   "buyer": 1,
+   "demand": 106,
+   "covered": 10,
+   "samples": [
+    "logiciel de gestion commerciale algérie",
+    "logiciel gestion de stock algérie",
+    "logiciel de gestion de stock algerie prix",
+    "logiciel de gestion algérie",
+    "logiciel de gestion d école algerie",
+    "logiciel gestion de stock algerie ouedkniss"
+   ],
+   "coverage": 100
   },
   {
    "theme": "application de fidélité",
@@ -586,21 +620,21 @@
    "coverage": 22
   },
   {
-   "theme": "logiciel de planning",
+   "theme": "gestion de projet",
    "group": "platform",
    "n": 10,
    "buyer": 1,
-   "demand": 102,
-   "covered": 10,
+   "demand": 103,
+   "covered": 0,
    "samples": [
-    "logiciel de gestion commerciale algérie",
-    "logiciel gestion de stock algérie",
-    "logiciel de gestion de stock algerie prix",
-    "logiciel de gestion algérie",
-    "logiciel gestion de stock algerie ouedkniss",
-    "logiciel de gestion pharmacie algérie"
+    "gestion de projet algerie",
+    "meilleur projet en algérie",
+    "les grands projets 2024 en algérie",
+    "ccag travaux 2023 algérie",
+    "projet de loi de finances 2026 algérie",
+    "vacances printemps 2026 algérie"
    ],
-   "coverage": 100
+   "coverage": 0
   },
   {
    "theme": "pointeuse biométrique",
@@ -620,23 +654,6 @@
    "coverage": 20
   },
   {
-   "theme": "gestion de projet",
-   "group": "platform",
-   "n": 10,
-   "buyer": 1,
-   "demand": 100,
-   "covered": 0,
-   "samples": [
-    "gestion de projet algerie",
-    "meilleur projet en algérie",
-    "les grands projets 2024 en algérie",
-    "ccag travaux 2023 algérie",
-    "projet de loi de finances 2026 algérie",
-    "vacances printemps 2026 algérie"
-   ],
-   "coverage": 0
-  },
-  {
    "theme": "gestion des réclamations",
    "group": "platform",
    "n": 11,
@@ -654,21 +671,21 @@
    "coverage": 0
   },
   {
-   "theme": "hébergement cloud",
-   "group": "infra",
-   "n": 9,
-   "buyer": 1,
-   "demand": 97,
-   "covered": 4,
+   "theme": "gestion d’école",
+   "group": "platform",
+   "n": 11,
+   "buyer": 0,
+   "demand": 98,
+   "covered": 0,
    "samples": [
-    "hébergement site web algérie",
-    "prix hébergement site web algérie",
-    "hébergement cloud algérie",
-    "hébergement web algérie",
-    "hebergement web algerie telecom",
-    "vacances scolaires 2026 algérie"
+    "école supérieure algérienne des affaires",
+    "vacances scolaire algérie 2026",
+    "vacances scolaires 2024 algérie",
+    "vacances scolaires 2026 en algérie",
+    "école supérieure de la sécurité sociale alger",
+    "prime de scolarité algérie"
    ],
-   "coverage": 44
+   "coverage": 0
   },
   {
    "theme": "téléphonie ip",
@@ -705,6 +722,23 @@
    "coverage": 0
   },
   {
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "n": 11,
+   "buyer": 1,
+   "demand": 95,
+   "covered": 1,
+   "samples": [
+    "hébergement site web algérie",
+    "réservation air algérie site officiel",
+    "gerer ma reservation air algerie",
+    "air algérie réservation tarif",
+    "consulter ma réservation air algérie",
+    "air algérie réservation billet promotionnel"
+   ],
+   "coverage": 9
+  },
+  {
    "theme": "application ios",
    "group": "mobile",
    "n": 9,
@@ -720,6 +754,23 @@
     "iphone 15 pro prix algérie"
    ],
    "coverage": 0
+  },
+  {
+   "theme": "hébergement site web",
+   "group": "infra",
+   "n": 11,
+   "buyer": 0,
+   "demand": 94,
+   "covered": 1,
+   "samples": [
+    "algerian energy company spa",
+    "calendrier hijri 2026 algérie",
+    "hôtel pas cher alger",
+    "résidence en ligne algérie",
+    "hebergeur site web algerie",
+    "achat appartement en algérie"
+   ],
+   "coverage": 9
   },
   {
    "theme": "application de pointage",
@@ -790,6 +841,23 @@
    "coverage": 0
   },
   {
+   "theme": "développement application mobile",
+   "group": "mobile",
+   "n": 7,
+   "buyer": 5,
+   "demand": 87,
+   "covered": 3,
+   "samples": [
+    "creation application mobile algerie",
+    "développement durable en algérie",
+    "aide au développement france algérie",
+    "générateur des prix algérie",
+    "générateur de prix de construction en algérie",
+    "développeur application mobile algérie"
+   ],
+   "coverage": 43
+  },
+  {
    "theme": "crm",
    "group": "business",
    "n": 8,
@@ -805,6 +873,23 @@
     "crm algarve"
    ],
    "coverage": 13
+  },
+  {
+   "theme": "suivi de production",
+   "group": "business",
+   "n": 8,
+   "buyer": 1,
+   "demand": 82,
+   "covered": 0,
+   "samples": [
+    "foire de la production algérienne",
+    "production agricole en algérie",
+    "foire de la production algérienne 2025",
+    "la foire de la production algérienne 2024",
+    "production de gaz en algérie",
+    "presse algérienne et société"
+   ],
+   "coverage": 0
   },
   {
    "theme": "solution informatique",
@@ -824,40 +909,6 @@
    "coverage": 0
   },
   {
-   "theme": "suivi de production",
-   "group": "business",
-   "n": 8,
-   "buyer": 1,
-   "demand": 81,
-   "covered": 0,
-   "samples": [
-    "foire de la production algérienne",
-    "la foire de la production algérienne 2024",
-    "production agricole en algérie",
-    "production de gaz en algérie",
-    "foire de la production algérienne 2025",
-    "presse algérienne et société"
-   ],
-   "coverage": 0
-  },
-  {
-   "theme": "agent ia",
-   "group": "ai",
-   "n": 8,
-   "buyer": 3,
-   "demand": 81,
-   "covered": 1,
-   "samples": [
-    "agent ia algerie",
-    "argentina algeria",
-    "argentina algeria highlights",
-    "prix essence en algérie",
-    "who is the president of algeria 2024",
-    "agrément promoteur immobilier algérie"
-   ],
-   "coverage": 13
-  },
-  {
    "theme": "application de commande",
    "group": "platform",
    "n": 8,
@@ -875,36 +926,53 @@
    "coverage": 13
   },
   {
-   "theme": "prestataire informatique",
-   "group": "services",
-   "n": 7,
-   "buyer": 3,
-   "demand": 77,
-   "covered": 0,
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "n": 8,
+   "buyer": 0,
+   "demand": 78,
+   "covered": 4,
    "samples": [
-    "societe informatique algerie",
-    "entreprise informatique algerie",
-    "entreprise informatique alger",
-    "fournisseur informatique algerie",
-    "fournisseur informatique alger",
-    "consultant informatique algerie"
+    "salle de sport alger",
+    "salle des fêtes algérie",
+    "salle de sport femme alger",
+    "sport le plus pratiqué en algérie",
+    "salle des fetes alger",
+    "ministère des sports algérie"
    ],
-   "coverage": 0
+   "coverage": 50
   },
   {
-   "theme": "application android",
-   "group": "mobile",
+   "theme": "hébergement cloud",
+   "group": "infra",
    "n": 7,
-   "buyer": 4,
-   "demand": 76,
+   "buyer": 1,
+   "demand": 75,
+   "covered": 4,
+   "samples": [
+    "prix hébergement site web algérie",
+    "hébergement cloud algérie",
+    "hébergement web algérie",
+    "hebergement site web algerie telecom",
+    "hebergement web algerie telecom",
+    "vacances scolaires 2026 algérie"
+   ],
+   "coverage": 57
+  },
+  {
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "n": 8,
+   "buyer": 0,
+   "demand": 75,
    "covered": 0,
    "samples": [
-    "créer une entreprise en algérie",
-    "pc gamer prix algérie",
-    "comparateur de prix algérie",
-    "prochain match algérie 2026",
-    "date soldes été 2023 en algérie",
-    "19 mars 2026 algérie"
+    "direction générale des impôts algérie",
+    "site des impôts algérie",
+    "direction des impôts algérie",
+    "impôts algérie site officiel",
+    "les impôts en algérie",
+    "direction des impôts alger"
    ],
    "coverage": 0
   },
@@ -939,6 +1007,23 @@
     "réparation informatique alger",
     "technicien informatique alger",
     "service numérique algerie"
+   ],
+   "coverage": 14
+  },
+  {
+   "theme": "agent ia",
+   "group": "ai",
+   "n": 7,
+   "buyer": 2,
+   "demand": 72,
+   "covered": 1,
+   "samples": [
+    "agent ia algerie",
+    "argentina algeria",
+    "argentina algeria highlights",
+    "prix essence en algérie",
+    "who is the president of algeria 2024",
+    "agrément promoteur immobilier algérie"
    ],
    "coverage": 14
   },
@@ -1011,6 +1096,23 @@
    "coverage": 0
   },
   {
+   "theme": "plateforme web",
+   "group": "platform",
+   "n": 6,
+   "buyer": 0,
+   "demand": 66,
+   "covered": 3,
+   "samples": [
+    "boutique en ligne algérie",
+    "plateforme ministère du commerce algérie",
+    "web sport algérie en direct",
+    "site web algérie télécom",
+    "algérie télécom espace client factures",
+    "plateforme du chercheur algérien"
+   ],
+   "coverage": 50
+  },
+  {
    "theme": "contrôle d’accès",
    "group": "security",
    "n": 6,
@@ -1079,52 +1181,36 @@
    "coverage": 0
   },
   {
-   "theme": "plateforme web",
-   "group": "platform",
-   "n": 6,
-   "buyer": 0,
-   "demand": 64,
-   "covered": 2,
-   "samples": [
-    "boutique en ligne algérie",
-    "plateforme ministère du commerce algérie",
-    "web sport algérie en direct",
-    "site web algérie télécom",
-    "plateforme du chercheur algérien",
-    "algérie télécom espace client factures"
-   ],
-   "coverage": 33
-  },
-  {
-   "theme": "développement application mobile",
-   "group": "mobile",
-   "n": 5,
-   "buyer": 4,
-   "demand": 63,
-   "covered": 1,
-   "samples": [
-    "développement durable en algérie",
-    "aide au développement france algérie",
-    "générateur des prix algérie",
-    "générateur de prix de construction en algérie",
-    "aadl 3 algérie 2025"
-   ],
-   "coverage": 20
-  },
-  {
-   "theme": "active directory",
-   "group": "infra",
+   "theme": "prestataire informatique",
+   "group": "services",
    "n": 6,
    "buyer": 2,
-   "demand": 63,
+   "demand": 64,
    "covered": 0,
    "samples": [
-    "prix data show algérie",
-    "prix disque dur algérie",
-    "direction générale des domaines algérie",
-    "vacances scolaires 2024 algérie",
-    "chaîne algérie en direct",
-    "programme national algérie en direct"
+    "entreprise informatique algerie",
+    "entreprise informatique alger",
+    "fournisseur informatique algerie",
+    "fournisseur informatique alger",
+    "consultant informatique algerie",
+    "fournisseur consommable informatique algerie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "gestion des encaissements",
+   "group": "business",
+   "n": 6,
+   "buyer": 1,
+   "demand": 61,
+   "covered": 0,
+   "samples": [
+    "augmenter retraits algérie nouvelle 2025",
+    "embaucher un ressortissant algérien",
+    "économie algérienne en 2025",
+    "conseil du renouveau économique algérien",
+    "embaucher un algérien en france",
+    "immobilier algérie prix en euros"
    ],
    "coverage": 0
   },
@@ -1159,6 +1245,23 @@
     "pour aller en algérie",
     "pays qui commence par algérie",
     "salarié algérien en france"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "vpn entreprise",
+   "group": "network",
+   "n": 6,
+   "buyer": 0,
+   "demand": 58,
+   "covered": 0,
+   "samples": [
+    "profil ipn 120 algérie",
+    "bnp paribas en algérie",
+    "bnp algérie compte en ligne",
+    "algerie telecom paiement internet",
+    "chaîne algérienne en direct",
+    "bp bientot pour les particuliers en algerie"
    ],
    "coverage": 0
   },
@@ -1201,7 +1304,7 @@
    "n": 5,
    "buyer": 1,
    "demand": 56,
-   "covered": 0,
+   "covered": 1,
    "samples": [
     "société de livraison en algérie",
     "plateforme e commerce algérie",
@@ -1209,24 +1312,7 @@
     "registre de commerce électronique algérie",
     "ministère du commerce extérieur algérie logo"
    ],
-   "coverage": 0
-  },
-  {
-   "theme": "vpn entreprise",
-   "group": "network",
-   "n": 6,
-   "buyer": 0,
-   "demand": 56,
-   "covered": 0,
-   "samples": [
-    "profil ipn 120 algérie",
-    "bnp paribas en algérie",
-    "bnp algérie compte en ligne",
-    "chaîne algérienne en direct",
-    "bp bientot pour les particuliers en algerie",
-    "algerie telecom paiement internet"
-   ],
-   "coverage": 0
+   "coverage": 20
   },
   {
    "theme": "envoi de sms",
@@ -1311,22 +1397,6 @@
    "coverage": 0
   },
   {
-   "theme": "firewall",
-   "group": "network",
-   "n": 5,
-   "buyer": 1,
-   "demand": 53,
-   "covered": 0,
-   "samples": [
-    "firewall prix algérie",
-    "firewall algérie",
-    "firewall alg error",
-    "firewall fortinet algerie",
-    "firewall alg"
-   ],
-   "coverage": 0
-  },
-  {
    "theme": "digitalisation entreprise",
    "group": "business",
    "n": 5,
@@ -1371,6 +1441,38 @@
     "tablette graphique prix algérie",
     "fournisseur de matériel électrique en algérie",
     "fournisseur matériel laboratoire algérie"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "firewall",
+   "group": "network",
+   "n": 5,
+   "buyer": 1,
+   "demand": 52,
+   "covered": 0,
+   "samples": [
+    "firewall prix algérie",
+    "firewall algérie",
+    "firewall alg error",
+    "firewall fortinet algerie",
+    "firewall alg"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "active directory",
+   "group": "infra",
+   "n": 5,
+   "buyer": 2,
+   "demand": 52,
+   "covered": 0,
+   "samples": [
+    "prix data show algérie",
+    "prix disque dur algérie",
+    "direction générale des domaines algérie",
+    "chaîne algérie en direct",
+    "programme national algérie en direct"
    ],
    "coverage": 0
   },
@@ -1458,12 +1560,12 @@
    "group": "network",
    "n": 5,
    "buyer": 0,
-   "demand": 46,
+   "demand": 47,
    "covered": 0,
    "samples": [
+    "wifi 6 algerie telecom",
     "modem wifi 6 algérie télécom",
     "répéteur wifi 6 algérie télécom",
-    "wifi 6 algerie telecom",
     "annuaire algérie télécom fixe",
     "mire adsl algérie télécom"
    ],
@@ -1486,6 +1588,22 @@
    "coverage": 0
   },
   {
+   "theme": "planification de production",
+   "group": "business",
+   "n": 5,
+   "buyer": 1,
+   "demand": 42,
+   "covered": 0,
+   "samples": [
+    "générateur prix construction algérie",
+    "foire de la production algérienne - fpa",
+    "algérie loi de finances 2026",
+    "production agricole algérie maroc",
+    "loi de finance 2023 algérie"
+   ],
+   "coverage": 0
+  },
+  {
    "theme": "baie de brassage",
    "group": "network",
    "n": 3,
@@ -1500,30 +1618,31 @@
    "coverage": 0
   },
   {
-   "theme": "signature électronique",
-   "group": "business",
+   "theme": "société informatique",
+   "group": "services",
    "n": 3,
-   "buyer": 0,
-   "demand": 35,
+   "buyer": 2,
+   "demand": 36,
    "covered": 0,
    "samples": [
-    "signature électronique algérie",
-    "loi signature électronique algérie",
-    "signature numérique algerie"
+    "societe informatique algerie",
+    "société informatique alger",
+    "boite informatique alger"
    ],
    "coverage": 0
   },
   {
-   "theme": "cloud entreprise",
-   "group": "infra",
-   "n": 3,
-   "buyer": 1,
+   "theme": "wifi invités",
+   "group": "network",
+   "n": 4,
+   "buyer": 0,
    "demand": 35,
    "covered": 0,
    "samples": [
-    "générateur prix construction algérie",
-    "saint cloud en algérie",
-    "saint cloud algérie française"
+    "ieee conference algeria 2026",
+    "holidays in algeria 2026",
+    "la vignette 2026 algerie",
+    "free mobile forfait algérie"
    ],
    "coverage": 0
   },
@@ -1556,20 +1675,6 @@
    "coverage": 67
   },
   {
-   "theme": "salle serveur",
-   "group": "network",
-   "n": 3,
-   "buyer": 0,
-   "demand": 33,
-   "covered": 2,
-   "samples": [
-    "salle des fêtes algérie",
-    "salle de sport alger",
-    "meuble salle de bain algérie"
-   ],
-   "coverage": 67
-  },
-  {
    "theme": "maintenance application",
    "group": "business",
    "n": 3,
@@ -1596,6 +1701,20 @@
     "click & collect – alger"
    ],
    "coverage": 0
+  },
+  {
+   "theme": "préparation de commandes",
+   "group": "business",
+   "n": 3,
+   "buyer": 1,
+   "demand": 31,
+   "covered": 1,
+   "samples": [
+    "préparateur de commande algerie",
+    "ctc algérie bon de commande",
+    "comment ouvrir une entreprise en algérie"
+   ],
+   "coverage": 33
   },
   {
    "theme": "sécurité informatique",
@@ -1640,15 +1759,15 @@
    "coverage": 0
   },
   {
-   "theme": "société informatique",
-   "group": "services",
+   "theme": "signature électronique",
+   "group": "business",
    "n": 2,
-   "buyer": 1,
-   "demand": 23,
+   "buyer": 0,
+   "demand": 25,
    "covered": 0,
    "samples": [
-    "société informatique alger",
-    "boite informatique alger"
+    "signature électronique algérie",
+    "loi signature électronique algérie"
    ],
    "coverage": 0
   },
@@ -1664,6 +1783,32 @@
     "reservation billet bateau algerie"
    ],
    "coverage": 50
+  },
+  {
+   "theme": "filtrage web",
+   "group": "network",
+   "n": 2,
+   "buyer": 0,
+   "demand": 22,
+   "covered": 0,
+   "samples": [
+    "filtre à eau algérie",
+    "web tv algérie en direct"
+   ],
+   "coverage": 0
+  },
+  {
+   "theme": "cloud entreprise",
+   "group": "infra",
+   "n": 2,
+   "buyer": 0,
+   "demand": 22,
+   "covered": 0,
+   "samples": [
+    "saint cloud en algérie",
+    "saint cloud algérie française"
+   ],
+   "coverage": 0
   },
   {
    "theme": "logiciel de facturation",
@@ -1851,6 +1996,18 @@
    "coverage": 0
   },
   {
+   "theme": "salle serveur",
+   "group": "network",
+   "n": 1,
+   "buyer": 0,
+   "demand": 11,
+   "covered": 0,
+   "samples": [
+    "meuble salle de bain algérie"
+   ],
+   "coverage": 0
+  },
+  {
    "theme": "application flutter",
    "group": "mobile",
    "n": 1,
@@ -1930,18 +2087,18 @@
   },
   {
    "query": "location voiture algérie prix",
-   "theme": "géolocalisation véhicules",
-   "group": "business",
+   "theme": "gestion de location",
+   "group": "platform",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "bing",
+    "google"
    ],
-   "best": 2,
+   "best": 3,
    "dz": true,
    "buyer": true,
    "noise": false,
-   "demand": 15,
+   "demand": 14.5,
    "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
   },
   {
@@ -2073,6 +2230,22 @@
    "page": null
   },
   {
+   "query": "hébergement site web algérie",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing",
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 14,
+   "page": "/blog/nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main"
+  },
+  {
    "query": "erp algérie",
    "theme": "erp",
    "group": "business",
@@ -2153,23 +2326,23 @@
    "page": "/blog/intelligence-artificielle-algerie-2026"
   },
   {
-   "query": "hébergement site web algérie",
-   "theme": "hébergement cloud",
+   "query": "data center algérie",
+   "theme": "datacenter",
    "group": "infra",
    "hl": "fr",
    "engines": [
-    "bing",
-    "google"
+    "google",
+    "bing"
    ],
    "best": 0,
    "dz": true,
    "buyer": false,
    "noise": false,
    "demand": 14,
-   "page": "/blog/nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main"
+   "page": null
   },
   {
-   "query": "data center algérie",
+   "query": "data center algeria",
    "theme": "datacenter",
    "group": "infra",
    "hl": "fr",
@@ -2313,51 +2486,6 @@
    "page": null
   },
   {
-   "query": "prix application mobile algérie",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 13,
-   "page": "/blog/application-mobile-setif-2026"
-  },
-  {
-   "query": "creation application mobile algerie",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 13,
-   "page": "/blog/application-mobile-setif-2026"
-  },
-  {
-   "query": "developpement application mobile algerie",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 13,
-   "page": "/blog/developpement-application-mobile-algerie-2024"
-  },
-  {
    "query": "les entreprises en algérie",
    "theme": "application mobile",
    "group": "mobile",
@@ -2401,6 +2529,21 @@
    "noise": false,
    "demand": 13,
    "page": null
+  },
+  {
+   "query": "prix application mobile algérie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/application-mobile-setif-2026"
   },
   {
    "query": "prix téléphone en algérie",
@@ -2493,6 +2636,21 @@
    "page": null
   },
   {
+   "query": "developpement application mobile algerie",
+   "theme": "application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/developpement-application-mobile-algerie-2024"
+  },
+  {
    "query": "créer une société en algérie",
    "theme": "application mobile",
    "group": "mobile",
@@ -2506,6 +2664,21 @@
    "noise": false,
    "demand": 13,
    "page": null
+  },
+  {
+   "query": "creation application mobile algerie",
+   "theme": "développement application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/application-mobile-setif-2026"
   },
   {
    "query": "développement durable en algérie",
@@ -2613,6 +2786,21 @@
    "page": "/blog/agence-immobiliere-whatsapp-google-sheets-organiser-equipe-algerie-2026"
   },
   {
+   "query": "agence de location de voiture alger",
+   "theme": "agence application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
+  },
+  {
    "query": "entreprise algérienne en france",
    "theme": "agence application mobile",
    "group": "mobile",
@@ -2664,6 +2852,21 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
+  },
+  {
+   "query": "entreprise publique économique en algérie",
+   "theme": "site e-commerce",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 0,
    "dz": true,
@@ -2793,6 +2996,21 @@
    "page": null
   },
   {
+   "query": "agence du service géologique de l'algérie",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
    "query": "erp prix algérie",
    "theme": "erp",
    "group": "business",
@@ -2823,21 +3041,6 @@
    "page": null
   },
   {
-   "query": "agence du service géologique de l'algérie",
-   "theme": "géolocalisation véhicules",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 13,
-   "page": null
-  },
-  {
    "query": "prix gps voiture algérie",
    "theme": "géolocalisation véhicules",
    "group": "business",
@@ -2855,6 +3058,21 @@
   {
    "query": "générateur de prix algérie",
    "theme": "intégration erp",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 13,
+   "page": null
+  },
+  {
+   "query": "générateur prix construction algérie",
+   "theme": "planification de production",
    "group": "business",
    "hl": "fr",
    "engines": [
@@ -3063,21 +3281,6 @@
    "page": "/blog/standard-telephonique-ip-entreprise-algerie-2027-ipbx-lignes-postes-menu-vocal-file-d-attente-appels-manques-crm"
   },
   {
-   "query": "générateur prix construction algérie",
-   "theme": "cloud entreprise",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 13,
-   "page": null
-  },
-  {
    "query": "prix hébergement site web algérie",
    "theme": "hébergement cloud",
    "group": "infra",
@@ -3109,7 +3312,7 @@
   },
   {
    "query": "societe informatique algerie",
-   "theme": "prestataire informatique",
+   "theme": "société informatique",
    "group": "services",
    "hl": "fr",
    "engines": [
@@ -3258,6 +3461,21 @@
    "page": null
   },
   {
+   "query": "comparateur de prix algérie",
+   "theme": "application android",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 12.5,
+   "page": null
+  },
+  {
    "query": "iphone 15 prix algérie",
    "theme": "application ios",
    "group": "mobile",
@@ -3291,21 +3509,6 @@
    "query": "prix de l'immobilier en algérie",
    "theme": "agence application mobile",
    "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 12.5,
-   "page": null
-  },
-  {
-   "query": "entreprise publique économique en algérie",
-   "theme": "site e-commerce",
-   "group": "platform",
    "hl": "fr",
    "engines": [
     "bing"
@@ -3634,21 +3837,6 @@
    "page": null
   },
   {
-   "query": "comparateur de prix algérie",
-   "theme": "application android",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 12,
-   "page": null
-  },
-  {
    "query": "iphone 16 prix algérie",
    "theme": "application ios",
    "group": "mobile",
@@ -3677,21 +3865,6 @@
    "noise": false,
    "demand": 12,
    "page": "/blog/logiciel-agence-voyage-gds-setif-est-algerien-2026"
-  },
-  {
-   "query": "agence de location de voiture alger",
-   "theme": "agence application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 12,
-   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
   },
   {
    "query": "agence air algérie alger",
@@ -4085,36 +4258,6 @@
    "page": null
   },
   {
-   "query": "application mobile algérie",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 11,
-   "page": "/blog/application-mobile-setif-2026"
-  },
-  {
-   "query": "développeur application mobile algérie",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 11,
-   "page": "/blog/application-mobile-setif-2026"
-  },
-  {
    "query": "air algérie application pc",
    "theme": "application mobile",
    "group": "mobile",
@@ -4205,6 +4348,21 @@
    "page": null
   },
   {
+   "query": "développeur application mobile algérie",
+   "theme": "développement application mobile",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/application-mobile-setif-2026"
+  },
+  {
    "query": "logo fac alger 1",
    "theme": "création application mobile",
    "group": "mobile",
@@ -4218,6 +4376,21 @@
    "noise": false,
    "demand": 11,
    "page": null
+  },
+  {
+   "query": "application mobile algérie",
+   "theme": "application android",
+   "group": "mobile",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/application-mobile-setif-2026"
   },
   {
    "query": "prochain match algérie 2026",
@@ -4337,7 +4510,7 @@
    "buyer": false,
    "noise": false,
    "demand": 11,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "web sport algérie en direct",
@@ -4367,7 +4540,7 @@
    "buyer": false,
    "noise": false,
    "demand": 11,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "e commerce en algérie",
@@ -4397,7 +4570,7 @@
    "buyer": false,
    "noise": false,
    "demand": 11,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "création site e commerce algérie",
@@ -4412,7 +4585,7 @@
    "buyer": true,
    "noise": false,
    "demand": 11,
-   "page": "/blog/creation-site-web-algerie-2024"
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "liste site e-commerce algérie",
@@ -4427,7 +4600,7 @@
    "buyer": false,
    "noise": false,
    "demand": 11,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "code de commerce algérie",
@@ -4640,6 +4813,21 @@
    "page": null
   },
   {
+   "query": "école privée en algérie",
+   "theme": "plateforme e-learning",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026"
+  },
+  {
    "query": "elearning alger 2 2025 2026",
    "theme": "plateforme e-learning",
    "group": "platform",
@@ -4683,6 +4871,21 @@
    "noise": false,
    "demand": 11,
    "page": "/blog/application-livraison-algerie-2026"
+  },
+  {
+   "query": "direction de logement alger",
+   "theme": "application de livraison",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
   },
   {
    "query": "achat vignette en ligne algérie 2026",
@@ -4938,6 +5141,21 @@
    "noise": false,
    "demand": 11,
    "page": "/blog/developpement-logiciel-bancaire-gestion-cash-2026"
+  },
+  {
+   "query": "logiciel de gestion d école algerie",
+   "theme": "logiciel de planning",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/logiciel-ecole-gestion-scolaire-algerie-2026"
   },
   {
    "query": "gestion de projet algerie",
@@ -5238,6 +5456,96 @@
    "noise": false,
    "demand": 11,
    "page": null
+  },
+  {
+   "query": "école supérieure algérienne des affaires",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "vacances scolaire algérie 2026",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "vacances scolaires 2024 algérie",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "salle de sport alger",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/creer-application-salle-de-sport-algerie-2027-abonnement-acces-renouvellement"
+  },
+  {
+   "query": "salle des fêtes algérie",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/creer-equivalent-mariages-net-algerie-2027-salle-des-fetes-reservation-depuis-la-france-acompte-dates"
+  },
+  {
+   "query": "location de voiture algerie",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
   },
   {
    "query": "vente serveur informatique algérie",
@@ -5600,6 +5908,36 @@
    "page": null
   },
   {
+   "query": "production agricole en algérie",
+   "theme": "suivi de production",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "foire de la production algérienne 2025",
+   "theme": "suivi de production",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
    "query": "la foire de la production algérienne 2024",
    "theme": "suivi de production",
    "group": "business",
@@ -5763,6 +6101,51 @@
    "noise": false,
    "demand": 11,
    "page": "/blog/client-en-france-paie-en-euros-service-en-algerie-application-2027-deux-encaissements-deux-devises-taux-fige-rapprochement-remboursement"
+  },
+  {
+   "query": "direction générale des impôts algérie",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "préparateur de commande algerie",
+   "theme": "préparation de commandes",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
+   "query": "augmenter retraits algérie nouvelle 2025",
+   "theme": "gestion des encaissements",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
   },
   {
    "query": "chatbot algérie",
@@ -6095,6 +6478,21 @@
    "page": null
   },
   {
+   "query": "wifi 6 algerie telecom",
+   "theme": "wifi entreprise",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
    "query": "modem wifi 6 algérie télécom",
    "theme": "wifi entreprise",
    "group": "network",
@@ -6200,36 +6598,6 @@
    "page": "/blog/installation-reseau-informatique-entreprise-algerie-2027-cablage-baie-de-brassage-switch-wifi-pare-feu-lien-de-secours"
   },
   {
-   "query": "salle des fêtes algérie",
-   "theme": "salle serveur",
-   "group": "network",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 11,
-   "page": "/blog/creer-equivalent-mariages-net-algerie-2027-salle-des-fetes-reservation-depuis-la-france-acompte-dates"
-  },
-  {
-   "query": "salle de sport alger",
-   "theme": "salle serveur",
-   "group": "network",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 11,
-   "page": "/blog/creer-application-salle-de-sport-algerie-2027-abonnement-acces-renouvellement"
-  },
-  {
    "query": "armoire de brassage algérie",
    "theme": "baie de brassage",
    "group": "network",
@@ -6305,6 +6673,21 @@
    "page": null
   },
   {
+   "query": "filtre à eau algérie",
+   "theme": "filtrage web",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 11,
+   "page": null
+  },
+  {
    "query": "virtual algeria number",
    "theme": "virtualisation",
    "group": "infra",
@@ -6365,37 +6748,7 @@
    "page": null
   },
   {
-   "query": "data center algeria",
-   "theme": "datacenter",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 11,
-   "page": null
-  },
-  {
    "query": "direction générale des domaines algérie",
-   "theme": "active directory",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 11,
-   "page": null
-  },
-  {
-   "query": "vacances scolaires 2024 algérie",
    "theme": "active directory",
    "group": "infra",
    "hl": "fr",
@@ -6770,21 +7123,6 @@
    "page": "/blog/pointeuse-biometrique-logiciel-presence-algerie-2027-controle-d-acces-pointage-mobile-releve-d-heures-sans-ressaisie"
   },
   {
-   "query": "application telephone algerie",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": "/blog/connexion-otp-sms-whatsapp-application-algerie-2027-numero-de-telephone-code-cout-par-envoi-fraude-passkeys"
-  },
-  {
    "query": "appeler un portable en algerie",
    "theme": "application mobile",
    "group": "mobile",
@@ -7070,6 +7408,21 @@
    "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
   },
   {
+   "query": "site air algérie réservation",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
    "query": "plateforme de reservation hotel algerie",
    "theme": "plateforme de réservation",
    "group": "platform",
@@ -7086,6 +7439,21 @@
   },
   {
    "query": "plateforme univ alger 3",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "air algérie gérer réservation",
    "theme": "plateforme de réservation",
    "group": "platform",
    "hl": "fr",
@@ -7158,21 +7526,6 @@
    "noise": false,
    "demand": 10.5,
    "page": "/blog/application-livraison-algerie-2026"
-  },
-  {
-   "query": "direction de logement alger",
-   "theme": "application de livraison",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": null
   },
   {
    "query": "activités à découvrir à alger",
@@ -7310,6 +7663,21 @@
    "page": null
   },
   {
+   "query": "modèle bon de commande algérie word",
+   "theme": "application de commande",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
    "query": "borne de commande restaurant algérie",
    "theme": "borne de commande",
    "group": "platform",
@@ -7340,21 +7708,6 @@
    "page": null
   },
   {
-   "query": "paiement en ligne algérie poste",
-   "theme": "paiement en ligne",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
-  },
-  {
    "query": "air algérie paiement en ligne",
    "theme": "paiement en ligne",
    "group": "platform",
@@ -7371,6 +7724,21 @@
   },
   {
    "query": "paiement facture algérie télécom en ligne",
+   "theme": "paiement en ligne",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "payer vignette 2026 algérie en ligne",
    "theme": "paiement en ligne",
    "group": "platform",
    "hl": "fr",
@@ -7580,6 +7948,51 @@
    "page": null
   },
   {
+   "query": "vacances scolaires 2026 en algérie",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "salle de sport femme alger",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/creer-application-salle-de-sport-algerie-2027-abonnement-acces-renouvellement"
+  },
+  {
+   "query": "direction logement wilaya alger",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
    "query": "crma algérie",
    "theme": "crm",
    "group": "business",
@@ -7745,7 +8158,7 @@
    "page": null
   },
   {
-   "query": "gps voiture algérie",
+   "query": "location voiture algérie",
    "theme": "géolocalisation véhicules",
    "group": "business",
    "hl": "fr",
@@ -7757,7 +8170,7 @@
    "buyer": false,
    "noise": false,
    "demand": 10.5,
-   "page": null
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
   },
   {
    "query": "location auto alger",
@@ -7805,37 +8218,7 @@
    "page": null
   },
   {
-   "query": "production agricole en algérie",
-   "theme": "suivi de production",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": null
-  },
-  {
    "query": "production de gaz en algérie",
-   "theme": "suivi de production",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": null
-  },
-  {
-   "query": "foire de la production algérienne 2025",
    "theme": "suivi de production",
    "group": "business",
    "hl": "fr",
@@ -7895,21 +8278,6 @@
    "page": null
   },
   {
-   "query": "signature numérique algerie",
-   "theme": "signature électronique",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": null
-  },
-  {
    "query": "ministère de tourisme algérie",
    "theme": "gestion des visiteurs",
    "group": "business",
@@ -7942,6 +8310,81 @@
   {
    "query": "mise en disponibilité algérie",
    "theme": "maintenance application",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "site des impôts algérie",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "direction des impôts algérie",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "ctc algérie bon de commande",
+   "theme": "préparation de commandes",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/logiciel-gestion-commerciale-algerie-2027-devis-commande-bon-de-livraison-facture-stock-reglements-erp-ou-pas-sans-ressaisie"
+  },
+  {
+   "query": "embaucher un ressortissant algérien",
+   "theme": "gestion des encaissements",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "économie algérienne en 2025",
+   "theme": "gestion des encaissements",
    "group": "business",
    "hl": "fr",
    "engines": [
@@ -8150,21 +8593,6 @@
    "page": null
   },
   {
-   "query": "firewall fortinet algerie",
-   "theme": "firewall",
-   "group": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": null
-  },
-  {
    "query": "meuble salle de bain algérie",
    "theme": "salle serveur",
    "group": "network",
@@ -8197,6 +8625,21 @@
   {
    "query": "algérie télécom annuaire inversé",
    "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": null
+  },
+  {
+   "query": "web tv algérie en direct",
+   "theme": "filtrage web",
    "group": "network",
    "hl": "fr",
    "engines": [
@@ -8270,6 +8713,21 @@
    "page": "/blog/nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main"
   },
   {
+   "query": "hebergement site web algerie telecom",
+   "theme": "hébergement cloud",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10.5,
+   "page": "/blog/nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main"
+  },
+  {
    "query": "centre algérien du contrôle de la qualité et de l emballage",
    "theme": "datacenter",
    "group": "infra",
@@ -8291,21 +8749,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": null
-  },
-  {
-   "query": "centre alger",
-   "theme": "datacenter",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 1,
    "dz": true,
@@ -8433,21 +8876,6 @@
    "noise": false,
    "demand": 10.5,
    "page": null
-  },
-  {
-   "query": "hébergement site web algérie télécom",
-   "theme": "hébergement site web",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10.5,
-   "page": "/blog/nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main"
   },
   {
    "query": "algerian energy company spa",
@@ -8780,21 +9208,6 @@
    "page": null
   },
   {
-   "query": "application algérie telecom",
-   "theme": "application mobile",
-   "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": null
-  },
-  {
    "query": "algérie télécom paiement en ligne",
    "theme": "application mobile",
    "group": "mobile",
@@ -8840,6 +9253,21 @@
    "page": null
   },
   {
+   "query": "algérie télécom espace client factures",
+   "theme": "plateforme web",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
    "query": "ministère du commerce extérieur algérie logo",
    "theme": "plateforme e-commerce",
    "group": "platform",
@@ -8867,7 +9295,7 @@
    "buyer": false,
    "noise": false,
    "demand": 10,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "top site e commerce algérie",
@@ -8882,7 +9310,7 @@
    "buyer": false,
    "noise": false,
    "demand": 10,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "code du commerce algérie",
@@ -9020,21 +9448,6 @@
    "page": null
   },
   {
-   "query": "site air algérie réservation",
-   "theme": "plateforme de réservation",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": null
-  },
-  {
    "query": "application reservation algerie",
    "theme": "plateforme de réservation",
    "group": "platform",
@@ -9051,6 +9464,21 @@
   },
   {
    "query": "plateforme université alger 3",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "réserve de change algérie",
    "theme": "plateforme de réservation",
    "group": "platform",
    "hl": "fr",
@@ -9185,21 +9613,6 @@
    "page": null
   },
   {
-   "query": "modèle bon de commande algérie word",
-   "theme": "application de commande",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": null
-  },
-  {
    "query": "direction de commerce alger",
    "theme": "application de commande",
    "group": "platform",
@@ -9245,6 +9658,21 @@
    "page": null
   },
   {
+   "query": "paiement en ligne algérie poste",
+   "theme": "paiement en ligne",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
+  },
+  {
    "query": "paiement quittance passeport en ligne algérie",
    "theme": "paiement en ligne",
    "group": "platform",
@@ -9275,37 +9703,7 @@
    "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
   },
   {
-   "query": "paiement en ligne algerie api",
-   "theme": "paiement en ligne",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
-  },
-  {
    "query": "e paiement algérie télécom",
-   "theme": "paiement en ligne",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": null
-  },
-  {
-   "query": "payer vignette 2026 algérie en ligne",
    "theme": "paiement en ligne",
    "group": "platform",
    "hl": "fr",
@@ -9393,6 +9791,21 @@
    "noise": false,
    "demand": 10,
    "page": "/blog/logiciel-gestion-commerciale-algerie-2027-devis-commande-bon-de-livraison-facture-stock-reglements-erp-ou-pas-sans-ressaisie"
+  },
+  {
+   "query": "chargée de projet européen en algérie",
+   "theme": "gestion de projet",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
   },
   {
    "query": "service après vente condor alger",
@@ -9575,6 +9988,21 @@
    "page": null
   },
   {
+   "query": "location appartement alger par mois",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
    "query": "logiciel crm algerie",
    "theme": "crm",
    "group": "business",
@@ -9656,6 +10084,21 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "gps voiture algérie",
+   "theme": "géolocalisation véhicules",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 2,
    "dz": true,
@@ -9800,6 +10243,36 @@
    "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
   },
   {
+   "query": "impôts algérie site officiel",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "conseil du renouveau économique algérien",
+   "theme": "gestion des encaissements",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
    "query": "robot algérie",
    "theme": "chatbot",
    "group": "ai",
@@ -9935,8 +10408,8 @@
    "page": null
   },
   {
-   "query": "wifi 6 algerie telecom",
-   "theme": "wifi entreprise",
+   "query": "bnp algérie compte en ligne",
+   "theme": "vpn entreprise",
    "group": "network",
    "hl": "fr",
    "engines": [
@@ -9950,12 +10423,12 @@
    "page": null
   },
   {
-   "query": "bnp algérie compte en ligne",
-   "theme": "vpn entreprise",
+   "query": "firewall fortinet algerie",
+   "theme": "firewall",
    "group": "network",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 2,
    "dz": true,
@@ -9982,6 +10455,21 @@
   {
    "query": "direction générale algérie télécom",
    "theme": "standard téléphonique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "ieee conference algeria 2026",
+   "theme": "wifi invités",
    "group": "network",
    "hl": "fr",
    "engines": [
@@ -10056,6 +10544,21 @@
   },
   {
    "query": "centre algérie",
+   "theme": "datacenter",
+   "group": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 10,
+   "page": null
+  },
+  {
+   "query": "centre alger",
    "theme": "datacenter",
    "group": "infra",
    "hl": "fr",
@@ -10250,37 +10753,7 @@
    "page": null
   },
   {
-   "query": "hebergeur site web algerie",
-   "theme": "hébergement site web",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": "/blog/creation-site-web-algerie-2024"
-  },
-  {
    "query": "hôtel pas cher alger",
-   "theme": "hébergement site web",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 2,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 10,
-   "page": null
-  },
-  {
-   "query": "vacances scolaire algérie 2026",
    "theme": "hébergement site web",
    "group": "infra",
    "hl": "fr",
@@ -10491,7 +10964,7 @@
   },
   {
    "query": "application mobile air algérie",
-   "theme": "application mobile",
+   "theme": "application android",
    "group": "mobile",
    "hl": "fr",
    "engines": [
@@ -10562,7 +11035,7 @@
    "buyer": false,
    "noise": false,
    "demand": 9.5,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "meilleur site e commerce algerie",
@@ -10577,7 +11050,7 @@
    "buyer": false,
    "noise": false,
    "demand": 9.5,
-   "page": null
+   "page": "/blog/comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure"
   },
   {
    "query": "marketplace algérie électroménager",
@@ -10700,7 +11173,7 @@
    "page": null
   },
   {
-   "query": "appli livraison algerie",
+   "query": "application livreur algerie",
    "theme": "application de livraison",
    "group": "platform",
    "hl": "fr",
@@ -10856,6 +11329,21 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
+  },
+  {
+   "query": "paiement en ligne algerie api",
+   "theme": "paiement en ligne",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 3,
    "dz": true,
@@ -11150,6 +11638,111 @@
    "page": null
   },
   {
+   "query": "réservation air algérie site officiel",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "école supérieure de la sécurité sociale alger",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "sport le plus pratiqué en algérie",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "salle des fetes alger",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/creer-equivalent-mariages-net-algerie-2027-salle-des-fetes-reservation-depuis-la-france-acompte-dates"
+  },
+  {
+   "query": "location appartement en algerie",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "location de voiture alger",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
+  },
+  {
+   "query": "location de véhicule algérie",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
    "query": "meilleur erp algérie",
    "theme": "erp",
    "group": "business",
@@ -11270,57 +11863,12 @@
    "page": null
   },
   {
-   "query": "location voiture algérie oran",
-   "theme": "géolocalisation véhicules",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 9.5,
-   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
-  },
-  {
    "query": "gps auto algerie",
    "theme": "géolocalisation véhicules",
    "group": "business",
    "hl": "fr",
    "engines": [
     "google"
-   ],
-   "best": 3,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 9.5,
-   "page": null
-  },
-  {
-   "query": "location de voiture algerie",
-   "theme": "géolocalisation véhicules",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 3,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 9.5,
-   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
-  },
-  {
-   "query": "location de véhicule algérie",
-   "theme": "géolocalisation véhicules",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
    ],
    "best": 3,
    "dz": true,
@@ -11392,6 +11940,51 @@
   {
    "query": "que visiter à alger",
    "theme": "gestion des visiteurs",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "les impôts en algérie",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "comment ouvrir une entreprise en algérie",
+   "theme": "préparation de commandes",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
+   "query": "embaucher un algérien en france",
+   "theme": "gestion des encaissements",
    "group": "business",
    "hl": "fr",
    "engines": [
@@ -11510,6 +12103,21 @@
    "page": null
   },
   {
+   "query": "algerie telecom paiement internet",
+   "theme": "vpn entreprise",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9.5,
+   "page": null
+  },
+  {
    "query": "solar installers oran algeria",
    "theme": "installation serveur",
    "group": "infra",
@@ -11546,21 +12154,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 3,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 9.5,
-   "page": null
-  },
-  {
-   "query": "hebergeur web algerie",
-   "theme": "hébergement cloud",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 3,
    "dz": true,
@@ -11721,21 +12314,6 @@
   },
   {
    "query": "résidence en ligne algérie",
-   "theme": "hébergement site web",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 3,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 9.5,
-   "page": null
-  },
-  {
-   "query": "vacances scolaires 2026 en algérie",
    "theme": "hébergement site web",
    "group": "infra",
    "hl": "fr",
@@ -12065,21 +12643,6 @@
    "page": null
   },
   {
-   "query": "réserve de change algérie",
-   "theme": "plateforme de réservation",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 4,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 9,
-   "page": null
-  },
-  {
    "query": "e learning université alger 2",
    "theme": "plateforme e-learning",
    "group": "platform",
@@ -12095,7 +12658,7 @@
    "page": null
   },
   {
-   "query": "application livreur algerie",
+   "query": "application de livraison de repas algerie",
    "theme": "application de livraison",
    "group": "platform",
    "hl": "fr",
@@ -12107,7 +12670,7 @@
    "buyer": false,
    "noise": false,
    "demand": 9,
-   "page": null
+   "page": "/blog/application-livraison-algerie-2026"
   },
   {
    "query": "shopping en ligne algérie",
@@ -12470,6 +13033,81 @@
    "page": null
   },
   {
+   "query": "gerer ma reservation air algerie",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "air algérie réservation tarif",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": true,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "ministère des sports algérie",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "sport algérie en direct",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "location maison en algerie",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
    "query": "erp odoo algérie",
    "theme": "erp",
    "group": "business",
@@ -12560,6 +13198,21 @@
    "page": null
   },
   {
+   "query": "location voiture algérie oran",
+   "theme": "géolocalisation véhicules",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
+  },
+  {
    "query": "dédouanement voiture algérie 2025",
    "theme": "géolocalisation véhicules",
    "group": "business",
@@ -12630,6 +13283,36 @@
    "best": 4,
    "dz": true,
    "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "direction des impôts alger",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 9,
+   "page": null
+  },
+  {
+   "query": "immobilier algérie prix en euros",
+   "theme": "gestion des encaissements",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": true,
    "noise": false,
    "demand": 9,
    "page": null
@@ -12755,9 +13438,9 @@
    "page": null
   },
   {
-   "query": "sécurité alimentaire en algérie",
-   "theme": "sauvegarde données entreprise",
-   "group": "infra",
+   "query": "holidays in algeria 2026",
+   "theme": "wifi invités",
+   "group": "network",
    "hl": "fr",
    "engines": [
     "bing"
@@ -12770,8 +13453,8 @@
    "page": null
   },
   {
-   "query": "holidays in algeria 2026",
-   "theme": "hébergement cloud",
+   "query": "sécurité alimentaire en algérie",
+   "theme": "sauvegarde données entreprise",
    "group": "infra",
    "hl": "fr",
    "engines": [
@@ -12905,19 +13588,19 @@
    "page": null
   },
   {
-   "query": "location appartement alger par mois",
+   "query": "hebergeur site web algerie",
    "theme": "hébergement site web",
    "group": "infra",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 4,
    "dz": true,
    "buyer": false,
    "noise": false,
    "demand": 9,
-   "page": null
+   "page": "/blog/creation-site-web-algerie-2024"
   },
   {
    "query": "nom de famille algerien",
@@ -13041,7 +13724,7 @@
   },
   {
    "query": "application poste mobile algerie",
-   "theme": "application mobile",
+   "theme": "application android",
    "group": "mobile",
    "hl": "fr",
    "engines": [
@@ -13475,6 +14158,81 @@
    "page": null
   },
   {
+   "query": "consulter ma réservation air algérie",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "air algérie réservation billet promotionnel",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "prime de scolarité algérie",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "le sport en algérie",
+   "theme": "gestion salle de sport",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "location studio alger centre",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
    "query": "réglementation erp algérie",
    "theme": "erp",
    "group": "business",
@@ -13595,21 +14353,6 @@
    "page": null
   },
   {
-   "query": "location voiture algérie constantine",
-   "theme": "géolocalisation véhicules",
-   "group": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 8.5,
-   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
-  },
-  {
    "query": "location véhicule alger ouedkniss",
    "theme": "géolocalisation véhicules",
    "group": "business",
@@ -13715,21 +14458,6 @@
    "page": "/blog/intelligence-artificielle-algerie-2026"
   },
   {
-   "query": "immobilier algérie prix en euros",
-   "theme": "agent ia",
-   "group": "ai",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 9,
-   "dz": true,
-   "buyer": true,
-   "noise": false,
-   "demand": 8.5,
-   "page": null
-  },
-  {
    "query": "pays qui commence par algérie",
    "theme": "assistant ia",
    "group": "ai",
@@ -13822,6 +14550,21 @@
   {
    "query": "taux tap algérie 2023",
    "theme": "téléphonie ip",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8.5,
+   "page": null
+  },
+  {
+   "query": "la vignette 2026 algerie",
+   "theme": "wifi invités",
    "group": "network",
    "hl": "fr",
    "engines": [
@@ -14136,7 +14879,7 @@
   },
   {
    "query": "application recharge mobile algerie",
-   "theme": "application mobile",
+   "theme": "application android",
    "group": "mobile",
    "hl": "fr",
    "engines": [
@@ -14153,21 +14896,6 @@
    "query": "vente appartement lpp alger",
    "theme": "agence application mobile",
    "group": "mobile",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 8,
-   "page": null
-  },
-  {
-   "query": "algérie télécom espace client factures",
-   "theme": "plateforme web",
-   "group": "platform",
    "hl": "fr",
    "engines": [
     "bing"
@@ -14287,21 +15015,6 @@
   {
    "query": "saas algorithm examples",
    "theme": "saas",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 8,
-   "page": null
-  },
-  {
-   "query": "air algérie gérer réservation",
-   "theme": "plateforme de réservation",
    "group": "platform",
    "hl": "fr",
    "engines": [
@@ -14645,6 +15358,51 @@
    "page": null
   },
   {
+   "query": "air algérie mes réservations",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "équivalence des diplômes en algérie",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "acheter un appartement en algérie",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
    "query": "erp logiciel algérie",
    "theme": "erp",
    "group": "business",
@@ -14720,7 +15478,7 @@
    "page": null
   },
   {
-   "query": "location auto algérie",
+   "query": "location voiture algérie constantine",
    "theme": "géolocalisation véhicules",
    "group": "business",
    "hl": "fr",
@@ -14732,7 +15490,7 @@
    "buyer": false,
    "noise": false,
    "demand": 8,
-   "page": null
+   "page": "/blog/creer-plateforme-location-voiture-algerie-2027-reservation-caution-etat-des-lieux"
   },
   {
    "query": "location car alger",
@@ -14810,6 +15568,36 @@
    "page": null
   },
   {
+   "query": "foire de la production algérienne - fpa",
+   "theme": "planification de production",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
+   "query": "algérie loi de finances 2026",
+   "theme": "planification de production",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 8,
+   "page": null
+  },
+  {
    "query": "algérie télécom paiement fibre",
    "theme": "fibre optique entreprise",
    "group": "network",
@@ -14841,21 +15629,6 @@
   },
   {
    "query": "bp bientot pour les particuliers en algerie",
-   "theme": "vpn entreprise",
-   "group": "network",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 8,
-   "page": null
-  },
-  {
-   "query": "algerie telecom paiement internet",
    "theme": "vpn entreprise",
    "group": "network",
    "hl": "fr",
@@ -14991,21 +15764,6 @@
   },
   {
    "query": "ministère du logement algérie",
-   "theme": "hébergement site web",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 8,
-   "page": null
-  },
-  {
-   "query": "acheter un appartement en algérie",
    "theme": "hébergement site web",
    "group": "infra",
    "hl": "fr",
@@ -15230,21 +15988,6 @@
    "page": "/blog/agence-tourisme-saharien-algerie-2027-reservation-en-ligne-circuits-djanet"
   },
   {
-   "query": "école privée en algérie",
-   "theme": "plateforme e-learning",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 7,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 7.5,
-   "page": "/blog/ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026"
-  },
-  {
    "query": "elearning univ alger 2 2025 2026",
    "theme": "plateforme e-learning",
    "group": "platform",
@@ -15410,36 +16153,6 @@
    "page": null
   },
   {
-   "query": "logiciel de gestion d école algerie",
-   "theme": "logiciel de planning",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 7.5,
-   "page": "/blog/logiciel-ecole-gestion-scolaire-algerie-2026"
-  },
-  {
-   "query": "chargée de projet européen en algérie",
-   "theme": "gestion de projet",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 7,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 7.5,
-   "page": null
-  },
-  {
    "query": "service après vente maxwell algérie",
    "theme": "service après-vente",
    "group": "platform",
@@ -15575,6 +16288,66 @@
    "page": null
   },
   {
+   "query": "reserver une chambre d'hotel à alger",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "air algérie réservation de groupe",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "ministère enseignement supérieur algérie",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "appartement à louer alger",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
    "query": "erp system algerie",
    "theme": "erp",
    "group": "business",
@@ -15697,6 +16470,21 @@
   {
    "query": "voyage touristique en algérie",
    "theme": "gestion des visiteurs",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7.5,
+   "page": null
+  },
+  {
+   "query": "auto entrepreneur algérie carte",
+   "theme": "gestion d’entrepôt",
    "group": "business",
    "hl": "fr",
    "engines": [
@@ -15847,21 +16635,6 @@
   {
    "query": "algérie numéro de département",
    "theme": "bureau à distance",
-   "group": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 7,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 7.5,
-   "page": null
-  },
-  {
-   "query": "reserver une chambre d'hotel à alger",
-   "theme": "hébergement site web",
    "group": "infra",
    "hl": "fr",
    "engines": [
@@ -16115,6 +16888,21 @@
    "page": null
   },
   {
+   "query": "air algérie site de réservation",
+   "theme": "plateforme de réservation",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
    "query": "e learning alger 3",
    "theme": "plateforme e-learning",
    "group": "platform",
@@ -16233,21 +17021,6 @@
    "noise": false,
    "demand": 7,
    "page": "/blog/borne-de-commande-restaurant-algerie-2027-menu-qr-code-commande-a-emporter-file-d-attente-paiement-especes-ecran-cuisine-numero-d-appel"
-  },
-  {
-   "query": "paiement electricité en ligne algerie",
-   "theme": "paiement en ligne",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 7,
-   "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
   },
   {
    "query": "balance des paiements algérie",
@@ -16430,6 +17203,66 @@
    "page": null
   },
   {
+   "query": "air algérie réservation modification",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "système éducatif en algérie",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "authentification des diplômes algériens",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "location appartement à alger",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
    "query": "tableau de bord fiat 500 algerie",
    "theme": "tableau de bord",
    "group": "business",
@@ -16565,6 +17398,21 @@
    "page": null
   },
   {
+   "query": "liste des activités auto entrepreneur algerie",
+   "theme": "gestion d’entrepôt",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
    "query": "moyenne intelligence artificielle algerie",
    "theme": "intelligence artificielle",
    "group": "ai",
@@ -16672,6 +17520,21 @@
   {
    "query": "test adsl algérie télécom",
    "theme": "standard téléphonique",
+   "group": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 7,
+   "page": null
+  },
+  {
+   "query": "free mobile forfait algérie",
+   "theme": "wifi invités",
    "group": "network",
    "hl": "fr",
    "engines": [
@@ -16910,21 +17773,6 @@
    "page": null
   },
   {
-   "query": "air algérie site de réservation",
-   "theme": "plateforme de réservation",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 9,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 6.5,
-   "page": null
-  },
-  {
    "query": "algérie telecom espace client",
    "theme": "plateforme de réservation",
    "group": "platform",
@@ -17013,21 +17861,6 @@
    "noise": false,
    "demand": 6.5,
    "page": null
-  },
-  {
-   "query": "paiement impot en ligne algerie",
-   "theme": "paiement en ligne",
-   "group": "platform",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "dz": true,
-   "buyer": false,
-   "noise": false,
-   "demand": 6.5,
-   "page": "/blog/creer-plateforme-billetterie-en-ligne-algerie-2027-billet-qr-porte-paiement"
   },
   {
    "query": "inscription lpl alger 2026",
@@ -17135,6 +17968,51 @@
    "page": null
   },
   {
+   "query": "réservation paris alger air algérie",
+   "theme": "gestion des réservations",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "école algérienne paris 19",
+   "theme": "gestion d’école",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "location appartement alger centre",
+   "theme": "gestion de location",
+   "group": "platform",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
    "query": "erp gp air algérie",
    "theme": "erp",
    "group": "business",
@@ -17216,6 +18094,36 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "production agricole algérie maroc",
+   "theme": "planification de production",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "dz": true,
+   "buyer": false,
+   "noise": false,
+   "demand": 6.5,
+   "page": null
+  },
+  {
+   "query": "loi de finance 2023 algérie",
+   "theme": "planification de production",
+   "group": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 9,
    "dz": true,
