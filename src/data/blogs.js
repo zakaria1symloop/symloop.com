@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "278",
+    slug: "site-web-pirate-que-faire-entreprise-algerie-2027-premiere-heure-site-redirige-avertissement-google-nettoyer-ou-reconstruire-sauvegarde-saine",
+    title: "Site web piraté, que faire en Algérie (2027) : la première heure, puis cinq jours pour reconstruire, quand le site redirige vers un autre ou que Google affiche un avertissement",
+    subtitle: "Six signes et le premier geste, six temps pour remettre le site en état, un piratage plus ancien que ses signes, ce qu'un nettoyage rapide laisse derrière lui, cinq couches et cinq jours",
+    excerpt: "« Ce matin, notre site envoie les visiteurs vers un site de paris. Sur Google, sous notre nom, il est écrit que le site est peut-être piraté, et l'hébergeur menace de suspendre le compte. Le site a été fait il y a quatre ans par une agence qu'on ne joint plus. Que fait-on, dans quel ordre, sans tout perdre ? » On ne supprime rien et on ne nettoie pas à la main. On isole, on copie, on trouve la date de l'entrée, on reconstruit propre, on ferme la porte, puis on demande la levée de l'avertissement.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["site web piraté", "sécurité site web", "sauvegarde", "WordPress", "avertissement Google"],
+    metaTitle: "Site web piraté que faire Algérie 2027 : première heure, site qui redirige, avertissement Google, reconstruire | Symloop",
+    metaDescription: "Site web d'entreprise piraté en Algérie en 2027 : les six signes (page remplacée, redirection, avertissement du navigateur, mention « Ce site est peut-être piraté », pages inconnues, compte suspendu), le premier geste (maintenance, ne rien supprimer), les six temps (isoler, copier, dater l'entrée, reconstruire, fermer, faire revoir), pourquoi la sauvegarde de la veille est souvent déjà infectée, ce qu'un nettoyage rapide laisse derrière lui, comment faire lever l'avertissement de Google. Exemple : entrée le 3 mars, premier signe 42 jours plus tard, 14 copies quotidiennes toutes infectées, une copie hebdomadaire saine. Réouverture en cinq jours.",
+    translations: {
+      en: { title: "Hacked website, what to do in Algeria (2027): the first hour, then five days to rebuild, for when the site redirects elsewhere or Google shows a warning", subtitle: "Six signs and the first action, six steps to put the site back in order, a hack older than its signs, what a quick clean leaves behind, five layers and five days", excerpt: "“This morning our site is sending visitors to a betting site. On Google, under our name, it says the site may be hacked, and the host is threatening to suspend the account. The site was built four years ago by an agency we can no longer reach. What do we do, in what order, without losing everything?” You delete nothing and you do not clean by hand. You isolate, copy, find the date of entry, rebuild clean, close the door, then ask for the warning to be lifted." },
+      ar: { title: "موقع مخترَق، ما العمل في الجزائر (2027): الساعة الأولى، ثم خمسة أيام لإعادة البناء، حين يحوّل الموقع زوّاره إلى موقع آخر أو يعرض غوغل تحذيراً", subtitle: "ست علامات والحركة الأولى، ست مراحل لإعادة الموقع إلى حاله، اختراق أقدم من علاماته، ما يتركه التنظيف السريع، خمس طبقات وخمسة أيام", excerpt: "«هذا الصباح، موقعنا يرسل الزوّار إلى موقع مراهنات. وفي غوغل، تحت اسمنا، مكتوب أن الموقع قد يكون مخترَقاً، والمستضيف يهدّد بإيقاف الحساب. الموقع أنجزته قبل أربع سنوات وكالة لم نعد نصل إليها. ماذا نفعل، وبأي ترتيب، دون أن نخسر كل شيء؟» لا نحذف شيئاً ولا ننظّف باليد. نعزل، ننسخ، نجد تاريخ الدخول، نعيد البناء نظيفاً، نغلق الباب، ثم نطلب رفع التحذير." }
+    }
+  },
+  {
     id: "277",
     slug: "logiciel-boulangerie-patisserie-algerie-2027-production-du-jour-invendus-ruptures-commandes-de-gateaux-acompte-cout-de-revient-recette",
     title: "Logiciel boulangerie pâtisserie en Algérie (2027) : production du jour, invendus, ruptures et gâteaux sur commande, quand on jette le soir ce qui manquait à seize heures",
