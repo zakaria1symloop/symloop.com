@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "292",
+    slug: "comment-mesurer-la-satisfaction-client-en-algerie-2027-une-question-apres-chaque-prestation-score-de-recommandation-rappel-sous-48-h-causes",
+    title: "Comment mesurer la satisfaction client en Algérie (2027) : personne ne se plaint et pourtant des clients partent, une question juste après la prestation, un rappel sous 48 heures, et les causes comptées chaque lundi",
+    subtitle: "Cinq couches, six sources et ce qu'elles taisent, le calcul d'un score de recommandation, d'une note basse à un rappel, l'ordre de mise en place, cinq semaines",
+    excerpt: "« On pense que nos clients sont contents parce qu'ils ne se plaignent pas. Puis on en perd trois d'un coup, et on découvre les reproches dans les avis en ligne. Comment mesurer la satisfaction client simplement, sans enquête de vingt questions que personne ne remplit, et surtout que faire des réponses ? » Une seule question, posée juste après la prestation ; et, pour chaque note basse, un rappel sous 48 heures par une personne nommée. C'est le rappel qui fait monter la satisfaction, pas l'enquête.",
+    category: "Software", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["satisfaction client", "enquête de satisfaction", "score de recommandation", "NPS", "rappel client"],
+    metaTitle: "Comment mesurer la satisfaction client Algérie 2027 : une question après la prestation, NPS, rappel sous 48 h | Symloop",
+    metaDescription: "Comment mesurer la satisfaction client en Algérie en 2027 : ne pas recevoir de réclamation ne dit pas que les clients sont satisfaits. Une seule question, une note sur 5 et « pourquoi cette note ? », envoyée juste après la prestation par le canal du client, sans compte. Chaque note basse part vers une personne nommée, qui rappelle sous 48 heures et code la cause. Trois chiffres chaque lundi : taux de réponse, notes basses rappelées à temps, causes. Deux fois par an, le score de recommandation (NPS) : promoteurs 9 et 10, passifs 7 et 8, détracteurs 0 à 6, score = % promoteurs moins % détracteurs ; exemple, 200 réponses, +40. Pas de prime sur la note. Cinq semaines.",
+    translations: {
+      en: { title: "How to measure customer satisfaction in Algeria (2027): nobody complains and yet customers leave, one question right after the job, a call back within 48 hours, and causes counted every Monday", subtitle: "Five layers, six sources and what they leave out, computing a recommendation score, from a low rating to a call back, the order of set-up, five weeks", excerpt: "“We think our customers are happy because they do not complain. Then we lose three at once, and we find the criticism in online reviews. How do we measure customer satisfaction simply, without a twenty-question survey nobody fills in, and above all what do we do with the answers?” A single question, asked right after the job; and, for each low rating, a call back within 48 hours by a named person. It is the call back that raises satisfaction, not the survey." },
+      ar: { title: "كيف يُقاس رضا الزبائن في الجزائر (2027): لا أحد يشتكي ومع ذلك يغادر زبائن، سؤال مباشرة بعد الخدمة، مكالمة خلال 48 ساعة، وأسباب تُعدّ كل اثنين", subtitle: "خمس طبقات، ستة مصادر وما تسكت عنه، حساب مؤشر التوصية، من علامة ضعيفة إلى مكالمة، ترتيب الوضع، وخمسة أسابيع", excerpt: "«نظن أن زبائننا راضون لأنهم لا يشتكون. ثم نفقد ثلاثة دفعة واحدة، ونكتشف المآخذ في الآراء على الخط. كيف نقيس رضا الزبائن ببساطة، دون استبيان من عشرين سؤالاً لا يملؤه أحد، وخاصة ماذا نفعل بالأجوبة؟» سؤال واحد، يُطرح مباشرة بعد الخدمة؛ ولكل علامة ضعيفة، مكالمة خلال 48 ساعة من شخص معيَّن بالاسم. والمكالمة هي التي ترفع الرضا، لا الاستبيان." }
+    }
+  },
+  {
     id: "291",
     slug: "comment-reconnaitre-un-faux-mail-en-entreprise-algerie-2027-hameconnage-adresse-de-l-expediteur-lien-piege-double-authentification-signaler",
     title: "Comment reconnaître un faux mail en entreprise en Algérie (2027) : une comptable a failli donner ses identifiants à une fausse banque, une autre a failli payer un faux directeur, trois questions en dix secondes et ce qui protège quand quelqu'un clique",
