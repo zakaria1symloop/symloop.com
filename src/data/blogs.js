@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "273",
+    slug: "logiciel-pieces-auto-algerie-2027-magasin-pieces-detachees-recherche-par-vehicule-references-equivalentes-emplacements-demandes-non-servies",
+    title: "Logiciel pièces auto en Algérie (2027) : magasin de pièces détachées, recherche par véhicule, références équivalentes et stock par emplacement, quand la bonne pièce est en rayon et que personne ne la trouve",
+    subtitle: "Une pièce et ses cinq références, servir un client en six temps, ce que la fiche d'une pièce doit porter, les demandes non servies d'un mois, cinq couches et six semaines",
+    excerpt: "« J'ai un magasin de pièces détachées : douze mille références, cinq marques pour la même plaquette, et tout est dans la tête de mon vendeur le plus ancien. Quand il est absent, on répond au client qu'on n'a pas la pièce alors qu'elle est sur l'étagère sous une autre référence. Quel logiciel, quelle application me faut-il ? » Un logiciel de caisse ne règle rien de cela : il faut identifier le véhicule, relier la référence du constructeur à ses équivalentes, ranger chaque référence dans une case, et noter chaque demande à laquelle on répond non.",
+    category: "Software", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["logiciel pièces auto", "pièces détachées", "références équivalentes", "gestion de stock", "application garages"],
+    metaTitle: "Logiciel pièces auto Algérie 2027 : recherche par véhicule, références équivalentes, stock par emplacement | Symloop",
+    metaDescription: "Logiciel et application pour magasin de pièces auto en Algérie en 2027 : recherche par véhicule (marque, modèle, année, moteur, numéro de châssis de 17 caractères), référence du constructeur reliée à ses références équivalentes, stock par allée, étagère et case, deux qualités proposées, retours rattachés à la vente, compte des mécaniciens, application pour les garages, demandes non servies notées au comptoir. Exemple : une plaquette à zéro sous la référence du constructeur, neuf en stock sous deux marques ; 150 demandes, 126 servies, taux de service de 84 %, 247 200 DA de ventes manquées. Mise en place en six semaines.",
+    translations: {
+      en: { title: "Auto parts software in Algeria (2027): spare-parts store, search by vehicle, equivalent references and stock by location, for when the right part is on the shelf and nobody can find it", subtitle: "One part and its five references, serving a customer in six steps, what a part record must carry, a month of unserved requests, five layers and six weeks", excerpt: "“I run a spare-parts store: twelve thousand references, five brands for the same brake pad, and everything is in the head of my longest-serving salesperson. When he is away, we tell the customer we do not have the part while it is sitting on the shelf under another reference. Which software, which app do I need?” A till program solves none of this: you need to identify the vehicle, link the manufacturer's reference to its equivalents, put every reference in a bin, and note every request you answer with a no." },
+      ar: { title: "برنامج قطع غيار السيارات في الجزائر (2027): محل قطع الغيار، البحث حسب السيارة، المراجع المكافئة والمخزون حسب الموضع، حين تكون القطعة الصحيحة على الرفّ ولا يجدها أحد", subtitle: "قطعة واحدة ومراجعها الخمسة، خدمة زبون في ست مراحل، ما يجب أن تحمله بطاقة القطعة، طلبات شهر غير المسلَّمة، خمس طبقات وستة أسابيع", excerpt: "«عندي محل قطع غيار: اثنا عشر ألف مرجع، خمس علامات للصفيحة نفسها، وكل شيء في رأس أقدم بائع عندي. حين يغيب، نجيب الزبون أن القطعة غير موجودة وهي على الرفّ بمرجع آخر. أي برنامج، أي تطبيق يلزمني؟» برنامج الصندوق لا يحلّ شيئاً من هذا: يلزم التعرّف على السيارة، وربط مرجع الصانع بمكافئاته، وترتيب كل مرجع في خانة، وتسجيل كل طلب نجيب عنه بلا." }
+    }
+  },
+  {
     id: "272",
     slug: "acces-a-distance-au-bureau-entreprise-algerie-2027-bureau-a-distance-qui-ne-fonctionne-pas-teletravail-tunnel-chiffre-sans-port-ouvert",
     title: "Accès à distance au bureau en Algérie (2027) : travailler de chez soi ou de l'étranger sur le logiciel de l'entreprise, quand le bureau à distance ne fonctionne pas ou reste ouvert à tout internet",

@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-pieces-auto-algerie-2027-magasin-pieces-detachees-recherche-par-vehicule-references-equivalentes-emplacements-demandes-non-servies', fr: 'Logiciel pièces auto et pièces détachées en Algérie', en: 'Auto parts store software in Algeria', ar: 'برنامج قطع غيار السيارات في الجزائر' },
   { slug: 'logiciel-quincaillerie-materiaux-de-construction-algerie-2027-caisse-stock-unites-multiples-credit-artisans-marchandise-payee-non-enlevee', fr: 'Logiciel quincaillerie et matériaux de construction en Algérie', en: 'Hardware and building-materials store software in Algeria', ar: 'برنامج محل الخردوات ومواد البناء في الجزائر' },
   { slug: 'logiciel-entreprise-batiment-btp-algerie-2027-devis-metre-suivi-de-chantier-situations-de-travaux-achats-pointage-marge-par-chantier', fr: 'Logiciel entreprise de bâtiment et BTP en Algérie', en: 'Construction company software in Algeria', ar: 'برنامج مؤسسات البناء والأشغال في الجزائر' },
   { slug: 'logiciel-gestion-commerciale-algerie-2027-devis-commande-bon-de-livraison-facture-stock-reglements-erp-ou-pas-sans-ressaisie', fr: 'Logiciel de gestion commerciale en Algérie', en: 'Sales and inventory management software in Algeria', ar: 'برنامج التسيير التجاري في الجزائر' },
