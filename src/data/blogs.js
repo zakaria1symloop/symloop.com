@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "282",
+    slug: "comment-gerer-un-parc-informatique-entreprise-algerie-2027-inventaire-des-postes-qui-a-quoi-licences-mises-a-jour-arrivee-depart-renouvellement",
+    title: "Comment gérer un parc informatique en Algérie (2027) : personne ne sait combien de postes on a ni qui a quoi, registre, installation type, mises à jour, licences, arrivées et départs, renouvellement par cinquièmes",
+    subtitle: "Le premier inventaire, cinq couches pour gérer un parc, six moments dans la vie d'un poste, l'âge du parc et le renouvellement par cinquièmes, l'arrivée et le départ d'un employé, six semaines",
+    excerpt: "« Nous avons une quarantaine d'ordinateurs, des portables, quelques imprimantes. Personne ne sait exactement combien, ni qui a quoi. Quand un employé arrive, on lui cherche un poste pendant trois jours ; quand il part, on ne sait pas ce qu'il rend ni quels comptes il garde. Les licences, on les découvre le jour où un logiciel affiche un bandeau rouge. Par où commence-t-on ? » Par un registre : une ligne par machine, tenue à jour par un petit programme installé sur chaque poste. Tout le reste en découle.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["parc informatique", "inventaire", "licences logicielles", "mises à jour", "renouvellement des postes"],
+    metaTitle: "Comment gérer un parc informatique Algérie 2027 : inventaire, licences, mises à jour, renouvellement | Symloop",
+    metaDescription: "Gérer un parc informatique d'entreprise en Algérie en 2027 : un registre tenu à jour par un agent installé sur chaque poste (numéro, utilisateur, âge, système, dernière mise à jour), une installation type par métier, des mises à jour mensuelles, des licences comptées (payées, installées, utilisées), des portables chiffrés, une procédure d'arrivée et de départ d'un employé, un renouvellement par cinquièmes. Exemple : 40 postes, 19 demandent une action au premier relevé (7 hors support, 5 en retard de mise à jour, 4 sans utilisateur connu, 3 portables non chiffrés) ; 12 ont plus de cinq ans, 8 remplacés par an, retard résorbé en cinq ans. Windows 10 n'est plus suivi depuis le 14 octobre 2025. Mise en ordre en six semaines.",
+    translations: {
+      en: { title: "How to manage a fleet of company computers in Algeria (2027): nobody knows how many machines there are or who has what, register, standard build, updates, licences, arrivals and departures, renewal by fifths", subtitle: "The first inventory, five layers to manage a fleet, six moments in the life of a machine, the age of the fleet and renewal by fifths, an employee arriving and leaving, six weeks", excerpt: "“We have about forty computers, some laptops, a few printers. Nobody knows exactly how many, or who has what. When an employee arrives, we look for a machine for three days; when they leave, we do not know what they hand back or which accounts they keep. Licences, we discover them the day a program shows a red banner. Where do we start?” With a register: one line per machine, kept up to date by a small program installed on each one. Everything else follows from it." },
+      ar: { title: "كيف تُسيَّر حظيرة حواسيب المؤسسة في الجزائر (2027): لا أحد يعرف كم حاسوباً عندنا ولا من عنده ماذا، سجل، تنصيب نموذجي، تحديثات، رخص، قدوم ومغادرة، وتجديد بالأخماس", subtitle: "الجرد الأول، خمس طبقات لتسيير حظيرة، ست لحظات في حياة حاسوب، عمر الحظيرة والتجديد بالأخماس، قدوم عامل ومغادرته، وستة أسابيع", excerpt: "«عندنا نحو أربعين حاسوباً، وحواسيب محمولة، وبضع طابعات. لا أحد يعرف بالضبط كم، ولا من عنده ماذا. حين يأتي عامل، نبحث له عن حاسوب ثلاثة أيام؛ وحين يغادر، لا نعرف ما يعيده ولا أي حسابات يحتفظ بها. والرخص، نكتشفها يوم يعرض برنامج شريطاً أحمر. من أين نبدأ؟» من سجل: سطر لكل حاسوب، يحدّثه برنامج صغير منصَّب على كل واحد. وكل الباقي ينتج عنه." }
+    }
+  },
+  {
     id: "281",
     slug: "comment-publier-une-application-algerie-2027-google-play-app-store-compte-au-nom-de-l-entreprise-tests-revue-refus-huit-semaines",
     title: "Comment publier une application sur Google Play et l'App Store en Algérie (2027) : l'application est prête, le lancement est annoncé, et il reste le compte, les tests, la revue et un refus possible",
