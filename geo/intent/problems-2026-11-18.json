@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "calls": 708,
+ "calls": 1050,
  "method": "Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised",
  "items": [
   {
@@ -329,6 +329,20 @@
    "score": 13
   },
   {
+   "query": "comment bloquer un site",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "serveur lent",
    "stem": "serveur lent",
    "domain": "infra",
@@ -429,6 +443,81 @@
    "score": 13
   },
   {
+   "query": "imprimante ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "ordinateur lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment gérer un parc informatique",
+   "stem": "comment gérer un parc informatique",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment archiver des documents",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment archiver des documents numériques",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "ransomware entreprise",
    "stem": "ransomware entreprise",
    "domain": "security",
@@ -473,6 +562,50 @@
   {
    "query": "comment sécuriser les données informatiques",
    "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment savoir si mon pc est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment changer mot de passe clicséqur entreprise",
+   "stem": "mot de passe entreprise comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "clé usb virus",
+   "stem": "clé usb virus",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -661,21 +794,6 @@
    "score": 13
   },
   {
-   "query": "comment créer un e commerce",
-   "stem": "comment créer un site e-commerce",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing",
-    "google"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 13
-  },
-  {
    "query": "comment créer une application de livraison",
    "stem": "application de livraison comment",
    "domain": "apps",
@@ -822,6 +940,50 @@
    "score": 13
   },
   {
+   "query": "comment mettre à jour une application",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment mettre à jour une application sur pc",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing",
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment recuperer le code source d un site web",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "مشاركة الملفات بين الهاتف والكمبيوتر",
    "stem": "مشاركة الملفات بين",
    "domain": "network",
@@ -910,20 +1072,6 @@
    "score": 12.5
   },
   {
-   "query": "comment connecter mon ordinateur bureau au wifi",
-   "stem": "comment accéder à mon pc du bureau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": true,
-   "problem": true,
-   "consumer": false,
-   "score": 12.5
-  },
-  {
    "query": "comment aller sur le bureau du pc",
    "stem": "comment accéder à mon pc du bureau",
    "domain": "network",
@@ -953,6 +1101,20 @@
    "score": 12.5
   },
   {
+   "query": "comment bloquer des sites internet",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
    "query": "comment créer une adresse mail professionnelle outlook",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -976,6 +1138,51 @@
    ],
    "best": 1,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "ordinateur est lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment archiver des documents papier",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "vérifier clé usb virus",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 12.5
@@ -1067,6 +1274,49 @@
    "score": 12.5
   },
   {
+   "query": "comment trouver le code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment faire l'inventaire d'un magasin",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment fonctionne chatgpt business",
+   "stem": "chatgpt pour mon entreprise comment",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
    "query": "probleme connexion net entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -1124,6 +1374,49 @@
    "score": 12
   },
   {
+   "query": "comment bloquer des sites sur pc",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment afficher un site sur le bureau",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment tester un cable ethernet",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
    "query": "comment récupérer des données sur une clé usb",
    "stem": "comment récupérer des données",
    "domain": "infra",
@@ -1162,6 +1455,21 @@
    ],
    "best": 2,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment savoir si mon ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 12
@@ -1280,6 +1588,34 @@
    "score": 11.5
   },
   {
+   "query": "comment faire pour bloquer un site",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment les autorités peuvent bloquer un site",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
    "query": "comment créer une adresse mail professionnelle microsoft",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -1310,6 +1646,20 @@
   {
    "query": "pourquoi mon site internet ne fonctionne pas",
    "stem": "mon site web ne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment avoir le code source d un site web",
+   "stem": "comment récupérer le code source",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -1384,6 +1734,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "comment bloquer un site web",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 4,
    "company": true,
@@ -1476,6 +1840,20 @@
    "score": 11
   },
   {
+   "query": "probleme connection net entreprise",
+   "stem": "problème réseau entreprise",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
    "query": "probleme connexion bnp entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -1560,6 +1938,34 @@
    "score": 10.5
   },
   {
+   "query": "comment aller sur un site bloqué",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment bloquer un site sur ordi",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
    "query": "comment créer une adresse mail professionnelle sans nom de domaine",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -1612,6 +2018,20 @@
    ],
    "best": 5,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment lancer un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 10.5
@@ -1897,6 +2317,76 @@
    "score": 10
   },
   {
+   "query": "telephone internet ne fonctionne pas",
+   "stem": "téléphone ip ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment étendre le wifi dans le jardin",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment prolonger internet algerie telecom",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "cable reseau ne fonctionne pas",
+   "stem": "câble réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment tester un cable réseau",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "serveur en panne aujourd'hui",
    "stem": "serveur en panne",
    "domain": "infra",
@@ -1967,7 +2457,7 @@
    "score": 10
   },
   {
-   "query": "comment récupérer des données sur un téléphone portable cassé",
+   "query": "comment récupérer des données sur icloud",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -2065,6 +2555,63 @@
    "score": 10
   },
   {
+   "query": "pourquoi mes mails arrivent dans les spams",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment transférer mes mails reçus",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "imprimante ne fonctionne plus en wifi",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "ordinateur hp lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "openai piratage entreprise",
    "stem": "piratage entreprise",
    "domain": "security",
@@ -2099,6 +2646,90 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment savoir si le pc est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment creer un mot de passe",
+   "stem": "mot de passe entreprise comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "authentification a double facteur comment ca marche",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "clé usb virus fichiers cachés",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment supprimer virus raccourci sur clé usb",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "virus pour clé usb",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 0,
    "company": false,
@@ -2233,20 +2864,6 @@
    "score": 10
   },
   {
-   "query": "comment automatiser des taches avec l'ia",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 10
-  },
-  {
    "query": "erreurs de stock",
    "stem": "erreurs de stock",
    "domain": "apps",
@@ -2312,6 +2929,34 @@
    ],
    "best": 0,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer un e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment monter un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 10
@@ -2457,6 +3102,300 @@
    "score": 10
   },
   {
+   "query": "comment mettre à jour une application sur android",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment copier le code source d un site web",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment récupérer le code source d'une page",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment tester une application web",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les réclamations clients",
+   "stem": "comment gérer les réclamations clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment administrer le sav",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer le stress",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "savoir comment gérer le stress sans fumer",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment contacter le sav",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment suivre la production de mes panneaux solaires",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment suivre ma production photovoltaïque",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment préparer un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment faire l'inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment faire un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment centrer les données dans un tableau word",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment un employeur peut former ses employés",
+   "stem": "comment former les employés en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gerer les ticket restaurant",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment envoyer des sms",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment envoyer un sms au 83020",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les abonnements sur gmail",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "formulaire de contact wordpress ne fonctionne pas",
+   "stem": "formulaire de contact ne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "comment utiliser l'intelligence artificielle au travail",
    "stem": "comment utiliser l’intelligence artificielle dans mon entreprise",
    "domain": "ai",
@@ -2513,6 +3452,20 @@
    "score": 10
   },
   {
+   "query": "comment se former à ia",
+   "stem": "comment former une ia sur mes documents",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "مشكلة الشبكة في سامسونج s22 ultra",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -2533,6 +3486,20 @@
    "hl": "ar",
    "engines": [
     "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "الواي فاي ضعيف",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -2919,6 +3886,20 @@
    "score": 9.5
   },
   {
+   "query": "pourquoi mon réseau mobile n'est pas disponible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment brancher un switch sur une box",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -2998,6 +3979,118 @@
    ],
    "best": 7,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "internet mobile ne fonctionne pas",
+   "stem": "téléphone ip ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "internet téléphone ne fonctionne plus",
+   "stem": "téléphone ip ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "pourquoi les sites sont bloqués",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment bloquer l'accès à un site",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment étendre son réseau wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "cable internet ne fonctionne plus",
+   "stem": "câble réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment tester un cable internet",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment tester son réseau",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 9.5
@@ -3087,7 +4180,7 @@
    "score": 9.5
   },
   {
-   "query": "comment récupérer des données sur un disque dur",
+   "query": "comment récupérer des données sur un téléphone portable cassé",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -3149,6 +4242,48 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment transférer mes mails sur mon nouveau téléphone",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "imprimante ne fonctionne plus après changement de cartouche",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment organiser un réseau informatique",
+   "stem": "comment gérer un parc informatique",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -3233,6 +4368,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment savoir si on est piraté pc",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 1,
    "company": false,
@@ -3353,7 +4502,7 @@
    "score": 9.5
   },
   {
-   "query": "comment automatiser le sommaire sur word",
+   "query": "comment automatiser des taches avec l'ia",
    "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
@@ -3361,21 +4510,6 @@
     "google"
    ],
    "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment automatiser une date sur excel",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing",
-    "google"
-   ],
-   "best": 7,
    "company": false,
    "problem": true,
    "consumer": false,
@@ -3412,6 +4546,34 @@
   {
    "query": "comment vendre en ligne en côte d'ivoire",
    "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un site e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire une application de livraison",
+   "stem": "application de livraison comment",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -3620,6 +4782,328 @@
    "score": 9.5
   },
   {
+   "query": "comment récupérer le code source d un logiciel",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment tester une application mobile",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment traiter les reclamations des clients",
+   "stem": "comment gérer les réclamations clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer le service après vente",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer le son avec le clavier",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer le stock d'un magasin",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment suivre la production de son passeport",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment suivre ma production d'électricité",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment suivre un chantier",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gerer un chantier",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment procéder à un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire l inventaire d une entreprise",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment centrer les données sur excel",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment centrer réduire des données",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment continuer à se former en ligne",
+   "stem": "comment former les employés en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment traiter les tickets restaurant en paie",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un ticket",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer les abonnements",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer les abonnements sur google",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer mes abonnements",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer ses abonnements gmail",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "formulaire de contact divi ne fonctionne pas",
+   "stem": "formulaire de contact ne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment développer un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -3636,6 +5120,34 @@
   {
    "query": "comment améliorer le service client",
    "stem": "comment automatiser le service client",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment se former sur l'ia",
+   "stem": "comment former une ia sur mes documents",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un appel",
+   "stem": "transcrire des appels automatiquement",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -3668,20 +5180,6 @@
    "hl": "ar",
    "engines": [
     "bing"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "الواي فاي ضعيف",
-   "stem": "الواي فاي ضعيف",
-   "domain": "network",
-   "hl": "ar",
-   "engines": [
-    "google"
    ],
    "best": 1,
    "company": false,
@@ -3831,20 +5329,6 @@
   },
   {
    "query": "internet qui coupe tout le temps",
-   "stem": "wifi qui coupe",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
-   "query": "internet qui coupe",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -4124,6 +5608,62 @@
    "score": 9
   },
   {
+   "query": "comment accéder à un site bloqué",
+   "stem": "comment bloquer des sites au bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment etendre le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment marche le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment tester son réseau internet",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "lenteur serveur",
    "stem": "serveur lent",
    "domain": "infra",
@@ -4140,6 +5680,20 @@
   {
    "query": "serveur steam lent",
    "stem": "serveur lent",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone sur mon ordinateur",
+   "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -4180,7 +5734,7 @@
    "score": 9
   },
   {
-   "query": "comment récupérer des données sur whatsapp",
+   "query": "comment récupérer des données sur un disque dur",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -4224,6 +5778,132 @@
   {
    "query": "comment mettre sur le cloud",
    "stem": "comment migrer vers le cloud",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "pourquoi mes mails passent en spam",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "pourquoi mes messages arrivent en spam",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment vider une boite mail outlook pleine",
+   "stem": "boîte mail pleine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment transférer mes mails sur une clé usb",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment transférer mes mails sur mon portable",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "mon imprimante ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "mon ordinateur est lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "mon ordinateur devient lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment classer et archiver les documents",
+   "stem": "comment archiver des documents",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -4284,6 +5964,48 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment savoir si mon ordi est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "clé usb virus raccourci",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "analyse virus clé usb",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 2,
    "company": false,
@@ -4354,6 +6076,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment automatiser le sommaire sur word",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -4530,8 +6266,8 @@
    "score": 9
   },
   {
-   "query": "comment publier une application sur google play",
-   "stem": "comment publier une application",
+   "query": "combien de temps pour coder une application",
+   "stem": "combien de temps pour développer une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -4544,8 +6280,288 @@
    "score": 9
   },
   {
-   "query": "combien de temps pour coder une application",
-   "stem": "combien de temps pour développer une application",
+   "query": "comment faire un developpement",
+   "stem": "développeur parti que faire",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment récupérer le code source d'un mail",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment récupérer le code",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment tester une application",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment trouver une application",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment répondre à une réclamation client",
+   "stem": "comment gérer les réclamations clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer une plainte client",
+   "stem": "comment gérer les réclamations clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer le stress et l'anxiété",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment voir la production de mes panneaux solaires sur enedis",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment suivre la fabrication de mon permis de conduire",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment suivre un chantier de construction",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment préparer un chantier",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment présenter un chantier",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment faire l inventaire d une boutique",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment realiser un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment traiter les tickets restaurant",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment fonctionne les tickets pcs",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment envoyer des sms par mail",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer les abonnements apple",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer mes abonnements microsoft",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "formulaire de contact mondial relay ne fonctionne pas",
+   "stem": "formulaire de contact ne",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -4588,6 +6604,20 @@
   {
    "query": "commentaires sur le service client",
    "stem": "comment automatiser le service client",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment se servir de chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -4796,7 +6826,7 @@
    "score": 9
   },
   {
-   "query": "internet qui coupe sans arret",
+   "query": "internet qui coupe",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -4830,20 +6860,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
-   "query": "internet se coupe regulierement",
-   "stem": "internet coupe souvent",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 3,
    "company": false,
@@ -5006,20 +7022,6 @@
    "score": 8.5
   },
   {
-   "query": "pourquoi mon réseau mobile n'est pas disponible",
-   "stem": "pourquoi mon réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "pourquoi mon réseau mobile ne marche pas",
    "stem": "pourquoi mon réseau",
    "domain": "network",
@@ -5118,6 +7120,76 @@
    "score": 8.5
   },
   {
+   "query": "comment etendre le wifi starlink",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment mettre le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "cable ethernet ne fonctionne pas",
+   "stem": "câble réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment verifier un cable ethernet",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment sertir un câble réseau",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "lenteur serveur microsoft",
    "stem": "serveur lent",
    "domain": "infra",
@@ -5180,6 +7252,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment récupérer des données sur whatsapp",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 3,
    "company": false,
@@ -5272,6 +7358,118 @@
    "score": 8.5
   },
   {
+   "query": "boite mail pleine comment la vider",
+   "stem": "boîte mail pleine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment vider une boite mail pleine gmail",
+   "stem": "boîte mail pleine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "imprimante ne fonctionne pas",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "mon imprimante hp ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "mon imprimante ne marche plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "ordinateur trop lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "ordi lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment archiver des documents dans le cloud",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "piratage groupe 3r",
    "stem": "piratage entreprise",
    "domain": "security",
@@ -5334,6 +7532,90 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment savoir si mon pc est infecté par un virus",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "que faire si mon ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment faire un mot de passe",
+   "stem": "mot de passe entreprise comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment désactiver authentification à deux facteurs icloud",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "clé usb virus amazon",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "antivirus pour clé usb",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -5412,20 +7694,6 @@
    "score": 8.5
   },
   {
-   "query": "comment automatiser des taches avec claude",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment automatiser une tâche",
    "stem": "comment automatiser",
    "domain": "apps",
@@ -5491,6 +7759,20 @@
    ],
    "best": 3,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment créer un site web e commerce",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 8.5
@@ -5594,7 +7876,7 @@
    "score": 8.5
   },
   {
-   "query": "comment publier une application sur app store",
+   "query": "comment publier une application sur google play",
    "stem": "comment publier une application",
    "domain": "apps",
    "hl": "fr",
@@ -5614,6 +7896,216 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment mettre à jour une application sur ipad",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment mettre à jour une application sur mon téléphone",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment avoir un code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment appeler en algérie",
+   "stem": "application rejetée par",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment tester une application android",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment aller chercher une application",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer un litige client",
+   "stem": "comment gérer les réclamations clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer le versioning",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment voir la production photovoltaïque sur linky",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment structurer les données",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment faire pour envoyer un sms",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment envoyer des sms groupés",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment faire des ia",
+   "stem": "ia pour faire des devis",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment bien utiliser chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "utilités et comment utiliser chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -5748,7 +8240,7 @@
    "score": 8.5
   },
   {
-   "query": "wifi qui se coupe tout seul",
+   "query": "internet qui coupe sans arret",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -5903,6 +8395,20 @@
    "score": 8
   },
   {
+   "query": "pourquoi mon réseau wifi est instable",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "pourquoi mon réseau est publique",
    "stem": "pourquoi mon réseau",
    "domain": "network",
@@ -5987,6 +8493,119 @@
    "score": 8
   },
   {
+   "query": "telephone fixe internet ne fonctionne pas",
+   "stem": "téléphone ip ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment etendre le wifi dans une maison",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 8
+  },
+  {
+   "query": "comment amplifier le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment avoir le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment téléphoner en algérie",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "cable ethernet ne marche pas",
+   "stem": "câble réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment identifier un cable ethernet",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment tester un câble électrique",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "lenteur serveur rds",
    "stem": "serveur lent",
    "domain": "infra",
@@ -6015,6 +8634,20 @@
    "score": 8
   },
   {
+   "query": "comment sauvegarder les données sur google",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment sauvegarder les données sur la carte sd",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
@@ -6029,7 +8662,7 @@
    "score": 8
   },
   {
-   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
+   "query": "comment récupérer des données sur excel",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -6141,6 +8774,161 @@
    "score": 8
   },
   {
+   "query": "comment vider une boite mail pleine",
+   "stem": "boîte mail pleine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment transférer mes mails sur mon ordinateur",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment transferer mes mails",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire pour transférer un mail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "mon imprimante ne fonctionne pas",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "ordinateur lent que faire windows 10",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 8
+  },
+  {
+   "query": "pc lent que faire windows 7",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "mon ordinateur est très lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "serveur planté",
+   "stem": "serveur plein",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment archiver des dossiers dans outlook",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment archiver un dossier",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "mon compte microsoft à été piraté",
    "stem": "compte piraté entreprise",
    "domain": "security",
@@ -6157,6 +8945,62 @@
   {
    "query": "comment sécuriser mes données",
    "stem": "comment sécuriser les données",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment savoir si mon pc est infecté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment voir si mon ordi est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment voir si mon pc est pirate",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "mot de passe comment faire",
+   "stem": "mot de passe entreprise comment",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -6268,20 +9112,6 @@
   },
   {
    "query": "comment automatiser un portail",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment automatiser un message sur whatsapp",
    "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
@@ -6492,6 +9322,216 @@
    "score": 8
   },
   {
+   "query": "comment devenir un développeur",
+   "stem": "développeur parti que faire",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment copier le code source d un mail",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "code source comment trouver",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment verifier une application sur ios",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment traiter une réclamation client au téléphone",
+   "stem": "comment gérer les réclamations clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment voir la production des panneaux photovoltaïques",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment suivre la fabrication de mon passeport",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment trouver des chantiers",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "pourquoi réaliser un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire l inventaire des biens d une succession",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment s'y prendre pour faire un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment fonctionnent les tickets resto",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment envoyer sms par téléphone",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment envoyer des sms en nombre",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment voir mes abonnements",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment puis-je contacter le service client",
    "stem": "comment automatiser le service client",
    "domain": "ai",
@@ -6508,6 +9548,34 @@
   {
    "query": "comment aller sur whatsapp",
    "stem": "répondre automatiquement whatsapp",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire un agent ia",
+   "stem": "agent ia qui prend les rendez-vous",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "qu'est ce que chatgpt et comment l'utiliser",
+   "stem": "chatgpt pour mon entreprise comment",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -6646,7 +9714,7 @@
    "score": 8
   },
   {
-   "query": "free wifi qui coupe tout le temps",
+   "query": "wifi qui se coupe tout seul",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -6730,6 +9798,20 @@
    "score": 7.5
   },
   {
+   "query": "pourquoi mon réseau internet est instable",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment brancher un switch poe",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -6800,8 +9882,36 @@
    "score": 7.5
   },
   {
-   "query": "comment partager une imprimante avec un autre ordinateur",
-   "stem": "comment partager une imprimante",
+   "query": "comment amplifier le wifi en extérieur",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment améliorer le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "problème adresse ip",
+   "stem": "conflit adresse ip",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -6828,7 +9938,7 @@
    "score": 7.5
   },
   {
-   "query": "comment sauvegarder les données sur google",
+   "query": "comment sauvegarder les données whatsapp sur google",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -6862,20 +9972,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
-   "query": "comment récupérer des données sur une clé usb endommagée",
-   "stem": "comment récupérer des données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 5,
    "company": false,
@@ -6954,6 +10050,176 @@
    "score": 7.5
   },
   {
+   "query": "comment mettre des mails en spam",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "boite mail pleine comment faire",
+   "stem": "boîte mail pleine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment transférer tous mes mails outlook",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "imprimante ne fonctionne plus sous windows 11",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 7.5
+  },
+  {
+   "query": "imprimante ne fonctionne plus avec la fibre",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "imprimante ne fonctionne pas en wifi",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "imprimante hp ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "ordinateur lent que faire windows 11",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 7.5
+  },
+  {
+   "query": "ordinateur portable lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "perte mot de passe administrateur windows",
+   "stem": "mot de passe administrateur perdu",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment archiver des dossiers",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment retrouver un document archive",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "piratage groupe bpce",
    "stem": "piratage entreprise",
    "domain": "security",
@@ -6998,6 +10264,76 @@
   {
    "query": "comment contrôler l accès internet",
    "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment savoir si un ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "mon ordinateur est piraté que faire",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment savoir si mon ordinateur est infecté par un virus",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "que faire si mon pc est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "nettoyer clé usb virus",
+   "stem": "clé usb virus",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -7100,20 +10436,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
-   "query": "comment automatiser une table des matières word",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 5,
    "company": false,
@@ -7248,6 +10570,132 @@
    "score": 7.5
   },
   {
+   "query": "comment mettre à jour une appli",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment voir le code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment aller dans le code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment gérer le stress chronique",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire un inventaire de stock",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire l inventaire d un bar",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment organiser un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment fonctionne les tickets resto",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment envoyer un sms par internet",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment faire apparaitre un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -7268,6 +10716,34 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment aller sur chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج s24 ultra",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
    ],
    "best": 5,
    "company": false,
@@ -7458,7 +10934,7 @@
    "score": 7.5
   },
   {
-   "query": "appel wifi qui coupe",
+   "query": "free wifi qui coupe tout le temps",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -7520,6 +10996,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment accéder à un autre ordinateur à distance",
+   "stem": "comment accéder à distance au",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 6,
    "company": false,
@@ -7612,20 +11102,6 @@
    "score": 7
   },
   {
-   "query": "pourquoi mon réseau wifi est instable",
-   "stem": "pourquoi mon réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "comment brancher un switch hdmi",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -7660,20 +11136,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment trouver un job à distance",
-   "stem": "comment travailler à distance",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 6,
    "company": false,
@@ -7724,7 +11186,77 @@
    "score": 7
   },
   {
-   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
+   "query": "comment partager une imprimante avec un autre ordinateur",
+   "stem": "comment partager une imprimante",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "le wifi comment ça marche",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment tester un cable ethernet sans testeur",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment tester vitesse cable ethernet",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "problème adresse ip wifi",
+   "stem": "conflit adresse ip",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment sauvegarder les données sur compte google",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -7752,6 +11284,20 @@
    "score": 7
   },
   {
+   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "od perte et profit",
    "stem": "perte de données entreprise",
    "domain": "infra",
@@ -7766,7 +11312,7 @@
    "score": 7
   },
   {
-   "query": "comment récupérer des données sur icloud",
+   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -7814,6 +11360,118 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "pourquoi mes mails arrivent en spam",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment transférer mes mails sur une autre boîte mail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment transférer un email",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "imprimante ne fonctionne pas avec edge",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "l'imprimante ne fonctionne pas",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment aller sur imprimante",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "pc tres lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment archiver documents administratifs",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 6,
    "company": false,
@@ -7906,6 +11564,62 @@
    "score": 7
   },
   {
+   "query": "mon ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment voir si mon ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment désactiver authentification à deux facteurs",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "problème détection clé usb",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "lenteur application outlook",
    "stem": "application lente",
    "domain": "apps",
@@ -7968,6 +11682,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment automatiser des taches avec claude",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 6,
    "company": false,
@@ -8046,12 +11774,194 @@
    "score": 7
   },
   {
-   "query": "مشكلة الشبكة في سامسونج s24 ultra",
-   "stem": "مشكلة الشبكة",
-   "domain": "network",
-   "hl": "ar",
+   "query": "comment mettre à jour une application sans play store",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment développer une activité",
+   "stem": "développeur parti que faire",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment detecter une application espion sur android",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment trouver une application téléchargée",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment gérer le stress au travail",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment mettre en place un savs",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire l'inventaire d'une pharmacie",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire une bonne analyse de données",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "tableau de bord comment faire",
+   "stem": "tableau de bord entreprise comment",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment payer un ticket",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment gérer les abonnements google play",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment fonctionne un abonnement",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire pour appeler",
+   "stem": "transcrire des appels automatiquement",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment avoir accès à chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 6,
    "company": false,
@@ -8172,7 +12082,7 @@
    "score": 7
   },
   {
-   "query": "wifi qui se coupe sans arret",
+   "query": "appel wifi qui coupe",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -8284,7 +12194,7 @@
    "score": 6.5
   },
   {
-   "query": "pourquoi mon réseau internet est instable",
+   "query": "pourquoi mon réseau cellulaire ne fonctionne pas",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -8326,12 +12236,40 @@
    "score": 6.5
   },
   {
-   "query": "comment partager une imprimante entre plusieurs ordinateurs",
+   "query": "comment partager une imprimante sur un reseau local",
    "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment booster le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment tester sa carte réseau",
+   "stem": "comment tester un câble réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 7,
    "company": false,
@@ -8354,7 +12292,36 @@
    "score": 6.5
   },
   {
-   "query": "comment récupérer des données sur un disque dur externe",
+   "query": "comment sauvegarder les données de mon iphone",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 6.5
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone sur google",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment récupérer des données sur une clé usb endommagée",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -8424,6 +12391,90 @@
    "score": 6.5
   },
   {
+   "query": "pourquoi un message arrive en spam",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment transférer un mail vers mes documents",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "sumup imprimante ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "imprimante ne fonctionne pas avec word",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "pourquoi mon ordinateur est si lent",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "ordinateur portable lent au démarrage",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "comment protéger notre environnement",
    "stem": "comment protéger entreprise contre",
    "domain": "security",
@@ -8480,6 +12531,62 @@
    "score": 6.5
   },
   {
+   "query": "qui pirate mon ordinateur",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment savoir si son pc est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment savoir si l'ordinateur est pirate",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "reparer cle usb virus raccourci",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "application tres lente sur android",
    "stem": "application lente",
    "domain": "apps",
@@ -8510,6 +12617,34 @@
   {
    "query": "combien coûte un passeport algérien",
    "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment automatiser un message sur whatsapp",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment automatiser une date sur excel",
+   "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -8634,8 +12769,190 @@
    "score": 6.5
   },
   {
+   "query": "comment avoir le code source d une application",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment accéder au code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment verifier une application sur mac",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment rechercher une application",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment suivre la fabrication de ma carte grise",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment présenter un inventaire",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment effectuer une analyse de données",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment retrouver mes anciens employeurs",
+   "stem": "comment former les employés en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment utiliser les tickets restaurant",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment envoyer un mail en sms",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment gérer les abonnements sur youtube",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment créer un abonnement",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "comment activer whatsapp sur mon téléphone",
    "stem": "répondre automatiquement whatsapp",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un appel en france",
+   "stem": "transcrire des appels automatiquement",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -8774,6 +13091,20 @@
    "score": 6.5
   },
   {
+   "query": "wifi qui se coupe sans arret",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "algerie coupe du monde 2014",
    "stem": "internet coupe souvent",
    "domain": "network",
@@ -8794,20 +13125,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment installer un réseau local sans fil",
-   "stem": "comment installer un réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 8,
    "company": false,
@@ -8886,6 +13203,20 @@
    "score": 6
   },
   {
+   "query": "pourquoi mon réseau mobile ne fonctionne pas",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment brancher un switch netgear",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -8914,12 +13245,40 @@
    "score": 6
   },
   {
-   "query": "comment partager une imprimante sur un reseau local",
+   "query": "comment partager une imprimante entre plusieurs ordinateurs",
    "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment booster le wifi de mon téléphone",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment modifier le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 8,
    "company": false,
@@ -8942,21 +13301,6 @@
    "score": 6
   },
   {
-   "query": "comment sauvegarder les données de mon iphone",
-   "stem": "comment sauvegarder les données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 6
-  },
-  {
    "query": "comment sauvegarder les données d'un téléphone",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
@@ -8971,7 +13315,7 @@
    "score": 6
   },
   {
-   "query": "comment récupérer des données sur excel",
+   "query": "comment récupérer des données sur un disque dur externe",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -9027,6 +13371,118 @@
    "score": 6
   },
   {
+   "query": "pourquoi un mail arrive dans les spams",
+   "stem": "mes mails arrivent en spam",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment transferer mes mails yahoo vers gmail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment transferer un e mail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "imprimante epson ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment fonctionne une imprimante",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "ordinateur lenovo lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "ordinateur lent à démarrer",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment ouvrir un fichier archive",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment protéger une idée",
    "stem": "comment protéger entreprise contre",
    "domain": "security",
@@ -9061,6 +13517,62 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "voir si mon ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment se passer du mot de passe",
+   "stem": "mot de passe entreprise comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment supprimer authentification à deux facteurs obligatoire",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "cle usb avec virus",
+   "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 8,
    "company": false,
@@ -9251,8 +13763,120 @@
    "score": 6
   },
   {
-   "query": "comment publier une application sur google play store",
-   "stem": "comment publier une application",
+   "query": "comment consulter le code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment modifier un code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment avoir une application",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment suivre la fabrication de sa carte d identité",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment organiser un service maintenance",
+   "stem": "comment gérer la maintenance des machines",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment faire l inventaire de stock",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment faire une analyse de données",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment envoyer un document par sms",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment gerer les abonnements sur outlook",
+   "stem": "comment gérer les abonnements",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -9267,6 +13891,20 @@
   {
    "query": "whatsapp comment répondre à un message",
    "stem": "répondre automatiquement whatsapp",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "combien de personne utilise chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -9377,12 +14015,12 @@
    "score": 6
   },
   {
-   "query": "connexion internet qui coupe et revient",
-   "stem": "wifi qui coupe",
+   "query": "lentille de contact connecté",
+   "stem": "connexion internet lente entreprise",
    "domain": "network",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 9,
    "company": false,
@@ -9391,12 +14029,12 @@
    "score": 5.5
   },
   {
-   "query": "lentille de contact connecté",
-   "stem": "connexion internet lente entreprise",
+   "query": "comment installer un réseau électrique",
+   "stem": "comment installer un réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 9,
    "company": false,
@@ -9517,6 +14155,20 @@
    "score": 5.5
   },
   {
+   "query": "comment régler le wifi",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "server fc26 lenti",
    "stem": "serveur lent",
    "domain": "infra",
@@ -9545,7 +14197,7 @@
    "score": 5.5
   },
   {
-   "query": "comment sauvegarder les données whatsapp sur google",
+   "query": "comment sauvegarder les données de son téléphone android",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -9629,6 +14281,90 @@
    "score": 5.5
   },
   {
+   "query": "comment transférer mes mails sur mon téléphone portable",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment transférer automatiquement des mails",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "imprimante brother ne fonctionne plus",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "problème avec mon imprimante",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "ordinateur asus lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment archiver des photos",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "comment protéger une idée ou un concept",
    "stem": "comment protéger entreprise contre",
    "domain": "security",
@@ -9687,6 +14423,48 @@
   {
    "query": "comment limiter acces youtube",
    "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "ordinateur piraté comment le savoir",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment activer l authentification à deux facteurs",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "nettoyer clé usb virus raccourci",
+   "stem": "clé usb virus",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -9783,20 +14561,6 @@
    "score": 5.5
   },
   {
-   "query": "comment automatiser un calcul sur excel",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 5.5
-  },
-  {
    "query": "comment vendre en ligne sur yango",
    "stem": "comment vendre en ligne",
    "domain": "apps",
@@ -9839,8 +14603,204 @@
    "score": 5.5
   },
   {
+   "query": "comment prendre rendez vous en ligne pour le passeport camerounais",
+   "stem": "comment prendre des rendez-vous en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "comment partager une application par bluetooth",
    "stem": "comment publier une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment mettre à jour une application sur une tablette",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment mettre à jour une application bancaire",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment trouver le code source d'un. jeu",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment ouvrir le code source",
+   "stem": "comment récupérer le code source",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment analyser une application mobile",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment gérer le stockage google",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment suivre la fabrication de mon titre de séjour",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment devenir technicien de maintenance",
+   "stem": "comment gérer la maintenance des machines",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment faire l inventaire des forces",
+   "stem": "comment faire l’inventaire rapidement",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment mettre des données en pourcentage",
+   "stem": "comment centraliser les données",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer un ticket avec ticket tool",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "problème pour envoyer des sms",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment gerer les abonnement apple pay",
+   "stem": "comment gérer les abonnements",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -9869,6 +14829,20 @@
   {
    "query": "comment obtenir de l’aide dans whatsapp",
    "stem": "répondre automatiquement whatsapp",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment creer un compte chatgpt",
+   "stem": "chatgpt pour mon entreprise comment",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -9979,6 +14953,34 @@
    "score": 5
   },
   {
+   "query": "comment transférer mes mails orange vers gmail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
+   "query": "imprimante ne fonctionne plus sous windows 10",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
    "query": "mon compte facebook a été piraté",
    "stem": "compte piraté entreprise",
    "domain": "security",
@@ -10007,6 +15009,20 @@
    "score": 5
   },
   {
+   "query": "comment savoir si mon pc est piraté windows 11",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
    "query": "comment vendre en ligne gratuitement",
    "stem": "comment vendre en ligne",
    "domain": "apps",
@@ -10019,6 +15035,20 @@
    "company": false,
    "problem": true,
    "consumer": false,
+   "score": 5
+  },
+  {
+   "query": "comment gérer mes abonnements orange",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
    "score": 5
   },
   {
@@ -10064,6 +15094,48 @@
    "score": 4.5
   },
   {
+   "query": "comment transférer mes mails orange sur gmail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "comment savoir si mon pc est piraté windows 10",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "comment enlever authentification à deux facteurs sur facebook",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
    "query": "comment créer un site e commerce pdf",
    "stem": "comment créer un site e-commerce",
    "domain": "apps",
@@ -10075,6 +15147,34 @@
    "company": true,
    "problem": true,
    "consumer": false,
+   "score": 4.5
+  },
+  {
+   "query": "comment mettre à jour une application sur iphone",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "comment mettre à jour une application iphone",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
    "score": 4.5
   },
   {
@@ -10101,6 +15201,34 @@
    ],
    "best": 8,
    "company": true,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "telephone internet orange ne fonctionne plus",
+   "stem": "téléphone ip ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "tv internet ne fonctionne pas",
+   "stem": "câble réseau ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
    "problem": true,
    "consumer": true,
    "score": 4
@@ -10134,8 +15262,50 @@
    "score": 4
   },
   {
+   "query": "comment supprimer authentification à deux facteurs facebook",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "comment désactiver authentification à deux facteurs facebook",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
    "query": "application qui plante iphone",
    "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "comment mettre à jour une application sur samsung",
+   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -10204,6 +15374,48 @@
    "score": 3.5
   },
   {
+   "query": "comment transférer mes mails orange sur ma boîte gmail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
+   "query": "comment transférer mes mails reçus orange",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
+   "query": "imprimante ne fonctionne plus windows 10",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
    "query": "comment créer un site e commerce gratuitement",
    "stem": "comment créer un site e-commerce",
    "domain": "apps",
@@ -10215,6 +15427,20 @@
    "company": true,
    "problem": true,
    "consumer": false,
+   "score": 3.5
+  },
+  {
+   "query": "comment gerer les abonnements sur iphone",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
    "score": 3.5
   },
   {
@@ -10260,6 +15486,20 @@
    "score": 3
   },
   {
+   "query": "imprimante ne fonctionne pas sous windows 11",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
    "query": "comment limiter accès photos facebook",
    "stem": "comment contrôler les accès",
    "domain": "security",
@@ -10274,8 +15514,64 @@
    "score": 3
   },
   {
+   "query": "comment activer authentification à deux facteurs facebook",
+   "stem": "authentification à deux facteurs comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
+   "query": "comment mettre à jour une application sur tv samsung",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
+   "query": "comment gérer le volume sonore sur windows 11",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
    "query": "reseau lent iphone",
    "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment partager une imprimante sous windows 11",
+   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -10316,8 +15612,36 @@
    "score": 2.5
   },
   {
+   "query": "comment transférer mes mails sfr vers gmail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
    "query": "comment limiter acces amis facebook",
    "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment activer authentification à deux facteurs fortnite",
+   "stem": "authentification à deux facteurs comment",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -10344,8 +15668,50 @@
    "score": 2.5
   },
   {
-   "query": "comment partager une imprimante sous windows 11",
-   "stem": "comment partager une imprimante",
+   "query": "comment mettre à jour une application sur tablette samsung",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment detecter une application espion sur iphone",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment gerer les abonnements bouygues",
+   "stem": "comment gérer les abonnements",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment amplifier le wifi dans une maison",
+   "stem": "comment étendre le wifi",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -10386,6 +15752,20 @@
    "score": 2
   },
   {
+   "query": "imprimante ne fonctionne plus après mise à jour windows 10",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
    "query": "comment limiter acces instagram",
    "stem": "comment contrôler les accès",
    "domain": "security",
@@ -10414,6 +15794,20 @@
    "score": 2
   },
   {
+   "query": "comment suivre un chantier de construction pdf",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 2
+  },
+  {
    "query": "comment créer une adresse mail professionnelle avec gmail gratuit",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -10428,8 +15822,36 @@
    "score": 1.5
   },
   {
+   "query": "comment transférer mes mails sfr vers une autre boite mail",
+   "stem": "comment transférer mes mails",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1.5
+  },
+  {
    "query": "comment limiter acces facebook",
    "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1.5
+  },
+  {
+   "query": "comment désactiver authentification à deux facteurs instagram",
+   "stem": "authentification à deux facteurs comment",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -10470,18 +15892,18 @@
    "score": 1.5
   },
   {
-   "query": "livebox wifi qui coupe",
-   "stem": "wifi qui coupe",
-   "domain": "network",
+   "query": "comment envoyer des sms gratuitement",
+   "stem": "comment envoyer des sms aux clients",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
-   "best": 8,
+   "best": 1,
    "company": false,
    "problem": true,
-   "consumer": true,
-   "score": 1
+   "consumer": false,
+   "score": 1.5
   },
   {
    "query": "comment transférer les données entre deux téléphones samsung",
@@ -10540,6 +15962,34 @@
    "score": 1
   },
   {
+   "query": "imprimante ne fonctionne pas sur windows 10",
+   "stem": "imprimante ne fonctionne plus",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "comment archiver des documents administratifs pdf",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 1
+  },
+  {
    "query": "mon compte a été pirate sur facebook",
    "stem": "compte piraté entreprise",
    "domain": "security",
@@ -10582,6 +16032,34 @@
    "score": 1
   },
   {
+   "query": "comment faire un site e-commerce gratuit",
+   "stem": "comment créer un site e-commerce",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 1
+  },
+  {
+   "query": "comment publier une application sur play store gratuitement",
+   "stem": "comment publier une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 1
+  },
+  {
    "query": "comment afficher une application masquée sur iphone",
    "stem": "comment publier une application",
    "domain": "apps",
@@ -10594,6 +16072,62 @@
    "problem": true,
    "consumer": true,
    "score": 1
+  },
+  {
+   "query": "comment mettre à jour une application sur smart tv",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "comment verifier une application sur iphone",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "comment gérer le stockage sur iphone",
+   "stem": "comment gérer le sav",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "livebox wifi qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 0.5
   },
   {
    "query": "comment transférer les données entre 2 samsung",
@@ -10624,6 +16158,20 @@
    "score": 0.5
   },
   {
+   "query": "comment amplifier le wifi orange",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 0.5
+  },
+  {
    "query": "iphone casse comment récupérer les données",
    "stem": "comment récupérer des données",
    "domain": "infra",
@@ -10635,6 +16183,20 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 0.5
+  },
+  {
+   "query": "pc lent que faire gratuitement",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
    "score": 0.5
   },
   {
@@ -10666,12 +16228,26 @@
    "score": 0.5
   },
   {
-   "query": "comment publier une application sur play store gratuitement",
-   "stem": "comment publier une application",
+   "query": "comment faire l'inventaire d'une boutique pdf",
+   "stem": "comment faire l’inventaire rapidement",
    "domain": "apps",
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 0.5
+  },
+  {
+   "query": "comment faire un appel gratuit",
+   "stem": "transcrire des appels automatiquement",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 3,
    "company": false,
