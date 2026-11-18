@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "calls": 1320,
+ "calls": 1530,
  "method": "Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised",
  "items": [
   {
@@ -225,6 +225,20 @@
    "score": 13
   },
   {
+   "query": "comment sécuriser un réseau d entreprise",
+   "stem": "comment sécuriser un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "réseau lent",
    "stem": "réseau lent",
    "domain": "network",
@@ -275,8 +289,8 @@
    "domain": "network",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "bing",
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -343,6 +357,20 @@
    "score": 13
   },
   {
+   "query": "comment installer un bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "serveur lent",
    "stem": "serveur lent",
    "domain": "infra",
@@ -363,8 +391,8 @@
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "bing",
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -548,6 +576,21 @@
    "score": 13
   },
   {
+   "query": "comment partager un calendrier sur outlook",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing",
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "comment créer un intranet",
    "stem": "comment créer un intranet",
    "domain": "infra",
@@ -558,6 +601,35 @@
    ],
    "best": 0,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment transférer un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment changer d hébergeur de site internet",
+   "stem": "comment changer d’hébergeur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 13
@@ -664,6 +736,21 @@
    "score": 13
   },
   {
+   "query": "comment reconnaître un faux mail",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "application lente au demarrage",
    "stem": "application lente",
    "domain": "apps",
@@ -694,7 +781,7 @@
    "score": 13
   },
   {
-   "query": "lenteur site web",
+   "query": "site internet lent",
    "stem": "site web lent",
    "domain": "apps",
    "hl": "fr",
@@ -944,6 +1031,21 @@
    "score": 13
   },
   {
+   "query": "combien de temps pour créer une application",
+   "stem": "combien de temps pour développer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "comment choisir son agence immobilière",
    "stem": "comment choisir une agence de développement",
    "domain": "apps",
@@ -1015,21 +1117,6 @@
    "score": 13
   },
   {
-   "query": "comment mettre à jour une application sur pc",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 13
-  },
-  {
    "query": "comment recuperer le code source d un site web",
    "stem": "comment récupérer le code source",
    "domain": "apps",
@@ -1039,6 +1126,21 @@
    ],
    "best": 0,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment gerer un chantier",
+   "stem": "comment suivre un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing",
+    "google"
+   ],
+   "best": 0,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 13
@@ -1067,6 +1169,201 @@
    ],
    "best": 0,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer un espace client",
+   "stem": "comment créer un portail client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une plateforme",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une plateforme en ligne",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment lancer une application au démarrage",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer une marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment faire un tableau de bord sur excel",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer un logiciel de gestion",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment remplacer excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer un espace client edf",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment faire signer un document en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer un catalogue en ligne",
+   "stem": "comment créer un catalogue en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer un agent ia",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment créer un agent ia copilot",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 13
@@ -1217,6 +1514,34 @@
    "score": 12.5
   },
   {
+   "query": "comment installer un bureau de vote",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment faire un bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
    "query": "comment créer une adresse mail professionnelle outlook",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -1305,8 +1630,22 @@
    "score": 12.5
   },
   {
-   "query": "site lentes web é confiavel",
+   "query": "lenteur site web",
    "stem": "site web lent",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment créer une application pour son entreprise",
+   "stem": "comment créer une application pour mon entreprise",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -1444,6 +1783,51 @@
    ],
    "best": 1,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment créer une plateforme numérique",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment lancer une application",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment faire un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 12.5
@@ -1606,16 +1990,15 @@
    "score": 12
   },
   {
-   "query": "comment savoir si mon ordinateur est piraté",
-   "stem": "comment savoir si mon pc est piraté",
-   "domain": "security",
+   "query": "site lentes web é confiavel",
+   "stem": "site web lent",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "google"
    ],
    "best": 2,
-   "company": false,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 12
@@ -1720,6 +2103,35 @@
    "score": 12
   },
   {
+   "query": "comment faire un tableau de bord rh",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment remplacer excel en entreprise",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
    "query": "problème connexion suite entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -1791,9 +2203,9 @@
    "score": 11.5
   },
   {
-   "query": "comment créer une adresse mail professionnelle microsoft",
-   "stem": "comment créer une adresse mail professionnelle",
-   "domain": "infra",
+   "query": "comment installer un bureau a distance",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
    "hl": "fr",
    "engines": [
     "google"
@@ -1805,16 +2217,29 @@
    "score": 11.5
   },
   {
-   "query": "comment partager un calendrier gmail",
-   "stem": "comment partager un calendrier",
+   "query": "comment mettre sur le bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle microsoft",
+   "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "bing",
     "google"
    ],
    "best": 3,
-   "company": false,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 11.5
@@ -1871,6 +2296,36 @@
    ],
    "best": 3,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment créer une application",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment faire un tableau de bord rh sur excel",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 11.5
@@ -1946,6 +2401,34 @@
    "score": 11
   },
   {
+   "query": "comment installer un bureau dans son salon",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "comment mettre un lien sur son bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
    "query": "perte déductible au titre d'entreprise",
    "stem": "perte de données entreprise",
    "domain": "infra",
@@ -1960,15 +2443,16 @@
    "score": 11
   },
   {
-   "query": "comment créer une adresse mail professionnelle sans nom de domaine",
-   "stem": "comment créer une adresse mail professionnelle",
+   "query": "comment partager un calendrier apple",
+   "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google"
+    "google",
+    "bing"
    ],
    "best": 4,
-   "company": true,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 11
@@ -2044,6 +2528,21 @@
    "score": 11
   },
   {
+   "query": "comment faire un tableau de bord kpi",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
    "query": "probleme connexion bnp entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -2074,20 +2573,6 @@
   {
    "query": "comment installer un réseau dans une entreprise",
    "stem": "comment installer un réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": true,
-   "problem": true,
-   "consumer": false,
-   "score": 10.5
-  },
-  {
-   "query": "comment sécuriser un réseau d entreprise",
-   "stem": "comment sécuriser un réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -2156,9 +2641,9 @@
    "score": 10.5
   },
   {
-   "query": "comment créer une adresse mail professionnelle avec nom de domaine",
-   "stem": "comment créer une adresse mail professionnelle",
-   "domain": "infra",
+   "query": "comment installer un ordinateur bureautique",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
    "hl": "fr",
    "engines": [
     "google"
@@ -2170,16 +2655,29 @@
    "score": 10.5
   },
   {
-   "query": "comment partager un calendrier apple",
-   "stem": "comment partager un calendrier",
+   "query": "comment installer un ordinateur bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle sans nom de domaine",
+   "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "google"
    ],
    "best": 5,
-   "company": false,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 10.5
@@ -2634,6 +3132,20 @@
    "score": 10
   },
   {
+   "query": "comment installer bureau sur pc",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "serveur en panne aujourd'hui",
    "stem": "serveur en panne",
    "domain": "infra",
@@ -2704,6 +3216,20 @@
    "score": 10
   },
   {
+   "query": "comment récupérer des données sur un téléphone portable cassé",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "comment récupérer des données sur icloud",
    "stem": "comment récupérer des données",
    "domain": "infra",
@@ -2732,7 +3258,7 @@
    "score": 10
   },
   {
-   "query": "comment choisir un serveur informatique",
+   "query": "comment choisir un serveur sur once human",
    "stem": "comment choisir un serveur",
    "domain": "infra",
    "hl": "fr",
@@ -2746,7 +3272,7 @@
    "score": 10
   },
   {
-   "query": "comment choisir un serveur sur once human",
+   "query": "comment choisir un serveur informatique",
    "stem": "comment choisir un serveur",
    "domain": "infra",
    "hl": "fr",
@@ -2769,6 +3295,20 @@
    ],
    "best": 0,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle avec nom de domaine",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 10
@@ -2845,12 +3385,12 @@
    "score": 10
   },
   {
-   "query": "comment restaurer un fichier supprimé de la corbeille",
+   "query": "comment restaurer un fichier excel supprimé",
    "stem": "comment restaurer un fichier supprimé",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 0,
    "company": false,
@@ -2859,12 +3399,12 @@
    "score": 10
   },
   {
-   "query": "comment restaurer un fichier excel supprimé",
+   "query": "comment restaurer un fichier supprimé de la corbeille",
    "stem": "comment restaurer un fichier supprimé",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -2887,8 +3427,8 @@
    "score": 10
   },
   {
-   "query": "comment partager un calendrier sur outlook",
-   "stem": "comment partager un calendrier",
+   "query": "comment transférer un nom de domaine chez ovh",
+   "stem": "comment transférer un nom de domaine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -3015,6 +3555,48 @@
   {
    "query": "virus pour clé usb",
    "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment sécuriser efficacement un ordinateur",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment reconnaître un faux mail mondial relay",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment reconnaître un mail frauduleux",
+   "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -3397,6 +3979,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment mettre à jour une application sur pc",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 0,
    "company": false,
@@ -3965,7 +4561,21 @@
    "score": 10
   },
   {
-   "query": "comment créer un espace client",
+   "query": "comment créer un espace client edf particulier",
+   "stem": "comment créer un portail client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer un espace client la banque postale",
    "stem": "comment créer un portail client",
    "domain": "apps",
    "hl": "fr",
@@ -4063,6 +4673,104 @@
    "score": 10
   },
   {
+   "query": "comment mettre une application sur le bureau",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer une marketplace cadre légal",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment payer facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer un logiciel de gestion commerciale",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment remplacer sur excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "combien ça coûte de créer une application",
+   "stem": "combien de temps pour créer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les commandes clients",
+   "stem": "comment gérer les commandes clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "comment utiliser l'intelligence artificielle au travail",
    "stem": "comment utiliser l’intelligence artificielle dans mon entreprise",
    "domain": "ai",
@@ -4125,6 +4833,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment créer un agent ia avec claude",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -4553,20 +5275,6 @@
    "score": 9.5
   },
   {
-   "query": "pourquoi mon réseau mobile n'est pas disponible",
-   "stem": "pourquoi mon réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
    "query": "comment brancher un switch tp link",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -4587,6 +5295,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment brancher un switch sur une box",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -4805,6 +5527,48 @@
    "score": 9.5
   },
   {
+   "query": "comment installer bureau a distance google chrome",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire pour mettre sur le bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment utiliser un standard téléphonique",
+   "stem": "standard téléphonique entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "serveur lent que faire",
    "stem": "serveur lent",
    "domain": "infra",
@@ -4889,7 +5653,7 @@
    "score": 9.5
   },
   {
-   "query": "comment récupérer des données sur un téléphone portable cassé",
+   "query": "comment récupérer des données sur un disque dur",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -4940,20 +5704,6 @@
    ],
    "best": 1,
    "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment créer une adresse mail professionnelle google",
-   "stem": "comment créer une adresse mail professionnelle",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": true,
    "problem": true,
    "consumer": false,
    "score": 9.5
@@ -5015,6 +5765,20 @@
    "score": 9.5
   },
   {
+   "query": "comment restaurer un fichier supprimé dans la corbeille",
+   "stem": "comment restaurer un fichier supprimé",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment recuperer un fichier supprime",
    "stem": "comment restaurer un fichier supprimé",
    "domain": "infra",
@@ -5049,6 +5813,34 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment transferer un nom de domaine ovh",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment changer d'hébergeur de nom de domaine",
+   "stem": "comment changer d’hébergeur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -5155,6 +5947,34 @@
    "score": 9.5
   },
   {
+   "query": "comment sécuriser son ordinateur personnel",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment reconnaître un faux maillot de foot",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "application lente",
    "stem": "application lente",
    "domain": "apps",
@@ -5199,6 +6019,20 @@
   {
    "query": "what date is lent",
    "stem": "site web lent",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire remplacer sur excel",
+   "stem": "remplacer excel par",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -5324,6 +6158,20 @@
    "score": 9.5
   },
   {
+   "query": "comment vendre en ligne en côte d'ivoire",
+   "stem": "comment vendre en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "commentaires sur la livraison",
    "stem": "application de livraison comment",
    "domain": "apps",
@@ -5344,6 +6192,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire une application de livraison",
+   "stem": "application de livraison comment",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -5520,6 +6382,20 @@
    "score": 9.5
   },
   {
+   "query": "combien de temps pour créer une application mobile",
+   "stem": "combien de temps pour développer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "pirate.com",
    "stem": "site web piraté",
    "domain": "apps",
@@ -5646,20 +6522,6 @@
    "score": 9.5
   },
   {
-   "query": "comment suivre la production de mes panneaux photovoltaïques",
-   "stem": "comment suivre la production",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
    "query": "comment suivre un chantier",
    "stem": "comment suivre un chantier",
    "domain": "apps",
@@ -5674,7 +6536,7 @@
    "score": 9.5
   },
   {
-   "query": "comment gerer un chantier",
+   "query": "comment préparer un chantier",
    "stem": "comment suivre un chantier",
    "domain": "apps",
    "hl": "fr",
@@ -5787,6 +6649,20 @@
   },
   {
    "query": "comment faire un ticket",
+   "stem": "comment gérer les tickets",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment fonctionne les tickets pcs",
    "stem": "comment gérer les tickets",
    "domain": "apps",
    "hl": "fr",
@@ -6066,6 +6942,20 @@
    "score": 9.5
   },
   {
+   "query": "comment créer un espace client internet la banque postale",
+   "stem": "comment créer un portail client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment faire un portail",
    "stem": "comment créer un portail client",
    "domain": "apps",
@@ -6100,6 +6990,188 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment créer une plateforme de vente en ligne",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment lancer une application automatiquement au démarrage de windows",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment lancer une application java",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment créer une annonce sur marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un tableau de bord sur google sheet",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un tableau de bord de gestion",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment créer un logiciel de gestion scolaire",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment remplacer excel sur mac",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment remplacer point par virgule excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment signer un doc en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer un chantier de construction",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un catalogue",
+   "stem": "comment créer un catalogue en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 1,
    "company": false,
@@ -6166,6 +7238,34 @@
   {
    "query": "comment faire un appel",
    "stem": "transcrire des appels automatiquement",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment créer un agent ia avec chatgpt",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment se connecter à chatgpt",
+   "stem": "comment connecter chatgpt à mes données",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -6500,12 +7600,12 @@
    "score": 9
   },
   {
-   "query": "pourquoi mon réseau est lent",
+   "query": "pourquoi mon réseau est instable sur mon portable",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -6514,12 +7614,12 @@
    "score": 9
   },
   {
-   "query": "comment brancher un switch sur une box",
-   "stem": "comment brancher un switch",
+   "query": "pourquoi mon réseau est lent",
+   "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 2,
    "company": false,
@@ -6724,6 +7824,48 @@
    "score": 9
   },
   {
+   "query": "comment créer un bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment brancher un ordinateur bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment marche la fibre optique",
+   "stem": "fibre optique entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "lenteur serveur",
    "stem": "serveur lent",
    "domain": "infra",
@@ -6752,8 +7894,8 @@
    "score": 9
   },
   {
-   "query": "comment sauvegarder les données de mon téléphone sur mon ordinateur",
-   "stem": "comment sauvegarder les données",
+   "query": "serveur netatmo en panne",
+   "stem": "serveur en panne",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -6794,7 +7936,7 @@
    "score": 9
   },
   {
-   "query": "comment récupérer des données sur un disque dur",
+   "query": "comment récupérer des données sur whatsapp",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -6822,7 +7964,7 @@
    "score": 9
   },
   {
-   "query": "comment créer une adresse mail professionnelle avec gmail",
+   "query": "comment créer une adresse mail professionnelle google",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
    "hl": "fr",
@@ -6870,6 +8012,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "boite mail pleine comment la vider",
+   "stem": "boîte mail pleine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -7004,6 +8160,20 @@
    "score": 9
   },
   {
+   "query": "comment partager un calendrier google agenda",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "comment partager un calendrier en ligne",
    "stem": "comment partager un calendrier",
    "domain": "infra",
@@ -7038,6 +8208,48 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment transférer un nom de domaine depuis ovh",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment transférer un domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment changer d'hébergeur",
+   "stem": "comment changer d’hébergeur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -7116,6 +8328,20 @@
    "score": 9
   },
   {
+   "query": "comment savoir si mon ordinateur est piraté",
+   "stem": "comment savoir si mon pc est piraté",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "clé usb virus raccourci",
    "stem": "clé usb virus",
    "domain": "security",
@@ -7136,6 +8362,48 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment se créer un réseau professionnel",
+   "stem": "comment sécuriser un réseau d’entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment sécuriser mon ordinateur",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment reconnaître un faux mail paypal",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -7270,20 +8538,6 @@
    "score": 9
   },
   {
-   "query": "comment vendre en ligne en côte d'ivoire",
-   "stem": "comment vendre en ligne",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
    "query": "comment vendre en ligne ses créations",
    "stem": "comment vendre en ligne",
    "domain": "apps",
@@ -7396,8 +8650,36 @@
    "score": 9
   },
   {
-   "query": "combien de temps pour coder une application",
+   "query": "comment publier une application sur google play",
+   "stem": "comment publier une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "combien pour créer une application",
    "stem": "combien de temps pour développer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment mettre à jour une application sur ipad",
+   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -7550,8 +8832,8 @@
    "score": 9
   },
   {
-   "query": "comment suivre un chantier de construction",
-   "stem": "comment suivre un chantier",
+   "query": "comment suivre la fabrication de mon permis de conduire",
+   "stem": "comment suivre la production",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -7564,12 +8846,12 @@
    "score": 9
   },
   {
-   "query": "comment préparer un chantier",
+   "query": "comment suivre un chantier de construction",
    "stem": "comment suivre un chantier",
    "domain": "apps",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -7634,7 +8916,7 @@
    "score": 9
   },
   {
-   "query": "comment fonctionne les tickets pcs",
+   "query": "comment utiliser les tickets restaurant",
    "stem": "comment gérer les tickets",
    "domain": "apps",
    "hl": "fr",
@@ -7830,7 +9112,7 @@
    "score": 9
   },
   {
-   "query": "comment créer un espace client edf particulier",
+   "query": "comment créer un espace client caisse d epargne",
    "stem": "comment créer un portail client",
    "domain": "apps",
    "hl": "fr",
@@ -7928,6 +9210,174 @@
    "score": 9
   },
   {
+   "query": "comment créer une plateforme whatsapp",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment créer une plateforme de streaming",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment lancer une marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment aller sur le marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment payer facture en ligne videotron",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment payer une facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment faire un tableau de bord sur power bi",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment on fait un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment créer un espace client veolia",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment faire signer un document en ligne par plusieurs personnes",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment mettre un catalogue en ligne",
+   "stem": "comment créer un catalogue en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment créer un catalogue de produits",
+   "stem": "comment créer un catalogue en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "comment fonctionne un chatbot",
    "stem": "chatbot pour entreprise comment",
    "domain": "ai",
@@ -7986,6 +9436,20 @@
   {
    "query": "comment trier ses mails",
    "stem": "ia pour trier les mails",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment créer un agent ia sur chat gpt",
+   "stem": "comment créer un agent ia",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -8390,6 +9854,20 @@
    "score": 8.5
   },
   {
+   "query": "pourquoi mon réseau mobile n'est pas disponible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "pourquoi mon réseau mobile ne marche pas",
    "stem": "pourquoi mon réseau",
    "domain": "network",
@@ -8586,6 +10064,62 @@
    "score": 8.5
   },
   {
+   "query": "comment installer bureautique",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment aller sur le bureau",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment installer un ordinateur de bureau hp",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "fibre optique comment ça fonctionne",
+   "stem": "fibre optique entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "lenteur serveur microsoft",
    "stem": "serveur lent",
    "domain": "infra",
@@ -8614,7 +10148,7 @@
    "score": 8.5
   },
   {
-   "query": "serveur netatmo en panne",
+   "query": "serveur free en panne",
    "stem": "serveur en panne",
    "domain": "infra",
    "hl": "fr",
@@ -8648,20 +10182,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
-   "query": "comment récupérer des données sur whatsapp",
-   "stem": "comment récupérer des données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 3,
    "company": false,
@@ -8754,12 +10274,12 @@
    "score": 8.5
   },
   {
-   "query": "boite mail pleine comment la vider",
+   "query": "comment vider une boite mail pleine gmail",
    "stem": "boîte mail pleine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -8768,7 +10288,7 @@
    "score": 8.5
   },
   {
-   "query": "comment vider une boite mail pleine gmail",
+   "query": "comment vider une boite mail pleine",
    "stem": "boîte mail pleine",
    "domain": "infra",
    "hl": "fr",
@@ -8908,6 +10428,20 @@
    "score": 8.5
   },
   {
+   "query": "comment partager un calendrier gmail",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "comment faire un calendrier partagé",
    "stem": "comment partager un calendrier",
    "domain": "infra",
@@ -8924,6 +10458,34 @@
   {
    "query": "comment accéder à intranet",
    "stem": "comment créer un intranet",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment migrer un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment changer de nom de domaine",
+   "stem": "comment transférer un nom de domaine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -9078,6 +10640,34 @@
   {
    "query": "antivirus pour clé usb",
    "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment reconnaître un faux mail de la poste",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment reconnaître une fausse adresse mail",
+   "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -9342,36 +10932,8 @@
    "score": 8.5
   },
   {
-   "query": "comment publier une application sur google play",
-   "stem": "comment publier une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "combien pour developper une application",
    "stem": "combien de temps pour développer une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
-   "query": "comment mettre à jour une application sur mon téléphone",
-   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -9468,12 +11030,12 @@
    "score": 8.5
   },
   {
-   "query": "comment suivre la fabrication de mon permis de conduire",
-   "stem": "comment suivre la production",
+   "query": "comment structurer les données",
+   "stem": "comment centraliser les données",
    "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -9482,8 +11044,8 @@
    "score": 8.5
   },
   {
-   "query": "comment structurer les données",
-   "stem": "comment centraliser les données",
+   "query": "comment fonctionnent les tickets resto",
+   "stem": "comment gérer les tickets",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -9818,8 +11380,204 @@
    "score": 8.5
   },
   {
+   "query": "comment lancer une application au démarrage d android",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment relancer une application",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment ouvrir une marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment fonctionne une marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment payer une facture en ligne avec desjardins",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment consulter ma facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment payer ma facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment réaliser un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment créer un logiciel",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment remplacer dans excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment créer un espace client maaf",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment signer un document",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer un chantier de a à z",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "comment faire des ia",
    "stem": "ia pour faire des devis",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment faire un agent ia",
+   "stem": "agent ia qui prend les rendez-vous",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -9874,6 +11632,48 @@
    "score": 8.5
   },
   {
+   "query": "comment faire réponse automatique mail",
+   "stem": "comment automatiser les réponses aux mails",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment créer un agent ia avec copilot",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment créer un agent ia claude",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "مشكلة الشبكة",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -9908,20 +11708,6 @@
    "hl": "ar",
    "engines": [
     "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
-   "query": "الواي فاي ضعيف في الايفون",
-   "stem": "الواي فاي ضعيف",
-   "domain": "network",
-   "hl": "ar",
-   "engines": [
-    "google"
    ],
    "best": 3,
    "company": false,
@@ -10140,6 +11926,20 @@
    "score": 8
   },
   {
+   "query": "comment faire un réseau",
+   "stem": "comment installer un réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment sécuriser un réseau starlink",
    "stem": "comment sécuriser un réseau",
    "domain": "network",
@@ -10166,20 +11966,6 @@
    "company": false,
    "problem": true,
    "consumer": true,
-   "score": 8
-  },
-  {
-   "query": "pourquoi mon réseau wifi est instable",
-   "stem": "pourquoi mon réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
    "score": 8
   },
   {
@@ -10211,20 +11997,6 @@
    "score": 8
   },
   {
-   "query": "comment brancher un switch internet",
-   "stem": "comment brancher un switch",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
    "query": "comment brancher un switch sur la tele",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -10245,6 +12017,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment brancher un switch internet",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 4,
    "company": false,
@@ -10422,6 +12208,20 @@
    "score": 8
   },
   {
+   "query": "fibre optique comment ça marche",
+   "stem": "fibre optique entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "lenteur serveur rds",
    "stem": "serveur lent",
    "domain": "infra",
@@ -10436,36 +12236,22 @@
    "score": 8
   },
   {
-   "query": "serveur free en panne",
-   "stem": "serveur en panne",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment sauvegarder les données sur google",
-   "stem": "comment sauvegarder les données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
    "query": "comment sauvegarder les données sur la carte sd",
    "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
+   "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -10578,20 +12364,6 @@
   {
    "query": "comment voir son cloud",
    "stem": "comment migrer vers le cloud",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment vider une boite mail pleine",
-   "stem": "boîte mail pleine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -10759,8 +12531,8 @@
    "score": 8
   },
   {
-   "query": "comment partager un calendrier dans outlook",
-   "stem": "comment partager un calendrier",
+   "query": "comment créer un réseau intranet",
+   "stem": "comment créer un intranet",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -10773,12 +12545,26 @@
    "score": 8
   },
   {
-   "query": "comment créer un réseau intranet",
-   "stem": "comment créer un intranet",
+   "query": "comment céder un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment obtenir un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 4,
    "company": false,
@@ -10815,12 +12601,12 @@
    "score": 8
   },
   {
-   "query": "comment voir si mon ordi est piraté",
+   "query": "comment savoir si mon pc est infecté",
    "stem": "comment savoir si mon pc est piraté",
    "domain": "security",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 4,
    "company": false,
@@ -10829,12 +12615,12 @@
    "score": 8
   },
   {
-   "query": "comment savoir si mon pc est infecté",
+   "query": "comment voir si mon ordi est piraté",
    "stem": "comment savoir si mon pc est piraté",
    "domain": "security",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 4,
    "company": false,
@@ -10859,6 +12645,62 @@
   {
    "query": "mot de passe comment faire",
    "stem": "mot de passe entreprise comment",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment sécuriser mon pc",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment reconnaître un faux maillot",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment reconnaître un faux mail de la banque postale",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment reconnaître un faux profil",
+   "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -11166,7 +13008,7 @@
    "score": 8
   },
   {
-   "query": "combien pour créer une application",
+   "query": "combien de temps pour coder une application",
    "stem": "combien de temps pour développer une application",
    "domain": "apps",
    "hl": "fr",
@@ -11236,6 +13078,20 @@
    "score": 8
   },
   {
+   "query": "comment avoir une application",
+   "stem": "comment tester une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment traiter une réclamation client au téléphone",
    "stem": "comment gérer les réclamations clients",
    "domain": "apps",
@@ -11251,6 +13107,20 @@
   },
   {
    "query": "comment voir la production des panneaux photovoltaïques",
+   "stem": "comment suivre la production",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment suivre la fabrication de mon passeport",
    "stem": "comment suivre la production",
    "domain": "apps",
    "hl": "fr",
@@ -11320,8 +13190,8 @@
    "score": 8
   },
   {
-   "query": "comment fonctionnent les tickets resto",
-   "stem": "comment gérer les tickets",
+   "query": "tableau de bord comment faire",
+   "stem": "tableau de bord entreprise comment",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -11558,6 +13428,160 @@
    "score": 8
   },
   {
+   "query": "comment créer une plateforme d'investissement",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire une marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment accéder à la marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment payer une facture en ligne par carte bancaire",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment creer un logiciel de gestion avec access",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment remplacer dans excel une virgule par un point",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment créer un espace client darty",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment créer un espace client engie",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire de la vente en ligne",
+   "stem": "comment vendre un abonnement en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire signer un contrat en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment organiser un chantier",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment puis-je contacter le service client",
    "stem": "comment automatiser le service client",
    "domain": "ai",
@@ -11574,20 +13598,6 @@
   {
    "query": "comment aller sur whatsapp",
    "stem": "répondre automatiquement whatsapp",
-   "domain": "ai",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment faire un agent ia",
-   "stem": "agent ia qui prend les rendez-vous",
    "domain": "ai",
    "hl": "fr",
    "engines": [
@@ -11628,6 +13638,62 @@
    "score": 8
   },
   {
+   "query": "comment mettre une réponse automatique mail",
+   "stem": "comment automatiser les réponses aux mails",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment créer un agent ia avec gemini",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment créer un agent ia avec copilot studio",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment construire un agent ia",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "مشكلة الشبكة في الايفون",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -11656,7 +13722,7 @@
    "score": 8
   },
   {
-   "query": "الواي فاي ضعيف جدا",
+   "query": "الواي فاي ضعيف في الايفون",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
@@ -11810,7 +13876,7 @@
    "score": 7.5
   },
   {
-   "query": "comment faire un réseau",
+   "query": "comment créer un réseau",
    "stem": "comment installer un réseau",
    "domain": "network",
    "hl": "fr",
@@ -11824,7 +13890,7 @@
    "score": 7.5
   },
   {
-   "query": "pourquoi mon réseau internet est instable",
+   "query": "pourquoi mon réseau est indisponible",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -11964,6 +14030,20 @@
    "score": 7.5
   },
   {
+   "query": "comment est fabriqué la fibre optique",
+   "stem": "fibre optique entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "lenteur serveur ovh",
    "stem": "serveur lent",
    "domain": "infra",
@@ -11978,7 +14058,7 @@
    "score": 7.5
   },
   {
-   "query": "comment sauvegarder les données whatsapp sur google",
+   "query": "comment sauvegarder les données sur google",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -12012,6 +14092,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment récupérer des données sur une clé usb endommagée",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 5,
    "company": false,
@@ -12274,12 +14368,41 @@
    "score": 7.5
   },
   {
-   "query": "comment partager un calendrier avec une autre personne",
+   "query": "comment partager un calendrier sur iphone",
    "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
    "engines": [
+    "bing",
     "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 7.5
+  },
+  {
+   "query": "comment mettre un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment déposer un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 5,
    "company": false,
@@ -12344,20 +14467,6 @@
    "score": 7.5
   },
   {
-   "query": "comment voir si mon ordinateur est piraté",
-   "stem": "comment savoir si mon pc est piraté",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
    "query": "comment savoir si un ordinateur est piraté",
    "stem": "comment savoir si mon pc est piraté",
    "domain": "security",
@@ -12406,6 +14515,34 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment appelle t on un mail frauduleux",
+   "stem": "mail frauduleux que faire",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment reconnaître un vrai mail des impôts",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 5,
    "company": false,
@@ -12652,7 +14789,21 @@
    "score": 7.5
   },
   {
-   "query": "comment mettre à jour une application sur ipad",
+   "query": "combien de temps faut il pour développer une application",
+   "stem": "combien de temps pour développer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment mettre à jour une application sur mon téléphone",
    "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
@@ -12932,17 +15083,18 @@
    "score": 7.5
   },
   {
-   "query": "comment créer un espace client la banque postale",
+   "query": "comment créer un espace client orange",
    "stem": "comment créer un portail client",
    "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google"
+    "google",
+    "bing"
    ],
-   "best": 5,
+   "best": 1,
    "company": false,
    "problem": true,
-   "consumer": false,
+   "consumer": true,
    "score": 7.5
   },
   {
@@ -12962,6 +15114,160 @@
   {
    "query": "comment valider paiement le bon coin",
    "stem": "comment valider les dépenses",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment utiliser notre plateforme",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment mettre une application",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment payer une facture en ligne avec rbc",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire un tableau de bord dynamique sur excel",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment élaborer un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment concevoir un logiciel de gestion",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment remplacer sous excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment créer un espace client au crédit agricole",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment créer un espace client en ligne engie",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire pour signer un document en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment organiser un chantier participatif",
+   "stem": "comment gérer un chantier",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -13016,12 +15322,54 @@
    "score": 7.5
   },
   {
-   "query": "مشكلة الشبكة في سامسونج s24 ultra",
-   "stem": "مشكلة الشبكة",
-   "domain": "network",
-   "hl": "ar",
+   "query": "comment automatiser un mail",
+   "stem": "comment automatiser les réponses aux mails",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment créer un agent ia chatgpt",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment configurer un agent ia",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment développer un agent ia",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 5,
    "company": false,
@@ -13058,7 +15406,7 @@
    "score": 7.5
   },
   {
-   "query": "الواي فاي ضعيف عندي",
+   "query": "الواي فاي ضعيف جدا",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
@@ -13310,20 +15658,6 @@
    "score": 7
   },
   {
-   "query": "comment créer un réseau",
-   "stem": "comment installer un réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "comment installer un reseau mesh",
    "stem": "comment installer un réseau",
    "domain": "network",
@@ -13366,7 +15700,7 @@
    "score": 7
   },
   {
-   "query": "pourquoi mon réseau est instable sur mon portable",
+   "query": "pourquoi mon réseau wifi est instable",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -13478,20 +15812,6 @@
    "score": 7
   },
   {
-   "query": "comment booster le wifi",
-   "stem": "comment étendre le wifi",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "le wifi comment ça marche",
    "stem": "comment étendre le wifi",
    "domain": "network",
@@ -13562,7 +15882,49 @@
    "score": 7
   },
   {
-   "query": "comment sauvegarder les données sur compte google",
+   "query": "comment installer un bureau dans une chambre",
+   "stem": "comment câbler un bureau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": true,
+   "score": 7
+  },
+  {
+   "query": "comment fonctionne une fibre optique",
+   "stem": "fibre optique entreprise comment",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "serveur apple en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -13590,40 +15952,12 @@
    "score": 7
   },
   {
-   "query": "comment sauvegarder les données de mon téléphone sur un ordinateur",
-   "stem": "comment sauvegarder les données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "od perte et profit",
    "stem": "perte de données entreprise",
    "domain": "infra",
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
-   "stem": "comment récupérer des données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 6,
    "company": false,
@@ -13800,34 +16134,6 @@
    "score": 7
   },
   {
-   "query": "comment partager un calendrier google agenda",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment partager un calendrier icloud",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "comment partager un calendrier outlook 365",
    "stem": "comment partager un calendrier",
    "domain": "infra",
@@ -13858,6 +16164,34 @@
   {
    "query": "comment faire un intranet",
    "stem": "comment créer un intranet",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment mettre un nom de domaine sur wordpress",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment avoir un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -13954,20 +16288,6 @@
    "score": 7
   },
   {
-   "query": "comment savoir si mon ordinateur est infecté par un virus",
-   "stem": "comment savoir si mon pc est piraté",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "mon ordinateur est piraté",
    "stem": "comment savoir si mon pc est piraté",
    "domain": "security",
@@ -13998,6 +16318,62 @@
   {
    "query": "problème détection clé usb",
    "stem": "clé usb virus",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment supprimer un reseau",
+   "stem": "comment sécuriser un réseau d’entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment sécuriser un dossier sur ordinateur",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment reconnaître un faux mail de la gendarmerie",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment savoir si un mail est frauduleux",
+   "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -14150,8 +16526,8 @@
    "score": 7
   },
   {
-   "query": "comment mettre à jour une application sans play store",
-   "stem": "comment mettre à jour une application",
+   "query": "combien de temps faut il pour créer une application mobile",
+   "stem": "combien de temps pour développer une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -14234,20 +16610,6 @@
    "score": 7
   },
   {
-   "query": "comment suivre la fabrication de mon passeport",
-   "stem": "comment suivre la production",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "comment faire l'inventaire d'une pharmacie",
    "stem": "comment faire l’inventaire rapidement",
    "domain": "apps",
@@ -14264,20 +16626,6 @@
   {
    "query": "comment faire une bonne analyse de données",
    "stem": "comment centraliser les données",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "tableau de bord comment faire",
-   "stem": "tableau de bord entreprise comment",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -14486,6 +16834,188 @@
    "score": 7
   },
   {
+   "query": "comment créer une plateforme d'investissement en ligne",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment créer une annonce marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment acheter sur marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire un tableau de bord simple",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire un tableau de bord dans excel",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment construire un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire une prévision des ventes",
+   "stem": "comment suivre les ventes en temps réel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment créer un logiciel gestion de stock",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment créer un espace client ag2r",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire pour signer un contrat en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment organiser un chantier de construction",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment faire un planning de chantier",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "ticket restaurant comment les utiliser",
+   "stem": "comment gérer les tickets clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "comment faire pour appeler",
    "stem": "transcrire des appels automatiquement",
    "domain": "ai",
@@ -14528,7 +17058,49 @@
    "score": 7
   },
   {
-   "query": "الواي فاي ضعيف في اللاب توب",
+   "query": "comment faire un mail de réponse automatique",
+   "stem": "comment automatiser les réponses aux mails",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment fonctionne un agent ia",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج s24 ultra",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "الواي فاي ضعيف عندي",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
@@ -14752,7 +17324,7 @@
    "score": 6.5
   },
   {
-   "query": "pourquoi mon réseau cellulaire ne fonctionne pas",
+   "query": "pourquoi mon réseau internet est instable",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -14794,7 +17366,7 @@
    "score": 6.5
   },
   {
-   "query": "comment booster le wifi de mon téléphone",
+   "query": "comment booster le wifi",
    "stem": "comment étendre le wifi",
    "domain": "network",
    "hl": "fr",
@@ -14836,50 +17408,7 @@
    "score": 6.5
   },
   {
-   "query": "serveur apple en panne",
-   "stem": "serveur en panne",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
-   "query": "comment sauvegarder les données de mon iphone",
-   "stem": "comment sauvegarder les données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 6.5
-  },
-  {
-   "query": "comment sauvegarder les données de mon téléphone sur google",
-   "stem": "comment sauvegarder les données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
-   "query": "comment récupérer des données sur une clé usb endommagée",
+   "query": "comment récupérer des données sur un disque dur externe",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -15047,22 +17576,7 @@
    "score": 6.5
   },
   {
-   "query": "comment partager un calendrier samsung",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 6.5
-  },
-  {
-   "query": "comment partager un calendrier sur google agenda",
+   "query": "comment partager un calendrier gmail avec outlook",
    "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
@@ -15078,6 +17592,34 @@
   {
    "query": "comment créer un calendrier partagé",
    "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment transférer un nom de domaine vers un autre hébergeur",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -15146,20 +17688,6 @@
    "score": 6.5
   },
   {
-   "query": "comment savoir si son pc est piraté",
-   "stem": "comment savoir si mon pc est piraté",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
    "query": "qui pirate mon ordinateur",
    "stem": "comment savoir si mon pc est piraté",
    "domain": "security",
@@ -15194,6 +17722,34 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment reconnaître un faux mail chronopost",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment savoir si un mail est vrai",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 7,
    "company": false,
@@ -15342,6 +17898,20 @@
    "score": 6.5
   },
   {
+   "query": "combien de temps faut il pour créer une application",
+   "stem": "combien de temps pour développer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "comment avoir le code source d une application",
    "stem": "comment récupérer le code source",
    "domain": "apps",
@@ -15454,20 +18024,6 @@
    "score": 6.5
   },
   {
-   "query": "comment utiliser les tickets restaurant",
-   "stem": "comment gérer les tickets",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
    "query": "comment envoyer un mail en sms",
    "stem": "comment envoyer des sms aux clients",
    "domain": "apps",
@@ -15566,20 +18122,6 @@
    "score": 6.5
   },
   {
-   "query": "comment créer un espace client caisse d epargne",
-   "stem": "comment créer un portail client",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
    "query": "comment fabriquer un portail",
    "stem": "comment créer un portail client",
    "domain": "apps",
@@ -15636,6 +18178,216 @@
    "score": 6.5
   },
   {
+   "query": "comment créer une application sur play store",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment créer une application facilement",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment creer une page marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment consulter sa facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un tableau de bord home assistant",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un tableau de bord social",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment rédiger un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un logiciel de gestion avec excel",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment remplacer par virgule excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment créer un espace client axa",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment créer un espace client saur",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire une signature sur un document en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment diriger un chantier",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un catalogue en ligne",
+   "stem": "comment créer un catalogue en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment activer les commandes",
+   "stem": "comment gérer les commandes clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "comment activer whatsapp sur mon téléphone",
    "stem": "répondre automatiquement whatsapp",
    "domain": "ai",
@@ -15664,6 +18416,20 @@
    "score": 6.5
   },
   {
+   "query": "comment créer un agent ia dans copilot",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "مشكلة الشبكة في الايفون بعد التحديث",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -15678,7 +18444,7 @@
    "score": 6.5
   },
   {
-   "query": "الواي فاي ضعيف اعمل ايه",
+   "query": "الواي فاي ضعيف في اللاب توب",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
@@ -15902,8 +18668,22 @@
    "score": 6
   },
   {
-   "query": "pourquoi mon réseau mobile ne fonctionne pas",
+   "query": "pourquoi mon réseau est faible",
    "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment brancher un switch d link",
+   "stem": "comment brancher un switch",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -15930,8 +18710,8 @@
    "score": 6
   },
   {
-   "query": "comment brancher un switch d link",
-   "stem": "comment brancher un switch",
+   "query": "comment partager une imprimante entre plusieurs ordinateurs",
+   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -15944,8 +18724,8 @@
    "score": 6
   },
   {
-   "query": "comment partager une imprimante entre plusieurs ordinateurs",
-   "stem": "comment partager une imprimante",
+   "query": "comment booster le wifi de mon téléphone",
+   "stem": "comment étendre le wifi",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -15986,8 +18766,8 @@
    "score": 6
   },
   {
-   "query": "comment sauvegarder les données d'un téléphone",
-   "stem": "comment sauvegarder les données",
+   "query": "serveur legrand en panne",
+   "stem": "serveur en panne",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -16000,8 +18780,23 @@
    "score": 6
   },
   {
-   "query": "comment récupérer des données sur un disque dur externe",
-   "stem": "comment récupérer des données",
+   "query": "comment sauvegarder les données de mon iphone",
+   "stem": "comment sauvegarder les données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 6
+  },
+  {
+   "query": "comment sauvegarder les données d'un téléphone",
+   "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -16182,8 +18977,93 @@
    "score": 6
   },
   {
+   "query": "comment partager un calendrier samsung",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 6
+  },
+  {
+   "query": "comment partager un calendrier avec une autre personne",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment partager un calendrier teams",
    "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment aller sur sa boîte mail",
+   "stem": "boîte mail pleine que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment transferer son nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment créer un nom de domaine",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment changer le nom de domaine",
+   "stem": "comment transférer un nom de domaine",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -16294,6 +19174,48 @@
    "score": 6
   },
   {
+   "query": "comment sécuriser l'accès de son ordinateur",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment identifier un mail frauduleux",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment reconnaître un faux mail colissimo",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "application deezer lente",
    "stem": "application lente",
    "domain": "apps",
@@ -16324,20 +19246,6 @@
   {
    "query": "combien rapporte une application mobile",
    "stem": "combien coûte une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment faire remplacer sur excel",
-   "stem": "remplacer excel par",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -16476,6 +19384,20 @@
    "score": 6
   },
   {
+   "query": "comment mettre à jour une application sur une tablette",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment consulter le code source",
    "stem": "comment récupérer le code source",
    "domain": "apps",
@@ -16504,35 +19426,7 @@
    "score": 6
   },
   {
-   "query": "comment avoir une application",
-   "stem": "comment tester une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
    "query": "comment suivre la fabrication de sa carte d identité",
-   "stem": "comment suivre la production",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment suivre la fabrication de mon titre de séjour",
    "stem": "comment suivre la production",
    "domain": "apps",
    "hl": "fr",
@@ -16742,20 +19636,6 @@
    "score": 6
   },
   {
-   "query": "comment créer un espace client internet la banque postale",
-   "stem": "comment créer un portail client",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
    "query": "comment monter un portail",
    "stem": "comment créer un portail client",
    "domain": "apps",
@@ -16790,6 +19670,188 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment creer une plateforme de service",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment créer un jeu de plateforme",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment mettre une application sur l écran d accueil",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment créer une alerte marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment mettre en vente sur marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment payer ma facture en ligne edf",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment faire un tableau de bord commercial",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment créer un tableau de bord",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment créer un logiciel de gestion de stock avec excel",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment remplacer majuscules minuscules excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment créer un espace client enedis",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment organiser un chantier de renovation",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment utiliser un niveau de chantier",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 8,
    "company": false,
@@ -16840,6 +19902,34 @@
    "score": 6
   },
   {
+   "query": "comment créer un agent ia sur whatsapp",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment se deconnecter de chatgpt",
+   "stem": "comment connecter chatgpt à mes données",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "مشكلة الشبكة في هاتف سامسونج b310",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -16868,7 +19958,7 @@
    "score": 6
   },
   {
-   "query": "لو الواي فاي ضعيف اعمل ايه",
+   "query": "لماذا الواي فاي ضعيف",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
@@ -17022,7 +20112,7 @@
    "score": 5.5
   },
   {
-   "query": "pourquoi mon réseau est indisponible",
+   "query": "pourquoi mon réseau ne fonctionne pas",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -17106,7 +20196,7 @@
    "score": 5.5
   },
   {
-   "query": "serveur legrand en panne",
+   "query": "serveur ea en panne",
    "stem": "serveur en panne",
    "domain": "infra",
    "hl": "fr",
@@ -17120,7 +20210,7 @@
    "score": 5.5
   },
   {
-   "query": "comment sauvegarder les données de son téléphone android",
+   "query": "comment sauvegarder les données whatsapp sur google",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
@@ -17302,7 +20392,7 @@
    "score": 5.5
   },
   {
-   "query": "comment partager un calendrier sur whatsapp",
+   "query": "comment partager un calendrier icloud",
    "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
@@ -17322,6 +20412,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment transférer un nom de domaine ovh vers un autre compte ovh",
+   "stem": "comment transférer un nom de domaine",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 9,
    "company": false,
@@ -17434,6 +20538,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment détecter un mail frauduleux",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 9,
    "company": false,
@@ -17666,7 +20784,7 @@
    "score": 5.5
   },
   {
-   "query": "comment voir la production de mes panneaux solaires",
+   "query": "comment suivre la fabrication de mon titre de séjour",
    "stem": "comment suivre la production",
    "domain": "apps",
    "hl": "fr",
@@ -17918,6 +21036,174 @@
    "score": 5.5
   },
   {
+   "query": "comment creer une plateforme web",
+   "stem": "comment créer une plateforme",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer une application mobile",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer une play store",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment ouvrir un compte marketplace",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer une facture en ligne",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment nettoyer un tableau de bord voiture",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment faire un tableau de bord prospectif",
+   "stem": "comment faire un tableau de bord",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment remplacer texte dans excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment créer un espace client generali",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "combien coûte un abonnement",
+   "stem": "comment vendre un abonnement en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment réaliser un planning de chantier",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment consulter mes commandes",
+   "stem": "comment gérer les commandes clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "comment obtenir de l’aide dans whatsapp",
    "stem": "répondre automatiquement whatsapp",
    "domain": "ai",
@@ -17960,6 +21246,34 @@
    "score": 5.5
   },
   {
+   "query": "comment créer un agent ia dans claude",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment s'abonner à chatgpt",
+   "stem": "comment connecter chatgpt à mes données",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "مشكلة الشبكة غير متاحة",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -17974,21 +21288,7 @@
    "score": 5.5
   },
   {
-   "query": "لماذا الواي فاي ضعيف",
-   "stem": "الواي فاي ضعيف",
-   "domain": "network",
-   "hl": "ar",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 5.5
-  },
-  {
-   "query": "ليش الواي فاي ضعيف؟",
+   "query": "نت الواي فاي ضعيف",
    "stem": "الواي فاي ضعيف",
    "domain": "network",
    "hl": "ar",
@@ -18157,6 +21457,20 @@
    "score": 5
   },
   {
+   "query": "comment reconnaître un faux mail orange",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
    "query": "comment vendre en ligne gratuitement",
    "stem": "comment vendre en ligne",
    "domain": "apps",
@@ -18183,6 +21497,35 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 5
+  },
+  {
+   "query": "comment lancer une application au démarrage de windows 11",
+   "stem": "comment lancer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
+   "query": "comment créer un catalogue en ligne gratuit",
+   "stem": "comment créer un catalogue en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
    "score": 5
   },
   {
@@ -18231,6 +21574,20 @@
    "query": "video qui coupe sur facebook",
    "stem": "visioconférence qui coupe",
    "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "serveur en panne fortnite",
+   "stem": "serveur en panne",
+   "domain": "infra",
    "hl": "fr",
    "engines": [
     "google"
@@ -18340,8 +21697,8 @@
    "score": 4.5
   },
   {
-   "query": "comment créer un espace client orange",
-   "stem": "comment créer un portail client",
+   "query": "comment créer une marketplace sur facebook",
+   "stem": "comment créer une marketplace",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -18410,40 +21767,12 @@
    "score": 4
   },
   {
-   "query": "serveur en panne fortnite",
-   "stem": "serveur en panne",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 4
-  },
-  {
    "query": "comment sauvegarder les données de mon téléphone samsung",
    "stem": "comment sauvegarder les données",
    "domain": "infra",
    "hl": "fr",
    "engines": [
     "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 4
-  },
-  {
-   "query": "comment partager un calendrier sur iphone",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
    ],
    "best": 2,
    "company": false,
@@ -18468,20 +21797,6 @@
   {
    "query": "application qui plante iphone",
    "stem": "application qui plante",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 4
-  },
-  {
-   "query": "comment mettre à jour une application sur samsung",
-   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -18620,6 +21935,20 @@
    "score": 3.5
   },
   {
+   "query": "comment mettre à jour une application sur tv samsung",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
    "query": "comment gerer les abonnements sur iphone",
    "stem": "comment gérer les abonnements",
    "domain": "apps",
@@ -18690,6 +22019,20 @@
    "score": 3
   },
   {
+   "query": "serveur ps5 en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
    "query": "imprimante ne fonctionne pas sous windows 11",
    "stem": "imprimante ne fonctionne plus",
    "domain": "infra",
@@ -18721,6 +22064,20 @@
    "query": "comment activer authentification à deux facteurs facebook",
    "stem": "authentification à deux facteurs comment",
    "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3
+  },
+  {
+   "query": "comment mettre à jour une application sur tablette samsung",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
     "google"
@@ -18774,7 +22131,7 @@
    "score": 2.5
   },
   {
-   "query": "serveur ps5 en panne",
+   "query": "serveur orange en panne",
    "stem": "serveur en panne",
    "domain": "infra",
    "hl": "fr",
@@ -18844,6 +22201,20 @@
    "score": 2.5
   },
   {
+   "query": "comment reconnaître un faux mail sfr",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
    "query": "lenteur application mail iphone",
    "stem": "application lente",
    "domain": "apps",
@@ -18886,23 +22257,23 @@
    "score": 2.5
   },
   {
-   "query": "comment amplifier le wifi dans une maison",
-   "stem": "comment étendre le wifi",
-   "domain": "network",
+   "query": "comment créer une page marketplace sur facebook",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
     "google"
    ],
-   "best": 6,
+   "best": 5,
    "company": false,
    "problem": true,
    "consumer": true,
-   "score": 2
+   "score": 2.5
   },
   {
-   "query": "serveur orange en panne",
-   "stem": "serveur en panne",
-   "domain": "infra",
+   "query": "comment amplifier le wifi dans une maison",
+   "stem": "comment étendre le wifi",
+   "domain": "network",
    "hl": "fr",
    "engines": [
     "google"
@@ -18925,20 +22296,6 @@
    "company": false,
    "problem": true,
    "consumer": true,
-   "score": 2
-  },
-  {
-   "query": "comment créer une adresse mail professionnelle avec gmail gratuit",
-   "stem": "comment créer une adresse mail professionnelle",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": true,
-   "problem": true,
-   "consumer": false,
    "score": 2
   },
   {
@@ -18998,6 +22355,20 @@
    "score": 2
   },
   {
+   "query": "comment mettre à jour une application sur samsung",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
    "query": "comment suivre un chantier de construction pdf",
    "stem": "comment suivre un chantier",
    "domain": "apps",
@@ -19026,6 +22397,62 @@
    "score": 2
   },
   {
+   "query": "comment payer ma facture en ligne sfr",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
+   "query": "comment remplacer excel gratuitement",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 2
+  },
+  {
+   "query": "comment créer un espace client sfr",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
+   "query": "comment gérer un chantier de a à z pdf",
+   "stem": "comment gérer un chantier",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 2
+  },
+  {
    "query": "comment brancher un switch sur une freebox",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -19037,6 +22464,34 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 1.5
+  },
+  {
+   "query": "serveur iptv en panne",
+   "stem": "serveur en panne",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1.5
+  },
+  {
+   "query": "comment créer une adresse mail professionnelle avec gmail gratuit",
+   "stem": "comment créer une adresse mail professionnelle",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": true,
+   "problem": true,
+   "consumer": false,
    "score": 1.5
   },
   {
@@ -19110,7 +22565,7 @@
    "score": 1.5
   },
   {
-   "query": "comment mettre à jour une application sur tv samsung",
+   "query": "comment mettre à jour une application sur smart tv",
    "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
@@ -19127,6 +22582,34 @@
    "query": "comment envoyer des sms gratuitement",
    "stem": "comment envoyer des sms aux clients",
    "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 1.5
+  },
+  {
+   "query": "comment faire signer un document en ligne gratuitement",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 1.5
+  },
+  {
+   "query": "comment créer un agent ia gratuitement",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
    "hl": "fr",
    "engines": [
     "bing"
@@ -19180,34 +22663,6 @@
    "score": 1
   },
   {
-   "query": "comment amplifier le wifi orange",
-   "stem": "comment étendre le wifi",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1
-  },
-  {
-   "query": "serveur iptv en panne",
-   "stem": "serveur en panne",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1
-  },
-  {
    "query": "imprimante ne fonctionne pas sur windows 10",
    "stem": "imprimante ne fonctionne plus",
    "domain": "infra",
@@ -19233,6 +22688,20 @@
    "company": false,
    "problem": true,
    "consumer": false,
+   "score": 1
+  },
+  {
+   "query": "comment partager un calendrier entre deux iphone",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
    "score": 1
   },
   {
@@ -19306,20 +22775,6 @@
    "score": 1
   },
   {
-   "query": "comment mettre à jour une application sur tablette samsung",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1
-  },
-  {
    "query": "comment verifier une application sur iphone",
    "stem": "comment tester une application",
    "domain": "apps",
@@ -19345,6 +22800,34 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 1
+  },
+  {
+   "query": "comment créer un logiciel de gestion de stock avec excel pdf",
+   "stem": "comment créer un logiciel de gestion",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 1
+  },
+  {
+   "query": "comment se connecter à chatgpt gratuitement",
+   "stem": "comment connecter chatgpt à mes données",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
    "score": 1
   },
   {
@@ -19390,7 +22873,7 @@
    "score": 0.5
   },
   {
-   "query": "comment booster le wifi dans la maison",
+   "query": "comment amplifier le wifi orange",
    "stem": "comment étendre le wifi",
    "domain": "network",
    "hl": "fr",
@@ -19424,6 +22907,34 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 0.5
+  },
+  {
+   "query": "comment partager un calendrier google sur iphone",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 0.5
+  },
+  {
+   "query": "comment sécuriser mon ordinateur gratuitement",
+   "stem": "comment sécuriser un ordinateur professionnel",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -19485,6 +22996,34 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 0.5
+  },
+  {
+   "query": "comment ouvrir marketplace facebook",
+   "stem": "comment créer une marketplace",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 0.5
+  },
+  {
+   "query": "comment faire signer un pdf en ligne",
+   "stem": "comment faire signer un document en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
    "score": 0.5
   },
   {
