@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "274",
+    slug: "nom-de-domaine-hebergement-site-web-entreprise-algerie-2027-qui-possede-quoi-domaine-expire-ancien-prestataire-reprendre-la-main",
+    title: "Nom de domaine et hébergement de site web en Algérie (2027) : qui possède quoi, et que faire quand le domaine expire ou que l'ancien prestataire a gardé les accès",
+    subtitle: "Quatre comptes derrière le site et les mails, cinq périodes autour de l'échéance, reprendre la main en six gestes, six choses à détenir soi-même, cinq couches et trois semaines",
+    excerpt: "« Notre site est tombé un lundi matin, et les mails avec. Le nom de domaine avait expiré : c'est l'agence qui avait fait le site, il y a six ans, qui l'avait acheté à son nom. Elle ne répond plus, et nous n'avons ni le compte ni les codes. Comment reprendre la main, et ne plus jamais dépendre de quelqu'un ? » Derrière un site et des mails, il y a quatre comptes : le nom, la zone DNS, l'hébergement, la messagerie. Le premier commande les trois autres : il doit être au nom de l'entreprise, renouvelé automatiquement, avec une adresse de contact qui ne dépend pas de lui.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["nom de domaine", "hébergement site web", "bureau d'enregistrement", "DNS", "renouvellement"],
+    metaTitle: "Nom de domaine et hébergement site web Algérie 2027 : qui possède quoi, domaine expiré, reprendre les accès | Symloop",
+    metaDescription: "Nom de domaine et hébergement du site d'une entreprise en Algérie en 2027 : les quatre comptes derrière le site et les mails (nom, zone DNS, hébergement, messagerie), pourquoi tout s'arrête quand le nom expire, ce qui se passe autour de l'échéance (rappels environ un mois et une semaine avant, résolution interrompue, rédemption de trente jours), comment reprendre la main quand l'ancien prestataire a gardé les accès (renouveler d'abord, code de transfert, nom au nom de l'entreprise), .dz ou .com, certificat, sauvegarde du site, changement d'hébergeur sans panne. Reprise en trois semaines.",
+    translations: {
+      en: { title: "Domain name and website hosting in Algeria (2027): who owns what, and what to do when the domain expires or the former provider kept the access", subtitle: "Four accounts behind the site and the mail, five periods around the due date, taking back control in six steps, six things to hold yourself, five layers and three weeks", excerpt: "“Our site went down one Monday morning, and the mail with it. The domain name had expired: the agency that built the site six years ago had bought it in its own name. It no longer answers, and we have neither the account nor the codes. How do we take back control, and never depend on someone again?” Behind a site and its mail there are four accounts: the name, the DNS zone, the hosting, the mail service. The first commands the other three: it must be in the company's name, renewed automatically, with a contact address that does not depend on it." },
+      ar: { title: "اسم النطاق واستضافة الموقع في الجزائر (2027): من يملك ماذا، وما العمل حين ينتهي أجل النطاق أو يحتفظ المتعهّد السابق بالوصول", subtitle: "أربعة حسابات خلف الموقع والبريد، خمس فترات حول الأجل، استعادة التحكم في ست خطوات، ستة أشياء تمسكونها بأنفسكم، خمس طبقات وثلاثة أسابيع", excerpt: "«سقط موقعنا ذات صباح اثنين، ومعه البريد. كان اسم النطاق قد انتهى أجله: الوكالة التي أنجزت الموقع قبل ست سنوات هي التي اشترته باسمها. ولم تعد تجيب، وليس عندنا الحساب ولا الرموز. كيف نستعيد التحكم، ولا نبقى تابعين لأحد؟» خلف الموقع والبريد أربعة حسابات: الاسم، منطقة الأسماء، الاستضافة، وخدمة البريد. والأول يتحكم في الثلاثة الأخرى: يجب أن يكون باسم المؤسسة، مجدَّداً آلياً، بعنوان اتصال لا يتوقف عليه." }
+    }
+  },
+  {
     id: "273",
     slug: "logiciel-pieces-auto-algerie-2027-magasin-pieces-detachees-recherche-par-vehicule-references-equivalentes-emplacements-demandes-non-servies",
     title: "Logiciel pièces auto en Algérie (2027) : magasin de pièces détachées, recherche par véhicule, références équivalentes et stock par emplacement, quand la bonne pièce est en rayon et que personne ne la trouve",
