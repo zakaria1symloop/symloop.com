@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "289",
+    slug: "comment-securiser-un-reseau-informatique-d-entreprise-en-algerie-2027-mots-de-passe-d-origine-wifi-mises-a-jour-ports-ouverts-reseau-invites",
+    title: "Comment sécuriser un réseau informatique d'entreprise en Algérie (2027) : la clé du Wi-Fi n'a jamais changé, les caméras ont encore le mot de passe d'origine, par quoi commencer avant d'acheter un pare-feu",
+    subtitle: "L'ordre des réglages, six équipements et ce qu'on y change, un appareil oublié et jusqu'où il mène, la clé du Wi-Fi que tout le monde connaît, cinq couches, quatre semaines",
+    excerpt: "« Notre réseau marche : une box, un switch, du Wi-Fi, des caméras, une imprimante, un petit serveur. Mais la clé du Wi-Fi n'a jamais changé, d'anciens employés et des visiteurs la connaissent, et je ne sais même pas si les caméras ont encore leur mot de passe d'usine. Comment sécuriser tout ça, par quoi commencer, et faut-il acheter un pare-feu ? » Commencez par des réglages, pas par un achat : la liste de ce qui est branché, les mots de passe d'origine, les mises à jour, les portes ouvertes sur internet.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["sécurité réseau", "mots de passe d'origine", "sécurité Wi-Fi", "ports ouverts", "réseau invités"],
+    metaTitle: "Comment sécuriser un réseau informatique d'entreprise Algérie 2027 : mots de passe d'origine, Wi-Fi, ports ouverts | Symloop",
+    metaDescription: "Comment sécuriser un réseau informatique d'entreprise en Algérie en 2027 : commencer par des réglages, pas par un achat. Dans l'ordre : l'inventaire de tout ce qui est branché, les mots de passe d'origine remplacés sur la box, les bornes, les caméras, l'imprimante et le serveur, les mises à jour, les ports ouverts depuis internet fermés et UPnP désactivé, le Wi-Fi en WPA2 ou WPA3 sans WPS avec un réseau invités séparé, des zones pour qu'une caméra ne voie pas le serveur, un journal et une revue chaque trimestre. Pourquoi : Mirai essaie plus de 60 identifiants d'usine sur les caméras et les routeurs. Exemple : une clé Wi-Fi jamais changée, connue de 46 personnes pour 13 qui travaillent là. Quatre semaines. Aucun prix de matériel.",
+    translations: {
+      en: { title: "How to secure a company's computer network in Algeria (2027): the Wi-Fi key has never changed, the cameras still have the factory password, where to start before buying a firewall", subtitle: "The order of settings, six devices and what to change on each, a forgotten device and how far it leads, the Wi-Fi key everyone knows, five layers, four weeks", excerpt: "“Our network works: a box, a switch, Wi-Fi, cameras, a printer, a small server. But the Wi-Fi key has never changed, former employees and visitors know it, and I do not even know whether the cameras still have their factory password. How do we secure all that, where do we start, and do we need to buy a firewall?” Start with settings, not with a purchase: the list of what is plugged in, factory passwords, updates, the doors open to the internet." },
+      ar: { title: "كيف تُؤمَّن شبكة المؤسسة المعلوماتية في الجزائر (2027): مفتاح الواي فاي لم يتغيّر أبداً، والكاميرات ما زالت بكلمة المرور الأصلية، من أين نبدأ قبل شراء جدار ناري", subtitle: "ترتيب الإعدادات، ستة أجهزة وما يُغيَّر فيها، جهاز منسي وإلى أين يقود، مفتاح الواي فاي الذي يعرفه الجميع، خمس طبقات، وأربعة أسابيع", excerpt: "«شبكتنا تعمل: علبة، موزِّع، واي فاي، كاميرات، طابعة، وخادم صغير. لكن مفتاح الواي فاي لم يتغيّر أبداً، وعمّال سابقون وزوّار يعرفونه، ولا أعرف حتى هل ما زالت الكاميرات بكلمة مرور المصنع. كيف نؤمّن كل هذا، من أين نبدأ، وهل يلزم شراء جدار ناري؟» ابدؤوا بالإعدادات، لا بالشراء: قائمة ما هو موصول، كلمات المرور الأصلية، التحديثات، والأبواب المفتوحة على الإنترنت." }
+    }
+  },
+  {
     id: "288",
     slug: "comment-creer-un-espace-client-en-algerie-2027-suivi-de-dossier-documents-factures-demandes-connexion-par-code-chacun-ne-voit-que-le-sien",
     title: "Comment créer un espace client en Algérie (2027) : vos clients appellent dix fois par jour pour savoir où en est leur dossier, ce qu'on y met, qui voit quoi, et comment faire qu'ils s'en servent",
