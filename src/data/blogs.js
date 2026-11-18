@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "277",
+    slug: "logiciel-boulangerie-patisserie-algerie-2027-production-du-jour-invendus-ruptures-commandes-de-gateaux-acompte-cout-de-revient-recette",
+    title: "Logiciel boulangerie pâtisserie en Algérie (2027) : production du jour, invendus, ruptures et gâteaux sur commande, quand on jette le soir ce qui manquait à seize heures",
+    subtitle: "Une journée et deux produits, cinq couches, un gâteau sur commande en six temps, la fiche d'une recette et le coût d'un croissant, six situations et cinq semaines",
+    excerpt: "« J'ai une boulangerie-pâtisserie avec un laboratoire et deux boutiques. Chaque soir on jette ou on donne des viennoiseries, et le même jour on a refusé des clients à seize heures parce qu'il n'y avait plus de millefeuilles. Les commandes de gâteaux sont dans un cahier, et je ne sais pas ce que me coûte un croissant. Quel logiciel me faut-il ? » Une caisse enregistre ce qui s'est vendu. Ici, il faut aussi noter ce qui n'a pas été vendu et ce qui a manqué, tenir les commandes avec leur acompte et leur date, et savoir ce que coûte chaque recette.",
+    category: "Software", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["logiciel boulangerie", "pâtisserie", "plan de production", "invendus", "coût de revient"],
+    metaTitle: "Logiciel boulangerie pâtisserie Algérie 2027 : production du jour, invendus, commandes de gâteaux, coût de revient | Symloop",
+    metaDescription: "Logiciel pour boulangerie-pâtisserie en Algérie en 2027 : relevé des invendus et de l'heure de rupture chaque soir, plan de fournées du lendemain, commandes de gâteaux avec date, parts, inscription, modèle et acompte, fiche technique et coût par pièce, répartition entre laboratoire et boutiques, vente au comptoir à la pièce, au poids et au plateau. Exemple : 120 croissants produits, 24 invendus ; 40 millefeuilles, plus rien avant 17 h ; une fournée de 60 croissants à 2 400 DA de matière, soit 40 DA la pièce ; marge de 25 à 17,50 DA si le beurre prend 25 %. Mise en place en cinq semaines.",
+    translations: {
+      en: { title: "Bakery and pastry shop software in Algeria (2027): the day's production, unsold goods, shortages and cakes to order, for when you throw away in the evening what was missing at four o'clock", subtitle: "One day and two products, five layers, a cake to order in six steps, a recipe sheet and the cost of a croissant, six situations and five weeks", excerpt: "“I run a bakery and pastry shop with a kitchen and two shops. Every evening we throw away or give away pastries, and on the same day we turned customers away at four o'clock because there were no millefeuilles left. Cake orders are in a notebook, and I do not know what a croissant costs me. Which software do I need?” A till records what was sold. Here you also have to note what was not sold and what ran out, keep orders with their deposit and their date, and know what each recipe costs." },
+      ar: { title: "برنامج المخبزة والحلويات في الجزائر (2027): إنتاج اليوم، غير المباع، النفاد والحلويات بالطلبية، حين نرمي مساءً ما كان ينقص على الرابعة", subtitle: "يوم واحد ومنتَجان، خمس طبقات، حلوى بالطلبية في ست مراحل، بطاقة الوصفة وتكلفة الكرواسان، ست حالات وخمسة أسابيع", excerpt: "«عندي مخبزة وحلويات بمخبر ومحلّين. كل مساء نرمي أو نعطي معجّنات، وفي اليوم نفسه رفضنا زبائن على الرابعة لأن الميلفاي نفد. طلبيات الحلوى في دفتر، ولا أعرف كم يكلّفني الكرواسان. أي برنامج يلزمني؟» الصندوق يسجّل ما بيع. وهنا يجب كذلك تسجيل ما لم يُبَع وما نقص، ومسك الطلبيات بتسبيقها وتاريخها، ومعرفة كم تكلّف كل وصفة." }
+    }
+  },
+  {
     id: "276",
     slug: "cybersecurite-entreprise-algerie-2027-audit-de-securite-informatique-ou-test-d-intrusion-ce-qu-il-regarde-rapport-priorites-corrections",
     title: "Cybersécurité d'entreprise en Algérie (2027) : audit de sécurité informatique ou test d'intrusion, ce qu'il regarde, dans quel ordre, et ce que vous devez recevoir à la fin",
