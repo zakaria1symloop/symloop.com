@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "284",
+    slug: "comment-bloquer-des-sites-internet-au-bureau-entreprise-algerie-2027-filtrage-web-dns-pare-feu-reseau-invites-debit-l-apres-midi-charte",
+    title: "Comment bloquer des sites internet au bureau en Algérie (2027) : internet rame tous les après-midi, filtrage web, sites dangereux bloqués pour tous, Wi-Fi invités séparé, vidéo limitée plutôt qu'interdite",
+    subtitle: "Où part le débit à 15 heures, qui a droit à quoi, l'ordre de mise en place, cinq couches d'un filtrage qui tient, cinq façons de bloquer et comment on les contourne, quatre semaines",
+    excerpt: "« Tous les après-midi, internet rame : le logiciel de gestion tourne dans le vide et la visioconférence coupe. Je sais que la moitié du bureau regarde des vidéos, et la semaine dernière un poste a attrapé un virus sur un site de téléchargement. Comment bloquer ces sites, sans transformer le bureau en caserne ? » Ne commencez pas par une liste de sites interdits. Mesurez une semaine où part le débit ; puis protégez, séparez, limitez, et écrivez la règle sur une page.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["filtrage web", "bloquer des sites", "internet lent", "Wi-Fi invités", "pare-feu"],
+    metaTitle: "Comment bloquer des sites internet au bureau Algérie 2027 : filtrage web, internet lent, Wi-Fi invités | Symloop",
+    metaDescription: "Bloquer des sites internet au bureau en Algérie en 2027 : mesurer une semaine où part le débit par catégorie et par heure, écrire la règle sur une page, bloquer pour tous les sites dangereux (hameçonnage, logiciels malveillants), séparer le Wi-Fi des invités et des téléphones personnels du réseau interne, limiter le débit de la vidéo plutôt que l'interdire, reporter les téléchargements à la nuit. Blocage au DNS et au pare-feu, pas poste par poste ; contournements : autre DNS, DNS chiffré du navigateur, VPN, téléphone en 4G. Exemple : sur une ligne de 20 Mbit/s à 15 h, le travail passe de 4 à 8 Mbit/s. Mise en place en quatre semaines. Ne traite pas du droit sur la surveillance des salariés.",
+    translations: {
+      en: { title: "How to block websites at the office in Algeria (2027): the internet crawls every afternoon, web filtering, dangerous sites blocked for all, guest Wi-Fi kept apart, video limited rather than forbidden", subtitle: "Where the bandwidth goes at 3 pm, who is allowed what, the order to put it in place, five layers of filtering that holds, five ways to block and how they are bypassed, four weeks", excerpt: "“Every afternoon the internet crawls: the management software spins and the video call drops. I know half the office is watching videos, and last week a computer caught a virus on a download site. How do I block those sites, without turning the office into a barracks?” Do not start with a list of forbidden sites. Measure for a week where the bandwidth goes; then protect, separate, limit, and write the rule on one page." },
+      ar: { title: "كيف تُحجب مواقع الإنترنت في المكتب في الجزائر (2027): الإنترنت يتثاقل كل مساء، ترشيح الويب، مواقع خطيرة محجوبة للجميع، واي فاي ضيوف مفصول، وفيديو محدود لا ممنوع", subtitle: "أين يذهب التدفق على الساعة 15، من له حق في ماذا، ترتيب الوضع في الخدمة، خمس طبقات لترشيح يصمد، خمس طرق للحجب وكيف يُتحايَل عليها، وأربعة أسابيع", excerpt: "«كل مساء، الإنترنت يتثاقل: برنامج التسيير يدور في الفراغ والاجتماع بالفيديو ينقطع. أعرف أن نصف المكتب يشاهد فيديوهات، وفي الأسبوع الماضي أُصيب حاسوب بفيروس من موقع تحميل. كيف أحجب هذه المواقع، دون أن أحوّل المكتب إلى ثكنة؟» لا تبدؤوا بقائمة مواقع ممنوعة. قيسوا أسبوعاً أين يذهب التدفق؛ ثم احموا، افصلوا، حدّدوا، واكتبوا القاعدة في صفحة." }
+    }
+  },
+  {
     id: "283",
     slug: "comment-creer-un-site-e-commerce-en-algerie-2027-paiement-a-la-livraison-livraison-par-wilaya-confirmation-retours-plateforme-ou-sur-mesure",
     title: "Comment créer un site e-commerce en Algérie (2027) : les commandes se perdent dans les messages et un colis sur quatre revient, catalogue, confirmation, paiement à la livraison ou par carte, tarif par wilaya, retours",
