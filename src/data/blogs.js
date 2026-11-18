@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "280",
+    slug: "site-internet-ne-fonctionne-plus-que-faire-entreprise-algerie-2027-site-inaccessible-message-d-erreur-nom-de-domaine-certificat-hebergement",
+    title: "Mon site internet ne fonctionne plus, que faire en Algérie (2027) : vérifier d'ailleurs, cinq maillons dans l'ordre, lire le message d'erreur, savoir qui appeler, et l'apprendre avant vos clients",
+    subtitle: "D'abord depuis un autre réseau puis cinq maillons, où la visite s'arrête, six messages d'erreur et ce qu'ils désignent, une panne qui dure le temps de l'apprendre, cinq couches, la première heure",
+    excerpt: "« Depuis ce matin, notre site ne s'affiche plus. Chez moi, le navigateur écrit que le site est inaccessible ; un client me dit qu'il voit un avertissement de sécurité. Je ne sais pas si c'est le nom de domaine, l'hébergement ou le site lui-même, ni qui appeler : l'agence qui l'a fait ne répond plus. Par où commencer ? » Par le message d'erreur : il dit déjà à quel maillon la visite s'arrête. Puis une vérification depuis votre téléphone, et cinq maillons à regarder dans l'ordre.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["site en panne", "message d'erreur", "nom de domaine", "certificat SSL", "surveillance de site"],
+    metaTitle: "Mon site internet ne fonctionne plus que faire Algérie 2027 : site inaccessible, message d'erreur, qui appeler | Symloop",
+    metaDescription: "Site internet d'entreprise qui ne fonctionne plus en Algérie en 2027 : noter le message d'erreur, vérifier depuis un autre réseau (téléphone en 4G), puis cinq maillons dans l'ordre (nom de domaine, DNS, hébergement, certificat, application). Ce que veulent dire « Ce site est inaccessible », « Votre connexion n'est pas privée », les erreurs 500, 502, 503, 504 et 404, et qui appeler : bureau d'enregistrement, hébergeur ou développeur. Exemple : un certificat expire un vendredi à 23 h, 35 heures d'arrêt sans surveillance, 45 minutes avec un test chaque minute. Cinq couches pour tenir un site debout et la première heure, minute par minute.",
+    translations: {
+      en: { title: "My website has stopped working, what to do in Algeria (2027): check from elsewhere, five links in order, read the error message, know who to call, and find out before your customers", subtitle: "First from another network then five links, where the visit stops, six error messages and what they point to, an outage that lasts as long as it takes to find out, five layers, the first hour", excerpt: "“Since this morning our site no longer displays. On my computer the browser says the site can’t be reached; a customer tells me he sees a security warning. I do not know whether it is the domain name, the hosting or the site itself, nor who to call: the agency that built it no longer answers. Where do I start?” With the error message: it already says at which link the visit stops. Then one check from your phone, and five links to look at in order." },
+      ar: { title: "موقعي لم يعد يعمل، ما العمل في الجزائر (2027): التحقق من مكان آخر، خمس حلقات بالترتيب، قراءة رسالة الخطأ، معرفة من نتصل به، والعلم بالعطل قبل زبائنكم", subtitle: "أولاً من شبكة أخرى ثم خمس حلقات، أين تتوقف الزيارة، ست رسائل خطأ وما تدلّ عليه، عطل يدوم مدة العلم به، خمس طبقات، والساعة الأولى", excerpt: "«منذ هذا الصباح، موقعنا لم يعد يُعرض. عندي، المتصفح يكتب أن الموقع لا يمكن الوصول إليه؛ وزبون يقول لي إنه يرى تحذيراً أمنياً. لا أعرف هل المشكلة في اسم النطاق، في الاستضافة أم في الموقع نفسه، ولا بمن أتصل: الوكالة التي أنجزته لم تعد تجيب. من أين أبدأ؟» من رسالة الخطأ: فهي تقول عند أي حلقة تتوقف الزيارة. ثم تحقق واحد من هاتفكم، وخمس حلقات تُراجَع بالترتيب." }
+    }
+  },
+  {
     id: "279",
     slug: "borne-de-commande-restaurant-algerie-2027-menu-qr-code-commande-a-emporter-file-d-attente-paiement-especes-ecran-cuisine-numero-d-appel",
     title: "Borne de commande pour restaurant en Algérie (2027) : la file sort jusqu'au trottoir à midi, combien de bornes, menu QR code, paiement en espèces, écran de cuisine et numéro d'appel",
