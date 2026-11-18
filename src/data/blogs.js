@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "285",
+    slug: "comment-creer-un-intranet-d-entreprise-en-algerie-2027-notes-de-service-documents-annuaire-demandes-internes-recherche-accuse-de-lecture",
+    title: "Comment créer un intranet d'entreprise en Algérie (2027) : les notes de service se perdent dans les groupes de messagerie, cinq blocs, documents en vigueur, annuaire, demandes internes suivies, accusé de lecture",
+    subtitle: "La page d'accueil en cinq blocs, l'ordre pour le créer, cinq couches d'un intranet qui sert, six situations avant et après, qui a lu la note, six semaines jusqu'à la première note lue",
+    excerpt: "« Les notes de service partent dans un groupe WhatsApp et sont enfouies le lendemain. La dernière version de la procédure, personne ne sait dans quel dossier elle est. Un nouvel employé met trois semaines à savoir à qui demander quoi, et une demande de matériel est un papier qui se promène. On me dit qu'il faut un intranet. C'est quoi, concrètement ? » Cinq blocs, un responsable par bloc, rempli avant d'ouvrir, et une mesure : qui a lu.",
+    category: "Web", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["intranet", "notes de service", "demandes internes", "annuaire d'entreprise", "communication interne"],
+    metaTitle: "Comment créer un intranet d'entreprise Algérie 2027 : notes de service, documents, demandes internes | Symloop",
+    metaDescription: "Créer un intranet d'entreprise en Algérie en 2027 : lister les dix questions qui reviennent chaque semaine, choisir cinq blocs (notes de service avec accusé de lecture, documents en version en vigueur, annuaire avec remplaçants, demandes internes avec leur état, accès aux applications par une seule connexion), nommer un responsable par bloc, remplir avant d'ouvrir, ouvrir avec une vraie note, élaguer chaque mois. Différence avec un groupe de messagerie et avec un extranet. Exemple : une note pour 45 destinataires, 60 % de lecture au deuxième jour, 91 % après une relance aux seuls non-lecteurs. Suite bureautique existante ou sur mesure. Six semaines jusqu'à la première note lue.",
+    translations: {
+      en: { title: "How to create a company intranet in Algeria (2027): memos get lost in messaging groups, five blocks, current documents, a directory, internal requests you can follow, read receipts", subtitle: "The home page in five blocks, the order to create it in, five layers of an intranet that is used, six situations before and after, who has read the memo, six weeks to the first memo that is read", excerpt: "“Memos go out in a WhatsApp group and are buried the next day. The latest version of the procedure, nobody knows which folder it is in. A new employee takes three weeks to learn who to ask for what, and an equipment request is a piece of paper wandering about. I am told we need an intranet. What is it, in practice?” Five blocks, one owner per block, filled before it opens, and one measurement: who has read it." },
+      ar: { title: "كيف يُنشأ إنترانت للمؤسسة في الجزائر (2027): المذكرات تضيع في مجموعات المراسلة، خمس خانات، وثائق سارية، دليل، طلبات داخلية متابَعة، وإشعار بالقراءة", subtitle: "الصفحة الرئيسية في خمس خانات، ترتيب الإنشاء، خمس طبقات لإنترانت ينفع، ست حالات قبل وبعد، من قرأ المذكرة، وستة أسابيع إلى أول مذكرة مقروءة", excerpt: "«المذكرات تُرسَل في مجموعة واتساب وتُدفن في الغد. آخر نسخة من الإجراء، لا أحد يعرف في أي مجلد هي. العامل الجديد يحتاج ثلاثة أسابيع ليعرف من يسأل عن ماذا، وطلب العتاد ورقة تتجوّل. يقولون لي إنه يلزم إنترانت. ما هو، عملياً؟» خمس خانات، مسؤول لكل خانة، يُملأ قبل الفتح، وقياس واحد: من قرأ." }
+    }
+  },
+  {
     id: "284",
     slug: "comment-bloquer-des-sites-internet-au-bureau-entreprise-algerie-2027-filtrage-web-dns-pare-feu-reseau-invites-debit-l-apres-midi-charte",
     title: "Comment bloquer des sites internet au bureau en Algérie (2027) : internet rame tous les après-midi, filtrage web, sites dangereux bloqués pour tous, Wi-Fi invités séparé, vidéo limitée plutôt qu'interdite",
