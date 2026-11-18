@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "276",
+    slug: "cybersecurite-entreprise-algerie-2027-audit-de-securite-informatique-ou-test-d-intrusion-ce-qu-il-regarde-rapport-priorites-corrections",
+    title: "Cybersécurité d'entreprise en Algérie (2027) : audit de sécurité informatique ou test d'intrusion, ce qu'il regarde, dans quel ordre, et ce que vous devez recevoir à la fin",
+    subtitle: "Audit ou test d'intrusion en six différences, ce qu'un inconnu voit de vous depuis internet, un audit en six temps, quatorze constats dont cinq à corriger cette semaine, cinq couches et quatre semaines",
+    excerpt: "« Un client étranger nous demande si nous avons fait un audit de sécurité. Trois sociétés nous ont répondu : l'une propose un test d'intrusion, l'autre un audit, la troisième un scan, à des prix qui vont du simple au décuple, et aucune ne dit ce que nous recevrons. Qu'est-ce qu'un audit regarde vraiment, dans quel ordre, et que doit-on avoir en main à la fin ? » Un audit utile tient en une page : des constats classés par gravité, l'effort de chaque correction, et les cinq premières à faire cette semaine.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["cybersécurité", "audit de sécurité informatique", "test d'intrusion", "sécurité informatique", "plan de correction"],
+    metaTitle: "Cybersécurité entreprise Algérie 2027 : audit de sécurité informatique ou test d'intrusion, rapport et priorités | Symloop",
+    metaDescription: "Audit de sécurité informatique pour une entreprise en Algérie en 2027 : la différence entre un scan de vulnérabilités, un test d'intrusion et un audit, ce qu'un inconnu voit de vous depuis internet, les cinq couches examinées (exposition, identités, postes et serveurs, données, organisation), l'échelle de gravité de 0 à 10 (élevé à partir de 7, critique à partir de 9), ce que le rapport doit contenir, et l'ordre des corrections. Exemple : quatorze constats pour quarante postes, dont cinq graves et rapides corrigés en une semaine ; audit en quatre semaines, recontrôle à trois mois.",
+    translations: {
+      en: { title: "Company cybersecurity in Algeria (2027): IT security audit or penetration test, what it looks at, in what order, and what you should receive at the end", subtitle: "Audit or penetration test in six differences, what a stranger sees of you from the internet, an audit in six steps, fourteen findings of which five to fix this week, five layers and four weeks", excerpt: "“A foreign customer is asking whether we have had a security audit. Three firms answered us: one offers a penetration test, another an audit, the third a scan, at prices ranging from one to ten, and none says what we will receive. What does an audit really look at, in what order, and what should we have in hand at the end?” A useful audit fits on one page: findings ranked by severity, the effort of each fix, and the first five to do this week." },
+      ar: { title: "الأمن السيبراني للمؤسسة في الجزائر (2027): تدقيق أمن الإعلام الآلي أم اختبار اختراق، ماذا يفحص، بأي ترتيب، وماذا يجب أن تستلموا في النهاية", subtitle: "تدقيق أم اختبار اختراق في ستة فروق، ما يراه مجهول منكم من الإنترنت، تدقيق في ست مراحل، أربع عشرة ملاحظة منها خمس تُصحَّح هذا الأسبوع، خمس طبقات وأربعة أسابيع", excerpt: "«زبون أجنبي يسألنا هل أجرينا تدقيقاً أمنياً. أجابتنا ثلاث شركات: واحدة تقترح اختبار اختراق، والأخرى تدقيقاً، والثالثة مسحاً، بأسعار تتراوح من واحد إلى عشرة، ولا واحدة تقول ماذا سنستلم. ماذا يفحص التدقيق فعلاً، بأي ترتيب، وماذا يجب أن يكون بأيدينا في النهاية؟» التدقيق المفيد يسع في صفحة: ملاحظات مرتَّبة حسب الخطورة، جهد كل تصحيح، والخمس الأولى التي تُنجَز هذا الأسبوع." }
+    }
+  },
+  {
     id: "275",
     slug: "logiciel-lavage-auto-algerie-2027-application-station-de-lavage-file-d-attente-ticket-par-voiture-laveurs-abonnements-lavage-a-domicile",
     title: "Logiciel lavage auto en Algérie (2027) : application pour station de lavage, file d'attente, un ticket par voiture, laveurs, abonnements et lavage à domicile, quand le samedi déborde et que la caisse ne tombe pas juste",
