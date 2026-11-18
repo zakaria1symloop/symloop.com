@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "281",
+    slug: "comment-publier-une-application-algerie-2027-google-play-app-store-compte-au-nom-de-l-entreprise-tests-revue-refus-huit-semaines",
+    title: "Comment publier une application sur Google Play et l'App Store en Algérie (2027) : l'application est prête, le lancement est annoncé, et il reste le compte, les tests, la revue et un refus possible",
+    subtitle: "Celui qui possède le compte possède l'application, ce que demande chaque store, ce qui doit être prêt avant d'envoyer, le chemin d'une version, la revue et un refus, huit semaines à rebours",
+    excerpt: "« Notre application est terminée et nous avons annoncé le lancement pour le 1er mars. Le développeur nous dit maintenant qu'il faut encore la publier : un compte chez Google, un autre chez Apple, des tests, une validation qui peut refuser. Il propose de la mettre sur son propre compte pour aller plus vite. Combien de temps cela prend-il vraiment, et est-ce une bonne idée ? » Comptez huit semaines avant la date annoncée, pas huit jours. Et le compte se crée au nom de l'entreprise : celui qui possède le compte possède l'application.",
+    category: "Mobile", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["publier une application", "Google Play", "App Store", "compte développeur", "revue des applications"],
+    metaTitle: "Comment publier une application Algérie 2027 : Google Play, App Store, compte, tests, revue, délais | Symloop",
+    metaDescription: "Publier une application sur Google Play et l'App Store en Algérie en 2027 : un compte au nom de l'entreprise et non du développeur (fiche, utilisateurs, notes et mises à jour appartiennent au titulaire du compte), 25 dollars une fois chez Google et 99 dollars par an chez Apple, numéro D-U-N-S pour une organisation, test fermé de 12 testeurs pendant 14 jours pour un compte personnel récent, revue (la moitié des envois en moins de 24 h et 90 % en moins de 48 h selon Apple), cible Android 16 depuis le 31 août 2026, suppression de compte, diffusion par étapes. Les cinq chapitres des règles de revue, ce qui se passe après un refus, et un calendrier de huit semaines compté à rebours depuis la date annoncée.",
+    translations: {
+      en: { title: "How to publish an app on Google Play and the App Store in Algeria (2027): the app is ready, the launch is announced, and there is still the account, the tests, the review and a possible refusal", subtitle: "Whoever owns the account owns the app, what each store asks for, what must be ready before sending, the path of a version, the review and a refusal, eight weeks counted back", excerpt: "“Our app is finished and we have announced the launch for 1 March. The developer now tells us it still has to be published: an account with Google, another with Apple, tests, an approval that can say no. He suggests putting it on his own account to go faster. How long does it really take, and is that a good idea?” Count eight weeks before the announced date, not eight days. And the account is created in the company’s name: whoever owns the account owns the app." },
+      ar: { title: "كيف يُنشر تطبيق على غوغل بلاي وآب ستور في الجزائر (2027): التطبيق جاهز، الإطلاق معلَن، وبقي الحساب، الاختبارات، المراجعة ورفض محتمل", subtitle: "من يملك الحساب يملك التطبيق، ما يطلبه كل متجر، ما يجب أن يكون جاهزاً قبل الإرسال، مسار إصدار، المراجعة والرفض، وثمانية أسابيع محسوبة رجوعاً", excerpt: "«تطبيقنا انتهى وأعلنّا الإطلاق ليوم الفاتح مارس. والمطوِّر يقول لنا الآن إنه يجب نشره: حساب عند غوغل، وآخر عند آبل، اختبارات، ومصادقة قد ترفض. ويقترح وضعه على حسابه الخاص لربح الوقت. كم يأخذ ذلك فعلاً، وهل هي فكرة جيدة؟» احسبوا ثمانية أسابيع قبل التاريخ المعلَن، لا ثمانية أيام. والحساب يُنشأ باسم المؤسسة: من يملك الحساب يملك التطبيق." }
+    }
+  },
+  {
     id: "280",
     slug: "site-internet-ne-fonctionne-plus-que-faire-entreprise-algerie-2027-site-inaccessible-message-d-erreur-nom-de-domaine-certificat-hebergement",
     title: "Mon site internet ne fonctionne plus, que faire en Algérie (2027) : vérifier d'ailleurs, cinq maillons dans l'ordre, lire le message d'erreur, savoir qui appeler, et l'apprendre avant vos clients",
