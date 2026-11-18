@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "279",
+    slug: "borne-de-commande-restaurant-algerie-2027-menu-qr-code-commande-a-emporter-file-d-attente-paiement-especes-ecran-cuisine-numero-d-appel",
+    title: "Borne de commande pour restaurant en Algérie (2027) : la file sort jusqu'au trottoir à midi, combien de bornes, menu QR code, paiement en espèces, écran de cuisine et numéro d'appel",
+    subtitle: "Où se forme la file, cinq façons de commander et ce qu'il faut derrière, cinq couches derrière l'écran, une commande sur quatre écrans, l'ordre de mise en place, huit semaines",
+    excerpt: "« À midi, la file sort jusqu'au trottoir et la moitié des gens repartent. La caissière prend les commandes aussi vite qu'elle peut, la cuisine attend, puis reçoit tout d'un coup. Un fournisseur me propose des bornes de commande. Est-ce que ça règle le problème ? Combien en faut-il ? Et chez nous, les gens paient en espèces. » La borne enlève la file à la caisse et la déplace en cuisine. Avant d'en commander, on mesure deux chiffres. Puis on équipe la cuisine d'abord, et on garde une caisse ouverte.",
+    category: "Mobile", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["borne de commande", "menu QR code", "restaurant", "écran de cuisine", "commande à emporter"],
+    metaTitle: "Borne de commande restaurant Algérie 2027 : file d'attente, menu QR code, paiement espèces, écran cuisine | Symloop",
+    metaDescription: "Borne de commande et menu QR code pour restaurant en Algérie en 2027 : où se forme la file (commandes par heure = 3 600 ÷ secondes par commande × points de commande), combien de bornes selon la capacité de la cuisine, cinq façons de commander (borne, menu QR à table, à emporter depuis le téléphone, caisse, livraison), paiement en espèces au point de paiement ou par carte, écran de cuisine par poste, écran d'appel des numéros, produit épuisé retiré de tous les écrans, fonctionnement sans internet. Exemple : une caisse à 75 secondes prend 48 commandes par heure, la cuisine en sort 90. Mise en place en huit semaines.",
+    translations: {
+      en: { title: "Ordering kiosk for a restaurant in Algeria (2027): the queue reaches the pavement at lunchtime, how many kiosks, QR code menu, paying in cash, kitchen screen and call number", subtitle: "Where the queue forms, five ways to order and what each needs behind it, five layers behind the screen, one order across four screens, the order of roll-out, eight weeks", excerpt: "“At lunchtime the queue reaches the pavement and half the people leave. The cashier takes orders as fast as she can, the kitchen waits, then gets everything at once. A supplier is offering me ordering kiosks. Does that solve the problem? How many do I need? And here people pay in cash.” The kiosk removes the queue at the till and moves it to the kitchen. Before ordering any, you measure two figures. Then you equip the kitchen first, and keep a till open." },
+      ar: { title: "كشك الطلب للمطاعم في الجزائر (2027): الطابور يصل إلى الرصيف في منتصف النهار، كم كشكاً يلزم، قائمة QR، الدفع نقداً، شاشة المطبخ ورقم النداء", subtitle: "أين يتشكّل الطابور، خمس طرق للطلب وما يلزم وراءها، خمس طبقات وراء الشاشة، طلبية على أربع شاشات، ترتيب الوضع في الخدمة، وثمانية أسابيع", excerpt: "«في منتصف النهار، يصل الطابور إلى الرصيف ونصف الناس يغادرون. عاملة الصندوق تأخذ الطلبات بأسرع ما تستطيع، والمطبخ ينتظر، ثم يصله كل شيء دفعة واحدة. مورّد يعرض عليّ أكشاك طلب. هل يحلّ ذلك المشكلة؟ كم يلزم منها؟ وعندنا الناس يدفعون نقداً.» الكشك يزيل الطابور عند الصندوق وينقله إلى المطبخ. وقبل طلب أي كشك، نقيس رقمين. ثم نجهّز المطبخ أولاً، ونُبقي صندوقاً مفتوحاً." }
+    }
+  },
+  {
     id: "278",
     slug: "site-web-pirate-que-faire-entreprise-algerie-2027-premiere-heure-site-redirige-avertissement-google-nettoyer-ou-reconstruire-sauvegarde-saine",
     title: "Site web piraté, que faire en Algérie (2027) : la première heure, puis cinq jours pour reconstruire, quand le site redirige vers un autre ou que Google affiche un avertissement",
