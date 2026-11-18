@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "288",
+    slug: "comment-creer-un-espace-client-en-algerie-2027-suivi-de-dossier-documents-factures-demandes-connexion-par-code-chacun-ne-voit-que-le-sien",
+    title: "Comment créer un espace client en Algérie (2027) : vos clients appellent dix fois par jour pour savoir où en est leur dossier, ce qu'on y met, qui voit quoi, et comment faire qu'ils s'en servent",
+    subtitle: "Cent appels triés par motif, quatre blocs et un socle, le dossier tel que le client le voit, qui voit quoi, l'ordre pour qu'ils s'en servent, six semaines",
+    excerpt: "« Nos clients appellent sans arrêt pour savoir où en est leur dossier, redemandent une facture déjà envoyée, et envoient leurs pièces par WhatsApp à trois personnes différentes. Je veux un espace client où chacun voit son dossier, ses documents et ses factures. Que mettre dedans, par où commencer, et est-ce qu'ils s'en serviront ? » Ils s'en servent quand l'espace répond à la question qu'ils posent au téléphone. Commencez par l'état du dossier, pas par une liste de fonctions.",
+    category: "Web", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["espace client", "portail client", "suivi de dossier", "dépôt de documents", "connexion par code"],
+    metaTitle: "Comment créer un espace client Algérie 2027 : suivi de dossier, documents, factures, connexion par code | Symloop",
+    metaDescription: "Comment créer un espace client en Algérie en 2027 : un espace client est adopté quand il répond à la question posée au téléphone. Comptez vos appels une semaine, par motif ; dans l'exemple, 76 sur 100 demandent où en est le dossier, une facture à renvoyer ou si une pièce est arrivée. Quatre blocs, un à la fois : l'état du dossier avec ce qui bloque et qui doit agir, les documents dans les deux sens avec la liste des pièces, les factures et règlements, un fil de demandes. Un socle : connexion par code sans mot de passe, chaque client ne voit que le sien (l'essai qui le prouve), un message à chaque changement. Pas d'application à installer. Trois chiffres chaque lundi : activation, appels d'état, dossiers complets au premier dépôt. Six semaines.",
+    translations: {
+      en: { title: "How to build a customer area in Algeria (2027): your customers call ten times a day to ask where their file is, what goes in it, who sees what, and how to get them to use it", subtitle: "One hundred calls sorted by reason, four blocks and a base, the file as the customer sees it, who sees what, the order for getting it used, six weeks", excerpt: "“Our customers call all the time to ask where their file is, ask again for an invoice we already sent, and send their documents on WhatsApp to three different people. I want a customer area where each one sees their file, their documents and their invoices. What should go in it, where do we start, and will they use it?” They use it when the area answers the question they ask on the phone. Start with the status of the file, not with a list of features." },
+      ar: { title: "كيف يُنشأ فضاء للزبون في الجزائر (2027): زبائنكم يتصلون عشر مرات في اليوم ليسألوا أين وصل ملفهم، ما يوضع فيه، من يرى ماذا، وكيف يستعملونه", subtitle: "مئة مكالمة مرتَّبة حسب السبب، أربعة أجزاء وقاعدة، الملف كما يراه الزبون، من يرى ماذا، ترتيب الاعتماد، وستة أسابيع", excerpt: "«زبائننا يتصلون دون توقف ليسألوا أين وصل ملفهم، ويطلبون من جديد فاتورة أُرسلت من قبل، ويرسلون وثائقهم عبر WhatsApp إلى ثلاثة أشخاص مختلفين. أريد فضاء للزبون يرى فيه كل واحد ملفه ووثائقه وفواتيره. ماذا نضع فيه، من أين نبدأ، وهل سيستعملونه؟» يستعملونه حين يجيب الفضاء عن السؤال الذي يطرحونه في الهاتف. ابدؤوا بحالة الملف، لا بقائمة وظائف." }
+    }
+  },
+  {
     id: "287",
     slug: "comment-utiliser-chatgpt-en-entreprise-algerie-2027-ia-au-travail-donnees-confidentielles-compte-personnel-ou-professionnel-trois-bacs",
     title: "Comment utiliser ChatGPT en entreprise en Algérie (2027) : vos employés y collent déjà des contrats et des fichiers clients, ce qu'on peut y mettre, ce qu'on n'y met jamais, compte personnel ou compte de l'entreprise",
