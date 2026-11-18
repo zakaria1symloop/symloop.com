@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "290",
+    slug: "comment-creer-un-catalogue-en-ligne-en-algerie-2027-catalogue-pdf-jamais-a-jour-fiches-produits-prix-par-client-demande-de-devis-sans-boutique",
+    title: "Comment créer un catalogue en ligne en Algérie (2027) : votre PDF de 80 pages envoyé par WhatsApp est faux dès qu'un prix change, des fiches à jour, un prix par client, une demande de devis, sans ouvrir une boutique",
+    subtitle: "Cinq couches, le PDF et ses six versions en circulation, une fiche produit champ par champ, de la recherche à la demande de devis, six semaines, six gestes pour le tenir à jour",
+    excerpt: "« Notre catalogue est un PDF de 80 pages qu'on envoie par WhatsApp. Dès qu'un prix change ou qu'un produit est en rupture, il est faux ; les clients appellent pour demander si on a telle référence, et chaque commercial envoie sa propre version. Comment créer un catalogue en ligne, toujours à jour, sans pour autant ouvrir une boutique ? » Un catalogue en ligne n'est pas un PDF posé sur un site : c'est une base de produits, corrigée à un seul endroit, d'où sortent la page, le PDF et la demande de devis.",
+    category: "Web", author: "Symloop Team", date: "2026-11-18", readTime: "13 min", featured: true,
+    tags: ["catalogue en ligne", "catalogue de produits", "fiche produit", "prix par client", "demande de devis"],
+    metaTitle: "Comment créer un catalogue en ligne Algérie 2027 : fiches produits, prix par client, demande de devis, sans boutique | Symloop",
+    metaDescription: "Comment créer un catalogue en ligne en Algérie en 2027, pour un grossiste, un importateur, un fabricant ou un distributeur : une seule base de produits corrigée à un seul endroit, d'où sortent la page web, le PDF généré à la demande et le lien du commercial. Une fiche complète par référence : code stable, titre dans les mots du client en français et en arabe, photos au même cadrage, attributs qui servent de filtres, unité de vente, règle de prix (public, par groupe de clients, sur demande), disponibilité. Le client cherche, filtre, compose une liste et envoie une demande de devis : ni panier ni paiement. Exemple : un PDF, six versions en six mois, 9 clients sur 40 à jour. Commencer par les références qui font les ventes. Six semaines.",
+    translations: {
+      en: { title: "How to build an online catalogue in Algeria (2027): your 80-page PDF sent on WhatsApp is wrong as soon as a price changes, sheets kept up to date, a price per customer, a quote request, without opening a shop", subtitle: "Five layers, the PDF and its six versions in circulation, a product sheet field by field, from the search to the quote request, six weeks, six actions to keep it up to date", excerpt: "“Our catalogue is an 80-page PDF that we send on WhatsApp. As soon as a price changes or a product runs out, it is wrong; customers call to ask whether we have such-and-such a reference, and each sales rep sends their own version. How do we build an online catalogue, always up to date, without opening a shop?” An online catalogue is not a PDF placed on a site: it is a product base, corrected in one place, from which the page, the PDF and the quote request come out." },
+      ar: { title: "كيف يُنشأ فهرس على الخط في الجزائر (2027): ملفكم من 80 صفحة المرسَل عبر واتساب يصير خاطئاً حالما يتغيّر سعر، بطاقات محدَّثة، سعر لكل زبون، وطلب عرض سعر، دون فتح متجر", subtitle: "خمس طبقات، الملف ونسخه الست المتداولة، بطاقة المنتوج حقلاً بعد حقل، من البحث إلى طلب عرض السعر، ستة أسابيع، وستة أفعال لإبقائه محدَّثاً", excerpt: "«فهرسنا ملف PDF من 80 صفحة نرسله عبر WhatsApp. حالما يتغيّر سعر أو ينفد منتوج، يصير خاطئاً؛ الزبائن يتصلون ليسألوا هل عندنا المرجع الفلاني، وكل مندوب يرسل نسخته. كيف ننشئ فهرساً على الخط، محدَّثاً دائماً، دون فتح متجر؟» الفهرس على الخط ليس ملفاً موضوعاً على موقع: هو قاعدة منتوجات، تُصحَّح في مكان واحد، ومنها تخرج الصفحة والملف وطلب عرض السعر." }
+    }
+  },
+  {
     id: "289",
     slug: "comment-securiser-un-reseau-informatique-d-entreprise-en-algerie-2027-mots-de-passe-d-origine-wifi-mises-a-jour-ports-ouverts-reseau-invites",
     title: "Comment sécuriser un réseau informatique d'entreprise en Algérie (2027) : la clé du Wi-Fi n'a jamais changé, les caméras ont encore le mot de passe d'origine, par quoi commencer avant d'acheter un pare-feu",
