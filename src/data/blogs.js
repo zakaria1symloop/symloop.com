@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "302",
+    slug: "comment-analyser-les-ventes-d-une-entreprise-algerie-2027-quels-produits-font-la-marge-quels-clients-partent-comparer-le-bon-mois-ramadan",
+    title: "Comment analyser les ventes d'une entreprise en Algérie (2027) : on a des chiffres mais pas de réponses, quels produits font la marge, quels clients sont partis, si le mois est bon, comparer à calendrier égal, ce qu'il faut dans les données",
+    subtitle: "Six questions et leur lecture, les mêmes produits classés deux fois, analyser en six temps, cinq couches, comparer la bonne semaine, six semaines",
+    excerpt: "« Notre logiciel sort un chiffre d'affaires par mois, et c'est tout. Je ne sais pas dire quels produits me font gagner de l'argent, quels clients sont partis, ni si ce mois est meilleur que le même mois l'an dernier, puisque Ramadan n'est jamais à la même date. Comment analyser les ventes de mon entreprise ? » Analyser, ce n'est pas additionner : c'est poser six questions et lire, pour chacune, le bon classement ou la bonne comparaison. Presque toujours, il manque trois choses dans les données : le coût, le client, et le calendrier.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["analyse des ventes", "marge par produit", "principe de Pareto", "saisonnalité et Ramadan", "clients perdus"],
+    metaTitle: "Comment analyser les ventes d'une entreprise Algérie 2027 : marge par produit, clients partis, comparer avec Ramadan | Symloop",
+    metaDescription: "Comment analyser les ventes d'une entreprise en Algérie en 2027 : six questions (qu'est-ce qui me fait vivre, de qui je dépends, le mois est-il bon, qui est parti, qu'ai-je raté, où part la marge) et la lecture qui répond à chacune. Classer les produits par marge et non par chiffre d'affaires, comparer à période égale parce que Ramadan commence environ onze jours plus tôt chaque année, compter les clients qui ne reviennent pas, noter les demandes non servies. Ce qu'il faut dans les données : le coût d'achat et le client sur chaque ligne de vente, une seule fiche par produit. Six semaines dans l'exemple pour passer d'un total mensuel à six lectures.",
+    translations: {
+      en: { title: "How to analyse a company's sales in Algeria (2027): figures but no answers, which products make the margin, which customers have left, whether the month is good, comparing like for like, what the data must hold", subtitle: "Six questions and their reading, the same products ranked twice, analysing in six steps, five layers, comparing the right week, six weeks", excerpt: "“Our software gives a revenue figure per month, and that is all. I cannot say which products earn me money, which customers have left, or whether this month is better than the same month last year, since Ramadan is never on the same date. How do I analyse my company's sales?” Analysing is not adding up: it is asking six questions and reading, for each, the right ranking or the right comparison. Almost always, three things are missing from the data: the cost, the customer, and the calendar." },
+      ar: { title: "كيف تُحلَّل مبيعات المؤسسة في الجزائر (2027): أرقام بلا أجوبة، أي المنتجات تصنع الهامش، أي الزبائن غادروا، هل الشهر جيد، المقارنة برزنامة متساوية، وما يجب أن يكون في البيانات", subtitle: "ستة أسئلة وقراءتها، المنتجات نفسها بترتيبين، التحليل في ست مراحل، خمس طبقات، مقارنة الأسبوع الصحيح، وستة أسابيع", excerpt: "«برنامجنا يُخرج رقم أعمال لكل شهر، وهذا كل شيء. لا أستطيع القول أي المنتجات تربحني المال، أي الزبائن غادروا، ولا هل هذا الشهر أحسن من الشهر نفسه في السنة الماضية، ما دام رمضان لا يأتي أبداً في التاريخ نفسه. كيف أحلّل مبيعات مؤسستي؟» التحليل ليس جمعاً: هو طرح ستة أسئلة وقراءة، لكل واحد، الترتيب الصحيح أو المقارنة الصحيحة. وفي أغلب الأحيان، تنقص البيانات ثلاثة أشياء: الكلفة، الزبون، والرزنامة." }
+    }
+  },
+  {
     id: "301",
     slug: "comparateur-de-prix-algerie-2027-creer-un-comparateur-d-ou-viennent-les-prix-meme-produit-entre-boutiques-prix-a-jour-modele-de-revenu",
     title: "Comparateur de prix en Algérie (2027) : créer un comparateur quand les boutiques n'ont pas de flux, d'où viennent les prix, comment reconnaître le même produit d'une boutique à l'autre, des prix à jour, comment il gagne sa vie",
