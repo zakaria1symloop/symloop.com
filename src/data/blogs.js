@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "306",
+    slug: "comment-savoir-si-mon-entreprise-est-rentable-algerie-2027-le-chiffre-d-affaires-monte-il-ne-reste-rien-prix-de-revient-marge-par-client-seuil",
+    title: "Comment savoir si mon entreprise est rentable en Algérie (2027) : le chiffre d'affaires monte et il ne reste rien, marge brute, prix de revient, marge par client, seuil de rentabilité, et ce qu'on construit pour le voir chaque mois",
+    subtitle: "La cascade d'un mois, cinq couches à enregistrer, six temps, six raisons, six mois face au seuil, six semaines",
+    excerpt: "« Notre chiffre d'affaires a augmenté de vingt pour cent cette année, et pourtant il ne reste rien à la fin du mois. Le logiciel affiche trente pour cent de marge. Je ne sais pas quels clients nous rapportent, lesquels nous coûtent, ni combien il faut vendre chaque mois pour couvrir nos charges. Comment savoir si mon entreprise est rentable ? » Entre la marge brute qu'affiche le logiciel et le résultat qui reste, il y a quatre marches que personne n'additionne : les remises, la livraison, les retours, les charges fixes. Les relier aux ventes, c'est tout le travail.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["rentabilité de l'entreprise", "marge brute et résultat", "prix de revient", "marge par client", "seuil de rentabilité"],
+    metaTitle: "Comment savoir si mon entreprise est rentable Algérie 2027 : marge brute, prix de revient, marge par client, seuil | Symloop",
+    metaDescription: "Comment savoir si mon entreprise est rentable en Algérie en 2027 : descendre du chiffre d'affaires au résultat, mois par mois. Coût des marchandises, puis remises, livraison et retours, puis charges fixes. Exemple construit : 30 % de marge brute, 20 % après coûts directs, 2 % de résultat. Comment calculer le prix de revient, la marge brute, la marge par client après coûts directs, et le seuil de rentabilité (charges fixes divisées par le taux de marge après coûts directs). Six raisons pour lesquelles le chiffre monte sans que le résultat suive. Résultat de gestion, lu chaque mois par le gérant : ni comptabilité légale, ni fiscalité.",
+    translations: {
+      en: { title: "How to know whether my company is profitable in Algeria (2027): revenue rises and nothing is left, gross margin, cost price, margin per customer, break-even point, and what we build to see it every month", subtitle: "One month's cascade, five layers to record, six steps, six reasons, six months against the break-even point, six weeks", excerpt: "“Our revenue has grown by twenty percent this year, and yet nothing is left at the end of the month. The software shows thirty percent margin. I do not know which customers earn us money, which ones cost us, or how much we must sell each month to cover our costs. How do I know whether my company is profitable?” Between the gross margin the software displays and the result that remains, there are four steps nobody adds up: discounts, delivery, returns, fixed costs. Linking them to sales is the whole job." },
+      ar: { title: "كيف أعرف هل مؤسستي مربحة في الجزائر (2027): رقم الأعمال يرتفع ولا يبقى شيء، الهامش الإجمالي، سعر التكلفة، الهامش لكل زبون، عتبة المردودية، وما نبنيه لرؤية ذلك كل شهر", subtitle: "شلال شهر واحد، خمس طبقات تُسجَّل، ست مراحل، ستة أسباب، ستة أشهر أمام العتبة، وستة أسابيع", excerpt: "«رقم أعمالنا ارتفع بعشرين بالمئة هذه السنة، ومع ذلك لا يبقى شيء في آخر الشهر. البرنامج يعرض ثلاثين بالمئة من الهامش. لا أعرف أي الزبائن يربحنا، أيهم يكلّفنا، ولا كم يجب أن نبيع كل شهر لتغطية أعبائنا. كيف أعرف هل مؤسستي مربحة؟» بين الهامش الإجمالي الذي يعرضه البرنامج والنتيجة التي تبقى، أربع درجات لا يجمعها أحد: التخفيضات، التوصيل، المرتجعات، والأعباء الثابتة. وربطها بالمبيعات هو كل العمل." }
+    }
+  },
+  {
     id: "305",
     slug: "comment-creer-un-logiciel-de-gestion-en-algerie-2027-excel-ne-suffit-plus-access-sans-code-logiciel-du-marche-ou-developpe-par-ou-commencer",
     title: "Comment créer un logiciel de gestion en Algérie (2027) : toute la gestion tient dans des fichiers Excel, cinq versions du même tableau, une seule personne sait s'en servir, Access, sans code, logiciel du marché ou développé, et par où commencer",
