@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-de-gestion-de-production-gpao-algerie-2027-suivi-d-atelier-au-poste-arrets-machine-par-cause-trs-en-cours-ordres-de-fabrication', fr: 'Logiciel de gestion de production en Algérie', en: 'Production management software in Algeria', ar: 'برنامج تسيير الإنتاج في الجزائر' },
   { slug: 'logiciel-imprimerie-algerie-2027-devis-d-impression-prix-par-quantite-bon-a-tirer-dossier-de-fabrication-planning-des-machines-stock-papier', fr: 'Logiciel imprimerie en Algérie', en: 'Print shop software in Algeria', ar: 'برنامج المطبعة في الجزائر' },
   { slug: 'logiciel-agroalimentaire-algerie-2027-tracabilite-des-lots-de-la-matiere-a-la-palette-rappel-rendement-controles-qualite-dlc-erp-production', fr: 'Logiciel agroalimentaire en Algérie', en: 'Food manufacturing software in Algeria', ar: 'برنامج الصناعة الغذائية في الجزائر' },
   { slug: 'logiciel-boutique-pret-a-porter-magasin-de-vetements-algerie-2027-stock-par-taille-et-couleur-echanges-mise-de-cote-instagram-fin-de-saison', fr: 'Logiciel boutique de prêt-à-porter et magasin de vêtements en Algérie', en: 'Clothing shop software in Algeria', ar: 'برنامج محل الملابس الجاهزة في الجزائر' },
