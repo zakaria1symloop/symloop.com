@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "295",
+    slug: "logiciel-erp-algerie-2027-une-seule-base-achats-stock-production-ventes-quand-il-en-faut-un-par-quels-modules-commencer-deploiement-par-vagues",
+    title: "Logiciel ERP en Algérie (2027) : quatre outils qui ne se parlent pas et des chiffres qui ne concordent jamais, ce qu'un ERP relie, quand il en faut un, par quels modules commencer, pourquoi les projets s'enlisent",
+    subtitle: "Six signes, le même article dans quatre outils, cinq couches, choisir en six temps, 1 240 fiches à nettoyer, quatre vagues en huit mois",
+    excerpt: "« On a un logiciel pour la facturation, un tableur pour le stock, un autre pour les achats, et la comptabilité reçoit tout en fin de mois. Tout le monde ressaisit, et les chiffres ne concordent jamais. On nous dit qu'il faut un ERP. Qu'est-ce que c'est exactement, en a-t-on besoin, lequel choisir, et pourquoi tant de projets s'enlisent ? » Un ERP n'est pas un logiciel de plus : c'est une seule base où chaque donnée n'est saisie qu'une fois. Il se déploie par vagues, après avoir nettoyé les fiches.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["logiciel ERP", "ERP Algérie", "progiciel de gestion intégré", "choisir un ERP", "déploiement par vagues"],
+    metaTitle: "Logiciel ERP Algérie 2027 : une seule base, quand il en faut un, quels modules d'abord, déploiement par vagues | Symloop",
+    metaDescription: "Logiciel ERP en Algérie en 2027 : un ERP est une seule base que les ventes, les achats, le stock, la production et la finance partagent, où chaque donnée n'est saisie qu'une fois. Six signes pour savoir s'il en faut un (le critère est le nombre de ressaisies, pas la taille), le même article vu par quatre outils puis par une seule base, cinq couches, choisir en six temps en jouant ses propres scénarios et en comptant les écarts, nettoyer les fiches avant de migrer (1 240 fiches, 910 après nettoyage dans l'exemple), puis quatre vagues en huit mois en commençant par les ventes et le stock. Progiciel du marché, progiciel adapté ou sur mesure : le compte des écarts tranche. Sans prix ni règles fiscales.",
+    translations: {
+      en: { title: "ERP software in Algeria (2027): four tools that do not talk to each other and figures that never agree, what an ERP connects, when you need one, which modules to start with, why projects get bogged down", subtitle: "Six signs, the same article in four tools, five layers, choosing in six steps, 1,240 records to clean, four waves in eight months", excerpt: "“We have one program for invoicing, a spreadsheet for stock, another for purchasing, and accounting receives everything at month end. Everyone retypes, and the figures never agree. We are told we need an ERP. What exactly is it, do we need one, which one should we choose, and why do so many projects get bogged down?” An ERP is not one more program: it is a single base where each piece of data is entered only once. It is rolled out in waves, after the records have been cleaned." },
+      ar: { title: "برنامج ERP في الجزائر (2027): أربع أدوات لا تتكلم مع بعضها وأرقام لا تتطابق أبداً، ما يربطه النظام المتكامل، متى يلزم، بأي وحدات نبدأ، ولماذا تتعثر المشاريع", subtitle: "ست علامات، المادة نفسها في أربع أدوات، خمس طبقات، الاختيار في ست مراحل، 1240 بطاقة تُنظَّف، وأربع موجات في ثمانية أشهر", excerpt: "«عندنا برنامج للفوترة، جدول للمخزون، آخر للمشتريات، والمحاسبة تستلم الكل في آخر الشهر. الجميع يعيد الإدخال، والأرقام لا تتطابق أبداً. يقولون لنا إنه يلزم نظام متكامل. ما هو بالضبط، هل نحتاجه، أيّه نختار، ولماذا تتعثر مشاريع كثيرة؟» النظام المتكامل ليس برنامجاً إضافياً: هو قاعدة واحدة يُدخَل فيها كل معطى مرة واحدة. ويوضع في الخدمة على موجات، بعد تنظيف البطاقات." }
+    }
+  },
+  {
     id: "294",
     slug: "comment-changer-d-hebergeur-de-site-internet-en-algerie-2027-sans-coupure-site-mails-dns-bascule-retour-arriere-transfert-du-nom-de-domaine",
     title: "Comment changer d'hébergeur de site internet en Algérie (2027) : site lent, hébergeur qui ne répond plus, peur de perdre les mails et le référencement, la bascule sans coupure et le transfert du nom de domaine",
