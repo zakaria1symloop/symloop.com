@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "294",
+    slug: "comment-changer-d-hebergeur-de-site-internet-en-algerie-2027-sans-coupure-site-mails-dns-bascule-retour-arriere-transfert-du-nom-de-domaine",
+    title: "Comment changer d'hébergeur de site internet en Algérie (2027) : site lent, hébergeur qui ne répond plus, peur de perdre les mails et le référencement, la bascule sans coupure et le transfert du nom de domaine",
+    subtitle: "Six temps, sept choses à déménager, cinq couches à essayer avant, la bascule heure par heure, changer d'hébergeur ou transférer le nom, trois semaines",
+    excerpt: "« Notre site est lent, l'hébergeur ne répond plus aux demandes, et le prestataire qui s'en occupait est parti. On veut changer d'hébergeur, mais on a peur de perdre le site, les mails et le référencement. Comment changer d'hébergeur sans coupure, et faut-il transférer le nom de domaine en même temps ? » Changer d'hébergeur et transférer le nom sont deux opérations. On déménage d'abord, en gardant l'ancien serveur allumé ; le nom se transfère plus tard, s'il le faut.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["changer d'hébergeur", "migration de site", "transfert de nom de domaine", "DNS", "migration des mails"],
+    metaTitle: "Comment changer d'hébergeur de site internet Algérie 2027 : sans coupure, mails, DNS, transfert du nom de domaine | Symloop",
+    metaDescription: "Comment changer d'hébergeur de site internet en Algérie en 2027 sans coupure : inventorier sept choses à déménager (fichiers, base de données, boîtes mail, zone DNS, certificat, tâches planifiées, envois de mails du site), abaisser la durée de cache des DNS deux jours avant, copier et essayer le site sur le nouveau serveur sous une adresse provisoire, geler puis faire une dernière copie, changer l'adresse dans les DNS, garder l'ancien serveur allumé sept jours pour pouvoir revenir en arrière. Les mêmes adresses de pages protègent le référencement. Le transfert du nom de domaine est une autre opération, facultative, d'environ cinq jours : jamais la même semaine. Trois semaines dans l'exemple.",
+    translations: {
+      en: { title: "How to change your website's host in Algeria (2027): a slow site, a host that no longer answers, the fear of losing mail and search ranking, the switch with no cut and the domain name transfer", subtitle: "Six steps, seven things to move, five layers to test beforehand, the switch hour by hour, changing host or transferring the name, three weeks", excerpt: "“Our site is slow, the host no longer answers requests, and the contractor who looked after it has left. We want to change host, but we are afraid of losing the site, the mail and our search ranking. How do we change host with no cut, and must the domain name be transferred at the same time?” Changing host and transferring the name are two operations. Move first, keeping the old server on; the name is transferred later, if needed." },
+      ar: { title: "كيف يُغيَّر مستضيف الموقع في الجزائر (2027): موقع بطيء، مستضيف لم يعد يجيب، خوف من ضياع البريد والترتيب في البحث، التبديل دون انقطاع ونقل اسم النطاق", subtitle: "ست مراحل، سبعة أشياء تُنقل، خمس طبقات تُجرَّب قبل، التبديل ساعة بعد ساعة، تغيير المستضيف أم نقل الاسم، وثلاثة أسابيع", excerpt: "«موقعنا بطيء، المستضيف لم يعد يجيب عن الطلبات، ومقدّم الخدمة الذي كان يتكفل به غادر. نريد تغيير المستضيف، لكننا نخاف ضياع الموقع والبريد والترتيب في البحث. كيف نغيّر المستضيف دون انقطاع، وهل يجب نقل اسم النطاق في الوقت نفسه؟» تغيير المستضيف ونقل الاسم عمليتان. يُنقل الموقع أولاً، مع إبقاء الخادم القديم مشغَّلاً؛ والاسم يُنقل لاحقاً، إن لزم." }
+    }
+  },
+  {
     id: "293",
     slug: "comment-faire-un-formulaire-en-ligne-en-algerie-2027-inscriptions-demandes-de-devis-reponses-dans-un-tableur-doublons-spam-accuse-de-reception",
     title: "Comment faire un formulaire en ligne en Algérie (2027) : les réponses arrivent dans un tableur que personne ne suit, doublons, messages indésirables, clients qui rappellent pour savoir si c'est bien reçu",
