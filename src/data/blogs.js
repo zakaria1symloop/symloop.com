@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "307",
+    slug: "logiciel-boutique-pret-a-porter-magasin-de-vetements-algerie-2027-stock-par-taille-et-couleur-echanges-mise-de-cote-instagram-fin-de-saison",
+    title: "Logiciel boutique de prêt-à-porter et magasin de vêtements en Algérie (2027) : le modèle est en stock mais pas dans la bonne taille, la pièce vendue deux fois entre la boutique et Instagram, les échanges notés sur papier, et ce qu'on met en place",
+    subtitle: "La vie d'une pièce, cinq couches, la grille d'un modèle, six situations du comptoir, la saison décidée à mi-parcours, six semaines",
+    excerpt: "« J'ai deux boutiques de prêt-à-porter et une page Instagram. Le logiciel dit qu'il reste cinquante-huit robes, mais jamais dans la taille qu'on me demande. Une pièce vendue sur Instagram l'est aussi en boutique une heure après, les échanges se notent sur un bout de papier, et en fin de saison je brade ce qui reste sans savoir pourquoi c'est resté. Existe-t-il un logiciel pour magasin de vêtements ? » Une boutique ne vend pas des articles : elle vend une taille et une couleur. Tout logiciel qui compte par modèle se trompe dès la première cliente.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["logiciel boutique prêt-à-porter", "stock par taille et couleur", "échanges et mises de côté", "vente sur Instagram", "fin de saison"],
+    metaTitle: "Logiciel boutique prêt-à-porter et magasin de vêtements Algérie 2027 : stock par taille et couleur, échanges, Instagram | Symloop",
+    metaDescription: "Logiciel pour boutique de prêt-à-porter et magasin de vêtements en Algérie en 2027 : une fiche et une grille de tailles et de couleurs par modèle, un code-barres par case, le stock par boutique, une caisse qui fait échanges, avoirs et mises de côté, un seul stock pour la boutique et la vente sur Instagram ou WhatsApp, et une lecture de saison. Exemple construit : un modèle avec 58 pièces en stock et six cases vides dans les tailles les plus demandées ; une collection de 400 pièces dont il reste 120 pièces sans décision et 40 avec une démarque décidée à mi-saison. Six semaines dans l'exemple pour équiper une boutique.",
+    translations: {
+      en: { title: "Clothing shop and ready-to-wear boutique software in Algeria (2027): the model is in stock but not in the right size, the piece sold twice between the shop and Instagram, exchanges noted on paper, and what we put in place", subtitle: "The life of one piece, five layers, one model's grid, six situations at the counter, the season decided halfway, six weeks", excerpt: "“I have two ready-to-wear shops and an Instagram page. The software says fifty-eight dresses are left, but never in the size I am asked for. A piece sold on Instagram is sold again in the shop an hour later, exchanges are noted on a scrap of paper, and at the end of the season I sell off what is left without knowing why it stayed. Is there software for a clothing shop?” A boutique does not sell items: it sells a size and a colour. Any software that counts per model is wrong from the first customer." },
+      ar: { title: "برنامج محل الملابس الجاهزة في الجزائر (2027): الموديل في المخزون لكن ليس بالمقاس المطلوب، القطعة تُباع مرتين بين المحل وإنستغرام، التبديل يُكتب على ورقة، وما نضعه", subtitle: "حياة قطعة، خمس طبقات، شبكة موديل، ست حالات عند الصندوق، موسم يُقرَّر في منتصفه، وستة أسابيع", excerpt: "«عندي محلان للملابس الجاهزة وصفحة على إنستغرام. البرنامج يقول إنه بقي ثمانية وخمسون فستاناً، لكن ليس أبداً بالمقاس الذي يُطلب مني. قطعة بيعت على إنستغرام تُباع كذلك في المحل بعد ساعة، التبديل يُكتب على قصاصة ورق، وفي نهاية الموسم أبيع ما بقي بأي سعر دون أن أعرف لماذا بقي. هل يوجد برنامج لمحل الملابس؟» محل الملابس لا يبيع سلعاً: يبيع مقاساً ولوناً. وكل برنامج يعدّ حسب الموديل يخطئ من أول زبونة." }
+    }
+  },
+  {
     id: "306",
     slug: "comment-savoir-si-mon-entreprise-est-rentable-algerie-2027-le-chiffre-d-affaires-monte-il-ne-reste-rien-prix-de-revient-marge-par-client-seuil",
     title: "Comment savoir si mon entreprise est rentable en Algérie (2027) : le chiffre d'affaires monte et il ne reste rien, marge brute, prix de revient, marge par client, seuil de rentabilité, et ce qu'on construit pour le voir chaque mois",
