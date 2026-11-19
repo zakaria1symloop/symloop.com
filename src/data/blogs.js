@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "303",
+    slug: "comment-partager-une-imprimante-en-reseau-en-entreprise-algerie-2027-imprimante-hors-ligne-adresse-fixe-pilotes-file-d-attente-numerisation",
+    title: "Comment partager une imprimante en réseau en entreprise en Algérie (2027) : l'imprimante est « hors ligne » un jour sur deux, les documents restent dans la file, chacun réinstalle le pilote, on numérise sur clé USB, et ce qu'on met en place",
+    subtitle: "Cinq couches, branchée sur un poste ou sur le réseau, l'adresse qui change, six temps, six pannes et leur première cause, dix jours ouvrés",
+    excerpt: "« Notre imprimante est branchée sur le poste de la secrétaire et partagée aux autres. Un jour sur deux elle est “hors ligne”, les documents restent bloqués dans la file d'attente, chacun réinstalle le pilote à sa façon, et pour numériser on passe par une clé USB. Comment partager une imprimante en réseau, une bonne fois ? » Une imprimante de bureau tient sur cinq couches : le branchement, l'adresse, le pilote, la file, l'entretien. Presque toutes les pannes viennent des deux premières.",
+    category: "Réseau & IT", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["imprimante réseau", "imprimante hors ligne", "adresse réservée", "pilote et file d'attente", "numérisation vers un dossier"],
+    metaTitle: "Comment partager une imprimante en réseau en entreprise Algérie 2027 : hors ligne, adresse fixe, pilote, file d'attente | Symloop",
+    metaDescription: "Comment partager une imprimante en réseau en entreprise en Algérie en 2027 : la brancher sur le réseau et non sur un poste, lui réserver une adresse dans le routeur, installer le même pilote sur chaque poste depuis un seul endroit, envoyer les numérisations vers un dossier partagé, nommer une personne responsable. Les trois causes courantes d'une imprimante « hors ligne » : adresse changée après une coupure de courant, poste qui la partage éteint, travail en erreur qui bloque la file. Partager une imprimante entre deux PC, serveur d'impression ou non, câble ou Wi-Fi, six pannes et leur première cause. Dix jours ouvrés dans l'exemple pour un bureau d'une quinzaine de postes.",
+    translations: {
+      en: { title: "How to share a printer on a network in a company in Algeria (2027): the printer is “offline” every other day, documents stay in the queue, everyone reinstalls the driver, scanning goes through a USB key, and what we put in place", subtitle: "Five layers, plugged into one computer or into the network, the address that changes, six steps, six faults and their first cause, ten working days", excerpt: "“Our printer is plugged into the secretary's computer and shared with the others. Every other day it is ‘offline’, documents stay stuck in the queue, everyone reinstalls the driver their own way, and to scan we go through a USB key. How do we share a printer on the network, once and for all?” An office printer stands on five layers: the connection, the address, the driver, the queue, upkeep. Nearly all faults come from the first two." },
+      ar: { title: "كيف تُتقاسَم طابعة على الشبكة في المؤسسة بالجزائر (2027): الطابعة «غير متصلة» يوماً من يومين، الوثائق تبقى في الطابور، كل واحد يعيد تثبيت برنامج التعريف، والمسح الضوئي يمرّ بمفتاح تخزين، وما نضعه", subtitle: "خمس طبقات، موصولة بحاسوب أو بالشبكة، العنوان الذي يتغير، ست مراحل، ستة أعطال وسببها الأول، وعشرة أيام عمل", excerpt: "«طابعتنا موصولة بحاسوب السكرتيرة ومتقاسَمة مع الآخرين. يوماً من يومين تظهر “غير متصلة”، الوثائق تبقى عالقة في طابور الطباعة، كل واحد يعيد تثبيت برنامج التعريف على طريقته، وللمسح الضوئي نمرّ بمفتاح تخزين. كيف نتقاسم طابعة على الشبكة، مرة واحدة وللأبد؟» طابعة المكتب تقوم على خمس طبقات: الوصل، العنوان، برنامج التعريف، الطابور، والصيانة. وأغلب الأعطال تأتي من الأوليين." }
+    }
+  },
+  {
     id: "302",
     slug: "comment-analyser-les-ventes-d-une-entreprise-algerie-2027-quels-produits-font-la-marge-quels-clients-partent-comparer-le-bon-mois-ramadan",
     title: "Comment analyser les ventes d'une entreprise en Algérie (2027) : on a des chiffres mais pas de réponses, quels produits font la marge, quels clients sont partis, si le mois est bon, comparer à calendrier égal, ce qu'il faut dans les données",
