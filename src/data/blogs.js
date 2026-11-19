@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "309",
+    slug: "comment-fixer-des-objectifs-de-vente-algerie-2027-objectif-par-vendeur-suivi-au-jour-le-jour-rythme-necessaire-visites-devis-equipe-commerciale",
+    title: "Comment fixer des objectifs de vente en Algérie (2027) : l'objectif est divisé par douze, le même pour tous, et connu en fin de mois ; objectif par vendeur, rythme du jour, visites et devis, et ce qu'on construit",
+    subtitle: "Six temps, six erreurs, cinq couches, le mois vu le jour 14, l'objectif traduit en visites, cinq semaines",
+    excerpt: "« Chaque année, je prends le chiffre de l'an dernier, j'ajoute dix pour cent et je divise par douze. Tous mes commerciaux ont le même objectif. On découvre le résultat le 30, quand il n'y a plus rien à faire, et la moitié de l'équipe a décroché depuis le 15. Comment fixer des objectifs de vente qui servent à quelque chose ? » Un objectif utile se calcule, s'explique, et surtout se suit : chaque vendeur doit savoir, chaque jour, où il en est par rapport au rythme, et quelle activité l'y ramène.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["objectifs de vente", "objectif par vendeur", "rythme et atterrissage", "indicateurs d'activité", "équipe commerciale"],
+    metaTitle: "Comment fixer des objectifs de vente Algérie 2027 : objectif par vendeur, rythme du jour, visites et devis | Symloop",
+    metaDescription: "Comment fixer des objectifs de vente en Algérie en 2027 : partir des ventes passées mois par mois, répartir par mois selon la saison et par vendeur selon son portefeuille, traduire le chiffre en visites et en devis par jour, puis suivre chaque jour le réalisé, le rythme et l'atterrissage du mois. Six erreurs courantes, dont l'année divisée par douze et l'objectif en chiffre d'affaires seul. Exemple construit : cinq vendeurs le jour 14 d'un mois de 22 jours, l'équipe à 52,5 % pour un rythme à 64 %, et 12 000 de chiffre traduits en 4,5 visites par vendeur et par jour. Mesure uniquement : ni rémunération, ni primes.",
+    translations: {
+      en: { title: "How to set sales targets in Algeria (2027): the target is divided by twelve, the same for everyone, and known at month end; a target per seller, the day's pace, visits and quotes, and what we build", subtitle: "Six steps, six mistakes, five layers, the month seen on day 14, the target translated into visits, five weeks", excerpt: "“Every year, I take last year's figure, add ten percent and divide by twelve. All my salespeople have the same target. We discover the result on the 30th, when nothing can be done any more, and half the team gave up on the 15th. How do you set sales targets that are of any use?” A useful target is calculated, explained, and above all followed: each seller must know, every day, where they stand against the pace, and which activity brings them back to it." },
+      ar: { title: "كيف تُحدَّد أهداف البيع في الجزائر (2027): الهدف يُقسم على اثني عشر، هو نفسه للجميع، ويُعرف آخر الشهر؛ هدف لكل بائع، وتيرة اليوم، الزيارات والعروض، وما نبنيه", subtitle: "ست مراحل، ستة أخطاء، خمس طبقات، الشهر كما يُرى في اليوم 14، الهدف مترجَماً إلى زيارات، وخمسة أسابيع", excerpt: "«كل سنة، آخذ رقم السنة الماضية، أضيف عشرة بالمئة وأقسم على اثني عشر. كل مندوبيّ التجاريين لهم الهدف نفسه. ونكتشف النتيجة يوم 30، حين لا يبقى ما يُفعل، ونصف الفريق انسحب منذ يوم 15. كيف تُحدَّد أهداف بيع تنفع في شيء؟» الهدف النافع يُحسب، يُشرح، وخصوصاً يُتابَع: كل بائع يجب أن يعرف، كل يوم، أين هو من الوتيرة، وأي نشاط يعيده إليها." }
+    }
+  },
+  {
     id: "308",
     slug: "comment-gerer-la-tresorerie-d-une-entreprise-algerie-2027-rentable-et-compte-vide-plan-sur-13-semaines-echeances-clients-fournisseurs-cycle",
     title: "Comment gérer la trésorerie d'une entreprise en Algérie (2027) : on gagne de l'argent et le compte est vide à la fin du mois, plan de trésorerie sur treize semaines, échéances des clients et des fournisseurs, et ce qu'on construit",
