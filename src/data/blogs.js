@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "308",
+    slug: "comment-gerer-la-tresorerie-d-une-entreprise-algerie-2027-rentable-et-compte-vide-plan-sur-13-semaines-echeances-clients-fournisseurs-cycle",
+    title: "Comment gérer la trésorerie d'une entreprise en Algérie (2027) : on gagne de l'argent et le compte est vide à la fin du mois, plan de trésorerie sur treize semaines, échéances des clients et des fournisseurs, et ce qu'on construit",
+    subtitle: "Six raisons, six temps, treize semaines avec et sans décision, cinq couches, le cycle de l'argent en jours, cinq semaines",
+    excerpt: "« Notre entreprise est rentable, les comptes le confirment, et pourtant chaque fin de mois je me demande comment payer les fournisseurs et l'équipe. Je découvre le problème en ouvrant le relevé de la banque, quand il est trop tard pour faire autre chose qu'appeler un client. Comment gérer la trésorerie de mon entreprise ? » Le relevé dit ce qui s'est passé. Un plan de trésorerie dit ce qui va se passer, semaine par semaine, assez tôt pour déplacer une date. Le construire, c'est ranger chaque facture dans la semaine où elle sera vraiment payée.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["trésorerie de l'entreprise", "plan de trésorerie", "prévision sur treize semaines", "délais clients et fournisseurs", "cycle de conversion"],
+    metaTitle: "Comment gérer la trésorerie d'une entreprise Algérie 2027 : plan de trésorerie sur 13 semaines, délais clients et fournisseurs | Symloop",
+    metaDescription: "Comment gérer la trésorerie d'une entreprise en Algérie en 2027 : prévoir le solde semaine par semaine au lieu de le constater. Le plan part du solde du jour, ajoute les encaissements à leur date probable, retire les décaissements à leur date, sur treize semaines. Pourquoi une entreprise rentable manque d'argent, six raisons. Exemple construit : un trimestre presque équilibré où le solde tombe à moins 1 200 en semaine 7, et deux décisions prises six semaines avant qui l'évitent. Le cycle de l'argent : jours de stock plus délai client moins délai fournisseur, 75 jours dans l'exemple, 35 après trois réglages. Gestion uniquement : ni comptabilité légale, ni fiscalité.",
+    translations: {
+      en: { title: "How to manage a company's cash in Algeria (2027): the business makes money and the account is empty at the end of the month, a thirteen-week cash plan, customer and supplier due dates, and what we build", subtitle: "Six reasons, six steps, thirteen weeks with and without a decision, five layers, the cash cycle in days, five weeks", excerpt: "“Our company is profitable, the accounts confirm it, and yet every month end I wonder how to pay the suppliers and the team. I discover the problem when I open the bank statement, when it is too late to do anything but call a customer. How do I manage my company's cash?” The statement says what happened. A cash plan says what is going to happen, week by week, early enough to move a date. Building it means placing every invoice in the week in which it will really be paid." },
+      ar: { title: "كيف تُسيَّر خزينة المؤسسة في الجزائر (2027): نربح المال والحساب فارغ في آخر الشهر، مخطط خزينة على ثلاثة عشر أسبوعاً، استحقاقات الزبائن والمورّدين، وما نبنيه", subtitle: "ستة أسباب، ست مراحل، ثلاثة عشر أسبوعاً بقرار ودونه، خمس طبقات، دورة النقد بالأيام، وخمسة أسابيع", excerpt: "«مؤسستنا مربحة، والحسابات تؤكد ذلك، ومع ذلك أتساءل كل آخر شهر كيف أدفع للمورّدين وللفريق. وأكتشف المشكل حين أفتح كشف البنك، حين يفوت وقت فعل أي شيء غير الاتصال بزبون. كيف أسيّر خزينة مؤسستي؟» الكشف يقول ما حدث. ومخطط الخزينة يقول ما سيحدث، أسبوعاً بأسبوع، باكراً بما يكفي لتحريك تاريخ. وبناؤه هو وضع كل فاتورة في الأسبوع الذي ستُدفع فيه فعلاً." }
+    }
+  },
+  {
     id: "307",
     slug: "logiciel-boutique-pret-a-porter-magasin-de-vetements-algerie-2027-stock-par-taille-et-couleur-echanges-mise-de-cote-instagram-fin-de-saison",
     title: "Logiciel boutique de prêt-à-porter et magasin de vêtements en Algérie (2027) : le modèle est en stock mais pas dans la bonne taille, la pièce vendue deux fois entre la boutique et Instagram, les échanges notés sur papier, et ce qu'on met en place",
