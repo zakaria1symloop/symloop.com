@@ -3,6 +3,21 @@
 // Regions: Algeria, Tunisia, Morocco, MENA
 export const blogs = [
   {
+    id: "304",
+    slug: "logiciel-station-service-algerie-2027-compteurs-des-pompes-jaugeage-des-cuves-ecart-de-caisse-par-equipe-clients-en-compte-boutique",
+    title: "Logiciel station-service en Algérie (2027) : la caisse ne correspond pas aux compteurs, la cuve contient moins que le calcul, les bons des clients en compte se perdent, et ce qu'on met en place",
+    subtitle: "Six endroits où un litre se perd, cinq couches, la clôture d'une équipe, le stock calculé contre le stock jaugé, six écarts, six semaines",
+    excerpt: "« J'ai une station-service avec quatre pistolets, trois équipes et une boutique. Chaque équipe tient son cahier, je découvre les écarts en fin de mois, quand il est trop tard pour demander quoi que ce soit à qui que ce soit. La cuve ne contient jamais ce que le calcul annonce, et les bons des entreprises clientes traînent dans un tiroir. Existe-t-il un logiciel de gestion de station-service ? » Une station se pilote sur deux comparaisons : les compteurs contre la caisse à chaque équipe, le stock calculé contre le stock jaugé chaque matin. Le reste s'accroche à ces deux-là.",
+    category: "Software", author: "Symloop Team", date: "2026-11-19", readTime: "13 min", featured: true,
+    tags: ["logiciel station-service", "clôture de caisse par équipe", "écart de cuve", "jaugeage et livraisons", "clients en compte"],
+    metaTitle: "Logiciel station-service Algérie 2027 : compteurs, caisse par équipe, jaugeage des cuves, clients en compte | Symloop",
+    metaDescription: "Logiciel de gestion de station-service en Algérie en 2027 : ce qu'il doit tenir (index des compteurs à chaque changement d'équipe, caisse par équipe, cuves et livraisons, clients en compte et leurs bons, boutique et services) et les deux comparaisons qui font le travail : les litres aux compteurs multipliés par le prix contre ce que l'équipe remet, et le stock calculé contre le stock jaugé chaque matin. Exemple construit : une équipe du matin, 6 600 litres, un écart de 4 600 dinars connu à la relève ; une cuve suivie huit matins, 410 litres d'écart dont 260 le jour de la livraison. Six semaines dans l'exemple pour une station de quatre pistolets avec boutique.",
+    translations: {
+      en: { title: "Filling station software in Algeria (2027): the till does not match the meters, the tank holds less than the calculation, account customers' vouchers get lost, and what we put in place", subtitle: "Six places where a litre is lost, five layers, closing a shift, calculated stock against dipped stock, six gaps, six weeks", excerpt: "“I run a petrol station with four nozzles, three shifts and a shop. Each shift keeps its own notebook, I discover the gaps at the end of the month, when it is too late to ask anyone anything. The tank never holds what the calculation says, and the vouchers of our company customers sit in a drawer. Is there management software for a filling station?” A station is run on two comparisons: the meters against the till at every shift, calculated stock against dipped stock every morning. Everything else hangs on those two." },
+      ar: { title: "برنامج تسيير محطة الوقود في الجزائر (2027): الصندوق لا يطابق العدّادات، الخزان يحتوي أقل من الحساب، وصولات زبائن الحساب تضيع، وما نضعه", subtitle: "ستة مواضع يضيع فيها اللتر، خمس طبقات، إغلاق المناوبة، المخزون المحسوب مقابل المخزون المقيس، ستة فوارق، وستة أسابيع", excerpt: "«عندي محطة وقود بأربع فوهات، ثلاث مناوبات، ومتجر. كل مناوبة تمسك دفترها، وأكتشف الفوارق آخر الشهر، حين يفوت وقت سؤال أي أحد عن أي شيء. الخزان لا يحتوي أبداً ما يعلنه الحساب، ووصولات المؤسسات الزبونة تبقى في درج. هل يوجد برنامج لتسيير محطة الخدمات؟» المحطة تُقاد بمقارنتين: العدّادات مقابل الصندوق عند كل مناوبة، والمخزون المحسوب مقابل المخزون المقيس كل صباح. والباقي كله يتعلق بهاتين." }
+    }
+  },
+  {
     id: "303",
     slug: "comment-partager-une-imprimante-en-reseau-en-entreprise-algerie-2027-imprimante-hors-ligne-adresse-fixe-pilotes-file-d-attente-numerisation",
     title: "Comment partager une imprimante en réseau en entreprise en Algérie (2027) : l'imprimante est « hors ligne » un jour sur deux, les documents restent dans la file, chacun réinstalle le pilote, on numérise sur clé USB, et ce qu'on met en place",
