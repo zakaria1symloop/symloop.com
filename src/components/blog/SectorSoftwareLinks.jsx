@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-gestion-des-contrats-algerie-2027-contratheque-echeances-preavis-reconduction-tacite-avenants-versions-alertes-obligations-responsable', fr: 'Logiciel de gestion des contrats en Algérie', en: 'Contract management software in Algeria', ar: 'برنامج تسيير العقود في الجزائر' },
   { slug: 'logiciel-location-de-materiel-engins-algerie-2027-planning-de-disponibilite-etat-des-lieux-photo-compteur-d-heures-facturation-taux-utilisation', fr: 'Logiciel de location de matériel en Algérie', en: 'Equipment rental software in Algeria', ar: 'برنامج كراء العتاد في الجزائر' },
   { slug: 'logiciel-appel-d-offres-algerie-2027-ia-veille-des-avis-lecture-du-cahier-des-charges-pieces-a-fournir-memoire-technique-controle-avant-depot', fr: 'Logiciel appel d’offres en Algérie', en: 'Tender software in Algeria', ar: 'برنامج المناقصات في الجزائر' },
   { slug: 'logiciel-de-recrutement-algerie-2027-gestion-des-candidatures-tri-des-cv-doublons-convocations-entretiens-notes-reponse-a-chaque-candidat', fr: 'Logiciel de recrutement en Algérie', en: 'Recruitment software in Algeria', ar: 'برنامج التوظيف في الجزائر' },
