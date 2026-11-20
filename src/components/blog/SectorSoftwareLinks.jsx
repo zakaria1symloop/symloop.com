@@ -3,6 +3,7 @@ import Link from 'next/link';
 // Internal links from pages that already rank ("logiciel [secteur] algérie")
 // to the sector pages Google has not surfaced yet. Titles are the buyer's query.
 export const SECTOR_PAGES = [
+  { slug: 'logiciel-gestion-restaurant-algerie-2027-fiches-techniques-cout-matiere-par-plat-stock-decompte-a-la-vente-ecart-theorique-reel-salle-cuisine', fr: 'Logiciel de restaurant en Algérie', en: 'Restaurant software in Algeria', ar: 'برنامج المطعم في الجزائر' },
   { slug: 'logiciel-gestion-showroom-automobile-algerie-2027-fiche-par-chassis-prix-de-revient-reservations-versements-jours-en-stock-marge-par-vehicule', fr: 'Logiciel showroom automobile en Algérie', en: 'Car showroom software in Algeria', ar: 'برنامج معرض السيارات في الجزائر' },
   { slug: 'logiciel-de-gestion-hoteliere-algerie-2027-planning-des-chambres-reservations-sans-double-vente-arrivees-departs-menage-cloture-de-nuit', fr: 'Logiciel de gestion hôtelière en Algérie', en: 'Hotel management software in Algeria', ar: 'برنامج تسيير الفندق في الجزائر' },
   { slug: 'logiciel-de-gestion-cabinet-medical-algerie-2027-agenda-salle-d-attente-dossier-patient-ordonnances-imprimees-recettes-du-jour-qui-voit-quoi', fr: 'Logiciel cabinet médical en Algérie', en: 'Medical practice software in Algeria', ar: 'برنامج العيادة الطبية في الجزائر' },
