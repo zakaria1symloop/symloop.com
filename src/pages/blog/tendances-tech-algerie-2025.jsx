@@ -23,7 +23,7 @@ export default function TendancesTech2025() {
     },
     {
       question: "La 5G va-t-elle changer les applications en Algérie ?",
-      answer: "Oui, la 5G permettra des applications temps réel (IoT industriel, télémédecine, véhicules connectés) impossibles avec la 4G. Symloop, basé à Sétif, développe des applications 5G-ready pour les entreprises algériennes. Contactez-nous au +213 549 575 512."
+      answer: "Oui, la 5G permettra des applications temps réel (IoT industriel, télémédecine, véhicules connectés) impossibles avec la 4G. Symloop, basé à Alger, développe des applications 5G-ready pour les entreprises algériennes. Contactez-nous au +213 549 575 512."
     },
     {
       question: "Comment former mes équipes aux nouvelles technologies ?",
@@ -41,7 +41,6 @@ export default function TendancesTech2025() {
         <title>Tendances Tech Algérie 2025 | IA, 5G, Cloud, Fintech | Guide Complet | Symloop</title>
         <meta name="description" content="Découvrez les tendances technologiques 2025 en Algérie : Intelligence Artificielle, 5G, Cloud Computing, Fintech, Cybersécurité. Guide complet pour les entreprises algériennes." />
         <meta name="keywords" content="tendances tech algérie 2025, innovation digitale, futur tech mena, technologies émergentes, ia algérie, 5g algérie, cloud algérie, fintech algérie, transformation digitale 2025" />
-        <link rel="canonical" href="https://symloop.com/blog/tendances-tech-algerie-2025" />
         <meta property="og:title" content="Tendances Tech Algérie 2025 | Guide Complet Innovation" />
         <meta property="og:description" content="Les technologies qui vont transformer l'Algérie en 2025 : IA, 5G, Cloud, Fintech et plus encore." />
         <meta property="og:type" content="article" />
@@ -99,7 +98,7 @@ export default function TendancesTech2025() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
@@ -140,7 +139,7 @@ export default function TendancesTech2025() {
         <aside className="article-summary bg-purple-50 border-l-4 border-purple-500 py-6">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-gray-800 font-medium text-lg leading-relaxed">
-              <strong>En bref :</strong> Symloop analyse les tendances technologiques en Algérie. IA, IoT, cloud, fintech, e-commerce, smart home. Préparez votre entreprise pour 2026. Basé à Sétif. Contact: +213 549 575 512.
+              <strong>En bref :</strong> Symloop analyse les tendances technologiques en Algérie. IA, IoT, cloud, fintech, e-commerce, smart home. Préparez votre entreprise pour 2026. Basé à Alger. Contact: +213 549 575 512.
             </p>
           </div>
         </aside>

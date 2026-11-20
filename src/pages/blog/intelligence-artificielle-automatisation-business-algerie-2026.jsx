@@ -129,7 +129,6 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
         <title>Intelligence Artificielle Algérie 2026 | IA Entreprise, Automatisation & Chatbot | Symloop</title>
         <meta name="description" content="Solutions d'intelligence artificielle sur mesure pour les entreprises algériennes. Chatbots IA, automatisation des processus, analyse prédictive, computer vision. Multipliez votre CA par 10x à 1000x. Symloop, expert IA Algérie. Contact: +213 549 575 512." />
         <meta name="keywords" content="intelligence artificielle algérie, IA entreprise algérie, automatisation IA algérie, chatbot IA algérie, comment utiliser IA business algérie, IA PME algérie 2026, machine learning algérie, intelligence artificielle PME algérie, analyse prédictive algérie, computer vision algérie, IA marketing algérie, automatisation processus algérie, chatbot whatsapp algérie, IA service client algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/intelligence-artificielle-automatisation-business-algerie-2026/" />
 
         <meta property="og:title" content="Intelligence Artificielle Algérie 2026 : Multipliez Votre CA par 10x à 1000x | Symloop" />
         <meta property="og:description" content="Solutions IA sur mesure pour entreprises algériennes. Chatbots, automatisation, analyse prédictive. Expert IA Algérie." />
@@ -207,7 +206,7 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Intelligence Artificielle", "Machine Learning", "Chatbot IA", "Automatisation", "Analyse Prédictive", "Computer Vision", "NLP"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -236,7 +235,7 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -257,8 +256,8 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -275,8 +274,8 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -296,8 +295,8 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -307,8 +306,8 @@ export default function IntelligenceArtificielleAutomatisationBusinessAlgerie202
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

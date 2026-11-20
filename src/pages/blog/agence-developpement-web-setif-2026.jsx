@@ -666,7 +666,6 @@ export default function AgenceWebSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.seoKeywords?.join(', ')} />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/agence-developpement-web-setif-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
@@ -708,8 +707,8 @@ export default function AgenceWebSetif2026() {
             "name": "Symloop",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Setif",
-              "addressRegion": "Setif",
+              "addressLocality": "Alger",
+              "addressRegion": "Alger",
               "addressCountry": "DZ"
             },
             "telephone": "+213549575512",

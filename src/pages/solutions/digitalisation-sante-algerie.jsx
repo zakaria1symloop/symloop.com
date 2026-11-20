@@ -184,13 +184,8 @@ export default function DigitalisationSanteAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة الصحة, رقمنة المستشفيات الجزائر, digitalisation santé Algérie, e-santé, السجل الصحي الإلكتروني, healthcare digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-sante-algerie" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-sante-algerie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-sante-algerie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-sante-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
@@ -211,8 +206,8 @@ export default function DigitalisationSanteAlgerie() {
             </nav>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8 }}
               className="text-center max-w-4xl mx-auto"
             >
@@ -249,8 +244,8 @@ export default function DigitalisationSanteAlgerie() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
             >

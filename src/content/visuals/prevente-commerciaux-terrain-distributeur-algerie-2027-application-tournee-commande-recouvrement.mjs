@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'prevente-commerciaux-terrain-distributeur-algerie-2027-application-tournee-commande-recouvrement';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Prévente · Distribution · Commerciaux terrain · 2027', title: ['Quarante visites', 'sur le rapport,', 'vingt-cinq sur le terrain.'], subtitle: 'La tournée, la visite, la commande, le dépôt, l’encaissement et le soir : l’application du prévendeur qui remplace le carnet, le plafond de crédit, le reçu SMS, le tableau de bord du distributeur et le calendrier 2027 autour du ramadan', left: { label: 'Au carnet', sub: 'ressaisie jusqu’à 20 h, encours inconnu' }, right: { label: 'Au téléphone', sub: 'commande à la visite, reçu SMS, plafond' } },
+    journee: { title: 'Une journée de prévente, en six moments', items: [
+      { n: '01', label: 'La tournée du jour', sub: 'Quarante points de vente dans l’ordre, avec les priorités : impayé, promotion, rupture signalée.' },
+      { n: '02', label: 'La visite', sub: 'Rayon et réfrigérateur photographiés, stock relevé, ruptures notées : deux minutes.' },
+      { n: '03', label: 'La commande', sub: 'Catalogue, prix et remise de ce client, promotion du mois ; envoyée au dépôt avant de sortir.', accent: true },
+      { n: '04', label: 'Le dépôt', sub: 'Liste de préparation à 14 h, chargement le soir, bon de livraison numéroté.' },
+      { n: '05', label: 'La livraison et l’encaissement', sub: 'Livré le lendemain, espèces ou chèque, reçu SMS numéroté, plafond de crédit respecté.' },
+      { n: '06', label: 'Le soir', sub: 'Visites faites, commandes, impayés, ruptures ; les relances du lendemain préparées par l’agent IA.' },
+    ], caption: 'Figure 1 · Le moment 03 est celui qui change tout le reste : une commande qui part du téléphone pendant la visite supprime la ressaisie au dépôt, avance le chargement et rend le moment 06 possible. Les moments 01 et 02 sont ce qui distingue une prévente d’une prise de commande.', alt: 'Six étapes d’une journée de prévente : tournée, visite, commande, dépôt, livraison et encaissement, soir.' },
+    plateforme: { title: 'La plateforme du distributeur, en cinq couches', layers: [
+      { label: 'Référentiel', items: [{ name: 'Clients géolocalisés, tarifs par client, catalogue, promotions', sub: 'repris du fichier Excel et du logiciel de facturation, nettoyés en trois semaines' }] },
+      { label: 'Règles', items: [{ name: 'Plafond de crédit, zones, objectifs, règles de promotion', sub: 'écrites avec le chef des ventes, testées sur un mois d’historique avant le pilote' }] },
+      { label: 'Prévendeur', items: [{ name: 'L’application du prévendeur, hors ligne d’abord', sub: 'tournée, visite, commande, encaissement ; synchronisée dès que le réseau revient', accent: true }] },
+      { label: 'Dépôt', items: [{ name: 'Préparation, chargement, livraison, retours', sub: 'liste de préparation, bon de livraison numéroté, retour motivé, stock camion rapproché' }] },
+      { label: 'Pilotage', items: [{ name: 'Tableau de bord et agent IA', sub: 'couverture, impayés, ruptures, marge par prévendeur ; relances et anomalies préparées chaque soir' }] },
+    ], caption: 'Figure 2 · La couche du prévendeur est celle qu’on construit d’abord, mais elle ne vaut rien sans la première : une application de commande posée sur un fichier clients faux produit des commandes fausses plus vite. Le tableau de bord vient en dernier et se remplit seul.', alt: 'Cinq couches : référentiel, règles, application prévendeur, dépôt et livraison, pilotage.' },
+    exemple: { title: 'Douze prévendeurs, un dépôt, 1 100 détaillants : l’exemple', items: [
+      { value: '480 visites', label: 'par jour pour douze prévendeurs à quarante visites, environ 350 commandes ; hypothèse à remplacer par vos chiffres' },
+      { value: '17 h → 0', label: 'de ressaisie par jour au dépôt : 350 commandes à trois minutes, supprimées quand la commande part du téléphone' },
+      { value: '45 → 30 jours', label: 'de délai moyen de paiement des détaillants, avec plafond de crédit, reçu SMS et relance à sept jours' },
+      { value: '30 M DA', label: 'de trésorerie libérée : quinze jours de ventes à deux millions de dinars par jour, une fois, puis chaque mois en moins d’encours', accent: true },
+    ], caption: 'Figure 3 · Un calcul sur des hypothèses, pas une mesure : le nombre de prévendeurs, de visites, de commandes et le délai de paiement sont à remplacer par les vôtres. Ce qui se vérifie dans tous les cas : la ressaisie disparaît le premier jour, et le délai de paiement bouge en trois mois, pas en trois semaines.', alt: 'Quatre chiffres : 480 visites par jour, 17 heures de ressaisie supprimées, 45 à 30 jours de délai de paiement, 30 millions de dinars libérés.' },
+    fuites: { title: 'Six fuites d’un distributeur qui travaille au carnet, et ce que l’application change', columns: ['Ce qui se passe aujourd’hui', 'Ce que l’application change'], rows: [
+      { label: 'Commande sur carnet, ressaisie au dépôt', cells: ['Trois minutes par commande, erreurs de référence, camions chargés tard, livraison à J+2', 'La commande part du téléphone pendant la visite ; la liste de préparation existe à 14 h'] },
+      { label: 'Prix et remise au cas par cas', cells: ['Chaque prévendeur a son tarif ; la marge se découvre en fin de mois', 'Un tarif par client dans le référentiel ; remise hors règle bloquée ou validée par le chef des ventes'] },
+      { label: 'Crédit sans plafond', cells: ['L’encours grossit chez les mêmes détaillants ; personne ne connaît le total du jour', 'Plafond par client, commande bloquée au-delà, reçu SMS numéroté à chaque encaissement'] },
+      { label: 'Visites déclarées, pas faites', cells: ['Quarante visites sur le rapport, vingt-cinq réelles ; les petits points de vente ne sont plus visités', 'Visite horodatée et géolocalisée ; couverture réelle par zone chaque soir'] },
+      { label: 'Retours non tracés', cells: ['Produits repris sans motif ; écart de stock camion en fin de journée', 'Retour motivé et photographié ; stock camion rapproché au retour au dépôt'] },
+      { label: 'Rupture en rayon invisible', cells: ['Le produit manque chez le détaillant ; la concurrence prend la place pendant quinze jours', 'Relevé de rayon en deux minutes ; ruptures par produit et par zone sur le tableau de bord'] },
+    ], caption: 'Figure 4 · Les trois premières fuites coûtent de l’argent tous les jours et se ferment en un pilote ; les trois dernières coûtent des clients et se voient seulement quand les visites et les rayons sont enregistrés là où ils se passent.', alt: 'Matrice de six fuites avec ce qui se passe aujourd’hui et ce que l’application change.' },
+    modeles: { title: 'Six situations, ce qu’on construit d’abord', columns: ['Ce qu’on construit d’abord', 'Ce qui vient ensuite'], rows: [
+      { label: 'Distributeur agroalimentaire, dix à trente prévendeurs', cells: ['Application prévendeur hors ligne, référentiel des tarifs, liste de préparation', 'Encaissement et plafond de crédit, tableau de bord par zone, agent IA de relance'] },
+      { label: 'Grossiste en boissons, vente en camion', cells: ['Stock camion, commande et livraison en une visite, bon numéroté, rapprochement du soir', 'Tournées optimisées, consigne des emballages, portail de recommande'] },
+      { label: 'Marque locale avec merchandiseurs', cells: ['Relevé de rayon avec photo, score d’exécution par point de vente, promotions', 'Lecture des photos par IA, prix constatés, part de linéaire'] },
+      { label: 'Importateur de cosmétiques ou de détergents', cells: ['Catalogue avec lots et dates, commande, suivi des impayés par grossiste', 'Portail de commande pour les grossistes, remises par volume'] },
+      { label: 'Grossiste en pièces ou en matériaux', cells: ['Catalogue par référence et équivalence, devis, commande, livraison sur chantier', 'Portail client, historique par chantier, relances automatiques'] },
+      { label: 'Propriétaire installé en France', cells: ['Les mêmes écrans, plus le tableau de bord du soir et les comptes à votre nom', 'Contrôles hebdomadaires : couverture, impayés, écarts de stock, marge par prévendeur'] },
+    ], caption: 'Figure 5 · Dans les six cas, la première colonne tient en dix à quatorze semaines et paie la seconde. La vente en camion et la prévente sont deux applications différentes : l’une vend ce qu’elle transporte, l’autre vend ce que le dépôt livrera demain.', alt: 'Matrice de six situations avec ce qu’on construit d’abord et ce qui vient ensuite.' },
+    calendrier: { title: 'Déployer la prévente en 2027, en semaines, autour du ramadan', unit: 'sem.', items: [
+      { label: 'Référentiel et cadrage', note: 'fichier clients nettoyé et géolocalisé, tarifs par client ; pendant les préparatifs du ramadan', from: 0, to: 4 },
+      { label: 'Application prévendeur V1', note: 'construite pendant le ramadan (≈ 8 février – 9 mars) ; rien n’est déployé sur le terrain', from: 4, to: 8 },
+      { label: 'Pilote : trois prévendeurs', note: 'une zone, après l’Aïd el-Fitr ; carnet en parallèle deux semaines, puis carnet rangé', from: 8, to: 12 },
+      { label: 'Dépôt, livraison, encaissement', note: 'liste de préparation, bon numéroté, reçu SMS, plafond de crédit', from: 12, to: 18 },
+      { label: 'Déploiement toutes zones', note: 'avant l’été ; l’Aïd el-Adha (≈ 16 mai) tombe en semaine 17', from: 18, to: 26, accent: true },
+      { label: 'Pilotage et agent IA', note: 'tableau de bord, relances d’impayés, anomalies ; pendant la saison d’été', from: 26, to: 34 },
+      { label: 'Bilan de rentrée', note: 'couverture, délai de paiement, retours ; décision sur le portail de recommande', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. Les trois semaines avant le ramadan sont les plus chargées de l’année pour un distributeur alimentaire : on y nettoie le référentiel, on ne change rien sur le terrain. Le pilote commence après l’Aïd el-Fitr, le déploiement complet se termine avant l’été. Dates du ramadan et des Aïds prévisionnelles.', alt: 'Frise de 40 semaines : référentiel, application V1, pilote, dépôt et encaissement, déploiement, pilotage, bilan.' },
+  },
+  en: {
+    cover: { eyebrow: 'Pre-sale · Distribution · Field sales · 2027', title: ['Forty visits', 'on the report,', 'twenty-five in the field.'], subtitle: 'The route, the visit, the order, the depot, the collection and the evening: the pre-seller’s app that replaces the notebook, the credit ceiling, the SMS receipt, the distributor’s dashboard and the 2027 calendar around Ramadan', left: { label: 'Notebook', sub: 're-entry until 8 pm, unknown credit' }, right: { label: 'Phone', sub: 'order at the visit, SMS receipt, ceiling' } },
+    journee: { title: 'A day of pre-sale, in six moments', items: [
+      { n: '01', label: 'The day’s route', sub: 'Forty outlets in order, with priorities: unpaid balance, promotion, reported stock-out.' },
+      { n: '02', label: 'The visit', sub: 'Shelf and fridge photographed, stock counted, stock-outs noted: two minutes.' },
+      { n: '03', label: 'The order', sub: 'Catalogue, this customer’s price and discount, the month’s promotion; sent to the depot before leaving.', accent: true },
+      { n: '04', label: 'The depot', sub: 'Picking list at 2 pm, loading in the evening, numbered delivery note.' },
+      { n: '05', label: 'Delivery and collection', sub: 'Delivered next day, cash or cheque, numbered SMS receipt, credit ceiling respected.' },
+      { n: '06', label: 'The evening', sub: 'Visits made, orders, unpaid balances, stock-outs; tomorrow’s follow-ups prepared by the AI agent.' },
+    ], caption: 'Figure 1 · Moment 03 is the one that changes everything else: an order sent from the phone during the visit removes re-entry at the depot, brings loading forward and makes moment 06 possible. Moments 01 and 02 are what separate pre-sale from order taking.', alt: 'Six steps of a pre-sale day: route, visit, order, depot, delivery and collection, evening.' },
+    plateforme: { title: 'The distributor’s platform, in five layers', layers: [
+      { label: 'Master data', items: [{ name: 'Geolocated customers, price per customer, catalogue, promotions', sub: 'taken from the Excel file and the invoicing software, cleaned in three weeks' }] },
+      { label: 'Rules', items: [{ name: 'Credit ceiling, zones, targets, promotion rules', sub: 'written with the sales manager, tested on one month of history before the pilot' }] },
+      { label: 'Pre-seller', items: [{ name: 'The pre-seller’s app, offline first', sub: 'route, visit, order, collection; synced as soon as the network returns', accent: true }] },
+      { label: 'Depot', items: [{ name: 'Picking, loading, delivery, returns', sub: 'picking list, numbered delivery note, reasoned return, truck stock reconciled' }] },
+      { label: 'Management', items: [{ name: 'Dashboard and AI agent', sub: 'coverage, unpaid balances, stock-outs, margin per pre-seller; follow-ups and anomalies prepared every evening' }] },
+    ], caption: 'Figure 2 · The pre-seller layer is built first, but it is worth nothing without the first one: an ordering app sitting on a wrong customer file produces wrong orders faster. The dashboard comes last and fills itself.', alt: 'Five layers: master data, rules, pre-seller app, depot and delivery, management.' },
+    exemple: { title: 'Twelve pre-sellers, one depot, 1,100 retailers: the example', items: [
+      { value: '480 visits', label: 'a day for twelve pre-sellers at forty visits, about 350 orders; an assumption to replace with your figures' },
+      { value: '17 h → 0', label: 'of re-entry a day at the depot: 350 orders at three minutes, removed when the order leaves from the phone' },
+      { value: '45 → 30 days', label: 'of average retailer payment delay, with a credit ceiling, SMS receipt and follow-up at seven days' },
+      { value: '30 M DZD', label: 'of cash freed: fifteen days of sales at two million dinars a day, once, then every month in lower outstanding credit', accent: true },
+    ], caption: 'Figure 3 · A calculation on assumptions, not a measurement: the number of pre-sellers, visits, orders and the payment delay are to be replaced by yours. What holds in every case: re-entry disappears on day one, and the payment delay moves in three months, not three weeks.', alt: 'Four figures: 480 visits a day, 17 hours of re-entry removed, 45 to 30 days of payment delay, 30 million dinars freed.' },
+    fuites: { title: 'Six leaks of a distributor working from notebooks, and what the app changes', columns: ['What happens today', 'What the app changes'], rows: [
+      { label: 'Order in a notebook, re-entered at the depot', cells: ['Three minutes per order, wrong references, trucks loaded late, delivery at D+2', 'The order leaves from the phone during the visit; the picking list exists at 2 pm'] },
+      { label: 'Price and discount case by case', cells: ['Each pre-seller has his own price list; the margin is discovered at month end', 'One price per customer in the master data; an off-rule discount is blocked or approved by the sales manager'] },
+      { label: 'Credit without a ceiling', cells: ['Outstanding credit grows at the same retailers; nobody knows the day’s total', 'Ceiling per customer, order blocked beyond it, numbered SMS receipt at every collection'] },
+      { label: 'Visits declared, not made', cells: ['Forty visits on the report, twenty-five real; small outlets are no longer visited', 'Time-stamped, geolocated visit; real coverage per zone every evening'] },
+      { label: 'Untracked returns', cells: ['Products taken back without a reason; truck stock gap at the end of the day', 'Reasoned, photographed return; truck stock reconciled back at the depot'] },
+      { label: 'Invisible shelf stock-out', cells: ['The product is missing at the retailer; a competitor takes the space for two weeks', 'Two-minute shelf check; stock-outs per product and per zone on the dashboard'] },
+    ], caption: 'Figure 4 · The first three leaks cost money every day and close within one pilot; the last three cost customers and are only seen when visits and shelves are recorded where they happen.', alt: 'Matrix of six leaks with what happens today and what the app changes.' },
+    modeles: { title: 'Six situations, what gets built first', columns: ['What gets built first', 'What comes next'], rows: [
+      { label: 'Food distributor, ten to thirty pre-sellers', cells: ['Offline pre-seller app, price master data, picking list', 'Collection and credit ceiling, dashboard per zone, AI follow-up agent'] },
+      { label: 'Beverage wholesaler, van selling', cells: ['Truck stock, order and delivery in one visit, numbered note, evening reconciliation', 'Optimised routes, returnable packaging deposits, reorder portal'] },
+      { label: 'Local brand with merchandisers', cells: ['Shelf check with photo, execution score per outlet, promotions', 'AI reading of photos, observed prices, share of shelf'] },
+      { label: 'Importer of cosmetics or detergents', cells: ['Catalogue with batches and dates, order, unpaid tracking per wholesaler', 'Ordering portal for wholesalers, volume discounts'] },
+      { label: 'Wholesaler of parts or building materials', cells: ['Catalogue by reference and equivalence, quote, order, delivery to site', 'Customer portal, history per site, automatic follow-ups'] },
+      { label: 'Owner settled in France', cells: ['The same screens, plus the evening dashboard and the accounts in your name', 'Weekly checks: coverage, unpaid balances, stock gaps, margin per pre-seller'] },
+    ], caption: 'Figure 5 · In all six cases the first column fits in ten to fourteen weeks and pays for the second. Van selling and pre-sale are two different apps: one sells what it carries, the other sells what the depot will deliver tomorrow.', alt: 'Matrix of six situations with what gets built first and what comes next.' },
+    calendrier: { title: 'Rolling out pre-sale in 2027, in weeks, around Ramadan', unit: 'wks', items: [
+      { label: 'Master data and scoping', note: 'customer file cleaned and geolocated, price per customer; during Ramadan preparations', from: 0, to: 4 },
+      { label: 'Pre-seller app V1', note: 'built during Ramadan (≈ 8 February – 9 March); nothing deployed in the field', from: 4, to: 8 },
+      { label: 'Pilot: three pre-sellers', note: 'one zone, after Eid al-Fitr; notebook in parallel for two weeks, then put away', from: 8, to: 12 },
+      { label: 'Depot, delivery, collection', note: 'picking list, numbered note, SMS receipt, credit ceiling', from: 12, to: 18 },
+      { label: 'Roll-out to all zones', note: 'before summer; Eid al-Adha (≈ 16 May) falls in week 17', from: 18, to: 26, accent: true },
+      { label: 'Management and AI agent', note: 'dashboard, unpaid follow-ups, anomalies; during the summer season', from: 26, to: 34 },
+      { label: 'September review', note: 'coverage, payment delay, returns; decision on the reorder portal', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Week 0 = mid-January 2027. The three weeks before Ramadan are the busiest of the year for a food distributor: the master data is cleaned then, nothing changes in the field. The pilot starts after Eid al-Fitr, the full roll-out ends before summer. Ramadan and Eid dates are forecasts.', alt: 'Timeline of 40 weeks: master data, app V1, pilot, depot and collection, roll-out, management, review.' },
+  },
+  ar: {
+    cover: { eyebrow: 'البيع المسبق · التوزيع · مندوبو الميدان · 2027', title: ['أربعون زيارة', 'في التقرير،', 'خمس وعشرون في الميدان.'], subtitle: 'الجولة، الزيارة، الطلبية، المستودع، التحصيل والمساء: تطبيق المندوب الذي يحل محل الدفتر، سقف الدين، الوصل عبر SMS، لوحة قيادة الموزّع وتقويم 2027 حول رمضان', left: { label: 'بالدفتر', sub: 'إعادة إدخال حتى الثامنة، ديون مجهولة' }, right: { label: 'بالهاتف', sub: 'طلبية في الزيارة، وصل SMS، سقف دين' } },
+    journee: { title: 'يوم من البيع المسبق، في ست لحظات', items: [
+      { n: '01', label: 'جولة اليوم', sub: 'أربعون نقطة بيع بالترتيب، مع الأولويات: دين غير مسدد، ترويج، نفاد مبلّغ عنه.' },
+      { n: '02', label: 'الزيارة', sub: 'الرف والثلاجة مصوّران، المخزون مسجّل، النفاد مدوّن: دقيقتان.' },
+      { n: '03', label: 'الطلبية', sub: 'الكتالوج، سعر هذا الزبون وخصمه، ترويج الشهر؛ تُرسل إلى المستودع قبل الخروج.', accent: true },
+      { n: '04', label: 'المستودع', sub: 'قائمة التحضير على الساعة 14، التحميل مساءً، وصل تسليم مرقّم.' },
+      { n: '05', label: 'التسليم والتحصيل', sub: 'يُسلَّم في اليوم التالي، نقداً أو بشيك، وصل SMS مرقّم، سقف الدين محترم.' },
+      { n: '06', label: 'المساء', sub: 'الزيارات المنجزة، الطلبيات، الديون، النفاد؛ متابعات الغد يحضّرها وكيل الذكاء الاصطناعي.' },
+    ], caption: 'الشكل 1 · اللحظة 03 هي التي تغيّر كل ما عداها: طلبية تخرج من الهاتف أثناء الزيارة تلغي إعادة الإدخال في المستودع، وتقدّم التحميل، وتجعل اللحظة 06 ممكنة. اللحظتان 01 و02 هما ما يميّز البيع المسبق عن مجرد أخذ الطلبيات.', alt: 'ست خطوات ليوم بيع مسبق: جولة، زيارة، طلبية، مستودع، تسليم وتحصيل، مساء.' },
+    plateforme: { title: 'منصة الموزّع، في خمس طبقات', layers: [
+      { label: 'المرجع', items: [{ name: 'زبائن بإحداثيات، سعر لكل زبون، كتالوج، ترويجات', sub: 'مأخوذة من ملف Excel وبرنامج الفوترة، منظَّفة في ثلاثة أسابيع' }] },
+      { label: 'القواعد', items: [{ name: 'سقف الدين، المناطق، الأهداف، قواعد الترويج', sub: 'تُكتب مع مدير المبيعات وتُختبر على شهر من التاريخ قبل التجربة' }] },
+      { label: 'المندوب', items: [{ name: 'تطبيق المندوب، دون اتصال أولاً', sub: 'جولة، زيارة، طلبية، تحصيل؛ يتزامن فور عودة الشبكة', accent: true }] },
+      { label: 'المستودع', items: [{ name: 'التحضير، التحميل، التسليم، المرتجعات', sub: 'قائمة تحضير، وصل تسليم مرقّم، مرتجع بسبب، مخزون الشاحنة مطابَق' }] },
+      { label: 'القيادة', items: [{ name: 'لوحة قيادة ووكيل ذكاء اصطناعي', sub: 'التغطية، الديون، النفاد، الهامش لكل مندوب؛ المتابعات والشذوذات تُحضَّر كل مساء' }] },
+    ], caption: 'الشكل 2 · طبقة المندوب هي التي تُبنى أولاً، لكنها لا تساوي شيئاً دون الطبقة الأولى: تطبيق طلبيات فوق ملف زبائن خاطئ ينتج طلبيات خاطئة أسرع. لوحة القيادة تأتي أخيراً وتمتلئ وحدها.', alt: 'خمس طبقات: المرجع، القواعد، تطبيق المندوب، المستودع والتسليم، القيادة.' },
+    exemple: { title: 'اثنا عشر مندوباً، مستودع واحد، 1 100 تاجر تجزئة: المثال', items: [
+      { value: '480 زيارة', label: 'يومياً لاثني عشر مندوباً بأربعين زيارة، نحو 350 طلبية؛ فرضية تُستبدل بأرقامكم' },
+      { value: '17 س ← 0', label: 'من إعادة الإدخال يومياً في المستودع: 350 طلبية بثلاث دقائق، تُلغى حين تخرج الطلبية من الهاتف' },
+      { value: '45 ← 30 يوماً', label: 'من متوسط أجل دفع تجار التجزئة، مع سقف دين ووصل SMS ومتابعة بعد سبعة أيام' },
+      { value: '30 مليون دج', label: 'من السيولة المحرَّرة: خمسة عشر يوماً من المبيعات بمليوني دينار يومياً، مرة واحدة، ثم كل شهر كديون أقل', accent: true },
+    ], caption: 'الشكل 3 · حساب على فرضيات لا قياس: عدد المندوبين والزيارات والطلبيات وأجل الدفع تُستبدل بأرقامكم. ما يثبت في كل الحالات: إعادة الإدخال تختفي من اليوم الأول، وأجل الدفع يتحرك في ثلاثة أشهر لا ثلاثة أسابيع.', alt: 'أربعة أرقام: 480 زيارة يومياً، 17 ساعة إعادة إدخال ملغاة، من 45 إلى 30 يوماً أجل دفع، 30 مليون دينار محرَّرة.' },
+    fuites: { title: 'ست تسريبات عند موزّع يعمل بالدفتر، وما يغيّره التطبيق', columns: ['ما يحدث اليوم', 'ما يغيّره التطبيق'], rows: [
+      { label: 'طلبية في دفتر، تُعاد كتابتها في المستودع', cells: ['ثلاث دقائق لكل طلبية، مراجع خاطئة، شاحنات تُحمَّل متأخرة، تسليم بعد يومين', 'الطلبية تخرج من الهاتف أثناء الزيارة؛ قائمة التحضير موجودة على الساعة 14'] },
+      { label: 'سعر وخصم حالة بحالة', cells: ['لكل مندوب تسعيرته؛ الهامش يُكتشف آخر الشهر', 'سعر واحد لكل زبون في المرجع؛ الخصم خارج القاعدة يُحجب أو يوافق عليه مدير المبيعات'] },
+      { label: 'دين بلا سقف', cells: ['الدين يتضخم عند التجار أنفسهم؛ لا أحد يعرف مجموع اليوم', 'سقف لكل زبون، الطلبية تُحجب فوقه، وصل SMS مرقّم عند كل تحصيل'] },
+      { label: 'زيارات مصرَّح بها لا منجزة', cells: ['أربعون زيارة في التقرير، خمس وعشرون حقيقية؛ نقاط البيع الصغيرة لم تعد تُزار', 'زيارة موقّتة وبإحداثيات؛ التغطية الحقيقية لكل منطقة كل مساء'] },
+      { label: 'مرتجعات غير متتبَّعة', cells: ['منتجات تُسترجع بلا سبب؛ فارق في مخزون الشاحنة آخر النهار', 'مرتجع بسبب وصورة؛ مخزون الشاحنة يُطابَق عند العودة إلى المستودع'] },
+      { label: 'نفاد في الرف لا يُرى', cells: ['المنتج غائب عند التاجر؛ المنافس يأخذ المكان أسبوعين', 'جرد الرف في دقيقتين؛ النفاد لكل منتج ولكل منطقة على لوحة القيادة'] },
+    ], caption: 'الشكل 4 · التسريبات الثلاثة الأولى تكلّف مالاً كل يوم وتُغلق خلال تجربة واحدة؛ الثلاثة الأخيرة تكلّف زبائن ولا تُرى إلا حين تُسجَّل الزيارات والرفوف حيث تحدث.', alt: 'مصفوفة ست تسريبات مع ما يحدث اليوم وما يغيّره التطبيق.' },
+    modeles: { title: 'ست حالات، ما يُبنى أولاً', columns: ['ما يُبنى أولاً', 'ما يأتي بعده'], rows: [
+      { label: 'موزّع مواد غذائية، عشرة إلى ثلاثين مندوباً', cells: ['تطبيق مندوب دون اتصال، مرجع الأسعار، قائمة التحضير', 'التحصيل وسقف الدين، لوحة قيادة لكل منطقة، وكيل ذكاء اصطناعي للمتابعة'] },
+      { label: 'تاجر جملة مشروبات، بيع من الشاحنة', cells: ['مخزون الشاحنة، طلبية وتسليم في زيارة واحدة، وصل مرقّم، مطابقة المساء', 'جولات محسَّنة، رهن العبوات، بوابة إعادة الطلب'] },
+      { label: 'علامة محلية مع منشّطي رفوف', cells: ['جرد الرف بصورة، درجة تنفيذ لكل نقطة بيع، ترويجات', 'قراءة الصور بالذكاء الاصطناعي، الأسعار الملاحظة، حصة الرف'] },
+      { label: 'مستورد مستحضرات تجميل أو منظّفات', cells: ['كتالوج بالدفعات والتواريخ، طلبية، متابعة الديون لكل تاجر جملة', 'بوابة طلب لتجار الجملة، خصومات بالحجم'] },
+      { label: 'تاجر جملة قطع غيار أو مواد بناء', cells: ['كتالوج بالمرجع والمكافئ، عرض سعر، طلبية، تسليم إلى الورشة', 'بوابة زبائن، تاريخ لكل ورشة، متابعات تلقائية'] },
+      { label: 'مالك مقيم في فرنسا', cells: ['الشاشات نفسها، زائد لوحة قيادة المساء والحسابات باسمكم', 'مراقبة أسبوعية: التغطية، الديون، فوارق المخزون، الهامش لكل مندوب'] },
+    ], caption: 'الشكل 5 · في الحالات الست، العمود الأول يُنجز في عشرة إلى أربعة عشر أسبوعاً ويدفع ثمن الثاني. البيع من الشاحنة والبيع المسبق تطبيقان مختلفان: الأول يبيع ما يحمله، والثاني يبيع ما سيسلّمه المستودع غداً.', alt: 'مصفوفة ست حالات مع ما يُبنى أولاً وما يأتي بعده.' },
+    calendrier: { title: 'نشر البيع المسبق في 2027، بالأسابيع، حول رمضان', unit: 'أسبوع', items: [
+      { label: 'المرجع والتأطير', note: 'ملف الزبائن منظَّف وبإحداثيات، سعر لكل زبون؛ أثناء تحضيرات رمضان', from: 0, to: 4 },
+      { label: 'تطبيق المندوب، النسخة الأولى', note: 'يُبنى خلال رمضان (≈ 8 فبراير – 9 مارس)؛ لا شيء يُنشر في الميدان', from: 4, to: 8 },
+      { label: 'التجربة: ثلاثة مندوبين', note: 'منطقة واحدة، بعد عيد الفطر؛ الدفتر بالتوازي أسبوعين ثم يُطوى', from: 8, to: 12 },
+      { label: 'المستودع، التسليم، التحصيل', note: 'قائمة التحضير، وصل مرقّم، وصل SMS، سقف الدين', from: 12, to: 18 },
+      { label: 'النشر في كل المناطق', note: 'قبل الصيف؛ عيد الأضحى (≈ 16 مايو) يقع في الأسبوع 17', from: 18, to: 26, accent: true },
+      { label: 'القيادة ووكيل الذكاء الاصطناعي', note: 'لوحة قيادة، متابعة الديون، الشذوذات؛ خلال موسم الصيف', from: 26, to: 34 },
+      { label: 'حصيلة الدخول', note: 'التغطية، أجل الدفع، المرتجعات؛ القرار بشأن بوابة إعادة الطلب', from: 34, to: 40 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = منتصف يناير 2027. الأسابيع الثلاثة قبل رمضان هي الأكثر ازدحاماً في السنة لموزّع المواد الغذائية: فيها يُنظَّف المرجع ولا يُغيَّر شيء في الميدان. التجربة تبدأ بعد عيد الفطر، والنشر الكامل ينتهي قبل الصيف. تواريخ رمضان والعيدين تقديرية.', alt: 'خط زمني من 40 أسبوعاً: المرجع، النسخة الأولى، التجربة، المستودع والتحصيل، النشر، القيادة، الحصيلة.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      journee: { svg: steps({ title: t.journee.title, steps: t.journee.items, arrows: true, rtl }), caption: t.journee.caption, alt: t.journee.alt },
+      plateforme: { svg: layers({ title: t.plateforme.title, layers: t.plateforme.layers, rtl }), caption: t.plateforme.caption, alt: t.plateforme.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      fuites: { svg: matrix({ title: t.fuites.title, columns: t.fuites.columns, rows: t.fuites.rows, rtl }), caption: t.fuites.caption, alt: t.fuites.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 40, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

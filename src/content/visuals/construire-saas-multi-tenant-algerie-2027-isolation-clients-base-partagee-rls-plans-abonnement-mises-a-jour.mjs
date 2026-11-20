@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'construire-saas-multi-tenant-algerie-2027-isolation-clients-base-partagee-rls-plans-abonnement-mises-a-jour';
+const T = {
+  fr: {
+    cover: { eyebrow: 'SaaS · Multi-tenant · Architecture · 2027', title: ['Cent clients,', 'une seule version,', 'zéro fuite entre eux.'], subtitle: 'Comment on construit un SaaS multi-tenant en Algérie : le tenant lu dans le jeton et jamais dans l’URL, la base partagée protégée par des politiques de lignes, les grands comptes sur base dédiée, les plans et quotas appliqués, et une seule mise à jour pour tout le monde', left: { label: 'Une copie par client', sub: 'cent installations à mettre à jour' }, right: { label: 'Multi-tenant', sub: 'une version, cent espaces étanches' } },
+    requete: { title: 'La vie d’une requête dans un SaaS multi-tenant, en six moments', items: [
+      { n: '01', label: 'La connexion', sub: 'L’utilisateur s’authentifie ; le jeton émis porte son identité, le tenant auquel il appartient et son rôle dans ce tenant.' },
+      { n: '02', label: 'Le tenant résolu', sub: 'Le tenant vient du jeton ou du sous-domaine vérifié, jamais d’un paramètre que le client peut modifier dans l’URL ou le corps.', accent: true },
+      { n: '03', label: 'Le contexte posé', sub: 'Le tenant est attaché à la requête et transmis à la session de base de données ; tout ce qui suit le voit sans le redemander.' },
+      { n: '04', label: 'L’autorisation', sub: 'Rôle dans le tenant, plan souscrit, quotas restants : la requête est refusée ici si l’une des trois conditions manque.' },
+      { n: '05', label: 'La requête à la base', sub: 'Chaque table porte tenant_id ; la politique de lignes filtre même si le code oublie la clause ; l’index commence par tenant_id.' },
+      { n: '06', label: 'Le journal et la mesure', sub: 'Chaque action est journalisée avec son tenant : usage, erreurs, coût ; c’est ce qui alimente les quotas et la facture.' },
+    ], caption: 'Figure 1 · Le moment 02 est celui qui décide de la sécurité : la quasi-totalité des fuites entre clients vient d’un identifiant de tenant lu dans la requête au lieu du jeton. Le moment 05 est le filet : la politique de lignes dans la base attrape la requête que le développeur a oublié de filtrer.', alt: 'Six étapes : connexion, tenant résolu, contexte posé, autorisation, requête à la base, journal et mesure' },
+    couches: { title: 'Le SaaS multi-tenant, en cinq couches', layers: [
+      { label: 'Identité et tenants', items: [{ name: 'Comptes, tenants, membres, rôles, invitations, connexion par téléphone ou e-mail', sub: 'un utilisateur peut appartenir à plusieurs tenants ; un tenant a ses rôles et ses admins' }] },
+      { label: 'Plans et quotas', items: [{ name: 'Paliers, fonctionnalités activées par palier, limites, compteurs, facturation', sub: 'le plan est une donnée du tenant que le code lit ; jamais une version différente du code' }] },
+      { label: 'Application', items: [{ name: 'Une seule version du code pour tous ; tenant_id dans chaque requête, chaque file, chaque fichier', sub: 'le tenant est un contexte, pas un paramètre ; une mise à jour sert tout le monde', accent: true }] },
+      { label: 'Données', items: [{ name: 'Base partagée avec politiques de lignes pour la masse ; schéma ou base dédiée pour les grands comptes', sub: 'sauvegarde et export par tenant, suppression d’un tenant en une opération' }] },
+      { label: 'Exploitation', items: [{ name: 'Déploiement unique, migrations, supervision par tenant, protection contre le voisin bruyant', sub: 'on sait quel tenant consomme quoi, et on l’isole avant qu’il ralentisse les autres' }] },
+    ], caption: 'Figure 2 · La couche du milieu est ce qui distingue un SaaS d’une collection de copies : une seule version du code, et le tenant comme contexte partout. Les couches du dessous décident du prix d’exploitation ; les couches du dessus décident de ce qu’on peut vendre.', alt: 'Cinq couches : identité et tenants, plans et quotas, application, données, exploitation' },
+    exemple: { title: 'Un SaaS vertical, deux ans après le lancement : l’exemple', items: [
+      { value: '120', label: 'clients actifs sur une seule installation : des pharmacies, des cabinets, des boutiques ; hypothèse à remplacer par votre marché' },
+      { value: '3', label: 'plans : essentiel, pro, entreprise ; les fonctionnalités et les limites viennent du plan, pas d’une version différente du code' },
+      { value: '2', label: 'clients sur base dédiée : un groupe de cliniques et un distributeur qui l’ont exigé au contrat ; les 118 autres partagent la base' },
+      { value: '0', label: 'installation par client : une mise à jour par semaine, la même pour les 120, déployée en quelques minutes sans couper personne', accent: true },
+    ], caption: 'Figure 3 · Les volumes sont des hypothèses ; la mécanique ne l’est pas : sans tenant comme contexte, 120 clients sont 120 copies à mettre à jour, et deux clients exigeants obligent à tout refaire. Avec le modèle mixte, ils ont leur base sans changer une ligne du code.', alt: 'Quatre chiffres : 120 clients, 3 plans, 2 bases dédiées, 0 installation par client' },
+    modeles: { title: 'Six façons de loger les données des clients, et quand chacune se justifie', columns: ['Quand', 'Ce que ça impose'], rows: [
+      { label: 'Base partagée, lignes protégées', cells: ['Le cas par défaut : des dizaines à des milliers de clients de taille ordinaire', 'tenant_id dans chaque table, politiques de lignes activées et forcées, tests qui tentent de lire un autre tenant à chaque livraison'] },
+      { label: 'Un schéma par client', cells: ['Quelques dizaines de clients qui veulent une séparation visible sans base dédiée', 'Migrations répétées sur chaque schéma, connexions à gérer ; devient lourd au-delà de quelques centaines'] },
+      { label: 'Une base par client', cells: ['Grands comptes, données réglementées, contrat qui l’exige, besoin de restaurer un seul client', 'Coût fixe par client, sauvegardes et migrations multipliées ; un routeur qui sait quelle base pour quel tenant'] },
+      { label: 'Une instance par client', cells: ['Le client veut son propre serveur, son propre domaine, parfois son propre pays d’hébergement', 'Identité, mise à jour et supervision restent partagées ; sinon ce n’est plus un SaaS mais une série de projets'] },
+      { label: 'Mixte', cells: ['Le cas réel de la plupart des SaaS : la masse partage, deux ou trois grands comptes sont isolés', 'Le code ne change pas ; seule la couche de données sait où est chaque tenant'] },
+      { label: 'Installé chez le client', cells: ['Rare : une administration ou un groupe qui refuse le cloud', 'Un paquet installable, des versions à suivre, un support différent ; à facturer comme tel'] },
+    ], caption: 'Figure 4 · La première ligne couvre la plupart des SaaS algériens en 2027 ; la cinquième est ce qu’ils deviennent quand un grand compte signe. Aucune ligne ne change le code de l’application : c’est la seule condition pour que les six restent un même produit.', alt: 'Matrice de six modèles de données : base partagée, schéma par client, base par client, instance par client, mixte, installé chez le client' },
+    pieges: { title: 'Six situations qui cassent un SaaS multi-tenant, et ce que l’architecture fait', columns: ['Ce qui se passe', 'Ce que l’architecture fait'], rows: [
+      { label: 'Fuite entre clients', cells: ['Un utilisateur change un identifiant dans l’URL et voit les factures d’un autre client', 'Tenant lu dans le jeton, vérification à chaque objet, politiques de lignes en filet, identifiants aléatoires, test automatisé'] },
+      { label: 'Voisin bruyant', cells: ['Un client lance un export de deux millions de lignes à 10 h et ralentit tous les autres', 'Files de travail par tenant, limites de débit, exports asynchrones, quotas par plan, alerte par tenant'] },
+      { label: 'Migration qui casse un client', cells: ['Un changement de schéma passe pour 119 clients et échoue sur le 120e qui a des données anciennes', 'Migrations testées sur une copie de production, déployées par vagues, réversibles, avec le client en lecture seule le temps de la migration'] },
+      { label: 'Un client veut ses données', cells: ['Il part, ou il veut une copie, ou il veut tout effacer', 'Export complet par tenant dans un format lisible, suppression d’un tenant en une opération journalisée, délai écrit au contrat'] },
+      { label: 'Un grand compte exige sa base', cells: ['Un groupe signe à condition d’avoir sa base, son domaine, son pays d’hébergement', 'Routeur de données : le tenant est déplacé vers une base dédiée sans toucher au code ; facturé au plan entreprise'] },
+      { label: 'Le plan ne limite rien', cells: ['Le plan essentiel utilise autant de stockage et d’envois que le plan entreprise, et les coûts montent', 'Compteurs par tenant alimentés par le journal, limites appliquées dans la couche d’autorisation, dépassement visible au client'] },
+    ], caption: 'Figure 5 · La première ligne coûte la confiance, les cinq autres coûtent de l’argent ou des clients. Toutes se traitent dans l’architecture, pas dans l’urgence : un SaaS dont le tenant est un paramètre de requête ne peut être réparé que par une réécriture.', alt: 'Matrice de six situations : fuite entre clients, voisin bruyant, migration cassée, export des données, grand compte, plan sans limites' },
+    calendrier: { title: 'Construire un SaaS multi-tenant en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Modèle de tenant et règles', note: 'qui est un tenant, qui est membre, quels rôles, quels plans, quelles limites, quel modèle de données par défaut', from: 0, to: 2 },
+      { label: 'Identité et comptes', note: 'inscription d’un tenant, invitations, rôles, connexion par téléphone ou e-mail, appartenance à plusieurs tenants', from: 2, to: 4 },
+      { label: 'Cœur métier avec tenant partout', note: 'tenant_id dans chaque table et chaque file, politiques de lignes, tests de fuite à chaque livraison', from: 4, to: 8, accent: true },
+      { label: 'Plans, quotas, facturation', note: 'paliers, fonctionnalités par palier, compteurs, dépassements, factures en dinars, rappel avant échéance', from: 8, to: 10 },
+      { label: 'Exploitation', note: 'migrations par vagues, sauvegardes et export par tenant, supervision par tenant, limites de débit', from: 10, to: 12 },
+      { label: 'Pilote', note: 'cinq clients réels sur la même installation, mesure de l’usage par tenant, premier grand compte isolé si besoin', from: 12, to: 14 },
+      { label: 'Ouverture', note: 'inscription en libre-service, onboarding automatique, premier plan payant, supervision en routine', from: 14, to: 16 },
+    ], caption: 'Figure 6 · Seize semaines pour un SaaS qui accueille son centième client sans qu’on le remarque. Les deux premières décident de tout : un SaaS dont le modèle de tenant est écrit après le code devient une collection de copies. Le pilote de la semaine 12 est le premier moment où deux clients partagent vraiment la même base.', alt: 'Frise de seize semaines : modèle de tenant, identité, cœur métier, plans et quotas, exploitation, pilote, ouverture' },
+  },
+  en: {
+    cover: { eyebrow: 'SaaS · Multi-tenant · Architecture · 2027', title: ['A hundred customers,', 'one single version,', 'no leak between them.'], subtitle: 'How a multi-tenant SaaS is built in Algeria: the tenant read from the token and never from the URL, the shared database protected by row policies, large accounts on a dedicated database, plans and quotas enforced, and one update for everyone', left: { label: 'One copy per customer', sub: 'a hundred installs to update' }, right: { label: 'Multi-tenant', sub: 'one version, a hundred sealed spaces' } },
+    requete: { title: 'The life of a request in a multi-tenant SaaS, in six moments', items: [
+      { n: '01', label: 'Login', sub: 'The user authenticates; the issued token carries their identity, the tenant they belong to and their role in that tenant.' },
+      { n: '02', label: 'Tenant resolved', sub: 'The tenant comes from the token or the verified subdomain, never from a parameter the client can change in the URL or the body.', accent: true },
+      { n: '03', label: 'Context set', sub: 'The tenant is attached to the request and passed to the database session; everything after sees it without asking again.' },
+      { n: '04', label: 'Authorisation', sub: 'Role in the tenant, subscribed plan, remaining quotas: the request is refused here if any of the three is missing.' },
+      { n: '05', label: 'The database query', sub: 'Every table carries tenant_id; the row policy filters even if the code forgets the clause; the index starts with tenant_id.' },
+      { n: '06', label: 'Log and metering', sub: 'Every action is logged with its tenant: usage, errors, cost; this is what feeds quotas and the invoice.' },
+    ], caption: 'Figure 1 · Moment 02 decides security: almost every cross-customer leak comes from a tenant identifier read from the request instead of the token. Moment 05 is the net: the row policy in the database catches the query the developer forgot to filter.', alt: 'Six steps: login, tenant resolved, context set, authorisation, database query, log and metering' },
+    couches: { title: 'The multi-tenant SaaS, in five layers', layers: [
+      { label: 'Identity and tenants', items: [{ name: 'Accounts, tenants, members, roles, invitations, login by phone or email', sub: 'a user can belong to several tenants; a tenant has its roles and its admins' }] },
+      { label: 'Plans and quotas', items: [{ name: 'Tiers, features enabled per tier, limits, counters, billing', sub: 'the plan is tenant data the code reads; never a different version of the code' }] },
+      { label: 'Application', items: [{ name: 'One version of the code for all; tenant_id in every request, every queue, every file', sub: 'the tenant is a context, not a parameter; one update serves everyone', accent: true }] },
+      { label: 'Data', items: [{ name: 'Shared database with row policies for the many; dedicated schema or database for large accounts', sub: 'backup and export per tenant, deletion of a tenant in one operation' }] },
+      { label: 'Operations', items: [{ name: 'Single deployment, migrations, per-tenant supervision, noisy-neighbour protection', sub: 'you know which tenant consumes what, and isolate it before it slows the others' }] },
+    ], caption: 'Figure 2 · The middle layer is what distinguishes a SaaS from a collection of copies: one version of the code, and the tenant as context everywhere. The layers below decide the operating cost; the layers above decide what can be sold.', alt: 'Five layers: identity and tenants, plans and quotas, application, data, operations' },
+    exemple: { title: 'A vertical SaaS, two years after launch: the example', items: [
+      { value: '120', label: 'active customers on one installation: pharmacies, practices, shops; an assumption to replace with your market' },
+      { value: '3', label: 'plans: essential, pro, enterprise; features and limits come from the plan, not from a different version of the code' },
+      { value: '2', label: 'customers on a dedicated database: a clinic group and a distributor who required it in the contract; the other 118 share the database' },
+      { value: '0', label: 'installs per customer: one update a week, the same for all 120, deployed in minutes without cutting anyone off', accent: true },
+    ], caption: 'Figure 3 · The volumes are assumptions; the mechanics are not: without the tenant as context, 120 customers are 120 copies to update, and two demanding customers force a rewrite. With the mixed model they get their database without changing a line of code.', alt: 'Four figures: 120 customers, 3 plans, 2 dedicated databases, 0 installs per customer' },
+    modeles: { title: 'Six ways to house customers’ data, and when each is justified', columns: ['When', 'What it imposes'], rows: [
+      { label: 'Shared database, protected rows', cells: ['The default: tens to thousands of ordinary-sized customers', 'tenant_id in every table, row policies enabled and forced, tests that try to read another tenant at every release'] },
+      { label: 'One schema per customer', cells: ['A few dozen customers who want visible separation without a dedicated database', 'Migrations repeated on every schema, connections to manage; becomes heavy beyond a few hundred'] },
+      { label: 'One database per customer', cells: ['Large accounts, regulated data, a contract that requires it, the need to restore a single customer', 'Fixed cost per customer, multiplied backups and migrations; a router that knows which database for which tenant'] },
+      { label: 'One instance per customer', cells: ['The customer wants their own server, their own domain, sometimes their own hosting country', 'Identity, updates and supervision stay shared; otherwise it is no longer a SaaS but a series of projects'] },
+      { label: 'Mixed', cells: ['The real case of most SaaS: the many share, two or three large accounts are isolated', 'The code does not change; only the data layer knows where each tenant lives'] },
+      { label: 'Installed at the customer’s', cells: ['Rare: an administration or a group that refuses the cloud', 'An installable package, versions to track, different support; to be billed as such'] },
+    ], caption: 'Figure 4 · The first row covers most Algerian SaaS in 2027; the fifth is what they become when a large account signs. No row changes the application’s code: that is the only condition for the six to remain one product.', alt: 'Matrix of six data models: shared database, schema per customer, database per customer, instance per customer, mixed, installed at the customer’s' },
+    pieges: { title: 'Six situations that break a multi-tenant SaaS, and what the architecture does', columns: ['What happens', 'What the architecture does'], rows: [
+      { label: 'Cross-customer leak', cells: ['A user changes an identifier in the URL and sees another customer’s invoices', 'Tenant read from the token, check on every object, row policies as a net, random identifiers, automated test'] },
+      { label: 'Noisy neighbour', cells: ['A customer launches a two-million-row export at 10 am and slows everyone else', 'Work queues per tenant, rate limits, asynchronous exports, quotas per plan, per-tenant alert'] },
+      { label: 'Migration that breaks a customer', cells: ['A schema change passes for 119 customers and fails on the 120th with old data', 'Migrations tested on a production copy, deployed in waves, reversible, with the customer read-only during the migration'] },
+      { label: 'A customer wants their data', cells: ['They leave, or want a copy, or want everything erased', 'Full export per tenant in a readable format, deletion of a tenant in one logged operation, delay written in the contract'] },
+      { label: 'A large account demands its database', cells: ['A group signs on condition of having its database, its domain, its hosting country', 'Data router: the tenant is moved to a dedicated database without touching the code; billed on the enterprise plan'] },
+      { label: 'The plan limits nothing', cells: ['The essential plan uses as much storage and sending as the enterprise plan, and costs rise', 'Per-tenant counters fed by the log, limits enforced in the authorisation layer, overage visible to the customer'] },
+    ], caption: 'Figure 5 · The first row costs trust, the other five cost money or customers. All are handled in the architecture, not in an emergency: a SaaS whose tenant is a request parameter can only be fixed by a rewrite.', alt: 'Matrix of six situations: cross-customer leak, noisy neighbour, broken migration, data export, large account, plan without limits' },
+    calendrier: { title: 'Building a multi-tenant SaaS in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Tenant model and rules', note: 'what is a tenant, who is a member, which roles, which plans, which limits, which default data model', from: 0, to: 2 },
+      { label: 'Identity and accounts', note: 'tenant sign-up, invitations, roles, login by phone or email, membership of several tenants', from: 2, to: 4 },
+      { label: 'Core business with tenant everywhere', note: 'tenant_id in every table and queue, row policies, leak tests at every release', from: 4, to: 8, accent: true },
+      { label: 'Plans, quotas, billing', note: 'tiers, features per tier, counters, overages, invoices in dinars, reminder before the due date', from: 8, to: 10 },
+      { label: 'Operations', note: 'migrations in waves, per-tenant backup and export, per-tenant supervision, rate limits', from: 10, to: 12 },
+      { label: 'Pilot', note: 'five real customers on the same installation, usage measured per tenant, first large account isolated if needed', from: 12, to: 14 },
+      { label: 'Opening', note: 'self-service sign-up, automatic onboarding, first paid plan, supervision as routine', from: 14, to: 16 },
+    ], caption: 'Figure 6 · Sixteen weeks for a SaaS that welcomes its hundredth customer without anyone noticing. The first two decide everything: a SaaS whose tenant model is written after the code becomes a collection of copies. The week-12 pilot is the first moment two customers really share the same database.', alt: 'Sixteen-week timeline: tenant model, identity, core business, plans and quotas, operations, pilot, opening' },
+  },
+  ar: {
+    cover: { eyebrow: 'SaaS · متعدد المستأجرين · الهندسة · 2027', title: ['مائة زبون،', 'نسخة واحدة،', 'ولا تسرّب بينهم.'], subtitle: 'كيف يُبنى SaaS متعدد المستأجرين في الجزائر: المستأجر يُقرأ من الرمز لا من العنوان أبداً، القاعدة المشتركة محمية بسياسات الصفوف، الحسابات الكبيرة على قاعدة مخصصة، الخطط والحصص مطبَّقة، وتحديث واحد للجميع', left: { label: 'نسخة لكل زبون', sub: 'مائة تثبيت يجب تحديثها' }, right: { label: 'متعدد المستأجرين', sub: 'نسخة واحدة، مائة فضاء محكم' } },
+    requete: { title: 'حياة طلب في SaaS متعدد المستأجرين، في ست لحظات', items: [
+      { n: '01', label: 'الدخول', sub: 'يصادق المستعمل؛ يحمل الرمز الصادر هويته والمستأجر الذي ينتمي إليه ودوره في ذلك المستأجر.' },
+      { n: '02', label: 'المستأجر المحدَّد', sub: 'يأتي المستأجر من الرمز أو من النطاق الفرعي المتحقَّق منه، لا من معامل يستطيع العميل تغييره في العنوان أو الجسم أبداً.', accent: true },
+      { n: '03', label: 'السياق الموضوع', sub: 'يُرفق المستأجر بالطلب ويُمرَّر إلى جلسة قاعدة البيانات؛ وكل ما يلي يراه دون أن يطلبه مجدداً.' },
+      { n: '04', label: 'التفويض', sub: 'الدور في المستأجر، الخطة المشترَك فيها، الحصص المتبقية: يُرفض الطلب هنا إن غاب أحد الشروط الثلاثة.' },
+      { n: '05', label: 'الاستعلام في القاعدة', sub: 'كل جدول يحمل tenant_id؛ سياسة الصفوف ترشّح حتى لو نسي الكود الشرط؛ والفهرس يبدأ بـtenant_id.' },
+      { n: '06', label: 'السجل والقياس', sub: 'كل عملية تُسجَّل بمستأجرها: الاستعمال، الأخطاء، التكلفة؛ وهذا ما يغذّي الحصص والفاتورة.' },
+    ], caption: 'الشكل 1 · اللحظة 02 هي التي تقرر الأمان: كل التسربات بين الزبائن تقريباً تأتي من معرّف مستأجر يُقرأ من الطلب بدل الرمز. واللحظة 05 هي الشبكة: سياسة الصفوف في القاعدة تلتقط الاستعلام الذي نسي المطوّر ترشيحه.', alt: 'ست خطوات: الدخول، المستأجر المحدد، السياق، التفويض، الاستعلام، السجل والقياس' },
+    couches: { title: 'SaaS متعدد المستأجرين، في خمس طبقات', layers: [
+      { label: 'الهوية والمستأجرون', items: [{ name: 'الحسابات، المستأجرون، الأعضاء، الأدوار، الدعوات، الدخول بالهاتف أو البريد', sub: 'يمكن للمستعمل أن ينتمي إلى عدة مستأجرين؛ ولكل مستأجر أدواره ومديروه' }] },
+      { label: 'الخطط والحصص', items: [{ name: 'المستويات، الوظائف المفعَّلة لكل مستوى، الحدود، العدادات، الفوترة', sub: 'الخطة بيانات للمستأجر يقرؤها الكود؛ لا نسخة مختلفة من الكود أبداً' }] },
+      { label: 'التطبيق', items: [{ name: 'نسخة واحدة من الكود للجميع؛ tenant_id في كل طلب وكل طابور وكل ملف', sub: 'المستأجر سياق لا معامل؛ تحديث واحد يخدم الجميع', accent: true }] },
+      { label: 'البيانات', items: [{ name: 'قاعدة مشتركة بسياسات صفوف للعموم؛ مخطط أو قاعدة مخصصة للحسابات الكبيرة', sub: 'نسخ احتياطي وتصدير لكل مستأجر، حذف مستأجر في عملية واحدة' }] },
+      { label: 'التشغيل', items: [{ name: 'نشر واحد، ترحيلات، إشراف لكل مستأجر، حماية من الجار المزعج', sub: 'نعرف أي مستأجر يستهلك ماذا، ونعزله قبل أن يبطئ الآخرين' }] },
+    ], caption: 'الشكل 2 · الطبقة الوسطى هي ما يميّز SaaS عن مجموعة نسخ: نسخة واحدة من الكود، والمستأجر سياقاً في كل مكان. الطبقات السفلى تقرر تكلفة التشغيل؛ والطبقات العليا تقرر ما يمكن بيعه.', alt: 'خمس طبقات: الهوية والمستأجرون، الخطط والحصص، التطبيق، البيانات، التشغيل' },
+    exemple: { title: 'SaaS عمودي بعد سنتين من الإطلاق: المثال', items: [
+      { value: '120', label: 'زبوناً نشطاً على تثبيت واحد: صيدليات، عيادات، متاجر؛ فرضية تُستبدل بسوقكم' },
+      { value: '3', label: 'خطط: أساسية، احترافية، مؤسسات؛ الوظائف والحدود تأتي من الخطة لا من نسخة مختلفة من الكود' },
+      { value: '2', label: 'زبونان على قاعدة مخصصة: مجموعة مصحات وموزّع اشترطاها في العقد؛ والـ118 الآخرون يتشاركون القاعدة' },
+      { value: '0', label: 'تثبيت لكل زبون: تحديث واحد أسبوعياً، نفسه للـ120، يُنشر في دقائق دون قطع أحد', accent: true },
+    ], caption: 'الشكل 3 · الأحجام فرضيات؛ أما الآلية فلا: بلا مستأجر كسياق يصبح 120 زبوناً 120 نسخة تُحدَّث، وزبونان متطلبان يفرضان إعادة الكتابة. وبالنموذج المختلط يحصلان على قاعدتهما دون تغيير سطر من الكود.', alt: 'أربعة أرقام: 120 زبوناً، 3 خطط، قاعدتان مخصصتان، 0 تثبيت لكل زبون' },
+    modeles: { title: 'ست طرق لإيواء بيانات الزبائن، ومتى تُبرَّر كل منها', columns: ['متى', 'ما تفرضه'], rows: [
+      { label: 'قاعدة مشتركة، صفوف محمية', cells: ['الحالة الافتراضية: عشرات إلى آلاف الزبائن بحجم عادي', 'tenant_id في كل جدول، سياسات صفوف مفعَّلة ومفروضة، اختبارات تحاول قراءة مستأجر آخر مع كل تسليم'] },
+      { label: 'مخطط لكل زبون', cells: ['بضع عشرات من الزبائن يريدون فصلاً ظاهراً دون قاعدة مخصصة', 'ترحيلات تُكرَّر على كل مخطط، اتصالات تُدار؛ يثقل بعد بضع مئات'] },
+      { label: 'قاعدة لكل زبون', cells: ['حسابات كبيرة، بيانات منظَّمة، عقد يشترطها، الحاجة إلى استعادة زبون واحد', 'تكلفة ثابتة لكل زبون، نسخ احتياطية وترحيلات مضاعفة؛ موجّه يعرف أي قاعدة لأي مستأجر'] },
+      { label: 'نسخة تشغيل لكل زبون', cells: ['الزبون يريد خادمه ونطاقه وأحياناً بلد استضافته', 'الهوية والتحديث والإشراف تبقى مشتركة؛ وإلا لم يعد SaaS بل سلسلة مشاريع'] },
+      { label: 'مختلط', cells: ['الحالة الحقيقية لأغلب SaaS: العموم يتشاركون، وحسابان أو ثلاثة كبيرة معزولة', 'الكود لا يتغير؛ طبقة البيانات وحدها تعرف أين يقيم كل مستأجر'] },
+      { label: 'مثبَّت عند الزبون', cells: ['نادر: إدارة أو مجموعة ترفض السحابة', 'حزمة قابلة للتثبيت، إصدارات تُتابَع، دعم مختلف؛ يُفوتَر على هذا الأساس'] },
+    ], caption: 'الشكل 4 · السطر الأول يغطي أغلب SaaS الجزائرية في 2027؛ والخامس ما تصير إليه حين يوقّع حساب كبير. لا سطر يغيّر كود التطبيق: وهذا الشرط الوحيد كي تبقى الست منتجاً واحداً.', alt: 'مصفوفة ستة نماذج بيانات: قاعدة مشتركة، مخطط لكل زبون، قاعدة لكل زبون، نسخة لكل زبون، مختلط، مثبت عند الزبون' },
+    pieges: { title: 'ست حالات تكسر SaaS متعدد المستأجرين، وما تفعله الهندسة', columns: ['ما يحدث', 'ما تفعله الهندسة'], rows: [
+      { label: 'تسرّب بين الزبائن', cells: ['مستعمل يغيّر معرّفاً في العنوان فيرى فواتير زبون آخر', 'المستأجر يُقرأ من الرمز، تحقق عند كل كائن، سياسات صفوف كشبكة، معرّفات عشوائية، اختبار آلي'] },
+      { label: 'الجار المزعج', cells: ['زبون يطلق تصدير مليوني سطر الساعة 10 فيبطئ الجميع', 'طوابير عمل لكل مستأجر، حدود تدفق، تصدير غير متزامن، حصص لكل خطة، تنبيه لكل مستأجر'] },
+      { label: 'ترحيل يكسر زبوناً', cells: ['تغيير مخطط يمرّ لـ119 زبوناً ويفشل عند الـ120 الذي لديه بيانات قديمة', 'ترحيلات مختبرة على نسخة من الإنتاج، تُنشر على موجات، قابلة للتراجع، والزبون للقراءة فقط مدة الترحيل'] },
+      { label: 'زبون يريد بياناته', cells: ['يغادر، أو يريد نسخة، أو يريد محو كل شيء', 'تصدير كامل لكل مستأجر بصيغة مقروءة، حذف مستأجر في عملية واحدة مسجَّلة، مهلة مكتوبة في العقد'] },
+      { label: 'حساب كبير يشترط قاعدته', cells: ['مجموعة توقّع بشرط أن تكون لها قاعدتها ونطاقها وبلد استضافتها', 'موجّه بيانات: يُنقل المستأجر إلى قاعدة مخصصة دون مسّ الكود؛ يُفوتَر على خطة المؤسسات'] },
+      { label: 'الخطة لا تحدّ شيئاً', cells: ['الخطة الأساسية تستهلك من التخزين والإرسال بقدر خطة المؤسسات، وترتفع التكاليف', 'عدادات لكل مستأجر يغذّيها السجل، حدود مطبَّقة في طبقة التفويض، تجاوز ظاهر للزبون'] },
+    ], caption: 'الشكل 5 · السطر الأول يكلّف الثقة، والخمسة الأخرى تكلّف مالاً أو زبائن. وكلها تُعالَج في الهندسة لا في الطوارئ: SaaS مستأجرُه معاملُ طلب لا يُصلَح إلا بإعادة الكتابة.', alt: 'مصفوفة ست حالات: تسرب بين الزبائن، جار مزعج، ترحيل مكسور، تصدير البيانات، حساب كبير، خطة بلا حدود' },
+    calendrier: { title: 'بناء SaaS متعدد المستأجرين في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'نموذج المستأجر والقواعد', note: 'ما المستأجر، من العضو، أي أدوار، أي خطط، أي حدود، أي نموذج بيانات افتراضي', from: 0, to: 2 },
+      { label: 'الهوية والحسابات', note: 'تسجيل مستأجر، دعوات، أدوار، دخول بالهاتف أو البريد، انتماء إلى عدة مستأجرين', from: 2, to: 4 },
+      { label: 'جوهر العمل بالمستأجر في كل مكان', note: 'tenant_id في كل جدول وكل طابور، سياسات صفوف، اختبارات تسرب مع كل تسليم', from: 4, to: 8, accent: true },
+      { label: 'الخطط والحصص والفوترة', note: 'مستويات، وظائف لكل مستوى، عدادات، تجاوزات، فواتير بالدينار، تذكير قبل الاستحقاق', from: 8, to: 10 },
+      { label: 'التشغيل', note: 'ترحيلات على موجات، نسخ احتياطي وتصدير لكل مستأجر، إشراف لكل مستأجر، حدود تدفق', from: 10, to: 12 },
+      { label: 'التجريب', note: 'خمسة زبائن حقيقيين على التثبيت نفسه، قياس الاستعمال لكل مستأجر، أول حساب كبير معزول عند الحاجة', from: 12, to: 14 },
+      { label: 'الفتح', note: 'تسجيل ذاتي، إدماج آلي، أول خطة مدفوعة، إشراف روتيني', from: 14, to: 16 },
+    ], caption: 'الشكل 6 · ستة عشر أسبوعاً لـSaaS يستقبل زبونه المائة دون أن يلاحظ أحد. الأسبوعان الأولان يقرران كل شيء: SaaS يُكتب نموذج مستأجره بعد الكود يصير مجموعة نسخ. وتجريب الأسبوع 12 أول لحظة يتشارك فيها زبونان القاعدة نفسها فعلاً.', alt: 'خط زمني من ستة عشر أسبوعاً: نموذج المستأجر، الهوية، جوهر العمل، الخطط والحصص، التشغيل، التجريب، الفتح' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      requete: { svg: steps({ title: t.requete.title, steps: t.requete.items, arrows: true, rtl }), caption: t.requete.caption, alt: t.requete.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      pieges: { svg: matrix({ title: t.pieges.title, columns: t.pieges.columns, rows: t.pieges.rows, rtl }), caption: t.pieges.caption, alt: t.pieges.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 16, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

@@ -571,7 +571,6 @@ export default function TatwirMawaqieWebUaeDubai2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={typeof t.seoKeywords === 'string' ? t.seoKeywords : t.seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/tatwir-mawaqie-web-uae-dubai-2026" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

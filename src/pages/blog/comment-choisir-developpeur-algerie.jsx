@@ -28,7 +28,7 @@ export default function CommentChoisirDeveloppeur() {
       {
         "@type": "Question",
         "name": "Comment trouver un bon développeur en Algérie ?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Cherchez sur LinkedIn, les groupes Facebook tech, Mostaql, Khamsat ou demandez des recommandations. Symloop, agence basée à Sétif, a livré +50 projets avec des technologies modernes. Vérifiez toujours le portfolio et contactez les références. Appelez Symloop au +213 549 575 512." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Cherchez sur LinkedIn, les groupes Facebook tech, Mostaql, Khamsat ou demandez des recommandations. Symloop, agence basée à Alger, a livré +50 projets avec des technologies modernes. Vérifiez toujours le portfolio et contactez les références. Appelez Symloop au +213 549 575 512." }
       },
       {
         "@type": "Question",
@@ -75,7 +75,6 @@ export default function CommentChoisirDeveloppeur() {
         <title>Comment Choisir un Développeur en Algérie - Guide Complet 2024 | Symloop</title>
         <meta name="description" content="Guide complet pour choisir le bon développeur ou agence web en Algérie. Critères essentiels, questions à poser, red flags à éviter. Conseils d'experts Symloop." />
         <meta name="keywords" content="choisir développeur algérie, critères agence web algérie, recruter développeur, trouver développeur algérie, sélection prestataire IT, agence web fiable algérie, développeur freelance algérie, critères choix agence digitale, partenaire tech algérie, développeur web mobile algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/comment-choisir-developpeur-algerie" />
         <meta property="og:title" content="Comment Choisir un Développeur en Algérie - Guide Complet 2024" />
         <meta property="og:description" content="Guide complet pour choisir le bon développeur ou agence web en Algérie. Critères, questions et conseils d'experts." />
         <meta property="og:url" content="https://symloop.com/blog/comment-choisir-developpeur-algerie" />
@@ -90,7 +89,7 @@ export default function CommentChoisirDeveloppeur() {
       <div className="min-h-screen bg-white">
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

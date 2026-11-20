@@ -1,0 +1,7174 @@
+{
+ "date": "2026-11-16",
+ "calls": 3816,
+ "failed": 0,
+ "unique_suggestions": 12230,
+ "method": "Google suggest (client=firefox, hl per language, gl per market) and Bing osjson (market per locale); place seeds expanded with every letter of the alphabet; a suggestion is a phrase an engine proposes, not a search volume",
+ "markets": [
+  {
+   "gl": "sa",
+   "name": "Saudi Arabia",
+   "role": "target",
+   "languages": [
+    "en",
+    "ar"
+   ]
+  },
+  {
+   "gl": "ae",
+   "name": "United Arab Emirates",
+   "role": "target",
+   "languages": [
+    "en",
+    "ar"
+   ]
+  },
+  {
+   "gl": "qa",
+   "name": "Qatar",
+   "role": "target",
+   "languages": [
+    "en",
+    "ar"
+   ]
+  },
+  {
+   "gl": "fr",
+   "name": "France",
+   "role": "target",
+   "languages": [
+    "fr"
+   ]
+  },
+  {
+   "gl": "es",
+   "name": "Spain",
+   "role": "target",
+   "languages": [
+    "es"
+   ]
+  },
+  {
+   "gl": "us",
+   "name": "United States",
+   "role": "control",
+   "languages": [
+    "en"
+   ]
+  },
+  {
+   "gl": "gb",
+   "name": "United Kingdom",
+   "role": "control",
+   "languages": [
+    "en"
+   ]
+  },
+  {
+   "gl": "eg",
+   "name": "Egypt",
+   "role": "control",
+   "languages": [
+    "ar"
+   ]
+  }
+ ],
+ "seeds": {
+  "en": {
+   "place": [
+    "software development company in",
+    "mobile app development company in",
+    "best software company in",
+    "app developers in",
+    "web development company in",
+    "it outsourcing company in"
+   ],
+   "intent": [
+    "software development company",
+    "app development cost",
+    "how to choose a software development company",
+    "hire app developers",
+    "outsource software development",
+    "offshore software development",
+    "best software development company",
+    "software development company reviews"
+   ],
+   "letters": 26
+  },
+  "ar": {
+   "place": [
+    "شركة برمجة في",
+    "شركة تطوير تطبيقات في",
+    "أفضل شركة برمجة في",
+    "شركة تصميم مواقع في"
+   ],
+   "intent": [
+    "شركة برمجة",
+    "تكلفة تطبيق",
+    "سعر تصميم تطبيق",
+    "كيف اختار شركة برمجة",
+    "أفضل شركة برمجة",
+    "شركة تطوير تطبيقات",
+    "مبرمج تطبيقات",
+    "تقييم شركات البرمجة"
+   ],
+   "letters": 28
+  },
+  "fr": {
+   "place": [
+    "agence développement application mobile",
+    "agence développement web",
+    "société développement logiciel",
+    "développeur offshore",
+    "nearshore développement",
+    "externalisation développement informatique",
+    "meilleure agence développement",
+    "prestataire développement informatique"
+   ],
+   "intent": [
+    "prix développement application mobile",
+    "comment choisir une agence de développement",
+    "tarif développeur freelance",
+    "devis application mobile",
+    "agence développement avis",
+    "externaliser développement logiciel"
+   ],
+   "letters": 26
+  },
+  "es": {
+   "place": [
+    "empresa desarrollo software",
+    "empresa desarrollo apps",
+    "empresa desarrollo web",
+    "outsourcing desarrollo software",
+    "nearshore desarrollo software",
+    "mejor empresa desarrollo software",
+    "desarrollo software offshore"
+   ],
+   "intent": [
+    "cuánto cuesta desarrollar una app",
+    "precio desarrollo software a medida",
+    "cómo elegir empresa desarrollo software",
+    "presupuesto desarrollo app",
+    "empresa desarrollo software opiniones",
+    "externalizar desarrollo software"
+   ],
+   "letters": 26
+  }
+ },
+ "reference_markets": {
+  "en": "United Arab Emirates",
+  "ar": "Saudi Arabia",
+  "fr": "France",
+  "es": "Spain"
+ },
+ "control_markets": {
+  "en": "United States",
+  "ar": "Egypt"
+ },
+ "language_maps": {
+  "en": {
+   "reference_market": "United Arab Emirates",
+   "engine": "google",
+   "place_mentions": 762,
+   "top": [
+    {
+     "country": "India",
+     "n": 284,
+     "share": 0.373
+    },
+    {
+     "country": "United States",
+     "n": 132,
+     "share": 0.173
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "Pakistan",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "United Kingdom",
+     "n": 32,
+     "share": 0.042
+    },
+    {
+     "country": "Qatar",
+     "n": 28,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 25,
+     "share": 0.033
+    },
+    {
+     "country": "Canada",
+     "n": 18,
+     "share": 0.024
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.018
+    },
+    {
+     "country": "South Africa",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Nigeria",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Oman",
+     "n": 12,
+     "share": 0.016
+    }
+   ],
+   "algeria": 0,
+   "morocco": 1,
+   "tunisia": 0,
+   "egypt": 8,
+   "jordan": 4,
+   "india": 284
+  },
+  "ar": {
+   "reference_market": "Saudi Arabia",
+   "engine": "google",
+   "place_mentions": 82,
+   "top": [
+    {
+     "country": "Egypt",
+     "n": 23,
+     "share": 0.28
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 22,
+     "share": 0.268
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.11
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.098
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.037
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.012
+    }
+   ],
+   "algeria": 0,
+   "morocco": 0,
+   "tunisia": 0,
+   "egypt": 23,
+   "jordan": 4,
+   "india": 0
+  },
+  "fr": {
+   "reference_market": "France",
+   "engine": "google",
+   "place_mentions": 96,
+   "top": [
+    {
+     "country": "France",
+     "n": 54,
+     "share": 0.563
+    },
+    {
+     "country": "Morocco",
+     "n": 14,
+     "share": 0.146
+    },
+    {
+     "country": "Tunisia",
+     "n": 9,
+     "share": 0.094
+    },
+    {
+     "country": "India",
+     "n": 7,
+     "share": 0.073
+    },
+    {
+     "country": "Near me",
+     "n": 2,
+     "share": 0.021
+    },
+    {
+     "country": "Canada",
+     "n": 2,
+     "share": 0.021
+    },
+    {
+     "country": "United States",
+     "n": 2,
+     "share": 0.021
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Algeria",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Ivory Coast",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.01
+    }
+   ],
+   "algeria": 1,
+   "morocco": 14,
+   "tunisia": 9,
+   "egypt": 0,
+   "jordan": 0,
+   "india": 7
+  },
+  "es": {
+   "reference_market": "Spain",
+   "engine": "google",
+   "place_mentions": 28,
+   "top": [
+    {
+     "country": "Latin America",
+     "n": 21,
+     "share": 0.75
+    },
+    {
+     "country": "Spain",
+     "n": 7,
+     "share": 0.25
+    }
+   ],
+   "algeria": 0,
+   "morocco": 0,
+   "tunisia": 0,
+   "egypt": 0,
+   "jordan": 0,
+   "india": 0
+  }
+ },
+ "share_gap_vs_reference": {
+  "sa/en/google": {
+   "market": "Saudi Arabia",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0.373,
+   "domestic_share": 0.018
+  },
+  "sa/en/bing": {
+   "market": "Saudi Arabia",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 0.2,
+   "on_country": "India",
+   "india_share": 0.347,
+   "domestic_share": 0.034
+  },
+  "qa/en/google": {
+   "market": "Qatar",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0.373,
+   "domestic_share": 0.037
+  },
+  "qa/en/bing": {
+   "market": "Qatar",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 0.1,
+   "on_country": "India",
+   "india_share": 0.346,
+   "domestic_share": 0.014
+  },
+  "us/en/google": {
+   "market": "United States",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 0.2,
+   "on_country": "India",
+   "india_share": 0.371,
+   "domestic_share": 0.173
+  },
+  "us/en/bing": {
+   "market": "United States",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 1,
+   "on_country": "India",
+   "india_share": 0.335,
+   "domestic_share": 0.188
+  },
+  "gb/en/google": {
+   "market": "United Kingdom",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 0.2,
+   "on_country": "India",
+   "india_share": 0.371,
+   "domestic_share": 0.042
+  },
+  "gb/en/bing": {
+   "market": "United Kingdom",
+   "reference": "United Arab Emirates",
+   "largest_gap_points": 1,
+   "on_country": "India",
+   "india_share": 0.335,
+   "domestic_share": 0.047
+  },
+  "ae/ar/google": {
+   "market": "United Arab Emirates",
+   "reference": "Saudi Arabia",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0,
+   "domestic_share": 0.098
+  },
+  "ae/ar/bing": {
+   "market": "United Arab Emirates",
+   "reference": "Saudi Arabia",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0,
+   "domestic_share": 0.042
+  },
+  "qa/ar/google": {
+   "market": "Qatar",
+   "reference": "Saudi Arabia",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0,
+   "domestic_share": 0.024
+  },
+  "qa/ar/bing": {
+   "market": "Qatar",
+   "reference": "Saudi Arabia",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0,
+   "domestic_share": 0
+  },
+  "eg/ar/google": {
+   "market": "Egypt",
+   "reference": "Saudi Arabia",
+   "largest_gap_points": 0,
+   "on_country": null,
+   "india_share": 0,
+   "domestic_share": 0.28
+  },
+  "eg/ar/bing": {
+   "market": "Egypt",
+   "reference": "Saudi Arabia",
+   "largest_gap_points": 0.3,
+   "on_country": "Oman or Amman (ambiguous)",
+   "india_share": 0,
+   "domestic_share": 0.182
+  }
+ },
+ "similarity_vs_control": [
+  {
+   "language": "en",
+   "engine": "google",
+   "seed_type": "bare",
+   "control": "United States",
+   "control_size": 62,
+   "markets": {
+    "sa": 0.85,
+    "ae": 0.81,
+    "qa": 0.82,
+    "gb": 0.85
+   }
+  },
+  {
+   "language": "en",
+   "engine": "google",
+   "seed_type": "letters",
+   "control": "United States",
+   "control_size": 1309,
+   "markets": {
+    "sa": 1,
+    "ae": 1,
+    "qa": 1,
+    "gb": 1
+   }
+  },
+  {
+   "language": "en",
+   "engine": "bing",
+   "seed_type": "bare",
+   "control": "United States",
+   "control_size": 115,
+   "markets": {
+    "sa": 0.51,
+    "ae": 0.51,
+    "qa": 0.51,
+    "gb": 0.51
+   }
+  },
+  {
+   "language": "en",
+   "engine": "bing",
+   "seed_type": "letters",
+   "control": "United States",
+   "control_size": 825,
+   "markets": {
+    "sa": 0.62,
+    "ae": 0.61,
+    "qa": 0.62,
+    "gb": 0.55
+   }
+  },
+  {
+   "language": "ar",
+   "engine": "google",
+   "seed_type": "bare",
+   "control": "Egypt",
+   "control_size": 31,
+   "markets": {
+    "sa": 1,
+    "ae": 1,
+    "qa": 1
+   }
+  },
+  {
+   "language": "ar",
+   "engine": "google",
+   "seed_type": "letters",
+   "control": "Egypt",
+   "control_size": 136,
+   "markets": {
+    "sa": 1,
+    "ae": 1,
+    "qa": 1
+   }
+  },
+  {
+   "language": "ar",
+   "engine": "bing",
+   "seed_type": "bare",
+   "control": "Egypt",
+   "control_size": 29,
+   "markets": {
+    "sa": 0.66,
+    "ae": 0.93,
+    "qa": 0.93
+   }
+  },
+  {
+   "language": "ar",
+   "engine": "bing",
+   "seed_type": "letters",
+   "control": "Egypt",
+   "control_size": 102,
+   "markets": {
+    "sa": 0.69,
+    "ae": 0.89,
+    "qa": 0.9
+   }
+  }
+ ],
+ "first_line_summary": {
+  "sa/en": {
+   "market": "Saudi Arabia",
+   "language": "en",
+   "seeds": 6,
+   "google_domestic_first": 1,
+   "google_domestic_top3": 1,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 0
+  },
+  "sa/ar": {
+   "market": "Saudi Arabia",
+   "language": "ar",
+   "seeds": 4,
+   "google_domestic_first": 3,
+   "google_domestic_top3": 4,
+   "bing_domestic_first": 2,
+   "bing_domestic_top3": 3
+  },
+  "ae/en": {
+   "market": "United Arab Emirates",
+   "language": "en",
+   "seeds": 6,
+   "google_domestic_first": 4,
+   "google_domestic_top3": 5,
+   "bing_domestic_first": 2,
+   "bing_domestic_top3": 4
+  },
+  "ae/ar": {
+   "market": "United Arab Emirates",
+   "language": "ar",
+   "seeds": 4,
+   "google_domestic_first": 0,
+   "google_domestic_top3": 0,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 0
+  },
+  "qa/en": {
+   "market": "Qatar",
+   "language": "en",
+   "seeds": 6,
+   "google_domestic_first": 3,
+   "google_domestic_top3": 3,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 0
+  },
+  "qa/ar": {
+   "market": "Qatar",
+   "language": "ar",
+   "seeds": 4,
+   "google_domestic_first": 0,
+   "google_domestic_top3": 0,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 0
+  },
+  "fr/fr": {
+   "market": "France",
+   "language": "fr",
+   "seeds": 8,
+   "google_domestic_first": 1,
+   "google_domestic_top3": 2,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 1
+  },
+  "es/es": {
+   "market": "Spain",
+   "language": "es",
+   "seeds": 7,
+   "google_domestic_first": 0,
+   "google_domestic_top3": 2,
+   "bing_domestic_first": 2,
+   "bing_domestic_top3": 2
+  },
+  "us/en": {
+   "market": "United States",
+   "language": "en",
+   "seeds": 6,
+   "google_domestic_first": 3,
+   "google_domestic_top3": 3,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 1
+  },
+  "gb/en": {
+   "market": "United Kingdom",
+   "language": "en",
+   "seeds": 6,
+   "google_domestic_first": 0,
+   "google_domestic_top3": 0,
+   "bing_domestic_first": 0,
+   "bing_domestic_top3": 0
+  },
+  "eg/ar": {
+   "market": "Egypt",
+   "language": "ar",
+   "seeds": 4,
+   "google_domestic_first": 2,
+   "google_domestic_top3": 3,
+   "bing_domestic_first": 1,
+   "bing_domestic_top3": 2
+  }
+ },
+ "first_line": [
+  {
+   "gl": "sa",
+   "language": "en",
+   "seed": "software development company in",
+   "google_first3": [
+    "software development company in india",
+    "software development company in usa",
+    "software development company in noida"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "software development company in coimbatore",
+    "software development company in dubai",
+    "software development company in houston"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "en",
+   "seed": "mobile app development company in",
+   "google_first3": [
+    "mobile app development company in saudi arabia",
+    "mobile app development company in chennai",
+    "mobile app development company in noida"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "mobile app development company in dubai",
+    "mobile app development company in india",
+    "mobile app development company in uae"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "en",
+   "seed": "best software company in",
+   "google_first3": [
+    "best software company in india",
+    "best software company in bangladesh",
+    "best software company in the world"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "best software company in madurai",
+    "best software company in bangladesh",
+    "best software company in india"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "en",
+   "seed": "app developers in",
+   "google_first3": [
+    "app developers in hyderabad",
+    "app developers in south africa",
+    "app developers in india"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "app developers in uae",
+    "app developers in india",
+    "app developers in mumbai"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "en",
+   "seed": "web development company in",
+   "google_first3": [
+    "web development company in kolkata",
+    "web development company in bangalore",
+    "web development company in chennai"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "web development company in bangalore",
+    "web development company in delhi",
+    "web development company in mohali"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "en",
+   "seed": "it outsourcing company in",
+   "google_first3": [
+    "it outsourcing company in malaysia",
+    "it outsourcing company in dubai",
+    "it outsourcing company in india"
+   ],
+   "google_first_places": [
+    "Malaysia"
+   ],
+   "bing_first3": [
+    "it outsourcing company in uae",
+    "it outsourcing company in nepal",
+    "it outsourcing company in malaysia"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "ar",
+   "seed": "شركة برمجة في",
+   "google_first3": [
+    "شركة برمجة في السعودية",
+    "شركة برمجة في الرياض",
+    "شركة برمجة في مصر"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة برمجة في مصر"
+   ],
+   "bing_first_places": [
+    "Egypt"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "ar",
+   "seed": "شركة تطوير تطبيقات في",
+   "google_first3": [
+    "شركة تطوير تطبيقات الجوال في السعودية"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تطوير تطبيقات في عمان",
+    "شركة تطوير تطبيقات في السعودية",
+    "شركة تطوير للخدمات التعليمية"
+   ],
+   "bing_first_places": [
+    "Oman or Amman (ambiguous)"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "ar",
+   "seed": "أفضل شركة برمجة في",
+   "google_first3": [
+    "أفضل شركة برمجة في الأردن",
+    "افضل شركة برمجة في مصر",
+    "افضل شركة برمجة في السعودية"
+   ],
+   "google_first_places": [
+    "Jordan"
+   ],
+   "bing_first3": [
+    "شركات برمجة في السعودية",
+    "شركة باجة للصناعات الغذائية",
+    "موقع برمجة بايثون اون لاين"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "sa",
+   "language": "ar",
+   "seed": "شركة تصميم مواقع في",
+   "google_first3": [
+    "شركة تصميم مواقع في السعودية",
+    "شركة تصميم مواقع في جدة",
+    "شركة تصميم مواقع في مصر"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تصميم مواقع في الرياض",
+    "شركة تصميم مواقع في جدة",
+    "شركة تصميم مواقع في مصر"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "en",
+   "seed": "software development company in",
+   "google_first3": [
+    "software development company in dubai",
+    "software development company in india",
+    "software development company in usa"
+   ],
+   "google_first_places": [
+    "United Arab Emirates"
+   ],
+   "bing_first3": [
+    "software development company in coimbatore",
+    "software development company in dubai",
+    "software development company in houston"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "en",
+   "seed": "mobile app development company in",
+   "google_first3": [
+    "mobile app development company in dubai",
+    "mobile app development company in chennai",
+    "mobile app development company in noida"
+   ],
+   "google_first_places": [
+    "United Arab Emirates"
+   ],
+   "bing_first3": [
+    "mobile app development company in india",
+    "mobile app development company in uae",
+    "mobile app development company in delhi"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "en",
+   "seed": "best software company in",
+   "google_first3": [
+    "best software company in uae",
+    "best software company in india",
+    "best software company in bangladesh"
+   ],
+   "google_first_places": [
+    "United Arab Emirates"
+   ],
+   "bing_first3": [
+    "best software company in madurai",
+    "best software company in bangladesh",
+    "best software company in india"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "en",
+   "seed": "app developers in",
+   "google_first3": [
+    "app developers in hyderabad",
+    "app developers in south africa",
+    "app developers in india"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "app developers in uae",
+    "app developers in india",
+    "app developers in mumbai"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "en",
+   "seed": "web development company in",
+   "google_first3": [
+    "web development company in dubai",
+    "web development company in pakistan",
+    "web development company in kolkata"
+   ],
+   "google_first_places": [
+    "United Arab Emirates"
+   ],
+   "bing_first3": [
+    "web development company in bangalore",
+    "web development company in delhi",
+    "web development company in mohali"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "en",
+   "seed": "it outsourcing company in",
+   "google_first3": [
+    "it outsourcing company in malaysia",
+    "it outsourcing company in dubai",
+    "it outsourcing company in india"
+   ],
+   "google_first_places": [
+    "Malaysia"
+   ],
+   "bing_first3": [
+    "it outsourcing company in uae",
+    "it outsourcing company in nepal",
+    "it outsourcing company in malaysia"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "ar",
+   "seed": "شركة برمجة في",
+   "google_first3": [
+    "شركة برمجة في مصر",
+    "شركة برمجة في السعودية",
+    "شركة برمجة في سوريا"
+   ],
+   "google_first_places": [
+    "Egypt"
+   ],
+   "bing_first3": [
+    "شركة برمجة في مصر"
+   ],
+   "bing_first_places": [
+    "Egypt"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "ar",
+   "seed": "شركة تطوير تطبيقات في",
+   "google_first3": [
+    "شركة تطوير تطبيقات الجوال في السعودية"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تطوير تطبيقات في عمان",
+    "شركة تطوير تطبيقات في السعودية",
+    "شركة تطوير تطبيقات الجوال"
+   ],
+   "bing_first_places": [
+    "Oman or Amman (ambiguous)"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "ar",
+   "seed": "أفضل شركة برمجة في",
+   "google_first3": [
+    "أفضل شركة برمجة في الأردن",
+    "افضل شركة برمجة في مصر",
+    "افضل شركة برمجة في السعودية"
+   ],
+   "google_first_places": [
+    "Jordan"
+   ],
+   "bing_first3": [
+    "شركات برمجة في السعودية",
+    "شركة باجة للصناعات الغذائية",
+    "مترجم برمجة على الانترنت"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "ae",
+   "language": "ar",
+   "seed": "شركة تصميم مواقع في",
+   "google_first3": [
+    "شركة تصميم مواقع في السعودية",
+    "شركة تصميم مواقع في مصر",
+    "شركة تصميم مواقع في جدة"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تصميم مواقع في الرياض",
+    "شركة تصميم مواقع في جدة",
+    "شركة تصميم مواقع في مصر"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "en",
+   "seed": "software development company in",
+   "google_first3": [
+    "software development company in india",
+    "software development company in usa",
+    "software development company in noida"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "software development company in coimbatore",
+    "software development company in dubai",
+    "software development company in houston"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "en",
+   "seed": "mobile app development company in",
+   "google_first3": [
+    "mobile app development company in qatar",
+    "mobile app development company in chennai",
+    "mobile app development company in noida"
+   ],
+   "google_first_places": [
+    "Qatar"
+   ],
+   "bing_first3": [
+    "mobile app development company in dubai",
+    "mobile app development company in india",
+    "mobile app development company in uae"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "en",
+   "seed": "best software company in",
+   "google_first3": [
+    "best software company in qatar",
+    "best software company in india",
+    "best software company in bangladesh"
+   ],
+   "google_first_places": [
+    "Qatar"
+   ],
+   "bing_first3": [
+    "best software company in madurai",
+    "best software company in bangladesh",
+    "best software company in india"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "en",
+   "seed": "app developers in",
+   "google_first3": [
+    "app developers in hyderabad",
+    "app developers in south africa",
+    "app developers in india"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "app developers in uae",
+    "app developers in india",
+    "app developers in mumbai"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "en",
+   "seed": "web development company in",
+   "google_first3": [
+    "web development company in qatar",
+    "web development company in kolkata",
+    "web development company in bangalore"
+   ],
+   "google_first_places": [
+    "Qatar"
+   ],
+   "bing_first3": [
+    "web development company in bangalore",
+    "web development company in delhi",
+    "web development company in mohali"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "en",
+   "seed": "it outsourcing company in",
+   "google_first3": [
+    "it outsourcing company in malaysia",
+    "it outsourcing company in dubai",
+    "it outsourcing company in india"
+   ],
+   "google_first_places": [
+    "Malaysia"
+   ],
+   "bing_first3": [
+    "it outsourcing company in uae",
+    "it outsourcing company in nepal",
+    "it outsourcing company in malaysia"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "ar",
+   "seed": "شركة برمجة في",
+   "google_first3": [
+    "شركة برمجة في مصر",
+    "شركة برمجة في السعودية",
+    "شركة برمجة في سوريا"
+   ],
+   "google_first_places": [
+    "Egypt"
+   ],
+   "bing_first3": [
+    "شركة برمجة في مصر"
+   ],
+   "bing_first_places": [
+    "Egypt"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "ar",
+   "seed": "شركة تطوير تطبيقات في",
+   "google_first3": [
+    "شركة تطوير تطبيقات الجوال في السعودية"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تطوير تطبيقات في عمان",
+    "شركة تطوير تطبيقات في السعودية",
+    "شركة تطوير تطبيقات الجوال"
+   ],
+   "bing_first_places": [
+    "Oman or Amman (ambiguous)"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "ar",
+   "seed": "أفضل شركة برمجة في",
+   "google_first3": [
+    "أفضل شركة برمجة في الأردن",
+    "افضل شركة برمجة في مصر",
+    "افضل شركة برمجة في السعودية"
+   ],
+   "google_first_places": [
+    "Jordan"
+   ],
+   "bing_first3": [
+    "شركات برمجة في السعودية",
+    "شركة باجة للصناعات الغذائية",
+    "مترجم برمجة على الانترنت"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "qa",
+   "language": "ar",
+   "seed": "شركة تصميم مواقع في",
+   "google_first3": [
+    "شركة تصميم مواقع في السعودية",
+    "شركة تصميم مواقع في مصر",
+    "شركة تصميم مواقع في جدة"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تصميم مواقع في الرياض",
+    "شركة تصميم مواقع في جدة",
+    "شركة تصميم مواقع في مصر"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "agence développement application mobile",
+   "google_first3": [
+    "agence développement application mobile paris",
+    "agence developpement application mobile nantes",
+    "agence développement application mobile maroc"
+   ],
+   "google_first_places": [
+    "France"
+   ],
+   "bing_first3": [
+    "agence création application mobile",
+    "formation développement application mobile",
+    "développement des applications mobiles"
+   ],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "agence développement web",
+   "google_first3": [
+    "agence developpement web",
+    "agence développement web paris",
+    "agence développement web lyon"
+   ],
+   "google_first_places": [],
+   "bing_first3": [
+    "agence développement web var",
+    "agence développement web dakar",
+    "agence développement web lyon"
+   ],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "société développement logiciel",
+   "google_first3": [
+    "société développement logiciel",
+    "société développement informatique",
+    "société développement informatique marrakech"
+   ],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "développeur offshore",
+   "google_first3": [
+    "developpeur offshore",
+    "dev offshore",
+    "développement offshore"
+   ],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "nearshore développement",
+   "google_first3": [
+    "developpement nearshore",
+    "nearshore development",
+    "nearshore development services"
+   ],
+   "google_first_places": [],
+   "bing_first3": [
+    "nearshore development firms",
+    "nearshore development services companies",
+    "nearshore development outsourcing teams"
+   ],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "externalisation développement informatique",
+   "google_first3": [],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "meilleure agence développement",
+   "google_first3": [
+    "best development agency",
+    "top development agency",
+    "best dev agency"
+   ],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "fr",
+   "language": "fr",
+   "seed": "prestataire développement informatique",
+   "google_first3": [
+    "service developpement informatique",
+    "prestataire developpement logiciel",
+    "service développement web"
+   ],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "empresa desarrollo software",
+   "google_first3": [
+    "empresa desarrollo software",
+    "empresa desarrollo software madrid",
+    "empresa desarrollo software a medida"
+   ],
+   "google_first_places": [],
+   "bing_first3": [
+    "empresa desarrollo software sevilla",
+    "empresas desarrollo software galicia",
+    "empresa de desarrollo de software"
+   ],
+   "bing_first_places": [
+    "Spain"
+   ]
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "empresa desarrollo apps",
+   "google_first3": [
+    "empresa desarrollo apps moviles",
+    "empresa desarrollo apps"
+   ],
+   "google_first_places": [],
+   "bing_first3": [
+    "empresa desarrollo apps"
+   ],
+   "bing_first_places": []
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "empresa desarrollo web",
+   "google_first3": [
+    "empresa desarrollo web",
+    "empresa desarrollo web valencia",
+    "empresa desarrollo web sevilla"
+   ],
+   "google_first_places": [],
+   "bing_first3": [
+    "empresa desarrollo web barcelona",
+    "empresa desarrollo web betanzos",
+    "empresa desarrollo web granada"
+   ],
+   "bing_first_places": [
+    "Spain"
+   ]
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "outsourcing desarrollo software",
+   "google_first3": [
+    "outsourcing desarrollo de software"
+   ],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "nearshore desarrollo software",
+   "google_first3": [],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "mejor empresa desarrollo software",
+   "google_first3": [
+    "mejor empresa de desarrollo de software"
+   ],
+   "google_first_places": [],
+   "bing_first3": [
+    "la mejor empresa de desarrollo de software",
+    "empresas de desarrollo de software",
+    "mejor ia para desarrollo de software"
+   ],
+   "bing_first_places": []
+  },
+  {
+   "gl": "es",
+   "language": "es",
+   "seed": "desarrollo software offshore",
+   "google_first3": [],
+   "google_first_places": [],
+   "bing_first3": [],
+   "bing_first_places": []
+  },
+  {
+   "gl": "us",
+   "language": "en",
+   "seed": "software development company in",
+   "google_first3": [
+    "software development company in usa",
+    "software development company in india",
+    "software development company in dallas"
+   ],
+   "google_first_places": [
+    "United States"
+   ],
+   "bing_first3": [
+    "software development company in coimbatore",
+    "software development company in dubai",
+    "software development company in usa"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "us",
+   "language": "en",
+   "seed": "mobile app development company in",
+   "google_first3": [
+    "mobile app development company in usa",
+    "mobile app development company in austin",
+    "mobile app development company in new york"
+   ],
+   "google_first_places": [
+    "United States"
+   ],
+   "bing_first3": [
+    "mobile app development company in dubai",
+    "mobile app development company in india",
+    "mobile app development company in uae"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "us",
+   "language": "en",
+   "seed": "best software company in",
+   "google_first3": [
+    "best software company in india",
+    "best software company in bangladesh",
+    "best software company in the world"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "best software company in madurai",
+    "best software company in bangladesh",
+    "best software company in india"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "us",
+   "language": "en",
+   "seed": "app developers in",
+   "google_first3": [
+    "app developers in india",
+    "app developers in hyderabad",
+    "app developers in south africa"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "app developers in uae",
+    "app developers in india",
+    "app developers in mumbai"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "us",
+   "language": "en",
+   "seed": "web development company in",
+   "google_first3": [
+    "web development company in usa",
+    "web development company in kolkata",
+    "web development company in bangalore"
+   ],
+   "google_first_places": [
+    "United States"
+   ],
+   "bing_first3": [
+    "web development company in bangalore",
+    "web development company in delhi",
+    "web development company in mohali"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "us",
+   "language": "en",
+   "seed": "it outsourcing company in",
+   "google_first3": [
+    "it outsourcing company in malaysia",
+    "it outsourcing company in dubai",
+    "it outsourcing company in india"
+   ],
+   "google_first_places": [
+    "Malaysia"
+   ],
+   "bing_first3": [
+    "it outsourcing company in uae",
+    "it outsourcing company in nepal",
+    "it outsourcing company in malaysia"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "gb",
+   "language": "en",
+   "seed": "software development company in",
+   "google_first3": [
+    "software development company in india",
+    "software development company in usa",
+    "software development company in noida"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "software development company in coimbatore",
+    "software development company in dubai",
+    "software development company in houston"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "gb",
+   "language": "en",
+   "seed": "mobile app development company in",
+   "google_first3": [
+    "mobile app development company in chennai",
+    "mobile app development company in noida",
+    "mobile app development company in hyderabad"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "mobile app development company in dubai",
+    "mobile app development company in india",
+    "mobile app development company in uae"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "gb",
+   "language": "en",
+   "seed": "best software company in",
+   "google_first3": [
+    "best software company in india",
+    "best software company in bangladesh",
+    "best software company in the world"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "best software company in madurai",
+    "best software company in bangladesh",
+    "best software company in india"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "gb",
+   "language": "en",
+   "seed": "app developers in",
+   "google_first3": [
+    "app developers in hyderabad",
+    "app developers in south africa",
+    "app developers in india"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "app developers in uae",
+    "app developers in india",
+    "app developers in mumbai"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "gb",
+   "language": "en",
+   "seed": "web development company in",
+   "google_first3": [
+    "web development company in kolkata",
+    "web development company in bangalore",
+    "web development company in chennai"
+   ],
+   "google_first_places": [
+    "India"
+   ],
+   "bing_first3": [
+    "web development company in bangalore",
+    "web development company in delhi",
+    "web development company in mohali"
+   ],
+   "bing_first_places": [
+    "India"
+   ]
+  },
+  {
+   "gl": "gb",
+   "language": "en",
+   "seed": "it outsourcing company in",
+   "google_first3": [
+    "it outsourcing company in malaysia",
+    "it outsourcing company in dubai",
+    "it outsourcing company in india"
+   ],
+   "google_first_places": [
+    "Malaysia"
+   ],
+   "bing_first3": [
+    "it outsourcing company in uae",
+    "it outsourcing company in nepal",
+    "it outsourcing company in malaysia"
+   ],
+   "bing_first_places": [
+    "United Arab Emirates"
+   ]
+  },
+  {
+   "gl": "eg",
+   "language": "ar",
+   "seed": "شركة برمجة في",
+   "google_first3": [
+    "شركة برمجة في مصر",
+    "شركة برمجة في السعودية",
+    "شركة برمجة في الفيوم"
+   ],
+   "google_first_places": [
+    "Egypt"
+   ],
+   "bing_first3": [
+    "شركة برمجة في مصر"
+   ],
+   "bing_first_places": [
+    "Egypt"
+   ]
+  },
+  {
+   "gl": "eg",
+   "language": "ar",
+   "seed": "شركة تطوير تطبيقات في",
+   "google_first3": [
+    "شركة تطوير تطبيقات الجوال في السعودية"
+   ],
+   "google_first_places": [
+    "Saudi Arabia"
+   ],
+   "bing_first3": [
+    "شركة تطوير تطبيقات في عمان",
+    "شركة تطوير تطبيقات في السعودية",
+    "شركة تطوير تطبيقات الجوال"
+   ],
+   "bing_first_places": [
+    "Oman or Amman (ambiguous)"
+   ]
+  },
+  {
+   "gl": "eg",
+   "language": "ar",
+   "seed": "أفضل شركة برمجة في",
+   "google_first3": [
+    "أفضل شركة برمجة في الأردن",
+    "افضل شركة برمجة في مصر",
+    "افضل شركة برمجة في السعودية"
+   ],
+   "google_first_places": [
+    "Jordan"
+   ],
+   "bing_first3": [
+    "شركات برمجة في السعودية",
+    "شركة باجة للصناعات الغذائية",
+    "مترجم برمجة على الانترنت"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  },
+  {
+   "gl": "eg",
+   "language": "ar",
+   "seed": "شركة تصميم مواقع في",
+   "google_first3": [
+    "شركة تصميم مواقع في مصر",
+    "شركة تصميم مواقع في السعودية",
+    "شركة تصميم مواقع في جدة"
+   ],
+   "google_first_places": [
+    "Egypt"
+   ],
+   "bing_first3": [
+    "شركة تصميم مواقع في الرياض",
+    "شركة تصميم مواقع في جدة",
+    "شركة تصميم مواقع في مصر"
+   ],
+   "bing_first_places": [
+    "Saudi Arabia"
+   ]
+  }
+ ],
+ "intent": {
+  "sa/en": {
+   "market": "Saudi Arabia",
+   "language": "en",
+   "suggestions": 2028,
+   "noise_removed": 11,
+   "with_place": 1046,
+   "with_place_share": 0.516,
+   "classes": {
+    "ranking": {
+     "n": 427,
+     "share": 0.211
+    },
+    "outsourcing": {
+     "n": 312,
+     "share": 0.154
+    },
+    "reviews": {
+     "n": 43,
+     "share": 0.021
+    },
+    "price": {
+     "n": 37,
+     "share": 0.018
+    },
+    "jobs": {
+     "n": 35,
+     "share": 0.017
+    },
+    "how to choose": {
+     "n": 9,
+     "share": 0.004
+    }
+   }
+  },
+  "sa/ar": {
+   "market": "Saudi Arabia",
+   "language": "ar",
+   "suggestions": 277,
+   "noise_removed": 0,
+   "with_place": 105,
+   "with_place_share": 0.379,
+   "classes": {
+    "ranking": {
+     "n": 35,
+     "share": 0.126
+    },
+    "price": {
+     "n": 14,
+     "share": 0.051
+    },
+    "jobs": {
+     "n": 3,
+     "share": 0.011
+    },
+    "how to choose": {
+     "n": 1,
+     "share": 0.004
+    }
+   }
+  },
+  "ae/en": {
+   "market": "United Arab Emirates",
+   "language": "en",
+   "suggestions": 2035,
+   "noise_removed": 11,
+   "with_place": 1051,
+   "with_place_share": 0.516,
+   "classes": {
+    "ranking": {
+     "n": 427,
+     "share": 0.21
+    },
+    "outsourcing": {
+     "n": 312,
+     "share": 0.153
+    },
+    "reviews": {
+     "n": 45,
+     "share": 0.022
+    },
+    "price": {
+     "n": 37,
+     "share": 0.018
+    },
+    "jobs": {
+     "n": 35,
+     "share": 0.017
+    },
+    "how to choose": {
+     "n": 9,
+     "share": 0.004
+    }
+   }
+  },
+  "ae/ar": {
+   "market": "United Arab Emirates",
+   "language": "ar",
+   "suggestions": 262,
+   "noise_removed": 1,
+   "with_place": 105,
+   "with_place_share": 0.401,
+   "classes": {
+    "ranking": {
+     "n": 36,
+     "share": 0.137
+    },
+    "price": {
+     "n": 14,
+     "share": 0.053
+    },
+    "jobs": {
+     "n": 3,
+     "share": 0.011
+    },
+    "how to choose": {
+     "n": 1,
+     "share": 0.004
+    }
+   }
+  },
+  "qa/en": {
+   "market": "Qatar",
+   "language": "en",
+   "suggestions": 2027,
+   "noise_removed": 11,
+   "with_place": 1046,
+   "with_place_share": 0.516,
+   "classes": {
+    "ranking": {
+     "n": 427,
+     "share": 0.211
+    },
+    "outsourcing": {
+     "n": 312,
+     "share": 0.154
+    },
+    "reviews": {
+     "n": 42,
+     "share": 0.021
+    },
+    "price": {
+     "n": 37,
+     "share": 0.018
+    },
+    "jobs": {
+     "n": 35,
+     "share": 0.017
+    },
+    "how to choose": {
+     "n": 9,
+     "share": 0.004
+    }
+   }
+  },
+  "qa/ar": {
+   "market": "Qatar",
+   "language": "ar",
+   "suggestions": 261,
+   "noise_removed": 1,
+   "with_place": 105,
+   "with_place_share": 0.402,
+   "classes": {
+    "ranking": {
+     "n": 36,
+     "share": 0.138
+    },
+    "price": {
+     "n": 14,
+     "share": 0.054
+    },
+    "jobs": {
+     "n": 3,
+     "share": 0.011
+    },
+    "how to choose": {
+     "n": 1,
+     "share": 0.004
+    }
+   }
+  },
+  "fr/fr": {
+   "market": "France",
+   "language": "fr",
+   "suggestions": 516,
+   "noise_removed": 6,
+   "with_place": 142,
+   "with_place_share": 0.275,
+   "classes": {
+    "outsourcing": {
+     "n": 62,
+     "share": 0.12
+    },
+    "price": {
+     "n": 29,
+     "share": 0.056
+    },
+    "ranking": {
+     "n": 26,
+     "share": 0.05
+    },
+    "jobs": {
+     "n": 13,
+     "share": 0.025
+    },
+    "how to choose": {
+     "n": 3,
+     "share": 0.006
+    },
+    "reviews": {
+     "n": 2,
+     "share": 0.004
+    }
+   }
+  },
+  "es/es": {
+   "market": "Spain",
+   "language": "es",
+   "suggestions": 380,
+   "noise_removed": 12,
+   "with_place": 87,
+   "with_place_share": 0.229,
+   "classes": {
+    "outsourcing": {
+     "n": 133,
+     "share": 0.35
+    },
+    "price": {
+     "n": 26,
+     "share": 0.068
+    },
+    "ranking": {
+     "n": 7,
+     "share": 0.018
+    },
+    "jobs": {
+     "n": 5,
+     "share": 0.013
+    }
+   }
+  },
+  "us/en": {
+   "market": "United States",
+   "language": "en",
+   "suggestions": 2035,
+   "noise_removed": 15,
+   "with_place": 1070,
+   "with_place_share": 0.526,
+   "classes": {
+    "ranking": {
+     "n": 390,
+     "share": 0.192
+    },
+    "outsourcing": {
+     "n": 303,
+     "share": 0.149
+    },
+    "reviews": {
+     "n": 53,
+     "share": 0.026
+    },
+    "price": {
+     "n": 30,
+     "share": 0.015
+    },
+    "jobs": {
+     "n": 26,
+     "share": 0.013
+    },
+    "how to choose": {
+     "n": 9,
+     "share": 0.004
+    }
+   }
+  },
+  "gb/en": {
+   "market": "United Kingdom",
+   "language": "en",
+   "suggestions": 2064,
+   "noise_removed": 12,
+   "with_place": 1078,
+   "with_place_share": 0.522,
+   "classes": {
+    "ranking": {
+     "n": 362,
+     "share": 0.175
+    },
+    "outsourcing": {
+     "n": 330,
+     "share": 0.16
+    },
+    "reviews": {
+     "n": 41,
+     "share": 0.02
+    },
+    "jobs": {
+     "n": 38,
+     "share": 0.018
+    },
+    "price": {
+     "n": 37,
+     "share": 0.018
+    },
+    "how to choose": {
+     "n": 11,
+     "share": 0.005
+    }
+   }
+  },
+  "eg/ar": {
+   "market": "Egypt",
+   "language": "ar",
+   "suggestions": 264,
+   "noise_removed": 1,
+   "with_place": 103,
+   "with_place_share": 0.39,
+   "classes": {
+    "ranking": {
+     "n": 36,
+     "share": 0.136
+    },
+    "price": {
+     "n": 14,
+     "share": 0.053
+    },
+    "jobs": {
+     "n": 3,
+     "share": 0.011
+    },
+    "how to choose": {
+     "n": 1,
+     "share": 0.004
+    }
+   }
+  }
+ },
+ "maghreb": {
+  "Algeria": [
+   {
+    "suggestion": "تطبيق تكلفة بناء منزل في الجزائر",
+    "markets": [
+     "sa",
+     "ae",
+     "qa",
+     "eg"
+    ],
+    "languages": [
+     "ar"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "boite de développement informatique alger",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "prix application mobile algérie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   }
+  ],
+  "Morocco": [
+   {
+    "suggestion": "mobile app development company in morocco",
+    "markets": [
+     "sa",
+     "ae",
+     "qa",
+     "us",
+     "gb"
+    ],
+    "languages": [
+     "en"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "agence développement application mobile maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "agence développement web maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "agence developpement web agadir",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "agence developpement digital agadir",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "agence developpement digital maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "entreprise développement web maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société développement informatique marrakech",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "societe developpement informatique casablanca",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "societe developpement informatique fes",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "societe developpement informatique agadir",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société développement informatique tanger",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société développement informatique rabat",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société de développement informatique maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "entreprise developpement informatique tanger",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "prix développement application mobile maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "prix application mobile maroc",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   }
+  ],
+  "Tunisia": [
+   {
+    "suggestion": "agence developpement web tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "societe de developpement web en tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société développement web sfax",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "agence création site web tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société developpement informatique sfax",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société de développement informatique en tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "boite de développement informatique sousse stage",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "boite de développement informatique sousse",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "société de développement informatique tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "boite de développement informatique tunisie stage",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "boite de développement informatique tunisie recrutement",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "boite de développement informatique tunis",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "prix développement application mobile tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   },
+   {
+    "suggestion": "prix application mobile tunisie",
+    "markets": [
+     "fr"
+    ],
+    "languages": [
+     "fr"
+    ],
+    "engines": [
+     "google"
+    ]
+   }
+  ]
+ },
+ "maps": {
+  "sa/en/google": {
+   "market": "Saudi Arabia",
+   "gl": "sa",
+   "language": "en",
+   "engine": "google",
+   "suggestions_with_place": 756,
+   "place_mentions": 762,
+   "domestic": 14,
+   "domestic_share": 0.018,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 284,
+     "share": 0.373
+    },
+    {
+     "country": "United States",
+     "n": 132,
+     "share": 0.173
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "Pakistan",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "United Kingdom",
+     "n": 32,
+     "share": 0.042
+    },
+    {
+     "country": "Qatar",
+     "n": 28,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 25,
+     "share": 0.033
+    },
+    {
+     "country": "Canada",
+     "n": 18,
+     "share": 0.024
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.018
+    },
+    {
+     "country": "South Africa",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Nigeria",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Oman",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Egypt",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Nepal",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "Near me",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "France",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Germany",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Malaysia",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Bahrain",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Singapore",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ireland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "sa/en/bing": {
+   "market": "Saudi Arabia",
+   "gl": "sa",
+   "language": "en",
+   "engine": "bing",
+   "suggestions_with_place": 425,
+   "place_mentions": 435,
+   "domestic": 15,
+   "domestic_share": 0.034,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 151,
+     "share": 0.347
+    },
+    {
+     "country": "United States",
+     "n": 74,
+     "share": 0.17
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 33,
+     "share": 0.076
+    },
+    {
+     "country": "United Kingdom",
+     "n": 22,
+     "share": 0.051
+    },
+    {
+     "country": "Near me",
+     "n": 21,
+     "share": 0.048
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 15,
+     "share": 0.034
+    },
+    {
+     "country": "Australia",
+     "n": 13,
+     "share": 0.03
+    },
+    {
+     "country": "Germany",
+     "n": 11,
+     "share": 0.025
+    },
+    {
+     "country": "Pakistan",
+     "n": 9,
+     "share": 0.021
+    },
+    {
+     "country": "South Africa",
+     "n": 9,
+     "share": 0.021
+    },
+    {
+     "country": "Nepal",
+     "n": 8,
+     "share": 0.018
+    },
+    {
+     "country": "Egypt",
+     "n": 7,
+     "share": 0.016
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 6,
+     "share": 0.014
+    },
+    {
+     "country": "Qatar",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Philippines",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Bangladesh",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Bahrain",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Canada",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Nigeria",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Malaysia",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Oman",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Singapore",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Kuwait",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Ireland",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Vietnam",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "France",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Kenya",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Jordan",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.002
+    }
+   ]
+  },
+  "sa/en/both": {
+   "market": "Saudi Arabia",
+   "gl": "sa",
+   "language": "en",
+   "engine": "both",
+   "suggestions_with_place": 970,
+   "place_mentions": 983,
+   "domestic": 23,
+   "domestic_share": 0.023,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 335,
+     "share": 0.341
+    },
+    {
+     "country": "United States",
+     "n": 180,
+     "share": 0.183
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 55,
+     "share": 0.056
+    },
+    {
+     "country": "United Kingdom",
+     "n": 47,
+     "share": 0.048
+    },
+    {
+     "country": "Pakistan",
+     "n": 39,
+     "share": 0.04
+    },
+    {
+     "country": "Qatar",
+     "n": 32,
+     "share": 0.033
+    },
+    {
+     "country": "Australia",
+     "n": 31,
+     "share": 0.032
+    },
+    {
+     "country": "Near me",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Canada",
+     "n": 19,
+     "share": 0.019
+    },
+    {
+     "country": "South Africa",
+     "n": 16,
+     "share": 0.016
+    },
+    {
+     "country": "Germany",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Nigeria",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Oman",
+     "n": 14,
+     "share": 0.014
+    },
+    {
+     "country": "Egypt",
+     "n": 13,
+     "share": 0.013
+    },
+    {
+     "country": "Philippines",
+     "n": 12,
+     "share": 0.012
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.011
+    },
+    {
+     "country": "Nepal",
+     "n": 10,
+     "share": 0.01
+    },
+    {
+     "country": "Malaysia",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "France",
+     "n": 7,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Bahrain",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Singapore",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "sa/ar/google": {
+   "market": "Saudi Arabia",
+   "gl": "sa",
+   "language": "ar",
+   "engine": "google",
+   "suggestions_with_place": 82,
+   "place_mentions": 82,
+   "domestic": 22,
+   "domestic_share": 0.268,
+   "destinations": [
+    {
+     "country": "Egypt",
+     "n": 23,
+     "share": 0.28
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 22,
+     "share": 0.268
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.11
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.098
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.037
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.012
+    }
+   ]
+  },
+  "sa/ar/bing": {
+   "market": "Saudi Arabia",
+   "gl": "sa",
+   "language": "ar",
+   "engine": "bing",
+   "suggestions_with_place": 24,
+   "place_mentions": 24,
+   "domestic": 18,
+   "domestic_share": 0.75,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 18,
+     "share": 0.75
+    },
+    {
+     "country": "Egypt",
+     "n": 4,
+     "share": 0.167
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 1,
+     "share": 0.042
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 1,
+     "share": 0.042
+    }
+   ]
+  },
+  "sa/ar/both": {
+   "market": "Saudi Arabia",
+   "gl": "sa",
+   "language": "ar",
+   "engine": "both",
+   "suggestions_with_place": 100,
+   "place_mentions": 100,
+   "domestic": 38,
+   "domestic_share": 0.38,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 38,
+     "share": 0.38
+    },
+    {
+     "country": "Egypt",
+     "n": 24,
+     "share": 0.24
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.09
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.08
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.04
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.04
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 3,
+     "share": 0.03
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.03
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.01
+    }
+   ]
+  },
+  "ae/en/google": {
+   "market": "United Arab Emirates",
+   "gl": "ae",
+   "language": "en",
+   "engine": "google",
+   "suggestions_with_place": 756,
+   "place_mentions": 762,
+   "domestic": 36,
+   "domestic_share": 0.047,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 284,
+     "share": 0.373
+    },
+    {
+     "country": "United States",
+     "n": 132,
+     "share": 0.173
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "Pakistan",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "United Kingdom",
+     "n": 32,
+     "share": 0.042
+    },
+    {
+     "country": "Qatar",
+     "n": 28,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 25,
+     "share": 0.033
+    },
+    {
+     "country": "Canada",
+     "n": 18,
+     "share": 0.024
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.018
+    },
+    {
+     "country": "South Africa",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Nigeria",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Oman",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Egypt",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Nepal",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "Near me",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "France",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Germany",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Malaysia",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Bahrain",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Singapore",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ireland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "ae/en/bing": {
+   "market": "United Arab Emirates",
+   "gl": "ae",
+   "language": "en",
+   "engine": "bing",
+   "suggestions_with_place": 428,
+   "place_mentions": 438,
+   "domestic": 34,
+   "domestic_share": 0.078,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 151,
+     "share": 0.345
+    },
+    {
+     "country": "United States",
+     "n": 74,
+     "share": 0.169
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 34,
+     "share": 0.078
+    },
+    {
+     "country": "Near me",
+     "n": 23,
+     "share": 0.053
+    },
+    {
+     "country": "United Kingdom",
+     "n": 22,
+     "share": 0.05
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 15,
+     "share": 0.034
+    },
+    {
+     "country": "Australia",
+     "n": 13,
+     "share": 0.03
+    },
+    {
+     "country": "Germany",
+     "n": 11,
+     "share": 0.025
+    },
+    {
+     "country": "Pakistan",
+     "n": 9,
+     "share": 0.021
+    },
+    {
+     "country": "South Africa",
+     "n": 9,
+     "share": 0.021
+    },
+    {
+     "country": "Nepal",
+     "n": 8,
+     "share": 0.018
+    },
+    {
+     "country": "Egypt",
+     "n": 7,
+     "share": 0.016
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 6,
+     "share": 0.014
+    },
+    {
+     "country": "Qatar",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Philippines",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Bangladesh",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Bahrain",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Canada",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Nigeria",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Malaysia",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Oman",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Singapore",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Kuwait",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Ireland",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Vietnam",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "France",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Kenya",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Jordan",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.002
+    }
+   ]
+  },
+  "ae/en/both": {
+   "market": "United Arab Emirates",
+   "gl": "ae",
+   "language": "en",
+   "engine": "both",
+   "suggestions_with_place": 973,
+   "place_mentions": 986,
+   "domestic": 56,
+   "domestic_share": 0.057,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 335,
+     "share": 0.34
+    },
+    {
+     "country": "United States",
+     "n": 180,
+     "share": 0.183
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 56,
+     "share": 0.057
+    },
+    {
+     "country": "United Kingdom",
+     "n": 47,
+     "share": 0.048
+    },
+    {
+     "country": "Pakistan",
+     "n": 39,
+     "share": 0.04
+    },
+    {
+     "country": "Qatar",
+     "n": 32,
+     "share": 0.032
+    },
+    {
+     "country": "Australia",
+     "n": 31,
+     "share": 0.031
+    },
+    {
+     "country": "Near me",
+     "n": 25,
+     "share": 0.025
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Canada",
+     "n": 19,
+     "share": 0.019
+    },
+    {
+     "country": "South Africa",
+     "n": 16,
+     "share": 0.016
+    },
+    {
+     "country": "Germany",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Nigeria",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Oman",
+     "n": 14,
+     "share": 0.014
+    },
+    {
+     "country": "Egypt",
+     "n": 13,
+     "share": 0.013
+    },
+    {
+     "country": "Philippines",
+     "n": 12,
+     "share": 0.012
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.011
+    },
+    {
+     "country": "Nepal",
+     "n": 10,
+     "share": 0.01
+    },
+    {
+     "country": "Malaysia",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "France",
+     "n": 7,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Bahrain",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Singapore",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "ae/ar/google": {
+   "market": "United Arab Emirates",
+   "gl": "ae",
+   "language": "ar",
+   "engine": "google",
+   "suggestions_with_place": 82,
+   "place_mentions": 82,
+   "domestic": 8,
+   "domestic_share": 0.098,
+   "destinations": [
+    {
+     "country": "Egypt",
+     "n": 23,
+     "share": 0.28
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 22,
+     "share": 0.268
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.11
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.098
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.037
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.012
+    }
+   ]
+  },
+  "ae/ar/bing": {
+   "market": "United Arab Emirates",
+   "gl": "ae",
+   "language": "ar",
+   "engine": "bing",
+   "suggestions_with_place": 24,
+   "place_mentions": 24,
+   "domestic": 1,
+   "domestic_share": 0.042,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 18,
+     "share": 0.75
+    },
+    {
+     "country": "Egypt",
+     "n": 4,
+     "share": 0.167
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 1,
+     "share": 0.042
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 1,
+     "share": 0.042
+    }
+   ]
+  },
+  "ae/ar/both": {
+   "market": "United Arab Emirates",
+   "gl": "ae",
+   "language": "ar",
+   "engine": "both",
+   "suggestions_with_place": 100,
+   "place_mentions": 100,
+   "domestic": 8,
+   "domestic_share": 0.08,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 38,
+     "share": 0.38
+    },
+    {
+     "country": "Egypt",
+     "n": 24,
+     "share": 0.24
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.09
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.08
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.04
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.04
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 3,
+     "share": 0.03
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.03
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.01
+    }
+   ]
+  },
+  "qa/en/google": {
+   "market": "Qatar",
+   "gl": "qa",
+   "language": "en",
+   "engine": "google",
+   "suggestions_with_place": 756,
+   "place_mentions": 762,
+   "domestic": 28,
+   "domestic_share": 0.037,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 284,
+     "share": 0.373
+    },
+    {
+     "country": "United States",
+     "n": 132,
+     "share": 0.173
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "Pakistan",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "United Kingdom",
+     "n": 32,
+     "share": 0.042
+    },
+    {
+     "country": "Qatar",
+     "n": 28,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 25,
+     "share": 0.033
+    },
+    {
+     "country": "Canada",
+     "n": 18,
+     "share": 0.024
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.018
+    },
+    {
+     "country": "South Africa",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Nigeria",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Oman",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Egypt",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Nepal",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "Near me",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "France",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Germany",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Malaysia",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Bahrain",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Singapore",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ireland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "qa/en/bing": {
+   "market": "Qatar",
+   "gl": "qa",
+   "language": "en",
+   "engine": "bing",
+   "suggestions_with_place": 426,
+   "place_mentions": 436,
+   "domestic": 6,
+   "domestic_share": 0.014,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 151,
+     "share": 0.346
+    },
+    {
+     "country": "United States",
+     "n": 74,
+     "share": 0.17
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 33,
+     "share": 0.076
+    },
+    {
+     "country": "United Kingdom",
+     "n": 22,
+     "share": 0.05
+    },
+    {
+     "country": "Near me",
+     "n": 21,
+     "share": 0.048
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 15,
+     "share": 0.034
+    },
+    {
+     "country": "Australia",
+     "n": 13,
+     "share": 0.03
+    },
+    {
+     "country": "Germany",
+     "n": 11,
+     "share": 0.025
+    },
+    {
+     "country": "Pakistan",
+     "n": 9,
+     "share": 0.021
+    },
+    {
+     "country": "South Africa",
+     "n": 9,
+     "share": 0.021
+    },
+    {
+     "country": "Nepal",
+     "n": 8,
+     "share": 0.018
+    },
+    {
+     "country": "Egypt",
+     "n": 7,
+     "share": 0.016
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 6,
+     "share": 0.014
+    },
+    {
+     "country": "Qatar",
+     "n": 6,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Bangladesh",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Bahrain",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Canada",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Nigeria",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Malaysia",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Oman",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Singapore",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Kuwait",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.005
+    },
+    {
+     "country": "Ireland",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Vietnam",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "France",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Kenya",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Jordan",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.002
+    }
+   ]
+  },
+  "qa/en/both": {
+   "market": "Qatar",
+   "gl": "qa",
+   "language": "en",
+   "engine": "both",
+   "suggestions_with_place": 971,
+   "place_mentions": 984,
+   "domestic": 33,
+   "domestic_share": 0.034,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 335,
+     "share": 0.34
+    },
+    {
+     "country": "United States",
+     "n": 180,
+     "share": 0.183
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 55,
+     "share": 0.056
+    },
+    {
+     "country": "United Kingdom",
+     "n": 47,
+     "share": 0.048
+    },
+    {
+     "country": "Pakistan",
+     "n": 39,
+     "share": 0.04
+    },
+    {
+     "country": "Qatar",
+     "n": 33,
+     "share": 0.034
+    },
+    {
+     "country": "Australia",
+     "n": 31,
+     "share": 0.032
+    },
+    {
+     "country": "Near me",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Canada",
+     "n": 19,
+     "share": 0.019
+    },
+    {
+     "country": "South Africa",
+     "n": 16,
+     "share": 0.016
+    },
+    {
+     "country": "Germany",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Nigeria",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Oman",
+     "n": 14,
+     "share": 0.014
+    },
+    {
+     "country": "Egypt",
+     "n": 13,
+     "share": 0.013
+    },
+    {
+     "country": "Philippines",
+     "n": 12,
+     "share": 0.012
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.011
+    },
+    {
+     "country": "Nepal",
+     "n": 10,
+     "share": 0.01
+    },
+    {
+     "country": "Malaysia",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "France",
+     "n": 7,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Bahrain",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Singapore",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "qa/ar/google": {
+   "market": "Qatar",
+   "gl": "qa",
+   "language": "ar",
+   "engine": "google",
+   "suggestions_with_place": 82,
+   "place_mentions": 82,
+   "domestic": 2,
+   "domestic_share": 0.024,
+   "destinations": [
+    {
+     "country": "Egypt",
+     "n": 23,
+     "share": 0.28
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 22,
+     "share": 0.268
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.11
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.098
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.037
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.012
+    }
+   ]
+  },
+  "qa/ar/bing": {
+   "market": "Qatar",
+   "gl": "qa",
+   "language": "ar",
+   "engine": "bing",
+   "suggestions_with_place": 24,
+   "place_mentions": 24,
+   "domestic": 0,
+   "domestic_share": 0,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 18,
+     "share": 0.75
+    },
+    {
+     "country": "Egypt",
+     "n": 4,
+     "share": 0.167
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 1,
+     "share": 0.042
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 1,
+     "share": 0.042
+    }
+   ]
+  },
+  "qa/ar/both": {
+   "market": "Qatar",
+   "gl": "qa",
+   "language": "ar",
+   "engine": "both",
+   "suggestions_with_place": 100,
+   "place_mentions": 100,
+   "domestic": 2,
+   "domestic_share": 0.02,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 38,
+     "share": 0.38
+    },
+    {
+     "country": "Egypt",
+     "n": 24,
+     "share": 0.24
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.09
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.08
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.04
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.04
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 3,
+     "share": 0.03
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.03
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.01
+    }
+   ]
+  },
+  "fr/fr/google": {
+   "market": "France",
+   "gl": "fr",
+   "language": "fr",
+   "engine": "google",
+   "suggestions_with_place": 96,
+   "place_mentions": 96,
+   "domestic": 54,
+   "domestic_share": 0.563,
+   "destinations": [
+    {
+     "country": "France",
+     "n": 54,
+     "share": 0.563
+    },
+    {
+     "country": "Morocco",
+     "n": 14,
+     "share": 0.146
+    },
+    {
+     "country": "Tunisia",
+     "n": 9,
+     "share": 0.094
+    },
+    {
+     "country": "India",
+     "n": 7,
+     "share": 0.073
+    },
+    {
+     "country": "Near me",
+     "n": 2,
+     "share": 0.021
+    },
+    {
+     "country": "Canada",
+     "n": 2,
+     "share": 0.021
+    },
+    {
+     "country": "United States",
+     "n": 2,
+     "share": 0.021
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Algeria",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Ivory Coast",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 1,
+     "share": 0.01
+    }
+   ]
+  },
+  "fr/fr/bing": {
+   "market": "France",
+   "gl": "fr",
+   "language": "fr",
+   "engine": "bing",
+   "suggestions_with_place": 46,
+   "place_mentions": 46,
+   "domestic": 29,
+   "domestic_share": 0.63,
+   "destinations": [
+    {
+     "country": "France",
+     "n": 29,
+     "share": 0.63
+    },
+    {
+     "country": "Canada",
+     "n": 12,
+     "share": 0.261
+    },
+    {
+     "country": "Near me",
+     "n": 2,
+     "share": 0.043
+    },
+    {
+     "country": "Senegal",
+     "n": 2,
+     "share": 0.043
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.022
+    }
+   ]
+  },
+  "fr/fr/both": {
+   "market": "France",
+   "gl": "fr",
+   "language": "fr",
+   "engine": "both",
+   "suggestions_with_place": 133,
+   "place_mentions": 133,
+   "domestic": 74,
+   "domestic_share": 0.556,
+   "destinations": [
+    {
+     "country": "France",
+     "n": 74,
+     "share": 0.556
+    },
+    {
+     "country": "Morocco",
+     "n": 14,
+     "share": 0.105
+    },
+    {
+     "country": "Canada",
+     "n": 14,
+     "share": 0.105
+    },
+    {
+     "country": "Tunisia",
+     "n": 9,
+     "share": 0.068
+    },
+    {
+     "country": "India",
+     "n": 7,
+     "share": 0.053
+    },
+    {
+     "country": "Near me",
+     "n": 4,
+     "share": 0.03
+    },
+    {
+     "country": "Senegal",
+     "n": 2,
+     "share": 0.015
+    },
+    {
+     "country": "United States",
+     "n": 2,
+     "share": 0.015
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.008
+    },
+    {
+     "country": "Algeria",
+     "n": 1,
+     "share": 0.008
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.008
+    },
+    {
+     "country": "Ivory Coast",
+     "n": 1,
+     "share": 0.008
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.008
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.008
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 1,
+     "share": 0.008
+    }
+   ]
+  },
+  "es/es/google": {
+   "market": "Spain",
+   "gl": "es",
+   "language": "es",
+   "engine": "google",
+   "suggestions_with_place": 28,
+   "place_mentions": 28,
+   "domestic": 7,
+   "domestic_share": 0.25,
+   "destinations": [
+    {
+     "country": "Latin America",
+     "n": 21,
+     "share": 0.75
+    },
+    {
+     "country": "Spain",
+     "n": 7,
+     "share": 0.25
+    }
+   ]
+  },
+  "es/es/bing": {
+   "market": "Spain",
+   "gl": "es",
+   "language": "es",
+   "engine": "bing",
+   "suggestions_with_place": 49,
+   "place_mentions": 49,
+   "domestic": 11,
+   "domestic_share": 0.224,
+   "destinations": [
+    {
+     "country": "Latin America",
+     "n": 28,
+     "share": 0.571
+    },
+    {
+     "country": "Spain",
+     "n": 11,
+     "share": 0.224
+    },
+    {
+     "country": "United States",
+     "n": 2,
+     "share": 0.041
+    },
+    {
+     "country": "Canada",
+     "n": 2,
+     "share": 0.041
+    },
+    {
+     "country": "India",
+     "n": 2,
+     "share": 0.041
+    },
+    {
+     "country": "Australia",
+     "n": 2,
+     "share": 0.041
+    },
+    {
+     "country": "Philippines",
+     "n": 1,
+     "share": 0.02
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.02
+    }
+   ]
+  },
+  "es/es/both": {
+   "market": "Spain",
+   "gl": "es",
+   "language": "es",
+   "engine": "both",
+   "suggestions_with_place": 74,
+   "place_mentions": 74,
+   "domestic": 17,
+   "domestic_share": 0.23,
+   "destinations": [
+    {
+     "country": "Latin America",
+     "n": 47,
+     "share": 0.635
+    },
+    {
+     "country": "Spain",
+     "n": 17,
+     "share": 0.23
+    },
+    {
+     "country": "United States",
+     "n": 2,
+     "share": 0.027
+    },
+    {
+     "country": "Canada",
+     "n": 2,
+     "share": 0.027
+    },
+    {
+     "country": "India",
+     "n": 2,
+     "share": 0.027
+    },
+    {
+     "country": "Australia",
+     "n": 2,
+     "share": 0.027
+    },
+    {
+     "country": "Philippines",
+     "n": 1,
+     "share": 0.014
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.014
+    }
+   ]
+  },
+  "us/en/google": {
+   "market": "United States",
+   "gl": "us",
+   "language": "en",
+   "engine": "google",
+   "suggestions_with_place": 756,
+   "place_mentions": 762,
+   "domestic": 132,
+   "domestic_share": 0.173,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 283,
+     "share": 0.371
+    },
+    {
+     "country": "United States",
+     "n": 132,
+     "share": 0.173
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 37,
+     "share": 0.049
+    },
+    {
+     "country": "Pakistan",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "United Kingdom",
+     "n": 32,
+     "share": 0.042
+    },
+    {
+     "country": "Qatar",
+     "n": 28,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 25,
+     "share": 0.033
+    },
+    {
+     "country": "Canada",
+     "n": 18,
+     "share": 0.024
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.018
+    },
+    {
+     "country": "South Africa",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Nigeria",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Oman",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Egypt",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Nepal",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "Near me",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "France",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Germany",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Malaysia",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Bahrain",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Singapore",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ireland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "us/en/bing": {
+   "market": "United States",
+   "gl": "us",
+   "language": "en",
+   "engine": "bing",
+   "suggestions_with_place": 447,
+   "place_mentions": 457,
+   "domestic": 86,
+   "domestic_share": 0.188,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 153,
+     "share": 0.335
+    },
+    {
+     "country": "United States",
+     "n": 86,
+     "share": 0.188
+    },
+    {
+     "country": "Near me",
+     "n": 35,
+     "share": 0.077
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 32,
+     "share": 0.07
+    },
+    {
+     "country": "United Kingdom",
+     "n": 19,
+     "share": 0.042
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.031
+    },
+    {
+     "country": "Australia",
+     "n": 13,
+     "share": 0.028
+    },
+    {
+     "country": "Germany",
+     "n": 11,
+     "share": 0.024
+    },
+    {
+     "country": "South Africa",
+     "n": 9,
+     "share": 0.02
+    },
+    {
+     "country": "Pakistan",
+     "n": 8,
+     "share": 0.018
+    },
+    {
+     "country": "Nepal",
+     "n": 7,
+     "share": 0.015
+    },
+    {
+     "country": "Egypt",
+     "n": 6,
+     "share": 0.013
+    },
+    {
+     "country": "Canada",
+     "n": 6,
+     "share": 0.013
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 6,
+     "share": 0.013
+    },
+    {
+     "country": "Qatar",
+     "n": 6,
+     "share": 0.013
+    },
+    {
+     "country": "Philippines",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Bangladesh",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Singapore",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Nigeria",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Malaysia",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Bahrain",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Oman",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 3,
+     "share": 0.007
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Vietnam",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Ukraine",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "France",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Kenya",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.002
+    }
+   ]
+  },
+  "us/en/both": {
+   "market": "United States",
+   "gl": "us",
+   "language": "en",
+   "engine": "both",
+   "suggestions_with_place": 993,
+   "place_mentions": 1006,
+   "domestic": 192,
+   "domestic_share": 0.191,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 337,
+     "share": 0.335
+    },
+    {
+     "country": "United States",
+     "n": 192,
+     "share": 0.191
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 54,
+     "share": 0.054
+    },
+    {
+     "country": "United Kingdom",
+     "n": 44,
+     "share": 0.044
+    },
+    {
+     "country": "Pakistan",
+     "n": 38,
+     "share": 0.038
+    },
+    {
+     "country": "Near me",
+     "n": 37,
+     "share": 0.037
+    },
+    {
+     "country": "Qatar",
+     "n": 33,
+     "share": 0.033
+    },
+    {
+     "country": "Australia",
+     "n": 31,
+     "share": 0.031
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Canada",
+     "n": 21,
+     "share": 0.021
+    },
+    {
+     "country": "South Africa",
+     "n": 16,
+     "share": 0.016
+    },
+    {
+     "country": "Germany",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Nigeria",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Oman",
+     "n": 14,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 12,
+     "share": 0.012
+    },
+    {
+     "country": "Egypt",
+     "n": 12,
+     "share": 0.012
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.011
+    },
+    {
+     "country": "Nepal",
+     "n": 9,
+     "share": 0.009
+    },
+    {
+     "country": "Malaysia",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "France",
+     "n": 7,
+     "share": 0.007
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Kenya",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Singapore",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Bahrain",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Iraq",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "gb/en/google": {
+   "market": "United Kingdom",
+   "gl": "gb",
+   "language": "en",
+   "engine": "google",
+   "suggestions_with_place": 756,
+   "place_mentions": 762,
+   "domestic": 32,
+   "domestic_share": 0.042,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 283,
+     "share": 0.371
+    },
+    {
+     "country": "United States",
+     "n": 132,
+     "share": 0.173
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 37,
+     "share": 0.049
+    },
+    {
+     "country": "Pakistan",
+     "n": 36,
+     "share": 0.047
+    },
+    {
+     "country": "United Kingdom",
+     "n": 32,
+     "share": 0.042
+    },
+    {
+     "country": "Qatar",
+     "n": 28,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 25,
+     "share": 0.033
+    },
+    {
+     "country": "Canada",
+     "n": 18,
+     "share": 0.024
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.018
+    },
+    {
+     "country": "South Africa",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Nigeria",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Oman",
+     "n": 12,
+     "share": 0.016
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Egypt",
+     "n": 8,
+     "share": 0.01
+    },
+    {
+     "country": "Near me",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "Nepal",
+     "n": 7,
+     "share": 0.009
+    },
+    {
+     "country": "France",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Germany",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Malaysia",
+     "n": 6,
+     "share": 0.008
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 5,
+     "share": 0.007
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.005
+    },
+    {
+     "country": "Bahrain",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.004
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Singapore",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Ireland",
+     "n": 2,
+     "share": 0.003
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "gb/en/bing": {
+   "market": "United Kingdom",
+   "gl": "gb",
+   "language": "en",
+   "engine": "bing",
+   "suggestions_with_place": 458,
+   "place_mentions": 468,
+   "domestic": 22,
+   "domestic_share": 0.047,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 157,
+     "share": 0.335
+    },
+    {
+     "country": "United States",
+     "n": 83,
+     "share": 0.177
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 35,
+     "share": 0.075
+    },
+    {
+     "country": "Near me",
+     "n": 25,
+     "share": 0.053
+    },
+    {
+     "country": "United Kingdom",
+     "n": 22,
+     "share": 0.047
+    },
+    {
+     "country": "Australia",
+     "n": 14,
+     "share": 0.03
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 14,
+     "share": 0.03
+    },
+    {
+     "country": "Germany",
+     "n": 11,
+     "share": 0.024
+    },
+    {
+     "country": "South Africa",
+     "n": 10,
+     "share": 0.021
+    },
+    {
+     "country": "Egypt",
+     "n": 8,
+     "share": 0.017
+    },
+    {
+     "country": "Canada",
+     "n": 8,
+     "share": 0.017
+    },
+    {
+     "country": "Nepal",
+     "n": 8,
+     "share": 0.017
+    },
+    {
+     "country": "Pakistan",
+     "n": 8,
+     "share": 0.017
+    },
+    {
+     "country": "Bahrain",
+     "n": 7,
+     "share": 0.015
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 7,
+     "share": 0.015
+    },
+    {
+     "country": "Qatar",
+     "n": 6,
+     "share": 0.013
+    },
+    {
+     "country": "Philippines",
+     "n": 5,
+     "share": 0.011
+    },
+    {
+     "country": "Bangladesh",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Nigeria",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Malaysia",
+     "n": 4,
+     "share": 0.009
+    },
+    {
+     "country": "Oman",
+     "n": 3,
+     "share": 0.006
+    },
+    {
+     "country": "Singapore",
+     "n": 3,
+     "share": 0.006
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Ukraine",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Kenya",
+     "n": 2,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Iraq",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Vietnam",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "France",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Jordan",
+     "n": 1,
+     "share": 0.002
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.002
+    }
+   ]
+  },
+  "gb/en/both": {
+   "market": "United Kingdom",
+   "gl": "gb",
+   "language": "en",
+   "engine": "both",
+   "suggestions_with_place": 1001,
+   "place_mentions": 1014,
+   "domestic": 48,
+   "domestic_share": 0.047,
+   "destinations": [
+    {
+     "country": "India",
+     "n": 340,
+     "share": 0.335
+    },
+    {
+     "country": "United States",
+     "n": 188,
+     "share": 0.185
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 57,
+     "share": 0.056
+    },
+    {
+     "country": "United Kingdom",
+     "n": 48,
+     "share": 0.047
+    },
+    {
+     "country": "Pakistan",
+     "n": 38,
+     "share": 0.037
+    },
+    {
+     "country": "Australia",
+     "n": 32,
+     "share": 0.032
+    },
+    {
+     "country": "Qatar",
+     "n": 32,
+     "share": 0.032
+    },
+    {
+     "country": "Near me",
+     "n": 28,
+     "share": 0.028
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 23,
+     "share": 0.023
+    },
+    {
+     "country": "Canada",
+     "n": 22,
+     "share": 0.022
+    },
+    {
+     "country": "South Africa",
+     "n": 17,
+     "share": 0.017
+    },
+    {
+     "country": "Germany",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Nigeria",
+     "n": 15,
+     "share": 0.015
+    },
+    {
+     "country": "Egypt",
+     "n": 14,
+     "share": 0.014
+    },
+    {
+     "country": "Oman",
+     "n": 14,
+     "share": 0.014
+    },
+    {
+     "country": "Philippines",
+     "n": 12,
+     "share": 0.012
+    },
+    {
+     "country": "Bangladesh",
+     "n": 11,
+     "share": 0.011
+    },
+    {
+     "country": "Nepal",
+     "n": 10,
+     "share": 0.01
+    },
+    {
+     "country": "Africa (generic)",
+     "n": 9,
+     "share": 0.009
+    },
+    {
+     "country": "Bahrain",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "Malaysia",
+     "n": 8,
+     "share": 0.008
+    },
+    {
+     "country": "France",
+     "n": 7,
+     "share": 0.007
+    },
+    {
+     "country": "Kenya",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Lebanon",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Sri Lanka",
+     "n": 6,
+     "share": 0.006
+    },
+    {
+     "country": "Europe (generic)",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Jordan",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Singapore",
+     "n": 5,
+     "share": 0.005
+    },
+    {
+     "country": "Vietnam",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Kuwait",
+     "n": 4,
+     "share": 0.004
+    },
+    {
+     "country": "Ireland",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Ukraine",
+     "n": 3,
+     "share": 0.003
+    },
+    {
+     "country": "Iraq",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Poland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Switzerland",
+     "n": 2,
+     "share": 0.002
+    },
+    {
+     "country": "Cameroon",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Belgium",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Portugal",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Luxembourg",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Morocco",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Madagascar",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Netherlands",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Latin America",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Spain",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Turkey",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Yemen",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "China",
+     "n": 1,
+     "share": 0.001
+    },
+    {
+     "country": "Mauritius",
+     "n": 1,
+     "share": 0.001
+    }
+   ]
+  },
+  "eg/ar/google": {
+   "market": "Egypt",
+   "gl": "eg",
+   "language": "ar",
+   "engine": "google",
+   "suggestions_with_place": 82,
+   "place_mentions": 82,
+   "domestic": 23,
+   "domestic_share": 0.28,
+   "destinations": [
+    {
+     "country": "Egypt",
+     "n": 23,
+     "share": 0.28
+    },
+    {
+     "country": "Saudi Arabia",
+     "n": 22,
+     "share": 0.268
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.11
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.098
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.049
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.037
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.024
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.012
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.012
+    }
+   ]
+  },
+  "eg/ar/bing": {
+   "market": "Egypt",
+   "gl": "eg",
+   "language": "ar",
+   "engine": "bing",
+   "suggestions_with_place": 22,
+   "place_mentions": 22,
+   "domestic": 4,
+   "domestic_share": 0.182,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 16,
+     "share": 0.727
+    },
+    {
+     "country": "Egypt",
+     "n": 4,
+     "share": 0.182
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 1,
+     "share": 0.045
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 1,
+     "share": 0.045
+    }
+   ]
+  },
+  "eg/ar/both": {
+   "market": "Egypt",
+   "gl": "eg",
+   "language": "ar",
+   "engine": "both",
+   "suggestions_with_place": 98,
+   "place_mentions": 98,
+   "domestic": 24,
+   "domestic_share": 0.245,
+   "destinations": [
+    {
+     "country": "Saudi Arabia",
+     "n": 36,
+     "share": 0.367
+    },
+    {
+     "country": "Egypt",
+     "n": 24,
+     "share": 0.245
+    },
+    {
+     "country": "Syria",
+     "n": 9,
+     "share": 0.092
+    },
+    {
+     "country": "United Arab Emirates",
+     "n": 8,
+     "share": 0.082
+    },
+    {
+     "country": "Jordan",
+     "n": 4,
+     "share": 0.041
+    },
+    {
+     "country": "Iraq",
+     "n": 4,
+     "share": 0.041
+    },
+    {
+     "country": "Oman or Amman (ambiguous)",
+     "n": 3,
+     "share": 0.031
+    },
+    {
+     "country": "Kuwait",
+     "n": 3,
+     "share": 0.031
+    },
+    {
+     "country": "Qatar",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Yemen",
+     "n": 2,
+     "share": 0.02
+    },
+    {
+     "country": "Palestine",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Lebanon",
+     "n": 1,
+     "share": 0.01
+    },
+    {
+     "country": "Bahrain",
+     "n": 1,
+     "share": 0.01
+    }
+   ]
+  }
+ }
+}

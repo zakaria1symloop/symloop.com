@@ -206,7 +206,6 @@ export default function PartenaireTechStartup() {
         <title>Partenaire Tech Startup Algérie | CTO as a Service - Symloop</title>
         <meta name="description" content="Trouvez votre partenaire tech en Algérie. CTO as a Service, équipe développement dédiée, et accompagnement complet pour startups. À partir de 50,000 DA/mois." />
         <meta name="keywords" content="partenaire tech algérie, cto startup, équipe développement startup, fournisseur tech, co-fondateur technique, cto as a service algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/partenaire-tech-startup-algerie" />
         <meta property="og:title" content="Partenaire Tech Startup Algérie | CTO as a Service" />
         <meta property="og:description" content="Votre partenaire tech en Algérie. CTO as a Service et équipe développement dédiée pour startups. À partir de 50,000 DA/mois." />
         <meta property="og:type" content="article" />
@@ -239,7 +238,7 @@ export default function PartenaireTechStartup() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

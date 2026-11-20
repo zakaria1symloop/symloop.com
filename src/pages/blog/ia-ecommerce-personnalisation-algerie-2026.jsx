@@ -125,7 +125,6 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
         <title>IA pour E-commerce Alg\u00e9rie 2026 | Personnalisation & Recommandations IA | Symloop</title>
         <meta name="description" content="Int\u00e9grez l'IA dans votre e-commerce en Alg\u00e9rie. Recommandations produits personnalis\u00e9es, recherche intelligente, pricing dynamique, r\u00e9cup\u00e9ration paniers abandonn\u00e9s. Augmentez vos ventes de 30-50%. Symloop, expert IA e-commerce. Contact: +213 549 575 512." />
         <meta name="keywords" content="IA e-commerce alg\u00e9rie, personnalisation IA alg\u00e9rie, recommandation produits IA, recherche intelligente e-commerce, pricing dynamique alg\u00e9rie, r\u00e9cup\u00e9ration panier abandonn\u00e9 IA, segmentation clients IA, e-commerce alg\u00e9rie 2026, intelligence artificielle boutique en ligne" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-ecommerce-personnalisation-algerie-2026/" />
 
         <meta property="og:title" content="IA pour E-commerce : Personnalisation & Recommandations en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Solutions IA pour e-commerce alg\u00e9rien. Recommandations, recherche intelligente, pricing dynamique. +30-50% ventes." />
@@ -227,7 +226,7 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.div initial={false} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-500 hover:text-white mb-8 transition-colors text-sm tracking-wide uppercase">
                 <ArrowLeft className="w-3.5 h-3.5" />
                 Blog
@@ -244,8 +243,8 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -262,8 +261,8 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -283,8 +282,8 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -294,8 +293,8 @@ export default function IAEcommercePersonnalisationAlgerie2026() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

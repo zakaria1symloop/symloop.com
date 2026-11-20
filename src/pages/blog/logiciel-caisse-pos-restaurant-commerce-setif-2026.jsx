@@ -930,7 +930,6 @@ export default function LogicielCaissePOSSetif() {
         <title>{c.title} | Symloop</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content={c.keywords} />
-        <link rel="canonical" href={`https://symloop.com/${locale}/blog/logiciel-caisse-pos-restaurant-commerce-setif-2026`} />
         <meta property="og:title" content={c.title} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="article" />

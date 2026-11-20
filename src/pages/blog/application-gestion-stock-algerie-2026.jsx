@@ -116,7 +116,6 @@ export default function ApplicationGestionStockAlgerie() {
         <title>Application Gestion de Stock Algérie 2026 | Logiciel Inventaire Entreprise | Symloop</title>
         <meta name="description" content="Application de gestion de stock en Algérie 2026. Logiciel inventaire, code-barres, multi-dépôts, alertes stock, facturation. Solution sur mesure pour entreprises algériennes. Symloop." />
         <meta name="keywords" content="application gestion stock algérie, logiciel gestion stock algérie 2026, gestion inventaire algérie, application stock entreprise algérie, logiciel gestion magasin algérie, logiciel stock algérie, gestion entrepôt algérie, application inventaire algérie, logiciel gestion commerciale stock algérie, gestion stock multi-dépôts algérie, inventory management app Algeria, stock management software Algeria, warehouse management Algeria, inventory tracking Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/application-gestion-stock-algerie-2026" />
 
         <meta property="og:title" content="Application Gestion de Stock Algérie 2026 | Symloop" />
         <meta property="og:description" content="Application de gestion de stock pour entreprises algériennes (Algeria). Inventaire, code-barres, multi-dépôts, alertes, facturation. Solution sur mesure par Symloop." />
@@ -194,7 +193,7 @@ export default function ApplicationGestionStockAlgerie() {
             "name": "Symloop",
             "url": "https://symloop.com",
             "logo": "https://symloop.com/logo.png",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sétif", "addressCountry": "DZ" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressCountry": "DZ" },
             "telephone": "+213549575512",
             "knowsAbout": ["Gestion de stock", "Application inventaire", "Logiciel gestion magasin", "ERP sur mesure", "Développement logiciel", "Application mobile", "Code-barres", "Multi-dépôts"],
             "areaServed": { "@type": "Country", "name": "Algeria" }
@@ -223,7 +222,7 @@ export default function ApplicationGestionStockAlgerie() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -244,8 +243,8 @@ export default function ApplicationGestionStockAlgerie() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -259,8 +258,8 @@ export default function ApplicationGestionStockAlgerie() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-8 leading-[1.08] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -278,8 +277,8 @@ export default function ApplicationGestionStockAlgerie() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -289,8 +288,8 @@ export default function ApplicationGestionStockAlgerie() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >
@@ -1105,7 +1104,7 @@ export default function ApplicationGestionStockAlgerie() {
                   {
                     icon: Shield,
                     title: "Code propriétaire et support local",
-                    desc: "Le code source vous appartient à 100%. Pas de dépendance envers un éditeur. Et en cas de besoin, notre équipe basée à Sétif est disponible pour le support, la formation et les évolutions futures.",
+                    desc: "Le code source vous appartient à 100%. Pas de dépendance envers un éditeur. Et en cas de besoin, notre équipe basée à Alger est disponible pour le support, la formation et les évolutions futures.",
                     color: "text-indigo-400",
                     bg: "bg-indigo-500/10",
                     border: "border-indigo-500/20"

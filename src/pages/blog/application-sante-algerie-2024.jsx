@@ -206,7 +206,6 @@ export default function SanteAlgerie() {
         <title>Application Santé Algérie 2024 | Télémédecine E-Health | Symloop</title>
         <meta name="description" content="Développement d'applications de santé en Algérie : télémédecine, dossiers médicaux électroniques, gestion clinique. Solutions e-health sécurisées à partir de 70 000 DA." />
         <meta name="keywords" content="e-health algérie, télémédecine algérie, application santé, gestion clinique algérie, dossier médical électronique, DME algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/application-sante-algerie-2024" />
         <meta property="og:title" content="Application Santé Algérie 2024 | Télémédecine E-Health" />
         <meta property="og:description" content="Solutions e-health pour médecins et cliniques : téléconsultation, DME, gestion cabinet. À partir de 70 000 DA." />
         <meta property="og:type" content="article" />
@@ -219,7 +218,7 @@ export default function SanteAlgerie() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

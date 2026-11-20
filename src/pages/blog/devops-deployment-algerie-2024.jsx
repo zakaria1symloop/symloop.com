@@ -204,7 +204,6 @@ export default function DevOpsAlgerie() {
         <title>DevOps Algérie 2024 | CI/CD, Docker, Kubernetes | Symloop</title>
         <meta name="description" content="Services DevOps en Algérie : CI/CD automatisé, Docker, Kubernetes, déploiement cloud. Infrastructure moderne pour applications performantes. À partir de 40 000 DA." />
         <meta name="keywords" content="devops algérie, ci cd algérie, docker kubernetes, déploiement cloud algérie, infrastructure cloud, automatisation déploiement" />
-        <link rel="canonical" href="https://symloop.com/blog/devops-deployment-algerie-2024" />
         <meta property="og:title" content="DevOps Algérie 2024 | CI/CD, Docker, Kubernetes" />
         <meta property="og:description" content="Infrastructure DevOps moderne pour entreprises algériennes. CI/CD, containers, cloud, monitoring." />
         <meta property="og:type" content="article" />
@@ -217,7 +216,7 @@ export default function DevOpsAlgerie() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

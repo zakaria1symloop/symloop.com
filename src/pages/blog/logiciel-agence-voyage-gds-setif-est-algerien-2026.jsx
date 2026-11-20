@@ -542,7 +542,6 @@ export default function LogicielAgenceVoyageGDS2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel agence voyage Setif, GDS Algerie, reservation vol, Omra Hadj, agence voyage Constantine, Amadeus Algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-agence-voyage-gds-setif-est-algerien-2026`} />
 
         <script type="application/ld+json">
           {JSON.stringify({

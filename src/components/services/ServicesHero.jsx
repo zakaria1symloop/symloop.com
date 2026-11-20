@@ -184,8 +184,8 @@ const ServicesHero = ({
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 40 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
             className="text-5xl sm:text-6xl lg:text-8xl font-bold mb-8 leading-[1.05] tracking-tight"
           >
@@ -203,8 +203,8 @@ const ServicesHero = ({
 
           {/* Subtitle */}
           <motion.p
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 25 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-lg md:text-xl text-white/35 max-w-3xl mx-auto leading-relaxed mb-16"
           >
@@ -216,8 +216,8 @@ const ServicesHero = ({
             {stats.slice(0, 4).map((stat, index) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 25, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
+                initial={{ y: 25, scale: 0.95 }}
+                animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.55 + index * 0.1 }}
                 className="group relative"
               >
@@ -233,8 +233,8 @@ const ServicesHero = ({
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 15 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-14"
           >
@@ -265,7 +265,7 @@ const ServicesHero = ({
 
           {/* Locations */}
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
             className="flex flex-wrap justify-center gap-8 text-sm text-white/20"

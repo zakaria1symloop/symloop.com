@@ -703,7 +703,6 @@ export default function LogicielImmobilier2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel immobilier algerie, CRM immobilier, gestion agence immobiliere, logiciel annonces, diffusion ouedkniss, logiciel promoteur" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-immobilier-agence-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

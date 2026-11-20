@@ -48,7 +48,6 @@ export default function ApplicationGestionAgricoleAlgerie2026() {
         <title>Application de Gestion Agricole en Algérie 2026 : Logiciel pour Agriculteurs et Exploitations | Symloop</title>
         <meta name="description" content="Application de gestion agricole pour agriculteurs algériens. Planification cultures, suivi dépenses/revenus, gestion récoltes, météo, marketplace vente directe. Android & iOS. À partir de 2 000 DA/mois. Symloop." />
         <meta name="keywords" content="application gestion agricole algérie, logiciel agriculteur algérie, app ferme algérie 2026, gestion exploitation agricole algérie, logiciel agriculture algérie, application agricole algérie, gestion ferme algérie, planification cultures algérie, marketplace agricole algérie, suivi récoltes algérie, application mobile agriculteur algérie, logiciel ferme algérie, gestion parcelles algérie, comptabilité agricole algérie, calendrier agricole algérie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/application-gestion-agricole-algerie-2026/" />
 
         <meta property="og:title" content="Application de Gestion Agricole en Algérie 2026 | Logiciel Agriculteurs | Symloop" />
         <meta property="og:description" content="Application mobile de gestion agricole pour les agriculteurs algériens. Planification, finances, récoltes, météo, marketplace. Android & iOS." />
@@ -143,7 +142,7 @@ export default function ApplicationGestionAgricoleAlgerie2026() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-green-950 via-green-900 to-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog

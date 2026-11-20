@@ -189,8 +189,8 @@ export default function CreationSiteWebSetif2026() {
         "url": "https://symloop.com/blog/creation-site-web-setif-2026",
         "telephone": "+213549575512",
         "email": "contact@symloop.com",
-        "address": { "@type": "PostalAddress", "addressLocality": "Setif", "addressRegion": "Setif", "addressCountry": "DZ" },
-        "geo": { "@type": "GeoCoordinates", "latitude": "36.1919", "longitude": "5.4138" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Alger", "addressRegion": "Alger", "addressCountry": "DZ" },
+        "geo": { "@type": "GeoCoordinates", "latitude": "36.7538", "longitude": "3.0588" },
         "areaServed": { "@type": "City", "name": "Setif" },
         "priceRange": "120000 DA - 500000 DA",
         "openingHours": "Mo-Sa 08:00-18:00"
@@ -237,7 +237,6 @@ export default function CreationSiteWebSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.keywords} />
-        <link rel="canonical" href={`https://symloop.com/blog/creation-site-web-setif-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />

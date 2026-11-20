@@ -347,8 +347,8 @@ export default function ServicesShowcase() {
             <div className="lg:col-span-2">
               <motion.div
                 key={activeService.id}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ x: 20 }}
+                animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
                 className="bg-white rounded-2xl p-8 shadow-xl"
               >
@@ -388,8 +388,8 @@ export default function ServicesShowcase() {
                     {activeService.features.map((feature, index) => (
                       <motion.div
                         key={index}
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ x: -10 }}
+                        animate={{ x: 0 }}
                         transition={{ duration: 0.3, delay: index * 0.1 }}
                         className="flex items-start gap-3"
                       >
@@ -407,8 +407,8 @@ export default function ServicesShowcase() {
                     {activeService.technologies.map((tech, index) => (
                       <motion.span
                         key={tech}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        initial={{ scale: 0.8 }}
+                        animate={{ scale: 1 }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
                         className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
                       >

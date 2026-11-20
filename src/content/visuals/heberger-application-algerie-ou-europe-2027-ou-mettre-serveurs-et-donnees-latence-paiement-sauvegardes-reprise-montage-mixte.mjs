@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'heberger-application-algerie-ou-europe-2027-ou-mettre-serveurs-et-donnees-latence-paiement-sauvegardes-reprise-montage-mixte';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Hébergement · Données · Algérie ou Europe · 2027', title: ['Le serveur est tombé.', 'La sauvegarde date', 'd’il y a trois mois.'], subtitle: 'Où mettre les serveurs et les données d’une application utilisée en Algérie : six décisions prises avant le code, les cinq couches entre le téléphone et la base, le montage mixte qui tient, les sauvegardes qu’on restaure vraiment, et la reprise après panne qu’on répète avant d’en avoir besoin', left: { label: 'Un serveur, un compte', sub: 'au nom du prestataire, sans copie' }, right: { label: 'Deux sites, vos comptes', sub: 'sauvegardes restaurées, reprise répétée' } },
+    decisions: { title: 'Six décisions d’hébergement, prises avant la première ligne de code', items: [
+      { n: '01', label: 'Où vivent les données', sub: 'En Algérie, en Europe, ou les deux : la base de production d’un côté, une copie chiffrée de l’autre ; décidé selon vos clients, vos contrats et votre conseil.', accent: true },
+      { n: '02', label: 'Où tourne l’application', sub: 'Près des utilisateurs quand l’écran est lourd et le réseau faible ; en Europe quand il faut des services qui n’existent pas encore en Algérie ; souvent les deux.' },
+      { n: '03', label: 'Comment on paie', sub: 'En dinars pour l’hébergeur algérien, en devise pour l’européen ; le second demande une carte internationale ou un intermédiaire, écrit dans le budget.' },
+      { n: '04', label: 'Comment on sauvegarde', sub: 'Trois copies, deux supports, une hors site, chiffrées ; et surtout une restauration testée chaque mois, chronométrée.' },
+      { n: '05', label: 'Comment on reprend', sub: 'Un second site prêt, un objectif de reprise en heures et un objectif de perte en minutes, écrits ; un exercice avant la mise en ligne.' },
+      { n: '06', label: 'Comment on supervise', sub: 'Disponibilité, lenteur, espace disque, certificats, sauvegardes réussies ; une alerte avant que le client appelle.' },
+    ], caption: 'Figure 1 · La décision 01 commande les cinq autres : c’est le lieu des données qui décide du paiement, des sauvegardes et de la reprise. La décision 04 est celle qu’on croit avoir prise et qu’on n’a pas prise : une sauvegarde jamais restaurée n’est pas une sauvegarde.', alt: 'Six décisions : lieu des données, lieu de l’application, paiement, sauvegarde, reprise, supervision' },
+    couches: { title: 'Entre le téléphone de l’utilisateur et la base, cinq couches', layers: [
+      { label: 'Appareil et réseau', items: [{ name: 'Téléphone Android ou iPhone, 4G ou 5G d’un opérateur algérien, cache local de l’application', sub: 'c’est ici que la latence se ressent ; l’application installable et le hors ligne en absorbent une partie' }] },
+      { label: 'Entrée', items: [{ name: 'Nom de domaine, certificat TLS, diffusion des fichiers statiques et images par un réseau de distribution', sub: 'le domaine et le certificat sont au nom du client ; les images lourdes ne traversent pas la Méditerranée à chaque ouverture' }] },
+      { label: 'Application', items: [{ name: 'API, files de travail, agents IA, intégrations ; déployée sans coupure, répliquée si besoin', sub: 'elle peut tourner en Algérie et appeler des services en Europe, ou l’inverse' }] },
+      { label: 'Données', items: [{ name: 'Base de données, fichiers, journaux ; sauvegardes chiffrées sur un second site ; restauration testée', sub: 'la seule couche qu’on ne reconstruit pas depuis le code ; celle qui décide où l’on héberge', accent: true }] },
+      { label: 'Exploitation', items: [{ name: 'Supervision, alertes, mises à jour de sécurité, exercice de reprise, comptes au nom du client', sub: 'ce qui fait qu’une panne dure une heure et pas un week-end' }] },
+    ], caption: 'Figure 2 · La couche des données est la seule qu’on ne recrée pas depuis le dépôt de code ; c’est elle qui fixe le lieu d’hébergement, le rythme des sauvegardes et le plan de reprise. Les autres couches se redéploient en minutes depuis le dépôt, à condition que le dépôt et les comptes soient au nom du client.', alt: 'Cinq couches : appareil et réseau, entrée, application, données, exploitation' },
+    exemple: { title: 'Une plateforme de commerce, deux sites, un exercice de reprise : l’exemple', items: [
+      { value: '2', label: 'sites : la production chez un hébergeur en Algérie, une copie chiffrée et un serveur de secours chez un hébergeur européen ; hypothèse à adapter à vos contraintes', accent: true },
+      { value: '3-2-1', label: 'sauvegardes : trois copies, deux supports, une hors site ; base toutes les heures, fichiers chaque nuit, chiffrées avant de partir' },
+      { value: '1 h', label: 'objectif de reprise écrit : au plus une heure entre la panne du site principal et le service rendu depuis le site de secours' },
+      { value: '15 min', label: 'objectif de perte écrit : au plus quinze minutes de données perdues, grâce à la réplication continue de la base vers le second site' },
+    ], caption: 'Figure 3 · Les chiffres sont des objectifs écrits au contrat, pas des promesses : ils se vérifient par un exercice de reprise chronométré avant la mise en ligne, puis chaque trimestre. Sans exercice, l’objectif d’une heure est une phrase ; avec, c’est une mesure.', alt: 'Quatre chiffres : deux sites, sauvegardes 3-2-1, reprise en une heure, perte de quinze minutes au plus' },
+    montages: { title: 'Six montages d’hébergement, et quand chacun se justifie', columns: ['Quand', 'Ce que ça impose'], rows: [
+      { label: 'Tout en Algérie', cells: ['Données qui doivent rester dans le pays, paiement en dinars, utilisateurs tous en Algérie', 'Hébergeur local avec deux centres de données ; copie chiffrée hors site quand même ; services IA et messagerie appelés depuis l’Europe'] },
+      { label: 'Tout en Europe', cells: ['Produit lancé depuis la France, utilisateurs des deux côtés, services européens au cœur', 'Paiement en devise ; fichiers lourds distribués par un réseau de distribution ; latence à mesurer depuis les wilayas'] },
+      { label: 'Données en Algérie, calcul en Europe', cells: ['Contrainte de résidence des données avec des traitements lourds ou de l’IA', 'Lien chiffré entre les deux ; seules des données nécessaires traversent ; latence de chaque appel comptée'] },
+      { label: 'Production en Algérie, secours en Europe', cells: ['Le cas le plus fréquent : clients en Algérie, besoin d’une reprise crédible', 'Réplication de la base, serveur de secours prêt, exercice de reprise ; deux factures, deux moyens de paiement'] },
+      { label: 'Hyperscaler', cells: ['Services managés spécifiques, équipes qui les connaissent', 'Aucune région en Algérie à ce jour ; paiement en devise ; coûts à surveiller ; sortie plus coûteuse'] },
+      { label: 'Chez le client', cells: ['Entreprise ou administration qui refuse tout cloud', 'Serveur, onduleur, sauvegardes hors site et mises à jour à organiser ; un contrat d’exploitation à part'] },
+    ], caption: 'Figure 4 · Aucun montage n’est le bon pour tout le monde ; la quatrième ligne est celui que nous recommandons le plus souvent en 2027, parce qu’il tient le paiement en dinars, les données près des clients et une reprise réelle. La cinquième n’est pas « mieux » : sans région locale, elle ajoute la Méditerranée à chaque requête.', alt: 'Matrice de six montages : tout en Algérie, tout en Europe, données en Algérie et calcul en Europe, production en Algérie et secours en Europe, hyperscaler, chez le client' },
+    pieges: { title: 'Six pannes qui ne viennent pas du code, et ce que l’hébergement fait', columns: ['Ce qui se passe', 'Ce que l’architecture fait'], rows: [
+      { label: 'La carte refusée au renouvellement', cells: ['L’hébergeur européen ne peut pas prélever ; le serveur est suspendu un dimanche', 'Moyen de paiement en devise prévu et testé, alerte trente jours avant l’échéance, second moyen de paiement enregistré'] },
+      { label: 'La sauvegarde jamais restaurée', cells: ['Le disque meurt ; la sauvegarde existe mais ne se restaure pas, ou date de trois mois', 'Restauration testée chaque mois sur un serveur vide, chronométrée, avec le résultat consigné'] },
+      { label: 'Le serveur unique', cells: ['Une panne matérielle ou un incident chez l’hébergeur, et rien ne répond pendant deux jours', 'Second site avec la base répliquée et l’application prête ; bascule exercée avant la mise en ligne'] },
+      { label: 'Le domaine au nom du prestataire', cells: ['Le prestataire disparaît ou se fâche ; le domaine, les certificats et les comptes partent avec lui', 'Domaine, hébergement, comptes et clés au nom du client dès le premier jour ; accès du prestataire révocable'] },
+      { label: 'Les images qui traversent la mer', cells: ['Chaque ouverture charge dix photos depuis l’Europe ; quatre secondes sur une 4G de wilaya', 'Fichiers statiques et images servis par un réseau de distribution, compressés, mis en cache dans l’application'] },
+      { label: 'La base ouverte sur internet', cells: ['Le port de la base est accessible depuis n’importe où ; un robot la trouve en une nuit', 'Base accessible seulement depuis l’application, par réseau privé ; mots de passe longs, rotation, journal des accès'] },
+    ], caption: 'Figure 5 · Aucune de ces six pannes ne se voit dans le code, et chacune a arrêté une application que nous avons reprise. Toutes se traitent la première semaine, au moment des décisions, pas la nuit de l’incident.', alt: 'Matrice de six pannes : carte refusée, sauvegarde non restaurée, serveur unique, domaine au nom du prestataire, images sans réseau de distribution, base exposée' },
+    calendrier: { title: 'Mettre en place l’hébergement en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Décisions', note: 'lieu des données, lieu de l’application, paiement, objectifs de reprise et de perte, écrits et signés', from: 0, to: 1 },
+      { label: 'Comptes et contrats', note: 'hébergeurs, domaine, certificats, moyens de paiement, tous au nom du client ; accès du prestataire délégués', from: 1, to: 2 },
+      { label: 'Infrastructure et déploiement', note: 'serveurs, réseau privé, base, files, déploiement sans coupure depuis le dépôt, réseau de distribution', from: 2, to: 4, accent: true },
+      { label: 'Sauvegardes et restauration', note: 'sauvegardes 3-2-1 chiffrées ; première restauration complète sur un serveur vide, chronométrée', from: 4, to: 5 },
+      { label: 'Second site et exercice', note: 'réplication de la base, serveur de secours, bascule exercée et mesurée contre les objectifs', from: 5, to: 6 },
+      { label: 'Supervision', note: 'disponibilité, lenteur, disque, certificats, sauvegardes ; alertes WhatsApp et e-mail au client et au prestataire', from: 6, to: 7 },
+      { label: 'Mesures réelles', note: 'temps de réponse mesuré depuis plusieurs wilayas et depuis la France ; ajustements ; bilan écrit', from: 7, to: 8 },
+    ], caption: 'Figure 6 · Huit semaines, en parallèle du développement, et deux moments qui ne se négocient pas : la restauration de la semaine 4 et l’exercice de reprise de la semaine 5. Un hébergement livré sans ces deux moments est un serveur, pas un hébergement.', alt: 'Frise de huit semaines : décisions, comptes, infrastructure, sauvegardes, second site, supervision, mesures' },
+  },
+  en: {
+    cover: { eyebrow: 'Hosting · Data · Algeria or Europe · 2027', title: ['The server went down.', 'The backup is', 'three months old.'], subtitle: 'Where to put the servers and data of an app used in Algeria: six decisions made before the code, the five layers between the phone and the database, the mixed set-up that holds, backups that actually get restored, and the disaster recovery rehearsed before it is needed', left: { label: 'One server, one account', sub: 'in the vendor’s name, no copy' }, right: { label: 'Two sites, your accounts', sub: 'backups restored, recovery rehearsed' } },
+    decisions: { title: 'Six hosting decisions, made before the first line of code', items: [
+      { n: '01', label: 'Where the data lives', sub: 'In Algeria, in Europe, or both: the production database on one side, an encrypted copy on the other; decided by your customers, your contracts and your counsel.', accent: true },
+      { n: '02', label: 'Where the app runs', sub: 'Close to users when the screen is heavy and the network weak; in Europe when it needs services not yet available in Algeria; often both.' },
+      { n: '03', label: 'How you pay', sub: 'In dinars for the Algerian host, in foreign currency for the European one; the latter needs an international card or an intermediary, written into the budget.' },
+      { n: '04', label: 'How you back up', sub: 'Three copies, two media, one off-site, encrypted; and above all a restore tested every month, timed.' },
+      { n: '05', label: 'How you recover', sub: 'A second site ready, a recovery objective in hours and a loss objective in minutes, written; a rehearsal before go-live.' },
+      { n: '06', label: 'How you supervise', sub: 'Availability, slowness, disk space, certificates, successful backups; an alert before the customer calls.' },
+    ], caption: 'Figure 1 · Decision 01 drives the other five: where the data lives decides payment, backups and recovery. Decision 04 is the one people think they have made and have not: a backup never restored is not a backup.', alt: 'Six decisions: data location, app location, payment, backup, recovery, supervision' },
+    couches: { title: 'Between the user’s phone and the database, five layers', layers: [
+      { label: 'Device and network', items: [{ name: 'Android or iPhone, 4G or 5G from an Algerian carrier, the app’s local cache', sub: 'this is where latency is felt; the installable app and offline mode absorb part of it' }] },
+      { label: 'Edge', items: [{ name: 'Domain name, TLS certificate, static files and images served through a content delivery network', sub: 'domain and certificate in the client’s name; heavy images do not cross the Mediterranean at every opening' }] },
+      { label: 'Application', items: [{ name: 'API, work queues, AI agents, integrations; deployed with no downtime, replicated if needed', sub: 'it can run in Algeria and call services in Europe, or the reverse' }] },
+      { label: 'Data', items: [{ name: 'Database, files, logs; encrypted backups on a second site; tested restore', sub: 'the only layer not rebuilt from the code; the one that decides where you host', accent: true }] },
+      { label: 'Operations', items: [{ name: 'Supervision, alerts, security updates, recovery rehearsal, accounts in the client’s name', sub: 'what makes an outage last an hour and not a weekend' }] },
+    ], caption: 'Figure 2 · The data layer is the only one not recreated from the code repository; it sets the hosting location, the backup rhythm and the recovery plan. The other layers redeploy in minutes from the repository, provided the repository and the accounts are in the client’s name.', alt: 'Five layers: device and network, edge, application, data, operations' },
+    exemple: { title: 'A commerce platform, two sites, one recovery rehearsal: the example', items: [
+      { value: '2', label: 'sites: production at a host in Algeria, an encrypted copy and a standby server at a European host; an assumption to adapt to your constraints', accent: true },
+      { value: '3-2-1', label: 'backups: three copies, two media, one off-site; database every hour, files every night, encrypted before leaving' },
+      { value: '1 h', label: 'written recovery objective: at most one hour between the main site failing and service resuming from the standby' },
+      { value: '15 min', label: 'written loss objective: at most fifteen minutes of data lost, thanks to continuous database replication to the second site' },
+    ], caption: 'Figure 3 · The figures are objectives written into the contract, not promises: they are checked by a timed recovery rehearsal before go-live, then every quarter. Without a rehearsal the one-hour objective is a sentence; with it, a measurement.', alt: 'Four figures: two sites, 3-2-1 backups, recovery in one hour, at most fifteen minutes lost' },
+    montages: { title: 'Six hosting set-ups, and when each is justified', columns: ['When', 'What it imposes'], rows: [
+      { label: 'All in Algeria', cells: ['Data that must stay in the country, payment in dinars, all users in Algeria', 'Local host with two data centres; encrypted off-site copy anyway; AI and messaging services called from Europe'] },
+      { label: 'All in Europe', cells: ['Product launched from France, users on both sides, European services at the core', 'Payment in foreign currency; heavy files through a delivery network; latency measured from the wilayas'] },
+      { label: 'Data in Algeria, compute in Europe', cells: ['Data residency constraint with heavy processing or AI', 'Encrypted link between the two; only necessary data crosses; latency of every call counted'] },
+      { label: 'Production in Algeria, standby in Europe', cells: ['The most frequent case: customers in Algeria, need for credible recovery', 'Database replication, standby server ready, recovery rehearsal; two invoices, two payment methods'] },
+      { label: 'Hyperscaler', cells: ['Specific managed services, teams who know them', 'No region in Algeria to date; payment in foreign currency; costs to watch; costlier exit'] },
+      { label: 'On the client’s premises', cells: ['Company or administration that refuses any cloud', 'Server, UPS, off-site backups and updates to organise; a separate operations contract'] },
+    ], caption: 'Figure 4 · No set-up is right for everyone; the fourth row is the one we recommend most often in 2027, because it keeps payment in dinars, data near the customers and a real recovery. The fifth is not “better”: with no local region, it adds the Mediterranean to every request.', alt: 'Matrix of six set-ups: all in Algeria, all in Europe, data in Algeria and compute in Europe, production in Algeria and standby in Europe, hyperscaler, on premises' },
+    pieges: { title: 'Six outages that do not come from the code, and what hosting does', columns: ['What happens', 'What the architecture does'], rows: [
+      { label: 'The card declined at renewal', cells: ['The European host cannot charge; the server is suspended on a Sunday', 'Foreign-currency payment method planned and tested, alert thirty days before the due date, second payment method registered'] },
+      { label: 'The backup never restored', cells: ['The disk dies; the backup exists but does not restore, or is three months old', 'Restore tested every month on an empty server, timed, with the result recorded'] },
+      { label: 'The single server', cells: ['A hardware failure or an incident at the host, and nothing answers for two days', 'Second site with the database replicated and the app ready; failover rehearsed before go-live'] },
+      { label: 'The domain in the vendor’s name', cells: ['The vendor disappears or falls out; the domain, certificates and accounts leave with them', 'Domain, hosting, accounts and keys in the client’s name from day one; vendor access revocable'] },
+      { label: 'Images crossing the sea', cells: ['Every opening loads ten photos from Europe; four seconds on a wilaya’s 4G', 'Static files and images served through a delivery network, compressed, cached in the app'] },
+      { label: 'The database open to the internet', cells: ['The database port is reachable from anywhere; a bot finds it in one night', 'Database reachable only from the app, over a private network; long passwords, rotation, access log'] },
+    ], caption: 'Figure 5 · None of these six outages shows in the code, and each one has stopped an app we took over. All are handled in the first week, at decision time, not on the night of the incident.', alt: 'Matrix of six outages: declined card, unrestored backup, single server, domain in the vendor’s name, images without a delivery network, exposed database' },
+    calendrier: { title: 'Setting up hosting in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Decisions', note: 'data location, app location, payment, recovery and loss objectives, written and signed', from: 0, to: 1 },
+      { label: 'Accounts and contracts', note: 'hosts, domain, certificates, payment methods, all in the client’s name; vendor access delegated', from: 1, to: 2 },
+      { label: 'Infrastructure and deployment', note: 'servers, private network, database, queues, zero-downtime deployment from the repository, delivery network', from: 2, to: 4, accent: true },
+      { label: 'Backups and restore', note: '3-2-1 encrypted backups; first full restore on an empty server, timed', from: 4, to: 5 },
+      { label: 'Second site and rehearsal', note: 'database replication, standby server, failover rehearsed and measured against the objectives', from: 5, to: 6 },
+      { label: 'Supervision', note: 'availability, slowness, disk, certificates, backups; WhatsApp and email alerts to the client and the vendor', from: 6, to: 7 },
+      { label: 'Real measurements', note: 'response time measured from several wilayas and from France; adjustments; written review', from: 7, to: 8 },
+    ], caption: 'Figure 6 · Eight weeks, alongside development, and two moments that are not negotiable: the week-4 restore and the week-5 recovery rehearsal. Hosting delivered without those two moments is a server, not hosting.', alt: 'Eight-week timeline: decisions, accounts, infrastructure, backups, second site, supervision, measurements' },
+  },
+  ar: {
+    cover: { eyebrow: 'الاستضافة · البيانات · الجزائر أم أوروبا · 2027', title: ['سقط الخادم.', 'والنسخة الاحتياطية', 'عمرها ثلاثة أشهر.'], subtitle: 'أين توضع خوادم وبيانات تطبيق يُستعمل في الجزائر: ستة قرارات تُتخذ قبل الكود، الطبقات الخمس بين الهاتف والقاعدة، التركيب المختلط الذي يصمد، النسخ الاحتياطي الذي يُستعاد فعلاً، والتعافي من العطل الذي يُتمرَّن عليه قبل الحاجة إليه', left: { label: 'خادم واحد، حساب واحد', sub: 'باسم المورّد، بلا نسخة' }, right: { label: 'موقعان، حساباتكم', sub: 'نسخ مستعادة، تعافٍ مُتمرَّن عليه' } },
+    decisions: { title: 'ستة قرارات للاستضافة، تُتخذ قبل أول سطر كود', items: [
+      { n: '01', label: 'أين تعيش البيانات', sub: 'في الجزائر أو أوروبا أو كليهما: قاعدة الإنتاج في جهة ونسخة مشفَّرة في الأخرى؛ يُقرَّر حسب زبائنكم وعقودكم ومستشاركم.', accent: true },
+      { n: '02', label: 'أين يعمل التطبيق', sub: 'قرب المستعملين حين تكون الشاشة ثقيلة والشبكة ضعيفة؛ في أوروبا حين يحتاج خدمات لم توجد بعد في الجزائر؛ وغالباً في الاثنين.' },
+      { n: '03', label: 'كيف تدفعون', sub: 'بالدينار للمستضيف الجزائري، وبالعملة الأجنبية للأوروبي؛ والثاني يتطلب بطاقة دولية أو وسيطاً، مكتوباً في الميزانية.' },
+      { n: '04', label: 'كيف تحفظون نسخاً احتياطية', sub: 'ثلاث نسخ، وسيطان، واحدة خارج الموقع، مشفَّرة؛ والأهم استعادة مختبَرة كل شهر، بتوقيت.' },
+      { n: '05', label: 'كيف تتعافون', sub: 'موقع ثانٍ جاهز، هدف تعافٍ بالساعات وهدف فقدان بالدقائق، مكتوبان؛ وتمرين قبل النشر.' },
+      { n: '06', label: 'كيف تشرفون', sub: 'التوفر، البطء، مساحة القرص، الشهادات، النسخ الناجحة؛ تنبيه قبل أن يتصل الزبون.' },
+    ], caption: 'الشكل 1 · القرار 01 يقود الخمسة الأخرى: مكان البيانات هو الذي يقرر الدفع والنسخ الاحتياطي والتعافي. والقرار 04 هو الذي يظن الناس أنهم اتخذوه ولم يتخذوه: نسخة احتياطية لم تُستعد قط ليست نسخة احتياطية.', alt: 'ستة قرارات: مكان البيانات، مكان التطبيق، الدفع، النسخ الاحتياطي، التعافي، الإشراف' },
+    couches: { title: 'بين هاتف المستعمل والقاعدة، خمس طبقات', layers: [
+      { label: 'الجهاز والشبكة', items: [{ name: 'Android أو iPhone، 4G أو 5G من مشغّل جزائري، الذاكرة المحلية للتطبيق', sub: 'هنا يُحَسّ بالكمون؛ والتطبيق القابل للتثبيت والعمل دون اتصال يمتصان جزءاً منه' }] },
+      { label: 'المدخل', items: [{ name: 'اسم النطاق، شهادة TLS، توزيع الملفات الثابتة والصور عبر شبكة توزيع', sub: 'النطاق والشهادة باسم الزبون؛ الصور الثقيلة لا تعبر المتوسط عند كل فتح' }] },
+      { label: 'التطبيق', items: [{ name: 'API، طوابير عمل، وكلاء ذكاء اصطناعي، تكاملات؛ يُنشر دون انقطاع ويُكرَّر عند الحاجة', sub: 'يمكنه أن يعمل في الجزائر ويستدعي خدمات في أوروبا، أو العكس' }] },
+      { label: 'البيانات', items: [{ name: 'قاعدة البيانات، الملفات، السجلات؛ نسخ احتياطية مشفَّرة في موقع ثانٍ؛ استعادة مختبَرة', sub: 'الطبقة الوحيدة التي لا تُعاد من الكود؛ وهي التي تقرر أين نستضيف', accent: true }] },
+      { label: 'التشغيل', items: [{ name: 'الإشراف، التنبيهات، تحديثات الأمان، تمرين التعافي، حسابات باسم الزبون', sub: 'ما يجعل العطل يدوم ساعة لا عطلة نهاية أسبوع' }] },
+    ], caption: 'الشكل 2 · طبقة البيانات هي الوحيدة التي لا تُعاد من مستودع الكود؛ وهي التي تحدد مكان الاستضافة وإيقاع النسخ الاحتياطي وخطة التعافي. أما الطبقات الأخرى فتُعاد نشرها في دقائق من المستودع، شرط أن يكون المستودع والحسابات باسم الزبون.', alt: 'خمس طبقات: الجهاز والشبكة، المدخل، التطبيق، البيانات، التشغيل' },
+    exemple: { title: 'منصة تجارة، موقعان، تمرين تعافٍ واحد: المثال', items: [
+      { value: '2', label: 'موقعان: الإنتاج عند مستضيف في الجزائر، ونسخة مشفَّرة وخادم احتياطي عند مستضيف أوروبي؛ فرضية تُكيَّف مع قيودكم', accent: true },
+      { value: '3-2-1', label: 'نسخ احتياطية: ثلاث نسخ، وسيطان، واحدة خارج الموقع؛ القاعدة كل ساعة، الملفات كل ليلة، مشفَّرة قبل الخروج' },
+      { value: '1 س', label: 'هدف تعافٍ مكتوب: ساعة على الأكثر بين سقوط الموقع الرئيسي واستئناف الخدمة من الموقع الاحتياطي' },
+      { value: '15 د', label: 'هدف فقدان مكتوب: خمس عشرة دقيقة من البيانات على الأكثر، بفضل التكرار المستمر للقاعدة نحو الموقع الثاني' },
+    ], caption: 'الشكل 3 · الأرقام أهداف مكتوبة في العقد لا وعود: تُتحقَّق بتمرين تعافٍ موقَّت قبل النشر، ثم كل ثلاثة أشهر. بلا تمرين يكون هدف الساعة جملة؛ ومعه قياساً.', alt: 'أربعة أرقام: موقعان، نسخ 3-2-1، تعافٍ في ساعة، فقدان خمس عشرة دقيقة على الأكثر' },
+    montages: { title: 'ستة تركيبات للاستضافة، ومتى يُبرَّر كل منها', columns: ['متى', 'ما يفرضه'], rows: [
+      { label: 'الكل في الجزائر', cells: ['بيانات يجب أن تبقى في البلد، دفع بالدينار، كل المستعملين في الجزائر', 'مستضيف محلي بمركزي بيانات؛ نسخة مشفَّرة خارج الموقع مع ذلك؛ خدمات الذكاء الاصطناعي والمراسلة تُستدعى من أوروبا'] },
+      { label: 'الكل في أوروبا', cells: ['منتج يُطلق من فرنسا، مستعملون في الجهتين، خدمات أوروبية في القلب', 'دفع بالعملة الأجنبية؛ الملفات الثقيلة عبر شبكة توزيع؛ كمون يُقاس من الولايات'] },
+      { label: 'البيانات في الجزائر، الحوسبة في أوروبا', cells: ['قيد إقامة بيانات مع معالجات ثقيلة أو ذكاء اصطناعي', 'رابط مشفَّر بين الاثنين؛ لا تعبر إلا البيانات الضرورية؛ كمون كل نداء محسوب'] },
+      { label: 'الإنتاج في الجزائر، الاحتياط في أوروبا', cells: ['الحالة الأكثر تكراراً: زبائن في الجزائر، والحاجة إلى تعافٍ موثوق', 'تكرار القاعدة، خادم احتياطي جاهز، تمرين تعافٍ؛ فاتورتان، وسيلتا دفع'] },
+      { label: 'مزوّد سحابة عملاق', cells: ['خدمات مُدارة محددة، فرق تعرفها', 'لا منطقة في الجزائر حتى اليوم؛ دفع بالعملة الأجنبية؛ تكاليف تُراقَب؛ خروج أغلى'] },
+      { label: 'عند الزبون', cells: ['شركة أو إدارة ترفض أي سحابة', 'خادم، مانع انقطاع، نسخ خارج الموقع وتحديثات تُنظَّم؛ عقد تشغيل منفصل'] },
+    ], caption: 'الشكل 4 · لا تركيب يناسب الجميع؛ والسطر الرابع هو الذي نوصي به غالباً في 2027، لأنه يبقي الدفع بالدينار والبيانات قرب الزبائن وتعافياً حقيقياً. والخامس ليس «أفضل»: بلا منطقة محلية يضيف المتوسط إلى كل طلب.', alt: 'مصفوفة ستة تركيبات: الكل في الجزائر، الكل في أوروبا، بيانات في الجزائر وحوسبة في أوروبا، إنتاج في الجزائر واحتياط في أوروبا، مزود عملاق، عند الزبون' },
+    pieges: { title: 'ستة أعطال لا تأتي من الكود، وما تفعله الاستضافة', columns: ['ما يحدث', 'ما تفعله الهندسة'], rows: [
+      { label: 'البطاقة المرفوضة عند التجديد', cells: ['المستضيف الأوروبي لا يستطيع الاقتطاع؛ يُعلَّق الخادم يوم أحد', 'وسيلة دفع بالعملة الأجنبية مخططة ومختبَرة، تنبيه قبل الاستحقاق بثلاثين يوماً، وسيلة دفع ثانية مسجَّلة'] },
+      { label: 'النسخة التي لم تُستعد قط', cells: ['يموت القرص؛ النسخة موجودة لكنها لا تُستعاد، أو عمرها ثلاثة أشهر', 'استعادة مختبَرة كل شهر على خادم فارغ، موقَّتة، بنتيجة مسجَّلة'] },
+      { label: 'الخادم الوحيد', cells: ['عطل عتاد أو حادث عند المستضيف، ولا شيء يجيب يومين', 'موقع ثانٍ بقاعدة مكرَّرة وتطبيق جاهز؛ تبديل مُتمرَّن عليه قبل النشر'] },
+      { label: 'النطاق باسم المورّد', cells: ['يختفي المورّد أو يغضب؛ فيرحل معه النطاق والشهادات والحسابات', 'النطاق والاستضافة والحسابات والمفاتيح باسم الزبون من اليوم الأول؛ وصول المورّد قابل للإلغاء'] },
+      { label: 'الصور التي تعبر البحر', cells: ['كل فتح يحمّل عشر صور من أوروبا؛ أربع ثوانٍ على 4G ولاية', 'الملفات الثابتة والصور عبر شبكة توزيع، مضغوطة، مخزَّنة في التطبيق'] },
+      { label: 'القاعدة المفتوحة على الإنترنت', cells: ['منفذ القاعدة متاح من أي مكان؛ يجده روبوت في ليلة', 'القاعدة متاحة من التطبيق فقط عبر شبكة خاصة؛ كلمات مرور طويلة، تدوير، سجل وصول'] },
+    ], caption: 'الشكل 5 · لا يظهر أي من هذه الأعطال الستة في الكود، وكل منها أوقف تطبيقاً استلمناه. وكلها تُعالَج في الأسبوع الأول، وقت القرارات، لا ليلة الحادث.', alt: 'مصفوفة ستة أعطال: بطاقة مرفوضة، نسخة غير مستعادة، خادم وحيد، نطاق باسم المورد، صور بلا شبكة توزيع، قاعدة مكشوفة' },
+    calendrier: { title: 'إعداد الاستضافة في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'القرارات', note: 'مكان البيانات، مكان التطبيق، الدفع، أهداف التعافي والفقدان، مكتوبة وموقَّعة', from: 0, to: 1 },
+      { label: 'الحسابات والعقود', note: 'المستضيفون، النطاق، الشهادات، وسائل الدفع، كلها باسم الزبون؛ وصول المورّد مفوَّض', from: 1, to: 2 },
+      { label: 'البنية والنشر', note: 'خوادم، شبكة خاصة، قاعدة، طوابير، نشر دون انقطاع من المستودع، شبكة توزيع', from: 2, to: 4, accent: true },
+      { label: 'النسخ والاستعادة', note: 'نسخ 3-2-1 مشفَّرة؛ أول استعادة كاملة على خادم فارغ، موقَّتة', from: 4, to: 5 },
+      { label: 'الموقع الثاني والتمرين', note: 'تكرار القاعدة، خادم احتياطي، تبديل مُتمرَّن عليه ومقاس مقابل الأهداف', from: 5, to: 6 },
+      { label: 'الإشراف', note: 'التوفر، البطء، القرص، الشهادات، النسخ؛ تنبيهات WhatsApp وبريد إلى الزبون والمورّد', from: 6, to: 7 },
+      { label: 'قياسات حقيقية', note: 'زمن الاستجابة مقاس من عدة ولايات ومن فرنسا؛ تعديلات؛ حصيلة مكتوبة', from: 7, to: 8 },
+    ], caption: 'الشكل 6 · ثمانية أسابيع، بالتوازي مع التطوير، ولحظتان لا تُتفاوَض عليهما: استعادة الأسبوع 4 وتمرين التعافي في الأسبوع 5. واستضافة تُسلَّم بلا هاتين اللحظتين خادمٌ لا استضافة.', alt: 'خط زمني من ثمانية أسابيع: القرارات، الحسابات، البنية، النسخ، الموقع الثاني، الإشراف، القياسات' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      decisions: { svg: steps({ title: t.decisions.title, steps: t.decisions.items, arrows: true, rtl }), caption: t.decisions.caption, alt: t.decisions.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      montages: { svg: matrix({ title: t.montages.title, columns: t.montages.columns, rows: t.montages.rows, rtl }), caption: t.montages.caption, alt: t.montages.alt },
+      pieges: { svg: matrix({ title: t.pieges.title, columns: t.pieges.columns, rows: t.pieges.rows, rtl }), caption: t.pieges.caption, alt: t.pieges.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 8, tick: 2, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

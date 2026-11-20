@@ -56,7 +56,6 @@ export default function CreerMarketplaceAlgerie() {
         <title>Créer une Marketplace en Algérie 2026 | Plateforme Multi-Vendeurs | Symloop</title>
         <meta name="description" content="Guide complet pour créer une marketplace en Algérie en 2026. Plateforme multi-vendeurs, marketplace B2B, paiement CIB/Edahabia, architecture technique, coûts et monétisation. Symloop, expert marketplace Algérie." />
         <meta name="keywords" content="créer marketplace algérie, marketplace algérie 2026, plateforme marketplace multi-vendeurs algérie, créer site marketplace, marketplace B2B algérie, marketplace multi-vendeurs algérie, développement marketplace algérie, plateforme e-commerce multi-vendeurs, créer marketplace comme ouedkniss, marketplace C2C algérie, commission marketplace algérie, create marketplace Algeria, multi-vendor platform Algeria, marketplace development Algeria, online marketplace Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/creer-marketplace-algerie-2026" />
 
         <meta property="og:title" content="Créer une Marketplace en Algérie 2026 | Plateforme Multi-Vendeurs | Symloop" />
         <meta property="og:description" content="Guide complet pour créer une marketplace en Algérie (Algeria) en 2026. Plateforme multi-vendeurs, marketplace B2B, paiement CIB/Edahabia, architecture technique et monétisation." />
@@ -150,8 +149,8 @@ export default function CreerMarketplaceAlgerie() {
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
             >
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
