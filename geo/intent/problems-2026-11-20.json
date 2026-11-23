@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "calls": 2844,
+ "calls": 2970,
  "method": "Google suggest (client=firefox, gl=dz) + Bing api.bing.com/osjson (mkt fr-DZ / ar-DZ; the www.bing.com endpoint answered empty on 17 Nov 2026); problem stems listed in scripts/seo/mine-problems.mjs; kept = problem-shaped suggestions, consumer and study noise penalised",
  "items": [
   {
@@ -20,6 +20,21 @@
   },
   {
    "query": "piratage entreprise",
+   "stem": "piratage entreprise",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 16
+  },
+  {
+   "query": "piratage net entreprise",
    "stem": "piratage entreprise",
    "domain": "security",
    "hl": "fr",
@@ -620,21 +635,6 @@
    "score": 13
   },
   {
-   "query": "comment partager un calendrier sur outlook",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 13
-  },
-  {
    "query": "comment partager un calendrier",
    "stem": "comment partager un calendrier",
    "domain": "infra",
@@ -1132,6 +1132,20 @@
    "score": 13
   },
   {
+   "query": "pirate informatique site web",
+   "stem": "site web piraté",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "site sur les pirates",
    "stem": "site web piraté",
    "domain": "apps",
@@ -1166,8 +1180,8 @@
    "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "bing",
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -2241,8 +2255,8 @@
    "domain": "business",
    "hl": "fr",
    "engines": [
-    "bing",
-    "google"
+    "google",
+    "bing"
    ],
    "best": 0,
    "company": false,
@@ -2394,6 +2408,64 @@
    "score": 13
   },
   {
+   "query": "comment évaluer le personnel d une entreprise",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment gérer les déchets dans une entreprise",
+   "stem": "comment gérer les déchets en entreprise",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment préparer un audit interne",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
+   "query": "comment suivre un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 13
+  },
+  {
    "query": "مشاركة الملفات بين الهاتف والكمبيوتر",
    "stem": "مشاركة الملفات بين",
    "domain": "network",
@@ -2506,6 +2578,20 @@
    ],
    "best": 1,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "bureau à distance ne fonctionne plus",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 12.5
@@ -3092,6 +3178,21 @@
    "score": 12.5
   },
   {
+   "query": "comment calculer le rendement locatif",
+   "stem": "comment calculer le rendement",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
    "query": "comment travailler dans une agence de voyage",
    "stem": "comment gérer une agence de voyage",
    "domain": "business",
@@ -3176,6 +3277,49 @@
    "score": 12.5
   },
   {
+   "query": "comment gérer une cantine d entreprise",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment préparer un audit iso 9001",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
+   "query": "comment gerer les archives d une entreprise",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12.5
+  },
+  {
    "query": "probleme connexion net entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -3228,6 +3372,20 @@
    ],
    "best": 2,
    "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "bureau à distance ne marche pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
    "problem": true,
    "consumer": false,
    "score": 12
@@ -3462,6 +3620,36 @@
    "score": 12
   },
   {
+   "query": "comment remplacer dans excel",
+   "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment suivre un colis amazon",
+   "stem": "comment suivre un colis",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
    "query": "comment suivre un colis chronopost",
    "stem": "comment suivre un colis",
    "domain": "apps",
@@ -3605,21 +3793,6 @@
    "score": 12
   },
   {
-   "query": "comment calculer le rendement locatif",
-   "stem": "comment calculer le rendement",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 12
-  },
-  {
    "query": "pourquoi passer par une agence de voyage",
    "stem": "comment gérer une agence de voyage",
    "domain": "business",
@@ -3657,6 +3830,35 @@
    ],
    "best": 2,
    "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment évaluer le personnel dans une entreprise",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 12
+  },
+  {
+   "query": "comment gérer un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
    "problem": true,
    "consumer": false,
    "score": 12
@@ -3775,6 +3977,21 @@
    "score": 11.5
   },
   {
+   "query": "comment partager un calendrier gmail",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing",
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
    "query": "comment créer un intranet dans une entreprise",
    "stem": "comment créer un intranet",
    "domain": "infra",
@@ -3861,21 +4078,6 @@
    "score": 11.5
   },
   {
-   "query": "comment suivre un colis amazon",
-   "stem": "comment suivre un colis",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google",
-    "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 11.5
-  },
-  {
    "query": "comment suivre un colis dhl",
    "stem": "comment suivre un colis",
    "domain": "apps",
@@ -3910,8 +4112,8 @@
    "domain": "business",
    "hl": "fr",
    "engines": [
-    "bing",
-    "google"
+    "google",
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -4026,6 +4228,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 3,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11.5
+  },
+  {
+   "query": "comment organiser les archives dans une entreprise",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 3,
    "company": true,
@@ -4373,6 +4589,35 @@
    "score": 11
   },
   {
+   "query": "comment faire un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
+   "query": "comment gérer un budget d entreprise",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 11
+  },
+  {
    "query": "probleme connexion bnp entreprise",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -4527,20 +4772,6 @@
    "score": 10.5
   },
   {
-   "query": "piratage net entreprise",
-   "stem": "piratage entreprise",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": true,
-   "problem": true,
-   "consumer": false,
-   "score": 10.5
-  },
-  {
    "query": "comment protéger son nom d'entreprise",
    "stem": "comment protéger entreprise contre",
    "domain": "security",
@@ -4560,8 +4791,8 @@
    "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "bing",
+    "google"
    ],
    "best": 5,
    "company": false,
@@ -5173,7 +5404,7 @@
    "score": 10
   },
   {
-   "query": "comment récupérer des données sur icloud",
+   "query": "comment récupérer des données sur un téléphone portable cassé",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -5193,6 +5424,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment choisir un serveur informatique",
+   "stem": "comment choisir un serveur",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -5285,7 +5530,7 @@
    "score": 10
   },
   {
-   "query": "imprimante ne fonctionne plus après changement de cartouche",
+   "query": "imprimante ne fonctionne plus en wifi",
    "stem": "imprimante ne fonctionne plus",
    "domain": "infra",
    "hl": "fr",
@@ -5299,15 +5544,14 @@
    "score": 10
   },
   {
-   "query": "ordinateur hp lent que faire",
-   "stem": "ordinateur lent que faire",
+   "query": "comment restaurer un fichier supprimé dans la corbeille",
+   "stem": "comment restaurer un fichier supprimé",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "google"
    ],
-   "best": 6,
+   "best": 0,
    "company": false,
    "problem": true,
    "consumer": false,
@@ -5328,12 +5572,26 @@
    "score": 10
   },
   {
-   "query": "comment restaurer un fichier supprimé de la corbeille",
-   "stem": "comment restaurer un fichier supprimé",
+   "query": "comment partager un calendrier outlook",
+   "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment partager un calendrier sur outlook",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 0,
    "company": false,
@@ -5496,6 +5754,20 @@
    "score": 10
   },
   {
+   "query": "comment reconnaître un faux mail mondial relay",
+   "stem": "comment reconnaître un faux mail",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "comment reconnaître un mail frauduleux",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
@@ -5624,6 +5896,20 @@
   {
    "query": "comment suivre livreur amazon",
    "stem": "comment suivre les livreurs",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment automatiser des taches avec l'ia",
+   "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -6504,7 +6790,7 @@
    "score": 10
   },
   {
-   "query": "comment créer un espace client la banque postale",
+   "query": "comment créer un espace client edf particulier",
    "stem": "comment créer un portail client",
    "domain": "apps",
    "hl": "fr",
@@ -6846,6 +7132,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment sécuriser une application sur android",
+   "stem": "comment sécuriser une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 0,
    "company": false,
@@ -7335,8 +7635,8 @@
    "domain": "business",
    "hl": "fr",
    "engines": [
-    "bing",
-    "google"
+    "google",
+    "bing"
    ],
    "best": 6,
    "company": false,
@@ -7933,20 +8233,6 @@
    "score": 10
   },
   {
-   "query": "comment gérer un bar restaurant",
-   "stem": "comment gérer un restaurant",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 10
-  },
-  {
    "query": "comment gérer un garage automobile",
    "stem": "comment gérer un garage",
    "domain": "business",
@@ -8317,20 +8603,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 10
-  },
-  {
-   "query": "comment suivre un dossier mdph envoyé par courrier",
-   "stem": "comment suivre un dossier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 0,
    "company": false,
@@ -8913,6 +9185,216 @@
    "score": 10
   },
   {
+   "query": "comment gerer un bien en location",
+   "stem": "comment gérer des biens en location",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les congés du personnel",
+   "stem": "comment gérer les congés du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment évaluer une entreprise",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer une cantine scolaire",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment préparer un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment faire un suivi de budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment faire du lait fermenté",
+   "stem": "comment gérer une ferme laitière",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer un salon de coiffure",
+   "stem": "comment gérer un salon de coiffure",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment répondre à un appel d offres",
+   "stem": "comment répondre à un appel d’offres",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment trier les cv",
+   "stem": "comment trier les candidatures",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les appels téléphoniques",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment bien gérer ses appels téléphoniques",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les archives",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment gérer les documents dans une entreprise",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
+   "query": "comment accéder aux archives en ligne",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 10
+  },
+  {
    "query": "مشكلة الشبكة في سامسونج s22 ultra",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -8933,20 +9415,6 @@
    "hl": "ar",
    "engines": [
     "bing"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 10
-  },
-  {
-   "query": "الواي فاي ضعيف",
-   "stem": "الواي فاي ضعيف",
-   "domain": "network",
-   "hl": "ar",
-   "engines": [
-    "google"
    ],
    "best": 0,
    "company": false,
@@ -9725,7 +10193,7 @@
    "score": 9.5
   },
   {
-   "query": "comment récupérer des données sur un téléphone portable cassé",
+   "query": "comment récupérer des données sur un disque dur",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -9759,20 +10227,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment choisir un serveur informatique",
-   "stem": "comment choisir un serveur",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 1,
    "company": false,
@@ -9823,7 +10277,7 @@
    "score": 9.5
   },
   {
-   "query": "imprimante ne fonctionne plus en wifi",
+   "query": "imprimante ne fonctionne plus après changement de cartouche",
    "stem": "imprimante ne fonctionne plus",
    "domain": "infra",
    "hl": "fr",
@@ -9839,20 +10293,6 @@
   {
    "query": "comment organiser un réseau informatique",
    "stem": "comment gérer un parc informatique",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment restaurer un fichier supprimé dans la corbeille",
-   "stem": "comment restaurer un fichier supprimé",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -10047,7 +10487,7 @@
    "score": 9.5
   },
   {
-   "query": "comment reconnaître un faux mail mondial relay",
+   "query": "comment reconnaître un faux maillot de foot",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
@@ -10187,7 +10627,7 @@
    "score": 9.5
   },
   {
-   "query": "comment automatiser des taches avec l'ia",
+   "query": "comment automatiser le sommaire sur word",
    "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
@@ -10195,6 +10635,21 @@
     "google"
    ],
    "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment automatiser une date sur excel",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google",
+    "bing"
+   ],
+   "best": 7,
    "company": false,
    "problem": true,
    "consumer": false,
@@ -10543,20 +10998,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment suivre la production de mes panneaux photovoltaïques",
-   "stem": "comment suivre la production",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 1,
    "company": false,
@@ -11027,7 +11468,7 @@
    "score": 9.5
   },
   {
-   "query": "comment créer un espace client internet la banque postale",
+   "query": "comment créer un espace client la banque postale",
    "stem": "comment créer un portail client",
    "domain": "apps",
    "hl": "fr",
@@ -11155,6 +11596,20 @@
   {
    "query": "comment faire facture en ligne",
    "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un tableau de bord sur google sheet",
+   "stem": "comment faire un tableau de bord",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -11433,20 +11888,6 @@
    "score": 9.5
   },
   {
-   "query": "comment sécuriser une application sur android",
-   "stem": "comment sécuriser une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
    "query": "comment traduire une application",
    "stem": "comment traduire une application",
    "domain": "apps",
@@ -11504,20 +11945,6 @@
   },
   {
    "query": "comment créer un restaurant",
-   "stem": "comment créer une application pour restaurant",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment faire un restaurant",
    "stem": "comment créer une application pour restaurant",
    "domain": "apps",
    "hl": "fr",
@@ -11645,6 +12072,20 @@
   {
    "query": "comment sont calculées les notes de frais",
    "stem": "comment suivre les notes de frais",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un parc",
+   "stem": "comment gérer un parc de machines",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -12399,20 +12840,6 @@
    "score": 9.5
   },
   {
-   "query": "comment suivre un courrier dhl",
-   "stem": "comment suivre un courrier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
    "query": "comment enregistrer les courriers arrivés dans un registre",
    "stem": "comment enregistrer le courrier arrivée",
    "domain": "business",
@@ -12483,12 +12910,40 @@
    "score": 9.5
   },
   {
+   "query": "comment gérer un restaurant avec des employés",
+   "stem": "comment gérer un restaurant",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "comment gérer un restaurant bar",
    "stem": "comment gérer un restaurant",
    "domain": "business",
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer un bar restaurant",
+   "stem": "comment gérer un restaurant",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 1,
    "company": false,
@@ -12573,20 +13028,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9.5
-  },
-  {
-   "query": "comment gérer une association sans président",
-   "stem": "comment gérer une association",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 1,
    "company": false,
@@ -12727,6 +13168,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment suivre un dossier mdph envoyé par courrier",
+   "stem": "comment suivre un dossier",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -13142,6 +13597,188 @@
    "score": 9.5
   },
   {
+   "query": "comment fonctionne les congés",
+   "stem": "comment gérer les congés du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment évaluer le personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment déclarer la cantine",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment se préparer à un audit externe",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gérer un budget serré",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment utiliser le lait fermenté",
+   "stem": "comment gérer une ferme laitière",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment gerer un salon de coiffure homme",
+   "stem": "comment gérer un salon de coiffure",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment ouvrir un salon de coiffure",
+   "stem": "comment gérer un salon de coiffure",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment dire appel d'offres en anglais",
+   "stem": "comment répondre à un appel d’offres",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment trier des candidatures",
+   "stem": "comment trier les candidatures",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire un appel téléphonique",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "comment faire une archive",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
    "query": "مشكلة الشبكة في هواتف سامسونج",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -13162,6 +13799,20 @@
    "hl": "ar",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9.5
+  },
+  {
+   "query": "الواي فاي ضعيف",
+   "stem": "الواي فاي ضعيف",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -13352,6 +14003,20 @@
    "score": 9
   },
   {
+   "query": "internet qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "ma connexion est lente",
    "stem": "connexion internet lente entreprise",
    "domain": "network",
@@ -13494,6 +14159,20 @@
   {
    "query": "reseau lent free",
    "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "pourquoi mon réseau est instable sur mon portable",
+   "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -13814,7 +14493,7 @@
    "score": 9
   },
   {
-   "query": "comment récupérer des données sur un disque dur",
+   "query": "comment récupérer des données sur whatsapp",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -14016,20 +14695,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
-   "query": "comment partager un calendrier google agenda",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 2,
    "company": false,
@@ -14346,20 +15011,6 @@
    "score": 9
   },
   {
-   "query": "comment automatiser le sommaire sur word",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
    "query": "comment automatiser un sommaire sur word",
    "stem": "comment automatiser",
    "domain": "apps",
@@ -14570,20 +15221,6 @@
    "score": 9
   },
   {
-   "query": "comment mettre à jour une application sur ipad",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
    "query": "comment faire un developpement",
    "stem": "développeur parti que faire",
    "domain": "apps",
@@ -14684,20 +15321,6 @@
   {
    "query": "comment gérer une plainte client",
    "stem": "comment gérer les réclamations clients",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
-   "query": "comment gerer un sav",
-   "stem": "comment gérer le sav",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -14990,7 +15613,7 @@
    "score": 9
   },
   {
-   "query": "comment créer un espace client edf particulier",
+   "query": "comment créer un espace client caisse d epargne",
    "stem": "comment créer un portail client",
    "domain": "apps",
    "hl": "fr",
@@ -15368,6 +15991,20 @@
    "score": 9
   },
   {
+   "query": "comment faire un restaurant",
+   "stem": "comment créer une application pour restaurant",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "comment créer un planning de réservation en ligne",
    "stem": "comment créer un site de réservation",
    "domain": "apps",
@@ -15384,6 +16021,20 @@
   {
    "query": "comment gérer les clients difficiles au téléphone",
    "stem": "comment gérer les avis clients",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment relancer un client par téléphone",
+   "stem": "comment relancer un client",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -15472,20 +16123,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
-   "query": "comment suivre un colis de la poste",
-   "stem": "comment suivre un colis",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 2,
    "company": false,
@@ -15804,20 +16441,6 @@
   {
    "query": "comment soigner les achats compulsifs",
    "stem": "comment gérer les achats",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
-   "query": "comment comparer les offres de gaz",
-   "stem": "comment comparer les fournisseurs",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -16152,20 +16775,6 @@
    "score": 9
   },
   {
-   "query": "comment gérer un restaurant avec des employés",
-   "stem": "comment gérer un restaurant",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
    "query": "comment organiser un garage",
    "stem": "comment gérer un garage",
    "domain": "business",
@@ -16256,6 +16865,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer une association sans président",
+   "stem": "comment gérer une association",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 2,
    "company": false,
@@ -16376,20 +16999,6 @@
    "score": 9
   },
   {
-   "query": "comment voir les demandes d amis en attente sur snap",
-   "stem": "comment suivre les demandes",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
    "query": "comment faire un contrat",
    "stem": "comment suivre les contrats",
    "domain": "business",
@@ -16476,20 +17085,6 @@
   {
    "query": "comment calculer le taux d occupation moyen des lits",
    "stem": "comment calculer le taux d’occupation",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 2,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 9
-  },
-  {
-   "query": "comment calculer le rendement en chimie",
-   "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -16726,6 +17321,174 @@
    "score": 9
   },
   {
+   "query": "comment évaluer son personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment faire une évaluation du personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer une cantine",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment payer la cantine",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment se préparer à un audit interne",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment préparer un audit iso 14001 et 45001",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment faire un suivi budgétaire",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment organiser un salon de coiffure",
+   "stem": "comment gérer un salon de coiffure",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment trier et sélectionner les cv",
+   "stem": "comment trier les candidatures",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment consulter mes appels téléphoniques",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment gérer les archives outlook",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
+   "query": "comment organiser les documents d une entreprise",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 9
+  },
+  {
    "query": "مشكلة الشبكة في ريلمي c53",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -16922,7 +17685,7 @@
    "score": 9
   },
   {
-   "query": "internet qui coupe",
+   "query": "internet qui coupe sans arret",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -17426,20 +18189,6 @@
    "score": 8.5
   },
   {
-   "query": "comment récupérer des données sur whatsapp",
-   "stem": "comment récupérer des données",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment récupérer des données excel",
    "stem": "comment récupérer des données",
    "domain": "infra",
@@ -17538,20 +18287,6 @@
    "score": 8.5
   },
   {
-   "query": "comment vider une boite mail pleine gmail",
-   "stem": "boîte mail pleine",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment vider une boite mail pleine",
    "stem": "boîte mail pleine",
    "domain": "infra",
@@ -17608,7 +18343,7 @@
    "score": 8.5
   },
   {
-   "query": "ordinateur trop lent que faire",
+   "query": "mon ordinateur est très lent que faire",
    "stem": "ordinateur lent que faire",
    "domain": "infra",
    "hl": "fr",
@@ -17636,7 +18371,7 @@
    "score": 8.5
   },
   {
-   "query": "comment archiver des documents dans le cloud",
+   "query": "comment archiver un dossier",
    "stem": "comment archiver des documents",
    "domain": "infra",
    "hl": "fr",
@@ -17678,12 +18413,12 @@
    "score": 8.5
   },
   {
-   "query": "comment partager un calendrier gmail",
+   "query": "comment partager un calendrier outlook avec une autre personne",
    "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 3,
    "company": false,
@@ -17804,20 +18539,6 @@
    "score": 8.5
   },
   {
-   "query": "comment gérer les accès dans sharepoint",
-   "stem": "comment contrôler les accès",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment gérer les accès sur teams",
    "stem": "comment contrôler les accès",
    "domain": "security",
@@ -17916,20 +18637,6 @@
    "score": 8.5
   },
   {
-   "query": "comment reconnaître un faux maillot de foot",
-   "stem": "comment reconnaître un faux mail",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment reconnaître un faux mail de la poste",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
@@ -17958,7 +18665,7 @@
    "score": 8.5
   },
   {
-   "query": "lenteur application canal plus",
+   "query": "lenteur application",
    "stem": "application lente",
    "domain": "apps",
    "hl": "fr",
@@ -18002,6 +18709,20 @@
   {
    "query": "combien coute de mettre une application sur apple store",
    "stem": "combien coûte une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment automatiser des taches avec claude",
+   "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -18198,6 +18919,34 @@
   {
    "query": "combien pour developper une application",
    "stem": "combien de temps pour développer une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment mettre à jour une application sur ipad",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment mettre à jour une application sur mon téléphone",
+   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -18518,20 +19267,6 @@
    "score": 8.5
   },
   {
-   "query": "comment créer un espace client caisse d epargne",
-   "stem": "comment créer un portail client",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment poser un portail",
    "stem": "comment créer un portail client",
    "domain": "apps",
@@ -18700,6 +19435,20 @@
    "score": 8.5
   },
   {
+   "query": "comment payer une facture en ligne avec desjardins",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "comment consulter ma facture en ligne",
    "stem": "comment facturer en ligne",
    "domain": "apps",
@@ -18734,20 +19483,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
-   "query": "comment remplacer dans excel",
-   "stem": "comment remplacer excel",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 3,
    "company": false,
@@ -18966,20 +19701,6 @@
    "score": 8.5
   },
   {
-   "query": "comment relancer un client par téléphone",
-   "stem": "comment relancer un client",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment relancer un client qui ne paye pas",
    "stem": "comment relancer un client",
    "domain": "apps",
@@ -19028,6 +19749,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment suivre un colis de la poste",
+   "stem": "comment suivre un colis",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 3,
    "company": false,
@@ -19554,20 +20289,6 @@
    "score": 8.5
   },
   {
-   "query": "comment suivre un courrier recommandé international",
-   "stem": "comment suivre un courrier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
    "query": "comment enregistrer un courriel dans mon ordi",
    "stem": "comment enregistrer le courrier arrivée",
    "domain": "business",
@@ -19626,20 +20347,6 @@
   {
    "query": "comment accueillir un client dans un hôtel",
    "stem": "comment gérer un hôtel",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8.5
-  },
-  {
-   "query": "comment monter un restaurant",
-   "stem": "comment gérer un restaurant",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -19904,6 +20611,20 @@
    "score": 8.5
   },
   {
+   "query": "comment voir les demandes d amis en attente sur snap",
+   "stem": "comment suivre les demandes",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "ils sont en pannes",
    "stem": "comment suivre les pannes",
    "domain": "business",
@@ -19960,12 +20681,12 @@
    "score": 8.5
   },
   {
-   "query": "comment calculer le rendement énergétique",
+   "query": "comment calculer le rendement en chimie",
    "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 3,
    "company": false,
@@ -19974,12 +20695,12 @@
    "score": 8.5
   },
   {
-   "query": "comment calculer le rendement d un appartement en location",
+   "query": "comment calculer le rendement énergétique",
    "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -20156,6 +20877,160 @@
    "score": 8.5
   },
   {
+   "query": "comment calculer le jour personnel en numérologie",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment organiser une cantine scolaire",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer une restaurant",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer les déchets sur un chantier",
+   "stem": "comment gérer les déchets en entreprise",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment se préparer à un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment passer un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer un budget familial",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment réaliser un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment gérer la comptabilité d un salon de coiffure",
+   "stem": "comment gérer un salon de coiffure",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment passer un appel téléphonique",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "comment retrouver mes archives",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
    "query": "مشكلة الشبكة",
    "stem": "مشكلة الشبكة",
    "domain": "network",
@@ -20176,6 +21051,20 @@
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8.5
+  },
+  {
+   "query": "حل مشكلة ادخل بيانات اعتماد الشبكة",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -20282,7 +21171,7 @@
    "score": 8.5
   },
   {
-   "query": "internet qui coupe sans arret",
+   "query": "wifi qui se coupe tout seul",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -20485,6 +21374,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment brancher un low switch",
+   "stem": "comment brancher un switch",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 4,
    "company": false,
@@ -20718,7 +21621,7 @@
    "score": 8
   },
   {
-   "query": "comment récupérer des données sur excel",
+   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -20915,20 +21818,6 @@
    "score": 8
   },
   {
-   "query": "mon ordinateur est très lent que faire",
-   "stem": "ordinateur lent que faire",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
    "query": "serveur planté",
    "stem": "serveur plein",
    "domain": "infra",
@@ -20957,7 +21846,21 @@
    "score": 8
   },
   {
-   "query": "comment archiver un dossier",
+   "query": "comment archiver des documents dans le cloud",
+   "stem": "comment archiver des documents",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment retrouver un document archive",
    "stem": "comment archiver des documents",
    "domain": "infra",
    "hl": "fr",
@@ -21125,6 +22028,20 @@
    "score": 8
   },
   {
+   "query": "comment appelle t on un mail frauduleux",
+   "stem": "mail frauduleux que faire",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
    "query": "comment reconnaître un faux maillot",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
@@ -21159,6 +22076,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "lenteur application canal plus",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 4,
    "company": false,
@@ -21251,7 +22182,7 @@
    "score": 8
   },
   {
-   "query": "comment automatiser un portail",
+   "query": "comment automatiser un message sur whatsapp",
    "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
@@ -21271,6 +22202,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment automatiser un portail",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 4,
    "company": false,
@@ -21322,7 +22267,7 @@
    "score": 8
   },
   {
-   "query": "comment vendre un produit en ligne",
+   "query": "comment vendre sa musique en ligne",
    "stem": "comment vendre en ligne",
    "domain": "apps",
    "hl": "fr",
@@ -21426,20 +22371,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment mettre à jour une application sur mon téléphone",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 4,
    "company": false,
@@ -21924,8 +22855,8 @@
    "score": 8
   },
   {
-   "query": "comment faire un tableau de bord sur google sheet",
-   "stem": "comment faire un tableau de bord",
+   "query": "comment payer une facture en ligne par carte bancaire",
+   "stem": "comment facturer en ligne",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -21954,6 +22885,20 @@
   {
    "query": "comment remplacer dans excel une virgule par un point",
    "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment créer un espace client darty",
+   "stem": "comment créer un espace client",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -22136,20 +23081,6 @@
   {
    "query": "comment faire une demande de parrainage",
    "stem": "comment créer un programme de parrainage",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment faire un parc",
-   "stem": "comment gérer un parc de machines",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -22596,20 +23527,6 @@
    "score": 8
   },
   {
-   "query": "comment suivre un courrier envoyé par la poste",
-   "stem": "comment suivre un courrier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
    "query": "comment faire certifier un document conforme à l original",
    "stem": "comment faire valider un document",
    "domain": "business",
@@ -22652,7 +23569,7 @@
    "score": 8
   },
   {
-   "query": "comment faire un menu restaurant",
+   "query": "comment monter un restaurant",
    "stem": "comment gérer un restaurant",
    "domain": "business",
    "hl": "fr",
@@ -22932,20 +23849,6 @@
    "score": 8
   },
   {
-   "query": "comment voir les demandes de connexion en attente sur linkedin",
-   "stem": "comment suivre les demandes",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
    "query": "comment faire un échéancier",
    "stem": "comment suivre les échéances",
    "domain": "business",
@@ -22994,20 +23897,6 @@
    "hl": "fr",
    "engines": [
     "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment organiser un atelier mécanique",
-   "stem": "comment organiser un atelier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
    ],
    "best": 4,
    "company": false,
@@ -23073,20 +23962,6 @@
   },
   {
    "query": "comment calculer le rendement d'un placement sur plusieurs années",
-   "stem": "comment calculer le rendement",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 8
-  },
-  {
-   "query": "comment calculer le rendement d'une réaction chimique",
    "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
@@ -23282,10 +24157,10 @@
    "score": 8
   },
   {
-   "query": "حل مشكلة عدم ظهور الشبكة على الكمبيوتر",
-   "stem": "مشكلة الشبكة",
-   "domain": "network",
-   "hl": "ar",
+   "query": "comment trouver un bien en location",
+   "stem": "comment gérer des biens en location",
+   "domain": "business",
+   "hl": "fr",
    "engines": [
     "bing"
    ],
@@ -23296,12 +24171,152 @@
    "score": 8
   },
   {
-   "query": "مشكلة الشبكة في سامسونج",
+   "query": "comment faire l inventaire des immobilisations dans une entreprise",
+   "stem": "comment faire l’inventaire des immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 0,
+   "company": true,
+   "problem": true,
+   "consumer": true,
+   "score": 8
+  },
+  {
+   "query": "comment calculer le mois personnel en numerologie",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment évaluer son travail",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment réaliser un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment ajouter un bagage air algérie",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment faire un ordre de mission",
+   "stem": "comment gérer les ordres de mission",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment appeler mon téléphone",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment organiser les archives",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "comment gérer les documents administratifs",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "مشكلة الشبكة في الايفون",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
    "engines": [
     "google"
+   ],
+   "best": 4,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 8
+  },
+  {
+   "query": "حل مشكلة عدم ظهور الشبكة على الكمبيوتر",
+   "stem": "مشكلة الشبكة",
+   "domain": "network",
+   "hl": "ar",
+   "engines": [
+    "bing"
    ],
    "best": 4,
    "company": false,
@@ -23408,7 +24423,7 @@
    "score": 8
   },
   {
-   "query": "wifi qui se coupe tout seul",
+   "query": "free wifi qui coupe tout le temps",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -23464,6 +24479,20 @@
    "score": 7.5
   },
   {
+   "query": "pourquoi mon réseau est indisponible",
+   "stem": "pourquoi mon réseau",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "pourquoi mon réseau internet est instable",
    "stem": "pourquoi mon réseau",
    "domain": "network",
@@ -23484,20 +24513,6 @@
    "hl": "fr",
    "engines": [
     "google"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
-   "query": "comment brancher un low switch",
-   "stem": "comment brancher un switch",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "bing"
    ],
    "best": 5,
    "company": false,
@@ -23666,6 +24681,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment récupérer des données sur une clé usb endommagée",
+   "stem": "comment récupérer des données",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 5,
    "company": false,
@@ -23872,6 +24901,20 @@
    "score": 7.5
   },
   {
+   "query": "pourquoi mon ordinateur est si lent",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "perte mot de passe administrateur windows",
    "stem": "mot de passe administrateur perdu",
    "domain": "infra",
@@ -23900,20 +24943,6 @@
    "score": 7.5
   },
   {
-   "query": "comment retrouver un document archive",
-   "stem": "comment archiver des documents",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
    "query": "comment restaurer un fichier supprimé par erreur",
    "stem": "comment restaurer un fichier supprimé",
    "domain": "infra",
@@ -23928,18 +24957,17 @@
    "score": 7.5
   },
   {
-   "query": "comment partager un calendrier sur iphone",
+   "query": "comment partager un calendrier google agenda",
    "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
    "engines": [
-    "google",
-    "bing"
+    "google"
    ],
-   "best": 1,
+   "best": 5,
    "company": false,
    "problem": true,
-   "consumer": true,
+   "consumer": false,
    "score": 7.5
   },
   {
@@ -24013,6 +25041,20 @@
    "score": 7.5
   },
   {
+   "query": "comment contrôler l accès internet",
+   "stem": "comment contrôler les accès",
+   "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment savoir si un ordinateur est piraté",
    "stem": "comment savoir si mon pc est piraté",
    "domain": "security",
@@ -24069,40 +25111,12 @@
    "score": 7.5
   },
   {
-   "query": "comment appelle t on un mail frauduleux",
-   "stem": "mail frauduleux que faire",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
    "query": "comment reconnaître un vrai mail des impôts",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
-   "query": "lenteur application outlook",
-   "stem": "application lente",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 5,
    "company": false,
@@ -24195,6 +25209,20 @@
    "score": 7.5
   },
   {
+   "query": "comment automatiser une table des matières word",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment automatiser une couleur sur excel",
    "stem": "comment automatiser",
    "domain": "apps",
@@ -24223,7 +25251,7 @@
    "score": 7.5
   },
   {
-   "query": "comment vendre sa musique en ligne",
+   "query": "comment vendre ses toiles en ligne",
    "stem": "comment vendre en ligne",
    "domain": "apps",
    "hl": "fr",
@@ -24644,7 +25672,7 @@
    "score": 7.5
   },
   {
-   "query": "comment payer une facture en ligne avec desjardins",
+   "query": "comment payer une facture en ligne avec rbc",
    "stem": "comment facturer en ligne",
    "domain": "apps",
    "hl": "fr",
@@ -24714,7 +25742,7 @@
    "score": 7.5
   },
   {
-   "query": "comment créer un espace client darty",
+   "query": "comment créer un espace client au crédit agricole",
    "stem": "comment créer un espace client",
    "domain": "apps",
    "hl": "fr",
@@ -25022,6 +26050,20 @@
    "score": 7.5
   },
   {
+   "query": "comment suivre un colis amazon en temps réel",
+   "stem": "comment suivre un colis",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment utiliser mon téléphone",
    "stem": "comment mettre mon catalogue sur téléphone",
    "domain": "apps",
@@ -25176,7 +26218,7 @@
    "score": 7.5
   },
   {
-   "query": "comment configurer un agent ia",
+   "query": "comment développer un agent ia",
    "stem": "comment créer un agent ia",
    "domain": "ai",
    "hl": "fr",
@@ -25190,7 +26232,7 @@
    "score": 7.5
   },
   {
-   "query": "comment développer un agent ia",
+   "query": "comment créer un agent ia sur claude",
    "stem": "comment créer un agent ia",
    "domain": "ai",
    "hl": "fr",
@@ -25400,7 +26442,7 @@
    "score": 7.5
   },
   {
-   "query": "comment suivre un courrier envoyé en recommandé",
+   "query": "comment suivre un courrier dhl",
    "stem": "comment suivre un courrier",
    "domain": "business",
    "hl": "fr",
@@ -25462,6 +26504,20 @@
    "hl": "fr",
    "engines": [
     "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire un menu restaurant",
+   "stem": "comment gérer un restaurant",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
    ],
    "best": 5,
    "company": false,
@@ -25624,20 +26680,6 @@
    "score": 7.5
   },
   {
-   "query": "comment voir les demandes d amis que j ai envoyé",
-   "stem": "comment suivre les demandes",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 5,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7.5
-  },
-  {
    "query": "comment se forme un contrat",
    "stem": "comment suivre les contrats",
    "domain": "business",
@@ -25694,6 +26736,20 @@
    "score": 7.5
   },
   {
+   "query": "comment faire un atelier",
+   "stem": "comment organiser un atelier",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
    "query": "comment estimer le budget d un projet",
    "stem": "comment calculer le coût d’un projet",
    "domain": "business",
@@ -25710,6 +26766,20 @@
   {
    "query": "comment calculer le taux d occupation dans un hotel",
    "stem": "comment calculer le taux d’occupation",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment calculer le rendement d'une réaction chimique",
+   "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -25820,7 +26890,161 @@
    "score": 7.5
   },
   {
-   "query": "مشكلة الشبكة في الايفون",
+   "query": "comment prendre des congés",
+   "stem": "comment gérer les congés du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment calculer le mois personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment faire contrôler une cantine scolaire",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment se préparer à un audit de certification",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment effectuer un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment gérer un budget personnel",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment rédiger un ordre de mission",
+   "stem": "comment gérer les ordres de mission",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment consommer le lait fermenté",
+   "stem": "comment gérer une ferme laitière",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment créer un salon de coiffure",
+   "stem": "comment gérer un salon de coiffure",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment fonctionne un appel telephonique",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "comment traiter les archives",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7.5
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج a16",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -26002,7 +27226,7 @@
    "score": 7.5
   },
   {
-   "query": "free wifi qui coupe tout le temps",
+   "query": "appel wifi qui coupe",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -26116,20 +27340,6 @@
   {
    "query": "reseau lent que faire",
    "stem": "réseau lent",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "pourquoi mon réseau est instable sur mon portable",
-   "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -26380,7 +27590,7 @@
    "score": 7
   },
   {
-   "query": "comment récupérer des données d'un téléphone qui ne s'allume plus",
+   "query": "comment récupérer des données sur icloud",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -26520,6 +27730,20 @@
    "score": 7
   },
   {
+   "query": "ordinateur hp lent que faire",
+   "stem": "ordinateur lent que faire",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "pc tres lent que faire",
    "stem": "ordinateur lent que faire",
    "domain": "infra",
@@ -26550,20 +27774,6 @@
   {
    "query": "comment restaurer un fichier supprimé sur whatsapp",
    "stem": "comment restaurer un fichier supprimé",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment partager un calendrier outlook avec une autre personne",
-   "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -26716,7 +27926,7 @@
    "score": 7
   },
   {
-   "query": "comment contrôler l accès internet",
+   "query": "comment controler l'accès à internet par wifi",
    "stem": "comment contrôler les accès",
    "domain": "security",
    "hl": "fr",
@@ -26828,6 +28038,20 @@
    "score": 7
   },
   {
+   "query": "lenteur application outlook",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "application mail lente",
    "stem": "application lente",
    "domain": "apps",
@@ -26884,12 +28108,12 @@
    "score": 7
   },
   {
-   "query": "comment automatiser des taches avec claude",
-   "stem": "comment automatiser",
+   "query": "comment connecter deux ordinateur ensemble",
+   "stem": "comment connecter deux logiciels",
    "domain": "apps",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 6,
    "company": false,
@@ -26898,8 +28122,8 @@
    "score": 7
   },
   {
-   "query": "comment connecter deux ordinateur ensemble",
-   "stem": "comment connecter deux logiciels",
+   "query": "comment vendre des objets en ligne",
+   "stem": "comment vendre en ligne",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -26960,6 +28184,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment mettre à jour une application sans play store",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 6,
    "company": false,
@@ -27276,20 +28514,6 @@
    "score": 7
   },
   {
-   "query": "comment payer une facture en ligne par carte bancaire",
-   "stem": "comment facturer en ligne",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "comment faire un tableau de bord home assistant",
    "stem": "comment faire un tableau de bord",
    "domain": "apps",
@@ -27334,20 +28558,6 @@
   {
    "query": "comment créer un logiciel gestion de stock",
    "stem": "comment créer un logiciel de gestion",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment créer un espace client au crédit agricole",
-   "stem": "comment créer un espace client",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -27696,6 +28906,20 @@
    "score": 7
   },
   {
+   "query": "comment configurer un agent ia",
+   "stem": "comment créer un agent ia",
+   "domain": "ai",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
    "query": "comment fonctionne un agent ia",
    "stem": "comment créer un agent ia",
    "domain": "ai",
@@ -27726,20 +28950,6 @@
   {
    "query": "comment calculer le prix de revient d'une marchandise",
    "stem": "comment calculer le prix de revient",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment calculer la marge de profit sur un produit",
-   "stem": "comment calculer la marge",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -27954,6 +29164,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment suivre un courrier suivi de la poste",
+   "stem": "comment suivre un courrier",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 6,
    "company": false,
@@ -28200,20 +29424,6 @@
    "score": 7
   },
   {
-   "query": "comment voir les demandes d amis sur discord",
-   "stem": "comment suivre les demandes",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "que faire à la panne",
    "stem": "comment suivre les pannes",
    "domain": "business",
@@ -28256,20 +29466,6 @@
    "score": 7
   },
   {
-   "query": "comment faire un atelier",
-   "stem": "comment organiser un atelier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
    "query": "comment calculer le cout total d un projet",
    "stem": "comment calculer le coût d’un projet",
    "domain": "business",
@@ -28299,20 +29495,6 @@
   },
   {
    "query": "comment calculer le rendement d'une action",
-   "stem": "comment calculer le rendement",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 6,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 7
-  },
-  {
-   "query": "comment calculer le rendement d'un panneau solaire",
    "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
@@ -28410,7 +29592,217 @@
    "score": 7
   },
   {
-   "query": "مشكلة الشبكة في سامسونج a16",
+   "query": "comment organiser une serre",
+   "stem": "comment gérer une pépinière",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment poser les congés",
+   "stem": "comment gérer les congés du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment calculer le montant personnel de base",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment gérer le bruit dans une cantine scolaire",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment recharger sa carte de cantine",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment gérer une caisse de restaurant",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment organiser un audit interne",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment rédiger un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment gérer un budget étudiant",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment suivre un plan d'action",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment organiser un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment remplir un ordre de mission",
+   "stem": "comment gérer les ordres de mission",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment répondre à un appel d'offres",
+   "stem": "comment répondre à un appel d’offres",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment trier une liste",
+   "stem": "comment trier les candidatures",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "comment créer une archive",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 7
+  },
+  {
+   "query": "مشكلة الشبكة في سامسونج s24 ultra",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -28536,7 +29928,7 @@
    "score": 7
   },
   {
-   "query": "appel wifi qui coupe",
+   "query": "wifi qui se coupe sans arret",
    "stem": "wifi qui coupe",
    "domain": "network",
    "hl": "fr",
@@ -28789,7 +30181,7 @@
    "score": 6.5
   },
   {
-   "query": "comment récupérer des données sur une clé usb endommagée",
+   "query": "comment récupérer des données sur un disque dur externe",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -28915,7 +30307,7 @@
    "score": 6.5
   },
   {
-   "query": "pourquoi mon ordinateur est si lent",
+   "query": "ordinateur portable lent au démarrage",
    "stem": "ordinateur lent que faire",
    "domain": "infra",
    "hl": "fr",
@@ -28929,8 +30321,8 @@
    "score": 6.5
   },
   {
-   "query": "ordinateur portable lent au démarrage",
-   "stem": "ordinateur lent que faire",
+   "query": "comment ouvrir un fichier archive",
+   "stem": "comment archiver des documents",
    "domain": "infra",
    "hl": "fr",
    "engines": [
@@ -28957,7 +30349,7 @@
    "score": 6.5
   },
   {
-   "query": "comment partager un calendrier gmail avec outlook",
+   "query": "comment partager un calendrier avec une autre personne",
    "stem": "comment partager un calendrier",
    "domain": "infra",
    "hl": "fr",
@@ -29055,7 +30447,7 @@
    "score": 6.5
   },
   {
-   "query": "comment controler l'accès à internet par wifi",
+   "query": "comment gérer les droits d accès d un fichier",
    "stem": "comment contrôler les accès",
    "domain": "security",
    "hl": "fr",
@@ -29111,12 +30503,12 @@
    "score": 6.5
   },
   {
-   "query": "comment savoir si un mail est vrai",
+   "query": "comment reconnaître un faux mail chronopost",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
-    "bing"
+    "google"
    ],
    "best": 7,
    "company": false,
@@ -29125,12 +30517,12 @@
    "score": 6.5
   },
   {
-   "query": "comment reconnaître un faux mail chronopost",
+   "query": "comment savoir si un mail est vrai",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 7,
    "company": false,
@@ -29169,34 +30561,6 @@
   {
    "query": "combien coûte un passeport algérien",
    "stem": "combien coûte une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "bing"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
-   "query": "comment automatiser un message sur whatsapp",
-   "stem": "comment automatiser",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
-   "query": "comment automatiser une date sur excel",
-   "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -29295,20 +30659,6 @@
   {
    "query": "comment partager une application",
    "stem": "comment publier une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
-   "query": "comment mettre à jour une application sans play store",
-   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -29615,7 +30965,7 @@
    "score": 6.5
   },
   {
-   "query": "comment payer une facture en ligne avec rbc",
+   "query": "comment consulter sa facture en ligne",
    "stem": "comment facturer en ligne",
    "domain": "apps",
    "hl": "fr",
@@ -29673,6 +31023,20 @@
   {
    "query": "comment remplacer par virgule excel",
    "stem": "comment remplacer excel",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment créer un espace client axa",
+   "stem": "comment créer un espace client",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -30357,20 +31721,6 @@
    "score": 6.5
   },
   {
-   "query": "comment suivre un courrier suivi de la poste",
-   "stem": "comment suivre un courrier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
    "query": "comment faire un courrier suivi",
    "stem": "comment suivre un courrier",
    "domain": "business",
@@ -30623,20 +31973,6 @@
    "score": 6.5
   },
   {
-   "query": "comment suivre un dossier de surendettement",
-   "stem": "comment suivre un dossier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
    "query": "comment suivre un dossier de regroupement familial à la préfecture",
    "stem": "comment suivre un dossier",
    "domain": "business",
@@ -30665,7 +32001,7 @@
    "score": 6.5
   },
   {
-   "query": "comment voir les demandes sur le bon coin",
+   "query": "comment voir les demandes de connexion en attente sur linkedin",
    "stem": "comment suivre les demandes",
    "domain": "business",
    "hl": "fr",
@@ -30735,6 +32071,20 @@
    "score": 6.5
   },
   {
+   "query": "comment créer un atelier",
+   "stem": "comment organiser un atelier",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
    "query": "comment calculer le cout d investissement d un projet",
    "stem": "comment calculer le coût d’un projet",
    "domain": "business",
@@ -30783,20 +32133,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6.5
-  },
-  {
-   "query": "comment calculer le rendement d'un investissement immobilier",
-   "stem": "comment calculer le rendement",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 7,
    "company": false,
@@ -30945,7 +32281,7 @@
    "score": 6.5
   },
   {
-   "query": "comment organiser une serre",
+   "query": "comment organiser une serre de 9m2",
    "stem": "comment gérer une pépinière",
    "domain": "business",
    "hl": "fr",
@@ -30973,7 +32309,147 @@
    "score": 6.5
   },
   {
-   "query": "مشكلة الشبكة في سامسونج s24 ultra",
+   "query": "comment poser des congés france travail",
+   "stem": "comment gérer les congés du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment calculer le capital personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment gerer le bruit dans une cantine",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment payer la cantine en ligne",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment gerer une cuisine de restaurant",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment organiser un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment etablir un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment elaborer un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "comment faire un appel téléphonique en france",
+   "stem": "comment gérer les appels téléphoniques",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "dossiers archives comment les récupérer",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6.5
+  },
+  {
+   "query": "مشكلة الشبكة في الايفون بعد التحديث",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -31099,20 +32575,6 @@
    "score": 6.5
   },
   {
-   "query": "wifi qui se coupe sans arret",
-   "stem": "wifi qui coupe",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
    "query": "algerie coupe du monde 2014",
    "stem": "internet coupe souvent",
    "domain": "network",
@@ -31199,6 +32661,20 @@
   {
    "query": "reseau mobile lent",
    "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "pourquoi mon réseau est faible",
+   "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -31323,7 +32799,7 @@
    "score": 6
   },
   {
-   "query": "comment récupérer des données sur un disque dur externe",
+   "query": "comment récupérer des données sur excel",
    "stem": "comment récupérer des données",
    "domain": "infra",
    "hl": "fr",
@@ -31477,7 +32953,7 @@
    "score": 6
   },
   {
-   "query": "comment ouvrir un fichier archive",
+   "query": "comment archiver des photos",
    "stem": "comment archiver des documents",
    "domain": "infra",
    "hl": "fr",
@@ -31517,6 +32993,20 @@
    "company": false,
    "problem": true,
    "consumer": true,
+   "score": 6
+  },
+  {
+   "query": "comment partager un calendrier icloud",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
    "score": 6
   },
   {
@@ -31624,20 +33114,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment gérer les droits d accès d un fichier",
-   "stem": "comment contrôler les accès",
-   "domain": "security",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 8,
    "company": false,
@@ -31912,20 +33388,6 @@
    "score": 6
   },
   {
-   "query": "comment mettre à jour une application sur une tablette",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
    "query": "comment consulter le code source",
    "stem": "comment récupérer le code source",
    "domain": "apps",
@@ -31955,20 +33417,6 @@
   },
   {
    "query": "comment suivre la fabrication de sa carte d identité",
-   "stem": "comment suivre la production",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment suivre la fabrication de mon titre de séjour",
    "stem": "comment suivre la production",
    "domain": "apps",
    "hl": "fr",
@@ -32136,6 +33584,20 @@
    "score": 6
   },
   {
+   "query": "comment créer un espace client internet la banque postale",
+   "stem": "comment créer un portail client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment monter un portail",
    "stem": "comment créer un portail client",
    "domain": "apps",
@@ -32248,6 +33710,20 @@
    "score": 6
   },
   {
+   "query": "comment payer ma facture en ligne edf",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment faire un tableau de bord commercial",
    "stem": "comment faire un tableau de bord",
    "domain": "apps",
@@ -32292,20 +33768,6 @@
   {
    "query": "comment remplacer majuscules minuscules excel",
    "stem": "comment remplacer excel",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment créer un espace client axa",
-   "stem": "comment créer un espace client",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -32514,20 +33976,6 @@
    "score": 6
   },
   {
-   "query": "comment suivre un colis poste canada",
-   "stem": "comment suivre un colis",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
    "query": "comment suivre un colis fedex",
    "stem": "comment suivre un colis",
    "domain": "apps",
@@ -32724,7 +34172,7 @@
    "score": 6
   },
   {
-   "query": "comment calculer la marge bénéficiaire en pourcentage",
+   "query": "comment calculer la marge de sécurité",
    "stem": "comment calculer la marge",
    "domain": "business",
    "hl": "fr",
@@ -32744,20 +34192,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment calculer la marge de sécurité",
-   "stem": "comment calculer la marge",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 8,
    "company": false,
@@ -33130,6 +34564,34 @@
    "score": 6
   },
   {
+   "query": "comment suivre un dossier de surendettement",
+   "stem": "comment suivre un dossier",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment voir les demandes d amis que j ai envoyé",
+   "stem": "comment suivre les demandes",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
    "query": "comment écrire un contrat",
    "stem": "comment suivre les contrats",
    "domain": "business",
@@ -33192,20 +34654,6 @@
    "hl": "fr",
    "engines": [
     "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 6
-  },
-  {
-   "query": "comment créer un atelier",
-   "stem": "comment organiser un atelier",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "bing"
    ],
    "best": 8,
    "company": false,
@@ -33354,7 +34802,7 @@
    "score": 6
   },
   {
-   "query": "comment organiser une serre de 9m2",
+   "query": "comment organiser une serre de 6m2",
    "stem": "comment gérer une pépinière",
    "domain": "business",
    "hl": "fr",
@@ -33382,10 +34830,24 @@
    "score": 6
   },
   {
-   "query": "مشكلة الشبكة في الايفون بعد التحديث",
-   "stem": "مشكلة الشبكة",
-   "domain": "network",
-   "hl": "ar",
+   "query": "comment avoir plus de congés",
+   "stem": "comment gérer les congés du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment calculer le jour personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
    "engines": [
     "google"
    ],
@@ -33396,7 +34858,63 @@
    "score": 6
   },
   {
-   "query": "مشكلة الشبكة في s22 ultra",
+   "query": "comment gérer une salle de restaurant",
+   "stem": "comment gérer une cantine",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment éviter les déchets",
+   "stem": "comment gérer les déchets en entreprise",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment gérer un petit budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "comment demander un ordre de mission",
+   "stem": "comment gérer les ordres de mission",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 6
+  },
+  {
+   "query": "مشكلة الشبكة في هاتف سامسونج b310",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -33494,6 +35012,20 @@
    "score": 6
   },
   {
+   "query": "connexion internet qui coupe et revient",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "lentille de contact connecté",
    "stem": "connexion internet lente entreprise",
    "domain": "network",
@@ -33578,21 +35110,7 @@
    "score": 5.5
   },
   {
-   "query": "pourquoi mon réseau est faible",
-   "stem": "pourquoi mon réseau",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 5.5
-  },
-  {
-   "query": "pourquoi mon réseau est indisponible",
+   "query": "pourquoi mon réseau ne fonctionne pas",
    "stem": "pourquoi mon réseau",
    "domain": "network",
    "hl": "fr",
@@ -33844,7 +35362,7 @@
    "score": 5.5
   },
   {
-   "query": "comment archiver des photos",
+   "query": "comment retrouver un dossier archivé",
    "stem": "comment archiver des documents",
    "domain": "infra",
    "hl": "fr",
@@ -34013,7 +35531,7 @@
   },
   {
    "query": "comment détecter un mail frauduleux",
-   "stem": "comment reconnaître un faux mail",
+   "stem": "mail frauduleux que faire",
    "domain": "security",
    "hl": "fr",
    "engines": [
@@ -34082,7 +35600,7 @@
    "score": 5.5
   },
   {
-   "query": "comment automatiser des volets roulants électriques",
+   "query": "comment automatiser un calcul sur excel",
    "stem": "comment automatiser",
    "domain": "apps",
    "hl": "fr",
@@ -34102,6 +35620,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment automatiser des volets roulants électriques",
+   "stem": "comment automatiser",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 9,
    "company": false,
@@ -34154,6 +35686,20 @@
   {
    "query": "comment partager une application par bluetooth",
    "stem": "comment publier une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment mettre à jour une application sur une tablette",
+   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -34236,7 +35782,7 @@
    "score": 5.5
   },
   {
-   "query": "comment voir la production de mes panneaux solaires",
+   "query": "comment suivre la fabrication de mon titre de séjour",
    "stem": "comment suivre la production",
    "domain": "apps",
    "hl": "fr",
@@ -34488,7 +36034,7 @@
    "score": 5.5
   },
   {
-   "query": "comment consulter sa facture en ligne",
+   "query": "comment créer une facture en ligne",
    "stem": "comment facturer en ligne",
    "domain": "apps",
    "hl": "fr",
@@ -34698,7 +36244,7 @@
    "score": 5.5
   },
   {
-   "query": "comment suivre un colis envoyé par la poste",
+   "query": "comment suivre un colis poste canada",
    "stem": "comment suivre un colis",
    "domain": "apps",
    "hl": "fr",
@@ -34868,20 +36414,6 @@
   {
    "query": "comment calculer le prix de revient d une action",
    "stem": "comment calculer le prix de revient",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": false,
-   "score": 5.5
-  },
-  {
-   "query": "comment calculer la marge commerciale en pourcentage",
-   "stem": "comment calculer la marge",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -35356,6 +36888,20 @@
    "score": 5.5
   },
   {
+   "query": "comment voir les demandes d amis sur discord",
+   "stem": "comment suivre les demandes",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
    "query": "activité à la panne",
    "stem": "comment suivre les pannes",
    "domain": "business",
@@ -35442,6 +36988,20 @@
   {
    "query": "comment calculer le taux d'occupation annuel",
    "stem": "comment calculer le taux d’occupation",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment calculer le rendement d'un panneau solaire",
+   "stem": "comment calculer le rendement",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -35552,7 +37112,7 @@
    "score": 5.5
   },
   {
-   "query": "comment organiser une serre de 6m2",
+   "query": "comment entretenir une serre en hiver",
    "stem": "comment gérer une pépinière",
    "domain": "business",
    "hl": "fr",
@@ -35580,7 +37140,119 @@
    "score": 5.5
   },
   {
-   "query": "مشكلة الشبكة في هاتف سامسونج b310",
+   "query": "comment évaluer son salaire",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment calculer le nombre personnel",
+   "stem": "comment évaluer le personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment réduire les déchets",
+   "stem": "comment gérer les déchets en entreprise",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment faire un audit interne",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment mettre en place un audit",
+   "stem": "comment préparer un audit",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment bien gérer un budget",
+   "stem": "comment suivre un budget",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment organiser les documents sur pc",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "comment consulter les archives en ligne",
+   "stem": "comment gérer les archives",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": false,
+   "score": 5.5
+  },
+  {
+   "query": "مشكلة الشبكة غير متاحة",
    "stem": "مشكلة الشبكة",
    "domain": "network",
    "hl": "ar",
@@ -35835,20 +37507,6 @@
    "score": 5
   },
   {
-   "query": "comment sécuriser une application sur samsung",
-   "stem": "comment sécuriser une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 0,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 5
-  },
-  {
    "query": "comment faire circuler l information dans une entreprise",
    "stem": "comment faire circuler un document",
    "domain": "business",
@@ -35891,6 +37549,20 @@
    "score": 5
   },
   {
+   "query": "comment sortir une immobilisation",
+   "stem": "comment suivre les immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 0,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 5
+  },
+  {
    "query": "probleme connexion groupe d amis xbox one",
    "stem": "problème réseau entreprise",
    "domain": "network",
@@ -35907,20 +37579,6 @@
   {
    "query": "reseau lent orange",
    "stem": "réseau lent",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 1,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 4.5
-  },
-  {
-   "query": "comment partager une imprimante entre deux pc windows 10",
-   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -35953,6 +37611,20 @@
    "hl": "fr",
    "engines": [
     "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "comment partager un calendrier iphone",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "google"
    ],
    "best": 1,
    "company": false,
@@ -36059,6 +37731,20 @@
    "score": 4.5
   },
   {
+   "query": "comment sécuriser une application sur samsung",
+   "stem": "comment sécuriser une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
    "query": "comment gérer un parc automobile d une entreprise pdf",
    "stem": "comment gérer un parc de véhicules",
    "domain": "business",
@@ -36102,6 +37788,34 @@
    "score": 4.5
   },
   {
+   "query": "comment traiter les immobilisations",
+   "stem": "comment suivre les immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
+   "query": "comment faire l inventaire des immobilisations",
+   "stem": "comment faire l’inventaire des immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 1,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4.5
+  },
+  {
    "query": "comment brancher un switch sur une livebox",
    "stem": "comment brancher un switch",
    "domain": "network",
@@ -36117,6 +37831,20 @@
   },
   {
    "query": "windows 11 bureau a distance ne fonctionne pas",
+   "stem": "bureau à distance ne",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": true,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "windows 10 bureau a distance ne fonctionne pas",
    "stem": "bureau à distance ne",
    "domain": "network",
    "hl": "fr",
@@ -36172,6 +37900,20 @@
    "score": 4
   },
   {
+   "query": "comment partager un calendrier sur iphone",
+   "stem": "comment partager un calendrier",
+   "domain": "infra",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
    "query": "comment supprimer authentification à deux facteurs facebook",
    "stem": "authentification à deux facteurs comment",
    "domain": "security",
@@ -36188,6 +37930,20 @@
   {
    "query": "application qui plante iphone",
    "stem": "application qui plante",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
+   "query": "comment mettre à jour une application sur samsung",
+   "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
    "engines": [
@@ -36256,8 +38012,36 @@
    "score": 4
   },
   {
+   "query": "comment reconnaître une immobilisation",
+   "stem": "comment suivre les immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 2,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 4
+  },
+  {
    "query": "reseau lent bouygues",
    "stem": "réseau lent",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 3,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 3.5
+  },
+  {
+   "query": "comment partager une imprimante entre deux pc windows 10",
+   "stem": "comment partager une imprimante",
    "domain": "network",
    "hl": "fr",
    "engines": [
@@ -36279,20 +38063,6 @@
    ],
    "best": 3,
    "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 3.5
-  },
-  {
-   "query": "windows 10 bureau a distance ne fonctionne pas",
-   "stem": "bureau à distance ne",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": true,
    "problem": true,
    "consumer": true,
    "score": 3.5
@@ -36368,34 +38138,6 @@
    "score": 3.5
   },
   {
-   "query": "comment mettre à jour une application sur samsung",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 3.5
-  },
-  {
-   "query": "comment mettre à jour une application sur tv samsung",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 3,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 3.5
-  },
-  {
    "query": "comment gerer les abonnements sur iphone",
    "stem": "comment gérer les abonnements",
    "domain": "apps",
@@ -36438,8 +38180,8 @@
    "score": 3.5
   },
   {
-   "query": "comment voir les demandes de messages sur tiktok",
-   "stem": "comment suivre les demandes",
+   "query": "comment calculer le taux d occupation des chambres",
+   "stem": "comment calculer le taux d’occupation",
    "domain": "business",
    "hl": "fr",
    "engines": [
@@ -36452,12 +38194,12 @@
    "score": 3.5
   },
   {
-   "query": "comment calculer le taux d occupation des chambres",
-   "stem": "comment calculer le taux d’occupation",
+   "query": "comment calculer les immobilisations",
+   "stem": "comment suivre les immobilisations",
    "domain": "business",
    "hl": "fr",
    "engines": [
-    "google"
+    "bing"
    ],
    "best": 3,
    "company": false,
@@ -36550,21 +38292,7 @@
    "score": 3
   },
   {
-   "query": "lenteur application mail iphone",
-   "stem": "application lente",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 4,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 3
-  },
-  {
-   "query": "comment mettre à jour une application sur tablette samsung",
+   "query": "comment mettre à jour une application sur tv samsung",
    "stem": "comment mettre à jour une application",
    "domain": "apps",
    "hl": "fr",
@@ -36721,6 +38449,34 @@
    "query": "comment reconnaître un faux mail sfr",
    "stem": "comment reconnaître un faux mail",
    "domain": "security",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "lenteur application mail iphone",
+   "stem": "application lente",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 5,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2.5
+  },
+  {
+   "query": "comment mettre à jour une application sur tablette samsung",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
    "hl": "fr",
    "engines": [
     "google"
@@ -36928,6 +38684,20 @@
    "score": 2
   },
   {
+   "query": "comment payer ma facture en ligne sfr",
+   "stem": "comment facturer en ligne",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
    "query": "comment remplacer excel gratuitement",
    "stem": "comment remplacer excel",
    "domain": "apps",
@@ -36939,6 +38709,20 @@
    "company": false,
    "problem": true,
    "consumer": false,
+   "score": 2
+  },
+  {
+   "query": "comment créer un espace client sfr",
+   "stem": "comment créer un espace client",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
    "score": 2
   },
   {
@@ -37040,6 +38824,48 @@
    "score": 2
   },
   {
+   "query": "comment voir les demandes de messages sur tiktok",
+   "stem": "comment suivre les demandes",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
+   "query": "comment saisir une immobilisation",
+   "stem": "comment suivre les immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 2
+  },
+  {
+   "query": "comment gérer la formation en entreprise",
+   "stem": "comment gérer la formation du personnel",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 6,
+   "company": true,
+   "problem": true,
+   "consumer": false,
+   "score": 2
+  },
+  {
    "query": "comment créer une adresse mail professionnelle avec gmail gratuit",
    "stem": "comment créer une adresse mail professionnelle",
    "domain": "infra",
@@ -37124,20 +38950,6 @@
    "score": 1.5
   },
   {
-   "query": "comment mettre à jour une application sur smart tv",
-   "stem": "comment mettre à jour une application",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1.5
-  },
-  {
    "query": "comment envoyer des sms gratuitement",
    "stem": "comment envoyer des sms aux clients",
    "domain": "apps",
@@ -37149,20 +38961,6 @@
    "company": false,
    "problem": true,
    "consumer": false,
-   "score": 1.5
-  },
-  {
-   "query": "comment créer un espace client sfr",
-   "stem": "comment créer un espace client",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 7,
-   "company": false,
-   "problem": true,
-   "consumer": true,
    "score": 1.5
   },
   {
@@ -37292,6 +39090,34 @@
    "score": 1.5
   },
   {
+   "query": "comment enregistrer une immobilisation",
+   "stem": "comment suivre les immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 7,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1.5
+  },
+  {
+   "query": "livebox wifi qui coupe",
+   "stem": "wifi qui coupe",
+   "domain": "network",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
    "query": "comment transférer les données entre deux téléphones samsung",
    "stem": "comment partager des fichiers entre",
    "domain": "network",
@@ -37376,20 +39202,6 @@
    "score": 1
   },
   {
-   "query": "comment partager un calendrier entre deux iphone",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1
-  },
-  {
    "query": "mon compte a été pirate sur facebook",
    "stem": "compte piraté entreprise",
    "domain": "security",
@@ -37460,6 +39272,20 @@
    "score": 1
   },
   {
+   "query": "comment mettre à jour une application sur smart tv",
+   "stem": "comment mettre à jour une application",
+   "domain": "apps",
+   "hl": "fr",
+   "engines": [
+    "google"
+   ],
+   "best": 8,
+   "company": false,
+   "problem": true,
+   "consumer": true,
+   "score": 1
+  },
+  {
    "query": "comment verifier une application sur iphone",
    "stem": "comment tester une application",
    "domain": "apps",
@@ -37480,20 +39306,6 @@
    "hl": "fr",
    "engines": [
     "bing"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1
-  },
-  {
-   "query": "comment payer ma facture en ligne sfr",
-   "stem": "comment facturer en ligne",
-   "domain": "apps",
-   "hl": "fr",
-   "engines": [
-    "google"
    ],
    "best": 8,
    "company": false,
@@ -37642,20 +39454,6 @@
    "score": 1
   },
   {
-   "query": "comment voir les demandes d amis sur snapchat",
-   "stem": "comment suivre les demandes",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 8,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 1
-  },
-  {
    "query": "comment donner des meubles gratuitement",
    "stem": "comment gérer un magasin de meubles",
    "domain": "business",
@@ -37668,20 +39466,6 @@
    "problem": true,
    "consumer": false,
    "score": 1
-  },
-  {
-   "query": "livebox wifi qui coupe",
-   "stem": "wifi qui coupe",
-   "domain": "network",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 0.5
   },
   {
    "query": "comment transférer les données entre 2 samsung",
@@ -37751,20 +39535,6 @@
    "company": false,
    "problem": true,
    "consumer": false,
-   "score": 0.5
-  },
-  {
-   "query": "comment partager un calendrier google sur iphone",
-   "stem": "comment partager un calendrier",
-   "domain": "infra",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": true,
    "score": 0.5
   },
   {
@@ -37936,20 +39706,6 @@
    "score": 0.5
   },
   {
-   "query": "comment voir les demandes d amis sur instagram",
-   "stem": "comment suivre les demandes",
-   "domain": "business",
-   "hl": "fr",
-   "engines": [
-    "google"
-   ],
-   "best": 9,
-   "company": false,
-   "problem": true,
-   "consumer": true,
-   "score": 0.5
-  },
-  {
    "query": "comment organiser un atelier de travail pdf",
    "stem": "comment organiser un atelier",
    "domain": "business",
@@ -37975,6 +39731,20 @@
    "company": false,
    "problem": true,
    "consumer": false,
+   "score": 0.5
+  },
+  {
+   "query": "immobilisation à partir de combien",
+   "stem": "comment suivre les immobilisations",
+   "domain": "business",
+   "hl": "fr",
+   "engines": [
+    "bing"
+   ],
+   "best": 9,
+   "company": false,
+   "problem": true,
+   "consumer": true,
    "score": 0.5
   }
  ]
