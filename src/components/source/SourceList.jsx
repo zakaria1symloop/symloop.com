@@ -44,9 +44,11 @@ const ltr = (s) => <bdi dir="ltr">{s}</bdi>;
 
 // focusLabels: labels of the `focus` groups (specialty by default; a sector map for product lists).
 // serviceLabels: labels of the `services` keys (general services by default; AI types on the AI list).
+// hideFounded: drops the founding-year column (lists of products). An entry may carry `by` (its
+//   publisher, shown under the name) and `platforms` (web, windows, android, ios).
 // selectionNote: { fr, en, ar } saying how the entries shown were chosen among those verified.
 // doesFrom:    'services' lists each entry's services; 'focus' shows its group label instead.
-export default function SourceList({ locale, slug, content, items, verifiedOn, groups = ['focus', 'city'], focusLabels = FOCUS_LABELS, serviceLabels = SERVICE_LABELS, doesFrom = 'services', selectionNote = null }) {
+export default function SourceList({ locale, slug, content, items, verifiedOn, groups = ['focus', 'city'], focusLabels = FOCUS_LABELS, serviceLabels = SERVICE_LABELS, doesFrom = 'services', selectionNote = null, hideFounded = false }) {
   const L = ['fr', 'en', 'ar'].includes(locale) ? locale : 'fr';
   const t = UI[L]; const c = content[L]; const rtl = L === 'ar';
   // The publisher's own entry comes first, and says so; every other entry keeps its alphabetical place.
@@ -89,14 +91,14 @@ export default function SourceList({ locale, slug, content, items, verifiedOn, g
 
           <div style={{ overflowX: 'auto', marginTop: 34 }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 760 }}>
-              <thead><tr><th style={S.th}>{c.colCompany || t.company}</th><th style={S.th}>{t.city}</th><th style={S.th}>{c.colDoes || t.does}</th><th style={S.th}>{t.founded}</th><th style={S.th}>{c.colFact || t.fact}</th></tr></thead>
+              <thead><tr><th style={S.th}>{c.colCompany || t.company}</th><th style={S.th}>{t.city}</th><th style={S.th}>{c.colDoes || t.does}</th>{hideFounded ? null : <th style={S.th}>{t.founded}</th>}<th style={S.th}>{c.colFact || t.fact}</th></tr></thead>
               <tbody>
                 {items.map((x) => (
                   <tr key={x.name} id={x.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')} style={x.self ? { background: 'rgba(233,205,134,.07)' } : undefined}>
-                    <td style={{ ...S.td, whiteSpace: 'nowrap' }}><a href={x.url} rel="noopener" target="_blank" style={{ color: '#fff', fontWeight: 500, textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,.35)', textUnderlineOffset: 3 }}>{ltr(x.name)}</a>{x.self ? <div style={{ fontSize: 12, color: '#E9CD86', marginTop: 4, whiteSpace: 'normal', maxWidth: 190 }}>{t.self}</div> : null}</td>
+                    <td style={{ ...S.td, whiteSpace: 'nowrap' }}><a href={x.url} rel="noopener" target="_blank" style={{ color: '#fff', fontWeight: 500, textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,.35)', textUnderlineOffset: 3 }}>{ltr(x.name)}</a>{x.by ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4, whiteSpace: 'normal' }}>{ltr(x.by)}</div> : null}{x.self ? <div style={{ fontSize: 12, color: '#E9CD86', marginTop: 4, whiteSpace: 'normal', maxWidth: 190 }}>{t.self}</div> : null}</td>
                     <td style={{ ...S.td, whiteSpace: 'nowrap' }}>{x.city ? (CITY_LABELS[L][x.city] || x.city) : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>
-                    <td style={S.td}>{doesFrom === 'focus' ? <>{focusLabels[L][x.focus] || x.focus}{x.platforms ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{ltr(x.platforms.map((k) => ({ web: 'Web', android: 'Android', ios: 'iOS' }[k] || k)).join(' · '))}</div> : null}</> : x.services.map((k) => serviceLabels[L][k] || k).join(t.sep)}</td>
-                    <td style={{ ...S.td, whiteSpace: x.foundedNote ? 'normal' : 'nowrap' }}>{x.founded ? <>{ltr(String(x.founded))}{x.foundedNote ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{x.foundedNote[L]}</div> : null}</> : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>
+                    <td style={S.td}>{doesFrom === 'focus' ? <>{focusLabels[L][x.focus] || x.focus}{x.platforms ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{ltr(x.platforms.map((k) => ({ web: 'Web', android: 'Android', ios: 'iOS' }[k] || k)).join(' · '))}</div> : null}</> : <>{x.services.map((k) => serviceLabels[L][k] || k).join(t.sep)}{x.platforms && x.platforms.length ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{ltr(x.platforms.map((k) => ({ web: 'Web', windows: 'Windows', android: 'Android', ios: 'iOS' }[k] || k)).join(' · '))}</div> : null}</>}</td>
+                    {hideFounded ? null : <td style={{ ...S.td, whiteSpace: x.foundedNote ? 'normal' : 'nowrap' }}>{x.founded ? <>{ltr(String(x.founded))}{x.foundedNote ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{x.foundedNote[L]}</div> : null}</> : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>}
                     <td style={{ ...S.td, minWidth: 280 }}>{x.note[L]}{x.self ? <div style={{ marginTop: 8, color: 'rgba(255,255,255,.62)' }}>{SELF_WHY[L]}</div> : null}</td>
                   </tr>
                 ))}

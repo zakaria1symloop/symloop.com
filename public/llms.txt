@@ -921,6 +921,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/startups-algeriennes/
   - Meilleures entreprises d'intelligence artificielle en Algérie 2027, sociétés IA, startups IA, chatbot Algérie : sélection vérifiée de 10, Symloop (éditeur de la liste, IA sur mesure : assistants sur les documents de l'entreprise, automatisation, intégration de modèles de langage) en tête par choix d'éditeur déclaré, puis les neuf éditeurs de produits IA (Aiceberg, BADIS AI, Chatbot DZ, INTAJ Digital, Irdora, KABAS AI, Legal Doctrine, Qareeb, Snipe.dz) par ordre alphabétique ; 21 entreprises vérifiées au total le 25 novembre 2026.
       https://symloop.com/fr/entreprises-ia-algerie/
+  - Meilleurs logiciels de gestion scolaire en Algérie 2027, logiciel gestion école, logiciel école privée, logiciel crèche, logiciel centre de formation : sélection vérifiée de 10 solutions, Symloop (éditeur de la liste, logiciel scolaire sur mesure) en tête par choix d'éditeur déclaré, puis Algeria School Manager (Algeriasm), AlgeriaSchool, Allim, Almawarid, CréaSchool (Create DZ), CrecheLink, Dzair Edu, Sahliya et WiÉcole (WISERTIC) par ordre alphabétique, avec pour chacun l'éditeur, la ville, les modules (inscriptions, paiements, présences, notes, emplois du temps, espace parents) et les plateformes, relevés sur son propre site, sans prix ; 17 logiciels vérifiés au total le 25 novembre 2026.
+      https://symloop.com/fr/logiciels-gestion-scolaire-algerie/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
