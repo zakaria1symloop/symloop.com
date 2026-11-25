@@ -54,3 +54,6 @@ export const AI_COMPANIES = [
   { name: 'Vtic', url: 'https://vtic-dz.com/services/ia-data.php', city: 'bejaia', focus: 'web', services: ['data', 'chatbots', 'rag', 'docs'],
     note: { fr: 'Indique proposer de l’analyse prédictive, des chatbots, de l’informatique décisionnelle, des modèles d’apprentissage automatique sur mesure, la lecture automatique de factures et l’intégration de modèles de langage avec la base de connaissances de l’entreprise.', en: 'States it offers predictive analytics, chatbots, business intelligence, custom machine learning models, invoice-reading automation and LLM integration with a company’s internal knowledge base.', ar: 'تذكر أنها تقترح تحليلاً تنبؤياً، روبوتات محادثة، ذكاء الأعمال، نماذج تعلم آلي على المقاس، قراءة آلية للفواتير وإدماج النماذج اللغوية مع قاعدة معارف المؤسسة.' } },
 ];
+
+// The nine shown beside the publisher: the publishers of AI products.
+export const TOP_AI = AI_COMPANIES.filter((x) => x.focus === 'product').map((x) => x.name);

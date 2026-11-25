@@ -64,3 +64,7 @@ export const COMPANIES = [
   { name: 'Zedkira', url: 'https://www.zedkira.com/dz', city: 'tizi-ouzou', focus: 'software', founded: 2025, services: ['web', 'ecommerce', 'mobile', 'desktop', 'saas'], langs: ['fr', 'en', 'ar'],
     note: { fr: 'Édite Zedkira Inventory, une application Windows de caisse et de stock destinée aux commerçants algériens.', en: 'Publishes Zedkira Inventory, a Windows point-of-sale and stock application aimed at Algerian retailers.', ar: 'تنشر Zedkira Inventory، وهو تطبيق على ويندوز لنقطة البيع والمخزون موجه للتجار الجزائريين.' } },
 ];
+
+// The nine shown beside the publisher on the list pages (user, 25 Nov 2026: ten per list).
+// Rule: companies whose own site names its products or its projects, so a buyer can check.
+export const TOP_COMPANIES = ['BigNova', 'Codex', 'Create DZ', 'Dumble', 'InStack', 'Royon', 'Sindan Solutions', 'WISERTIC', 'Zedkira'];

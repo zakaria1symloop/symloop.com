@@ -32,7 +32,7 @@ const NEW = [
     note: { fr: 'Se présente comme un cabinet de conseil en communication ; édite aussi des logiciels de gestion pour les universités et pour les établissements publics de santé.', en: 'Presents itself as a communication consultancy; also publishes management software for universities and for public health establishments.', ar: 'تقدّم نفسها كمكتب استشارة في الاتصال؛ وتنشر أيضاً برمجيات تسيير للجامعات وللمؤسسات العمومية للصحة.' } },
   { name: 'Nazhamane Digital', url: 'https://nazhamane.com/', city: 'constantine', focus: 'web', services: ['web', 'hosting', 'marketing', 'design'], langs: ['fr'],
     note: { fr: 'Cite l’amélioration du classement des universités (en nommant Webometrics), le e-learning, le marketing par SMS et les spots radio à côté de la création de sites et du référencement.', en: 'Lists university ranking optimisation (citing Webometrics), e-learning, SMS marketing and radio spots alongside website creation and SEO.', ar: 'تذكر تحسين ترتيب الجامعات (مع تسمية Webometrics)، التعليم الإلكتروني، التسويق بالرسائل القصيرة والومضات الإذاعية إلى جانب إنشاء المواقع وتحسين الظهور.' } },
-  { name: 'NerdyZine', url: 'https://nerdyzine.net/', city: 'bba', focus: 'web', services: ['web', 'ecommerce', 'marketing', 'video', 'training', 'hosting'], langs: ['fr'],
+  { name: 'NerdyZine', url: 'https://nerdyzine.net/', city: 'bordj-bou-arreridj', focus: 'web', services: ['web', 'ecommerce', 'marketing', 'video', 'training', 'hosting'], langs: ['fr'],
     note: { fr: 'Ses mentions légales donnent un siège à Bordj Bou Arréridj ; sa page d’accueil cite aussi Alger, Paris et Dubaï.', en: 'Its legal notice gives a registered office in Bordj Bou Arréridj; the homepage also lists Algiers, Paris and Dubai.', ar: 'تذكر بياناتها القانونية مقراً في برج بوعريريج؛ وصفحتها الرئيسية تذكر أيضاً الجزائر العاصمة، باريس ودبي.' } },
   { name: 'Numedes', url: 'https://www.numedes.com', city: 'oran', focus: 'web', services: ['web', 'ecommerce', 'design', 'marketing', 'ai', 'payments'], langs: ['fr'],
     note: { fr: 'Cite comme secteurs la finance, la technologie, l’industrie, l’hôtellerie, l’immobilier, la santé et le commerce ; construit des portails clients, des places de marché et des automatisations par chatbot.', en: 'Names finance, technology, industry, hospitality, real estate, health and retail as sectors; builds client portals, marketplaces and chatbot automations.', ar: 'تذكر كقطاعات المالية، التكنولوجيا، الصناعة، الفندقة، العقار، الصحة والتجارة؛ وتبني بوابات للزبائن، أسواقاً إلكترونية وأتمتة بروبوتات المحادثة.' } },
@@ -57,3 +57,7 @@ const SYMLOOP = { name: 'Symloop', url: 'https://symloop.com/', city: 'alger', f
 
 export const AGENCIES = [...COMPANIES.filter((x) => x.focus === 'web'), ...NEW, SYMLOOP]
   .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+
+// The nine shown beside the publisher. Rule: agencies whose site states a precise speciality,
+// spread over several cities.
+export const TOP_AGENCIES = ['EP Digital DZ', 'Genhyal', 'InStack', 'JdidWeb', 'LHCDESIGN', 'Mawaki3 solutions web', 'Numedes', 'TUDSA', 'Vtic'];

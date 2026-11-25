@@ -2,10 +2,18 @@
 // platforms, by sector (FR / EN / AR). Data: src/data/sources/algeria-startups.js.
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import SourceList from '../components/source/SourceList';
-import { STARTUPS, VERIFIED_ON } from '../data/sources/algeria-startups';
+import { STARTUPS, TOP_STARTUPS, VERIFIED_ON } from '../data/sources/algeria-startups';
 
-const N = STARTUPS.length;
-const SECTORS = new Set(STARTUPS.map((x) => x.focus)).size - 1; // "other" is not a sector
+// ten per list: one startup per sector; the others verified stay in the dataset and in the answers below
+const ITEMS = STARTUPS.filter((x) => TOP_STARTUPS.includes(x.name));
+const TOTAL = STARTUPS.length;
+const N = ITEMS.length;
+const SECTORS = new Set(ITEMS.map((x) => x.focus).filter((f) => f !== 'other')).size;
+const SELECTION = {
+  fr: `Nous avons vérifié ${TOTAL} startups. Cette page en retient dix, une par secteur, pour montrer l’étendue de ce qui existe.`,
+  en: `We verified ${TOTAL} startups. This page keeps ten, one per sector, to show the range of what exists.`,
+  ar: `تحققنا من ${TOTAL} شركة ناشئة. تحتفظ هذه الصفحة بعشر، واحدة لكل قطاع، لإظهار تنوع ما هو موجود.`,
+};
 const names = (key) => STARTUPS.filter((x) => x.focus === key).map((x) => x.name);
 const join = (list, and) => (list.length > 1 ? `${list.slice(0, -1).join(', ')} ${and} ${list[list.length - 1]}` : list[0]);
 
@@ -36,7 +44,7 @@ const CONTENT = {
     ],
     fix: 'Une information est fausse, ou votre startup manque ? Écrivez-nous avec l’adresse de votre site, nous corrigeons :',
     faq: [
-      ['Dans quels secteurs trouve-t-on des startups en Algérie ?', `Dans cette liste, le paiement et la finance comptent le plus de noms (${names('fintech').length}), suivis de la livraison, du commerce en ligne, de la santé et du voyage. On trouve aussi l’emploi, l’éducation, le transport, le droit et l’immobilier.`],
+      ['Dans quels secteurs trouve-t-on des startups en Algérie ?', `Parmi les ${TOTAL} startups que nous avons vérifiées, le paiement et la finance comptent le plus de noms (${names('fintech').length}), suivis de la livraison, du commerce en ligne, de la santé et du voyage. On trouve aussi l’emploi, l’éducation, le transport, le droit et l’immobilier.`],
       ['Quelles startups algériennes proposent le paiement en ligne ?', `${join(names('fintech'), 'et')} : portefeuilles numériques, passerelles de paiement par carte CIB et Edahabia, paiement de factures et facturation en ligne.`],
       ['Quelles applications algériennes permettent de prendre rendez-vous chez un médecin ?', `${join(names('health'), 'et')} permettent de chercher un médecin et de prendre rendez-vous en ligne.`],
       ['Quelle est la différence entre une startup et une société de services informatiques ?', 'Une startup exploite son propre produit et le vend à de nombreux utilisateurs. Une société de services informatiques construit des logiciels pour ses clients. Les deux listes sont séparées sur ce site.'],
@@ -64,7 +72,7 @@ const CONTENT = {
     ],
     fix: 'Something is wrong, or your startup is missing? Write to us with your website address, and we correct it:',
     faq: [
-      ['Which sectors have startups in Algeria?', `On this list, payments and finance has the most names (${names('fintech').length}), followed by delivery, e-commerce, health and travel. Jobs, education, mobility, legal and real estate are also present.`],
+      ['Which sectors have startups in Algeria?', `Among the ${TOTAL} startups we verified, payments and finance has the most names (${names('fintech').length}), followed by delivery, e-commerce, health and travel. Jobs, education, mobility, legal and real estate are also present.`],
       ['Which Algerian startups offer online payment?', `${join(names('fintech'), 'and')}: digital wallets, CIB and Edahabia card payment gateways, bill payment and online invoicing.`],
       ['Which Algerian apps let you book a doctor’s appointment?', `${join(names('health'), 'and')} let you search for a doctor and book an appointment online.`],
       ['What is the difference between a startup and an IT services company?', 'A startup runs its own product and sells it to many users. An IT services company builds software for its clients. The two lists are kept separate on this site.'],
@@ -92,7 +100,7 @@ const CONTENT = {
     ],
     fix: 'معلومة خاطئة أو شركتكم الناشئة غير مدرجة؟ راسلونا مع عنوان موقعكم، ونصحّح:',
     faq: [
-      ['في أي قطاعات توجد شركات ناشئة في الجزائر؟', `في هذه القائمة، الدفع والمالية يضم أكبر عدد من الأسماء (${names('fintech').length})، يليه التوصيل، التجارة الإلكترونية، الصحة والسفر. وتوجد أيضاً قطاعات التوظيف، التعليم، النقل، القانون والعقار.`],
+      ['في أي قطاعات توجد شركات ناشئة في الجزائر؟', `من بين ${TOTAL} شركة ناشئة تحققنا منها، الدفع والمالية يضم أكبر عدد من الأسماء (${names('fintech').length})، يليه التوصيل، التجارة الإلكترونية، الصحة والسفر. وتوجد أيضاً قطاعات التوظيف، التعليم، النقل، القانون والعقار.`],
       ['ما هي الشركات الناشئة الجزائرية التي تقترح الدفع الإلكتروني؟', `${join(names('fintech'), 'و')}: محافظ رقمية، بوابات دفع ببطاقتي CIB والذهبية، دفع الفواتير والفوترة عبر الإنترنت.`],
       ['ما هي التطبيقات الجزائرية التي تسمح بحجز موعد عند الطبيب؟', `${join(names('health'), 'و')} تسمح بالبحث عن طبيب وحجز موعد عبر الإنترنت.`],
       ['ما الفرق بين شركة ناشئة وشركة خدمات معلوماتية؟', 'الشركة الناشئة تشغّل منتجها الخاص وتبيعه لعدد كبير من المستعملين. وشركة الخدمات المعلوماتية تبني برمجيات لزبائنها. والقائمتان منفصلتان في هذا الموقع.'],
@@ -103,7 +111,7 @@ const CONTENT = {
 };
 
 export default function Page({ locale }) {
-  return <SourceList locale={locale} slug="startups-algeriennes" content={CONTENT} items={STARTUPS} verifiedOn={VERIFIED_ON} focusLabels={SECTOR_LABELS} doesFrom="focus" />;
+  return <SourceList locale={locale} slug="startups-algeriennes" content={CONTENT} items={ITEMS} verifiedOn={VERIFIED_ON} focusLabels={SECTOR_LABELS} doesFrom="focus" selectionNote={SELECTION} />;
 }
 
 export async function getStaticProps({ locale }) {

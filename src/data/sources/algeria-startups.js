@@ -66,3 +66,6 @@ export const STARTUPS = [
   { name: 'Yassir', url: 'https://yassir.com/fr/algeria/', city: null, focus: 'mobility', platforms: ['android', 'ios'],
     note: { fr: 'Application de VTC, de livraison de repas et de courses, et de réservation de vols, d’hôtels et de billets, pour les particuliers, les chauffeurs et les commerçants.', en: 'App for ride-hailing, meal and grocery delivery, and flight, hotel and event ticket booking, for consumers, drivers and merchants.', ar: 'تطبيق لنقل الأشخاص، توصيل الوجبات والمشتريات، وحجز الرحلات الجوية والفنادق والتذاكر، للأفراد والسائقين والتجار.' } },
 ];
+
+// The ten shown on the list page: one startup per sector.
+export const TOP_STARTUPS = ['Beytic', 'Chargily', 'Emploitic', 'iMadrassa', 'Legal Doctrine', 'Maystro Delivery', 'Nreservi', 'Ouedkniss', 'Sihhatech', 'Yassir'];
