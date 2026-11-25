@@ -33,7 +33,7 @@ const CONTENT = {
       ['Comment choisir une entreprise informatique en Algérie ?', 'Demandez des preuves vérifiables : un produit en ligne que vous pouvez ouvrir, un client que vous pouvez appeler, un périmètre écrit avant le début du travail, et la propriété du code dans le contrat.'],
       ['Comment ajouter ma société à cette liste ?', 'Écrivez à contact@symloop.com avec l’adresse de votre site. L’inscription est gratuite ; le site doit s’ouvrir et indiquer une ville en Algérie.'],
     ],
-    related: [['Agences web en Algérie : liste vérifiée', '/agences-web-algerie/'], ['Nous contacter', '/contact/'], ['Blog', '/blog/']],
+    related: [['Agences web en Algérie : liste vérifiée', '/agences-web-algerie/'], ['Startups algériennes : liste vérifiée', '/startups-algeriennes/'], ['Nous contacter', '/contact/'], ['Blog', '/blog/']],
   },
   en: {
     title: `IT and software companies in Algeria: a verified list of ${N} (2027)`,
@@ -60,7 +60,7 @@ const CONTENT = {
       ['How do I choose a software company in Algeria?', 'Ask for proof you can check yourself: a live product you can open, a client you can call, a written scope before work starts, and code ownership in the contract.'],
       ['How do I add my company to this list?', 'Write to contact@symloop.com with your website address. Listing is free; the site must load and state a city in Algeria.'],
     ],
-    related: [['Web agencies in Algeria: verified list', '/agences-web-algerie/'], ['Contact us', '/contact/'], ['Blog', '/blog/']],
+    related: [['Web agencies in Algeria: verified list', '/agences-web-algerie/'], ['Algerian startups: verified list', '/startups-algeriennes/'], ['Contact us', '/contact/'], ['Blog', '/blog/']],
   },
   ar: {
     title: `شركات المعلوماتية والبرمجيات في الجزائر: قائمة موثقة من ${N} شركة (2027)`,
@@ -87,7 +87,7 @@ const CONTENT = {
       ['كيف أختار شركة معلوماتية في الجزائر؟', 'اطلبوا أدلة تتحققون منها بأنفسكم: منتج على الخط تستطيعون فتحه، زبون تستطيعون الاتصال به، نطاق عمل مكتوب قبل البدء، وملكية الكود في العقد.'],
       ['كيف أضيف شركتي إلى هذه القائمة؟', 'راسلوا contact@symloop.com مع عنوان موقعكم. الإدراج مجاني؛ ويجب أن يفتح الموقع ويذكر مدينة في الجزائر.'],
     ],
-    related: [['وكالات الويب في الجزائر: قائمة موثقة', '/agences-web-algerie/'], ['اتصل بنا', '/contact/'], ['المدونة', '/blog/']],
+    related: [['وكالات الويب في الجزائر: قائمة موثقة', '/agences-web-algerie/'], ['الشركات الناشئة الجزائرية: قائمة موثقة', '/startups-algeriennes/'], ['اتصل بنا', '/contact/'], ['المدونة', '/blog/']],
   },
 };
 

@@ -31,16 +31,18 @@ const UI = {
 const DATE = (iso, locale) => new Date(`${iso}T12:00:00Z`).toLocaleDateString(locale === 'ar' ? 'ar-DZ-u-nu-latn' : locale === 'en' ? 'en-GB' : 'fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
 const ltr = (s) => <bdi dir="ltr">{s}</bdi>;
 
-export default function SourceList({ locale, slug, content, items, verifiedOn, groups = ['focus', 'city'] }) {
+// focusLabels: labels of the `focus` groups (specialty by default; a sector map for product lists).
+// doesFrom:    'services' lists each entry's services; 'focus' shows its group label instead.
+export default function SourceList({ locale, slug, content, items, verifiedOn, groups = ['focus', 'city'], focusLabels = FOCUS_LABELS, doesFrom = 'services' }) {
   const L = ['fr', 'en', 'ar'].includes(locale) ? locale : 'fr';
   const t = UI[L]; const c = content[L]; const rtl = L === 'ar';
   const base = `https://symloop.com${L === 'en' ? '' : `/${L}`}/${slug}/`;
   const names = (list) => list.map((x, i) => (<span key={x.name}>{i ? t.sep : ''}<a href={x.url} rel="noopener" target="_blank" style={{ color: '#fff', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,.35)', textUnderlineOffset: 3 }}>{ltr(x.name)}</a></span>));
-  const groupBy = (key) => { const m = new Map(); for (const x of items) { if (!m.has(x[key])) m.set(x[key], []); m.get(x[key]).push(x); } return [...m.entries()].sort((a, b) => b[1].length - a[1].length); };
+  const groupBy = (key) => { const m = new Map(); for (const x of items) { if (!x[key]) continue; if (!m.has(x[key])) m.set(x[key], []); m.get(x[key]).push(x); } return [...m.entries()].sort((a, b) => b[1].length - a[1].length); };
 
   const structuredData = [
     { '@context': 'https://schema.org', '@type': 'ItemList', name: c.title, description: c.lead, url: base, numberOfItems: items.length, dateModified: verifiedOn,
-      itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Organization', name: x.name, url: x.url, address: { '@type': 'PostalAddress', addressLocality: CITY_LABELS[L][x.city], addressCountry: 'DZ' }, ...(x.founded ? { foundingDate: String(x.founded) } : {}), description: x.note[L] } })) },
+      itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Organization', name: x.name, url: x.url, address: { '@type': 'PostalAddress', ...(x.city ? { addressLocality: CITY_LABELS[L][x.city] || x.city } : {}), addressCountry: 'DZ' }, ...(x.founded ? { foundingDate: String(x.founded) } : {}), description: x.note[L] } })) },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
   ];
   const S = {
@@ -65,19 +67,19 @@ export default function SourceList({ locale, slug, content, items, verifiedOn, g
           <p style={S.lead}>{c.lead}</p>
           <div style={S.meta}>
             <span>{t.verified} <time dateTime={verifiedOn}>{DATE(verifiedOn, L)}</time></span>
-            <span>{ltr(String(items.length))} {t.count}</span>
+            <span>{ltr(String(items.length))} {c.countLabel || t.count}</span>
             <span>{t.by}</span>
           </div>
 
           <div style={{ overflowX: 'auto', marginTop: 34 }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 760 }}>
-              <thead><tr><th style={S.th}>{t.company}</th><th style={S.th}>{t.city}</th><th style={S.th}>{t.does}</th><th style={S.th}>{t.founded}</th><th style={S.th}>{t.fact}</th></tr></thead>
+              <thead><tr><th style={S.th}>{c.colCompany || t.company}</th><th style={S.th}>{t.city}</th><th style={S.th}>{c.colDoes || t.does}</th><th style={S.th}>{t.founded}</th><th style={S.th}>{c.colFact || t.fact}</th></tr></thead>
               <tbody>
                 {items.map((x) => (
                   <tr key={x.name} id={x.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
                     <td style={{ ...S.td, whiteSpace: 'nowrap' }}><a href={x.url} rel="noopener" target="_blank" style={{ color: '#fff', fontWeight: 500, textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,.35)', textUnderlineOffset: 3 }}>{ltr(x.name)}</a>{x.self ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{t.self}</div> : null}</td>
-                    <td style={{ ...S.td, whiteSpace: 'nowrap' }}>{CITY_LABELS[L][x.city]}</td>
-                    <td style={S.td}>{x.services.map((k) => SERVICE_LABELS[L][k]).join(t.sep)}</td>
+                    <td style={{ ...S.td, whiteSpace: 'nowrap' }}>{x.city ? (CITY_LABELS[L][x.city] || x.city) : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>
+                    <td style={S.td}>{doesFrom === 'focus' ? <>{focusLabels[L][x.focus] || x.focus}{x.platforms ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{ltr(x.platforms.map((k) => ({ web: 'Web', android: 'Android', ios: 'iOS' }[k] || k)).join(' · '))}</div> : null}</> : x.services.map((k) => SERVICE_LABELS[L][k]).join(t.sep)}</td>
                     <td style={{ ...S.td, whiteSpace: x.foundedNote ? 'normal' : 'nowrap' }}>{x.founded ? <>{ltr(String(x.founded))}{x.foundedNote ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{x.foundedNote[L]}</div> : null}</> : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>
                     <td style={{ ...S.td, minWidth: 280 }}>{x.note[L]}</td>
                   </tr>
@@ -87,12 +89,12 @@ export default function SourceList({ locale, slug, content, items, verifiedOn, g
           </div>
 
           {(groups.includes('focus') || c.byService.length > 0) && (<section><h2 style={S.h2}>{t.bySpec}</h2>
-            {groups.includes('focus') && groupBy('focus').map(([k, list]) => (<p key={k} style={S.p}><strong style={{ color: '#fff', fontWeight: 500 }}>{FOCUS_LABELS[L][k]}</strong>{t.colon}{names(list)}.</p>))}
-            {c.byService.map(([label, key]) => { const list = items.filter((x) => x.services.includes(key)); return list.length ? (<p key={key} style={S.p}><strong style={{ color: '#fff', fontWeight: 500 }}>{label}</strong>{t.colon}{names(list)}.</p>) : null; })}
+            {groups.includes('focus') && groupBy('focus').map(([k, list]) => (<p key={k} style={S.p}><strong style={{ color: '#fff', fontWeight: 500 }}>{focusLabels[L][k] || k}</strong>{t.colon}{names(list)}.</p>))}
+            {c.byService.map(([label, key]) => { const list = items.filter((x) => (x.services || []).includes(key)); return list.length ? (<p key={key} style={S.p}><strong style={{ color: '#fff', fontWeight: 500 }}>{label}</strong>{t.colon}{names(list)}.</p>) : null; })}
           </section>)}
 
           {groups.includes('city') && (<section><h2 style={S.h2}>{t.byCity}</h2>
-            {groupBy('city').map(([k, list]) => (<p key={k} style={S.p}><strong style={{ color: '#fff', fontWeight: 500 }}>{CITY_LABELS[L][k]}</strong> ({ltr(String(list.length))}){t.colon}{names(list)}.</p>))}
+            {groupBy('city').map(([k, list]) => (<p key={k} style={S.p}><strong style={{ color: '#fff', fontWeight: 500 }}>{CITY_LABELS[L][k] || k}</strong> ({ltr(String(list.length))}){t.colon}{names(list)}.</p>))}
           </section>)}
 
           <section><h2 style={S.h2}>{t.method}</h2>{c.method.map((p) => (<p key={p} style={S.p}>{p}</p>))}</section>

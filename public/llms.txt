@@ -917,6 +917,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/entreprises-informatiques-algerie/
   - Agences web en Algérie (2027), agences digitales, agences de marketing digital, création de site web : liste vérifiée de 30 agences web et digitales établies en Algérie, dans 12 villes (Alger, Oran, Constantine, Béjaïa, Tizi Ouzou, Annaba, Tlemcen, Batna, Blida, Tipaza, Jijel, Bordj Bou Arréridj), avec pour chacune sa ville, ses services et un fait relevé sur son propre site, par ordre alphabétique, sans classement ; regroupements par service (boutique en ligne, marketing digital, paiement en ligne, IA, impression) et par ville ; vérifiée le 25 novembre 2026.
       https://symloop.com/fr/agences-web-algerie/
+  - Startups algériennes (2027), startup Algérie, applications et plateformes numériques algériennes : liste vérifiée de 27 startups qui exploitent leur propre produit, par secteur (paiement et finance : Chargily, SlickPay, Guiddini, PayPart, Gifty, Fatoura App ; livraison ; commerce en ligne et petites annonces ; santé : Sihhatech, eTabib, DZDOC ; voyage ; emploi ; éducation ; transport ; droit ; immobilier), avec pour chacune ses plateformes et ce que fait son produit, relevé sur son propre site, par ordre alphabétique, sans classement ni montants de levées de fonds ; vérifiée le 25 novembre 2026.
+      https://symloop.com/fr/startups-algeriennes/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

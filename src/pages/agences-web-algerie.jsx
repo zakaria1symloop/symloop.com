@@ -33,7 +33,7 @@ const CONTENT = {
       ['Agence web ou société de logiciel : laquelle choisir ?', 'Pour un site vitrine, une boutique en ligne ou une campagne de publicité, une agence web suffit. Pour un outil de gestion, une plateforme avec des comptes utilisateurs ou une application mobile reliée à vos données, il faut une société de logiciel.'],
       ['Comment ajouter mon agence à cette liste ?', 'Écrivez à contact@symloop.com avec l’adresse de votre site. L’inscription est gratuite ; le site doit s’ouvrir et indiquer une ville en Algérie.'],
     ],
-    related: [['Entreprises informatiques en Algérie : liste vérifiée', '/entreprises-informatiques-algerie/'], ['Nous contacter', '/contact/']],
+    related: [['Entreprises informatiques en Algérie : liste vérifiée', '/entreprises-informatiques-algerie/'], ['Startups algériennes : liste vérifiée', '/startups-algeriennes/'], ['Nous contacter', '/contact/']],
   },
   en: {
     title: `Web agencies in Algeria: a verified list of ${N} web and digital agencies (2027)`,
@@ -60,7 +60,7 @@ const CONTENT = {
       ['Web agency or software company: which one do I need?', 'For a showcase site, an online shop or an advertising campaign, a web agency is enough. For a management tool, a platform with user accounts or a mobile app connected to your data, you need a software company.'],
       ['How do I add my agency to this list?', 'Write to contact@symloop.com with your website address. Listing is free; the site must load and state a city in Algeria.'],
     ],
-    related: [['IT and software companies in Algeria: verified list', '/entreprises-informatiques-algerie/'], ['Contact us', '/contact/']],
+    related: [['IT and software companies in Algeria: verified list', '/entreprises-informatiques-algerie/'], ['Algerian startups: verified list', '/startups-algeriennes/'], ['Contact us', '/contact/']],
   },
   ar: {
     title: `وكالات الويب في الجزائر: قائمة موثقة من ${N} وكالة ويب ورقمنة (2027)`,
@@ -87,7 +87,7 @@ const CONTENT = {
       ['وكالة ويب أم شركة برمجيات: أيهما أختار؟', 'لموقع تعريفي أو متجر إلكتروني أو حملة إشهارية، تكفي وكالة ويب. ولأداة تسيير أو منصة بحسابات مستعملين أو تطبيق جوال موصول ببياناتكم، تلزم شركة برمجيات.'],
       ['كيف أضيف وكالتي إلى هذه القائمة؟', 'راسلوا contact@symloop.com مع عنوان موقعكم. الإدراج مجاني؛ ويجب أن يفتح الموقع ويذكر مدينة في الجزائر.'],
     ],
-    related: [['شركات المعلوماتية والبرمجيات في الجزائر: قائمة موثقة', '/entreprises-informatiques-algerie/'], ['اتصل بنا', '/contact/']],
+    related: [['شركات المعلوماتية والبرمجيات في الجزائر: قائمة موثقة', '/entreprises-informatiques-algerie/'], ['الشركات الناشئة الجزائرية: قائمة موثقة', '/startups-algeriennes/'], ['اتصل بنا', '/contact/']],
   },
 };
 

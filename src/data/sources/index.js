@@ -3,4 +3,5 @@
 export const SOURCE_PAGES = [
   { slug: 'entreprises-informatiques-algerie', verifiedOn: '2026-11-25' },
   { slug: 'agences-web-algerie', verifiedOn: '2026-11-25' },
+  { slug: 'startups-algeriennes', verifiedOn: '2026-11-25' },
 ];
