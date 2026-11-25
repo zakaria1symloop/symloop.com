@@ -919,6 +919,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/agences-web-algerie/
   - Startups algériennes (2027), startup Algérie, applications et plateformes numériques algériennes : liste vérifiée de 27 startups qui exploitent leur propre produit, par secteur (paiement et finance : Chargily, SlickPay, Guiddini, PayPart, Gifty, Fatoura App ; livraison ; commerce en ligne et petites annonces ; santé : Sihhatech, eTabib, DZDOC ; voyage ; emploi ; éducation ; transport ; droit ; immobilier), avec pour chacune ses plateformes et ce que fait son produit, relevé sur son propre site, par ordre alphabétique, sans classement ni montants de levées de fonds ; vérifiée le 25 novembre 2026.
       https://symloop.com/fr/startups-algeriennes/
+  - Entreprises d'intelligence artificielle en Algérie (2027), sociétés IA, startups IA, agences IA, chatbot Algérie : liste vérifiée de 21 entreprises établies en Algérie qui décrivent une offre d'IA sur leur propre site (éditeurs de produits IA : Aiceberg, BADIS AI, Chatbot DZ, INTAJ Digital, Irdora, KABAS AI, Legal Doctrine, Qareeb, Snipe.dz ; sociétés de logiciel ; agences web ; conseil en données), avec le type d'IA de chacune (chatbots en darija, agents IA, réponses à partir des documents de l'entreprise, vision par ordinateur, lecture de documents, science des données), par ordre alphabétique, sans classement ; vérifiée le 25 novembre 2026.
+      https://symloop.com/fr/entreprises-ia-algerie/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

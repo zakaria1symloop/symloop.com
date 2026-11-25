@@ -32,8 +32,9 @@ const DATE = (iso, locale) => new Date(`${iso}T12:00:00Z`).toLocaleDateString(lo
 const ltr = (s) => <bdi dir="ltr">{s}</bdi>;
 
 // focusLabels: labels of the `focus` groups (specialty by default; a sector map for product lists).
+// serviceLabels: labels of the `services` keys (general services by default; AI types on the AI list).
 // doesFrom:    'services' lists each entry's services; 'focus' shows its group label instead.
-export default function SourceList({ locale, slug, content, items, verifiedOn, groups = ['focus', 'city'], focusLabels = FOCUS_LABELS, doesFrom = 'services' }) {
+export default function SourceList({ locale, slug, content, items, verifiedOn, groups = ['focus', 'city'], focusLabels = FOCUS_LABELS, serviceLabels = SERVICE_LABELS, doesFrom = 'services' }) {
   const L = ['fr', 'en', 'ar'].includes(locale) ? locale : 'fr';
   const t = UI[L]; const c = content[L]; const rtl = L === 'ar';
   const base = `https://symloop.com${L === 'en' ? '' : `/${L}`}/${slug}/`;
@@ -79,7 +80,7 @@ export default function SourceList({ locale, slug, content, items, verifiedOn, g
                   <tr key={x.name} id={x.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
                     <td style={{ ...S.td, whiteSpace: 'nowrap' }}><a href={x.url} rel="noopener" target="_blank" style={{ color: '#fff', fontWeight: 500, textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,.35)', textUnderlineOffset: 3 }}>{ltr(x.name)}</a>{x.self ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{t.self}</div> : null}</td>
                     <td style={{ ...S.td, whiteSpace: 'nowrap' }}>{x.city ? (CITY_LABELS[L][x.city] || x.city) : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>
-                    <td style={S.td}>{doesFrom === 'focus' ? <>{focusLabels[L][x.focus] || x.focus}{x.platforms ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{ltr(x.platforms.map((k) => ({ web: 'Web', android: 'Android', ios: 'iOS' }[k] || k)).join(' · '))}</div> : null}</> : x.services.map((k) => SERVICE_LABELS[L][k]).join(t.sep)}</td>
+                    <td style={S.td}>{doesFrom === 'focus' ? <>{focusLabels[L][x.focus] || x.focus}{x.platforms ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{ltr(x.platforms.map((k) => ({ web: 'Web', android: 'Android', ios: 'iOS' }[k] || k)).join(' · '))}</div> : null}</> : x.services.map((k) => serviceLabels[L][k] || k).join(t.sep)}</td>
                     <td style={{ ...S.td, whiteSpace: x.foundedNote ? 'normal' : 'nowrap' }}>{x.founded ? <>{ltr(String(x.founded))}{x.foundedNote ? <div style={{ fontSize: 12, color: 'rgba(255,255,255,.55)', marginTop: 4 }}>{x.foundedNote[L]}</div> : null}</> : <span style={{ color: 'rgba(255,255,255,.4)' }}>{t.none}</span>}</td>
                     <td style={{ ...S.td, minWidth: 280 }}>{x.note[L]}</td>
                   </tr>
