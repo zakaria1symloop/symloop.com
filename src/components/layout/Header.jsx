@@ -9,6 +9,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 import dynamic from 'next/dynamic';
 // The onboarding modal (framer-motion + Firestore) only loads when opened.
 const AIOnboarding = dynamic(() => import('../onboarding/AIOnboarding'), { ssr: false });
+import { onAssistantOpen } from '../onboarding/assistant';
 
 // ============================================================================
 // SYMLOOP — Header (editorial redesign 2026-04)
@@ -220,6 +221,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactPopupOpen, setContactPopupOpen] = useState(false);
   const [showAIOnboarding, setShowAIOnboarding] = useState(false);
+  const [assistantQuestion, setAssistantQuestion] = useState('');
+  // anything on the site (the hero's question bar, for one) can open the assistant
+  useEffect(() => onAssistantOpen((question) => { setAssistantQuestion(question); setShowAIOnboarding(true); }), []);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation('common');
 
@@ -338,8 +342,9 @@ export default function Header() {
 
       {showAIOnboarding && (
         <AIOnboarding
-          onComplete={() => setShowAIOnboarding(false)}
-          onSkip={() => setShowAIOnboarding(false)}
+          initialQuestion={assistantQuestion}
+          onComplete={() => { setShowAIOnboarding(false); setAssistantQuestion(''); }}
+          onSkip={() => { setShowAIOnboarding(false); setAssistantQuestion(''); }}
         />
       )}
     </>

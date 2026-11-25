@@ -5,12 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { X, ArrowRight, ArrowLeft, Sparkles, Send, Loader2 } from "lucide-react";
+import { SUGGESTIONS } from './assistant';
 
 // ============================================================================
 // SYMLOOP — AIOnboarding (editorial redesign)
 //
-// All logic preserved: GPT API calls, Firebase lead capture, 4-stage flow
-// (welcome → chat → contact → complete), RTL support, message history.
+// Side panel (full screen on phones). Two steps: the visitor's details first (first name,
+// surname, phone, yes or no to a call), then the chat with the assistant (/api/chat). The
+// canned replies below are only the fallback when the assistant is unreachable.
 //
 // Visual redesign: removed cartoon SVG character, gradient backgrounds,
 // rounded-2xl bubbles, glow orbs. Replaced with editorial typography,
@@ -271,416 +273,242 @@ const FALLBACK_BANK = {
   },
 };
 
-export default function AIOnboarding({ onComplete, onSkip }) {
-  const { t } = useTranslation('common');
+const COPY = {
+  fr: {
+    title: 'Assistant Symloop', status: 'IA · répond en français, arabe et anglais', typing: 'Écrit…', saved: 'Coordonnées enregistrées', close: 'Fermer',
+    gateTitle: 'Avant de commencer', gateText: 'Laissez vos coordonnées : l’assistant vous répond tout de suite, et un ingénieur peut vous rappeler.',
+    yourQuestion: 'Votre question', first: 'Prénom', last: 'Nom', phone: 'Téléphone',
+    callQ: 'Acceptez-vous d’être appelé par Symloop ?', yes: 'Oui, appelez-moi', no: 'Non, pas d’appel',
+    start: 'Commencer la discussion', sending: 'Enregistrement…', skip: 'Continuer sans laisser mes coordonnées',
+    privacy: 'Utilisées uniquement pour vous rappeler.', privacyLink: 'Confidentialité',
+    error: 'Vérifiez le numéro de téléphone, puis réessayez.', failed: 'Enregistrement impossible pour le moment. Vous pouvez continuer sans.',
+    placeholder: 'Votre message…', send: 'Envoyer', tryAsking: 'Essayez par exemple',
+    hello: (n) => (n ? `Bonjour ${n}. Je suis l’assistant IA de Symloop. Posez-moi votre question, ou décrivez ce que vous voulez construire.` : 'Bonjour. Je suis l’assistant IA de Symloop. Posez-moi votre question, ou décrivez ce que vous voulez construire.'),
+  },
+  en: {
+    title: 'Symloop Assistant', status: 'AI · answers in English, French and Arabic', typing: 'Typing…', saved: 'Details saved', close: 'Close',
+    gateTitle: 'Before we start', gateText: 'Leave your details: the assistant answers right away, and an engineer can call you back.',
+    yourQuestion: 'Your question', first: 'First name', last: 'Surname', phone: 'Phone',
+    callQ: 'Do you agree to receive a call from Symloop?', yes: 'Yes, call me', no: 'No call',
+    start: 'Start the chat', sending: 'Saving…', skip: 'Continue without leaving my details',
+    privacy: 'Used only to call you back.', privacyLink: 'Privacy',
+    error: 'Check the phone number and try again.', failed: 'Could not save right now. You can continue without it.',
+    placeholder: 'Your message…', send: 'Send', tryAsking: 'For example',
+    hello: (n) => (n ? `Hello ${n}. I'm Symloop's AI assistant. Ask me your question, or describe what you want to build.` : "Hello. I'm Symloop's AI assistant. Ask me your question, or describe what you want to build."),
+  },
+  ar: {
+    title: 'مساعد سيملوب', status: 'ذكاء اصطناعي · يجيب بالعربية والفرنسية والإنجليزية', typing: 'يكتب…', saved: 'تم حفظ بياناتكم', close: 'إغلاق',
+    gateTitle: 'قبل أن نبدأ', gateText: 'اتركوا بياناتكم: يجيبكم المساعد فوراً، ويمكن لمهندس أن يتصل بكم.',
+    yourQuestion: 'سؤالكم', first: 'الاسم', last: 'اللقب', phone: 'الهاتف',
+    callQ: 'هل تقبلون اتصالاً من Symloop؟', yes: 'نعم، اتصلوا بي', no: 'لا، دون اتصال',
+    start: 'بدء المحادثة', sending: 'جارٍ الحفظ…', skip: 'المتابعة دون ترك بياناتي',
+    privacy: 'تُستعمل فقط للاتصال بكم.', privacyLink: 'الخصوصية',
+    error: 'تحققوا من رقم الهاتف ثم أعيدوا المحاولة.', failed: 'تعذّر الحفظ حالياً. يمكنكم المتابعة دونه.',
+    placeholder: 'رسالتكم…', send: 'إرسال', tryAsking: 'مثلاً',
+    hello: (n) => (n ? `مرحباً ${n}. أنا المساعد الذكي لسيملوب. اطرحوا سؤالكم، أو صفوا ما تريدون بناءه.` : 'مرحباً. أنا المساعد الذكي لسيملوب. اطرحوا سؤالكم، أو صفوا ما تريدون بناءه.'),
+  },
+};
+const GOLD = '#E9CD86';
+
+// Flow: details first (first name, surname, phone, yes or no to a call), then the chat.
+// The visitor may skip the first step; the assistant then asks for the details itself.
+export default function AIOnboarding({ onComplete, onSkip, initialQuestion = '' }) {
   const router = useRouter();
-  const locale = router.locale || 'en';
+  const locale = ['fr', 'en', 'ar'].includes(router.locale) ? router.locale : 'en';
   const isRTL = locale === 'ar';
+  const c = COPY[locale];
 
-  const [stage, setStage] = useState('welcome');
-  const [isTyping, setIsTyping] = useState(false);
+  const [stage, setStage] = useState('gate');
+  const [visitor, setVisitor] = useState({ firstName: '', lastName: '', phone: '', okToCall: null });
+  const [gateError, setGateError] = useState('');
+  const [registering, setRegistering] = useState(false);
   const [messages, setMessages] = useState([]);
-  const [chatHistory, setChatHistory] = useState([]);
-  const [contactData, setContactData] = useState({ name: '', email: '', phone: '' });
   const [textInput, setTextInput] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [messageCount, setMessageCount] = useState(0);
-  // true once the assistant has saved the visitor's details (name, surname, phone, consent to a call)
+  const [isTyping, setIsTyping] = useState(false);
   const [leadSaved, setLeadSaved] = useState(false);
-  const messagesEndRef = useRef(null);
+  // refs: a message can be sent in the same tick as the first step is submitted
+  const history = useRef([]);
+  const lead = useRef({ id: '', saved: false, known: null });
+  const turns = useRef(0);
+  const endRef = useRef(null);
+  const inputRef = useRef(null);
 
+  useEffect(() => { endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }); }, [messages, isTyping]);
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    const onKey = (e) => { if (e.key === 'Escape') onSkip && onSkip(); };
+    window.addEventListener('keydown', onKey);
+    const prev = document.body.style.overflow; document.body.style.overflow = 'hidden';
+    return () => { window.removeEventListener('keydown', onKey); document.body.style.overflow = prev; };
+  }, [onSkip]);
 
-  // ── Smart context-aware fallback (used when GPT API is unavailable) ──
-  // Detects keywords in the user's message and returns a relevant Symloop
-  // response, cycling through variants so the chat never feels robotic.
-  const getSmartFallback = (userMessage, turn) => {
-    const msg = String(userMessage || '').toLowerCase();
-    const keyword = detectIntent(msg);
-    const lang = detectLang(userMessage, locale);
-    const bank = FALLBACK_BANK[lang] || FALLBACK_BANK.en;
-    const pool = bank[keyword] || bank.generic;
-    // Rotate through the pool using turn count so we never repeat consecutively
-    return pool[turn % pool.length];
+  const markSaved = (id) => {
+    if (id) lead.current.id = id;
+    if (!lead.current.saved) {
+      lead.current.saved = true; setLeadSaved(true);
+      // same conversion event as the contact forms, when the Meta pixel is installed
+      if (typeof window !== 'undefined' && typeof window.fbq === 'function') window.fbq('track', 'Lead', { content_name: 'chatbot' });
+    }
   };
 
-  // ── GPT API call with graceful degradation ──────────────────────
-  const callGPT = async (userMessage) => {
+  const ask = async (text) => {
+    const userMessage = String(text || '').trim();
+    if (!userMessage || isTyping) return;
+    setMessages((m) => [...m, { type: 'user', content: userMessage }]);
+    setTextInput(''); setIsTyping(true);
+    history.current = [...history.current, { role: 'user', content: userMessage }];
+    let reply;
     try {
-      const newHistory = [...chatHistory, { role: 'user', content: userMessage }];
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newHistory, locale, page: router.asPath, leadSaved })
-      });
+      const response = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: history.current, locale, page: router.asPath, leadSaved: lead.current.saved, leadId: lead.current.id || undefined, visitor: lead.current.known || undefined }) });
       if (!response.ok) throw new Error('API error');
       const data = await response.json();
-      const aiResponse = data.message;
-      if (!aiResponse) throw new Error('Empty response');
-      setChatHistory([...newHistory, { role: 'assistant', content: aiResponse }]);
-      if (data.lead_saved && !leadSaved) {
-        setLeadSaved(true);
-        // same conversion event as the contact forms, when the Meta pixel is installed
-        if (typeof window !== 'undefined' && typeof window.fbq === 'function') window.fbq('track', 'Lead', { content_name: 'chatbot' });
-      }
-      return { text: aiResponse, fallback: false };
+      if (!data.message) throw new Error('Empty response');
+      reply = data.message;
+      if (data.lead_saved) markSaved(data.lead_id);
     } catch (error) {
-      console.error('GPT Error:', error);
-      const fallback = getSmartFallback(userMessage, messageCount);
-      setChatHistory(prev => [...prev, { role: 'user', content: userMessage }, { role: 'assistant', content: fallback }]);
-      return { text: fallback, fallback: true };
+      // assistant unreachable: canned reply, and the details step comes back if nothing is saved yet
+      const lang = detectLang(userMessage, locale);
+      const bank = FALLBACK_BANK[lang] || FALLBACK_BANK.en;
+      const pool = bank[detectIntent(userMessage.toLowerCase())] || bank.generic;
+      reply = pool[turns.current % pool.length];
+      if (!lead.current.saved && turns.current >= 1) setTimeout(() => setStage('gate'), 1200);
     }
-  };
-
-  const startAIChat = () => {
-    setStage('chat');
-    setIsTyping(true);
-    setTimeout(() => {
-      setIsTyping(false);
-      const greeting = getGreeting(locale);
-      setMessages([{ type: 'ai', content: greeting }]);
-      setChatHistory([{ role: 'assistant', content: greeting }]);
-    }, 800);
-  };
-
-  const handleTextSubmit = async () => {
-    if (!textInput.trim() || isTyping) return;
-    const userMessage = textInput.trim();
-    setMessages(prev => [...prev, { type: 'user', content: userMessage }]);
-    setTextInput('');
-    setIsTyping(true);
-    setMessageCount(prev => prev + 1);
-
-    const { text: aiResponse, fallback: usedFallback } = await callGPT(userMessage);
+    turns.current += 1;
+    history.current = [...history.current, { role: 'assistant', content: reply }];
     setIsTyping(false);
-    setMessages(prev => [...prev, { type: 'ai', content: aiResponse }]);
-
-    // The assistant now asks for the contact details itself, in the conversation. The form below
-    // is only the safety net for when the assistant is unreachable and canned replies are used.
-    if (usedFallback && messageCount >= 3) {
-      setTimeout(() => {
-        setIsTyping(true);
-        setTimeout(() => {
-          setIsTyping(false);
-          const lang = detectLang(userMessage, locale);
-          const contactPrompt = lang === 'fr'
-            ? "J'ai une bonne idée de votre projet. Pour qu'un ingénieur vous rappelle, laissez-moi votre prénom et votre numéro."
-            : lang === 'ar'
-            ? "فهمت مشروعك جيداً. ليتصل بك مهندس من سيملوب، اترك لي اسمك ورقم هاتفك."
-            : "I have a clear picture of your project. For an engineer to call you back, leave me your first name and phone number.";
-          setMessages(prev => [...prev, { type: 'ai', content: contactPrompt }]);
-          setStage('contact');
-        }, 800);
-      }, 1000);
-    }
+    setMessages((m) => [...m, { type: 'ai', content: reply }]);
+    setTimeout(() => inputRef.current?.focus(), 50);
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      handleTextSubmit();
+  const startChat = (firstName) => {
+    setStage('chat');
+    if (!messages.length) {
+      const greeting = c.hello(firstName);
+      setMessages([{ type: 'ai', content: greeting }]);
+      history.current = [{ role: 'assistant', content: greeting }];
     }
+    if (initialQuestion && !turns.current) ask(initialQuestion);
+    else setTimeout(() => inputRef.current?.focus(), 80);
   };
 
-  // ── Firebase submission (unchanged) ───────────────────────────────
-  const handleContactSubmit = async () => {
-    if (!contactData.name.trim() || !contactData.phone.trim()) return;
-    const contactString = `${contactData.name} - ${contactData.phone}${contactData.email ? ` - ${contactData.email}` : ''}`;
-    setMessages(prev => [...prev, { type: 'user', content: contactString }]);
-    setIsTyping(true);
-    setIsSubmitting(true);
-
+  const gateReady = visitor.firstName.trim() && visitor.lastName.trim() && visitor.phone.replace(/\D/g, '').length >= 8 && visitor.okToCall !== null;
+  const submitGate = async (e) => {
+    e.preventDefault();
+    if (!gateReady || registering) return;
+    setRegistering(true); setGateError('');
+    const v = { firstName: visitor.firstName.trim(), lastName: visitor.lastName.trim(), phone: visitor.phone.trim(), okToCall: visitor.okToCall === true };
     try {
-      const conversationText = messages.map(m => `${m.type === 'ai' ? 'AI' : 'User'}: ${m.content}`).join('\n');
-      // Firestore is loaded on submit only — keeps ~250 KB of Firebase out of the
-      // shared bundle every page downloads.
-      const [{ db }, { collection, addDoc, serverTimestamp }] = await Promise.all([
-        import("../../lib/firebase"),
-        import("firebase/firestore"),
-      ]);
-      await addDoc(collection(db, "ai_onboarding_leads"), {
-        name: contactData.name.trim(),
-        email: contactData.email.trim(),
-        phone: contactData.phone.trim(),
-        conversation: conversationText,
-        messageCount,
-        locale,
-        source: "ai_onboarding",
-        createdAt: serverTimestamp(),
-        status: "new"
-      });
-
-      setTimeout(() => {
-        setIsTyping(false);
-        setIsSubmitting(false);
-        const thankYou = locale === 'fr'
-          ? "Merci. Notre équipe va analyser votre projet et vous contactera dans les 24 heures avec une proposition sur mesure."
-          : locale === 'ar'
-          ? "شكراً. سيقوم فريقنا بتحليل مشروعك والتواصل معك خلال 24 ساعة مع عرض مخصص."
-          : "Thank you. Our team will analyze your project and contact you within 24 hours with a custom proposal.";
-        setMessages(prev => [...prev, { type: 'ai', content: thankYou }]);
-        setStage('complete');
-      }, 1000);
-    } catch (error) {
-      console.error('Error saving to Firebase:', error);
-      setIsTyping(false);
-      setIsSubmitting(false);
+      const response = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'register', visitor: v, locale, page: router.asPath, question: initialQuestion }) });
+      const data = await response.json().catch(() => ({}));
+      if (response.status === 400) { setGateError(c.error); setRegistering(false); return; }
+      if (!response.ok || !data.lead_id) throw new Error('not saved');
+      lead.current.known = { firstName: v.firstName, okToCall: v.okToCall };
+      markSaved(data.lead_id);
+      setRegistering(false);
+      startChat(v.firstName);
+    } catch (err) {
+      setGateError(c.failed); setRegistering(false);
     }
   };
 
-  // ── Shared input class ────────────────────────────────────────────
-  const inputClass = `w-full bg-transparent border border-white/[0.12] px-5 py-4 text-white text-base placeholder-white/30 focus:outline-none focus:border-white/40 transition-colors ${isRTL ? 'text-right' : ''}`;
+  const field = `w-full bg-transparent border border-white/15 px-4 py-3 text-white text-[15px] placeholder-white/35 focus:outline-none focus:border-white/50 transition-colors ${isRTL ? 'text-right' : ''}`;
+  const choice = (on) => `flex-1 px-4 py-3 text-sm border transition-colors ${on ? 'border-white bg-white text-black' : 'border-white/15 text-white/75 hover:border-white/40'}`;
+  const showSuggestions = stage === 'chat' && !turns.current && !isTyping && messages.length <= 1;
 
   return (
-    <div className={`fixed inset-0 bg-black z-[100] overflow-hidden ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className="fixed inset-0 z-[100]" dir={isRTL ? 'rtl' : 'ltr'} role="dialog" aria-modal="true" aria-label={c.title}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 bg-black/70" onClick={onSkip} />
+      <motion.aside initial={{ opacity: 0, x: isRTL ? -24 : 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.25 }}
+        className={`absolute inset-y-0 ${isRTL ? 'left-0 sm:border-r' : 'right-0 sm:border-l'} w-full sm:w-[460px] bg-[#0b0b0c] border-white/10 flex flex-col text-white shadow-2xl`}>
 
-      <AnimatePresence mode="wait">
-        {/* ── Welcome Screen ─────────────────────────────────────── */}
-        {stage === 'welcome' && (
-          <motion.div
-            key="welcome"
-            initial={false}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, y: -30 }}
-            className="relative h-full flex flex-col items-center justify-center px-6"
-          >
-            {/* Close button */}
-            <button
-              onClick={onSkip}
-              className="absolute top-6 right-6 text-white/40 hover:text-white transition-colors"
-            >
-              <X className="w-6 h-6" strokeWidth={1.5} />
+        {/* header */}
+        <div className="flex items-center justify-between gap-4 px-5 py-4 border-b border-white/10">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="flex items-center justify-center w-9 h-9 border border-white/15 shrink-0"><Sparkles className="w-4 h-4" strokeWidth={1.5} style={{ color: GOLD }} /></div>
+            <div className="min-w-0">
+              <h2 className="text-[15px] font-medium leading-tight">{c.title}</h2>
+              <p className="text-[12px] text-white/45 truncate">
+                {isTyping ? c.typing : leadSaved ? <span style={{ color: GOLD }}>{c.saved}</span> : c.status}
+              </p>
+            </div>
+          </div>
+          <button onClick={onSkip} aria-label={c.close} className="flex items-center justify-center w-9 h-9 text-white/50 hover:text-white transition-colors"><X className="w-5 h-5" strokeWidth={1.5} /></button>
+        </div>
+
+        {/* step 1: details */}
+        {stage === 'gate' && (
+          <form onSubmit={submitGate} className="flex-1 overflow-y-auto px-5 py-6">
+            <h3 className="text-2xl font-light tracking-tight">{c.gateTitle}</h3>
+            <p className="mt-2 text-[14px] leading-relaxed text-white/60">{c.gateText}</p>
+
+            {initialQuestion ? (
+              <div className="mt-5 border-s-2 ps-4 py-1" style={{ borderColor: GOLD }}>
+                <p className="text-[12px] text-white/45">{c.yourQuestion}</p>
+                <p className="mt-1 text-[14px] text-white/90 leading-relaxed">{initialQuestion}</p>
+              </div>
+            ) : null}
+
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              <label className="block"><span className="block text-[12px] text-white/55 mb-1.5">{c.first}</span>
+                <input className={field} value={visitor.firstName} onChange={(e) => setVisitor((v) => ({ ...v, firstName: e.target.value }))} autoComplete="given-name" maxLength={80} autoFocus /></label>
+              <label className="block"><span className="block text-[12px] text-white/55 mb-1.5">{c.last}</span>
+                <input className={field} value={visitor.lastName} onChange={(e) => setVisitor((v) => ({ ...v, lastName: e.target.value }))} autoComplete="family-name" maxLength={80} /></label>
+            </div>
+            <label className="block mt-3"><span className="block text-[12px] text-white/55 mb-1.5">{c.phone}</span>
+              <input className={field} type="tel" dir="ltr" inputMode="tel" value={visitor.phone} onChange={(e) => setVisitor((v) => ({ ...v, phone: e.target.value }))} autoComplete="tel" maxLength={40} placeholder="05 50 00 00 00" /></label>
+
+            <fieldset className="mt-5">
+              <legend className="text-[13px] text-white/80 mb-2">{c.callQ}</legend>
+              <div className="flex gap-3">
+                <button type="button" aria-pressed={visitor.okToCall === true} onClick={() => setVisitor((v) => ({ ...v, okToCall: true }))} className={choice(visitor.okToCall === true)}>{c.yes}</button>
+                <button type="button" aria-pressed={visitor.okToCall === false} onClick={() => setVisitor((v) => ({ ...v, okToCall: false }))} className={choice(visitor.okToCall === false)}>{c.no}</button>
+              </div>
+            </fieldset>
+
+            {gateError ? <p role="alert" className="mt-4 text-[13px]" style={{ color: GOLD }}>{gateError}</p> : null}
+
+            <button type="submit" disabled={!gateReady || registering} className="mt-6 w-full flex items-center justify-center gap-3 bg-white text-black px-6 py-4 text-sm font-medium disabled:opacity-35 disabled:cursor-not-allowed hover:bg-white/90 transition-colors">
+              {registering ? <><Loader2 className="w-4 h-4 animate-spin" /><span>{c.sending}</span></> : <><span>{c.start}</span>{isRTL ? <ArrowLeft className="w-4 h-4" strokeWidth={1.75} /> : <ArrowRight className="w-4 h-4" strokeWidth={1.75} />}</>}
             </button>
-
-            {/* Icon */}
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", duration: 0.6 }}
-              className="mb-10 flex items-center justify-center w-20 h-20 border border-white/[0.12]"
-            >
-              <Sparkles className="w-8 h-8 text-white/80" strokeWidth={1.5} />
-            </motion.div>
-
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ y: 16 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="flex items-center gap-3 mb-8"
-            >
-              <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-white/40">
-                {locale === 'fr' ? 'Assistant IA · Symloop' : locale === 'ar' ? 'مساعد ذكي · سيملوب' : 'AI Assistant · Symloop'}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ y: 20 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="text-4xl sm:text-5xl lg:text-7xl font-light text-center tracking-tight leading-[1.05] mb-6"
-            >
-              {locale === 'fr' ? 'Décrivez votre projet.' : locale === 'ar' ? 'صف مشروعك.' : 'Describe your project.'}
-            </motion.h1>
-
-            <motion.p
-              initial={{ y: 16 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-lg text-white/50 text-center max-w-md mb-12"
-            >
-              {locale === 'fr'
-                ? "Notre assistant analyse votre besoin et prépare une proposition en moins de 5 minutes."
-                : locale === 'ar'
-                ? "مساعدنا يحلل احتياجك ويحضّر عرضاً في أقل من 5 دقائق."
-                : "Our assistant analyzes your need and prepares a proposal in under 5 minutes."}
-            </motion.p>
-
-            {/* CTAs */}
-            <motion.div
-              initial={{ y: 20 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-col gap-4 w-full max-w-sm"
-            >
-              <button
-                onClick={startAIChat}
-                className="group flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-sm font-medium tracking-wide hover:bg-white/90 transition-colors"
-              >
-                <Sparkles className="w-4 h-4" strokeWidth={1.75} />
-                <span>
-                  {locale === 'fr' ? 'Commencer' : locale === 'ar' ? 'ابدأ' : 'Start'}
-                </span>
-                {isRTL
-                  ? <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" strokeWidth={1.75} />
-                  : <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={1.75} />
-                }
-              </button>
-
-              <button
-                onClick={onSkip}
-                className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/40 hover:text-white transition-colors py-3"
-              >
-                {locale === 'fr' ? 'Passer' : locale === 'ar' ? 'تخطي' : 'Skip'}
-              </button>
-            </motion.div>
-          </motion.div>
+            <p className="mt-3 text-[12px] text-white/40">{c.privacy} <a href={`${locale === 'en' ? '' : `/${locale}`}/privacy/`} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white/70">{c.privacyLink}</a></p>
+            <button type="button" onClick={() => startChat('')} className="mt-6 text-[13px] text-white/45 hover:text-white underline underline-offset-4 transition-colors">{c.skip}</button>
+          </form>
         )}
 
-        {/* ── Chat Screen ────────────────────────────────────────── */}
-        {(stage === 'chat' || stage === 'contact' || stage === 'complete') && (
-          <motion.div
-            key="chat"
-            initial={false}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="relative h-full flex flex-col"
-          >
-            {/* Header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-white/[0.06]">
-              <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center w-9 h-9 border border-white/[0.12]">
-                  <Sparkles className="w-4 h-4 text-white/70" strokeWidth={1.5} />
+        {/* step 2: chat */}
+        {stage === 'chat' && (
+          <>
+            <div className="flex-1 overflow-y-auto px-5 py-5 space-y-3" aria-live="polite">
+              {messages.map((message, index) => (
+                <div key={index} className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}>
+                  <div className={`max-w-[86%] px-4 py-3 text-[14.5px] leading-relaxed whitespace-pre-wrap break-words ${message.type === 'user' ? 'bg-white text-black' : 'bg-white/[0.05] border border-white/10 text-white/90'}`}>{message.content}</div>
                 </div>
-                <div>
-                  <h2 className="text-sm font-medium text-white">
-                    {locale === 'fr' ? 'Assistant Symloop' : locale === 'ar' ? 'مساعد سيملوب' : 'Symloop Assistant'}
-                  </h2>
-                  <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-white/40">
-                    {isTyping
-                      ? (locale === 'fr' ? 'Écrit...' : locale === 'ar' ? 'يكتب...' : 'Typing...')
-                      : (locale === 'fr' ? 'En ligne' : locale === 'ar' ? 'متصل' : 'Online')}
-                  </p>
-                </div>
-              </div>
-
-              {stage !== 'complete' && (
-                <button onClick={onSkip} className="text-white/40 hover:text-white transition-colors">
-                  <X className="w-5 h-5" strokeWidth={1.5} />
-                </button>
-              )}
-            </div>
-
-            {/* Messages */}
-            <div className="flex-1 overflow-y-auto px-6 py-6 space-y-4">
-              <AnimatePresence>
-                {messages.map((message, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ y: 12 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.25 }}
-                    className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
-                  >
-                    <div
-                      className={`max-w-[80%] px-5 py-4 text-sm leading-relaxed ${
-                        message.type === 'user'
-                          ? 'bg-white text-black'
-                          : 'bg-white/[0.04] border border-white/[0.08] text-white/80'
-                      }`}
-                    >
-                      {message.content}
-                    </div>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-
+              ))}
               {isTyping && (
-                <motion.div initial={false} animate={{ opacity: 1 }} className="flex justify-start">
-                  <div className="bg-white/[0.04] border border-white/[0.08] px-5 py-4 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 bg-white/40 rounded-full animate-pulse" />
-                    <span className="w-1.5 h-1.5 bg-white/40 rounded-full animate-pulse" style={{ animationDelay: '0.15s' }} />
-                    <span className="w-1.5 h-1.5 bg-white/40 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
-                  </div>
-                </motion.div>
+                <div className="flex justify-start"><div className="bg-white/[0.05] border border-white/10 px-4 py-3.5 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 bg-white/50 rounded-full animate-pulse" /><span className="w-1.5 h-1.5 bg-white/50 rounded-full animate-pulse" style={{ animationDelay: '0.15s' }} /><span className="w-1.5 h-1.5 bg-white/50 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
+                </div></div>
               )}
-
-              <div ref={messagesEndRef} />
+              {showSuggestions && (
+                <div className="pt-3">
+                  <p className="text-[12px] text-white/40 mb-2">{c.tryAsking}</p>
+                  <div className="flex flex-col items-start gap-2">
+                    {(SUGGESTIONS[locale] || SUGGESTIONS.en).map((q) => (
+                      <button key={q} type="button" onClick={() => ask(q)} className="text-start text-[13.5px] text-white/80 border border-white/15 hover:border-white/45 hover:text-white px-3.5 py-2.5 transition-colors">{q}</button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <div ref={endRef} />
             </div>
 
-            {/* Input area */}
-            {(stage === 'chat' || stage === 'contact') && messages.length > 0 && (
-              <div className="px-6 py-5 border-t border-white/[0.06]">
-                {stage === 'contact' ? (
-                  <motion.div initial={{ y: 12 }} animate={{ y: 0 }} className="space-y-3">
-                    <input
-                      type="text"
-                      value={contactData.name}
-                      onChange={(e) => setContactData(prev => ({ ...prev, name: e.target.value }))}
-                      placeholder={locale === 'fr' ? "Votre nom *" : locale === 'ar' ? "اسمك *" : "Your name *"}
-                      className={inputClass}
-                      dir={isRTL ? 'rtl' : 'ltr'}
-                    />
-                    <input
-                      type="tel"
-                      value={contactData.phone}
-                      onChange={(e) => setContactData(prev => ({ ...prev, phone: e.target.value }))}
-                      placeholder={locale === 'fr' ? "Téléphone *" : locale === 'ar' ? "الهاتف *" : "Phone *"}
-                      className={inputClass}
-                      dir="ltr"
-                    />
-                    <input
-                      type="email"
-                      value={contactData.email}
-                      onChange={(e) => setContactData(prev => ({ ...prev, email: e.target.value }))}
-                      placeholder={locale === 'fr' ? "Email (optionnel)" : locale === 'ar' ? "البريد الإلكتروني (اختياري)" : "Email (optional)"}
-                      className={inputClass}
-                      dir="ltr"
-                    />
-                    <button
-                      onClick={handleContactSubmit}
-                      disabled={!contactData.name.trim() || !contactData.phone.trim() || isSubmitting}
-                      className="w-full flex items-center justify-center gap-3 bg-white text-black px-6 py-4 text-sm font-medium tracking-wide disabled:opacity-30 disabled:cursor-not-allowed hover:bg-white/90 transition-colors"
-                    >
-                      {isSubmitting ? (
-                        <><Loader2 className="w-4 h-4 animate-spin" /><span>{locale === 'fr' ? 'Envoi...' : locale === 'ar' ? 'جاري الإرسال...' : 'Sending...'}</span></>
-                      ) : (
-                        <><span>{locale === 'fr' ? 'Envoyer' : locale === 'ar' ? 'إرسال' : 'Send'}</span><ArrowRight className="w-4 h-4" strokeWidth={1.75} /></>
-                      )}
-                    </button>
-                  </motion.div>
-                ) : (
-                  <div className="flex gap-3">
-                    <input
-                      type="text"
-                      value={textInput}
-                      onChange={(e) => setTextInput(e.target.value)}
-                      onKeyPress={handleKeyPress}
-                      placeholder={locale === 'fr' ? "Votre message..." : locale === 'ar' ? "رسالتك..." : "Your message..."}
-                      className={`flex-1 ${inputClass}`}
-                      dir={isRTL ? 'rtl' : 'ltr'}
-                      disabled={isTyping}
-                    />
-                    <button
-                      onClick={handleTextSubmit}
-                      disabled={!textInput.trim() || isTyping}
-                      className="flex items-center justify-center w-14 bg-white text-black disabled:opacity-30 disabled:cursor-not-allowed hover:bg-white/90 transition-colors"
-                    >
-                      <Send className="w-4 h-4" strokeWidth={1.75} />
-                    </button>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Complete state */}
-            {stage === 'complete' && (
-              <motion.div initial={{ y: 12 }} animate={{ y: 0 }} className="px-6 py-5 border-t border-white/[0.06]">
-                <button
-                  onClick={() => onComplete && onComplete(contactData)}
-                  className="w-full flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-sm font-medium tracking-wide hover:bg-white/90 transition-colors"
-                >
-                  <span>{locale === 'fr' ? 'Voir le site' : locale === 'ar' ? 'عرض الموقع' : 'View site'}</span>
-                  <ArrowRight className="w-4 h-4" strokeWidth={1.75} />
-                </button>
-              </motion.div>
-            )}
-          </motion.div>
+            <form onSubmit={(e) => { e.preventDefault(); ask(textInput); }} className="px-5 py-4 border-t border-white/10 flex gap-2.5">
+              <input ref={inputRef} type="text" value={textInput} onChange={(e) => setTextInput(e.target.value)} placeholder={c.placeholder} className={`flex-1 ${field}`} dir={isRTL ? 'rtl' : 'ltr'} maxLength={2000} />
+              <button type="submit" disabled={!textInput.trim() || isTyping} aria-label={c.send} className="flex items-center justify-center w-12 bg-white text-black disabled:opacity-35 disabled:cursor-not-allowed hover:bg-white/90 transition-colors"><Send className={`w-4 h-4 ${isRTL ? '-scale-x-100' : ''}`} strokeWidth={1.75} /></button>
+            </form>
+          </>
         )}
-      </AnimatePresence>
+      </motion.aside>
     </div>
   );
 }

@@ -520,3 +520,9 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4, 
 .group:hover .group-hover\:animate-wobble {
   animation: wobble 0.5s ease-in-out;
 }
+
+/* Phones and tablets already have the fixed contact bar (assistant, WhatsApp, phone):
+   the floating WhatsApp button would sit on top of it. */
+@media (max-width: 1023px) {
+  .wa-fab { display: none !important; }
+}

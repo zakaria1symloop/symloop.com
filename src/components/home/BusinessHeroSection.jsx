@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useRouter } from 'next/router';
 import { ArrowRight, ArrowLeft, MessageCircle } from "lucide-react";
+import HeroAssistant from './HeroAssistant';
 
 // ============================================================================
 // SYMLOOP — BusinessHeroSection (v7 — the blueprint that builds itself)
@@ -314,7 +315,13 @@ export default function BusinessHeroSection() {
               </AnimatePresence>
             </div>
 
-            <motion.div {...fade(0.4, 12)} className="mt-10 flex flex-wrap items-center gap-4">
+            {/* the site assistant: ask a question from the hero */}
+            <motion.div {...fade(0.3, 12)}>
+              <HeroAssistant locale={locale} />
+            </motion.div>
+
+            {/* buttons and commitments: larger screens only (phones have the fixed contact bar) */}
+            <motion.div {...fade(0.4, 12)} className="mt-8 hidden sm:flex flex-wrap items-center gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 bg-white text-black px-7 py-4 text-sm font-medium hover:bg-white/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 <MessageCircle className="w-4 h-4" strokeWidth={1.75} />
                 <span>{c.ctaWhatsapp}</span>
@@ -326,7 +333,7 @@ export default function BusinessHeroSection() {
               </a>
             </motion.div>
 
-            <motion.ul {...fade(0.6)} className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-2 text-[13px] text-white/60">
+            <motion.ul {...fade(0.6)} className="mt-10 hidden sm:flex flex-wrap items-center gap-x-7 gap-y-2 text-[13px] text-white/60">
               {c.commitments.map((t) => (
                 <li key={t} className="flex items-center gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: GOLD }} />
