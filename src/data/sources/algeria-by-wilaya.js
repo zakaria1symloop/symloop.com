@@ -1,18 +1,20 @@
 // Verified IT companies and web agencies, regrouped by wilaya, for the pages
 // /entreprises-informatiques/<wilaya>/. Nothing new is stated here: the entries are the ones
-// already verified for the national lists (their own site loads and states the city).
+// already verified for the national lists, plus those found wilaya by wilaya
+// (algeria-wilaya-companies.js). In every case their own site loads and states the city.
 //
 // A wilaya gets a page only when at least one company based there has been verified. To add a
 // wilaya, verify companies there and add them to algeria-tech-companies.js or
 // algeria-web-agencies.js with the wilaya's key as `city`; the page and the sitemap entry follow.
 import { COMPANIES, TOP_COMPANIES } from './algeria-tech-companies';
 import { AGENCIES, TOP_AGENCIES } from './algeria-web-agencies';
+import { WILAYA_COMPANIES } from './algeria-wilaya-companies';
 
 export const VERIFIED_ON = '2026-11-25';
 
 const alpha = (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' });
 const seen = new Map();
-for (const x of [...COMPANIES, ...AGENCIES]) if (!x.self && x.city && !seen.has(x.name)) seen.set(x.name, x);
+for (const x of [...COMPANIES, ...AGENCIES, ...WILAYA_COMPANIES]) if (!x.self && x.city && !seen.has(x.name)) seen.set(x.name, x);
 const LOCAL = [...seen.values()].sort(alpha);
 const SYMLOOP = COMPANIES.find((x) => x.self);
 // wilayas where Symloop itself has a team
