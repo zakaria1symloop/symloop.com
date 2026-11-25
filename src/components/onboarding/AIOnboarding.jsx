@@ -20,9 +20,9 @@ import { X, ArrowRight, ArrowLeft, Sparkles, Send, Loader2 } from "lucide-react"
 
 const getGreeting = (locale) => {
   const greetings = {
-    fr: "Bonjour. Je suis l'assistant Symloop. Décrivez votre projet en quelques phrases — je poserai les bonnes questions ensuite.",
-    en: "Hello. I'm the Symloop assistant. Describe your project in a few sentences — I'll ask the right questions next.",
-    ar: "مرحباً. أنا مساعد سيملوب. صف مشروعك في بضع جمل — سأطرح الأسئلة الصحيحة بعدها."
+    fr: "Bonjour. Je suis l'assistant IA de Symloop. Posez-moi n'importe quelle question sur un logiciel, une application ou l'IA, ou décrivez votre projet.",
+    en: "Hello. I'm Symloop's AI assistant. Ask me any question about software, apps or AI, or describe your project.",
+    ar: "مرحباً. أنا المساعد الذكي لسيملوب. اطرح عليّ أي سؤال عن البرمجيات أو التطبيقات أو الذكاء الاصطناعي، أو صف مشروعك."
   };
   return greetings[locale] || greetings.en;
 };
@@ -285,6 +285,8 @@ export default function AIOnboarding({ onComplete, onSkip }) {
   const [textInput, setTextInput] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [messageCount, setMessageCount] = useState(0);
+  // true once the assistant has saved the visitor's details (name, surname, phone, consent to a call)
+  const [leadSaved, setLeadSaved] = useState(false);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -311,19 +313,24 @@ export default function AIOnboarding({ onComplete, onSkip }) {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newHistory, locale })
+        body: JSON.stringify({ messages: newHistory, locale, page: router.asPath, leadSaved })
       });
       if (!response.ok) throw new Error('API error');
       const data = await response.json();
       const aiResponse = data.message;
       if (!aiResponse) throw new Error('Empty response');
       setChatHistory([...newHistory, { role: 'assistant', content: aiResponse }]);
-      return aiResponse;
+      if (data.lead_saved && !leadSaved) {
+        setLeadSaved(true);
+        // same conversion event as the contact forms, when the Meta pixel is installed
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') window.fbq('track', 'Lead', { content_name: 'chatbot' });
+      }
+      return { text: aiResponse, fallback: false };
     } catch (error) {
       console.error('GPT Error:', error);
       const fallback = getSmartFallback(userMessage, messageCount);
       setChatHistory(prev => [...prev, { role: 'user', content: userMessage }, { role: 'assistant', content: fallback }]);
-      return fallback;
+      return { text: fallback, fallback: true };
     }
   };
 
@@ -346,11 +353,13 @@ export default function AIOnboarding({ onComplete, onSkip }) {
     setIsTyping(true);
     setMessageCount(prev => prev + 1);
 
-    const aiResponse = await callGPT(userMessage);
+    const { text: aiResponse, fallback: usedFallback } = await callGPT(userMessage);
     setIsTyping(false);
     setMessages(prev => [...prev, { type: 'ai', content: aiResponse }]);
 
-    if (messageCount >= 3) {
+    // The assistant now asks for the contact details itself, in the conversation. The form below
+    // is only the safety net for when the assistant is unreachable and canned replies are used.
+    if (usedFallback && messageCount >= 3) {
       setTimeout(() => {
         setIsTyping(true);
         setTimeout(() => {

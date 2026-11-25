@@ -16,7 +16,7 @@ const T = {
       ['Qui nous sommes', ['Symloop est une société de développement logiciel algérienne, présente à Alger et à Sétif. Pour toute question sur vos données : ' + EMAIL + '.']],
       ['Ce que nous collectons', [
         'Les formulaires de contact : nom, adresse e-mail, téléphone, société, secteur, votre message, ainsi que la page et la langue depuis lesquelles vous écrivez. Nous ne collectons ces données que si vous envoyez le formulaire.',
-        'L’assistant du site : les messages que vous lui écrivez sont transmis à un fournisseur de modèles de langage pour produire la réponse. N’y écrivez pas d’informations confidentielles.',
+        'L’assistant du site : les messages que vous lui écrivez sont transmis à un fournisseur de modèles de langage (Anthropic) pour produire la réponse. Si vous lui donnez votre prénom, votre nom et votre numéro de téléphone pour être rappelé, nous les enregistrons avec la conversation et votre réponse à la question « acceptez-vous un appel de Symloop ». N’y écrivez pas d’informations confidentielles.',
         'La mesure d’audience : des statistiques de visite sans cookie (pages vues, pays, type d’appareil) et des mesures de performance des pages.',
         'La mesure publicitaire : une balise Google, et, lorsqu’il est activé, le pixel Meta, enregistrent qu’une visite ou une demande de contact fait suite à une publicité. Ces outils peuvent déposer des cookies.',
       ]],
@@ -46,7 +46,7 @@ const T = {
       ['Who we are', ['Symloop is a software development company based in Algeria, with teams in Algiers and Sétif. For any question about your data: ' + EMAIL + '.']],
       ['What we collect', [
         'Contact forms: name, email address, phone, company, sector, your message, and the page and language you write from. We collect this only if you submit the form.',
-        'The site assistant: the messages you write to it are sent to a language-model provider to produce the reply. Do not write confidential information there.',
+        'The site assistant: the messages you write to it are sent to a language-model provider (Anthropic) to produce the reply. If you give it your first name, surname and phone number to be called back, we save them with the conversation and your answer to “do you agree to receive a call from Symloop”. Do not write confidential information there.',
         'Audience measurement: cookieless visit statistics (pages viewed, country, device type) and page performance measurements.',
         'Advertising measurement: a Google tag and, when enabled, the Meta Pixel record that a visit or a contact request follows an advertisement. These tools may set cookies.',
       ]],
@@ -76,7 +76,7 @@ const T = {
       ['من نحن', ['Symloop شركة جزائرية لتطوير البرمجيات، حاضرة في الجزائر العاصمة وسطيف. لأي سؤال عن بياناتكم: ' + EMAIL + '.']],
       ['ما نجمعه', [
         'استمارات الاتصال: الاسم، البريد الإلكتروني، الهاتف، المؤسسة، القطاع، رسالتكم، والصفحة واللغة التي تكتبون منها. لا نجمع هذه البيانات إلا إذا أرسلتم الاستمارة.',
-        'مساعد الموقع: الرسائل التي تكتبونها له تُرسَل إلى مزوّد نماذج لغوية لإنتاج الجواب. لا تكتبوا فيه معلومات سرية.',
+        'مساعد الموقع: الرسائل التي تكتبونها له تُرسَل إلى مزوّد نماذج لغوية (Anthropic) لإنتاج الجواب. وإذا أعطيتموه اسمكم ولقبكم ورقم هاتفكم ليُتّصل بكم، نسجّلها مع المحادثة ومع جوابكم عن سؤال «هل تقبلون اتصالاً من Symloop». لا تكتبوا فيه معلومات سرية.',
         'قياس الزيارات: إحصائيات دون ملفات تعريف الارتباط (الصفحات المشاهَدة، البلد، نوع الجهاز) وقياسات أداء الصفحات.',
         'قياس الإعلانات: وسم من غوغل، وعند تفعيله بكسل ميتا، يسجّلان أن زيارة أو طلب اتصال جاء بعد إعلان. وقد تضع هذه الأدوات ملفات تعريف الارتباط.',
       ]],
