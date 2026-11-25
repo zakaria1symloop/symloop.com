@@ -13,6 +13,7 @@ export const SOURCE_PAGES = [
   { slug: 'hebergeurs-web-algerie', verifiedOn: '2026-11-25' },
   { slug: 'logiciels-gestion-de-stock-algerie', verifiedOn: '2026-11-25' },
   { slug: 'logiciels-pharmacie-algerie', verifiedOn: '2026-11-25' },
+  { slug: 'logiciels-restaurant-algerie', verifiedOn: '2026-11-25' },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25' })),
 ];
