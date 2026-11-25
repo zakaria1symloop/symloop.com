@@ -7,6 +7,7 @@
 // see them as orphaned and never index them.
 import fs from 'fs';
 import path from 'path';
+import { SOURCE_PAGES } from '../data/sources';
 
 const SITE_URL = 'https://symloop.com';
 const LOCALES = ['en', 'fr', 'ar'];
@@ -207,8 +208,15 @@ export async function getServerSideProps({ res }) {
   // ═══════════════════════════════════════
   // COMBINE
   // ═══════════════════════════════════════
+  // Source pages (sourced, dated lists at the top level) and the contact page: registered by hand,
+  // because top-level files are not auto-discovered.
+  const sourcePages = SOURCE_PAGES.map((p) => ({ path: `/${p.slug}/`, lastmod: p.verifiedOn, changefreq: 'weekly', priority: '0.9' }));
+  const contactPage = [{ path: '/contact/', lastmod: today, changefreq: 'monthly', priority: '0.6' }];
+
   const allUrls = [
     ...staticPages,
+    ...sourcePages,
+    ...contactPage,
     ...caseStudyPages,
     ...insightPages,
     ...servicePages,
