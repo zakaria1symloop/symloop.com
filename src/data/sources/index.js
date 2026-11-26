@@ -31,6 +31,7 @@ export const SOURCE_PAGES = [
   { slug: 'coworking-alger', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Espaces de coworking à Alger', en: 'Coworking spaces in Algiers', ar: 'فضاءات العمل المشترك في الجزائر العاصمة' } },
   { slug: 'formation-informatique-alger', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Formations informatiques à Alger', en: 'IT training in Algiers', ar: 'تكوينات الإعلام الآلي في الجزائر العاصمة' } },
   { slug: 'logiciels-facturation-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels de facturation', en: 'Invoicing software', ar: 'برامج الفوترة' } },
+  { slug: 'recrutement-informatique-algerie', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Recrutement informatique : sites d’emploi et cabinets', en: 'IT recruitment: job sites and firms', ar: 'التوظيف في المعلوماتية: المواقع والمكاتب' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
