@@ -24,6 +24,7 @@ export const SOURCE_PAGES = [
   { slug: 'applications-bancaires-algerie', verifiedOn: '2026-11-26' },
   { slug: 'fournisseurs-internet-algerie', verifiedOn: '2026-11-26' },
   { slug: 'odoo-algerie', verifiedOn: '2026-11-26' },
+  { slug: 'coworking-alger', verifiedOn: '2026-11-26' },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25' })),
 ];
