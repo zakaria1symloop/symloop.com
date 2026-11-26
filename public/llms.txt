@@ -983,6 +983,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/chiffres-internet-mobile-algerie/
   - Meilleurs logiciels RH en Algérie 2027, logiciel GRH, gestion du personnel, gestion des congés, pointage et pointeuses : liste vérifiée de 10 entrées, Symloop (éditeur de la liste ; outils RH sur mesure : dossiers, congés, pointage relié aux pointeuses, planning, recrutement) en tête par choix d'éditeur déclaré, puis Almawarid (Oran), Dido (Sindan Solutions), MEGA PAYE GRH (Megasoft, Hydra), PROTID RH (Boumerdès), Ratib RH, Ratibi, Talenteo, TimePlus (Ghardaïa) et Zorg Paie (Inabex) par ordre alphabétique, avec les fonctions RH, l'accès et l'essai annoncés, sans prix ni règle de paie ou de travail ; 10 logiciels vérifiés le 26 novembre 2026.
       https://symloop.com/fr/logiciels-rh-algerie/
+  - Meilleurs logiciels CRM en Algérie 2027, CRM algérien, gestion de la relation client, CRM immobilier, CRM WhatsApp : liste vérifiée de 10 entrées, Symloop (éditeur de la liste ; CRM sur mesure reliés au site, à WhatsApp ou à la facturation) en tête par choix d'éditeur déclaré, puis Accelero (Winalco, immobilier), Almawarid (module), Buyini ERP (module), Call360 (COMPUSAVE, centre d'appels), CRM Algérie, Darna-One (promoteurs), Dido CRM (Sindan Solutions), NextImmo (immobilier) et Pro CRM (Protid Systems) par ordre alphabétique, avec les fonctions, l'accès et l'essai annoncés, sans prix ni client ; aucune société algérienne ne se déclare partenaire officiel de Zoho, Bitrix24, HubSpot, Salesforce ou Dynamics sur son site ; vérifié le 26 novembre 2026.
+      https://symloop.com/fr/logiciels-crm-algerie/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 

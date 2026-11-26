@@ -41,6 +41,7 @@ export const SOURCE_PAGES = [
   { slug: 'suivi-gps-vehicules-algerie', verifiedOn: '2026-11-26', group: 'companies', title: { fr: 'Suivi GPS des véhicules et gestion de flotte', en: 'GPS vehicle tracking and fleet management', ar: 'تتبع المركبات بـ GPS وتسيير الأساطيل' } },
   { slug: 'chiffres-internet-mobile-algerie', verifiedOn: '2026-11-26', group: 'providers', title: { fr: 'Chiffres du mobile et d’internet : abonnés par opérateur (ARPCE)', en: 'Mobile and internet figures: subscribers by operator (ARPCE)', ar: 'أرقام النقال والإنترنت: المشتركون حسب المتعامل (ARPCE)' } },
   { slug: 'logiciels-rh-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels RH (congés, pointage, recrutement)', en: 'HR software (leave, attendance, recruitment)', ar: 'برامج الموارد البشرية' } },
+  { slug: 'logiciels-crm-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels CRM', en: 'CRM software', ar: 'برامج CRM' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
