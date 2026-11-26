@@ -981,6 +981,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/suivi-gps-vehicules-algerie/
   - Chiffres du mobile et d'internet en Algérie (nombre d'abonnés Mobilis, Djezzy, Ooredoo, abonnés internet, fibre) selon l'ARPCE, 2e trimestre 2026 (fin juin 2026) : 56 758 292 abonnés mobiles — Mobilis 23 157 898 (40,80 %), Djezzy 18 027 639 (31,76 %), Ooredoo 15 572 755 (27,44 %) ; +3,43 % en un an ; 90,97 % en 4G/5G ; 95,70 % en prépayé. 61 714 396 abonnés à internet, dont 54 744 829 par le mobile (88,71 %) et 6 969 567 par le fixe ; fibre FTTH 3 582 568, 4G LTE fixe 2 138 576, ADSL 1 243 933 ; 7 755 797 abonnés au fixe ; 351 552 cartes SIM M2M ; pic de bande passante 7 030 Gbps. Chiffres recopiés des observatoires de l'ARPCE, page publiée par Symloop.
       https://symloop.com/fr/chiffres-internet-mobile-algerie/
+  - Meilleurs logiciels RH en Algérie 2027, logiciel GRH, gestion du personnel, gestion des congés, pointage et pointeuses : liste vérifiée de 10 entrées, Symloop (éditeur de la liste ; outils RH sur mesure : dossiers, congés, pointage relié aux pointeuses, planning, recrutement) en tête par choix d'éditeur déclaré, puis Almawarid (Oran), Dido (Sindan Solutions), MEGA PAYE GRH (Megasoft, Hydra), PROTID RH (Boumerdès), Ratib RH, Ratibi, Talenteo, TimePlus (Ghardaïa) et Zorg Paie (Inabex) par ordre alphabétique, avec les fonctions RH, l'accès et l'essai annoncés, sans prix ni règle de paie ou de travail ; 10 logiciels vérifiés le 26 novembre 2026.
+      https://symloop.com/fr/logiciels-rh-algerie/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
