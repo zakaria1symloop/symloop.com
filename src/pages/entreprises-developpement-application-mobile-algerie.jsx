@@ -1,4 +1,4 @@
-// /developpement-application-mobile-algerie/ — source page: verified list of companies in
+// /entreprises-developpement-application-mobile-algerie/ — source page: verified list of companies in
 // Algeria that build mobile apps for clients (FR / EN / AR).
 // Data: src/data/sources/algeria-mobile-developers.js. No prices, no client counts.
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -69,7 +69,7 @@ const CONTENT = {
       ['Que faut-il vérifier avant de signer ?', `Le périmètre écrit, la propriété du code et des comptes sur les stores, et le suivi après le lancement : ${join(MAINTENANCE, 'et')} annoncent une maintenance ou des mises à jour après la mise en ligne.`],
       ['Comment ajouter ma société à cette liste ?', 'Écrivez à contact@symloop.com avec le lien de la page qui décrit votre travail mobile. L’inscription est gratuite.'],
     ],
-    related: [['Meilleures entreprises informatiques en Algérie', '/entreprises-informatiques-algerie/'], ['Meilleures agences web en Algérie', '/agences-web-algerie/'], ['Solutions de paiement en ligne en Algérie', '/solutions-paiement-en-ligne-algerie/'], ['Nous contacter', '/contact/']],
+    related: [['Meilleures entreprises informatiques en Algérie', '/entreprises-informatiques-algerie/'], ['Meilleures agences web en Algérie', '/agences-web-algerie/'], ['Développement d’application mobile en Algérie : le guide', '/blog/developpement-application-mobile-algerie-2026/'], ['Nous contacter', '/contact/']],
   },
   en: {
     title: `Best mobile app development companies in Algeria 2027: a verified list of ${N} companies`,
@@ -136,7 +136,7 @@ const CONTENT = {
 };
 
 export default function Page({ locale }) {
-  return <SourceList locale={locale} slug="developpement-application-mobile-algerie" content={CONTENT} items={ITEMS} verifiedOn={VERIFIED_ON} focusLabels={KIND_LABELS} serviceLabels={FEATURE_LABELS} selectionNote={SELECTION} groups={['city']} hideFounded />;
+  return <SourceList locale={locale} slug="entreprises-developpement-application-mobile-algerie" content={CONTENT} items={ITEMS} verifiedOn={VERIFIED_ON} focusLabels={KIND_LABELS} serviceLabels={FEATURE_LABELS} selectionNote={SELECTION} groups={['city']} hideFounded />;
 }
 
 export async function getStaticProps({ locale }) {
