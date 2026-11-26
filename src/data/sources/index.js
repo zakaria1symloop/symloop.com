@@ -34,6 +34,7 @@ export const SOURCE_PAGES = [
   { slug: 'recrutement-informatique-algerie', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Recrutement informatique : sites d’emploi et cabinets', en: 'IT recruitment: job sites and firms', ar: 'التوظيف في المعلوماتية: المواقع والمكاتب' } },
   { slug: 'agences-communication-alger', verifiedOn: '2026-11-26', group: 'companies', title: { fr: 'Agences de communication à Alger', en: 'Communication agencies in Algiers', ar: 'وكالات الاتصال في الجزائر العاصمة' } },
   { slug: 'logiciels-comptabilite-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels de comptabilité', en: 'Accounting software', ar: 'برامج المحاسبة' } },
+  { slug: 'data-centers-algerie', verifiedOn: '2026-11-26', group: 'providers', title: { fr: 'Data centers en Algérie', en: 'Data centers in Algeria', ar: 'مراكز البيانات في الجزائر' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
