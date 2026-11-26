@@ -16,6 +16,7 @@ export const SOURCE_PAGES = [
   { slug: 'logiciels-restaurant-algerie', verifiedOn: '2026-11-25' },
   { slug: 'logiciels-cabinet-medical-algerie', verifiedOn: '2026-11-26' },
   { slug: 'applications-taxi-vtc-algerie', verifiedOn: '2026-11-26' },
+  { slug: 'applications-livraison-algerie', verifiedOn: '2026-11-26' },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25' })),
 ];
