@@ -42,6 +42,7 @@ export const SOURCE_PAGES = [
   { slug: 'chiffres-internet-mobile-algerie', verifiedOn: '2026-11-26', group: 'providers', title: { fr: 'Chiffres du mobile et d’internet : abonnés par opérateur (ARPCE)', en: 'Mobile and internet figures: subscribers by operator (ARPCE)', ar: 'أرقام النقال والإنترنت: المشتركون حسب المتعامل (ARPCE)' } },
   { slug: 'logiciels-rh-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels RH (congés, pointage, recrutement)', en: 'HR software (leave, attendance, recruitment)', ar: 'برامج الموارد البشرية' } },
   { slug: 'logiciels-crm-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels CRM', en: 'CRM software', ar: 'برامج CRM' } },
+  { slug: 'api-sms-algerie', verifiedOn: '2026-11-27', group: 'providers', title: { fr: 'API SMS et SMS professionnel (OTP, envoi en masse)', en: 'SMS API and business SMS (OTP, bulk)', ar: 'واجهة الرسائل القصيرة والرسائل المهنية' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
