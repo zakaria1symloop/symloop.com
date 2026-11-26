@@ -38,6 +38,7 @@ export const SOURCE_PAGES = [
   { slug: 'nom-de-domaine-dz', verifiedOn: '2026-11-26', group: 'providers', title: { fr: 'Nom de domaine .dz : registrars agréés et chiffres', en: '.dz domain names: accredited registrars and figures', ar: 'اسم النطاق ‎.dz: المسجِّلون المعتمدون والأرقام' } },
   { slug: 'fintech-algerie', verifiedOn: '2026-11-26', group: 'providers', title: { fr: 'Fintech : portefeuilles et applications de transfert', en: 'Fintech: wallets and transfer apps', ar: 'التكنولوجيا المالية: المحافظ وتطبيقات التحويل' } },
   { slug: 'cours-en-ligne-algerie', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Cours en ligne : plateformes (BEM, BAC, université)', en: 'Online courses: platforms (BEM, BAC, university)', ar: 'الدروس عبر الإنترنت: المنصات' } },
+  { slug: 'suivi-gps-vehicules-algerie', verifiedOn: '2026-11-26', group: 'companies', title: { fr: 'Suivi GPS des véhicules et gestion de flotte', en: 'GPS vehicle tracking and fleet management', ar: 'تتبع المركبات بـ GPS وتسيير الأساطيل' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
