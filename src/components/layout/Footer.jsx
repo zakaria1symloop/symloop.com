@@ -76,6 +76,7 @@ export default function Footer() {
   const colInsights = {
     label: 'Insights',
     items: [
+      { name: 'Tech in Algeria — Verified Lists', href: '/tech-algerie/' },
       { name: 'All Insights',          href: '/insights/' },
       { name: 'Oil & Gas — DCS to PLC', href: '/insights/oil-gas/' },
       { name: 'Vision 2030 — Gulf Tech', href: '/insights/vision-2030/' },

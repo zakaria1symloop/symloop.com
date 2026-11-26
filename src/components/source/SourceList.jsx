@@ -122,7 +122,8 @@ export default function SourceList({ locale, slug, content, items, verifiedOn, g
             {c.faq.map(([q, a]) => (<div key={q} style={{ borderTop: '1px solid rgba(255,255,255,.12)', padding: '18px 0' }}><h3 style={{ fontSize: 18, fontWeight: 500, margin: '0 0 8px' }}>{q}</h3><p style={{ ...S.p, margin: 0 }}>{a}</p></div>))}
           </section>
 
-          {c.related?.length ? (<p style={{ ...S.p, marginTop: 44 }}>{c.related.map(([label, href], i) => (<span key={href}>{i ? ' · ' : ''}<Link href={href} style={{ color: '#fff' }}>{label}</Link></span>))}</p>) : null}
+          <p style={{ ...S.p, marginTop: 44 }}><Link href="/tech-algerie/" style={{ color: '#fff' }}>{{ fr: 'Toutes nos listes vérifiées sur la tech en Algérie', en: 'All our verified lists on tech in Algeria', ar: 'كل قوائمنا الموثقة عن التكنولوجيا في الجزائر' }[L]}</Link></p>
+          {c.related?.length ? (<p style={{ ...S.p, marginTop: 12 }}>{c.related.map(([label, href], i) => (<span key={href}>{i ? ' · ' : ''}<Link href={href} style={{ color: '#fff' }}>{label}</Link></span>))}</p>) : null}
         </article>
       </main>
     </>
