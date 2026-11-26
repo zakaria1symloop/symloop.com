@@ -30,6 +30,7 @@ export const SOURCE_PAGES = [
   { slug: 'odoo-algerie', verifiedOn: '2026-11-26', group: 'companies', title: { fr: 'Odoo en Algérie : partenaires et intégrateurs', en: 'Odoo in Algeria: partners and integrators', ar: 'Odoo في الجزائر: الشركاء والمُدمِجون' } },
   { slug: 'coworking-alger', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Espaces de coworking à Alger', en: 'Coworking spaces in Algiers', ar: 'فضاءات العمل المشترك في الجزائر العاصمة' } },
   { slug: 'formation-informatique-alger', verifiedOn: '2026-11-26', group: 'ecosystem', title: { fr: 'Formations informatiques à Alger', en: 'IT training in Algiers', ar: 'تكوينات الإعلام الآلي في الجزائر العاصمة' } },
+  { slug: 'logiciels-facturation-algerie', verifiedOn: '2026-11-26', group: 'software', title: { fr: 'Logiciels de facturation', en: 'Invoicing software', ar: 'برامج الفوترة' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
