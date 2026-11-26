@@ -20,6 +20,7 @@ export const SOURCE_PAGES = [
   { slug: 'societes-livraison-colis-algerie', verifiedOn: '2026-11-26' },
   { slug: 'entreprises-developpement-application-mobile-algerie', verifiedOn: '2026-11-26' },
   { slug: 'incubateurs-algerie', verifiedOn: '2026-11-26' },
+  { slug: 'sites-vente-en-ligne-algerie', verifiedOn: '2026-11-26' },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25' })),
 ];
