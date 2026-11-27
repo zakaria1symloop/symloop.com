@@ -48,6 +48,7 @@ export const SOURCE_PAGES = [
   { slug: 'creer-boutique-en-ligne-algerie', verifiedOn: '2026-11-27', group: 'apps', title: { fr: 'Créer une boutique en ligne : plateformes', en: 'Create an online store: platforms', ar: 'إنشاء متجر إلكتروني: المنصات' } },
   { slug: 'logiciels-gestion-production-algerie', verifiedOn: '2026-11-27', group: 'software', title: { fr: 'Logiciels de gestion de production (GPAO)', en: 'Production management software (GPAO)', ar: 'برامج تسيير الإنتاج' } },
   { slug: 'parcs-technologiques-algerie', verifiedOn: '2026-11-27', group: 'ecosystem', title: { fr: 'Parcs technologiques : cyberparc de Sidi Abdellah et ANPT', en: 'Technology parks: Sidi Abdellah cyberparc and ANPT', ar: 'الحظائر التكنولوجية: سيدي عبد الله و ANPT' } },
+  { slug: 'evenements-tech-algerie', verifiedOn: '2026-11-27', group: 'ecosystem', title: { fr: 'Salons informatiques, conférences et hackathons', en: 'IT fairs, tech conferences and hackathons', ar: 'المعارض والمؤتمرات التقنية والهاكاثونات' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
