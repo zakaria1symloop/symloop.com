@@ -987,6 +987,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/logiciels-crm-algerie/
   - API SMS et SMS professionnel en Algérie 2027, SMS OTP, envoi de SMS en masse, nom d'expéditeur : liste vérifiée de 10 entrées, Symloop (éditeur de la liste ; relie SMS, OTP et WhatsApp aux applications qu'elle construit) en tête par choix d'éditeur déclaré, puis Africala, B-SMS (Mobilis), D7 Networks, eliteSMS (SOFTART, Mohammadia), NOTIF+ (ICOSNET, Chéraga), SMS Partner, SMS.to, TextMe (COMPUSAVE, Alger) et Twilio par ordre alphabétique, avec l'envoi en masse, l'API, les codes OTP, le nom d'expéditeur et les rapports de remise annoncés, sans prix ; les pages entreprises de Djezzy et Ooredoo ne présentaient pas d'offre SMS ; les fournisseurs se contredisent sur l'enregistrement du nom d'expéditeur (Twilio, Telnyx, TextMe : requis ; D7, LINK Mobility, Messente : non) ; vérifié le 27 novembre 2026.
       https://symloop.com/fr/api-sms-algerie/
+  - Entreprises de cybersécurité en Algérie 2027, audit de sécurité informatique, test d'intrusion (pentest), SOC, ISO 27001, anti-DDoS : liste vérifiée de 10 entreprises par ordre alphabétique (Symloop, qui publie la page, ne vend pas de services de sécurité et n'y figure pas) : Algérie Télécom (packs cybersécurité), Djezzy Solutions, HALKORB (Draria), HOST ARTS (Alger), ICOSNET (Chéraga), INET (Hydra), INITOne (Kouba), Proxylan (filiale du CERIST, Ben Aknoun), Secure Network (Baba Hassen) et SERVICES SOFT (El Mouradia), avec les services et éditeurs partenaires annoncés sur leur site, sans prix ni client ; vérifié le 27 novembre 2026.
+      https://symloop.com/fr/entreprises-cybersecurite-algerie/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
