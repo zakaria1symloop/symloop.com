@@ -49,6 +49,7 @@ export const SOURCE_PAGES = [
   { slug: 'logiciels-gestion-production-algerie', verifiedOn: '2026-11-27', group: 'software', title: { fr: 'Logiciels de gestion de production (GPAO)', en: 'Production management software (GPAO)', ar: 'برامج تسيير الإنتاج' } },
   { slug: 'parcs-technologiques-algerie', verifiedOn: '2026-11-27', group: 'ecosystem', title: { fr: 'Parcs technologiques : cyberparc de Sidi Abdellah et ANPT', en: 'Technology parks: Sidi Abdellah cyberparc and ANPT', ar: 'الحظائر التكنولوجية: سيدي عبد الله و ANPT' } },
   { slug: 'evenements-tech-algerie', verifiedOn: '2026-11-27', group: 'ecosystem', title: { fr: 'Salons informatiques, conférences et hackathons', en: 'IT fairs, tech conferences and hackathons', ar: 'المعارض والمؤتمرات التقنية والهاكاثونات' } },
+  { slug: 'logiciels-superette-algerie', verifiedOn: '2026-11-27', group: 'software', title: { fr: 'Logiciels pour supérette et supermarché', en: 'Superette and supermarket software', ar: 'برامج السوبيرات والمتاجر الكبرى' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
