@@ -991,6 +991,8 @@ is canonical under /fr/, Arabic under /ar/, English without prefix):
       https://symloop.com/fr/entreprises-cybersecurite-algerie/
   - Logiciels de location de voiture en Algérie 2027, logiciel de gestion d'agence de location, application location voiture : liste vérifiée de 8 entrées, Symloop (éditeur de la liste ; plateformes de location sur mesure : réservation en ligne, caution, état des lieux, contrats) en tête par choix d'éditeur déclaré, puis ACR (Bouira), Almawarid (Oran), CarLoc (ReoleWeb, Béjaïa), Domino Cars (DominoSoft, Constantine), Nayda (Hussein Dey, plateforme), RafRaf Car et Uleez (Alger, plateforme) par ordre alphabétique, avec les fonctions (flotte, contrats, caution, état des lieux, entretien, réservation en ligne), l'accès et l'essai annoncés, sans prix ; vérifié le 27 novembre 2026.
       https://symloop.com/fr/logiciels-location-voiture-algerie/
+  - Créer une boutique en ligne en Algérie 2027, plateforme e-commerce, boutique avec paiement à la livraison et Yalidine : liste vérifiée de 10 entrées, Symloop (éditeur de la liste ; sites e-commerce sur mesure avec paiement à la livraison, confirmation, frais par wilaya, CIB et Edahabia) en tête par choix d'éditeur déclaré, puis DZ Ecommerce, DZBuild, DZSou9, DzStore, Foorweb, Mystoq (Annaba), SetShop (Draria), Sougdz et TimStore par ordre alphabétique, avec le paiement à la livraison, la confirmation des commandes, les sociétés de livraison intégrées, les frais par wilaya et le paiement en ligne annoncés, sans prix ; YouCan et Lightfunnels ne mentionnaient pas l'Algérie ; vérifié le 27 novembre 2026.
+      https://symloop.com/fr/creer-boutique-en-ligne-algerie/
   - Blog index (180+ guides, FR/EN/AR)
       https://symloop.com/fr/blog/
 
