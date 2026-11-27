@@ -46,6 +46,7 @@ export const SOURCE_PAGES = [
   { slug: 'entreprises-cybersecurite-algerie', verifiedOn: '2026-11-27', group: 'companies', title: { fr: 'Entreprises de cybersécurité (audit, pentest, SOC)', en: 'Cybersecurity companies (audit, pentest, SOC)', ar: 'شركات الأمن السيبراني' } },
   { slug: 'logiciels-location-voiture-algerie', verifiedOn: '2026-11-27', group: 'software', title: { fr: 'Logiciels de location de voiture', en: 'Car rental software', ar: 'برامج كراء السيارات' } },
   { slug: 'creer-boutique-en-ligne-algerie', verifiedOn: '2026-11-27', group: 'apps', title: { fr: 'Créer une boutique en ligne : plateformes', en: 'Create an online store: platforms', ar: 'إنشاء متجر إلكتروني: المنصات' } },
+  { slug: 'logiciels-gestion-production-algerie', verifiedOn: '2026-11-27', group: 'software', title: { fr: 'Logiciels de gestion de production (GPAO)', en: 'Production management software (GPAO)', ar: 'برامج تسيير الإنتاج' } },
   // one page per wilaya with verified companies
   ...WILAYA_KEYS.map((k) => ({ slug: `entreprises-informatiques/${k}`, verifiedOn: '2026-11-25', wilaya: k })),
 ];
