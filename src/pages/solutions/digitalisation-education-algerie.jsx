@@ -214,15 +214,10 @@ export default function DigitalisationEducationAlgerie() {
         <title>{c.pageTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content="رقمنة التعليم, رقمنة المدارس الجزائر, e-learning Algérie, digitalisation éducation, منصات التعلم الإلكتروني, education digitization Algeria" />
-        <link rel="canonical" href={`https://symloop.com${router.asPath}`} />
         <meta property="og:title" content={c.pageTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/solutions/digitalisation-education-algerie" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/solutions/digitalisation-education-algerie" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/solutions/digitalisation-education-algerie" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/solutions/digitalisation-education-algerie" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
@@ -244,8 +239,8 @@ export default function DigitalisationEducationAlgerie() {
             </nav>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8 }}
               className="text-center max-w-4xl mx-auto"
             >
@@ -283,8 +278,8 @@ export default function DigitalisationEducationAlgerie() {
 
             {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
             >

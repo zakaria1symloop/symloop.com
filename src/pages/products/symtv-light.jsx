@@ -37,8 +37,8 @@ export default function SymTvLightPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 rounded-full text-sm font-medium text-gray-700 mb-6"
             >
@@ -47,8 +47,8 @@ export default function SymTvLightPage() {
             </motion.div>
             
             <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 40 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className="text-6xl md:text-7xl font-black mb-6 leading-tight"
             >
@@ -59,8 +59,8 @@ export default function SymTvLightPage() {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             >
@@ -70,8 +70,8 @@ export default function SymTvLightPage() {
 
           {/* Product Demo with Enhanced Glow */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
             className="relative max-w-5xl mx-auto"
           >

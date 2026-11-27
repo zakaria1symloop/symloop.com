@@ -423,7 +423,6 @@ export default function LogisticsManagement() {
         <title>Logistics Management Software | Delivery & Fleet Tracking | Symloop</title>
         <meta name="description" content="Complete logistics management system. Seller app for orders, driver app with GPS navigation, admin dashboard with real-time tracking. Works offline. Multi-language support." />
         <meta name="keywords" content="logistics management software, delivery tracking app, fleet management system, driver app, delivery management, GPS tracking, offline delivery app, MENA logistics software" />
-        <link rel="canonical" href="https://symloop.com/products/logistics-management" />
         <meta property="og:title" content="Symloop Logistics Management - Delivery & Fleet System" />
         <meta property="og:description" content="Complete delivery management with seller app, driver app and admin dashboard. Real-time GPS tracking, offline mode, multi-language." />
         <meta property="og:type" content="product" />
@@ -437,7 +436,7 @@ export default function LogisticsManagement() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white pt-28 lg:pt-32 pb-16 lg:pb-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/" className={`inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <ArrowLeft className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} /> {t.backToProducts}
               </Link>

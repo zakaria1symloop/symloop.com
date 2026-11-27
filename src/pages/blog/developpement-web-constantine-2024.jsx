@@ -208,7 +208,6 @@ export default function DeveloppementConstantine() {
         <title>Développement Web Constantine 2024 | Agence Digitale Est Algérien | Symloop</title>
         <meta name="description" content="Développement web à Constantine et Est algérien. Sites vitrines, e-commerce, e-learning pour universités. Agence digitale pour Sétif, Annaba, Batna. À partir de 40 000 DA." />
         <meta name="keywords" content="développement web constantine, agence digitale constantine, site web sétif, création site annaba, e-commerce est algérien, développeur constantine" />
-        <link rel="canonical" href="https://symloop.com/blog/developpement-web-constantine-2024" />
         <meta property="og:title" content="Développement Web Constantine 2024 | Agence Digitale Est Algérien" />
         <meta property="og:description" content="Services web pour Constantine, Sétif, Annaba. Sites vitrines, e-commerce, applications sur mesure." />
         <meta property="og:type" content="article" />
@@ -221,7 +220,7 @@ export default function DeveloppementConstantine() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

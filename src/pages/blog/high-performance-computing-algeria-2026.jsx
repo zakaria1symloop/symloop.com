@@ -352,7 +352,6 @@ export default function HighPerformanceComputingAlgeria() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content={c.seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/blog/high-performance-computing-algeria-2026" />
         <meta property="og:title" content={c.h1} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="article" />
@@ -370,9 +369,6 @@ export default function HighPerformanceComputingAlgeria() {
         <meta name="author" content="Symloop" />
         <meta name="geo.region" content="DZ" />
         <meta name="geo.placename" content="Algeria" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/high-performance-computing-algeria-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/high-performance-computing-algeria-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/high-performance-computing-algeria-2026" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />

@@ -136,14 +136,9 @@ export default function SEOHead({
       <meta name="bingbot" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
 
       {/* Canonical and Language */}
-      <link rel="canonical" href={canonicalUrl} />
       <meta httpEquiv="content-language" content={locale === 'ar' ? 'ar-DZ' : locale === 'fr' ? 'fr-DZ' : 'en'} />
 
       {/* Hreflang for multilingual SEO */}
-      <link rel="alternate" hrefLang="en" href={hreflangUrls.en} />
-      <link rel="alternate" hrefLang="fr" href={hreflangUrls.fr} />
-      <link rel="alternate" hrefLang="ar" href={hreflangUrls.ar} />
-      <link rel="alternate" hrefLang="x-default" href={hreflangUrls.en} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />

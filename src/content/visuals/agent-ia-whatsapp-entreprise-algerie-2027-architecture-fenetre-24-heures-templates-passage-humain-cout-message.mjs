@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'agent-ia-whatsapp-entreprise-algerie-2027-architecture-fenetre-24-heures-templates-passage-humain-cout-message';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Agent IA · WhatsApp · Architecture · 2027', title: ['« Le 14 août', 'est-il libre ? »', 'à 23 h 40.'], subtitle: 'Le message qui arrive par webhook, le numéro rapproché du dossier, le vocal transcrit, la réponse ancrée dans le back-office, l’action dans des limites, le passage à l’humain : l’architecture d’un agent IA sur WhatsApp, ce que Meta impose et facture, et le calendrier 2027', left: { label: 'Chatbot', sub: 'menus, réponses apprises, impasse' }, right: { label: 'Agent ancré', sub: 'lit le calendrier, pose, passe la main' } },
+    message: { title: 'La vie d’un message WhatsApp, en six moments', items: [
+      { n: '01', label: 'Le message arrive', sub: 'Un webhook livre le texte ou le vocal avec le numéro ; la fenêtre de vingt-quatre heures s’ouvre.' },
+      { n: '02', label: 'L’identification', sub: 'Le numéro est rapproché d’un client, d’un dossier, d’une commande dans le back-office ; sinon, nouveau contact.' },
+      { n: '03', label: 'La compréhension', sub: 'Vocal transcrit, langue détectée (arabe, français, darija), intention et éléments extraits : date, produit, montant.' },
+      { n: '04', label: 'La réponse ancrée', sub: 'L’agent lit le calendrier, le stock, l’encours, et répond avec ces données ; jamais de mémoire, jamais inventé.', accent: true },
+      { n: '05', label: 'L’action dans des limites', sub: 'Il pose une date 72 h, prépare une commande à confirmer, ouvre un ticket ; il ne valide pas, il ne promet pas hors règle.' },
+      { n: '06', label: 'Le passage à l’humain et la trace', sub: 'Incertitude, colère, prix hors règle, deux incompréhensions : un humain reprend avec le résumé ; tout est journalisé.' },
+    ], caption: 'Figure 1 · Le moment 04 est ce qui sépare un agent d’un chatbot : la réponse vient d’une lecture du back-office à l’instant où la question est posée, pas d’un texte appris. Le moment 06 est ce qui le rend acceptable pour un gérant : il sait quand l’agent s’arrête et qui reprend.', alt: 'Six étapes : arrivée du message, identification, compréhension, réponse ancrée, action limitée, passage à l’humain et trace.' },
+    couches: { title: 'L’architecture d’un agent WhatsApp, en cinq couches', layers: [
+      { label: 'Canal', items: [{ name: 'La plateforme WhatsApp Business de Meta', sub: 'numéro de l’entreprise, webhook, fenêtre de 24 h, modèles de messages approuvés, 80 messages par seconde par défaut' }] },
+      { label: 'Compréhension', items: [{ name: 'Transcription, langue, intention, éléments', sub: 'un modèle de langage lit le message et en sort une structure : « demande de date, 14 août, 200 invités »' }] },
+      { label: 'Connaissance', items: [{ name: 'Base de connaissances et règles métier', sub: 'horaires, conditions, FAQ validées, ce qu’on ne dit pas ; versionnée, relue par le gérant' }] },
+      { label: 'Outils', items: [{ name: 'Le back-office de l’entreprise, par API', sub: 'lire le calendrier, le stock, l’encours, le dossier ; agir dans des limites : poser, préparer, ouvrir', accent: true }] },
+      { label: 'Supervision', items: [{ name: 'Humain dans la boucle, journal, qualité, coûts', sub: 'file des passages à l’humain, échantillon relu chaque semaine, coût par conversation suivi' }] },
+    ], caption: 'Figure 2 · La couche des outils est celle qui fait la valeur et qui manque dans la plupart des « chatbots » : sans back-office à lire, l’agent n’a rien à répondre de vrai. La couche de supervision est celle qui fait la confiance : un gérant qui relit vingt conversations par semaine garde la main.', alt: 'Cinq couches : canal WhatsApp, compréhension, connaissance et règles, outils du back-office, supervision.' },
+    exemple: { title: 'Une entreprise, deux mille conversations par mois : l’exemple', items: [
+      { value: '2 000', label: 'conversations WhatsApp par mois pour une salle des fêtes, un grossiste ou une clinique de taille moyenne ; hypothèse à remplacer par la vôtre' },
+      { value: '70 %', label: 'résolues par l’agent sans humain au troisième mois : disponibilités, prix affichés, statut, pièces à envoyer ; hypothèse, le reste passe à l’humain avec un résumé' },
+      { value: '< 1 min', label: 'de première réponse à toute heure, contre plusieurs heures quand le téléphone du gérant est le seul canal ; mesure, pas hypothèse' },
+      { value: '1 000', label: 'messages de service gratuits par mois et par numéro selon la grille Meta en vigueur au 1er octobre 2026 ; au-delà, chaque message délivré est facturé selon le pays', accent: true },
+    ], caption: 'Figure 3 · Le volume et le taux de résolution sont des hypothèses ; la première réponse en moins d’une minute et les mille messages gratuits ne le sont pas. Ce qui se vérifie partout : le taux de résolution monte avec la couche des outils, pas avec la taille du modèle.', alt: 'Quatre chiffres : 2 000 conversations par mois, 70 % résolues sans humain, première réponse en moins d’une minute, 1 000 messages de service gratuits.' },
+    limites: { title: 'Ce que l’agent fait, et ce qu’il ne fait jamais', columns: ['Ce qu’il fait', 'Ce qu’il ne fait jamais'], rows: [
+      { label: 'Répondre', cells: ['Horaires, conditions, prix affichés, disponibilité lue dans le calendrier, statut lu dans la commande', 'Inventer un prix, une date, un stock ; répondre de mémoire quand l’outil ne répond pas'] },
+      { label: 'Agir', cells: ['Poser une date 72 heures, préparer une commande à confirmer, ouvrir un ticket, envoyer un reçu', 'Confirmer sans acompte, valider une commande hors plafond, modifier un prix'] },
+      { label: 'Relancer', cells: ['Rappel de rendez-vous, échéance, pièce manquante, par modèle approuvé hors fenêtre', 'Envoyer du marketing sans accord, écrire hors fenêtre sans modèle approuvé'] },
+      { label: 'Comprendre', cells: ['Transcrire un vocal, répondre dans la langue du client, arabe, français ou darija', 'Diagnostiquer, conseiller sur la santé, le droit ou l’argent du client'] },
+      { label: 'Passer la main', cells: ['Après deux incompréhensions, une colère, un prix hors règle, une demande hors périmètre : un humain, avec le résumé', 'Laisser un client sans réponse, ou tourner en boucle sur un menu'] },
+      { label: 'Garder la trace', cells: ['Journaliser chaque échange, chaque lecture, chaque action, sur le serveur de l’entreprise', 'Stocker les conversations chez un tiers que l’entreprise ne contrôle pas'] },
+    ], caption: 'Figure 4 · La colonne de droite est écrite avant la première ligne de code et relue par le gérant ; c’est elle qui transforme un risque en outil. La ligne « Passer la main » est celle que les clients remarquent : un agent qui dit « je vous passe quelqu’un » garde le client, un menu qui tourne le perd.', alt: 'Matrice de six lignes avec ce que l’agent fait et ce qu’il ne fait jamais.' },
+    modeles: { title: 'Six entreprises, ce que l’agent lit et ce qu’il fait', columns: ['Ce qu’il lit', 'Ce qu’il fait'], rows: [
+      { label: 'Salle des fêtes', cells: ['Le calendrier des dates, les prix par saison, les conditions d’acompte', '« Le 14 août est-il libre ? » : répond, propose deux dates proches, pose 72 heures, envoie le devis'] },
+      { label: 'Grossiste', cells: ['Le catalogue au prix du client, le panier type, l’encours et le plafond', 'Transforme un vocal en commande à confirmer, rappelle l’heure limite, prévient d’un plafond atteint'] },
+      { label: 'Cabinet ou clinique', cells: ['L’agenda, le dossier, la liste des pièces attendues', 'Trie le premier message, demande radio et dates, propose un créneau, rappelle la veille ; ne diagnostique pas'] },
+      { label: 'Agence immobilière', cells: ['Les baux, les échéances, les tickets ouverts', 'Envoie la quittance, dit la période couverte, ouvre un ticket avec photos, prévient le propriétaire'] },
+      { label: 'Transporteur ou livraison', cells: ['Le statut de la commande, la tournée du jour, l’heure estimée', '« Où est mon colis ? » : répond avec le statut réel, propose un report, passe la main si retard anormal'] },
+      { label: 'École ou centre de formation', cells: ['Les inscriptions, les paiements, les présences', 'Rappelle une échéance, envoie une attestation, répond sur les horaires ; ne discute pas une note'] },
+    ], caption: 'Figure 5 · Dans les six cas, la colonne de gauche existe déjà ou doit exister avant l’agent ; c’est le prérequis que le guide sur les agents IA en entreprise appelle « quelque chose à lire et quelque chose à faire ». Sans elle, l’agent est un répondeur.', alt: 'Matrice de six entreprises avec ce que l’agent lit et ce qu’il fait.' },
+    calendrier: { title: 'Mettre un agent WhatsApp en service en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Inventaire des questions réelles', note: 'un mois de WhatsApp relu : les cinquante questions, les réponses justes, la colonne « ne fait jamais »', from: 0, to: 2 },
+      { label: 'Canal : numéro, API, modèles, webhook', note: 'compte Meta de l’entreprise, modèles de messages soumis et approuvés, serveur de réception', from: 2, to: 5 },
+      { label: 'Compréhension et base de connaissances', note: 'transcription, langues, intentions ; FAQ validées et versionnées par le gérant', from: 5, to: 9, accent: true },
+      { label: 'Outils : lecture, puis actions limitées', note: 'calendrier, stock, encours en lecture ; poser, préparer, ouvrir avec des plafonds', from: 9, to: 12 },
+      { label: 'Recette : deux cents conversations rejouées', note: 'les vraies conversations du mois d’inventaire, rejouées ; chaque réponse notée', from: 12, to: 14 },
+      { label: 'Pilote, humain dans la boucle', note: 'l’agent répond, un humain relit en direct la première semaine, puis par échantillon', from: 14, to: 18 },
+      { label: 'Bilan et coûts', note: 'taux de résolution, passages à l’humain, coût par conversation ; décision sur les actions suivantes', from: 18, to: 20 },
+    ], caption: 'Figure 6 · Semaine 0 = janvier 2027. Les deux premières semaines décident de tout : la liste des questions réelles et la colonne de ce que l’agent ne fait jamais. La recette rejoue des conversations réelles, pas des scénarios inventés ; c’est là que l’agent se révèle.', alt: 'Frise de 20 semaines : inventaire, canal, compréhension, outils, recette, pilote, bilan.' },
+  },
+  en: {
+    cover: { eyebrow: 'AI agent · WhatsApp · Architecture · 2027', title: ['“Is 14 August', 'free?”', 'at 11:40 pm.'], subtitle: 'The message that arrives by webhook, the number matched to the file, the voice note transcribed, the answer grounded in the back office, the action within limits, the handover to a human: the architecture of an AI agent on WhatsApp, what Meta imposes and bills, and the 2027 calendar', left: { label: 'Chatbot', sub: 'menus, learned answers, dead end' }, right: { label: 'Grounded agent', sub: 'reads the calendar, holds, hands over' } },
+    message: { title: 'The life of a WhatsApp message, in six moments', items: [
+      { n: '01', label: 'The message arrives', sub: 'A webhook delivers the text or voice note with the number; the twenty-four-hour window opens.' },
+      { n: '02', label: 'Identification', sub: 'The number is matched to a customer, a file, an order in the back office; otherwise, a new contact.' },
+      { n: '03', label: 'Understanding', sub: 'Voice transcribed, language detected (Arabic, French, Darija), intent and elements extracted: date, product, amount.' },
+      { n: '04', label: 'The grounded answer', sub: 'The agent reads the calendar, the stock, the balance, and answers with that data; never from memory, never invented.', accent: true },
+      { n: '05', label: 'Action within limits', sub: 'It holds a date for 72 h, prepares an order to confirm, opens a ticket; it does not validate, it does not promise outside the rules.' },
+      { n: '06', label: 'Handover and trace', sub: 'Uncertainty, anger, off-rule price, two misunderstandings: a human takes over with the summary; everything is logged.' },
+    ], caption: 'Figure 1 · Moment 04 is what separates an agent from a chatbot: the answer comes from reading the back office at the moment the question is asked, not from a learned text. Moment 06 is what makes it acceptable to a manager: they know when the agent stops and who takes over.', alt: 'Six steps: message arrives, identification, understanding, grounded answer, limited action, handover and trace.' },
+    couches: { title: 'The architecture of a WhatsApp agent, in five layers', layers: [
+      { label: 'Channel', items: [{ name: 'Meta’s WhatsApp Business Platform', sub: 'the company’s number, webhook, 24-hour window, approved message templates, 80 messages per second by default' }] },
+      { label: 'Understanding', items: [{ name: 'Transcription, language, intent, elements', sub: 'a language model reads the message and outputs a structure: “date request, 14 August, 200 guests”' }] },
+      { label: 'Knowledge', items: [{ name: 'Knowledge base and business rules', sub: 'hours, conditions, validated FAQ, what is not said; versioned, reviewed by the manager' }] },
+      { label: 'Tools', items: [{ name: 'The company’s back office, through an API', sub: 'read the calendar, stock, balance, file; act within limits: hold, prepare, open', accent: true }] },
+      { label: 'Supervision', items: [{ name: 'Human in the loop, log, quality, costs', sub: 'handover queue, sample reviewed every week, cost per conversation tracked' }] },
+    ], caption: 'Figure 2 · The tools layer is what creates the value and what most “chatbots” lack: without a back office to read, the agent has nothing true to answer. The supervision layer is what creates trust: a manager who reviews twenty conversations a week keeps control.', alt: 'Five layers: WhatsApp channel, understanding, knowledge and rules, back-office tools, supervision.' },
+    exemple: { title: 'One company, two thousand conversations a month: the example', items: [
+      { value: '2,000', label: 'WhatsApp conversations a month for a mid-sized wedding hall, wholesaler or clinic; an assumption to replace with yours' },
+      { value: '70 %', label: 'resolved by the agent without a human by the third month: availability, listed prices, status, documents to send; assumption, the rest goes to a human with a summary' },
+      { value: '< 1 min', label: 'first response at any hour, against several hours when the manager’s phone is the only channel; a measurement, not an assumption' },
+      { value: '1,000', label: 'free service messages per month per number under Meta’s pricing in force on 1 October 2026; beyond that, every delivered message is billed by country', accent: true },
+    ], caption: 'Figure 3 · Volume and resolution rate are assumptions; the sub-minute first response and the thousand free messages are not. What holds everywhere: the resolution rate rises with the tools layer, not with the size of the model.', alt: 'Four figures: 2,000 conversations a month, 70 % resolved without a human, first response under a minute, 1,000 free service messages.' },
+    limites: { title: 'What the agent does, and what it never does', columns: ['What it does', 'What it never does'], rows: [
+      { label: 'Answer', cells: ['Hours, conditions, listed prices, availability read from the calendar, status read from the order', 'Invent a price, a date, a stock; answer from memory when the tool does not respond'] },
+      { label: 'Act', cells: ['Hold a date for 72 hours, prepare an order to confirm, open a ticket, send a receipt', 'Confirm without a deposit, validate an order over the ceiling, change a price'] },
+      { label: 'Follow up', cells: ['Appointment reminder, due date, missing document, through an approved template outside the window', 'Send marketing without consent, write outside the window without an approved template'] },
+      { label: 'Understand', cells: ['Transcribe a voice note, answer in the customer’s language, Arabic, French or Darija', 'Diagnose, advise on the customer’s health, law or money'] },
+      { label: 'Hand over', cells: ['After two misunderstandings, anger, an off-rule price, an out-of-scope request: a human, with the summary', 'Leave a customer without an answer, or loop on a menu'] },
+      { label: 'Keep the trace', cells: ['Log every exchange, every read, every action, on the company’s server', 'Store conversations with a third party the company does not control'] },
+    ], caption: 'Figure 4 · The right column is written before the first line of code and reviewed by the manager; it is what turns a risk into a tool. The “Hand over” row is the one customers notice: an agent that says “I’ll get you someone” keeps the customer, a looping menu loses them.', alt: 'Matrix of six rows with what the agent does and what it never does.' },
+    modeles: { title: 'Six companies, what the agent reads and what it does', columns: ['What it reads', 'What it does'], rows: [
+      { label: 'Wedding hall', cells: ['The date calendar, prices per season, deposit conditions', '“Is 14 August free?”: answers, offers two nearby dates, holds for 72 hours, sends the quote'] },
+      { label: 'Wholesaler', cells: ['The catalogue at the customer’s price, the typical basket, the balance and ceiling', 'Turns a voice note into an order to confirm, recalls the cut-off, warns of a ceiling reached'] },
+      { label: 'Practice or clinic', cells: ['The diary, the file, the list of expected documents', 'Triages the first message, asks for X-ray and dates, offers a slot, reminds the day before; does not diagnose'] },
+      { label: 'Real-estate agency', cells: ['Leases, due dates, open tickets', 'Sends the receipt, states the covered period, opens a ticket with photos, informs the owner'] },
+      { label: 'Carrier or delivery', cells: ['The order status, the day’s route, the estimated time', '“Where is my parcel?”: answers with the real status, offers a reschedule, hands over if the delay is abnormal'] },
+      { label: 'School or training centre', cells: ['Enrolments, payments, attendance', 'Reminds of a due date, sends a certificate, answers on hours; does not argue a grade'] },
+    ], caption: 'Figure 5 · In all six cases the left column already exists or must exist before the agent; it is the prerequisite the guide on AI agents in companies calls “something to read and something to do”. Without it, the agent is an answering machine.', alt: 'Matrix of six companies with what the agent reads and what it does.' },
+    calendrier: { title: 'Putting a WhatsApp agent into service in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Inventory of real questions', note: 'one month of WhatsApp reread: the fifty questions, the right answers, the “never does” column', from: 0, to: 2 },
+      { label: 'Channel: number, API, templates, webhook', note: 'the company’s Meta account, message templates submitted and approved, receiving server', from: 2, to: 5 },
+      { label: 'Understanding and knowledge base', note: 'transcription, languages, intents; FAQ validated and versioned by the manager', from: 5, to: 9, accent: true },
+      { label: 'Tools: reads, then limited actions', note: 'calendar, stock, balance read-only; hold, prepare, open with ceilings', from: 9, to: 12 },
+      { label: 'Acceptance: two hundred conversations replayed', note: 'the real conversations of the inventory month, replayed; every answer graded', from: 12, to: 14 },
+      { label: 'Pilot, human in the loop', note: 'the agent answers, a human reviews live the first week, then by sample', from: 14, to: 18 },
+      { label: 'Review and costs', note: 'resolution rate, handovers, cost per conversation; decision on the next actions', from: 18, to: 20 },
+    ], caption: 'Figure 6 · Week 0 = January 2027. The first two weeks decide everything: the list of real questions and the column of what the agent never does. Acceptance replays real conversations, not invented scenarios; that is where the agent reveals itself.', alt: 'Timeline of 20 weeks: inventory, channel, understanding, tools, acceptance, pilot, review.' },
+  },
+  ar: {
+    cover: { eyebrow: 'وكيل ذكاء اصطناعي · WhatsApp · الهندسة · 2027', title: ['«هل 14 أوت', 'حر؟»', 'في 23:40.'], subtitle: 'الرسالة التي تصل عبر webhook، الرقم المطابَق مع الملف، الرسالة الصوتية المنسوخة، الجواب المستند إلى المكتب الخلفي، الفعل ضمن حدود، التسليم إلى إنسان: هندسة وكيل ذكاء اصطناعي على WhatsApp، ما تفرضه Meta وتفوتره، وتقويم 2027', left: { label: 'روبوت محادثة', sub: 'قوائم، أجوبة محفوظة، طريق مسدود' }, right: { label: 'وكيل مستند', sub: 'يقرأ التقويم، يعلّق، يسلّم' } },
+    message: { title: 'حياة رسالة WhatsApp، في ست لحظات', items: [
+      { n: '01', label: 'وصول الرسالة', sub: 'يسلّم webhook النص أو الرسالة الصوتية مع الرقم؛ تُفتح نافذة الأربع والعشرين ساعة.' },
+      { n: '02', label: 'التعرف', sub: 'يُطابَق الرقم مع زبون أو ملف أو طلبية في المكتب الخلفي؛ وإلا فجهة اتصال جديدة.' },
+      { n: '03', label: 'الفهم', sub: 'الصوت منسوخ، اللغة مكتشفة (عربية، فرنسية، دارجة)، النية والعناصر مستخرجة: تاريخ، منتج، مبلغ.' },
+      { n: '04', label: 'الجواب المستند', sub: 'يقرأ الوكيل التقويم والمخزون والرصيد ويجيب بهذه البيانات؛ لا من الذاكرة أبداً، لا اختراع أبداً.', accent: true },
+      { n: '05', label: 'الفعل ضمن حدود', sub: 'يعلّق تاريخاً 72 ساعة، يحضّر طلبية للتأكيد، يفتح تذكرة؛ لا يعتمد ولا يعد خارج القاعدة.' },
+      { n: '06', label: 'التسليم إلى إنسان والأثر', sub: 'شك، غضب، سعر خارج القاعدة، سوءا فهم: يستلم إنسان مع الملخص؛ كل شيء يُسجَّل.' },
+    ], caption: 'الشكل 1 · اللحظة 04 هي ما يفصل الوكيل عن روبوت المحادثة: الجواب يأتي من قراءة المكتب الخلفي لحظة طرح السؤال، لا من نص محفوظ. اللحظة 06 هي ما يجعله مقبولاً لدى المسيّر: يعرف متى يتوقف الوكيل ومن يستلم.', alt: 'ست خطوات: وصول الرسالة، التعرف، الفهم، الجواب المستند، الفعل المحدود، التسليم إلى إنسان والأثر.' },
+    couches: { title: 'هندسة وكيل WhatsApp، في خمس طبقات', layers: [
+      { label: 'القناة', items: [{ name: 'منصة WhatsApp Business من Meta', sub: 'رقم الشركة، webhook، نافذة 24 ساعة، قوالب رسائل معتمدة، 80 رسالة في الثانية افتراضياً' }] },
+      { label: 'الفهم', items: [{ name: 'النسخ، اللغة، النية، العناصر', sub: 'نموذج لغوي يقرأ الرسالة ويخرج منها بنية: «طلب تاريخ، 14 أوت، 200 مدعو»' }] },
+      { label: 'المعرفة', items: [{ name: 'قاعدة المعرفة وقواعد العمل', sub: 'المواعيد، الشروط، أسئلة شائعة معتمدة، ما لا يُقال؛ مؤرشفة بالنسخ ويراجعها المسيّر' }] },
+      { label: 'الأدوات', items: [{ name: 'المكتب الخلفي للشركة، عبر API', sub: 'قراءة التقويم والمخزون والرصيد والملف؛ الفعل ضمن حدود: تعليق، تحضير، فتح', accent: true }] },
+      { label: 'الإشراف', items: [{ name: 'إنسان في الحلقة، سجل، جودة، تكاليف', sub: 'طابور التسليمات، عيّنة تُراجع كل أسبوع، تكلفة لكل محادثة متابَعة' }] },
+    ], caption: 'الشكل 2 · طبقة الأدوات هي التي تصنع القيمة والتي تنقص أغلب «روبوتات المحادثة»: بلا مكتب خلفي يُقرأ، لا يملك الوكيل ما يجيب به صدقاً. وطبقة الإشراف هي التي تصنع الثقة: مسيّر يراجع عشرين محادثة أسبوعياً يحتفظ بزمام الأمر.', alt: 'خمس طبقات: قناة WhatsApp، الفهم، المعرفة والقواعد، أدوات المكتب الخلفي، الإشراف.' },
+    exemple: { title: 'شركة واحدة، ألفا محادثة في الشهر: المثال', items: [
+      { value: '2 000', label: 'محادثة WhatsApp شهرياً لقاعة حفلات أو تاجر جملة أو مصحة متوسطة الحجم؛ فرضية تُستبدل بفرضيتكم' },
+      { value: '70 %', label: 'يحلها الوكيل دون إنسان في الشهر الثالث: التوفر، الأسعار المعروضة، الحالة، الوثائق المطلوبة؛ فرضية، والباقي يذهب إلى إنسان مع ملخص' },
+      { value: '< 1 د', label: 'للرد الأول في أي ساعة، مقابل عدة ساعات حين يكون هاتف المسيّر القناة الوحيدة؛ قياس لا فرضية' },
+      { value: '1 000', label: 'رسالة خدمة مجانية شهرياً لكل رقم وفق شبكة أسعار Meta السارية في 1 أكتوبر 2026؛ وما فوقها تُفوتر كل رسالة مسلَّمة حسب البلد', accent: true },
+    ], caption: 'الشكل 3 · الحجم ونسبة الحل فرضيتان؛ والرد الأول في أقل من دقيقة والألف رسالة مجانية ليسا كذلك. ما يثبت في كل مكان: نسبة الحل ترتفع مع طبقة الأدوات لا مع حجم النموذج.', alt: 'أربعة أرقام: 2 000 محادثة شهرياً، 70 % محلولة دون إنسان، رد أول في أقل من دقيقة، 1 000 رسالة خدمة مجانية.' },
+    limites: { title: 'ما يفعله الوكيل، وما لا يفعله أبداً', columns: ['ما يفعله', 'ما لا يفعله أبداً'], rows: [
+      { label: 'الإجابة', cells: ['المواعيد، الشروط، الأسعار المعروضة، التوفر المقروء من التقويم، الحالة المقروءة من الطلبية', 'اختراع سعر أو تاريخ أو مخزون؛ الإجابة من الذاكرة حين لا تستجيب الأداة'] },
+      { label: 'الفعل', cells: ['تعليق تاريخ 72 ساعة، تحضير طلبية للتأكيد، فتح تذكرة، إرسال وصل', 'التأكيد بلا عربون، اعتماد طلبية فوق السقف، تغيير سعر'] },
+      { label: 'المتابعة', cells: ['تذكير بموعد، استحقاق، وثيقة ناقصة، عبر قالب معتمد خارج النافذة', 'إرسال تسويق بلا موافقة، الكتابة خارج النافذة بلا قالب معتمد'] },
+      { label: 'الفهم', cells: ['نسخ رسالة صوتية، الإجابة بلغة الزبون، عربية أو فرنسية أو دارجة', 'التشخيص، النصح في صحة الزبون أو قانونه أو ماله'] },
+      { label: 'التسليم', cells: ['بعد سوءي فهم، غضب، سعر خارج القاعدة، طلب خارج النطاق: إنسان، مع الملخص', 'ترك زبون بلا جواب، أو الدوران في قائمة'] },
+      { label: 'حفظ الأثر', cells: ['تسجيل كل تبادل وكل قراءة وكل فعل، على خادم الشركة', 'تخزين المحادثات عند طرف ثالث لا تتحكم فيه الشركة'] },
+    ], caption: 'الشكل 4 · العمود الأيمن يُكتب قبل أول سطر كود ويراجعه المسيّر؛ وهو ما يحوّل خطراً إلى أداة. سطر «التسليم» هو ما يلاحظه الزبائن: وكيل يقول «سأحوّلك إلى شخص» يحتفظ بالزبون، وقائمة تدور تخسره.', alt: 'مصفوفة ستة أسطر مع ما يفعله الوكيل وما لا يفعله أبداً.' },
+    modeles: { title: 'ست شركات، ما يقرؤه الوكيل وما يفعله', columns: ['ما يقرؤه', 'ما يفعله'], rows: [
+      { label: 'قاعة حفلات', cells: ['تقويم التواريخ، الأسعار لكل موسم، شروط العربون', '«هل 14 أوت حر؟»: يجيب، يقترح تاريخين قريبين، يعلّق 72 ساعة، يرسل عرض السعر'] },
+      { label: 'تاجر جملة', cells: ['الكتالوج بسعر الزبون، السلة النموذجية، الرصيد والسقف', 'يحوّل رسالة صوتية إلى طلبية للتأكيد، يذكّر بساعة الحد، ينبّه إلى بلوغ السقف'] },
+      { label: 'عيادة أو مصحة', cells: ['المفكرة، الملف، قائمة الوثائق المنتظرة', 'يفرز الرسالة الأولى، يطلب الأشعة والتواريخ، يقترح موعداً، يذكّر عشية الموعد؛ لا يشخّص'] },
+      { label: 'وكالة عقارية', cells: ['العقود، الاستحقاقات، التذاكر المفتوحة', 'يرسل الوصل، يقول الفترة المغطاة، يفتح تذكرة بصور، يبلّغ المالك'] },
+      { label: 'ناقل أو توصيل', cells: ['حالة الطلبية، جولة اليوم، الوقت المقدَّر', '«أين طردي؟»: يجيب بالحالة الحقيقية، يقترح تأجيلاً، يسلّم إن كان التأخر غير عادي'] },
+      { label: 'مدرسة أو مركز تكوين', cells: ['التسجيلات، المدفوعات، الحضور', 'يذكّر باستحقاق، يرسل شهادة، يجيب عن المواعيد؛ لا يناقش علامة'] },
+    ], caption: 'الشكل 5 · في الحالات الست، العمود الأيسر موجود أصلاً أو يجب أن يوجد قبل الوكيل؛ وهو الشرط المسبق الذي يسميه دليل وكلاء الذكاء الاصطناعي في الشركات «شيء يُقرأ وشيء يُفعل». بدونه الوكيل مجيب آلي.', alt: 'مصفوفة ست شركات مع ما يقرؤه الوكيل وما يفعله.' },
+    calendrier: { title: 'تشغيل وكيل WhatsApp في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'جرد الأسئلة الحقيقية', note: 'شهر من WhatsApp يُعاد قراءته: الأسئلة الخمسون، الأجوبة الصحيحة، عمود «لا يفعل أبداً»', from: 0, to: 2 },
+      { label: 'القناة: رقم، API، قوالب، webhook', note: 'حساب Meta باسم الشركة، قوالب رسائل مقدَّمة ومعتمدة، خادم الاستقبال', from: 2, to: 5 },
+      { label: 'الفهم وقاعدة المعرفة', note: 'نسخ، لغات، نيات؛ أسئلة شائعة يعتمدها المسيّر ويؤرشفها بالنسخ', from: 5, to: 9, accent: true },
+      { label: 'الأدوات: قراءة ثم أفعال محدودة', note: 'التقويم والمخزون والرصيد للقراءة؛ تعليق وتحضير وفتح بسقوف', from: 9, to: 12 },
+      { label: 'القبول: مئتا محادثة معادة', note: 'المحادثات الحقيقية لشهر الجرد، معادة؛ كل جواب مُقيَّم', from: 12, to: 14 },
+      { label: 'التجربة، إنسان في الحلقة', note: 'الوكيل يجيب، إنسان يراجع مباشرة الأسبوع الأول، ثم بالعيّنة', from: 14, to: 18 },
+      { label: 'الحصيلة والتكاليف', note: 'نسبة الحل، التسليمات، التكلفة لكل محادثة؛ القرار بشأن الأفعال التالية', from: 18, to: 20 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = يناير 2027. الأسبوعان الأولان يقرران كل شيء: قائمة الأسئلة الحقيقية وعمود ما لا يفعله الوكيل أبداً. القبول يعيد محادثات حقيقية لا سيناريوهات مخترعة؛ وهناك يكشف الوكيل عن نفسه.', alt: 'خط زمني من 20 أسبوعاً: الجرد، القناة، الفهم، الأدوات، القبول، التجربة، الحصيلة.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      message: { svg: steps({ title: t.message.title, steps: t.message.items, arrows: true, rtl }), caption: t.message.caption, alt: t.message.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      limites: { svg: matrix({ title: t.limites.title, columns: t.limites.columns, rows: t.limites.rows, rtl }), caption: t.limites.caption, alt: t.limites.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 20, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

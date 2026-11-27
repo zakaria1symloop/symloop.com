@@ -46,19 +46,19 @@ Analyzed 5 blog posts targeting Algeria smart home and security market:
       "@type": "ListItem",
       "position": 1,
       "name": "Accueil",
-      "item": "https://www.symloop.com"
+      "item": "https://symloop.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://www.symloop.com/blog"
+      "item": "https://symloop.com/blog"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Maison Intelligente Algérie",
-      "item": "https://www.symloop.com/blog/maison-intelligente-smart-home-algerie-2026"
+      "item": "https://symloop.com/blog/maison-intelligente-smart-home-algerie-2026"
     }
   ]
 }
@@ -117,7 +117,7 @@ Analyzed 5 blog posts targeting Algeria smart home and security market:
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Symloop Algérie",
-  "image": "https://www.symloop.com/images/symloop-logo.png",
+  "image": "https://symloop.com/images/symloop-logo.png",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "DZ",
@@ -182,15 +182,15 @@ Analyzed 5 blog posts targeting Algeria smart home and security market:
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Maison Intelligente Algérie 2026 | Symloop" />
 <meta name="twitter:description" content="Solutions smart home 100% algériennes..." />
-<meta name="twitter:image" content="https://www.symloop.com/images/og-smart-home-algeria.jpg" />
+<meta name="twitter:image" content="https://symloop.com/images/og-smart-home-algeria.jpg" />
 ```
 
 3. **Hreflang Tags** (Critical for Algeria - multi-language):
 ```html
-<link rel="alternate" hreflang="fr-DZ" href="https://www.symloop.com/fr/blog/maison-intelligente-smart-home-algerie-2026" />
-<link rel="alternate" hreflang="ar-DZ" href="https://www.symloop.com/ar/blog/maison-intelligente-smart-home-algerie-2026" />
-<link rel="alternate" hreflang="en-DZ" href="https://www.symloop.com/en/blog/maison-intelligente-smart-home-algerie-2026" />
-<link rel="alternate" hreflang="x-default" href="https://www.symloop.com/blog/maison-intelligente-smart-home-algerie-2026" />
+<link rel="alternate" hreflang="fr-DZ" href="https://symloop.com/fr/blog/maison-intelligente-smart-home-algerie-2026" />
+<link rel="alternate" hreflang="ar-DZ" href="https://symloop.com/ar/blog/maison-intelligente-smart-home-algerie-2026" />
+<link rel="alternate" hreflang="en-DZ" href="https://symloop.com/en/blog/maison-intelligente-smart-home-algerie-2026" />
+<link rel="alternate" hreflang="x-default" href="https://symloop.com/blog/maison-intelligente-smart-home-algerie-2026" />
 ```
 
 ---
@@ -659,9 +659,9 @@ Add to `<Head>` section:
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Symloop Smart Home Algérie",
-  "image": "https://www.symloop.com/images/symloop-algeria.jpg",
-  "@id": "https://www.symloop.com",
-  "url": "https://www.symloop.com",
+  "image": "https://symloop.com/images/symloop-algeria.jpg",
+  "@id": "https://symloop.com",
+  "url": "https://symloop.com",
   "telephone": "+213-XXX-XXX-XXX",
   "priceRange": "$$",
   "address": {

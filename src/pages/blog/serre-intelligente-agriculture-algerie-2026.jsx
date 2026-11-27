@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 import { getBlogBySlug, getRelatedBlogs } from '../../data/blogs';
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function SerreIntelligenteAlgerie2026() {
   const router = useRouter();
@@ -48,7 +49,6 @@ export default function SerreIntelligenteAlgerie2026() {
         <title>Serres Intelligentes en Algérie 2026 : Agriculture Sous Serre Connectée IoT | Symloop</title>
         <meta name="description" content="Guide complet sur les serres intelligentes en Algérie 2026. Contrôle IoT automatique : température, humidité, irrigation, ventilation. Capteurs fabriqués en Algérie. Rendement +30-50%. Solutions à partir de 120 000 DA. Symloop." />
         <meta name="keywords" content="serre intelligente algérie, agriculture sous serre algérie, serre connectée IoT, serre automatique algérie 2026, culture sous serre algérie, serre IoT algérie, smart greenhouse Algeria, irrigation goutte à goutte serre algérie, capteurs serre algérie, serre intelligente Biskra, serre intelligente Blida, agriculture intelligente algérie, serre high tech algérie, serre climatisée algérie, combien coûte une serre intelligente en algérie, meilleure serre intelligente algérie 2026" />
-        <link rel="canonical" href="https://symloop.com/blog/serre-intelligente-agriculture-algerie-2026/" />
 
         <meta property="og:title" content="Serres Intelligentes en Algérie 2026 : Agriculture Sous Serre Connectée IoT | Symloop" />
         <meta property="og:description" content="Serres intelligentes IoT en Algérie 2026. Contrôle automatique température, humidité, irrigation. Capteurs fabriqués en Algérie par Symloop. Rendement +30-50%." />
@@ -122,7 +122,7 @@ export default function SerreIntelligenteAlgerie2026() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-emerald-950 via-green-900 to-emerald-950 text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog
@@ -221,7 +221,7 @@ export default function SerreIntelligenteAlgerie2026() {
                 avec un rendement supérieur de 30 à 50% et une consommation d&apos;eau réduite de moitié.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                <strong>Symloop</strong>, entreprise technologique algérienne basée à Sétif, développe et fabrique localement
+                <strong>Symloop</strong>, entreprise technologique algérienne basée à Alger, développe et fabrique localement
                 des solutions complètes de <strong>serres connectées IoT</strong> adaptées aux conditions climatiques algériennes
                 — de la chaleur saharienne du Sud au froid des Hauts Plateaux.
               </p>
@@ -594,6 +594,8 @@ export default function SerreIntelligenteAlgerie2026() {
                     <div className="px-6 pb-6 pt-2">
                       <p className="text-gray-600 leading-relaxed">{item.answer}</p>
                     </div>
+
+                    <SectorSoftwareLinks locale={locale} exclude={["serre-intelligente-agriculture-algerie-2026"]} tone="light" />
                   </details>
                 ))}
               </div>

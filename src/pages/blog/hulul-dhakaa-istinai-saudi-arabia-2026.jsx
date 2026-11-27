@@ -765,7 +765,6 @@ export default function HululDhakaaIstinaiSaudiArabia2026() {
         <title>{t.meta.title}</title>
         <meta name="description" content={t.meta.description} />
         <meta name="keywords" content={t.meta.keywords} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/hulul-dhakaa-istinai-saudi-arabia-2026" />
 
         <meta name="geo.region" content="SA" />
         <meta name="geo.placename" content="Saudi Arabia" />
@@ -786,10 +785,6 @@ export default function HululDhakaaIstinaiSaudiArabia2026() {
         <meta name="twitter:title" content={t.meta.title} />
         <meta name="twitter:description" content={t.meta.description} />
 
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/hulul-dhakaa-istinai-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/hulul-dhakaa-istinai-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/hulul-dhakaa-istinai-saudi-arabia-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/ar/blog/hulul-dhakaa-istinai-saudi-arabia-2026" />
 
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

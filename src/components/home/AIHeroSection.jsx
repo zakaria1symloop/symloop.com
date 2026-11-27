@@ -312,14 +312,14 @@ export default function AIHeroSection() {
 
           {/* Left Side - Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ x: -30 }}
+            animate={{ x: 0 }}
             className={`order-2 lg:order-1 ${isRTL ? 'text-right' : 'text-left'}`}
           >
             {/* Badge */}
             <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: -10 }}
+              animate={{ y: 0 }}
               className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-full border border-white/20 mb-6 ${isRTL ? 'flex-row-reverse' : ''}`}
             >
               <Sparkles className="w-4 h-4 text-white/60" />
@@ -330,8 +330,8 @@ export default function AIHeroSection() {
 
             {/* Main Title */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
@@ -344,8 +344,8 @@ export default function AIHeroSection() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndustry}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 10 }}
+                animate={{ y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 className="mb-8"
               >
@@ -366,8 +366,8 @@ export default function AIHeroSection() {
                   {currentIndustry.useCases.map((useCase, i) => (
                     <motion.span
                       key={i}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      initial={{ scale: 0.9 }}
+                      animate={{ scale: 1 }}
                       transition={{ delay: i * 0.1 }}
                       className={`px-4 py-2 rounded-full text-sm border ${currentIndustry.borderClass} ${currentIndustry.textClass} bg-white/5`}
                     >
@@ -410,8 +410,8 @@ export default function AIHeroSection() {
 
           {/* Right Side - Brain Visualization */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ x: 30 }}
+            animate={{ x: 0 }}
             transition={{ delay: 0.2 }}
             className="order-1 lg:order-2"
           >

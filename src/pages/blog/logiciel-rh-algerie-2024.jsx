@@ -80,7 +80,6 @@ export default function LogicielRHAlgerie() {
         <title>Logiciel RH et Paie Algérie 2024 - SIRH Conforme CNAS/CASNOS | Symloop</title>
         <meta name="description" content="Solution SIRH complète pour entreprises algériennes. Gestion paie CNAS/CASNOS/IRG, congés, recrutement, évaluations. Prix à partir de 150K DA. Démo gratuite." />
         <meta name="keywords" content="logiciel rh algérie, sirh algérie, gestion paie algérie, logiciel paie cnas, logiciel casnos, gestion ressources humaines, logiciel pointage, gestion congés, bulletin paie algérie, déclaration sociale algérie, irg algérie, logiciel rh prix" />
-        <link rel="canonical" href="https://symloop.com/blog/logiciel-rh-algerie-2024" />
         <meta property="og:title" content="Logiciel RH et Paie Algérie 2024 - SIRH Conforme CNAS/CASNOS" />
         <meta property="og:description" content="Solution SIRH complète pour entreprises algériennes. Gestion paie, congés, recrutement. Prix compétitifs." />
         <meta property="og:url" content="https://symloop.com/blog/logiciel-rh-algerie-2024" />
@@ -95,7 +94,7 @@ export default function LogicielRHAlgerie() {
       <div className="min-h-screen bg-white">
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

@@ -538,7 +538,6 @@ export default function DigitalTransformationSaudiArabia2030() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <meta name="keywords" content={c.seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/blog/digital-transformation-saudi-arabia-vision-2030" />
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:type" content="article" />
@@ -556,10 +555,6 @@ export default function DigitalTransformationSaudiArabia2030() {
         <meta name="author" content="Symloop" />
         <meta name="geo.region" content="SA" />
         <meta name="geo.placename" content="Saudi Arabia" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/digital-transformation-saudi-arabia-vision-2030" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/digital-transformation-saudi-arabia-vision-2030" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/digital-transformation-saudi-arabia-vision-2030" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/blog/digital-transformation-saudi-arabia-vision-2030" />
 
         {/* JSON-LD: Article */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

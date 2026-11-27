@@ -11,6 +11,7 @@ import {
   CalendarCheck, ClipboardList, CreditCard, Pill,
   UserPlus, Building2, Bell, Lock
 } from "lucide-react";
+import SectorSoftwareLinks from '../../components/blog/SectorSoftwareLinks';
 
 export default function LogicielCliniqueMedical2026() {
   const router = useRouter();
@@ -19,9 +20,9 @@ export default function LogicielCliniqueMedical2026() {
 
   const content = {
     fr: {
-      title: "Logiciel de Gestion pour Cliniques et Cabinets Medicaux en Algerie",
+      title: "Logiciel clinique, cabinet médical et hôpital en Algérie : dossier patient, rendez-vous, facturation, ordonnances",
       subtitle: "Solution Complete pour Medecins, Dentistes, et Etablissements de Sante",
-      metaTitle: "Logiciel Clinique Cabinet Medical Algerie 2026 | Gestion Patients | Symloop",
+      metaTitle: "Logiciel clinique et hôpital Algérie 2026 : dossier patient, rendez-vous, facturation | Symloop",
       metaDesc: "Logiciel de gestion pour cliniques et cabinets medicaux en Algerie. Dossiers patients, rendez-vous, facturation, ordonnances. Conforme aux normes sante. Demo gratuite.",
       date: "10 Janvier 2026",
       readTime: "14 min",
@@ -249,9 +250,9 @@ export default function LogicielCliniqueMedical2026() {
       backToBlog: "Retour au Blog"
     },
     en: {
-      title: "Management Software for Clinics and Medical Practices in Algeria",
+      title: "Clinic, medical practice and hospital software in Algeria: patient file, appointments, invoicing, prescriptions",
       subtitle: "Complete Solution for Doctors, Dentists, and Healthcare Facilities",
-      metaTitle: "Clinic Medical Practice Software Algeria 2026 | Patient Management | Symloop",
+      metaTitle: "Clinic and hospital software Algeria 2026: patient file, appointments, invoicing | Symloop",
       metaDesc: "Management software for clinics and medical practices in Algeria. Patient records, appointments, billing, prescriptions. Health standards compliant. Free demo.",
       date: "January 10, 2026",
       readTime: "14 min",
@@ -479,9 +480,9 @@ export default function LogicielCliniqueMedical2026() {
       backToBlog: "Back to Blog"
     },
     ar: {
-      title: "برنامج إدارة العيادات والمراكز الطبية في الجزائر",
+      title: "برنامج مصحة وعيادة طبية ومستشفى في الجزائر: ملف المريض، المواعيد، الفوترة، الوصفات",
       subtitle: "حل شامل للأطباء وأطباء الأسنان والمنشآت الصحية",
-      metaTitle: "برنامج عيادة طبية الجزائر 2026 | إدارة المرضى | Symloop",
+      metaTitle: "برنامج مصحة ومستشفى الجزائر 2026: ملف المريض، المواعيد، الفوترة | Symloop",
       metaDesc: "برنامج إدارة العيادات والمراكز الطبية في الجزائر. ملفات المرضى، المواعيد، الفوترة، الوصفات الطبية. متوافق مع المعايير الصحية. عرض مجاني.",
       date: "10 يناير 2026",
       readTime: "14 دقيقة",
@@ -718,7 +719,6 @@ export default function LogicielCliniqueMedical2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel clinique algerie, logiciel cabinet medical, gestion patients, logiciel medecin, logiciel dentiste, dossier medical electronique algerie" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-clinique-cabinet-medical-algerie-2026`} />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
@@ -1013,6 +1013,8 @@ export default function LogicielCliniqueMedical2026() {
                 </Link>
               </div>
             </div>
+
+            <SectorSoftwareLinks locale={locale} exclude={["logiciel-clinique-cabinet-medical-algerie-2026"]} tone="dark" />
 
             {/* CTA */}
             <div className="bg-gradient-to-br from-red-500/20 via-pink-500/20 to-red-500/20 border border-red-500/30 rounded-2xl p-8 text-center">

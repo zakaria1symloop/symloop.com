@@ -484,7 +484,6 @@ export default function ArtificialIntelligenceSaudiArabia2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDescription} />
         <meta name="keywords" content={t.seoKeywords} />
-        <link rel="canonical" href="https://symloop.com/blog/artificial-intelligence-solutions-saudi-arabia-2026" />
 
         <meta name="geo.region" content="SA" />
         <meta name="geo.placename" content="Saudi Arabia" />

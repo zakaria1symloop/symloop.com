@@ -872,7 +872,6 @@ export default function TijaraIliktruniyaSaudiArabiaMada2026() {
         <title>{c.meta.title}</title>
         <meta name="description" content={c.meta.description} />
         <meta name="keywords" content={c.meta.keywords} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/tijara-iliktruniya-saudi-arabia-mada-2026" />
 
         {/* Geo Meta Tags */}
         <meta name="geo.region" content="SA" />
@@ -900,10 +899,6 @@ export default function TijaraIliktruniyaSaudiArabiaMada2026() {
         <meta name="twitter:description" content={c.meta.description} />
 
         {/* Hreflang */}
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/tijara-iliktruniya-saudi-arabia-mada-2026" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/tijara-iliktruniya-saudi-arabia-mada-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/tijara-iliktruniya-saudi-arabia-mada-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/ar/blog/tijara-iliktruniya-saudi-arabia-mada-2026" />
 
         {/* Schema JSON-LD */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />

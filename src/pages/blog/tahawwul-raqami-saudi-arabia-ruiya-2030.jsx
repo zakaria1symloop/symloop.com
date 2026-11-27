@@ -706,7 +706,6 @@ export default function TahawwulRaqamiSaudiArabiaRuiya2030() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content={t.seoKeywords?.join(', ')} />
-        <link rel="canonical" href="https://symloop.com/ar/blog/tahawwul-raqami-saudi-arabia-ruiya-2030" />
         <meta property="og:title" content={t.metaTitle} />
         <meta property="og:description" content={t.metaDesc} />
         <meta property="og:type" content="article" />
@@ -721,9 +720,6 @@ export default function TahawwulRaqamiSaudiArabiaRuiya2030() {
         <meta name="twitter:description" content={t.metaDesc} />
         <meta name="geo.region" content="SA" />
         <meta name="geo.placename" content="Saudi Arabia" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/tahawwul-raqami-saudi-arabia-ruiya-2030" />
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/tahawwul-raqami-saudi-arabia-ruiya-2030" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/tahawwul-raqami-saudi-arabia-ruiya-2030" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />

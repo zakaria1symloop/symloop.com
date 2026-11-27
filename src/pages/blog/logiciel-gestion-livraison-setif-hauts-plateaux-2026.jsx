@@ -580,7 +580,6 @@ export default function LogicielLivraisonSetif2026() {
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDesc} />
         <meta name="keywords" content="logiciel livraison Setif, gestion livreurs, suivi GPS, delivery management, e-commerce Setif, distribution Hauts Plateaux" />
-        <link rel="canonical" href={`https://symloop.com/${locale === 'fr' ? '' : locale + '/'}blog/logiciel-gestion-livraison-setif-hauts-plateaux-2026`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

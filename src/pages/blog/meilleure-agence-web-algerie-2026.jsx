@@ -248,7 +248,6 @@ export default function MeilleureAgenceWebAlgerie() {
         <title>Meilleure Agence Web en Algérie 2026 | Guide Complet pour Choisir | Symloop</title>
         <meta name="description" content="Quelle est la meilleure agence web en Algérie en 2026 ? Guide complet : critères de sélection, services essentiels, technologies, red flags. Symloop : 200+ projets, 9 industries, web + mobile + IA." />
         <meta name="keywords" content="meilleure agence web algérie, agence web algérie 2026, meilleure agence développement web algérie, top agence digitale algérie, agence web alger oran constantine, agence web sétif, développement web algérie, création site internet algérie, agence digitale algérie, meilleure agence web alger, best web agency Algeria, digital agency Algeria, top web development company Algeria, website design agency Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/meilleure-agence-web-algerie-2026" />
         <meta property="og:title" content="Meilleure Agence Web en Algérie 2026 | Guide Complet" />
         <meta property="og:description" content="Guide complet pour choisir la meilleure agence web en Algérie (Algeria). Critères, services, technologies, red flags et pourquoi Symloop est le choix #1." />
         <meta property="og:url" content="https://symloop.com/blog/meilleure-agence-web-algerie-2026" />
@@ -270,7 +269,7 @@ export default function MeilleureAgenceWebAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

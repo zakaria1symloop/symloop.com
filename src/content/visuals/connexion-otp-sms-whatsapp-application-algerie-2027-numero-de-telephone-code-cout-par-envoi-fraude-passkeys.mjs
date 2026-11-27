@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'connexion-otp-sms-whatsapp-application-algerie-2027-numero-de-telephone-code-cout-par-envoi-fraude-passkeys';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Authentification · OTP · SMS · WhatsApp · 2027', title: ['Le code n’arrive pas.', 'Le client réessaie.', 'Vous payez trois fois.'], subtitle: 'Comment on construit la connexion par numéro de téléphone d’une application en Algérie : les contrôles avant l’envoi, WhatsApp d’abord et SMS en repli, le code haché et limité, la session et l’appareil connu, et le coût par connexion qu’on surveille', left: { label: 'Code SMS seul', sub: 'un envoi par essai, payé à chaque fois' }, right: { label: 'Service d’auth', sub: 'un code sur quatre, WhatsApp d’abord' } },
+    parcours: { title: 'La vie d’une connexion par numéro de téléphone, en six moments', items: [
+      { n: '01', label: 'Le numéro saisi', sub: 'Normalisé au format international (+213…), reconnu comme mobile algérien ou comme numéro étranger ; rejeté s’il n’est ni l’un ni l’autre.' },
+      { n: '02', label: 'Les contrôles avant l’envoi', sub: 'Limites par numéro, par adresse IP et par appareil ; plages de numéros servies ; défi invisible pour les navigateurs suspects. Rien ne part sans eux.', accent: true },
+      { n: '03', label: 'L’envoi', sub: 'WhatsApp d’abord si le numéro y est joignable, SMS sinon, appel vocal en dernier recours ; code à six chiffres, cinq minutes, stocké haché.' },
+      { n: '04', label: 'La saisie et la vérification', sub: 'Remplissage automatique quand le téléphone le permet ; trois essais, comparaison en temps constant, code invalidé après usage.' },
+      { n: '05', label: 'La session', sub: 'Jeton court pour les appels, jeton de renouvellement lié à l’appareil, révocable depuis le compte ; trente jours puis nouvelle preuve.' },
+      { n: '06', label: 'L’appareil connu', sub: 'Au deuxième lancement, la biométrie du téléphone suffit ; une passkey est proposée ; le code ne revient que sur un appareil inconnu.' },
+    ], caption: 'Figure 1 · Le moment 02 est celui qui décide du coût et de la sécurité : un code envoyé sans contrôles part vers n’importe quel numéro que des robots demandent, et la facture SMS suit. Le moment 06 est celui qui divise les envois : un client qui se connecte vingt fois par mois ne reçoit un code que la première fois sur chaque appareil.', alt: 'Six étapes : numéro saisi, contrôles avant l’envoi, envoi par WhatsApp puis SMS, saisie et vérification, session, appareil connu' },
+    couches: { title: 'L’authentification par téléphone, en cinq couches', layers: [
+      { label: 'Canaux', items: [{ name: 'WhatsApp (modèle d’authentification), SMS de l’opérateur ou de l’agrégateur, appel vocal, e-mail', sub: 'chaque canal a son connecteur, son coût, son taux de livraison ; aucun n’est le seul' }] },
+      { label: 'Service d’authentification', items: [{ name: 'Génération, hachage, limites, bascule de canal, journal', sub: 'le seul endroit qui sait qu’un code existe ; il décide par quel canal partir et quand s’arrêter', accent: true }] },
+      { label: 'Sessions et appareils', items: [{ name: 'Jetons, renouvellement, révocation, liste des appareils connus', sub: 'c’est cette couche qui évite de renvoyer un code à chaque ouverture' }] },
+      { label: 'Application', items: [{ name: 'L’écran unique « votre numéro », le remplissage automatique, le repli visible', sub: 'elle ne sait pas si le code est parti par WhatsApp ou par SMS ; elle montre « renvoyer autrement »' }] },
+      { label: 'Supervision', items: [{ name: 'Livraison par canal, délai d’arrivée, coût par connexion, alertes de fraude', sub: 'un écran lu chaque semaine : combien de codes, par quel canal, à quel prix, combien vérifiés' }] },
+    ], caption: 'Figure 2 · La couche du milieu est ce qu’on construit vraiment : les canaux changent de prix et de règles tous les ans, l’application change d’écran, mais le service qui génère, hache, limite et journalise reste. Un prestataire qui appelle l’API d’un envoyeur de SMS depuis l’écran de connexion a construit un formulaire, pas une authentification.', alt: 'Cinq couches : canaux, service d’authentification, sessions et appareils, application, supervision' },
+    exemple: { title: 'Une application grand public, un mois : l’exemple', items: [
+      { value: '20 000', label: 'connexions par mois, par 6 000 clients actifs ; hypothèse à remplacer par vos chiffres d’usage' },
+      { value: '5 000', label: 'codes réellement envoyés : les appareils connus et la biométrie prennent les trois quarts des connexions' },
+      { value: '70 / 30', label: 'répartition WhatsApp / SMS des codes envoyés ; hypothèse fondée sur la part des numéros joignables sur WhatsApp' },
+      { value: '× 20 à 30', label: 'écart de prix entre un SMS et un message WhatsApp d’authentification vers l’Algérie sur les grilles de revendeurs internationaux ; à vérifier avec votre contrat', accent: true },
+    ], caption: 'Figure 3 · Les volumes sont des hypothèses ; la mécanique ne l’est pas : sans appareils connus, les 20 000 connexions sont 20 000 codes, et sans bascule de canal, ils partent tous au prix du SMS. L’écart de prix vient de grilles publiques de revendeurs, pas des tarifs des opérateurs algériens en dinars, qui se négocient par contrat.', alt: 'Quatre chiffres : 20 000 connexions, 5 000 codes envoyés, 70/30 WhatsApp/SMS, écart de prix ×20 à 30' },
+    canaux: { title: 'Six façons de prouver qui se connecte, et ce que chacune impose', columns: ['Ce qu’elle apporte', 'Ce qu’elle coûte ou impose'], rows: [
+      { label: 'Code par SMS', cells: ['Marche sur tout téléphone, sans application ni data ; le réflexe que tout le monde connaît', 'Payé à chaque envoi ; livraison variable selon l’opérateur ; classé « restreint » par le NIST ; cible des robots'] },
+      { label: 'Code par WhatsApp', cells: ['Remplissage en un geste sur Android et iOS 26, livraison tracée, prix par message bien plus bas que le SMS', 'Compte WhatsApp Business et modèle d’authentification approuvé ; ne couvre que les numéros présents sur WhatsApp'] },
+      { label: 'Appel vocal', cells: ['Dernier recours quand ni SMS ni WhatsApp n’arrivent ; lit le code à voix haute', 'Le plus coûteux par tentative ; à réserver au troisième essai, jamais en premier'] },
+      { label: 'Lien par e-mail', cells: ['Gratuit, utile pour les comptes professionnels et la diaspora qui n’a pas de numéro algérien', 'Boîtes mal consultées sur mobile ; non accepté comme preuve seule pour les systèmes exigeants'] },
+      { label: 'Mot de passe', cells: ['Ne coûte rien à l’envoi ; connu de tous', 'Oublié, réutilisé, hameçonné ; appelle de toute façon un code ou un lien pour le récupérer'] },
+      { label: 'Passkey (biométrie)', cells: ['Aucun envoi, aucun code à copier, résistante au hameçonnage ; cinq milliards en usage selon la FIDO Alliance', 'Suppose un téléphone récent et un premier enrôlement ; à proposer après la première connexion, pas à imposer'] },
+    ], caption: 'Figure 4 · Aucune ligne ne suffit seule. Le montage qui tient en Algérie en 2027 : WhatsApp d’abord, SMS en repli, appel vocal au troisième essai, e-mail pour les comptes qui n’ont pas de numéro algérien, et la passkey proposée dès que l’appareil le permet pour ne plus rien envoyer.', alt: 'Matrice de six canaux : SMS, WhatsApp, appel vocal, e-mail, mot de passe, passkey' },
+    fraudes: { title: 'Six abus que le service d’authentification doit arrêter', columns: ['Ce qui se passe', 'Ce que le service fait'], rows: [
+      { label: 'Pompage de SMS', cells: ['Des robots demandent des milliers de codes vers des plages de numéros que des intermédiaires rémunèrent', 'Plages servies seulement, limites par IP et par appareil, défi invisible, alerte quand les envois montent sans vérifications'] },
+      { label: 'Essais en force', cells: ['Quelqu’un tente les 999 999 combinaisons d’un code à six chiffres', 'Trois essais puis nouveau code, cinq minutes de validité, blocage progressif du numéro et de l’IP'] },
+      { label: 'Échange de SIM, portage', cells: ['Le numéro du client est récupéré chez l’opérateur par un tiers qui reçoit ses codes', 'Signaux de changement d’appareil ou de carte avant les actions sensibles ; seconde preuve pour changer de numéro ou vider un solde'] },
+      { label: 'Hameçonnage du code', cells: ['Un faux conseiller appelle le client et lui demande « le code que vous venez de recevoir »', 'Message « ne partagez jamais ce code », code lié à l’action demandée, saisie manuelle jamais traitée comme preuve forte'] },
+      { label: 'Rejeu et partage d’appareil', cells: ['Un code intercepté est rejoué ; un téléphone de famille garde la session de quelqu’un d’autre', 'Code à usage unique invalidé après vérification ; liste des appareils connus avec déconnexion à distance'] },
+      { label: 'Numéro recyclé', cells: ['Un ancien client a changé de numéro ; l’opérateur l’a réattribué à un inconnu qui se connecte à son compte', 'Expiration des sessions inactives, seconde preuve avant les données sensibles, détection d’un appareil jamais vu sur un compte ancien'] },
+    ], caption: 'Figure 5 · Les deux premières lignes coûtent de l’argent, les quatre suivantes coûtent des clients. Toutes se traitent dans le service d’authentification, pas dans l’écran : un formulaire ne peut ni compter les essais d’une IP ni savoir qu’un appareil est nouveau.', alt: 'Matrice de six abus : pompage de SMS, essais en force, échange de SIM, hameçonnage, rejeu, numéro recyclé' },
+    calendrier: { title: 'Construire l’authentification par téléphone en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Règles et canaux', note: 'qui se connecte, avec quel numéro, depuis quel pays ; canaux retenus, limites, durée des sessions écrites', from: 0, to: 1 },
+      { label: 'Comptes et contrats', note: 'compte WhatsApp Business et modèle d’authentification soumis ; opérateur ou agrégateur SMS contracté au nom de l’entreprise', from: 1, to: 2 },
+      { label: 'Service d’authentification', note: 'génération, hachage, limites, bascule WhatsApp → SMS → vocal, journal, tests d’abus automatisés', from: 2, to: 4, accent: true },
+      { label: 'Écran et remplissage', note: 'écran unique, remplissage automatique Android et iOS, « renvoyer autrement » visible, erreurs claires', from: 4, to: 5 },
+      { label: 'Sessions et appareils connus', note: 'jetons, renouvellement, liste des appareils, déconnexion à distance, biométrie, passkey proposée', from: 5, to: 6 },
+      { label: 'Pilote', note: 'cinq cents clients réels, mesure de la livraison par canal et par opérateur, délai d’arrivée, coût par connexion', from: 6, to: 7 },
+      { label: 'Supervision et bascule', note: 'écran hebdomadaire, alertes de fraude, bascule de tous les clients, décision sur la part SMS acceptable', from: 7, to: 8 },
+    ], caption: 'Figure 6 · Huit semaines pour un module qui vivra autant que l’application. Le compte WhatsApp Business et le contrat SMS se demandent dès la semaine 1 : l’approbation du modèle et la signature chez l’opérateur prennent plus de temps que le code. Le pilote de la semaine 6 est le seul moyen de connaître la livraison réelle par opérateur.', alt: 'Frise de huit semaines : règles, comptes, service d’authentification, écran, sessions, pilote, supervision' },
+  },
+  en: {
+    cover: { eyebrow: 'Authentication · OTP · SMS · WhatsApp · 2027', title: ['The code never comes.', 'The customer retries.', 'You pay three times.'], subtitle: 'How phone-number login is built for an app in Algeria: the checks before sending, WhatsApp first and SMS as fallback, the hashed and rate-limited code, the session and the known device, and the cost per login you watch', left: { label: 'SMS code alone', sub: 'one send per attempt, paid every time' }, right: { label: 'Auth service', sub: 'one code in four, WhatsApp first' } },
+    parcours: { title: 'The life of a phone-number login, in six moments', items: [
+      { n: '01', label: 'The number entered', sub: 'Normalised to international format (+213…), recognised as an Algerian mobile or a foreign number; rejected if it is neither.' },
+      { n: '02', label: 'The checks before sending', sub: 'Limits per number, per IP address and per device; served number ranges; invisible challenge for suspicious browsers. Nothing leaves without them.', accent: true },
+      { n: '03', label: 'The send', sub: 'WhatsApp first if the number is reachable there, SMS otherwise, voice call as last resort; six-digit code, five minutes, stored hashed.' },
+      { n: '04', label: 'Entry and verification', sub: 'Autofill when the phone allows it; three attempts, constant-time comparison, code invalidated after use.' },
+      { n: '05', label: 'The session', sub: 'Short token for calls, refresh token bound to the device, revocable from the account; thirty days then new proof.' },
+      { n: '06', label: 'The known device', sub: 'On the second launch the phone’s biometrics are enough; a passkey is offered; the code returns only on an unknown device.' },
+    ], caption: 'Figure 1 · Moment 02 decides cost and security: a code sent without checks goes to any number bots ask for, and the SMS bill follows. Moment 06 divides the sends: a customer who logs in twenty times a month receives a code only the first time on each device.', alt: 'Six steps: number entered, checks before sending, send by WhatsApp then SMS, entry and verification, session, known device' },
+    couches: { title: 'Phone authentication, in five layers', layers: [
+      { label: 'Channels', items: [{ name: 'WhatsApp (authentication template), carrier or aggregator SMS, voice call, email', sub: 'each channel has its connector, its cost, its delivery rate; none is the only one' }] },
+      { label: 'Auth service', items: [{ name: 'Generation, hashing, limits, channel fallback, log', sub: 'the only place that knows a code exists; it decides which channel to use and when to stop', accent: true }] },
+      { label: 'Sessions and devices', items: [{ name: 'Tokens, refresh, revocation, list of known devices', sub: 'this layer is what avoids resending a code at every launch' }] },
+      { label: 'App', items: [{ name: 'The single “your number” screen, autofill, visible fallback', sub: 'it does not know whether the code went by WhatsApp or SMS; it shows “send another way”' }] },
+      { label: 'Supervision', items: [{ name: 'Delivery per channel, arrival delay, cost per login, fraud alerts', sub: 'a screen read every week: how many codes, by which channel, at what price, how many verified' }] },
+    ], caption: 'Figure 2 · The middle layer is what is really built: channels change price and rules every year, the app changes screens, but the service that generates, hashes, limits and logs stays. A vendor who calls an SMS sender’s API from the login screen has built a form, not an authentication.', alt: 'Five layers: channels, auth service, sessions and devices, app, supervision' },
+    exemple: { title: 'A consumer app, one month: the example', items: [
+      { value: '20,000', label: 'logins a month by 6,000 active customers; an assumption to replace with your usage figures' },
+      { value: '5,000', label: 'codes actually sent: known devices and biometrics take three quarters of the logins' },
+      { value: '70 / 30', label: 'WhatsApp / SMS split of the codes sent; assumption based on the share of numbers reachable on WhatsApp' },
+      { value: '× 20 to 30', label: 'price gap between an SMS and a WhatsApp authentication message to Algeria on international resellers’ rate sheets; check against your contract', accent: true },
+    ], caption: 'Figure 3 · The volumes are assumptions; the mechanics are not: without known devices the 20,000 logins are 20,000 codes, and without channel fallback they all leave at SMS price. The price gap comes from public reseller sheets, not from Algerian carriers’ dinar rates, which are negotiated by contract.', alt: 'Four figures: 20,000 logins, 5,000 codes sent, 70/30 WhatsApp/SMS, price gap ×20 to 30' },
+    canaux: { title: 'Six ways to prove who is logging in, and what each imposes', columns: ['What it brings', 'What it costs or imposes'], rows: [
+      { label: 'SMS code', cells: ['Works on any phone, no app or data; the reflex everyone knows', 'Paid per send; delivery varies by carrier; classed “restricted” by NIST; a target for bots'] },
+      { label: 'WhatsApp code', cells: ['One-gesture fill on Android and iOS 26, tracked delivery, per-message price far below SMS', 'WhatsApp Business account and approved authentication template; covers only numbers present on WhatsApp'] },
+      { label: 'Voice call', cells: ['Last resort when neither SMS nor WhatsApp arrives; reads the code aloud', 'The costliest per attempt; reserved for the third try, never first'] },
+      { label: 'Email link', cells: ['Free, useful for business accounts and the diaspora without an Algerian number', 'Inboxes poorly checked on mobile; not accepted as sole proof by demanding systems'] },
+      { label: 'Password', cells: ['Costs nothing to send; known to all', 'Forgotten, reused, phished; needs a code or a link to recover it anyway'] },
+      { label: 'Passkey (biometrics)', cells: ['No send, no code to copy, phishing-resistant; five billion in use according to the FIDO Alliance', 'Assumes a recent phone and a first enrolment; to be offered after the first login, not imposed'] },
+    ], caption: 'Figure 4 · No single row is enough. The set-up that holds in Algeria in 2027: WhatsApp first, SMS as fallback, voice call on the third attempt, email for accounts without an Algerian number, and the passkey offered as soon as the device allows it so that nothing is sent at all.', alt: 'Matrix of six channels: SMS, WhatsApp, voice call, email, password, passkey' },
+    fraudes: { title: 'Six abuses the auth service must stop', columns: ['What happens', 'What the service does'], rows: [
+      { label: 'SMS pumping', cells: ['Bots request thousands of codes towards number ranges that intermediaries get paid for', 'Served ranges only, limits per IP and per device, invisible challenge, alert when sends rise without verifications'] },
+      { label: 'Brute force', cells: ['Someone tries the 999,999 combinations of a six-digit code', 'Three attempts then a new code, five-minute validity, progressive blocking of the number and the IP'] },
+      { label: 'SIM swap, porting', cells: ['The customer’s number is taken over at the carrier by a third party who receives their codes', 'Device or SIM change signals before sensitive actions; second proof to change number or empty a balance'] },
+      { label: 'Code phishing', cells: ['A fake adviser calls the customer and asks for “the code you just received”', '“Never share this code” message, code bound to the requested action, manual entry never treated as strong proof'] },
+      { label: 'Replay and shared device', cells: ['An intercepted code is replayed; a family phone keeps someone else’s session', 'Single-use code invalidated after verification; list of known devices with remote sign-out'] },
+      { label: 'Recycled number', cells: ['A former customer changed number; the carrier reassigned it to a stranger who logs into their account', 'Expiry of inactive sessions, second proof before sensitive data, detection of a never-seen device on an old account'] },
+    ], caption: 'Figure 5 · The first two rows cost money, the next four cost customers. All are handled in the auth service, not in the screen: a form can neither count an IP’s attempts nor know that a device is new.', alt: 'Matrix of six abuses: SMS pumping, brute force, SIM swap, phishing, replay, recycled number' },
+    calendrier: { title: 'Building phone authentication in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Rules and channels', note: 'who logs in, with which number, from which country; channels chosen, limits, session durations written', from: 0, to: 1 },
+      { label: 'Accounts and contracts', note: 'WhatsApp Business account and authentication template submitted; SMS carrier or aggregator contracted in the company’s name', from: 1, to: 2 },
+      { label: 'Auth service', note: 'generation, hashing, limits, WhatsApp → SMS → voice fallback, log, automated abuse tests', from: 2, to: 4, accent: true },
+      { label: 'Screen and autofill', note: 'single screen, Android and iOS autofill, visible “send another way”, clear errors', from: 4, to: 5 },
+      { label: 'Sessions and known devices', note: 'tokens, refresh, device list, remote sign-out, biometrics, passkey offered', from: 5, to: 6 },
+      { label: 'Pilot', note: 'five hundred real customers, delivery measured per channel and per carrier, arrival delay, cost per login', from: 6, to: 7 },
+      { label: 'Supervision and switch', note: 'weekly screen, fraud alerts, switch of all customers, decision on the acceptable SMS share', from: 7, to: 8 },
+    ], caption: 'Figure 6 · Eight weeks for a module that will live as long as the app. The WhatsApp Business account and the SMS contract are requested from week 1: template approval and the carrier’s signature take longer than the code. The week-6 pilot is the only way to learn real delivery per carrier.', alt: 'Eight-week timeline: rules, accounts, auth service, screen, sessions, pilot, supervision' },
+  },
+  ar: {
+    cover: { eyebrow: 'المصادقة · OTP · SMS · WhatsApp · 2027', title: ['الرمز لا يصل.', 'الزبون يعيد المحاولة.', 'وأنتم تدفعون ثلاثاً.'], subtitle: 'كيف يُبنى تسجيل الدخول برقم الهاتف لتطبيق في الجزائر: الضوابط قبل الإرسال، WhatsApp أولاً وSMS احتياطاً، الرمز المجزّأ والمحدود، الجلسة والجهاز المعروف، وتكلفة كل دخول التي تُراقَب', left: { label: 'رمز SMS وحده', sub: 'إرسال لكل محاولة، مدفوع كل مرة' }, right: { label: 'خدمة المصادقة', sub: 'رمز من أربعة، WhatsApp أولاً' } },
+    parcours: { title: 'حياة تسجيل دخول برقم الهاتف، في ست لحظات', items: [
+      { n: '01', label: 'الرقم المُدخل', sub: 'يُوحَّد بالصيغة الدولية (+213…)، ويُتعرَّف عليه كهاتف جزائري أو رقم أجنبي؛ ويُرفض إن لم يكن هذا ولا ذاك.' },
+      { n: '02', label: 'الضوابط قبل الإرسال', sub: 'حدود لكل رقم ولكل عنوان IP ولكل جهاز؛ نطاقات الأرقام المخدومة؛ تحدٍّ خفي للمتصفحات المشبوهة. لا شيء يخرج بدونها.', accent: true },
+      { n: '03', label: 'الإرسال', sub: 'WhatsApp أولاً إن كان الرقم متاحاً عليه، SMS وإلا، مكالمة صوتية كملاذ أخير؛ رمز من ستة أرقام، خمس دقائق، مخزَّن مجزّأً.' },
+      { n: '04', label: 'الإدخال والتحقق', sub: 'تعبئة تلقائية حين يسمح الهاتف؛ ثلاث محاولات، مقارنة بزمن ثابت، إبطال الرمز بعد الاستعمال.' },
+      { n: '05', label: 'الجلسة', sub: 'رمز قصير للنداءات، رمز تجديد مرتبط بالجهاز، قابل للإلغاء من الحساب؛ ثلاثون يوماً ثم إثبات جديد.' },
+      { n: '06', label: 'الجهاز المعروف', sub: 'في الفتح الثاني تكفي بصمة الهاتف؛ يُقترح passkey؛ ولا يعود الرمز إلا على جهاز مجهول.' },
+    ], caption: 'الشكل 1 · اللحظة 02 هي التي تقرر التكلفة والأمان: رمز يُرسل دون ضوابط يذهب إلى أي رقم تطلبه الروبوتات، وفاتورة SMS تتبعه. واللحظة 06 هي التي تقسم الإرسالات: زبون يدخل عشرين مرة في الشهر لا يتلقى رمزاً إلا في المرة الأولى على كل جهاز.', alt: 'ست خطوات: الرقم المدخل، الضوابط قبل الإرسال، الإرسال عبر WhatsApp ثم SMS، الإدخال والتحقق، الجلسة، الجهاز المعروف' },
+    couches: { title: 'المصادقة بالهاتف، في خمس طبقات', layers: [
+      { label: 'القنوات', items: [{ name: 'WhatsApp (قالب مصادقة)، SMS المشغّل أو المجمّع، مكالمة صوتية، بريد إلكتروني', sub: 'لكل قناة موصلها وتكلفتها ومعدل تسليمها؛ ولا واحدة منها هي الوحيدة' }] },
+      { label: 'خدمة المصادقة', items: [{ name: 'التوليد، التجزئة، الحدود، التبديل بين القنوات، السجل', sub: 'المكان الوحيد الذي يعرف أن رمزاً موجود؛ يقرر بأي قناة يخرج ومتى يتوقف', accent: true }] },
+      { label: 'الجلسات والأجهزة', items: [{ name: 'الرموز، التجديد، الإلغاء، قائمة الأجهزة المعروفة', sub: 'هذه الطبقة هي ما يجنّب إعادة إرسال رمز عند كل فتح' }] },
+      { label: 'التطبيق', items: [{ name: 'الشاشة الواحدة «رقمكم»، التعبئة التلقائية، البديل الظاهر', sub: 'لا يعرف إن كان الرمز خرج عبر WhatsApp أو SMS؛ يعرض «أرسِل بطريقة أخرى»' }] },
+      { label: 'الإشراف', items: [{ name: 'التسليم لكل قناة، مهلة الوصول، تكلفة كل دخول، تنبيهات الاحتيال', sub: 'شاشة تُقرأ كل أسبوع: كم رمزاً، بأي قناة، بأي سعر، كم تحقَّق منها' }] },
+    ], caption: 'الشكل 2 · الطبقة الوسطى هي ما يُبنى فعلاً: القنوات تغيّر أسعارها وقواعدها كل سنة، والتطبيق يغيّر شاشته، لكن الخدمة التي تولّد وتجزّئ وتحدّ وتسجّل تبقى. ومورّد ينادي واجهة مرسل SMS من شاشة الدخول بنى استمارة لا مصادقة.', alt: 'خمس طبقات: القنوات، خدمة المصادقة، الجلسات والأجهزة، التطبيق، الإشراف' },
+    exemple: { title: 'تطبيق للجمهور، شهر واحد: المثال', items: [
+      { value: '20 000', label: 'دخول شهرياً من 6 000 زبون نشط؛ فرضية تُستبدل بأرقام استعمالكم' },
+      { value: '5 000', label: 'رمز يُرسل فعلاً: الأجهزة المعروفة والبصمة تأخذ ثلاثة أرباع الدخول' },
+      { value: '70 / 30', label: 'توزيع WhatsApp / SMS للرموز المرسلة؛ فرضية مبنية على حصة الأرقام المتاحة على WhatsApp' },
+      { value: '× 20 إلى 30', label: 'فارق السعر بين SMS ورسالة مصادقة WhatsApp نحو الجزائر على جداول الموزعين الدوليين؛ يُتحقَّق منه مع عقدكم', accent: true },
+    ], caption: 'الشكل 3 · الأحجام فرضيات؛ أما الآلية فلا: بلا أجهزة معروفة تصبح 20 000 دخول 20 000 رمز، وبلا تبديل بين القنوات تخرج كلها بسعر SMS. وفارق السعر مأخوذ من جداول موزعين علنية لا من أسعار المشغلين الجزائريين بالدينار التي تُتفاوَض بعقد.', alt: 'أربعة أرقام: 20 000 دخول، 5 000 رمز مرسل، 70/30 WhatsApp/SMS، فارق سعر ×20 إلى 30' },
+    canaux: { title: 'ست طرق لإثبات من يدخل، وما تفرضه كل منها', columns: ['ما تقدّمه', 'ما تكلّفه أو تفرضه'], rows: [
+      { label: 'رمز عبر SMS', cells: ['يعمل على كل هاتف، بلا تطبيق ولا إنترنت؛ العادة التي يعرفها الجميع', 'مدفوع عند كل إرسال؛ تسليم متفاوت حسب المشغّل؛ مصنّف «مقيَّداً» لدى NIST؛ هدف للروبوتات'] },
+      { label: 'رمز عبر WhatsApp', cells: ['تعبئة بلمسة على Android وiOS 26، تسليم متتبَّع، سعر لكل رسالة أدنى بكثير من SMS', 'حساب WhatsApp Business وقالب مصادقة معتمَد؛ لا يغطي إلا الأرقام الموجودة على WhatsApp'] },
+      { label: 'مكالمة صوتية', cells: ['الملاذ الأخير حين لا يصل SMS ولا WhatsApp؛ تقرأ الرمز بصوت عالٍ', 'الأغلى لكل محاولة؛ تُحجز للمحاولة الثالثة ولا تكون الأولى أبداً'] },
+      { label: 'رابط بالبريد', cells: ['مجاني، مفيد للحسابات المهنية وللجالية التي لا رقم جزائرياً لها', 'صناديق قلّما تُفتح على الهاتف؛ غير مقبول كإثبات وحيد لدى الأنظمة الصارمة'] },
+      { label: 'كلمة المرور', cells: ['لا تكلّف شيئاً عند الإرسال؛ يعرفها الجميع', 'تُنسى وتُعاد وتُصطاد؛ وتستدعي على أي حال رمزاً أو رابطاً لاستعادتها'] },
+      { label: 'Passkey (البصمة)', cells: ['لا إرسال ولا رمز يُنسخ، مقاوِم للاصطياد؛ خمسة مليارات قيد الاستعمال وفق FIDO Alliance', 'يفترض هاتفاً حديثاً وتسجيلاً أولاً؛ يُقترح بعد الدخول الأول ولا يُفرض'] },
+    ], caption: 'الشكل 4 · لا يكفي سطر واحد. التركيب الذي يصمد في الجزائر سنة 2027: WhatsApp أولاً، SMS احتياطاً، مكالمة صوتية في المحاولة الثالثة، بريد للحسابات التي لا رقم جزائرياً لها، وpasskey يُقترح حالما يسمح الجهاز كي لا يُرسل شيء البتة.', alt: 'مصفوفة ست قنوات: SMS، WhatsApp، مكالمة صوتية، بريد، كلمة مرور، passkey' },
+    fraudes: { title: 'ست إساءات يجب أن توقفها خدمة المصادقة', columns: ['ما يحدث', 'ما تفعله الخدمة'], rows: [
+      { label: 'ضخّ SMS', cells: ['روبوتات تطلب آلاف الرموز نحو نطاقات أرقام يتقاضى وسطاء عنها مالاً', 'النطاقات المخدومة فقط، حدود لكل IP ولكل جهاز، تحدٍّ خفي، تنبيه حين ترتفع الإرسالات دون تحققات'] },
+      { label: 'محاولات القوة الغاشمة', cells: ['أحدهم يجرّب التوافيق الـ999 999 لرمز من ستة أرقام', 'ثلاث محاولات ثم رمز جديد، صلاحية خمس دقائق، حجب تدريجي للرقم وIP'] },
+      { label: 'تبديل SIM، نقل الرقم', cells: ['يُستولى على رقم الزبون عند المشغّل من طرف ثالث يتلقى رموزه', 'إشارات تغيير الجهاز أو الشريحة قبل العمليات الحساسة؛ إثبات ثانٍ لتغيير الرقم أو تفريغ رصيد'] },
+      { label: 'اصطياد الرمز', cells: ['مستشار مزيف يتصل بالزبون ويطلب «الرمز الذي وصلكم للتو»', 'رسالة «لا تشاركوا هذا الرمز أبداً»، رمز مرتبط بالعملية المطلوبة، الإدخال اليدوي لا يُعامل أبداً كإثبات قوي'] },
+      { label: 'الإعادة والجهاز المشترك', cells: ['رمز مُعترَض يُعاد؛ هاتف عائلي يحتفظ بجلسة شخص آخر', 'رمز لمرة واحدة يُبطَل بعد التحقق؛ قائمة الأجهزة المعروفة مع تسجيل خروج عن بُعد'] },
+      { label: 'رقم مُعاد التوزيع', cells: ['زبون قديم غيّر رقمه؛ المشغّل أعاد منحه لغريب يدخل إلى حسابه', 'انتهاء الجلسات الخاملة، إثبات ثانٍ قبل البيانات الحساسة، كشف جهاز لم يُرَ قط على حساب قديم'] },
+    ], caption: 'الشكل 5 · السطران الأولان يكلّفان مالاً، والأربعة التالية تكلّف زبائن. وكلها تُعالَج في خدمة المصادقة لا في الشاشة: استمارة لا تستطيع عدّ محاولات IP ولا معرفة أن جهازاً جديد.', alt: 'مصفوفة ست إساءات: ضخ SMS، القوة الغاشمة، تبديل SIM، الاصطياد، الإعادة، الرقم المعاد توزيعه' },
+    calendrier: { title: 'بناء المصادقة بالهاتف في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'القواعد والقنوات', note: 'من يدخل، بأي رقم، من أي بلد؛ القنوات المختارة، الحدود، مدد الجلسات مكتوبة', from: 0, to: 1 },
+      { label: 'الحسابات والعقود', note: 'حساب WhatsApp Business وقالب المصادقة مقدَّمان؛ مشغّل أو مجمّع SMS متعاقَد معه باسم الشركة', from: 1, to: 2 },
+      { label: 'خدمة المصادقة', note: 'التوليد، التجزئة، الحدود، التبديل WhatsApp ← SMS ← صوت، السجل، اختبارات إساءة آلية', from: 2, to: 4, accent: true },
+      { label: 'الشاشة والتعبئة', note: 'شاشة واحدة، تعبئة تلقائية Android وiOS، «أرسِل بطريقة أخرى» ظاهر، أخطاء واضحة', from: 4, to: 5 },
+      { label: 'الجلسات والأجهزة المعروفة', note: 'الرموز، التجديد، قائمة الأجهزة، خروج عن بُعد، البصمة، passkey مقترَح', from: 5, to: 6 },
+      { label: 'التجريب', note: 'خمسمائة زبون حقيقي، قياس التسليم لكل قناة ولكل مشغّل، مهلة الوصول، تكلفة كل دخول', from: 6, to: 7 },
+      { label: 'الإشراف والتعميم', note: 'شاشة أسبوعية، تنبيهات الاحتيال، تعميم على كل الزبائن، قرار بشأن حصة SMS المقبولة', from: 7, to: 8 },
+    ], caption: 'الشكل 6 · ثمانية أسابيع لوحدة ستعيش بقدر ما يعيش التطبيق. حساب WhatsApp Business وعقد SMS يُطلبان من الأسبوع 1: اعتماد القالب وتوقيع المشغّل يستغرقان أكثر من الكود. وتجريب الأسبوع 6 هو السبيل الوحيد لمعرفة التسليم الفعلي لكل مشغّل.', alt: 'خط زمني من ثمانية أسابيع: القواعد، الحسابات، خدمة المصادقة، الشاشة، الجلسات، التجريب، الإشراف' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      parcours: { svg: steps({ title: t.parcours.title, steps: t.parcours.items, arrows: true, rtl }), caption: t.parcours.caption, alt: t.parcours.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      canaux: { svg: matrix({ title: t.canaux.title, columns: t.canaux.columns, rows: t.canaux.rows, rtl }), caption: t.canaux.caption, alt: t.canaux.alt },
+      fraudes: { svg: matrix({ title: t.fraudes.title, columns: t.fraudes.columns, rows: t.fraudes.rows, rtl }), caption: t.fraudes.caption, alt: t.fraudes.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 8, tick: 2, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

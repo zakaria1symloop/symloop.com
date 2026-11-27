@@ -1,0 +1,47 @@
+// Verified dataset: CRM software (contacts, prospects, sales pipeline, follow-ups, customer
+// service) available in Algeria.
+//
+// Method: each fact below was read on the product's or the publisher's own website on the date in
+// VERIFIED_ON; `url` is the page read. Directories and news were leads only. What a site does not
+// state is left out. Prices, numbers of clients or users and client names are never reported. Odoo
+// integrators are on /odoo-algerie/. No ranking, no personal data.
+// To correct or add an entry: contact@symloop.com.
+//
+// focus:    builder | crm (general CRM) | real_estate (CRM for property agencies and developers) |
+//           call_center (call-centre platform with CRM) | suite (CRM module of a management suite)
+// services: contacts, leads, pipeline, follow_ups, quotes, invoicing, tickets, campaigns,
+//           whatsapp, call_center, mobile, reports, api, field_sales, trial
+// platforms: web | cloud | android, as stated
+// Entries without a `note` are verified but not shown on the page (named in the FAQ).
+
+export const VERIFIED_ON = '2026-11-26';
+
+export const CRM_SOFTWARE = [
+  { name: 'Symloop', url: 'https://symloop.com/services/', city: 'alger', focus: 'builder', self: true, services: ['custom'],
+    note: { fr: 'Éditeur de cette liste. Ne vend pas de CRM prêt à l’emploi : construit des CRM sur mesure (portefeuille clients, pipeline, relances, devis, suivi des commerciaux) reliés au site, à WhatsApp ou à la facturation, avec des équipes à Alger et à Sétif.', en: 'Publisher of this list. It sells no ready-made CRM: it builds custom CRMs (customer portfolio, pipeline, follow-ups, quotes, sales-rep tracking) connected to the website, WhatsApp or invoicing, with teams in Algiers and Sétif.', ar: 'ناشر هذه القائمة. لا تبيع نظام CRM جاهزاً: تبني أنظمة CRM على المقاس (محفظة الزبائن، مسار البيع، المتابعات، عروض الأسعار، متابعة المندوبين) مربوطة بالموقع أو واتساب أو الفوترة، بفرق في الجزائر العاصمة وسطيف.' } },
+  { name: 'Accelero', by: 'Winalco', url: 'https://winalco.dz/produit/accelero', city: 'setif', focus: 'real_estate', platforms: ['web'], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'campaigns', 'whatsapp', 'mobile', 'reports', 'field_sales', 'trial'],
+    note: { fr: 'CRM pour les agences immobilières algériennes qui reçoit les demandes venues de Facebook et de WhatsApp Business, avec un pipeline en sept étapes et des listes d’appels du jour ; démo gratuite.', en: 'CRM for Algerian property agencies that takes in requests from Facebook and WhatsApp Business, with a seven-stage pipeline and daily call lists; free demo.', ar: 'نظام CRM للوكالات العقارية الجزائرية يستقبل الطلبات القادمة من فيسبوك وواتساب للأعمال، بمسار من سبع مراحل وقوائم مكالمات يومية؛ عرض مجاني.' } },
+  { name: 'Almawarid', url: 'https://almawarid.app/logiciel-erp-algerie/', city: 'oran', focus: 'suite', platforms: ['web', 'android'], services: ['leads', 'pipeline', 'quotes', 'invoicing', 'trial'],
+    note: { fr: 'Suite de gestion avec un module CRM en option : pipeline en colonnes, fiches prospects et carte de prospection des entreprises algériennes, reliés aux devis et aux factures.', en: 'Management suite with an optional CRM module: column pipeline, prospect records and a prospecting map of Algerian companies, linked to quotes and invoices.', ar: 'مجموعة تسيير مع وحدة CRM اختيارية: مسار بالأعمدة، بطاقات الزبائن المحتملين وخريطة استكشاف للمؤسسات الجزائرية، مربوطة بعروض الأسعار والفواتير.' } },
+  { name: 'Buyini ERP', url: 'https://buyini.com/modules/crm', city: null, focus: 'suite', platforms: ['cloud', 'web'], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'quotes', 'invoicing', 'tickets', 'reports', 'api', 'trial'],
+    note: { fr: 'Progiciel en ligne dont le module CRM propose un pipeline en colonnes, le suivi des prospects et des opportunités et les rendez-vous, avec des offres en dinars et un essai.', en: 'Online management suite whose CRM module offers a column pipeline, prospect and opportunity tracking and appointments, with plans in dinars and a trial.', ar: 'برنامج تسيير عبر الإنترنت تقترح وحدة CRM فيه مساراً بالأعمدة، متابعة الزبائن المحتملين والفرص والمواعيد، بعروض بالدينار وتجربة.' } },
+  { name: 'Call360', by: 'COMPUSAVE', url: 'https://compusave.dz/', city: 'Cyber Parc, Alger', focus: 'call_center', platforms: ['cloud'], services: ['contacts', 'tickets', 'call_center', 'campaigns', 'whatsapp', 'reports', 'api', 'trial'],
+    note: { fr: 'Plateforme de centre d’appels avec fiche client intégrée, tickets, téléphonie IP et campagnes SMS ; l’éditeur indique que ses serveurs sont en Algérie.', en: 'Call-centre platform with a built-in customer record, tickets, IP telephony and SMS campaigns; the publisher states its servers are in Algeria.', ar: 'منصة مركز اتصال ببطاقة زبون مدمجة، تذاكر، هاتف عبر IP وحملات رسائل قصيرة؛ ويذكر الناشر أن خوادمه في الجزائر.' } },
+  { name: 'CRM Algérie', url: 'https://crmalgerie.com/', city: 'Mohammadia', focus: 'crm', platforms: ['cloud'], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'whatsapp', 'reports', 'api', 'trial'],
+    note: { fr: 'CRM en ligne pour les PME et les microentreprises avec pipeline des prospects, rappels de relance automatiques et WhatsApp Business dans l’offre la plus complète ; essai de 14 jours.', en: 'Online CRM for SMEs and micro-businesses with a prospect pipeline, automatic follow-up reminders and WhatsApp Business on its top plan; 14-day trial.', ar: 'نظام CRM عبر الإنترنت للمؤسسات الصغيرة والمصغرة بمسار للزبائن المحتملين، تذكيرات متابعة آلية وواتساب للأعمال في العرض الأشمل؛ تجربة 14 يوماً.' } },
+  { name: 'Darna-One', url: 'https://darna-one.com/promoteurs', city: 'Alger', focus: 'real_estate', platforms: ['web'], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'quotes', 'mobile', 'trial'],
+    note: { fr: 'Logiciel pour les promoteurs immobiliers avec un pipeline des prospects du premier contact à la vente signée, des relances quotidiennes et des offres de prix en PDF ; il se présente comme conçu en Algérie.', en: 'Software for property developers with a prospect pipeline from first contact to signed sale, daily follow-ups and PDF price offers; it presents itself as made in Algeria.', ar: 'برنامج للمرقّين العقاريين بمسار للزبائن المحتملين من أول اتصال إلى البيع الموقّع، متابعات يومية وعروض أسعار بصيغة PDF؛ ويقدّم نفسه كمصمَّم في الجزائر.' } },
+  { name: 'Dido CRM', by: 'Sindan Solutions', url: 'https://sindansolutions.com/logiciel-crm/', city: null, focus: 'crm', platforms: ['web'], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'quotes', 'invoicing', 'reports', 'field_sales', 'trial'],
+    note: { fr: 'Suivi des prospects et des affaires entre entreprises avec pipeline par étapes, agenda des activités et objectifs mensuels ; devis, factures et vente terrain viennent d’autres modules Dido.', en: 'Business-to-business prospect and deal tracking with a stage pipeline, activity agenda and monthly targets; quotes, invoices and field sales come from other Dido modules.', ar: 'متابعة الزبائن المحتملين والصفقات بين المؤسسات بمسار حسب المراحل، رزنامة النشاطات وأهداف شهرية؛ وعروض الأسعار والفواتير والبيع الميداني من وحدات Dido أخرى.' } },
+  { name: 'NextImmo', url: 'https://immo.nextitstep.com/fr', city: 'constantine', focus: 'real_estate', platforms: ['web'], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'whatsapp', 'reports', 'mobile', 'trial'],
+    note: { fr: 'Plateforme pour les agences immobilières en Algérie avec fiches acheteurs, qualification des demandes, étapes de suivi et rappels de visite par WhatsApp ; formule gratuite et essai annoncés.', en: 'Platform for property agencies in Algeria with buyer records, request qualification, follow-up stages and WhatsApp visit reminders; free tier and trial stated.', ar: 'منصة للوكالات العقارية في الجزائر ببطاقات المشترين، تأهيل الطلبات، مراحل المتابعة وتذكيرات الزيارات عبر واتساب؛ صيغة مجانية وتجربة معلنتان.' } },
+  { name: 'Pro CRM', by: 'Protid Systems', url: 'https://www.protid.com/logiciels-algerie/voir-plus-de-logiciels/crm-en-algerie/', city: 'Boumerdès', focus: 'crm', platforms: [], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'quotes', 'mobile', 'field_sales'],
+    note: { fr: 'CRM qui couvre les prospects, les opportunités, les rappels et les devis, avec une application mobile pour les commerciaux synchronisée avec le système du bureau.', en: 'CRM covering prospects, opportunities, reminders and quotes, with a mobile app for sales reps synchronised with the office system.', ar: 'نظام CRM يغطي الزبائن المحتملين، الفرص، التذكيرات وعروض الأسعار، مع تطبيق للمندوبين متزامن مع نظام المكتب.' } },
+  // verified, not shown on the page (named in the FAQ)
+  { name: 'GestiumERP', by: 'CIRTASOFT', url: 'https://www.cirtasoft.com/logiciel-erp-algerie/', city: 'constantine', focus: 'suite', platforms: [], services: ['contacts', 'leads', 'pipeline', 'follow_ups', 'quotes', 'invoicing', 'tickets', 'reports'] },
+  { name: 'Doliflex (Dolibarr)', url: 'https://doliflex.net/', city: 'constantine', focus: 'suite', platforms: ['cloud'], services: ['leads', 'pipeline', 'quotes', 'invoicing', 'reports', 'api', 'trial'] },
+];
+
+// The nine shown beside the publisher: products whose own page describes CRM features, states a
+// link to Algeria and shows activity since 2025.
+export const TOP_CRM = ['Accelero', 'Almawarid', 'Buyini ERP', 'Call360', 'CRM Algérie', 'Darna-One', 'Dido CRM', 'NextImmo', 'Pro CRM'];

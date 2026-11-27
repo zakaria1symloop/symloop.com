@@ -908,7 +908,6 @@ export default function EcommerceSolutionsSaudiArabia2026() {
         <title>{c.meta.title}</title>
         <meta name="description" content={c.meta.description} />
         <meta name="keywords" content={c.meta.keywords} />
-        <link rel="canonical" href="https://symloop.com/blog/ecommerce-solutions-saudi-arabia-mada-2026" />
 
         {/* Geo Meta Tags */}
         <meta name="geo.region" content="SA" />
@@ -934,10 +933,6 @@ export default function EcommerceSolutionsSaudiArabia2026() {
         <meta name="twitter:description" content={c.meta.description} />
 
         {/* Hreflang */}
-        <link rel="alternate" hrefLang="en" href="https://symloop.com/en/blog/ecommerce-solutions-saudi-arabia-mada-2026" />
-        <link rel="alternate" hrefLang="ar" href="https://symloop.com/ar/blog/ecommerce-solutions-saudi-arabia-mada-2026" />
-        <link rel="alternate" hrefLang="fr" href="https://symloop.com/fr/blog/ecommerce-solutions-saudi-arabia-mada-2026" />
-        <link rel="alternate" hrefLang="x-default" href="https://symloop.com/blog/ecommerce-solutions-saudi-arabia-mada-2026" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -960,8 +955,8 @@ export default function EcommerceSolutionsSaudiArabia2026() {
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               className="max-w-4xl mx-auto text-center"
             >
               {/* Back to blog */}

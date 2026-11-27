@@ -15,7 +15,6 @@ export default function FintechAlgerie() {
         <title>{blog?.metaTitle}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="fintech algérie, paiement mobile algérie, application bancaire, cib edahabia, finance digitale, satim, baridimob, portefeuille électronique, mobile banking algérie, startup fintech, paiement en ligne algérie, intégration paiement" />
-        <link rel="canonical" href="https://symloop.com/blog/fintech-algerie-solutions-2024" />
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
         <meta property="og:type" content="article" />
@@ -106,7 +105,7 @@ export default function FintechAlgerie() {
         {/* Hero Section */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

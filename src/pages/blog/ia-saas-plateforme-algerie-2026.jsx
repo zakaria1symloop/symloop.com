@@ -125,7 +125,6 @@ export default function IaSaasPlateformeAlgerie2026() {
         <title>D\u00e9veloppement Plateformes SaaS IA Alg\u00e9rie 2026 | SaaS Intelligence Artificielle | Symloop</title>
         <meta name="description" content="D\u00e9veloppement de plateformes SaaS int\u00e9grant l'intelligence artificielle pour les startups et entreprises en Alg\u00e9rie. Architecture multi-tenant, pipelines ML, scaling cloud, facturation par abonnement. Symloop, expert SaaS IA Alg\u00e9rie. Contact: +213 549 575 512." />
         <meta name="keywords" content="SaaS IA alg\u00e9rie, d\u00e9veloppement SaaS alg\u00e9rie, plateforme SaaS intelligence artificielle, startup SaaS alg\u00e9rie 2026, multi-tenant architecture alg\u00e9rie, machine learning SaaS, d\u00e9veloppement logiciel cloud alg\u00e9rie, pipeline ML alg\u00e9rie" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-saas-plateforme-algerie-2026/" />
 
         <meta property="og:title" content="D\u00e9veloppement de Plateformes SaaS IA en Alg\u00e9rie 2026 | Symloop" />
         <meta property="og:description" content="Plateformes SaaS IA pour startups et entreprises alg\u00e9riennes. Architecture multi-tenant, ML pipelines, scaling cloud. De l'id\u00e9e au produit scalable." />
@@ -227,7 +226,7 @@ export default function IaSaasPlateformeAlgerie2026() {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.div initial={false} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-500 hover:text-white mb-8 transition-colors text-sm tracking-wide uppercase">
                 <ArrowLeft className="w-3.5 h-3.5" />
                 Blog
@@ -244,8 +243,8 @@ export default function IaSaasPlateformeAlgerie2026() {
               </nav>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center gap-3 mb-8"
               >
@@ -262,8 +261,8 @@ export default function IaSaasPlateformeAlgerie2026() {
               </motion.div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 40 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
@@ -276,8 +275,8 @@ export default function IaSaasPlateformeAlgerie2026() {
               </motion.h1>
 
               <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 30 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-lg sm:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
               >
@@ -287,8 +286,8 @@ export default function IaSaasPlateformeAlgerie2026() {
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
                 className="flex items-center gap-8 text-xs text-gray-500 tracking-wide uppercase"
               >

@@ -206,7 +206,6 @@ export default function LogistiqueAlgerie() {
         <title>Logistique Transport Algérie 2024 | Tracking GPS TMS | Symloop</title>
         <meta name="description" content="Solutions logistique en Algérie : tracking GPS, TMS, WMS, optimisation tournées. Applications pour transport et livraison à partir de 60 000 DA." />
         <meta name="keywords" content="logistique algérie, gestion flotte algérie, tracking gps véhicules, transport digital algérie, tms algérie, optimisation livraison" />
-        <link rel="canonical" href="https://symloop.com/blog/logistique-transport-algerie-2024" />
         <meta property="og:title" content="Logistique Transport Algérie 2024 | Tracking GPS TMS" />
         <meta property="og:description" content="Solutions digitales pour transport et logistique : tracking GPS, optimisation tournées. À partir de 60 000 DA." />
         <meta property="og:type" content="article" />
@@ -219,7 +218,7 @@ export default function LogistiqueAlgerie() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

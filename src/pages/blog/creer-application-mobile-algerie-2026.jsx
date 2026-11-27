@@ -331,7 +331,6 @@ export default function CreerApplicationMobileAlgerie() {
         <title>Comment Créer une Application Mobile en Algérie en 2026 ? | Guide Complet | Symloop</title>
         <meta name="description" content="Guide complet pour créer une application mobile en Algérie en 2026. Types d'apps, Flutter vs React Native, étapes de création, coûts détaillés (60 000 DA+), secteurs porteurs. Symloop, agence nationale. Devis gratuit." />
         <meta name="keywords" content="créer application mobile algérie, développement app mobile algérie 2026, comment créer une application mobile, application Android iOS algérie, prix application mobile algérie, agence développement mobile algérie, flutter algérie, react native algérie, application mobile alger, application mobile sétif, application mobile oran, application mobile constantine, mobile app development Algeria, Android iOS app Algeria, create mobile application Algeria, app developer Algeria" />
-        <link rel="canonical" href="https://symloop.com/blog/creer-application-mobile-algerie-2026" />
 
         <meta property="og:title" content="Comment Créer une Application Mobile en Algérie en 2026 ? | Symloop" />
         <meta property="og:description" content="Guide complet pour créer une application mobile en Algérie (Algeria). Types d'apps, frameworks, étapes, coûts détaillés. Symloop, agence nationale. +50 apps livrées." />
@@ -358,7 +357,7 @@ export default function CreerApplicationMobileAlgerie() {
         {/* ── Hero Section ── */}
         <section className="bg-gradient-to-br from-green-900 via-emerald-800 to-green-900 text-white py-16 lg:py-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-green-300 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>
@@ -411,7 +410,7 @@ export default function CreerApplicationMobileAlgerie() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {mobileStats.map((stat, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
+                <motion.div key={i} initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: i * 0.1 }} className="text-center">
                   <div className="text-3xl font-bold text-green-600">{stat.value}</div>
                   <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
                 </motion.div>

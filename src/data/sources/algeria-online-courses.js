@@ -1,0 +1,47 @@
+// Verified dataset: online course platforms in Algeria (school support up to BEM and BAC,
+// university platforms, public distance learning, professional courses).
+//
+// Method: each fact below was read on the platform's own website or its official App Store
+// listing on the date in VERIFIED_ON; `url` is the page read. Directories and news were leads only.
+// What a site does not state is left out. Prices, numbers of students, teachers or videos, success
+// rates and download counts are never reported, no teacher or founder is named, and nothing here
+// explains an education rule or how a diploma is recognised. No ranking.
+// To correct or add an entry: contact@symloop.com.
+//
+// focus:    builder | school_support | public | university | professional
+// city:     as the site states it (shown as written)
+// services: video_lessons, live_classes, quizzes, exercises, tutoring, certificates, exam_prep,
+//           languages, it_skills, app, free_content, dinar_payment, arabic_content, french_content
+// Entries without a `note` are verified but not shown on the page (named in the FAQ).
+
+export const VERIFIED_ON = '2026-11-26';
+
+export const ONLINE_COURSES = [
+  { name: 'Symloop', url: 'https://symloop.com/services/', city: 'alger', focus: 'builder', self: true, services: ['custom'],
+    note: { fr: 'Éditeur de cette liste. Ne vend pas de cours : société de logiciel qui construit pour les écoles et les centres des plateformes de cours en ligne avec inscription, paiement par CIB, Edahabia ou BaridiMob, vidéos protégées, quiz et certificats, avec des équipes à Alger et à Sétif.', en: 'Publisher of this list. It sells no courses: a software company building online course platforms for schools and centres, with enrolment, CIB, Edahabia or BaridiMob payment, protected videos, quizzes and certificates, with teams in Algiers and Sétif.', ar: 'ناشر هذه القائمة. لا تبيع دروساً: شركة برمجيات تبني للمدارس والمراكز منصات دروس عبر الإنترنت بالتسجيل، الدفع بـ CIB أو الذهبية أو بريدي موب، الفيديوهات المحمية، الاختبارات والشهادات، بفرق في الجزائر العاصمة وسطيف.' } },
+  { name: 'Code213', url: 'https://www.code213.tech', city: 'Alger', focus: 'professional', platforms: ['web'], services: ['video_lessons', 'quizzes', 'it_skills', 'languages', 'dinar_payment', 'french_content'],
+    note: { fr: 'École du numérique qui propose des classes en ligne avec vidéos, quiz et projets, en plus de bootcamps sur place ; BaridiMob figure parmi les moyens de paiement.', en: 'Tech school offering online classes with videos, quizzes and projects, alongside onsite bootcamps; BaridiMob is among the payment options.', ar: 'مدرسة رقمية تقترح أقساماً عبر الإنترنت بالفيديو والاختبارات والمشاريع، إلى جانب دورات مكثفة حضورية؛ وبريدي موب من بين وسائل الدفع.' } },
+  { name: 'Dorouscom', url: 'https://dorouscom.com', city: null, focus: 'school_support', platforms: ['web'], services: ['live_classes', 'video_lessons', 'tutoring', 'free_content', 'dinar_payment', 'arabic_content', 'french_content'],
+    note: { fr: 'Plateforme de soutien scolaire du primaire au lycée avec des séances en direct et enregistrées, des cours intensifs et des séances privées, activées par des codes vendus en points de vente.', en: 'School-support platform from primary to secondary with live and recorded sessions, intensive courses and private sessions, activated by codes sold at sales points.', ar: 'منصة دعم مدرسي من الابتدائي إلى الثانوي بحصص مباشرة ومسجلة، دورات مكثفة وحصص خاصة، تُفعَّل برموز تُباع في نقاط البيع.' } },
+  { name: 'Elearn UABT', by: 'Université de Tlemcen', url: 'https://elearn.univ-tlemcen.dz', city: 'Tlemcen', focus: 'university', platforms: ['web'], services: ['languages', 'french_content'],
+    note: { fr: 'Plateforme Moodle de l’université Abou Bekr Belkaïd de Tlemcen, avec des cours classés par faculté, des cours d’anglais à distance et un programme d’été en ligne.', en: 'Moodle platform of Abou Bekr Belkaid University in Tlemcen, with courses by faculty, distance English courses and an online summer programme.', ar: 'منصة Moodle لجامعة أبي بكر بلقايد بتلمسان، بدروس مصنفة حسب الكلية، دروس إنجليزية عن بعد وبرنامج صيفي عبر الإنترنت.' } },
+  { name: 'Elearning UBBA', by: 'Université de Bordj Bou Arreridj', url: 'https://elearning.univ-bba.dz', city: 'Bordj Bou Arreridj', focus: 'university', platforms: ['web'], services: ['arabic_content', 'french_content'],
+    note: { fr: 'Plateforme Moodle de l’université Mohamed El Bachir El Ibrahimi, avec des cours classés par institut et faculté, y compris des espaces pour le doctorat et la formation des enseignants.', en: 'Moodle platform of Mohamed El Bachir El Ibrahimi University, with courses by institute and faculty, including doctoral and teacher-training spaces.', ar: 'منصة Moodle لجامعة محمد البشير الإبراهيمي، بدروس مصنفة حسب المعهد والكلية، بما فيها فضاءات للدكتوراه وتكوين الأساتذة.' } },
+  { name: 'iMadrassa', url: 'https://www.imadrassa.com', city: null, focus: 'school_support', platforms: ['web', 'android'], services: ['exercises', 'quizzes', 'exam_prep', 'app', 'free_content', 'dinar_payment', 'languages', 'arabic_content', 'french_content'],
+    note: { fr: 'Cours, exercices, quiz et examens corrigés selon le programme algérien, sujets du BEM et du BAC, une formule gratuite et une application Android.', en: 'Lessons, exercises, quizzes and corrected exams following the Algerian curriculum, past BEM and BAC papers, a free plan and an Android app.', ar: 'دروس، تمارين، اختبارات وامتحانات مصححة وفق المنهاج الجزائري، مواضيع شهادة التعليم المتوسط والبكالوريا، صيغة مجانية وتطبيق أندرويد.' } },
+  { name: 'ONEFD', by: 'Office national d’enseignement et de formation à distance', url: 'https://www.onefd.edu.dz', city: 'Alger', focus: 'public', platforms: ['web'], services: ['video_lessons', 'exercises', 'exam_prep', 'arabic_content'],
+    note: { fr: 'Office public d’enseignement à distance dont le site présente des leçons vidéo enregistrées, des devoirs en ligne, des plateformes pour le moyen et le secondaire et la préparation au baccalauréat.', en: 'Public distance-learning office whose site presents recorded video lessons, online homework, platforms for middle and secondary years and baccalaureate preparation.', ar: 'ديوان عمومي للتعليم عن بعد يعرض موقعه دروساً مسجلة بالفيديو، فروضاً عبر الإنترنت، منصات للمتوسط والثانوي والتحضير للبكالوريا.' } },
+  { name: 'Oustad', url: 'https://oustad.app', city: null, focus: 'school_support', platforms: ['web', 'android', 'ios'], services: ['quizzes', 'exercises', 'exam_prep', 'app', 'dinar_payment', 'arabic_content', 'french_content'],
+    note: { fr: 'Plans de révision quotidiens pour les élèves de terminale avant le BAC, avec leçons courtes, quiz, exercices type BAC corrigés par IA et aide par photo ; paiement par BaridiMob ou CCP. Le site indique ne pas proposer de vidéos.', en: 'Daily revision plans for final-year students before the BAC, with short lessons, quizzes, BAC-style exercises corrected by AI and photo help; payment by BaridiMob or CCP. The site states it has no videos.', ar: 'خطط مراجعة يومية لتلاميذ السنة الثالثة ثانوي قبل البكالوريا، بدروس قصيرة، اختبارات، تمارين على نمط البكالوريا يصححها الذكاء الاصطناعي ومساعدة بالصورة؛ الدفع ببريدي موب أو CCP. ويذكر الموقع أنه لا يقترح فيديوهات.' } },
+  { name: 'UFC', by: 'Université de la Formation Continue', url: 'https://ufc.dz', city: 'Dely Ibrahim', focus: 'public', platforms: ['web'], services: ['certificates', 'languages', 'arabic_content'],
+    note: { fr: 'Université publique qui propose licence, master et formation continue principalement à distance, avec des plateformes d’enseignement en ligne et un MOOC d’anglais pour les nouveaux bacheliers.', en: 'Public university offering licence, master and continuing education mainly at a distance, with e-learning platforms and an English MOOC for new baccalaureate holders.', ar: 'جامعة عمومية تقترح الليسانس والماستر والتكوين المتواصل أساساً عن بعد، بمنصات للتعليم الإلكتروني ودورة إنجليزية مفتوحة للحاصلين الجدد على البكالوريا.' } },
+  { name: 'Zed Academy', url: 'https://zedacademy.net', city: null, focus: 'school_support', platforms: ['web', 'ios'], services: ['exercises', 'exam_prep', 'live_classes', 'video_lessons', 'app', 'arabic_content'],
+    note: { fr: 'Préparation au baccalauréat par filière avec leçons, exercices et sujets ; sa fiche App Store ajoute des séances en direct avec des enseignants et des leçons enregistrées.', en: 'Baccalaureate preparation by stream with lessons, exercises and past papers; its App Store listing adds live sessions with teachers and recorded lessons.', ar: 'تحضير للبكالوريا حسب الشعبة بدروس، تمارين ومواضيع؛ وتضيف صفحته في App Store حصصاً مباشرة مع أساتذة ودروساً مسجلة.' } },
+  // verified, not shown on the page (named in the FAQ)
+  { name: 'MedCorner', url: 'https://www.medcorner.academy/', city: null, focus: 'professional', platforms: ['web'], services: ['video_lessons', 'quizzes', 'certificates', 'free_content', 'dinar_payment', 'french_content'] },
+  { name: 'Qarrai', url: 'https://apps.apple.com/us/app/id6761860351', city: null, focus: 'school_support', platforms: ['ios'], services: ['quizzes', 'exercises', 'exam_prep', 'app', 'arabic_content'] },
+];
+
+// The nine shown beside the publisher: platforms whose own site loaded directly, describes the
+// courses delivered online and shows activity since 2025.
+export const TOP_ONLINE_COURSES = ['Code213', 'Dorouscom', 'Elearn UABT', 'Elearning UBBA', 'iMadrassa', 'ONEFD', 'Oustad', 'UFC', 'Zed Academy'];

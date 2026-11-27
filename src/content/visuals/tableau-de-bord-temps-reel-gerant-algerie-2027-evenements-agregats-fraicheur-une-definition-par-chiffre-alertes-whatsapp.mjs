@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'tableau-de-bord-temps-reel-gerant-algerie-2027-evenements-agregats-fraicheur-une-definition-par-chiffre-alertes-whatsapp';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Tableau de bord · Temps réel · Gérant · 2027', title: ['Deux écrans,', 'deux chiffres,', 'un gérant qui doute.'], subtitle: 'Comment on construit l’écran qui dit le chiffre du jour au gérant, sur son téléphone, sans ralentir la caisse : des événements, des compteurs mis à jour à l’arrivée, une définition écrite par chiffre, l’heure de fraîcheur affichée, un flux qui se reconnecte seul, et une alerte WhatsApp quand un seuil est franchi', left: { label: 'Rapport du lundi', sub: 'un chiffre vieux de trois jours' }, right: { label: 'Écran du gérant', sub: 'le chiffre, son heure, sa définition' } },
+    chemin: { title: 'La vie d’un chiffre, de la vente au téléphone du gérant, en six moments', items: [
+      { n: '01', label: 'L’événement', sub: 'Une vente est encaissée dans la caisse ou l’application : un événement horodaté, avec son magasin et sa source, déposé dans une file ; jamais deux fois.' },
+      { n: '02', label: 'La définition', sub: 'Ce que « chiffre d’affaires du jour » veut dire, écrit une fois dans le code : TTC ou hors taxes, retours déduits, heure de coupure, magasins inclus.', accent: true },
+      { n: '03', label: 'L’agrégat', sub: 'Un compteur par magasin et par heure est incrémenté à l’arrivée de l’événement ; rien n’est recalculé quand le gérant ouvre l’écran.' },
+      { n: '04', label: 'Le cache et la fraîcheur', sub: 'L’écran lit les compteurs en mémoire, pas la base de production ; l’heure de la dernière mise à jour est affichée à côté du chiffre.' },
+      { n: '05', label: 'La diffusion', sub: 'Un flux serveur vers le téléphone pousse les nouveaux compteurs ; la connexion se rétablit seule et reprend au dernier événement reçu.' },
+      { n: '06', label: 'L’alerte', sub: 'Un seuil franchi, un écart inhabituel, une caisse muette depuis une heure : un message WhatsApp au gérant avec le chiffre et le lien.' },
+    ], caption: 'Figure 1 · Le moment 02 est celui qui évite les deux chiffres : quand la définition est écrite une fois dans le code, la caisse, l’écran du gérant et le rapport du comptable disent la même chose. Le moment 03 est celui qui évite de ralentir la caisse : le chiffre est compté à l’arrivée, pas recalculé à chaque ouverture.', alt: 'Six étapes : événement, définition, agrégat, cache et fraîcheur, diffusion, alerte' },
+    couches: { title: 'Le tableau de bord temps réel, en cinq couches', layers: [
+      { label: 'Sources', items: [{ name: 'Caisses, application terrain, portail, agent WhatsApp, comptabilité, banque', sub: 'un connecteur par source ; chacun émet des événements dans le même format' }] },
+      { label: 'Événements', items: [{ name: 'File persistante, horodatage, clé d’idempotence, source, corrections et annulations', sub: 'une vente annulée est un événement négatif, pas une ligne effacée' }] },
+      { label: 'Agrégats et définitions', items: [{ name: 'Compteurs par magasin, produit, heure, client ; définitions versionnées ; recalcul nocturne', sub: 'un chiffre, une définition, un propriétaire ; la nuit, tout est recompté depuis les événements', accent: true }] },
+      { label: 'Diffusion', items: [{ name: 'API de lecture, flux serveur vers le téléphone, cache, application installable du gérant', sub: 'l’écran s’ouvre en moins d’une seconde sur un réseau mobile ordinaire' }] },
+      { label: 'Alertes et lecture', items: [{ name: 'Seuils, écarts, silences ; messages WhatsApp ; comparaison à la même journée de la semaine passée', sub: 'le gérant ne regarde pas l’écran toute la journée ; l’écran vient à lui quand il le faut' }] },
+    ], caption: 'Figure 2 · La couche du milieu est ce qu’on construit vraiment : les sources changent, les écrans changent, mais les définitions et les compteurs restent. Un prestataire qui fait des requêtes sur la base de la caisse à chaque ouverture de l’écran a construit un rapport, pas un tableau de bord.', alt: 'Cinq couches : sources, événements, agrégats et définitions, diffusion, alertes et lecture' },
+    exemple: { title: 'Une chaîne de six magasins, un gérant à Alger : l’exemple', items: [
+      { value: '6', label: 'magasins avec chacun sa caisse, plus un portail de commande ; chaque vente devient un événement en quelques secondes' },
+      { value: '15 s', label: 'entre la vente encaissée et le chiffre mis à jour sur le téléphone du gérant ; hypothèse à mesurer au pilote, réseau mobile compris' },
+      { value: '1', label: 'définition du chiffre d’affaires, au lieu de trois : la caisse, l’écran et le comptable disent la même chose à la même heure de coupure' },
+      { value: '< 1 s', label: 'pour ouvrir l’écran sur un réseau mobile ordinaire : des compteurs lus en mémoire, zéro requête lourde sur la base de production', accent: true },
+    ], caption: 'Figure 3 · Les volumes et les délais sont des hypothèses à remplacer par les vôtres ; la mécanique ne l’est pas : sans compteurs, chaque ouverture de l’écran est une requête sur la base qui sert les caisses, et sans définition unique, il y a autant de chiffres que d’écrans.', alt: 'Quatre chiffres : 6 magasins, 15 secondes de fraîcheur, 1 définition, moins d’une seconde pour ouvrir' },
+    frais: { title: 'Six chiffres du gérant, la fraîcheur utile et comment on l’obtient', columns: ['Fraîcheur utile', 'Comment on l’obtient'], rows: [
+      { label: 'Chiffre d’affaires du jour par magasin', cells: ['Quelques secondes à une minute', 'Compteur incrémenté à chaque événement de vente ou d’annulation ; heure de coupure dans la définition'] },
+      { label: 'Stock critique', cells: ['Quelques minutes', 'Compteur par produit et par magasin, seuil par produit ; alerte quand le seuil est franchi, pas un écran à surveiller'] },
+      { label: 'Encaissements contre caisse', cells: ['En fin de journée', 'Rapprochement entre événements de vente, terminal de paiement et relevé ; les écarts listés, pas cachés'] },
+      { label: 'Encours clients', cells: ['À l’heure', 'Événements de facture et de paiement venus de la comptabilité ou du portail ; compteur par client'] },
+      { label: 'Livraisons en cours', cells: ['Quelques secondes', 'Statuts poussés par l’application des livreurs ; compteur par statut et par zone ; alerte sur retard'] },
+      { label: 'Comparaison semaine et mois', cells: ['Recalculée la nuit', 'Vue matérialisée rafraîchie chaque nuit depuis les événements ; même définition que le chiffre du jour'] },
+    ], caption: 'Figure 4 · Tout n’a pas besoin d’être en temps réel, et vouloir tout en temps réel coûte cher pour rien : la fraîcheur se décide chiffre par chiffre, selon la décision qu’il déclenche. Le chiffre du jour se compte à la seconde ; la comparaison du mois se recompte la nuit, avec la même définition.', alt: 'Matrice de six chiffres : chiffre d’affaires, stock critique, encaissements, encours, livraisons, comparaison' },
+    pieges: { title: 'Six situations qui font douter du tableau de bord, et ce que l’architecture fait', columns: ['Ce qui se passe', 'Ce que l’architecture fait'], rows: [
+      { label: 'Deux écrans, deux chiffres', cells: ['La caisse dit 412 000 DA, l’écran du gérant 398 000, le comptable un troisième chiffre', 'Une définition par chiffre, écrite dans le code, versionnée ; tous les écrans lisent le même compteur'] },
+      { label: 'Le tableau de bord ralentit la caisse', cells: ['À 18 h, les vendeurs attendent parce que le gérant a ouvert son écran', 'Compteurs mis à jour à l’événement et lus en mémoire ; aucune requête lourde sur la base de production'] },
+      { label: 'Le chiffre est faux à 2 h du matin', cells: ['La journée de la caisse se termine à 23 h, celle de l’écran à minuit, celle du serveur en UTC', 'Heure de coupure et fuseau écrits dans la définition ; la journée du gérant est celle de ses magasins'] },
+      { label: 'La page tourne sur la 3G', cells: ['Quatre secondes d’attente dans une wilaya, le gérant ferme', 'Application installable, compteurs en cache, écran léger, « mis à jour il y a » visible même hors connexion'] },
+      { label: 'La vente annulée reste comptée', cells: ['Un retour en caisse ne redescend pas le chiffre de l’écran', 'L’annulation est un événement négatif qui traverse la même file ; le recalcul nocturne vérifie depuis les événements'] },
+      { label: 'Le gérant ne regarde plus', cells: ['L’écran est beau, personne ne l’ouvre après trois semaines', 'Alertes WhatsApp sur seuils et silences ; l’écran vient au gérant quand il le faut, pas l’inverse'] },
+    ], caption: 'Figure 5 · La première ligne coûte la confiance, et elle se répare avec une définition, pas avec un graphique. Les autres coûtent la vitesse de la caisse ou l’attention du gérant. Toutes se traitent dans les couches du milieu, pas dans la mise en page.', alt: 'Matrice de six situations : deux chiffres, caisse ralentie, coupure de journée, page lente, annulation, désintérêt' },
+    calendrier: { title: 'Construire le tableau de bord du gérant en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Définitions et chiffres', note: 'dix chiffres au plus, chacun avec sa définition écrite avec le comptable, sa fraîcheur utile, son propriétaire', from: 0, to: 1 },
+      { label: 'Connecteurs des sources', note: 'caisses, application, portail, comptabilité ; chaque source émet des événements dans le même format', from: 1, to: 2 },
+      { label: 'Événements et compteurs', note: 'file, idempotence, annulations ; compteurs par magasin, produit, heure ; recalcul nocturne depuis les événements', from: 2, to: 4, accent: true },
+      { label: 'Écran et diffusion', note: 'application installable du gérant, lecture en cache, flux serveur avec reconnexion, heure de fraîcheur affichée', from: 4, to: 6 },
+      { label: 'Alertes WhatsApp', note: 'seuils par magasin et par produit, écarts inhabituels, caisse muette ; message avec le chiffre et le lien', from: 6, to: 7 },
+      { label: 'Rapprochement avec la comptabilité', note: 'les chiffres de l’écran comparés à ceux du comptable sur un mois ; les écarts expliqués, les définitions corrigées', from: 7, to: 8 },
+      { label: 'Pilote et bascule', note: 'deux magasins pendant deux semaines, délai mesuré sur réseau mobile, puis les six ; le rapport du lundi s’arrête', from: 8, to: 10 },
+    ], caption: 'Figure 6 · Dix semaines, dont la première sans code : les dix chiffres et leurs définitions, écrites avec le comptable, décident de tout. La semaine 7 est celle qui rend l’écran crédible : quand le chiffre du gérant et celui du comptable se rejoignent sur un mois, le rapport du lundi peut s’arrêter.', alt: 'Frise de dix semaines : définitions, connecteurs, événements et compteurs, écran et diffusion, alertes, rapprochement, pilote' },
+  },
+  en: {
+    cover: { eyebrow: 'Dashboard · Real time · Owner · 2027', title: ['Two screens,', 'two figures,', 'one owner in doubt.'], subtitle: 'How the screen that tells the owner today’s figure is built, on their phone, without slowing the till: events, counters updated on arrival, one written definition per figure, the freshness time displayed, a stream that reconnects by itself, and a WhatsApp alert when a threshold is crossed', left: { label: 'Monday report', sub: 'a figure three days old' }, right: { label: 'Owner’s screen', sub: 'the figure, its time, its meaning' } },
+    chemin: { title: 'The life of a figure, from the sale to the owner’s phone, in six moments', items: [
+      { n: '01', label: 'The event', sub: 'A sale is taken at the till or in the app: a time-stamped event, with its shop and its source, placed in a queue; never twice.' },
+      { n: '02', label: 'The definition', sub: 'What “today’s revenue” means, written once in the code: with or without tax, returns deducted, cut-off time, shops included.', accent: true },
+      { n: '03', label: 'The aggregate', sub: 'A counter per shop and per hour is incremented when the event arrives; nothing is recomputed when the owner opens the screen.' },
+      { n: '04', label: 'Cache and freshness', sub: 'The screen reads counters from memory, not the production database; the time of the last update is shown next to the figure.' },
+      { n: '05', label: 'Delivery', sub: 'A server-to-phone stream pushes new counters; the connection re-establishes itself and resumes from the last event received.' },
+      { n: '06', label: 'The alert', sub: 'A threshold crossed, an unusual gap, a till silent for an hour: a WhatsApp message to the owner with the figure and the link.' },
+    ], caption: 'Figure 1 · Moment 02 is what avoids the two figures: when the definition is written once in the code, the till, the owner’s screen and the accountant’s report say the same thing. Moment 03 is what avoids slowing the till: the figure is counted on arrival, not recomputed at every opening.', alt: 'Six steps: event, definition, aggregate, cache and freshness, delivery, alert' },
+    couches: { title: 'The real-time dashboard, in five layers', layers: [
+      { label: 'Sources', items: [{ name: 'Tills, field app, portal, WhatsApp agent, accounting, bank', sub: 'one connector per source; each emits events in the same format' }] },
+      { label: 'Events', items: [{ name: 'Persistent queue, timestamp, idempotency key, source, corrections and cancellations', sub: 'a cancelled sale is a negative event, not a deleted row' }] },
+      { label: 'Aggregates and definitions', items: [{ name: 'Counters per shop, product, hour, customer; versioned definitions; nightly recomputation', sub: 'one figure, one definition, one owner; at night everything is recounted from the events', accent: true }] },
+      { label: 'Delivery', items: [{ name: 'Read API, server-to-phone stream, cache, installable owner app', sub: 'the screen opens in under a second on an ordinary mobile network' }] },
+      { label: 'Alerts and reading', items: [{ name: 'Thresholds, gaps, silences; WhatsApp messages; comparison with the same day last week', sub: 'the owner does not watch the screen all day; the screen comes to them when needed' }] },
+    ], caption: 'Figure 2 · The middle layer is what is really built: sources change, screens change, but definitions and counters stay. A vendor who queries the till’s database every time the screen opens has built a report, not a dashboard.', alt: 'Five layers: sources, events, aggregates and definitions, delivery, alerts and reading' },
+    exemple: { title: 'A chain of six shops, an owner in Algiers: the example', items: [
+      { value: '6', label: 'shops each with its till, plus an ordering portal; every sale becomes an event within seconds' },
+      { value: '15 s', label: 'between the sale taken and the figure updated on the owner’s phone; an assumption to measure in the pilot, mobile network included' },
+      { value: '1', label: 'definition of revenue, instead of three: the till, the screen and the accountant say the same thing at the same cut-off time' },
+      { value: '< 1 s', label: 'to open the screen on an ordinary mobile network: counters read from memory, zero heavy query on the production database', accent: true },
+    ], caption: 'Figure 3 · Volumes and delays are assumptions to replace with yours; the mechanics are not: without counters, every opening of the screen is a query on the database serving the tills, and without a single definition there are as many figures as screens.', alt: 'Four figures: 6 shops, 15 seconds of freshness, 1 definition, under one second to open' },
+    frais: { title: 'Six owner figures, the useful freshness and how it is obtained', columns: ['Useful freshness', 'How it is obtained'], rows: [
+      { label: 'Today’s revenue per shop', cells: ['A few seconds to a minute', 'Counter incremented at every sale or cancellation event; cut-off time in the definition'] },
+      { label: 'Critical stock', cells: ['A few minutes', 'Counter per product and per shop, threshold per product; alert when the threshold is crossed, not a screen to watch'] },
+      { label: 'Takings against the till', cells: ['At the end of the day', 'Reconciliation between sale events, payment terminal and statement; gaps listed, not hidden'] },
+      { label: 'Customer balances', cells: ['Hourly', 'Invoice and payment events from accounting or the portal; counter per customer'] },
+      { label: 'Deliveries in progress', cells: ['A few seconds', 'Statuses pushed by the drivers’ app; counter per status and per zone; alert on delay'] },
+      { label: 'Week and month comparison', cells: ['Recomputed at night', 'Materialised view refreshed every night from the events; same definition as today’s figure'] },
+    ], caption: 'Figure 4 · Not everything needs to be real time, and wanting everything in real time costs a lot for nothing: freshness is decided figure by figure, by the decision it triggers. Today’s figure is counted to the second; the month’s comparison is recounted at night, with the same definition.', alt: 'Matrix of six figures: revenue, critical stock, takings, balances, deliveries, comparison' },
+    pieges: { title: 'Six situations that make the owner doubt the dashboard, and what the architecture does', columns: ['What happens', 'What the architecture does'], rows: [
+      { label: 'Two screens, two figures', cells: ['The till says 412,000 DA, the owner’s screen 398,000, the accountant a third figure', 'One definition per figure, written in the code, versioned; every screen reads the same counter'] },
+      { label: 'The dashboard slows the till', cells: ['At 6 pm the sellers wait because the owner opened their screen', 'Counters updated on the event and read from memory; no heavy query on the production database'] },
+      { label: 'The figure is wrong at 2 am', cells: ['The till’s day ends at 11 pm, the screen’s at midnight, the server’s in UTC', 'Cut-off time and time zone written in the definition; the owner’s day is their shops’ day'] },
+      { label: 'The page spins on 3G', cells: ['Four seconds of waiting in a wilaya, the owner closes it', 'Installable app, cached counters, light screen, “updated … ago” visible even offline'] },
+      { label: 'The cancelled sale stays counted', cells: ['A return at the till does not bring the screen’s figure down', 'The cancellation is a negative event through the same queue; the nightly recomputation checks from the events'] },
+      { label: 'The owner stops looking', cells: ['The screen is beautiful, nobody opens it after three weeks', 'WhatsApp alerts on thresholds and silences; the screen comes to the owner when needed, not the reverse'] },
+    ], caption: 'Figure 5 · The first row costs trust, and it is fixed with a definition, not a chart. The others cost the till’s speed or the owner’s attention. All are handled in the middle layers, not in the layout.', alt: 'Matrix of six situations: two figures, slowed till, day cut-off, slow page, cancellation, disinterest' },
+    calendrier: { title: 'Building the owner’s dashboard in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Definitions and figures', note: 'ten figures at most, each with its definition written with the accountant, its useful freshness, its owner', from: 0, to: 1 },
+      { label: 'Source connectors', note: 'tills, app, portal, accounting; each source emits events in the same format', from: 1, to: 2 },
+      { label: 'Events and counters', note: 'queue, idempotency, cancellations; counters per shop, product, hour; nightly recomputation from events', from: 2, to: 4, accent: true },
+      { label: 'Screen and delivery', note: 'installable owner app, cached reads, server stream with reconnection, freshness time displayed', from: 4, to: 6 },
+      { label: 'WhatsApp alerts', note: 'thresholds per shop and product, unusual gaps, silent till; message with the figure and the link', from: 6, to: 7 },
+      { label: 'Reconciliation with accounting', note: 'the screen’s figures compared with the accountant’s over a month; gaps explained, definitions corrected', from: 7, to: 8 },
+      { label: 'Pilot and switch', note: 'two shops for two weeks, delay measured on mobile network, then all six; the Monday report stops', from: 8, to: 10 },
+    ], caption: 'Figure 6 · Ten weeks, the first without code: the ten figures and their definitions, written with the accountant, decide everything. Week 7 is what makes the screen credible: when the owner’s figure and the accountant’s meet over a month, the Monday report can stop.', alt: 'Ten-week timeline: definitions, connectors, events and counters, screen and delivery, alerts, reconciliation, pilot' },
+  },
+  ar: {
+    cover: { eyebrow: 'لوحة قيادة · الزمن الحقيقي · المسيّر · 2027', title: ['شاشتان،', 'رقمان،', 'ومسيّر يشكّ.'], subtitle: 'كيف تُبنى الشاشة التي تقول للمسيّر رقم اليوم على هاتفه دون إبطاء الصندوق: أحداث، عدادات تُحدَّث عند الوصول، تعريف مكتوب لكل رقم، وقت الحداثة معروض، تدفق يعيد الاتصال وحده، وتنبيه WhatsApp حين يُتجاوَز حد', left: { label: 'تقرير الاثنين', sub: 'رقم عمره ثلاثة أيام' }, right: { label: 'شاشة المسيّر', sub: 'الرقم ووقته وتعريفه' } },
+    chemin: { title: 'حياة رقم، من البيع إلى هاتف المسيّر، في ست لحظات', items: [
+      { n: '01', label: 'الحدث', sub: 'تُحصَّل عملية بيع في الصندوق أو التطبيق: حدث مؤرَّخ بمتجره ومصدره، يُودَع في طابور؛ لا مرتين أبداً.' },
+      { n: '02', label: 'التعريف', sub: 'ما يعنيه «رقم أعمال اليوم»، مكتوب مرة في الكود: بالضرائب أو بدونها، المرتجعات مخصومة، ساعة القطع، المتاجر المشمولة.', accent: true },
+      { n: '03', label: 'المجمَّع', sub: 'عداد لكل متجر ولكل ساعة يُزاد عند وصول الحدث؛ لا يُعاد حساب شيء حين يفتح المسيّر الشاشة.' },
+      { n: '04', label: 'الذاكرة المؤقتة والحداثة', sub: 'تقرأ الشاشة العدادات من الذاكرة لا من قاعدة الإنتاج؛ ووقت آخر تحديث معروض بجانب الرقم.' },
+      { n: '05', label: 'البث', sub: 'تدفق من الخادم إلى الهاتف يدفع العدادات الجديدة؛ يعيد الاتصال نفسه ويستأنف من آخر حدث مستلَم.' },
+      { n: '06', label: 'التنبيه', sub: 'حد مُتجاوَز، فارق غير معتاد، صندوق صامت منذ ساعة: رسالة WhatsApp إلى المسيّر بالرقم والرابط.' },
+    ], caption: 'الشكل 1 · اللحظة 02 هي ما يجنّب الرقمين: حين يُكتب التعريف مرة في الكود، يقول الصندوق وشاشة المسيّر وتقرير المحاسب الشيء نفسه. واللحظة 03 هي ما يجنّب إبطاء الصندوق: الرقم يُعدّ عند الوصول لا يُعاد حسابه عند كل فتح.', alt: 'ست خطوات: الحدث، التعريف، المجمَّع، الذاكرة والحداثة، البث، التنبيه' },
+    couches: { title: 'لوحة القيادة في الزمن الحقيقي، في خمس طبقات', layers: [
+      { label: 'المصادر', items: [{ name: 'الصناديق، تطبيق الميدان، البوابة، وكيل WhatsApp، المحاسبة، البنك', sub: 'موصل لكل مصدر؛ كل واحد يصدر أحداثاً بالصيغة نفسها' }] },
+      { label: 'الأحداث', items: [{ name: 'طابور دائم، طابع زمني، مفتاح منع تكرار، مصدر، تصحيحات وإلغاءات', sub: 'البيع الملغى حدث سالب لا صف محذوف' }] },
+      { label: 'المجمَّعات والتعريفات', items: [{ name: 'عدادات لكل متجر ومنتج وساعة وزبون؛ تعريفات مُصدَرة؛ إعادة حساب ليلية', sub: 'رقم واحد، تعريف واحد، مالك واحد؛ وفي الليل يُعاد عدّ كل شيء من الأحداث', accent: true }] },
+      { label: 'البث', items: [{ name: 'واجهة قراءة، تدفق من الخادم إلى الهاتف، ذاكرة مؤقتة، تطبيق المسيّر القابل للتثبيت', sub: 'تُفتح الشاشة في أقل من ثانية على شبكة هاتف عادية' }] },
+      { label: 'التنبيهات والقراءة', items: [{ name: 'حدود، فوارق، صمت؛ رسائل WhatsApp؛ مقارنة باليوم نفسه من الأسبوع الماضي', sub: 'المسيّر لا يراقب الشاشة طول اليوم؛ الشاشة تأتيه حين يلزم' }] },
+    ], caption: 'الشكل 2 · الطبقة الوسطى هي ما يُبنى فعلاً: المصادر تتغير والشاشات تتغير، لكن التعريفات والعدادات تبقى. ومورّد يستعلم قاعدة الصندوق عند كل فتح للشاشة بنى تقريراً لا لوحة قيادة.', alt: 'خمس طبقات: المصادر، الأحداث، المجمَّعات والتعريفات، البث، التنبيهات والقراءة' },
+    exemple: { title: 'سلسلة من ستة متاجر، ومسيّر في الجزائر العاصمة: المثال', items: [
+      { value: '6', label: 'متاجر لكل منها صندوقه، زائد بوابة طلب؛ كل بيع يصير حدثاً في ثوانٍ' },
+      { value: '15 ث', label: 'بين البيع المحصَّل والرقم المحدَّث على هاتف المسيّر؛ فرضية تُقاس في التجريب، بشبكة الهاتف' },
+      { value: '1', label: 'تعريف لرقم الأعمال بدل ثلاثة: الصندوق والشاشة والمحاسب يقولون الشيء نفسه بساعة القطع نفسها' },
+      { value: '< 1 ث', label: 'لفتح الشاشة على شبكة هاتف عادية: عدادات تُقرأ من الذاكرة، صفر استعلام ثقيل على قاعدة الإنتاج', accent: true },
+    ], caption: 'الشكل 3 · الأحجام والمهل فرضيات تُستبدل بفرضياتكم؛ أما الآلية فلا: بلا عدادات يصير كل فتح للشاشة استعلاماً على القاعدة التي تخدم الصناديق، وبلا تعريف واحد تكون الأرقام بعدد الشاشات.', alt: 'أربعة أرقام: 6 متاجر، 15 ثانية حداثة، تعريف واحد، أقل من ثانية للفتح' },
+    frais: { title: 'ستة أرقام للمسيّر، الحداثة المفيدة وكيف نحصل عليها', columns: ['الحداثة المفيدة', 'كيف نحصل عليها'], rows: [
+      { label: 'رقم أعمال اليوم لكل متجر', cells: ['بضع ثوانٍ إلى دقيقة', 'عداد يُزاد عند كل حدث بيع أو إلغاء؛ ساعة القطع في التعريف'] },
+      { label: 'المخزون الحرج', cells: ['بضع دقائق', 'عداد لكل منتج ولكل متجر، حد لكل منتج؛ تنبيه حين يُتجاوَز الحد لا شاشة تُراقَب'] },
+      { label: 'التحصيلات مقابل الصندوق', cells: ['في آخر اليوم', 'مطابقة بين أحداث البيع وجهاز الدفع والكشف؛ الفوارق مدرجة لا مخفية'] },
+      { label: 'أرصدة الزبائن', cells: ['كل ساعة', 'أحداث الفواتير والمدفوعات من المحاسبة أو البوابة؛ عداد لكل زبون'] },
+      { label: 'التسليمات الجارية', cells: ['بضع ثوانٍ', 'حالات يدفعها تطبيق الموزعين؛ عداد لكل حالة ولكل منطقة؛ تنبيه عند التأخر'] },
+      { label: 'مقارنة الأسبوع والشهر', cells: ['يُعاد حسابها ليلاً', 'عرض مادي يُحدَّث كل ليلة من الأحداث؛ التعريف نفسه لرقم اليوم'] },
+    ], caption: 'الشكل 4 · ليس كل شيء بحاجة إلى الزمن الحقيقي، وطلب كل شيء في الزمن الحقيقي يكلّف كثيراً بلا طائل: تُقرَّر الحداثة رقماً رقماً حسب القرار الذي يطلقه. رقم اليوم يُعدّ بالثانية؛ ومقارنة الشهر تُعاد ليلاً بالتعريف نفسه.', alt: 'مصفوفة ستة أرقام: رقم الأعمال، المخزون الحرج، التحصيلات، الأرصدة، التسليمات، المقارنة' },
+    pieges: { title: 'ست حالات تجعل المسيّر يشكّ في لوحة القيادة، وما تفعله الهندسة', columns: ['ما يحدث', 'ما تفعله الهندسة'], rows: [
+      { label: 'شاشتان، رقمان', cells: ['الصندوق يقول 412 000 دج، شاشة المسيّر 398 000، والمحاسب رقماً ثالثاً', 'تعريف واحد لكل رقم، مكتوب في الكود، مُصدَر؛ كل الشاشات تقرأ العداد نفسه'] },
+      { label: 'لوحة القيادة تبطئ الصندوق', cells: ['الساعة 18 ينتظر البائعون لأن المسيّر فتح شاشته', 'عدادات تُحدَّث عند الحدث وتُقرأ من الذاكرة؛ لا استعلام ثقيل على قاعدة الإنتاج'] },
+      { label: 'الرقم خاطئ الساعة 2 صباحاً', cells: ['يوم الصندوق ينتهي الساعة 23، ويوم الشاشة عند منتصف الليل، ويوم الخادم بتوقيت UTC', 'ساعة القطع والمنطقة الزمنية مكتوبتان في التعريف؛ يوم المسيّر هو يوم متاجره'] },
+      { label: 'الصفحة تدور على 3G', cells: ['أربع ثوانٍ انتظار في ولاية، فيغلق المسيّر', 'تطبيق قابل للتثبيت، عدادات في الذاكرة، شاشة خفيفة، «حُدِّث منذ» ظاهر حتى دون اتصال'] },
+      { label: 'البيع الملغى يبقى معدوداً', cells: ['مرتجع في الصندوق لا يُنزل رقم الشاشة', 'الإلغاء حدث سالب يعبر الطابور نفسه؛ وإعادة الحساب الليلية تتحقق من الأحداث'] },
+      { label: 'المسيّر لم يعد ينظر', cells: ['الشاشة جميلة ولا أحد يفتحها بعد ثلاثة أسابيع', 'تنبيهات WhatsApp على الحدود والصمت؛ الشاشة تأتي المسيّر حين يلزم لا العكس'] },
+    ], caption: 'الشكل 5 · السطر الأول يكلّف الثقة، ويُصلَح بتعريف لا برسم بياني. والأخرى تكلّف سرعة الصندوق أو انتباه المسيّر. وكلها تُعالَج في الطبقات الوسطى لا في التخطيط.', alt: 'مصفوفة ست حالات: رقمان، صندوق بطيء، قطع اليوم، صفحة بطيئة، إلغاء، فتور' },
+    calendrier: { title: 'بناء لوحة قيادة المسيّر في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'التعريفات والأرقام', note: 'عشرة أرقام على الأكثر، لكل منها تعريفه المكتوب مع المحاسب وحداثته المفيدة ومالكه', from: 0, to: 1 },
+      { label: 'موصلات المصادر', note: 'الصناديق، التطبيق، البوابة، المحاسبة؛ كل مصدر يصدر أحداثاً بالصيغة نفسها', from: 1, to: 2 },
+      { label: 'الأحداث والعدادات', note: 'طابور، منع تكرار، إلغاءات؛ عدادات لكل متجر ومنتج وساعة؛ إعادة حساب ليلية من الأحداث', from: 2, to: 4, accent: true },
+      { label: 'الشاشة والبث', note: 'تطبيق المسيّر القابل للتثبيت، قراءة من الذاكرة، تدفق من الخادم بإعادة اتصال، وقت الحداثة معروض', from: 4, to: 6 },
+      { label: 'تنبيهات WhatsApp', note: 'حدود لكل متجر ومنتج، فوارق غير معتادة، صندوق صامت؛ رسالة بالرقم والرابط', from: 6, to: 7 },
+      { label: 'المطابقة مع المحاسبة', note: 'أرقام الشاشة مقارنة بأرقام المحاسب على شهر؛ الفوارق مفسَّرة والتعريفات مصحَّحة', from: 7, to: 8 },
+      { label: 'التجريب والتعميم', note: 'متجران أسبوعين، المهلة مقاسة على شبكة الهاتف، ثم الستة؛ ويتوقف تقرير الاثنين', from: 8, to: 10 },
+    ], caption: 'الشكل 6 · عشرة أسابيع، الأول بلا كود: الأرقام العشرة وتعريفاتها المكتوبة مع المحاسب تقرر كل شيء. والأسبوع 7 هو ما يجعل الشاشة موثوقة: حين يلتقي رقم المسيّر ورقم المحاسب على شهر، يمكن لتقرير الاثنين أن يتوقف.', alt: 'خط زمني من عشرة أسابيع: التعريفات، الموصلات، الأحداث والعدادات، الشاشة والبث، التنبيهات، المطابقة، التجريب' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      chemin: { svg: steps({ title: t.chemin.title, steps: t.chemin.items, arrows: true, rtl }), caption: t.chemin.caption, alt: t.chemin.alt },
+      couches: { svg: layers({ title: t.couches.title, layers: t.couches.layers, rtl }), caption: t.couches.caption, alt: t.couches.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      frais: { svg: matrix({ title: t.frais.title, columns: t.frais.columns, rows: t.frais.rows, rtl }), caption: t.frais.caption, alt: t.frais.alt },
+      pieges: { svg: matrix({ title: t.pieges.title, columns: t.pieges.columns, rows: t.pieges.rows, rtl }), caption: t.pieges.caption, alt: t.pieges.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 10, tick: 2, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

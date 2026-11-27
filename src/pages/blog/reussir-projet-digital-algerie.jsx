@@ -79,7 +79,6 @@ export default function ReussirProjetDigital() {
         <title>Comment Réussir Votre Projet Digital en Algérie - Guide Complet 2024 | Symloop</title>
         <meta name="description" content="Guide complet pour réussir votre projet web ou mobile en Algérie. Méthodologie agile, bonnes pratiques, erreurs à éviter. Conseils d'experts Symloop." />
         <meta name="keywords" content="réussir projet digital algérie, gestion projet web algérie, méthodologie agile algérie, bonnes pratiques développement, cahier des charges projet web, réussir transformation digitale, projet digital PME algérie, accompagnement projet IT, développement web algérie, application mobile algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/reussir-projet-digital-algerie" />
         <meta property="og:title" content="Comment Réussir Votre Projet Digital en Algérie - Guide Complet 2024" />
         <meta property="og:description" content="Guide complet pour réussir votre projet web ou mobile en Algérie. Méthodologie, bonnes pratiques et conseils d'experts." />
         <meta property="og:url" content="https://symloop.com/blog/reussir-projet-digital-algerie" />
@@ -94,7 +93,7 @@ export default function ReussirProjetDigital() {
       <div className="min-h-screen bg-white">
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

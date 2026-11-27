@@ -48,7 +48,6 @@ export default function ElevageConnecteAlgerie2026() {
         <title>Élevage Connecté en Algérie 2026 : Suivi du Bétail par GPS et Capteurs IoT | Symloop</title>
         <meta name="description" content="Guide complet sur l'élevage connecté en Algérie 2026. Colliers GPS pour troupeaux, capteurs de santé animale, alimentation automatisée, monitoring des étables. Solutions IoT à partir de 2 500 DA/tête. Fabriqué en Algérie par Symloop." />
         <meta name="keywords" content="élevage connecté algérie, suivi bétail GPS algérie, capteur santé animale algérie, élevage intelligent algérie 2026, IoT élevage algérie, collier GPS mouton algérie, suivi troupeau GPS algérie, capteur température étable algérie, alimentation automatisée bétail algérie, monitoring poulailler algérie, élevage bovin connecté algérie, élevage ovin connecté algérie, aviculture connectée algérie, smart farming algérie, agriculture intelligente élevage algérie, GPS bétail prix algérie, suivi santé vache algérie, élevage connecté Sétif, élevage connecté Djelfa, élevage connecté Tiaret" />
-        <link rel="canonical" href="https://symloop.com/blog/elevage-connecte-suivi-betail-algerie-2026/" />
 
         <meta property="og:title" content="Élevage Connecté en Algérie 2026 : Suivi GPS & Capteurs IoT pour Bétail | Symloop" />
         <meta property="og:description" content="Solutions d'élevage connecté pour l'Algérie. Colliers GPS, capteurs santé animale, alimentation automatisée. Fabriqué en Algérie par Symloop." />
@@ -122,7 +121,7 @@ export default function ElevageConnecteAlgerie2026() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-amber-950 via-amber-900 to-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog

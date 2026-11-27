@@ -1,0 +1,46 @@
+{
+ "source": "Vercel Web Analytics (production), pulled via Vercel MCP on 2026-11-16",
+ "since": "2026-11-11",
+ "until": "2026-11-16",
+ "days": 6,
+ "note": "First six days after the 11 Nov redirect (sleeper retitles batch 1 and 2, sector pages crèche, auto-école, supérette, laboratoire). Too early to judge rankings: Google re-crawl of retitled pages takes weeks. Kept to compare with the next pull.",
+ "referrers": {
+  "(direct)": 516,
+  "google.com": 197,
+  "bing.com": 6,
+  "m.facebook.com": 5,
+  "aocr.org": 3,
+  "search.brave.com": 2,
+  "gemini.google.com": 1,
+  "perplexity.ai": 1,
+  "duckduckgo.com": 1
+ },
+ "google_by_path": {
+  "/blog/logiciel-ecole-gestion-scolaire-algerie-2026": 47,
+  "/": 20,
+  "/blog/plateforme-b2b-marketplace-algerie": 8,
+  "/solutions/intelligence-artificielle-tunisie": 8,
+  "/blog/logiciel-erp-algerie-2024": 5,
+  "/blog/logiciel-gestion-livraison-distribution-algerie-2026": 5,
+  "/blog/agriculture-intelligente-irrigation-algerie-2026": 4,
+  "/blog/application-gestion-agricole-algerie-2026": 4,
+  "/blog/elevage-connecte-suivi-betail-algerie-2026": 4,
+  "/blog/logiciel-comptabilite-algerie-2024": 4,
+  "/blog/prix-site-web-algerie-2026": 4,
+  "/blog/serre-intelligente-agriculture-algerie-2026": 4,
+  "/blog/logiciel-immobilier-agence-algerie-2026": 3,
+  "/blog/logiciel-rh-algerie-2024": 3,
+  "/blog/logiciel-clinique-cabinet-medical-algerie-2026": 2,
+  "/blog/logiciel-pharmacie-gestion-stock-algerie-2026": 2,
+  "/blog/logiciel-gmao-cmms-maintenance-industrielle-algerie-2026": 2
+ },
+ "first_google_visitors_on_changed_pages": {
+  "/blog/logiciel-laboratoire-analyses-medicales-algerie-2027-tubes-code-barres-automates-validation-compte-rendu-whatsapp": 1,
+  "/blog/agence-immobiliere-whatsapp-google-sheets-organiser-equipe-algerie-2026": 1,
+  "/blog/ecole-privee-centre-formation-inscriptions-paiements-presences-algerie-2026": 1
+ },
+ "daily_google_rate": {
+  "12 Oct-11 Nov": 38.5,
+  "11-16 Nov": 32.8
+ }
+}

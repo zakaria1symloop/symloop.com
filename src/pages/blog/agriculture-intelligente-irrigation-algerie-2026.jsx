@@ -48,7 +48,6 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
         <title>Irrigation Intelligente en Algerie 2026 : Systemes IoT pour Agriculture Durable | Symloop</title>
         <meta name="description" content="Solutions d'irrigation intelligente pour l'agriculture algerienne en 2026. Capteurs d'humidite IoT, vannes automatiques, station meteo connectee, app mobile. Economie d'eau 40-60%. Kits a partir de 35 000 DA. Fabrique en Algerie par Symloop." />
         <meta name="keywords" content="irrigation intelligente algerie, irrigation IoT algerie, agriculture connectee algerie, economie eau agriculture algerie, capteur humidite sol algerie, irrigation automatique algerie 2026, systeme irrigation automatique algerie, smart irrigation algerie, agriculture intelligente algerie, arrosage automatique algerie, capteur sol algerie, station meteo agricole algerie, irrigation goutte a goutte connectee algerie, irrigation intelligente setif, irrigation intelligente mitidja, irrigation intelligente hauts plateaux" />
-        <link rel="canonical" href="https://symloop.com/blog/agriculture-intelligente-irrigation-algerie-2026/" />
 
         <meta property="og:title" content="Irrigation Intelligente en Algerie 2026 : Systemes IoT Agriculture | Symloop" />
         <meta property="og:description" content="Solutions d'irrigation intelligente pour l'agriculture algerienne. Capteurs IoT, vannes automatiques, station meteo. Economie d'eau 40-60%. Fabrique en Algerie." />
@@ -122,7 +121,7 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
         {/* Hero */}
         <section className="bg-gradient-to-b from-green-900 via-green-800 to-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Retour au blog
@@ -652,7 +651,7 @@ export default function AgricultureIntelligenteIrrigationAlgerie2026() {
                 <p className="text-sm text-green-800 flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>
-                    <strong>Siege Symloop :</strong> Setif, Algerie. Equipes d&apos;installation dans les 4 grandes regions.
+                    <strong>Siege Symloop :</strong> Alger, Algerie. Equipes d&apos;installation dans les 4 grandes regions.
                     Pour les zones eloignees, nous proposons des <strong>kits auto-installables</strong> avec guide video et support telephonique.
                   </span>
                 </p>

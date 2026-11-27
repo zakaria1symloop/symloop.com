@@ -21,7 +21,6 @@ export default function EcommerceAlgerie() {
         <title>{blog?.metaTitle || "E-commerce Algérie 2024 | Paiement CIB Edahabia | Symloop"}</title>
         <meta name="description" content={blog?.metaDescription} />
         <meta name="keywords" content="e-commerce algérie, paiement cib, edahabia, satim, boutique en ligne algérie, vendre en ligne algérie" />
-        <link rel="canonical" href="https://symloop.com/blog/ecommerce-algerie-paiement-cib-edahabia-2024" />
 
         <meta property="og:title" content={blog?.metaTitle} />
         <meta property="og:description" content={blog?.metaDescription} />
@@ -135,8 +134,8 @@ export default function EcommerceAlgerie() {
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
             >
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />

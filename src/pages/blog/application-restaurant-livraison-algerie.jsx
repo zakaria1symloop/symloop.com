@@ -196,7 +196,6 @@ export default function RestaurantAlgerie() {
         <title>Application Restaurant Livraison Algérie | FoodTech | Symloop</title>
         <meta name="description" content="Développement d'applications de commande et livraison pour restaurants en Algérie. Menu digital, paiement CIB, tracking livreurs. Solutions FoodTech à partir de 60 000 DA." />
         <meta name="keywords" content="application restaurant algérie, livraison food algérie, commande en ligne restaurant, gestion restaurant algérie, foodtech algérie, menu digital" />
-        <link rel="canonical" href="https://symloop.com/blog/application-restaurant-livraison-algerie" />
         <meta property="og:title" content="Application Restaurant Livraison Algérie | FoodTech" />
         <meta property="og:description" content="Solutions FoodTech pour restaurants : commande en ligne, livraison, gestion cuisine. À partir de 60 000 DA." />
         <meta property="og:type" content="article" />
@@ -209,7 +208,7 @@ export default function RestaurantAlgerie() {
         {/* Hero */}
         <section className="bg-black text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
                 <ArrowLeft className="w-4 h-4" /> Retour au blog
               </Link>

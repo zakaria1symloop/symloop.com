@@ -1,0 +1,166 @@
+import { cover, steps, layers, matrix, timeline, stats } from '../../lib/visuals/index.mjs';
+export const slug = 'gerer-appartement-loue-algerie-depuis-la-france-2027-espace-proprietaire-quittances-etat-des-lieux-travaux';
+const T = {
+  fr: {
+    cover: { eyebrow: 'Propriétaire en France · Location · Agence · 2027', title: ['Le loyer est encaissé,', 'quelqu’un le dit', 'au téléphone.'], subtitle: 'Quittance numérotée, période couverte, état des lieux photographié, travaux validés à distance, relevé mensuel : l’espace propriétaire qu’une agence offre aux propriétaires installés en France, et le calendrier 2027', left: { label: 'Depuis Lyon', sub: 'un frère, des espèces, pas de quittance' }, right: { label: 'Espace propriétaire', sub: 'quittance, relevé, photos, travaux' } },
+    mois: { title: 'Un mois de location géré depuis la France, en six moments', items: [
+      { n: '01', label: 'L’échéance', sub: 'Loyer du mois ou période payée d’avance : « couvert jusqu’au 30 juin » ; rappel au locataire trois jours avant.' },
+      { n: '02', label: 'L’encaissement et la quittance', sub: 'Carte, virement ou espèces à l’agence ; quittance numérotée envoyée au locataire et au propriétaire dans la minute.', accent: true },
+      { n: '03', label: 'Le reversement', sub: 'Versé sur le compte du propriétaire en Algérie, moins les honoraires ; la ligne est visible depuis Lyon.' },
+      { n: '04', label: 'L’incident', sub: 'Fuite ou panne : ticket avec photos, devis, validation du propriétaire depuis son téléphone, facture jointe.' },
+      { n: '05', label: 'La visite', sub: 'État des lieux périodique : photos horodatées pièce par pièce, comparées à celles de l’entrée.' },
+      { n: '06', label: 'Le relevé du mois', sub: 'Loyers, charges, travaux, solde, retards : le même document pour l’agence et le propriétaire.' },
+    ], caption: 'Figure 1 · Le moment 02 est celui qui remplace le coup de téléphone : une quittance numérotée qui part au locataire et au propriétaire en même temps rend le montant indiscutable. Les moments 04 et 05 sont ceux où l’argent se perd aujourd’hui ; le moment 06 ne demande aucune saisie si les cinq premiers sont enregistrés.', alt: 'Six étapes : échéance, encaissement et quittance, reversement, incident, visite, relevé du mois.' },
+    plateforme: { title: 'La plateforme de gestion locative, en cinq couches', layers: [
+      { label: 'Registre', items: [{ name: 'Biens, baux, locataires, cautions, périodes payées', sub: 'repris des cahiers et des contrats ; un bien = une fiche, un bail = des dates' }] },
+      { label: 'Échéancier', items: [{ name: 'Échéancier, encaissements, quittances numérotées, reversements', sub: 'la vérité du loyer : qui a payé quoi, pour quelle période, avec quelle preuve', accent: true }] },
+      { label: 'Terrain', items: [{ name: 'L’application de l’agent : états des lieux, tickets, visites', sub: 'photos horodatées, hors ligne dans les caves et les parkings' }] },
+      { label: 'Espaces', items: [{ name: 'L’espace propriétaire et l’espace locataire', sub: 'le propriétaire à Lyon voit le relevé ; le locataire voit sa quittance et signale une panne' }] },
+      { label: 'Pilotage', items: [{ name: 'Tableau de bord et agent IA', sub: 'retards, vacance, travaux en attente ; rappels et premières réponses en arabe et en français' }] },
+    ], caption: 'Figure 2 · L’échéancier est la couche qui fait la valeur de l’agence pour un propriétaire à l’étranger ; l’espace propriétaire ne fait que la montrer. Une agence qui installe l’espace propriétaire avant d’avoir l’échéancier montre un relevé qu’elle recopie à la main.', alt: 'Cinq couches : registre, échéancier et quittances, application de l’agent, espaces propriétaire et locataire, pilotage.' },
+    exemple: { title: 'Une agence, 120 lots, cinquante propriétaires à l’étranger : l’exemple', items: [
+      { value: '120 lots', label: 'gérés pour quatre-vingts propriétaires, dont cinquante installés en France ; hypothèse à remplacer par la vôtre' },
+      { value: '320 → 40', label: 'appels et messages de propriétaires par mois : quatre par propriétaire aujourd’hui, moins d’un quand le relevé et les quittances arrivent seuls' },
+      { value: '12 → 3 jours', label: 'de retard moyen d’encaissement, avec le rappel trois jours avant, la quittance immédiate et la relance datée' },
+      { value: '45 → 20 jours', label: 'de vacance entre deux locataires : état des lieux de sortie photographié, annonce prête le jour du départ ; à 50 000 DA de loyer, environ 40 000 DA récupérés par rotation', accent: true },
+    ], caption: 'Figure 3 · Un calcul sur des hypothèses, pas une mesure : le nombre de lots, le loyer moyen, le retard et la vacance sont à remplacer par les vôtres. Ce qui se vérifie partout : les appels des propriétaires tombent dès le premier relevé mensuel, et la vacance ne bouge que si le préavis est enregistré le jour où il est donné.', alt: 'Quatre chiffres : 120 lots, 320 à 40 appels par mois, 12 à 3 jours de retard, 45 à 20 jours de vacance.' },
+    fuites: { title: 'Six fuites d’un appartement géré de loin, et ce que la plateforme change', columns: ['Ce qui se passe aujourd’hui', 'Ce que la plateforme change'], rows: [
+      { label: 'Le loyer encaissé par un proche, sans quittance', cells: ['Le frère encaisse en espèces ; le propriétaire à Lyon apprend le montant par téléphone', 'Encaissement enregistré par l’agence, quittance numérotée au locataire et au propriétaire'] },
+      { label: 'Le locataire qui « a payé d’avance »', cells: ['Six mois payés il y a un an ; personne ne sait jusqu’à quand', 'Période couverte affichée au jour près ; rappel soixante jours avant la fin'] },
+      { label: 'Les travaux sans photo ni devis', cells: ['Une fuite réparée « pour 40 000 », facture introuvable, parfois facturée deux fois', 'Ticket avec photos avant et après, devis validé par le propriétaire, facture jointe'] },
+      { label: 'L’état des lieux de mémoire', cells: ['À la sortie, la caution se discute sur des souvenirs et des photos de téléphone perdues', 'Photos horodatées à l’entrée et à chaque visite ; comparaison pièce par pièce'] },
+      { label: 'La vacance entre deux locataires', cells: ['Le bien reste vide six semaines ; l’annonce part quand quelqu’un y pense', 'Préavis enregistré, annonce et visites programmées avant le départ'] },
+      { label: 'Le relevé annuel reconstitué', cells: ['En décembre, le propriétaire demande le total ; l’agence recompte les cahiers', 'Relevé mensuel et annuel produits seuls, à partir des quittances'] },
+    ], caption: 'Figure 4 · Les trois premières fuites coûtent de l’argent au propriétaire ; les trois dernières coûtent du temps à l’agence et la confiance du propriétaire. Toutes les six viennent de la même absence : un enregistrement au moment où ça se passe.', alt: 'Matrice de six fuites avec ce qui se passe aujourd’hui et ce que la plateforme change.' },
+    modeles: { title: 'Six situations, ce qu’on construit d’abord', columns: ['Ce qu’on construit d’abord', 'Ce qui vient ensuite'], rows: [
+      { label: 'Propriétaire d’un ou deux appartements, en France', cells: ['Un espace propriétaire chez une agence qui tient l’échéancier et les quittances', 'Relevé annuel, historique des travaux, décision de vendre ou de garder sur des chiffres'] },
+      { label: 'Famille avec un immeuble de cinq à dix lots', cells: ['Registre, échéancier, quittances ; le frère qui gère a l’application agent', 'Charges communes, travaux partagés, relevé par ayant droit'] },
+      { label: 'Agence immobilière locale', cells: ['Registre, échéancier, quittances, espace propriétaire : l’argument qui gagne la diaspora', 'Application agent, tickets travaux, agent IA de relance, tableau de bord'] },
+      { label: 'Promoteur qui livre et propose la gestion', cells: ['Reprise des acquéreurs livrés dans le registre, première mise en location', 'Espace propriétaire commun avec le suivi de chantier, charges de l’immeuble'] },
+      { label: 'Gestionnaire de bureaux et de locaux', cells: ['Baux pluriannuels, échéancier trimestriel, quittances, charges', 'Indexation prévue au bail, tickets techniques, reporting par immeuble'] },
+      { label: 'Fondateur en France : SaaS pour les agences', cells: ['Vingt agences pilotes, registre et quittances, espace propriétaire multilingue', 'Reversements, agent IA, abonnement par lot géré'] },
+    ], caption: 'Figure 5 · Dans les six cas, la première colonne tient en dix à quatorze semaines. Le propriétaire d’un appartement ne construit rien : il choisit l’agence qui a déjà la première colonne, et c’est pour cela que l’agence la construit.', alt: 'Matrice de six situations avec ce qu’on construit d’abord et ce qui vient ensuite.' },
+    calendrier: { title: 'Équiper une agence en 2027, en semaines', unit: 'sem.', items: [
+      { label: 'Registre des biens et des baux', note: 'cent vingt lots, baux, locataires, périodes payées saisis avec l’agence', from: 0, to: 4 },
+      { label: 'Échéancier, quittances, espace propriétaire', note: 'construits pendant le ramadan (≈ 8 février – 9 mars), peu de déménagements', from: 4, to: 10, accent: true },
+      { label: 'Pilote : trente lots, propriétaires en France', note: 'premier relevé mensuel envoyé ; retours des propriétaires', from: 10, to: 14 },
+      { label: 'Application agent : états des lieux, tickets', note: 'photos horodatées, devis, validation à distance', from: 14, to: 20 },
+      { label: 'Déploiement sur tous les lots', note: 'avant l’été, quand les propriétaires viennent voir leur bien', from: 20, to: 26 },
+      { label: 'Été : visites, tickets, agent IA', note: 'les propriétaires sur place comparent le bien au relevé', from: 26, to: 34 },
+      { label: 'Rentrée : relocations, bilan', note: 'préavis de septembre, vacance mesurée, décision sur les honoraires', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Semaine 0 = mi-janvier 2027. Le registre se saisit avant tout, pendant les semaines calmes ; l’échéancier se construit pendant le ramadan ; le pilote tourne avant l’été, parce que l’été est le moment où les propriétaires installés en France viennent voir leur bien et jugent l’agence. Dates du ramadan prévisionnelles.', alt: 'Frise de 40 semaines : registre, échéancier et espace propriétaire, pilote, application agent, déploiement, été, rentrée.' },
+  },
+  en: {
+    cover: { eyebrow: 'Owner in France · Rental · Agency · 2027', title: ['The rent was collected,', 'someone says so', 'on the phone.'], subtitle: 'Numbered receipt, covered period, photographed inventory, works approved remotely, monthly statement: the owner space an agency offers to owners settled in France, and the 2027 calendar', left: { label: 'From Lyon', sub: 'a brother, cash, no receipt' }, right: { label: 'Owner space', sub: 'receipt, statement, photos, works' } },
+    mois: { title: 'A rental month managed from France, in six moments', items: [
+      { n: '01', label: 'The due date', sub: 'Monthly rent or a period paid in advance: “covered until 30 June”; reminder to the tenant three days before.' },
+      { n: '02', label: 'Collection and receipt', sub: 'Card, transfer or cash at the agency; numbered receipt sent to tenant and owner within the minute.', accent: true },
+      { n: '03', label: 'The payout', sub: 'Paid to the owner’s account in Algeria, minus fees; the line is visible from Lyon.' },
+      { n: '04', label: 'The incident', sub: 'Leak or breakdown: ticket with photos, quote, owner approval from the phone, invoice attached.' },
+      { n: '05', label: 'The visit', sub: 'Periodic inventory: time-stamped photos room by room, compared with move-in.' },
+      { n: '06', label: 'The monthly statement', sub: 'Rents, charges, works, balance, delays: the same document for the agency and the owner.' },
+    ], caption: 'Figure 1 · Moment 02 is the one that replaces the phone call: a numbered receipt that goes to tenant and owner at the same time makes the amount indisputable. Moments 04 and 05 are where money is lost today; moment 06 needs no data entry if the first five are recorded.', alt: 'Six steps: due date, collection and receipt, payout, incident, visit, monthly statement.' },
+    plateforme: { title: 'The rental management platform, in five layers', layers: [
+      { label: 'Register', items: [{ name: 'Properties, leases, tenants, deposits, paid periods', sub: 'taken from notebooks and contracts; one property = one record, one lease = dates' }] },
+      { label: 'Schedule', items: [{ name: 'Schedule, collections, numbered receipts, payouts', sub: 'the truth of the rent: who paid what, for which period, with what proof', accent: true }] },
+      { label: 'Field', items: [{ name: 'The agent’s app: inventories, tickets, visits', sub: 'time-stamped photos, offline in basements and car parks' }] },
+      { label: 'Spaces', items: [{ name: 'The owner space and the tenant space', sub: 'the owner in Lyon sees the statement; the tenant sees the receipt and reports a fault' }] },
+      { label: 'Management', items: [{ name: 'Dashboard and AI agent', sub: 'delays, vacancy, pending works; reminders and first answers in Arabic and French' }] },
+    ], caption: 'Figure 2 · The schedule is the layer that makes the agency valuable to an owner abroad; the owner space only shows it. An agency that installs the owner space before it has the schedule shows a statement it copies out by hand.', alt: 'Five layers: register, schedule and receipts, agent app, owner and tenant spaces, management.' },
+    exemple: { title: 'One agency, 120 units, fifty owners abroad: the example', items: [
+      { value: '120 units', label: 'managed for eighty owners, fifty of them settled in France; an assumption to replace with yours' },
+      { value: '320 → 40', label: 'owner calls and messages a month: four per owner today, under one when the statement and receipts arrive on their own' },
+      { value: '12 → 3 days', label: 'of average collection delay, with the three-day reminder, the immediate receipt and the dated follow-up' },
+      { value: '45 → 20 days', label: 'of vacancy between two tenants: move-out inventory photographed, listing ready the day of departure; at 50,000 DZD rent, about 40,000 DZD recovered per turnover', accent: true },
+    ], caption: 'Figure 3 · A calculation on assumptions, not a measurement: the number of units, average rent, delay and vacancy are to be replaced by yours. What holds everywhere: owner calls drop from the first monthly statement, and vacancy only moves if the notice is recorded the day it is given.', alt: 'Four figures: 120 units, 320 to 40 calls a month, 12 to 3 days of delay, 45 to 20 days of vacancy.' },
+    fuites: { title: 'Six leaks of a flat managed from afar, and what the platform changes', columns: ['What happens today', 'What the platform changes'], rows: [
+      { label: 'Rent collected by a relative, no receipt', cells: ['The brother collects in cash; the owner in Lyon learns the amount by phone', 'Collection recorded by the agency, numbered receipt to tenant and owner'] },
+      { label: 'The tenant who “paid in advance”', cells: ['Six months paid a year ago; nobody knows until when', 'Covered period shown to the day; reminder sixty days before the end'] },
+      { label: 'Works with no photo and no quote', cells: ['A leak fixed “for 40,000”, invoice nowhere to be found, sometimes billed twice', 'Ticket with before and after photos, quote approved by the owner, invoice attached'] },
+      { label: 'The inventory from memory', cells: ['At move-out, the deposit is argued over memories and lost phone photos', 'Time-stamped photos at move-in and at every visit; room-by-room comparison'] },
+      { label: 'Vacancy between two tenants', cells: ['The flat stays empty six weeks; the listing goes out when someone thinks of it', 'Notice recorded, listing and viewings scheduled before departure'] },
+      { label: 'The annual statement rebuilt', cells: ['In December the owner asks for the total; the agency recounts the notebooks', 'Monthly and annual statements produced on their own, from the receipts'] },
+    ], caption: 'Figure 4 · The first three leaks cost the owner money; the last three cost the agency time and the owner’s trust. All six come from the same absence: a record made when it happens.', alt: 'Matrix of six leaks with what happens today and what the platform changes.' },
+    modeles: { title: 'Six situations, what gets built first', columns: ['What gets built first', 'What comes next'], rows: [
+      { label: 'Owner of one or two flats, in France', cells: ['An owner space at an agency that keeps the schedule and the receipts', 'Annual statement, works history, decision to sell or keep based on figures'] },
+      { label: 'Family with a building of five to ten units', cells: ['Register, schedule, receipts; the brother who manages has the agent app', 'Shared charges, shared works, statement per heir'] },
+      { label: 'Local real-estate agency', cells: ['Register, schedule, receipts, owner space: the argument that wins the diaspora', 'Agent app, works tickets, AI follow-up agent, dashboard'] },
+      { label: 'Developer who delivers and offers management', cells: ['Delivered buyers taken into the register, first letting', 'Owner space shared with construction tracking, building charges'] },
+      { label: 'Manager of offices and commercial premises', cells: ['Multi-year leases, quarterly schedule, receipts, charges', 'Indexation as written in the lease, technical tickets, reporting per building'] },
+      { label: 'Founder in France: SaaS for agencies', cells: ['Twenty pilot agencies, register and receipts, multilingual owner space', 'Payouts, AI agent, subscription per managed unit'] },
+    ], caption: 'Figure 5 · In all six cases the first column fits in ten to fourteen weeks. The owner of one flat builds nothing: they choose the agency that already has the first column, and that is why the agency builds it.', alt: 'Matrix of six situations with what gets built first and what comes next.' },
+    calendrier: { title: 'Equipping an agency in 2027, in weeks', unit: 'wks', items: [
+      { label: 'Register of properties and leases', note: 'one hundred and twenty units, leases, tenants, paid periods entered with the agency', from: 0, to: 4 },
+      { label: 'Schedule, receipts, owner space', note: 'built during Ramadan (≈ 8 February – 9 March), few moves', from: 4, to: 10, accent: true },
+      { label: 'Pilot: thirty units, owners in France', note: 'first monthly statement sent; owners’ feedback', from: 10, to: 14 },
+      { label: 'Agent app: inventories, tickets', note: 'time-stamped photos, quotes, remote approval', from: 14, to: 20 },
+      { label: 'Roll-out to all units', note: 'before summer, when owners come to see their property', from: 20, to: 26 },
+      { label: 'Summer: visits, tickets, AI agent', note: 'owners on site compare the property with the statement', from: 26, to: 34 },
+      { label: 'September: re-lettings, review', note: 'September notices, measured vacancy, decision on fees', from: 34, to: 40 },
+    ], caption: 'Figure 6 · Week 0 = mid-January 2027. The register is entered first, during the quiet weeks; the schedule is built during Ramadan; the pilot runs before summer, because summer is when owners settled in France come to see their property and judge the agency. Ramadan dates are forecasts.', alt: 'Timeline of 40 weeks: register, schedule and owner space, pilot, agent app, roll-out, summer, September.' },
+  },
+  ar: {
+    cover: { eyebrow: 'مالك في فرنسا · الإيجار · الوكالة · 2027', title: ['الكراء محصَّل،', 'أحدهم يقول ذلك', 'في الهاتف.'], subtitle: 'وصل مرقّم، الفترة المغطاة، معاينة مصوَّرة، أشغال موافَق عليها عن بُعد، كشف شهري: فضاء المالك الذي تقدّمه وكالة للمالكين المقيمين في فرنسا، وتقويم 2027', left: { label: 'من ليون', sub: 'أخ، نقد، لا وصل' }, right: { label: 'فضاء المالك', sub: 'وصل، كشف، صور، أشغال' } },
+    mois: { title: 'شهر إيجار يُسيَّر من فرنسا، في ست لحظات', items: [
+      { n: '01', label: 'الاستحقاق', sub: 'كراء الشهر أو فترة مدفوعة مسبقاً: «مغطّى حتى 30 جوان»؛ تذكير للمستأجر قبل ثلاثة أيام.' },
+      { n: '02', label: 'التحصيل والوصل', sub: 'بطاقة أو تحويل أو نقد في الوكالة؛ وصل مرقّم يُرسل إلى المستأجر والمالك خلال دقيقة.', accent: true },
+      { n: '03', label: 'التحويل للمالك', sub: 'يُدفع إلى حساب المالك في الجزائر بعد خصم الأتعاب؛ السطر مرئي من ليون.' },
+      { n: '04', label: 'العطب', sub: 'تسرب أو عطل: تذكرة بصور، عرض سعر، موافقة المالك من هاتفه، الفاتورة مرفقة.' },
+      { n: '05', label: 'الزيارة', sub: 'معاينة دورية: صور موقّتة غرفة غرفة، تُقارن بصور الدخول.' },
+      { n: '06', label: 'كشف الشهر', sub: 'الأكرية، الأعباء، الأشغال، الرصيد، التأخيرات: الوثيقة نفسها للوكالة والمالك.' },
+    ], caption: 'الشكل 1 · اللحظة 02 هي التي تحل محل المكالمة الهاتفية: وصل مرقّم يذهب إلى المستأجر والمالك في الوقت نفسه يجعل المبلغ غير قابل للجدل. اللحظتان 04 و05 هما حيث يضيع المال اليوم؛ واللحظة 06 لا تحتاج أي إدخال إذا سُجِّلت الخمس الأولى.', alt: 'ست خطوات: الاستحقاق، التحصيل والوصل، التحويل، العطب، الزيارة، كشف الشهر.' },
+    plateforme: { title: 'منصة التسيير العقاري، في خمس طبقات', layers: [
+      { label: 'السجل', items: [{ name: 'العقارات، العقود، المستأجرون، الضمانات، الفترات المدفوعة', sub: 'مأخوذة من الدفاتر والعقود؛ عقار = بطاقة، عقد = تواريخ' }] },
+      { label: 'الجدول', items: [{ name: 'جدول الاستحقاقات، التحصيلات، الوصولات المرقّمة، التحويلات', sub: 'حقيقة الكراء: من دفع ماذا، عن أي فترة، بأي دليل', accent: true }] },
+      { label: 'الميدان', items: [{ name: 'تطبيق الوكيل: المعاينات، التذاكر، الزيارات', sub: 'صور موقّتة، دون اتصال في الأقبية والمرائب' }] },
+      { label: 'الفضاءات', items: [{ name: 'فضاء المالك وفضاء المستأجر', sub: 'المالك في ليون يرى الكشف؛ المستأجر يرى وصله ويبلّغ عن عطل' }] },
+      { label: 'القيادة', items: [{ name: 'لوحة قيادة ووكيل ذكاء اصطناعي', sub: 'التأخيرات، الشغور، الأشغال المعلّقة؛ تذكيرات وأجوبة أولى بالعربية والفرنسية' }] },
+    ], caption: 'الشكل 2 · الجدول هو الطبقة التي تصنع قيمة الوكالة لمالك في الخارج؛ فضاء المالك لا يفعل سوى إظهارها. وكالة تركّب فضاء المالك قبل أن يكون لها الجدول تعرض كشفاً تنسخه باليد.', alt: 'خمس طبقات: السجل، الجدول والوصولات، تطبيق الوكيل، فضاءا المالك والمستأجر، القيادة.' },
+    exemple: { title: 'وكالة واحدة، 120 وحدة، خمسون مالكاً في الخارج: المثال', items: [
+      { value: '120 وحدة', label: 'مسيَّرة لثمانين مالكاً، خمسون منهم مقيمون في فرنسا؛ فرضية تُستبدل بفرضيتكم' },
+      { value: '320 ← 40', label: 'مكالمة ورسالة من المالكين شهرياً: أربع لكل مالك اليوم، أقل من واحدة حين يصل الكشف والوصولات وحدها' },
+      { value: '12 ← 3 أيام', label: 'من متوسط تأخر التحصيل، مع التذكير قبل ثلاثة أيام والوصل الفوري والمتابعة المؤرَّخة' },
+      { value: '45 ← 20 يوماً', label: 'من الشغور بين مستأجرين: معاينة الخروج مصوَّرة، الإعلان جاهز يوم المغادرة؛ بكراء 50 000 دج، نحو 40 000 دج مستردَّة في كل تناوب', accent: true },
+    ], caption: 'الشكل 3 · حساب على فرضيات لا قياس: عدد الوحدات ومتوسط الكراء والتأخر والشغور تُستبدل بأرقامكم. ما يثبت في كل مكان: مكالمات المالكين تنخفض من أول كشف شهري، والشغور لا يتحرك إلا إذا سُجِّل الإشعار يوم إعطائه.', alt: 'أربعة أرقام: 120 وحدة، من 320 إلى 40 مكالمة شهرياً، من 12 إلى 3 أيام تأخر، من 45 إلى 20 يوماً شغور.' },
+    fuites: { title: 'ست تسريبات لشقة تُسيَّر من بعيد، وما تغيّره المنصة', columns: ['ما يحدث اليوم', 'ما تغيّره المنصة'], rows: [
+      { label: 'كراء يحصّله قريب، بلا وصل', cells: ['الأخ يحصّل نقداً؛ المالك في ليون يعرف المبلغ بالهاتف', 'تحصيل تسجّله الوكالة، وصل مرقّم إلى المستأجر والمالك'] },
+      { label: 'المستأجر الذي «دفع مسبقاً»', cells: ['ستة أشهر دُفعت قبل سنة؛ لا أحد يعرف إلى متى', 'الفترة المغطاة معروضة باليوم؛ تذكير قبل ستين يوماً من نهايتها'] },
+      { label: 'أشغال بلا صورة ولا عرض سعر', cells: ['تسرب أُصلح «بـ40 000»، الفاتورة مفقودة، وأحياناً تُفوتر مرتين', 'تذكرة بصور قبل وبعد، عرض سعر يوافق عليه المالك، الفاتورة مرفقة'] },
+      { label: 'المعاينة من الذاكرة', cells: ['عند الخروج يُناقَش الضمان على ذكريات وصور هاتف ضائعة', 'صور موقّتة عند الدخول وفي كل زيارة؛ مقارنة غرفة غرفة'] },
+      { label: 'الشغور بين مستأجرين', cells: ['العقار يبقى فارغاً ستة أسابيع؛ الإعلان ينطلق حين يتذكره أحد', 'الإشعار مسجَّل، الإعلان والزيارات مبرمجة قبل المغادرة'] },
+      { label: 'الكشف السنوي المعاد بناؤه', cells: ['في ديسمبر يطلب المالك المجموع؛ الوكالة تعيد عدّ الدفاتر', 'كشف شهري وسنوي يُنتجان وحدهما من الوصولات'] },
+    ], caption: 'الشكل 4 · التسريبات الثلاثة الأولى تكلّف المالك مالاً؛ والثلاثة الأخيرة تكلّف الوكالة وقتاً وثقة المالك. الستة كلها تأتي من الغياب نفسه: تسجيل في لحظة الحدوث.', alt: 'مصفوفة ست تسريبات مع ما يحدث اليوم وما تغيّره المنصة.' },
+    modeles: { title: 'ست حالات، ما يُبنى أولاً', columns: ['ما يُبنى أولاً', 'ما يأتي بعده'], rows: [
+      { label: 'مالك شقة أو شقتين، في فرنسا', cells: ['فضاء مالك عند وكالة تمسك الجدول والوصولات', 'كشف سنوي، تاريخ الأشغال، قرار البيع أو الاحتفاظ على أرقام'] },
+      { label: 'عائلة لديها عمارة من خمس إلى عشر وحدات', cells: ['سجل، جدول، وصولات؛ الأخ المسيّر لديه تطبيق الوكيل', 'أعباء مشتركة، أشغال مشتركة، كشف لكل وارث'] },
+      { label: 'وكالة عقارية محلية', cells: ['سجل، جدول، وصولات، فضاء مالك: الحجة التي تكسب الجالية', 'تطبيق الوكيل، تذاكر الأشغال، وكيل ذكاء اصطناعي للمتابعة، لوحة قيادة'] },
+      { label: 'مرقّ يسلّم ويقترح التسيير', cells: ['إدخال المقتنين المسلَّمين في السجل، أول تأجير', 'فضاء مالك مشترك مع متابعة الورشة، أعباء العمارة'] },
+      { label: 'مسيّر مكاتب ومحلات تجارية', cells: ['عقود متعددة السنوات، جدول فصلي، وصولات، أعباء', 'المراجعة كما ينص العقد، تذاكر تقنية، تقارير لكل عمارة'] },
+      { label: 'مؤسس في فرنسا: SaaS للوكالات', cells: ['عشرون وكالة تجريبية، سجل ووصولات، فضاء مالك متعدد اللغات', 'التحويلات، وكيل ذكاء اصطناعي، اشتراك لكل وحدة مسيَّرة'] },
+    ], caption: 'الشكل 5 · في الحالات الست، العمود الأول يُنجز في عشرة إلى أربعة عشر أسبوعاً. مالك الشقة الواحدة لا يبني شيئاً: يختار الوكالة التي تملك العمود الأول أصلاً، ولهذا تبنيه الوكالة.', alt: 'مصفوفة ست حالات مع ما يُبنى أولاً وما يأتي بعده.' },
+    calendrier: { title: 'تجهيز وكالة في 2027، بالأسابيع', unit: 'أسبوع', items: [
+      { label: 'سجل العقارات والعقود', note: 'مئة وعشرون وحدة، عقود، مستأجرون، فترات مدفوعة تُدخل مع الوكالة', from: 0, to: 4 },
+      { label: 'الجدول، الوصولات، فضاء المالك', note: 'تُبنى خلال رمضان (≈ 8 فبراير – 9 مارس)، قليل من الانتقالات', from: 4, to: 10, accent: true },
+      { label: 'التجربة: ثلاثون وحدة، مالكون في فرنسا', note: 'أول كشف شهري يُرسل؛ ملاحظات المالكين', from: 10, to: 14 },
+      { label: 'تطبيق الوكيل: المعاينات، التذاكر', note: 'صور موقّتة، عروض أسعار، موافقة عن بُعد', from: 14, to: 20 },
+      { label: 'النشر على كل الوحدات', note: 'قبل الصيف، حين يأتي المالكون لرؤية عقارهم', from: 20, to: 26 },
+      { label: 'الصيف: زيارات، تذاكر، وكيل ذكاء اصطناعي', note: 'المالكون في المكان يقارنون العقار بالكشف', from: 26, to: 34 },
+      { label: 'الدخول: إعادة التأجير، الحصيلة', note: 'إشعارات سبتمبر، شغور مقاس، قرار بشأن الأتعاب', from: 34, to: 40 },
+    ], caption: 'الشكل 6 · الأسبوع 0 = منتصف يناير 2027. السجل يُدخل قبل كل شيء في الأسابيع الهادئة؛ الجدول يُبنى خلال رمضان؛ التجربة تدور قبل الصيف، لأن الصيف هو وقت مجيء المالكين المقيمين في فرنسا لرؤية عقارهم والحكم على الوكالة. تواريخ رمضان تقديرية.', alt: 'خط زمني من 40 أسبوعاً: السجل، الجدول وفضاء المالك، التجربة، تطبيق الوكيل، النشر، الصيف، الدخول.' },
+  },
+};
+export function visuals(locale = 'fr') {
+  const t = T[locale] || T.fr;
+  const rtl = locale === 'ar';
+  return {
+    cover: cover({ ...t.cover, rtl }),
+    figures: {
+      mois: { svg: steps({ title: t.mois.title, steps: t.mois.items, arrows: true, rtl }), caption: t.mois.caption, alt: t.mois.alt },
+      plateforme: { svg: layers({ title: t.plateforme.title, layers: t.plateforme.layers, rtl }), caption: t.plateforme.caption, alt: t.plateforme.alt },
+      exemple: { svg: stats({ title: t.exemple.title, items: t.exemple.items, rtl }), caption: t.exemple.caption, alt: t.exemple.alt },
+      fuites: { svg: matrix({ title: t.fuites.title, columns: t.fuites.columns, rows: t.fuites.rows, rtl }), caption: t.fuites.caption, alt: t.fuites.alt },
+      modeles: { svg: matrix({ title: t.modeles.title, columns: t.modeles.columns, rows: t.modeles.rows, rtl }), caption: t.modeles.caption, alt: t.modeles.alt },
+      calendrier: { svg: timeline({ title: t.calendrier.title, items: t.calendrier.items, total: 40, tick: 4, unit: t.calendrier.unit, rtl }), caption: t.calendrier.caption, alt: t.calendrier.alt },
+    },
+  };
+}

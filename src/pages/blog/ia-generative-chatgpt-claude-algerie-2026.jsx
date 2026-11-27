@@ -349,7 +349,6 @@ export default function IAGenerativeAlgerie2026() {
         <title>IA Générative Algérie 2026 | ChatGPT, Claude, Gemini | Symloop</title>
         <meta name="description" content="Guide complet sur l'IA Générative en Algérie 2026. ChatGPT, Claude, Gemini : applications business, chatbots, génération de contenu. Expert IA Algérie." />
         <meta name="keywords" content="ia generative algérie 2026, chatgpt algérie, claude ai algérie, gemini algérie, chatbot ia, génération contenu ia, automatisation ia, gpt-4, الذكاء الاصطناعي التوليدي" />
-        <link rel="canonical" href="https://symloop.com/blog/ia-generative-chatgpt-claude-algerie-2026" />
 
         <meta property="og:title" content="IA Générative Algérie 2026 | ChatGPT, Claude | Symloop" />
         <meta property="og:description" content="Guide complet sur l'IA Générative : ChatGPT, Claude, Gemini. Applications business pour entreprises algériennes." />
@@ -403,7 +402,7 @@ export default function IAGenerativeAlgerie2026() {
                 "name": "Symloop développe-t-il des chatbots IA pour entreprises algériennes ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Oui, Symloop est spécialisé dans le développement de chatbots IA et solutions d'intelligence artificielle générative pour les entreprises algériennes. Basé à Sétif, Symloop propose des chatbots WhatsApp, assistants IA site web, automatisation du service client et intégration de modèles comme ChatGPT et Claude. Contact : +213 549 575 512."
+                  "text": "Oui, Symloop est spécialisé dans le développement de chatbots IA et solutions d'intelligence artificielle générative pour les entreprises algériennes. Basé à Alger, Symloop propose des chatbots WhatsApp, assistants IA site web, automatisation du service client et intégration de modèles comme ChatGPT et Claude. Contact : +213 549 575 512."
                 }
               },
               {
@@ -447,7 +446,7 @@ export default function IAGenerativeAlgerie2026() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.div initial={{ y: 20 }} animate={{ y: 0 }}>
               <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 {t.backToBlog}
